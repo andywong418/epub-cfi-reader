@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Computers in Chemistry</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+</head>
+<body>
+<section epub:type="chapter" id="ch01">
+<a id="page_62" class="page" style="width:70%;">Page 62, Chapter 6 Computational chemistry</a>
+<h1 class="main">6<span class="space">&#160;</span>Computational chemistry</h1>
+<p class="banoindent">Computational chemistry is using computers to calculate &#x2018;chemistry&#x2019;. The chemistry may be molecular properties, or it might be reaction rates, but it always uses either fundamental properties of a system or a theoretical model as a basis for calculating other properties.</p>
+<p class="baindent">Some would probably say that computational chemistry uses computers in a way in which they were intended &#x2013; for doing scientific calculations. Others would probably say that it isn&#x2019;t chemistry at all&#x0021; Nevertheless it has become an important branch of chemistry, especially as the power of computers increases and so the complex calculations required become faster.</p>
+<p class="baindent">There is, of course, no point in delving deeply into the vast field of computational chemistry here. Indeed there is a primer devoted to just this subject. Instead, some of the packages and techniques used in writing programs will be introduced.</p>
+<section epub:type="chapter" id="ch6.1">
+<h2 class="h2"><b>6.1 Packages</b></h2>
+<p class="banoindent">It was recognised quite a while ago that not everyone wants to write their own programs. Consequently program packages were developed that allowed non-programmers to perform complex calculations. These packages really come in two different forms: those designed for one particular application, and those that are more general in nature. In general though the packages are designed to be easy to use and either operate entirely through a graphical front end, or produce graphical output.</p>
+<h3 class="h3"><b>Application specific packages</b></h3>
+<p class="banoindent">There are application specific packages for just about any area of chemistry and a list of them would go on for several pages. Most of the packages are derived from programs developed as part of a research project, and while most are in the public domain and freely available (to other academic institutions), a large portion have been further developed as commercial packages. These commercial packages can cost substantial amounts of money: this cost reflects the amount of time spent developing them, to say nothing of the niche market they are intended for.</p>
+<p class="baindent">The platforms on which these packages run vary a great deal. Some are most certainly designed for use on large machines, whilst others perform quite happily on all manner of different architectures. Many of the packages also come as source code, making their use on different machines much easier.</p>
+<p class="baindent">A problem with finding an example to give here is that all the packages are very, very different. They are different not only in what they calculate, but also in the way the programs are controlled and how the results are presented. To some extent this difference is a result of the individual programmers choosing what they think is the best way to approach a <a id="page_63" class="page">Page 63, Chapter 6 Computational chemistry</a>problem, but it is also because of the traditions and conventions in a particular field. When using a new package, or even when using a new version of an old package, it is of paramount importance that you read, and understand, the documentation. Some of the non-commercial packages may come with less documentation than is hoped, but nevertheless, read what is available. As a second line of attack on how to use a package, it is always helpful to examine the examples or tests that will inevitably form part of the program &#x2013; they should not only be run, but they should be altered so that you are sure that you know, and understand, what the program is doing.</p>
+<p class="baindent">Notwithstanding the problems of finding an example, it is important that an example be given&#x0021; The package chosen is Gaussian. This is a commercial package, but is ubiquitous in physical and theoretical chemistry departments. Gaussian is used to calculate molecular parameters from a theoretical basis. The package runs on many different architectures, ranging from PCs to supercomputers. The actual details of the calculations are not of importance here, just the way that the package is driven.</p>
+<aside class="abc" style="margin-top:0.8em;" epub:type="sidebar">
+<figure class="image" id="fig6.1" style="width:100%;">
+<img src="../images/page63-1.jpg" alt="images"/>
+<figcaption>Fig.6.1 A Gaussian input file to calculate the single point energy of water</figcaption></figure></aside>
+<p class="baindent">Gaussian is &#x2018;driven&#x2019; by a data file. This data file contains commands to tell it what calculations to perform along with the data on which to perform that calculation. A typical input file is shown in <a href="#fig6.1">Fig. 6.1</a>. This file instructs Gaussian to perform an energy calculation on water. The first line instructs the program to use terse output (&#x2018;#T&#x2019; &#x2013; note that the &#x2018;#&#x2019; symbol is a command, not a comment&#x0021;) and that a Restricted Hartree&#x2013;Fock (&#x2018;RHF&#x2019;) calculation is to be performed using the 6-31G(d) basis set. The next line is a description of the calculation, and is otherwise unused by the program. The final lines provide a description of the molecule starting with the charge and spin multiplicity (in the case of water it is neutral and a singlet) followed by the element type and Cartesian co-ordinates of each of the atoms in the molecule.</p>
+<p class="baindent">Once Gaussian is run with this input file (the exact details on how to do this is site-dependent), a log file is produced. The whole log file is some 175 lines long, so won&#x2019;t be reproduced here, but towards the end of the file is the line:</p>
+<p class="baindentt">Normal termination of  Gaussian 94</p>
+<p class="banoindentt">which indicates that the calculation has completed successfully, and somewhere in the middle of the file is the result:</p>
+<p class="baindentt">SCF Done: E(RHF) = -76.0098706218 A.U. after 6 cycles</p>
+<p class="banoindentt">indicating that the energy of the system, computed at the Hartree-Fock level, is about &#x2013;76 hartrees.</p>
+<h3 class="h3"><b>General purpose packages</b></h3>
+<p class="banoindent">There are many fewer general-purpose packages around than there are application specific ones. These packages usually take input in the form of equations or other recognisable mathematical notation, and perform their calculations on this input. Again, it is impossible to give a &#x2018;typical&#x2019; example of such a package, since they are also all very different, but two of the most common ones are Mathematica and Mathcad. Mathematica claims to be a &#x2018;fully integrated environment for technical computing&#x2019;, whilst Mathcad is sold as a &#x2018;freeform spreadsheet&#x2019;. Both these packages, and other similar ones, <a id="page_64" class="page">Page 64, Chapter 6 Computational chemistry</a>contain the basic elements for performing numerical, algebraic, symbolic and graphical operations.</p>
+<p class="baindent">Most of these packages run on many different types of machines, although the source code is very rarely made available and so it is necessary to rely on the publisher to make other architectures available. The packages are also usually very graphically orientated &#x2013; they rely heavily on users being able to input complex equations, and on reporting the results <i>via</i> visualisation techniques.</p>
+<p class="baindent">One of the big advantages of many of these packages is that they are capable of performing <i>symbolic arithmetic</i>. In other words, they can manipulate equations that involve symbols and not just pure numbers. For instance, it is possible to instruct a package to perform an integration or factor a polynomial. Such capabilities are an immense help when trying to understand a complex set of equations.</p>
+<p class="baindent">As an example of the capabilities of such systems, several Mathematica examples are shown in <a href="#fig6.2">Fig. 6.2</a>. In these examples we can see that not only can Mathematica be used to perform calculations, but can also perform symbolic arithmetic.</p>
+<figure id="fig6.2" class="banoindentt">
+<img src="../images/page64-1.jpg" alt="images"/>
+<figcaption class="fig1" style="width:100%;margin-left:0em;">Fig.6.2 Some examples of Mathematica calculations showing both symbolic arithmetic and graphical capabilities</figcaption></figure>
+</section>
+<section epub:type="chapter" id="ch6.2">
+<a id="page_65" class="page" style="width:70%;">Page 65, Chapter 6 Computational chemistry</a>
+<h2 class="h2"><b>6.2 Subroutine packages</b></h2>
+<p class="banoindent">Although the packages described above can be coerced into performing almost any calculation, they are sometimes slower than purpose written programs. The lack of speed is not necessarily a fault, but more a symptom of using a system that is optimised for general use, and not for your particular application. Sometimes the packages are just not capable of performing the calculations you want. In the end then, in order to perform the calculation, it is necessary to do some programming.</p>
+<p class="baindent">It is possible, of course, to write the whole program yourself, and indeed this will be essential if a new computational system is being developed. However, for more general programming, there are available packages of pre-written subroutines that perform common tasks. These tasks can range from simple matrix operations, to performing numerical integrations or Fourier transforms. There are both commercial and public domain packages, but amongst the best known are ones such as NAG or BLAS. Both of these provide similar functionality, although BLAS is aimed more at basic functions, whereas many of the NAG routines perform very complex calculations. The routines in both these packages are available in both C and Fortran, and so can be called from almost any program. An example of a Fortran program using a NAG subroutine can be seen in <a href="#fig6.3">Fig. 6.3</a>. Here a subroutine (&#x2018;f02abf&#x2019;) is used to calculate the eigenvalues and eigenvectors of an NxN matrix. The program is very simple, it merely reads an array, calls the NAG subroutine, and then outputs the results.</p>
+<p class="baindent">The parameters to the NAG routine call provide the method of passing data to the routine (as array A whose size is IA and the order of the matrix N), retrieving the results from it (with the eigenvalues and eigenvectors in arrays R and V) and providing the routine with any workspace it needs (array E). The variable IFAIL allows the routine to pass back to the calling program information on the success of the calculation.</p>
+<p class="baindent">The output of the program, along with the input file, is shown in <a href="#fig6.4">Fig. 6.4</a>.</p>
+<hr class="foot"/>
+<figure id="fig6.3">
+<img src="../images/page65-1.jpg" alt="images"/>
+<figcaption>
+<aside class="abc" style="margin-top:-21em;" epub:type="sidebar">
+Fig.6.3 Examples of program showing how a NAG routine is called
+</aside>
+</figcaption>
+</figure>
+<p class="noindent"><a id="page_66" class="page" style="width:70%;">Page 66, Chapter 6 Computational chemistry</a></p>
+<figure id="fig6.4">
+<img src="../images/page66-1.jpg" alt="images"/>
+<figcaption>
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+Fig.6.4 Input and output of the program in <a href="#fig6.3">Fig.6.3</a></aside>
+</figcaption>
+</figure>
+<p class="baindent">Another useful source of subroutines is the many books written on mathematical techniques. Often these books contain example code (written usually in Fortran or C) and may contain a diskette or CD. Perhaps the most outstanding example of these is the <i>Numerical Recipes</i> series. These books present many numerical techniques and are available in a number of computer languages. I can not recommend these books too highly, and I have yet to see a serious scientific programmer without at least one on their bookshelf.</p>
+<p class="baindent">Some programmers might consider it &#x2018;cheating&#x2019; using pre-written subroutines such as described here. However, it must be remembered that as chemists, our task is not to show our prowess at programming, but to perform a given task. Under these circumstances it is wise to spend time writing code that is peculiar to that task, rather than spend time writing subroutines to perform standard functions.</p>
+</section>
+<section epub:type="chapter" id="ch6.3">
+<h2 class="h2"><b>6.3 Programming techniques</b></h2>
+<p class="banoindent">Scientific programming is still performed, to a large extent, in Fortran. This is not necessarily a bad thing. Fortran was designed as a language for scientists and its strengths have stood the test of time. More recently, especially as more work is performed on Unix systems, C is becoming much more in evidence. The availability of subroutine libraries such as NAG and <a id="page_67" class="page">Page 67, Chapter 6 Computational chemistry</a>BLAS in C has done much to help in the acceptance of it into the scientific community. Still more recently, &#x2018;modern&#x2019; languages such as Fortran90 and C++ have been making an appearance.</p>
+<p class="baindent">In the end, it doesn&#x2019;t particularly matter what language a program is written in, so long as it performs the task correctly. The primary factor in deciding which language to use should be the capabilities of the programmer and the facilities available. It is perfectly acceptable to program in Basic on a PC, if the requirements of the project are satisfied.</p>
+<h3 class="h3"><b>Good practice</b></h3>
+<p class="banoindent">There are a number of general techniques that apply to all languages that it is wise to be aware of. First, good, logical structure to your programs should be maintained. In the early days if programming, when programmers didn&#x2019;t actually interact with the computer and it was necessary to submit a deck of cards or a paper tape to the computer centre for processing, it was a big advantage to get the program correct first time round. To this end, flow charts were used to elucidate the structure of the program before any code was written. These days, when people interact directly with the computer and a program is developed &#x2018;on-line&#x2019;, the use of flow charts has fallen into disuse. Nevertheless, it is still good technique to have written down what the structure of your program will be. This will allow you to divide your program into sub-units that will be easier to code. More often than not these sub-units will be individual subroutines, although if the structure dictates, they need not be.</p>
+<p class="baindent">The second thing that should be remembered is to provide comments in the code. Most, if not all, programmers find writing comments a tedious task &#x2013; they disrupt their flow of thoughts when writing the code, and when they do appear they are likely to be cryptic in the extreme. Nevertheless, it is a task that must be done&#x0021; Most non-trivial programs will be used on more than one occasion, and they will be modified and developed over time. Comments are invaluable in this development process: they should indicate what each section of code does, and ideally should detail what all the variables are used for. The comments become even more valuable if somebody other than the programmer modifies the code &#x2013; each subsequent programmer should maintain the comments and indicate what modifications have been performed.</p>
+<p class="baindent">The code should also be presented in a readable manner. This means using variable names that mean something &#x2013; there are very few programming languages that penalise long variable names, so there is no reason not to use a name such as &#x2018;wavelength&#x2019; rather than &#x2018;w&#x2019;. The program should be laid out in a manner that reflects the structure of the program. For example, the body of loops, or if statements, should be indented so that it is obvious where they begin and end; subroutines should be used; variable declarations should be grouped together; and so on.</p>
+<p class="baindent">Examples of good and bad programming practice are shown in <a href="#fig6.5">Fig. 6.5</a>. This program uses a Numerical Recipes subroutine (gaussj) to calculate the inverse of a matrix using Gauss-Jordan elimination. It is obvious how much more readable, and understandable, the well-written example is.<a id="page_68" class="page">Page 68, Chapter 6 Computational chemistry</a></p>
+<figure class="image" id="fig6.5">
+<img src="../images/page68-1.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-53em;" epub:type="sidebar">
+Fig. 6.5 Examples of good (bottom) and bad (top) programs. Both these programs perform exactly the same function.</aside>
+</figcaption>
+</figure>
+<p class="noindent"><a id="page_69" class="page" style="width:70%;">Page 69, Chapter 6 Computational chemistry</a></p>
+<h3 class="h3"><b>Optimisations</b></h3>
+<p class="banoindent">Many programs will be fairly trivial and not take up many resources on the machine you are using. However, it may well be the case that the program you have written will take a substantial time to run or will use a lot of memory. If the program will be run often, then it may benefit from some form of optimisation.</p>
+<p class="baindent">Most modern compilers have the ability to perform some optimisations themselves. The optimisation is usually enabled by specifying a command line option in Unix based systems, or in an options menu on Windows-type systems. Different levels of optimisations can usually also be selected &#x2013; different degrees of optimisation are available as it is usually a trade-off between execution time and compilation time. The sorts of optimisations performed by the compilers are things like taking some calculations out of loops (where the variables involved are not changed during the course of the loop), unrolling loops (<i>i.e.</i> repeating code instead of using a loop), moving variables from memory into internal CPU registers when they are accessed often, re-ordering code to make it more efficient, and so on. A few simple examples of this are shown in <a href="#fig6.6">Fig. 6.6</a>.</p>
+<figure id="fig6.6">
+<img src="../images/page69-1.jpg" alt="images"/>
+<figcaption><aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+Fig. 6.6 Code segments showing some simple optimisations. To the left is the original code, and to the right is some optimisations that the compiler may perform. The inner loop is unrolled completely and the outer loop partially, and the multiplication inside the loop is taken to outside the loops to its logically equivalent place.</aside>
+</figcaption>
+</figure>
+<p class="indent">Some or these tnings may seem rather drastic, and indeed they are, so some care must be taken when turning optimisations on. It is always wise to compile and run any program without optimisation first, then add progressive levels and compare the output with the non-optimised version to make sure that the optimisations have not affected the logic of your code. Usually the optimisation procedures used in the compilers are very good, and they do not often cause problems, but it is not unheard of, so some care should be taken.</p>
+<p class="baindent">Although the built-in optimisations are usually very good, they should not &#x2018;over-rule&#x2019; the programmer: if you program poorly, no level of compiler optimisation will get around it. Consequently, you should be aware of good programming in order to get the best out of your program. This is where knowledge of the architecture of the computer pays off. For instance, if you know that you have a 128 kB processor cache on the machine, accessing two memory locations further apart than that will cause un-cached data to be retrieved, thus slowing down the program. If you often access these two items of data together, then if you can arrange for them to be closer together in memory (<i>i.e.</i> declare them next to each other) then the overall efficiency of your program will increase.</p>
+<p class="baindent">Multi-dimensional arrays are another area that causes large inefficiencies. Memory is effectively a one-dimensional structure, so multi-dimensional arrays are usually stored in sequential memory locations as shown in <a href="#fig6.7">Fig. 6.7</a>. The storage may be either row-wise or column-wise, depending on the particular compiler. If, when you come to access the array, the fastest incrementing dimension is not the one that is stored sequentially and the array is large, then large inefficiencies can be introduced.<a id="page_70" class="page">Page 70, Chapter 6 Computational chemistry</a></p>
+<figure id="fig6.7">
+<img src="../images/page70-1.jpg" alt="images"/>
+<figcaption><aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+Fig. 6.7 Row-wise and column-wise storage of an array along with an example of how a 4 &#x00D7; 4 array would be stored for each case</aside>
+</figcaption>
+</figure>
+<p class="baindent">Take for example a 1000 &#x00D7; 1000 array of 32-bit (4-byte) integers on a machine that has a 16 kB cache with 1 kB being read into the cache at a time. Each dimension of the array is about 4 kB long (and the total array is about 4 MB). If the array is stored row-wise, and is accessed in the same way, then each time a 1 kB boundary is crossed, a new chunk of memory will be read in: 4 memory reads will be required for each row and a total of 4 rows can be stored in the cache at any time. If, however, the array is accessed column-wise, and since the &#x2018;consecutive&#x2019; memory locations are then 4 kB apart, each access will cause a memory chunk to be read into cache. After 16 locations have been read, the cache is full, so the next read will replace the oldest data in the cache. Consequently, there will be a memory fetch <i>every time</i> the array is accessed. So making sure that the array access is in the correct order will reduce the memory reads from 1 000 000 to 4000. Obviously this size of cache is quite small these days, but the problem occurs as soon as the whole array will not fit in the cache.</p>
+<p class="baindent">As an illustration of the type of problems that may occur, <a href="#fig6.8">Fig. 6.8</a> shows two C programs. Each of the two programs performs identical tasks, with only the array access order changed. The version of the program shown in <a href="#fig6.8">Fig. 6.8a</a> took 16 s of CPU time on an SG Origin2000, whereas that shown in <a href="#fig6.8">Fig. 6.8b</a> took only 5 s. This difference is also reflected in some of the statistics collected by the system as shown in <a href="#tab6.1">Table 6.1</a>. Here we see that the number of cache misses is considerably larger for program &#x2018;a&#x2019; compared to program &#x2018;b&#x2019;.</p>
+<figure id="fig6.8">
+<img src="../images/page70-2.jpg" alt="images"/>
+<figcaption>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+Fig. 6.8 Programs used to illustrate the significance of array access order</aside>
+</figcaption>
+</figure>
+<p class="noindent"><a id="page_71" class="page" style="width:70%;">Page 71, Chapter 6 Computational chemistry</a></p>
+<p class="baindent">Other problems occur with programs that take up large amounts of memory. Most operating systems now use some form of virtual memory. This is memory that is actually disk storage, but appears to be part of the main memory. In this way expensive RAM can be augmented with much less expensive disk. It also means that programs can be bigger than the total memory of the machine. Virtual memory is also used in multi-user machines to free-up the memory used by quiescent programs for use by active programs: this is termed &#x2018;swapping out&#x2019; (since inactive programs are swapped for active ones), and the virtual memory is usually called <i>swap space</i>. This is all very useful if you want to create and use programs larger than the real memory. But, the same caveats apply as with cache: if you are accessing two items that are both too large to fit into real memory, then the processor is going to spend most of its time swapping data in and out. These disk accesses are very expensive in terms of time and in severe cases the machine can spend much more time swapping, than it does doing real processing (when it gets into such as state, it is usually called <i>thrashing</i> &#x2013; if you ever see the disk activity of a machine in such a state, you will know why&#x0021;).</p>
+<p class="baindent">Many systems provide tools to monitor system parameters that affect the efficiency of your program. These parameters are things such as cache hits/misses (<i>i.e.</i> how well your program and data fit in cache), swaps (<i>i.e.</i> how your program fits in memory), system calls and so on. Careful use of these tools can help in increasing the efficiency of large programs: this will not only speed up your program, but it will also help conserve system resources.</p>
+<p class="baindent">An example of such program statistics is shown in <a href="#tab6.1">Table 6.1</a>. These statistics are taken from the execution of the programs shown in <a href="#fig6.8">Fig. 6.8</a> on an SG Origin2000. Many of the statistics will be fairly meaningless if you are not intimately familiar with the type of machine, but it is obvious, as pointed out above, that there is a big difference in some of the numbers, especially those involving the cache, indicating that there are some inefficiencies in program &#x2018;a&#x2019;.<a id="page_72" class="page">Page 72, Chapter 6 Computational chemistry</a></p>
+<p class="tabcap"><a id="tab6.1"></a>Table 6.1 Statistics collected from programs in <a href="#fig6.8">Fig. 6.8</a> on an SG Origin2000</p>
+<table class="width70tb">
+<tr>
+<td style="vertical-align:top;" class="borbwi50"><p class="table">Event</p></td>
+<td style="vertical-align:top;" class="borbwi25"><p class="tabler">Program A</p></td>
+<td style="vertical-align:top;" class="borbwi25"><p class="tabler">Program B</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Cycles</p></td> <td style="vertical-align:top;"><p class="tabler">1910899872</p></td>
+<td style="vertical-align:top;"><p class="tabler">1001333472</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Issued instructions</p></td>
+<td style="vertical-align:top;"><p class="tabler">1059910784</p></td>
+<td style="vertical-align:top;"><p class="tabler">829866256</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Issued loads</p></td>
+<td style="vertical-align:top;"><p class="tabler">501103984</p></td>
+<td style="vertical-align:top;"><p class="tabler">350376464</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Issued stores</p></td>
+<td style="vertical-align:top;"><p class="tabler">97795392</p></td>
+<td style="vertical-align:top;"><p class="tabler">49987616</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Issued store conditionals</p></td>
+<td style="vertical-align:top;"><p class="tabler">0</p></td>
+<td style="vertical-align:top;"><p class="tabler">0</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Failed store conditionals</p></td>
+<td style="vertical-align:top;"><p class="tabler">0</p></td>
+<td style="vertical-align:top;"><p class="tabler">0</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Decoded branches</p></td>
+<td style="vertical-align:top;"><p class="tabler">50948128</p></td>
+<td style="vertical-align:top;"><p class="tabler">25102320</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Quadwords written back from secondary cache</p></td>
+<td style="vertical-align:top;"><p class="tabler">26357808</p></td>
+<td style="vertical-align:top;"><p class="tabler">11887920</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Correctable secondary cache data array ECC errors</p></td>
+<td style="vertical-align:top;"><p class="tabler">0</p></td>
+<td style="vertical-align:top;"><p class="tabler">0</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Primary instruction cache misses</p></td>
+<td style="vertical-align:top;"><p class="tabler">38288</p></td>
+<td style="vertical-align:top;"><p class="tabler">37968</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Secondary instruction cache misses</p></td>
+<td style="vertical-align:top;"><p class="tabler">944</p></td>
+<td style="vertical-align:top;"><p class="tabler">0</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Instruction misprediction from secondary cache way prediction table</p></td>
+<td style="vertical-align:top;"><p class="tabler">448</p></td>
+<td style="vertical-align:top;"><p class="tabler">608</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">External interventions</p></td>
+<td style="vertical-align:top;"><p class="tabler">17504</p></td>
+<td style="vertical-align:top;"><p class="tabler">9040</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">External invalidations</p></td>
+<td style="vertical-align:top;"><p class="tabler">47808</p></td>
+<td style="vertical-align:top;"><p class="tabler">20016</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Virtual coherency conditions</p></td>
+<td style="vertical-align:top;"><p class="tabler">0</p></td>
+<td style="vertical-align:top;"><p class="tabler">0</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Graduated instructions</p></td>
+<td style="vertical-align:top;"><p class="tabler">912764032</p></td>
+<td style="vertical-align:top;"><p class="tabler">872576608</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Cycles</p></td>
+<td style="vertical-align:top;"><p class="tabler">1910899872</p></td>
+<td style="vertical-align:top;"><p class="tabler">1001333472</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="borbwi50"><p class="tablein">Graduated instructions</p></td>
+<td style="vertical-align:top;" class="borbwi25"><p class="tabler">894354256</p></td>
+<td style="vertical-align:top;" class="borbwi25"><p class="tabler">871503248</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Graduated loads</p></td>
+<td style="vertical-align:top;"><p class="tabler">251947712</p></td>
+<td style="vertical-align:top;"><p class="tabler">278033984</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Graduated stores</p></td>
+<td style="vertical-align:top;"><p class="tabler">50164016</p></td>
+<td style="vertical-align:top;"><p class="tabler">49946032</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Graduated store conditionals</p></td>
+<td style="vertical-align:top;"><p class="tabler">0</p></td>
+<td style="vertical-align:top;"><p class="tabler">0</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Graduated floating point instructions</p></td>
+<td style="vertical-align:top;"><p class="tabler">24808320</p></td>
+<td style="vertical-align:top;"><p class="tabler">25087744</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Quadwords written back from primary data cache</p></td>
+<td style="vertical-align:top;"><p class="tabler">34353360</p></td>
+<td style="vertical-align:top;"><p class="tabler">12092224</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">TLB misses</p></td>
+<td style="vertical-align:top;"><p class="tabler">25951712</p></td>
+<td style="vertical-align:top;"><p class="tabler">6352</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Mispredicted branches</p></td>
+<td style="vertical-align:top;"><p class="tabler">6160</p></td>
+<td style="vertical-align:top;"><p class="tabler">10368</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Primary data cache misses</p></td>
+<td style="vertical-align:top;"><p class="tabler">24879968</p></td>
+<td style="vertical-align:top;"><p class="tabler">6366928</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Secondary data cache misses</p></td>
+<td style="vertical-align:top;"><p class="tabler">3885888</p></td>
+<td style="vertical-align:top;"><p class="tabler">1551776</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Data misprediction from secondary cache way prediction table</p></td>
+<td style="vertical-align:top;"><p class="tabler">14613840</p></td>
+<td style="vertical-align:top;"><p class="tabler">336</p></td></tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">External intervention hits in secondary cache</p></td>
+<td style="vertical-align:top;"><p class="tabler">15936</p></td>
+<td style="vertical-align:top;"><p class="tabler">7776</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">External invalidation hits in secondary cache</p></td>
+<td style="vertical-align:top;"><p class="tabler">10928</p></td>
+<td style="vertical-align:top;"><p class="tabler">5184</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Store/prefetch exclusive to clean block in secondary cache</p></td>
+<td style="vertical-align:top;"><p class="tabler">80</p></td>
+<td style="vertical-align:top;"><p class="tabler">80</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablein">Store/prefetch exclusive to shared block in secondary cache</p></td>
+<td style="vertical-align:top;"><p class="tabler">320</p></td>
+<td style="vertical-align:top;"><p class="tabler">16</p></td>
+</tr>
+</table>
+</section>
+</section>
+</body>
+</html>

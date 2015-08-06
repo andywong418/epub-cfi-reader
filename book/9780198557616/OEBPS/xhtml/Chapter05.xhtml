@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Foundations of Organic Chemistry: Worked Examples</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="ch05"> 
+<a id="page_78" class="page" style="width:70%;">Page 78, Chapter5 Normal modes of vibration</a>
+<h1 class="ch-title">5<span class="space">&#160;</span>Normal modes of vibration</h1>
+<section epub:type="chapter" id="sec5.1">
+<h2 class="main">5.1<span class="space">&#160;</span>Symmetries and normal coordinates</h2>
+<p class="noindent">In <a href="Chapter02.xhtml#sec2.9">Section 2.9</a> we showed how to find the vibrational frequencies of a molecule. To do this we need to know the second derivatives of the potential energy with respect to the nuclear coordinates, since these are the force constants for the vibrational motions. At the end of the calculation we will have obtained a set of vibrational frequencies with a normal coordinate corresponding to each. We may find that some of the vibrations have the same frequency. The appearance of such a degeneracy is not usually an accident. Normal coordinates with the same frequency are generally symmetry-related&#x2014;in the terms of <a href="Chapter04.xhtml">Chapter 4</a> they form a basis for a degenerate irrep of the point group. The reason underlying this observation is that the potential energy of the molecule is invariant to all symmetry operations of the molecular point group. If a molecule is distorted in some way then a symmetry transformation from the point group of the equilibrium geometry must lead to a similar distortion with the same energy. If the force constant for a particular motion is <i>k</i> then the force constant for the transformed motion must also be <i>k.</i> For example, the force constant for distorting the methane molecule by stretching one of the C&#x2013;H bonds must be the same as the force constant for stretching any of the other bonds.</p>
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<p class="sidebar">Normal coordinates for the vibration of a polyatomic molecule generate an irrep of the molecular point group, and thus vibrations can be given symmetry labels.</p></aside>
+<p class="indent">The mass-weighted normal coordinates introduced in <a href="Chapter02.xhtml#sec2.9">Section 2.9</a> are derived so that around the equilibrium configuration the potential energy takes the form</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.1"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>&#x03B1;</mi><mo>,</mo><mi>i</mi></mrow></munder><mrow><msubsup><mi>&#x03C9;</mi><mi>&#x03B1;</mi><mn>2</mn></msubsup></mrow></mstyle><msubsup><mi>Q</mi><mrow><mi>&#x03B1;</mi><mi>i</mi></mrow><mn>2</mn></msubsup></mrow></math></p></td>
+<td style="padding-top:0.5em;">(5.1)</td>
+</tr>
+</table>
+<p class="noindent">The sum over <i>&#x03B1;</i> covers all vibrational frequencies and the sum over <i>i</i> covers all the normal coordinates <i>Q<sub>&#x03B1;i</sub></i> which are associated with the particular frequency <i>&#x03C9;<sub>&#x03B1;</sub>.</i> Now consider a molecule distorted from its equilibrium configuration along one of these normal coordinates. If the distortion is small the potential energy is proportional to the square of the displacement. The effect of a symmetry operation is to transform the distortion to a different (symmetry-related) direction, but the symmetry operation cannot alter the energy of the molecule. The potential energy of the transformed molecule therefore also depends quadratically on the distortion, with the same constant of proportionality. <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>&#x03C9;</mi><mi>&#x03B1;</mi><mn>2</mn></msubsup></mrow></math> Any symmetry transformation of the normal coordinate therefore transforms it to a linear combination of normal coordinates with the same frequency. In consequence a set of normal coordinates with the same frequency acts as a basis for a representation of the point group.</p>
+<p class="indent">If a vibration is nondegenerate no other normal vibration has the same frequency and so the symmetry operation must transform the nor- <a id="page_79" class="page">Page 79, Chapter5 Normal modes of vibration</a>mal coordinate into itself. The normal coordinate must therefore be a basis for a one-dimensional irrep. For a vibration with degeneracy two, at least one symmetry operation mixes the normal coordinates, otherwise there is no symmetry reason for them to have the same frequency. Thus we conclude that the normal coordinates are a basis for a two-dimensional irrep. Similarly, that a set of <i>n</i> independent normal coordinates with a given frequency is a basis for an <i>n</i>-dimensional irrep.</p>
+</section>
+<section epub:type="chapter" id="sec5.2">
+<h2 class="main">5.2<span class="space">&#160;</span>Finding the symmetries of the vibrations</h2>
+<section epub:type="chapter">
+<h3 class="sub"><b>The basis functions</b></h3>
+<p class="noindent">The first step in the method for finding the symmetries of the normal modes of vibration is to set up a basis. This will be a coordinate system which can be used to describe all the possible ways the molecular geometry can be distorted. Many coordinate systems can be used, but the simplest applies a set of Cartesian axes to describe the displacement of each atom in the molecule from its equilibrium position. Three coordinates (<i>x, y, z</i>) are required to measure the displacement of each atom from its equilibrium position, thus the basis contains a total of 3<i>N</i> coordinates. The 3<i>N</i> dimensions cover the 3<i>N</i> &#x2013; 6 vibrational coordinates describing the distortions of the molecule and also the coordinates of the centre of mass, and the orientation of the molecule in space. These three-dimensional sub-spaces describe the translational and rotational motions of the molecule, and can be separated out following reduction of the representation, leaving the 3<i>N</i> - 6 normal vibrational coordinates.</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<p class="sidebar">The basis used is a set of 3<i>N</i> coordinates which describe every possible way of moving the <i>N</i> atoms in the molecule. The representation obtained contains all the possible motions of the molecule: vibration, rotation and translation.</p></aside>
+<p class="indent">The method will be illustrated using methane as an example. The coordinate system employed is depicted in <a href="#fig5.1">Fig. 5.1</a>.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="sub"><b>The representation</b></h3>
+<p class="noindent">The next stage is to use the basis to generate characters for a representation of the group. As in <a href="Chapter04.xhtml">Chapter 4</a> the characters are worked out by considering the effect on the basis coordinates of one symmetry operation in each class. If an atom is moved by a symmetry operation, its coordinate system is transformed to a system based on a different location, and contributes nothing to the character. The only atoms that are not moved lie on the symmetry element and the symmetry operation has the same effect on all such coordinate systems.</p>
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<figure class="fig1" id="fig5.1">
+<img src="../images/Fig5.1.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 5.1</b> Displacement coordinates for methane</p></figcaption></figure>
+</aside>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="sidebar">A symmetry operation has the same effect on all axis systems whose origin lies on the symmetry element.</p></aside>
+<p class="indent">For example, reflection in the <i>&#x03C3;<sub>d</sub></i> plane passing through H atoms 1 and 2 in <a href="#fig5.2">Fig. 5.2</a> will leave both these atoms and the central C atom unmoved, whereas atoms 3 and 4 will be interchanged. The coordinate systems for atoms 3 and 4 therefore contribute nothing to the character. The other three atoms each have coordinate systems whose origins lie in the <i>&#x03C3;<sub>d</sub></i> plane. Reflection has the same effect on all three sets of axes. If they are oriented as in <a href="#fig5.2">Fig. 5.2</a>, then on reflection the unit vectors along the <i>x</i> and <i>y</i> directions are interchanged, giving zero contribution to the character, whereas the vector along the <i>z</i> axis is invariant. Thus, each axis system gives a total contribution to the character of 1, and the <a id="page_80" class="page">Page 80, Chapter5 Normal modes of vibration</a>character for the <i>&#x03C3;<sub>d</sub></i> class is 3 (1 for each atom).</p>
+<p class="indent">We see that the representation can be generated in two ways:</p>
+<p class="nlista">1.<span class="space">&#160;</span>Consider the whole basis and determine the effects of the symmetry operations (representation &#x0393;<sup>(</sup><i><sup>d</sup></i><sup>)</sup>,<i>d</i> for displacement).</p>
+<p class="nlista">2.<span class="space">&#160;</span>Consider two smaller representations: the first generated by counting the number of atoms that do not move for each symmetry operation, (&#x0393;<sup>(</sup><i><sup>a</sup></i><sup>)</sup><i>, a</i> for atoms), and the other generated by an axis system placed at the centre of mass of the molecule, which is static in all symmetry operations (&#x0393;(<i>t</i>), <i>t</i> for translation). The required representation is obtained by multiplying the character of each symmetry operation in &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup> by the number of atoms not moved by the operation, the <i>direct product</i> &#x0393;<sup>(</sup><i><sup>a</sup></i><sup>)</sup> &#x00D7; &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup> (see <a href="Chapter04.xhtml#sec4.9">Section 4.9</a>).</p>
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+<figure class="fig1" id="fig5.2">
+<img src="../images/Fig5.2.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 5.2</b> <i>&#x03C3;<sub>d</sub></i> operation for methane</p></figcaption></figure>
+</aside>
+<p class="noindentt">Both methods are perfectly satisfactory. In practice the second is easier, since to find &#x0393;<sup>(</sup><i><sup>a</sup></i><sup>)</sup> we simply count the atoms that do not move, and for &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup> there is only one coordinate system to worry about. &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup> is usually identified in character tables, in rows labelled <i>x, y, z</i> as appropriate (sometimes <i>T<sub>x</sub>,T<sub>y</sub>,T<sub>z</sub></i>)<i>.</i> To obtain the characters of &#x0393;<sup>(</sup><i><sup>d</sup></i><sup>)</sup> we multiply the characters of the two smaller representations. The characters for the methane molecule are given in <a href="#tab5.1">Table 5.1</a>.</p>
+<p class="tab-cap" id="tab5.1"><b>Table 5.1.</b> Representation generated by atomic displacements in methane</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>R</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c"><i>E</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">8<i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">3<i>C</i><sub>2</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">6<i>S</i><sub>4</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">6&#x03C3;<i><sub>d</sub></i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">&#x0393;<sup>(</sup><i><sup>d</sup></i><sup>)</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-c">15</p></td>
+<td style="vertical-align:top;"><p class="tab-c">0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">3</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">&#x0393;<sup>(</sup><i><sup>a</sup></i><sup>)</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-c">5</p></td>
+<td style="vertical-align:top;"><p class="tab-c">2</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">3</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">&#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-c">3</p></td>
+<td style="vertical-align:top;"><p class="tab-c">0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">1</p></td>
+</tr>
+</table>
+<p class="indent">&#x0393;<sup>(</sup><i><sup>d</sup></i><sup>)</sup> can be decomposed using the reduction formula, <a href="Chapter04.xhtml#eq4.28">eqn 4.28</a>, giving</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.2"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>&#x0393;</mi><mrow><mo stretchy='false'>(</mo><mi>d</mi><mo stretchy='false'>)</mo></mrow></msup><mo>=</mo><msub><mi>A</mi><mn>1</mn></msub><mo>+</mo><mi>E</mi><mo>+</mo><msub><mi>T</mi><mn>1</mn></msub><mo>+</mo><mn>3</mn><msub><mi>T</mi><mn>2</mn></msub></mrow></math></p></td>
+<td>(5.2)</td>
+</tr>
+</table>
+<p class="noindent">There are four triply degenerate irreps, one doubly degenerate irrep and one nondegenerate irrep. However, this 15-dimensional representation includes translations and rotations as well as internal motions. Our next task is to identify the symmetries of the translations and rotations and to remove them, leaving the symmetries of the 9 vibrational coordinates.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="sub"><b>Translations and rotations</b></h3>
+<p class="noindent">In practice it is very easy to identify translations and rotations, since their symmetries are given in the character table. Since the potential energy of a molecule is not altered by moving its centre of mass, translation is represented by a set of normal coordinates with a frequency of zero. The normal translational coordinates describe the motion of the centre of mass, and can be represented by displacements in a coordinate system at the centre of mass of the molecule. We have just considered the representation generated by this basis, it is &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup>, and in the case of the methane molecule it accounts for one of the <i>T</i><sub>2</sub> irreps we have found.</p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<p class="sidebar">The symmetries of the translations and rotations are identified in standard character tables.</p></aside>
+
+<p class="indent"><a id="page_81" class="page">Page 81, Chapter5 Normal modes of vibration</a>&#160;&#160;&#160; Changing the orientation of a molecule does not alter its potential energy either, and so the rotational normal coordinates are also associated with a force constant of zero. Rotations are represented by a set of orthogonal vectors based at the centre of mass. However, these (axial) vectors are different from normal (polar) vectors, because they represent angular momentum. Their direction is determined from the direction of rotation by the right-hand screw rule. The difference in transformation properties can be illustrated by considering the reflection in the <i>xy</i> plane of a vector directed along the <i>x</i> axis, as illustrated in <a href="#fig5.3">Fig. 5.3</a>. The <i>x</i> axis points out of the plane of the paper and the arrows indicate the direction of rotation. Clearly the rotation changes from clockwise to anticlockwise in the reflection, and so the angular momentum reverses its direction, whereas a polar vector along the <i>x</i> direction would be invariant to the reflection. In the point group <i>T<sub>d</sub></i> three orthogonal axial vectors based on the centre of mass have <i>T</i><sub>1</sub> symmetry. However, it is not usually necessary to work this out&#x2014;the representation generated by the three rotational degrees of freedom, <i>&#x0393;</i><sup>(</sup><i><sup>r</sup></i><sup>)</sup>, is identified in published character tables, where it is is labelled <i>R<sub>x</sub></i>, <i>R<sub>y</sub></i> and <i>R<sub>z</sub>.</i> For methane, a glance at the <i>T<sub>d</sub></i> character table (<a href="Chapter04.xhtml#tab4.6">Table 4.6</a>, page 68) shows that the rotations have <i>T</i><sub>1</sub> symmetry. The triple degeneracy is an indication that three principal components of the moment of inertia are equal so that methane is a spherical top (see <a href="Chapter03.xhtml#sec3.5">Section 3.5</a>).</p>
+<aside class="abc" style="margin-top:-22em;" epub:type="sidebar">
+<figure class="fig1" id="fig5.3">
+<img src="../images/Fig5.3.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 5.3</b> Reflection of an axial vector. The arrows indicate the direction of rotation.</p></figcaption></figure>
+</aside>
+<p class="indent">The symmetries of the vibrations are found by subtracting the translations and the rotations from &#x0393;<sup>(</sup><i><sup>d</sup></i><sup>)</sup> :</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.3"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mo>&#x0393;</mo><mrow><mo stretchy='false'>(</mo><mi>v</mi><mo stretchy='false'>)</mo></mrow></msup><mo>=</mo><msup><mo>&#x0393;</mo><mrow><mo stretchy='false'>(</mo><mi>d</mi><mo stretchy='false'>)</mo></mrow></msup><mo>&#x2212;</mo><msup><mo>&#x0393;</mo><mrow><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo></mrow></msup><mo>&#x2212;</mo><msup><mo>&#x0393;</mo><mrow><mo stretchy='false'>(</mo><mi>r</mi><mo stretchy='false'>)</mo></mrow></msup></mrow></math></p></td>
+<td>(5.3)</td>
+</tr>
+</table>
+<p class="noindent">In methane the vibrational symmetries are therefore <i>A</i><sub>1</sub> &#x002B;<i>E</i> &#x002B;2<i>T</i><sub>2</sub>. Even though there are nine normal vibrations there are only four distinct vibrational frequencies&#x2014;one is nondegenerate <i>(&#x0391;</i><sub>1</sub>)<i>,</i> one is doubly degenerate (<i>E</i>), and two are triply degenerate (2<i>T</i><sub>2</sub>). The forms of the <i>A</i><sub>1</sub> and <i>E</i> normal coordinates can be found by using projection operators, but to separate the two <i>T</i><sub>2</sub> bases requires more detailed analysis, because they have the same symmetry. Note, however, that the number of distinct frequencies, their symmetries and degeneracies have been found from group theory without any knowledge of the force constant matrix whatsoever. Group theory is a vital tool for the analysis of vibrations.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="sidebar" id="pro5.2.1"><b>Problem 5.2.1.</b> <i>Find the symmetries and degeneracies of the normal vibrational coordinates of the following species: NH</i><sub>3</sub><i>, cis- and trans-CHF: CHF, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi><mi>u</mi><mi>C</mi><msubsup><mi>l</mi><mn>4</mn><mo>&#x2212;</mo></msubsup></mrow></math>.</i></p></aside>
+</section>
+<section epub:type="chapter">
+<h3 class="sub"><b>Stretching vibrations</b></h3>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<p class="sidebar">To find the symmetries of the bond stretching vibrations the basis coordinates are unit vectors directed along the equilibrium bond directions.</p></aside>
+<p class="noindent">The preceding method gives the symmetries of all the normal modes of vibration of a molecule. It is often useful to concentrate on the part of an infra-red spectrum where the vibrations can be approximately characterized as bond stretches. For example, inorganic carbonyl compounds have characteristic infra-red absorptions around 2000 cm<sup>&#x2013;1</sup> which give important structural information. In fact, it is generally easier to find the symmetries of the stretching vibrations than it is to find all the normal coordinate symmetries. If we use a basis of displacement coordinates representing distortion of the molecule along the equilibrium bond <a id="page_82" class="page">Page 82, Chapter5 Normal modes of vibration</a>directions we will find the appropriate representation immediately.</p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="sidebar" id="pro5.2.2"><b>Problem 5.2.2.</b> <i>Generate the representation for the stretching vibrations of methane and show that it is equal to A</i><sub>1</sub>&#x002B; <i>T</i><sub>2</sub></p></aside>
+<p class="indent">In the methane molecule the stretching vibrations are motions of the H atoms along their equilibrium directions. We therefore choose displacement coordinates directed along the bonds. To generate the representation we simply count how many of the bonds are invariant for each symmetry operation. Thus, for example the reflection in the <i>&#x03C3;<sub>d</sub></i> plane containing H atoms 1 and 2, depicted in <a href="#fig5.2">Fig. 5.2</a>, leaves C-H bonds 1 and 2 invariant, and interchanges C-H bonds 3 and 4. The character in the representation is therefore 2.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="tab-cap" id="tab5.2"><b>Table 5.2</b> Vibrations of methane</p>
+<table class="width100b" style="margin-bottom:1em; width:80%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">Symmetry</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c"><i>&#x03C9;<sub>e</sub></i> / cm <sup>&#x2013;1</sup></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><i>A</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-c">3143</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-c">1534</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><i>T</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-c">3019</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><i>T</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-c">1306</p></td>
+</tr>
+</table>
+</aside>
+<p class="indent">In a problem like this we do not need to subtract translations and rotations, since the basis only includes distortions along the bond directions. Neither translation nor rotation involves such distortions. We. therefore conclude that the <i>A</i><sub>1</sub> vibration and one of the <i>T</i><sub>2</sub> vibrations of methane are C-H stretches, which we expect to find around 3000 cm<sup>&#x2013;1</sup>. The vibrational frequencies of methane and*their symmetries are given in <a href="#tab5.2">Table 5.2</a>.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec5.3">
+<h2 class="main">5.3<span class="space">&#160;</span>Symmetries of vibrational wavefunctions</h2>
+<p class="noindent">As shown in <a href="Chapter02.xhtml#sec2.9">Section 2.9</a> the vibrational wavefunctions of polyatomic molecules can be expressed as products of simple harmonic oscillator wavefunctions, each of which is a function of one normal coordinate. Each simple harmonic oscillator wavefunction, <i>&#x03D5;<sub>i</sub>,</i> has a characteristic frequency <i>&#x03C9;<sub>i</sub></i> and a vibrational quantum number <i>&#x03C5;<sub>i</sub>.</i> The energy of the molecule relative to the zero-point energy level is given by the sum of all the separate harmonic oscillator energies, i.e.</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.4"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msub><mi>v</mi><mi>i</mi></msub><mi>&#x210F;</mi><msub><mi>w</mi><mi>i</mi></msub></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(5.4)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<p class="sidebar" id="pro5.2.3"><b>Problem 5.2.3.</b> <i>The CO</i> <i>stretching vibrations of metal carbonyls can be used to distinguish between isomers. Find the symmetries of the C=O stretching modes of both mer- and fac-isomers of the type ML</i><sub>3</sub><i>(CO)</i><sub>3</sub><i>.</i></p></aside>
+<p class="noindent">The quantum number for each normal mode is interpreted as the number of quanta in the vibration.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="sidebar">Because the normal coordinates of vibration generate irreps of the molecular point group, vibrational wavefunctions can also be given symmetry labels.</p></aside>
+<section epub:type="chapter">
+<h3 class="sub"><b>The ground state</b></h3>
+<p class="noindent">For the sake of understanding vibrational spectra it is important to clarify the relationships between the symmetries of the normal coordinates and the symmetries of the possible-vibrational wavefunctions. We start with the vibrational ground state. Reference to <a href="Chapter02.xhtml#sec2.9">Sections 2.9</a> and <a href="Chapter03.xhtml#sec3.3">3.3</a> shows that the ground state wavefunction is of the form (cf <a href="Chapter03.xhtml#eq3.14">eqn 3.14</a>).</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.5"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C8;</mi><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><mi>exp</mi><mo stretchy='false'>(</mo><mo>&#x2212;</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>a</mi><mo>,</mo><mi>i</mi></mrow></munder><mrow><msub><mi>&#x03C9;</mi><mi>&#x03B1;</mi></msub><msubsup><mi>Q</mi><mrow><mi>&#x03B1;</mi><mi>i</mi></mrow><mn>2</mn></msubsup><mo>/</mo><mn>2</mn><mi>&#x210F;</mi></mrow></mstyle><mo stretchy='false'>)</mo></mrow></math></p></td>
+<td style="padding-top:0.5em;">(5.5)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-10.8em;" epub:type="sidebar">
+<p class="sidebar">The ground state vibrational wavefunction is totally symmetric.</p></aside>
+<p class="indent">The sum <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle='true'><mo>&#x2211;</mo><mrow><msub><mrow></mrow><mi>i</mi></msub><msubsup><mi>Q</mi><mrow><mi>&#x03B1;</mi><mi>i</mi></mrow><mn>2</mn></msubsup></mrow></mstyle></mrow></math> over all normal coordinates with frequency <i>&#x03C9;<sub>&#x03B1;</sub></i> is invariant to every symmetry operation of the point group because the set of normal coordinates with a given frequency forms a basis for a representation of the group. If these normal coordinates are arranged in a vector, Q<i><sub>&#x03B1;</sub></i>, then the sum can be written as the scalar product <a id="page_83" class="page">Page 83, Chapter5 Normal modes of vibration</a>which is invariant to all symmetry operations, as proved in <a href="Chapter04.xhtml#sec4.1">Section 4.1</a>. In consequence, the exponent in <a href="#eq5.5">eqn 5.5</a> is invariant to all symmetry operations and therefore the ground vibrational wavefunction is totally symmetric.</p>
+
+
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.6"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msubsup><mi>Q</mi><mrow><mi>&#x03B1;</mi><mi>i</mi></mrow><mn>2</mn></msubsup><mo>=</mo><msubsup><mi>Q</mi><mi>&#x03B1;</mi><mi>T</mi></msubsup><msub><mi>Q</mi><mi>&#x03B1;</mi></msub></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(5.6)</td>
+</tr>
+</table>
+</section>
+<section epub:type="chapter">
+<h3 class="sub"><b>Fundamental states</b></h3>
+<p class="noindent">In the <i>fundamental</i> states, only one normal mode is excited with a single quantum. If mode <i>j</i> is excited, the wavefunction has the form (see <a href="Chapter03.xhtml#tab3.1">Table 3.1</a>)</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.7"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C8;</mi><mo>=</mo><msub><mi>N</mi><mn>1</mn></msub><msub><mi>Q</mi><mi>j</mi></msub><mi>exp</mi><mo stretchy='false'>(</mo><mo>&#x2212;</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>&#x03B1;</mi><mo>,</mo><mi>i</mi></mrow></munder><mrow><msub><mi>&#x03C9;</mi><mi>&#x03B1;</mi></msub><msubsup><mi>Q</mi><mrow><mi>&#x03B1;</mi><mi>i</mi></mrow><mn>2</mn></msubsup><mo>/</mo><mn>2</mn><mi>&#x210F;</mi></mrow></mstyle><mo stretchy='false'>)</mo></mrow></math></p></td>
+<td style="padding-top:0.5em;">(5.7)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<p class="sidebar">If there is a single quantum in a vibration, the vibrational wavefunction has the same symmetry as the normal coordinate.</p></aside>
+<p class="noindent">As we have just shown, the exponential term is totally symmetric, and so the wavefunction must have the same symmetry as the normal coordinate <i>Q<sub>j</sub>.</i></p>
+</section>
+<section epub:type="chapter">
+<h3 class="sub"><b>Combination states</b></h3>
+<p class="noindent">There are also higher excited vibrational states with several quanta of excitation, for example the <i>combination</i> states in which two vibrations are excited with one quantum in each. The symmetry of the resulting state is obtained from the direct product of the two constituent normal mode symmetries. If one of the normal modes is degenerate the resulting direct product representation may also be degenerate. For example the methane molecule has two vibrations of symmetry <i>T</i><sub>2</sub> but different frequencies. In the possible combination states, where there is one quantum in each, the resulting wavefunctions generate the representation <i>T</i><sub>2</sub> &#x00D7; <i>T</i><sub>2</sub> = <i>A</i><sub>1</sub> &#x002B; <i>E</i> &#x002B; <i>T</i><sub>1</sub><i> &#x002B; T</i><sub>2</sub><i>.</i> There is no symmetry reason for all these nine states to be mutually degenerate, and once anharmonic corrections have been applied we find four energy levels with degeneracies 1, 2, 3 and 3, as indicated by group theory.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="sub"><b>Overtone states</b></h3>
+<p class="noindent">Another important type of higher state is the first <i>overtone</i> state, in which a given vibrational frequency is excited with two quanta. In the case of a nondegenerate vibration the direct product must give a totally symmetric state. Overtones of degenerate vibrations are more complicated. Because we are now considering the representation generated by the direct product of a basis with itself, the antisymmetrized direct product is identically zero, leaving us with only the symmetrized direct product, as discussed in <a href="Chapter04.xhtml#sec4.9">Section 4.9</a>. This result can be understood qualitatively in the following way. The possibilities for the first overtone of an <i>n</i>-fold degenerate vibration are to put two vibrational quanta into the same normal coordinate, or to put one in each of two distinct degenerate coordinates. The total number of ways of doing this is <i>n</i> for the former <a id="page_84" class="page">Page 84, Chapter5 Normal modes of vibration</a>possibility and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>n</mi><mrow><mo>(</mo><mrow><mi>n</mi><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math> for the latter, giving a total of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>n</mi><mrow><mo>(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>. In the case of the overtone of a <i>T</i><sub>2</sub> vibration in methane, the symmetrized direct products were worked out in <a href="Chapter04.xhtml#sec4.9">Section 4.9</a> and are <i>A</i><sub>1</sub><i> &#x002B; E &#x002B; T</i><sub>2</sub><i>.</i></p>
+<p class="indent">The detailed analysis of the symmetry of higher overtone states for degenerate vibrations is complicated. The total number of possibilities for a vibration of degeneracy <i>n</i> containing <i>m</i> quanta is <sup>5</sup> (<i>n</i> &#x002B; <i>m &#x2013;</i> 1)&#x0021;/ (<i>n</i> &#x2013; 1)&#x0021;<i>m</i>&#x0021;. This formula is important in the theory of unimolecular reactions, since it represents the approximate degeneracy of a highly excited vibrational energy level.<sup>6</sup></p>
+</section>
+</section>
+<section epub:type="chapter" id="sec5.4">
+<h2 class="main">5.4<span class="space">&#160;</span>Vibrational spectra</h2>
+<section epub:type="chapter">
+<h3 class="sub"><b>Infra-red spectrum</b></h3>
+<p class="noindent">If a molecule absorbs light of an appropriate frequency (usually in the infra-red region) it is excited from one vibrational state to another. The strongest bands in the spectrum generally correspond to excitations from the ground state to a fundamental state (i.e. to excitation of one normal mode only). However, not all the possible fundamental states can be produced in this way, and so not all the fundamental vibrational frequencies appear in the infra-red spectrum.</p>
+<aside class="abc" style="margin-top:-7.3em;" epub:type="sidebar">
+<p class="sidebar">Vibrations are infra-red active if they have the same symmetry as some component of the dipole moment operator, &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup></p></aside>
+<p class="indent">Light consists of an oscillating electric field, which interacts with an oscillating dipole moment in the molecule. Thus, on a simple level, only vibrations in which the molecular dipole moment changes with the vibrational motion can be seen in the spectrum. This idea can be made more precise by using the methods of <a href="Chapter01.xhtml#sec1.7">Section 1.7</a>. The excited wave-function <i>|i &#x003E;</i> and the ground state wavefunction |0 &#x003E; are mixed by the interaction of the light with the electric dipole moment of the molecule. The dipole moment operator is a vector with components <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>&#x03BC;</mi><mo>&#x005E;</mo></mover><mi>x</mi></msub><mo>,</mo><msub><mover accent='true'><mi>&#x03BC;</mi><mo>&#x005E;</mo></mover><mi>y</mi></msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>&#x03BC;</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub></mrow></math> and therefore has the same symmetry as a vector based on the centre of mass, &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup>, as discussed above. The intensity of the transition is proportional to the quantity</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.8"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle='true'><munderover><mo>&#x2211;</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mn>3</mn></munderover><mrow><mi>&#x007C;</mi><mo>&#x003C;</mo><mi>i</mi><mi>&#x007C;</mi><msub><mover accent='true'><mi>&#x03BC;</mi><mo>&#x005E;</mo></mover><mi>k</mi></msub><mi>&#x007C;</mi><mn>0</mn><mo>&#x003E;</mo><msup><mi>&#x007C;</mi><mn>2</mn></msup></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:1em;">(5.8)</td>
+</tr>
+</table>
+<p class="indent">If all three integrals <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x003C;</mo><mi>i</mi><mi>&#x007C;</mi><msub><mover accent='true'><mi>&#x03BC;</mi><mo>&#x005E;</mo></mover><mi>k</mi></msub><mi>&#x007C;</mi><mn>0</mn><mo>&#x003E;</mo></mrow></math> are zero then the vibration does not alter the dipole moment of the molecule in any direction. The transition is then symmetry-forbidden, and we do not expect to see it in the infra-red spectrum. If at least one of these integrals is nonzero then the vibration is said to be infra-red active. But we can tell whether there is a symmetry reason for these integrals to vanish by considering whether the direct product representation &#x0393;<sup>(</sup><i><sup>i</sup></i><sup>)</sup> &#x00D7; &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup> &#x00D7; &#x0393;<sup>(0)</sup> contains the totally symmetric irrep. Since the ground state wavefunction is totally symmetric we have</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.9"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mo>&#x0393;</mo><mrow><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></msup><mo>&#x00D7;</mo><msup><mo>&#x0393;</mo><mrow><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow></msup><mo>&#x00D7;</mo><msup><mo>&#x0393;</mo><mrow><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></msup><mo>=</mo><msup><mo>&#x0393;</mo><mrow><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></msup><mo>&#x00D7;</mo><msup><mo>&#x0393;</mo><mrow><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow></msup></mrow></math></p></td>
+<td>(5.9)</td>
+</tr>
+</table>
+<p class="noindent">Following the discussion of vanishing integrals in <a href="Chapter04.xhtml#sec4.8">Section 4.8</a>, a necessary and sufficient condition for the integrand to be totally symmetric is for <a id="page_85" class="page">Page 85, Chapter5 Normal modes of vibration</a>the representation &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup> to contain the irrep &#x0393;<sup>(</sup><i><sup>i</sup></i><sup>)</sup>, in other words, for the vibrational symmetry to be the same as some component of the dipole moment operator. For the methane molecule &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup> = <i>T</i><sub>2</sub><i>,</i> and hence only the two triply degenerate vibrations of symmetry <i>T</i><sub>2</sub> are infra-red active. The two remaining vibrations, of symmetry <i>A</i><sub>1</sub> and <i>E</i>, are not observed in the infra-red spectrum.</p>
+<p class="indent">In a molecule with a unique figure axis it is also possible to use group theory to distinguish <i>parallel</i> and <i>perpendicular</i> vibrations. A parallel vibration causes the dipole moment to oscillate parallel to the figure axis. It therefore has the same symmetry as the <i>z</i> component of the dipole moment operator. A perpendicular vibration has the same symmetry as the <i>x</i> and <i>y</i> components of the dipole moment operator. It is easy to distinguish parallel and perpendicular vibrations in the infra-red spectrum because they have different rotational fine structures,<sup>3</sup> as can be seen for bromomethane in <a href="#fig5.4">Fig. 5.4</a>.</p>
+<aside class="abc" style="margin-top:-8.75em;" epub:type="sidebar">
+<p class="sidebar" id="pro5.4.1"><b>Problem 5.4.1.</b> <i>Find the symmetries of the normal modes of vibration for the bromomethane molecule, identify those which, are infra-red active and classify them as parallel or perpendicular.</i></p></aside>
+<figure class="fig1" id="fig5.4">
+<img src="../images/Fig5.4.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 5.4</b> Parallel and perpendicular vibrations in the infra-red spectrum of bromomethane. The band with a smooth double hump appearance centred around 1300 cm<sup>&#x2013;1</sup> is characteristic of a parallel vibration (<i>A</i><sub>1</sub> symmetry). The band which appears as a series of spikes around 1450 cm<sup>&#x2013;1</sup> is characteristic of a perpendicular vibration (<i>E</i> symmetry). The differences come from the different rotational selection rules associated with each type of transition, see reference 3.</p></figcaption></figure>
+</section>
+<section epub:type="chapter">
+<h3 class="sub"><b>Raman spectrum</b></h3>
+<p class="noindent">In the vibrational Raman spectrum a photon is scattered off the molecule with a change in frequency and the molecule is left in a new vibrational state. This is a two-photon process, whose intensities depend on the polarizability operator <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>&#x03B1;</mi><mo>&#x005E;</mo></mover></math><i>.</i> The intensity of a transition is proportional to the quantity</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.10"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle='true'><munderover><mo>&#x2211;</mo><mrow><mi>j</mi><mo>,</mo><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mn>3</mn></munderover><mrow><mi>&#x007C;</mi><mo>&#x003C;</mo><mi>i</mi><mi>&#x007C;</mi><msub><mover accent='true'><mi>&#x03B1;</mi><mo>&#x005E;</mo></mover><mrow><mi>j</mi><mi>k</mi></mrow></msub><mi>&#x007C;</mi><mn>0</mn><mo>&#x003E;</mo><msup><mi>&#x007C;</mi><mn>2</mn></msup></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:1em;">(5.10)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-10.2em;" epub:type="sidebar">
+<p class="sidebar">Vibrations are Raman active if they have the same symmetry as some component of the polarizability operator, the symmetrized direct product &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup> &#x00D7; &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup></p></aside>
+
+<p class="indent"><a id="page_86" class="page">Page 86, Chapter5 Normal modes of vibration</a>&#160;&#160;&#160; The symmetry of the polarizability operator is the same as the successive application of the dipole moment operator twice, emphasizing that the Raman effect is a two-photon process. The process can be thought of as absorption of a photon to a <i>virtual state</i> followed by rapid emission of another photon. The polarizability operator generates the symmetrized direct product representation &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup> &#x00D7; &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup>, which is the same as the representation generated by the quadratic combinations of the Cartesian coordinates, <i>x</i><sup>2</sup>, <i>y</i><sup>2</sup>, <i>z</i><sup>2</sup>, <i>xy, xz</i> and <i>yz.</i> The relevant representations are identified in published character tables. The intensity of the Raman line is zero by symmetry unless the matrix element of some component of the polarizability is totally symmetric, i.e. unless the excited vibrational state has the same symmetry as a component of the polarizability. In the point group <i>T<sub>d</sub></i> we have already worked out the symmetrized direct product <i>T</i><sub>2</sub><i> &#x00D7; T</i><sub>2</sub><i> = A</i><sub>1</sub><i> &#x002B; E &#x002B; T</i><sub>2</sub><i>.</i> We therefore conclude that all the vibrations of methane are Raman active.</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<p class="sidebar" id="pro5.4.2"><b>Problem 5.4.2.</b> <i>The</i> <i>pattern of vibrations found in the infra-red and the Raman spectrum is an important piece of structural injormation. How could you expect to distinguish mer-and fac- ML</i><sub>3</sub><i>(CO)</i><sub>3</sub><i> on the basis of the CO stretching frequencies found in each spectrum?</i> (<i>See <a href="#pro5.2.3">Problem 5.2.3</a></i>)<i>.</i></p></aside>
+<p class="indent">The result of <a href="#pro5.4.3">Problem 5.4.3</a> illustrates the so-called <i>mutual exclusion rule.</i> It will be noticed that no vibration of <i>trans</i>-CHF:CHF is both infrared active and Raman active. This observation illlustrates a general rule for molecules with a centre of symmetry, and arises because the dipole moment operator has <i>u</i> symmetry with respect to inversion, whereas the polarizability operator has <i>g</i> symmetry. Thus only vibrations with <i>u</i> symmetry are infra-red active, and only vibrations with <i>g</i> symmetry are Raman active. It is not possible to be both <i>g</i> and <i>u</i> at the same time since they designate opposite transformation properties with respect to inversion&#x2014;thus no vibration can be found in both spectra if the molecule has a centre of symmetry.</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<p class="sidebar" id="pro5.4.3"><b>Problem 5.4.3.</b> <i>Find the symmetries of the vibrations of cis-and trans- CHF:CHF and decide which of them should be infra-red active, and which Raman active.</i></p></aside>
+<p class="ref"><b>References</b></p>
+<p class="refl">1.<span class="space">&#160;</span>Wilson, E. B., Decius J. C. and Cross, P. C. (1980). <i>Molecular vibrations.</i> Dover, New York.</p>
+<p class="refl">2.<span class="space">&#160;</span>Woodward, L. A. (1972). <i>Introduction to the theory of molecular vibrations and vibrational spectroscopy.</i> Oxford University Press, Oxford.</p>
+<p class="refl">3.<span class="space">&#160;</span>Herzberg, G. (1945). <i>Infrared and Raman spectra of polyatomic molecules,</i> van Nostrand Reinhold, New York.</p>
+<p class="refl">4.<span class="space">&#160;</span>Califano, S. (1976). <i>Vibrational states.</i> Wiley, New York.</p>
+<p class="refl">5.<span class="space">&#160;</span>Feller, W. (1968). <i>An introduction to probability theory and its applications,</i> 3rd ed. Wiley, New York.</p>
+<p class="refl">6.<span class="space">&#160;</span>Pilling, M. J. and Seakins, P. W. (1996) <i>Reaction kinetics. Oxford University Press, Oxford.</i></p>
+</section>
+</section>
+</section>
+</body>
+</html>

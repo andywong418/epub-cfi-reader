@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="p9780198504290">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:identifier id="p9780198504290">978-0-19-850429-0</dc:identifier>
+<dc:title>Foundations of Science Mathematics: Worked Problems</dc:title>
+<dc:language>en-US</dc:language>
+<dc:creator>D. S. Sivia and S. G. Rawlings</dc:creator>
+<dc:publisher>Oxford University Press</dc:publisher>
+<meta property="dcterms:modified">2015-05-16T16:38:35Z</meta>
+<meta name="cover" content="cover-image"/>
+</metadata>
+<manifest>
+<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="toc" properties="nav" href="xhtml/toc.xhtml" media-type="application/xhtml+xml"/>
+<item id="stylesheet" href="styles/stylesheet.css" media-type="text/css"/>
+<item id="Oxford" href="xhtml/Oxford_chemistry_primers.xhtml" media-type="application/xhtml+xml"/>
+<item id="title" href="xhtml/Titlepage.xhtml" media-type="application/xhtml+xml"/>
+<item id="copyright" href="xhtml/Copyrightpage.xhtml" media-type="application/xhtml+xml"/>
+<item id="Foreword" href="xhtml/Series_Editors_Foreword.xhtml" media-type="application/xhtml+xml"/>
+<item id="Preface" href="xhtml/Preface.xhtml" media-type="application/xhtml+xml"/>
+<item id="contents" href="xhtml/Contents.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter01" href="xhtml/Chapter01.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter02" href="xhtml/Chapter02.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter03" href="xhtml/Chapter03.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter04" href="xhtml/Chapter04.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter05" href="xhtml/Chapter05.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter06" href="xhtml/Chapter06.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter07" href="xhtml/Chapter07.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter08" href="xhtml/Chapter08.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter09" href="xhtml/Chapter09.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter10" href="xhtml/Chapter10.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter11" href="xhtml/Chapter11.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter12" href="xhtml/Chapter12.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter13" href="xhtml/Chapter13.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter14" href="xhtml/Chapter14.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter15" href="xhtml/Chapter15.xhtml" media-type="application/xhtml+xml"/>
+<item id="Index" properties="remote-resources scripted mathml" href="xhtml/Index.xhtml" media-type="application/xhtml+xml"/>
+
+<item id="script001" href="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" media-type="text/jscript"/>
+
+<item id="img15" href="images/img15.jpg" media-type="image/jpeg"/>
+<item id="img16" href="images/img16.jpg" media-type="image/jpeg"/>
+<item id="img16b" href="images/img16b.jpg" media-type="image/jpeg"/>
+<item id="img22" href="images/img22.jpg" media-type="image/jpeg"/>
+<item id="img24" href="images/img24.jpg" media-type="image/jpeg"/>
+<item id="img25" href="images/img25.jpg" media-type="image/jpeg"/>
+<item id="img25a" href="images/img25a.jpg" media-type="image/jpeg"/>
+<item id="img25b" href="images/img25b.jpg" media-type="image/jpeg"/>
+<item id="img26" href="images/img26.jpg" media-type="image/jpeg"/>
+<item id="img28" href="images/img28.jpg" media-type="image/jpeg"/>
+<item id="img29" href="images/img29.jpg" media-type="image/jpeg"/>
+<item id="img31" href="images/img31.jpg" media-type="image/jpeg"/>
+<item id="img32" href="images/img32.jpg" media-type="image/jpeg"/>
+<item id="img33" href="images/img33.jpg" media-type="image/jpeg"/>
+<item id="img39" href="images/img39.jpg" media-type="image/jpeg"/>
+<item id="img42" href="images/img42.jpg" media-type="image/jpeg"/>
+<item id="img44" href="images/img44.jpg" media-type="image/jpeg"/>
+<item id="img48" href="images/img48.jpg" media-type="image/jpeg"/>
+<item id="img48a" href="images/img48a.jpg" media-type="image/jpeg"/>
+<item id="img48b" href="images/img48b.jpg" media-type="image/jpeg"/>
+<item id="img66" href="images/img66.jpg" media-type="image/jpeg"/>
+<item id="img66a" href="images/img66a.jpg" media-type="image/jpeg"/>
+<item id="img73" href="images/img73.jpg" media-type="image/jpeg"/>
+<item id="img73a" href="images/img73a.jpg" media-type="image/jpeg"/>
+<item id="img75" href="images/img75.jpg" media-type="image/jpeg"/>
+<item id="img81" href="images/img81.jpg" media-type="image/jpeg"/>
+<item id="img81a" href="images/img81a.jpg" media-type="image/jpeg"/>
+<item id="img85" href="images/img85.jpg" media-type="image/jpeg"/>
+<item id="img87" href="images/img87.jpg" media-type="image/jpeg"/>
+<item id="img88" href="images/img88.jpg" media-type="image/jpeg"/>
+<item id="img104" href="images/img104.jpg" media-type="image/jpeg"/>
+<item id="img107" href="images/img107.jpg" media-type="image/jpeg"/>
+<item id="img108" href="images/img108.jpg" media-type="image/jpeg"/>
+<item id="img111" href="images/img111.jpg" media-type="image/jpeg"/>
+<item id="img121" href="images/img121.jpg" media-type="image/jpeg"/>
+<item id="img122" href="images/img122.jpg" media-type="image/jpeg"/>
+<item id="img123" href="images/img123.jpg" media-type="image/jpeg"/>
+<item id="img123a" href="images/img123a.jpg" media-type="image/jpeg"/>
+<item id="img124" href="images/img124.jpg" media-type="image/jpeg"/>
+<item id="img124a" href="images/img124a.jpg" media-type="image/jpeg"/>
+<item id="img131" href="images/img131.jpg" media-type="image/jpeg"/>
+<item id="img133" href="images/img133.jpg" media-type="image/jpeg"/>
+<item id="img135" href="images/img135.jpg" media-type="image/jpeg"/>
+<item id="img142" href="images/img142.jpg" media-type="image/jpeg"/>
+<item id="img143" href="images/img143.jpg" media-type="image/jpeg"/>
+<item id="img143a" href="images/img143a.jpg" media-type="image/jpeg"/>
+<item id="img143b" href="images/img143b.jpg" media-type="image/jpeg"/>
+<item id="img144" href="images/img144.jpg" media-type="image/jpeg"/>
+<item id="img144a" href="images/img144a.jpg" media-type="image/jpeg"/>
+<item id="img144b" href="images/img144b.jpg" media-type="image/jpeg"/>
+<item id="img153" href="images/img153.jpg" media-type="image/jpeg"/>
+<item id="img153a" href="images/img153a.jpg" media-type="image/jpeg"/>
+<item id="img154" href="images/img154.jpg" media-type="image/jpeg"/>
+<item id="img154a" href="images/img154a.jpg" media-type="image/jpeg"/>
+<item id="img154b" href="images/img154b.jpg" media-type="image/jpeg"/>
+<item id="img154c" href="images/img154c.jpg" media-type="image/jpeg"/>
+<item id="img154d" href="images/img154d.jpg" media-type="image/jpeg"/>
+<item id="img154e" href="images/img154e.jpg" media-type="image/jpeg"/>
+<item id="img210" href="images/img210.jpg" media-type="image/jpeg"/>
+<item id="fig_pub" href="images/pub.jpg" media-type="image/jpeg"/>
+
+           
+</manifest>
+<spine toc="ncx">
+<itemref idref="Oxford"/>    
+<itemref idref="title"/>
+<itemref idref="copyright"/>
+<itemref idref="Foreword"/>
+<itemref idref="Preface"/>
+<itemref idref="contents"/>
+<itemref idref="chapter01"/>
+<itemref idref="chapter02"/>
+<itemref idref="chapter03"/>
+<itemref idref="chapter04"/>
+<itemref idref="chapter05"/>
+<itemref idref="chapter06"/>
+<itemref idref="chapter07"/>
+<itemref idref="chapter08"/>
+<itemref idref="chapter09"/>
+<itemref idref="chapter10"/>
+<itemref idref="chapter11"/>
+<itemref idref="chapter12"/>
+<itemref idref="chapter13"/>
+<itemref idref="chapter14"/>
+<itemref idref="chapter15"/>
+<itemref idref="Index"/>
+</spine>   
+</package>

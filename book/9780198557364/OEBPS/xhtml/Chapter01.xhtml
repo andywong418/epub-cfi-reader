@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Applications of Artificial Intelligence in Chemistry</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+</head>
+<body>
+<section epub:type="chapter" id="Ch01">
+<a id="page_1" class="page" style="width:70%;">Page 1, Artificial intelligence</a>
+<h1 class="main"><b>1&#160;&#160;&#160;Artificial intelligence</b></h1>
+<section epub:type="chapter" id="sec_1.1">
+<h2 class="h2"><b>1.1&#160;&#160;Introduction</b></h2>
+<p class="noindent">A machine that could complete <i>The Times</i> crossword or remove a human appendix unaided would undoubtedly be intelligent. At present such machines exist only in science fiction, but already laboratories around the world are using &#x2018;Artificial Intelligence&#x2019;. What does this mean? Why is artificial intelligence important to science? And how can it be used in the laboratory? These are the central questions that this book sets out to answer.</p>
+<p class="indent3-ka1">Artificial intelligence (AI) has evolved over forty years. For most of that time development was slow-moving and academic. Work centred on game-playing and puzzle-solving machines, not because applications in these areas were of practical importance, but because tasks of more widespread interest were far too complex for the computers then available.</p>
+<p class="noindent">&#160;</p>
+<p class="tabcap" id="tab1.1"><b>Table 1.1</b> Some early Al programs</p>
+<table class="width70tb">
+<tr>
+<td style="vertical-align:top;" class="borbw50"><p class="tablec">Program</p></td>
+<td style="vertical-align:top;" class="borbw50"><p class="tablec" style="margin-left:6em;">Purpose</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tableda">LOGIC THEORIST (1956)</p></td>
+<td style="vertical-align:top;"><p class="tableb">To solve problems in propositional logic</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tableda">BASEBALL (1961)</p></td>
+<td style="vertical-align:top;"><p class="tableb">To answer questions about baseball</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tableda">STUDENT (1964)</p></td>
+<td style="vertical-align:top;"><p class="tableb">To solve algebraic problems</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tableda">DENDRAL (1965 onwards)</p></td>
+<td style="vertical-align:top;"><p class="tableb">To analyse mass spectra of organics</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tableda">SHRDLU (1972)</p></td>
+<td style="vertical-align:top;"><p class="tableb">To manipulate coloured blocks</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tableda">MYCIN (1972 onwards)</p></td>
+<td style="vertical-align:top;"><p class="tableb">To select anti-microbial agents</p></td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:2em;" epub:type="sidebar">
+<p class="noindent2">Recent changes in computer power and size were quite unforeseen just a short time ago. In March 1949, a popular science magazine predicted that in the distant future computers might have &#x2018;only 1000 vacuum tubes and weigh only one and a half tons&#x2018;.</p>
+</aside>
+<p class="noindent">&#160;</p>
+<p class="indent3-ka1">Within the last decade, however, as computer power has increased, the field has expanded in a most dramatic fashion. The enormous potential of AI is now starting to be recognized and harnessed, not just by computer scientists, but also by those within the physical and life sciences, and beyond. As we shall see, this has significant implications for chemistry.</p>
+<p class="indent3-ka1">We shall explore in this primer how AI is applied to those areas of chemistry which offer great scope for investigation by intelligent methods. The early development of a new field in science is often a period of rapid and<a id="page_2" class="page">Page 2, Artificial intelligence</a>exciting growth, and the evolution of AI is now at that stage; as a result this is a particularly fascinating area of work.</p>
+<p class="indent3-ka1">Artificial intelligence is, of course, quite different from chemistry, yet in a very real sense it is an experimental subject: we are still learning how to use its methods and interpret its predictions. As a result, the application of AI to science is full of investigation, as we try to understand how its techniques can be used.</p>
+<p class="indent3-ka1">AI is a young and largely unexplored subject. Despite its short history, however, its potential is unmistakable: AI will be a central part of the chemist&#x2019;s arsenal within two decades.</p>
+</section>
+<section epub:type="chapter" id="sec_1.2">
+<h2 class="h2"><b>1.2&#160;&#160;What is artificial intelligence?</b></h2>
+<p class="indent3-ka1t"><i>AI is an attempt to reproduce intelligent reasoning using machines</i>.</p>
+<aside class="abc" style="margin-top:1.5em;" epub:type="sidebar">
+<p class="noindent2">Some very unmachine-like entities can act intelligently. In one of the earliest studies of Al, a set of 288 matchboxes filled with coloured beads (and known affectionately as MENACE) learnt to play an expert game of noughts and crosses (tic-tac-toe). However, a matchbox collection is not a prerequisite for an interest in Al. All practical work nowadays is carried out without matchboxes, and in this book we consider only methods which use more sophisticated tools.</p>
+</aside>
+<p class="noindentt">The word &#x2018;machines&#x2019; is used here in a sense that is much broader than its everyday meaning; almost any inanimate mechanism which can complete a task qualifies as a machine.</p>
+<p class="indent3-ka1">In scientific work our prime tool is the computer, which reasons rapidly and reliably; it is an essential part of all practical applications of AI. Nevertheless, although there are strong links between AI and computer science, a knowledge of computers is not necessary to understand the principles of AI, or how those principles apply to science. Nor do you need to be a computer expert to understand the contents of this primer; we shall often refer to computer programs, but always in a non-technical fashion.</p>
+<p class="indent3-ka1">Indeed, the relatively non-technical nature of AI helps explain why it has such broad appeal. Everyone knows how to reason after a fashion, and most of us have some common sense. Since it is the purpose of AI to emulate human thought and reasoning, and common sense is just an expression of this, each of us already knows something about the subject. In a way, taking advantage of AI is not unlike trying to teach a machine to use some common sense.</p>
+<p class="indent3-ka1">However, to suggest that to make a computer &#x2018;intelligent&#x2019; we merely need to instil in it a bit of common sense is to simplify things a little. Common sense is intangible; it certainly is not something that we can easily explain to computers, or even to people. Conventional ways of telling computers what to do are poorly suited to the goal of helping them to learn, and if a computer is to behave intelligently, not simply as an obedient but dumb calculator, we will have to re-think how computers are given their instructions, and what those instructions are.</p>
+<p class="indent3-ka1">It is the purpose of <a href="Chapter02.xhtml#Ch02">Chapters 2</a>&#x2013;<a href="Chapter04.xhtml#Ch04">4</a> to explain how this is done. Computers <i>can</i> be persuaded to act intelligently, and thereby solve problems which may resist solution using dumb methods. In these chapters we shall discover the striking differences between the way scientific problems are tackled using conventional methods, and the way they are solved using the alternative methods of AI.</p>
+<a id="page_3" class="page" style="width:70%;">Page 3, Artificial intelligence</a>
+<p class="indent3-ka1">Before we look at individual AI methods, it is useful to consider what kind of problems AI might help us to solve. Not every scientific problem is a candidate for this type of approach, and you might wonder whether scientific problems that are soluble using AI have any identifiable characteristics by which we might recognize them. As we consider this question, we shall gain a first insight into the reasons why AI techniques are so powerful.</p>
+<p class="noindent">&#160;</p>
+</section>
+<section epub:type="chapter" id="sec_1.3">
+<h2 class="h2"><b>1.3&#160;&#160;The scope of artificial intelligence</b></h2>
+<h3 class="h3"><b>Domains</b></h3>
+<p class="noindentt">A remarkable feature of the human mind is the range of topics about which it can successfully reason. According to the definition given at the start of the previous section, AI tries to achieve something close to human reasoning; we can work in an almost unlimited variety of different areas or <b>domains</b>, so it seems that <i>every</i> problem of interest to scientists must be a problem in AI.</p>
+<aside class="abc" style="margin-top:-5.5em;" epub:type="sidebar">
+<p class="noindent2">A domain is an area of expertise in which an Al program, or a person, operates.</p>
+</aside>
+<p class="indent3-ka1">Unfortunately, no AI techniques yet have the power to solve scientific problems of arbitrary complexity; they operate only in restricted domains: that is, a particular method is required to solve a particular type of problem. AI is at the moment quite unable to transform a computer into a machine that behaves like a person, and it cannot yet show us how to develop all-powerful machines which can solve any problem. In other words, we cannot just point an intelligent machine at any scientific problem we want solved and say &#x2018;get on with it&#x2019;.</p>
+<p class="indent3-ka1">On the face of it, this is disappointing news. However, although AI methods are presently restricted to particular domains, it would be wrong to conclude that there are few problems in science suited to AI, or that AI methods are of only peripheral importance. In fact, quite the opposite is true.</p>
+<p class="indent3-ka1">Particular types of scientific problem do require an appropriate AI method for efficient solution, but these methods are available already, and are growing in sophistication and power. Not only are there numerous problems well suited to AI, but many of these are essentially unsolvable by any conventional method. AI problem-solving is limited at present mainly by the need to understand better how AI methods work, and to a lesser extent by limitations in computer power. As our understanding grows, the use of AI will expand to encompass all areas of science.</p>
+<h3 class="h3"><b>AI problems</b></h3>
+<p class="noindentt">In this book we discuss those AI methods which appear to offer the greatest potential in solving scientific problems: artificial neural networks, expert systems, and genetic algorithms. The range of problems amenable to these techniques is considerable, but not all-encompassing, so we must distinguish<a id="page_4" class="page">Page 4, Artificial intelligence</a>between problems suited to AI methods of solution and those more appropriately solved by conventional techniques. This division into AI and non-AI problems is surprisingly straightforward.</p>
+<p class="indent3-ka1">Scientific AI problems are characterized by one notable feature which we will use as their definition:</p>
+<aside class="abc" style="margin-top:0.5em;" epub:type="sidebar">
+<p class="noindent2">A &#x2018;normal algorithm&#x2019; in this definition is a precisely-defined sequence of instructions to a computer which will deliver the answer to a scientific problem in a reasonable time (perhaps an hour on a fast computer).</p>
+</aside>
+<p class="indent3-ka1t"><i>A problem in artificial intelligence is one which is so complex that it cannot be solved using any normal algorithm</i>.</p>
+<p class="indent3-ka1t">Far from being a helpful definition, this sounds rather alarming. It seems to suggest that all the easy problems in science can be solved using conventional methods, leaving behind for AI the residue of those which are well nigh incomprehensible. Fortunately this is not the case.</p>
+<p class="indent3-ka1">The problems which conventional methods fail to solve fall into two categories: they may be computationally intractable or conceptually obscure. The obscure problems are those which are so convoluted or poorly understood that it is unclear how to even start to analyse them. Neither AI nor conventional methods make much impact at present on such problems, and we shall not consider them further.</p>
+<p class="indent3-ka1">Computationally intractable problems are quite different. These are exactly what AI methods thrive on - indeed that is the implication of the definition of an AI problem given above. A computationally intractable problem may be hard to solve, but that does not mean it must be difficult to understand.</p>
+<aside class="abc" style="margin-top:1.5em;" epub:type="sidebar">
+<p class="noindent2">A computer working since the universe began to investigate the sequences of moves in chess would by now have been able to investigate only a fraction of all possible games.</p>
+</aside>
+<p class="indent3-ka1">Consider the task of teaching a computer to play chess. This is a problem in AI: purely numerical or exhaustive search algorithms are incapable of play at the highest level. And yet, though playing chess at grandmaster level is a challenge beyond all but a few of us, the rules of chess are straightforward. The problem is computationally demanding, yet still easy to understand.</p>
+<p class="indent3-ka1">Similar situations arise in science. Prediction of the stereochemistry of proteins is a thorny computational problem, but we can understand in simple thermodynamic terms why a protein wants to adopt a geometry which minimizes its free energy. The selection of optimum parameters for HPLC analyses, the computer elucidation of new synthetic routes, or the control of a large-scale industrial plant are computationally demanding, yet in every case the problem is far from being incomprehensible.</p>
+<p class="indent3-ka1">So, although it may seem odd that we define scientific AI problems in terms of how difficult they are to solve, rather than in terms of their nature, we see that complexity of solution is at their very heart.</p>
+<p class="indent3-ka1">In view of this definition, it is possible to immediately separate out many problems that are best tackled by non-AI methods. Simple problems can be solved using simple methods. It would be inefficient to use AI to calculate a least squares fit of a straight line through a set of data points, for example: purely numerical methods are far faster. Equally, though calculation of the energy levels of a molecule of ascorbic acid is not trivial computationally, there are well-defined quantum mechanical methods for doing it, and AI is unlikely to be productive in this case.</p>
+<a id="page_5" class="page" style="width:70%;">Page 5, Artificial intelligence</a>
+<p class="indent3-ka1">However, after we have narrowed the field by removing problems which can be solved using conventional methods, there remain numerous problems in science waiting for AI solutions. It is important to scientists that solutions be found &#x2013; science is all about understanding &#x2013; but in our investigation of AI we need also to learn <i>why</i> the solutions are so difficult to find. Where do these complex problems which require AI come from? What &#x2018;causes&#x2019; their complexity?</p>
+</section>
+<section epub:type="chapter" id="sec_1.4">
+<h2 class="h2"><b>1.4&#160;&#160;Why are there so many Al problems?</b></h2>
+<h3 class="h3"><b>Combinatorial explosion</b></h3>
+<p class="noindentt">The game of chess is an excellent representation of many of the challenges facing AI; it illustrates a key reason why many problems are difficult to solve computationally.</p>
+<p class="indent3-ka1">The sequence of moves in a game of chess can be represented as nodes on a tree graph. The position at the start of the game is represented by the top node of the graph (<a href="#fig_1.1">Fig. 1.1</a>) and all possible opening moves appear as nodes one level below this (the figure suggests just a few of these). Each node at this first level down corresponds to a different arrangement of pieces on the board after the initial move is completed. The second player can respond to any opening move in a number of ways; these options are shown as a further set of nodes at the second level (again, only a few are shown).</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<figure style="margin-left:-8em;" id="fig_1.1">
+<img src="../images/page5-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;"><b>Fig. 1.1</b> A tree graph for a game of chess.</figcaption>
+</figure>
+<p class="indent3-ka1t">It is easy to see that the number of nodes on a graph of this sort grows extremely rapidly. Any attempt to look even half a dozen moves beyond the present state of the board may require the examination of millions of possible<a id="page_6" class="page">Page 6, Artificial intelligence</a>sequences to find the best move. (The only sure route to success is to follow every conceivable sequence through to the end of the game; this is known as an <b>exhaustive search</b>, and in chess is an impossibly huge task. On the other hand, if we restrict our attention to a small number of moves ahead, what appears to be a wise decision now may, after a further four or five moves, turn out to be a foolish mistake, so an abbreviated exhaustive search is also not an effective strategy for a chess-playing computer that aspires to grandmaster status.)</p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<p class="noindent2">Exhaustive search is a &#x2018;brute force&#x2019; way of tackling problems, and is unlikely to be viable in any problem in which the number of possible solutions is very large.</p>
+<p class="noindent2t">An abbreviated exhaustive search in chess fails on two counts: it cannot foresee traps set by an opponent that will be sprung further ahead than the number of steps it assesses, and a program employing it uses no strategic planning.</p>
+</aside>
+<p class="indent3-ka1">This extremely rapid growth in the size of a problem is known as <b>combinatorial explosion.</b> A familiar chemical example is the growth in the number of isomers in a homologous series (<a href="#tab1.2">Table 1.2</a>).</p>
+<p class="indent3-ka1">Combinatorial explosion is responsible for the difficulties presented by many large-scale problems, both in science and in other fields. Nevertheless, you will recognize that, while a problem such as playing chess, or finding how many isomers of formula C<sub>26</sub>H<sub>54</sub>O are ethers, becomes more difficult to solve as the number of nodes in the tree increases, <i>the problem itself becomes no more obscure</i>. The difficulty is not that the problem is in principle impossible to solve, but that the extent of the problem has grown very rapidly &#x2013; <i>there are simply too many solutions</i>. This is a key discovery, and is a feature that characterizes numerous AI problems.</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<p class="tabcap" id="tab1.2"><b>Table 1.2</b> Isomers of the alkanes C<sub><i>n</i></sub>H<sub>2<i>n</i>+2</sub></p>
+<table class="width70tb">
+<tr>
+<td style="vertical-align:top;" class="borbw50"><p class="tablec1"><i>n</i></p></td>
+<td style="vertical-align:top;" class="borbw50"><p class="tabled">Isomers</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablec1">1</p></td>
+<td style="vertical-align:top;"><p class="tablec2">1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablec1">2</p></td>
+<td style="vertical-align:top;"><p class="tablec2">1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablec1">3</p></td>
+<td style="vertical-align:top;"><p class="tablec2">1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablec1">4</p></td>
+<td style="vertical-align:top;"><p class="tablec2">2</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablec1">5</p></td>
+<td style="vertical-align:top;"><p class="tablec2">3</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablec1">6</p></td>
+<td style="vertical-align:top;"><p class="tablec2">5</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablec1">7</p></td>
+<td style="vertical-align:top;"><p class="tablec2">9</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablec1">&#x2026;</p></td>
+<td style="vertical-align:top;"><p class="tablec2">&#x2026;</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablec1">10</p></td>
+<td style="vertical-align:top;"><p class="tablec2">75</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablec1">&#x2026;</p></td>
+<td style="vertical-align:top;"><p class="tablec2">&#x2026;</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tablec1">30</p></td>
+<td style="vertical-align:top;"><p class="tablec3">&gt;&#160;4&#x00D7;10<sup>9</sup></p></td>
+</tr>
+</table>
+</aside>
+<p class="indent3-ka1">Among problems which display combinatorial explosion is a large class known as <b>NP problems</b> (non-deterministic polynomial problems), in which the difficulty finding the optimum solution by exhaustive search increases extremely rapidly with the size of the problem. The time taken to find a route through a maze depends exponentially upon the number of branches in the maze, and this is a typical NP problem. In <a href="Chapter04.xhtml#Ch04">Chapter 4</a>, we shall encounter a chemical example: the chemical flowshop.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<figure style="margin-left:-8em;" id="fig_1.2">
+ <img src="../images/page6-1.jpg" alt="images"/>
+<figcaption><b>Fig. 1.2</b> A branching maze.</figcaption>
+</figure>
+<a id="page_7" class="page" style="width:70%">Page 7, Artificial intelligence</a>
+<p class="indent3-ka1">Problems of this level of complexity are widespread in science and elsewhere. Although their size generally precludes exhaustive search, AI methods offer a practical alternative in many cases.</p>
+<p class="indent3-ka1">It is important to realize that this alternative is not a short-term band-aid that we need just for the next few months or years. If you bear in mind the scale of these problems, it should be clear that AI methods do not represent a temporary way of attacking difficult problems, in the belief that, at some time in the future, faster computers will allow the use of conventional methods. These complex problems, by their very nature, cannot adequately be attacked by normal numerical methods, so <i>a solution to them using conventional algorithms is not brought noticeably closer by an increase in computer power, or by the use of more sophisticated statistical or arithmetic calculations</i>.</p>
+<p class="indent3-ka1">It is not extra computer power or further mathematical sophistication that is required, but a different approach entirely.</p>
+</section>
+<section epub:type="chapter" id="sec_1.5">
+<h2 class="h2"><b>1.5&#160;&#160;Understanding</b></h2>
+<p class="noindentt">Only humans solve crossword puzzles well. Computers generally use a modified search procedure in which any word that might have some tenuous relationship to the clue is checked to see if it will fit the crossword frame. Although this sort of search is just the kind of procedure at which computers excel, it is a particularly inappropriate method of solving a crossword, and the best computer programs fail miserably to beat even a mediocre human. The method that humans use cannot therefore simply be searching, or the computer would win every time.</p>
+<p class="indent3-ka1">The computer fails because it does not <i>understand</i> the crossword, and solving crosswords seems to be the kind of task that requires genuine understanding. The computer can search at high speed through the words that it knows to see which fit the frame, but it is incapable of making the intuitive jumps that characterize human reasoning.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<figure style="margin-left:0em;" id="fig_1.3">
+ <img src="../images/page7-1.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:0.5em;"><b>Fig. 1.3</b> Ehrenstein&#x2019;s illusion.</figcaption>
+</figure>
+
+<p class="noindent2" style="margin-top:1em;">Humans notice Ehrenstein&#x2018;s circle in the figure above because it is brighter than its immediate surroundings.</p>
+</aside>
+<p class="indent3-ka1">Fortunately for science, AI programs can reason logically; in this way they can reproduce certain aspects of human thinking. They have as yet only a rudimentary ability to make what might be called intuitive jumps, (so are still not very good at crossword puzzles), but they can mimic many of the logical deductions of the brain. In solving scientific problems, AI programs must act intelligently, but the computer does not need to try its hand at lateral thinking. Understanding of the sort needed to solve crosswords is not required, so even AI programs of quite modest ability outperform conventional programs in a variety of scientific applications.</p>
+<p class="indent3-ka1">Ehrenstein&#x2019;s illusion (<a href="#fig_1.3">Fig. 1.3</a>) illustrates the difference between human and machine understanding. Humans immediately notice the inner circle formed by the straight lines in this figure, even though the circle is not &#x2018;real&#x2019;. Unless a computer were asked specifically to investigate what shapes are described by the end points of the lines, a conventional program would not discover the circle. However, image-analysis programs, which increasingly<a id="page_8" class="page">Page 8, Artificial intelligence</a>incorporate AI elements such as neural networks, are adept at recognizing just such illusory figures and would find the phantom circle, without being explicitly told to search for it.</p>
+<h3 class="h3"><b>The Turing test</b></h3>
+<aside class="abc" style="margin-top:0.5em;" epub:type="sidebar">
+<p class="noindent2">At one stage during the Second World War, 10 000 people in Britain worked on the decoding of German military messages; Alan Turing was one of them. He was among a group of linguists, mathematicians, and scientists working in British Military Intelligence at Bletchley Park, mid-way between Oxford and Cambridge. Turing worked on the &#x2018;Colossus&#x2019; calculator and the famous &#x2018;Enigma&#x2019; coding machines, two projects which were to prove crucial to the Allied war effort. Turing, who was a Fellow at Cambridge University, never lived to see his seminal ideas about computing put into practice; he took his own life in 1954 at the age of 42.</p>
+</aside>
+<p class="noindentt">Computers do not understand much yet; their intelligence is at about the level of the ant. However, computer reasoning is developing rapidly, and many people accept that within perhaps a couple of decades a computer will be developed which can function intellectually as effectively as a person. It will then be hard to tell computer and human apart.</p>
+<p class="indent3-ka1">It is this thought which is behind an annual contest in America. Its purpose is to test whether a human can be fooled into thinking that the other half of a conversation he is having through the medium of a computer terminal is being provided by a second human, not a computer. A distinguished British mathematician, Alan Turing, who formulated many of the principles of modern computing, proposed a test, known now as the Turing test, on which the contest is based. The test involves what was at the time it was proposed a mythical entity &#x2013; a computer and program of such sophistication that a human, conversing with it via a terminal, would be unable to tell whether another human or a machine was providing the other half of the conversation.</p>
+<p class="indent3-ka1">Surprisingly perhaps, some computer programs have already passed the Turing test in limited subject areas, such as &#x2018;Shakespeare&#x2019;s Plays&#x2019;, or &#x2018;Romantic Experience&#x2019; (but not yet in science) and thus fooled people into believing that the programs are humans, not just intelligent software. It is a philosophical rather than a scientific question whether such a computer program can be said to <i>understand</i> the domain in which it works, rather than merely reason logically and in a convincing fashion about it. The difference between understanding and reasoning lies at the heart of this question, and is one which provokes enthusiastic debate among workers in the fields of AI and philosophy.</p>
+<aside class="abc" style="margin-top:-0.5em;" epub:type="sidebar">
+<p class="noindent2">There is no evidence that the methods humans use to think are the &#x2018;best&#x2019; available; they may soon be improved upon by computers. In turn, this may lead to still more sophisticated Al methods, thought up by the computers themselves.</p>
+</aside>
+<p class="indent3-ka1">Outside the confines of philosophy, this relationship between reasoning and understanding, though fascinating, is largely academic. For the foreseeable future, computers and humans will think and understand in different ways. This difference should not concern us unduly. What matters to us is that human and electronic thinkers agree.</p>
+</section>
+<section epub:type="chapter" id="sec_1.6">
+<h2 class="h2"><b>1.6&#160;&#160;Learning</b></h2>
+<p class="noindent">Speech recognition and the motor control required to play tennis are the sort of tasks that humans manage well. Both require learning and memorization (though you should appreciate that &#x2018;learning&#x2019; does not necessarily imply &#x2018;understanding&#x2019;; we learn to recognize speech without having the least idea how we do it). If AI programs are to emulate humans, we can expect them to show this desire to learn and remember.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="noindent2">Learning is the improvement of performance through experience.</p>
+</aside>
+<a id="page_9" class="page" style="width:70%;">Page 9, Artificial intelligence</a>
+<p class="indent3-ka1">Just like humans, AI programs start life knowing nothing. They can manipulate data &#x2013; but have no data to manipulate. To be of use, they need to gather information, and can do this in various ways:</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<div class="border">
+<p class="boxtitlec" style="margin-left:5em;margin-top:1em;"><b>How Al programs learn</b></p>
+<p class="boxbullett"><img src="../images/page9-1.jpg" alt="images"/>&#160;&#160;by a two-way conversation with the user;</p>
+<p class="boxbullet"><img src="../images/page9-1.jpg" alt="images"/>&#160;&#160;by being told what is true;</p>
+<p class="boxbullet"><img src="../images/page9-1.jpg" alt="images"/>&#160;&#160;by being shown examples of what they are required to interpret, such as mass spectral fragmentation patterns or infrared spectra, and learning to recognize characteristic features;</p>
+<p class="boxbullet"><img src="../images/page9-1.jpg" alt="images"/>&#160;&#160;by actively investigating their environment and learning from what they find there, using trial and error, or intelligent observation;</p>
+<p class="boxbullet" style="margin-bottom:1em;"><img src="../images/page9-1.jpg" alt="images"/>&#160;&#160;by logical reasoning from what they already know.</p>
+</div>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<p class="noindent2">Expert systems may use any of these methods to learn.</p>
+<p class="noindent2">Artificial neural networks and genetic algorithms usually learn by inspecting examples, or by investigating the environment.</p>
+</aside>
+<p class="noindent">&#160;</p>
+<p class="indent3-ka1t">This is quite different from the way in which a conventional computer program acquires information. Everything that such a program needs is built in, or is supplied as input data by the user. By contrast, AI programs contain an evolving, growing memory, which becomes progressively more valuable as the program becomes more experienced.</p>
+<p class="indent3-ka1">This memory gives the AI program advantages over conventional programs. A scientific AI problem can only rarely be reduced to a set of numerical calculations, whose execution leads unambiguously to the correct answer. Even if the problem can be formulated in this way, the time required to reach that solution is usually prohibitively long, unless we permit the program to learn. The numerical programs that are typical of most conventional scientific calculations are in AI replaced by programs that learn; indeed <i>learning is central to every AI method</i>.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<p class="noindent2">As learning is critical to all Al methods, the area is often referred to as &#x2018;Machine Learning&#x2019;.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_1.7">
+<h2 class="h2"><b>1.7&#160;&#160;Uncertainty</b></h2>
+<p class="noindentt">Just as there are problems which have millions of solutions, there are others that may not have even one about which we can be certain. Every day we meet questions to which the answer is a matter of opinion: &#x2018;Is heterocyclic chemistry incomprehensible?&#x2019;, &#x2018;Is baseball even more boring than cricket?&#x2019;, &#x2018;Are bald men sexy?&#x2019;</p>
+<p class="indent3-ka1">If AI is to emulate human thought, it must be able to tolerate uncertainty of this sort, perhaps even use it to its advantage. It must deal effectively with questions that may have no definite answer, in the sense of there being none that are universally recognized as correct.</p>
+<a id="page_10" class="page" style="width:70%;">Page 10, Artificial intelligence</a>
+<p class="indent3-ka1">Uncertainty is often present in both the questions we ask, and the answers AI provides. Usually, the uncertainty does not arise from some fragility of the calculation, but because the problem itself can only be framed in imprecise form or because an unambiguous answer is not possible. Alternatively the AI method itself may unavoidably contain some random factor.</p>
+<aside class="abc" style="margin-top:-6.5em;" epub:type="sidebar">
+<p class="noindent2">The genetic algorithm, which we shall meet in <a href="Chapter04.xhtml#Ch04">Chapter 4</a>, is driven throughout by random numbers, so we might expect there to be some uncertainty in the answers that it provides. You may think it odd that a method which is completely dependent upon random numbers can provide answers that can be trusted at all. We shall see in <a href="Chapter04.xhtml#Ch04">Chapter 4</a> how this apparent contradiction is resolved.</p>
+</aside>
+<p class="indent3-ka1">Uncertainty affects the behaviour of AI programs in two crucial respects:</p>
+<p class="indent3-ka1t"><img src="../images/page9-1.jpg" alt="images"/>&#160;&#160;<i>The order in which an AI computer program executes its instructions may be unpredictable</i>.</p>
+<p class="indent3-ka1">If the same problem is presented in two different forms, an AI program may pursue two entirely different routes through its instructions to reach an answer. Some AI programs may even take a different route to the solution when the same problem is presented twice in identical form.</p>
+<p class="indent3-ka1">This will seem curious if you are familiar with normal computer programs, which always process the same instructions in the same order and reach the same conclusion, no matter how often they are run. However, most AI methods are themselves inherently uncertain. They may choose among several alternative courses of action, without an unambiguous rule to guide their choice. Or the way the program works may depend on how the problem is presented, or the order in which information about the problem is provided.</p>
+<aside class="abc" style="margin-top:1.5em;" epub:type="sidebar">
+<p class="noindent2">All the methods discussed in this book are uncertain in the sense discussed here. Most expert systems have uncertainty built into the knowledge base, neural networks converge to a state which may depend upon the way they have been trained, and genetic algorithms rely heavily upon random numbers in their operation.</p>
+</aside>
+<p class="indent3-ka1">You might wonder how such programs could surpass the performance of a conventional program, when they are apparently so unpredictable. However, as we shall see, this element of uncertainty is deeply embedded in AI, and, paradoxically, is often crucial to its success.</p>
+<p class="indent3-ka1t"><img src="../images/page9-1.jpg" alt="images"/>&#160;&#160;<i>The solution to a problem proposed by an AI method may not be unique; instead, several answers may be offered, each with a certain level of confidence</i>.</p>
+<p class="indent3-ka1">If an AI program tries to answer the question &#x2018;Are bald men sexy?&#x2019; only those of us with little hair might believe an unambiguous &#x2018;yes&#x2019;. The answers to some questions must be uncertain.</p>
+<p class="indent3-ka1">This introduces a second fundamental difference between AI and conventional programs. The latter usually reach a single (final) conclusion; an AI program, reflecting the less deterministic nature of its thinking, may not be absolutely certain that its preferred answer is correct, and so may propose this answer with some measure of confidence, or present a list of answers in order of preference.</p>
+<p class="indent3-ka1">This looks a bit weak-kneed. Science is largely about rules and certainties. If, after all its work, the best an AI program can do is to say:</p>
+<p class="blockquotet">Here is my answer. Well, actually you&#x2019;ll notice that there are several, even though you wanted only one, and I&#x2019;m not exactly sure they are right, but there we are&#x2026;you can&#x2019;t have everything</p>
+<p class="noindentt">it may seem we are no further forward. We might even be more confused than when we started. It is a bit discouraging.</p>
+<a id="page_11" class="page" style="width:70%;">Page 11, Artificial intelligence</a>
+<p class="indent3-ka1">Recall, though, that the role of AI is to tackle the difficult, large-scale problems. As we have already suggested, these are usually very demanding computationally. They may be so huge that no known method can <i>guarantee</i> to deliver the right answer. If such problems cannot be solved exactly by <i>any</i> method in reasonable time, it is unrealistic to expect an AI algorithm to find rapidly <i>and be sure of</i> the exact solution. The best we can hope for is that an appropriate algorithm will yield an answer superior to any that could be reached using conventional methods, even if it is not guaranteed to be correct. AI methods might be better than conventional methods, but they do not have magical powers.</p>
+<aside class="abc" style="margin-top:-10.5em;" epub:type="sidebar">
+<p class="noindent2">It is not uncommon for problems solved using the genetic algorithm to have 10<sup>30</sup> or more different solutions.</p>
+</aside>
+<p class="indent3-ka1">Uncertainty in the answer is therefore sometimes inevitable, and it is useful if the program can estimate how good the answer may be. Any answer is better than none; an estimate of its quality is bound to be valuable.</p>
+<p class="indent3-ka1">But this all-pervasive air of uncertainty is still rather unsettling. First we find it in the way an AI program works, and now it appears in the answers AI offers. Even if problems exist that are suited to attack by AI, it seems as though the success of any computation might be determined purely by chance: if the right path through the instructions that constitute an AI program happens to be selected, the calculation succeeds, otherwise it fails.</p>
+<p class="indent3-ka1">This is a rather pessimistic view, but there is an element of truth in it. The operation of many AI programs cannot be predicted with certainty. Yet this only mirrors our own experience and is not as undesirable as it may seem. We do not pretend that a question like &#x2018;Is baseball more boring than cricket?&#x2019; cannot be posed, on the grounds that there is no &#x2018;right&#x2019; answer. Uncertainty is a ubiquitous feature of everyday life and of numerous scientific problems also. If we choose AI to tackle vaguely-defined problems, the fact that our method may in some way be unpredictable does not prejudice our chances of success.</p>
+<p class="indent3-ka1">Thus, while AI may not be completely sure of an answer, its ability to deal with uncertainty endows it with considerable flexibility, so that most AI methods can be applied to problems in which the data themselves are uncertain. Each of the methods discussed in this book is capable of dealing with ill-defined or error-loaded data, and artificial neural networks allow us to make use of a method of growing importance in science, known as fuzzy logic.</p>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<p class="noindent2">Fuzzy logic is designed to provide answers to such apparently unanswerable questions as: &#x2018;How big is a big molecule?&#x2019;, or &#x2018;How long is a piece of string?&#x2019;</p>
+</aside>
+<p class="indent3-ka1">Though uncertainty is woven inextricably into AI methods, this does not mean that the predictions of AI are less trustworthy than those of conventional methods. We must judge AI by its success in tackling real problems, and not by any preconceptions about the effect of uncertainty within the methods themselves. It is to the first of these methods that we turn in the next chapter.</p>
+</section>
+<section epub:type="chapter" id="sec_1.8">
+<a id="page_12" class="page" style="width:70%;">Page 12, Artificial intelligence</a>
+<h2 class="h2"><b>1.8&#160;&#160;Applications of artificial intelligence in science</b></h2>
+<p class="noindentt">Chemistry and the other physical and life sciences offer AI problems which are remarkable in their diversity. In this primer there is space to touch upon only a few, but it is worth mentioning some areas in which AI is already used, to illustrate the breadth of application in what is still an emerging field.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="noindent2">Al has been widely applied at the interface of science with other subjects. For example, expert systems are used in environmental planning, and genetic algorithms in assessing what characteristics make a face attractive. There have even been attempts (of limited success) to find the ideal muesli using genetic algorithms.</p>
+</aside>
+<p class="indent3-ka1">AI has been applied to automated chemical synthesis, jet engine design, providing assistance to scientists in space, the human genome project, drug design, control of chemical flowshops producing drugs and fine chemicals, automatic feature recognition, image analysis, selection of optimum parameters for instrumental analysis, intelligent control of instruments, dispersal studies of pollutants, gas-phase kinetics, protein stereochemistry, querying of databases, studies of the origins of life, the design of synthetic routes in organic chemistry, and numerous other scientific tasks.</p>
+<p class="indent3-ka1">AI methods work. As a consequence, the range of applications is growing rapidly. In the 1970s and 1980s conventional programming was behind almost every significant application of computers to science, while AI methods were hardly used. In the coming years the situation will be reversed, as scientific programming comes increasingly to be dominated by AI.</p>
+<p class="indent3-ka1">We move on now to investigate how AI methods work, and look in more detail at the methods of greatest significance to chemistry and the physical sciences.</p>
+<h1 class="main1"><b>Further reading</b></h1>
+<p class="noindente">Klir, G.J. and Folger, T.A. (1988). <i>Fuzzy sets, uncertainty and information</i>. Prentice-Hall, London.</p>
+<p class="noindente">Lauriere, J.-L. (1990). <i>Problem solving and artificial intelligence</i>. Prentice Hall, London.</p>
+<p class="noindente">Michie, D. (1986). <i>Machine intelligence</i>. Ellis Horwood, Chichester.</p>
+<p class="noindente">Shirai, Y. and Tsujii, J-i. (1984). <i>Artificial intelligence</i>. John Wiley and-Sons, Chichester.</p>
+<p class="noindente">Simons, G.L. (1984). <i>Introducing artificial intelligence</i>. NCC Publications, Manchester.</p>
+<p class="noindente">Winston, P.H. (1984). <i>Artificial intelligence</i>. Addison-Wesley, Reading, Mass.</p>
+</section>
+</section>
+</body>
+</html>

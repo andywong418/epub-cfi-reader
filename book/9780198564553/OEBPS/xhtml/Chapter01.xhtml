@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en-US">
+<head>
+<meta charset="utf-8" />
+<title>Radiation Heat Transfer</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch03">
+<a id="page_1" class="page" style="width:70%;">Page 1, Chapter 1 Fundamentals of thermal radiation</a>
+<h1 class="main"><b> 1<span class="space">&#160;</span>Fundamentals of thermal radiation</b></h1>
+<section epub:type="chapter" id="sec1.1">
+<h2 class="h2"><b>1.1<span class="space">&#160;</span>Introduction</b></h2>
+<p class="noindent">Thermal radiation is the third mechanism of heat transfer after conduction and convection. All three mechanisms transfer heat from A to B by virtue of A being at a higher temperature than B. This transfer of heat is a mechanism of energy transfer, the aim of which is to achieve thermal equilibrium and hence equal temperatures. The three mechanisms invoke quite different methods of energy transfer. Both conduction and convection heat transfer between two points rely on the participation of an intervening medium. Conduction from A to B involves the direct exchange of kinetic energy between adjacent particles: a faster moving (i.e. hotter) particle will transfer energy to a slower (colder) particle during a collision. Convection is similar but includes the additional effect of the bulk motion of the particles, e.g. fluid flow near a hot wall, where the particles adjacent to the wall are heated and then carried away in the flow only to be replaced by colder particles.</p>
+<p class="indent">Radiation heat transfer is very different, in that no intervening medium is required. Thermal radiation is an emission of electromagnetic waves (or photons), and as such can be transferred between two bodies even if they are separated by a vacuum. The emission arises from natural oscillations and energy transitions of the electrons in the molecules. All materials, whether they be gas, liquid, or solid, emit their own radiation and absorb radiation which has been emitted elsewhere. For opaque materials emission of radiation is a surface phenomenon; molecular motion within the material still generates radiation, but this is absorbed by adjacent molecules before it can escape from the surface. For gases and transparent materials, such as glass or water, radiation is a volumetric phenomenon in that the observed emission originates from all parts of the volume of material.</p>
+<p class="indent">Because thermal radiation is an electromagnetic radiation, we can attribute to it the standard wave properties of velocity (<i>c</i>), frequency (<i>v</i>) and wavelength (&#x03BB;), which are related by the equation:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.1" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mi>v</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(1.1)</td>
+</tr>
+</table>
+<p class="noindent">Transmission through a vacuum (and most gases at normal temperatures and pressures) will be at a velocity of 3.0 &#x00D7; 10<sup>8</sup> m/s. As the molecular motion giving rise to this emission is thermal in nature, the intensity of the radiation depends on the temperature of the emitting material. We also find that radiation is emitted over a very wide range of wavelengths, and that the radiation is not equally distributed over those wavelengths. The distribution of emitted wavelengths is generally referred to as the <i>spectral distribution</i> or <i>spectrum</i>.<a id="page_2" class="page">Page 2, Chapter 1 Fundamentals of thermal radiation</a></p>
+<p class="indent">Another important distinction between radiation and the other two modes of heat transfer is the temperature dependence of the rate of heat transfer. The conductive and convective heat flux (<i>q</i><sub>cond</sub> and <i>q</i><sub>conv</sub>) between two points of temperature <i>T</i><sub>1 </sub>and <i>T<sub>2</sub></i> can be expressed by</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>q</m:mi><m:mrow><m:mtext>cond</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>k</m:mi><m:mo stretchy='false'>(</m:mo><m:msub><m:mi>T</m:mi><m:mtext>1</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy='false'>)</m:mo></m:mrow><m:mi>L</m:mi></m:mfrac></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>q</m:mi><m:mrow><m:mtext>conv</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">where <i>k</i> is the thermal conductivity of the material, <i>L</i> is the distance between the two points, and <i>h</i> is the convective heat transfer coefficient. Although <i>h</i> and <i>k</i> are often weak functions of temperature, the fluxes are usually considered to have approximately a linear dependence on the temperature difference. Radiative fluxes are quite different in that they are proportional to the difference between the fourth power of the absolute temperatures, i.e.:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>q</m:mi><m:mrow><m:mtext>rad</m:mtext></m:mrow></m:msub><m:mtext>&#x2009;</m:mtext><m:mo>&#x221D;</m:mo><m:mtext>&#x2009;</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">Radiation heat transfer is therefore particularly important at high temperatures, such as those found in combustion systems, solar energy, and nuclear reactors.</p>
+</section>
+<section epub:type="chapter" id="sec1.2">
+<h2 class="h2"><b>1.2<span class="space">&#160;</span>The electromagnetic spectrum</b></h2>
+<p class="noindent">As indicated above, thermal radiation is an electromagnetic emission. The electromagnetic spectrum is generally divided (somewhat arbitrarily) into a number of different regions (<a href="#fig1.1">Figure 1.1</a>). Note that materials emit radiation across the entire electromagnetic spectrum. However most of the emission is concentrated in the range 10<sup>&#x2013;7</sup> to 10<sup>&#x2013;4</sup> m, which encompasses the near ultraviolet (UV), all the visible region, and most of the infra-red (IR). Human senses feel incident radiation in this wavelength band as heat. Shorter UV wavelengths are not detected as heat but can do physiological damage (e.g. UV from the sun, X-rays). Within a very narrow range (380 to 760 nm) radiation stimulates the optic nerve, i.e. in this range we can both feel and see thermal radiation emitted from a hot surface.</p>
+<figure class="imgc" id="fig1.1">
+<img src="../images/fig1.1.jpg" alt="images"/>
+<figcaption><b>Figure 1.1</b> Schematic showing the regions of the electromagnetic spectrum.</figcaption>
+</figure>
+</section>
+<section epub:type="chapter" id="sec1.3">
+<h2 class="h2"><b>1.3<span class="space">&#160;</span>Basic definitions</b></h2>
+<h4 class="main4">Emissive radiant flux</h4>
+<p class="noindent">We define the emissive radiant flux (in W/m<sup>2</sup>) as the thermal radiation emitted from a surface per unit time per unit surface area. An alternative, often-used <a id="page_3" class="page">Page 3, Chapter 1 Fundamentals of thermal radiation</a>name is emissive power. This name, however, can be misleading as it disguises the fact that we are dealing with a flux. As indicated above, a wide range of wavelengths is generally emitted from a surface. The intensity of emission at various wavelengths will be discussed in detail later. At this stage it suffices to define two parameters. The <i>monochromatic emissive flux</i> (<i>W</i><sub>&#x03BB;</sub>) is the rate of emission per unit area of radiation in the wavelength interval &#x03BB; to &#x03BB; &#x002B; d&#x03BB;. We can also define the <i>total emissive flux</i> (<i>W</i>) as the total emitted energy summed over all wavelengths. The two are linked by the relation</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.2" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>W</m:mi><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mtext>&#x221E;</m:mtext></m:munderover><m:mrow><m:msub><m:mi>W</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mtext>d</m:mtext><m:mtext>&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;">(1.2)</td>
+</tr>
+</table>
+<p class="noindent">If the dependence of <i>W</i><sub>&#x03BB;</sub> on &#x03BB; is known, then the integral may be evaluated in order to determine <i>W</i>.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Incident radiant flux</p>
+<p class="noindent">The incident radiant flux (or irradiation) may be defined similarly as the rate at which thermal radiation arrives on a surface per unit surface area. This radiation originates from emissions from other neighbouring surfaces, and therefore contains a wide range of wavelengths, dependent on the temperature of each emitting surface. Again two parameters can be defined. The <i>monochromatic incident flux</i> (<i>G</i><sub>&#x03BB;</sub>) is the incident flux of radiation in the wavelength interval &#x03BB; to &#x03BB; &#x002B; d&#x03BB;, whereas the <i>total incident flux</i> (<i>G</i>) is the total incident energy summed over all wavelengths. The two are linked by the relation</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.3" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>G</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:2.2em;">(1.3)</td>
+</tr>
+</table>
+<p class="noindent">If the dependence of <i>G</i><sub>&#x03BB;</sub> on &#x03BB; is known, then the integral may be evaluated in order to determine the total flux.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Absorptivity, reflectivity and transmissivity</p>
+<figure class="imgc" id="fig1.2">
+<img src="../images/fig1.2.jpg" alt="images"/>
+<figcaption><b>Figure 1.2</b> Absorption, reflection, and transmission of radiation incident on a body of finite thickness.</figcaption>
+</figure>
+<p class="noindent">Consider radiation falling on the surface of a body of finite thickness (<a href="#fig1.2">Figure 1.2</a>). Part of the radiation may be absorbed by the material, part may <a id="page_4" class="page">Page 4, Chapter 1 Fundamentals of thermal radiation</a>be reflected away, and part may be transmitted through the material. The fractions absorbed, reflected, or transmitted are known as the <i>absorptivity</i> (<i>&#x03B1;</i>), the <i>reflectivity</i> (<i>&#x03C1;</i>), and the transmissivity (<i>&#x03C4;</i>), respectively. The fraction absorbed, reflected, or transmitted by a material is generally dependent on the wavelength of the incident radiation, i.e. there is spectral dependence. Glass offers a good example of spectral dependence in that it is transparent to visible wavelengths, but opaque to infra-red wavelengths greater than around 2.5 <i>&#x03BC;</i>m. A surface may also exhibit directional effects, whereby the surface responds differently to incoming radiation, depending on the angle between the incident beam and the surface. Most engineering calculations assume that surfaces are <i>diffuse</i>, i.e. that the absorptivity is independent of direction. (Important exceptions are the reflecting surfaces used in space applications.) Directional dependence is not considered in detail here; the interested reader is referred to the more specialist texts.</p>
+
+<p class="indent">We can define <i>monochromatic</i> and <i>total</i> absorptivity, reflectivity, and transmissivity as follows:</p>
+<table style="margin-top:0.50em;">
+<tr>
+<td style="padding-left:-3em;"><i>&#x03B1;<sub>&#x03BB;</sub>,&#x03C1;<sub>&#x03BB;</sub>,&#x03C4;</i><sub>&#x03BB;</sub></td>
+<td style="vertical-align:top;"><p class="tab-l">fraction of incident radiation at wavelength &#x03BB; absorbed/reflected/transmitted.</p></td>
+</tr>
+<tr>
+<td style="padding-left:-3em"><i>&#x03B1;,&#x03C1;,&#x03C4;</i></td>
+<td style="vertical-align:top;"><p class="tab-l">fraction of incident radiation over all &#x03BB; absorbed/reflected/transmitted.</p></td>
+</tr>
+</table>
+<p class="noindent">As each of these parameters is a fraction of the incident flux, then each must have a value between 0 and 1. Also, since all incident radiation can only be absorbed, reflected, or transmitted, energy conservation requires that</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.4" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03C4;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>and</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>&#x03B1;</m:mi><m:mo>+</m:mo><m:mi>&#x03C1;</m:mi><m:mo>+</m:mo><m:mi>&#x03C4;</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(1.4)</td>
+</tr>
+</table>
+<p class="noindent">Nearly all engineering solids are opaque, i.e. no radiation is transmitted, in which case</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.5" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>and</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>&#x03B1;</m:mi><m:mo>+</m:mo><m:mi>&#x03C1;</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(1.5)</td>
+</tr>
+</table>
+<p class="noindent">We will frequently be using this form in heat transfer problems. In fact, this equation is in such general use that it is very easy to forget that it applies only to opaque surfaces.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Radiosity</p>
+<p class="noindent">We define the radiosity (<i>J</i>) of a surface as the total radiative flux leaving the surface. This combines the natural thermal emission from the surface together with any reflected incident radiation. Thus radiosity is given by:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.6" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>J</m:mi><m:mo>=</m:mo><m:mi>W</m:mi><m:mo>+</m:mo><m:mi>&#x03C1;</m:mi><m:mi>G</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(1.6)</td>
+</tr>
+</table>
+<p class="noindent">Since <i>W</i> and <i>G</i> have spectral dependence, <i>J</i> must also be wavelength-dependent, so we can define a monochromatic radiosity (<i>J</i><sub>&#x03BB;</sub>) and a total radiosity (<i>J</i>) , which is summed over all wavelengths:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.7" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>J</m:mi><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>J</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1.75em;">(1.7)</td>
+</tr>
+</table>
+</section>
+<section epub:type="chapter" id="sec1.4">
+<a id="page_5" class="page" style="width:70%;">Page 5, Chapter 1 Fundamentals of thermal radiation</a>
+<h2 class="h2"><b>1.4<span class="space">&#160;</span>Black body radiation</b></h2>
+<p class="noindent">When discussing real surfaces it is useful to introduce the concept of the <i>black body</i>. A black body is defined as an object or surface which absorbs all incident thermal radiation of all wavelengths, i.e. <i>&#x03B1;</i><sub>&#x03BB; </sub>= <i>&#x03B1;</i> = 1; <i>&#x03C1;</i><sub>&#x03BB;</sub> = <i>&#x03C1;</i> = 0; &#x03C4;<sub>&#x03BB;</sub> = &#x03C4; = 0. Since no radiation is reflected the only radiation leaving the surface is its own thermal emission, i.e. the radiosity and emissive flux (both monochromatic and total) are equal. In practice perfect black bodies do not exist, although we can get quite close, e.g. a surface can be specially coated with carbon black or platinum black so that it will absorb around 99% of incident radiation. An alternative simulation of a black body is known as the <i>black body cavity</i> (<a href="#fig1.3">Figure 1.3</a>), which consists of a hollow box with a small hole in one side. Any radiation entering the box will impinge on the opposite wall, where a fraction will be reflected and a fraction absorbed. The reflected radiation will then travel to another wall, where part is absorbed, part reflected. This process of internal reflection will continue, with the reflected beam getting progressively weaker and weaker. If the hole through which the radiation entered is sufficiently small then the probability of the radiation escaping is so low that the hole is essentially a total absorber of incoming radiation and appears to behave like a black body.</p>
+<aside class="abc" style="margin-top:-19em;" epub:type="sidebar">
+<figure class="imgc" id="fig1.3">
+<img src="../images/fig1.3.jpg" alt="images"/>
+<figcaption><b>Figure 1.3</b> Absorption of incident radiation in a black body cavity.</figcaption>
+</figure>
+</aside>
+<p class="indent">As well as being a perfect absorber of radiation a black surface is also a perfect emitter. By this we mean that for a given temperature no object can emit more radiation (either monochromatic or total) than one which is black. Consider a body emitting and receiving radiation from its surroundings. When the body is a thermal equilibrium with its surroundings the incident flux will equal the radiative flux leaving the surface (i.e. the radiosity). So, using <a href="#eq1.6">Equation 1.6</a> we may write:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mi>J</m:mi><m:mo>=</m:mo><m:mi>W</m:mi><m:mo>+</m:mo><m:mi>&#x03C1;</m:mi><m:mi>G</m:mi></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">This equation is valid for any non-black surface of reflectivity <i>&#x03C1;</i>. Because the incident flux is constant (at a given temperature) a surface with a low reflectivity will have a high thermal emission <i>W</i>. If the surface in question is black, then <i>&#x03C1; =</i> 0 and the equation reduces to <i>G = W<sub>b</sub></i>, where the subscript <i>b</i> is used to indicate a black body. It follows that the emission from a black body must be the highest possible at a given temperature. This argument is valid both for total and monochromatic radiation.</p>
+<p class="indent">The notion that a non-black surface emits less than a black surface leads to the concept of emissivity. The monochromatic emissivity (<i>&#x03B5;</i><sub>&#x03BB;</sub>) of a body is defined as the ratio of the monochromatic emissive flux at wavelength &#x03BB; and temperature <i>T</i> to the monochromatic emissive flux from a black body at the same wavelength and temperature.</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.8" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>W</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub></m:mrow><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(1.8)</td>
+</tr>
+</table>
+<p class="noindent">Similarly, we can define the total emissivity as the ratio of the total emissive flux at temperature <i>T</i> to the total emissive flux from a black body at the same temperature:<a id="page_6" class="page">Page 6, Chapter 1 Fundamentals of thermal radiation</a></p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.9" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03B5;</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>W</m:mi><m:mrow><m:msub><m:mi>W</m:mi><m:mi>b</m:mi></m:msub></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(1.9)</td>
+</tr>
+</table>
+<p class="noindent">Substituting <a href="#eq1.2">Equation 1.2</a> followed by <a href="#eq1.8">Equation 1.8</a> gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.10" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03B5;</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>W</m:mi><m:mrow><m:msub><m:mi>W</m:mi><m:mi>b</m:mi></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>W</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mo>&#x03BB;</m:mo></m:mrow></m:msub><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:2.75em;">(1.10)</td>
+</tr>
+</table>
+<p class="noindent">Thus if the spectral variation of black body emission and monochromatic emissivity are known, the total emissivity may be determined. We shall see how this expression can be simplified for practical systems later.</p>
+<p class="noindent">&#160;</p>
+</section>
+<section epub:type="chapter" id="sec1.5">
+<h2 class="h2"><b>1.5<span class="space">&#160;</span>Spectral distribution of black body radiation</b></h2>
+<p class="noindent">The spectral dependence of black body emission is shown in <a href="#fig1.4">Figure 1.4</a>, which plots the monochromatic emissive flux (<i>W<sub>b</sub></i><sub>&#x03BB;</sub>) as a function of wavelength for various temperatures. A number of features should be noted:</p>
+<p class="blist-n" style="padding-top:1em;">(i)<span class="space">&#160;</span><i>W<sub>b</sub></i><sub>&#x03BB;</sub>. shows a clear dependence both on wavelength and on the temperature of the emitter.</p>
+<p class="blistk">(ii)<span class="space-n">&#160;</span>For any given wavelength &#x03BB; , <i>W<sub>b</sub></i><sub>&#x03BB;</sub> increases with temperature, i.e. isotherms do not cross.</p>
+<p class="blistk1">(iii)<span class="space-n1">&#160;</span>For any given temperature, <i>W<sub>b</sub></i><sub>&#x03BB;</sub>. passes through a maximum, which moves to a lower wavelength as temperature increases.</p>
+<figure class="imgc" id="fig1.4">
+<img src="../images/fig1.4.jpg" alt="images"/>
+<figcaption><b>Figure 1.4</b> Emissive flux as a function of wavelength and temperature.</figcaption>
+</figure>
+<p class="noindent"><a id="page_7" class="page">Page 7, Chapter 1 Fundamentals of
+thermal radiation</a></p>
+<p class="blistk">(iv)<span class="space-n">&#160;</span>From <a href="#eq1.2">Equation 1.2</a>, the total emission <i>W<sub>b</sub></i> at a particular temperature is the area under the curve for that temperature, i.e.:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.11" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>W</m:mi><m:mi>b</m:mi></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;">(1.11)</td>
+</tr>
+</table>
+<p class="noindent">A theoretical explanation of black body emission was sought by many physicists at the end of the nineteenth century. Using classical principles of statistical thermodynamics and the kinetic theory of gases, Rayleigh and Jeans derived an expression for <i>W</i><i><sub>b&#x03BB;</sub></i>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.12" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>c</m:mi><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mn>4</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(1.12)</td>
+</tr>
+</table>
+<p class="noindent">where <i>k</i> is the Boltzmann constant. This produces fairly good agreement with experiment at longer wavelengths, and, indeed, is still in use in radio engineering. However, it is not recommended for use in most engineering applications; its mathematical form clearly does not predict a maximum, but suggests that W<i><sub>b&#x03BB;</sub></i> &#x2192; 0 as &#x03BB; &#x2192; 0. In other words, it predicts ever increasing levels of emission as we progress to shorter wavelengths. This enormous overestimate of the emission of short wavelengths became known as the &#x201C;ultraviolet catastrophe&#x201D;.</p>
+<p class="indent">The best theoretical model is due to Planck, who in the early 20th century used the developing ideas of quantisation of energy to derive an expression for W<i><sub>b&#x03BB;</sub></i>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.13" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>h</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mn>5</m:mn></m:msup></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mtext>exp</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:1.2em;">(1.13)</td>
+</tr>
+</table>
+<p class="noindent">where <i>h</i> is Planck&#x2019;s constant. This bears close similarities with the Rayleigh-Jeans Law (<a href="#eq1.12">Equation 1.12</a>), but replaces classical equipartition of energy (in terms of <i>k T</i>) with quantised energy packets (photons) of energy <i>hv</i> (<i>=hc/&#x03BB;</i>). <a href="#eq1.13">Equation 1.13</a> fits experimental data extremely well, and proved to be one of the early, great successes of the new quantum theory of radiation.</p>
+<p class="indent">Planck&#x2019;s Law can be simplified at certain mathematical limits:</p>
+<p class="nlist-1">(i)<span class="space">&#160;</span>In the limit of small wavelength and/or low temperature, <i>hc/&#x03BB;kT</i> and, hence, exp(<i>hc/&#x03BB;kT</i>) will be much greater than 1, in which case <a href="#eq1.13">Equation 1.13</a> reduces to:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.14" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>h</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mn>5</m:mn></m:msup></m:mrow></m:mfrac><m:mtext>exp</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(1.14)</td>
+</tr>
+</table>
+<p class="nlist-1t">This expression is known as Wien&#x2019;s Approximation, and may be used, to engineering accuracy, for visible and shorter wavelengths up to around 3000 K.</p>
+<p class="nlist-11">(ii)<span class="space">&#160;</span>In the limit of long wavelength and/or high temperature, <i>hc/&#x03BB;kT</i> will be small and can be expanded in a Taylor&#x2019;s series approximation, whereby <i>e<sup>x</sup></i> &#x2248; 1 &#x002B; <i>x</i> for small <i>x</i>. Applying this to <a href="#eq1.13">Equation 1.13</a> gives</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mi>&#x03BB;</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>c</m:mi><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:msup><m:mi>&#x03BB;</m:mi><m:mn>4</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent"><a id="page_8" class="page">Page 8, Chapter 1 Fundamentals of thermal radiation</a></p>
+<p class="nlist-1t">which is exactly the same as Rayleigh-Jeans Law (<a href="#eq1.12">Equation 1.12</a>), and hence validates use of that equation at long wavelengths.</p>
+</section>
+<section epub:type="chapter" id="sec1.6">
+<h2 class="h2"><b>1.6<span class="space">&#160;</span>Stefan&#x2013;Boltzmann Law</b></h2>
+<p class="noindent">Before Planck made his theoretical breakthrough, Stefan and Boltzmann had independently used classical thermodynamics to show that the total emission (W<sub><i>b</i></sub>) from a surface varies with the fourth power of absolute temperature. This result can also be derived from Planck&#x2019;s Law by substituting <a href="#eq1.13">Equation 1.13</a> into <a href="#eq1.11">Equation 1.11</a> and integrating:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>W</m:mi><m:mi>b</m:mi></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>d&#x03BB;</m:mtext><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>h</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mstyle><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mtext>d&#x03BB;</m:mtext></m:mrow><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mn>5</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>exp</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">It is convenient to introduce the transformation</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow></m:mtd><m:mtd><m:mo>&#x21D2;</m:mo></m:mtd><m:mtd><m:mrow><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>k</m:mi><m:mi>T</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mtext>d</m:mtext><m:mi>y</m:mi></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">from which we obtain, after rearrangement:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>W</m:mi><m:mi>b</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mtext>&#x03C0;</m:mtext><m:msup><m:mi>k</m:mi><m:mn>4</m:mn></m:msup><m:msup><m:mi>T</m:mi><m:mn>4</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>h</m:mi><m:mn>3</m:mn></m:msup><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>e</m:mi><m:mi>y</m:mi></m:msup><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mtext>d</m:mtext><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">The integral is a standard form, equal to (&#x03C0;<sup>4</sup>/15), which gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.15" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>W</m:mi><m:mi>b</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:msup><m:mi>&#x03C0;</m:mi><m:mn>5</m:mn></m:msup><m:msup><m:mi>k</m:mi><m:mn>4</m:mn></m:msup><m:msup><m:mi>T</m:mi><m:mn>4</m:mn></m:msup></m:mrow><m:mrow><m:mn>15</m:mn><m:msup><m:mi>h</m:mi><m:mn>3</m:mn></m:msup><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>&#x03C3;</m:mi><m:msup><m:mi>T</m:mi><m:mn>4</m:mn></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(1.15)</td>
+</tr>
+</table>
+<p class="noindent">All terms on the right-hand side (except <i>T</i>) are fundamental constants, and are combined to give the Stefan-Boltzmann constant (<i>&#x03C3;</i>), which is equal to 5.67 &#x00D7; 10<sup>&#x2013;8</sup> W/m<sup>2</sup>K<sup>4</sup>. This equation is one of the governing equations of radiation heat transfer and forms the basis of all heat transfer calculations.</p>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec1.7">
+<h2 class="h2"><b>1.7<span class="space">&#160;</span>Wien&#x2019;s displacement law</b></h2>
+<p class="noindent">In <a href="#fig1.4">Figure 1.4</a> it was noted that the maximum in <i>W<sub>b&#x03BB;</sub></i> moves to lower wavelengths as the temperature increases. Wien&#x2019;s Displacement Law (not to be confused with Wien&#x2019;s Approximation) relates the wavelength &#x03BB;<sub>max</sub> at which this maximum occurs to the temperature of the emitting body, and can be derived by differentiation of Planck&#x2019;s Law. We have</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>h</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mn>5</m:mn></m:msup></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mtext>exp</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(1.13)</td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:mi>d</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mn>10</m:mn><m:mi>&#x03C0;</m:mi><m:mi>h</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mn>6</m:mn></m:msup></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mtext>exp</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>h</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mn>5</m:mn></m:msup></m:mrow></m:mfrac><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mtext>exp</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mn>2</m:mn></m:msup><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac><m:mtext>exp</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent"><a id="page_9" class="page">Page 9, Chapter 1 Fundamentals of thermal radiation</a>Setting this equal to zero at &#x03BB; = &#x03BB;<sub>max</sub> gives after rearrangement:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>5</m:mn><m:mo stretchy='false'>(</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo stretchy='false'>)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mtext>&#x2009;</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>where</m:mtext><m:mtext>&#x2009;</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:msub><m:mtext>&#x03BB;</m:mtext><m:mrow><m:mtext>max</m:mtext></m:mrow></m:msub><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math>.</td>
+</tr>
+</table>
+<p class="noindent">This can be solved numerically to give <i>x =</i> 4.965, which leads to Wien&#x2019;s Law:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.16" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mtext>&#x03BB;</m:mtext><m:mrow><m:mtext>max</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mn>4.965</m:mn><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2.898</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>3</m:mn></m:mrow></m:msup></m:mrow><m:mi>T</m:mi></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.75em;">(1.16)</td>
+</tr>
+</table>
+<p class="noindent">Values of &#x03BB;<sub>max</sub> for various temperatures are given in <a href="#tab1.1">Table 1.1</a>. At ambient temperatures all radiation is in the infra-red part of the spectrum (&#x03BB;<sub>max</sub> &#x003E;750 nm), and no radiation is visible to the eye. As the temperature increases, radiation starts to be emitted in the red part of the visible region. The maximum continues to be in the infra-red, even at so-called &#x201C;white heat&#x201D;. Only at temperatures of a few thousand Kelvin does the maximum move to the visible region (hence the sun appears yellow); at temperatures over 15 000 K the maximum is in the ultra-violet and surfaces emit more blue light than red (hence the hottest stars appear blue).</p>
+<p class="tab-cap" id="tab1.1"><b>Table 1.1</b> &#x03BB;<sub>max</sub> for various temperatures calculated from Wien&#x2019;s Law</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">Temperature (K)</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">&#x03BB;<sub>max</sub>(m)</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">Surface Appearance</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-r">300</p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>&#x2013;5</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">Not visible</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-r">1 000</p></td>
+<td style="vertical-align:top;"><p class="tab-l">2.9 &#x00D7; 10<sup>&#x2013;6</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">Dull Red</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-r">1 500</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1.9 &#x00D7; 10<sup>&#x2013;6</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">Orange-red</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-r">2 000</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1.5 &#x00D7; 10<sup>&#x2013;6</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x201C;White&#x201D; heat</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-r">6 000</p></td>
+<td style="vertical-align:top;"><p class="tab-l">4.8 &#x00D7; 10<sup>&#x2013;7</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">Yellow stars</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-r">30 000</p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>&#x2013;8</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">Blue stars</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+</table>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec1.8">
+<h2 class="h2"><b>1.8<span class="space">&#160;</span>Total and monochromatic absorptivity and emissivity</b></h2>
+<p class="noindent">We have so far established that real surfaces both emit and absorb less than a black body at the same temperature, and that the monochromatic emissivity and absorptivity are spectrally dependent. <a href="#eq1.10">Equation 1.10</a> links the black body spectrum with the monochromatic and total emissivities. Since absorptivity is the fraction of incident radiation absorbed, we may also write:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;" id="eq1.17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03B1;</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mi>G</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>d</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>G</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>d</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:mfrac></m:mrow></m:math></td>
+<td style="padding-top:2.5em;">(1.17)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<figure class="imgc" id="fig1.5">
+<img src="../images/fig1.5.jpg" alt="images"/>
+<figcaption><b>Figure 1.5</b> Radiation exchange between a small body and a large enclosure.</figcaption>
+</figure>
+</aside>
+<p class="noindent">There is an important link between absorptivity and emissivity, known as Kirchhoff s Law, which is of great use in practical systems. Consider a small, non-black body contained within a black, isothermal enclosure (<a href="#fig1.5">Figure 1.5</a>). Furthermore, let us allow the body (surface 1) to come to thermal equilibrium with the walls of the enclosure (surface 2). This means that the temperature of the walls and the body are equal, and that the incident flux of every wavelength equals the leaving flux (radiosity) for that wavelength from the <a id="page_10" class="page">Page 10, Chapter 1 Fundamentals of thermal radiation</a>surface. From the definition of radiosity (<a href="#eq1.6">Equation 1.6</a>), we may write for surface 1:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>G</m:mi><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>J</m:mi><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>W</m:mi><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mi>G</m:mi><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mn>1</m:mn></m:mrow></m:msub></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">where <i>G</i><sub>&#x03BB;</sub><sub>1</sub><i>,J</i><sub>&#x03BB;</sub><sub>1</sub> and <i>W</i><sub>&#x03BB;</sub><sub>1</sub> are the monochromatic incident flux, radiosity, and emissive flux, respectively, for surface 1. Since all radiation incident on surface 1 comes from surface 2 (which is black), <i>G</i><sub>&#x03BB;</sub><sub>1</sub> must equal W<i><sub>b</sub></i><sub>&#x03BB;2</sub>. Using <a href="#eq1.5">Equations 1.5</a> and <a href="#eq1.8">1.8</a>, we obtain:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mrow><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext><m:mn>2</m:mn></m:mrow></m:msub><m:mtext>&#x2009;</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x21D2;</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext><m:mn>2</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext><m:mn>1</m:mn></m:mrow></m:msub></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<p class="noindent">As the temperatures of the two surfaces are equal, then <i>W<sub>b&#x03BB;</sub></i><sub>1</sub><i>=W<sub>b&#x03BB;</sub></i><sub>2</sub>, since the monochromatic emissive power depends only on temperature. Thus we get Kirchhoff&#x2019;s Law:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.18" style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(1.18)</td>
+</tr>
+</table>
+<p class="noindent">Both <i>&#x03B1;</i><sub>&#x03BB;</sub> and <i>&#x03B5;</i><sub>&#x03BB;</sub> depend <i>only</i> on the nature and properties of surface 1 and are independent of surface 2. Therefore, although this expression has been derived for equilibrium conditions, it holds for <i>all</i> conditions, i.e. surface 2 need not be black and thermal equilibrium is not necessary. (N.B. A more rigorous treatment shows that the above expression holds only for a diffuse surface, i.e. where there is no directional dependence of <i>&#x03B1;</i><sub>&#x03BB;</sub> and <i>&#x03B5;</i><sub>&#x03BB;</sub>)</p>
+<p class="indent">The above treatment can be extended to cover total absorptivity and emissivity: an energy balance requires the total radiosity (<i>J</i>) to equal the total incident flux (<i>G</i>), leading to the equality <i>&#x03B1; =&#x03B5;</i> at thermal equilibrium. We <i>cannot</i>, however, now generalise this equality to non-equilibrium cases. Recalling <a href="#eq1.10">Equations 1.10</a> and <a href="#eq1.17">1.17</a> for total emissivity and absorptivity, we have for surface 1:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>&#x03B5;</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mi>d</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mi>d</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:mfrac></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>and</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>&#x03B1;</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mi>G</m:mi><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>G</m:mi><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mi>d</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">The total emissivity is a function of surface 1 only, since both <i>&#x03B5;</i><sub>&#x03BB;</sub> and <i>W<sub>b</sub></i><sub>&#x03BB;1</sub> depend only on the properties of surface 1. But total absorptivity is a function of both surface 1 and surface 2, since <i>&#x03B1;</i><sub>&#x03BB;</sub> is a function of surface 1 and <i>G<sub>&#x03BB;1</sub></i>(<i>= W<sub>b</sub></i><sub>&#x03BB;</sub><i><sub>2</sub></i>) is a function of the emission characteristics of surface 2. Thus in general <i>&#x03B1; &#x2260; &#x03B5;</i>, except at thermal equilibrium. This restriction means that the equality appears to be of little value in heat transfer processes, which by their very nature are non-equilibrium systems. However, there is one further special case where the equality does hold.</p>
+<p class="indent">Consider the case where both <i>&#x03B1;</i><sub>&#x03BB;</sub> and <i>&#x03B5;</i><sub>&#x03BB;</sub> are constant and independent of wavelength. Both can then be taken outside the above integrals, allowing the integrals to be cancelled. We then have <i>&#x03B1;</i> = <i>&#x03B1;</i><sub>&#x03BB;</sub> and &#x03B5; <i>= &#x03B5;</i><sub>&#x03BB;</sub> Using <a href="#eq1.18">Equation 1.18</a> (which is generally applicable) leads to <i>&#x03B1; = &#x03B5;</i> under all conditions (i.e. non-equilibrium, non-black surfaces) where <i>&#x03B1;</i><sub>&#x03BB;</sub> and <i>&#x03B5;</i><sub>&#x03BB;</sub> are constant. We shall see that using this equality is extremely useful in <a id="page_11" class="page">Page 11, Chapter 1 Fundamentals of thermal radiation</a>engineering calculations, although the assumptions made in its derivation must always be remembered. Objects for which <i>&#x03B1;</i><sub>&#x03BB;</sub><i><sub> </sub></i>and <i>&#x03B5;</i><sub>&#x03BB;</sub><i><sub> </sub></i>are independent of wavelength are generally called <i>grey</i> bodies, and any assumption that <i>&#x03B1; = &#x03B5;</i> in non-equilibrium systems is referred to as the <i>grey body approximation</i>. The approximation is valid for most materials in the infra-red part of the spectrum (&#x03BB; = 1 to 10 <i>&#x03BC;</i>m), but can be hopelessly inaccurate in the visible region. In engineering applications, the grey body appromixation can be used in, say, furnaces, where a large proportion of the heat transfer is due to infra-red heating; it should be used with extreme caution (preferably not at all) in solar heating systems.</p>
+<figure class="imgc" id="fig1.6">
+<img src="../images/fig1.6.jpg" alt="images"/>
+<figcaption><b>Figure 1.6</b> Monochromatic emissivity as a function of wavelength for a selection of metals and non-metals (from Kreith and Bohn).</figcaption>
+</figure>
+<p class="indent">There is a wealth of emissivity data available in the literature, a brief sample of which is shown here. <a href="#fig1.6">Figure 1.6</a> shows monochromatic emissivity data as a function of wavelength for a small selection of metals and non-metals. It is noticeable that polished metals have very low emissivities (hence a high reflectivity) and are almost grey, with little variation in <i>&#x03B5;</i><sub>&#x03BB;</sub> with wavelength. Non-metals show a wide variation in <i>&#x03B5;</i><sub>&#x03BB;</sub>: emissivities in the visible region are low, but materials are almost black in the infra-red region. <a href="#tab1.2">Table 1.2</a> shows total emissivity as a function of temperature for some common metals and non-metals. Metals generally have low emissivities, which rise slowly with temperature, whereas non-metals have high emissivities at ambient temperatures, which decrease with temperature. Note that the condition of the surface, particularly the degree of oxidation, can have a very marked effect on emissivity. Many of the values are only approximate and are averages of values taken from a number of different sources.</p>
+</section>
+<section epub:type="chapter" id="sec1.9">
+<h2 class="h2"><b>1.9<span class="space">&#160;</span>Black body temperature</b></h2>
+<p class="noindent">We have established that the emissive power from a real surface of temperature <i>T<sub>s</sub></i> and emissivity <i>&#x03B5;</i> is less than that from a black surface at the same temperature. We can imagine that there will exist a black surface at some<a id="page_12" class="page">Page 12, Chapter 1 Fundamentals of thermal radiation</a>lower temperature (<i>T<sub>b</sub></i>) whose emissive power is the same as the real surface at <i>T<sub>s</sub></i>. We can therefore write:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq" id="eq1.19"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:mi>W</m:mi><m:mo>=</m:mo><m:mi>&#x03B5;</m:mi><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mi>s</m:mi><m:mn>4</m:mn></m:msubsup><m:mo>=</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mi>b</m:mi><m:mn>4</m:mn></m:msubsup></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>T</m:mi><m:mi>b</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>T</m:mi><m:mi>s</m:mi></m:msub><m:msup><m:mi>&#x03B5;</m:mi><m:mrow><m:mn>0.25</m:mn></m:mrow></m:msup></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:2.2em;">(1.19)</td>
+</tr>
+</table>
+<p class="tab-cap" id="tab1.2"><b>Table 1.2</b><span class="space">&#160;</span>Total emissivity as a function of temperature for a range of materials</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">25 &#x00B0;C</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">200 &#x00B0;C</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">500 &#x00B0;C</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">1000 &#x00B0;C</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Aluminium (polished)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.04</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.05</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.07</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.15</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Aluminium (oxidised)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.20</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.22</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.33</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Brass (polished)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.03</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.03</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.03</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Brass (oxidised)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.45</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.53</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.75</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Copper (polished)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.02</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.02</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.04</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.06</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Copper (oxidised)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.85</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.83</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.75</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Steel (polished)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.07</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.08</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.10</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.20</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding-top:0.75em;"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Alumina</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.70</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.45</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.20</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Brick</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.90</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.90</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.70</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.40</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Carbon black</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.95</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.97</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.99</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.99</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Glass</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.90</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.90</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.70</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.50</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Graphite (polished)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.45</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.95</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.95</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Limestone</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.95</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.83</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.75</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Paper</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.95</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.85</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.70</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.50</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">White Pigments</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.90</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.80</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.60</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.40</p></td>
+</tr>
+</table>
+<p class="noindent">&#160;</p>
+<p class="noindent"><i>T<sub>b</sub></i> is known as the <i>black body temperature</i> of the real surface and is always less than the actual temperature. Note that we are equating the total emissive fluxes; the spectral distribution of the real surface at <i>T<sub>s</sub></i> and the black body at <i>T<sub>b</sub></i> will be different. We will see later that black body temperature is an important concept in the measurement of high temperatures, because many techniques determine the black body temperature, rather than the surface temperature.</p>
+</section>
+</section>
+</body>
+</html>

@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Applications of Artificial Intelligence in Chemistry</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="Ch02">
+<a id="page_13" class="page" style="width:70%;">Page 13, Artificial neural networks</a>
+<h1 class="main"><b>2&#160;&#160;&#160;Artificial neural networks</b></h1>
+<section epub:type="chapter" id="sec_2.1">
+<h2 class="h2"><b>2.1&#160;&#160;Introduction</b></h2>
+<p class="noindentt">Computers are not much good at tasks at which humans excel, such as vision, speech recognition, and motor control. This difference cannot be due directly to a lack of speed, since a computer manipulates data thousands of times faster than neurons in the brain.</p>
+<p class="indent3-ka1">However, computer processors have a structure which is very different from that of the human brain, and it is natural to wonder whether human superiority in these areas might be related to the difference. Could a computer whose internal operations resembled those of the human brain really &#x2018;think&#x2019;? And if it could, would it be as versatile as the brain?</p>
+<p class="indent3-ka1">This kind of speculation has led to the development of computer programs that copy what are presumed to be the workings of the brain, in the hope that these programs might show human-like intelligence, at least at a rudimentary level. The programs learn by training and experience, just as humans do, instead of following predetermined rules.</p>
+<p class="indent3-ka1">But there are formidable obstacles to be overcome before a computer can think like a person. One of the most fundamental is that our knowledge of how the brain works is fragmentary, so making a copy of it in silicon presents grave difficulties. Our understanding is still so incomplete that we are unable even to fully explain how the brain stores and recalls a simple fact, such as which day of the week it is.</p>
+<aside class="abc" style="margin-top:1.5em;" epub:type="sidebar">
+<p class="noindent2">An artificial neural network is an example of a <b>connectionist model</b>, in which many small logical units are connected in a network.</p>
+</aside>
+<p class="indent3-ka1">Despite the difficulty of reproducing something that is only partly understood, great efforts have been made to mimic the behaviour of the brain using computers; this work has given rise to the field of artificial neural networks. Artificial neural networks have a long history, almost as long as that of the computer itself. Yet, at one stage, work in this area was virtually abandoned because it appeared that neural networks would be unable to solve all but the most trivial of problems.</p>
+<p class="indent3-ka1">In the latter part of the 1980s a way around this difficulty was discovered, and since then neural networks have had some striking successes. Indeed there is now the extraordinary prospect that such networks might &#x2013; unaided &#x2013; discover new scientific laws. In this chapter we shall see how this prospect may become reality.</p>
+<p class="indent3-ka1t"><i>Artificial neural networks are computer programs based on a simplified model of the brain; they do not attempt to copy the fine detail of how the brain works, but try to reproduce its logical operation using a collection of neuron-like entities to perform processing</i>.</p>
+</section>
+<section epub:type="chapter" id="sec_2.2">
+<a id="page_14" class="page" style="width:70%;">Page 14, Artificial neural networks</a>
+<h2 class="h2"><b>2.2&#160;&#160;Structure and operation of the brain</b></h2>
+<p class="noindent">Since the design of artificial neural networks is inspired by the structure of the brain, we shall start by briefly reviewing the way in which the brain is believed to function.</p>
+<p class="indent3-ka1">The <b>neuron</b> is the fundamental processing unit in the brain (<a href="#fig_2.1">Fig. 2.1</a>); a typical human brain has about 10<sup>10</sup> neurons. Each one is linked to approximately 10<sup>4</sup> others by dendrites, which serve to deliver messages to the neuron. Each neuron also has an output channel known as an axon to funnel messages away.</p>
+<figure style="margin-left:-7em;" id="fig_2.1">
+ <img src="../images/page14-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;"><b>Fig. 2.1</b> A simplified model of a neuron.</figcaption>
+</figure>
+<p class="indent3-ka1">The detailed biochemistry occurring at the molecular level in neurons is not fully understood, but the basic outline is clear. Signals are constantly flowing into neurons through the dendrites; these signals are processed by the neuron in a fashion which resembles the workings of a tiny logic device. Signals channelled into the neuron over a short period of time are integrated or summed biochemically. If the sum of these signals reaches a certain level, the neuron assumes an &#x2018;excited&#x2019; state, whereupon it sends a signal out down its axon. Because of the highly-branched structure of the dendrites, a single outgoing message from the neuron is divided up many times and is transmitted to numerous other neurons.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure style="margin-left:-1em;" id="fig_2.2">
+ <img src="../images/page14-2.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="margin-top:1em;margin-left:1.5em;"><b>Fig. 2.2</b> The Heaviside threshold function.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1">The neuron behaves as a <b>threshold device</b>; it is quiescent unless the sum of the input signals over a period of time rises above some critical voltage, &#x03B5; (<a href="#fig_2.2">Fig. 2.2</a>). This voltage is determined by a <b>threshold function</b> which has a step-like shape, and is known as a <b>step function</b> or <b>Heaviside function</b>. If the threshold voltage is exceeded, the neuron is switched on and an output signal is generated.</p>
+<p class="indent3-ka1">Neurons that have assumed an excited state settle back rapidly into the quiescent state, but their message may by then have triggered into action many other neurons elsewhere in the network. Because of the richness of neural interconnection, signals propagate through the three-dimensional network of the brain in a manner that changes in an exceedingly complex way with time.</p>
+<p class="indent3-ka1">The network is constantly active as messages flicker from neuron to neuron, and as neurons respond to signals from muscles, or, via our senses, from the environment. This ceaseless activity is central to both thought and learning. Inter-neuron connections along a path that carries frequent messages<a id="page_15" class="page">Page 15, Artificial neural networks</a>are strengthened by the repeated stimulus and so, over time, the connections are reinforced. This preferential strengthening of well-used network links, which occurs as we master a new field or skill, appears to be the basis for learning.</p>
+<p class="indent3-ka1">It does not seem to matter much what the stimulus is: we can try to ski down a snow&#x2013; field without falling, or learn the rules of mechanistic organic chemistry. Whatever the stimulus, an appropriate response can in principle be learnt, manifested in the strengthening of activated inter-neuron connections; when the right links are strengthened, we learn. It is exactly this mechanism which we seek to reproduce in an artificial neural network.</p>
+<aside class="abc" style="margin-top:0.7em;" epub:type="sidebar">
+<p class="noindent2">This is related to the &#x2018;built-in&#x2019; knowledge called instinct. When they leave the egg, nest-building birds already have the knowledge needed to build nests, as can be demonstrated by removing eggs from the nest and rearing the chicks that hatch from them in isolation from other birds. Evidently nest-building is &#x2018;hard-wired&#x2019; into the brains of these birds. It is unclear, though intriguing to speculate about, what knowledge might be hard-wired into the human brain at birth.</p>
+</aside>
+<p class="indent3-ka1">A crucial feature of the behaviour of the brain (and one which we can realistically hope to reproduce in an artificial network) is that <i>it need not be taught how to learn</i>. If a stimulus is presented repeatedly to the brain, it will learn to respond appropriately. It may be that evolution has wired a learning strategy into the brain for us in advance. Whether or not this is so, learning does appear to be essentially automatic, and seems to occur because of the way the brain is constructed. If this interpretation is correct, a computer program designed to reflect the structure of the brain should be able to learn in a human-like fashion.</p>
+<p class="indent3-ka1">Two important conclusions follow from this observation:</p>
+<p class="indentbulletl"><img src="../images/page15-1.jpg" alt="images"/>&#160;&#160;It is not necessary to explain to an artificial neural network how to solve a problem.</p>
+<p class="indentbulletl"><img src="../images/page15-1.jpg" alt="images"/>&#160;&#160;Artificial neural network programs are multi-purpose; with suitable training, a <i>single program</i> could solve problems in spectral interpretation, propositional logic, image analysis or fingerprint interpretation.</p>
+<p class="indent3-ka1t">If you are familiar with conventional computer programs, you may be struck at this point by the contrast between what an ordinary program can do, and what, by contrast, we are suggesting a neural network can manage. The former can accomplish only the tasks for which it is specifically designed, while a neural network is a kind of generalized learning machine which can, in principle, learn almost anything. The potential of artificial networks in science, if they can be developed to a level of intelligence approaching that of the human brain, is therefore enormous.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="noindent2">Note the &#x2018;or&#x2019; in the second of these points. A given program could be trained to accomplish only one of these tasks; it would not be able to interpret both spectra and fingerprints, for example.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_2.3">
+<h2 class="h2"><b>2.3&#160;&#160;The elementary perceptron</b></h2>
+<p class="noindent">Chemically, a neuron is an intricate and subtle device, relying on the behaviour of ions in solution. It can detect and sum minute signals, assess the size of that sum, and transmit messages to other neurons.</p>
+<p class="indent3-ka1">Although the biochemistry within a neuron is quite complex, the logical operations that it performs are by contrast rather simple:</p>
+<a id="page_16" class="page" style="width:70%;">Page 16, Artificial neural networks</a>
+<div class="border">
+<p class="boxtitlec" style="margin-top:1em;"><b>The functions of a simple neuron</b></p>
+ <p class="boxbullett"><img src="../images/page15-1.jpg" alt="images"/>&#160;&#160;A neuron has multiple input connections, and in some way can add up signals arriving on these connections.</p>
+ <p class="boxbullet"><img src="../images/page15-1.jpg" alt="images"/>&#160;&#160;If the sum of the inputs is below a threshold value, the neuron is quiescent and remains &#x2018;off&#x2019;.</p>
+ <p class="boxbullet"><img src="../images/page15-1.jpg" alt="images"/>&#160;&#160;If the sum reaches the threshold level, the neuron is turned &#x2018;on&#x2019; and a message is sent out.</p>
+<p class="boxbullet" style="margin-bottom:1em;"><img src="../images/page15-1.jpg" alt="images"/>&#160;&#160;The neuron returns to a quiescent state after a short time.</p>
+</div>
+<aside class="abc" style="margin-top:5em;" epub:type="sidebar">
+<p class="noindent2">The elementary perceptron is an example of a <b>feedforward system</b>; incoming signals pass through it in the forward direction only to provide an output.</p>
+</aside>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="indent3-ka1t">It is a straightforward matter computationally to make an artificial neuron with these characteristics; this is known as an <b>elementary perceptron</b> (<a href="#fig_2.3">Fig. 2.3</a>). The perceptron is a very simple feedforward system, and a crude approximation to a neuron, but with a small modification it will form the building-block from which our artificial networks will be constructed. Even on its own it can learn to perform some useful tasks, and an understanding of how it does this will help us to appreciate later how a network of perceptrons can learn.</p>
+<h3 class="h3"><b>How a perceptron learns</b></h3>
+<p class="noindent">The perceptron is a decision-making unit with several <b>input connections</b> (also known as <b>synapses</b> by analogy with the neuron) and a single <b>output connection</b>. A signal <i>s</i><i><sub>i</sub></i> which is delivered from input <i>i</i> is multiplied on arrival by a <b>connection weight</b> <i>w</i><i><sub>i</sub></i>, so that each signal appears at the perceptron as the weighted value <i>w<sub>i</sub>s<sub>i</sub></i>. The perceptron sums the incoming signals to give a total signal <i>S</i> = &#x03A3;<i><sub>i</sub></i><i>w</i><i><sub>i</sub></i><i>s</i><i><sub>i</sub></i>.</p>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.3">
+ <img src="../images/page16-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;margin-left:0em;text-align:left;"><b>Fig. 2.3</b> An elementary perceptron</figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1">The perceptron applies a Heaviside threshold function, with threshold &#x03B8;, to the sum <i>S</i>; if the sum reaches the threshold level, the perceptron fires; if the sum falls below this level, it remains quiescent.</p>
+<p class="indent3-ka1" style="margin-top:1.5em;">&#160;&#160;&#160;&#160;&#160;<b>Input</b>:<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msub><mi>w</mi><mi>i</mi></msub><msub><mi>s</mi><mi>i</mi></msub></mrow></mstyle></mrow></math>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<b>Output</b>:<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>=</mo><mn>1</mn><mtext>&#x2009;</mtext><mi>i</mi><mi>f</mi><mtext>&#x2009;</mtext><mstyle><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msub><mi>w</mi><mi>i</mi></msub><msub><mi>s</mi><mi>i</mi></msub><mo>&#x2265;</mo><mtext>&#x2009;</mtext><mtext>&#x03B8;</mtext></mrow></mstyle><mo>,</mo></mrow></math>&#160;&#160;&#160;&#160;&#160;&#160;&#160;<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>=</mo><mn>0</mn><mtext>&#x2009;</mtext><mi>i</mi><mi>f</mi><mtext>&#x2009;</mtext><mstyle><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msub><mi>w</mi><mi>i</mi></msub><msub><mi>s</mi><mi>i</mi></msub><mo>&#x003C;</mo><mtext>&#x2009;</mtext><mtext>&#x03B8;</mtext></mrow></mstyle></mrow></math></p>
+<aside class="abc" style="margin-top:2.3em;" epub:type="sidebar">
+<p class="noindent2">The connection weights to a perceptron can be thought of as amplifiers, whose purpose is to adjust the size of a signal before forwarding it to the perceptron.</p></aside>
+<p class="indent3-ka1t">The behaviour of a perceptron is determined by the weights of input connections to it and by the level at which the threshold is set. Knowledge is stored as the values of these adjustable parameters, so a novice perceptron which knows nothing begins life with all its connection weights set to random values. Learning is then the process of adjusting the weights in a way that roughly parallels the training of a biological system. Through a gradual modification of the weights, the perceptron can learn to perform a variety of computations, including elementary image recognition.</p>
+<a id="page_17" class="page" style="width:70%;">Page 17, Artificial neural networks</a>
+<p class="indent3-ka1">This learning follows much the same course in the perceptron that it might in a dog or a child. Just as a dog may be rewarded with praise or treats for good behaviour, and punished for bad, the perceptron is trained by being given input data and asked to make a decision about its nature. If the conclusion the perceptron reaches about the data is incorrect, it is punished; if it makes the right choice, it is rewarded, in each case through the modification of connection weights. As this training process is repeated, the perceptron gradually begins to differentiate between desirable and undesirable behaviour.</p>
+<aside class="abc" style="margin-top:-10.5em;" epub:type="sidebar">
+<p class="noindent2">The procedure described here is known as <b>supervised learning</b>, since we know before starting what we are trying to achieve.</p>
+</aside>
+<p class="indent3-ka1">We will illustrate perceptron learning by considering how it might solve a simple chemical problem, that of distinguishing between the structural formulae of molecules containing a cyclohexane ring, and those without one (<a href="#fig_2.4">Fig. 2.4</a>). This is an example of a problem within a field of central importance in AI &#x2013; that of image recognition &#x2013; and is an area in which artificial neural networks show particular promise.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<p class="noindent2">We should not press the analogy with human learning too far. The way a human learns suggests how we <i>might</i> teach an artificial network, but does not provide a prescription that we <i>must</i> follow.</p>
+</aside>
+<h3 class="h3"><b>Training</b></h3>
+<p class="noindent">Any artificial neural network, including the perceptron, starts from a position of complete ignorance, so a training period is required before it can be let loose on real problems. During training, the novice perceptron is shown examples of what it must learn to interpret; these examples constitute the <b>training set</b>. This consists of two parts: the <b>training stimulus</b> is a collection of inputs to the perceptron &#x2013; in this instance the structural formulae of molecules in the training set. Associated with each training stimulus is a <b>training target</b>, which is the desired output (the &#x2018;right answer&#x2019;) for each stimulus &#x2013; in this example each target is the classification of the corresponding formula as a ring-containing or ring-absent structure.</p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<figure style="margin-left:-1em;" id="fig_2.4">
+ <img src="../images/page17-1.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="margin-top:1em;margin-left:1em;"><b>Fig. 2.4</b> The perceptron must learn to distinguish between these molecules.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1">Initially the perceptron knows nothing of the difference between cyclic and straight-chain molecules; indeed, it is unaware even of the nature of the task which it faces. If it is to learn to recognize six-membered rings in a molecule, a mechanism must be provided by which input signals can convey to it structural information about each molecule within the training set. We can achieve this by taking the inputs from a bank of small light-detecting sensors, each of which views a portion of a video screen on which formulae can be displayed (<a href="#fig_2.5">Fig. 2.5</a>).</p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="noindent2">The formulae are shown in a standard orientation, in which any ring always appears in the same region of the screen, so that the perceptron is not misled into believing that the same formula displayed in two different orientations is a different molecule.</p>
+</aside>
+<p class="indent3-ka1">A structure from the training set is shown, and the perceptron allowed to make a decision on its identity. Its decision is compared with the training target and the connection weights are adjusted in the manner described below. After this adjustment, another structure is shown and the process is repeated until the perceptron reaches the required level of proficiency in identifying structures.</p>
+<figure style="margin-left:-7em;" id="fig_2.5"><a id="page_18" class="page" style="width:84%;">Page 18, Artificial neural networks</a> <img src="../images/page18-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;"><b>Fig. 2.5</b> How structural information is fed into the perceptron.</figcaption>
+</figure>
+<p class="indent3-ka1">When a structure is shown, each sensor sends a signal determined by the amount of light it sees: a strong signal will be output by sensors viewing white atoms or bonds, a weak signal from those viewing parts of the screen displaying dark space (<a href="#fig_2.6">Fig. 2.6</a>).</p>
+<figure style="margin-left:-7em;" id="fig_2.6">
+ <img src="../images/page18-2.jpg" alt="images"/>
+<figcaption style="margin-top:1em;"><b>Fig. 2.6</b> What the sensors see.</figcaption>
+</figure>
+<p class="indent3-ka1">The signals from the sensors, multiplied by the appropriate connection weights, are passed to the perceptron, which computes their sum and checks to see whether this reaches the threshold. If it does, the perceptron outputs an &#x2018;on&#x2019; message; we will take this as an indication that the perceptron thinks it has recognized a cyclic molecule. If the weighted sum of the input signals falls<a id="page_19" class="page" style="width:100%;">Page 19, Artificial neural networks</a>below the threshold, the perceptron will remain &#x2018;off&#x2019;, and we will take this to be its indication that it thinks it has found a molecule without a six-membered ring.</p>
+<aside class="abc" style="margin-top:-2.2em;" epub:type="sidebar">
+<p class="noindent2">The choice of how output from the perceptron is interpreted is purely arbitrary. If we had chosen to take &#x2018;on&#x2019; as an indication of the <i>absence</i> of a ring, training would lead to the development of different connection weights, but the perceptron would eventually be no less proficient at distinguishing one type of molecule from the other.</p>
+</aside>
+<p class="indent3-ka1">The output of the perceptron is compared with the training target for the molecule on the screen and the perceptron is punished or rewarded accordingly. If it has made the right choice, the connection weights are left unchanged; the meagre &#x2018;reward&#x2019; the perceptron receives is that it is not punished. If, however, the perceptron has made the wrong choice, the connection weights must be altered so that it is less likely to make the same mistake in the future.</p>
+<p class="indent3-ka1">Suppose the perceptron fired when it should not have; the sum of the weighted signals reaching it must have been too great (otherwise, it would not have fired), so connection weights on all <i>active</i> inputs are lowered. Weights of connections to sensors which sent no signal are unchanged; there would be nothing to be gained by altering these since, if a sensor is inactive, no change in weights of connections to it will alter the signal arriving at the perceptron, and if changes were made, any knowledge built up in the weights by previous training might be damaged.</p>
+<p class="indent3-ka1">If the perceptron remained inactive when it should have turned on, the total signal that the perceptron sees and integrates needs to be greater, so weights on active connections must be increased to encourage it to fire. Once again weights on inactive connections are left untouched.</p>
+<p class="indent3-ka1">We can summarize these learning rules as:</p>
+<div class="border">
+<p class="boxtitlec" style="margin-top:1em;"><b>Elementary perceptron learning rules</b></p>
+<p class="boxbullett"><img src="../images/page15-1.jpg" alt="images"/>&#160;&#160;If the output of the perceptron is correct, do nothing.</p>
+<p class="boxbullet"><img src="../images/page15-1.jpg" alt="images"/>&#160;&#160;If the output of the perceptron is &#x2018;on&#x2019;, but should be &#x2018;off&#x2019;, decrease the weights on active inputs.</p>
+<p class="boxbullet" style="margin-bottom:1em;"><img src="../images/page15-1.jpg" alt="images"/>&#160;&#160;If the output of the perceptron is &#x2018;off&#x2019;, but should be &#x2018;on&#x2019;, increase the weights on active inputs.</p>
+</div>
+<p class="noindent">&#160;</p>
+<p class="indent3-ka1t">Once the weights have been adjusted (if necessary), another structure is chosen from the training set and the process is repeated.</p>
+<p class="indent3-ka1">What will be the effect of this training? Because structures are displayed in a standard orientation, some sensors will usually see dark space when one class of molecule is displayed, but see a light bond or an atom when a molecule in the other class is shown. For example, sensors C4, C5, D3, D5, E3, and E4 in <a href="#fig_2.6">Fig. 2.6</a> will each see an atom when a cyclic molecule is shown, but most of them will see dark space when a non-cyclic molecule appears.</p>
+<p class="indent3-ka1">Each time a non-cyclic molecule is shown, the perceptron should remain off; if it mistakenly turns on, the connection weights on all active inputs will be decreased according to the learning rules. Conversely, each time a cyclic<a id="page_20" class="page">Page 20, Artificial neural networks</a>molecule appears, connection weights to those sensors viewing light bonds or atoms will be increased by the learning rules, if the perceptron has not noticed the ring.</p>
+<p class="indent3-ka1">As successive structures are shown in this <b>training mode</b>, the perceptron will gradually scale the connection weights in a manner that improves its ability to discriminate between the two types of structure. Eventually, when a straight-chain molecule is shown and most of the group of sensors identified above see dark space, a small signal will always reach the perceptron; it will remain &#x2018;off&#x2019;, and therefore output a &#x2018;straight-chain molecule&#x2019; message. If a cyclic molecule is shown, the crucial sensors over the ring see light atoms and will transmit a large signal which will persuade the perceptron to turn on and send a &#x2018;cyclic molecule&#x2019; message. The perceptron has learnt to solve the problem, and it has done so without us having to explain to it how this should be done.</p>
+<p class="indent3-ka1">The learning rules for the perceptron are easy to implement, but imprecise. They define <i>which</i> weights should be adjusted, but they say nothing about the <i>size</i> of the adjustment. One recipe we could use is to raise or lower the weight on every active connection by a fixed proportion of its current value, say 10 per cent, every time modification is needed. This should pull the connection weights towards a solution, but it is limited in its approach. If the output from the perceptron is wrong, but only just (the perceptron nearly managed to fire, perhaps, but the total signal fell just short of the threshold), a minor change to connection weights would be appropriate, but if the perceptron was hopelessly wrong (the total signal was quite different from what was needed to give agreement with the training target), a larger change would be desirable. This can be taken into account by adjusting the weights by an amount proportional to the <b>error signal</b>, that is, the difference between the target output and the actual output, and this usually improves the rate of convergence towards a solution.</p>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<p class="noindent2">As we shall see later, the error signal plays a crucial role in the training of a full neural network.</p>
+</aside>
+<h3 class="h3a"><b>The training set</b></h3>
+<aside class="abc" style="margin-top:0.5em;" epub:type="sidebar">
+<p class="noindent2">Each complete pass through the examples in a training set is known as an <b>epoch</b>.</p>
+</aside>
+<p class="noindent">It is not possible to predict how much training will be needed before the perceptron becomes proficient at identifying structures. Though perceptions are fast learners, many passes through the training set will be needed.</p>
+<p class="indent3-ka1">The structures shown to the perceptron will cover a representative range of the sort of molecules that it must learn to recognize, but the training set need not include every possible molecule. It is the purpose of training to provide examples from which the perceptron can extract the crucial features that distinguish one class of molecule from the other. The examples must therefore be representative, but need not be all-encompassing.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="noindent2">Neural networks can be trained to distinguish photographs of crystalline and amorphous material without being shown every possible type of crystal, because networks can learn the distinguishing feature &#x2013; the presence or absence of straight edges &#x2013; from a comparatively small group of samples.</p>
+</aside>
+<p class="indent3-ka1">Once training is over, the connection weights are fixed to their trained values. Performance of the perceptron can be tested by showing it an unknown structure and asking for an identification. In this <b>production mode</b> the perceptron defines an input &#x2192; output mapping; a given structural formula on the screen always triggers the same predictable conclusion about the class to which the structure belongs.</p>
+<a id="page_21" class="page" style="width:70%;">Page 21, Artificial neural networks</a>
+<p class="indent3-ka1">Provided testing shows that training is complete, the perception should now be able to categorize every member of the training set. However, if this were all it could do, its achievement would be modest. Fortunately, its ability extends further; it will be able to identify structures which it has never seen before, but which bear some direct relation to members of the training set. New images will be recognized provided they lie within the confines of what it has learnt about, but it is not possible to go beyond the logical information contained within the training set. While the perception will recognize the presence of a six-membered ring in molecules, it does not have the knowledge needed to go beyond these limits, so it could not, for example, consistently identify molecules containing pentane or heptane rings. Put simply, it can interpolate, but not extrapolate.</p>
+<aside class="abc" style="margin-top:-13.5em;" epub:type="sidebar">
+<p class="noindent2">The inability to extrapolate is an important limitation to neural network models. British Rail have carried out research on an artificial neural network whose job would be to watch unmanned level crossings for people or vehicles on the line when trains are approaching. Such a network might eventually be successfully trained to recognize people and cars by giving it the chance to observe many examples of such things on the crossing, but training it to interpret less common images, such as fallen branches, a newspaper blowing in the wind, or a stray cow is not trivial. The consequences of a neural network working incorrectly in such a situation may be serious, not least for the cow.</p>
+</aside>
+<p class="indent3-ka1">Though we cannot expect the perception to recognize a pentane ring if it has been brought up on a diet of six-membered rings, it has nevertheless developed a significant skill: it has discovered how to translate visual information into logical information. This is a skill of very widespread application. The interpretation of photographs from spy satellites, microscope pictures of stained cells, or the application of computer vision each rely upon logical deductions derived from visual clues. Of course the elementary perceptron is a rather unsophisticated entity and far too simple to find a place in the vision system of a robot. In fact, as we are about to see, it suffers from a fatal flaw. Nevertheless, that such a simple entity can successfully turn visual information into logical information gives an early hint of the power of a full artificial neural network.</p>
+<p class="indent3-ka1">The perceptron is effective for certain tasks such as the molecular structure classification problem, in which it can learn to reliably distinguish between isomers. Not every problem in chemistry is this straightforward however, and we shall describe now the difficulty which brought research in artificial neural networks to a virtual standstill for nearly two decades.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="noindent2">Although the perceptron learns to solve the problem, it does not of course &#x2018;understand&#x2019; what it has done; the algorithm has simply evolved connection weights that permit it to identify structures with an acceptable success rate. It is, however, no less useful because it does this without a human-like understanding.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_2.4">
+<h2 class="h2"><b>2.4&#160;&#160;Linearly inseparable problems</b></h2>
+<p class="noindent">Perceptions are fast but simple creatures. The type of problem that they can solve is very restricted: the molecular structure problem, for example, is soluble only if the structures are always shown with the same size and orientation on the screen. If these requirements are relaxed, a given sensor will see dark space for some orientations of a molecule, and a bond or an atom when the same molecule is shown at a different angle. It is not surprising that the perceptron then becomes confused and cannot learn.</p>
+<p class="indent3-ka1">We can illustrate the very general nature of the difficulty facing the perceptron, and discover what this difficulty is, by considering a second chemical application: the monitoring of gas-phase samples for the presence of pollutants.</p>
+<p class="indent3-ka1">Long path-length infrared absorption spectroscopy is a suitable analytical technique for identifying samples in the gas-phase. A gaseous sample is held within a cell which has reflecting mirrors at both ends. The mirrors reflect the<a id="page_22" class="page" >Page 22, Artificial neural networks</a>infrared beam repeatedly, to give an effective path length many times the physical length of the cell, and thus increase the total infrared absorption.</p>
+<p class="indent3-ka1">Suppose samples taken close to two industrial sources are to be assessed on a routine basis. Each sample is mainly air, but occasional samples may show the presence of a single pollutant which may be either ethylamine (<a href="#fig_2.7a">Fig. 2.7(a)</a>) or nitrous oxide (<a href="#fig_2.7b">Fig. 2.7(b)</a>).</p>
+<figure style="margin-left:-7em;margin-top:4em;" id="fig_2.7a">
+ <img src="../images/page22-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;"><b>Fig. 2.7(a)</b> The infrared spectrum of ethylamine.</figcaption>
+</figure>
+<figure style="margin-left:-7em;margin-top:4em;" id="fig_2.7b">
+ <img src="../images/page22-2.jpg" alt="images"/>
+<figcaption style="margin-top:1em;"><b>Fig. 2.7(b)</b> The infrared spectrum of nitrous oxide</figcaption>
+</figure>
+<p class="indent3-ka1">Because many samples must be analysed, the analyst decides to automate the process and use an elementary perceptron to look through each spectrum as it is recorded to determine whether a pollutant is present.</p>
+<p class="indent3-ka1">The training set consists of a number of spectra, some of which show the presence of ethylamine or nitrous oxide. As the perceptron can work only with a finite number of input signals, each spectrum is digitized, and passed to the perceptron as a list of absorbance measurements at certain fixed wavelengths; these absorbance measurements comprise the input signals (<a href="#tab2.1">Table 2.1</a>).</p>
+<p class="indent3-ka1">After many passes through the training set, the perceptron in production mode is left to monitor spectra unattended and use its knowledge to watch out for pollutants; if one or other is detected it can alert the analyst.</p>
+<a id="page_23" class="page" style="width:70%;">Page 23, Artificial neural networks</a>
+<p class="indent3-ka1">This is a two-state classification task not unlike the six-membered ring problem (pollutant present/not present), but there is a hidden difficulty. In operation the perceptron functions reliably until it encounters the spectrum shown in <a href="#fig_2.8">Fig. 2.8</a>. Although the spectrum is clearly different from that of either pollutant, the perceptron incorrectly reports finding one. What has gone wrong?</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<figure style="margin-left:-7em;" id="fig_2.8">
+ <img src="../images/page23-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;"><b>Fig. 2.8</b> The infrared spectrum of Freon 22.</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<p class="tabcap1" id="tab2.1"><b>Table 2.1</b> Part of the digitized infrared spectra of nitrous oxide and ethylamine.</p>
+<table class="width70tb">
+<tr>
+<td style="vertical-align:top;"><p class="tabled">Wavelength</p></td>
+<td style="vertical-align:top;" colspan="2" class="borderb"><p class="tabled">%Transmittance</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="borbw35"><p class="tabled">cm<sup>&#x2212;1</sup></p></td>
+<td style="vertical-align:top;" class="borbw35"><p class="tabled">NO</p></td>
+<td style="vertical-align:top;" class="borbw30"><p class="tabled">C<sub>2</sub>H<sub>5</sub>NH<sub>2</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabledt">&#160;&#160;600</p></td>
+<td style="vertical-align:top;"><p class="tabledt">60</p></td>
+<td style="vertical-align:top;"><p class="tablea">76</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabledt">&#160;&#160;700</p></td>
+<td style="vertical-align:top;"><p class="tabledt">88</p></td>
+<td style="vertical-align:top;"><p class="tablea">54</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabledt">&#160;&#160;800</p></td>
+<td style="vertical-align:top;"><p class="tabledt">89</p></td>
+<td style="vertical-align:top;"><p class="tablea">0</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabledt">&#160;&#160;900</p></td>
+<td style="vertical-align:top;"><p class="tabledt">89</p></td>
+<td style="vertical-align:top;"><p class="tablea">52</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabledt">1000</p></td>
+<td style="vertical-align:top;"><p class="tabledt">90</p></td>
+<td style="vertical-align:top;"><p class="tablea">77</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabledt">1100</p></td>
+<td style="vertical-align:top;"><p class="tabledt">91</p></td>
+<td style="vertical-align:top;"><p class="tablea">18</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabledt">1200</p></td>
+<td style="vertical-align:top;"><p class="tabledt">81</p></td>
+<td style="vertical-align:top;"><p class="tablea">80</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabledt">1300</p></td>
+<td style="vertical-align:top;"><p class="tabledt">48</p></td>
+<td style="vertical-align:top;"><p class="tablea">72</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabledt">1400</p></td>
+<td style="vertical-align:top;"><p class="tabledt">90</p></td>
+<td style="vertical-align:top;"><p class="tablea">16</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabledt">1500</p></td>
+<td style="vertical-align:top;"><p class="tabledt">91</p></td>
+<td style="vertical-align:top;"><p class="tablea">50</p></td>
+</tr>
+</table>
+</aside>
+<p class="noindent">&#160;</p>
+<p class="indent3-ka1">To understand the difficulty, we note (<a href="#tab2.1">Table 2.1</a>) that the spectra of the pollutants show significant absorbance (that is, low transmittance) at either 1300 cm<sup>&#x2212;1</sup> or at 800 cm<sup>&#x2212;1</sup> (among other wavelengths). During training the perceptron will learn that high absorbance near 800 cm<sup>&#x2212;1</sup> or 1300 cm<sup>&#x2212;1</sup> indicates the presence of a pollutant. However, what it does not know is that if peaks appear at <i>both</i> positions this is an indication of the <i>absence</i> of both pollutants (since any sample contains at most one of them).</p>
+<p class="indent3-ka1">The spectrum with which the perceptron cannot cope is that of Freon 22. This halogenated hydrocarbon is implicated in the destruction of the ozone layer in the atmosphere, and therefore is a pollutant in its own right, but the perceptron does not know that, and its job is not to signal the presence of <i>any</i> pollutant, but only the two that the analyst is interested in.</p>
+<p class="indent3-ka1">The perceptron has been fooled by the fact that absorption in the Freon spectrum is high just where it is expected: at 800 cm<sup>&#x2212;1</sup> and at 1300 cm<sup>&#x2212;1</sup>. Indeed, since the perceptron finds two peaks that it is looking for in the 600&#x2013;1500 cm<sup>&#x2212;1</sup> region, we can imagine that it might feel especially confident in its diagnosis. This problem is a variant of the <b>XOR problem</b>; XOR(<i>x</i>,<i>y</i>) is true if exactly 1 of <i>x</i> and <i>y</i> is true (<a href="#tab2.2">Table 2.2</a>).</p>
+<a id="page_24" class="page" style="width:70%;">Page 24, Artificial neural networks</a>
+<p class="tabcap" id="tab2.2"><b>Table 2.2</b> The XOR problem</p>
+<table class="width70tb">
+<tr>
+<td style="vertical-align:top;" colspan="3" class="borderb"><p class="tableda1">XOR Problem</p></td>
+<td style="vertical-align:top;" colspan="3" class="borderb"><p class="tablec4">IR Problem</p></td>
+</tr>
+<tr>
+<td style="vertical-align:middle;"><p class="tabled"><i>x</i></p></td>
+<td style="vertical-align:middle;"><p class="tabled"><i>y</i></p></td>
+<td style="vertical-align:middle;"><p class="tabled">XOR(<i>x,y</i>)</p></td>
+<td style="vertical-align:top;"><p class="tabled">Peak at</p></td>
+<td style="vertical-align:top;"><p class="tabled">Peak at</p></td>
+<td style="vertical-align:top;"><p class="tabled">Pollutant</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="borbw10"><p class="tabled">&#160;</p></td>
+<td style="vertical-align:top;" class="borbw10"><p class="tabled">&#160;</p></td>
+<td style="vertical-align:top;" class="borbw20"><p class="tabled">&#160;</p></td>
+<td style="vertical-align:top;" class="borbw20"><p class="tabled">800 cm<sup>&#x2212;1</sup></p></td>
+<td style="vertical-align:top;" class="borbw20"><p class="tabled">1300 cm<sup>&#x2212;1</sup></p></td>
+<td style="vertical-align:top;" class="borbw20"><p class="tabled">present</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabled">0</p></td>
+<td style="vertical-align:top;"><p class="tabled">0</p></td>
+<td style="vertical-align:top;"><p class="tabled2">0</p></td>
+<td style="vertical-align:top;"><p class="tabled2">no</p></td>
+<td style="vertical-align:top;"><p class="tabled2">no</p></td>
+<td style="vertical-align:top;"><p class="tabled2">no</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabled">1</p></td>
+<td style="vertical-align:top;"><p class="tabled">0</p></td>
+<td style="vertical-align:top;"><p class="tabled2">1</p></td>
+<td style="vertical-align:top;"><p class="tabled2">yes</p></td>
+<td style="vertical-align:top;"><p class="tabled2">no</p></td>
+<td style="vertical-align:top;"><p class="tabled2">yes</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabled">0</p></td>
+<td style="vertical-align:top;"><p class="tabled">1</p></td>
+<td style="vertical-align:top;"><p class="tabled2">1</p></td>
+<td style="vertical-align:top;"><p class="tabled2">no</p></td>
+<td style="vertical-align:top;"><p class="tabled2">yes</p></td>
+<td style="vertical-align:top;"><p class="tabled2">yes</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabled">1</p></td>
+<td style="vertical-align:top;"><p class="tabled">1</p></td>
+<td style="vertical-align:top;"><p class="tabled2">0</p></td>
+<td style="vertical-align:top;"><p class="tabled2">yes</p></td>
+<td style="vertical-align:top;"><p class="tabled2">yes</p></td>
+<td style="vertical-align:top;"><p class="tabled2">no</p></td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:1em;" epub:type="sidebar">
+<figure style="margin-left:0em;" id="fig_2.9">
+ <img src="../images/page24-1.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="margin-top:1em;"><b>Fig. 2.9</b> Solutions to the infrared spectra problem.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="noindent">&#160;</p>
+<p class="indent3-ka1">The solutions to this problem are mapped in <a href="#fig_2.9">Fig. 2.9</a>. Output from the perceptron is determined by. how the weighted sum of inputs, <i>w</i><sub>1</sub><i>s</i><sub>1</sub> + <i>w</i><sub>2</sub><i>s</i><sub>2</sub>, compares with the threshold &#x03B8;. The sum <i>w</i><sub>1</sub><i>s</i><sub>1</sub> + <i>w</i><sub>2</sub><i>s</i><sub>2</sub> defines a straight line which is superimposed on the map of solutions to the problem in the figure. The perceptron must learn that a pollutant is present if a peak appears at either 800 cm<sup>&#x2212;1</sup> or 1300 cm<sup>&#x2212;1</sup>, but that no pollutant is present if peaks appear at neither or at both of these wavelengths. The straight line <i>w</i><sub>1</sub><i>s</i><sub>1</sub> + <i>w</i><sub>2</sub><i>s</i><sub>2</sub> must thus partition the points in <a href="#fig_2.9">Fig. 2.9</a> into two groups: one containing {(800,-) and (-,1300)}, and the other containing {(-,-) and (800, 1300)}. It is clear that no straight line can effect this partition, so the problem cannot be solved by the perceptron.</p>
+<p class="indent3-ka1">This problem is not <b>linearly-separable</b>. Every solution to a linearly-separable problem can be placed into one of two sets separated by a straight line. If a problem has a linearly-separable solution it can be shown that it is always possible for the perceptron to find it. As <a href="#fig_2.9">Fig. 2.9</a> suggests, the linearly-separable problem is the only type that the elementary perceptron can solve.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="noindent2">The solution to a linearly-separable problem is a linearly-weighted sum of the inputs, and this is a computation within the capabilities of the perceptron.</p>
+</aside>
+<p class="indent3-ka1">This is a crippling restriction. Most significant scientific problems are not linearly separable, and of the small number that are, almost all are better tackled by other methods. This is also true for problems outside science, and recognition of this difficulty, and the inability of the elementary perceptron to circumvent it, brought research in this area to an abrupt halt.</p>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_2.5">
+<h2 class="h2"><b>2.5&#160;&#160;Multi-layer neural networks</b></h2>
+<p class="noindent">The failure of the perceptron to handle real-world scientific problems highlights the rather tenuous resemblance between it and our model of the brain; there is little similarity between biological and artificial systems, and this difference might be one reason for the restricted capabilities of the latter.</p>
+<p class="noindent"><a id="page_25" class="page">Page 25, Artificial neural networks</a>Additional power is essential if anything resembling a neuron is to be useful in science.</p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<figure style="margin-left:-1em;" id="fig_2.10">
+ <img src="../images/page25-1.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:1em;"><b>Fig. 2.10</b> Serial calculation.</figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1">At the start of this chapter we commented on the differences between the structure of the brain and that of the computer. It is worth looking at those differences a little further to provide clues about how the performance of the perceptron might be improved.</p>
+<p class="indent3-ka1">Most electronic computers are <b>von Neumann</b> or <b>serial</b> machines: data are widely dispersed in the computer&#x2019;s memory, but all processing takes place at a single point (<a href="#fig_2.10">Fig. 2.10</a>). This unique processing unit forms a bottle-neck through which all instructions must be squeezed, and it is the speed at which this can be done which ultimately determines how rapidly the computer can operate.</p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="noindent2">It is convenient to be able to think and watch at the same time, but it would also be valuable to be able to <i>think several thoughts</i> simultaneously. We could concentrate on a lecture, and at the same time review quantum chemistry, plan an essay, and catch up with the maths course. Maybe you suspect you can do this already; if so, prove it by doing the following calculations <i>simultaneously</i> in your head: 273.15 &#x00D7; 3.1415926 and 981 &#x00D7; 1.4142. If you cannot do this, ask yourself why you can think and observe, or think and listen, but not think and think simultaneously. This is one area in which neural networks (on parallel computers) can already outperform their human counterparts.</p>
+</aside>
+<p class="indent3-ka1">By contrast, the brain can process several independent streams of information simultaneously: we might (a) be taking notes in a lecture, at the same time as we (b) are watching what the lecturer writes on the board, and (c) listening to an explanation of the lecture material, (d) all the while being vaguely aware of how uncomfortable the lecture room seats are. Each step requires separate, but simultaneous access to and use of the brain. If we want to write a few words, or read what is written on the board, we do not have to stop thinking to do it.</p>
+<p class="indent3-ka1">Just as the data that the brain processes are widely distributed within it, so also are the processing units. Indeed the distinction between a memory unit and a processor in the brain is blurred at best, since neurons form a part of both types of structure. Processing of different items of information occurs simultaneously, as many neurons work on different parts of the data, so the brain is referred to as a <b>parallel</b> device (<a href="#fig_2.11">Fig. 2.11</a>).</p>
+<p class="indent3-ka1">In our desire to construct a program that can think, we have limited the chances of success by using just a single computational unit. One perceptron is unlikely to be able to accomplish much on its own, and the obvious difference between this and the rich network of neurons that makes up the brain suggests that a promising step would now be to add more perceptrons. This can be done in two ways: first by giving the perceptrons neighbours to form a layer of units which share input from the environment; and secondly by introducing further layers, each taking as their input, the output from the previous layer.</p>
+<p class="indent3-ka1">The first set of units in the resulting network, (<a href="#fig_2.12">Fig. 2.12</a>), is an <b>input layer</b>, whose purpose is to distribute incoming signals to the next layer; it does no thresholding, so the units here are not perceptrons; they are sometimes known as &#x2018;sensor elements&#x2019;. The perceptrons in layer 2 constitute a <b>hidden layer</b>; they can communicate with the environment only by receiving or sending messages to units in the layers to which they are connected. The <b>output layer</b> provides a link between the artificial network and the outside world.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure style="margin-left:0em;" id="fig_2.11">
+ <img src="../images/page25-2.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;"><b>Fig. 2.11</b> Parallel calculation.</figcaption>
+</figure>
+</aside>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<figure style="margin-left:-7em;" id="fig_2.12"><a id="page_26" class="page" style="width:85%;">Page 26, Artificial neural networks</a><img src="../images/page26-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;"><b>Fig. 2.12</b> A simple neural network</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-19em;" epub:type="sidebar">
+<p class="noindent2">There may also be connections between perceptrons in non-neighbouring layers, or &#x2018;feedback&#x2019; connections which permit signals from units in one layer to be returned to units in an earlier layer. Such <b>recursive networks</b> are less widely used than layered networks, but are valuable in certain specialized applications.</p>
+</aside>
+<p class="noindent">&#160;</p>
+<p class="indent3-ka1">Every perceptron in the type of network shown in <a href="#fig_2.12">Fig. 2.12</a> is connected to all units in adjoining layers, but there are no connections between units in the same layer. This is a <b>fully-connected layered feedforward network.</b> Since the network is feedforward, in production mode messages flow in the forward direction only.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<figure style="margin-left:0em;" id="fig_2.13">
+ <img src="../images/page26-2.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;"><b>Fig. 2.13</b> A linearly-separable probelm</figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1">The molecular structure and the infrared analysis problems have illustrated that learning is partly a process of categorization. By recognizing something, we assign it to a category about which we have some defining information. Grouping it in this way is equivalent to separating it from all other items which, though they may have some similar characteristics, belong in a different class. We have seen that an elementary perceptron can divide a set of items into two classes, provided that the items are linearly-separable (<a href="#fig_2.13">Fig. 2.13</a>), and we will show now that a layered network can be used in applications for which the solutions are not linearly-separable.</p>
+<p class="noindent">&#160;</p>
+<h3 class="h3"><b>A linearly-inseparable chemical problem</b></h3>
+<p class="noindent">Many problems in science are the conjunction of two or more linearly-separable problems. For example, consider how an artificial neural network might be used to monitor the temperature and pH of material in a reaction vessel (<a href="#fig_2.14">Fig. 2.14</a>).</p>
+<p class="indent3-ka1">Let us suppose that the temperature inside the vessel must not rise above 95&#x00B0;C, nor the pH fall below 4.5; if either event occurs, the network must sound an alarm. One perceptron on its own cannot deal with this problem because there is no linearly-separable solution, but a small network can (<a href="#fig_2.15">Fig. 2.15</a>).</p>
+<a id="page_27" class="page" style="width:70%;">Page 27, Artificial neural networks</a>
+<p class="indent3-ka1">Input to the hidden layer of this network is provided by pH and temperature probes, each of which provides an analogue (continuously-variable) signal determined by conditions within the reaction vessel. One perceptron in the hidden layer monitors the temperature: it turns on if the temperature exceeds 95&#x00B0;C, but ignores completely the signal from the pH probe. The second unit in the hidden layer monitors the pH, and turns on if the pH falls below 4.5, but ignores input from the temperature probe. Output from the two perceptrons in the hidden layer is combined at the single perceptron in the output layer; if either hidden unit sends it an &#x2018;on&#x2019; signal, conditions in the vessel are outside the prescribed limits and the output perceptron is triggered to send a signal.</p>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<figure style="margin-left:0em;" id="fig_2.14">
+ <img src="../images/page27-1.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;"><b>Fig. 2.14</b> A neural network monitoring conditions in a reaction vessel.</figcaption>
+</figure>
+</aside>
+<figure style="margin-left:-2em;margin-top:4em;" id="fig_2.15">
+ <img src="../images/page27-2.jpg" alt="images"/>
+<figcaption style="margin-top:1em; margin-left:-8.5em;"><b>Fig. 2.15</b> A network that can solve the reaction conditions problem</figcaption>
+</figure>
+<p class="indent3-ka1">This simple network classifies conditions within the reactor according to two independent criteria, and therefore can be used in situations in which solutions are linearly-inseparable. Reactor conditions are mapped in <a href="#fig_2.16">Fig. 2.16</a>; it is the role of the network to determine when those conditions fall outside the shaded area.</p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<figure style="margin-left:0em;" id="fig_2.16">
+ <img src="../images/page27-3.jpg" alt="images"/>
+<figcaption style="margin-top:1em;"><b>Fig. 2.16</b> A mapping of conditions in the reaction vessel.</figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1">By adding further units we can restrict the shaded area to a closed figure (<a href="#fig_2.17">Fig. 2.17</a>), known as a <b>convex hull</b>, which can be made of any shape desired, provided enough units are added to the network. A larger network could monitor the material in the vessel for various other physical parameters (for example viscosity, a lower bound to the temperature, etc.), and either warn the experimenter when conditions are inappropriate, or perhaps activate heaters or autotitrators to adjust conditions intelligently.</p>
+<figure style="margin-left:-7em;" id="fig_2.17">
+ <img src="../images/page27-4.jpg" alt="images"/>
+<figcaption style="margin-top:1em;"><b>Fig. 2.17</b> Some convex hulls.</figcaption>
+</figure>
+<a id="page_28" class="page" style="width:70%;">Page 28, Artificial neural networks</a>
+<p class="indent3-ka1">Similar networks can be used to solve the gas-phase pollutant problem (<a href="#fig_2.18">Fig. 2.18</a>).</p>
+<figure style="margin-left:-7em;" id="fig_2.18">
+ <img src="../images/page28-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;"><b>Fig. 2.18</b> Two networks that can solve the infrared classification problem.</figcaption>
+</figure>
+<p class="indent3-ka1">This is beginning to seem rather encouraging. We have now a network which will do something useful, and do it reliably; furthermore this network obviously bears a much stronger resemblance than the perceptron did to the highly-interconnected structure of the brain, and this suggests that we are perhaps approaching something capable of genuine decision-making. It is therefore disappointing to discover that though a layered network of elementary perceptrons appears to have quite wide-ranging powers, it is actually no smarter than the perceptron itself.</p>
+<p class="noindent">&#160;</p>
+<h3 class="h3"><b>The credit assignment problem</b></h3>
+<p class="noindent">The difficulty is that though the perceptron can intelligently monitor our apparatus, <i>it cannot learn to do so</i>. By setting up a network manually (in other words, specifying the connection weights and threshold limits in advance, and omitting the training period), an artificial network can handle the pH/temperature monitoring problem. However, the network cannot learn suitable connection weights for itself &#x2013; it must be told what they are.</p>
+<p class="indent3-ka1">This is not much use. Few applications are simple enough that suitable connection weights and thresholds can be determined by hand; in applications like the present one, it would be preferable to use electronics to monitor conditions within the reaction vessel. What is needed is a network that can learn for itself, not one that needs hand-holding by the experimenter.</p>
+<p class="indent3-ka1">The reason the network is unable to learn is because each perceptron in the hidden layer, which accepts input data, only passes the message &#x2018;on&#x2019; or &#x2018;off&#x2019; to the next layer, and this simple binary message effectively isolates the output layer from input to the network. An output perceptron is unable to determine<a id="page_29" class="page">Page 29, Artificial neural networks</a>whether a perceptron in the hidden layer to which it is connected has been turned on by the sum of its inputs only barely reaching the threshold level, or whether the threshold has been greatly exceeded. The perceptions cannot fire timidly or enthusiastically &#x2013; they either fire or do not.</p>
+<p class="indent3-ka1">The hidden layer has thrown information away. When this layer intervenes, it causes an insoluble problem in the assignment of weights connecting elementary perceptions: if an output unit is active when it should not be, connection weights somewhere in the network must be adjusted to turn it off, but which weights? Should it be the weights of connections to the output unit from active units in the hidden layer? Those units are, after all, directly responsible for the output unit exceeding its threshold limit and firing. Or should weights be changed to prevent the hidden layer units themselves from firing?</p>
+<p class="indent3-ka1">Unfortunately, the network has no way of knowing which of these alternatives is right. <i>Training is meant to teach the network to respond to a given input with the appropriate output</i>, <i>but the network cannot learn to do this unless the output units have some information about what the inputs to the network are</i>. In this model, input signals are completely hidden from the output layer, and it is therefore impossible for the network to adjust the connection weights so that a certain input triggers the appropriate output.</p>
+<p class="indent3-ka1">This is the <b>credit assignment problem</b>, and it prevents a network of elementary perceptions from learning how to solve linearly-inseparable problems. The complexity of the model has been increased by the addition of extra perceptions; it is now more capable, yet it cannot learn, and this severely limits its usefulness.</p>
+<p class="noindent">&#160;</p>
+<h3 class="h3"><b>Modified threshold functions</b></h3>
+<p class="noindent">The perception network can perform some useful tasks, but we need to solve the trick of getting it to learn, so that the network can find suitable connection weights by itself. Fortunately, there is a straightforward way to accomplish this, and a network that can learn successfully can be built by borrowing a further idea from models of the brain.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure style="margin-left:0em;" id="fig_2.19">
+ <img src="../images/page29-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;"><b>Fig. 2.19</b> A linear threshold function.</figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1">A neuron is not a binary unit, limited to &#x2018;on&#x2019; or &#x2018;off&#x2019; in the way that our perceptron is; instead, it can respond with an output signal graded by the size of its input signals. We can reflect this in an artificial network by modifying the threshold function that perceptrons use, since it is the all-or-nothing nature of the step function that isolates the output layer from input to the system. If we combine a multi-layer structure with a more flexible threshold function, a network can be constructed that can solve complex problems with great ingenuity.</p>
+<p class="indent3-ka1">Two different types of threshold function are commonly used in feedforward layered networks. If the perceptron employs a <b>linear threshold function</b> (<a href="#fig_2.19">Fig. 2.19</a>) the output of the perceptron is zero for integrated input<a id="page_30" class="page">Page 30, Artificial neural networks</a>levels below &#x03B8;<sub><i>l</i></sub>, and fully on for inputs above &#x03B8;<sub>u</sub>. Between these limits, the output signal is linearly related to the total input signal. An adapted perceptron of this sort that is only just turned on by its inputs will reflect this by transmitting a correspondingly small output signal. Clearly this threshold function allows some information about signal size to be passed from one layer to the next, which is necessary if the network is to learn.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.20">
+ <img src="../images/page30-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;"><b>Fig. 2.20</b> The sigmoidal threshold function.</figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1">The most widely-used threshold function is the <b>sigmoidal threshold function</b> (also known as the &#x2018;sigmoidal squashing function&#x2019; or &#x2018;logistic function&#x2019;). This smoothly varying function approaches asymptotically the extremes at which the perceptron is fully on or fully off (<a href="#fig_2.20">Fig. 2.20</a>).</p>
+<p class="indent3-ka1">The sigmoidal threshold function is:</p>
+<p class="eqn" style="margin-top:1em;">g(<i>n</i>) = (1 + e<sup>&#x2212;<i>n</i></sup>)<sup>&#x2212;1</sup><span class="no">(2.1)</span></p>
+<p class="noindentt">which has limits of 0 at &#x2212;&#x221E; and +1 at +&#x221E;; <i>n</i> is a positive number which measures the &#x2018;spread&#x2019; of the function; as <i>n</i> &#x2192; &#x221E;, g(<i>n</i>) &#x2192; the Heaviside function.</p>
+<aside class="abc" style="margin-top:-1.5em;" epub:type="sidebar">
+<p class="noindent2">The sigmoidal function has the particular advantage that it provides a kind of automatic gain control. Large and small input signals may be presented simultaneously to the network, on different input lines. It is easy to see that information carried by small signals may then be overwhelmed by much larger signals. When a sigmoidal threshold function is used, large signals can still be accommodated by the network, and small signals are passed on with little attenuation, so do not become insignificant compared with their larger competitors.
+The sigmoid function also has a differential that can be simply expressed in terms of the function itself, which speeds computation.</p>
+</aside>
+<p class="indent3-ka1">A multi-layer network which incorporates a sigmoidal threshold function is certainly more reminiscent of the structure of the brain than the elementary perceptron is, and we can realistically expect it to have much wider powers. Networks of this sort are now widely used, but because of their complexity, the rules by which these networks learn differ from those used for the elementary perceptron. The central difficulty is knowing how the credit assignment problem should be solved; how should weight changes be divided up between the various connections? It is to this learning problem that we turn next.</p>
+</section>
+<section epub:type="chapter" id="sec_2.6">
+<h2 class="h2"><b>2.6&#160;&#160;Backpropagation</b></h2>
+<p class="noindent">In the elementary perceptron, learning is simple and the learning rules unambiguous. Matters are more complicated in a network, and we must establish how changes in connection weights should be allocated to connections between different layers to promote learning.</p>
+<p class="indent3-ka1">The most widely-used solution to this problem is <b>backpropagation</b> (literally dozens of other less popular paradigms exist). The error signal (<i>t</i><sub><i>pj</i></sub> &#x2013; <i>o</i><sub><i>pj</i></sub>) is calculated, where <i>o</i><sub><i>pj</i></sub> is the actual output from output perceptron <i>j</i> for training set member <i>p</i>, and <i>t</i><sub><i>pj</i></sub> is the target output. A proportion of the error signal is allocated to the various connections in the network and the connection weights are adjusted according to a mathematical prescription whose objective, as in the elementary perceptron, is to reduce the error signal.</p>
+<p class="indent3-ka1">In <b>stochastic backpropagation</b>, connection weights are adjusted every time a member of the training set is shown to the network. In <b>standard backpropagation</b>, the error signals are collected for all output units and all training targets, and the connection weights are adjusted at the end of every epoch, that is, after all members of the training set have been shown to the network once.</p>
+<a id="page_31" class="page" style="width:70%;">Page 31, Artificial neural networks</a>
+<p class="indent3-ka1">The error function <i>E</i><sub><i>p</i></sub> is defined as (half of) the sum of the squares of the error signals for all units:</p>
+<p class="eqn" style="margin-top:1em;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>E</mi><mi>p</mi></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mfrac><mn>1</mn><mn>2</mn></mfrac><mtext>&#x2009;</mtext><mstyle><munder><mtext>&#x2211;</mtext><mi>j</mi></munder><mrow><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>t</mi><mrow><mi>p</mi><mi>j</mi></mrow></msub><mo>&#x2212;</mo><msub><mi>o</mi><mrow><mi>p</mi><mi>j</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></mstyle></mrow></math><span class="no">(2.2)</span></p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<p class="noindent2">When stochastic backpropagation is used, training stimuli are shown in random order. If many examples of one class were shown first to the network, it would learn to recognize these; but when they were followed by many examples of a second class, what had been learned about the first set would gradually be forgotten</p>
+</aside>
+<p class="indent3-ka1t">The objective of backpropagation is to minimize <i>E</i><sub><i>p</i></sub> by <b>gradient descent</b>, an iterative least squares procedure in which the algorithm tries to adjust connection weights in a fashion which reduces the error most rapidly, by moving the state of the system downwards in the direction of maximum gradient.</p>
+<p class="indent3-ka1">The weight of a connection at stage (<i>t</i> + 1) of the training is related to its weight at stage <i>t</i> by the equation</p>
+<p class="eqn" style="margin-top:1em;"><i>w</i><sub><i>ij</i></sub>(<i>t</i> + 1) = <i>w</i><sub><i>ij</i></sub>(<i>t</i>) + &#x03B7;&#x03B4;<sub><i>pj</i></sub> <i>o</i><sub><i>pj</i></sub><span class="no">(2.3)</span></p>
+<aside class="abc" style="margin-top:-0.5em;" epub:type="sidebar">
+<p class="noindent2">The reasoning behind backpropagation is that those units which are most responsible for the output signal being wrong are those whose connection weights should be changed by the largest amount.</p>
+</aside>
+<p class="noindentt">in which &#x03B7; is a gain term, known as the <b>training rate factor</b>. It is possible to derive expressions prescribing the size of the changes that must be made in connection weights to reduce the error signal.</p>
+<p class="noindentt">For the output layer: &#x03B4;<sub><i>pj</i></sub> = <i>ko</i><sub><i>pj</i></sub>(1 &#x2212; <i>o</i><sub><i>pj</i></sub>)(<i>t</i><sub><i>pj</i></sub> &#x2212; <i>o</i><sub><i>pj</i></sub>)<span class="no">(2.4)</span></p>
+<p class="noindent">For the hidden layer: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mtext>&#x03B4;</mtext><mrow><mi>p</mi><mi>j</mi></mrow></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mi>k</mi><msub><mi>o</mi><mrow><mi>p</mi><mi>j</mi></mrow></msub><mo>(</mo><mn>1</mn><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><msub><mi>o</mi><mrow><mi>p</mi><mi>j</mi></mrow></msub><mo>)</mo><mtext>&#x2009;</mtext><mstyle><munder><mtext>&#x2211;</mtext><mi>k</mi></munder><mrow><msub><mtext>&#x03B4;</mtext><mrow><mi>p</mi><mi>k</mi></mrow></msub><msub><mi>w</mi><mrow><mi>j</mi><mi>k</mi></mrow></msub></mrow></mstyle></mrow></math><span class="no">(2.5)</span></p>
+<p class="indent3-ka1t">These expressions, which for historical reasons are often known as the <b>generalized delta rule</b>, show that the extent of the adjustment of connection weights to hidden layers depends upon errors in subsequent layers, so modifications are made first to the output layer weights (which is straightforward, since for this layer we know both the actual output and the target output), and the error is then propagated successively back through the hidden layers.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="noindent2">It used not to be uncommon for backpropagation networks to take days or even weeks of computer time to train. This is now unusual, but large networks may still require several hours of training to reach a respectable level of performance.</p>
+</aside>
+<p class="indent3-ka1">Each unit receives an amount of the error signal which is in proportion to its contribution to the output signal, and the connection weights are adjusted by an amount proportional to this error.</p>
+<p class="indent3-ka1">Backpropagation by gradient descent is a generally reliable procedure. Nevertheless, it has its limitations. First, it is not a fast training method, particularly if the surface defined by the error function is relatively flat (in other words, the size of the output error is not strongly dependent upon the connection weights). Changes in connection weights then do little to reduce the output error and convergence to ideal weights is slow.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="noindent2">A network in which connection weights have been trapped by a local minimum will still function, but less effectively than one in which the global minimum has been found.</p>
+</aside>
+<p class="indent3-ka1">Secondly, since gradient descent is analogous to rolling a ball down the surface defined by the error function to find the lowest point, it is possible for the network to reach a sub-optimal set of connection weights corresponding to a local minimum in the surface. Gradient descent will be unable to reduce the error further, as this requires first moving the connection weights towards a less favourable solution. This situation can sometimes be avoided by using a different algorithm for training.</p>
+<a id="page_32" class="page" style="width:70%;">Page 32, Artificial neural networks</a>
+<p class="indent3-ka1">It is also possible for &#x2018;network paralysis&#x2019; to set in. As a network is trained, it is common for connection weights to show a gradual increase in size. The size of the adjustment to the weights during backpropagation is proportional to the derivative of the sigmoid function, but if the weighted input signals become very large, this derivative is almost zero (far to the right in <a href="#fig_2.20">Fig. 2.20</a>). The network then finds it hard to determine how connection weights should be adjusted to reduce the error function, and may settle into a state of morbidity in which further learning is virtually impossible.</p>
+<p class="indent3-ka1">Despite these limitations, backpropagation is a powerful way to train neural networks. It can generate trained networks superior to conventional programs not only in performance but also in several other respects.</p>
+</section>
+<section epub:type="chapter" id="sec_2.7">
+<h2 class="h2"><b>2.7&#160;&#160;Advantages of artificial neural networks</b></h2>
+<p class="noindent">Artificial neural networks are well suited to operation in unpredictable and poorly-understood environments. The features which make the human brain particularly potent in learning and reasoning tasks are precisely those which make it a powerful scientific tool, and many of these features can be reproduced in an artificial neural network. Although artificial networks at present cannot approach the wide-ranging abilities of the human brain, they display several advantages over conventional problem-solving algorithms.</p>
+<h3 class="h3"><b>Diversity of applications</b></h3>
+<p class="indent3-ka1"><i>An artificial neural network need not be designed for a particular application; through suitable training it can undertake a wide variety of tasks.</i></p>
+<aside class="abc" style="margin-top:3.5em;" epub:type="sidebar">
+<p class="noindent2">References to several dozen applications of artificial neural networks are given in the books listed at the end of this chapter.</p>
+</aside>
+<p class="indent3-ka1t">Training determines the role of a neural network. No network will be expert at both analysing seismic signals and judging literary style, but commercially-available neural network software is often very general in nature, and might equally well be applied to spectral interpretation or to assessing the suitability of a potential home-owner for a mortgage. The range of applications of neural networks within science gives a good indication of how this characteristic is reflected in practice; some of these applications are mentioned in the final section of this chapter.</p>
+<h3 class="h3"><b>Fault tolerance</b></h3>
+<p class="indent3-ka1"><i>Neural networks are fault-tolerant.</i></p>
+<p class="indent3-ka1t">Every day many neurons in the brain die (a few pints of beer or glasses of wine increase the rate of this process), yet the power of the brain appears unimpaired by this loss of some of its processing units.</p>
+<a id="page_33" class="page" style="width:70%;">Page 33, Artificial neural networks</a>
+<p class="indent3-ka1">If the ability to understand quantum mechanics or speak Spanish depended crucially on a single neuron, the skill would be irretrievably lost if that neuron died. Fortunately, no single neuron is of pivotal importance; there is no centralized processing point, and the loss of a small proportion of their number does not bring processing to a halt. The gradual loss of neurons is regrettable, but there is sufficient flexibility in the construction of the brain that their role can be assumed by other neurons without any noticeable diminution in performance. The brain is therefore <b>fault-tolerant</b>.</p>
+<aside class="abc" style="margin-top:-10.5em;" epub:type="sidebar">
+<p class="noindent2">Fault tolerance is a notable characteristic of any network, artificial or biological, and this was vividly demonstrated by one of the first artificial neural networks, built in 1951. This novel construction contained hundreds of vacuum tubes, numerous unreliable soldered connections, knobs, dials and a gyro pilot from a Second World War bomber. Because of the unreliability of its components and wiring, the system was often not fully operational. Despite this, it was able to function even when some of its &#x2018;neurons&#x2019; worked incorrectly, or not at all. In all neural networks, loss of some processing units causes a degradation in performance; unless the damage is severe, however, such loss does not precipitate complete failure.</p>
+</aside>
+<p class="indent3-ka1">As processing units are lost, performance diminishes gradually, rather than catastrophically. This behaviour is known as <b>graceful degradation</b>, and is a characteristic also of artificial networks. Of course, we are unlikely to &#x2018;lose&#x2019; units from an artificial network, but graceful degradation applies equally well to loss of quality of the input signals. If these signals become noisy, or some are lost completely, an artificial network will continue to work, though its answers will contain a greater degree of uncertainty. This is a useful feature when scientific data such as blurred photographs or noisy spectra are being assessed.</p>
+<p class="indent3-ka1">Tolerance of damage in the brain is further enhanced by the fact that it appears to store the same memory redundantly in several locations, which is a clear protection against loss of neurons. This feature too may be reproduced in artificial neural networks.</p>
+<h3 class="h3"><b>Ability to deal with new situations</b></h3>
+<p class="indent3-ka1"><i>Once trained, a network can deal with previously unseen data</i>.</p>
+
+<p class="indent3-ka1t">We know what a crystal looks like; we are &#x2018;trained&#x2019; to recognize them because we have seen many examples before. If you were given some uranium nitrate, you could quickly assess whether or not it was crystalline, even if this was the first uranium compound you had seen. The brain stores generalized notions of concepts such as &#x2018;crystal&#x2019;, or &#x2018;rice pudding&#x2019;; this allows us to recognize examples of them, even if they are different from every other example we have encountered.</p>
+<aside class="abc" style="margin-top:-7.5em;" epub:type="sidebar">
+<p class="noindent2">The correct interpretation of previously unseen images is a vital ability of intelligent creatures, and one on which the usefulness of a neural network in many applications depends most markedly.</p>
+</aside>
+<p class="indent3-ka1">This is precisely the way an artificial network operates. The hidden units in the network organize themselves into groups responsible for recognizing certain key features, detecting when a particular combination of input units is on. If enough hidden units exist, the hidden layer may form an <b>internal representation</b> of external patterns and, when they recognize the pattern, pass the appropriate response on to the next layer. If this layer is a further hidden layer, it may in turn determine what <i>combinations</i> of patterns detected by the first layer are present. This allows the network to form generalized notions of patterns and their combination, which is a skill of importance in areas from science (&#x2018;What does an abnormal white blood cell look like?&#x2019;) to robot vision (&#x2018;Is this a hand I see before me?&#x2019;)</p>
+<a id="page_34" class="page" style="width:70%;">Page 34, Artificial neural networks</a>
+<h3 class="h3"><b>Parallel operation</b></h3>
+<p class="indent3-ka1"><i>Artificial neural networks have the capability for parallel operation built in</i>.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure style="margin-left:0em;" id="fig_2.21">
+ <img src="../images/page34-1.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="margin-top:1em;"><b>Fig. 2.21</b> Parallel updating of connection weights in a neural network.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1t">Many modem computers contain multiple processors (from two processors to many thousand). In these machines the calculation is divided among different processors, in a type of working known as parallel processing.</p>
+<p class="indent3-ka1">The brain operates as a parallel device, and since the capability for parallel working is &#x2018;built into&#x2019; artificial neural networks, adapting them to run on parallel machines is relatively straightforward. The computations that take place at one unit are independent of what is happening at other units in the same layer (<a href="#fig_2.21">Fig. 2.21</a>), so the updating of connection weights at all units in a single layer can be carried out simultaneously if each unit is allocated to a different processor in a multi-processor machine. This can lead to a huge increase in the speed at which the network can be trained and operated.</p>
+<aside class="abc" style="margin-top:-2.5em;" epub:type="sidebar">
+<p class="noindent2">Computers are now being designed in which the neural network is integrated into the circuits of parallel processors themselves. A neural network implementation of this sort is particularly efficient, and represents a step towards a true artificial brain.</p>
+</aside>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<h3 class="h3"><b>Rule discovery</b></h3>
+<p class="indent3-ka1"><i>Artificial neural networks operate by discovering new relationships among their input data</i>.</p>
+<p class="indent3-ka1t">Neural networks are particularly adept at discerning regularities in data. A network trained on scientific data will form an internal representation of rules which allow it to correctly interpret the data. These rules may be an empirical interpretation of scientific rules with which scientists are already familiar, but there is no reason why they must be. The network may equally well discover relationships between the data (&#x2018;scientific laws&#x2019;) which were previously unknown. This is an exciting development, with enormous implications for science.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="noindent2">In some fascinating work, neural networks have been trained on data which scientists have used in the past in formulating new scientific laws. Analysis of the conclusions of the network shows that, in many cases, they independently discover the same laws underlying the data that human scientists find.</p>
+</aside>
+<p class="indent3-ka1">The interpretation of these new rules presents a serious challenge, though, as you might already have appreciated: the mles will be buried in connection weights between artificial neurons, the meaning of which must be decoded if the new mles are to be understood in scientific terms. The knowledge in any neural network is not very accessible (or more accurately, it is accessible, but obscure), being tied up in these connection weights. The thinking of the network cannot readily be understood by just inspecting the weights.</p>
+<p class="indent3-ka1">There is a marked contrast here between a physical &#x2018;black box&#x2019; whose purpose is to perform a fixed scientific task such as controlling conditions in a chemical reactor, and a stable neural network trained to complete the same task. If a black box is opened up, an expert will recognize the electronic components within and be able to understand their purpose, and why the box functions as it does.</p>
+<p class="indent3-ka1">If one &#x2018;opens up&#x2019; a trained network, all that is revealed are the connection weights and threshold or bias values, which give no simple guide to what the network is designed to accomplish, or how it does it. Neural networks are in<a id="page_35" class="page">Page 35, Artificial neural networks</a>this sense oracular, that is, the output from a trained network is related in convoluted ways to its input. (There was no way to know if statements from the Oracle at Delphi were correct or not. In a similar fashion, one must trust that a network trained to deal with a complex problem has learnt correctly and knows what it is doing. While a network may arrive at the correct answer, it is unable to describe how it got there.)</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<p class="noindent2">The oracular nature of networks can lead to some curious problems. A military neural network was trained to recognize tanks by showing it photographs of a tank in the countryside, sometimes in the open, at other times partly hidden behind trees or other obstructions. The training set included further photographs of countryside without a tank to be seen. In due course, the network learnt to distinguish between the photographs that showed the tank, and those without it. After this apprenticeship, it was shown a new set of photographs, with the tank in different surroundings. Unexpectedly, the network failed to detect even the most obvious of tanks. Eventually it was noticed that every photograph of the tank in the training set had been taken on a day of bright sunshine, while all other photographs had been taken on a cloudy day. The network had learnt to recognize when the sun was out.</p>
+</aside>
+<p class="indent3-ka1">The task of unravelling connection weights to interpret laws discovered by the network is challenging, but the potential is very great, and soon artificial networks may be helping not just in the analysis of scientific data, but also in the derivation of the laws that explain the data.</p>
+<h3 class="h3"><b>Incorporation of fuzzy logic</b></h3>
+<p class="indent3-ka1"><i>Artificial networks are, because of their design, able to cope with &#x2018;fuzzy data&#x2019; without modification</i>.</p>
+<p class="indent3-ka1t">Fuzzy logic is used to analyse data which contain uncertainty or are based on judgement. Strictly, fuzzy data are those in which the transition from one state to another is gradual, rather than sharply-defined. A &#x2018;slow car&#x2019; does not become a &#x2018;fast car&#x2019; at some universally-agreed speed, so the designation of a car as &#x2018;fast&#x2019; or &#x2018;slow&#x2019; is fuzzy.</p>
+<p class="indent3-ka1">Suppose a customer of a water company complains that her tap water tastes of chlorine. How much chlorine is present? There is not much to go on, but fuzzy logic can extract low-grade quantitative information from such data. If a customer complains that water is &#x2018;unpleasant&#x2019; or &#x2018;tainted&#x2019;, there is probably less dissolved chlorine than if it is &#x2018;disgusting&#x2019;, or &#x2018;like a swimming pool&#x2019;. The lowest concentration of chlorine in water that can be detected by most people is around 0.1 to 0.6 mg l<sup>&#x2212;l</sup> (the level depends upon whether you have been eating spicy food, whether you are a smoker, and other factors). A swimming pool contains around 3 mg l<sup>&#x2212;1</sup> and at concentrations above about 10 mg l<sup>&#x2212;1</sup> most people find water undrinkable. These figures place limits on the amount of chlorine present and, if they are combined with the customer&#x2019;s subjective assessment of what the water tastes like, an approximate value for the concentration can be chosen. This combination of numerical with subjective data is the essence of fuzzy logic.</p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="noindent2">Entering fuzzy data into a network is easier than it may sound. For example, &#x2018;On a scale of one to ten, how fast is a Reliant Robin?&#x2019;</p>
+</aside>
+<p class="indent3-ka1">Subjective descriptions, such as &#x2018;large&#x2019;, &#x2018;sticky&#x2019;, or &#x2018;bright&#x2019; can be fed into an artificial neural network by asking the user to define numerically what &#x2018;large&#x2019; or &#x2018;sticky&#x2019; means to them. Even though the training stimulus might be defined in fuzzy terms, for every stimulus there is a <i>precise</i> training target, so woolly data can be fed into a neural network and definite (and, one hopes, reliable) conclusions fed out. The ability to handle fuzzy data is a great asset, and, since neural networks have this ability built-in, no special modification needs to be made to a working network to allow it to handle fuzzy data, such as human speech, handwriting or data containing uncertainty.</p>
+</section>
+<section epub:type="chapter" id="sec_2.8">
+<a id="page_36" class="page" style="width:70%;">Page 36, Artificial neural networks</a>
+<h2 class="h2"><b>2.8&#160;&#160;Hopfield nets</b></h2>
+<p class="noindent">Multi-layer networks are not the only type that may be used to assess scientific data. In a Hopfield network, every node is connected to every other node (<a href="#fig_2.22">Fig. 2.22</a>); this is a <b>self-organization model</b>.</p>
+<figure style="margin-left:-7em;" id="fig_2.22">
+ <img src="../images/page36-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;"><b>Fig. 2.22</b> A Hopfield network.</figcaption>
+</figure>
+<aside class="abc" style="margin-top:1em;" epub:type="sidebar">
+<p class="noindent2">If the connection weights between nodes in a Hopfield network are not symmetrical, the network may never converge to a stable state and may, instead, oscillate unpredictably. Such oscillations have been studied by workers interested in chaos.</p>
+</aside>
+<p class="indent3-ka1t">There is no separate input or output layer; instead every node receives input signals from the environment, and every node has an output to it. Connection weights between each pair of nodes are symmetrical; that is, they are equal for messages passed in either direction.</p>
+<p class="indent3-ka1">The manner in which a Hopfield network operates is necessarily rather different from a multi-layer network. Input signals from the environment are applied to all nodes simultaneously. Random starting connection weights are used to generate an output signal and this is immediately fed back to all nodes as a new input. The process is repeated until the network reaches a stable state and further cycles produce no change. The final outputs from the nodes are taken as the response of the network.</p>
+<p class="indent3-ka1">The trained network contains multiple patterns stored in the coded form of the connection weights. The stored pattern that is closest to an input pattern becomes the output pattern. This is then a type of <b>associative memory</b>; an input consisting of just part of a stored pattern can trigger regurgitation of the complete pattern by the network (just as a long-forgotten tune or aroma can bring to mind a flood of associated memories.)</p>
+<p class="indent3-ka1">Hopfield nets can learn successfully using a step function instead of a sigmoidal function for thresholding, since backpropagation is clearly inapplicable in a network of this topology. They are prone, however, to falling into solutions which are sub-optimal, and special measures may be taken to prevent this happening. These measures, such as simulated annealing (which uses a &#x2018;temperature&#x2019; term and a Boltzmann factor which will be familiar to chemists), are discussed in the books on neural networks listed in the bibliography.</p>
+</section>
+<section epub:type="chapter" id="sec_2.9">
+<a id="page_37" class="page" style="width:70%;">Page 37, Artificial neural networks</a>
+<h2 class="h2"><b>2.9&#160;&#160;Applications of artificial neural networks</b></h2>
+<p class="noindent">Neural network programs are available for computers from desktop PCs to supercomputers. In principle, these programs may be applied to any problem in which there is a mapping between an input vector and an output vector, but, as one might expect, they are more suited to some types of problems than others. They are at their most valuable when applied to problems in which:</p>
+<p class="indentbulletlat"><img src="../images/page15-1.jpg" alt="images"/>&#160;&#160;Data are incomplete or unreliable, so that a deterministic program would find it difficult to reach a solution.</p>
+<p class="indentbulletla"><img src="../images/page15-1.jpg" alt="images"/>&#160;&#160;Numerous training examples are available.</p>
+<p class="indentbulletla"><img src="../images/page15-1.jpg" alt="images"/>&#160;&#160;The rules which define how a given input triggers a particular output are incomplete or unknown.</p>
+<p class="indentbulletla"><img src="../images/page15-1.jpg" alt="images"/>&#160;&#160;An explanation of how any decision is reached is not required.</p>
+<p class="indent3-ka1t">The range of problems to which neural networks have been applied is considerable, and there is space here only to mention a few. Networks are being used in projects to model non-linear chemical systems, such as continuous-flow stirred tank reactors, to predict the secondary structure of proteins and to identify coding sequences in DNA. Since they are good at recognizing patterns buried in noise, they have been used to filter data from experiments in which pulsed lasers trigger chemical reactions, and in the medical field, to analyse patterns of nerve pulses, and to monitor the heartbeats of patients in hospitals, watching for irregularities or unusual patterns in electrocardiograms.</p>
+<p class="indent3-ka1">If sufficient examples are available, large neural networks can learn to recognize patterns of arbitrary complexity. They can then be used as pattern detectors in applications from the analysis of magnetic resonance brain images or the interpretation of electron microscopy scans, to the visual assessment of parts emerging from a manufacturing process, or seismic traces. Neural networks are also being used by banks in trials of cheque signature recognition, and by the Post Office in interpreting handwritten postal codes.</p>
+<p class="indent3-ka1">The analysis of near infrared (NIR) spectra is difficult for conventional methods, such as partial least squares, because there is a non-linear relation between transmittance and concentration. Neural networks are untroubled by this and are particularly valuable in NIR spectroscopy, where they are now widely used.</p>
+<p class="indent3-ka1">Neural networks have been used to predict the &#x2018;magic islands&#x2019; of nuclear stability that are believed to exist for superheavy atoms. This is an intriguing application because it appears to require the network to extrapolate from a region of known stability to an unknown region and, as you will recall, artificial networks are poor at extrapolation. To avoid this difficulty, the problem was re-cast so that the network was trained to move <i>between</i> regions of stability. An extrapolation problem was thus turned into an interpolation problem.</p>
+<a id="page_38" class="page" style="width:70%;">Page 38, Artificial neural networks</a>
+<p class="indent3-ka1">Since in production mode, signals pass in one direction only through the network, even a large trained network can make rapid decisions. Consequently, networks can also be used for tasks in which speed is important. Examples include the use of real-time Raman spectroscopy to monitor chemical process lines, on-line analysis of high-energy events in particle accelerators and the construction of three-dimensional displays of electron microscope images.</p>
+<p class="indent3-ka1">Because of their generic nature, neural networks are easy to use, and, once trained, require little operator skill. Their ability to deal with data related by ill-defined rules gives them particular power in just those areas which are hardest for conventional programs. As familiarity with artificial networks grows, they will become increasingly common controlling experiments, analysing experimental data derived from them and, ultimately, deriving some of the scientific laws that describe the data.</p>
+<h1 class="main1"><b>Further reading</b></h1>
+<p class="noindente">Beale, R. and Jackson, T. (1990). <i>Neural computing: an introduction</i>. Adam Hilger, Bristol.</p>
+<p class="noindente">Freeman, J.A. and Skapura, D.M. (1991). <i>Neural networks: algorithms, applications and programming techniques</i>. Addison-Wesley, Reading, Mass. Lisboa, P.G.J. (ed.) (1992). <i>Neural networks current applications</i>. Chapman and Hall, London.</p>
+<p class="noindente">Nelson, M.M. and Illingworth, W.T. (1991). <i>A practical guide to neural networks</i>. Addison-Wesley, Reading, Mass.</p>
+<p class="noindente">Rumelhart, D.E. and McClelland, J.L. (1986). <i>Parallel distributed processing: explorations in the microstructure of cognition</i>. MIT Press, Cambridge, Mass.</p>
+<p class="noindente">Wasserman, P.D. (1989). <i>Neural computing theory and practice</i>. Van Nostrand Reinhold, New York</p>
+</section>
+</section>
+</body>
+</html>

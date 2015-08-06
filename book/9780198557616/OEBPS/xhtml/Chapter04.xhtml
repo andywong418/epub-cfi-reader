@@ -1,0 +1,1413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Foundations of Organic Chemistry: Worked Examples</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="ch04"> 
+<a id="page_54" class="page" style="width:70%;">Page 54, Chapter4 Symmetries&#x2014;group theory</a>
+<h1 class="ch-title">4<span class="space">&#160;</span>Symmetries&#x2014;group theory</h1>
+<p class="noindent">The quantum mechanical problems we are most concerned with in chemistry involve finding the allowed energy levels of a molecule and the corresponding wavefunctions. Many such problems can be simplified considerably, and much insight can be gained by the judicious application of the ideas of symmetry. For example, we saw in <a href="Chapter02.xhtml#sec2.9">Section 2.9</a> how to find the normal modes of vibration of a molecule, by diagonalizing the mass-weighted force constant matrix. However, as we shall see, each vibration has a particular symmetry, and only certain combinations of the coordinates have the correct symmetries. Use of these symmetry-adapted combinations brings the matrix into a form in which it is already partly diagonalized, making the remaining problem much simpler. In a similar way the simplest approximations to molecular orbitals are obtained by linear combination of atomic orbitals (i.e. by adding and subtracting suitably weighted atomic orbitals). The problem is to find the suitable weightings. However, each molecular orbital has a symmetry, and if we construct symmetry-adapted linear combinations, once again the size of the problem can be much reduced.</p>
+<section epub:type="chapter" id="sec4.1">
+<h2 class="main">4.1<span class="space">&#160;</span>Symmetry operations</h2>
+<p class="noindent">A symmetry operation is a transformation of a body in which the components of the body may be rearranged, but after which the body is not distinguishable from its original arrangement, including its orientation in space. In chemistry the bodies we consider are molecules, and the symmetry operations rearrange the constituent particles, but leave the molecule in an unchanged configuration. We can think of a symmetry transformation as being controlled by an operator. As usual we will distinguish an operator <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></math> from the operation it produces, <i>R</i>, by using a hat. A symmetry operator operates on a function to transform it into a different function, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mrow><mo stretchy="false">|</mo><mrow><mi>&#x03C8;</mi><mo>&#x003E;</mo><mo>=</mo></mrow><mo stretchy="false">|</mo></mrow><mi>&#x03D5;</mi><mo>&#x003E;</mo></mrow></math>. Symmetry operators are linear:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.1"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mrow><mo>(</mo><mrow><msub><mi>a</mi><mn>1</mn> </msub><mrow><mo stretchy="false">|</mo><mrow><mn>1</mn><mo>&#x003E;</mo><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub></mrow><mo stretchy="false">|</mo></mrow><mn>2</mn><mo>&#x003E;</mo></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mrow><mo stretchy="false">|</mo><mrow><mn>1</mn><mo>&#x003E;</mo><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></mrow><mo stretchy="false">|</mo></mrow><mn>2</mn><mo>&#x003E;</mo></mrow></math></p></td>
+<td>(4.1)</td>
+</tr>
+</table>
+<p class="noindent">however, they are not necessarily hermitian because they do not represent observable quantities. We can define a hermitian conjugate operator by its effect on the conjugate of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>&#x03C8;</mi><mo>&#x003E;</mo><mo>,</mo><mtext>&#x2009;</mtext><mo>&#x003C;</mo><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mi>&#x03C8;</mi></mrow><mo stretchy="false">|</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mo>&#x003C;</mo><mtext>&#x2009;</mtext><mi>&#x03C8;</mi><mrow><mo stretchy="false">|</mo><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo> </mover><mo>+</mo></msup><mo>=</mo><mo>&#x003C;</mo><mi>&#x03D5;</mi></mrow><mo stretchy="false">|</mo></mrow></mrow></math>. In addition to linearity, symmetry operators have two basic properties:</p>
+<p class="nlist">1.<span class="space">&#160;</span>They are unitary, meaning that <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>=</mo><mover accent='true'><mi>E</mi><mo>&#x005E;</mo></mover></mrow></math>, the identity operator.</p>
+<p class="nlist">2.<span class="space">&#160;</span>They commute with all operators corresponding to observables.</p>
+<p class="indentt">These mathematical properties represent the fact that no physical <a id="page_55" class="page">Page 55, Chapter4 Symmetries&#x2014;group theory</a>property of the molecule may be altered by a symmetry operation, as we now illustrate.</p>
+<p class="indent">Firstly the overlap between two wavefunctions <i>&#x03C8;</i><sub>1</sub> and <i>&#x03C8;</i><sub>2</sub> is invariant to any symmetry operation. This arises from the unitary property of the symmetry operator <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></math>,</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.2"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x003C;</mo><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><msub><mi>&#x03C8;</mi><mn>2</mn></msub><mrow><mo stretchy="false">|</mo><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><msub><mi>&#x03C8;</mi><mn>1</mn></msub></mrow><mo stretchy="false">|</mo></mrow><mo>&#x003E;</mo><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>&#x003C;</mo><msub><mi>&#x03C8;</mi><mn>2</mn></msub><mrow><mo stretchy="false">|</mo><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo></msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></mrow><mo stretchy="false">|</mo></mrow><msub><mi>&#x03C8;</mi><mn>1</mn></msub><mo>&#x003E;</mo><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mo>&#x003C;</mo><msub><mi>&#x03C8;</mi><mn>2</mn></msub><mrow><mo stretchy="false">|</mo><mrow><msub><mi>&#x03C8;</mi><mn>1</mn></msub></mrow></mrow><mo>&#x003E;</mo></mrow></math></p></td>
+<td style="padding-top:0.5em;">(4.2)</td>
+</tr>
+</table>
+<p class="noindent">As a consequence of this result, symmetry operations do not alter normalization or orthogonality.</p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<p class="sidebar"> By a similar argument it can be shown that symmetry operators do not alter the distance between two identifiable points (for example a bond length) or the angle between two vectors (for example a bond angle).</p>
+</aside>
+<p class="indent">Secondly, the expectation value of any observable is invariant to any symmetry operation:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.3"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x003C;</mo><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mi>&#x03C8;</mi><mrow><mo stretchy="false">|</mo><mover accent='true'><mi>A</mi><mo>&#x005E;</mo></mover><mo stretchy="false">|</mo></mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mi>&#x03C8;</mi><mo>&#x003E;</mo><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>&#x003C;</mo><mi>&#x03C8;</mi><mrow><mo stretchy="false">|</mo><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo></msup><mover accent='true'><mi>A</mi><mo>&#x005E;</mo></mover><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></mrow><mo stretchy="false">|</mo></mrow><mi>&#x03C8;</mi><mo>&#x003E;</mo><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mo>&#x003C;</mo><mi>&#x03C8;</mi><mrow><mo stretchy="false">|</mo><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo></msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mover accent='true'><mi>A</mi><mo>&#x005E;</mo></mover></mrow><mo stretchy="false">|</mo></mrow><mi>&#x03C8;</mi><mo>&#x003E;</mo><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mo>&#x003C;</mo><mi>&#x03C8;</mi><mrow><mo stretchy="false">|</mo><mover accent='true'><mi>A</mi><mo>&#x005E;</mo></mover><mo stretchy="false">|</mo></mrow><mrow><mo stretchy="false">|</mo><mi>&#x03C8;</mi></mrow><mo>&#x003E;</mo></mrow></math></p></td>
+<td style="padding-top:0.5em;">(4.3)</td>
+</tr>
+</table>
+<p class="noindent">The second equality follows from the fact that <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>A</mi><mo>&#x005E;</mo></mover></math> commute, and the final equality follows because <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></math> is unitary. Finally the eigenvalues of any operator are invariant under all symmetry operations. Suppose that <i>&#x03C8;<sub>a</sub></i> is an eigenfunction of an operator <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>A</mi><mo>&#x005E;</mo></mover></math>, representing an observable. Let us consider whether <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><msub><mi>&#x03C8;</mi><mi>a</mi></msub></mrow></math> is also an eigenfunction of <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>A</mi><mo>&#x005E;</mo></mover></math><i></i>. Because <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></math> must commute with <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>A</mi><mo>&#x005E;</mo></mover></math> we can write</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.4"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>A</mi><mo>&#x005E;</mo></mover><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><msub><mi>&#x03C8;</mi><mi>a</mi></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mover accent='true'><mi>A</mi><mo>&#x005E;</mo></mover><msub><mi>&#x03C8;</mi><mi>a</mi></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mi>a</mi><msub><mi>&#x03C8;</mi><mi>a</mi></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mi>a</mi><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><msub><mi>&#x03C8;</mi><mi>a</mi></msub></mrow></math></p></td>
+<td>(4.4)</td>
+</tr>
+</table>
+<p class="noindent">We have therefore proved that <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><msub><mi>&#x03C8;</mi><mi>a</mi></msub></mrow></math> is also an eigenfunction of <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>A</mi><mo>&#x005E;</mo></mover></math> with the same eigenvalue, <i>a</i>.</p>
+<aside class="abc" style="margin-top:-14.2em;" epub:type="sidebar">
+<p class="sidebar">Symmetry operations must commute with all observables to ensure that no observable may be altered by the symmetry operation. If this were not the case a transformed molecule could be distinguished from the original by measuring this observable.</p>
+</aside>
+<p class="indent">The relevance of symmetry to chemistry is a consequence of this final result, that application of a symmetry operation cannot alter the value of any observable, in particular the energy. Thus if the wavefunction <i>&#x03C8;</i> is an eigenfunction of <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>H</mi><mo>&#x005E;</mo></mover></math> with energy <i>E,</i> then <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mi>&#x03C8;</mi></mrow></math> must also be an eigenfunction of <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>H</mi><mo>&#x005E;</mo></mover></math> with the same energy. In other words, the Schr&#x00F6;dinger equation is invariant to symmetry transformations. This invariance puts severe constraints on the possible forms of its solutions. For example, if an energy level of a molecule is nondegenerate, then the effect of all symmetry operators must be to transform the corresponding wavefunction into itself, or to alter it at most by the multiplication of a factor &#x00B1;1 (since the transformed function must still be normalized). The symmetry of a nondegenerate wavefunction is therefore determined by whether it is even or odd to each of the possible symmetry operations of the molecule.</p>
+<section epub:type="chapter">
+<h3 class="sub"><b>Types of symmetry operation</b></h3>
+<p class="noindent">The symmetry operations of a molecule can be classified into several types: rotations, reflections, inversion, improper rotations. Each operation is associated with a <i>symmetry element,</i> for example rotations are associated with an axis and reflections with a mirror plane. The first stage in applying symmetry to a molecule is to identify its symmetry operations. We therefore give a brief discussion of each type of transformation in turn. <a id="page_56" class="page">Page 56, Chapter4 Symmetries&#x2014;group theory</a></p>
+<aside class="abc" style="margin-top:-0em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.1">
+<img src="../images/Fig4.1.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 4.1</b> The <i>C</i><sub>2</sub> axis of the water molecule.</p></figcaption></figure>
+</aside>
+</section>
+<section epub:type="chapter">
+<h4 class="h4"><i>Rotations</i></h4>
+<p class="noindent">Rotation axes are classified by the number of successive rotations required to achieve a rotation of 2&#x03C0; radians. Thus a <i>C</i><sub>2</sub> rotation axis is an axis for which rotation of &#x03C0; (180&#x00B0;) is a symmetry operation, as for the water molecule (see <a href="#fig4.1">Fig. 4.1</a>). Similarly for a <i>C</i><sub>3</sub> axis, where rotation of 120&#x00B0; is a symmetry operation, as in the ammonia molecule (<a href="#fig4.2">Fig. 4.2</a>). The number <i>n</i> in a <i>C<sub>n</sub></i> axis is known as the <i>order</i> of the axis, and the highest order unique axis of a molecule, if there is one, is known as the <i>figure axis</i>.</p>
+</section>
+<section epub:type="chapter">
+<h4 class="h4"><i>Reflections</i></h4>
+<p class="noindent">If the molecule contains a figure axis, then a mirror plane perpendicular to it is denoted <i>&#x03C3;<sub>h</sub></i>, (<i>h</i> for horizontal). Mirror planes which contain the figure axis are known as <i>&#x03C3;<sub>&#x03BD;</sub></i> (<i>&#x03C5;</i> for vertical). Sometimes there are two nonequivalent types of plane containing the figure axis; these are then subdivided into <i>&#x03C3;<sub>&#x03C5;</sub></i> and <i>&#x03C3;<sub>d</sub></i> (dihedral). As an example, consider the square planar <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi><mi>u</mi><mi>C</mi><msubsup><mi>l</mi><mn>4</mn><mo>&#x2212;</mo></msubsup></mrow></math> ion where there is a <i>C</i><sub>4</sub> figure axis. This ion has a horizontal plane, two vertical planes and two dihedral planes (see <a href="#fig4.3">Fig. 4.3</a>).</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.2">
+<img src="../images/Fig4.2.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 4.2</b> The ammonia molecule viewed down the <i>C</i><sub>3</sub> axis which passes through the N atom perpendicular to the plane of the paper and through the equilateral triangle of H atoms beneath.</p></figcaption></figure>
+</aside>
+</section>
+<section epub:type="chapter">
+<h4 class="h4"><i>Inversion</i></h4>
+<p class="noindent">The inversion transforms the coordinates (<i>x,y,z</i>) &#x2192; (&#x2013;<i>x</i>, &#x2013;<i>y,</i> &#x2013;<i>z</i>). The <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi><mi>u</mi><mi>C</mi><msubsup><mi>l</mi><mn>4</mn><mo>&#x2212;</mo></msubsup></mrow></math> ion has a centre of inversion, denoted <i>i</i>.</p>
+</section>
+<section epub:type="chapter">
+<h4 class="h4"><i>Improper rotations</i></h4>
+<p class="noindent">Improper rotations (<i>S<sub>n</sub></i>) consist of a rotation followed by a reflection in a plane perpendicular to the axis of rotation. In some cases neither the rotation nor the reflection alone is a symmetry operation, but the combination is. For example <a href="#fig4.4">Fig. 4.4</a> shows the allene molecule (CH<sub>2</sub>=C=CH<sub>2</sub>) viewed from one end, down the <i>C</i><sub>2</sub> axis; this axis is also a fourfold improper axis <i>S</i><sub>4</sub>. A rotation of 90&#x00B0; followed by a reflection in the plane of the paper transforms the molecule back into itself, but there is no <i>C</i><sub>4</sub> axis, nor is the reflection plane a symmetry element of the molecule. Of course, in a molecule with a <i>&#x03C3;<sub>h</sub></i> plane the figure axis <i>C<sub>n</sub></i> is automatically an <i>S<sub>n</sub></i> axis as well. An <i>S</i><sub>2</sub> improper rotation is equivalent to an inversion.</p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.3">
+<img src="../images/Fig4.3.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 4.3</b> Reflection planes of the planar of the planer <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>A</mo><mo>u</mo><mo>C</mo><msubsup><mo>l</mo><mn>4</mn><mo>&#x2212;</mo></msubsup></mrow></math>. ion. The figure axis is <i>C</i><sub>4</sub> and passes through the Au atom perpendicular to the plane of the paper, which is the <i>&#x03C3;<sub>h</sub></i> plane. The <i>&#x03C3;<sub>&#x03BD;</sub></i> planes contain the Au&#x2013;Cl bonds and the <i>&#x03C3;<sub>d</sub></i> planes bisect them.</p></figcaption></figure>
+</aside>
+</section>
+</section>
+<section epub:type="chapter" id="sec4.2">
+<h2 class="main">4.2<span class="space">&#160;</span>Point groups</h2>
+<p class="noindent">There is always at least one point in the molecule which is not moved by any of the symmetry operations. In the case of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi><mi>u</mi><mi>C</mi><msubsup><mi>l</mi><mn>4</mn><mo>&#x2212;</mo></msubsup></mrow></math> ion this invariant point is the central Au atom. For this reason, the collection of symmetry operations for a molecule are said to form a <i>point group</i>.</p>
+<section epub:type="chapter">
+<h3 class="sub"><b>Group properties</b></h3>
+<p class="noindent">A group is an abstract mathematical concept, defined as a collection of things which obey the following constraints: <a id="page_57" class="page">Page 57, Chapter4 Symmetries&#x2014;group theory</a></p>
+<p class="nlist">1.<span class="space">&#160;</span>The group must contain the identity operation <i>E</i>.</p>
+<p class="nlist">2.<span class="space">&#160;</span>Each element must have an inverse such that <i>R</i><sup>&#x2013;1 </sup><i>R = RR<sup>&#x2013;</sup></i><sup>1</sup> =<i> E</i>.</p>
+<p class="nlist">3.<span class="space">&#160;</span><i>Closure:</i> every combination of two elements must also be a member of the group, i.e. if <i>R</i> and <i>S</i> are members of the group, then so must be <i>RS</i> and <i>SR</i>.</p>
+<p class="nlist">4.<span class="space">&#160;</span><i>Associativity:</i> (<i>AB</i>)<i>C</i> = <i>A</i>(<i>BC</i>).</p>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.4">
+<img src="../images/Fig4.4.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 4.4</b> The allene molecule (CH<sub>2</sub>=C=CH<sub>2</sub>) viewed down the direction of the C=C=C bonds, which is both a <i>C</i><sub>2</sub> axis and an <i>S</i><sub>4</sub> axis. The full lines indicate H atoms bonded to the C atom above the plane of the paper and the dashed lines refer to H atoms below the plane of the paper.</p></figcaption></figure>
+</aside>
+<p class="noindentt">There is no requirement that group members should commute with one another. In general they do not.</p>
+<p class="indent">In practice the most important of these constraints is closure. We illustrate the property of closure by considering the symmetry operations of the ammonia molecule. This molecule has a <i>C</i><sub>3</sub> axis, with two associated symmetry operations, <i>C</i><sub>3</sub> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>3</mn><mn>2</mn></msubsup></mrow></math>, representing rotations by 120&#x00B0; and 240&#x00B0;, three <i>&#x03C3;<sub>&#x03C5;</sub></i> planes and the identity operation. This group of operations is given the name <i>C</i><sub>3</sub><i><sub>v</sub></i> (see the next subsection). <a href="#tab4.1">Table 4.1</a> contains all possible combinations of these symmetry operations in pairs. It can be seen that every combination gives another element of the group, showing that the group is indeed closed.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="sub"><b>The point group classifications</b></h3>
+<p class="noindent">Many different molecular shapes may have the same set of symmetry operations, and therefore belong to the same point group. For example, the point group <i>C</i><sub>2</sub><i>v</i> consists of the identity, a <i>C</i><sub>2</sub> operation and two distinct <i>&#x03C3;<sub>&#x03BD;</sub></i> operations. This group of symmetry operations applies to H<sub>2</sub>O, ClF<sub>3</sub>, SF<sub>4</sub>, <i>cis-</i> dichloroethene, <i>cis</i>- &#x005B;AuCl<sub>2</sub>Br<sub>2</sub>&#x005D;<sup>&#x2013;</sup>, <i>mer-</i>MX<sub>3</sub>Y<sub>3</sub><i>,</i> and many other molecular geometries.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="sidebar">The group properties can be memorized using the mnemonic INCA (Identity, Negation, Closure, Associativity).</p>
+</aside>
+<p class="indent">Point groups are named according to the combination of symmetry operations that forms the group. The most widely used system of nomenclature in chemistry is the Schoenfliess system, which we now summarize. (The total number of members of a group is known as its <i>order</i>.)</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="tab-cap" id="tab4.1"><b>Table 4.1</b> <i>C</i><sub>3</sub><i><sub>v</sub></i> group multiplication table&#x2013;<i>BA</i></p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" colspan="6"><p class="tab-c">First operation (<i>A</i>)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>3</mn><mn>2</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>3</mn><mn>2</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>3</mn><mn>2</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>3</mn><mn>2</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>3</mn><mn>2</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>3</mn><mn>2</mn></msubsup></mrow></math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"> <i>&#x03C3;</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>3</mn><mn>2</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+</tr>
+</table>
+</aside>
+<p class="blist">&#x2022;<span class="space">&#160;</span><i>C<sub>n</sub>:</i><span class="space"></span>a single <i>C<sub>n</sub></i> axis only, order = <i>n</i>. Examples: H<sub>2</sub>O<sub>2</sub>, 1, 3 dichloroallene (CHCl:C:CHCl) (<i>C</i><sub>2</sub>).</p>
+<p class="blist">&#x2022;<span class="space">&#160;</span><i>S</i><sub>2</sub><i><sub>n</sub></i>:<span class="space"></span>a single <i>S</i><sub>2</sub><i><sub>n</sub></i> axis only, order = 2<i>n</i>, note that <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>S</mi><mrow><mn>2</mn><mi>n</mi></mrow><mn>2</mn></msubsup><mo>=</mo><msub><mi>C</mi><mi>n</mi></msub></mrow></math>, and that <i>S</i><sub>2</sub> = <i>i</i>. Example: CPh<sub>4</sub> (S<sub>4</sub>).</p>
+<p class="blist">&#x2022;<span class="space">&#160;</span><i>C<sub>nh</sub></i>:<span class="space"></span>a <i>C<sub>n</sub></i> axis and a horizontal plane, order = 2<i>n</i> (<i>n</i> rotations, including <i>E,</i> and <i>n</i> improper rotations, including <i>&#x03C3;<sub>h</sub></i>, and if <i>n</i> is even, <i>i</i>)<i></i>. Examples: <i>trans-</i>1<i>,</i> 2 dichloroethene (<i>C</i><sub>2</sub><i><sub>h</sub></i>, B(OH)<sub>3</sub> (<i>C</i><sub>3</sub><i><sub>h</sub></i>).</p>
+<p class="blist">&#x2022;<span class="space">&#160;</span><i>C<sub>nv</sub></i>:<span class="space"></span>a <i>C<sub>n</sub></i> axis with <i>n</i> vertical mirror planes, all containing the axis, order = 2<i>n</i> (<i>n</i> rotations and <i>n</i> reflections). Examples: water, <i>cis</i>-1,2 dichloroethene, SF<sub>4</sub> (<i>C</i><sub>2</sub><i><sub>v</sub></i>), ammonia (<i>C</i><sub>3</sub><i><sub>v</sub></i>), CO (<i>C</i><sub>&#x221E;</sub><i><sub>v</sub></i>). A molecule of <i>C<sub>nv</sub></i> symmetry has the same symmetry operations as a pyramid whose base is an <i>n</i>-sided regular polygon. In the case of <i>n</i> = 2 this is an arrow-head, and in the case <i>n</i> = &#x221E; it is a cone. <a id="page_58" class="page">Page 58, Chapter4 Symmetries&#x2014;group theory</a></p>
+<p class="blist">&#x2022;<span class="space">&#160;</span><i>D<sub>n</sub>:<span class="space"></span></i>a <i>C<sub>n</sub></i> axis with <i>n C</i><sub>2</sub> axes lying in a plane perpendicular to the figure axis, order = 2<i>n</i> (<i>n</i> rotations about <i>C<sub>n</sub></i> and one rotation about each of the <i>C</i><sub>2</sub>)<i></i>. The <i>C</i><sub>2</sub> axes can be hard to spot. Example: ethane in an arbitrary rotational conformation (<i>D</i><sub>3</sub>)&#x00B7;</p>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.5">
+<img src="../images/Fig4.5.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 4.5</b> A triangular prism with <i>D</i><sub>3</sub><i><sub>h</sub></i> symmetry. The triangular faces are equilateral triangles. The H atoms of an ethane molecule in the eclipsed conformation occupy the vertices of the prism.</p></figcaption></figure>
+<figure class="fig1" id="fig4.6">
+<img src="../images/Fig4.6.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 4.6</b> An ethane molecule in the staggered conformation viewed down the C&#x2013;C bond, which is both a <i>C</i><sub>3</sub> axis and an S<sub>6</sub><i></i> axis. This geometry has <i>D</i><sub>3</sub><i><sub>d</sub></i> symmetry.</p></figcaption></figure>
+<figure style="margin-top:-2em;" class="fig1" id="fig4.7">
+<img src="../images/Fig4.7.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 4.7</b> A tetrahedron constructed on the vertices of a cube. One of the <i>C</i><sub>3</sub> axes and one of the <i>C</i><sub>2</sub>&#x2013;<i>S</i><sub>4</sub> axes is shown.</p></figcaption></figure>
+</aside>
+<p class="blist">&#x2022;<span class="space">&#160;</span><i>D<sub>nh</sub>:<span class="space"></span></i> all the symmetry operations of <i>D<sub>n</sub></i> plus a horizontal plane perpendicular to the <i>C<sub>n</sub></i> axis and containing all the <i>C</i><sub>2</sub> axes. A set of <i>n</i> vertical mirror planes automatically appears; each <i>&#x03C3;<sub>&#x03BD;</sub></i> contains one of the <i>C</i><sub>2</sub> axes. Order = 4<i>n</i> (<i>D<sub>n</sub></i> plus <i>n</i> improper rotations (including &#x03C3;<i><sub>h</sub></i>) and <i>n</i> vertical reflections). Examples: ethene (<i>D</i><sub>2</sub><i><sub>h</sub></i>), ethane (eclipsed), BCl<sub>3</sub> (<i>D</i><sub>3</sub><i><sub>h</sub></i>), <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mrow><mtext>AuCl</mtext></mrow><mn>4</mn><mo>&#x2212;</mo></msubsup></mrow></math> (<i>D</i><sub>4</sub><i><sub>h</sub></i>), ferrocene (eclipsed) (<i>D</i><sub>5</sub><i><sub>h</sub></i>), benzene (<i>D</i><sub>6</sub><i><sub>h</sub></i>), CO<sub>2</sub> (<i>D</i><sub>&#x221E;</sub><i><sub>h</sub></i>) This group is easy to spot since the molecules have the symmetry of a prism whose faces have <i>n</i>-fold rotational symmetry, or of a regular <i>n</i>-sided polygon (see <a href="#fig4.5">Fig. 4.5</a>).</p>
+<p class="blist">&#x2022;<span class="space">&#160;</span><i>D<sub>nd</sub></i>:<span class="space"></span>As for <i>D<sub>n</sub></i> with the addition of n dihedral mirror planes which bisect the <i>C</i><sub>2</sub> axes. Once the dihedral planes are added, the <i>C<sub>n</sub></i> axis also becomes an <i>S</i><sub>2</sub><i><sub>n</sub></i> axis. Order = 4<i>n</i> (<i>D<sub>n</sub></i> plus <i>n</i> &#x03C3;<i><sub>d</sub></i> reflections and <i>n</i> improper rotations not already counted as rotations about <i>C<sub>n</sub></i>)<i></i>. Examples: allene (<i>D</i><sub>2</sub><i><sub>d</sub></i>)<i>,</i> staggered ethane (<i>D</i><sub>3</sub><i><sub>d</sub></i>)<i>,</i> staggered ferrocene (<i>D</i><sub>5</sub><i><sub>d</sub></i>) This group is also easy to spot&#x2014;if the opposite faces in the prism of <i>D<sub>nh</sub></i> eclipse one another when viewed down the <i>C<sub>n</sub></i> axis, then they are staggered (exactly out of register) in <i>D<sub>nd</sub></i> (see <a href="#fig4.6">Fig. 4.6</a>).</p>
+<p class="blist">&#x2022;<span class="space">&#160;</span><i>T<sub>d</sub></i>:<span class="space"></span>the symmetry operations of a tetrahedron. A tetrahedron is simple to recognize, but to apply group theory we need to locate all the symmetry operations. These are most easily represented by placing the vertices of the tetrahedron at the corners of a cube, as in <a href="#fig4.7">Fig. 4.7</a>. There are four <i>C</i><sub>3</sub> axes passing through the body diagonals of the cube, and three mutually perpendicular <i>C</i><sub>2</sub> axes joining the centres of opposite faces of the cube, giving a total of 12 rotations, including the identity. In addition there are six planes of symmetry, each of which contains one <i>C</i><sub>2</sub> and bisects the other two. Thus each <i>C</i><sub>2</sub> axis is also an <i>S</i><sub>4</sub> axis, adding two improper rotations. The order of the group is therefore 24. Example: CH<sub>4</sub>.</p>
+<p class="blist">&#x2022;<span class="space">&#160;</span><i>O<sub>h</sub></i>:<span class="space"></span>the symmetry operations of a cube or an octahedron. The octahedron is more important in chemistry (except in the solid state) but the symmetry operations are easier to localize on the cube. The relationship between a cube and its inscribed octahedron is depicted in <a href="#fig4.8">Fig. 4.8</a>. The vertices of the octahedron are at the face centres of the cube. Again there are four <i>C</i><sub>3</sub> axes through the body diagonals, and opposite faces of the cube are now joined by <i>C</i><sub>4</sub> axes. Perpendicular to each <i>C</i><sub>4</sub> axis there are two <i>C</i><sub>2</sub> axes, joining opposite edges of the cube. There are therefore 24 rotational symmetry operations in the group. There is in addition a centre of symmetry, and so the <i>C</i><sub>3</sub> axes automatically become S<sub>6</sub><i></i> axes, there are also six planes of symmetry passing through op- <a id="page_59" class="page">Page 59, Chapter4 Symmetries&#x2014;group theory</a>posite edges, three more parallel to the faces of the cube, and the <i>C</i><sub>4</sub> axes are converted into <i>S</i><sub>4</sub> axes by the new horizontal planes, giving a total order of 48. Example: SF<sub>6</sub>.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.8">
+<img src="../images/Fig4.8.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 4.8</b> An octahedron constructed inside a cube. One of the C<sub>3</sub>&#x2013;S<sub>6</sub><i></i> axes is shown coming out of the corner of the cube, and a <i>C</i><sub>2</sub>&#x2013;<i>S</i><sub>4</sub> axis coming through the centre of a face of the cube.</p></figcaption></figure>
+</aside>
+<p class="blist">&#x2022;<span class="space">&#160;</span><i>I<sub>h</sub></i>: the symmetry group of the regular icosahedron or dodecahedron. Contains six <i>C</i><sub>5</sub> axes, ten <i>C</i><sub>3</sub> axes and 15 <i>C</i><sub>2</sub> axes, giving a total of 60 rotations, which doubles up to an order of 120 on adding the centre of inversion. It is not easy to depict the symmetry elements on a two-dimensional page, and we leave it as an exercise for the enterprising reader to locate them. This is the point group for the molecule C<sub>60</sub>.</p>
+<p class="blist">&#x2022;<span class="space">&#160;</span><i>R</i><sub>3</sub>: the symmetry group of a sphere has to be treated differently since it contains an infinite number of rotations and reflections. However it is important for classifying spherically symmetrical systems, such as atoms, or the rotational wavefunctions of a diatomic molecule.</p>
+</section>
+<section epub:type="chapter">
+<h4 class="h4"><b>Finding the point group</b></h4>
+<p class="noindent">The skill of finding and recognizing the point group of a molecule only comes with practice. However, to help the reader we include a flowchart in <a href="#fig4.9">Fig. 4.9</a>.</p>
+<figure class="fig1" id="fig4.9">
+<img src="../images/Fig4.9.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 4.9</b> Flowchart for finding the point group of a molecule.</p></figcaption></figure>
+
+<p class="indent">In searching for a point group it is useful to bear in mind that the most commonly found groups are <i>C<sub>nv</sub></i> and <i>D<sub>nh</sub></i>. These are easy to spot in practice because <i>C<sub>nv</sub></i> describes a pyramid whose base is a regular <i>n-</i> <a id="page_60" class="page">Page 60, Chapter4 Symmetries&#x2014;group theory</a>sided polygon, and <i>D<sub>nh</sub></i> describes a prism whose ends are regular <i>n</i>-sided polygons.</p>
+</section>
+<section epub:type="chapter">
+<h4 class="h4"><b>Classes</b></h4>
+<p class="noindent">Two members of a group <i>&#x00C2;</i> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>B</mi><mo>&#x005E;</mo></mover></math> are said to be <i>conjugate</i> if they are related by a transformation of the form (similarity transform)</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.5"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>B</mi><mo>&#x005E;</mo></mover><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msup><mover accent='true'><mi>C</mi><mo>&#x005E;</mo></mover><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><mtext>&#x2009;</mtext><mover accent='true'><mi>A</mi><mo>&#x005E;</mo></mover><mover accent='true'><mi>C</mi><mo>&#x005E;</mo></mover></mrow></math></p></td>
+<td>(4.5)</td>
+</tr>
+</table>
+<p class="noindent">where <i>&#x0108;</i> is also a member of the group (and conversely <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>A</mi><mo>&#x005E;</mo></mover><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mover accent='true'><mi>C</mi><mo>&#x005E;</mo></mover><mover accent='true'><mi>B</mi><mo>&#x005E;</mo></mover><msup><mover accent='true'><mi>C</mi><mo>&#x005E;</mo></mover><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup></mrow></math> )<i></i>.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="sidebar"><b>Problem 4.2.1.</b> <i>Show that if &#x00C2; is conjugate to</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>B</mi><mo>&#x005E;</mo></mover></math> <i>and</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>B</mi><mo>&#x005E;</mo></mover></math> <i> is conjugate to &#x0108; then &#x00C2; is conjugate to &#x0108;.</i></p>
+</aside>
+<p class="indent">A collection of members of a group which are all conjugate to one another is known as a <i>class</i>. As an example we consider all possible combinations of the form <i>&#x0108;</i><sup>&#x2013;1</sup><i>&#x00C2;&#x0108;</i> for the <i>C</i><sub>3</sub><i><sub>&#x028B;</sub></i> group in <a href="#tab4.2">Table 4.2</a>, from which it can be seen that the identity is in a class of its own, the two rotation operations <i>C</i><sub>3</sub> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mover accent='true'><mi>C</mi><mo>&#x005E;</mo></mover><mn>3</mn><mn>2</mn></msubsup></mrow></math> form a class, and the three reflections <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>&#x03C3;</mi><mo>&#x005E;</mo></mover><mn>1</mn></msub><mtext>&#x2009;</mtext><mo>,</mo><mtext>&#x2009;</mtext><msub><mover accent='true'><mi>&#x03C3;</mi><mo>&#x005E;</mo></mover><mn>2</mn></msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>&#x03C3;</mi><mo>&#x005E;</mo></mover><mn>3</mn></msub></mrow></math> form a third class. The identity and the inversion commute with all other symmetry operations and therefore always form classes of their own, for example</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.6"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>C</mi><mo>&#x005E;</mo></mover><mover accent='true'><mi>E</mi><mo>&#x005E;</mo></mover><msup><mover accent='true'><mi>C</mi><mo>&#x005E;</mo></mover><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mover accent='true'><mi>E</mi><mo>&#x005E;</mo></mover><mover accent='true'><mi>C</mi><mo>&#x005E;</mo></mover><msup><mover accent='true'><mi>C</mi><mo>&#x005E;</mo></mover><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mover accent='true'><mi>E</mi><mo>&#x005E;</mo></mover></mrow></math></p></td>
+<td>(4.6)</td>
+</tr>
+</table>
+<p class="tab-cap" id="tab4.2"><b>Table 4.2</b> <i>Cs<sub>v</sub></i> similarity transform table&#x2014;<i>B<sup>&#x2013;</sup></i><sup>1</sup><i>AB</i></p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" colspan="7"><p class="tab-c">operation <i>A</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>B</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>2</mn><mn>3</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>2</mn><mn>3</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>2</mn><mn>3</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>2</mn><mn>3</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>2</mn><mn>3</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>2</mn><mn>3</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>2</mn><mn>3</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>2</mn><mn>3</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p>
+</td>
+</tr>
+</table>
+</section>
+</section>
+<section epub:type="chapter" id="sec4.3">
+<h2 class="main">4.3<span class="space">&#160;</span>Bases and representations</h2>
+<p class="noindent">The purpose of using symmetry is to simplify the construction of molecular orbitals or vibrational modes by generating symmetry adapted combinations of the constituent atomic orbitals or atomic motions. Such simplifications can cut the computational work involved by orders of magnitude. For this purpose we do not need the whole of group theory, we simply concentrate on one aspect&#x2014;the theory of <i>representations</i>.</p>
+<section epub:type="chapter">
+<h3 class="sub"><b>Bases</b></h3>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="indent">A basis is a closed set of things, for example atomic orbitals, which are interconverted by the symmetry operations of the group.</p>
+</aside>
+<p class="noindent">Before discussing representations we need to understand the idea of a <i>basis,</i> which is a closed set of <i>things</i> that are transformed into one another by the operations of the group. The appropriate <i>things</i> are the building blocks in the application of interest. For example, if we are building molecular orbitals in the LCAO approximation, they are the constituent atomic orbitals. Or if we are interested in the vibrations of a molecule, <a id="page_61" class="page">Page 61, Chapter4 Symmetries&#x2014;group theory</a>then the basis chosen is a set of coordinates that can describe all possible displacements of the nuclei in space. The <i>dimension</i> of the basis is the number of things in it.</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.10">
+<img src="../images/Fig4.10.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 4.10</b> H 1<i>s</i> orbitals in the water molecule.</p></figcaption></figure>
+<p class="tab-cap" id="tab4.3"><b>Table 4.3</b> Displacement coordinates of the N atom inNH<sub>3</sub></p>
+<table class="width100b" style="margin-bottom:1em;width:70%;">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>x</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>y</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>z</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i><sub>x</sub></i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i><sub>y</sub></i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i><sub>z</sub></i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>z</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>x</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>y</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>2</mn><mn>3</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>y</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>z</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>x</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>x</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>z</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>y</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>y</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>x</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>z</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>z</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>y</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>x</i></p>
+</td>
+</tr>
+</table>
+</aside>
+<p class="indent">The most important feature of a basis is that it must be <i>closed:</i> i.e. it must be possible to express the effect of every symmetry operation of the group on every member of the basis as a linear combination of members of the basis, otherwise it is not a valid basis for the group. To take a very simple example, consider the 1<i>s</i> orbitals on the two H atoms in a water molecule (<a href="#fig4.10">Fig. 4.10</a>). The identity and reflection in the mirror plane which contains the molecule leave these orbitals unchanged, whereas the other two symmetry operations (C<sub>2</sub> and <i>&#x03C3;<sub>&#x03C5;</sub></i>) interchange them. Thus, every symmetry operation operating on orbital |1 &#x003E; yields either |1 &#x003E; or |2 &#x003E;, and similarly for the transformations of |2 &#x003E;. We conclude that this set of two orbitals is a valid basis. However, orbital 1 is not a valid basis <i>on its own</i> because some operations transform it into orbital 2. As a second example we consider the set of orthogonal unit vectors based on the N atom in an ammonia molecule. The effect of each of the symmetry operations in the group is tabulated in <a href="#tab4.3">Table 4.3</a>. The threefold axis of the ammonia molecule has been chosen to be aligned with the threefold axis of the orthogonal coordinate system (the (1,1,1) direction) (see <a href="#fig4.11">Fig. 4.11</a>). Each symmetry operation interconverts the three unit vectors in some way, and so these vectors form a valid basis.</p>
+<p class="indent">Once an appropriate basis has been found, the solution to the problem of interest is a linear combination of the basis functions. For example, if we are trying to construct a molecular orbital by the L&#x00C7;AO method, the MO can be expressed as a linear combinations of the AOs. The AOs make up the basis set &#x007B;&#x0192;<i><sub>i</sub></i>&#x007D; and the MO can be expressed in the form</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.7"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C8;</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msub><mi>a</mi><mi>i</mi></msub><msub><mi>f</mi><mi>i</mi></msub></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(4.7)</td>
+</tr>
+</table>
+<p class="noindent">The notation can be made much more economical if we assemble the basis functions into a vector <b>f</b> and the coefficients into a second vector a. The MO is then the dot product (scalar product) of the two vectors,</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.8"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C8;</mi><mtext>&#x2009;</mtext><mo>=</mo><msup><mi>f</mi><mi>T</mi></msup><mi>a</mi></mrow></math></p></td>
+<td>(4.8)</td>
+</tr>
+</table>
+<p class="noindent">(The superscript <i><sup>T</sup></i> designates the transpose, so that if <b>f</b> is a column vector, <b>f</b><sup>T</sup> is the corresponding row vector.) The vector of coefficients a specifies the solution precisely in terms of the basis <b>f</b>. The problem of finding the solution is therefore reduced to that of finding the vector a.</p>
+</section>
+<section epub:type="chapter">
+<h4 class="h4"><b>Representations</b></h4>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.11">
+<img src="../images/Fig4.11.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 4.11</b> Displacement coordinates for the N atom in the ammonia molecule&#x2014;the <i>C</i><sub>3</sub> axis is aligned with the (1,1,1) direction&#x2019; of the axis system. The three axes point upwards out of the plane of the paper and the three N&#x2013;H bonds point downwards.</p></figcaption></figure>
+</aside>
+<p class="noindent">Once a valid basis has been chosen, we consider the effect of the symmetry operations on each of the basis functions. As discussed above, each symmetry operation transforms a basis function into a linear combination of the basis functions. Thus for example if the it h basis function is denoted <i>f<sub>i</sub></i> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></math> is a symmetry operator, then <a id="page_62" class="page">Page 62, Chapter4 Symmetries&#x2014;group theory</a>where <i>R<sub>ji</sub></i> are the coefficients in the linear combination. If the basis functions are assembled into a row vector <b>f</b><i><sup>T</sup></i>, then the coefficients <i>R<sub>ji</sub></i> form a matrix <b>R</b> which postmultiplies <b>f</b><i><sup>T</sup></i> to give exactly the same effect on the basis functions as the symmetry operator <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></math> In matrix notation</p>
+
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.9"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><msub><mi>f</mi><mi>i</mi></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>j</mi></munder><mrow><msub><mi>f</mi><mi>j</mi></msub><msub><mi>R</mi><mrow><mi>j</mi><mi>i</mi></mrow></msub></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(4.9)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.10"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><msup><mi>f</mi><mi>T</mi></msup><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msup><mi>f</mi><mi>T</mi></msup><mi>R</mi></mrow></math></p></td>
+<td>(4.10)</td>
+</tr>
+</table>
+<p class="noindent">Each symmetry operation of the group can be represented in this way by a <i>representative matrix,</i> which is square and has dimension equal to the number of basis functions. This is also called the dimension of the representation.</p>
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+<p class="sidebar">The effect of a symmetry operation on the basis can be represented using a matrix. Each symmetry operation in the group has its own representative matrix, and the group of matrices is called a representation.</p>
+</aside>
+<p class="indent">So far we have only considered the effect of a symmetry operation on the basis functions <b>f</b>. However, the molecular orbital or normal mode we want is not usually a single basis function, but a linear combination of them, which can be represented by a vector, as described in <a href="#eq4.8">eqn 4.8</a>. Given <a href="#eq4.9">eqn 4.9</a> for the effect of a symmetry operation on a single basis function we have</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.11"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mi>&#x03C8;</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msub><mi>a</mi><mi>i</mi></msub><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><msub><mi>f</mi><mi>i</mi></msub></mrow></mstyle><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></munder><mrow><msub><mi>f</mi><mi>j</mi></msub><msub><mi>R</mi><mrow><mi>j</mi><mi>i</mi></mrow></msub><msub><mi>a</mi><mi>i</mi></msub></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(4.11)</td>
+</tr>
+</table>
+<p class="noindent">or in the more compact matrix notation</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.12"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mi>&#x03C8;</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msup><mi>f</mi><mi>T</mi></msup><mi mathvariant="bold">R</mi><mtext>a</mtext></mrow></math></p></td>
+<td>(4.12)</td>
+</tr>
+</table>
+<p class="noindent">In other words the symmetry operation transforms the linear combination represented in the basis &#x0192; by the vector <b>a</b> into the vector <b>Ra</b>, relative to the same basis. The effect of two successive symmetry operations on the linear combination will tell us how the representative matrices should be combined to represent the effect of the combined symmetry-operations. It is important to recollect that the notation <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>S</mi><mo>&#x005E;</mo></mover><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mi>&#x03C8;</mi></mrow></math> signifies the operation of <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></math> first, followed by &#x015C;, because in general <i>R</i> and <i>S</i> will not commute. If the effect of <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></math> gives the vector <b>Ra</b>, which we denote <b>b</b>, then the effect of the second operation, <b><i>&#x015C;</i></b>, on <b>b</b> is given by <b>Sb</b>, where <b>S</b> is the representative matrix of <i>S</i>. Since matrix multiplication is associative we have.</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.13"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">b</mi><mtext>&#x2009;</mtext><mtext>=</mtext><mtext>&#x2009;</mtext><mi mathvariant="bold">S</mi><mrow><mo>(</mo><mrow><mi mathvariant="bold">R</mi><mi mathvariant="bold">a</mi></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>=</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">R</mi></mrow><mo>)</mo></mrow><mi mathvariant="bold">a</mi></mrow></math></p></td>
+<td>(4.13)</td>
+</tr>
+</table>
+<p class="noindent">In other words the combined symmetry operation <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>S</mi><mo>&#x005E;</mo></mover><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></mrow></math> is represented in the basis <b>f</b> by the matrix product <b>SR</b>. But the closure property of the group implies that this combination of symmetry operations must itself be a member of the group, whose effect on the vector a must be the same as that of the matrix <b>SR</b>. The matrix product must therefore be the representative matrix of this operation. It follows from the preceding discussion that the representative matrices (with the operation of matrix multiplication to combine them) have the same multiplication table as the symmetry operators, and therefore form a group with &#x2018;exactly the same properties as the point group.,They are said to form a <i>represen-</i> <a id="page_63" class="page">Page 63, Chapter4 Symmetries&#x2014;group theory</a><i>tation</i> of the group because they represent the effects of the symmetry operations on a particular basis.</p>
+<aside class="abc" style="margin-top:-2.6em;" epub:type="sidebar">
+<p class="sidebar">The matrix representatives have the same multiplication table as the symmetry operations, and they therefore form a representation of the group.</p>
+</aside>
+<p class="indent">Every basis will generate an appropriate group of matrices with the same multiplication properties, i.e. every basis generates its own representation.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec4.4"> 
+<h2 class="main">4.4<span class="space">&#160;</span>Reduction of representation</h2>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.12">
+<img src="../images/Fig4.12.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 4.12</b> Displacement coordinates for the <b>N</b> atom in the ammonia molecule&#x2014;the <i>C</i><sub>3</sub> axis is aliened with the <i>z</i> axis.</p></figcaption></figure>
+</aside>
+<p class="noindent">Representative matrices can become quite large. For example, if we take as a basis coordinates for displacing all the atoms in a methane molecule we obtain 15 &#x00D7; 15 matrices (three coordinates for each atom). The problem can be simplified considerably by a suitable coordinate transformation, and the resulting simplification is the main motivation for the use of group theory in chemistry.</p>
+<p class="indent">Firstly we illustrate what we mean by another look at the example of the displacement coordinates of the N atom in the ammonia molecule. This time we align the axis system so that the <i>z</i>-axis lies along the figure axis of the molecule, and mirror plane 1 is the <i>yz</i>-axial plane (see <a href="#fig4.12">Fig. 4.12</a>). The effect of the possible symmetry operations is summarized in <a href="#tab4.4">Table 4.4</a>. Two features of these results should be noted:</p>
+<p class="nlist">1.<span class="space">&#160;</span>The unit vector along the <i>z</i> axis is transformed into itself by all symmetry operations of <i>C</i><sub>3&#x028B;</sub> and is now a valid basis on its own for a representation whose representatives are l&#x00D7;l matrices (i.e. constants), all equal to 1.</p>
+<p class="nlist">2.<span class="space">&#160;</span>The symmetry operations still mix the unit vectors in the <i>x</i> and <i>y</i> directions, which form a basis for a two-dimensional representation (consisting of 2 &#x00D7; 2 matrices).</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="tab-cap" id="tab4.4"><b>Table 4.4</b> Displacement coordinates of the N atom inNH<sub>3</sub></p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" colspan="4"><p class="tab-c">Coordinate</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-c"></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c"><i>x</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c"><i>y</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c"><i>z</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><i>x</i></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><i>y</i></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><i>z</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mo>&#x2212;</mo><mi>x</mi><mo>+</mo><mi>y</mi><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mo>&#x2212;</mo><mi>x</mi><msqrt><mn>3</mn></msqrt><mo>&#x2212;</mo><mi>y</mi></mrow><mn>2</mn></mfrac></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><i>z</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>3</mn><mn>2</mn></msubsup></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mo>&#x2212;</mo><mi>x</mi><mo>&#x2212;</mo><mi>y</mi><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mi>x</mi><msqrt><mn>3</mn></msqrt><mo>&#x2212;</mo><mi>y</mi></mrow><mn>2</mn></mfrac></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><i>z</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><i>&#x03C3;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><i>X</i></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><i>-y</i></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><i>z</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><i>&#x03C3;</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mo>&#x2212;</mo><mi>x</mi><mo>&#x2212;</mo><mi>y</mi><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mo>&#x2212;</mo><mi>x</mi><msqrt><mn>3</mn></msqrt><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><i>z</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><i>&#x03C3;</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mo>&#x2212;</mo><mi>x</mi><mo>+</mo><mi>y</mi><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mi>x</mi><msqrt><mn>3</mn></msqrt><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><i>z</i></p>
+</td>
+</tr>
+</table>
+<p class="sidebar">The process of finding a transformation to separate coordinates that are not related by symmetry is known as reducing the representation.</p>
+</aside>
+<p class="indentt">The <i>x</i> and <i>y</i> vectors are related by symmetry in this example, because they are mixed by at least one symmetry operation in the group, however the <i>z</i> vector is clearly not mixed with either the <i>x</i> or <i>y</i> vectors by any symmetry operation. Effectively the three-dimensional space spanned by the <i>x</i>, <i>y</i> and <i>z</i> vectors has been separated into a one-dimensional sub-space (the <i>z</i> direction) and a two-dimensional sub-space (the <i>xy</i> plane). These sub-spaces are called invariant sub-spaces, which means that every symmetry operation transforms any vector in one of the sub-spaces into another vector in the same sub-space. For example, any symmetry operation will transform a vector in the <i>xy</i> plane into another vector in the <i>xy</i> plane. This separation into invariant sub-spaces, or <i>reduction of the representation</i> has been achieved simply by choosing the orientation of the coordinates carefully.</p>
+<p class="indent">In this example we have reduced the representation by knowing the answer in advance. In general we do not know the answer in advance, but instead we use the mathematics of group theory, which gives a simple recipe for reducing representations. <a id="page_64" class="page">Page 64, Chapter4 Symmetries&#x2014;group theory</a></p>
+<section epub:type="chapter">
+<h3 class="sub"><b>Transformation of basis</b></h3>
+<p class="noindent">The two representations of the displacement coordinates of an ammonia molecule are obviously related. They differ only in the orientation of the axis system relative to the molecule. Reorienting the coordinate system is a linear transformation of the basis, which we now need to consider more generally.</p>
+<p class="indent">Suppose we have two bases <b>f</b> and <b>g</b>, which span the same space, and are related through the linear transformation <b>U</b>, so that <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi mathvariant="bold">f</mi><mi>T</mi></msup><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msup><mi mathvariant="bold">g</mi><mi>T</mi></msup><mi mathvariant="bold">U</mi></mrow></math>;</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.14"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>f</mi><mi>i</mi></msub><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>j</mi></munder><mrow><msub><mi>g</mi><mi>j</mi></msub><msub><mi>U</mi><mrow><mi>j</mi><mi>i</mi></mrow></msub></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(4.14)</td>
+</tr>
+</table>
+<p class="noindent">If <b>f</b> and <b>g</b> span the same space then U can be inverted so that <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>g</mi><mi>T</mi></msup><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msup><mi>f</mi><mi>T</mi></msup><msup><mi>U</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup></mrow></math>. Our wavefunction <i>&#x03C8;</i> is a linear combination of these basis functions, and will be represented by a different vector in each basis. Similarly, every symmetry operation may be represented by a different matrix in each basis. If the wavefunction is represented by the vector <b>a</b><sup>(</sup><i><sup>f</sup></i><sup>)</sup> in basis <b>f</b> we need to discover how to find the vector <b>a</b><sup>(</sup><i><sup>g</sup></i><sup>)</sup> that represents it in basis <b>g</b>. This is very simple because</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.15"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C8;</mi><mo>=</mo><msup><mi mathvariant="bold">f</mi><mi>T</mi></msup><msup><mi mathvariant="bold">a</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><mo>=</mo><msup><mi mathvariant="bold">g</mi><mi>T</mi></msup><msup><mi mathvariant="bold">a</mi><mrow><mrow><mo>(</mo><mi>g</mi><mo>)</mo></mrow></mrow></msup></mrow></math></p></td>
+<td>(4.15)</td>
+</tr>
+</table>
+<p class="noindent">Substituting for <b>f</b><i><sup>T</sup></i>, we find</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.16"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C8;</mi><mo>=</mo><msup><mi mathvariant="bold">f</mi><mi>T</mi></msup><msup><mi mathvariant="bold">a</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><mo>=</mo><msup><mi mathvariant="bold">g</mi><mi>T</mi></msup><mi mathvariant="bold">U</mi><msup><mi mathvariant="bold">a</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup></mrow></math></p></td>
+<td>(4.16)</td>
+</tr>
+</table>
+<p class="noindent">hence, we must have</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.17"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi mathvariant="bold">a</mi><mrow><mrow><mo>(</mo><mi>g</mi><mo>)</mo></mrow></mrow></msup><mo>=</mo><mi mathvariant="bold">U</mi><msup><mi mathvariant="bold">a</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><mtext>&#x2009;</mtext><mi>a</mi><mi>n</mi><mi>d</mi><mtext>&#x2009;</mtext><msup><mi mathvariant="bold">a</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><mo>=</mo><msup><mi mathvariant="bold">U</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><msup><mi mathvariant="bold">a</mi><mrow><mrow><mo>(</mo><mi>g</mi><mo>)</mo></mrow></mrow></msup></mrow></math></p></td>
+<td>(4.17)</td>
+</tr>
+</table>
+<p class="noindent">Showing us that the matrix that transforms the <i>column vector</i> of the coefficients in a linear combination is the inverse of the matrix that transforms the <i>row vector</i> of the basis functions.</p>
+<p class="indent">The second task is to find out how the transformation alters the representative matrix of a symmetry operator <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></math> Suppose that in basis <b>f</b> this matrix is <b>R</b><sup>(</sup><i><sup>f</sup></i><sup>)</sup>, whereas in basis g it is <b>R</b><sup>(</sup><i><sup>g</sup></i><sup>)</sup>. Then</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.18"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mi>&#x03C8;</mi><mo>=</mo><msup><mi mathvariant="bold">f</mi><mi>T</mi></msup><msup><mi mathvariant="bold">R</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><msup><mi mathvariant="bold">a</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><mo>=</mo><mtext>&#x2009;</mtext><msup><mi mathvariant="bold">g</mi><mi>T</mi></msup><msup><mi mathvariant="bold">R</mi><mrow><mrow><mo>(</mo><mi>g</mi><mo>)</mo></mrow></mrow></msup><msup><mi mathvariant="bold">a</mi><mrow><mrow><mo>(</mo><mi>g</mi><mo>)</mo></mrow></mrow></msup></mrow></math></p></td>
+<td>(4.18)</td>
+</tr>
+</table>
+<p class="noindent">Taking the first of these equalities and transforming the basis vector and the coefficient vector, as we have just discussed, we find</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.19"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi mathvariant="bold">f</mi><mi>T</mi></msup><msup><mi mathvariant="bold">R</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><msup><mi mathvariant="bold">a</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><mo>=</mo><mtext>&#x2009;</mtext><msup><mi mathvariant="bold">g</mi><mi>T</mi></msup><mi mathvariant="bold">U</mi><msup><mi mathvariant="bold">R</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><msup><mi mathvariant="bold">U</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><msup><mi mathvariant="bold">a</mi><mrow><mrow><mo>(</mo><mi>g</mi><mo>)</mo></mrow></mrow></msup></mrow></math></p></td>
+<td>(4.19)</td>
+</tr>
+</table>
+<p class="noindent">Giving us the results</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.20"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi mathvariant="bold">R</mi><mrow><mrow><mo>(</mo><mi>g</mi><mo>)</mo></mrow></mrow></msup><mo>=</mo><mi mathvariant="bold">U</mi><msup><mi mathvariant="bold">R</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><msup><mi mathvariant="bold">U</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><mtext>&#x2009;</mtext><mi>a</mi><mi>n</mi><mi>d</mi><mtext>&#x2009;</mtext><msup><mi mathvariant="bold">R</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><mo>=</mo><msup><mi mathvariant="bold">U</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><msup><mi mathvariant="bold">R</mi><mrow><mrow><mo>(</mo><mi>g</mi><mo>)</mo></mrow></mrow></msup><mi mathvariant="bold">U</mi></mrow></math></p></td>
+<td>(4.20)</td>
+</tr>
+</table>
+<p class="noindent">This type of transformation is known as a <i>similarity transformation</i>. Representations which are related by a linear transformation of basis, like <b>f</b> and <b>g</b> are called <i>equivalent representations</i>. <a id="page_65" class="page">Page 65, Chapter4 Symmetries&#x2014;group theory</a></p>
+</section>
+<section epub:type="chapter">
+<h3 class="sub"><b>Characters</b></h3>
+<p class="noindent">To reduce a representation we need to find a transformation of the basis which will reduce the representative matrices to a block diagonal form. This can always be done for a single matrix, but the transformation we are looking for will reduce all the representative matrices to the same blocked form. Fortunately this job can be done without even constructing the representative matrices, all we actually need are their <i>characters</i>.</p>
+<aside class="abc" style="margin-top:-7.5em;" epub:type="sidebar">
+<p class="sidebar">A blocked matrix has the form where the only nonzero elements come in small square blocks down the leading diagonal, as in</p>
+<p class="sidebart"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mover accent='true'><mi>x</mi><mo>&#x02D9;</mo></mover></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mi>x</mi></mtd><mtd><mi>x</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mi>x</mi></mtd><mtd><mi>x</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow></math></p>
+<p class="sidebart">which is blocked into a 1 &#x00D7; 1 and a 2 &#x00D7; 2 block.</p>
+</aside>
+<p class="indent">The character of a matrix (also known as its trace, or its spur) is the sum of its diagonal elements. We denote the character of a matrix with the greek letter <i>&#x03C7;</i>. Thus</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.21"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C7;</mi><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msub><mi>R</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(4.21)</td>
+</tr>
+</table>
+<p class="noindent">When we transform from one basis to another the characters of the representative matrices do not change. This fact is easy to prove by reference to the similarity transformation of <a href="#eq4.20">eqn 4.20</a>.</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.22"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtable columnalign='left'><mtr columnalign='left'><mtd columnalign='left'><mrow><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msubsup><mi>R</mi><mrow><mi>i</mi><mi>i</mi></mrow><mrow><mrow><mo>(</mo><mi>g</mi><mo>)</mo></mrow></mrow></msubsup></mrow></mstyle></mrow></mtd><mtd columnalign='left'><mrow><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>,</mo><mi>k</mi></mrow></munder><mrow><msub><mi>U</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msubsup><mi>R</mi><mrow><mi>j</mi><mi>k</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup><msubsup><mi>U</mi><mrow><mi>k</mi><mi>i</mi></mrow><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msubsup></mrow></mstyle></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow></mrow></mtd><mtd columnalign='left'><mrow><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>,</mo><mi>k</mi></mrow></munder><mrow><msubsup><mi>U</mi><mrow><mi>k</mi><mi>i</mi></mrow><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msubsup><msub><mi>U</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msubsup><mi>R</mi><mrow><mi>j</mi><mi>k</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup></mrow></mstyle><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>j</mi></munder><mrow><msubsup><mi>R</mi><mrow><mi>j</mi><mi>j</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup></mrow></mstyle></mrow></mtd></mtr></mtable></mrow></math></p></td>
+<td style="padding-top:3.5em;">(4.22)</td>
+</tr>
+</table>
+<p class="noindent">because <b>U</b><sup>&#x2013;1</sup><b>U</b> is the identity matrix. Hence &#x03C7;(<b>R<sup>(</sup></b><i><sup>g</sup></i><sup>)</sup>) = &#x03C7;(<b>R<sup>(</sup></b><i><sup>f</sup></i><sup>)</sup>), proving the assertion. This means that the representative matrix of <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></math> has the same character in all representations of the group equivalent to <b>f</b>.</p>
+<p class="indent">Another consequence of this observation is that in a given representation all matrices representing symmetry operations in the same <i>class</i> have the same character. This follows because the members of a class are related to one another by similarity transformations (see <a href="#eq4.5">eqn 4.5</a>).</p>
+<aside class="abc" style="margin-top:-14em;" epub:type="sidebar">
+<p class="sidebar" id="pro4.4.1"><b>Problem 4.4.1.</b> <i>Check for each symmetry operation of the group C</i><sub>3</sub><i><sub>v</sub>, that the representative matrices in the two bases used to calculate <a href="#tab4.3">Tables 4.3</a> and <a href="#tab4.4">4.4</a> have the same character</i>.</p>
+</aside>
+<p class="indent">This result makes things much easier. Instead of having to worry about the representative matrices for every symmetry operation, all we need to do is to find the character of one operation in each class; these characters are not altered when we transform the basis. And to find the character is simple&#x2014;the diagonal elements of a matrix correspond to the components of the basis functions which are unaltered by the symmetry operation. In vector terms a diagonal element is the component of the transformed unit vector in the direction of the untransformed vector. For example, the identity operation leaves all the basis functions unaltered, so that each diagonal element of the representative matrix is one. When we calculate the character we count 1 for each basis function, giving the dimension of the representation.</p>
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+<p class="sidebar" id="pro4.4.2"><b>Problem 4.4.2.</b> <i>Show, for the same set of matrices as the previous problem, that all matrices in the same class have the same character</i>.</p>
+</aside>
+<p class="indent">The results of this subsection give us two other short-cuts:</p>
+<p class="nlist">1.<span class="space">&#160;</span>Since every symmetry operation in a class has the same character, we only need to find this character for one member of each class. Published tables always group symmetry operations by class.</p>
+<p class="nlist">2.<span class="space">&#160;</span>Since equivalent representations have the same set of characters <a id="page_66" class="page">Page 66, Chapter4 Symmetries&#x2014;group theory</a>we can use different equivalent bases to work out characters for different classes. For example, it may be easier to orient the unit vectors of an orthogonal axis system differently when considering different symmetry operations.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.13">
+<img src="../images/Fig4.13.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 4.13</b> Methane molecule, showing one of the four <i>C</i><sub>3</sub> axes.</p></figcaption></figure>
+</aside>
+<p class="indentt">To illustrate some of these points we work out the characters of the representation generated by the 1<i>s</i> orbitals on the H atoms of a methane molecule. For each symmetry operation, some of the orbitals are rearranged, and some stay where they were. The representative matrix describes how they are rearranged, but it only contains diagonal elements for orbitals whose positions are not altered. To find the character, we simply count the number of atoms which are not moved. For example, each <i>C</i><sub>3</sub> axis passes through one of the atoms, which therefore does not move, but the other three atoms are cyclically permuted (Figure 4.13). Thus the character of the operation is 1, and the characters of the other seven operations in the class are immediately known to be 1 also. The characters of this representation for all the symmetry operations of the <i>T<sub>d</sub></i> point group will be found in <a href="#tab4.5">Table 4.5</a> in the row labelled &#x03C7;<sup>(&#x0397;)</sup>. &#x005B;The number apparently multiplying the symmetry operation at the top of each column indicates the number of members of the class.&#x005D;</p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="sidebar" id="pro4.4.3"><b>Problem 4.4.3.</b> <i>Verify that the entries in the row of <a href="#tab4.5">Table 4.5</a> labelled</i> &#x03C7;<sup>(&#x0397;) </sup><i>are correct. You may wish to refer to <a href="#fig4.7">Fig. 4.7</a>, which illustrates the symmetry operations of a tetrahedron</i>.</p>
+</aside>
+<p class="tab-cap" id="tab4.5"><b>Table 4.5</b> Representations of the point group <i>T<sub>d</sub></i></p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></math></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c"><i>E</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">8<i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">3<i>C</i><sub>2</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">6<i>S</i><sub>4</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">6<i>&#x03C3;<sub>d</sub></i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c">&#x03C7;<sup>(H)</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-c">4</p></td>
+<td style="vertical-align:top;"><p class="tab-c">1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">0</p></td>
+<td style="vertical-align:top;"><p class="tab-c">0</p></td>
+<td style="vertical-align:top;"><p class="tab-c">2</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c">&#x03C7;<sup>(</sup><i><sup>x,y,z</sup></i><sup>)</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-c">3</p></td>
+<td style="vertical-align:top;"><p class="tab-c">0</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">1</p>
+</td>
+</tr>
+</table>
+<p class="noindent" id="pro4.4.4"><b>Problem 4.4.4.</b> <i>Consider the representation generated by an orthogonal set of unit vectors on the C atom in a methane molecule. The atom stays where it is through all of the symmetry operations, but we need to count</i> &#x002B;1 <i>in the character for a unit vector unchanged by an operation,</i> &#x2013;1 <i>for a unit vector whose direction is reversed, and in general we need the component of the transformed unit vector in the direction of the original vector. Verify that the characters of this representation are as given in the row of <a href="#tab4.5">Table 4.5</a> labelled &#x03C7;</i><sup>(</sup><i><sup>x,y,z</sup></i><sup>)</sup><sub>.</sub> <i>&#x005B;Hint: the axis system can be oriented differently for different operations&#x2014;for the C</i><sub>3</sub> <i>class align the C</i><sub>3</sub> <i>axis along the (1,1,1) direction, for the the C</i><sub>2</sub> <i>and S</i><sub>4</sub> <i>classes choose the z axis to coincide with the symmetry axis, and for the</i> &#x03C3;<i><sub>d</sub></i> <i>let the mirror plane be the xy plane.&#x005D;</i></p>
+</section>
+<section epub:type="chapter"> 
+<h3 class="sub"><b>Irreducible representations</b></h3>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="sidebar">An irreducible representation, or irrep, is a representation whose basis functions cannot be separated by any linear transformation. They are inextricably mixed by the symmetry operations of the</p>
+</aside>
+<p class="noindent">We have already seen what it means to reduce a representation. The idea is to find a linear transformation of the basis which brings all the representatives into a block diagonal form: The transformed basis can then be divided into smaller subsets, each of which is a valid basis for a smaller representation. If such a transformation can be found, the representation is called <i>reducible</i>. If no such transformation exists, it is an <i>irreducible representation,</i> or <i>irrep</i> for short. An irrep is identified <a id="page_67" class="page">Page 67, Chapter4 Symmetries&#x2014;group theory</a>by a particular set of characters for the various symmetry operations of the group, which identifies its symmetry properties. For example, every group has an irrep whose characters are all unity, known as the <i>totally symmetric</i> irrep. Any function which is invariant to all the symmetry operations of the group is a basis for this irrep. For example the function obtained by adding the four H 1<i>s</i> orbitals in methane is a basis for the totally symmetric irrep of the point group <i>T<sub>d</sub></i>.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="indent">group, and are therefore symmetry related. The space spanned by the basis functions does not contain any invariant sub-space.</p>
+</aside>
+<p class="indent">The dimension of an irrep is the number of basis functions required to generate it. The totally symmetric irrep always has a dimension of 1, but in point groups with a <i>C</i><sub>3</sub> axis or higher, and a mirror plane or an inversion, there are irreps with dimensionality higher than one. The basis functions of such a <i>degenerate</i> irrep are inextricably transformed into one another by the operations of the group. No linear transformation exists which can separate them from one another. It is always possible to find a transformation which will diagonalize <i>some</i> of the representative matrices, but the representation is irreducible if there is no transformation which will diagonalize <i>all</i> of them at once. For example, consider the (<i>x</i>, <i>y</i>) basis in the ammonia molecule. If the axes are oriented so that the <i>z</i> axis is parallel to the figure axis and H atom 1 lies in the <i>yz</i> plane (see <a href="#fig4.12">Fig. 4.12</a>) the representative matrix for the <i>&#x03C3;<sub>&#x03C5;</sub></i> operation in this plane is</p>
+<p class="imgc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow></math></p>
+<p class="noindent">The representative matrix for the reflection in the plane containing atom 2 is not diagonal in this basis. It can be diagonalized by orienting the coordinate axes so that atom 2 lies in the <i>yz</i> plane, but once this transformation is made, the representative matrix of <i>&#x03C3;</i><sub>1</sub> will no longer be diagonal. It is not possible to find a transformation that diagonalizes both matrices at once, and so the representation is irreducible.</p>
+</section>
+<section epub:type="chapter">
+<h4 class="h4"><i>Symmetry labels</i></h4>
+<p class="noindent">Each irrep has a different set of characters for the symmetry operations of the group, and is given a label which helps to indicate its symmetry properties. We now describe these briefly. A symmetry label generally consists of a letter, a subscript and/or a superscript. The letter indicates the dimension of the irrep, and the superscript or subscript denotes transformation properties for particular types of symmetry operation:</p>
+<p class="nlist">1.<span class="space">&#160;</span>The letters <i>A</i> &#x03BF;r <i>B</i> indicate a one-dimensional irrep. <i>E</i> denotes a two-dimensional irrep and <i>T</i> (or <i>F</i>) a three-dimensional irrep. <i>A</i> irreps are symmetric with respect to rotation about the figure axis, or all the axes of highest order if there is no unique figure axis, whereas <i>B</i> is antisymmetric with respect to this rotation (around at least one of the axes of highest order), which therefore has a character of &#x2013;1.</p>
+<p class="nlist">2.<span class="space">&#160;</span>Irreps in point groups with a horizontal mirror plane <i>&#x03C3;<sub>h</sub></i>, but no <a id="page_68" class="page">Page 68, Chapter4 Symmetries&#x2014;group theory</a>inversion, are labelled with a prime &#x2032; (or double prime &#x2033;) indicating symmetry (or antisymmetry) with respect to the <i>&#x03C3;<sub>h</sub></i>.</p>
+<p class="nlist">3.<span class="space">&#160;</span>Irreps in point groups with inversion symmetry are labelled with subscripts <i>g</i> (or <i>u</i>) indicating symmetry (or antisymmetry) with respect to inversion.</p>
+<p class="nlist">4.<span class="space">&#160;</span>Numerical subscripts indicate the presence of more than one irrep with the same classification, which differ in symmetry with respect to some other operation, e.g. rotation about a <i>C</i><sub>2</sub> axis.</p>
+</section>
+<section epub:type="chapter"> 
+<h3 class="sub"><b>Reducing the representation</b></h3>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar">A typical representation is made up of a number of irreps of each symmetry. Reducing the representation tells us how many different irreps of each symmetry are contained in the representation.</p>
+</aside>
+<p class="noindent">Each point group has only a small number of possible irreps. In consequence there may be several independent linear combinations of the basis functions with the same symmetry. Group theory enables us to find how many independent combinations there are for each irrep. In more colourful terminology the representation contains a certain number of irreps of each type. The reduction of the representation tells us how many irreps of each type are hiding in it. It will also tell us how to find the correct symmetry-adapted combinations of the basis functions to generate each irrep.</p>
+<p class="indent">It is conventional to label a representation with the greek letter &#x0393; and the <i>i</i>th irreducible representation &#x0393;<sup>(</sup><i><sup>i</sup></i><sup>)</sup>. Then &#x0393; can be expressed in terms of its constituent irreps by</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.23"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x0393;</mi><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msub><mi>a</mi><mi>i</mi></msub></mrow></mstyle><msup><mi>&#x0393;</mi><mrow><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></msup></mrow></math></p></td>
+<td style="padding-top:0.5em;">(4.23)</td>
+</tr>
+</table>
+<p class="noindent">which means that the basis for the representation &#x0393; contains <i>a<sub>i</sub></i> independent linear combinations of symmetry &#x0393;<sup>(</sup><i><sup>i</sup></i><sup>)</sup>. In other words it is possible to find a transformation which separates the basis into subsets that are not interrelated by symmetry. Each subset will generate one block in all the representative matrices of the group, <i>a<sub>i</sub></i> of these subsets will have the symmetry properties of the irrep &#x0393;<sup>(</sup><i><sup>i</sup></i><sup>)</sup>. Reducing the representation amounts to finding the coefficients <i>a<sub>i</sub></i>, which must all be positive integers (or zero). After reduction, all the representative matrices will be in block diagonal form. Since the reduction will be effected by a similarity transform, &#x0393; and its reduction are equivalent, and so the character of any particular representative matrix is unaltered by the reduction. The character of the block-diagonal form is simply the sum of the diagonal elements of all the elementary blocks down the diagonal. It follows that for each symmetry operation <i>R</i></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.24"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C7;</mi><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msub><mi>a</mi><mi>i</mi></msub><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(4.24)</td>
+</tr>
+</table>
+<p class="noindent">where <i>&#x03C7;</i><sup>(</sup><i><sup>i</sup></i><sup>)</sup> is the character of <i>R</i> in irrep <i>i</i>. If we can find a set of coefficients <i>a<sub>i</sub></i> which satisfies this equation for each symmetry operation then we shall have succeeded in reducing the representation. <a id="page_69" class="page">Page 69, Chapter4 Symmetries&#x2014;group theory</a></p>
+</section>
+<section epub:type="chapter"> 
+<h4 class="h4"><i>The reduction formula</i></h4>
+<p class="noindent">Group theory gives us a simple formula for reducing a representation to its constituent irreps The proof of this formula is beyond the scope of this book. The interested reader is referred to an advanced text on group theory.<sup>2</sup><sub>&#x2019;</sub><sup>7</sup><sub>&#x2019;</sub><sup>8</sup> The major result is an orthogonality theorem for the elements of the representative matrices <b>R</b><sup>(</sup><i><sup>i</sup></i><sup>)</sup> and <b>R</b><sup>(</sup><i><sup>j</sup></i><sup>)</sup>. In a group of order <i>h</i> the theorem reads</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.25"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>R</mi></munder><mrow><msubsup><mi>R</mi><mrow><mi>k</mi><mi>l</mi></mrow><mrow><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></msubsup><msubsup><mi>R</mi><mrow><mi>m</mi><mi>n</mi></mrow><mrow><mrow><mo>(</mo><mi>j</mi><mo>)</mo></mrow></mrow></msubsup><mo>=</mo><mfrac><mi>h</mi><mrow><msub><mi>n</mi><mi>i</mi></msub></mrow></mfrac><msub><mi>&#x03B4;</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mstyle><msub><mi>&#x03B4;</mi><mrow><mi>k</mi><mi>m</mi></mrow></msub><msub><mi>&#x03B4;</mi><mrow><mi>l</mi><mi>n</mi></mrow></msub></mrow></math></p></td>
+<td style="padding-top:0.5em;">(4.25)</td>
+</tr>
+</table>
+<p class="noindent">where <i>n<sub>i</sub></i> is the dimension of irrep <i>i</i>, <i>&#x03B4;<sub>ij</sub></i> = 1 if <i>i</i> = <i>j</i> and 0 otherwise, and the summation extends over all the symmetry operations of the group. This summation is identically zero unless the two irreps are the same and the indices on the matrix elements are the same.</p>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<p class="sidebar">The formula for reducing a representation requires only the characters of the representations concerned. This formula is an example of a general result called an orthogonality theorem.</p>
+</aside>
+<p class="indent">Since we are interested in the characters of the representative matrices, we apply this relation to the diagonal elements,</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.26"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>R</mi></munder><mrow><msubsup><mi>R</mi><mrow><mi>k</mi><mi>k</mi></mrow><mrow><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></msubsup><msubsup><mi>R</mi><mrow><mi>m</mi><mi>m</mi></mrow><mrow><mrow><mo>(</mo><mi>j</mi><mo>)</mo></mrow></mrow></msubsup><mo>=</mo><mfrac><mi>h</mi><mrow><msub><mi>n</mi><mi>i</mi></msub></mrow></mfrac><msub><mi>&#x03B4;</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mstyle><msub><mi>&#x03B4;</mi><mrow><mi>k</mi><mi>m</mi></mrow></msub></mrow></math></p></td>
+<td style="padding-top:0.5em;">(4.26)</td>
+</tr>
+</table>
+<p class="noindent">If we now sum over all possible values of <i>k</i> and <i>m</i> we find that the characters from different irreps are orthogonal.</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.27"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>R</mi></munder><mrow><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mi>j</mi><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow><mo>=</mo><mi>h</mi><msub><mi>&#x03B4;</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mstyle></mrow></math></p></td>
+<td>(4.27)</td>
+</tr>
+</table>
+<p class="noindent">where &#x03C7;<sup>(</sup><i><sup>i</sup></i><sup>)</sup> is the character of <b>R</b> in the irrep &#x0393;<sup>(</sup><i><sup>i</sup></i><sup>)</sup>. This result can be used to reduce a representation, since we can now think of the characters for our reducible representation, &#x0393;, as a vector, made up from orthogonal components in the directions of each irrep. The coefficient <i>a<sub>i</sub></i> is the projection of the vector in the direction corresponding to the irrep &#x0393;<sup>(</sup><i><sup>i</sup></i><sup>)</sup>. Hence we obtain the reduction formula</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.28"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>=</mo><mfrac><mn>1</mn><mi>h</mi></mfrac><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>R</mi></munder><mrow><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow><mi>&#x03C7;</mi><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(4.28)</td>
+</tr>
+</table>
+<p class="noindent">To apply this reduction formula we need to know the set of characters for the representation we are reducing, and also a set of characters for each irrep of the point group, which can be found in published tables.<sup>9</sup></p>
+<p class="indent">Another consequence of the orthogonality theorem is sometimes useful. Taking the case <i>i</i> = <i>j</i> in <a href="#eq4.27">eqn 4.27</a>,</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.29"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>R</mi></munder><mrow><msup><mrow><mrow><mo stretchy="false">|</mo><mrow><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow><mn>2</mn></msup><mo>=</mo><mi>h</mi></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(4.29)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<p class="sidebar">When applying the reduction formula or any other summation over the symmetry operations we must remember that published character tables list classes rather than operations, because each symmetry operation in the class has the same character. Thus we have to weight each term in the summation according to the number of elements of each class.</p>
+</aside>
+<p class="noindent">This equation is true for each irrep and it does not hold if the representation is reducible. It can therefore be used to check whether a particular representation is reducible. As an example we take the representations in <a href="#tab4.5">Table 4.5</a> and check them for reducibility. The character table for the <i>T<sub>d</sub></i> point group is given in <a href="#tab4.6">Table 4.6</a>. <a id="page_70" class="page">Page 70, Chapter4 Symmetries&#x2014;group theory</a></p>
+<p class="tab-cap" id="tab4.6"><b>Table 4.6</b> Character table for the point group <i>T<sub>d</sub></i></p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></math></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c"><i>E</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">8<i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">3<i>C</i><sub>2</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">6<i>S</i><sub>4</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">6<i>&#x03C3;<sub>d</sub></i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c"></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><i>&#x0391;</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-c">1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c"></p></td>
+<td style="vertical-align:top;"><p class="tab-c"><i>x</i><sup>2</sup> &#x002B; <i>y</i><sup>2</sup> &#x002B; <i>z</i><sup>2</sup></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><i>A</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-c">1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c"></p></td>
+<td style="vertical-align:top;"><p class="tab-c"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-c">2</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;2</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c"></p></td>
+<td style="vertical-align:top;"><p class="tab-c">(2<i>z</i><sup>2 </sup>&#x2013; <i>x</i><sup>2</sup> &#x2013; <i>y</i><sup>2</sup><i>, x</i><sup>2</sup> &#x2013; <i>y</i><sup>2</sup>)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><i>T</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-c">3</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">(<i>R<sub>x</sub>,R<sub>y</sub>,R<sub>z</sub></i>)</p></td>
+<td style="vertical-align:top;"><p class="tab-c"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c"><i>T</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-c">3</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">(<i>x,y,z</i>)</p></td>
+<td style="vertical-align:top;"><p class="tab-c">(<i>xy, yz, xz</i>)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c">&#x03C7;<sup>(&#x0397;)</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-c">4</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;2</p></td>
+<td style="vertical-align:top;"><p class="tab-c"></p></td>
+<td style="vertical-align:top;"><p class="tab-c"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-c">&#x03C7;<sup>(</sup><i><sup>x,y,z</sup></i><sup>)</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-c">3</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c"></p></td>
+<td style="vertical-align:top;"><p class="tab-c"></p>
+</td>
+</tr>
+</table>
+<p class="indent">For &#x0393;<sup>(&#x0397;)</sup> we find that the sum of the squares of the characters is 1 &#x00D7; 4<sup>2 </sup>&#x002B; 8 &#x00D7; 1<sup>2</sup> &#x002B; 3 &#x00D7; 0<sup>2 </sup>&#x002B; 6 &#x00D7; 0<sup>2 </sup>&#x002B; 6 &#x00D7; 2<sup>2</sup> = 48,whereas for &#x0393;<sup>(</sup><i><sup>x,y,z</sup></i><sup>)</sup> we get 24 which is the order of the group. We therefore conclude that &#x0393;<sup>(</sup><i><sup>x,y,z</sup></i><sup>)</sup> is an irrep, whereas &#x0393;<sup>(H)</sup> is reducible. A glance at <a href="#tab4.6">Table 4.6</a> tells us that &#x0393;<sup>(</sup><i><sup>x,y,z</sup></i><sup>)</sup> = <i>T</i><sub>2</sub>. We now use the reduction formula to reduce &#x0393;<sup>(H)</sup></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.30"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable columnalign='left'><mtr><mtd><msub><mi>A</mi><mn>1</mn></msub><mtext>&#x2009;</mtext><mo>:</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mn>1.1.4</mn><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>8.1.1</mn><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>3.1.0</mn><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>6.1.0</mn><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>6.1.2</mn></mrow><mo>)</mo></mrow><mo>/</mo><mn>24</mn><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>1</mn></mtd></mtr><mtr><mtd><msub><mi>A</mi><mn>2</mn></msub><mtext>&#x2009;</mtext><mo>:</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mn>1.1.4</mn><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>8.1.1</mn><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>3.1.0</mn><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mn>6.1.0</mn><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mn>6.1.2</mn></mrow><mo>)</mo></mrow><mo>/</mo><mn>24</mn><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>0</mn></mtd></mtr><mtr><mtd><mi>E</mi><mtext>&#x2009;</mtext><mo>:</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mn>1.2.4</mn><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mn>8.1.1</mn><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>3.2.0</mn><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>6.0.0</mn><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>6.0.2</mn></mrow><mo>)</mo></mrow><mo>/</mo><mn>24</mn><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>0</mn></mtd></mtr><mtr><mtd><msub><mi>T</mi><mn>1</mn></msub><mtext>&#x2009;</mtext><mo>:</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mn>1.3.4</mn><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>8.0.1</mn><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mn>3.1.0</mn><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>6.1.0</mn><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mn>6.1.2</mn></mrow><mo>)</mo></mrow><mo>/</mo><mn>24</mn><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>0</mn></mtd></mtr><mtr><mtd><msub><mi>T</mi><mn>2</mn></msub><mtext>&#x2009;</mtext><mo>:</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mn>1.3.4</mn><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>8.0.1</mn><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mn>3.1.0</mn><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mn>6.1.0</mn><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>6.1.2</mn></mrow><mo>)</mo></mrow><mo>/</mo><mn>24</mn><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>1</mn></mtd></mtr></mtable></math></p></td>
+<td style="padding-top:3.5em;">(4.30)</td>
+</tr>
+</table>
+<p class="noindent">Hence &#x0393;<sup>(H)</sup>= <i>A</i><sub>1</sub> &#x002B; <i>T</i><sub>2</sub>.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec4.5"> 
+<h2 class="main">4.5<span class="space">&#160;</span>Energy levels, degeneracies and irreps</h2>
+<p class="noindent">Symmetry has far-reaching consequences in quantum mechanics. Every electronic or vibrational wavefunction is a basis for an irrep of the molecular point group, and so the corresponding energy level can be labelled with the symmetry label of the irrep. Furthermore, the dimension of the irrep is the degeneracy of the energy level. We can understand the relationship between symmetry and energy levels in the following way. The action of a symmetry operation leaves the molecule in an arrangement indistinguishable from its original configuration. The energy of the molecule is therefore not altered. In more formal terms, every symmetry operation commutes with the Hamiltonian, and so</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.31"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>H</mi><mo>&#x005E;</mo></mover><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mi>&#x03C8;</mi><mo>=</mo><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mover accent='true'><mi>H</mi><mo>&#x005E;</mo></mover><mi>&#x03C8;</mi><mo>=</mo><mi>E</mi><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mi>&#x03C8;</mi></mrow></math></p></td>
+<td>(4.31)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-26em;" epub:type="sidebar">
+<p class="sidebar">Every electronic or vibrational energy level of a molecule has an associated wavefunction which is a basis for an irrep of the molecular point group. Thus every energy level can be given a symmetry label, which gives the transformation properties of the corresponding wavefunction.</p>
+</aside>
+<p class="noindent">Thus each symmetry operation must transform the molecular wave-function into a wavefunction of the same energy. Every symmetry operation must transform this wavefunction into itself (or minus itself). Such a function is therefore a basis for a one-dimensional irrep, whose characters are &#x00B1;1 for all symmetry operations, and cannot be related by symmetry to any other wavefunction. The corollary to this argument is that if a wavefunction generates a one-dimensional irrep, there is no reason from symmetry for it to be degenerate with any other wavefunction. In general it will be nondegenerate, apart perhaps from an accidental degeneracy. On the other hand, a two-dimensional irrep requires two <a id="page_71" class="page">Page 71, Chapter4 Symmetries&#x2014;group theory</a>linearly independent basis functions. These two functions are interconverted, or mixed, by some of the symmetry operations. It is not possible to find any transformation which separates them; there must always be some symmetry operation which mixes them. Thus two independent wavefunctions which generate a two-dimensional irrep must be degenerate. Similarly a set of three wavefunctions which generates an irrep of dimension three must be triply degenerate.</p>
+<p class="indent">It is easy to see by reference to a set of character tables that it is not possible for a molecule to have an orbital or vibrational degeneracy unless its point group contains at least a <i>C</i><sub>3</sub> rotation axis, and it is not possible to have a triple degeneracy except in point groups with tetrahedral symmetry or higher. Thus we are not likely to find any degeneracies (except by accident) in the water molecule, whose figure axis is <i>C</i><sub>2</sub>. In the ammonia molecule we expect a maximum degeneracy of 2, since there is a unique <i>C</i><sub>3</sub> axis, and we should not be surprised to find triply degenerate molecular orbitals and vibrations in the methane molecule.</p>
+</section>
+<section epub:type="chapter" id="sec4.6"> 
+<h2 class="main">4.6<span class="space">&#160;</span>Projection operators</h2>
+<p class="noindent">We have seen how to decompose a representation into its constituent irreps, and we have investigated the consequences of this decomposition for the energy levels of a molecule. To complete the analysis we also need to find the correct symmetry-adapted combinations of the original basis functions that are appropriate to generate each irrep. These combinations can be found using a <i>projection operator</i> for each irrep <i>i</i>, defined by</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.32"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>P</mi><mo>&#x005E;</mo></mover><mrow><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></msup><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>R</mi></munder><mrow><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow><mrow><mo>(</mo><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>)</mo></mrow></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(4.32)</td>
+</tr>
+</table>
+<p class="noindent">where, as usual, the sum covers all symmetry operations of the group. The effect of a symmetry operation on a basis function is to transform it into some combination of the basis functions. The projection operator will also give a combination of the basis functions, but the combination projected out will belong to the irrep &#x0393;<sup>(</sup><i><sup>i</sup></i><sup>)</sup>. If we apply the projection operator <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>P</mi><mo>&#x005E;</mo></mover><mrow><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></msup></mrow></math> to each element of the basis set in turn, a complete basis for irrep <i>i</i> will be projected out. Of course, the original basis frequently contains far more functions than are needed to generate an irrep. The projection operator will then give several copies of the same basis function, or of linearly dependent basis functions.</p>
+<aside class="abc" style="margin-top:-24em;" epub:type="sidebar">
+<p class="sidebar">A projection operator enables us to find the correct symmetry-adapted combinations of basis functions for each irrep present in the representation.</p>
+</aside>
+<p class="indent">As an example we consider the representation generated by the four H 1<i>s</i> orbitals in the methane molecule. We have already shown that this representation can be reduced to <i>A</i><sub>1</sub><i>&#x002B;T</i><sub>2</sub><i>,</i> and now we apply the projection operator method to find combinations of the four basis functions that act as bases for these irreps. To start with we make a table of the effect of all the symmetry operations of the group on the four basis functions. This will be found in <a href="#tab4.7">Table 4.7</a>. We then apply the projection operator for the irrep <i>A</i><sub>1</sub> to each of the four basis functions in turn. When applied to each basis function this projection operator gives the <a id="page_72" class="page">Page 72, Chapter4 Symmetries&#x2014;group theory</a>same result, 6(<i>&#x0397;</i><sub>1</sub> <i>&#x002B; H</i><sub>2</sub> <i>&#x002B; H</i><sub>3</sub> <i>&#x002B; H</i><sub>4</sub>)<i>.</i> We therefore conclude that the sum of the four original basis functions is a basis for the irrep <i>A</i><sub>1</sub><i>.</i></p>
+<p class="noindentt" id="pro4.6.1"><b>Problem 4.6.1.</b> <i>Verify, by considering the effect of each symmetry operator, that this combination is a basis for A</i><sub>1</sub>.</p>
+<p class="noindentt">Application of the projection operator for <i>T</i><sub>2</sub> to each function in turn gives</p>
+<p class="imgc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable columnalign='left'><mtr><mtd><msup><mover accent='true'><mi>P</mi><mo>&#x005E;</mo></mover><mrow><mrow><mo>(</mo><mrow><msub><mi>T</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow></msup><msub><mi>H</mi><mn>1</mn></msub><mo>=</mo><mn>6</mn><msub><mi>H</mi><mn>1</mn></msub><mo>&#x2212;</mo><mn>2</mn><mrow><mo>(</mo><mrow><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>3</mn></msub><mo>+</mo><msub><mi>H</mi><mn>4</mn></msub></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd><msup><mover accent='true'><mi>P</mi><mo>&#x005E;</mo></mover><mrow><mrow><mo>(</mo><mrow><msub><mi>T</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow></msup><msub><mi>H</mi><mn>2</mn></msub><mo>=</mo><mn>6</mn><msub><mi>H</mi><mn>2</mn></msub><mo>&#x2212;</mo><mn>2</mn><mrow><mo>(</mo><mrow><msub><mi>H</mi><mn>1</mn></msub><mo>+</mo><msub><mi>H</mi><mn>3</mn></msub><mo>+</mo><msub><mi>H</mi><mn>4</mn></msub></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd><msup><mover accent='true'><mi>P</mi><mo>&#x005E;</mo></mover><mrow><mrow><mo>(</mo><mrow><msub><mi>T</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow></msup><msub><mi>H</mi><mn>3</mn></msub><mo>=</mo><mn>6</mn><msub><mi>H</mi><mn>3</mn></msub><mo>&#x2212;</mo><mn>2</mn><mrow><mo>(</mo><mrow><msub><mi>H</mi><mn>1</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>4</mn></msub></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd><msup><mover accent='true'><mi>P</mi><mo>&#x005E;</mo></mover><mrow><mrow><mo>(</mo><mrow><msub><mi>T</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow></msup><msub><mi>H</mi><mn>4</mn></msub><mo>=</mo><mn>6</mn><msub><mi>H</mi><mn>4</mn></msub><mo>&#x2212;</mo><mn>2</mn><mrow><mo>(</mo><mrow><msub><mi>H</mi><mn>1</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>3</mn></msub></mrow><mo>)</mo></mrow></mtd></mtr></mtable></math></p>
+<p class="noindent">The first three of these are linearly independent of one another, but the fourth can be expressed in terms of the other three:</p>
+<p class="imgc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>P</mi><mo>&#x005E;</mo></mover><mrow><mrow><mo>(</mo><mrow><msub><mi>T</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow></msup><msub><mi>H</mi><mn>1</mn></msub><mo>+</mo><msup><mover accent='true'><mi>P</mi><mo>&#x005E;</mo></mover><mrow><mrow><mo>(</mo><mrow><msub><mi>T</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow></msup><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msup><mover accent='true'><mi>P</mi><mo>&#x005E;</mo></mover><mrow><mrow><mo>(</mo><mrow><msub><mi>T</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow></msup><msub><mi>H</mi><mn>3</mn></msub><mo>=</mo><mo>&#x2212;</mo><msup><mover accent='true'><mi>P</mi><mo>&#x005E;</mo></mover><mrow><mrow><mo>(</mo><mrow><msub><mi>T</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow></msup><msub><mi>H</mi><mn>4</mn></msub></mrow></math></p>
+<p class="noindent">Three independent functions are needed to generate a three-dimensional irrep such as <i>T</i><sub>2</sub>, thus the projection operator method has given us a complete basis for generating <i>T</i><sub>2</sub> (see <a href="#pro4.6.2">Problem 4.6.2</a>).</p>
+<p class="indent">Group theory therefore gives us mechanisms, not only for decomposing a representation into its constituent irreps (the reduction formula), but also for constructing the correct symmetry-adapted linear combinations of the basis functions to reduce the representation. These combinations are used to construct the wavefunctions of the system.</p>
+<aside class="abc" style="margin-top:-37.5em;" epub:type="sidebar">
+<p class="tab-cap" id="tab4.7"><b>Table 4.7</b> Effect of the symmetry operations on basis <i>H</i> in <i>T<sub>d</sub></i></p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">H<sub>4</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc"><i>C</i><sub>3</sub>(l)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>3</mn><mn>2</mn></msubsup><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc"><i>C</i><sub>3</sub>(2)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>3</mn><mn>2</mn></msubsup><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub>(3)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>3</mn><mn>2</mn></msubsup><mrow><mo>(</mo><mn>3</mn><mo>)</mo></mrow></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>3</sub>(4)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>3</mn><mn>2</mn></msubsup><mrow><mo>(</mo><mn>4</mn><mo>)</mo></mrow></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>2</sub>(<i>x</i>)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>2</sub>(<i>y</i>)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>C</i><sub>2</sub>(<i>z</i>)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>S</i><sub>4</sub>(<i>x</i>)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>S</mi><mn>4</mn><mn>3</mn></msubsup><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>S</i><sub>4</sub>(<i>y</i>)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>S</mi><mn>4</mn><mn>3</mn></msubsup><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>S</i><sub>4</sub>(<i>z</i>)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>S</mi><mn>4</mn><mn>3</mn></msubsup><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow></math></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>12</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>13</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>14</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>23</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>24</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03C3;</i><sub>34</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>4</sub></p></td>
+</tr>
+</table>
+</aside>
+</section>
+<section epub:type="chapter" id="sec4.7"> 
+<h2 class="main">4.7<span class="space">&#160;</span>Descent of symmetry</h2>
+<p class="noindent">Another important use of group theory in chemistry is to predict what will happen to a particular degeneracy if a molecule or atom is distorted, removing some of its symmetry. The most familiar example is of an atom with five degenerate <i>d</i> orbitals, introduced into an environment with octahedral symmetry, which are split into one triply degenerate group <i>(T</i><sub>2</sub><i><sub>g </sub></i>symmetry) and one doubly degenerate group <i>(E<sub>g</sub></i> symmetry). The irreps of the distorted system can be determined from the irreps of the undistorted system, because the distortion removes some of the symmetry operations, but retains others, which form a <i>subgroup</i> of the original point group. Because all the symmetry operations of the subgroup are also elements of the original group, a set of functions which was a basis for an irrep of the original group will still be a basis for some representation of the subgroup, but this may now be a reducible representation.</p>
+<aside class="abc" style="margin-top:-9.5em;" epub:type="sidebar">
+<p class="sidebar" id="pro4.6.2"><b>Problem 4.6.2.</b> <i>It is usual (but not necessary) to find orthogonal combinations of these three functions. Check that the combinations</i></p>
+<table style="width:100%; margin-top:0em; margin-bottom:0.25em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.33"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable columnalign='left'><mtr><mtd><msub><mi>g</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn><msub><mi>H</mi><mn>1</mn></msub><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>3</mn></msub><mo>+</mo><msub><mi>H</mi><mn>4</mn></msub></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd><msub><mi>g</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><msub><mi>H</mi><mn>2</mn></msub><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><msub><mi>H</mi><mn>3</mn></msub><mo>+</mo><msub><mi>H</mi><mn>4</mn></msub></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd><msub><mi>g</mi><mn>3</mn></msub><mo>=</mo><msub><mi>H</mi><mn>3</mn></msub><mo>&#x2212;</mo><msub><mi>H</mi><mn>4</mn></msub></mtd></mtr></mtable></math></p>
+</td>
+<td style="vertical-align:bottom;">(4.33)</td>
+</tr>
+</table>
+<p class="sidebar"><i>fit the bill in this example.</i></p>
+<p class="sidebar" style="margin-top:0.5em;">Group theory also tells us how the symmetry of a wavefunction is altered if the molecule is distorted in some way, giving it a lower symmetry. In particular it is simple to predict how a degenerate energy level will split in the distorted molecule.</p>
+</aside>
+
+<p class="indent">As an example we consider a CH<sub>4</sub> molecule stretched along one of its <i>C</i><sub>3</sub> axes (passing through H atom 1). The point group of the distorted molecule is <i>C</i><sub>3</sub><i><sub>v</sub></i> (<a href="#tab4.8">Table 4.8</a>), which is a subgroup of <i>T<sub>d</sub>,</i> since all the symmetry operations of the distorted molecule are also symmetry operations of the original molecule. In particular let us consider the three functions in <a href="#eq4.33">eqn 4.33</a>, that form a basis for the <i>T</i><sub>2</sub> representation of <i>T<sub>d</sub>.</i> The characters of the symmetry operations of <i>C</i><sub>3</sub><i><sub>v</sub></i> on these basis func- <a id="page_73" class="page">Page 73, Chapter4 Symmetries&#x2014;group theory</a>tions can be read straight from <a href="#tab4.6">Table 4.6</a>. The <i>C</i><sub>3</sub> axis is one of the four <i>C</i><sub>3</sub> axes in <i>T<sub>d</sub></i>, so that the character is 0. Similarly the three <i>&#x03C3;<sub>&#x03BD;</sub></i> planes of the distorted molecule are among the six <i>&#x03C3;<sub>d</sub></i> planes of <i>T<sub>d</sub></i>, and so the character for each of these operations is 1.</p>
+<p class="indent">Thus under this type of trigonal distortion all triply degenerate energy levels of symmetry <i>T</i><sub>2</sub> in a tetrahedral molecule split into a doubly degenerate pair (of symmetry <i>E)</i> and a nondegenerate wavefunction (<i>A</i><sub>1</sub>)<i>.</i> It is easily verified that <i>g</i><sub>1</sub> is a basis for the nondegenerate irrep <i>A</i><sub>1</sub><i>,</i> and that <i>g</i><sub>2</sub> and <i>g</i><sub>3</sub> are degenerate.</p>
+<aside class="abc" style="margin-top:-10.5em;" epub:type="sidebar">
+<p class="tab-cap" id="tab4.8"><b>Table 4.8</b> <i>C</i><sub>3</sub><i><sub>v</sub></i> group character table</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">2<i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">3<i>&#x03C3;<sub>&#x03BD;</sub></i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>A</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>B</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l">2</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;0</p></td>
+</tr>
+</table>
+<p class="sidebar" id="pro4.7.1"><b>Problem 4.7.1.</b> <i>Decompose this representation using the reduction formula, and show that it is equal to A</i><sub>1</sub><i>&#x002B; E.</i></p>
+<p class="sidebar" style="margin-top:0.75em;">A quantum mechanical integral, such as an expectation value, must be identically zero unless the integrand spans the totally symmetric irrep of the point group.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec4.8"> 
+<h2 class="main">4.8<span class="space">&#160;</span>Vanishing integrals</h2>
+<p class="noindent">A great deal of the work involved in investigating the quantum mechanical properties of molecules consists of the calculation of matrix elements, which are generally integrals of the form <i>&#x222B;</i><i>&#x03D5;(</i>r<i>)</i>dr<i>.</i> However, many of the possible integrals in a particular application turn out to be zero. We can use group theory to tell us when an integral of this form must be identically zero. The method is a generalization of the idea of even and odd functions. We know that if we take an odd function, for which <i>&#x03D5;</i>(<i>&#x2013;x</i>) = <i>&#x2013;&#x03D5;</i>(<i>x</i>)<i>,</i> then its integral over all space is zero, because the integrals from &#x2013;&#x221E; to 0 and from 0 to &#x221E; are equal and opposite in sign. In quantum mechanics the integrand is usually more complicated than this, since it covers a multi-dimensional space, but the same idea can be used. For example, if we can find a symmetry transformation which transforms the integrand into minus itself then the integral must be identically zero, because the function is odd with respect to this symmetry transformation: for every region where the integrand is positive, there is a symmetry-related region where it is negative.</p>
+<p class="indent">The idea can be generalized further. If the integral represents a physical quantity, then no symmetry operation can alter its value:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.34"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle='true'><mrow><mo>&#x222B;</mo><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mi>&#x03D5;</mi><mtext>&#x2009;</mtext><mtext>dr</mtext></mrow></mrow></mstyle><mo>=</mo><mstyle displaystyle='true'><mrow><mo>&#x222B;</mo><mrow><mi>&#x03D5;</mi><mtext>dr</mtext></mrow></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:1em;">(4.34)</td>
+</tr>
+</table>
+<p class="noindent">We start by considering the case where <i>&#x03D5;</i> is a basis function for irrep &#x0192;. Let us rename it <i>f<sub>k</sub></i> for the moment. If we apply each symmetry operation in turn and sum, then the result must be <i>h</i> (the order of the group) times the value of the integral:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.35"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>R</mi></munder><mrow><mstyle displaystyle='true'><mrow><mo>&#x222B;</mo><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></mrow></mstyle><msub><mi>f</mi><mi>k</mi></msub><mtext>dr</mtext><mo>=</mo><mi>h</mi><mstyle displaystyle='true'><mrow><mo>&#x222B;</mo><mrow><msub><mi>f</mi><mi>k</mi></msub><mtext>dr</mtext></mrow></mrow></mstyle></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:1em;">(4.35)</td>
+</tr>
+</table>
+<p class="noindent">because each term in the summation is equal. We can express the operation of <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover></math> in terms of its representative matrix <b>R</b><sup>(</sup><i><sup>f</sup></i><sup>)</sup>, giving</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.36"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>l</mi></munder><mrow><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>R</mi></munder><mrow><msubsup><mi>R</mi><mrow><mi>k</mi><mi>l</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup></mrow></mstyle></mrow></mstyle><mstyle displaystyle='true'><mrow><mo>&#x222B;</mo><mrow><msub><mi>f</mi><mi>l</mi></msub><mtext>dr</mtext><mo>=</mo><mi>h</mi><mstyle displaystyle='true'><mrow><mo>&#x222B;</mo><mrow><msub><mi>f</mi><mi>k</mi></msub></mrow></mrow></mstyle></mrow></mrow></mstyle><mtext>dr</mtext></mrow></math></p></td>
+<td style="padding-top:1em;">(4.36)</td>
+</tr>
+</table>
+<p class="noindent">But we can now use the orthogonality <a href="#eq4.25">eqn 4.25</a>, because in the totally <a id="page_74" class="page">Page 74, Chapter4 Symmetries&#x2014;group theory</a>symmetric irrep, &#x0393;<sup>(1)</sup>, all the representative matrices are equal to unity hence</p>
+<p class="imgc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtable columnalign='left'><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>h</mi><mstyle displaystyle='true'><mrow><mo>&#x222B;</mo><mrow><msub><mi>f</mi><mi>k</mi></msub><mtext>dr</mtext></mrow></mrow></mstyle></mrow></mtd><mtd columnalign='left'><mrow><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>l</mi></munder><mrow><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>R</mi></munder><mrow><msubsup><mi>R</mi><mrow><mi>k</mi><mi>l</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup><msubsup><mi>R</mi><mrow><mn>11</mn></mrow><mrow><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></msubsup></mrow></mstyle><mstyle displaystyle='true'><mrow><mo>&#x222B;</mo><mrow><msub><mi>f</mi><mi>l</mi></msub><mtext>dr</mtext></mrow></mrow></mstyle></mrow></mstyle></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow></mrow></mtd><mtd columnalign='left'><mrow><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>l</mi></munder><mrow><mfrac><mi>h</mi><mrow><msub><mi>n</mi><mn>1</mn></msub></mrow></mfrac><msub><mi>&#x03B4;</mi><mrow><mi>k</mi><mn>1</mn></mrow></msub><msub><mi>&#x03B4;</mi><mrow><mi>l</mi><mn>1</mn></mrow></msub><msub><mi>&#x03B4;</mi><mrow><mi>f</mi><mn>1</mn></mrow></msub></mrow></mstyle><mstyle displaystyle='true'><mrow><mo>&#x222B;</mo><mrow><msub><mi>f</mi><mi>l</mi></msub><mtext>dr</mtext><mo>=</mo><mi>h</mi><msub><mi>&#x03B4;</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow></mrow></mstyle><mstyle displaystyle='true'><mrow><mo>&#x222B;</mo><mrow><msub><mi>f</mi><mn>1</mn></msub></mrow></mrow></mstyle><mtext>dr</mtext></mrow></mtd></mtr></mtable></mrow></math></p>
+<p class="indent">The integral is therefore zero unless the integrand is a basis for the totally symmetric irrep. This is the result we were looking for; if the integrand is not a basis function for this irrep then it is in some sense an odd function and its integral over all space is necessarily zero. If the integrand <i>&#x03D5;</i> is a basis function for a reducible representation, then following reduction of the representation, it can always be expressed as a linear combination of basis functions for irreps. The only terms in this sum which contribute to the integral are those which generate the totally symmetric irrep. In other words, if the reduced representation does not include irrep &#x0393;<sup>(1)</sup> then the integral must be zero by symmetry. We add one word of caution at this point. Group theory only gives us a sufficient condition for the integral to vanish. An integral can still be zero for other reasons.</p>
+</section>
+<section epub:type="chapter" id="sec4.9"> 
+<h2 class="main">4.9<span class="space">&#160;</span>Direct products</h2>
+<p class="noindent">We have seen in the last section how to use symmetry to tell whether an integral must vanish for symmetry reasons. In this section we complete our rapid tour of group theory by investigating the symmetry of the integrand in a matrix element. Matrix elements in quantum mechanics are generally of the form <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x003C;</mo><msub><mi>g</mi><mi>j</mi></msub><mrow><mo stretchy='false'>|</mo><mover accent='true'><mi>&#x03A9;</mi><mo >&#x005E;</mo></mover><mo stretchy='false'>|</mo></mrow><msub><mi>f</mi><mi>i</mi></msub><mo>&#x003E;</mo></mrow></math>, where <i>g<sub>j</sub></i> and <i>f<sub>i</sub></i> are basis functions for irreps &#x0393;<sup>(</sup><i><sup>g</sup></i><sup>)</sup> and &#x0393;<sup>(</sup><i><sup>f</sup></i><sup>)</sup>, and the operator <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>&#x03A9;</mi><mo>&#x005E;</mo></mover></math>, which is also a function of the space coordinates, transforms according to irrep &#x0393;<sup>(&#x03A9;)</sup>. To determine whether the integral vanishes we need the representation generated by the entire integrand. The new feature we need for this purpose is the <i>direct product.</i> Let us start by considering a simpler matrix element of the form <i>&#x003C; g<sub>j</sub>|f<sub>i</sub></i> &#x003E;. The integrand is the product function <i>g<sub>j</sub>f<sub>i</sub>,</i> and so we consider the representation generated by using the set of all such product functions as a basis. This is called the direct product representation of &#x0393;<sup>(</sup><i><sup>f</sup></i><sup>)</sup> and &#x0393;<sup>(</sup><i><sup>g</sup></i><sup>)</sup>. The effect of a symmetry operation <i>R</i> on this product function is easy to determine, since <i>f<sub>i</sub></i> is transformed to <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><msub><mi>f</mi><mi>i</mi></msub></mrow></math>, g<sub>j</sub> to <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><msub><mi>g</mi><mi>i</mi></msub></mrow></math>, and the two transformed functions are multiplied together. In terms of the representative matrices <b>R</b><sup>(</sup><i><sup>f</sup></i><sup>)</sup> and <b>R</b><sup>(</sup><i><sup>g</sup></i><sup>)</sup>:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.37"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><msub><mi>g</mi><mi>j</mi></msub><msub><mi>f</mi><mi>i</mi></msub><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>k</mi><mo>,</mo><mi>l</mi></mrow></munder><mrow><msubsup><mi>R</mi><mrow><mi>j</mi><mi>k</mi></mrow><mrow><mrow><mo>(</mo><mi>g</mi><mo>)</mo></mrow></mrow></msubsup><msubsup><mi>R</mi><mrow><mi>i</mi><mi>l</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup><msub><mi>g</mi><mi>k</mi></msub><msub><mi>f</mi><mi>l</mi></msub></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.25em;">(4.37)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-30em;" epub:type="sidebar">
+<p class="sidebar">When wavefunctions are multiplied together, or acted upon by an operator, the component parts may have different symmetries. The direct product representation tells us how these symmetries are combined in the final product.</p>
+</aside>
+<p class="noindent">The diagonal element of this double summation is the coefficient of the original function <i>g<sub>j</sub>f<sub>i</sub></i> on the right hand side, i.e. the coefficient <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>R</mi><mrow><mi>j</mi><mi>j</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup><msubsup><mi>R</mi><mrow><mi>i</mi><mi>i</mi></mrow><mrow><mrow><mo>(</mo><mi>g</mi><mo>)</mo></mrow></mrow></msubsup></mrow></math>. The character of <i>R</i> in the direct product representation is the sum of these diagonal elements over all possible values of <i>i</i> and <i>j</i>, which is therefore <a id="page_75" class="page">Page 75, Chapter4 Symmetries&#x2014;group theory</a>The character of the symmetry operation <i>R</i> in the direct product representation is obtained by multiplying together the characters of <i>R</i> in the two constituent representations, &#x0393;<sup>(</sup><i><sup>g</sup></i><sup>)</sup> and &#x0393;<sup>(</sup><i><sup>f</sup></i><sup>)</sup>.</p>
+
+
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.38"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mrow><mi>f</mi><mi>g</mi></mrow><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow><mo>=</mo><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mi>g</mi><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow></mrow></math></p></td>
+<td>(4.38)</td>
+</tr>
+</table>
+<p class="indent">We can find general rules for direct products, for example:</p>
+<p class="nlist">1.<span class="space">&#160;</span>If the representations &#x0393;<sup>(</sup><i><sup>g</sup></i><sup>)</sup> and &#x0393;<sup>(</sup><i><sup>f</sup></i><sup>)</sup> are both degenerate, then the direct product representation will be reducible. If one of them is of dimension one then the direct product representation will be irreducible.</p>
+<p class="nlist">2.<span class="space">&#160;</span>If &#x0393;<sup>(</sup><i><sup>f</sup></i><sup>)</sup> is totally symmetric, then its characters are all equal to one. In this case &#x0393;<sup>(</sup><i><sup>g</sup></i><sup>)</sup> and &#x0393;<sup>(</sup><i><sup>fg</sup></i><sup>)</sup> are equivalent (they have the same character for each symmetry operation).</p>
+<p class="nlist">3.<span class="space">&#160;</span>The direct products of three representations, &#x0393;<sup>(</sup><i><sup>g</sup></i><sup>)</sup> &#x00D7; &#x0393;<sup>(&#x03A9;)</sup> &#x00D7; &#x0393;<sup>(</sup><i><sup>f</sup></i><sup>)</sup>, can be found by multiplying the three sets of characters together.</p>
+<p class="nlist">4.<span class="space">&#160;</span>If the direct product representation does not contain the totally symmetric irrep then all matrix elements must be zero.</p>
+<p class="nlist">5.<span class="space">&#160;</span>The direct product of an irrep with itself always contains the totally symmetric irrep &#x0393;<sup>(1)</sup>. The direct product of two different irreps never does.</p>
+<p class="noindentt">The last two rules have an interesting consequence. The integral &#x003C; <i>g<sub>j</sub>|f<sub>i</sub></i> &#x003E; must be zero unless <i>g<sub>j</sub></i> and <i>f<sub>i</sub></i> are bases for the same irrep. In other words, wavefunctions with different symmetries must be orthogonal.</p>
+<p class="indent">A particularly important role is played by the direct product of a representation with itself, since the last result tells us that the matrix element &#x003C; <i>g<sub>j</sub>|f<sub>i</sub></i> &#x003E; must be zero unless &#x0393;<sup>(</sup><i><sup>g</sup></i><sup>)</sup> and &#x0393;<sup>(</sup><i><sup>f</sup></i><sup>)</sup> are identical, as we now prove: the direct product representation has characters &#x03C7;<sup>(</sup><i><sup>g</sup></i><sup>)</sup>(<i>R</i>)&#x03C7;<sup>(</sup><i><sup>f</sup></i><sup>)</sup>(<i>R</i>)<i>.</i> In order to find whether or not this representation contains &#x0393;<sup>(1)</sup> we apply the reduction formula, <a href="#eq4.28">eqn 4.28</a></p>
+<p class="imgc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>a</mi><mn>1</mn></msub><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>R</mi></munder><mrow><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mrow><mi>f</mi><mi>g</mi></mrow><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow></mrow></mstyle><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>R</mi></munder><mrow><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mi>g</mi><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow><mo>=</mo><mi>h</mi><msub><mi>&#x03B4;</mi><mrow><mi>f</mi><mi>g</mi></mrow></msub></mrow></mstyle></mrow></math></p>
+<p class="noindent">The second line follows from the formula for the direct product characters and from the fact that all characters in &#x0393;<sup>(1)</sup> are unity. The third line follows from <a href="#eq4.27">eqn 4.27</a>.</p>
+<section epub:type="chapter"> 
+<h3 class="sub"><b>Symmetric and antisymmetric products</b></h3>
+<p class="noindent">The symmetries which arise when functions of the same symmetry are multiplied together are particularly important in chemistry. Suppose that &#x007B;&#x0192;<i><sub>i</sub></i>&#x007D; and &#x007B;<i>g<sub>j</sub></i>&#x007D; are different sets of basis functions for the <i>same</i> irrep, &#x0393;<sup>(</sup><i><sup>f</sup></i><sup>)</sup>. A partial reduction of the direct product representation can be obtained by considering separately the symmetrized product functions <i>f<sub>i</sub>g<sub>j</sub> &#x002B;g<sub>i</sub>f<sub>j</sub></i> and the antisymmetrized product functions <i>f<sub>i</sub>g<sub>j</sub> &#x2013; g<sub>i</sub>f<sub>j.</sub></i> <a id="page_76" class="page">Page 76, Chapter4 Symmetries&#x2014;group theory</a></p>
+<p class="noindent">Each of these sets of functions is separately a basis for a representation of the group:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.39"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable columnalign='left'><mtr><mtd><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mrow><mo>(</mo><mrow><msub><mi>g</mi><mi>j</mi></msub><msub><mi>f</mi><mi>i</mi></msub><mo>&#x00B1;</mo><msub><mi>g</mi><mi>i</mi></msub><msub><mi>f</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>k</mi><mo>,</mo><mi>l</mi></mrow></munder><mrow><msubsup><mi>R</mi><mrow><mi>k</mi><mi>j</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup><msubsup><mi>R</mi><mrow><mi>l</mi><mi>i</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>g</mi><mi>k</mi></msub><msub><mi>f</mi><mi>l</mi></msub><mo>&#x00B1;</mo><msub><mi>g</mi><mi>l</mi></msub><msub><mi>f</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>k</mi><mo>,</mo><mi>l</mi></mrow></munder><mrow><msubsup><mi>R</mi><mrow><mi>k</mi><mi>j</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup><msubsup><mi>R</mi><mrow><mi>l</mi><mi>i</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup><mo>&#x00B1;</mo><msubsup><mi>R</mi><mrow><mi>k</mi><mi>j</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup><msubsup><mi>R</mi><mrow><mi>l</mi><mi>i</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup><mrow><mo>(</mo><mrow><msub><mi>g</mi><mi>k</mi></msub><msub><mi>f</mi><mi>l</mi></msub><mo>&#x00B1;</mo><msub><mi>g</mi><mi>l</mi></msub><msub><mi>f</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow></mrow></mstyle></mtd></mtr></mtable></math></p></td>
+<td style="padding-top:3.75em;">(4.39)</td>
+</tr>
+</table>
+<p class="noindent">the second line follows by considering what happens if the indices <i>k</i> and <i>l</i> are reversed. We can also work out the character of these two representations: the diagonal element in the summation is given by</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.40"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo>(</mo><mrow><msubsup><mi>R</mi><mrow><mi>j</mi><mi>j</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup><msubsup><mi>R</mi><mrow><mi>i</mi><mi>i</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup><mo>&#x00B1;</mo><msubsup><mi>R</mi><mrow><mi>j</mi><mi>i</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup><msubsup><mi>R</mi><mrow><mi>i</mi><mi>j</mi></mrow><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msubsup></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>g</mi><mi>j</mi></msub><msub><mi>f</mi><mi>i</mi></msub><mo>&#x00B1;</mo><msub><mi>g</mi><mi>i</mi></msub><msub><mi>f</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow></mrow></math></p></td>
+<td>(4.40)</td>
+</tr>
+</table>
+<p class="noindent">Summing over all possible values of <i>i</i> and <i>j</i>, and recognizing the second term in the summation as the matrix product of <b>R</b><sup>(</sup><i><sup>f</sup></i><sup>)</sup> with itself we obtain</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.41"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mo>&#x00B1;</mo><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo>(</mo><mrow><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><msup><mrow><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>&#x00B1;</mo><msup><mi>&#x03C7;</mi><mrow><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></msup><mrow><mo>(</mo><mrow><msup><mi>R</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math></p></td>
+<td>(4.41)</td>
+</tr>
+</table>
+<p class="noindent">If the dimension of &#x0393;<sup>(</sup><i><sup>f</sup></i><sup>)</sup> is <i>n</i> then the direct product representation has dimension <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>n</mi><mrow><mo>(</mo><mrow><mi>n</mi><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>, and this splits into a symmetrized representation of dimension and an antisymmetrized representation of dimension <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>n</mi><mrow><mo>(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>. The combinations with <i>i = j</i> are missing from the antisymmetrized representation because <i>f<sub>i</sub>g<sub>i</sub> &#x2013; g<sub>i</sub>f<sub>i</sub></i> is identically zero.</p>
+<p class="indent">As an example we find the direct product representation <i>T</i><sub>2</sub> &#x00D7; <i>T</i><sub>2</sub> in the point group <i>T<sub>d</sub></i> and divide it into its symmetric and antisymmetric parts. The relevant characters are given in Table 4.10. The characters of the direct product representation are simply the squares of the characters of T<sub>2</sub>. The characters of <i>R</i><sup>2</sup> can be found easily since is still in the <i>C</i><sub>3</sub> class, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>C</mi><mn>2</mn><mn>2</mn></msubsup><mo>=</mo><msubsup><mi>&#x03C3;</mi><mi>d</mi><mn>2</mn></msubsup><mo>=</mo><mi>E</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>S</mi><mn>4</mn><mn>2</mn></msubsup><mo>=</mo><msub><mi>C</mi><mn>2</mn></msub></mrow></math>. These representations are reduced by the usual method to give</p>
+<p class="imgc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>&#x0393;</mi><mrow><mrow><mo>(</mo><mo>+</mo><mo>)</mo></mrow></mrow></msup><mo>=</mo><msub><mi>A</mi><mn>1</mn></msub><mo>+</mo><mi>E</mi><mo>+</mo><msub><mi>T</mi><mn>2</mn></msub><mtext>&#x2009;</mtext><mtext>and</mtext><mtext>&#x2009;</mtext><msup><mi>&#x0393;</mi><mrow><mrow><mo>(</mo><mo>&#x2212;</mo><mo>)</mo></mrow></mrow></msup><mo>=</mo><msub><mi>T</mi><mn>1</mn></msub></mrow></math>
+</p>
+<p class="noindentb">Of course, since &#x0393;<sup>(&#x2013;)</sup> is an irrep, it can be identified immediately from <a href="#tab4.6">Table 4.6</a>.</p>
+<p class="tab-cap" id="tab4.9"><b>Table 4.9</b> Direct products <i>T</i><sub>2</sub> &#x00D7; <i>T</i><sub>2</sub> in the point group <i>T<sub>d</sub></i></p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-lc"><i>R</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">8<i>C</i><sub>3</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">3<i>C</i><sub>2</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">6<i>S</i><sub>4</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">6<i>&#x03C3;<sub>d</sub></i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc"><i>T</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">3</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc"><i>T</i><sub>2 </sub>&#x00D7; <i>T</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">9</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc">&#x03C7;(<i>R</i><sup>2</sup>)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">3</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;3</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;3</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc">&#x03C7;<sup>(&#x002B;)</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">6</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;2</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;2</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc">&#x03C7;<sup>(&#x2013;)</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">3</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<p class="sidebar">Sometimes tables of direct products are given in which the antisymmetrized representation is distinguished by being bracketed. In the current example<i>T</i><sub>2 </sub>&#x00D7;<i>T</i><sub>2</sub><i>= A</i><sub>1 </sub>&#x002B;<i>E</i>&#x002B;<i></i>&#x005B;<i>T</i><sub>1</sub>&#x005D;<i>&#x002B; T</i><sub>2</sub></p>
+</aside>
+<p class="indent">A special case of the direct product of a representation with itself arises when the functions &#x0192; and <i>g</i> are the same. The direct product then only consists of the symmetrized part, which has dimension , because the product functions <i>f<sub>i</sub>f<sub>j</sub></i> and <i>f<sub>j</sub>f<sub>i</sub></i> are identical. The antisymmetrised direct product disappears in this case because the antisym- <a id="page_77" class="page">Page 77, Chapter4 Symmetries&#x2014;group theory</a>metrized basis functions <i>f<sub>i</sub>f<sub>j</sub> &#x2013; f<sub>j</sub>f<sub>i</sub></i> are all zero. This fact has important consequences for the degeneracies of electronic states and excited vibrational states, as we shall see in the next chapters and in II.</p>
+<p class="ref"><b>References</b></p>
+<p class="refl">1.<span class="space">&#160;</span>Bunker, P. R. (1979). <i>Molecular symmetry and spectroscopy.</i> Academic Press, San Diego.</p>
+<p class="refl">2.<span class="space">&#160;</span>Heine, V. (1964). <i>Group theory in quantum mechanics.</i> Pergamon Press, Oxford.</p>
+<p class="refl">3.<span class="space">&#160;</span>Bishop, D. M. (1973). <i>Group theory and chemistry.</i> Clarendon Press, Oxford.</p>
+<p class="refl">4.<span class="space">&#160;</span>Cotton, F. A. (1963) <i>Chemical applications of group theory.</i> Wiley, New York.</p>
+<p class="refl">5.<span class="space">&#160;</span>Schonland, D. S. (1965). <i>Molecular symmetry,</i> van Nostrand Rein-hold, New York.</p>
+<p class="refl">6.<span class="space">&#160;</span>Atkins, P. W. (1983). <i>Molecular quantum mechanics.</i> 2nd edn. Oxford University Press, Oxford.</p>
+<p class="refl">7.<span class="space">&#160;</span>Weyl, H. (1950). <i>The theory of groups and quantum mechanics.</i> Dover, New York.</p>
+<p class="refl">8.<span class="space">&#160;</span>Wigner, E. P. (1959). <i>Group theory and its applications to the quantum mechanics of atomic spectra.</i> Academic Press, New York.</p>
+<p class="refl">9.<span class="space">&#160;</span>Atkins, P. W., Child, M. S., Phillips, C. S. G. (1970). <i>Tables for group theory.</i> Oxford University Press, Oxford.</p>
+</section>
+</section>
+</section>
+</body>
+</html>

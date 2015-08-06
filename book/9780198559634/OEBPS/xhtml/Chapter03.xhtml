@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Thermodynamics of Chemical Processes</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch03">
+<a id="page_30" class="page" style="width:70%;">Page 30, Chapter 3 Entropy in chemistry</a>
+<h1 class="ch-title">3<span class="space">&#160;</span>Entropy in chemistry</h1>
+<p class="noindent">In general, in chemistry we are concerned with the factors that determine whether reactions or processes can occur, and, if so, how far and how fast they proceed. Thermodynamics can tell us nothing about the rate of reactions but can tell us everything about the other factors.</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<figure class="fig1" id="fig3.1">
+<img src="../images/Fig3.1.jpg" alt="images"/>
+<figcaption><b>Fig. 3.1</b> Spontaneous processes. See text for explanation.</figcaption></figure>
+</aside>
+<p class="indent">In the early days of physical chemistry it was thought that systems reacted or underwent change so as to minimize their energy. However, things are not quite that simple. Consider, for example the dissolving of ammonium nitrate in water, which is endothermic. Clearly, here the system gains energy in absorbing heat but the reaction occurs readily. Also, consider the expansion of an ideal gas at constant temperature. There is no change in internal energy but it happens anyway. There are a number of other examples which we encounter in everyday life of things that we know will happen in one direction only, some of which are illustrated in <a href="#fig3.1">Fig. 3.1</a>. Such processes are <i>spontaneous</i>.</p>
+<p class="indent">If we open the tap in <a href="#fig3.1">Fig. 3.1a</a>, then gas will flow into the evacuated vessel. It is very unlikely that, at some future time all the gas will rediffuse into the left-hand bulb and leave a vacuum in the right-hand bulb. If we take a hot metal block and place it against a cold one, as in <a href="#fig3.1">Fig. 3.1 (b)</a>, we know that the temperatures will equalize; it is very unlikely that at a later time one end will spontaneously get hotter than the other. If we place a drop of ink into a bath of water, it will gradually spread through the bath to give a constant concentration. It is then unlikely that all the ink will diffuse into one place in the bath. As a final chemical example, we know that hydrogen reacts very well with oxygen to form water. However, around room temperature the reverse reaction does not take place spontaneously.</p>
+<p class="indent">Clearly then, there is some factor other than the energy which plays a part in determining whether reactions happen, and this is provided by the <i>entropy</i>, given the symbol <i>S</i>. There are a number of ways of looking at this, but the most relevant to the present discussion is to consider the molecular state of the system.</p>
+<p class="indent">In each of the physical situations described above (we will return to the water reaction later) the final situation results in the gas molecules, the heat, or the ink molecules being distributed over a greater amount of space, leading to a more random distribution of matter. We describe the entropy as a measure of this randomness or <i>disorder</i> of the system, which clearly increases in the processes shown in <a href="#fig3.1">Fig. 3.1</a>. A fundamental definition of entropy is given by the <i>Boltzmann equation</i>.</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>S</m:mi><m:mo>=</m:mo><m:msub><m:mi>k</m:mi><m:mi>B</m:mi></m:msub><m:mtext>&#x2009;</m:mtext><m:mtext>l</m:mtext><m:mtext>n</m:mtext><m:mtext>&#x2009;</m:mtext><m:mi>&#x03C9;</m:mi></m:mrow></m:math></p></td>
+<td>(3.1)</td>
+</tr>
+</table>
+<p class="noindent">where <i>&#x03C9;</i> is the number of ways of arranging the molecules of the system and <i>k</i><sub>B</sub> is a constant, known as the <i>Boltzmann constant</i>. Thus, the larger the number of arrangements, or the less organized the system, the larger the entropy. This equation forms the basis of the powerful methods of <i>statistical thermodynamics</i>.</p>
+<section epub:type="chapter" id="sec3.1">
+<a id="page_31" class="page" style="width:70%;">Page 31, Chapter 3 Entropy in chemistry</a>
+<h2 class="main">3.1<span class="space">&#160;</span>The Second Law of thermodynamics</h2>
+<p class="noindent">The main usefulness of entropy in chemistry comes from the ability to use the concept to predict the direction of chemical (or any other) change. This arises as a result of a large number of empirical observations such as those described above and is embodied in the <i>Second Law of thermodynamics</i>. This can be stated in a number of ways, but perhaps the most straightforward is:</p>
+<p class="blockquote-t"><i>Spontaneous processes are those which</i> INCREASE <i>the entropy of the</i> <i>universe</i>.</p>
+<p class="indent">This may seem a rather grand definition but we will see shortly that it is not necessary to consider the complete universe every time we think about a reaction. The key word here is <i>spontaneous</i>. If we can determine the change of entropy for a process, we will be able to predict its direction and the remainder of this chapter is devoted to these methods. From the idea of entropy being related to order, we can conclude that spontaneous processes are those which lead to an increase in disorder.</p>
+</section>
+<section epub:type="chapter" id="sec3.2">
+<h2 class="main">3.2<span class="space">&#160;</span>A quantitative measure of entropy</h2>
+<p class="noindent">Historically, the development in the 19th century of quantitative models of the entropy of systems relied on the consideration of heat-work cycles and the efficiency of heat engines. However, this has limited usefulness and gives limited insight into chemical situations and we will simply state the result and justify it with some examples.</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:mi>S</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>q</m:mi><m:mrow><m:mtext>r</m:mtext><m:mtext>e</m:mtext><m:mtext>v</m:mtext></m:mrow></m:msub></m:mrow><m:mi>T</m:mi></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.2)</td>
+</tr>
+</table>
+<p class="noindent">where &#x2206;<i>S</i> is the entropy <i>change</i> when an amount of heat <i>q</i><sub>rev</sub><i></i> is added in a reversible manner at temperature <i>T</i>. As noted in <a href="Chapter01.xhtml#sec1.2">Section 1.2</a>, <i>q</i><sub>rev</sub> is the maximum heat change available so that the entropy is associated with the maximum energy change which a system can undergo.</p>
+<p class="indent">Although not formally proved, <a href="#eq3.2">eqn 3.2</a> is entirely consistent with everything that has been said so far about entropy. Heating a system leads to faster motion of molecules, increased bond vibration, and larger population of higher energy levels. This leads to the system having greater disorder. Adding the same amount of heat would be expected to have a greater effect at lower temperatures, hence the inverse temperature dependence. Finally, the heating must be carried out so that the temperature of the system is uniform throughout, hence the requirement for a reversible change.</p>
+<p class="indent">Having introduced <a href="#eq3.2">eqn 3.2</a>, we can now apply it to a number of situations of chemical importance. Although it may not be obvious from the preceding discussion, it can be shown that entropy is a state function so that again we can use the form</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:mi>S</m:mi><m:mo>=</m:mo><m:msub><m:mi>S</m:mi><m:mrow><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>S</m:mi><m:mrow><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow></m:math></p></td>
+<td>(3.3)</td>
+</tr>
+</table>
+<p class="noindent">without worrying about the path by which the change is carried out.</p>
+<section epub:type="chapter">
+<h3 class="main2"><b>Entropy changes during a change of phase</b></h3>
+<p class="noindent">This provides a straightforward application of <a href="#eq3.2">eqn 3.2</a> since, at the temperature of the phase change, the heat change can be considered reversible at constant <a id="page_32" class="page">Page 32, Chapter 3 Entropy in chemistry</a>pressure. If we take vaporization and fusion, then</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>&#x0394;</m:mtext><m:msup><m:mi>S</m:mi><m:mrow><m:mtext>v</m:mtext><m:mtext>a</m:mtext><m:mtext>p</m:mtext></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>&#x0394;</m:mtext><m:msup><m:mi>H</m:mi><m:mrow><m:mtext>v</m:mtext><m:mtext>a</m:mtext><m:mtext>p</m:mtext></m:mrow></m:msup></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>b</m:mtext></m:msub></m:mrow></m:mfrac></m:mrow></m:mtd><m:mtd><m:mo>;</m:mo></m:mtd><m:mtd><m:mrow><m:mtext>&#x0394;</m:mtext><m:msup><m:mi>S</m:mi><m:mrow><m:mtext>f</m:mtext><m:mtext>u</m:mtext><m:mtext>s</m:mtext></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>&#x0394;</m:mtext><m:msup><m:mi>H</m:mi><m:mrow><m:mtext>f</m:mtext><m:mtext>u</m:mtext><m:mtext>s</m:mtext></m:mrow></m:msup></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>m</m:mtext></m:msub></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.4)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:.3em;" epub:type="sidebar">
+<p class="sidebar"><i>Note:</i> <a href="#eq3.4">Eqn 3.4</a> will be derived again in <a href="Chapter05.xhtml">Chapter 5</a> starting from a different point of view.</p>
+</aside>
+<p class="noindent">where &#x2206;<i>H</i><sup>vap</sup><i></i> and <i>&#x2206;H</i><sup>fus</sup> are the enthalpies of vaporization and fusion at the boiling and melting temperatures, <i>T</i><sub>b</sub> and <i>T</i><sub>m</sub>, respectively. Clearly, &#x2206;<i>S</i> for the reverse changes&#x2014;condensation or freezing&#x2014;are given by the negative of the values calculated according to <a href="#eq3.4">eqn 3.4</a>.</p>
+<p class="indent">As discussed in <a href="Chapter02.xhtml#sec2.3">Section 2.3</a>, &#x2206;<i>H</i><sup>vap</sup><i></i> and &#x2206;<i>H</i><sup>fus</sup> are endothermic. Thus, &#x2206;<i>S</i> must be positive for these phase changes. This is consistent with our idea of entropy as a measure of disorder. A vapour must be more disordered and so have higher entropy than a liquid, so &#x2206;<i>S</i><sup>vap</sup> is positive. The same argument holds for melting. Further discussion of these changes will be undertaken in <a href="Chapter05.xhtml">Chapter 5</a>.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="main2"><b>Isothermal expansion of an ideal gas</b></h3>
+<p class="noindent">While this is perhaps the least important from the point of view of a chemical reaction, it provides another straightforward example of applying <a href="#eq3.2">eqn 3.2</a>.</p>
+<p class="indent">It was shown in <a href="Chapter01.xhtml#sec1.2">Section 1.2</a> that, for an isothermal change in an ideal gas, &#x2206;<i>U</i> = 0 so <i>q</i><sub>rev</sub> = &#x2013;<i>w</i><sub>rev</sub>. Also, from <a href="Chapter01.xhtml#eq1.5">eqn 1.5</a>, <i>w</i><sub>rev</sub> = &#x2013;<i>nRT</i> ln (<i>V</i><sub>final</sub>/<i>V</i><sub>initial</sub>).</p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:33%;"/>
+<col style="width:33%;"/>
+<col style="width:33%;"/>
+</colgroup>
+<tr>
+<td style="padding-top:0.65em;">Hence,</td>
+<td><p class="eq" id="eq3.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>&#x0394;</m:mtext><m:mi>S</m:mi><m:mo>=</m:mo><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mtext>V</m:mtext><m:mrow><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mtext>V</m:mtext><m:mrow><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mtext>S</m:mtext><m:mrow><m:msub><m:mtext>V</m:mtext><m:mrow><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>q</m:mi><m:mrow><m:mtext>r</m:mtext><m:mtext>e</m:mtext><m:mtext>v</m:mtext></m:mrow></m:msub></m:mrow><m:mi>T</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>w</m:mi><m:mrow><m:mtext>r</m:mtext><m:mtext>e</m:mtext><m:mtext>v</m:mtext></m:mrow></m:msub></m:mrow><m:mi>T</m:mi></m:mfrac><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>R</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;text-align:right;">(3.5)</td>
+</tr>
+</table>
+<p class="indent">If a gas expands, <i>V</i><sub>final</sub> &#x003E; <i>V</i><sub>initial</sub> so the entropy change is positive. This is again consistent with our idea of entropy as a measure of disorder since there is now a greater volume over which to arrange the gas molecules. Given the inverse relation between pressure and volume, <a href="#eq3.5">eqn 3.5</a> could be written as</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>&#x0394;</m:mtext><m:mi>S</m:mi><m:mo>=</m:mo><m:msub><m:mi>S</m:mi><m:mrow><m:mtext>P</m:mtext><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mtext>S</m:mtext><m:mrow><m:mtext>P</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>R</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>P</m:mi><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow><m:mrow><m:mi>P</m:mi><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+</p>
+</section>
+<section epub:type="chapter">
+<h3 class="main2"><b>Effect of temperature on entropy</b></h3>
+<p class="noindent">Again, we make use of a relation used previously; <i>q</i><sub>rev</sub> = <i>c</i><sub>P </sub>d<i>T</i> at constant pressure. The entropy at some temperature <i>T</i><sub>f</sub> can be related to the entropy at a different temperature, <i>T</i><sub>i</sub> by</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:mi>S</m:mi><m:mo>=</m:mo><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mtext>T</m:mtext><m:mtext>f</m:mtext></m:msub></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mtext>T</m:mtext><m:mtext>i</m:mtext></m:msub></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:msub><m:mi>q</m:mi><m:mrow><m:mtext>r</m:mtext><m:mtext>e</m:mtext><m:mtext>v</m:mtext></m:mrow></m:msub></m:mrow><m:mi>T</m:mi></m:mfrac><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>i</m:mtext></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mtext>P</m:mtext></m:msub></m:mrow><m:mi>T</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:2em;">(3.6)</td>
+</tr>
+</table>
+<p class="indent">If, as in our discussion of enthalpy changes, we begin by approximating that <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mi>P</m:mi></m:msub></m:mrow></m:math> is constant over the temperature range involved, then providing no change of phase occurs:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mtext>T</m:mtext><m:mtext>f</m:mtext></m:msub></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mtext>T</m:mtext><m:mtext>i</m:mtext></m:msub></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mtext>P</m:mtext></m:msub><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>i</m:mtext></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub></m:mrow></m:munderover><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>T</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mtext>d</m:mtext><m:mi>T</m:mi><m:mo>=</m:mo><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mtext>P</m:mtext></m:msub><m:mtext>&#x2009;</m:mtext><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>i</m:mtext></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:2em;">(3.7)</td>
+</tr>
+</table>
+<p class="indent"><a href="#eq3.7">Equation 3.7</a> is adequate over relatively small temperature ranges where <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mi>P</m:mi></m:msub></m:mrow></m:math> is the mean value over the range. If there is a significant variation in <i>c</i><sub>p</sub> then we must proceed in an analogous manner to that of <a href="Chapter02.xhtml#sec2.2">Section 2.2</a>. <a href="#eq3.6">Equation 3.6</a> can be rewritten to include the power series representation of <i>c</i><sub>p</sub>.</p>
+<p class="noindent"><a id="page_33" class="page">Page 33, Chapter 3 Entropy in chemistry</a></p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mtext>T</m:mtext><m:mtext>f</m:mtext></m:msub></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mtext>T</m:mtext><m:mtext>i</m:mtext></m:msub></m:mrow></m:msub><m:mo>+</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>i</m:mtext></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>c</m:mi><m:mtext>P</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mi>T</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>T</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mtext>d</m:mtext><m:mi>T</m:mi><m:mo>=</m:mo><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mtext>T</m:mtext><m:mtext>i</m:mtext></m:msub></m:mrow></m:msub><m:mo>+</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>i</m:mtext></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>T</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:msup><m:mi>T</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mi>T</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mtext>T</m:mtext><m:mtext>f</m:mtext></m:msub></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mtext>T</m:mtext><m:mtext>i</m:mtext></m:msub></m:mrow></m:msub><m:mo>+</m:mo><m:msubsup><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>a</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>ln</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>T</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>T</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>c</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>T</m:mi><m:mn>2</m:mn></m:msup></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>i</m:mtext></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub></m:mrow></m:msubsup><m:mo>=</m:mo><m:mi>a</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>i</m:mtext></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>b</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>i</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>c</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>T</m:mi><m:mtext>f</m:mtext><m:mn>2</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>T</m:mi><m:mtext>i</m:mtext><m:mn>2</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="indent">Experimentally, the most straightforward method for applying <a href="#eq3.6">eqn 3.6</a> is to use a graphical technique. If values of <i>c</i><sub>p</sub><i></i> are measured as a function of temperature, a graph of (<i>c</i><sub>p</sub>/<i>T</i>) versus temperature can be constructed/Finding the increase of entropy then amounts to finding the area under the curve, as shown in <a href="#fig3.2">Fig. 3.2</a>.</p>
+<aside class="abc" style="margin-top:-14em;" epub:type="sidebar">
+<figure class="fig1" id="fig3.2">
+<img src="../images/Fig3.2.jpg" alt="images"/>
+<figcaption><b>Fig. 3.2</b> Graphical determination of the entropy as a function of temperature. AS is given by the shaded area under the curve between the initial and final temperatures.</figcaption></figure>
+</aside>
+<div class="box1">
+<p class="noindentb" id="ex3.1"><i>Example 3.1</i> Given that the heat capacities of ice and water at 0 &#x00B0;C are 2.2 and 4.18 J K<sup>&#x2013;1</sup> g<sup>&#x2013;1</sup> and the enthalpy of fusion is 332 J g<sup>&#x2013;1</sup>, calculate the entropy change for the freezing of 1 mole of supercooled water at &#x2013;10 &#x00B0;C.</p>
+<p class="line1"></p>
+<p class="noindentb">Clearly, H<sub>2</sub>O<sub>(1)</sub>, &#x2013;10&#x00B0;C &#x2192; H<sub>2</sub>O<sub>(s)</sub>, &#x2013;10&#x00B0;C cannot be carried out in a reversible manner. Thus, in order to use <a href="#eq3.2">eqn 3.2</a> to calculate &#x2206;<i>S</i>, we must separate the process into a series of reversible changes and sum AS for each. This procedure is valid since entropy is a state function.</p>
+<p class="indentk-t">Water, &#x2013;10&#x00B0;C<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mover><m:mo>&#x2192;</m:mo><m:mrow><m:mi>&#x0394;</m:mi><m:msub><m:mi>S</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mover></m:mrow></m:math> water, 0&#x00B0;C<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mover><m:mo>&#x2192;</m:mo><m:mrow><m:mi>&#x0394;</m:mi><m:msub><m:mi>S</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mover></m:mrow></m:math> ice, 0&#x00B0;C<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mover><m:mo>&#x2192;</m:mo><m:mrow><m:mi>&#x0394;</m:mi><m:msub><m:mi>S</m:mi><m:mn>3</m:mn></m:msub></m:mrow></m:mover></m:mrow></m:math> ice, &#x2013;10&#x00B0;C &#x2206;<i>S</i> = &#x2206;<i>S</i><sub>1</sub>&#x002B;&#x2206;<i>S</i><sub>2</sub>&#x002B;&#x2206;<i>S</i><sub>3</sub> = 4.18 ln <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>273</m:mn></m:mrow><m:mrow><m:mn>263</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mrow><m:mo>&#x2212;</m:mo><m:mn>332</m:mn></m:mrow><m:mrow><m:mn>273</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mn>2.2</m:mn><m:mtext>&#x2009;</m:mtext><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>263</m:mn></m:mrow><m:mrow><m:mn>273</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>JK<sup>&#x2013;1</sup>g<sup>&#x2013;1 </sup>&#x2206;<i>S</i> = 0.156 &#x002B; (&#x2013;1.216) &#x002B; (0.082) = &#x2013;1.142 JK<sup>&#x2013;1</sup>g<sup>&#x2013;1</sup></p>
+<p class="noindentb">Hence, &#x2206;<i>S</i> = (18 g mol<sup>&#x2013;1</sup>)(&#x2013;1.142JK<sup>&#x2013;1</sup>g<sup>&#x2013;1</sup>) = &#x2013;20.556JK<sup>&#x2013;1</sup> mol<sup>&#x2013;1</sup></p>
+<p class="noteb">Note that we have a negative entropy change arising from a liquid forming a more ordered solid.</p>
+</div>
+</section>
+<section epub:type="chapter" id="sec3.3">
+<h2 class="main">3.3<span class="space">&#160;</span>Absolute entropies and the Third Law</h2>
+<p class="noindent">From <a href="#eq3.4">eqns 3.4</a> and <a href="#eq3.6">3.6</a>, we can now calculate the change in entropy for any compound when it undergoes a change of phase or temperature. However, as yet we cannot define the entropy of a compound in absolute terms. In order to do this, as in our discussion of energy, we need a standard to which we can refer values. In this case though, different elements will have different degrees of order at a given temperature. Consider oxygen, mercury, and copper&#x2014;can they be said to have the same degree of atomic and molecular order at 25 &#x00B0;C? Thus, we cannot use the same standard as when defining <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>H</m:mi><m:mrow><m:mtext>f</m:mtext><m:mo>,</m:mo><m:mn>2</m:mn><m:mn>9</m:mn><m:mn>8</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math>.</p>
+<p class="indent">To give a standard to act as a zero for entropy, we need a perfectly ordered system. Although it can never be achieved in practice, it is clear that this condition would be fulfilled by a perfect solid crystal at absolute zero temperature so that there is no motion of any type. A perfect crystal is one with all the molecules aligned perfectly and no defects. We can therefore postulate the <i>Third Law of thermodynamics</i> as:</p>
+<p class="blockquote-t"><i>The entropy of a perfect crystal at zero Kelvin is zero</i></p>
+<aside class="abc" style="margin-top:-13.5em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/Fig3.01.jpg" alt="images"/>
+</figure>
+<p class="sidebar"><i>Note:</i> The two forms of hydrogen have different <i>nuclear</i> spins on the protons. (This should not be confused with <i>electron</i> spins.) The arrow indicates the direction of the spins.</p>
+</aside>
+<p class="noindent"><a id="page_34" class="page">Page 34, Chapter 3 Entropy in chemistry</a></p>
+<aside class="abc" style="margin-top:-.5em;" epub:type="sidebar">
+<figure class="fig1" id="fig3.3">
+<img src="../images/Fig3.3.jpg" alt="images"/>
+<figcaption><b>Fig. 3.3</b> Different orientations in a solid crystal of carbon monoxide.</figcaption></figure>
+</aside>
+<p class="indent">In practice, a perfect crystal can never be achieved. All crystals contain defects. Even when all the molecules are aligned perfectly, other more subtle effects can result in a <i>residual entropy</i> at 0 K. For example, molecules containing different isotopes (e.g. H<sup>35</sup>C1 and H<sup>37</sup>C1) may be present. In hydrogen, the mixture of <i>ortho</i> and <i>para</i> forms (which have different pairing of nuclear spins) means that <i>S</i> &#x2260;<i></i> 0. The dipole in CO is very small so that there is a negligible difference in energy in the orientation of molecules in the crystal. Thus, even at the lowest temperatures, the solid consists of an array of molecules with random orientation (<a href="#fig3.3">Fig. 3.3</a>).</p>
+<p class="indent">The residual entropy caused by this effect can be estimated from <a href="#eq3.1">eqn 3.1</a>. If both orientations are equally likely (i.e. there is zero energy difference) then for <i>N</i> molecules there are 2<i><sup>N</sup></i> possible ways of arranging them. From the Boltzmann equation and putting N = Avogadro&#x2019;s number for 1 mole of CO,</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mi>S</m:mi></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:msub><m:mi>k</m:mi><m:mtext>B</m:mtext></m:msub><m:mtext>&#x2009;</m:mtext><m:mi>ln</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x03C9;</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1.38</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>23</m:mn></m:mrow></m:msup><m:mtext>J</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>ln</m:mi><m:msup><m:mn>2</m:mn><m:mi>N</m:mi></m:msup></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1.38</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>23</m:mn></m:mrow></m:msup><m:mtext>J</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6.023</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>23</m:mn></m:mrow></m:msup><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>ln</m:mi><m:mn>2</m:mn></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mn>5.76</m:mn><m:mtext>J</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<p class="noindent"><i>Mathematical note:</i> : In x<i><sup>a</sup></i> = <i>a</i> In x</p>
+</aside>
+<p class="noindent">In fact, precise spectroscopic measurements show that the residual entropy of CO is 4.6 J K<sup>&#x2013;1</sup> mol<sup>&#x2013;1</sup> indicating that the arrangement is not, in fact, completely random.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="main2"><b>Standard or absolute entropies</b></h3>
+<p class="noindent">For convenience, tables of entropy values are published under standard conditions. Some example values are given in <a href="#tab3.1">Table 3.1</a> and a more comprehensive list in <a href="Appendix1.xhtml">Appendix 1</a>.</p>
+<p class="blockquote-t"><i>The standard entropy, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math> of a compound is the molar entropy at 298.15 K and 1 bar pressure</i></p>
+<p class="indent">Unlike internal energies and enthalpies, where only changes could be measured, the Third Law enables us to measure absolute values of the entropy. The calculation simply consists of measuring the entropy changes in heating the compound from 0 K to whatever state it exists at 298 K.</p>
+<p class="indent">Consider a gas at room temperature. In order to measure the <i>standard entropy</i>, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math>, we need to determine the entropy changes in taking 1 mole of a compound through the following steps at 1 bar:</p>
+<aside class="abc" style="margin-top:-25em;" epub:type="sidebar">
+<p class="tab-cap" id="tab3.1"><b>Table 3.1</b> Typical values of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math>/J K<sup>&#x2013;1</sup> mol<sup>&#x2013;1</sup></p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">C<sub>(s)</sub> (graphite)</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;&#160;5.7</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">C<sub>(s)</sub> (diamond</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;&#160;2.4</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Cu<sub>(s)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;33.3</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">NaCl<sub>(s)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;72.4</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Glycine,NH<sub>2</sub>CH<sub>2</sub>CO<sub>2</sub>H<sub>(s)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">103.5</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">D-Glucose, C<sub>6</sub>H<sub>12</sub>O<sub>6(s)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">212.0</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Sucrose, C<sub>12</sub>H<sub>22</sub>O<sub>11(s)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">360.2</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Hg<sub>(1)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;77.4</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Benzene, C<sub>6</sub>H<sub>6(1)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">124.3</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Ethanol,C<sub>2</sub>H<sub>5</sub>OH<sub>(l)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">160.7</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">H<sub>2(g)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">130.7</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">CO<sub>(g)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">197.3</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">O<sub>2(g)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">205.1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">CO<sub>2(g)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">213.6</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Benzene, C<sub>6</sub>H<sub>6(g)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">269.2</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">lce,H<sub>2</sub>O<sub>(s)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;45.0</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Water, H<sub>2</sub>O<sub>(1)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;69.9</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Water vapour, H<sub>2</sub>O<sub>(g)</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">188.8</p></td>
+</tr>
+</table>
+</aside>
+<p class="noindent">&#160;</p>
+<table>
+<colgroup>
+<col style="width:50%;"/>
+<col style="width:50%;"/>
+</colgroup>
+<tr>
+<td style="vertical-align:middle;padding-left:0.5em;"><p class="tab-l">1. Heating from 0 K to <i>T</i><sub>m</sub></p></td>
+<td style="vertical-align:top;padding-left:1em;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mn>1</m:mn><m:mo>&#x00B0;</m:mo></m:msubsup><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mrow><m:mi>T</m:mi><m:mtext>m</m:mtext></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mtext>P</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>s</m:mi><m:mi>o</m:mi><m:mi>l</m:mi><m:mi>i</m:mi><m:mi>d</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>T</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:middle;padding-left:0.5em;padding-top:0.5em;"><p class="tab-l">2. Melting at <i>T</i><sub>m</sub></p></td>
+<td style="vertical-align:top;padding-left:1em;padding-top:0.5em;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mn>2</m:mn><m:mo>&#x00B0;</m:mo></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>&#x0394;</m:mi><m:msup><m:mi>H</m:mi><m:mrow><m:mtext>f</m:mtext><m:mtext>u</m:mtext><m:mtext>s</m:mtext></m:mrow></m:msup></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>m</m:mtext></m:msub></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:middle;padding-left:0.5em;padding-top:0.5em;"><p class="tab-l">3. Heating from <i>T</i><sub>m</sub> to <i>T</i><sub>b</sub></p></td>
+<td style="vertical-align:top;padding-left:1em;padding-top:0.5em;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mn>3</m:mn><m:mo>&#x00B0;</m:mo></m:msubsup><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>m</m:mtext></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>b</m:mtext></m:msub></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mtext>P</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>l</m:mtext><m:mtext>i</m:mtext><m:mtext>q</m:mtext><m:mtext>u</m:mtext><m:mtext>i</m:mtext><m:mtext>d</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>T</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:middle;padding-left:0.5em;padding-top:0.5em;"><p class="tab-l">4. Vaporization at <i>T</i><sub>b</sub></p></td>
+<td style="vertical-align:top;padding-left:1em;padding-top:0.5em;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mn>4</m:mn><m:mo>&#x00B0;</m:mo></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>&#x0394;</m:mi><m:msup><m:mi>H</m:mi><m:mrow><m:mtext>v</m:mtext><m:mtext>a</m:mtext><m:mtext>p</m:mtext></m:mrow></m:msup></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>b</m:mtext></m:msub></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+</tr>
+</table>
+<p class="noindent"><a id="page_35" class="page">Page 35, Chapter 3 Entropy in chemistry</a></p>
+<table>
+<colgroup>
+<col style="width:50%;"/>
+<col style="width:50%;"/>
+</colgroup>
+<tr>
+<td style="vertical-align:middle;padding-left:0.5em;"><p class="tab-l">5. Heating from <i>T</i><sub>b</sub><i></i> to 298 K</p></td>
+<td style="vertical-align:top;padding-left:1em;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mn>5</m:mn><m:mo>&#x00B0;</m:mo></m:msubsup><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>b</m:mtext></m:msub></m:mrow><m:mrow><m:mn>298</m:mn></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mtext>P</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>v</m:mtext><m:mtext>a</m:mtext><m:mtext>p</m:mtext><m:mtext>o</m:mtext><m:mtext>u</m:mtext><m:mtext>r</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>T</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow></m:math></p></td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mo>=</m:mo><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mn>1</m:mn><m:mo>&#x00B0;</m:mo></m:msubsup><m:mo>+</m:mo><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mn>2</m:mn><m:mo>&#x00B0;</m:mo></m:msubsup><m:mo>+</m:mo><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mn>3</m:mn><m:mo>&#x00B0;</m:mo></m:msubsup><m:mo>+</m:mo><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mn>4</m:mn><m:mo>&#x00B0;</m:mo></m:msubsup><m:mo>+</m:mo><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mn>5</m:mn><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math></p></td>
+<td>(3.8)</td>
+</tr>
+</table>
+<p class="indent">For compounds that are liquid at 298 K and 1 bar, the final two steps are omitted and <i>T</i><sub>b</sub> is replaced by 298 K in the integral for <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mn>3</m:mn><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math>. In this calculation it is assumed that the mean heat capacities give sufficient accuracy and also that there is only one solid phase. In compounds with more phases in the solid state, the additional entropy associated with the solid phase changes must also be taken into account.</p>
+<p class="indent">In practice, the integral in <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mn>1</m:mn><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math> cannot be evaluated because of the zero term in the integration limits. Thus, this integral must, at least at very low temperatures, be evaluated graphically. A plot of <i>c</i><sub>p</sub>/<i>T</i> versus <i>T</i> is constructed and extrapolated to 0 K. The area under the curve is equivalent to the integral in <a href="#eq3.8">eqn 3.8</a> and can then be determined as in <a href="#fig3.3">Fig. 3.3</a>.</p>
+<p class="indent"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math> values are sometimes called <i>absolute</i> or <i>Third Law</i> entropies. Considering the values in <a href="#tab3.1">Table 3.1</a> it is clear that they are consistent with our definition of entropy. For example, the three-dimensional diamond lattice is more strongly bound and organized than the layer structure of graphite so that it has a lower value of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math></p>
+<p class="noindent">. Solids with more complex structures, particularly those with large numbers of atoms in the molecules, such as the sugars sucrose and glucose, have higher <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math> since there are a large number of ways of arranging the atoms in the molecule, and the molecules in the solid structures. <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math> can be thought of as increasing with the molecular complexity of the compound. Also as expected, in general, gases have higher <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math> than liquids which are in turn higher than solids (for molecules containing about the same number of atoms). This is best seen by considering the values for ice, water, and water vapour in <a href="#tab3.1">Table 3.1</a>.</p>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<figure class="fig1" id="fig3.4">
+<img src="../images/Fig3.4.jpg" alt="images"/>
+<figcaption><b>Fig. 3.4</b> Graphical determination of absolute entropies. The shaded area is equivalent to the standard entropy at temperature <i>T</i>.</figcaption></figure>
+</aside>
+</section>
+<section epub:type="chapter" id="sec3.4">
+<h2 class="main">3.4<span class="space">&#160;</span>Entropy changes in chemical reactions</h2>
+<p class="noindent">In the same way as with enthalpy, we define the standard entropy of reaction as the difference in standard entropy of the products from that of the reactants, i.e.</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>r</m:mtext><m:mtext>e</m:mtext><m:mtext>a</m:mtext><m:mtext>c</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>o</m:mtext><m:mtext>n</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mo>&#x2211;</m:mo> <m:mrow><m:msub><m:mi>&#x03C5;</m:mi><m:mi>i</m:mi></m:msub><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>p</m:mtext><m:mtext>r</m:mtext><m:mtext>o</m:mtext><m:mtext>d</m:mtext><m:mtext>u</m:mtext><m:mtext>c</m:mtext><m:mtext>t</m:mtext><m:mtext>s</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mstyle displaystyle='true'><m:mo>&#x2211;</m:mo> <m:mrow><m:msub><m:mi>&#x03C5;</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mstyle><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>r</m:mtext><m:mtext>e</m:mtext><m:mtext>a</m:mtext><m:mtext>c</m:mtext><m:mtext>t</m:mtext><m:mtext>a</m:mtext><m:mtext>n</m:mtext><m:mtext>t</m:mtext><m:mtext>s</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.9)</td>
+</tr>
+</table>
+<p class="noindent">with <i>v</i><sub>i</sub> again signifying the stoichiometry. So applying this so our general reaction,</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>&#x03B1;</m:mi><m:mtext>A</m:mtext><m:mo>+</m:mo><m:mi>&#x03B2;</m:mi><m:mtext>B</m:mtext><m:mo>&#x2192;</m:mo><m:mi>&#x03B3;</m:mi><m:mtext>C</m:mtext><m:mo>+</m:mo><m:mi>&#x03B4;</m:mi><m:mtext>D</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mo>=</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>&#x03B3;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mtext>C</m:mtext><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>&#x03B4;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mtext>D</m:mtext><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>&#x03B1;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mtext>A</m:mtext><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>&#x03B2;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mtext>B</m:mtext><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:2em;">(3.10)</td>
+</tr>
+</table>
+<p class="indent">This gives the entropy change for converting 1 mole of reactants into 1 mole of products (or whatever the stoichiometry is) under standard pressure at 298 K. The entropy change at other temperatures can be calculated by applying <a href="#eq3.6">eqn 3.6</a> in a manner analogous to the method used for enthalpy changes</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mi>T</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:msub><m:mo>=</m:mo><m:mi>&#x0394;</m:mi><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:msub><m:mo>+</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:mi>&#x0394;</m:mi><m:msub><m:mi>c</m:mi><m:mtext>p</m:mtext></m:msub></m:mrow><m:mi>T</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:2em;">(3.11)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_36" class="page">Page 36, Chapter 3 Entropy in chemistry</a>with &#x2206;<i>c</i><sub>p</sub> again defined by <a href="Chapter02.xhtml#eq2.10">eqn 2.10</a>. Using mean heat capacities, this leads to</p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="noindent"><i>Exercise:</i> Derive the equivalent equation for<a href="#eq3.11">eqn 3.11</a> where <i>c</i><sub>p</sub> for each component is known as a power series as in <a href="Chapter02.xhtml#eq2.11">eqn 2.11</a></p>
+</aside>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mi>T</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:msub><m:mo>=</m:mo><m:mi>&#x0394;</m:mi><m:msub><m:mi>S</m:mi><m:mrow><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:msub><m:mo>+</m:mo><m:mi>&#x0394;</m:mi><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mtext>P</m:mtext></m:msub><m:mtext>&#x2009;</m:mtext><m:mi>ln</m:mi><m:mtext>&#x2009;</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>T</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(3.12)</td>
+</tr>
+</table>
+<p class="noindent"><a href="#eq3.12">Equation 3.12</a> allows calculation of entropy changes during reactions at any temperature, as demonstrated in <a href="#ex3.2">Example 3.2</a>.</p>
+<p class="indent">Note that <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math> , or indeed the entropy of a compound under any other conditions, <i>S<sub>T</sub></i>, <i>must</i> be positive since it must have greater disorder than a perfect crystal at 0 K. However, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math> or &#x2206;<i>S<sub>T</sub></i> can be positive or negative since they refer to <i>differences</i> in entropy between sets of conditions. It is important to keep this distinction in mind. Further examples of the calculation of entropy changes for reactions under various conditions will be presented in the following chapter.</p>
+<div class="box1t">
+<p class="noindentb" id="ex3.2"><i>Example 3.2</i> Using data in <a href="Appendix1.xhtml">Appendix 1</a>, calculate the entropy changes at 25 &#x00B0;C and at 750 &#x00B0;C for the following reactions:</p>
+<p class="noindent">&#160;</p>
+<p class="blist-in">(a)<span class="space">&#160;</span>C<sub>(graph) </sub>&#x002B; O<sub>2(g) </sub>&#x2192; CO<sub>2(g)</sub></p>
+<p class="blist-in">(b)<span class="space">&#160;</span>N<sub>2(g)</sub> &#x002B; 3H<sub>2(g)</sub> &#x2192; 2NH<sub>3(g)</sub></p>
+<p class="blist-in">(c)<span class="space">&#160;</span>C<sub>2</sub>H<sub>5</sub>OH<sub>(1)</sub> &#x002B; CH<sub>3</sub>COOH<sub>(1)</sub> &#x2192; CH<sub>3</sub>COOC<sub>2</sub>H<sub>5(1)</sub> &#x002B; H<sub>2</sub>O<sub>(1)</sub></p>
+<p class="line1"></p>
+<p class="noindentb"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math> can be calculated using <a href="#eq3.9">eqn 3.9</a> and the variation at higher temperature using <a href="#eq3.12">eqn 3.12</a>. Appropriate data are taken from <a href="Appendix1.xhtml">Appendix 1</a>.</p>
+<table style="margin-left:0em;margin-top:0.75em;">
+<colgroup>
+<col style="width:50%;"/>
+<col style="width:50%;"/>
+</colgroup>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">(a)</p></td>
+<td style="vertical-align:top;padding-left:1em;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>C</m:mtext><m:msub><m:mtext>O</m:mtext><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mtext>C</m:mtext><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mtext>O</m:mtext><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>213.74</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>5.74</m:mn><m:mo>+</m:mo><m:mn>205.14</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mtext>J</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mn>2.86</m:mn><m:mtext>J</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x0394;</m:mi><m:msub><m:mi>c</m:mi><m:mtext>P</m:mtext></m:msub></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mtext>P</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>C</m:mtext><m:msub><m:mtext>O</m:mtext><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mtext>P</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mtext>C</m:mtext><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mtext>P</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mtext>O</m:mtext><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>37.1</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>8.5</m:mn><m:mo>+</m:mo><m:mn>29.4</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mn>0.8</m:mn><m:mtext>J</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>1023</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mn>2.86</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mn>0.8</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1023</m:mn><m:mo>/</m:mo><m:mn>298</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mn>1.87</m:mn><m:mtext>J</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding-top:0.75em;"><p class="tab-l">(b)</p></td>
+<td style="vertical-align:top;padding-top:0.75em;padding-left:1em;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>N</m:mtext><m:msub><m:mtext>H</m:mtext><m:mn>3</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mtext>N</m:mtext><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mtext>H</m:mtext><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:mn>192.45</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>191.61</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mo>&#x00D7;</m:mo><m:mn>130.68</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow><m:mtext>J</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mn>198.75</m:mn><m:mtext>J</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x0394;</m:mi><m:msub><m:mi>c</m:mi><m:mtext>P</m:mtext></m:msub></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mtext>P</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>N</m:mtext><m:msub><m:mtext>H</m:mtext><m:mn>3</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mtext>P</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mtext>N</m:mtext><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>&#x00D7;</m:mo><m:msub><m:mover accent='true'><m:mi>c</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mtext>P</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mtext>H</m:mtext><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mn>38.2</m:mn><m:mtext>J</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>1023</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mn>198.75</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mn>38.2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1023</m:mn><m:mo>/</m:mo><m:mn>298</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mn>245.87</m:mn><m:mtext>J</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding-top:0.75em;"><p class="tab-l">(c)</p></td>
+<td style="vertical-align:top;padding-top:0.75em;padding-left:1em;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mrow> <m:mo>[</m:mo> <m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mtext>H</m:mtext><m:mn>2</m:mn></m:msub><m:mtext>O</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> </m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mrow><m:mrow><m:mo>+</m:mo><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mo stretchy='false'>(</m:mo><m:msub><m:mrow><m:mtext>CH</m:mtext></m:mrow><m:mtext>3</m:mtext></m:msub><m:msub><m:mrow><m:mtext>COOC</m:mtext></m:mrow><m:mtext>2</m:mtext></m:msub><m:msub><m:mtext>H</m:mtext><m:mtext>5</m:mtext></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:msub><m:mrow><m:mtext>CH</m:mtext></m:mrow><m:mtext>3</m:mtext></m:msub><m:msub><m:mrow><m:mtext>COOC</m:mtext></m:mrow><m:mtext>2</m:mtext></m:msub><m:msub><m:mtext>H</m:mtext><m:mtext>5</m:mtext></m:msub><m:msub><m:mtext>N</m:mtext><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mtext>C</m:mtext><m:mtext>2</m:mtext></m:msub><m:msub><m:mtext>H</m:mtext><m:mtext>5</m:mtext></m:msub><m:mtext>OH</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr><m:mtd><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>69.9</m:mn><m:mo>&#x00D7;</m:mo><m:mn>259.4</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>159.8</m:mn><m:mo>+</m:mo><m:mn>160.7</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:msup><m:mrow><m:mtext>JK</m:mtext></m:mrow><m:mrow><m:mtext>-1</m:mtext></m:mrow></m:msup><m:msup><m:mrow><m:mtext>mol</m:mtext></m:mrow><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mn>8.8</m:mn><m:msup><m:mrow><m:mtext>JK</m:mtext></m:mrow><m:mrow><m:mtext>-1</m:mtext></m:mrow></m:msup><m:msup><m:mrow><m:mtext>mol</m:mtext></m:mrow><m:mrow><m:mtext>-1</m:mtext></m:mrow></m:msup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x0394;</m:mi><m:msub><m:mi>c</m:mi><m:mi>p</m:mi></m:msub></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>75.3</m:mn><m:mo>+</m:mo><m:mn>170.1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>124.3</m:mn><m:mo>+</m:mo><m:mn>111.5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>9.6</m:mn><m:msup><m:mrow><m:mtext>JK</m:mtext></m:mrow><m:mrow><m:mtext>-1</m:mtext></m:mrow></m:msup><m:msup><m:mrow><m:mtext>mol</m:mtext></m:mrow><m:mrow><m:mtext>-1</m:mtext></m:mrow></m:msup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr><m:mtd><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>1023</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mn>8.8</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>9.6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1023</m:mn><m:mo>/</m:mo><m:mn>298</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>20.6</m:mn><m:msup><m:mrow><m:mtext>JK</m:mtext></m:mrow><m:mrow><m:mtext>-1</m:mtext></m:mrow></m:msup><m:msup><m:mrow><m:mtext>mol</m:mtext></m:mrow><m:mrow><m:mtext>-1</m:mtext></m:mrow></m:msup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr></m:mtable></m:math></p></td>
+</tr>
+</table>
+</div>
+<p class="noindent"><a id="page_37" class="page">Page 37, Chapter 3 Entropy in chemistry</a></p>
+<div class="box1b">
+<p class="noteb">The entropy change in (a) is relatively small since there are the same number of moles of gas in the reactants and the products. In (b), the number of moles of gas is halved, accounting for the large negative value of &#x2206;<i>S</i>. In reaction (c), all the components are in the liquid phase so that again the change in entropy is relatively small.</p>
+</div>
+</section>
+<section epub:type="chapter">
+<h3 class="main2"><b>Entropy as a predictor of chemical reactivity</b></h3>
+<p class="noindent">Let us consider the entropy change for a familiar chemical reaction.</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mn>2</m:mn><m:msub><m:mtext>H</m:mtext><m:mn>2</m:mn></m:msub><m:msub><m:mrow></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mi>g</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mtext>O</m:mtext><m:mn>2</m:mn></m:msub><m:msub><m:mrow></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mi>g</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:msub><m:mo>&#x2192;</m:mo><m:mn>2</m:mn><m:msub><m:mtext>H</m:mtext><m:mn>2</m:mn></m:msub><m:msub><m:mtext>O</m:mtext><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msub></m:mrow></m:math></p>
+<p class="noindent">From the data in <a href="Appendix1.xhtml">Appendix 1</a>, &#x2206;<i>S&#x00B0;</i> can be calculated at 298 K.</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mtext>H</m:mtext><m:mn>2</m:mn></m:msub><m:mtext>O</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mtext>H</m:mtext><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msubsup><m:mi>S</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mtext>O</m:mtext><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:mn>70</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:mn>131</m:mn><m:mo>+</m:mo><m:mn>205</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mn>327</m:mn><m:mtext>J</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="indent">Hence, there is a large loss of entropy on forming water, as would be expected in a reaction involving three moles of disordered, high-entropy gas forming two moles of relatively ordered and hence lower entropy liquid.</p>
+<p class="indent">However, this result seemingly presents us with a problem. We know that water is stable with respect to its elements at 298 K and that the above reaction occurs spontaneously&#x2014;try holding a match to a hydrogen-oxygen mixture&#x0021; But doesn&#x2019;t the negative entropy change contravene the Second Law of thermodynamics, which states that spontaneous processes <i>increase</i> entropy? Of course, it doesn&#x2019;t&#x2014;there are no known exceptions to any of the laws of thermodynamics. The apparent problem arises from an imprecise application of the Second Law. We have only calculated the entropy change for the H<sub>2</sub>/O<sub>2</sub>/H<sub>2</sub>O <i>system</i>. The Second Law refers to the entropy of the universe increasing as a requirement for spontaneity.</p>
+<p class="indent"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x0394;</m:mi><m:msubsup><m:mi>H</m:mi><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>&#x00B0;</m:mo></m:msubsup></m:mrow></m:math> for water is &#x2013;285.8 kJ mol<sup>&#x2013;1</sup> so the enthalpy change for the above reaction as written (i.e. the system) is &#x2013;571.6 kJ. Clearly,</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:mi>H</m:mi><m:mo>&#x00B0;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>s</m:mtext><m:mtext>u</m:mtext><m:mtext>r</m:mtext><m:mtext>r</m:mtext><m:mtext>o</m:mtext><m:mtext>u</m:mtext><m:mtext>n</m:mtext><m:mtext>d</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>g</m:mtext><m:mtext>s</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>&#x0394;</m:mi><m:mi>H</m:mi><m:mo>&#x00B0;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>s</m:mtext><m:mtext>y</m:mtext><m:mtext>s</m:mtext><m:mtext>t</m:mtext><m:mtext>e</m:mtext><m:mtext>m</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p>
+<p class="noindent">From <a href="#eq3.2">eqn 3.2</a>,</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x0394;</m:mi><m:mi>S</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>s</m:mtext><m:mtext>u</m:mtext><m:mtext>r</m:mtext><m:mtext>r</m:mtext><m:mtext>o</m:mtext><m:mtext>u</m:mtext><m:mtext>n</m:mtext><m:mtext>d</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>g</m:mtext><m:mtext>s</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mi>&#x0394;</m:mi><m:mi>H</m:mi><m:mo>&#x00B0;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>s</m:mtext><m:mtext>u</m:mtext><m:mtext>r</m:mtext><m:mtext>r</m:mtext><m:mtext>o</m:mtext><m:mtext>u</m:mtext><m:mtext>n</m:mtext><m:mtext>d</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>g</m:mtext><m:mtext>s</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>/</m:mo><m:mi>T</m:mi><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>&#x0394;</m:mi><m:mi>H</m:mi><m:mo>&#x00B0;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>s</m:mtext><m:mtext>y</m:mtext><m:mtext>s</m:mtext><m:mtext>t</m:mtext><m:mtext>e</m:mtext><m:mtext>m</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>/</m:mo><m:mi>T</m:mi></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>+</m:mo><m:mn>571.6</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>3</m:mn></m:msup><m:mo>/</m:mo><m:mn>298</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>J</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo>/</m:mo><m:mtext>K</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>+</m:mo><m:mn>1920</m:mn><m:mtext>J</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">Considering the total entropy change,</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x0394;</m:mi><m:mi>S</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>u</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>v</m:mtext><m:mtext>e</m:mtext><m:mtext>r</m:mtext><m:mtext>s</m:mtext><m:mtext>e</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mi>&#x0394;</m:mi><m:mi>S</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>s</m:mtext><m:mtext>y</m:mtext><m:mtext>s</m:mtext><m:mtext>t</m:mtext><m:mtext>e</m:mtext><m:mtext>m</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>&#x0394;</m:mi><m:mi>S</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>s</m:mtext><m:mtext>u</m:mtext><m:mtext>r</m:mtext><m:mtext>r</m:mtext><m:mtext>o</m:mtext><m:mtext>u</m:mtext><m:mtext>n</m:mtext><m:mtext>d</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>g</m:mtext><m:mtext>s</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mn>327</m:mn><m:mo>+</m:mo><m:mn>1920</m:mn></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>+</m:mo><m:mn>1593</m:mn><m:mtext>J</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">Hence, there is an overall <i>increase</i> in the total entropy of the universe, in accord with what is expected from the Second Law.</p>
+</section>
+<section epub:type="chapter" id="sec3.5">
+<a id="page_38" class="page" style="width:70%;">Page 38, Chapter 3 Entropy in chemistry</a>
+<h2 class="main">3.5<span class="space">&#160;</span>Concluding remarks</h2>
+<p class="noindent">The ideas introduced in this chapter are some of the most fundamental in physical chemistry. In the context of this book, the main use of entropy is in providing a framework for describing the degree of organization in a system.</p>
+<p class="indent">It also gives us a method for predicting the course of chemical reactions (or other processes). However, it is not very convenient to have to consider the whole universe every time we want to study a particular reaction and it would be useful to focus attention only on the system that is of interest. The development of suitable methods for this will be the subject of the next chapter.</p>
+</section>
+</section>
+</section>
+</body>
+</html>

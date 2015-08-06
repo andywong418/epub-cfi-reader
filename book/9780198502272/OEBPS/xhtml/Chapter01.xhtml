@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Quantum Mechanics 2: The Toolkit</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch01">
+<a id="page_1" class="page" style="width:70%;">Page 1, Chapter 1 Exact symmetries</a>
+<h1 class="main">1<span class="space">&#160;</span>Exact symmetries</h1>
+<p class="noindent">In <i>Quantum mechanics 1</i> we introduced the idea of molecular symmetry, based on the equilibrium geometry of a molecule and showed how the molecular point group could be applied, both to <i>classify</i> the symmetries of molecular vibrations and orbitals, and to <i>construct</i> the appropriate wavefunctions using symmetry-adapted linear combinations. However, the molecular point group is not the only type of symmetry group of relevance in chemistry. The molecular point group symmetry is only an approximate symmetry, because the whole idea of a molecular geometry relies on the Born&#x2013;Oppenheimer approximation (see <i>Quantum mechanics 1</i>, <a href="Chapter02.xhtml#sec2.5">Section 2.5</a>). The Schr&#x00F6;dinger equation of a molecule is also invariant to a number of other symmetries, which are exact, in the sense of not being dependent on the Born&#x2013;Oppenheimer approximation:</p>
+<p class="blist" style="margin-top:1em;">&#x2022;<span class="space">&#160;</span>translational symmetry</p>
+<p class="blist">&#x2022;<span class="space">&#160;</span>rotational symmetry</p>
+<p class="blist">&#x2022;<span class="space">&#160;</span>inversion symmetry</p>
+<p class="blist">&#x2022;<span class="space">&#160;</span>time-reversal symmetry</p>
+<p class="blist">&#x2022;<span class="space">&#160;</span>permutation symmetry</p>
+<section epub:type="chapter" id="sec1.1">
+<h2 class="h2">1.1<span class="space">&#160;</span>Symmetries of space</h2>
+<section epub:type="chapter">
+<h3 class="h3">Translational and rotational symmetry</h3>
+<p class="noindent">These symmetries arise from the uniformity of space. The properties of an object do not depend on where it is situated or how it is oriented in the coordinate system (or equivalently, on the location and orientation of the coordinate system relative to the centre of mass). In classical physics these observations lead to conservation laws for the momentum and the angular momentum. In quantum mechanics the corresponding operators commute with the Hamiltonian, so it is possible to find states with fixed values of the energy, the momentum, and the allowed angular momentum eigenvalues. The eigenfunctions for momentum and angular momentum have already been described in <a href="Chapter03.xhtml">Chapter 3</a> of <i>Quantum mechanics 1</i>.</p>
+<aside class="abc" style="margin-top:3.5em;" epub:type="sidebar">
+<p class="sidebar">The parity of a wavefunction is its symmetry to an inversion of all coordinates through the origin.</p>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Inversion symmetry &#x2013; parity</h3>
+<p class="noindent">Inversion symmetry, however, is a different matter. It has no classical counterpart, and it involves the transformation of the coordinates of all the particles (nuclei and electrons) into values inverted through the origin. This inversion operation should not be confused with the inversion operation of the molecular point group. The inversion of the coordinates described here may <a id="page_2" class="page">Page 2, Chapter 1 Exact symmetries</a>alter the configuration of particles so that it can not be superimposed on the original configuration; but it does not alter any of the terms in the Schr&#x00F6;dinger equation, and in this sense it is a symmetry. Furthermore, the position of the origin for the inversion is arbitrary: it does not have to be at the centre of mass of the molecule.</p>
+<p class="indent">This invariance of the Schr&#x00F6;dinger equation is easily verified. Inversion leads to the transformation of all position vectors <b>r</b> to &#x2013;<b>r</b>. The transformation has no effect on the kinetic energy operator, which only contains second derivatives with respect to the coordinates. Although all first derivatives change sign on inversion, second derivatives do not, since the sign change of the second differentiation cancels out that of the first. Similarly, inverting the coordinates does not change any of the inter-particle distances, so the potential energy operator is also unaffected. Hence the inversion operator has no effect on the Hamiltonian, commutes with it, and does not alter the energy. A consequence of this commutation is that it is possible to contruct a complete set of eigenfunctions of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> that are also eigenfunctions of the inversion.</p>
+<aside class="abc" style="margin-top:-12.5em;" epub:type="sidebar">
+<p class="sidebar" id="prb1.1.1"><b>Problem 1.1.1.</b> <i>Show that inversion transfoms ali momenta</i> <b>p</b> <i>to</i> &#x2013;<b>p</b>, <i>but that angular momenta (defined as</i> <b>r</b> &#x2227; <b>p</b><i>) do not change sign under inversion. Hence, the angular momentum operator is invariant to inversion and it is possible to contruct a complete set of angular momentum eigenfunctions that are also eigenfunctions of the inversion</i>.</p>
+</aside>
+<p class="indent">Since two successive inversions are equivalent to the identity operation, transforming all wavefunctions into themselves, the only possible eigenvalues for the inversion operator are the square roots of 1, that is &#x00B1;1. Wavefunctions can therefore be labelled &#x002B; or &#x2013; according to this eigenvalue, which is known as the <i>parity</i> of the state.</p>
+<p class="indent">The parity of a state is very useful in calculating matrix elements or selection rules. For example, two wavefunctions of different parity must be orthogonal, because the integrand of &#x003C; &#x002B;|&#x2013; &#x003E; is odd with respect to inversion. (For an integral to be non-zero, the integrand must be totally symmetric with respect to <i>all</i> symmetries, see Section 4.8 of <i>Quantum mechanics 1</i>.) Similarly, a matrix element of a scalar quantity must be zero if the bra and the ket have different parities, because a scalar quantity and its corresponding operator (such as energy) are unaltered by inversion; thus matrix elements of the form &#x003C; &#x2013;| &#x002B; |&#x002B; &#x003E;or&#x003C; &#x002B;| &#x002B; |&#x2013;&#x003E; must be identically zero because the parity of the integrand is odd. On the other hand vector quantities (e.g. position, momentum, and dipole moment) have odd parity. Thus all matrix elements of these operators between states of the same parity, that is, of the types &#x003C; &#x002B;| &#x2013; |&#x002B; &#x003E; and &#x003C; &#x2013; | &#x2013; | &#x2013; &#x003E;, must be zero. Since the intensity of an optical absorption or emission is proportional to the square modulus of the matrix element of the dipole moment operator, we can conclude that all one-photon &#x002B; &#x2194; &#x002B; and &#x2013; &#x2194; &#x2013; transitions are forbidden.</p>
+<aside class="abc" style="margin-top:-18.5em;" epub:type="sidebar">
+<p class="sidebar">Some nuclear processes appear to violate inversion symmetry, notably <i>&#x03B2;</i> decay.The effect is generally unimportant in chemistry, but inclusion of parity non-conservation in the Schr&#x00F6;dinger equation leads to very small energy differences between enantiomers, and could lie at the origin of the biological preference for particular chiralities of aminoacid, and DNA.</p>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Time-reversal symmetry</h3>
+<p class="noindent">Time-reversal symmetry has deep consequences in quantum mechanics, but we shall defer any discussion of the role of time until <a href="Chapter05.xhtml">Chapter 5</a>.</p>
+</section>
+<section epub:type="chapter" id="sec1.2">
+<h2 class="h2" style="width:60%;">1.2<span class="space">&#160;</span>Permutation symmetry &#x2013; the Pauli principle</h2>
+<p class="noindent">Permutation symmetry also has no counterpart in classical mechanics, but it has the most important consequences in chemistry, for example the Pauli exclusion principle, which dictates the structure of the periodic table.</p>
+<aside class="abc" style="margin-top:-3.5em;" epub:type="sidebar">
+<p class="sidebar">The Schr&#x00F6;dinger equation is invariant to any permutation, or relabelling of identical particles.</p>
+</aside>
+<p class="noindent"><a id="page_3" class="page">Page 3, Chapter 1 Exact symmetries</a></p>
+<p class="indent">A permutation is a relabelling of indistinguishable particles. It is obvious that the observable properties of a helium atom (for example) should not depend on which electron is labelled 1 and which is labelled 2. A quick consideration of the electronic Hamiltonian in atomic units (see p. 27, <i>Quantum mechanics 1</i>)</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msubsup><m:mo>&#x2207;</m:mo><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup><m:mi>&#x03C8;</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msubsup><m:mo>&#x2207;</m:mo><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup><m:mi>&#x03C8;</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>2</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mi>&#x03C8;</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>2</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac><m:mi>&#x03C8;</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mi>&#x03C8;</m:mi><m:mo>=</m:mo><m:mi>E</m:mi><m:mi>&#x03C8;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(1.1)</td>
+</tr>
+</table>
+<p class="noindent">shows that both the kinetic energy operator and the potential energy operator are unchanged by such a relabelling so that it is possible to label each eigenfunction with an eigenvalue of the electron permutation operator. (This conclusion is not altered by inclusion of the nuclear kinetic energy.)</p>
+<p class="indent">Just as for the inversion operator, when the permutation of two particles is performed twice in succession the result is the identity. Thus the eigenvalues of such a permutation may only be &#x00B1;1.</p>
+<p class="indent">Larger atoms and molecules contain more than two electrons and so there are more complicated reordering permutations to consider. For example in a lithium atom there are 3&#x0021; = 6 distinct permutations of the electrons: 123, 132, 213, 321, 231, and 312, as depicted in <a href="#fig1.1">Fig. 1.1</a> The first is the identity, the next three are the result of single pair exchanges leaving the third particle unaltered, and the final two can be obtained as the result of two such exchanges. In general, for an atom or molecule with <i>n</i> electrons there are <i>n</i>&#x0021; such permutations to consider.</p>
+<aside class="abc" style="margin-top:-24.5em;" epub:type="sidebar">
+<figure class="fig1" id="fig1.1">
+<img src="../images/fig1.1.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 1.1</b> The possible permutations of three identical objects.The identity has been omitted.</figcaption></figure>
+</aside>
+<p class="indent">All permutations can be expressed as a sequence of simple pair exchanges, and permutations can be divided into two sets, those involving an odd number of exchanges, and those involving an even number. They are called odd and even permutations respectively. It is impossible to construct an even permutation from an odd number of exchanges or vice versa. For three electrons the permutations 123, 231, and 312 are even, and the permutations 132, 213, and 321 are odd. There are always equal numbers of even and odd permutations.</p>
+<aside class="abc" style="margin-top:-4.5em;" epub:type="sidebar">
+<p class="sidebar">Every permutation can be characterized unambiguously as either even or odd.</p>
+</aside>
+<p class="indent">If we consider the <i>n</i>&#x0021; possible permutations of <i>n</i> identical particles as symmetry operations we find that they form a symmetry group, called a permutation group and given the name <i>S<sub>n</sub></i>. The symmetry group <i>S<sub>3</sub></i> is isomorphic with the point group <i>C<sub>3&#x03C5;</sub></i>, which means that it has the same group multiplication table. The fact that the symmetry operations of <i>C<sub>3&#x03C5;</sub></i> induce all possible rearrangements of the three H atoms of an ammonia molecule is a reflection of this fact, which is illustrated by comparing the group multiplication table of <i>C<sub>3&#x03C5;</sub></i> in <a href="#tab1.1">Table 1.1</a> with that of <i>S<sub>3</sub></i> in <a href="#tab1.2">Table 1.2</a>. The permutations are identified by their effect on the ordering 123.</p>
+<p class="indent">Following the arguments of <i>Quantum mechanics 1</i>, <a href="Chapter04.xhtml">Chapter 4</a>, we conclude that the possible wavefunctions of a molecule must generate irreducible representations (irreps) of the electron permutation group. Simultaneously they must also generate irreps of the nuclear permutation group for all collections of identical nuclei in the molecule, for example in the ethene molecule this group will contain the permutation of the two C atoms and all possible permutations of the four H atoms.</p>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<p class="tab-cap" id="tab1.1" style="width:100%;"><b>Table 1.1</b> <i>C<sub>3v</sub></i> group multiplication table &#x2013; <i>BA</i></p>
+<table class="width100b" style="margin-bottom:1em;width:100%">
+<colgroup>
+<col style="width:15%;"/>
+<col style="width:15%;"/>
+<col style="width:15%;"/>
+<col style="width:15%;"/>
+<col style="width:15%;"/>
+<col style="width:15%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="vertical-align:top;"></td>
+<td style="vertical-align:top;" class="borb" colspan="6">First operation <i>A</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="borb"><i>B</i></td>
+<td style="vertical-align:top;" class="borb"><i>E</i></td>
+<td style="vertical-align:top;" class="borb">c<sub>3</sub></td>
+<td style="vertical-align:top;" class="borb"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>C</m:mi><m:mn>3</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:math></td>
+<td style="vertical-align:top;" class="borb">&#x03C3;<sub>1</sub></td>
+<td style="vertical-align:top;" class="borb">&#x03C3;<sub>2</sub></td>
+<td style="vertical-align:top;" class="borb">&#x03C3;<sub>3</sub></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>E</i></td>
+<td style="vertical-align:top;"><i>E</i></td>
+<td style="vertical-align:top;"><i>c</i><sub>3</sub></td>
+<td style="vertical-align:top;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>C</m:mi><m:mn>3</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:math></td>
+<td style="vertical-align:top;">&#x03C3;<sub>1</sub></td>
+<td style="vertical-align:top;">&#x03C3;<sub>2</sub></td>
+<td style="vertical-align:top;">&#x03C3;<sub>3</sub></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>c</i><sub>3</sub></td>
+<td style="vertical-align:top;"><i>c</i><sub>3</sub></td>
+<td style="vertical-align:top;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>C</m:mi><m:mn>3</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:math></td>
+<td style="vertical-align:top;"><i>E</i></td>
+<td style="vertical-align:top;">&#x03C3;<i><sub>2</sub></i></td>
+<td style="vertical-align:top;">&#x03C3;<sub>3</sub></td>
+<td style="vertical-align:top;">&#x03C3;<sub>1</sub></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>C</m:mi><m:mn>3</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:math></td>
+<td style="vertical-align:top;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>C</m:mi><m:mn>3</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:math></td>
+<td style="vertical-align:top;"><i>E</i></td>
+<td style="vertical-align:top;"><i>c</i><sub>3</sub></td>
+<td style="vertical-align:top;">&#x03C3;<sub>3</sub></td>
+<td style="vertical-align:top;">&#x03C3;<sub>1</sub></td>
+<td style="vertical-align:top;">&#x03C3;<sub>2</sub></td>
+</tr>
+<tr>
+<td style="vertical-align:top;">&#x03C3;<sub>1</sub></td>
+<td style="vertical-align:top;">&#x03C3;<sub>1</sub></td>
+<td style="vertical-align:top;">&#x03C3;<sub>3</sub></td>
+<td style="vertical-align:top;">&#x03C3;<sub>2</sub></td>
+<td style="vertical-align:top;"><i>E</i></td>
+<td style="vertical-align:top;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>C</m:mi><m:mn>3</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:math></td>
+<td style="vertical-align:top;"><i>C<sub>3</sub></i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;">&#x03C3;<sub>2</sub></td>
+<td style="vertical-align:top;">&#x03C3;<i><sub>2</sub></i></td>
+<td style="vertical-align:top;">&#x03C3;<sub>1</sub></td>
+<td style="vertical-align:top;">&#x03C3;<sub>3</sub></td>
+<td style="vertical-align:top;"><i>c</i><sub>3</sub></td>
+<td style="vertical-align:top;"><i>E</i></td>
+<td style="vertical-align:top;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>C</m:mi><m:mn>3</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:math></td>
+</tr>
+<tr>
+<td style="vertical-align:top;">&#x03C3;<sub>3</sub></td>
+<td style="vertical-align:top;">&#x03C3;<sub>3</sub></td>
+<td style="vertical-align:top;">&#x03C3;<sub>2</sub></td>
+<td style="vertical-align:top;">&#x03C3;<sub>1</sub></td>
+<td style="vertical-align:top;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>C</m:mi><m:mn>3</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:math></td>
+<td style="vertical-align:top;"><i>c</i><sub>3</sub></td>
+<td style="vertical-align:top;"><i>E</i></td>
+</tr>
+</table>
+</aside>
+<p class="noindent"><a id="page_4" class="page">Page 4, Chapter 1 Exact symmetries</a></p>
+<p class="tab-cap1" id="tab1.2"><b>Table 1.2</b> <i>S</i><sub>3</sub> group multiplication table &#x2013; <i>BA</i></p>
+<table class="width100b" style="margin-bottom:1em;width:50%;margin-left:5em;">
+<colgroup>
+<col style="width:15%;"/>
+<col style="width:15%;"/>
+<col style="width:15%;"/>
+<col style="width:15%;"/>
+<col style="width:15%;"/>
+<col style="width:15%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="vertical-align:top; padding-top:0.5em;"></td>
+<td style="vertical-align:top; padding-top:0.5em;" colspan="6">First operation <i>A</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-bottom:0.5em;"><i>B</i></td>
+<td style="vertical-align:top; border-bottom:1px solid black; padding-bottom:0.5em;">123</td>
+<td style="vertical-align:top; border-bottom:1px solid black; padding-bottom:0.5em;">231</td>
+<td style="vertical-align:top; border-bottom:1px solid black; padding-bottom:0.5em;">312</td>
+<td style="vertical-align:top; border-bottom:1px solid black; padding-bottom:0.5em;">132</td>
+<td style="vertical-align:top; border-bottom:1px solid black; padding-bottom:0.5em;">321</td>
+<td style="vertical-align:top; border-bottom:1px solid black; padding-bottom:0.5em;">213</td>
+</tr>
+<tr>
+<td style="vertical-align:top;">123</td>
+<td style="vertical-align:top;">123</td>
+<td style="vertical-align:top;">231</td>
+<td style="vertical-align:top;">312</td>
+<td style="vertical-align:top;">132</td>
+<td style="vertical-align:top;">321</td>
+<td style="vertical-align:top;">213</td>
+</tr>
+<tr>
+<td style="vertical-align:top;">231</td>
+<td style="vertical-align:top;">231</td>
+<td style="vertical-align:top;">312</td>
+<td style="vertical-align:top;">123</td>
+<td style="vertical-align:top;">321</td>
+<td style="vertical-align:top;">213</td>
+<td style="vertical-align:top;">132</td>
+</tr>
+<tr>
+<td style="vertical-align:top;">312</td>
+<td style="vertical-align:top;">312</td>
+<td style="vertical-align:top;">123</td>
+<td style="vertical-align:top;">231</td>
+<td style="vertical-align:top;">213</td>
+<td style="vertical-align:top;">132</td>
+<td style="vertical-align:top;">321</td>
+</tr>
+<tr>
+<td style="vertical-align:top;">132</td>
+<td style="vertical-align:top;">132</td>
+<td style="vertical-align:top;">213</td>
+<td style="vertical-align:top;">321</td>
+<td style="vertical-align:top;">123</td>
+<td style="vertical-align:top;">312</td>
+<td style="vertical-align:top;">231</td>
+</tr>
+<tr>
+<td style="vertical-align:top;">321</td>
+<td style="vertical-align:top;">321</td>
+<td style="vertical-align:top;">132</td>
+<td style="vertical-align:top;">213</td>
+<td style="vertical-align:top;">231</td>
+<td style="vertical-align:top;">123</td>
+<td style="vertical-align:top;">312</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-bottom:0.5em;">213</td>
+<td style="vertical-align:top;">213</td>
+<td style="vertical-align:top;">321</td>
+<td style="vertical-align:top;">132</td>
+<td style="vertical-align:top;">312</td>
+<td style="vertical-align:top;">231</td>
+<td style="vertical-align:top;">123</td>
+</tr>
+</table>
+<p class="indent">All permutation groups have two special irreps &#x2013; the totally symmetric irrep, in which all the characters are unity, and the <i>alternating</i> irrep, in which all even permutations have characters of unity and all odd permutations have characters of minus one. The fact that there are equal numbers of even and odd permutations follows from the orthogonality of these irreducible representations.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">The Pauli principle</h3>
+<p class="noindent">The <i>Pauli principle</i> is of central importance in chemistry. According to this principle, elementary particles can be divided into two types, depending on the value of their spin quantum number: <i>bosons</i> have integer spins (0, 1, 2, etc.) and <i>fermions</i> have odd half-integer spins (<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, etc.) The Pauli principle states that the wavefunction must be antisymmetric to the interchange of any pair of identical fermions and symmetric to all interchanges of identical bosons. In consequence, all odd permutations of fermions must have characters of &#x2013;1 in the permutation group, and all even permutations of fermions (and all permutations of bosons) must have characters of &#x002B;1. Therefore the only irreps of the permutation groups that can be found in nature are the totally symmetric irrep, for permutations of bosons, and the alternating irrep, for permutations of fermions.</p>
+<aside class="abc" style="margin-top:-14.5em;" epub:type="sidebar">
+<p class="sidebar">All particles can be classified as either fermions or bosons.The wavefunction must change sign on the permutation of any pair of identical fermions, and remain invariant to any interchange of identical bosons.</p>
+</aside>
+<p class="indent">The fact that only these permutation symmetries occur in nature places severe restrictions on the possible forms of the wavefunctions of molecules, with respect to the permutation of electrons and of nuclei.</p>
+<p class="indent">As a simple illustration we take a two-electron system, such as the helium atom or the hydrogen molecule. If we neglect spin&#x2013;orbit coupling, the electronic wavefunction can be separated into the product of an orbital function, which depends only on the spatial coordinates of the electrons, and a spin function, which depends only on the spin coordinates (see <i>Quantum mechanics 1</i>, p. 31):</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03C8;</m:mi><m:mrow><m:mi>e</m:mi><m:mn>1</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03D5;</m:mi><m:mrow><m:mi>o</m:mi><m:mi>r</m:mi><m:mi>b</m:mi></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x00D7;</m:mo><m:msub><m:mi>&#x03C7;</m:mi><m:mrow><m:mi>s</m:mi><m:mi>p</m:mi><m:mi>i</m:mi><m:mi>n</m:mi></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03C9;</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>&#x03C9;</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.3em;">(1.2)</td>
+</tr>
+</table>
+<p class="noindent">We consider the effect of permuting the electrons on each function separately, and then find the symmetry-adapted linear combinations that obey the constraints prescribed by the Pauli principle.<a id="page_5" class="page">Page 5, Chapter 1 Exact symmetries</a></p>
+<p class="indent">The spin function of a single electron can take only two forms, depending on whether the quantum number <i>m</i><sub>s</sub> is <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> or <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>. We denote these possibilities respectively |<i>&#x03B1;</i> &#x003E; and |<i>&#x03B2;</i> &#x003E;. In a two-electron system the spin functions can be divided into three sets, which are not interconverted by permutations; each set is therefore a basis for a representation of the electron permutation group <i>S</i><sub>2</sub>. The sets are &#x007B;|<i>&#x03B1;&#x03B1;</i> &#x003E;&#x007D; and &#x007B;|<i>&#x03B2;&#x03B2;</i> &#x003E;&#x007D; and &#x007B;|<i>&#x03B2;&#x03B1;</i> &#x003E;, |<i>&#x03B1;&#x03B2;</i> &#x003E;&#x007D;. The first two of these are one-dimensional bases for the totally symmetric irrep, since they are unchanged by permutation of the two electrons. The third set contains two functions that are interconverted by the permutation and so form a two-dimensional basis for the group. The character table of <i>S</i><sub>2</sub> is given in <a href="#tab1.3">Table 1.3</a>, together with the representation generated by this basis, labelled &#x0393;. The group has only two irreps: the totally symmetric irrep, <i>A</i>, and the alternating irrep, <i>B</i>. The representation can be reduced by inspection to <i>A</i> &#x002B; <i>B</i> (alternatively use the reduction formula, <a href="Chapter04.xhtml#eq4.28">eqn 4.28</a> in <i>Quantum mechanics 1</i>). Use of projection operators gives the combinations |<i>&#x03B1;&#x03B2;</i> &#x003E; &#x002B;|<i>&#x03B2;&#x03B1;</i> &#x003E; for the irrep <i>A</i> and |<i>&#x03B1;&#x03B2;</i> &#x003E; &#x2013; |<i>&#x03B2;&#x03B1;</i> &#x003E; for the irrep <i>B</i>. The first of these combinations is even with respect to the permutation, and the second is odd.</p>
+<p class="indent">The overall symmetry of <i>&#x03C8;</i><sub>el</sub> with respect to permutation of the electrons must be <i>B</i>, and since <i>&#x03C8;</i><sub>el</sub> is obtained by multiplying the spin function and the orbital function, this symmetry must be the direct product of the spin symmetry with the orbital symmetry (see Section 4.9 of <i>Quantum mechanics 1</i>). The direct product table for <i>S</i><sub>2</sub> is given in <a href="#tab1.4">Table 1.4</a>, from which we see that either the spin symmetry must be <i>A</i> and the orbital symmetry <i>B</i>, or vice versa.</p>
+<aside class="abc" style="margin-top:-23em;" epub:type="sidebar">
+<p class="tab-cap" style="width:100%;" id="tab1.3"><b>Table 1.3</b> <i>S</i><sub>2</sub> character table</p>
+<table class="width100b" style="margin-bottom:1em;">
+<colgroup>
+<col style="width:35%;"/>
+<col style="width:35%;"/>
+<col style="width:30%;"/>
+</colgroup>
+<tr>
+<td style="vertical-align:top; border-bottom:1px solid black;"><p class="tab-l"></p></td>
+<td style="vertical-align:top; border-bottom:1px solid black;"><p class="tab-c1">12</p></td>
+<td style="vertical-align:top; border-bottom:1px solid black;"><p class="tab-c1">21</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>A</i></p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>B</i></p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#x2013;1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">&#x0393;</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;2</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+</tr>
+</table>
+</aside>
+<aside class="abc" style="margin-top:-8.5em;" epub:type="sidebar">
+<p class="tab-cap" style="width:100%;" id="tab1.4"><b>Table 1.4</b> <i>S</i><sub>2</sub> direct products</p>
+<table class="width100b" style="margin-bottom:1em;">
+<colgroup>
+<col style="width:35%;"/>
+<col style="width:35%;"/>
+<col style="width:30%;"/>
+</colgroup>
+<tr>
+<td style="vertical-align:top; border-bottom:1px solid black;"><p class="tab-l"></p></td>
+<td style="vertical-align:top; border-bottom:1px solid black;"><p class="tab-l"><i>A</i></p></td>
+<td style="vertical-align:top; border-bottom:1px solid black;"><p class="tab-l"><i>B</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>A</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>A</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>B</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>B</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>B</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>A</i></p></td>
+</tr>
+</table>
+</aside>
+<p class="indent">We next consider the orbital symmetry, and identify two possibilities. Either the two electrons occupy the same orbital, in which case they both have the same orbital function <i>&#x03D5;</i><sub>1</sub>, or they occupy different orbitals. We denote the first of these possibilities |11 &#x003E;, which clearly has <i>A</i> symmetry; the second possibility gives the two functions |12 &#x003E; and |21 &#x003E;, which are interconverted by the permutation, and so, repeating the analysis just performed for the spin functions, they give the symmetry-adapted linear combinations |12 &#x003E; &#x002B;|21 &#x003E; with <i>A</i> symmetry and |12 &#x003E; &#x2013;|21 &#x003E; with <i>B</i> symmetry.</p>
+<aside class="abc" style="margin-top:0.2em;" epub:type="sidebar">
+<p class="sidebar">The Pauli symmetry can be satisfied for two electrons in two ways: either the orbital function is even and the spin function odd, giving a singlet state, or vice versa, giving a triplet state of degeneracy 3 because of the three possible even spin functions.</p>
+</aside>
+<p class="indent">We therefore conclude that <i>A</i> orbital functions, such as |11 &#x003E; or |12 &#x003E; &#x002B;|21 &#x003E;, which are even with respect to the permutation, can only be combined with the <i>B</i> spin function |<i>&#x03B1;&#x03B2;</i> &#x003E; &#x2013; |<i>&#x03B2;&#x03B1;</i> &#x003E;; this is called a <i>singlet</i> state, because of the spin degeneracy of 1 (only the single <i>B</i> spin function is possible). On the other hand, the <i>B</i> orbital function |12 &#x003E; &#x2013; |21 &#x003E; can be associated with any of the three spin functions with <i>A</i> symmetry, |<i>&#x03B1;&#x03B1;</i> &#x003E;, |<i>&#x03B2;&#x03B2;</i> &#x003E;, or |<i>&#x03B1;&#x03B2;</i> &#x003E; &#x002B;|<i>&#x03B2;&#x03B1;</i> &#x003E;; this state therefore has a spin degeneracy of three, and is called a <i>triplet</i> state.</p>
+<p class="indent">One of the most important results of this type of analysis is that it shows that if the two electrons occupy the same orbital, the spin state must be singlet. It is not possible for two electrons to have simultaneously the same orbital function and the same spin function &#x2013; this would give an electronic wavefunction with <i>A</i> symmetry, in contravention of the Pauli principle. This argument shows how the familiar <i>Pauli exclusion principle</i> is a consequence of the permutation symmetries of the electrons.</p>
+<a id="page_6" class="page" style="width:70%;">Page 6, Chapter 1 Exact symmetries</a>
+<p class="indent">The analysis we have just presented could easily have been done without recourse to group theory. However, in more complicated situations group theory enables us to draw conclusions about electronic permutation symmetries and degeneracies much more easily than commonsense. We illustrate this point by considering the possibilities for a three-electron system, such as the Li atom.</p>
+<p class="indent">The permutation group <i>S</i><sub>3</sub> is isomorphic with <i>C</i><sub>3&#x03C5;</sub>, and its character table is given in <a href="#tab1.5">Table 1.5</a>. The class of rotational operations in <i>C</i><sub>3&#x03C5;</sub> corresponds to the class of <i>cyclic permutations</i> in <i>S</i><sub>3</sub> (imagine the three numbers at the corners of a triangle and rotate the triangle 120&#x00B0;, as shown in <a href="#fig1.1">Fig. 1.1</a>). Similarly the class of reflections corresponds to the class of simple <i>pair interchanges</i> (imagine the effect on the same triangle).</p>
+<p class="indent">The Pauli principle states that the overall electronic symmetry must be <i>A</i><sub>2</sub> (the alternating irrep). The direct product <a href="#tab1.6">Table 1.6</a> shows that this can only happen if the spin function is <i>A</i><sub>1</sub> and the orbital function <i>A</i><sub>2</sub> (or vice versa), or if both have <i>E</i> symmetry, and in the latter case, only one of the four possible product functions will be permissible.</p>
+<p class="indent">In our three-electron system we can identify three conceivable types of electron configuration:</p>
+<p class="blist" style="margin-top:1em;">&#x2022;<span class="space">&#160;</span>all the electrons occupy the same orbital (<i>&#x03D5;</i><sub>1</sub>), |111 &#x003E;</p>
+<p class="blist">&#x2022;<span class="space">&#160;</span>two electrons occupy <i>&#x03D5;</i><sub>1</sub> and the third is in <i>&#x03D5;</i><sub>2</sub>, e.g. |112 &#x003E;</p>
+<p class="blist" style="margin-bottom:1em;">&#x2022;<span class="space">&#160;</span>all three electrons occupy different orbitals, e.g. |123 &#x003E;.</p>
+<aside class="abc" style="margin-top:-29.75em;" epub:type="sidebar">
+<p class="tab-cap" style="width:100%;" id="tab1.5"><b>Table 1.5</b> <i>S</i><sub>3</sub> character table</p>
+<table class="width100b" style="margin-bottom:1em;">
+<colgroup>
+<col style="width:25%;"/>
+<col style="width:25%;"/>
+<col style="width:25%;"/>
+<col style="width:25%;"/>
+</colgroup>
+<tr>
+<td style="vertical-align:top; border-bottom:1px solid black;"></td>
+<td style="vertical-align:top; border-bottom:1px solid black; padding-left:1em;">123</td>
+<td style="vertical-align:top; border-bottom:1px solid black; padding-left:1em;">231,312</td>
+<td style="vertical-align:top; border-bottom:1px solid black; padding-left:1em;">132,321,213</td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>A</i><sub>1</sub></td>
+<td style="vertical-align:top;padding-left:1em;">1</td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>A</i><sub>2</sub></td>
+<td style="vertical-align:top;padding-left:1em;">1</td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>E</i></td>
+<td style="vertical-align:top;padding-left:1em;">2</td>
+<td style="vertical-align:top;"><p class="tab-c">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;0</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-top:1em;">(a)</td>
+<td style="vertical-align:top;padding-top:1em;padding-left:1em;">1</td>
+<td style="vertical-align:top;padding-top:1em;"><p class="tab-c">&#160;&#160;1</p></td>
+<td style="vertical-align:top;padding-top:1em;"><p class="tab-c">&#160;&#160;1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;">(b)</td>
+<td style="vertical-align:top;padding-left:1em;">3</td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding-bottom:0.5em;">(c)</td>
+<td style="vertical-align:top;padding-left:1em;">6</td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c">&#160;&#160;0</p></td>
+</tr>
+</table>
+</aside>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<p class="tab-cap" style="width:100%;" id="tab1.6"><b>Table 1.6</b> <i>S</i><sub>3</sub> and <i>C<sub>3v</sub></i> direct product table</p>
+<table class="width100b" style="margin-bottom:1em;width:100%">
+<colgroup>
+<col style="width:25%;"/>
+<col style="width:25%;"/>
+<col style="width:25%;"/>
+<col style="width:25%;"/>
+</colgroup>
+<tr>
+<td style="vertical-align:top; border-bottom:1px solid black;"></td>
+<td style="vertical-align:top; border-bottom:1px solid black;"><i>A</i><sub>1</sub></td>
+<td style="vertical-align:top; border-bottom:1px solid black;"><i>A</i><sub>2</sub></td>
+<td style="vertical-align:top; border-bottom:1px solid black;"><i>E</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>A</i><sub>1</sub></td>
+<td style="vertical-align:top;"><i>A</i><sub>1</sub></td>
+<td style="vertical-align:top;"><i>A</i><sub>2</sub></td>
+<td style="vertical-align:top;"><i>E</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>A</i><sub>2</sub></td>
+<td style="vertical-align:top;"><i>A</i><sub>2</sub></td>
+<td style="vertical-align:top;"><i>A</i><sub>1</sub></td>
+<td style="vertical-align:top;"><i>E</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>E</i></td>
+<td style="vertical-align:top;"><i>E</i></td>
+<td style="vertical-align:top;"><i>E</i></td>
+<td style="vertical-align:top;padding-bottom:0.5em;"><i>&#x0391;</i><sub>1</sub> &#x002B; <i>A</i><sub>2</sub> &#x002B; <i>E</i></td>
+</tr>
+</table>
+</aside>
+<p class="noindent">In case (a) all permutations give back the same function, which must therefore have <i>A</i><sub>1</sub> symmetry. Of course this configuration is forbidden by the exclusion principle, but it is instructive to see how this is shown by the group theory analysis. Case (b) gives three possible basis functions, |112 &#x003E;, |121 &#x003E;, and |211 &#x003E;. The cyclic permutations interconvert these basis functions, and therefore have a character of zero. However, for each pair exchange, one basis function is unchanged, giving a character of one.</p>
+<p class="indent">In case (c) there are six basis functions corresponding to the six different possible orderings of three numbers. Each permutation (apart from the identity) interconverts the basis functions &#x2013; thus the characters of all permutations (apart from the identity) in this representation are zero. The characters of all three representations are tabulated in <a href="#tab1.5">Table 1.5</a>, and the results are tabulated in <a href="#tab1.7">Table 1.7</a>.</p>
+<aside class="abc" style="margin-top:-14.75em;" epub:type="sidebar">
+<p class="sidebar" id="prb1.2.1"><b>Problem 1.2.1.</b> <i>Show that the three-dimensional representation generated by the basis functions</i> |112 &#x003E;, |121 &#x003E;, <i>and</i> |211 &#x003E; <i>can be reduced to A</i><sub>1</sub> &#x002B; E.</p>
+</aside>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<p class="sidebar" id="prb1.2.2"><b>Problem 1.2.2.</b> <i>Show that this representation can be reduced to</i> A<sub>1</sub> &#x002B; A<sub>2</sub> &#x002B; 2E.</p>
+</aside>
+<p class="tab-cap1" id="tab1.7"><b>Table 1.7</b> Symmetries of orbital functions in a three-electron atom</p>
+<table class="width100b" style="margin-bottom:1em;width:50%;margin-left:5em;">
+<tr>
+<td style="vertical-align:top; padding-top:0.5em;padding-bottom:0.5em; border-bottom:1px solid black;">Basis functions</td>
+<td style="vertical-align:top;padding-top:0.5em;padding-bottom:0.5em; border-bottom:1px solid black;">Symmetry</td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding-top:0.5em;">|111 &#x003E;</td>
+<td style="vertical-align:top;padding-top:0.5em;"><i>&#x0391;</i><sub>1</sub></td>
+</tr>
+<tr>
+<td style="vertical-align:top;">|112 &#x003E;, |121 &#x003E;,|211 &#x003E;</td>
+<td style="vertical-align:top;"><i>&#x0391;</i><sub>1</sub>&#x002B;<i>&#x0395;</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding-bottom:0.5em;">|123&#x003E;,|231 &#x003E;,|312&#x003E;,<br/>|132 &#x003E;, |321 &#x003E;,|213&#x003E;</td>
+<td style="vertical-align:middle;"><i>A</i><sub>1</sub>&#x002B;<i>A</i><sub>2</sub> &#x002B; 2<i>E</i></td>
+</tr>
+</table>
+<p class="noindent"><a id="page_7" class="page">Page 7, Chapter 1 Exact symmetries</a></p>
+<p class="tab-cap1" id="tab1.8"><b>Table 1.8</b> Symmetries of spin functions in a three-electron atom</p>
+<table class="width100b" style="margin-bottom:1em;width:50%;margin-left:5em;">
+<tr>
+<td style="vertical-align:top;padding-bottom:0.5em;padding-top:0.5em; border-bottom:1px solid black;"><i>M<sub>s</sub></i></td>
+<td style="vertical-align:top;padding-bottom:0.5em;padding-top:0.5em; border-bottom:1px solid black;">Basis functions</td>
+<td style="vertical-align:top;padding-bottom:0.5em;padding-top:0.5em; border-bottom:1px solid black;">Symmetry</td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding-top:0.5em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></td>
+<td style="vertical-align:top;padding-top:0.5em;">|<i>&#x03B1;&#x03B1;&#x03B1;</i> &#x003E;</td>
+<td style="vertical-align:top;padding-top:0.5em;"><i>A</i><sub>1</sub></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></td>
+<td style="vertical-align:top;">|<i>&#x03B1;&#x03B1;&#x03B2;</i> &#x003E;, |<i>&#x03B1;&#x03B2;&#x03B1;</i> &#x003E;, |<i>&#x03B2;&#x03B1;&#x03B2;</i> &#x003E;</td>
+<td style="vertical-align:top;"><i>&#x0391;</i><sub>1</sub>&#x002B;<i>&#x0395;</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></td>
+<td style="vertical-align:top;">|<i>&#x03B1;&#x03B2;&#x03B2;</i> &#x003E;, <i>|&#x03B2;&#x03B1;&#x03B2;</i> &#x003E;, |<i>&#x03B2;&#x03B2;&#x03B1;</i> &#x003E;</td>
+<td style="vertical-align:top;"><i>&#x0391;</i><sub>1</sub>&#x002B;<i>&#x0395;</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding-bottom:0.5em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></td>
+<td style="vertical-align:top;">|<i>&#x03B2;&#x03B2;&#x03B2;</i>&#x003E;</td>
+<td style="vertical-align:top;"><i>A</i><sub>1</sub></td>
+</tr>
+</table>
+<p class="indent">Turning to the spin functions, there are only two possibilities for an electron spin, <i>&#x03B1;</i> and <i>&#x03B2;</i>, giving combinations analogous to cases (a) and (b) above. Combinations analogous to case (c) cannot arise because they would require the existence of three different spin functions. The two functions with values of the <i>M<sub>s</sub></i> quantum number of &#x00B1;<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> (|<i>&#x03B1;&#x03B1;&#x03B1;</i> &#x003E; and |<i>&#x03B2;&#x03B2;&#x03B2;</i> &#x003E;) are separately bases for <i>&#x0391;</i><sub>1</sub>. The set of three spin functions with two spins up and one spin down <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>M</m:mi><m:mi>s</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, |<i>&#x03B1;&#x03B1;&#x03B2;</i> &#x003E;, |<i>&#x03B1;&#x03B2;&#x03B1;</i> &#x003E;, and |<i>&#x03B2;&#x03B1;&#x03B1;</i> &#x003E; are bases for <i>A</i><sub>1</sub> &#x002B; <i>E</i>, as in case (b) above. (Similarly for the corresponding set with <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>M</m:mi><m:mi>s</m:mi></m:msub><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>.) There are thus four spin functions of <i>A</i><sub>1</sub> symmetry, one with each possible value of the <i>M<sub>S</sub></i> quantum number from <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> to <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>. These are the four components of a state with spin degeneracy 4 and total spin quantum number <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>S</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, known as a <i>quartet</i> state. Similarly, the <i>E</i> spin functions are only found with <i>M<sub>S</sub></i> values of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> <i>E</i> functions have a spin degeneracy of 2 and a total spin quantum number of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>S</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, and are known as a <i>doublet</i> state. These results are summarized in <a href="#tab1.8">Table 1.8</a>.</p>
+<p class="indent">Having determined the possible symmetries of the spin functions and the orbital functions, we use the Pauli principle to decide which combinations are possible, that is, which combinations can lead to the only permitted final symmetry <i>A</i><sub>2</sub>.</p>
+<p class="indent">In electron configuration (a) the orbital function has <i>A</i><sub>1</sub> symmetry, and can only give the correct overall symmetry in combination with an <i>A</i><sub>2</sub> spin function. There is no spin function with <i>A</i><sub>2</sub> symmetry. We therefore conclude that this configuration is impossible; in other words, three electrons may not occupy the same orbital. (Of course this is a statement of the Pauli exclusion principle.)</p>
+<p class="indent">In configurations of type (b) there is another <i>A</i><sub>1</sub> orbital function, |112 &#x003E;&#x002B;|121 &#x003E;&#x002B;|211 &#x003E;, which is forbidden for the same reason (although we could not have worked this out easily from commonsense). There is also a doubly degenerate pair of <i>E</i> orbital functions, which can only be associated with a pair of spin functions of <i>E</i> symmetry, that is, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>S</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>. This is the case for the ground state Li atom, which has the electron configuration 1<i>s</i><sup>2</sup>2<i>s</i><sup>1</sup>. We conclude that only a doublet state is possible for this electron configuration. However, there are further restrictions of the possible combinations of spin and orbital functions in this case. There are two orbital functions of <i>E</i> symmetry, and two spin functions of <i>E</i> symmetry. There are therefore four possible combinations of them, which form a direct product basis for the representation <i>A</i><sub>1</sub> &#x002B; <i>A</i><sub>2</sub> &#x002B; <i>E</i>. The only electronic wavefunction permitted by</p>
+<aside class="abc" style="margin-top:-14.5em;" epub:type="sidebar">
+<p class="sidebar" id="prb1.2.3"><b>Problem 1.2.3.</b> <i>Use projection operators to find the orbital and spin functions that act as bases for the</i> E <i>irrep. Take the antisymmetrized direct product to show that the only doublet state with <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>M</m:mi><m:mi>s</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> is</i>|112 &#x003E;(|<i>&#x03B1;&#x03B2;&#x03B1;</i> &#x003E; &#x2013; |<i>&#x03B2;&#x03B1;&#x03B1; &#x003E;</i>) &#x002B; |121 <i>&#x003E;</i>(|<i>&#x03B2;&#x03B1;&#x03B1;</i> &#x003E; &#x2013; |<i>&#x03B1;&#x03B1;&#x03B2;</i> &#x003E;) &#x002B; |211 &#x003E; (|<i>&#x03B1;&#x03B1;&#x03B2;</i> &#x003E; &#x2013; |<i>&#x03B1;&#x03B2;&#x03B1;</i> &#x003E;).</p>
+</aside>
+<p class="noindent"><a id="page_8" class="page">Page 8, Chapter 1 Exact symmetries</a>the Pauli principle is the combination with <i>A</i><sub>2</sub> symmetry, which is the antisymmetrized direct product (see Section 4.9 of <i>Quantum mechanics 1</i>).</p>
+<p class="indent">We would have come to the same conclusion, that the only possible spin function for the configuration is a doublet, if we had ignored the full 1<i>s</i> orbital. It is generally true, and simplifies the analysis of larger systems significantly, that for a full subshell, the orbital function is totally symmetric and the spin is singlet. We therefore obtain the correct spin degeneracies and orbital symmetries if we only consider electrons in partly occupied orbitals. We can see how this is true for the Li atom by noting that the electronic wavefunction with <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>M</m:mi><m:mi>s</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, is a superposition of three configurations, each of which corresponds to two electrons in orbital 1 with a singlet wavefunction, and the third electron in orbital 2 with spin up.</p>
+<p class="indent">In case (c) the <i>A</i><sub>2</sub> orbital function must combine with the <i>A</i><sub>1</sub> (quartet) spin functions, and the two pairs of <i>E</i> orbital functions, go with the doublet, <i>E</i>, spin functions. We therefore obtain a quartet and two doublet states. The ground configuration of the N atom is an example of such a case, in which (ignoring full subshells) there are three 2<i>p</i> electrons occupying different orbitals.</p>
+<aside class="abc" style="margin-top:-6.3em;" epub:type="sidebar">
+<p class="sidebar" id="prb1.2.4"><b>Problem 1.2.4.</b> <i>Find the orbital wavefunction for the three</i> 2p <i>electrons in the quartet state of the N atom, in terms of the basis functions</i> |123 &#x003E; <i>etc</i>.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec1.3">
+<h2 class="h2">1.3<span class="space">&#160;</span>Determinants</h2>
+<p class="noindent">According to the Pauli principle every electronic wavefunction of an atom or a molecule must be a basis for the alternating irrep of the electron permutation group. The wavefunction is constructed from <i>spin&#x2013;orbitals</i>, which are products of one-electron orbital wavefunctions and spin functions. For example, the spin&#x2013;orbital |1<i>s</i> &#x003E; |<i>&#x03B1;</i> &#x003E; specifies that the electron is in a 1<i>s</i> orbital with spin up. For any given configuration we can write down a wavefunction in the orbital approximation by associating each electron with a spin&#x2013;orbital and multiplying them together. Every permutation of electrons will generate another such function, and the total electronic wavefunction is an antisymmetrized combination of these basis product functions. This can be done using the projection operator for the alternating irrep, which will multiply every permutation by &#x00B1;1 depending on whether the permutation is even or odd.</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<p class="sidebar">The orbital approximation can be improved to fulfil the Pauli symmetry by constructing the wavefunction as a Slater determinant.</p>
+</aside>
+<p class="indent">However, there is an equivalent way of constructing such an antisymmetrized product, known as a determinant. The idea can be stated as follows. In a configuration there is the same number of spin&#x2013;orbitals as electrons. Spin&#x2013;orbitals are arranged in a determinant so that the first column contains a list of the possible spin&#x2013;orbitals expressed as a function of the coordinates of electron 1, the second column contains the same list for electron 2, and so on. Explicitly, the functions in column one are functions of the coordinates of electron 1, and so on. The first row of the determinant thus contains spin&#x2013;orbital function one, expressed as a function of the coordinates of each electron in turn. It can easily be seen that such a determinant has the required permutation symmetry. Interchange of two electrons amounts to interchange of two columns of the determinant, and this operation changes the sign of the determinant. An even number of swaps brings the determinant back to its original value, and an odd number changes its sign.</p>
+<p class="indent">As an illustration we reconsider the case of ground state Li. One of the allowed configurations puts electron 1 in the 1<i>s</i> orbital with spin up, electron 2 <a id="page_9" class="page">Page 9, Chapter 1 Exact symmetries</a>in 1<i>s</i> with spin down, and electron 3 in 2<i>s</i> with spin up. It is conventional to distinguish a spin&#x2013;orbital with spin down by placing a bar over the orbital label. The Slater determinant then becomes</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo>|</m:mo> <m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mn>1</m:mn><m:mi>s</m:mi><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mn>1</m:mn><m:mi>s</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mn>1</m:mn><m:mi>s</m:mi><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mover accent='true'><m:mrow><m:mn>1</m:mn><m:mi>s</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mover accent='true'><m:mrow><m:mn>1</m:mn><m:mi>s</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mover accent='true'><m:mrow><m:mn>1</m:mn><m:mi>s</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mn>2</m:mn><m:mi>s</m:mi><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mn>2</m:mn><m:mi>s</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mn>2</m:mn><m:mi>s</m:mi><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow> <m:mo>|</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:2em;">(1.3)</td>
+</tr>
+</table>
+<p class="noindent">which can be expanded to give the combination</p>
+<p class="eqc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mover accent='true'><m:mn>1</m:mn><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mn>2</m:mn><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>12</m:mn><m:mover accent='true'><m:mn>1</m:mn><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mn>1</m:mn><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mn>21</m:mn><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mn>1</m:mn><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mn>12</m:mn><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>21</m:mn><m:mover accent='true'><m:mn>1</m:mn><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>2</m:mn><m:mover accent='true'><m:mn>1</m:mn><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mn>1</m:mn><m:mo>&#x003E;</m:mo></m:mrow></m:math></p>
+<p class="noindent">This is identical to the result of <a href="#prb1.2.3">problem 1.2.3</a>.</p>
+<p class="indent">Any attempt to put two electrons in the same spin&#x2013;orbital leads to two identical rows in the determinant. Interchange of these rows leads to a change of sign, but the interchanged determinant is indistinguishable from the original determinant, which must therefore be zero.</p>
+<p class="indent">The situation is not always this simple. If the three electrons had been in different orbitals we could have found valid determinants based on permutations of any of the three product functions <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>12</m:mn><m:mover accent='true'><m:mn>3</m:mn><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>&#x003E;</m:mo></m:mrow></m:math>, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mover accent='true'><m:mn>2</m:mn><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mn>3</m:mn><m:mo>&#x003E;</m:mo></m:mrow></m:math>, or <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mn>1</m:mn><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mn>23</m:mn><m:mo>&#x003E;</m:mo></m:mrow></m:math> . Furthermore, any linear combination of these determinants is also fully antisymmetrized. One of these linear combinations corresponds to the quartet state described above, and the other two correspond to the two doublet states. To find which is which we need to use the full group-theoretical methods described above.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Exchange interaction</h3>
+<p class="noindent">The introduction of Slater determinants complicates matters somewhat in comparison with the simple orbital approximation. However, virtually all modern quantum chemical calculations use product functions antisymmetrized in this way. In addition, the effect of antisymmetrization is to introduce a <i>correlation</i> into the spatial distributions of the electrons.</p>
+<p class="indent">Consider the case of a two-electron system where the electrons occupy distinct orbitals. In the simple orbital approximation the electronic wavefunction is <i>&#x03D5;</i><sub>1</sub>(<b>r</b><sub>1</sub>)<i>&#x03D5;</i><sub>2</sub>(<b>r</b><sub>2</sub>), and the resulting joint probability density function for the positions of the two electrons is</p>
+<p class="eqc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>&#x03D5;</m:mi><m:mn>1</m:mn><m:mo>*</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03D5;</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03D5;</m:mi><m:mn>2</m:mn><m:mo>*</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03D5;</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p>
+<p class="noindent">The joint probability density function is a product of a function of <b>r</b><sub>1</sub> and a function of <b>r</b><sub>2</sub> and so the positions of the two particles are said to be independent.</p>
+<p class="indent">However, we have already established that only two states are consistent with the Pauli principle &#x2013; either the orbital function is symmetric and the spin function antisymmetric with respect to permuting the electrons (the singlet state) or else the orbital function is antisymmetric and the spin function symmetric (the triplet state).</p>
+<p class="indent">In the triplet state the orbital function is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>&#x03D5;</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03D5;</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03D5;</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03D5;</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(1.4)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_10" class="page">Page 10, Chapter 1 Exact symmetries</a>The resulting probability density function is therefore</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>p</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo stretchy='false'>[</m:mo><m:msubsup><m:mi>&#x03D5;</m:mi><m:mn>1</m:mn><m:mo>*</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03D5;</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>&#x03D5;</m:mi><m:mn>1</m:mn><m:mo>*</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03D5;</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>+</m:mo><m:msubsup><m:mi>&#x03D5;</m:mi><m:mn>2</m:mn><m:mo>*</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03D5;</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>&#x03D5;</m:mi><m:mn>2</m:mn><m:mo>*</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03D5;</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>&#x03D5;</m:mi><m:mn>1</m:mn><m:mo>*</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03D5;</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>&#x03D5;</m:mi><m:mn>2</m:mn><m:mo>*</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03D5;</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>&#x03D5;</m:mi><m:mn>2</m:mn><m:mo>*</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03D5;</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>&#x03D5;</m:mi><m:mn>2</m:mn><m:mo>*</m:mo></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03D5;</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo stretchy='false'>]</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:6em;">(1.5)</td>
+</tr>
+</table>
+<p class="noindent">The first term in the square brackets is the probability density we obtained from the simple orbital approximation, and the second term is the same with the two electrons permuted. The density contains the average of these two distributions. However, there are also cross-terms, correlating the distributions of the two electrons. These terms are entirely non-classical. The wavefunction is a superposition of the two simple product functions, and the cross-terms arise from interference between them. Their effect on the density is dramatic. If we consider the behaviour of the function as the two electrons approach one another, we find that the cross-terms cancel out the classical distribution, in other words the interference between the product functions in the triplet state is destructive. It is therefore not possible to find two electrons at the same position in a triplet state. The electrons tend to keep apart from one another. This is not an effect of the electrostatic repulsion between them, it is simply an effect of the permutation symmetry, and is depicted in <a href="#fig1.2">Figs 1.2</a> to <a href="#fig1.4">1.4</a> for two <a id="page_11" class="page">Page 11, Chapter 1 Exact symmetries</a>non-interacting particles in a box, one in <i>n</i> = 1 and the other in <i>n</i> = 2. <a href="#fig1.2">Fig. 1.2</a> represents the joint probability density of the two <i>x</i>-coordinates if the particles are distinguishable, and there is no symmetry constraint. <a href="#fig1.3">Fig. 1.3</a> represents the case where the particles are indistinguishable, spin <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, and in a triplet state. Note the node appearing in the joint probability density along the line <i>x</i><sub>1</sub> = <i>x</i><sub>2</sub>, known as a <i>Fermi hole</i>.</p>
+<figure class="fig1" id="fig1.2">
+<img style="width:70%;" src="../images/fig1.2.jpg" alt="images"/>
+<figcaption><b>Fig. 1.2</b> Contour plot of the joint density of two non-interacting indistinguishable particles in a one-dimensional box, one in <i>n</i> = 1 and one in <i>n</i> = 2. No symmetry constraint has been applied. The darker the area the higher the probability density.</figcaption></figure>
+<p class="indent">Considering the singlet state, we find a very similar expression for the probability density, except that the cross-terms are added rather than subtracted. The interference between the product functions is constructive in the singlet state, and the probability of finding the two electrons in coincidence is therefore twice as large as we would have expected from the simple orbital approximation. This situation is depicted in <a href="#fig1.4">Fig. 1.4</a> Note how the density is concentrated around the line <i>x</i><sub>1</sub> =<i> x</i><sub>2</sub>, and the line <i>x</i><sub>1</sub> &#x002B; <i>x</i><sub>2</sub> = <i>a</i> is now a node.</p>
+<p class="indent">Returning to a two-electron system, we now evaluate the expectation electron-electron repulsion energy for the triplet and singlet functions:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mo>&#x003C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>r</m:mi></m:mfrac><m:mo>&#x003E;</m:mo><m:mo>=</m:mo></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>&#x007B;</m:mo><m:mo>&#x003C;</m:mo><m:mn>12</m:mn><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>r</m:mi></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>12</m:mn><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:mn>21</m:mn><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>r</m:mi></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>21</m:mn><m:mo>&#x003E;</m:mo></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x00B1;</m:mo><m:mo stretchy='false'>[</m:mo><m:mo>&#x003C;</m:mo><m:mn>12</m:mn><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>r</m:mi></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>21</m:mn><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:mn>21</m:mn><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>r</m:mi></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>12</m:mn><m:mo>&#x003E;</m:mo><m:mo stretchy='false'>]</m:mo><m:mo>&#x007D;</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:3em;">(1.6)</td>
+</tr>
+</table>
+<p class="noindent">&#160;</p>
+<figure class="fig1" id="fig1.3">
+<img style="width:70%;" src="../images/fig1.3.jpg" alt="images"/>
+<figcaption><b>Fig. 1.3</b> Contour plot of the joint density of two non-interacting indistinguishable particles in a one-dimensional box, one in <i>n</i> = 1 and one in <i>n</i> = 2.The spatial wavefunction is antisymmetrized with respect to exchange, as in a triplet state. The darker the area the higher the probability density.</figcaption></figure>
+<p class="noindent"><a id="page_12" class="page">Page 12, Chapter 1 Exact symmetries</a></p>
+<figure class="fig1" id="fig1.4">
+<img style="width:70%;" src="../images/fig1.4.jpg" alt="images"/>
+<figcaption><b>Fig. 1.4</b> Contour plot of the joint density of two non-interacting indistinguishable particles in a one-dimensional box, one in <i>n</i> = 1 and one in <i>n</i> = 2. The spatial wavefunction is symmetrized with respect to exchange, as in a singlet state. The darker the area the higher the probability density.</figcaption></figure>
+<p class="noindent">&#160;</p>
+<p class="noindent">Since <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>r</m:mi></m:mfrac></m:mrow></m:math> is unaltered by permuting the two electrons the first and second terms are equal and the third and fourth terms are equal, giving</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>r</m:mi></m:mfrac><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mn>12</m:mn><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>r</m:mi></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>12</m:mn><m:mo>&#x003E;</m:mo><m:mo>&#x00B1;</m:mo><m:mo>&#x003C;</m:mo><m:mn>12</m:mn><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>r</m:mi></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>21</m:mn><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(1.7)</td>
+</tr>
+</table>
+<p class="noindent">The first term is known as the <i>Coulomb energy</i>, and is the expectation repulsion energy that would be obtained from the simple orbital approximation. The second term is the <i>exchange energy</i> and is the modification to the repulsion energy that arises from the permutation symmetry. The effect of the Fermi hole in the triplet state is to reduce the electron&#x2013;electron repulsion energy, and thus the triplet state generally lies lower in energy than the corresponding singlet state. A more accurate way of thinking about this is that the tendency of electrons to stay apart in the triplet state permits the orbital functions to shrink closer to the nucleus, thus reducing the energy of the triplet state.<a id="page_13" class="page">Page 13, Chapter 1 Exact symmetries</a></p>
+<p class="indent">It is possible (but beyond the scope of this book) to derive equations for self-consistent field theory using properly antisymmetrized product functions. The resulting equations are similar to the Hartree equations described in <i>Quantum mechanics 1</i>, Section 2.7. The equation for a single spin&#x2013;orbital turns out to be an eigenvalue equation for an operator that contains the usual one-electron Hamiltonian (kinetic energy and electron-nuclear attraction) and an electron&#x2013;electron repulsion operator, in which the potential energy of repulsion is averaged over all the other occupied spin&#x2013;orbitals, just as in the Hartree method. However, in addition, because of the antisymmetrization of the wavefunction there is a third operator, the exchange operator, which represents the contribution of the exchange interaction to the energy of the spin&#x2013;orbital. The resulting set of eigenvalue equations are known as the Hartree&#x2013;Fock equations, and are solved iteratively by the self-consistent field method.</p>
+<p class="indent">The effective Hamiltonian in the Hartree&#x2013;Fock equations, the Fock operator, is a function of the coordinates of one electron only. For convenience we choose this to be electron 1, and omit all reference to it from the resulting equations:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo stretchy='false'>[</m:mo><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>+</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>j</m:mi></m:msub><m:mo>&#x2212;</m:mo></m:mrow></m:mstyle><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mover accent='true'><m:mi>K</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>j</m:mi></m:msub><m:mo stretchy='false'>]</m:mo><m:msub><m:mi>&#x03C7;</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mo>&#x2208;</m:mo><m:mi>i</m:mi></m:msub><m:msub><m:mi>&#x03C7;</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.75em;">(1.8)</td>
+</tr>
+</table>
+<p class="noindent">in which &#x03C7;<i><sub>i</sub></i> is spin orbital <i>i</i>, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> is the one-electron Hamiltonian containing all interactions except the electron&#x2013;electron repulsions, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>j</m:mi></m:msub></m:mrow></m:math> is the Coulomb operator,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>j</m:mi></m:msub><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mi>j</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>/</m:mo><m:msub><m:mi>r</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(1.9)</td>
+</tr>
+</table>
+<p class="noindent">the integral extending over the coordinates of electron 2. <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>K</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>j</m:mi></m:msub></m:mrow></m:math> is defined</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>K</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>j</m:mi></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mi>j</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>/</m:mo><m:msub><m:mi>r</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(1.10)</td>
+</tr>
+</table>
+<p class="noindent">so that it leads to the permutation of electrons 1 and 2; again the integral extends over the coordinates of electron 2.</p>
+<p class="indent">The Hartree&#x2013;Fock method is the basis of virtually all modern quantum chemical calculations for atoms and molecules. For a fuller discussion the reader is referred to Szabo and Ostlund (1982).</p>
+</section>
+<section epub:type="chapter" id="sec1.4">
+<h2 class="h2">1.4<span class="space">&#160;</span>Electronic symmetries</h2>
+<p class="noindent">We have discussed at length the symmetry of the electronic wavefunction with respect to permutations of the electrons. However, since each electronic wavefunction is an eigenfunction of the electronic Hamiltonian in the Born&#x2013;Oppenheimer approximation, it is also a basis for an irrep of the molecular point group. The spin is unaltered by any symmetry operation of the point group, so we only need to consider the orbital part of the wavefunction.</p>
+<p class="indent">The electronic wavefunction is constructed from products of spin&#x2013;orbitals, each of which carries a symmetry (see <i>Quantum mechanics 1</i>, <a href="Chapter04.xhtml#sec4.3">Section 4.3</a>). The basis of all possible products of these functions is therefore a basis for the appropriate direct product representation of the point group. However, the permissible combinations of the orbital functions are prescribed by the Pauli</p>
+<aside class="abc" style="margin-top:-13.5em;" epub:type="sidebar">
+<p class="sidebar">The Pauli principle prescribes which combinations or orbital and spin functions are permitted.The permutation symmetry must now be combined with the point group to characterize the electronic wavefunction.</p>
+</aside>
+<p class="noindent"><a id="page_14" class="page">Page 14, Chapter 1 Exact symmetries</a>principle, as the preceding discussion of electron permutations should make clear.</p>
+<p class="indent">In spectroscopy it is usual to give an electronic energy level (or <i>term</i>) one label denoting its spin degeneracy and another denoting its orbital symmetry, which identifies the irrep of the point group generated by the electronic wavefunction. This label also tells us the orbital degeneracy of the term. Thus, for example, a <sup>2</sup><i>E</i> term (read doublet <i>E</i>) would have an orbital degeneracy of 2 (<i>E</i> is a two-dimensional irrep) and a spin degeneracy of 2 (doublet spin function) giving a total electronic degeneracy of 2 &#x00D7; 2 = 4. We therefore need a method to work out these orbital symmetries.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Closed shell systems</h3>
+<p class="noindent">First we should consider the origin of orbital degeneracies. It is not possible to have an orbital degeneracy unless there is more than one symmetrically equivalent choice for at least one orbital in the configuration. Thus, for example, in the B atom the 2<i>p</i> electron can occupy any of the three symmetry-related 2<i>p</i> orbitals, giving an orbital degeneracy of 3. However, in a closed shell molecule there is no such ambiguity &#x2013; the set of orbital functions is defined completely by specifying the configuration (in the ground state Be atom, two electrons occupy the 1<i>s</i> orbital, and the other two occupy the 2<i>s</i> orbital). There is therefore no possibility of orbital degeneracy in a closed shell atom or molecule: the electronic wavefunction must generate a one-dimensional irrep of the point group. Furthermore, since each orbital is doubly occupied, the corresponding orbital function occurs twice in every term of the product. It is not possible for the product to change sign under any symmetry operation, so it must generate the totally symmetric irrep, and hence, for example the atomic term symbol <sup>1</sup><i>S</i>. This result is very useful, since, as discussed above for the permutation group, in an open shell molecule we only need to consider the electrons in the partly filled orbitals to work out the possible electronic symmetries.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">One unpaired electron</h3>
+<p class="noindent">In a molecule with one unpaired electron the filled core orbitals make no contribution to the orbital symmetry or the spin, so the orbital symmetry is defined by the symmetry of the singly occupied orbital. The spin state is a doublet. For example, the ground state Li atom (1<i>s</i><sup>2</sup>2<i>s</i><sup>1</sup>) has the term symbol <sup>2</sup><i>S</i>, indicating that the electron occupies an orbital with <i>S</i> symmetry. Similarly, the ground state B atom (1<i>s</i><sup>2</sup>2<i>s</i><sup>2</sup>2<i>p</i><sup>1</sup>) term symbol is <sup>2</sup><i>P</i>.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Two unpaired electrons</h3>
+<p class="noindent">If a molecule contains two unpaired electrons, the resulting symmetries depend on whether they occupy the same set of degenerate orbitals. If they do not then the possible orbital symmetries are given by the direct product of the orbital symmetries without restriction. The spins can combine either to give symmetric (<i>A</i>) triplet spin functions, which are associated with antisymmetric (<a id="page_15" class="page">Page 15, Chapter 1 Exact symmetries</a><i>B</i>) orbital combinations such as |12 &#x003E; &#x2013; |21 &#x003E;, or an antisymmetric (<i>B</i>) singlet spin function, which goes with <i>A</i> orbital functions such as |12 &#x003E; &#x002B; |21 &#x003E;. In the spherical point group <i>R</i><sub>3</sub> the direct product <i>P</i> &#x00D7; <i>P</i> = <i>S</i> &#x002B; &#x005B;<i>P</i>&#x005D; &#x002B; <i>D</i>, hence the excited state C atom with configuration 1<i>s</i><sup>2</sup>2<i>s</i><sup>2</sup>2<i>p</i><sup>1</sup>3<i>p</i><sup>1</sup> has energy levels with the following term symbols: <sup>1</sup><i>S</i>, <sup>3</sup><i>S</i>, <sup>1</sup><i>P</i>, <sup>3</sup><i>P</i>, <sup>1</sup><i>D</i>, <sup>3</sup><i>D</i>; each term will have a different energy as a result of the different exchange interaction in each combination.</p>
+<p class="indent">The general rule for combining two spins <i>S</i><sub>1</sub> and <i>S</i><sub>2</sub> from terms arising from distinct orbitals, such as the excited C atom, is that the resultant spin may take all values from <i>S</i><sub>1</sub> &#x002B; <i>S</i><sub>2</sub> to |<i>S</i><sub>1</sub> &#x2013; <i>S</i><sub>2</sub>|. Thus, for example the product of a doublet and a triplet will give spins of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> that is, a quartet and a doublet. The combination of angular momenta will be discussed in more detail at the end of this Section.</p>
+<p class="indent">If the two electrons occupy the same subshell, as in the ground state C atom (1<i>s</i><sup>2</sup>2<i>s</i><sup>2</sup>2<i>p</i><sup>2</sup>), the situation is different, because the possibilities are restricted by the Pauli principle. We still have orbital combinations such as |12&#x003E; &#x2013; |21&#x003E; associated with triplet spin functions, but these combinations generate only the antisymmetrized direct product representation. We also have to consider functions such as |11 &#x003E;, which are now part of the same configuration, and which, with combinations of the type |12 &#x003E; &#x002B; |21 &#x003E;, generate the symmetrized direct product representation. These must be associated with the singlet spin function. In the case of the ground state C atom, these restrictions give only the states <sup>1</sup><i>S</i>, <sup>3</sup><i>P</i>, <sup>1</sup><i>D</i>.</p>
+<p class="indent">In practice, working out these term symbols is straightforward. We simply look up the direct product of the symmetries of the orbitals involved; in the first case we apply singlet and triplet spins to each possibility; in the second case we apply singlets to the symmetrized combinations and triplets to the antisymmetrized combinations, which are generally identified in the tables.</p>
+<p class="indent">For example, we consider the ground state O<sub>2</sub> molecule, which has the configuration <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x2026;</m:mo><m:msubsup><m:mi>&#x03C0;</m:mi><m:mi>g</m:mi><m:mn>2</m:mn></m:msubsup></m:mrow></m:math> .The direct product table for the <i>D<sub>&#x221E;h</sub></i> group gives <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>&#x041F;</m:mi><m:mi>g</m:mi></m:msub><m:mo>&#x00D7;</m:mo><m:msub><m:mi>&#x041F;</m:mi><m:mi>g</m:mi></m:msub><m:mo>=</m:mo><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>g</m:mi><m:mo>+</m:mo></m:msubsup><m:mo>+</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>g</m:mi><m:mo>&#x2212;</m:mo></m:msubsup></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>&#x0394;</m:mi><m:mi>g</m:mi></m:msub></m:mrow></m:math>. The O<sub>2</sub> ground configuration therefore splits into energy levels with the term symbols <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mrow></m:mrow><m:mn>1</m:mn></m:msup><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>g</m:mi><m:mo>+</m:mo></m:msubsup><m:msup><m:mo>,</m:mo><m:mn>3</m:mn></m:msup><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>g</m:mi><m:mo>&#x2212;</m:mo></m:msubsup></m:mrow></m:math>, and <sup>1</sup>&#x2206;<i><sub>g</sub></i>. The triplet state is the ground state because of its larger exchange stabilization.</p>
+<aside class="abc" style="margin-top:-6.8em;" epub:type="sidebar">
+<p class="sidebar" id="prb1.4.1"><b>Problem 1.4.1.</b> <i>Find the allowed term symbols for the following configurations in the point group</i> T<sub>d</sub>: e<sup>2</sup>, e<sup>1</sup> <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mtext>t</m:mtext><m:mn>2</m:mn><m:mn>1</m:mn></m:msubsup></m:mrow></m:math>, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mtext>t</m:mtext><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:math>.</p>
+</aside>
+<aside class="abc" style="margin-top:3.5em;" epub:type="sidebar">
+<p class="sidebar">The case of three electrons with a high orbital degeneracy can be conveniently tackled by considering the effects of distortions that remove the degeneracy.</p>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Three electrons</h3>
+<p class="noindent">The case of three electrons in a doubly degenerate orbital is simple. Only spin functions containing two up and one down (or vice versa) are possible, as discussed already, so we have a doublet spin state. Similarly we must have two electrons in one orbital and one in the other, so that there is an orbital degeneracy of 2 associated with this choice. The orbital symmetry of the state is the same as the symmetry of the degenerate orbital. So, for example, the term symbol for the <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mtext>O</m:mtext><m:mn>2</m:mn><m:mo>&#x2212;</m:mo></m:msubsup></m:mrow></m:math> ion (superoxide), whose electron configuration is &#x2026;<m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>&#x03C0;</m:mi><m:mi>g</m:mi><m:mn>3</m:mn></m:msubsup></m:mrow></m:math>, is <sup>2</sup>&#x041F;<i>g</i>.</p>
+<p class="indent">The case of three electrons in a higher degeneracy is considerably more complicated. We consider in detail only the case of three electrons in a triply degenerate subshell. We can get some help by reference to the permutation <a id="page_16" class="page">Page 16, Chapter 1 Exact symmetries</a>symmetry analysis performed in the last section, which indicates that configurations where the electrons occupy different orbitals, such as |123 &#x003E;, have one combination associated with a quartet spin function and two more associated with doublets. There is no orbital degeneracy to consider in this case since each of the three orbitals must appear in the product function. The other possible configurations are those where two electrons occupy the same orbital, such as |112 &#x003E;. For each choice of a singly occupied orbital and a doubly occupied orbital only one combination is permitted, which must be associated with the doublet. There are six possible choices for the combination of two orbitals in such a configuration.</p>
+<aside class="abc" style="margin-top:-11.75em;" epub:type="sidebar">
+<figure class="fig1" id="fig1.5">
+<img src="../images/fig1.5.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 1.5.</b> A tetrahedral molecule, showing the direction of a tetragonal distortion.</figcaption></figure>
+</aside>
+<p class="indent">We therefore expect a quartet state, which will be orbitally non-degenerate, and a total of eight orbital fonctions associated with the doublet spin functions. There is unfortunately no simple method for working out the symmetries of these permitted combinations in the molecular point group.</p>
+<p class="indent">The most useful method is the <i>distortion method</i>, where the effect of a small distortion on the molecule is considered. The distortion is such as to change the point group to one its subgroups, and to lift the degeneracy of the orbitals, wholly or partly. The terms are then worked out for the distorted molecule, then we consider which terms in the original point group could give rise to the terms found for the distorted molecule.</p>
+<aside class="abc" style="margin-top:14em;" epub:type="sidebar">
+<p class="tab-cap" style="width:100%;" id="tab1.9"><b>Table 1.9</b> <i>T<sub>d</sub></i> descent of symmetry table</p>
+<table class="width100b" style="margin-bottom:1em;">
+<colgroup>
+<col style="width:30%;"/>
+<col style="width:35%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="vertical-align:top; padding-top:0.5em; border-bottom:1px solid black;"><i>T<sub>d</sub></i></td>
+<td style="vertical-align:top; padding-top:0.5em;border-bottom:1px solid black;"><i>D</i><sub>2</sub><i><sub>d</sub></i></td>
+<td style="vertical-align:top; padding-top:0.5em;border-bottom:1px solid black;">C<sub>3v</sub></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>A</i><sub>1</sub></td>
+<td style="vertical-align:top;"><i>A</i><sub>1</sub></td>
+<td style="vertical-align:top;"><i>A</i><sub>1</sub></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>A</i><sub>2</sub></td>
+<td style="vertical-align:top;"><i>B</i><sub>1</sub></td>
+<td style="vertical-align:top;"><i>A</i><sub>2</sub></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>E</i></td>
+<td style="vertical-align:top;"><i>A</i><sub>1</sub>&#x002B;<i>B</i><sub>1</sub></td>
+<td style="vertical-align:top;"><i>E</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;">T<sub>1</sub></td>
+<td style="vertical-align:top;"><i>A</i><sub>2</sub> &#x002B; <i>E</i></td>
+<td style="vertical-align:top;"><i>A</i><sub>2</sub> &#x002B; <i>E</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>T</i><sub>2</sub></td>
+<td style="vertical-align:top;"><i>B</i><sub>2</sub> &#x002B; <i>E</i></td>
+<td style="vertical-align:top;"><i>A</i><sub>1</sub>&#x002B;<i>E</i></td>
+</tr>
+</table>
+</aside>
+<p class="tab-cap1" id="tab1.10"><b>Table 1.10</b> <i>D</i><sub>2</sub><i><sub>d</sub></i> direct product table</p>
+<table class="width100b" style="margin-bottom:1em;width:50%;margin-left:5em;">
+<tr>
+<td style="vertical-align:top; padding-top:0.5em; padding-bottom:0.5em; border-bottom:1px solid black;"></td>
+<td style="vertical-align:top;padding-top:0.5em; padding-bottom:0.5em; border-bottom:1px solid black;">A<sub>1</sub></td>
+<td style="vertical-align:top;padding-top:0.5em; padding-bottom:0.5em; border-bottom:1px solid black;"><i>A</i><sub>2</sub></td>
+<td style="vertical-align:top;padding-top:0.5em; padding-bottom:0.5em; border-bottom:1px solid black;"><i>B</i><sub>1</sub></td>
+<td style="vertical-align:top;padding-top:0.5em; padding-bottom:0.5em; border-bottom:1px solid black;"><i>B</i><sub>2</sub></td>
+<td style="vertical-align:top;padding-top:0.5em; padding-bottom:0.5em; border-bottom:1px solid black;"><i>E</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding-top:0.5em;"><i>A</i><sub>1</sub></td>
+<td style="vertical-align:top;padding-top:0.5em;"><i>A</i><sub>1</sub></td>
+<td style="vertical-align:top;padding-top:0.5em;"><i>A</i><sub>2</sub></td>
+<td style="vertical-align:top;padding-top:0.5em;">B<sub>1</sub></td>
+<td style="vertical-align:top;padding-top:0.5em;"><i>B</i><sub>2</sub></td>
+<td style="vertical-align:top;padding-top:0.5em;"><i>E</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>A</i><sub>2</sub></td>
+<td style="vertical-align:top;"><i>A</i><sub>2</sub></td>
+<td style="vertical-align:top;"><i>A</i><sub>1</sub></td>
+<td style="vertical-align:top;"><i>B</i><sub>2</sub></td>
+<td style="vertical-align:top;"><i>B</i><sub>1</sub></td>
+<td style="vertical-align:top;"><i>E</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>B</i><sub>1</sub></td>
+<td style="vertical-align:top;"><i>B</i><sub>1</sub></td>
+<td style="vertical-align:top;"><i>B</i><sub>2</sub></td>
+<td style="vertical-align:top;"><i>A</i><sub>1</sub></td>
+<td style="vertical-align:top;"><i>A</i><sub>2</sub></td>
+<td style="vertical-align:top;"><i>E</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><i>B</i><sub>2</sub></td>
+<td style="vertical-align:top;"><i>B</i><sub>2</sub></td>
+<td style="vertical-align:top;">B<sub>1</sub></td>
+<td style="vertical-align:top;"><i>A</i><sub>2</sub></td>
+<td style="vertical-align:top;"><i>A</i><sub>1</sub></td>
+<td style="vertical-align:top;"><i>E</i></td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding-bottom:0.5em;"><i>E</i></td>
+<td style="vertical-align:top;padding-bottom:0.5em;"><i>E</i></td>
+<td style="vertical-align:top;padding-bottom:0.5em;"><i>E</i></td>
+<td style="vertical-align:top;padding-bottom:0.5em;"><i>E</i></td>
+<td style="vertical-align:top;padding-bottom:0.5em;"><i>E</i></td>
+<td style="vertical-align:top;padding-bottom:0.5em;"><i>A</i><sub>1</sub> &#x002B; &#x005B;<i>A</i><sub>2</sub>&#x005D; &#x002B; <i>B</i><sub>1</sub>&#x002B;<i>B</i><sub>2</sub></td>
+</tr>
+</table>
+<p class="indent">We illustrate the method for a (<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>t</m:mi><m:mn>2</m:mn><m:mn>3</m:mn></m:msubsup></m:mrow></m:math>) configuration in a tetrahedral molecule. Initially we consider a tetragonal distortion (if the tetrahedron is constructed on the corners of a cube, the distortion is obtained by stretching the cube along the <i>z</i> axis, see <a href="#fig1.5">Fig. 1.5</a>). The distorted molecule belongs to the <i>D</i><sub>2</sub><i><sub>d</sub></i> point group. The correlations between irreps of <i>T<sub>d</sub></i> and those of <i>D</i><sub>2</sub><i><sub>d</sub></i> are shown in <a href="#tab1.9">Table 1.9</a>. It can be seen that the <i>t</i><sub>2</sub> orbitals split into a <i>b</i><sub>2</sub> orbital and doubly degenerate <i>e</i> orbitals. The possible electron configurations of the distorted molecule corresponding to <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>t</m:mi><m:mn>2</m:mn><m:mn>3</m:mn></m:msubsup></m:mrow></m:math> are therefore <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>b</m:mi><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup><m:msup><m:mi>e</m:mi><m:mn>1</m:mn></m:msup><m:mo>,</m:mo><m:msubsup><m:mi>b</m:mi><m:mn>2</m:mn><m:mn>1</m:mn></m:msubsup><m:msup><m:mi>e</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and <i>e</i><sup>3</sup>. The first of these is easy: since <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>b</m:mi><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow></m:math> is a filed orbital, it has no effect on the symmetry, which is therefore determined by the remaining electron to be <sup>2</sup><i>E</i>. The final configuration also gives only a <sup>2</sup><i>E</i> term. The second configuration must be found in two parts. The <i>e</i><sup>2</sup> configuration would give <sup>1</sup><i>A</i><sub>1</sub> &#x002B; <sup>3</sup><i>A</i><sub>2</sub> &#x002B; <sup>1</sup><i>B</i><sub>1</sub> &#x002B; <sup>1</sup><i>B</i><sub>2</sub> according to the direct product table for <i>D</i><sub>2</sub><i><sub>d</sub></i>, <a href="#tab1.10">Table 1.10</a>. The direct product of these symmetries with <sup>2</sup><i>B</i><sub>2</sub> gives <sup>2</sup><i>B</i><sub>2</sub> &#x002B; <sup>4</sup><i>B</i><sub>1</sub> &#x002B; <sup>2</sup><i>B</i><sub>1</sub> &#x002B; <sup>2</sup><i>A</i><sub>2</sub> &#x002B; <sup>2</sup><i>A</i><sub>2</sub> combining the spins according to the vector addition rule discussed above. Checking the correlation <a href="#tab1.9">Table 1.9</a>, we now recognize that the <sup>4</sup><i>B</i><sub>1</sub> term can only correlate <a id="page_17" class="page">Page 17, Chapter 1 Exact symmetries</a>with a <sup>4</sup><i>A</i><sub>2</sub> term in the undistorted molecule. The <sup>2</sup><i>B</i><sub>2</sub> term can only be found in combination with a <sup>2</sup><i>E</i>, correlating with a <sup>2</sup><i>T</i><sub>2</sub> term in the undistorted molecule. Similarly the <sup>2</sup><i>A</i><sub>2</sub> term and the remaining <sup>2</sup><i>E</i> term must come from a <sup>2</sup><i>T</i><sub>1</sub>. This leaves us with tv/o remaining terms, <sup>2</sup><i>A</i><sub>1</sub> &#x002B; <sup>2</sup><i>B</i><sub>1</sub> to account for. Unfortunately there is an ambiguity at this point &#x2013; they could correlate with <sup>2</sup><i>A</i><sub>1</sub> &#x002B; <sup>2</sup><i>A</i><sub>2</sub> or with <sup>2</sup><i>E</i> in the undistorted molecule.</p>
+
+<p class="indent">To resolve this ambiguity we have to consider a second distortion which does not lift the degeneracy of the <i>E</i> irrep. A suitable distortion is to stretch the molecule along one of its threefold axes, reducing the symmetry to <i>C</i><sub>3</sub><i><sub>&#x03C5;</sub></i>;see <a href="#fig1.6">Fig. 1.6</a> The correlations can also be found in <a href="#tab1.9">Table 1.9</a>.</p>
+<p class="indent">We can recognize some of these correlations from the results we have already obtained from the tetragonal distortion: <sup>4</sup><i>A</i><sub>2</sub> &#x2192; <sup>4</sup><i>A</i><sub>2</sub>, <sup>2</sup><i>T</i><sub>1</sub> &#x2192; <sup>2</sup><i>A</i><sub>2</sub> &#x002B; <sup>2</sup><i>E</i>, and <sup>2</sup><i>T</i><sub>2</sub> &#x2192; <sup>2</sup><i>A</i><sub>1</sub> &#x002B; <sup>2</sup><i>E</i>. This leaves us with only a <sup>2</sup><i>E</i> to account for, which must correlate with <sup>2</sup><i>E</i> in the undistorted molecule. The required terms of the undistorted molecule are therefore <sup>4</sup><i>A</i><sub>2</sub>, <sup>2</sup><i>E</i>, <sup>2</sup><i>T</i><sub>1</sub>, and <sup>2</sup><i>T</i><sub>2</sub>. This is virtually the only important case of three electrons in a high degeneracy. The only other important instance is the ground state N atom, which has three 2<i>p</i> electrons. As discussed above, in both cases there are eight orbital functions associated with doublet terms.</p>
+<aside class="abc" style="margin-top:-15.75em;" epub:type="sidebar">
+<p class="sidebar" id="prb1.4.2"><b>Problem 1.4.2.</b>1<i>Perform</i> a <i>distortion analysis to give the terms</i> <sup>2</sup>E &#x002B; <sup>2</sup>A<sub>1</sub> &#x002B; <sup>4</sup>A<sub>2</sub> &#x002B; <sup>2</sup>A<sub>2</sub> &#x002B; <sup>2</sup>E &#x002B; <sup>2</sup>E <i>for the distorted molecule</i>.</p>
+<p class="sidebar" style="margin-top:1em;" id="prb1.4.3"><b>Problem 1.4.3.</b> <i>Perform a distortion analysis for the ground configuration of the N atom to find the terms</i> <sup>4</sup>S &#x002B;<sup>2</sup>P &#x002B;<sup>2</sup>D.</p>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="h3" style="margin-top:2em;">Electronic symmetry and angular momentum</h3>
+<p class="noindent">The electronic Schr&#x00F6;dinger equation for an atom does not include any term containing the spin. In the central field approximation each electron moves in the spherically symmetrical averaged field of the nucleus and the other electrons (<i>Quantum mechanics 1</i>, Section 6.1). In such a system the total angular momentum <i>L</i> of all the electronic orbital motions is conserved. Similarly, if the spin and orbital motions are separable (<i>Quantum mechanics 1</i>, <a href="Chapter02.xhtml#sec2.6">Section 2.6</a>), the total spin angular momentum <i>S</i> is also conserved.</p>
+<aside class="abc" style="margin-top:-8.5em;" epub:type="sidebar">
+<p class="sidebar">The term symbol for an atom permits immediate identification of the total orbital angular momentum quantum number <i>L</i> The analysis of angular momenta gives a more elementary but tedious way to work out the permitted term symbols for a given configuration.</p>
+</aside>
+<p class="indent">Although the spin motion does not contribute to the electronic Hamiltonian, the necessity for the electronic wavefunction to be antisymmetric with respect to all permutations of electron pairs limits the possible combinations of spin functions and orbital functions (<a href="#sec1.2">Section 1.2</a>). The different exchange interactions associated with the different ways in which the Pauli antisymmetrization principle is satisfied lead to a splitting of the energy of each possible electron configuration into terms, each term having particular values of <i>S</i> and <i>L</i>. The number of states in an atomic term arises from the different directions in which each angular momentum vector can point in space relative to the <i>z</i> axis, and is therefore (2<i>L</i> &#x002B; 1)(2<i>S</i> &#x002B;1).</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure class="fig1" id="fig1.6">
+<img src="../images/fig1.6.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 1.6</b> A tetrahedral molecule, showing the direction of a trigonal distortion.</figcaption></figure>
+</aside>
+<p class="indent">Relativistic corrections to the Schr&#x00F6;dinger equation reveal the presence of an interaction between the spin and the orbital angular momenta in an atom, splitting each term into a few closely spaced energy levels. We shall discuss this fine structure in <a href="Chapter04.xhtml">Chapter 4</a>. For the moment we simply consider which terms can arise from a particular electron configuration. First, notice that filled subshells make no contribution to either the orbital or the spin angular momentum, because in every possible combination of spin&#x2013;orbitals each electron is paired with another, with the same orbital function and the opposite <a id="page_18" class="page">Page 18, Chapter 1 Exact symmetries</a>spin, and the angular momentum of a particular orbital is always cancelled by an equal and opposite contribution from another orbital. For example, as shown in <a href="#tab1.11">Table 1.11</a>, a full <i>p</i> subshell contains two electrons with each possible value of the magnetic quantum number, <i>m</i><sub><i>l</i></sub> = &#x2013;1,0,1, which represents the component of the orbital angular momentum in the <i>z</i> direction. For every electron with <i>m</i><sub><i>l</i></sub> = &#x002B;1 there is another with an equal and opposite <i>m</i><sub><i>l</i></sub> = &#x2013;1, yielding a total <i>M<sub>L</sub></i> = 0. Similarly there are three electrons with quantum number <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>m</m:mi><m:mi>s</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> and the resultant angular momentum is cancelled out by the three electrons with <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>m</m:mi><m:mi>s</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, yielding a total <i>M<sub>S</sub></i> = 0.</p>
+<aside class="abc" style="margin-top:-14.2em;" epub:type="sidebar">
+<p class="tab-cap" style="width:100%;" id="tab1.11"><b>Table 1.11</b> Angular momenta for <i>p</i><sup>6</sup></p>
+<table class="width100b" style="margin-bottom:1em;">
+<tr>
+<td style="vertical-align:top; border-bottom:1px solid black;"><p class="tab-c1"></p></td>
+<td style="vertical-align:top; border-bottom:1px solid black;"><p class="tab-c1"><i>m</i><sub>l</sub></p></td>
+<td style="vertical-align:top; border-bottom:1px solid black;"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><i>M<sub>L</sub></i></p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><i>M<sub>s</sub></i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">-1</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">0</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;"><p class="tab-c1"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x21C5;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x21C5;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x21C5;</p></td>
+<td style="vertical-align:top; border-top:1px solid black;"><p class="tab-c1">0</p></td>
+<td style="vertical-align:top; border-top:1px solid black;"><p class="tab-c1">0</p></td>
+</tr>
+</table>
+</aside>
+<p class="indent">The terms which arise for an atomic configuration can be found by application of group theoretical methods, as discussed earlier in this section. However, because the quantum number <i>L</i> not only acts as a symmetry label on the orbital wavefunction, but also represents the orbital angular momentum of the term, the combinations of <i>L</i> and <i>S</i> permitted by the Pauli principle can also be derived from an analysis of the angular momenta of the possible configurations. The method is to consider all possible arrangements of the electrons consistent with the given configuration and the Pauli exclusion principle. The total <b>L</b> and <b>S</b> are vector sums of the individual <b>l</b> and <b>s</b> vectors, summed over all the electrons in the atom. Since the individual <i>m</i><sub>1</sub> and <i>m<sub>s</sub></i> represent the components of <b>1</b> and <b>s</b> respectively in the <i>z</i> direction, these are added to give the allowable <i>z</i> components of the resultant total orbital and spin angular momentum vectors, <b>L</b> and <b>S</b>, which are given by the quantum numbers <i>M<sub>L</sub></i> and <i>M<sub>s</sub></i>. Once a set of permitted values of <i>M<sub>L</sub></i> and <i>M<sub>S</sub></i> has been constructed, it simply remains to identify the values of <i>L</i> and <i>S</i> that can give rise to them.</p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<p class="tab-cap" style="width:100%;" id="tab1.12"><b>Table 1.12</b> Term symbols for <i>p</i><sup>2</sup></p>
+<table class="width100b" style="margin-bottom:1em;">
+<tr>
+<td style="vertical-align:top;"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><i>m</i><sub>l</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><i>M<sub>L</sub></i></p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><i>M<sub>s</sub></i></p></td>
+<td style="vertical-align:top;"><p class="tab-c1"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2013;1</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">0</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">1</p></td>
+<td style="vertical-align:top; border-bottom:1px solid black;"><p class="tab-c1"></p></td>
+<td style="vertical-align:top; border-bottom:1px solid black;"><p class="tab-c1"></p></td>
+<td style="vertical-align:top; border-bottom:1px solid black;"><p class="tab-c1"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x21C5;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#x2013;2</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><sup>1</sup><i>D</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x21C5;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><sup>1</sup><i>s</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x21C5;</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;2</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><sup>1</sup><i>D</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2191;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2191;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><sup>3</sup><i>P</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2191;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2193;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><sup>1</sup><i>D</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2193;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2191;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><sup>3</sup><i>P</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2193;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2193;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><sup>3</sup><i>P</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2191;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2191;</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><sup>3</sup><i>P</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2191;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2193;</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><sup>1</sup><i>D</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2193;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2191;</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><sup>3</sup><i>P</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2193;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2193;</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><sup>3</sup><i>P</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2191;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2191;</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><sup>3</sup><i>P</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2191;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2193;</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><sup>1</sup><i>D</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2193;</p></td>
+<td style="vertical-align:top;" class="box-tab"><p class="tab-c1">&#x2191;</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-c1">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-c1"><sup>3</sup><i>P</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-bottom:0.5em;" class="box-tab"><p class="tab-c1"></p></td>
+<td style="vertical-align:top;padding-bottom:0.5em;" class="box-tab"><p class="tab-c1"><sup>&#x2193;</sup></p></td>
+<td style="vertical-align:top;padding-bottom:0.5em;" class="box-tab"><p class="tab-c1">&#x2193;</p></td>
+<td style="vertical-align:top;padding-bottom:0.5em;"><p class="tab-c1">&#160;&#160;1</p></td>
+<td style="vertical-align:top;padding-bottom:0.5em;"><p class="tab-c1">&#x2013;1</p></td>
+<td style="vertical-align:top;padding-bottom:0.5em;"><p class="tab-c1"><sup>3</sup><i>P</i></p></td>
+</tr>
+</table>
+</aside>
+<p class="indent">As always, it is much easier to perform the operation than it is to describe it. We shall illustrate the method by considering the ground configuration of the C atom, 1<i>s</i><sup>2</sup>2<i>s</i><sup>2</sup>2<i>p</i><sup>2</sup>, already considered by group theoretical methods on p. 15. Recognizing that the two filled <i>s</i> subshells do not contribute to the angular momentum of the atom, we only need to consider the incomplete 2<i>p</i> subshell. The various possible arrangements of the two <i>p</i> electrons consistent with the Pauli principle are tabulated in <a href="#tab1.12">Table 1.12</a>, together with the corresponding values of <i>M<sub>L</sub></i> and <i>M<sub>s</sub></i>. The largest value of <i>M<sub>L</sub></i> present is 2, so there must be a state present with <i>L</i> = <i>2</i>. The value <i>Ml</i> = <i>2</i> appears <i>only</i> with a spin <i>M<sub>S</sub></i> = 0, so the term must have <i>S</i> = 0, otherwise other values of <i>M<sub>S</sub></i> would be found in combination with <i>M<sub>L</sub></i> = 2. This term therefore has <i>L</i> = 2 and <i>S</i> = 0, labelled <sup>1</sup><i>D</i>, and is five-fold degenerate. We have therefore labelled five states with the correct values of <i>M<sub>L</sub></i> and <i>M<sub>S</sub></i> to make up the <sup>1</sup><i>D</i> term in the table.</p>
+<p class="indent">The largest value of <i>M<sub>L</sub></i> remaining in the table is <i>M<sub>L</sub></i> = 1, and it can be seen that this value appears three times, accompanied by <i>M<sub>S</sub></i> = 1, 0, and &#x2013;1. We can therefore conclude that there is a term with <i>L</i> = 1 and <i>S</i> = 1, a <sup>3</sup><i>P</i> term, which contains a total of nine states. Once we have identified nine suitable states in the table there is only one state remaining, which has <i>M<sub>L</sub></i> = 0 and <i>M<sub>S</sub></i> = 0. It is therefore a <sup>1</sup><i>S</i> term.</p>
+<p class="indent">We conclude that the ground electronic configuration of the C atom gives rise to three terms with symbols <sup>1</sup><i>D</i>, <sup>3</sup><i>P</i>, and <sup>1</sup><i>S</i>, in agreement with our earlier analysis. The different energies of these terms arise from the different ways of satisfying the requirement that the total electronic wavefunction be <a id="page_19" class="page">Page 19, Chapter 1 Exact symmetries</a>antisymmetric with respect to permuting the two <i>p</i> electrons. The ground term is the <sup>3</sup><i>P</i> term. This term has a symmetric spin function and an antisymmetric orbital function. Because the orbital function changes sign when <b>r</b><sub>1</sub> and <b>r</b><sub>2</sub> are interchanged, it must approach zero when the two particles approach one another, the <i>Fermi hole</i>, illustrated in <a href="#fig1.3">Fig. 1.3</a> It should be emphasized that this hole is a result of the symmetry of the orbital function, and is additional to any effect of electron&#x2013;electron repulsion.</p>
+<p class="indent">It is a general empirical rule, <i>Hund&#x2019;s rule</i>, that in the ground configuration the term with the highest value of <i>S</i> lies lowest in energy. This is essentially because the spin function has the maximum symmetry and so the orbital function is as antisymmetric as possible, thus reducing the electron&#x2013;electron repulsions. In fact the situation is more complicated than this. The reduced electron&#x2013;electron repulsion permits the orbitals to contract closer to the nucleus, thus reducing the potential energy further, but leading to a subsequent increase in the electron&#x2013;electron repulsion. However, Hund&#x2019;s rule is generally found to be true.</p>
+<aside class="abc" style="margin-top:-9.5em;" epub:type="sidebar">
+<p class="sidebar" id="prb1.4.4"><b>Problem 1.4.4.</b> <i>Use the angular momentum method to find term symbols for the ground configurations of the O and N atoms</i>.</p>
+</aside>
+<p class="indent">We complete this subsection by discussing two more general rules which are of great use in constructing the permissible term symbols for a given configuration. First angular momenta from different subshells can be added according to the normal rules for vector addition (the Clebsch&#x2013;Gordan series, see <a href="Chapter04.xhtml#sec4.3">Section 4.3</a>). The only complications arise as a result of the Pauli principle when we consider electrons in the same subshell. Thus, for example, the excited configuration of the C atom 1<i>s</i><sup>2</sup> 2<i>s</i><sup>2</sup> 2<i>p</i><sup>l</sup> 3<i>p</i><sup>l</sup> has all possible combinations of two orbital angular momenta of one unit (i.e. 0, 1 and 2) and all possible combinations of two spins one half (i.e. 0 and 1), giving the terms <sup>1</sup><i>S</i>, <sup>3</sup><i>S</i>, <sup>1</sup><i>P</i> <sup>3</sup><i>P</i>, <sup>l</sup><i>D</i>, and <sup>3</sup><i>D</i>.</p>
+<p class="indent">The second useful observation is that there is a symmetry between the terms found for a subshell less than half full and a subshell more than half full. The same terms arise for a subshell containing a given number of electrons and a subshell with the same number of vacancies, or holes. Thus, for example, the O atom, whose ground configuration contains four 2<i>p</i> electrons, or two holes in the 2<i>p</i> subshell, gives the same terms as the C atom, namely <sup>3</sup><i>P</i>, <sup>l</sup><i>D</i>, and <sup>l</sup><i>S</i> (see <a href="#prb1.4.4">Problem 1.4.4</a>).</p>
+</section>
+<section epub:type="chapter" id="sec1.5">
+<h2 class="h2" style="margin-top:2em;">1.5<span class="space">&#160;</span>Nuclear permutation symmetry</h2>
+<p class="noindent">In addition to the electron permutation symmetry, which has such important chemical consequences, molecules with identical nuclei must also have symmetry with respect to nuclear permutations. The collection of all permutations of identical nuclei in a molecule forms a group known as the complete nuclear permutation (CNP) group.</p>
+<p class="indent">To a very good approximation the nuclear spin wavefunction can be separated from the rest of the molecular wavefunction (the rovibronic wavefunction). In consequence, we can consider the symmetries of the nuclear spin functions separately from the rovibronic wavefunction. A nuclear spin degeneracy can then be associated with each molecular energy level. These <a id="page_20" class="page">Page 20, Chapter 1 Exact symmetries</a>nuclear spin degeneracies give rise to observable intensity alternation effects in molecular spectra and, in the most extreme cases, to the complete absence of certain energy levels from a molecule, and hence missing lines from the spectrum.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3" style="margin-top:2em;">Homonuclear diatomic molecules</h3>
+<p class="noindent">The simplest case to consider is that of a homonuclear diatomic molecule, such as H<sub>2</sub>. We have already done most of the work in discussing electron permutation symmetries, but there is one important difference: nuclei may be either fermions or bosons, whereas all electrons are fermions. If the two nuclei in a diatomic molecule are fermions (as in H<sub>2</sub>) then the total molecular wavefunction must have <i>B</i> symmetry in the CNP group <i>S</i><sub>2</sub>, as in the case of two electrons. If, on the other hand, the two nuclei are bosons (as in N<sub>2</sub>), then the total wavefunction must have A symmetry. We consider the wavefunction in two parts: first the contribution of the nuclear spin wavefunction and then the contribution of the rovibronic wavefunction. The symmetry of the overall wavefunction is the direct product of the symmetries of each part.</p>
+<p class="indent">A nuclear spin <i>I</i> has a space degeneracy of 2<i>I</i> &#x002B; 1, corresponding to the 2<i>I</i> &#x002B; 1 different possible values for its <i>z</i> component, <i>M<sub>I</sub></i>. Let us denote this degeneracy g<i><sub>I</sub></i>. In a diatomic molecule there are <i>g<sub>I</sub></i>(<i>g<sub>I</sub></i> &#x2013; 1) different combinations in which the two <i>M<sub>I</sub></i> values are different (<i>g<sub>I</sub></i> choices for nucleus 1 and then g<i><sub>I</sub></i> &#x2013; 1 for nucleus 2). There are therefore <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>g</m:mi><m:mi>I</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>g</m:mi><m:mi>I</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>I</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>I</m:mi></m:mrow></m:math> independent antisymmetric nuclear spin functions of the form <i>&#x03B1;&#x03B2; &#x2013; &#x03B2;&#x03B1;</i>, which have <i>B</i> symmetry. There is the same number of symmetric combinations of the form <i>&#x03B1;&#x03B2;</i> &#x002B; <i>&#x03B2;&#x03B1;</i>, which have A symmetry. In addition there are g<i><sub>I</sub></i> combinations in which the two nuclear spins are the same, such as <i>&#x03B1;&#x03B1;</i>, and which are automatically symmetric with respect to permutation of the nuclei. In total there are therefore <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>g</m:mi><m:mi>I</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>g</m:mi><m:mi>I</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>I</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>I</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> nuclear spin functions of <i>A</i> symmetry. The ratio of the number of <i>A</i> spin functions to the number of <i>B</i> spin functions is therefore (g<i><sub>I</sub></i> &#x002B; l)/(g<i><sub>I</sub></i> &#x2013; 1) = (<i>I</i> &#x002B; 1)/<i>I</i>.</p>
+<p class="indent">If the two nuclei are fermions, the overall symmetry (including nuclear spin) must be <i>B</i>, hence the (2<i>I</i> &#x002B; 1)(<i>I</i> &#x002B; 1) nuclear spin functions of <i>A</i> symmetry must be associated with rovibronic states of symmetry <i>B</i>. Similarly the (2<i>I</i> &#x002B; 1)<i>I</i> nuclear spin functions of <i>B</i> symmetry can only occur in combination with rovibronic states of <i>A</i> symmetry. On the other hand if the nuclei are bosons then the overall symmetry must be <i>A</i>; <i>A</i> spin functions now go with A rovibronic states and <i>B</i> spin functions with <i>B</i> rovibronic states. In either case, the rovibronic wavefunctions must be classified with a symmetry label of the CNP group.</p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<p class="sidebar">In the special case where <i>l =</i> 0 there are no antisymmetric nuclear spin functions (the only possible value of <i>M<sub>l</sub></i> is 0). Thus all rovibronic states with <i>B</i> symmetry are missing. This is the case for the O<sub>2</sub> molecule and the CO<sub>2</sub> molecule.</p>
+</aside>
+<p class="indent">The second part of the problem is to decide which rovibronic states are <i>A</i> and which are <i>B</i>. This is reasonably straightforward for a diatomic molecule. <i>A</i> set of symmetry operations can be constructed to have the effect of permuting the two nuclei, see <a href="#fig1.7">Fig. 1.7</a> The first such operation is to rotate the molecule about 180&#x00B0;, which interconverts the two nuclei, but also rotates the electronic wavefunction and the vibrational wavefunction. The rotational wavefunction <a id="page_21" class="page">Page 21, Chapter 1 Exact symmetries</a>(a spherical harmonic, see <i>Quantum mechanics 1</i>, <a href="Chapter03.xhtml#sec3.4">Section 3.4</a>) changes sign under this operation if the rotational quantum number <i>J</i> is odd and remains invariant if <i>J</i> is even. The vibrational wavefunction of a diatomic molecule is totally symmetric in the molecular point group and so does not change under any symmetry operation. The electronic wavefunction is totally symmetric for closed shell molecules, but may not be for molecules with unpaired electrons. The <i>C</i><sub>2</sub> operation is equivalent to an inversion followed by a reflection in a plane containing the bond axis. The symmetry with respect to inversion is given in the electronic term symbol by the <i>g</i> or <i>u</i> subscript, and the reflection symmetry is given by the superscript &#x002B; or &#x2013;. Most molecules are closed shell, so the electronic symmetry is <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>g</m:mi><m:mo>+</m:mo></m:msubsup></m:mrow></m:math>, which is invariant to both operations. For a closed shell molecule we conclude that odd rotational levels are <i>B</i> and even rotational levels are <i>A</i>. Thus, for example, for the H<sub>2</sub> molecule <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>I</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> the odd rotational levels are associated with the symmetric nuclear spin functions, and have a nuclear spin degeneracy of 3, whereas the even rotational levels go with the antisymmetric nuclear spin function which has degeneracy 1. The rotational Raman spectrum of H<sub>2</sub>, represented in <a href="#fig1.8">Fig. 1.8</a>, shows a 3:1 intensity alternation superimposed on the usual pattern associated with thermal populations. This alternation is entirely due to the alternation in nuclear spin degeneracy.</p>
+<aside class="abc" style="margin-top:-23em;" epub:type="sidebar">
+<figure class="fig1" id="fig1.7">
+<img src="../images/fig1.7.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 1.7</b> A set of symmetry operations which has the effect of permuting the two nuclei. The 180&#x00B0; rotation operates on the whole rovibronic wavefunction.This is followed by a reflection and an inversion which operate on the electronic wavefunction for a diatomic molecule. (For a linear molecule the vibrational symmetry must also be considered.)</figcaption></figure>
+</aside>
+<p class="indent">In the N<sub>2</sub> molecule (<i>I</i> = 1) the odd rotational states have a nuclear spin degeneracy of 6 and the even levels of 12. The intensity alternation in the Raman spectrum is 2:1, and is the other way round from the H<sub>2</sub> molecule, that is, the even levels are more densely populated.</p>
+<figure class="fig1" id="fig1.8" style="width:70%;text-align:center;">
+<img src="../images/fig1.8.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 1.8</b> The rotational Raman spectrum of H<sub>2</sub>. The Rayleigh line has been removed.</figcaption></figure>
+<p class="indent">The O<sub>2</sub> molecule (<i>I</i> = 0) is an unusual case of a molecule with an open shell configuration in the ground state. The electronic symmetry is <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>g</m:mi><m:mo>&#x2212;</m:mo></m:msubsup></m:mrow></m:math>, so the odd rotational levels are <i>A</i>, whereas the even levels are <i>B</i>. Since only the <i>A</i> nuclear spin combination is possible we conclude that all the even rotational <a id="page_22" class="page">Page 22, Chapter 1 Exact symmetries</a>levels in O<sub>2</sub> are missing, thus half the lines are completely missing from the Raman spectrum.</p>
+<p class="noindent">&#160;</p>
+
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Polyatomic molecules</h3>
+<p class="noindent">Similar analyses can be made for polyatomic molecules, where we also fine alternating nuclear spin degeneracies in the possible rotational energy levels The proper analysis requires us to be able to work out the symmetries of the nuclear spin functions and of the rovibronic wavefunction in the permutation group. Only those combinations which finally give the alternating irrep foi fermions, or the totally symmetric irrep for bosons are possible.</p>
+<p class="indent">As an example we consider the situation in the ammonia molecule, which contains three H atoms. We have already worked out the correct symmetriei for the possible nuclear spin states in <i>S</i><sub>3</sub> in the discussion of the electronic symmetries of the Li atom above. The combinations <i>&#x03B1;&#x03B1;&#x03B1;</i>, and <i>&#x03B2;&#x03B2;&#x03B2;</i> are totally symmetric (<i>A</i><sub>1</sub>). The three functions <i>&#x03B1;&#x03B1;&#x03B2;</i>, <i>&#x03B1;&#x03B2;&#x03B1;</i>, and <i>&#x03B2;&#x03B1;&#x03B1;</i> generate <i>A</i><sub>1</sub> &#x002B; <i>E</i>, as does the similar set of functions with <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>M</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>.</p>
+<p class="indent">We therefore have a total of four states with symmetry <i>A</i><sub>1</sub> (twelve including the threefold degeneracy of the nuclear spin on N) and two (six) doubly degenerate states with symmetry <i>E</i>. The <i>A</i><sub>1</sub> nuclear spin functions can only be combined with <i>A</i><sub>2</sub> rovibronic wavefunctions to give the correct alternating irrep for the total wavefunction. These rovibronic states will have a nuclear spin degeneracy of 12. Similarly the only direct product of <i>E</i> which gives <i>A</i><sub>2</sub> is <i>E</i> &#x00D7; <i>E</i>. <i>E</i> rovibronic states therefore have a nuclear spin degeneracy of 6. Finally all rovibronic states that are totally symmetric with respect to the permutations of <i>S</i><sub>3</sub> must be missing, since there are no nuclea: spin functions of <i>A</i><sub>2</sub> symmetry.</p>
+<p class="indent">The analysis of the symmetry of the rovibronic wavefunction involves a consideration of the electronic symmetry (nearly all ground state molecules are closed shell and therefore totally symmetric), the vibrational symmetry and the rotational wavefunction. The detailed consideration of rotational wavefunctions, even for symmetric tops such as ammonia, is beyond the scope of this book. However, even without this analysis we can expect to see 2:1 intensity alternation effects in any spectrum which resolves the individual rotational states. The interested reader who wishes to pursue this further should consult more advanced texts, such as Landau and Lifshitz (1977) or Bunker (1979).</p>
+<p class="ref"><b>References</b></p>
+<p class="refer">Bunker, P. R. (1979). <i>Molecular symmetry and spectroscopy</i>. Academic Press, New York.</p>
+<p class="refer">Green, N. J. B. (1997). <i>Quantum mechanics 1</i>. Oxford Chemistry Primer, Oxford.</p>
+<p class="noindent"><a id="page_23" class="page">Page 23, Chapter 1 Exact symmetries</a></p>
+<p class="refer">Landau, L. D. and Lifshitz, E. M., (1977). <i>Quantum mechanics</i>, 3rd edn. Pergamon Press, Oxford.</p>
+<p class="refer">Szabo, A. and Ostlund, N. S. (1982). <i>Modern quantum chemistry</i>. Macmillan, New York.</p>
+</section>
+</section>
+</section>
+</body>
+</html>

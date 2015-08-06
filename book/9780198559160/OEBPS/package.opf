@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="p9780198559160">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:identifier id="p9780198559160">978-0-19-855916-0</dc:identifier>
+<dc:title>Introduction to Quantum Theory and Atomic Structure</dc:title>
+<dc:language>en-US</dc:language>
+<dc:creator>P.A. Cox</dc:creator>
+<dc:publisher>Oxford University Press</dc:publisher>
+<meta property="dcterms:modified">2015-05-16T16:38:35Z</meta>
+<meta name="cover" content="cover-image"/>
+</metadata>
+<manifest>
+<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="toc" properties="nav" href="xhtml/toc.xhtml" media-type="application/xhtml+xml"/>
+<item id="stylesheet" href="styles/stylesheet.css" media-type="text/css"/>
+<item id="title" href="xhtml/Titlepage.xhtml" media-type="application/xhtml+xml"/>
+<item id="copyright" href="xhtml/Copyrightpage.xhtml" media-type="application/xhtml+xml"/>
+<item id="Series" href="xhtml/Series_Editor's_Foreword.xhtml" media-type="application/xhtml+xml"/>
+<item id="Preface" href="xhtml/Preface.xhtml" media-type="application/xhtml+xml"/>
+<item id="contents" href="xhtml/Contents.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="Values" href="xhtml/Valuesoffundamentalconstants.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter01" href="xhtml/Chapter01.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter02" href="xhtml/Chapter02.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter03" href="xhtml/Chapter03.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter04" href="xhtml/Chapter04.xhtml" media-type="application/xhtml+xml"/>
+<item properties="remote-resources scripted mathml" id="chapter05" href="xhtml/Chapter05.xhtml" media-type="application/xhtml+xml"/>
+<item id="Futher" href="xhtml/FutherReading.xhtml" media-type="application/xhtml+xml"/>
+<item id="Answer" href="xhtml/Answertonumericalproblems.xhtml" media-type="application/xhtml+xml"/>
+<item id="Index" href="xhtml/Index.xhtml" media-type="application/xhtml+xml"/>
+
+<item id="script001" href="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" media-type="text/jscript"/>
+
+<item id="fig_1.1" href="images/fig1.1.jpg" media-type="image/jpeg"/>
+<item id="fig_1.2" href="images/fig1.2.jpg" media-type="image/jpeg"/>
+<item id="fig_1.3" href="images/fig1.3.jpg" media-type="image/jpeg"/>
+<item id="fig_1.4" href="images/fig1.4.jpg" media-type="image/jpeg"/>
+<item id="fig_1.5" href="images/fig1.5.jpg" media-type="image/jpeg"/>
+<item id="fig_1.6" href="images/fig1.6.jpg" media-type="image/jpeg"/>
+<item id="fig_1.7" href="images/fig1.7.jpg" media-type="image/jpeg"/>
+<item id="fig_1.8" href="images/fig1.8.jpg" media-type="image/jpeg"/>
+<item id="fig_1.9" href="images/fig1.9.jpg" media-type="image/jpeg"/>
+<item id="fig_1.10" href="images/fig1.10.jpg" media-type="image/jpeg"/>
+<item id="fig_1.11" href="images/fig1.11.jpg" media-type="image/jpeg"/>
+<item id="fig_1.12" href="images/fig1.12.jpg" media-type="image/jpeg"/>
+<item id="fig_1.13" href="images/fig1.13.jpg" media-type="image/jpeg"/>
+<item id="fig_3.1" href="images/fig3.1.jpg" media-type="image/jpeg"/>
+<item id="fig_3.2" href="images/fig3.2.jpg" media-type="image/jpeg"/>
+<item id="fig_3.3" href="images/fig3.3.jpg" media-type="image/jpeg"/>
+<item id="fig_3.4" href="images/fig3.4.jpg" media-type="image/jpeg"/>
+<item id="fig_3.4a" href="images/fig3.4a.jpg" media-type="image/jpeg"/>
+<item id="fig_3.5" href="images/fig3.5.jpg" media-type="image/jpeg"/>
+<item id="fig_3.6" href="images/fig3.6.jpg" media-type="image/jpeg"/>
+<item id="fig_3.7" href="images/fig3.7.jpg" media-type="image/jpeg"/>
+<item id="fig_3.8" href="images/fig3.8.jpg" media-type="image/jpeg"/>
+<item id="fig_3.9" href="images/fig3.9.jpg" media-type="image/jpeg"/>
+<item id="fig_3.10" href="images/fig3.10.jpg" media-type="image/jpeg"/>
+<item id="fig_3.11" href="images/fig3.11.jpg" media-type="image/jpeg"/>
+<item id="fig_3.12" href="images/fig3.12.jpg" media-type="image/jpeg"/>
+<item id="fig_3.13" href="images/fig3.13.jpg" media-type="image/jpeg"/>
+<item id="fig_3.14" href="images/fig3.14.jpg" media-type="image/jpeg"/>
+<item id="fig_3.15" href="images/fig3.15.jpg" media-type="image/jpeg"/>
+<item id="fig_21" href="images/fig21.jpg" media-type="image/jpeg"/>
+<item id="fig_22" href="images/fig22.jpg" media-type="image/jpeg"/>
+<item id="fig_23" href="images/fig23.jpg" media-type="image/jpeg"/>
+<item id="fig_24" href="images/fig24.jpg" media-type="image/jpeg"/>
+<item id="fig_25" href="images/fig25.jpg" media-type="image/jpeg"/>
+<item id="fig_26" href="images/fig26.jpg" media-type="image/jpeg"/>
+<item id="fig_27" href="images/fig27.jpg" media-type="image/jpeg"/>
+<item id="fig_28" href="images/fig28.jpg" media-type="image/jpeg"/>
+<item id="fig_29" href="images/fig29.jpg" media-type="image/jpeg"/>
+<item id="fig_41" href="images/fig41.jpg" media-type="image/jpeg"/>
+<item id="fig_42" href="images/fig42.jpg" media-type="image/jpeg"/>
+<item id="fig_43" href="images/fig43.jpg" media-type="image/jpeg"/>
+<item id="fig_44" href="images/fig44.jpg" media-type="image/jpeg"/>
+<item id="fig_45" href="images/fig45.jpg" media-type="image/jpeg"/>
+<item id="fig_46" href="images/fig46.jpg" media-type="image/jpeg"/>
+<item id="fig_47" href="images/fig47.jpg" media-type="image/jpeg"/>
+<item id="fig_51" href="images/fig51.jpg" media-type="image/jpeg"/>
+<item id="fig_52" href="images/fig52.jpg" media-type="image/jpeg"/>
+<item id="fig_53" href="images/fig53.jpg" media-type="image/jpeg"/>
+<item id="fig_54" href="images/fig54.jpg" media-type="image/jpeg"/>
+<item id="fig_55" href="images/fig55.jpg" media-type="image/jpeg"/>
+<item id="fig_56" href="images/fig56.jpg" media-type="image/jpeg"/>
+<item id="fig_57" href="images/fig57.jpg" media-type="image/jpeg"/>
+<item id="fig_58" href="images/fig58.jpg" media-type="image/jpeg"/>
+<item id="fig_59" href="images/fig59.jpg" media-type="image/jpeg"/>
+<item id="fig_210" href="images/fig210.jpg" media-type="image/jpeg"/>
+<item id="fig_211" href="images/fig211.jpg" media-type="image/jpeg"/>
+<item id="fig_510" href="images/fig510.jpg" media-type="image/jpeg"/>
+<item id="fig_511" href="images/fig511.jpg" media-type="image/jpeg"/>
+<item id="pg_41" href="images/pg41.jpg" media-type="image/jpeg"/>
+<item id="fig_pub" href="images/pub.jpg" media-type="image/jpeg"/>
+<item id="page80" href="images/page80.jpg" media-type="image/jpeg"/>
+           
+</manifest>
+<spine toc="ncx">    
+<itemref idref="title"/>
+<itemref idref="copyright"/>
+<itemref idref="Series"/>
+<itemref idref="Preface"/>
+<itemref idref="contents"/>
+<itemref idref="Values"/>
+<itemref idref="chapter01"/>
+<itemref idref="chapter02"/>
+<itemref idref="chapter03"/>
+<itemref idref="chapter04"/>
+<itemref idref="chapter05"/>
+<itemref idref="Futher"/>
+<itemref idref="Answer"/>
+<itemref idref="Index"/>
+</spine>   
+</package>

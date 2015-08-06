@@ -1,0 +1,1273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Introduction to molecular symmetry</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<a class="page" id="page_17">Page 17, Matrices, multiplication tables and representations</a>
+<section epub:type="chapter" id="ch02">
+<h1 class="main" style="width:68%;"><b>2<span class="space">&#160;</span>Matrices, multiplication tables and representations</b></h1>
+<p class="noindent">&#160;</p>
+<p class="noindent">The pictorial illustrations of symmetry operations shown in <a href="Chapter01.xhtml#ch01">Chapter 1</a> describe single operations quite satisfactorily. However, they can become cumbersome if we need to consider sequential operations and, more importantly, they provide no stepping-off point if we should wish to relate molecular symmetry to topics such as molecular energy levels and spectroscopy.</p>
+<p class="indent3-ka1">For this, we require a description of symmetry operations in more mathematical language, and the first step is to be able to describe and unify symmetry operations through the use of matrices.</p>
+<section epub:type="chapter" id="sec_2.1">
+<h2 class="h2"><b>2.1<span class="space">&#160;</span>Introduction to matrices&#x2014;some definitions</b></h2>
+<aside class="abc" style="margin-top:1em;" epub:type="sidebar">
+<p class="noindent2"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mtext>W=</mtext><mrow><mo>(</mo>
+   <mtable columnalign='left'>
+    <mtr>
+     <mtd>
+      <msub>
+       <mi>W</mi>
+       <mrow>
+        <mn>11</mn>
+       </mrow>
+      </msub>
+      
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <msub>
+       <mi>W</mi>
+       <mrow>
+        <mn>21</mn>
+       </mrow>
+      </msub>
+      
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <msub>
+       <mi>W</mi>
+       <mrow>
+        <mn>31</mn>
+       </mrow>
+      </msub>
+      
+     </mtd>
+    </mtr>
+   </mtable>
+   
+  <mo>)</mo></mrow>
+ </mrow>
+</math></p>
+<p class="noindent2-ka"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mtext>X=</mtext><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mrow>
+        <msub>
+         <mi>X</mi>
+         <mrow>
+          <mn>11</mn>
+         </mrow>
+        </msub>
+        
+       </mrow>
+      </mtd>
+      <mtd>
+       <mrow>
+        <msub>
+         <mi>X</mi>
+         <mrow>
+          <mn>12</mn>
+         </mrow>
+        </msub>
+        
+       </mrow>
+      </mtd>
+      <mtd>
+       <mrow>
+        <msub>
+         <mi>X</mi>
+         <mrow>
+          <mn>13</mn>
+         </mrow>
+        </msub>
+        
+       </mrow>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+</p>
+<p class="noindent2-ka"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mtext>Y=</mtext><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+      <mtd>
+       <mn>2</mn>
+      </mtd>
+      <mtd>
+       <mn>5</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>3</mn>
+      </mtd>
+      <mtd>
+       <mn>4</mn>
+      </mtd>
+      <mtd>
+       <mn>7</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>6</mn>
+      </mtd>
+      <mtd>
+       <mn>9</mn>
+      </mtd>
+      <mtd>
+       <mn>8</mn>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+</p>
+<p class="noindent2-ka"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mtext>z&#x00A0;=&#x00A0;</mtext><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mi>a</mi>
+      </mtd>
+      <mtd>
+       <mi>b</mi>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mi>c</mi>
+      </mtd>
+      <mtd>
+       <mi>d</mi>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mi>e</mi>
+      </mtd>
+      <mtd>
+       <mi>f</mi>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+</p>
+</aside>
+<p class="noindent">Matrices are arrays of either numbers or variables, and come in various shapes and sizes. The four basic shapes are the <i>column matrix</i>, the <i>row matrix</i>, the <i>square matrix</i> and the <i>rectangular matrix</i>, and examples of each of these are given alongside. Each number or variable in the matrix is called a <i>matrix element</i>, and its position is described by a grid system in which rows are numbered first, starting at the top, and columns second, starting at the left-hand side.</p>
+<p class="indent3-ka1">Thus matrix <b>W</b> is a column matrix, with three elements <i>W</i><sub>11</sub>, <i>W</i><sub>21</sub> and <i>W</i><sub>31</sub>, and matrix <b>X</b> is a row matrix, with elements <i>X</i><sub>11</sub>, <i>X</i><sub>12</sub> and <i>X</i><sub>13</sub>. The square matrix shown as <b>Y</b> has a total of nine elements, and following our grid system, we can identify the elements <i>Y</i><sub>22</sub> and <i>Y</i><sub>31</sub> for example, as the integers 4 and 6 respectively. In the same way, <b>Z</b> is a rectangular matrix, having a total of six elements, as shown.</p>
+<p class="indent3-ka1">Matrices have a wide and general application in many areas of science, and Appendix III lists a number of additional sources of material which describe the properties of matrices in detail.</p>
+<p class="indent3-ka1">The only types of matrix encountered in this Primer are column matrices and square matrices, and we shall use them to describe symmetry operations. In order to do this, we shall need to know basically only two further definitions&#x2014;the <i>diagonal</i> of a matrix and the <i>character</i> of a matrix&#x2014;together with the rules which govern matrix multiplication.</p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="noindent2-ka"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mtext>M</mtext><mtext>&#x2009;</mtext><mtext>=</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mrow>
+        <msub>
+         <mi>M</mi>
+         <mrow>
+          <mn>11</mn>
+         </mrow>
+        </msub>
+        
+       </mrow>
+      </mtd>
+      <mtd>
+       <mrow></mrow>
+      </mtd>
+      <mtd>
+       <mrow></mrow>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mrow></mrow>
+      </mtd>
+      <mtd>
+       <mrow>
+        <msub>
+         <mi>M</mi>
+         <mrow>
+          <mn>22</mn>
+         </mrow>
+        </msub>
+        
+       </mrow>
+      </mtd>
+      <mtd>
+       <mrow></mrow>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mrow></mrow>
+      </mtd>
+      <mtd>
+       <mrow></mrow>
+      </mtd>
+      <mtd>
+       <mrow>
+        <msub>
+         <mi>M</mi>
+         <mrow>
+          <mn>33</mn>
+         </mrow>
+        </msub>
+        
+       </mrow>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+</p>
+</aside>
+<p class="indent3-ka1">We shall encounter the <i>diagonal</i> and the <i>character</i> only in square matrices, and although a square can in general have two diagonals, the term <i>diagonal</i> when applied specifically to a matrix refers to the leading diagonal, which for a matrix <b>M</b> is defined by elements such as <i>M</i><sub>11</sub>, <i>M</i><sub>22</sub>, <i>M</i><sub>33</sub>, etc.&#x2014;i.e. top left to bottom right.</p>
+<a class="page" id="page_18">Page 18, Matrices, multiplication tables and representations</a>
+<p class="indent3-ka1">The <i>character</i> of a matrix is the sum of the elements on the diagonal, and is given the symbol &#x03C7;. In matrix <b>Y</b> above, &#x03C7; has the value 13.</p>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_2.2">
+<h2 class="h2"><b>2.2<span class="space">&#160;</span>Matrix multiplication</b></h2>
+<p class="noindent">Matrix multiplication is, at first sight, a complicated procedure when compared with the simple multiplication of numbers. Firstly, not all matrices can be multiplied together, and secondly, for those that can, the result of such an operation&#x2014;typically a third matrix&#x2014;must involve all the matrix elements in the two initial matrices.</p>
+<p class="indent3-ka1">The rule which defines matrix multiplication can be stated very generally for two matrices <b>A</b> and <b>B</b> whose product is a third matrix <b>C</b>. If we identify each element in matrix <b>C</b> as <i>C<sub>ij</sub></i>, where <i>i</i> and <i>j</i> refer to the row and column of the element respectively, then the value of <i>Cij</i> is obtained as</p>
+<aside class="abc" style="margin-top:2em;" epub:type="sidebar">
+<p class="noindent2-ka" style="margin-left:0.4em;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle mathvariant='bold' mathsize='normal'><mi>P</mi></mstyle><mo>=</mo><mrow><mo>(</mo>
+  <mrow>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mn>1</mn>
+     </mtd>
+     <mtd>
+      <mn>2</mn>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mn>3</mn>
+     </mtd>
+     <mtd>
+      <mn>1</mn>
+     </mtd>
+    </mtr>
+    
+   </mtable>
+  </mrow>
+ <mo>)</mo></mrow>
+</math>
+</p>
+<p class="noindent2-ka"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mstyle mathvariant='bold' mathsize='normal'><mi>Q</mi></mstyle><mo>=</mo><mrow><mo>(</mo>
+  <mrow>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mn>3</mn>
+     </mtd>
+     <mtd>
+      <mn>1</mn>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mo>&#x2212;</mo><mn>2</mn>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+    </mtr>
+    
+   </mtable>
+  </mrow>
+ <mo>)</mo></mrow>
+</math>
+</p>
+<p class="noindent2-ka"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mstyle mathvariant='bold' mathsize='normal'><mi>R</mi></mstyle><mo>=</mo><mrow><mo>(</mo>
+  <mrow>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mo>&#x2212;</mo><mn>1</mn>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mn>1</mn>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mn>7</mn>
+     </mtd>
+     <mtd>
+      <mn>3</mn>
+     </mtd>
+    </mtr>
+    
+   </mtable>
+  </mrow>
+ <mo>)</mo></mrow>
+</math>
+</p>
+</aside>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mstyle displaystyle='true'><mo>&#x2211;</mo><mrow><msub><mi>A</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub><mtext>&#x2009;</mtext><mo>&#x22C5;</mo><mtext>&#x2009;</mtext><msub><mi>B</mi><mrow><mi>k</mi><mi>j</mi></mrow></msub></mrow></mstyle></mrow></semantics></math> for the process <b>A</b> &#x00D7; <b>B</b> = <b>C</b></p>
+<p class="noindent">In this expression, the summation is carried out from <i>k</i> = 1 to the maximum value of <i>k</i>, as defined by the size of the matrices.</p>
+<p class="indent3-ka1">As an example, let us consider the multiplication of the two 2 &#x00D7; 2 square matrices <b>P</b> and <b>Q</b> to give a new matrix <b>R</b>:</p>
+<figure style="margin-left:-2em;">
+ <img src="../images/page18-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">Note that this operation has assumed a <i>particular order</i> for carrying out this multiplication, i.e. <b>P</b> &#x00D7; <b>Q</b>. The alternative order <b>Q</b> &#x00D7; <b>P</b> would result in matrix elements such as</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><msup><mi>R</mi><mo>&#x2032;</mo></msup><mrow><mn>11</mn></mrow></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msub><mi>Q</mi><mrow><mn>11</mn></mrow></msub><mtext>&#x2009;</mtext><mo>&#x22C5;</mo><mtext>&#x2009;</mtext><msub><mi>P</mi><mrow><mn>11</mn></mrow></msub><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><msub><mi>Q</mi><mrow><mn>12</mn></mrow></msub><mtext>&#x2009;</mtext><mo>&#x22C5;</mo><mtext>&#x2009;</mtext><msub><mi>P</mi><mrow><mn>21</mn></mrow></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>3</mn><mtext>&#x2009;</mtext><mtext>x</mtext><mtext>&#x2009;</mtext><mn>1</mn><mtext>&#x2009;</mtext><mtext>+</mtext><mtext>&#x2009;</mtext><mn>1</mn><mtext>&#x2009;</mtext><mtext>x</mtext><mtext>&#x2009;</mtext><mn>3</mn><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>6</mn></mrow></semantics></math></p>
+<p class="noindent1">which, for this example, is clearly different from <i>R</i><sub>11</sub>.</p>
+<p class="indent3-ka1">This illustrates an important difference between the multiplication of <i>matrices</i> and the multiplication of <i>numbers</i>. Simple multiplication is <i>commutative</i>, i.e. 2 &#x00D7; 3 = 3 &#x00D7; 2, but matrix multiplication is only commutative if both the matrices are symmetrical about the leading diagonal.</p>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_2.3">
+<h2 class="h2"><b>2.3<span class="space">&#160;</span>Symmetry operations and matrices</b></h2>
+<p class="noindent">We are now in a position both to express symmetry operations in matrix notation, and also to examine the consequences of sequential symmetry operations&#x2014;again through the use of matrices.</p>
+<a class="page" id="page_19">Page 19, Matrices, multiplication tables and representations</a>
+<h3 class="h3"><b>Matrices for C<sub>2</sub> rotations</b></h3>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.1">
+ <img src="../images/page19-2.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 2.1</b></figcaption>
+</figure>
+</aside>
+<p class="noindent">As an initial example, we may consider the effect of two-fold rotations around the Cartesian axes on a general point P(<i>X</i>, <i>Y</i>, <i>Z</i>) as shown in <a href="#fig_2.1">Fig. 2.1</a>.</p>
+<p class="indent3-ka1">If the C<sub>2</sub>(<i>x</i>) axis is coincident with <i>x</i>, then the effect of C<sub>2</sub>(<i>x</i>) on P is to move this point to the position Q, with new coordinates (<i>X</i>,&#x2212;<i>Y</i>, &#x2212;<i>Z</i>).</p>
+<p class="indent3-ka1">The effect of this rotation can be expressed as three separate equations</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>C</mtext><mn>2</mn></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mi>X</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mi>X</mi><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mi>Y</mi><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mi>Z</mi></mrow></semantics></math></p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>C</mtext><mn>2</mn></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mi>Y</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mi>X</mi><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow><mi>Y</mi><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mi>Z</mi></mrow></semantics></math></p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>C</mtext><mn>2</mn></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mi>Z</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mi>X</mi><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mi>Y</mi><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow><mi>Z</mi></mrow></semantics></math></p>
+<p class="noindentt" style="width:70%;">and also in matrix form, where the correspondence with the separate equations above is clearly apparent:</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>C</mtext><mn>2</mn></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr><mtr><mtd><mi>Z</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr><mtr><mtd><mi>Z</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mrow><mo>&#x2212;</mo><mi>Y</mi></mrow></mtd></mtr><mtr><mtd><mrow><mo>&#x2212;</mo><mi>Z</mi></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<p class="indent3-ka1">In a similar way, C<sub>2</sub> rotation about the <i>y</i> axis (<a href="#fig_2.2">Fig. 2.2</a>) shifts (<i>X</i>,<i>Y</i>,<i>Z</i>) to the new position <i>R</i> at (&#x2212;<i>X</i>,<i>Y</i>,&#x2212;<i>Z</i>) and is expressed as</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>C</mtext><mn>2</mn></msub><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr><mtr><mtd><mi>Z</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr><mtr><mtd><mi>Z</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><mo>&#x2212;</mo><mi>X</mi></mrow></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr><mtr><mtd><mrow><mo>&#x2212;</mo><mi>Z</mi></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<aside class="abc" style="margin-top:-21em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.2">
+ <img src="../images/page19-3.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 2.2</b></figcaption>
+</figure>
+</aside>
+<p class="noindent">whilst C<sub>2</sub>(<i>z</i>) acting on <i>P</i> shifts the point to S(&#x2212;<i>X</i>, &#x2212;<i>Y</i>, <i>Z</i>), as in <a href="#fig_2.3">Fig. 2.3</a>:</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>C</mtext><mn>2</mn></msub><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr><mtr><mtd><mi>Z</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr><mtr><mtd><mi>Z</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><mo>&#x2212;</mo><mi>X</mi></mrow></mtd></mtr><mtr><mtd><mrow><mo>&#x2212;</mo><mi>Y</mi></mrow></mtd></mtr><mtr><mtd><mi>Z</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<p class="noindent">Each of these matrices is therefore associated with a particular rotational symmetry operation. Matrices which represent the operations of higher order C<sub><i>n</i></sub> axes and S<sub><i>n</i></sub> axes will be encountered in <a href="Chapter04.xhtml#ch04">Chapter 4</a>.</p>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.3">
+ <img src="../images/page19-4.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 2.3</b></figcaption>
+</figure>
+</aside>
+<h3 class="h3"><b>Matrices for reflections</b></h3>
+<p class="noindent">As may be seen from <a href="#fig_2.4">Fig. 2.4</a>, the operation of reflection in the plane <i>&#x03C3;</i>(<i>xy</i>) would take point P(<i>X</i>, <i>Y</i>, <i>Z</i>) to position <i>T</i> at (<i>X</i>, <i>Y</i>, &#x2212;<i>Z</i>) and, in matrix notation, this would be summarised as</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x03C3;</mi><mrow><mo>(</mo><mrow><mi>x</mi><mi>y</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr><mtr><mtd><mi>Z</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr><mtr><mtd><mi>Z</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr><mtr><mtd><mrow><mo>&#x2212;</mo><mi>Z</mi></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure style="margin-left:-0em;" id="fig_2.4">
+ <img src="../images/page19-5.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 2.4</b></figcaption>
+</figure>
+</aside>
+<p class="noindent">The matrices for reflection in planes <i>&#x03C3;</i>(<i>xz</i>) and <i>&#x03C3;</i>(<i>yz</i>) are</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x03C3;</mi><mrow><mo>(</mo><mrow><mi>x</mi><mi>z</mi></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mo>,</mo><mtext>&#x2009;</mtext><mi>&#x03C3;</mi><mrow><mo>(</mo><mrow><mi>y</mi><mi>z</mi></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<a class="page" id="page_20">Page 20, Matrices, multiplication tables and representations</a>
+<h3 class="h3"><b>Matrices for E and i</b></h3>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtext>E=</mtext><mrow><mo>(</mo>
+  <mrow>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mn>1</mn>
+     </mtd>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+     <mtd>
+      <mn>1</mn>
+     </mtd>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+     <mtd>
+      <mn>1</mn>
+     </mtd>
+    </mtr>
+    
+   </mtable>
+  </mrow>
+ <mo>)</mo></mrow>
+</math>
+</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtext>i=</mtext><mrow><mo>(</mo>
+  <mrow>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mo>&#x2212;</mo><mn>1</mn>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+     <mtd>
+      <mrow>
+       <mo>&#x2212;</mo><mn>1</mn>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+     <mtd>
+      <mrow>
+       <mo>&#x2212;</mo><mn>1</mn>
+      </mrow>
+     </mtd>
+    </mtr>
+    
+   </mtable>
+  </mrow>
+ <mo>)</mo></mrow>
+</math>
+</p>
+</aside>
+<p class="noindent">The matrices which describe the identity and inversion operations on a general point P(<i>X</i>, <i>Y</i>, <i>Z</i>) are very straightforward. The effect of the identity is to leave the coordinates unchanged, and operation of inversion through a centre located at the coordinate origin (0, 0, 0) takes the point (<i>X</i>, <i>Y</i>, <i>Z</i>) to the position (&#x2212;<i>X</i>, &#x2212;<i>Y</i>, &#x2212;<i>Z</i>).</p>
+<p class="indent3-ka1">The matrices for the operations E and i are shown alongside.</p>
+<h3 class="h3"><b>Sequential symmetry operations in the point group D<sub>2</sub></b></h3>
+<p class="noindent">We are now in a position to explore the effect of carrying out sequential symmetry operations both pictorially and by using simple matrices, and one of the easiest systems to visualise arises when all the important symmetry operations involve simple rotations.</p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.5">
+ <img src="../images/page20-2.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 2.5</b></figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1"><a href="#fig_2.5">Figure 2.5</a> shows the general point P(<i>X</i>, <i>Y</i>, <i>Z</i>) in a Cartesian framework where a C<sub>2</sub> axis lies along each of the directions <i>x</i>, <i>y</i> and <i>z</i>. This collection of symmetry elements, together with the identity constitutes the D<sub>2</sub> point group.</p>
+<p class="indent3-ka1">Rotation about <i>x</i> via C<sub>2</sub>(<i>x</i>) takes P to a position Q, with coordinates (<i>X</i>, &#x2212;<i>Y</i>, &#x2212;<i>Z</i>), and <i>subsequent rotation</i> about <i>y</i> using C<sub>2</sub>(<i>y</i>) takes Q to the position S, at (&#x2212;<i>X</i>, &#x2212;<i>Y</i>, <i>Z</i>).</p>
+<p class="indent3-ka1">If we then carry out the C<sub>2</sub>(<i>z</i>) operation on S, we return to the original position P.</p>
+<p class="indent3-ka1">The separate operations could be written as</p>
+<p class="center">C<sub>2</sub>(<i>x</i>)P &#x2192; Q, C<sub>2</sub>(<i>y</i>)Q &#x2192; S, C<sub>2</sub>(<i>z</i>)S &#x2192; P</p>
+<p class="noindent">and the complete sequence of operations as</p>
+<p class="center">C<sub>2</sub>(<i>z</i>) &#x00B7; C<sub>2</sub>(<i>y</i>) &#x00B7; C<sub>2</sub>(<i>x</i>)P &#x2192; P</p>
+<p class="noindent">Note that the first operation to be carried out, C<sub>2</sub>(<i>x</i>), appears at the <i>right-hand side</i> of the above sequence of symmetry operations.</p>
+<p class="indent3-ka1">These sequential operations illustrate one of the most important features of a point group: that the result of carrying out two or more operations in the group can in general be achieved separately by another operation of the group.</p>
+<p class="indent3-ka1">In this case, the result of the first two operations,</p>
+<p class="center">C<sub>2</sub>(<i>y</i>) &#x00B7; C<sub>2</sub>(<i>x</i>)P &#x2192; S, can be achieved by C<sub>2</sub>(<i>z</i>)P &#x2192; S</p>
+<p class="indent" style="margin-left:6em;margin-top:-0.5em;">i.e. C<sub>2</sub>(<i>y</i>) &#x00B7; C<sub>2</sub>(<i>x</i>) = C<sub>2</sub>(<i>z</i>)</p>
+<p class="indent3-ka1" style="margin-top:0.5em;">The complete sequence C<sub>2</sub>(<i>z</i>) &#x00B7; C<sub>2</sub>(<i>y</i>) &#x00B7; C<sub>2</sub>(<i>x</i>)is equivalent to E.</p>
+<h3 class="h3"><b>Sequential operations&#x2014;use of matrices</b></h3>
+<p class="noindent">The results above have been obtained by an essentially pictorial route, but the same conclusions can also be reached by multiplying together the <i>matrices</i> for the separate operations&#x2014;as derived above.</p>
+<a class="page" id="page_21">Page 21, Matrices, multiplication tables and representations</a>
+<p class="indent3-ka1">For example, the sequential operations C<sub>2</sub>(<i>y</i>) &#x00B7; C<sub>2</sub>(<i>x</i>) would be obtained from the product of the appropriate matrices:</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow><mtext>&#x2009;</mtext><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+</p>
+<p class="noindent">and the resulting matrix is seen to correspond to that for the operation C<sub>2</sub>(<i>z</i>).</p>
+<p class="indent3-ka1">Note that the matrices for C<sub>2</sub>(<i>x</i>) and C<sub>2</sub>(<i>y</i>) are both symmetrical about the leading diagonal, and because of this, these two operations will commute, i.e.C<sub>2</sub>(<i>y</i>)&#x00B7; C<sub>2</sub>(<i>x</i>)=C<sub>2</sub>(<i>x</i>)&#x00B7;C<sub>2</sub>(<i>y</i>)</p>
+<p class="indent3-ka1">Successive rotations about the <i>same</i> C<sub>2</sub> axis, such as C<sub>2</sub>(<i>y</i>)&#x00B7;C<sub>2</sub>(<i>y</i>), result in the identity E. In matrix form, this arises from</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow><mtext>&#x2009;</mtext><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+</p>
+<h3 class="h3"><b>Multiplication table for the operations in point group D<sub>2</sub></b></h3>
+<p class="noindent">In general, the effect of carrying out sequential symmetry operations can be expressed in the form of a <i>multiplication table</i>. The character table for the point group D<sub>2</sub> (Appendix II) has four symmetry elements, each of which is capable of only one operation:</p>
+<p class="noindent" style="margin-left:9em;">D<sub>2</sub>&#160;&#160;&#160;&#160;&#160;&#160;&#160;E &#160;&#160;&#160;&#160;&#160;&#160;C<sub>2</sub>(<i>z</i>)&#160;&#160;&#160;&#160;&#160;&#160;C<sub>2</sub>(<i>y</i>)&#160;&#160;&#160;&#160;C<sub>2</sub>(<i>x</i>)</p>
+<p class="noindent">The multiplication table for the D<sub>2</sub> point group is shown below:</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page21-3.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+</figcaption>
+</figure>
+<p class="indent3-ka1">In this table, the <i>first operation</i> to be carried out is given along the <i>top row</i>, and the <i>second operation</i> is given in the left-hand <i>vertical column</i>. The body of the table then indicates the single symmetry operation which is equivalent to performing the two sequential operations.</p>
+<p class="indent3-ka1">This table reinforces the importance of the identity E in a symmetry group, and also shows that for this point group, all the operations are commutative: e.g. C<sub>2</sub>(<i>x</i>)&#x00B7; C<sub>2</sub>(<i>y</i>) = C<sub>2</sub>(<i>y</i>)&#x00B7;C<sub>2</sub>(<i>x</i>) = C<sub>2</sub>(<i>z</i>).</p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.6">
+ <img src="../images/page21-4.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 2.6</b></figcaption>
+</figure>
+</aside>
+<h3 class="h3"><b>Sequential operations in the C<sub>2v</sub> point group</b></h3>
+<p class="noindent"><a href="#fig_2.6">Figure 2.6</a> shows the symmetry elements in the C<sub>2v</sub> point group in relation to the general point P(<i>X</i>, <i>Y</i>, <i>Z</i>), and the multiplication table for C<sub>2v</sub> can be constructed either pictorially, or directly using matrices.</p>
+<a class="page" id="page_22">Page 22, Matrices, multiplication tables and representations</a>
+<p class="indent3-ka1">As may be seen from this figure, a reflection in the <i>yz</i> plane followed by a reflection in the <i>xz</i> plane produces the sequence P &#x2192; U &#x2192; S, and single stage P &#x2192; S could be achieved by C<sub>2</sub> rotation about <i>z</i>.</p>
+<p class="indent3-ka1">The matrices for these operations have already been obtained as</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mtable>
+   <mtr>
+    <mtd>
+     <mrow>
+      <munder>
+       <mrow>
+        <mrow><mo>(</mo>
+         <mrow>
+          <mtable>
+           <mtr>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mn>1</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+           </mtr>
+           
+          </mtable>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+       <mrow>
+        <mi>&#x03C3;</mi><mrow><mo>(</mo>
+         <mrow>
+          <mi>x</mi><mi>z</mi>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+      </munder>
+      
+     </mrow>
+    </mtd>
+    <mtd>
+     <mrow>
+      <munder>
+       <mrow>
+        <mrow><mo>(</mo>
+         <mrow>
+          <mtable>
+           <mtr>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mn>1</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+           </mtr>
+           
+          </mtable>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+       <mrow>
+        <mi>&#x03C3;</mi><mrow><mo>(</mo>
+         <mrow>
+          <mi>y</mi><mi>z</mi>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+      </munder>
+      
+     </mrow>
+    </mtd>
+    <mtd>
+     <mrow>
+      <munder>
+       <mrow>
+        <mrow><mo>(</mo>
+         <mrow>
+          <mtable>
+           <mtr>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mn>1</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mn>1</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+           </mtr>
+           
+          </mtable>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+       <mrow>
+        <msub>
+         <mtext>C</mtext>
+         <mn>2</mn>
+        </msub>
+        <mrow><mo>(</mo>
+         <mi>z</mi>
+        <mo>)</mo></mrow>
+       </mrow>
+      </munder>
+      
+     </mrow>
+    </mtd>
+    <mtd>
+     <mrow></mrow>
+    </mtd>
+   </mtr>
+   
+  </mtable>
+ </mrow>
+</math>
+</p>
+<p class="noindent">and, in matrix form, the result of a sequential operation such as <i>&#x03C3;</i>(<i>xz</i>) &#x00B7; <i>&#x03C3;</i>(<i>yz</i>) is therefore</p>
+<p class="center" style="margin-left:-2em;"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<p class="noindent">i.e. <i>&#x03C3;</i>(<i>xz</i>) &#x00B7; <i>&#x03C3;</i>(<i>yz</i>) = C<sub>2</sub>(<i>z</i>).</p>
+<p class="indent3-ka1">The complete multiplication table for C<sub>2v</sub> is shown below:</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page22-3.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+</figcaption>
+</figure>
+</section>
+<section epub:type="chapter" id="sec_2.4">
+<h2 class="h2"><b>2.4<span class="space">&#160;</span>The concept of a representation</b></h2>
+<p class="noindent">In the multiplication tables for D<sub>2</sub> and C<sub>2v</sub> above, the individual operations appear in symbolic form, i.e. E, C<sub>2</sub>(<i>z</i>) etc. but the multiplication table is also true if instead of using these symbols, we replace them by the <i>matrices</i> which we have used above to <i>represent</i> the various symmetry operations.</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.7">
+ <img src="../images/page22-4.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 2.7</b></figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1">The fact that we can use a group of matrices in this way to represent symmetry operations leads to the general concept of a <i>representation</i> as being a set of matrices which can be placed in correspondence with the symmetry operations of the group, and which obey the group multiplication table.</p>
+<p class="indent3-ka1">However, the matrices which determine the fate of P(<i>X</i>, <i>Y</i>, <i>Z</i>) in the examples above are <i>not unique</i> in having this property, and nor are they the simplest sets of matrices which behave in this way.</p>
+<p class="indent3-ka1"><a href="#fig_2.7">Figure 2.7</a> shows the elements of symmetry in the C<sub>2v</sub> point group, and can be used to study the effect of the operations on the single vector <i>x</i><sub>1</sub> as shown. The identity E and the operation <i>&#x03C3;</i>(<i>xz</i>) leave this vector unaffected, but <i>&#x03C3;</i>(<i>yz</i>) and C<sub>2</sub>(<i>z</i>) reverse its direction, and these results <a class="page" id="page_23" style="width:100%;">Page 23, Matrices, multiplication tables and representations</a>can be summarised as</p>
+<p class="center">E(<i>x</i><sub>1</sub>) &#x2192; (<i>x</i><sub>1</sub>), C<sub>2</sub>(<i>z</i>) (<i>x</i><sub>1</sub> &#x2192; &#x2212;(<i>x</i><sub>1</sub>),</p>
+<p class="center"><i>&#x03C3;</i>(<i>xz</i>)(<i>x</i><sub>1</sub>) &#x2192; (<i>x</i><sub>1</sub>), <i>&#x03C3;</i>(<i>xz</i>)(<i>x</i><sub>1</sub>) &#x2192; (<i>x</i><sub>1</sub>) &#x2212;(<i>x</i><sub>1</sub>)</p>
+<p class="noindent">Here, the <i>coefficients</i> of <i>x</i><sub>1</sub> on the right-hand side of each of these expressions can be thought of as the <i>1</i> &#x00D7; <i>1</i> <i>matrices</i> (+ 1), (&#x2212;1), (+ 1) and (&#x2212;1) which represent the respective symmetry operations, in a similar way to the 3 &#x00D7; 3 matrices which describe the movement of point P(<i>X</i>, <i>Y</i>,<i>Z</i>).</p>
+<p class="indent3-ka1">These numbers also obey the C<sub>2v</sub> multiplication table, as can be seen when the symmetry operations in C<sub>2v</sub> are replaced by the corresponding coefficients: i.e.</p>
+<p class="center">E = +1,&#160;&#160;&#160;&#160;C<sub>2</sub>(<i>z</i>) = &#x2212;1,&#160;&#160;&#160;&#160;<i>&#x03C3;</i><sub>v</sub>(<i>xz</i>)= +1,&#160;&#160;&#160;&#160;<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>&#x03C3;</mi><mtext>v</mtext><mrow><mo>&#x2032;</mo></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><mi>z</mi></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mn>1</mn></mrow></semantics></math></p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page23-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.8">
+ <img src="../images/page23-2.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 2.8</b></figcaption>
+</figure>
+</aside>
+<p class="noindent">These 1 &#x00D7; 1 matrices therefore also constitute a <i>representation</i>, and this can be set out as</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page23-4.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+</figcaption>
+</figure>
+<p class="noindent">(it is usual to ignore the &#x2018;+&#x2019; sign).</p>
+<p class="indent3-ka1">In the same way, if we consider the effect of the various symmetry operations on vectors <i>y</i><sub>1</sub> and <i>z</i><sub>1</sub>, we arrive at two more representations. From <i>y</i><sub>1</sub> we have (<a href="#fig_2.8">Fig. 2.8</a>)</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>E</mtext><mrow><mo>(</mo><mrow><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>&#x2192;</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mo>,</mo><mtext>&#x2009;</mtext><msub><mtext>C</mtext><mn>2</mn></msub><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mo>&#x2192;</mo><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mo>,</mo></mrow></semantics></math></p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#x03C3;</mi><mtext>v</mtext></msub><mrow><mo>(</mo><mrow><mi>x</mi><mi>z</mi></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>&#x2192;</mo><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><msubsup><mi>&#x03C3;</mi><mtext>v</mtext><mrow><mo>&#x2032;</mo></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><mi>z</mi></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>&#x2192;</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<p class="noindent">This produces the representation</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page23-5.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.9">
+ <img src="../images/page23-3.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 2.9</b></figcaption>
+</figure>
+</aside>
+<p class="noindent">whilst from <i>z</i><sub>1</sub> we have (<a href="#fig_2.9">Fig. 2.9</a>)</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page23-6.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+</figcaption>
+</figure>
+<p class="noindent">Both of these representations also obey the multiplication table.</p>
+<a class="page" id="page_24">Page 24, Matrices, multiplication tables and representations</a>
+</section>
+<section epub:type="chapter" id="sec_2.5">
+<h2 class="h2" style="width:55%;"><b>2.5<span class="space">&#160;</span>Irreducible representations: a second look at character tables</b></h2>
+<p class="noindent">The three representations above have arisen as a result of using the vectors <i>x</i><sub>1</sub>, <i>y</i><sub>1</sub> and <i>z</i><sub>1</sub> to illustrate the effect of the various symmetry operations in C<sub>2v</sub>. These representations are three of the <i>simplest representations</i> which exist for this point group, and are known as <i>irreducible representations</i>.</p>
+<p class="indent3-ka1">The vectors which led us to these irreducible representations are examples of bases, and we would say that here <i>x</i><sub>1</sub>, <i>y</i><sub>1</sub> and <i>z</i><sub>1</sub> are bases for the irreducible representations:</p>
+<p class="center">1&#160;&#160;&#160;&#160;&#160;&#x2212;1&#160;&#160;&#160;&#160;&#160;1&#160;&#160;&#160;&#160;&#160;&#x2212;1;&#160;&#160;&#160;&#160;&#160;1&#160;&#160;&#160;&#160;&#160;&#x2212;1&#160;&#160;&#160;&#160;&#160;&#x2212;1&#160;&#160;&#160;&#160;&#160;1;&#160;&#160;&#160;&#160;&#160;and&#160;&#160;&#160;&#160;&#160;1&#160;&#160;&#160;&#160;&#160;1&#160;&#160;&#160;&#160;&#160;1&#160;&#160;&#160;&#160;&#160;1</p>
+<p class="noindent">The fourth and final irreducible representation in C<sub>2v</sub> arises from the set of one-dimensional matrices:</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page24-2.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+</figcaption>
+</figure>
+<p class="noindent"><b>Representations in the C<sub>2v</sub> character table</b></p>
+<p class="noindent">In <a href="Chapter01.xhtml#ch01">Chapter 1</a>, character tables were introduced as providing a summary of the various symmetry operations in a point group, and we are now in a position to explore much of the additional information contained in these tables. We also know that the term <i>character</i> refers to the sum of the diagonal terms of a matrix. The complete character table for the point group C<sub>2v</sub> is reproduced below:</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page24-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+</figcaption>
+</figure>
+<p class="noindent">Along the top outer row are to be found the four symmetry operations in the group: the identity, the C<sub>2</sub> axis and the two planes. These symbols also confirm the location of the Cartesian axes. The main body of the table contains the <i>characters</i> of the <i>irreducible representations</i> discussed above, and because these representations are only one-dimensional matrices, the characters are identical to the matrices themselves.</p>
+<p class="indent3-ka1">The letters down the left-hand column are used to identify each representation by a specific label. The totally symmetric irreducible representation is labelled A<sub>1</sub>, and refers to the row of +1 entries under each symmetry operation. Below this are the three other irreducible representations, labelled A<sub>2</sub>, B<sub>1</sub> and B<sub>2</sub>.</p>
+<a class="page" id="page_25">Page 25, Matrices, multiplication tables and representations</a>
+<p class="indent3-ka1">On the right-hand side of the table are to be found a number of mathematical functions, such as &#x2018;<i>x</i>&#x2019;, or &#x2018;<i>xy</i>&#x2019;, or related symbols such as &#x2018; R<sub><i>x</i></sub>&#x2019; or &#x2018;R<sub><i>y</i></sub>&#x2019;. There are usually two columns of these functions: the far right column listing squared or cross-product functions such as &#x2018;<i>x</i><sup>2</sup>&#x2019;, &#x2018;<i>y</i><sup>2</sup>&#x2019; or &#x2018;<i>xy</i>&#x2019;, and the inner column containing &#x2018;<i>x</i>&#x2019;, &#x2018;<i>y</i>&#x2019; and &#x2018;<i>z</i>&#x2019;, together with symbols denoting rotation about a particular axis&#x2014;such as &#x2018;R<sub><i>x</i></sub>&#x2019;.</p>
+<p class="indent3-ka1">These functions or symbols are placed on the same row as the irreducible representation to which they are related, and may be used as bases to illustrate the corresponding representations.</p>
+<p class="indent3-ka1">In <a href="#fig_2.7">Fig. 2.7</a>, we saw the effect of the various symmetry operations in this point group on the vector <i>x</i><sub>1</sub>, and that the end result was to produce an irreducible representation:</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page25-2.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+</figcaption>
+</figure>
+<p class="noindent">This representation carries the label B<sub>1</sub> in the character table, and its relationship with the <i>x</i><sub>1</sub> vector is indicated by placing the function &#x2018;<i>x</i>&#x2019; on the same row as B<sub>1</sub>:</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page25-3.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+</figcaption>
+</figure>
+<p class="noindent">There are various ways of expressing this correspondence between a mathematical function and its irreducible representation. One way is to say that &#x2018;<i>x</i> has the same symmetry as B<sub>1</sub>&#x2019;, or &#x2018;<i>x</i> has B<sub>1</sub> symmetry&#x2019;, whilst another would be to say that &#x2018;<i>x</i> is a <i>basis</i> for the B<sub>1</sub> representation&#x2019;. In the same way, the functions &#x2018;<i>y</i>&#x2019; and &#x2018;<i>z</i>&#x2019; in this column are linked to the B<sub>2</sub> and A<sub>1</sub> representations. In order to find a related function on which to base the A<sub>2</sub> representation, we enter the far right column. Here are to be found the squared and cross-product terms, and the character table indicates that one of these, &#x2018;<i>xy</i>&#x2019;, could be used to illustrate the A<sub>2</sub> representation.</p>
+<aside class="abc" style="margin-top:2em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.10">
+ <img src="../images/page25-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 2.10</b></figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1"><a href="#fig_2.10">Figure 2.10</a> shows a <i>d<sub>xy</sub></i> orbital in relation to the Cartesian <i>xy</i> plane. The <i>z</i> axis is perpendicular to the page. The wave function for this orbital has the same symmetry properties as the function &#x2018;<i>xy</i>&#x2019;, in that it is positive when <i>x</i> and <i>y</i> are either both positive and both negative, and negative when <i>x</i> and <i>y</i> have opposite signs.</p>
+<p class="indent3-ka1">Here, the effect of carrying out the four symmetry operations is to produce the following relationships:</p>
+<p class="image"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>E</mtext><mrow><mo>(</mo><mrow><msub><mi>d</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>&#x2192;</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>d</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>,</mo><mtext>&#x2009;</mtext><msub><mtext>C</mtext><mn>2</mn></msub><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>d</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>&#x2192;</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>d</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<p class="image"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#x03C3;</mi><mi>v</mi></msub><mrow><mo>(</mo><mrow><mi>x</mi><mi>z</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>d</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>&#x2192;</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>d</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>,</mo><mtext>&#x2009;</mtext><msubsup><mi>&#x03C3;</mi><mi>v</mi><mrow><mo>&#x2032;</mo></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><mi>z</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>d</mi><mi>x</mi><mi>y</mi></mrow><mo>)</mo></mrow><mo>&#x2192;</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><msub><mi>d</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<p class="noindent">and the coefficients correspond to the A<sub>2</sub> representation.</p>
+<a class="page" id="page_26">Page 26, Matrices, multiplication tables and representations</a>
+<h3 class="h3"><b>Irreducible representations in the D<sub>2</sub> character table</b></h3>
+<p class="noindent">The multiplication table for D<sub>2</sub> which was derived earlier shows many similarities to that for C<sub>2v</sub>, and these similarities persist when we compare the two character tables:</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page26-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.11">
+ <img src="../images/page26-2.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 2.11</b></figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1">The D<sub>2</sub> character table also has four irreducible representations, which can be written as one-dimensional matrices, and the functions <i>x</i>, <i>y</i> and <i>z</i> are again suitable bases for three of these&#x2014;B<sub>3</sub>, B<sub>2</sub> and B<sub>1</sub> respectively. In D<sub>2</sub> however, it is the totally symmetric representation, denoted here as &#x2018;A&#x2019;, which requires a basis function in the far right-hand column. This could be any of the terms <i>x</i><sup>2</sup>, <i>y</i><sup>2</sup> or <i>z</i><sup>2</sup>, <i>or a sum or difference of these terms</i>.</p>
+<p class="indent3-ka1"><a href="#fig_2.11">Figure 2.11</a> shows the characteristic shape of the <i>d</i><sub><i>x</i><sup>2</sup>&#x2212;<i>y</i><sup>2</sup></sub> orbital in relation to the three C<sub>2</sub> axes in this symmetry group. Rotat1on about any of these <i>x</i>, <i>y</i> or <i>z</i> axes produces an equivalent configuration. All the equations describing the effect of the various symmetry elements on the <i>d</i><sub><i>x</i><sup>2</sup>&#x2212;<i>y</i><sup>2</sup></sub> orbital therefore involve the one-dimensional matrix (+1). This orbital could therefore be used as a basis for illustrating the &#x2018;A&#x2019; representation in the D<sub>2</sub> point group.</p>
+</section>
+<section epub:type="chapter" id="sec_2.6">
+<h2 class="h2"><b>2.6<span class="space">&#160;</span>Summary</b></h2>
+<p class="noindent">This chapter has provided an introduction to the properties of simple matrices, and to their use as representations for symmetry operations. The idea that such operations can form a <i>group</i> is illustrated by the group multiplication table, and, in particular, it is shown how simple mathematical functions can act as bases for the irreducible representations in the point groups C<sub>2v</sub> and D<sub>2</sub>. The exercises below provide an opportunity to become more familiar with the use of matrices and to further explore the use of character tables.</p>
+<a class="page" id="page_27">Page 27, Matrices, multiplication tables and representations</a>
+</section>
+<section epub:type="chapter" id="sec_2.7">
+<h2 class="h2"><b>2.7<span class="space">&#160;</span>Exercises</b></h2>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mstyle mathvariant='bold' mathsize='normal'><mi>P</mi></mstyle><mo>=</mo><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+      <mtd>
+       <mn>2</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>3</mn>
+      </mtd>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mstyle mathvariant='bold' mathsize='normal'><mi>Q</mi></mstyle><mo>=</mo><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mn>3</mn>
+      </mtd>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mn>2</mn>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mstyle mathvariant='bold' mathsize='normal'><mi>R</mi></mstyle><mo>=</mo><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>7</mn>
+      </mtd>
+      <mtd>
+       <mn>3</mn>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+</p>
+</aside>
+<p class="noindent"><a href="AppendixI.xhtml#ch02_app1">1</a>. The matrices <b>P</b>, <b>Q</b> and <b>R</b> are reproduced alongside. Work out the <i>characters</i> of the matrices obtained as a result of the multiplications</p>
+<p class="center">(i) <b>P</b> &#x00D7; <b>P</b>, (ii) <b>Q</b> &#x00D7; <b>P</b>, (iii) <b>Q</b> &#x00D7; <b>R</b>, (iv) <b>R</b> &#x00D7; <b>P</b></p>
+<p class="noindent"><a href="AppendixI.xhtml#ch02_app2">2</a>. Using the matrices for the operations (E, C<sub>2</sub>(<i>z</i>), etc.) which are given in the text above, work out the <i>single</i> symmetry operations which are equivalent to (i) C<sub>2</sub>(<i>x</i>) &#x00D7; <i>&#x03C3;</i>(<i>xy</i>), (ii) <i>&#x03C3;</i>(<i>xz</i>) &#x00D7; E &#x00D7; i, (iii) C<sub>2</sub>(<i>z</i>) &#x00D7; C<sub>2</sub>(<i>x</i>) &#x00D7; <i>&#x03C3;</i>(<i>yz</i>).</p>
+<p class="noindent"><a href="AppendixI.xhtml#ch02_app3">3</a>. Identify the representations to which functions <i>x</i>, <i>y</i><sup>2</sup> and <i>xz</i> respectively belong in the D<sub>2h</sub> point group (Appendix II).</p>
+<p class="noindent"><a href="AppendixI.xhtml#ch02_app4">4</a>. Suggest which mathematical function(s) could be used as a basis for: (i) the A<sub>g</sub> representation in D<sub>2h</sub>, (ii) the A<sub>u</sub> representation in C<sub>2h</sub>, and (iii) the B<sub>1g</sub> representation in D<sub>2h</sub>.</p>
+</section>
+</section>
+</body>
+</html>

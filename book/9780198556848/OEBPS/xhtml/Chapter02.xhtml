@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Electrode Potentials</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+
+<section epub:type="chapter" id="ch02">
+<a id="page_40" class="page" style="width:70%;">Page 40, Chapter 2: Allowing for non-ideality: activity coefficients</a>
+<h1 class="main"><b>2<span class="space">&#160;</span>Allowing for non-ideality: activity coefficients</b></h1>
+<p class="noindent">In this chapter the relationship between <i>activity</i> and <i>concentration</i> is developed</p>
+<section epub:type="chapter" id="sec_2.1">
+<h2 class="h2"><b>2.1<span class="space">&#160;</span>Introduction</b></h2>
+<p class="noindent">The chemical potential of an <i>ideal</i> solution is given by:</p>
+<figure>
+ <img src="../images/page40-1.jpg" alt="images" style="margin-left:15em;"/>
+</figure>
+<p class="noindent">or</p>
+<figure>
+ <img src="../images/page40-4.jpg" alt="images" style="margin-left:15em;"/>
+</figure>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">As defined, the activity has units of moles dm<sup>&#x2212;3</sup>. Occasionally, and more rigorously, activities are defined in terms of molalities, <i>m</i>, where a<sub>A</sub> = &#x03B3;<sub>A</sub><i>m</i><sub>A</sub>. The quantity <i>m</i><sub>A</sub> has units of moles kg<sup>&#x2212;1</sup> and, unlike a concentration it is temperature independent. For aqueous solutions <i>m</i><sub>A</sub> &#x2248; [A] since one litre of water has a mass of approximately 1 kilogram. Both definitions will be used in this Primer.</p>
+</aside>
+<p class="noindent">depending upon whether we choose to deal with concentrations or mole fractions. However for <i>non-ideal solutions</i> the chemical potential is given by:</p>
+<figure>
+ <img src="../images/page40-3.jpg" alt="images" style="margin-left:15em;"/>
+</figure>
+<p class="noindent">where <i>a</i><sub>A</sub> is the &#x2018;effective&#x2019; concentration of A in the solution or the <i>activity of A</i>. It is related to the concentration of the solution by the activity coefficient &#x03B3;:</p>
+<p class="noindent" id="eqn_2.4" style="margin-left:14.6em;margin-top:0.5em;margin-bottom:0.8em;"><i>a</i><sub>A</sub> = &#x03B3;<sub>A</sub> [A]<span class="no">(2.4)</span></p>
+<p class="noindent">Clearly if &#x03B3;<sub>A</sub> is unity then the solution is ideal. Otherwise the solution is non-ideal and the extent to which &#x03B3;<sub>A</sub> deviates from unity is a measure of the solution&#x2019;s non-ideality. In any solution we usually know [A] but not either <i>a</i><sub>A</sub> or &#x03B3;<sub>A</sub>. However we shall see in this chapter that for the special case of dilute electrolytic solutions it is possible to calculate &#x03B3;<sub>A</sub>. This calculation involves the <i>Debye&#x2013;H&#x00FC;ckel theory</i> to which we turn in <a href="#sec_2.4">Section 2.4</a>. It provides a method by which activities may be quantified through a knowledge of the concentration combined with the Debye&#x2013;H&#x00FC;ckel calculation of &#x03B3;<sub>A</sub>. First, however, we consider some relevant results pertaining to ideal solutions and, second in <a href="#sec_2.3">Section 2.3</a>, a general interpretation of &#x03B3;<sub>A</sub>.</p>
+</section>
+<section epub:type="chapter" id="sec_2.2">
+<h2 class="h2"><b>2.2<span class="space">&#160;</span>The entropy of mixing: ideal solutions</b></h2>
+<figure id="fig_2.1">
+ <img src="../images/page40-2.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.1</b> The mixing of two solutions.</p>
+</aside>
+
+<p class="noindent"> <a id="page_41" class="page">Page 41, Chapter 2: Allowing for non-ideality: activity coefficients</a>Consider what happens when two separate solutions containing <i>n</i><sub>A</sub> and <i>n</i><sub>A</sub> moles of A and B respectively are mixed together. The initial and final free energies will be given by:</p>
+<p class="noindent" style="margin-left:6.5em;margin-top:0.5em;margin-bottom:0.8em;">Initial free energy = <i>n</i><sub>A</sub> <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>&#x03BC;</mtext><mtext>A</mtext><mo>&#x2207;</mo></msubsup></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaaeiVdmaaDaaaleaacaqGbbaabaGaey4bIenaaaaa@39AE@</annotation></semantics></math> + <i>n</i><sub>B</sub> <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>&#x03BC;</mtext><mtext>B</mtext><mo>&#x2207;</mo></msubsup></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVCI8FfYJH8YrFfeuY=Hhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfeaY=biLkVcLq=JHqpepeea0=as0Fb9pgeaYRXxe9vr0=vr0=vqpWqaaeaabiGaciaacaqabeaadaqaaqaaaOqaaiaabY7adaqhaaWcbaGaaeOqaaqaaiabgEGirdaaaaa@39A4@</annotation></semantics></math><span class="no">(2.5)</span></p>
+<p class="noindent" style="margin-left:6.5em;margin-top:0.5em;margin-bottom:0.8em;">Final free energy = <i>n</i><sub>A</sub> &#x03BC;<sub>A</sub> + <i>n</i><sub>B</sub> &#x03BC;<sub>B</sub><span class="no">(2.6)</span></p>
+<p class="noindent" style="margin-left:3em;margin-top:0.5em;margin-bottom:0.8em;">= <i>n</i><sub>A</sub><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>&#x03BC;</mtext><mtext>A</mtext><mo>&#x2207;</mo></msubsup></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaaeiVdmaaDaaaleaacaqGbbaabaGaey4bIenaaaaa@39AE@</annotation></semantics></math> + <i>n</i><sub>A</sub><i>RT</i> ln<i>x</i><sub>A</sub> + <i>n</i><sub>B</sub> <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>&#x03BC;</mtext><mtext>B</mtext><mo>&#x2207;</mo></msubsup></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVCI8FfYJH8YrFfeuY=Hhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfeaY=biLkVcLq=JHqpepeea0=as0Fb9pgeaYRXxe9vr0=vr0=vqpWqaaeaabiGaciaacaqabeaadaqaaqaaaOqaaiaabY7adaqhaaWcbaGaaeOqaaqaaiabgEGirdaaaaa@39A4@</annotation></semantics></math> + <i>n</i><sub>B</sub><i>RT</i> ln<i>x</i><sub>B</sub><span class="no">(2.7)</span></p>
+<p class="noindent">So, clearly,</p>
+<p class="noindent" style="margin-left:1.5em;margin-top:0.5em;margin-bottom:0.8em;">Change in free energy = <i>RT</i> (<i>n</i><sub>A</sub> ln<i>x</i><sub>A</sub> + <i>n</i><sub>B</sub> ln<i>x</i><sub>B</sub>)<span class="no">(2.8)</span></p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.2">
+ <img src="../images/page41-1.jpg" alt="images" style="margin-bottom:0.9em;"/>
+</figure>
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.2</b> The variation of the Gibbs free energy of mixing with the mole fraction of species A present.</p>
+</aside>
+<p class="noindent">and thus</p>
+<p class="center">Free energy of mixing per mole of solution =</p>
+<p class="noindent" id="eqn_2.9" style="margin-left:9em;margin-top:0.5em;margin-bottom:0.8em;"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>R</mi><mi>T</mi></mrow><mrow><msub><mi>n</mi><mi>A</mi></msub><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><msub><mi>n</mi><mi>B</mi></msub></mrow></mfrac></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+= feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaacaWGsbGaamivaaqaaiaad6gadaWgaaWcbaGaamyqaaqabaGccaaMc8Ua ey4kaSIaaGPaVlaad6gadaWgaaWcbaGaamOqaaqabaaaaaaa@3F82@</annotation></semantics></math> (<i>n</i><sub>A</sub> ln<i>x</i><sub>A</sub> + <i>n</i><sub>B</sub> ln<i>x</i><sub>B</sub>)<span class="no">(2.9)</span></p>
+<p class="noindent">and so</p>
+<p class="noindent" style="margin-left:7.4em;margin-top:0.5em;margin-bottom:0.8em;">&#x2206;G<sub>mix</sub> = <i>RT</i> (<i>x</i><sub>A</sub>ln<i>x</i><sub>A</sub> + <i>x</i><sub>B</sub>ln<i>x</i><sub>B</sub>)<span class="no">(2.10)</span></p>
+<p class="noindent">where &#x2206;<i>G</i><sub>mix</sub> is measured in kJ mol<sup>&#x2212;1</sup> and will be negative. The variation of &#x2206;<i>G</i><sub>mix</sub> with <i>x</i><sub>A</sub> is sketched in <a href="#fig_2.2">Fig. 2.2</a>.; note that <i>x</i><sub>B</sub> = 1 &#x2212; <i>x</i><sub>A</sub>. The free energy of mixing attains its largest negative value when <i>x</i><sub>A</sub> = <i>x</i><sub>B</sub> = 0.5. Now, recognising that</p>
+<p class="noindent" style="margin-left:12.6em;margin-top:0.5em;margin-bottom:0.8em;">dG = <i>V</i>d<i>P</i> &#x2212; <i>S</i>d<i>T</i><span class="no">(2.11)</span></p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<figure style="margin-left:2em;">
+ <img src="../images/page41-2.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">we obtain</p>
+<p class="noindent" style="margin-left:7.7em;margin-top:0.5em;margin-bottom:0.8em;"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><mo>&#x2202;</mo><mi>G</mi></mrow><mrow><mo>&#x2202;</mo><mi>T</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mi>P</mi></msub></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaeWaaeaadaWcaaqaaiabgkGi2kaadEeaaeaacqGHciITcaWGubaaaaGaayjkaiaa wMcaamaaBaaaleaacaWGqbaabeaaaaa@3D00@</annotation></semantics></math> = &#x2212;<i>S</i> or <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><mo>&#x2202;</mo><mi>&#x0394;</mi><mi>G</mi></mrow><mrow><mo>&#x2202;</mo><mi>T</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mi>P</mi></msub></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaeWaaeaadaWcaaqaaiabgkGi2kabfs5aejaadEeaaeaacqGHciITcaWGubaaaaGa ayjkaiaawMcaamaaBaaaleaacaWGqbaabeaaaaa@3E66@</annotation></semantics></math> = &#x2212;&#x2206;<i>S</i><span class="no">(2.12)</span></p>
+<p class="noindent">and so the entropy of mixing is, on differentiating <a href="#eqn_2.9">eqn 2.9</a> with respect to temperature, given by</p>
+<p class="noindent" style="margin-left:7.5em;margin-top:0.5em;margin-bottom:0.8em;">&#x2206;<i>S</i><sub>mix</sub> = &#x2212;<i>R</i> (<i>x</i><sub>A</sub>ln<i>x</i><sub>A</sub> + <i>x</i><sub>B</sub>ln<i>x</i><sub>B</sub>)<span class="no">(2.13)</span></p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">Intermolecular forces are required to keep the molecules in the liquid state. The forces may arise, as above, through the attraction of two dipoles (as in liquid HF) or through van der Waals forces between the molecules (as in liquid benzene, C<sub>6</sub>H<sub>6</sub>).</p>
+</aside>
+<p class="noindent">The enthalpy of mixing may then be computed</p>
+<p class="noindent" style="margin-left:7.8em;margin-top:0.5em;margin-bottom:0.8em;">&#x2206;<i>H</i><sub>mix</sub> = &#x2206;G<sub>mix</sub> + <i>T</i>&#x2206;<i>S</i><sub>mix</sub> = 0.<span class="no">(2.14)</span></p>
+<p class="noindent">We have therefore shown that the enthalpy of mixing is zero for ideal solutions. Physically this can be interpreted in the terms that the intermolecular forces between the molecules in the mixture are equal to those in the pure liquids. In other words A&#x2013;A, A&#x2013;B and B&#x2013;B interactions are the same. Equality of interaction forces is therefore an alternative way of describing an ideal solution</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">The fact that &#x2206;<i>H</i><sub>mix</sub> = 0 for an ideal solution means that no heat is given out or taken in when its two components, A and B, are mixed. If the forces between the A and B molecules were stronger than between the A molecules and between the B molecules separately then heat would be evolved on mixing. If they were weaker heat would be absorbed.</p>
+</aside>
+<p class="indent3-ka1">It follows from the above that non-ideality must arise from grossly dissimilar inter-particular forces. A little thought shows we would expect electrolyte solutions to be seriously non-ideal and this is found to be case except for very dilute solutions (&lt; 10<sup>&#x2212;3</sup> <small>M</small>). Consider for example an aqueous solution of NaCl. The species in the solution are Na<sup>+</sup> cations, Cl<sup>&#x2212;</sup> anions and dipolar water molecules. Evidently the Na<sup>+</sup>&#x2013; Na<sup>+</sup>, Na<sup>+</sup>&#x2013; Cl<sup>&#x2212;</sup>, Cl<sup>&#x2212;</sup>&#x2013; H<sub>2</sub>O, Cl<sup>&#x2212;</sup>&#x2013; Cl<sup>&#x2212;</sup> and Na<sup>+</sup>&#x2013; H<sub>2</sub>O interactions are all very different and we would expect the solution to be non ideal. So in considering <a id="page_42" class="page">Page 42, Chapter 2: Allowing for non-ideality: activity coefficients</a>electrodes and their potentials we ought, when using the Nernst equation, to use activities rather than concentrations. To do this it is necessary to calculate &#x03B3; so as to relate these two quantities through <a href="#eqn_2.4">eqn (2.4)</a>.</p>
+</section>
+<section epub:type="chapter" id="sec_2.3">
+<h2 class="h2"><b>2.3<span class="space">&#160;</span>The interpretation of activity coefficients</b></h2>
+<p class="noindent" style="margin-bottom:0.8em;">Let us consider non-ideal solutions of electrolytes, such as shown in the lower container in the diagram below. The solution will contain equal</p>
+<figure id="fig_2.3">
+ <img src="../images/page42-1.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.3</b> An electrolyte solution. (a) An imaginary situation with the ionic charges absent, (b) The actual non-ideal situation with charges present.</p>
+</aside>
+<p class="noindent">numbers of cations and anions. The disparate interactions between the various chemical species&#x2014;cations, anions and solvent&#x2014;lead us to contemplate the solution as non ideal as discussed in the previous section. It follows that for any ion, j, the chemical potential will be given by</p>
+<figure style="margin-left:2em;">
+ <img src="../images/page42-2.jpg" alt="images" style="margin-left:11.5em;"/>
+</figure>
+<p class="noindent">or,</p>
+<figure style="margin-left:2em;">
+ <img src="../images/page42-3.jpg" alt="images" style="margin-left:9em;"/>
+</figure>
+<p class="noindent">Suppose we now <i>imagine</i> exactly the same solution but with the ionic charges absent or switched off. This is depicted in the upper part of the figure above. Under these conditions the solution will be very much more close to ideal behaviour so that</p>
+<figure style="margin-left:2em;">
+ <img src="../images/page42-4.jpg" alt="images" style="margin-left:11em;"/>
+</figure>
+<p class="noindent">It is interesting to question the molar free energy change of the ion j in switching the charges off. That is to say, what is the value of &#x2206;<i>G</i> corresponding to going from the lower container to the hypothetical top container? This will be given by the difference in the chemical potential between the two cases:</p>
+<figure style="margin-left:-2em;">
+ <img src="../images/page42-5.jpg" alt="images" style="margin-left:7.6em;"/>
+</figure>
+<p class="noindent">It follows that the activity coefficient &#x03B3;<sub>j</sub> in the non-ideal electrolyte solution is intimately related to the free energy change on de-charging the ions. If &#x03B3;<sub>j</sub> is less than unity the &#x2018;ion&#x2019; has a lower free energy in the charged state whereas if &#x03B3;<sub>j</sub> is greater than unity it would be more stable in the imaginary uncharged condition. For dilute electrolyte solutions experiment, as we will <a id="page_43" class="page">Page 43, Chapter 2: Allowing for non-ideality: activity coefficients</a>see in <a href="Chapter04.xhtml#ch04">Chapter 4</a>, tells us that &#x03B3;<sub>j</sub> &lt; 1. This corresponds to the solution of ions being more stabilised by the presence of charge as compared to its absence.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure style="margin-left:2em;">
+ <img src="../images/page43-1.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent3-ka">The question arises next as to why the charge should help stabilise the solution? At first sight this appears paradoxical since, as there are equal numbers of cations and anions in the solution we might reasonably expect as much destabilisation through repulsions between like ions as there is stabilisation between unlike ions.</p>
+<p class="indent3-ka1">The cause of the stabilisation can be understood if we consider one single ion in an aqueous sodium chloride solution&#x2014;say a cation&#x2014;and think about its motion as it moves about. The solution contains cations, anions and solvent molecules. The latter are present in a much greater quantity. For example the concentration of water in pure water is</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>[</mo><mrow><msub><mtext>H</mtext><mtext>2</mtext></msub><mtext>O</mtext></mrow><mo>]</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mfrac><mrow><mtext>Mass</mtext><mtext>&#x2009;</mtext><mtext>of</mtext><mtext>&#x2009;</mtext><mtext>one</mtext><mtext>&#x2009;</mtext><mtext>litre</mtext><mtext>&#x2009;</mtext><mtext>of</mtext><mtext>&#x2009;</mtext><mtext>Water</mtext></mrow><mrow><mtext>Relative</mtext><mtext>&#x2009;</mtext><mtext>Molecular</mtext><mtext>&#x2009;</mtext><mtext>Mass</mtext><mtext>&#x2009;</mtext><mtext>of</mtext><mtext>&#x2009;</mtext><msub><mtext>H</mtext><mtext>2</mtext></msub><mtext>O</mtext></mrow></mfrac></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+= feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaamWaaeaacaqGibWaaSbaaSqaaiaabkdaaeqaaOGaae4taaGaay5waiaaw2faaiaaykW7cqGH9aqpcaaMc8+aaSaaaeaacaqGnbGaaeyyaiaabohacaqGZbGaaGPaVlaab+gacaqGMbGaaGPaVlaab+gacaqGUbGaaeyzaiaaykW7caqGSbGaaeyAaiaabshacaqGYbGaaeyzaiaaykW7caqGVbGaaeOzaiaaykW7caqGxbGaaeyyaiaabshacaqGLbGaaeOCaaqaaiaabkfacaqGLbGaaeiBaiaabggacaqG0bGaaeyAaiaabAhacaqGLbGaaGPaVlaab2eacaqGVbGaaeiBaiaabwgacaqGJbGaaeyDaiaabYgacaqGHbGaaeOCaiaaykW7caqGnbGaaeyyaiaabohacaqGZbGaaGPaVlaab+gacaqGMb GaaGPaVlaabIeadaWgaaWcbaGaaeOmaaqabaGccaqGpbaaaaaa@7776@</annotation></semantics></math>&#160;&#160;&#160;&#160;(at 25&#x00B0;C)</p>
+<p class="indent3a"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>=</mtext><mtext>&#x2009;</mtext><mfrac><mrow><mtext>1000</mtext></mrow><mrow><mtext>18</mtext></mrow></mfrac><mtext>&#x2009;</mtext><mo>&#x2248;</mo><mtext>&#x2009;</mtext><mtext>56</mtext><mtext>&#x2009;</mtext><mtext>M</mtext></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9 vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaaeypaiaayk W7daWcaaqaaiaabgdacaqGWaGaaeimaiaabcdaaeaacaqGXaGaaeioaaaacaaMc8UaeyisISRaaGPaVlaabwdacaqG2aGaaGPaVlaab2eaaa a@451F@</annotation></semantics></math></p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">Consider a 10 cm &#x00D7; 10 cm &#x00D7; 10 cm cube of a 0.1 M solution of NaCl.</p>
+<p class="noindent2" style="margin-left:2em;">This contains a litre of solution so that there are 0.1 &#x00D7; 6 &#x00D7; 10<sup>23</sup> Na<sup>+</sup> ions together with a similar number of Cl<sup>&#x2212;</sup> ions. If the mean Na<sup>+</sup> &#x2013; Na<sup>+</sup> distance is <i>d</i> cm then,</p>
+<p class="noindent2" style="margin-left:2em;"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><mn>10</mn></mrow><mi>d</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mn>3</mn></msup></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaeWaaeaadaWcaaqaaiaaigdacaaIWaaabaGaamizaaaaaiaawIcacaGLPaaadaahaaWcbeqaaiaaiodaaaaaaa@3AD6@</annotation></semantics></math> = 0.1 &#x00D7; 6 &#x00D7; 10<sup>23</sup> = 60 &#x00D7; 10<sup>21</sup></p>
+<p class="noindent2" style="margin-left:2em;">so that <i>d</i> &#x2248; 2.5 &#x00D7; 10<sup>&#x2212;7</sup>cm = 2.5 nm = 25 &#x00C5;. This is a large distance compared to the size of a water molecule.</p>
+</aside>
+<p class="noindent">So in a 0.1 M solution of sodium chloride there are over 500 water molecules for each sodium cation or chloride anion. It follows that the average ion&#x2013;ion separation is quite large. Thus as our cation moves, it predominantly encounters solvent molecules for the overwhelmingly large part of its travels. However from time to time it will meet other ions, both cations and anions. If the motion of all the ions in the solution were entirely random then our cation would encounter other cations as often as it encountered other anions so that the ion would be destabilised through cationic repulsion as often as it is stabilised by cationic/anionic attraction. However some thought shows that <i>because the ions either attract or repel one another the chances are that the cation will encounter slightly more anions than cations on its travels</i>. In other words the motion of the cation&#x2014;or that of any other ion&#x2014;through the solution is largely but not entirely random; the ionic motions are such that oppositely charged ions encounter each other with a slightly greater frequency than like-charged ions. This has the effect that there is a net stabilisation of the ions in comparison with either the random motion situation, or the hypothetical case where the ions are uncharged.</p>
+<aside class="abc" style="margin-top:4em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">We will see later that in concentrated solutions attention must also be paid to ion&#x2013;solvent interactions.This will be discussed in <a href="#sec_2.5">Section 2.5</a>.</p>
+</aside>
+<p class="indent3-ka1">It was derived above that the quantity <i>RT</i> ln&#x03B3; represents the Gibbs free energy difference in a non-ideal solution between the case where the charge of the ions is switched off (approximating then to ideality) or switched on. Our discussion in this section of the ion motion leads us to recognise that the physical basis for this free energy difference is, at least in dilute solutions, the coulombically semi-organised motion of the ions which ensures that like charged ions encounter each other less than oppositely charged ions, so conferring a stabilisation on the solution.</p>
+</section>
+<section epub:type="chapter" id="sec_2.4">
+<h2 class="h2"><b>2.4<span class="space">&#160;</span>Debye-H&#x00FC;ckel theory</b></h2>
+<p class="noindent">We have noted that for a dilute electrolyte solution the activity coefficient, &#x03B3;, is usually less than unity, &#x03B3; &lt; 1. This implies that the solution is more <a id="page_44" class="page">Page 44, Chapter 2: Allowing for non-ideality: activity coefficients</a>stable, by an amount <i>RT</i> ln&#x03B3;, as compared to the hypothetical situation where the ionic charge is switched off. The physical origin of this stabilisation was seen in the last section to result from the fact that the anion &#x2018;sees&#x2019; more oppositely charged ions than like-charged ions as it moves about in solution. Let us consider the distribution of charge around an ion. On a <i>time average</i> this must be spherically symmetrical and reflect the fact that there will be a build up of opposite charge around the ion reflecting the other ions &#x2018;seen&#x2019;. <a href="#fig_2.4">Figure 2.4</a> shows a representation of the time average charge distribution around a representative cation. This takes the form of a diffuse spherical cloud of negative charge. The magnitude of the negative charge decreases in a radial direction away from the cation. Far away from the ion the charge becomes zero corresponding to bulk solution, sufficiently remote from the cation that its electroneutrality is unperturbed by the latter. The charge distribution for a typical anion is shown in <a href="#fig_2.5">Fig. 2.5</a>. The spherically symmetrical charge clouds shown in <a href="#fig_2.4">Figs 2.4</a> and <a href="#fig_2.5">2.5</a> are referred to as the <i>ionic atmospheres</i> of either the cation or anion in question. The net charge on the atmosphere in each case is a unit charge of sign opposite to that on the central ion.</p>
+
+<figure id="fig_2.4">
+ <img src="../images/page44-1.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.4</b> The time average charge cloud around a representative cation.</p>
+</aside>
+
+<figure id="fig_2.5">
+ <img src="../images/page44-2.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.5</b> The time average charge cloud around a representative anion.</p>
+</aside>
+<p class="indent3-ka1">The insights given by <a href="#fig_2.4">Figs 2.4</a> and <a href="#fig_2.5">2.5</a> provide us with a means for calculating the activity coefficients for both the cations and anions in the <a id="page_45" class="page">Page 45, Chapter 2: Allowing for non-ideality: activity coefficients</a>solution. In particular, we can calculate the charge distribution in the ionic atmosphere around a particular ion, j, and then use this to quantify the stabilisation of the ion. When scaled up for one mole of ions this should be equal to <i>RT</i> ln&#x03B3;<sub>j</sub> where &#x03B3;<sub>j</sub> is the activity coefficient of ion j. It transpires that this exercise&#x2014;&#x2018;Debye&#x2013;H&#x00FC;ckel Theory&#x2019;&#x2014;is a straightforward but tedious exercise in electrostatics provided some assumptions (see below) are made. The result is quite simple. The deviation from ideality depends on a quantity known as the ionic strength, <i>I</i>, of the solution. This is defined as</p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">A full mathematical derivation of Debye&#x2013; H&#x00FC;ckel theory is given in <a href="Chapter02.xhtml#ch02">Chapter 2</a> of <i>Electrochemistry</i> by P.H. Rieger, published by Prentice&#x2013;Hall, New Jersey (1987), to which the mathematically inclined reader is directed.</p>
+</aside>
+<p class="noindent" id="eqn_2.19" style="margin-left:13.6em;margin-top:0.5em;margin-bottom:0.8em;"><i>I</i> = <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mtext>&#x2009;</mtext><mstyle displaystyle='true'><munderover><mo>&#x2211;</mo><mtext>i</mtext><mrow></mrow></munderover><mrow><msub><mi>c</mi><mi>i</mi></msub><msubsup><mi>z</mi><mtext>i</mtext><mtext>2</mtext></msubsup></mrow></mstyle></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca IXaaabaGaaGOmaaaacaaMc8+aaabCaeaacaWGJbWaaSbaaSqaaiaadMgaaeqaaOGaamOEamaaDaaaleaacaqGPbaabaGaaeOmaaaaaeaacaqGPbaabaaaniabggHiLdaaaa@4103@</annotation></semantics></math><span class="no">(2.19)</span></p>  
+<p class="noindent
+">where the sum is over all the ions, i, in the solution, <i>c</i><sub>i</sub> is the concentration of ion i and <i>z</i><sub>i</sub> is its charge. The use of <a href="#eqn_2.19">eqn (2.19)</a> is exemplified in <a href="#box_2.1">Box 2.1</a>.</p>
+<div class="border">
+<p class="boxtitle" id="box_2.1"><b>Box 2.1 Calculating ionic strengths</b></p>
+<p class="boxpara">The ionic strength, <i>I</i>, is defined as</p>
+<p class="boxparaia"><i>I</i> = <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math> [sum over every ion of the product of its concentration and the square of is charge]</p>
+<p class="boxparaib">= <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mtext>&#x2009;</mtext><mstyle displaystyle='true'><munderover><mo>&#x2211;</mo><mtext>i</mtext><mrow></mrow></munderover><mrow><msub><mi>c</mi><mi>i</mi></msub><msubsup><mi>z</mi><mtext>i</mtext><mtext>2</mtext></msubsup></mrow></mstyle></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca aIXaaabaGaaGOmaaaacaaMc8+aaabCaeaacaWGJbWaaSbaaSqaaiaadMgaaeqaaOGaamOEamaaDaaaleaacaqGPbaabaGaaeOmaaaaaeaaca qGPbaabaaaniabggHiLdaaaa@4103@</annotation></semantics></math></p>
+<p class="boxpara">For example consider a 0.1 <small>M</small> solution of MgCl<sub>2</sub>:</p>
+<p class="boxparaic"><i>I</i> = <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+= feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca aIXaaabaGaaGOmaaaaaaa@377C@</annotation></semantics></math> [0.1 &#x00D7; (+2)<sup>2</sup> + 0.2 &#x00D7; (&#x2212;1)<sup>2</sup>]</p>
+<p class="indent2">= 0.3 <small>M</small></p>
+<p class="boxpara">The ionic strength here is greater than the concentration. As a second example consider a 0.1 M solution of NaCl.</p>
+<p class="boxparaic"><i>I</i> = <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+= feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca aIXaaabaGaaGOmaaaaaaa@377C@</annotation></semantics></math> [0.1 &#x00D7; (+1)<sup>2</sup> + 0.1 &#x00D7; (&#x2212;1)<sup>2</sup>]</p>
+<p class="indent2">= 0.1 <small>M</small></p>
+<p class="boxpara">In this case the ionic strength equals the concentration. This is a general result for species of the formula M<sup>+</sup>X<sup>&#x2212;</sup>.</p>
+</div>
+<p class="indent3-ka1t">The basic equation of Debye&#x2013;H&#x00FC;ckel theory is</p>
+<p class="noindent" id="eqn_2.20" style="margin-left:12em;margin-top:0.5em;margin-bottom:0.8em;">log<sub>10</sub>&#x03B3;<sub>j</sub> = &#x2212;<i>Az</i><sup>2</sup><sub>j</sub> <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>I</mi></msqrt></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbiqaaa7bdaGcaa qaaiaadMeaaSqabaaaaa@3798@</annotation></semantics></math><span class="no">(2.20)</span></p>
+<p class="noindent">where z<sub>j</sub> is the charge on the ion and <i>A</i> is a temperature and solvent dependent parameter. For water at 25&#x00B0;C, <i>A</i> &#x2248; 0.5. In calculating the electrostatic stabilisation conferred on an ion by its atmosphere so as to establish <a href="#eqn_2.20">eqn (2.20)</a> several assumptions are made:</p>
+<p class="indenthangingi" style="width:68%;margin-left:1.5em;text-indent:-1.5em;">i)<span class="space">&#160;</span>The cause of the solution non-ideality resides exclusively in coulombic interactions between the ions, and not at all, for example, in ion&#x2013;solvent interactions. <a id="page_46" class="page">Page 46, Chapter 2: Allowing for non-ideality: activity coefficients</a></p>
+
+
+
+<div class="border">
+<p class="boxtitle" id="box_2.2"><b>Box 2.2 The force between ions</b></p>
+<p class="boxpara">The force between two ions carrying charges <i>z</i><sub>1</sub> and <i>z</i><sub>2</sub> a distance <i>r</i> apart is given by Coulomb&#x2019;s law:</p>
+<p class="center">Force = <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mfrac><mrow><msub><mi>z</mi><mn>1</mn></msub><msub><mi>z</mi><mn>2</mn></msub></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mo>&#x03F5;</mo><mn>0</mn></msub><msub><mo>&#x03F5;</mo><mi>r</mi></msub></mrow></mfrac><mtext>&#x2009;</mtext><mo>.</mo><mtext>&#x2009;</mtext><mfrac><mn>1</mn><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaeyOeI0IaaGPaVpaalaaabaGaamOEamaaBaaaleaacaaIXaaabeaakiaadQhadaWgaaWcbaGaaGOmaaqabaaakeaacaaI0aGaeqiWdaNaeyicI48aaSbaaSqaaiaaicdaaeqaaOGaeyicI48aaSbaaSqaaiaadkhaaeqaaaaakiaaykW7caGGUaGaaGPaVpaalaaabaGaaGymaaqaaiaadkhadaahaaWcbe qaaiaaikdaaaaaaaaa@4A71@</annotation></semantics></math></p>
+<p class="boxpara">where &#x03F5;<sub>0</sub> is the <i>vacuum permittivity</i> and has a value of 8.854 &#x00D7; 10<sup>&#x2212;12</sup> C<sup>2</sup> J<sup>&#x2212;1</sup> m<sup>&#x2212;1</sup>. <i>&#x03F5;<sub>r</sub></i> is the <i>relative permittivity</i>, or <i>dielectric constant</i>, of the medium separating the ions. The energy corresponding to the above is</p>
+<p class="center">Energy = <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>z</mi><mn>1</mn></msub><msub><mi>z</mi><mn>2</mn></msub></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mo>&#x03F5;</mo><mn>0</mn></msub><msub><mo>&#x03F5;</mo><mi>r</mi></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>.</mo><mtext>&#x2009;</mtext><mfrac><mn>1</mn><mi>r</mi></mfrac></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9 vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbiqaaa7bdaqadaqaamaalaaabaGaamOEamaaBaaaleaacaaIXaaabeaakiaadQhadaWgaaWcbaGaaGOmaaqabaaakeaacaaI0aGaeqiWdaNaeyicI48aaSbaaSqaaiaaicdaaeqaaOGaeyicI48aaSbaaSqaaiaadkhaaeqaaaaaaOGaayjkaiaawMcaaiaaykW7caGGUaGaaGPaVpaalaaabaGaaGymaaqaai aadkhaaaaaaa@4953@</annotation></semantics></math></p>
+<p class="boxpara">This is the energy required to move the ions to a separation, <i>r</i>, from a distance where they are infinitely separated. This quantity is shown graphically below for two ions either of like or unlike charge.</p>
+<figure style="margin-left:2em;">
+ <img src="../images/page46-1.jpg" alt="images"/>
+</figure>
+<p class="boxpara">The quantity <i>&#x03F5;<sub>r</sub></i> measures the extent to which a solvent can reduce the energy of interaction of ions dissolved in it. Some values of &#x03F5;<sub><i>r</i></sub> for common solvents at 25&#x00B0;C are</p>
+<table class="width70" style="width:40%;">
+<tr>
+<td class="width050"><p class="tablea">C<sub>6</sub>H<sub>6</sub></p></td>
+<td class="width050"><p class="tablea">2</p></td>
+</tr>
+<tr>
+<td><p class="tablea">(C<sub>2</sub>H<sub>5</sub>)<sub>2</sub>O</p></td>
+<td><p class="tablea">4</p></td>
+</tr>
+<tr>
+<td><p class="tablea">Pyridine</p></td>
+<td><p class="tablea">12</p></td>
+</tr><tr>
+<td><p class="tablea">CH<sub>3</sub>OH</p></td>
+<td><p class="tablea">33</p></td>
+</tr><tr>
+<td><p class="tablea">CH<sub>3</sub>CN</p></td>
+<td><p class="tablea">36</p></td>
+</tr><tr>
+<td><p class="tablea">Me<sub>2</sub>SO</p></td>
+<td><p class="tablea">47</p></td>
+</tr><tr>
+<td><p class="tablea">H<sub>2</sub>O</p></td>
+<td><p class="tablea">78</p></td>
+</tr>
+</table>
+<p class="boxpara"><i>The value of <i>&#x03F5;<sub>r</sub></i> loosely correlates with the polarity of the solvent since dipolar solvent molecules can be partially aligned by the ions:</i></p>
+<figure style="margin-left:2em;">
+ <img src="../images/page46-2.jpg" alt="images"/>
+</figure>
+</div>
+<p class="noindent"><a id="page_47" class="page" style="width:70%;">Page 47, Chapter 2: Allowing for non-ideality: activity coefficients</a></p>
+<p class="indenthangingii" style="margin-left:1.2em;">ii) The ionic interactions are quantitatively described by Coulomb&#x2019;s law for point charges (<a href="#box_2.2">Box 2.2</a>). This presumes that the effects of the solvent is solely to reduce inter-ionic forces by means of the dielectric constant.</p>
+<p class="indenthangingiii" style="margin-left:1.2em;">iii) The electrolyte is fully dissociated and no significant numbers of ion pairs exist. This implies that the external forces between the ions are weaker than the thermal forces in the solution moving ions around, together and apart.</p>
+<aside class="abc" style="margin-top:-8.4em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">Ion pairs are formed when a cation and an anion are found in solution as a single entity:</p>
+<figure>
+ <img src="../images/page47-1.jpg" alt="images" style="margin-left:5em;"/>
+</figure>
+<p class="noindent2" style="margin-left:2em;">They often exist when electrolytes are dissolved in solvents of low polarity.</p>
+</aside>
+
+<p class="noindent1">These assumptions work well in dilute solutions, so that for ionic concentrations below approximately 10<sup>&#x2212;2</sup> <small>M</small>, <a href="#eqn_2.20">equation 2.20</a>, known as the <i>Debye&#x2013;H&#x00FC;ckel limiting law</i> works quantitatively.</p>
+<figure id="fig_2.6">
+ <img src="../images/page47-2.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.6</b> The relative size of the ionic atmospheres for aqueous solutions containing a simple M<sup>+</sup>X<sup>&#x2212;</sup> electrolyte at (a) low, and (b) high ionic strength.</p>
+</aside>
+<p class="indent3-ka1">The Debye&#x2013;H&#x00FC;ckel limiting law predicts that the deviation from ideality increases with the square root of the ionic strength, <i>I</i>. It is interesting to consider why this should be, and to focus on the size of the ionic atmosphere. The effective size of the latter is measured by its <i>Debye lengthy</i> which gives an indication of the distance between any ion and the <i>average</i> location of the charge in its ionic atmosphere as illustrated in <a href="#fig_2.6">Fig. 2.6</a>. The higher the concentration the shorter the Debye length. For example in a 10<sup>&#x2212;3</sup> <small>M</small> aqueous solution of electrolyte of formula MX the Debye length is close to 100 &#x00C5; for a 10<sup>&#x2212;1</sup> <small>M</small> solution it is 10 &#x00C5;. In general for such electrolytes,</p>
+<p class="noindent" style="margin-left:10.6em;margin-top:0.5em;margin-bottom:0.8em;">Debye length &#x221D; 1/ <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>I</mi></msqrt></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbiqaaa7bdaGcaaqaaiaadMeaaSqabaaaaa@3798@</annotation></semantics></math><span class="no">(2.21)</span></p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<figure style="margin-left:3em;" id="fig_2.7">
+ <img src="../images/page47-3.jpg" alt="images" style="margin-bottom:0.8em;"/>
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.7</b> Experimental activity coefficients (<img src="../images/page47-4.jpg" alt="images"/>) and their tonic strength dependence shown chematically. DHL</p>
+<p class="noindent2" style="margin-left:2em;">&#x2261; Debye&#x2013;H&#x00FC;kel limiting law; EDHL</p>
+<p class="noindent2" style="margin-left:2em;">&#x2261; Extended Debye&#x2013;H&#x00FC;ckel law; RS</p>
+<p class="noindent2" style="margin-left:2em;">&#x2261; Robinson and Stokes equation.</p>
+</figure>
+</aside>
+
+<p class="noindent">It follows that as the ionic strength increases the distance between the central ion and the charge in the ionic atmosphere shrinks. Accordingly Coulomb&#x2019;s law (<a href="#box_2.2">Box 2.2</a>) leads us to expect that the electrostatic stabilisation of the ion conferred by the ionic atmosphere increases so that &#x03B3;<sub>j</sub> becomes smaller and the solution more non-ideal.</p>
+<p class="indent3-ka1">Last, notice that the size of the ionic atmosphere is typically of the order of 10 &#x00C5;&#x2013;100 &#x00C5;. This is very much <i>larger</i> than the size of the cations or anions in solution. This again emphasises first, the large scale of the mean ion separation in dilute electrolyte solutions and second, that ion-pairs are <i>not</i> considered as sources of non-ideality within the Debye&#x2013;H&#x00FC;ckel theory.</p>
+</section>
+<section epub:type="chapter" id="sec_2.5">
+<h2 class="h2"><b>2.5<span class="space">&#160;</span>Limits of the Debye&#x2013;H&#x00FC;ckel theory</b></h2>
+<p class="noindent"><a href="Chapter04.xhtml#ch04">Chapter 4</a> will describe how activity coefficients may be measured. Typical results are gathered in <a href="#fig_2.7">Fig. 2.7</a> Notice they axis gives the logarithm (to base <a id="page_48" class="page">Page 48, Chapter 2: Allowing for non-ideality: activity coefficients</a>10) of the ionic activity coefficient &#x03B3;<sub>j</sub>; log<sub>10</sub>&#x03B3;<sub>j</sub> = 0 corresponds to &#x03B3;<sub>j</sub> = 1 and so to ideality. The <i>x</i> axis displays the square root of the ionic strength. The experimental data are represented by the points. It can be seen that the Debye&#x2013;H&#x00FC;ckel limiting law (labelled DHL), log<sub>10</sub>&#x03B3;<sub>j</sub> = &#x2212;<i>Az</i><sup>2</sup><sub>j</sub><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>I</mi></msqrt></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc qaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbiqaaa7bdaGcaa qaaiaadMeaaSqabaaaaa@3798@</annotation></semantics></math> works well in dilute solution&#x2014;up to concentrations around 10<sup>&#x2212;2</sup> <small>M</small>&#x2014;but overestimates the deviation from ideality at higher concentrations.</p>
+<aside class="abc" style="margin-top:1em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">If the ion radius, a, is put equal to zero in the extended Debye&#x2013;H&#x00FC;ckel law the equation representing the simple Debye&#x2013;H&#x00FC;ckel limiting law is regained.</p>
+</aside>
+<p class="indent3-ka1">The line labelled EDHL represents the equation</p>
+<p class="noindent" id="eqn_2.22" style="margin-left:12.6em;margin-top:0.5em;margin-bottom:0.8em;">log<sub>10</sub> &#x03B3;<sub>j</sub> = <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo>&#x2212;</mo><mi>A</mi><msubsup><mi>z</mi> <mi>j</mi><mn>2</mn></msubsup><mtext>&#x2009;</mtext><msqrt><mi>I</mi></msqrt></mrow><mrow><mn>1</mn><mo>+</mo><mtext>&#x2009;</mtext><mi>B</mi><mi>a</mi><msqrt><mi>I</mi></msqrt></mrow></mfrac></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbiqaaa7bdaWcaaqaaiabgkHiTiaadgeacaWG6bWaa0baaSqaaiaadQgaaeaacaaIYaaa aOGaaGPaVpaakaaabaGaamysaaWcbeaaaOqaaiaaigdacqGHRaWkcaaMc8UaamOqaiaadggadaGcaaqaaiaadMeaaSqabaaaaaaa@438F@</annotation></semantics></math><span class="no">(2.22)</span></p>
+<p class="noindent">which is the extended Debye&#x2013;H&#x00FC;ckel law. It is very similar to <a href="#eqn_2.20">eqn (2.20)</a> except that new terms appear in the denominator. The constant <i>B</i> is, like <i>A</i>, a solvent and temperature specific parameter, whilst <i>a</i> is the radius of the ion, <i>j</i>. <a href="#eqn_2.22">Equation (2.22)</a> is established in exactly the same way as <a href="#eqn_2.20">eqn (2.20)</a> except the the ions are treated not as point charges but as spheres of radius <i>a</i>. <a href="#fig_2.7">Fig. 2.7</a> shows that the extended Debye&#x2013;H&#x00FC;ckel law applies quantitatively up to slightly higher concentrations than the Debye&#x2013; H&#x00FC;ckel limiting law.</p>
+<p class="indent3-ka1">Neither <a href="#eqn_2.20">eqn (2.20)</a> or <a href="#eqn_2.22">(2.22)</a> can however predict the upturn in the values of &#x03B3; seen in <a href="#fig_2.7">Fig. 2.7</a>. Both for the Debye&#x2013;H&#x00FC;ckel limiting law and the extended Debye&#x2013;H&#x00FC;ckel law increasing the ionic strength causes log&#x03B3;<sub>j</sub> to decrease even further below zero. Physically this is because both equations attribute the deviation from ideality to electrostatic forces stabilising each ion and these increase&#x2014;and the ionic atmospheres shrink&#x2014;as the ionic strength increases. Comparing theory and experiment in <a href="#fig_2.7">Fig. 2.7</a> suggests that some new factor must become important at higher concentrations.</p>
+<figure id="fig_2.8" style="margin-top:1em;">
+ <img src="../images/page48-1.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.8</b> The variation of the activity coefficients &#x03B3;<sub>&#x00B1;</sub> of LiCl, NaCl and KCl with the ionic strength of the solution.</p>
+</aside>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">More generally the mean activity coefficient for a salt of stoichiometry, <i>M</i><sub><i>a</i></sub><i>X</i><sub><i>b</i></sub>, is given by</p>
+<p class="noindent2" style="margin-left:5em;">&#x03B3;<sub>&#x00B1;</sub> = (&#x03B3;<sup><i>a</i></sup><sub>+</sub> &#x03B3;<sup><i>b</i></sup><sub>&#x2212;</sub>)<sup>1/(<i>a+b</i>)</sup></p>
+</aside>
+<p class="indent3-ka1">A hint as to the identity of this new factor emerges if we compare the activity coefficients of aqueous solutions of LiCl, NaCl and KCl, as in <a href="#fig_2.8">Fig. 2.8</a>. The <i>y</i> axis no longer relates to the activity coefficient of a single ion, but is the <i>mean activity coefficient</i>, &#x03B3;<sub>&#x00B1;</sub>, defined as</p>
+<p class="noindent" style="margin-left:12.8em;margin-top:0.5em;margin-bottom:0.8em;">&#x03B3;<sub>&#x00B1;</sub> = <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mrow><mo>(</mo><mrow><mtext>&#x03B3;</mtext><msub><mtext>&#x2009;</mtext><mtext>+</mtext></msub><mtext>&#x2009;</mtext><msub><mtext>&#x03B3;</mtext><mtext>-</mtext></msub></mrow><mo>)</mo></mrow></mrow><mrow><mfrac bevelled='true'><mtext>1</mtext><mtext>2</mtext></mfrac></mrow></msup></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+= feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9 vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbiqaaa7bdaqadaqaaiaabo7acaaMc8+aaSbaaSqaaiaabUcaaeqaaOGaaGPaVlaabo7adaWgaaWcbaGaaeylaaqabaaakiaawIcacaGLPaaadaahaaWcbeqaam aaliaabaGaaeymaaqaaiaabkdaaaaaaaaa@4132@</annotation></semantics></math><span class="no">(2.23)</span></p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">The corresponding form of the Debye&#x2013;H&#x00FC;ckel limiting law for &#x03B3;<sub>&#x00B1;</sub> is</p>
+<p class="noindent2" style="margin-left:4em;">log<sub>10</sub>&#x03B3;<sub>&#x00B1;</sub> = &#x2212;A | z<sub>+</sub> z<sub>&#x2212;</sub> | <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>I</mi></msqrt></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9 vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbiqaaa7bdaGcaa qaaiaadMeaaSqabaaaaa@3798@</annotation></semantics></math></p>
+</aside>
+<p class="noindent">for an electrolyte of stoichiometry MX.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">where z<sub>+</sub> and z<sub>&#x2212;</sub> are the charges on the cation and anion.</p>
+</aside>
+<p class="indent3-ka1"> <a id="page_49" class="page">Page 49, Chapter 2: Allowing for non-ideality: activity coefficients</a><span class="space">&#160;</span>It can be seen that the deviation of experiment from the Debye&#x2013;H&#x00FC;ckel limiting law and the extended Debye&#x2013;H&#x00FC;ckel law as the ionic strength is increased is soonest for LiCl and latest for KCl. This implies that the new factor influencing deviation from ideality is greatest for Li<sup>+</sup> and least for K<sup>+</sup>.</p>
+<figure id="fig_2.9">
+ <img src="../images/page49-1.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.9</b> The overall hydration of lithium, sodium and potassium ions.</p>
+</aside>
+<p class="indent3-ka1">The charge density on the alkali metal cations follows the sequence Li<sup>+</sup> > Na<sup>+</sup> > K<sup>+</sup>. As a consequence Li<sup>+</sup> cations are the most strongly hydrated in aqueous solution (as evidenced in <a href="#tab_2.1">Table 2.1</a>) and K<sup>+</sup> cations the least as shown in <a href="#fig_2.9">Fig. 2.9</a>. This observation suggests, as is the case, <i>that the deviation from the Debye&#x2013;H&#x00FC;ckel limiting law and the extended Debye&#x2013;H&#x00FC;ckel law at higher concentrations is due to ion&#x2013;solvent effects</i>.</p>
+<p class="tabcaptiona" id="tab_2.1" style="margin-left:4em;"><b>Table 2.1</b> The Hydration of the ions Li<sup>+</sup>, Na<sup>+</sup> and K<sup>+</sup></p>
+<table class="width60b" style="margin-left:4em;">
+<tr>
+<td class="widthb40"><p class="tabled">Species</p></td>
+<td class="widthb20"><p class="tabled">Li<sup>+</sup></p></td>
+<td class="widthb20"><p class="tabled">Na<sup>+</sup></p></td>
+<td class="widthb20"><p class="tabled">K<sup>+</sup></p></td>  
+</tr>
+<tr>
+<td><p class="tabled">Crystal radii<sup><a href="#tab_a">a</a></sup>/ &#x00C5;</p></td>
+<td><p class="tabled">0.60</p></td>
+<td><p class="tabled">0.95</p></td>
+<td><p class="tabled">1.33</p></td>
+</tr>
+<tr>
+<td><p class="tabled">Hydrated Radii<sup><a href="#tab_b">b</a></sup>/&#x00C5;</p></td>
+<td><p class="tabled">2.4</p></td>
+<td><p class="tabled">1.8</p></td>
+<td><p class="tabled">1.3</p></td>
+</tr>
+<tr>
+<td><p class="tabled">Hydration Numbers<sup><a href="#tab_c">c</a></sup></p></td>
+<td><p class="tabled">2-22</p></td>
+<td><p class="tabled">2-13</p></td>
+<td><p class="tabled">1-6</p></td>
+</tr>   
+</table>  
+<p class="tfoot" id="tab_a" style="margin-left:4em;"><sup>a</sup>From x-ray diffraction</p>
+<p class="tfoot" id="tab_b" style="margin-left:4em;"><sup>b</sup>From Stokes&#x2019; Law; see <a href="Chapter03.xhtml#ch03">Chapter 3</a></p>
+<p class="tfoot" id="tab_c" style="margin-left:4em;width:60%;"><sup>c</sup>Estimated via many different techniques. The wide ranges reflect the ill-defined nature of the hydration shells and the multiplicity of experimental approaches.</p>
+<aside class="abc" style="margin-top:1em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">In the case of Li<sup>+</sup> it is thought that four water molecules are directly attached.</p>
+</aside>
+<p class="indent3-ka1t">The way in which ion&#x2013;solvent effects can influence activity coefficients can be understood in the light of the following argument. We have seen (<a href="#sec_2.3">Section 2.3</a>) that the quantity <i>RT</i>ln&#x03B3;<sub>j</sub> is the free energy of stabilisation of ion j conferred by virtue of its charge. Values of &#x03B3;<sub>j</sub> &lt; l correspond to negative (favourable) free energies of this type whereas &#x03B3;<sub>j</sub> > 1 correspond to positive values in which the ion is destabilised in its charged state as compared to the hypothetical uncharged condition. Inspection of <a href="#fig_2.7">Figs 2.7</a> and <a href="#fig_2.8">2.8</a> shows that at high ionic strengths (concentrations) &#x03B3;<sub>j</sub> rises above unity corresponding to a positive value of <i>RT</i> ln&#x03B3;<sub>j</sub>, and so the ion is relatively destabilised when charged as compared to uncharged. However the concentrations at which this occurs are rather high&#x2014;of the order of one molar or more. The ions of electrolytes are hydrated when dissolved in water and the number of water molecules associated with each ion can be quite high. Typically about six water molecules are attached <i>directly</i> to a cation but rather more are indirectly attached through hydrogen <a id="page_50" class="page">Page 50, Chapter 2: Allowing for non-ideality: activity coefficients</a>bonding outside the primary solvation shell as shown in <a href="#fig_2.10">Fig. 2.10</a>. For example in the case of Na<sup>+</sup> cations, estimates of the total number of molecules of hydration range from 2 to 13.</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">Ionic hydration is crucial to the dissolution of salts in water since the energy released by hydration is used to offset that required to break up the crystal&#x2014;the lattice energy.</p>
+</aside>
+<p class="indent3-ka1">Supposing we take a value of, say 10, together with a similar value for the chloride anion, Cl<sup>&#x2212;</sup>, we can see than in a 1 <small>M</small> solution of NaCl approximately 20 moles out of every 56 moles of water will be &#x2018;locked up&#x2019; as water of hydration of the ions. The source of ionic destabilisation at higher concentrations can then be understood due to the ever-reducing availability of water to fully solvate the ions. That is, in concentrated aqueous solutions, due to the finite amounts of water available, the solvation of the ions becomes increasing imperfect and they become relatively destabilised. This is reflected in the trends in &#x03B3;<sub>j</sub> and &#x03B3;<sub>&#x00B1;</sub> shown in <a href="#fig_2.7">Figs 2.7</a> and <a href="#fig_2.8">2.8</a>.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">Details of hydration numbers and how to measure them are given in J. Burgess, <i>Metal Ions in Solution</i>, Ellis Horwood, 1978. Note that different techniques give contrasting answers since they measure different physical properties and since the outer boundary of the second hydration shell is necessarily rather indistinct.</p>
+</aside>
+<figure id="fig_2.10">
+ <img src="../images/page50-1.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.10</b> Primary and outer hydration shells.</p>
+</aside>
+<p class="indent3-ka1">The effects of hydration-ion&#x2013;solvent interactions-on activity coefficients can be quantified by means of the Robinson and Stokes Equation:</p>
+<p class="noindent" id="eqn_2.24" style="margin-left:8em;margin-top:0.5em;margin-bottom:0.8em;">log<sub>10</sub>&#x03B3;<sub>&#x00B1;</sub> = &#x2212; <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><mi>A</mi><mrow><mo>(</mo><mrow><msub><mi>z</mi><mo>+</mo></msub><msub><mi>z</mi><mo>&#x2212;</mo></msub></mrow><mo>)</mo></mrow><msqrt><mi>I</mi></msqrt></mrow><mrow><mn>1</mn><mo>+</mo><mi>a</mi><mi>B</mi><msqrt><mi>I</mi></msqrt>
+</mrow></mfrac></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mi>c</mi><mi>I</mi></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+= feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubs 4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbiqaaa7bdaqadaqaamaalaaabaGaamyqamaabmaabaGaamOEamaaBaaaleaacqGHRaWkaeqaaOGaamOEamaaBaaaleaacqGHsislaeqaaaGccaGLOaGaayzkaaWaaOaaaeaacaWGjbaaleqaaaGcbaGaaGymaiabgUcaRiaadggacaWG cbWaaOaaaeaacaWGjbaaleqaaaaaaOGaayjkaiaawMcaaiaaykW7cqGHRaWkcaaMc8Uaam4yaiaadMeaaaa@49AE@</annotation></semantics></math><span class="no">(2.24)</span></p>
+<p class="noindent">where <i>c</i> is treated as a solute and solvent specific parameter characterising the solvation of the ions. Examination of <a href="#fig_2.7">Fig. 2.7</a> shows that <a href="#eqn_2.24">eqn (2.24)</a> labelled RS is able to describe experimental activity coefficient data quantitatively over the full concentration range. The first term on the right hand side of <a href="#eqn_2.24">eqn (2.24)</a> is the extended Debye&#x2013;H&#x00FC;ckel expression for ion&#x2013;ion interactions. The second term on the right hand side accounts for ion&#x2013;solvent interactions and the loss of ion stability at high ionic strengths. Note the two quantities in <a href="#eqn_2.24">eqn (2.24)</a> have opposite signs.</p>
+</section>
+<section epub:type="chapter" id="sec_2.6">
+<h2 class="h2"><b>2.6<span class="space">&#160;</span>Applications of the Debye&#x2013;H&#x00FC;ckel limiting law</b></h2>
+<p class="noindent">In this section we consider two applications of the Debye&#x2013;H&#x00FC;ckel limiting law. One is to the solubility of poorly (&#x2018;sparingly&#x2019;) soluble salts and the other is to reaction kinetics. <a id="page_51" class="page">Page 51, Chapter 2: Allowing for non-ideality: activity coefficients</a></p>
+
+
+
+<h3 class="h3"><b>Solubilities</b></h3>
+<p class="noindent">The solubility of sparingly soluble salts can be slightly enhanced by an increase in ionic strength.</p>
+<p class="indent3-ka1">For example the solubility product of silver chloride is <i>K</i><sub>sp</sub> = <i>a</i><sub>Ag+</sub> &#x00B7; <i>a</i><sub>Cl&#x2212;</sub> = 1.7 &#x00D7; 10<sup>&#x2212;10</sup> mol<sup>2</sup> dm<sup>&#x2212;6</sup> so that in pure water the solubility is approximately 1.3 &#x00D7; 10<sup>&#x2212;5</sup> mol dm<sup>&#x2212;3</sup>. The solubility of AgCl is promoted, <i>a little</i>, by the addition of KNO<sub>3</sub>. This is known as &#x2018;salting in&#x2019;. The increase in solubility can be understood for a general case by considering the following process:</p>
+<p class="center">M<sup>z +</sup> X<sup>z&#x2212;</sup>(s) &#x21CC; M<sup>z +</sup> (aq) + X<sup>z&#x2212;</sup>(aq)</p>
+<p class="noindent">The equilibrium constant for this dissolution is given by</p>
+<p class="noindent" style="margin-left:11.2em;margin-top:0.5em;margin-bottom:0.8em;"><i>K</i><sub>sp</sub> = <i>a</i><sub>M.</sub> <i>a</i><sub>x</sub> = &#x03B3;<sub><small>M</small></sub>[M<sup>z +</sup>].&#x03B3;<sub>X</sub> [X<sup>z&#x2212;</sup>]&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;(2.25)</p>
+<p class="noindent" style="margin-left:13em;margin-top:0.5em;margin-bottom:0.8em;">= <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>&#x03B3;</mtext><mo>&#x00B1;</mo><mn>2</mn></msubsup></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaae4SdmaaDa aaleaacqGHXcqSaeaacaaIYaaaaaaa@3A05@</annotation></semantics></math> [M<sup>z+</sup>][X<sup>z&#x2212;</sup>]<span class="no">(2.26)</span></p>
+<p class="noindent">The cation and anion concentrations will be equal to each other:</p>
+<p class="center" style="margin-left:6em;margin-top:0.5em;margin-bottom:0.8em;">[M<sup>z +</sup>] = [X<sup>z&#x2212;</sup>] = <i>c</i><span class="no">(2.27)</span></p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.11">
+ <img src="../images/page51-1.jpg" alt="images" style="margin-left:1em;margin-bottom:0.8em;"/>
+</figure>
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.11</b> The salting in of a sparingly soluble salt as the ionic strength of the solution increases.</p>
+</aside>
+<p class="noindent">so that</p>
+<p class="noindent" style="margin-left:7em;margin-top:0.5em;margin-bottom:0.8em;">log<sub>10</sub><i>K</i><sub><i>sp</i></sub> = 21og<sub>10</sub> &#x03B3;<sub>&#x00B1;</sub> + 21og<sub>10</sub><i>c</i><span class="no">(2.28)</span></p>
+<p class="noindent">Applying the Debye&#x2013;H&#x00FC;ckel limiting law then gives</p>
+<p class="noindent" style="margin-left:7em;margin-top:0.5em;margin-bottom:0.8em;">log<sub>l0</sub><i>K</i><sub><i>sp</i></sub> = &#x2212;2<i>Az</i><sup>2</sup> <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>I</mi></msqrt></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbiqaaa7bdaGcaa qaaiaadMeaaSqabaaaaa@3798@</annotation></semantics></math> + 21og<sub>10</sub><i>c</i><span class="no">(2.29)</span></p>
+<p class="noindent">which, when rearranged, shows the variation of the concentration of the dissolved ions with the ionic strength, <i>I</i>:</p>
+<p class="noindent" style="margin-left:8em;margin-top:0.5em;margin-bottom:0.8em;">log<sub>10</sub><i>c</i> = <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaacaaIXaaabaGaaGOmaaaaaaa@377C@</annotation></semantics></math> log<sub>10</sub><i>K</i><sub><i>sp</i></sub> + <i>z</i><sup>2</sup><i>A</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>I</mi></msqrt></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLnhiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=xfr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbiqaaa7bdaGcaa qaaiaadMeaaSqabaaaaa@3798@</annotation></semantics></math><span class="no">(2.30)</span></p>
+<p class="indent3-ka1">This equation is illustrated in <a href="#fig_2.11">Fig. 2.11</a>. The figure shows that as the ionic strength is increased the solubility of MX is promoted. It is helpful to ask the physical reason for this and to focus on the specific case of silver chloride. When AgCl is dissolved into a solution to which KNO<sub>3</sub> is progressively added, the Ag<sup>+</sup> and Cl<sup>&#x2212;</sup> ions will develop ionic atmospheres around themselves which will serve to stabilise the ions. Considering the equilibrium</p>
+<p class="center">AgCl (s) &#x21CC; Ag<sup>+</sup> (aq) + Cl<sup>&#x2212;</sup> (aq)</p>
+<p class="noindent">stabilisation will &#x2018;pull&#x2019; the equilibrium to the right hand side, so promoting the solubility of the silver halide. As the ionic strength of the solute rises the Debye length of the atmosphere will progressively shrink so that each ion will become closer and closer to the (opposite) charge surrounding it and so the stabilisation will be enhanced. The solubility will be further increased. This is shown in <a href="#fig_2.12">Fig. 2.12</a>.</p>
+<p class="indent3-ka1">In deriving 2.30 we used the Debye&#x2013;H&#x00FC;ckel limiting law. This is, itself, only valid for concentrations below about 10<sup>&#x2212;2</sup> M so that the final result will equally only apply quantitatively to appropriately dilute solutions.</p>
+<p class="indent3-ka1">Last we note that ionic strength effects are not necessarily the only ideas required to understand how the composition of a solution may change if <a id="page_52" class="page">Page 52, Chapter 2: Allowing for non-ideality: activity coefficients</a>electrolyte is added to it. In particular it should be noted that the <i>common ion effect</i> and <i>complexation reactions</i> are frequently important. These can be illustrated if we return to our example of a saturated solution of silver chloride and consider now the addition of KCl rather than KNO<sub>3</sub>. The solubility as measured by the total concentration of dissolved Ag<sup>+</sup>, varies with the added chloride ion concentrations as shown in <a href="#fig_2.13">Fig. 2.13</a>. On the left hand side of the figure the solubility decreases as the chloride ion concentration increases. This is the common ion effect and can be understood on the basis of the equilibrium,</p>
+<figure id="fig_2.12" style="margin-top:0.8em;">
+ <img src="../images/page52-1.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.12</b> The dissolution of AgCl.</p>
+</aside>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<figure id="fig_2.13">
+ <img src="../images/page52-2.jpg" alt="images" style="margin-bottom:0.8em;margin-left:2em;"/>
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.13</b> The solubility of AgCl in aqueous KCl.</p>
+</figure>
+</aside>
+
+<figure>
+ <img src="../images/page52-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">so that, neglecting activity effects</p>
+<figure>
+ <img src="../images/page52-4.jpg" alt="images" style="margin-left:16em;"/>
+</figure>
+<p class="noindent">This implies that [Ag<sup>+</sup>] decreases as [Cl<sup>&#x2212;</sup>] increases. Mathematically,</p>
+<figure>
+ <img src="../images/page52-5.jpg" alt="images" style="margin-left:13.5em;"/>
+</figure>
+<p class="noindent">which predicts that the slope of <a href="#fig_2.13">Fig. 2.13</a> should be (&#x2212;1) in the region where the common ion effect operates. This is seen to be the case.</p>
+<p class="indent3-ka1">At high chloride concentration, on the right hand side of <a href="#fig_2.13">Fig. 2.13</a> the solubility rises as the chloride ion concentration rises. This is as a result of complexation and the formation of the linear species AgCl<sub>2</sub><sup>&#x2212;</sup>:</p>
+<figure>
+ <img src="../images/page52-6.jpg" alt="images"/>
+</figure>
+<p class="noindent">If the equilibrium constant for this reaction is <i>K</i> then, again neglecting any activity effects,</p>
+ <figure>
+ <img src="../images/page52-7.jpg" alt="images"/>
+</figure>
+<p class="noindent">This predicts that the amount of AgCl<sub>2</sub><sup>&#x2212;</sup> and hence that of the dissolved silver will now rise as [Cl<sup>&#x2212;</sup>] increases. Mathematically,</p>
+<figure>
+ <img src="../images/page52-8.jpg" alt="images" style="margin-left:13em;"/>
+</figure>
+<p class="noindent">This shows that where the complexation process occurs the slope of Fig. 2.17 should be (+1) as is seen to be the case. <a id="page_53" class="page">Page 53, Chapter 2: Allowing for non-ideality: activity coefficients</a></p>
+
+
+
+<aside class="abc" style="margin-top:2em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">The rates of reactions in solution are discussed in detail in the Oxford Chemistry Primer entitled <i>Modern Liquid Phase Kinetics</i> written by B. G. Cox (OCP 21).</p>
+</aside>
+<h3 class="h3"><b>The kinetic salt effect</b></h3>
+<p class="noindent">Consider the reaction between two charged species, M and X:</p>
+<p class="center">M + X &#x21CC; {M,X} <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mo>&#x2192;</mo><mi>K</mi></mover></semantics></math> products</p>
+<p class="noindent">where {M,X} is an activated complex or transition state denoted &#x2260; in the following text. If we assume the transition state forms a pre-equilibrium with the reactants M and X prior to reaction of the former with a rate constant <i>k</i> (s<sup>&#x2212;1</sup>) then</p>
+<figure id="eqn_2.34">
+ <img src="../images/page53-1.jpg" alt="images" style="margin-left:14em;"/>
+</figure>
+<p class="noindent">The rate of reaction will be given by</p> 
+<p class="noindent" id="eqn_2.35" style="margin-left:14.6em;margin-top:0.5em;margin-bottom:0.8em;">Rate = k[&#x2260;]<span class="no">(2.35)</span></p>
+<p class="noindent">Combining (<a href="#eqn_2.34">2.34</a>) and (<a href="#eqn_2.35">2.35</a>) gives</p>
+<figure>
+ <img src="../images/page53-2.jpg" alt="images" style="margin-left:14em;"/>
+</figure>
+<p class="noindent">Therefore M and X react with an apparent second order rate constant given by</p>
+<figure>
+ <img src="../images/page53-3.jpg" alt="images" style="margin-left:15.3em;"/>
+</figure>
+<p class="noindent">or</p>
+<p class="noindent" style="margin-left:1.5em;margin-top:0.5em;margin-bottom:0.8em;">log<sub>10</sub><i>k</i><sub>app</sub> = log<sub>10</sub><i>kK</i> + log<sub>10</sub>&#x03B3;<sub><small>M</small></sub> + &#x03B3;<sub>X</sub> &#x2212; log<sub>10</sub>&#x03B3;<sub>&#x2260;</sub><span class="no">(2.38)</span></p>
+<p class="noindent">When expanded taking into account the Debye&#x2013;H&#x00FC;ckel limiting law this gives</p>
+<p class="center" style="margin-left:1.8em;margin-top:0.5em;margin-bottom:0.8em;"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>log</mi></mrow><mrow><mn>10</mn></mrow></msub><msub><mi>k</mi><mrow><mtext>app</mtext></mrow></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msub><mrow><mi>log</mi></mrow><mrow><mn>10</mn></mrow></msub><mi>k</mi><mi>K</mi><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mi>A</mi><msubsup><mi>z</mi><mtext>M</mtext><mn>2</mn></msubsup><msqrt><mi>I</mi></msqrt><mo>&#x2212;</mo><mi>A</mi><msubsup><mi>z</mi><mtext>X</mtext><mn>2</mn></msubsup><msqrt><mi>I</mi></msqrt><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mi>A</mi><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>z</mi><mtext>M</mtext></msub><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><msub><mi>z</mi><mtext>X</mtext></msub></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><msqrt><mi>I</mi></msqrt></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr 4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaciiBaiaac+ gacaGGNbWaaSbaaSqaaiaaigdacaaIWaaabeaakiaadUgadaWgaaWc baGaamyyaiaadchacaWGWbaabeaakiaaykW7cqGH9aqpcaaMc8Uaci iBaiaac+gacaGGNbWaaSbaaSqaaiaaigdacaaIWaaabeaakiaadUga caWGlbGaaGPaVlabgkHiTiaaykW7caWGbbGaamOEamaaDaaaleaaca qGnbaabaGaaGOmaaaakmaakaaabaGaamysaaWcbeaakiabgkHiTiaa dgeacaWG6bWaa0baaSqaaiaabIfaaeaacaaIYaaaaOWaaOaaaeaaca WGjbaaleqaaOGaaGPaVlabgUcaRiaaykW7caWGbbWaaeWaaeaacaWG 6bWaaSbaaSqaaiaab2eaaeqaaOGaaGPaVlabgUcaRiaaykW7caWG6b WaaSbaaSqaaiaabIfaaeqaaaGccaGLOaGaayzkaaWaaWbaaSqabeaa caaIYaaaaOWaaOaaaeaacaWGjbaaleqaaaaa@66DE@</annotation></semantics></math>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;(2.39)</p>
+<p class="centera"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><msub><mrow><mi>log</mi></mrow><mrow><mn>10</mn></mrow></msub><mi>k</mi><mi>K</mi><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>2</mn><mi>A</mi><msub><mi>z</mi><mi>M</mi></msub><msub><mi>z</mi><mi>X</mi></msub><msqrt><mi>I</mi></msqrt></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+= feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr 4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9 vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaeyypa0Jaci iBaiaac+gacaGGNbWaaSbaaSqaaiaaigdacaaIWaaabeaakiaadUga caWGlbGaaGPaVlabgUcaRiaaykW7caaIYaGaamyqaiaadQhadaWgaa WcbaGaamytaaqabaGccaWG6bWaaSbaaSqaaiaadIfaaeqaaOWaaOaa aeaacaWGjbaaleqaaaaa@47B2@</annotation></semantics></math></p>
+<p class="noindent">or</p>
+<p class="noindent" id="eqn_2.40" style="margin-left:7.6em;margin-top:0.5em;margin-bottom:0.8em;"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>log</mi></mrow><mrow><mn>10</mn></mrow></msub><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>k</mi><mrow><mi>a</mi><mi>p</mi><mi>p</mi></mrow></msub></mrow><mrow><msub><mi>k</mi><mrow><mi>I</mi><mo>&#x2192;</mo><mn>0</mn></mrow></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>2</mn><mi>A</mi><msub><mi>z</mi><mi>M</mi></msub><msub><mi>z</mi><mi>X</mi></msub><msqrt><mi>I</mi></msqrt></mrow><annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+= feaagGart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr 4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9 vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaciiBaiaac+ gacaGGNbWaaSbaaSqaaiaaigdacaaIWaaabeaakiaaykW7daqadaqa amaalaaabaGaam4AamaaBaaaleaacaWGHbGaamiCaiaadchaaeqaaa GcbaGaam4AamaaBaaaleaacaWGjbGaeyOKH4QaaGimaaqabaaaaaGc caGLOaGaayzkaaGaaGPaVlabg2da9iaaykW7caaIYaGaamyqaiaadQ hadaWgaaWcbaGaamytaaqabaGccaWG6bWaaSbaaSqaaiaadIfaaeqa aOWaaOaaaeaacaWGjbaaleqaaaaa@50C5@</annotation></semantics></math><span class="no">(2.40)</span></p>
+<p class="noindent">where <i>k</i><sub>I&#x2192;0</sub> is the measured second order rate constant at infinite dilution, and <i>z</i><sub><small>M</small></sub> and <i>z</i><sub>X</sub> are the charges on the ions M and X respectively.</p>
+<p class="indent3-ka1"><a href="#eqn_2.40">Equation (2.40)</a> is an interesting result. It predicts that if we change the ionic strength, <i>I</i>, of a solution by adding an inert electrolyte containing no M or X, and which plays no part in the reaction other than to change the ionic strength, nevertheless the rate of the reaction between M and X can be altered. Intriguingly if M and X have the same charge (both positive, or both negative) increasing the ionic strength is predicted to increase the reaction rate by <a href="#eqn_2.40">eqn (2.40)</a>. In contrast if they have opposite charges then the rate is anticipated to decrease!</p>
+<p class="indent3-ka1">The clue to this behaviour lies in the effect of ionic atmospheres, not just on the reactants M and X, but also now on the transition state, &#x2260;. Imagine a divalent cation and a divalent anion reacting:</p>
+<p class="center">M<sup>2+</sup> + X<sup>2&#x2212;</sup> &#x21CC; {&#x2260;}<sup>0</sup> &#x2192; products</p>
+<p class="noindent">Suppose we add an inert salt. The effect of this will be to supply ions which provide the reactants with an ionic atmosphere. This will stabilise the ions. In contrast the transition state, which is neutral, will have no <a id="page_54" class="page">Page 54, Chapter 2: Allowing for non-ideality: activity coefficients</a>ionic atmosphere and hence its energy will be essentially unchanged. The effect on the free energy profile of the reactants on going from infinite dilution to an ionic strength of <i>I</i> is shown in <a href="#fig_2.14">Fig. 2.14</a>. It can be seen that the barrier to the reaction has been increased so that its rate must slow down as predicted by <a href="#eqn_2.40">eqn (2.40)</a>.</p>
+<aside class="abc" style="margin-top:-5.8em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.14">
+ <img src="../images/page54-1.jpg" alt="images"/>
+</figure>
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.14</b> Reaction free energy profile for the reaction of a (2+) cation and a (2&#x2212;) anion (a) at zero ionic strength, and (b) at a finite ionic strength, <i>I</i>.</p>
+</aside>
+
+<p class="indent3-ka1">Next consider two divalent cations reacting:</p>
+<p class="center">M<sup>2+</sup> + X<sup>2+</sup> &#x21CC; {&#x2260;}<sup>4+</sup> &#x2192; Products</p>
+<p class="noindent">and note that now the transition state carries a charge (4 +). The free energy profile, analogous to the one in <a href="#fig_2.14">Fig. 2.14</a>, is shown in <a href="#fig_2.15">Fig. 2.15</a>. In this case both the reactants (R) and the transition state (&#x2260;) are stabilised, as compared to the case of infinite dilution, if the ionic strength is raised to a value <i>I</i>. Consideration of the arguments given in <a href="#sec_2.3">Section 2.3</a> lead us to be able to quantify the changes in free energy shown in <a href="#fig_2.15">Fig. 2.15</a>:</p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_2.15">
+ <img src="../images/page54-2.jpg" alt="images"/>
+</figure>
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.15</b> Reaction free energy profile for the reaction of two (2+) cations, (a) at zero ionic strength, and (b) at a finite ionic strength, <i>I</i>.</p>
+</aside>
+<p class="center">&#x0394;<i>G</i>(&#x2260;) &#x221D; <i>RT</i>ln<i>&#x03B3;</i><sub>&#x2260;</sub><br/>&#x0394;<i>G</i>(R) &#x221D; [<i>RT</i>ln<i>&#x03B3;</i><sub><small>M</small></sub> + <i>RT</i>ln<i>&#x03B3;</i><sub>X</sub></p>
+<p class="noindent">If we assume that the ionic strength is such that the Debye&#x2013;H&#x00FC;ckel limiting law applies, then using the identity</p>
+<p class="center">In&#x03B3; = 2.303 log<sub>10</sub>&#x03B3;</p>
+<p class="noindent">we obtain</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x0394;</mi><mi>G</mi><mrow><mo>(</mo><mo>&#x2260;</mo><mo>)</mo></mrow><mo>&#x221D;</mo><mtext>&#x2009;</mtext><mn>2.303</mn><mi>R</mi><mi>T</mi><msub><mi>log</mi><mrow><mn>10</mn></mrow></msub><msub><mtext>&#x03B3;</mtext><mo>&#x2260;</mo></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><mn>2.303</mn><mi>A</mi><mi>R</mi><mi>T</mi></mrow><mo>)</mo></mrow><msup><mrow><mo>(</mo><mrow><mo>+</mo><mn>4</mn></mrow><mo>)</mo></mrow><mn>2</mn></msup><msqrt><mi>I</mi></msqrt></math></p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x0394;</mi><mi>G</mi><mrow><mo>(</mo><mi>R</mi><mo>)</mo></mrow><mo>&#x221D;</mo><mtext>&#x2009;</mtext><mn>2.303</mn><mi>R</mi><mi>T</mi><mrow><mo>[</mo><mrow><msub><mrow><mi>log</mi></mrow><mrow><mn>10</mn></mrow></msub><msub><mtext>&#x03B3;</mtext><mtext>M</mtext></msub><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><msub><mrow><mi>log</mi></mrow><mrow><mn>10</mn></mrow></msub><msub><mtext>&#x03B3;</mtext><mtext>X</mtext></msub></mrow><mo>]</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><mn>2.303</mn><mi>A</mi><mi>R</mi><mi>T</mi></mrow><mo>)</mo></mrow><mrow><mo>[</mo><mrow><msup><mrow><mrow><mo>(</mo><mrow><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><msup><mrow><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow><mo>]</mo></mrow><msqrt><mi>I</mi></msqrt></math></p>
+<p class="noindent">This shows that the transition state is stabilised by a larger amount than is the reactants since (+4)<sup>2</sup> > {(+2)<sup>2</sup> + (+2)<sup>2</sup>}. It follows that the kinetic barrier to the reaction is decreased and the reaction will speed up as the ionic strength increases.</p>
+<p class="indent3-ka1" style="margin-bottom:0.8em;"><a href="#fig_2.16">Figure 2.16</a> shows the results of experiments conducted on the kinetics of various processes as a function of the ionic strength. It can be seen that the predictions of <a href="#eqn_2.40">eqn (2.40)</a> are accurately followed and that the slope of the line for each system is proportional to (<i>z</i><sub><small>M</small></sub><i>z</i><sub>X</sub>) as expected. These data can be taken as evidence for the quantitative validity of the Debye&#x2013;H&#x00FC;ckel limiting law for appropriately dilute concentrations.</p>
+<figure id="fig_2.16">
+ <img src="../images/page54-3.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;"><b>Fig. 2.16</b> Variations of the rates of some reactions with ionic strength:</p>
+<p class="noindent2" style="margin-left:4em;text-indent:-2em;">(1)&#160;&#160;&#160;2[Co(NH<sub>3</sub>)<sub>5</sub>Br]<sup>2+</sup> + Hg<sup>2+</sup> + H<sub>2</sub>O &#x2192; 2[Co(NH<sub>3</sub>)<sub>5</sub>H<sub>2</sub>O]<sup>3+</sup> + HgBr<sub>2</sub> (Z<sub><small>M</small></sub>Z<sub>X</sub> = 4)</p>
+<p class="noindent2" style="margin-left:4em;text-indent:-2em;">(2)&#160;&#160;&#160;S<sub>2</sub>O<sub>8</sub><sup>2&#x2212;</sup> + 2l<sup>&#x2212;</sup> &#x2192; l<sub>2</sub> + 2SO<sub>4</sub><sup>&#x2212;</sup> (Z<sub><small>M</small></sub>Z<sub>X</sub> = 2)</p>
+<p class="noindent2" style="margin-left:4em;text-indent:-2em;">(3)&#160;&#160;&#160;OH<sup>&#x2212;</sup> + [NO<sub>2</sub>NCOOC<sub>2</sub>H<sub>5</sub>]<sup>&#x2212;</sup> &#x2192; N<sub>2</sub>O + CO<sub>3</sub><sup>2&#x2212;</sup> + C<sub>2</sub>H<sub>5</sub>OH (Z<sub><small>M</small></sub>Z<sub>X</sub> = 1)</p>
+<p class="noindent2" style="margin-left:4em;text-indent:-2em;">(4)&#160;&#160;&#160;Inversion of glucose (uncharged) (Z<sub><small>M</small></sub>Z<sub>X</sub> = 0)</p>
+<p class="noindent2" style="margin-left:4em;text-indent:-2em;">(5)&#160;&#160;&#160;H<sub>2</sub>O<sub>2</sub> + 2H<sup>+</sup> + 2Br<sup>&#x2212;</sup> &#x2192; 2H<sub>2</sub>O + Br<sub>2</sub>(Z<sub><small>M</small></sub>Z<sub>X</sub> = &#x2212;1)</p>
+<p class="noindent2" style="margin-left:4em;text-indent:-2em;">(6)&#160;&#160;&#160;[Co(NH<sub>3</sub>)<sub>5</sub>Br]<sup>2+</sup> + OH<sup>&#x2212;</sup> &#x2192; [Co(NH<sub>3</sub>)<sub>5</sub>OH]<sup>2+</sup> + Br<sup> &#x2212;</sup> (Z<sub><small>M</small></sub>Z<sub>X</sub> = &#x2212;2)</p>
+</aside>
+</section>
+</section>
+</body>
+</html>

@@ -1,0 +1,1975 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Chapter03</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+
+<section epub:type="chapter">
+<a id="page_18" class="page" style="width:60%;">Page 18, Chapter 3 The differential cross-section</a>
+<h1 class="chaptitle">3<span class="space">&#160;</span>The differential cross-section</h1>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter">
+<h2 class="h2" id="sub3.1">3.1<span class="space">&#160;</span>Elastic scattering</h2>
+<p class="noindent">Non-reactive collisions may be categorized into those which conserve kinetic energy (elastic collisions) and those which do not (inelastic collisions). Inelastic collisions lead to the transfer of energy between translational and internal (electronic, vibrational, and rotational) degrees of freedom, while elastic collisions merely transfer kinetic energy from one species to another. We shall focus here on the latter process in order to introduce the important concepts of centrifugal kinetic energy and orbital angular momentum, which play a key role in chemical reactions.</p>
+<aside class="right" style="margin-top:-4em;" epub:type="sidebar">
+<p class="sidebar">The reader is referred to the Background reading for more information about inelastic scattering.</p>
+</aside>
+<section epub:type="chapter">
+<h3 class="h3">Experimental considerations</h3>
+<p class="noindent">The differential cross-section characterizes the <i>scattering angle</i> dependence of the collision or reaction cross-section. Imagine a beam of atoms, A, impinging on target atoms, B, as illustrated in <a href="Chapter03.xhtml#fig3.1">Fig. 3.1</a>. Assume that the target atoms are stationary, and that the A atoms are travelling at a well-defined velocity, equivalent to the relative velocity (because <i>&#x03C5;</i><sub>r</sub> = <i>&#x03C5;</i><sub>A</sub> &#x2013; <i>&#x03C5;</i><sub>B</sub>, and <i>&#x03C5;</i><sub>B</sub> = 0). We will use the occurrence of a deflection in the path of atom A as a means of defining whether or not a collision has taken place. Deflections are detected by monitoring the atoms (by mass spectrometry, for example) as a function of angle with respect to the initial atomic beam direction, as shown. To define this scattering angle precisely, a collimating slit is placed in front of the detector.</p>
+
+<aside class="right" style="margin-top:-12em;" epub:type="sidebar">
+<p class="sidebar">The beam of atoms can be generated using the methods described in <a href="Chapter03.xhtml#sub3.2">Section 3.2</a>.</p>
+</aside>
+<p class="indent">The differential cross-section may be expressed quantitatively in terms of the <i>flux</i> of scattered atoms (the number of scattered atoms arriving per unit time per unit area or per steradian) by the following equation:</p>
+
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+  <mi>J</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>A</mi>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <mfrac>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C3;</mi>
+  </mrow>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x2126;</mi>
+  </mrow>
+ </mfrac>
+ <msub>
+  <mi>&#x03C5;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>r</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">[</mo>
+ <mi>A</mi>
+ <mo stretchy="false">]</mo>
+ <mi mathvariant="normal">&#x25B3;</mi>
+ <mi>V</mi>
+ <mo stretchy="false">[</mo>
+ <mi>B</mi>
+ <mo stretchy="false">]</mo>
+ <mo>,</mo>
+</math></p></td>
+<td style="text-align:right; vertical-align:middle;" id="eq3.1">(3.1)</td>
+</tr>
+</table>
+
+<aside class="right" style="margin-top:-20em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.1.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.1"><b>Fig. 3.1</b> Illustration of the measurement of the differential cross-section.</figcaption>
+</figure>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="sidebar">The capital <i>&#x2126;</i> is used to denote the polar angles (&#x0398;, &#x03A6;) defined in the laboratory, which are not the same as those employed to characterize the <i>relative motion</i> of the particles. This suggests that it is necessary to transform experimental data from the <i>laboratory</i> frame to the <i>centre-of-mass</i> (CM) frame (see <a href="Chapter03.xhtml#sub3.2">Section 3.2</a>).</p>
+</aside>
+
+<p class="noindent">where <i>v</i><sub>r</sub>[A] corresponds to the <i>incident flux</i> of A atoms, impinging on a small target volume, &#x25B3;<i>V</i>, of B atoms, at concentration [B]. Note that the right side has the correct dimensions of number per unit time per steradian. Thus, with a knowledge of the beam velocity, the concentrations of atoms A and B, and the intersection, or interaction, volume, we can transform the detected signal intensity into the differential cross-section of interest.</p>
+<p class="indent">In practice, it is not an easy task to determine all the above experimental parameters precisely and often only the <i>angular distribution</i> of the scattered products is determined. In the CM frame (in which the angular coordinates are denoted <i>&#x03C9;</i>), we may write</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>P</mi>
+ <mo stretchy="false">(</mo>
+ <mi>&#x03B8;</mi>
+ <mo>,</mo>
+ <mi>&#x03D5;</mi>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mi>&#x03C3;</mi>
+ </mfrac>
+ <mfrac>
+  <mrow>
+   <mi>d</mi>
+   <mi>&#x03C3;</mi>
+  </mrow>
+  <mrow>
+   <mi>d</mi>
+   <mi>&#x03C9;</mi>
+  </mrow>
+ </mfrac>
+ <mo>,</mo>
+</math></p>
+
+<p class="noindent">where <i>P</i>(<i>&#x03B8;</i>, <i>&#x03D5;</i>) represents the <i>probability density</i> of finding products scattered at polar angles <i>&#x03B8;</i>, <i>&#x03D5;</i>. Measurement of the angular distribution does not require a knowledge of the reactant atom concentrations or the intersection volume, but</p>
+
+<p class="noindent"><a id="page_19" class="page">Page 19, Chapter 3 The differential cross-section</a>it is still desirable to perform the experiment at a well-defined relative velocity and, hence, collision energy.</p>
+</section>
+<section epub:type="chapter">
+<aside class="right" style="margin-top:1.5em;" epub:type="sidebar">
+<p class="sidebar">More quantitative aspects of the classical mechanical elastic scattering are described in Appendix A.1.</p>
+</aside>
+<h3 class="h3">Classical elastic scattering of two atoms</h3>
+<p class="noindent">The classical motion of two structureless atoms is fully characterized by Hamilton&#x2019;s equations of motion, employing the Hamiltonian for the <i>relative</i> motion given in <a href="Chapter02.xhtml#eq2.6">eqn 2.6</a>. Because the Hamiltonian represents the total energy associated with the relative motion of the system, which is conserved during the collision, we may equate the Hamiltonian with the <i>initial relative kinetic energy</i> of the particles, <i>&#x03F5;</i><sub>t</sub>. This follows from the fact that, initially, when the particles are at infinite separation, the potential energy may be taken to be zero:</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>H</mi>
+ <mo>=</mo>
+ <msub>
+  <mi>&#x03F5;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>t</mi>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mn>2</mn>
+ </mfrac>
+ <mi>&#x03BC;</mi>
+ <msubsup>
+  <mi>&#x03C5;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>r</mi>
+  </mrow>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mn>2</mn>
+  </mrow>
+ </msubsup>
+ <mo>,</mo>
+</math></p>
+<p class="indent">where <i>&#x03BC;</i> = <i>m</i><sub>A</sub><i>m</i><sub>B</sub>/<i>m</i><sub>AB</sub>. <a href="Chapter02.xhtml#eq2.6">Eqn 2.6</a> can be rewritten, more revealingly, in polar coordinates, as</p>
+
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+  <mi>&#x03F5;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>t</mi>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mn>2</mn>
+ </mfrac>
+ <mi>&#x03BC;</mi>
+ <msup>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mover>
+    <mi>R</mi>
+    <mo>&#x02D9;</mo>
+   </mover>
+  </mrow>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mn>2</mn>
+  </mrow>
+ </msup>
+ <mo>+</mo>
+ <mfrac>
+  <msup>
+   <mi>L</mi>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msup>
+  <mrow>
+   <mn>2</mn>
+   <mi>&#x03BC;</mi>
+   <msup>
+    <mi>R</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mn>2</mn>
+    </mrow>
+   </msup>
+  </mrow>
+ </mfrac>
+ <mo>+</mo>
+ <mi>V</mi>
+ <mo stretchy="false">(</mo>
+ <mi>R</mi>
+ <mo stretchy="false">)</mo>
+ <mo>.</mo>
+<mo>&#x00A0;&#x00A0;&#x00A0;</mo>
+</math></p></td>
+<td style="text-align:right; vertical-align:middle;" id="eq3.2">(3.2)</td>
+</tr>
+</table>
+<p class="noindent">The first term in this equation is the kinetic energy associated with relative motion of the two atoms towards each other. It is known as the <i>radial kinetic energy</i>. The second term, referred to as the <i>centrifugal kinetic energy</i>, is the energy associated with the orbital motion of the particles, with <i>orbital angular momentum L</i>. Both the direction and magnitude of the orbital angular momentum are conserved (i.e. are constant) during an elastic collision between atoms, and the magnitude of the orbital angular momentum may be defined as</p>
+<aside class="right" style="margin-top:-1.5em;" epub:type="sidebar">
+<p class="sidebar">The conservation of orbital angular momentum allows us to view the atom-atom collision as occurring in a plane (see Appendix A.1).</p>
+</aside>
+
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>L</mi>
+ <mo>=</mo>
+ <mi>&#x03BC;</mi>
+ <msup>
+  <mi>R</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mn>2</mn>
+  </mrow>
+ </msup>
+ <mrow class="MJX-TeXAtom-ORD">
+  <mover>
+   <mi>&#x03C5;</mi>
+   <mo>&#x02D9;</mo>
+  </mover>
+ </mrow>
+ <mo>=</mo>
+ <mi>&#x03BC;</mi>
+ <msub>
+  <mi>&#x03C5;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>r</mi>
+  </mrow>
+ </msub>
+ <mi>b</mi>
+ <mo>,</mo>
+<mo>&#x00A0;&#x00A0;&#x00A0;</mo>
+</math></p></td>
+<td style="text-align:right; vertical-align:middle;" id="eq3.3">(3.3)</td>
+</tr>
+</table>
+<p class="noindent">where <i>b</i> is the impact parameter for the collision introduced in <a href="Chapter01.xhtml#sub1.3">Section 1.3</a>.</p>
+<p class="indent">The two equations of motion, <a href="#eq3.2">eqns 3.2</a> and <a href="#eq3.3">3.3</a>, characterize the radial and angular relative motion of the two atoms. Rearranging the latter equation yields an expression for the time dependence of the angle, <i>&#x03D1;</i></p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mrow class="MJX-TeXAtom-ORD">
+  <mover>
+   <mi>&#x03BD;</mi>
+   <mo>&#x02D9;</mo>
+  </mover>
+ </mrow>
+ <mo>=</mo>
+ <msub>
+  <mi>&#x03C5;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>r</mi>
+  </mrow>
+ </msub>
+ <mfrac>
+  <mi>b</mi>
+  <msup>
+   <mi>R</mi>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msup>
+ </mfrac>
+ <mo>,</mo>
+</math></p>
+<p class="noindent">while the radial equation may be written</p>
+
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <mn>1</mn>
+  <mn>2</mn>
+ </mfrac>
+ <mi>&#x03BC;</mi>
+ <msup>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mover>
+    <mi>R</mi>
+    <mo>&#x02D9;</mo>
+   </mover>
+  </mrow>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mn>2</mn>
+  </mrow>
+ </msup>
+ <mo>=</mo>
+ <msub>
+  <mi>&#x03F5;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>t</mi>
+  </mrow>
+ </msub>
+ <mo>&#x2212;</mo>
+ <msub>
+  <mi>V</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>e</mi>
+   <mi>f</mi>
+   <mi>f</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">(</mo>
+ <mi>R</mi>
+ <mo stretchy="false">)</mo>
+ <mo>,</mo>
+<mo>&#x00A0;&#x00A0;&#x00A0;</mo>
+</math></td>
+<td style="text-align:right; vertical-align:middle;" id="eq3.4">(3.4)</td>
+</tr>
+</table>
+<p class="noindent">where <i>V</i><sub>eff</sub>(<i>R</i>) is defined as</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+  <mi>V</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>e</mi>
+   <mi>f</mi>
+   <mi>f</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">(</mo>
+ <mi>R</mi>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <mi>V</mi>
+ <mo stretchy="false">(</mo>
+ <mi>R</mi>
+ <mo stretchy="false">)</mo>
+ <mo>+</mo>
+ <msub>
+  <mi>&#x03F5;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>t</mi>
+  </mrow>
+ </msub>
+ <mfrac>
+  <msup>
+   <mi>b</mi>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msup>
+  <msup>
+   <mi>R</mi>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msup>
+ </mfrac>
+ <mo>.</mo>
+</math></p>
+<aside class="right" style="margin-top:-16em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.2.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.2"><b>Fig. 3.2</b> Effective potential energy curve for two atoms.</figcaption>
+</figure>
+</aside>
+
+<p class="noindent">Thus, the radial motion of the two atoms may be regarded as the motion of a particle of effective mass, <i>&#x03BC;</i>, over an <i>effective potential</i>, <i>V</i><sub>eff</sub>(<i>R</i>), which comprises the sum of the potential energy and the centrifugal kinetic energy. The latter term increases as the separation, <i>R</i>, decreases. The effective potential is illustrated in <a href="Chapter03.xhtml#fig3.2">Fig. 3.2</a> for different values of the impact parameter, <i>b</i>, and, hence, the orbital angular momentum (<a href="Chapter03.xhtml#fig3.2">Fig. 3.2</a>). Even in the absence of a barrier in the potential energy curve, <i>V</i>(<i>R</i>), the effective potential often</p>
+
+
+<p class="noindent"><a id="page_20" class="page">Page 20, Chapter 3 The differential cross-section</a>possesses a barrier, known as the <i>centrifugal barrier</i>, which increases in magnitude with increasing orbital angular momentum.</p>
+<p class="indent">In general, the equations of motion must be integrated numerically, subject to a set of initial conditions. These are the initial relative kinetic energy of the atoms, the impact parameter (which also serves to define the orbital angular momentum via <a href="Chapter03.xhtml#eq3.3">eqn 3.3</a>), the initial separation, <i>R</i>, and the direction of the orbital angular momentum (this defines the plane of the collision). The resulting &#x2018;trajectory&#x2019; describes the time dependence of the position, <i>R</i>, and angle, <i>&#x03D1;</i>, of a particle with an effective mass, <i>&#x03BC;</i>, experiencing a potential energy <i>V</i>(<i>R</i>).</p>
+<aside class="right" style="margin-top:-0em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.3.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.3"><b>Fig. 3.3</b> The classical collision between two structureless atoms as a function of impact parameter.</figcaption>
+</figure>
+</aside>
+
+<p class="indent"><a href="Chapter03.xhtml#fig3.3">Figure 3.3</a> illustrates a series of classical trajectories for a fixed initial kinetic energy, but different values of the impact parameter, <i>b</i> (and hence orbital angular momentum, <i>L</i>). The potential energy curve used in these calculations is the Lennard&#x2013;Jones potential, <a href="Chapter02.xhtml#eq2.3">eqn 2.3</a>. For collisions occurring at the largest <i>b</i>, the impinging atom is barely deflected by the potential energy at all, and its motion is almost unperturbed by the presence of the other atom. These collisions are characterized by small scattering angles, <i>&#x03B8;</i> &#x007E; 0, as shown in <a href="Chapter03.xhtml#fig3.3">Fig. 3.3</a>; scattering at angles <i>&#x03B8;</i> &#x003C; 90&#x00B0; is usually classified as the <i>forward</i> scattering. As the impact parameter is reduced, the atoms experience first the long range attractive part of the potential energy curve, and are pulled towards each other during collision, leading to scattering angles <i>&#x03B8;</i> &#x003E; 0. However, as <i>b</i> is decreased still further, the atoms start to experience the repulsive, short range region of the potential, and the scattering begins to move forward once more. Finally, for the smallest impact parameters, the scattered atoms emerge in the <i>backward</i> hemisphere, <i>&#x03B8;</i> &#x003E; 90&#x00B0;. When the collision encounter is head-on, <i>b</i> = 0, then the atoms are scattered directly backward at <i>&#x03B8;</i> = 180&#x00B0;.</p>
+<aside class="right" style="margin-top:-1em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.4.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.4"><b>Fig. 3.4</b> Plot of the scattering angle versus impact parameter for atom-atom scattering.</figcaption>
+</figure>
+</aside>
+<p class="indent">The trajectories illustrated in <a href="Chapter03.xhtml#fig3.3">Fig. 3.3</a> may be represented in an alternative fashion, by plotting the scattering angle, <i>&#x03B8;</i>, against the impact parameter of the collision, once more at fixed collision energy, <i>&#x03F5;</i><sub>t</sub> (see <a href="Chapter03.xhtml#fig3.4">Fig. 3.4</a>). Collision at a given impact parameter is seen to lead to scattering at a specific angle, <i>&#x03B8;</i>. This is a unique feature of atom&#x2013;atom scattering, and is a consequence of the spherical, structureless nature of the colliding particles; the direct relationship between impact parameter and scattering angle is not present in reactive collisions. The <i>rainbow</i> scattering angle, <i>&#x03B8;</i><sub>R</sub>, is also defined in <a href="Chapter03.xhtml#fig3.3">Figs 3.3</a> and <a href="Chapter03.xhtml#fig3.4">3.4</a>. This occurs at the impact parameter at which the gradient of the line in <a href="Chapter03.xhtml#fig3.4">Fig. 3.4</a> is zero, |d<i>&#x03B8;</i>/d<i>b</i>| = 0. <i>&#x03B8;</i><sub>R</sub> depends on the initial kinetic energy, and occurs at an impact parameter at which the <i>attractive</i>, long range, part of the potential energy curve gives rise to the largest deflection. Note that scattering into specific angles less than the rainbow angle can arise from collisions at as many as three different values of the impact parameter.</p>
+<p class="indent">It is possible to express the differential cross-section for elastic scattering directly in terms of the impact parameter of the collision. This can be achieved by noting that the probability, d<img src="../images/w06.jpg" alt="images"/>, of a collision at impact parameters in the range <i>b</i> to <i>b</i> + d<i>b</i> may be written</p>
+
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>d</mi>
+ <mi>&#x2118;</mi>
+ <mo>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mi>&#x03C3;</mi>
+ </mfrac>
+ <mn>2</mn>
+ <mi>&#x03C0;</mi>
+ <mi>b</mi>
+ <mi>d</mi>
+ <mi>b</mi>
+ <mo>,</mo>
+<mo>&#x00A0;&#x00A0;&#x00A0;</mo>
+</math></p></td>
+<td style="text-align:right; vertical-align:middle;" id="eq3.5">(3.5)</td>
+</tr>
+</table>
+
+<aside class="right" style="margin-top:-9em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.5.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.5"><b>Fig. 3.5</b> Collisions in the impact parameter range <i>b</i> &#x2192; <i>b</i> + d<i>b</i> lead to scattering into angles in the range <i>&#x03B8;</i> &#x2192; <i>&#x03B8;</i> + d<i>b</i>.</figcaption>
+</figure>
+</aside>
+<p class="indent">where <i>&#x03C3;</i> is the integral <i>collision</i> cross-section. As illustrated in <a href="Chapter03.xhtml#fig3.5">Fig. 3.5</a>, collisions over this range of impact parameters lead to scattering into well-defined angles, in the range <i>&#x03B8;</i> to <i>&#x03B8;</i> + d<i>&#x03B8;</i>, and thus we may write the probability</p>
+
+
+<p class="noindent"><a id="page_21" class="page">Page 21, Chapter 3 The differential cross-section</a>of scattering into these angles</p>
+
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>d</mi>
+ <mi>&#x2118;</mi>
+ <mo>=</mo>
+ <mfrac>
+  <mrow>
+   <mn>2</mn>
+   <mi>&#x03C0;</mi>
+  </mrow>
+  <mi>&#x03C3;</mi>
+ </mfrac>
+ <mfrac>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C3;</mi>
+  </mrow>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C9;</mi>
+  </mrow>
+ </mfrac>
+ <mi>sin</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03B8;</mi>
+ <mi>d</mi>
+ <mi>&#x03B8;</mi>
+ <mo>.</mo>
+<mo>&#x00A0;&#x00A0;&#x00A0;</mo>
+</math></p></td>
+<td style="text-align:right; vertical-align:middle;" id="eq3.6">(3.6)</td>
+</tr>
+</table>
+
+<aside class="right" style="margin-top:0.4em;" epub:type="sidebar">
+<p class="sidebar">The differential cross-section is only a function of <i>&#x03B8;</i>, and the scattering process has azimuthal, or cylindrical, symmetry about the initial relative velocity vector, <b>v</b><sub>r</sub>, which reflects the random distribution of impact parameters. Reactive collisions also possess this symmetry, provided the reactant molecules are not oriented by the experimenter. Thus, the 2<i>&#x03C0;</i> factor in the equation arises from integration over azimuthal angles <i>&#x03D5;</i> (see <a href="Chapter03.xhtml#fig3.5">Fig. 3.5</a>).</p>
+</aside>
+
+<p class="noindent">Given the direct relationship between impact parameter and scattering angle, these two probabilities must be equal and, on rearranging the resulting expression, we obtain the following equation for the differential collision cross-section:</p>
+
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C3;</mi>
+  </mrow>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C9;</mi>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <mi>b</mi>
+  <mrow>
+   <mi>sin</mi>
+   <mo>&#x2061;</mo>
+   <mi>&#x03B8;</mi>
+   <mo>&#x2223;</mo>
+   <mfrac>
+    <mrow>
+     <mtext>d</mtext>
+     <mi>&#x03B8;</mi>
+    </mrow>
+    <mrow>
+     <mtext>d</mtext>
+     <mi>b</mi>
+    </mrow>
+   </mfrac>
+   <mo stretchy="false">&#x2223;</mo>
+  </mrow>
+ </mfrac>
+ <mo>.</mo>
+<mo>&#x00A0;&#x00A0;&#x00A0;</mo>
+</math></p></td>
+<td style="text-align:right; vertical-align:middle;" id="eq3.7">(3.7)</td>
+</tr>
+</table>
+
+<p class="indent">The scattering of hard spheres of diameter <i>d</i> provides a relatively simple illustration of the use of this equation. Firstly, an equation linking the scattering angle to impact parameter is required: this may be obtained from simple trigonometry, with the help of <a href="Chapter03.xhtml#fig3.6">Fig. 3.6</a>, which yields</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>cos</mi>
+ <mo>&#x2061;</mo>
+ <mfrac>
+  <mi>&#x03B8;</mi>
+  <mn>2</mn>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <mi>b</mi>
+  <mi>d</mi>
+ </mfrac>
+ <mo>.</mo>
+</math></p>
+<p class="noindent">Differentiating this equation with respect to <i>b</i>,</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mo stretchy="false">&#x2223;</mo>
+ <mfrac>
+  <mrow>
+   <mi>d</mi>
+   <mi>cos</mi>
+   <mo>&#x2061;</mo>
+   <mfrac>
+    <mi>&#x03B8;</mi>
+    <mn>2</mn>
+   </mfrac>
+  </mrow>
+  <mrow>
+   <mi>d</mi>
+   <mi>b</mi>
+  </mrow>
+ </mfrac>
+ <mo>&#x2223;=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mn>2</mn>
+ </mfrac>
+ <mi>sin</mi>
+ <mo>&#x2061;</mo>
+ <mfrac>
+  <mi>&#x03B8;</mi>
+  <mn>2</mn>
+ </mfrac>
+ <mo>&#x2223;</mo>
+ <mfrac>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03B8;</mi>
+  </mrow>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>b</mi>
+  </mrow>
+ </mfrac>
+ <mo>&#x2223;=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mi>d</mi>
+ </mfrac>
+ <mo>,</mo>
+</math></p>
+<p class="noindent">followed by substitution into <a href="Chapter03.xhtml#eq3.7">eqn 3.7</a>, gives the differential cross-section</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C3;</mi>
+  </mrow>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C9;</mi>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <mrow>
+   <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+   </mfrac>
+   <mi>sin</mi>
+   <mo>&#x2061;</mo>
+   <mfrac>
+    <mi>&#x03B8;</mi>
+    <mn>2</mn>
+   </mfrac>
+   <mi>cos</mi>
+   <mo>&#x2061;</mo>
+   <mfrac>
+    <mi>&#x03B8;</mi>
+    <mn>2</mn>
+   </mfrac>
+  </mrow>
+  <mrow>
+   <mi>sin</mi>
+   <mo>&#x2061;</mo>
+   <mi>&#x03B8;</mi>
+  </mrow>
+ </mfrac>
+ <msup>
+  <mi>d</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mn>2</mn>
+  </mrow>
+ </msup>
+ <mo>=</mo>
+ <mfrac>
+  <msup>
+   <mi>d</mi>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msup>
+  <mn>4</mn>
+ </mfrac>
+ <mo>.</mo>
+</math></p>
+<aside class="right" style="margin-top:-12em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.6.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.6"><b>Fig. 3.6</b> Relationship between <i>b</i> and <i>&#x03B8;</i> for hard sphere collision.</figcaption>
+</figure>
+</aside>
+
+<p class="noindent">The differential cross-section for the scattering of two hard spheres is thus independent of scattering angle; i.e. it is <i>isotropic</i>. The integral, hard sphere collision cross-section can be obtained by integrating the differential cross-section over all scattering angles, which leads to</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>&#x03C3;</mi>
+ <mo>=</mo>
+ <msubsup>
+  <mo>&#x222B;</mo>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mn>0</mn>
+  </mrow>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mn>2</mn>
+   <mi>&#x03C0;</mi>
+  </mrow>
+ </msubsup>
+ <msubsup>
+  <mo>&#x222B;</mo>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mn>0</mn>
+  </mrow>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>&#x03C0;</mi>
+  </mrow>
+ </msubsup>
+ <mfrac>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C3;</mi>
+  </mrow>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C9;</mi>
+  </mrow>
+ </mfrac>
+ <mi>sin</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03B8;</mi>
+ <mi>d</mi>
+ <mi>&#x03B8;</mi>
+ <mi>d</mi>
+ <mi>&#x03D5;</mi>
+ <mo>=</mo>
+ <mi>&#x03C0;</mi>
+ <msup>
+  <mi>d</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mn>2</mn>
+  </mrow>
+ </msup>
+ <mo>.</mo>
+</math></p>
+<p class="indent"><a href="Chapter03.xhtml#eq3.7">Eqn 3.7</a> has some striking, even alarming, properties when applied to the scattering of atoms rather than hard spheres. It suggests that the classical differential cross-section tends to infinity when sin# tends to zero (e.g. as <i>&#x03B8;</i> &#x2192; 0&#x00B0;), and when |d<i>&#x03B8;</i>/d<i>b</i>| tends to zero, which occurs at the rainbow angle. The differential cross-section for the scattering off a Lennard&#x2013;Jones potential is shown in <a href="Chapter03.xhtml#fig3.7">Fig. 3.7</a>. It is seen to be undefined at low scattering angles, and at the rainbow angle. The low scattering intensity in the backwards direction reflects the low probability of head-on collisions (as on a dartboard, the &#x2018;bull&#x2019;s-eye&#x2019; represents a small target area). The fact that there is zero probability of a collision occurring with <i>b</i> = 0 ensures that the differential cross-section does not tend to infinity at <i>&#x03B8;</i> = 180&#x00B0; (see <a href="Chapter03.xhtml#eq3.5">eqn 3.5</a>).</p>
+<p class="indent">The classical differential collision cross-section tends to infinity at small scattering angles for any potential which does not equal zero beyond some finite separation, <i>d</i>, (such as the hard sphere potential), since, unless the potential is exactly zero, some finite deflection will occur even at very large impact parameters. Small deflection, large <i>b</i> collisions make a significant contribution to the classical differential collision cross-section, because such</p>
+
+<aside class="right" style="margin-top:-23em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.7.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.7"><b>Fig. 3.7</b> Illustration of the quantum and classical mechanical differential cross-sections for atom&#x2013;atom scattering.</figcaption>
+</figure>
+</aside>
+
+
+<p class="noindent"><a id="page_22" class="page">Page 22, Chapter 3 The differential cross-section</a>collisions have a high probability of occurring, as reflected by the <i>b</i> weighting in <a href="Chapter03.xhtml#eq3.7">eqn 3.7</a>.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Quantum elastic scattering of two atoms</h3>
+<p class="noindent">The rigorous treatment of atom-atom scattering uses quantum mechanics. The problem of infinities in the forward direction and at the rainbow angle, found in the classical differential cross-section, are not encountered using quantum mechanics. The reason for this can be understood with the help of Heisenberg&#x2019;s uncertainty principle. In classical mechanics, large orbital angular momentum collisions lead to small, but (in principle) measurable deflections. For quantum mechanical particles, the uncertainty principle places a lower bound on the precision with which the position and momentum of a particle can be simultaneously determined. This, in turn, limits the minimum observable deflection angle, since precise measurement of the deflection angle would allow precise determination of the position and momentum of the target atom.</p>
+<p class="indent">An example of a quantum mechanically calculated differential cross-section is illustrated in <a href="Chapter03.xhtml#fig3.7">Fig. 3.7</a>, where the data are compared with the classical results. In contrast with the latter, the quantum mechanical differential cross-section is finite at all scattering angles. It also displays a highly oscillatory structure in the region of the classical rainbow. Classically, there are three distinct trajectories which lead to scattering at angles below the rainbow angle (see <a href="Chapter03.xhtml#fig3.4">Fig. 3.4</a>), and we may think of the interference between quantum mechanical waves along these three paths as leading to the pattern shown in <a href="Chapter03.xhtml#fig3.7">Fig. 3.7</a>.</p>
+
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.8.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.8"><b>Fig. 3.8</b> A quasi-bound state on the effective potential, which is responsible for resonance scattering.</figcaption>
+</figure>
+</aside>
+
+<p class="indent">Another feature of quantum elastic scattering is <i>resonance scattering</i>. Classically, the radial motion of the atoms was shown to occur on an effective potential, determined by the sum of the true potential energy curve and the centrifugal kinetic energy. At certain energies and orbital angular momenta, the effective potential may support <i>quasi-bound</i> quantum states; i.e. metastable states which can decay via tunnelling through the effective potential (see <a href="Chapter03.xhtml#fig3.8">Fig. 3.8</a>). If the kinetic energy of the scattering atoms is close to that of one of the states, a large increase in collision cross-section, known as a <i>shape resonance</i>, is observed, the width of which is determined by the tunnelling probability through the centrifugal barrier. The angular distribution of the scattered atoms also changes at energies close to a resonance, reflecting the fact that the scattering atoms have a finite probability of existing within the well on the effective potential, where they orbit about each other until they tunnel out again.</p>
+</section>
+</section>
+<section epub:type="chapter">
+<h2 class="h2" id="sub3.2">3.2<span class="space">&#160;</span>Reactive scattering</h2>
+<section epub:type="chapter">
+<h3 class="h3">The opacity model for direct reactions</h3>
+<p class="noindent">In reactive scattering, there is no direct relationship between impact parameter and scattering angle. This is because the impact parameter and kinetic energy of a reactive collision are insufficient initial conditions to define the reactive scattering event. For each reactive collision at given impact parameter and collision energy, the reactants will be oriented in different ways, and may possess different amounts of internal excitation. Thus, there will be a distribution of scattering angles generated from collisions at single values of <i>b</i> and <i>&#x03F5;</i><sub>t</sub>.</p>
+
+<a id="page_23" class="page" style="width:60%;">Page 23, Chapter 3 The differential cross-section</a>
+<p class="indent">However, in direct reactive collisions, some correlation between impact parameter and scattering angle may be preserved. In the <i>opacity model</i> of chemical reactions, head-on collisions are assumed to favour backward scattering of the reaction products, while glancing collisions are supposed preferentially to produce forward scattered products, just as in the elastic scattering case described above. Within this model, the differential cross-section obtained for elastic scattering, <a href="Chapter03.xhtml#eq3.7">eqn 3.7</a>, is rewritten</p>
+
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <mrow>
+   <mtext>d</mtext>
+   <msub>
+    <mi>&#x03C3;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>r</mi>
+    </mrow>
+   </msub>
+  </mrow>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C9;</mi>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <mrow>
+   <mi>P</mi>
+   <mo stretchy="false">(</mo>
+   <mi>b</mi>
+   <mo stretchy="false">)</mo>
+   <mi>b</mi>
+  </mrow>
+  <mrow>
+   <mi>sin</mi>
+   <mo>&#x2061;</mo>
+   <mi>&#x03B8;</mi>
+   <mo>&#x2223;</mo>
+   <mfrac>
+    <mrow>
+     <mtext>d</mtext>
+     <mi>&#x03B8;</mi>
+    </mrow>
+    <mrow>
+     <mtext>d</mtext>
+     <mi>b</mi>
+    </mrow>
+   </mfrac>
+   <mo stretchy="false">&#x2223;</mo>
+  </mrow>
+ </mfrac>
+ <mi>b</mi>
+ <mo>&#x2264;</mo>
+ <msub>
+  <mi>b</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>m</mi>
+   <mi>a</mi>
+   <mi>x</mi>
+  </mrow>
+ </msub>
+ <mo>,</mo>
+<mo>&#x00A0;&#x00A0;&#x00A0;</mo>
+</math></p></td>
+<td style="text-align:right; vertical-align:middle;" id="eq3.8">(3.8)</td>
+</tr>
+</table>
+
+<p class="noindent">where the opacity function, <i>P</i>(<i>b</i>), is introduced to allow for the impact parameter dependence of reaction probability. The reaction cross-section may be written either in terms of an integral of the differential cross-section over scattering angles (<a href="Chapter01.xhtml#eq1.5">eqn 1.5</a>), or of the opacity function over impact parameters (<a href="Chapter01.xhtml#eq1.4">eqn 1.4</a>).</p>
+<p class="indent">Assume that the opacity function takes the simple form <i>P</i>(<i>b</i>) = 1 for <i>b</i> &#x2264; <i>b</i><sub>max</sub>, and zero otherwise. Reactions which proceed preferentially via head-on collisions could be modelled by choosing a low value of <i>b</i><sub>max</sub>. <a href="Chapter03.xhtml#eq3.8">Eqn 3.8</a> suggests that such reactions will display backward scattering in the differential cross-section, because the collisions which might be expected to lead to forward scattering, those at large <i>b</i>, are unreactive (i.e. have <i>P</i>(<i>b</i>) = 0). Furthermore, reactions yielding backward scattered products are predicted also to have small reaction cross-sections.</p>
+<aside class="right" style="margin-top:-0em;" epub:type="sidebar">
+<p class="sidebar">One reason for the predicted forward scattering is that the flat opacity function is weighted by the impact parameter <i>b</i> (see <a href="Chapter03.xhtml#eq3.8">eqn 3.8</a>). The presence of this factor reflects the higher probability of high impact parameter collisions: it is just such collisions which lead to forward scattering.</p>
+</aside>
+<p class="indent">In contrast, <a href="Chapter03.xhtml#eq3.8">eqn 3.8</a> suggests that reactions which take place over a much larger range of impact parameters, and thus possess larger values of <i>b</i><sub>max</sub>, should yield forward scattered reaction products, analogous to the behaviour observed for atom-atom collisions. These reactions are predicted also to have large reaction cross-sections.</p>
+<p class="indent">The opacity model provides a qualitative guide to the interpretation of differential cross-sections for direct chemical reactions&#x2014;i.e. those reactions which do not proceed via the formation of intermediate complexes (see <a href="Chapter03.xhtml#sub3.3">Section 3.3</a>). In the following section, we describe in detail how differential cross-sections can be obtained more quantitatively, from classical trajectory calculations.<sup>13</sup></p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">The quasi-classical trajectory method</h3>
+<aside class="right" style="margin-top:-2em;" epub:type="sidebar">
+<p class="sidebar">The material contained in this section is more advanced and could be omitted at first reading.</p>
+</aside>
+
+<p class="noindent"><a href="Chapter03.xhtml#fig3.9">Figure 3.9</a> illustrates the coordinate system commonly employed in three-atom reaction dynamics calculations. We may extend the classical Hamiltonian describing the relative motion of atom&#x2013;atom elastic scattering, <a href="Chapter02.xhtml#eq2.6">eqn 2.6</a>, to that appropriate for three-atom reactions by including a term to allow for the kinetic energy associated with the internal rotational and vibrational motion of the diatomic, <b>P</b><sup>2</sup>/2<i>&#x03BC;</i><sub>BC</sub> where <i>&#x03BC;</i><sub>BC</sub> is the reduced mass of the diatomic molecule; i.e.</p>
+
+
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:95%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>H</mi>
+ <mo>=</mo>
+ <mfrac>
+  <msup>
+   <mn>P</mn>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msup>
+  <mrow>
+   <mn>2</mn>
+   <mi>&#x03BC;</mi>
+  </mrow>
+ </mfrac>
+ <mo>+</mo>
+ <mfrac>
+  <msup>
+   <mn>P</mn>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msup>
+  <mrow>
+   <mn>2</mn>
+   <msub>
+    <mi>&#x03BC;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>B</mi>
+     <mi>C</mi>
+    </mrow>
+   </msub>
+  </mrow>
+ </mfrac>
+ <mo>+</mo>
+ <mi>V</mi>
+ <mo stretchy="false">(</mo>
+ <mi>R</mi>
+ <mo>,</mo>
+ <mi>r</mi>
+ <mo>,</mo>
+ <mi>&#x03B3;</mi>
+ <mo stretchy="false">)</mo>
+ <mo>,</mo>
+<mo>&#x00A0;&#x00A0;&#x00A0;</mo>
+</math></p></td>
+<td style="text-align:right; vertical-align:middle;" id="eq3.9">(3.9)</td>
+</tr>
+</table>
+
+<p class="noindent">where</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <msup>
+   <mn>P</mn>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msup>
+  <mrow>
+   <mn>2</mn>
+   <mi>&#x03BC;</mi>
+  </mrow>
+ </mfrac>
+ <mo>&#x2261;</mo>
+ <mfrac>
+  <mrow>
+   <mn>P</mn>
+   <mo>.</mo>
+   <mn>P</mn>
+  </mrow>
+  <mrow>
+   <mn>2</mn>
+   <mi>&#x03BC;</mi>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mrow>
+   <mn>2</mn>
+   <mi>&#x03BC;</mi>
+  </mrow>
+ </mfrac>
+ <mo stretchy="false">(</mo>
+ <msubsup>
+  <mn>P</mn>
+  <mi>X</mi>
+  <mn>2</mn>
+ </msubsup>
+ <mo>+</mo>
+ <msubsup>
+  <mn>P</mn>
+  <mi>Y</mi>
+  <mn>2</mn>
+ </msubsup>
+ <mo>+</mo>
+ <msubsup>
+  <mn>P</mn>
+  <mi>Z</mi>
+  <mn>2</mn>
+ </msubsup>
+ <mo stretchy="false">)</mo>
+</math></p>
+<aside class="right" style="margin-top:-17em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.9.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.9"><b>Fig. 3.9</b> The coordinate system employed for three-atom reactions.</figcaption>
+</figure>
+</aside>
+
+<p class="noindent"><a id="page_24" class="page">Page 24, Chapter 3 The differential cross-section</a>and</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <msup>
+   <mn>P</mn>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msup>
+  <mrow>
+   <mn>2</mn>
+   <msub>
+    <mi>&#x03BC;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>B</mi>
+     <mi>C</mi>
+    </mrow>
+   </msub>
+  </mrow>
+ </mfrac>
+ <mo>&#x2261;</mo>
+ <mfrac>
+  <mrow>
+   <mn>P</mn>
+   <mo>.</mo>
+   <mn>P</mn>
+  </mrow>
+  <mrow>
+   <mn>2</mn>
+   <msub>
+    <mi>&#x03BC;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>B</mi>
+     <mi>C</mi>
+    </mrow>
+   </msub>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mrow>
+   <mn>2</mn>
+   <msub>
+    <mi>&#x03BC;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>B</mi>
+     <mi>C</mi>
+    </mrow>
+   </msub>
+  </mrow>
+ </mfrac>
+ <mo stretchy="false">(</mo>
+ <msubsup>
+  <mn>P</mn>
+  <mi>x</mi>
+  <mn>2</mn>
+ </msubsup>
+ <mo>+</mo>
+ <msubsup>
+  <mn>P</mn>
+  <mi>y</mi>
+  <mn>2</mn>
+ </msubsup>
+ <mo>+</mo>
+ <msubsup>
+  <mn>P</mn>
+  <mi>z</mi>
+  <mn>2</mn>
+ </msubsup>
+ <mo stretchy="false">)</mo>
+</math></p>
+<p class="noindent">are the kinetic energies associated with the relative motion of A and BC and with the internal motion of the BC diatomic respectively. (<i>&#x03BC;</i>, in these expressions, is the reduced mass of the A + BC reactant pair, i.e. <i>m</i><sub>A</sub><i>m</i><sub>BC</sub>/<i>M</i>, where <i>M</i> is the total reactant mass.) Analogous to atom-atom scattering, the kinetic energy terms in <a href="Chapter03.xhtml#eq3.9">eqn 3.9</a> can be recast in terms of the radial and orbital (centrifugal) kinetic energies,</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <msup>
+   <mn>P</mn>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msup>
+  <mrow>
+   <mn>2</mn>
+   <mi>&#x03BC;</mi>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mn>2</mn>
+ </mfrac>
+ <mi>&#x03BC;</mi>
+ <msup>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mover>
+    <mi>R</mi>
+    <mo>&#x02D9;</mo>
+   </mover>
+  </mrow>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mn>2</mn>
+  </mrow>
+ </msup>
+ <mo>+</mo>
+ <mfrac>
+  <msup>
+   <mi>L</mi>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msup>
+  <mrow>
+   <mn>2</mn>
+   <mi>&#x03BC;</mi>
+   <msup>
+    <mi>R</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mn>2</mn>
+    </mrow>
+   </msup>
+  </mrow>
+ </mfrac>
+ <mo>,</mo>
+</math></p>
+<p class="noindent">and the vibrational and rotational kinetic energies of the diatomic reactant,</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <msup>
+   <mn>P</mn>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msup>
+  <mrow>
+   <mn>2</mn>
+   <msub>
+    <mi>&#x03BC;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>B</mi>
+     <mi>C</mi>
+    </mrow>
+   </msub>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mn>2</mn>
+ </mfrac>
+ <msub>
+  <mi>&#x03BC;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>B</mi>
+   <mi>C</mi>
+  </mrow>
+ </msub>
+ <msup>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mover>
+    <mi>r</mi>
+    <mo>&#x02D9;</mo>
+   </mover>
+  </mrow>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mn>2</mn>
+  </mrow>
+ </msup>
+ <mo>+</mo>
+ <mfrac>
+  <msup>
+   <mi>j</mi>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msup>
+  <mrow>
+   <mn>2</mn>
+   <msub>
+    <mi>&#x03BC;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>B</mi>
+     <mi>C</mi>
+    </mrow>
+   </msub>
+   <msup>
+    <mi>r</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mn>2</mn>
+    </mrow>
+   </msup>
+  </mrow>
+ </mfrac>
+ <mo>,</mo>
+</math></p>
+
+<aside class="right" style="margin-top:2em;" epub:type="sidebar">
+<p class="sidebar">For the <i>X</i> and <i>x</i> components of <b>R</b> and <b>r</b>, and the associated momenta, Hamilton&#x2019;s equations read</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <mrow>
+   <mi>d</mi>
+   <msub>
+    <mi>R</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>X</mi>
+    </mrow>
+   </msub>
+  </mrow>
+  <mrow>
+   <mi>d</mi>
+   <mi>t</mi>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <msub>
+   <mn>P</mn>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mi>X</mi>
+   </mrow>
+  </msub>
+  <mi>&#x03BC;</mi>
+ </mfrac>
+</math></p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <mrow>
+   <mi>d</mi>
+   <msub>
+    <mn>P</mn>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>X</mi>
+    </mrow>
+   </msub>
+  </mrow>
+  <mrow>
+   <mi>d</mi>
+   <mi>t</mi>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mo>&#x2212;</mo>
+ <mfrac>
+  <mrow>
+   <mi mathvariant="normal">&#x2202;</mi>
+   <mi>V</mi>
+  </mrow>
+  <mrow>
+   <mi mathvariant="normal">&#x2202;</mi>
+   <msub>
+    <mi>R</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>X</mi>
+    </mrow>
+   </msub>
+  </mrow>
+ </mfrac>
+</math></p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <mrow>
+   <mi>d</mi>
+   <msub>
+    <mi>r</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>x</mi>
+    </mrow>
+   </msub>
+  </mrow>
+  <mrow>
+   <mi>d</mi>
+   <mi>t</mi>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <msub>
+   <mn>P</mn>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mi>x</mi>
+   </mrow>
+  </msub>
+  <msub>
+   <mi>&#x03BC;</mi>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mi>B</mi>
+    <mi>C</mi>
+   </mrow>
+  </msub>
+ </mfrac>
+</math></p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <mrow>
+   <mi>d</mi>
+   <msub>
+    <mn>P</mn>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>x</mi>
+    </mrow>
+   </msub>
+  </mrow>
+  <mrow>
+   <mi>d</mi>
+   <mi>t</mi>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mo>&#x2212;</mo>
+ <mfrac>
+  <mrow>
+   <mi mathvariant="normal">&#x2202;</mi>
+   <mi>V</mi>
+  </mrow>
+  <mrow>
+   <mi mathvariant="normal">&#x2202;</mi>
+   <msub>
+    <mi>r</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>x</mi>
+    </mrow>
+   </msub>
+  </mrow>
+ </mfrac>
+ <mo>.</mo>
+</math></p>
+</aside>
+<p class="noindent">where <b>j</b> is the angular momentum of the diatomic reactant of magnitude, <i>j</i>.</p>
+<p class="indent">Trajectories are generated by solving Hamilton&#x2019;s coupled, simultaneous differential equations of motion, subject to a specified set of initial conditions. For each trajectory, the latter are sampled randomly (in so-called <i>Monte Carlo</i> fashion) in the following way. With reference to <a href="Chapter03.xhtml#fig3.9">Fig. 3.9</a>, the initial relative position and momentum of the reactants may be written</p>
+
+<p class="noindent">where <i>R</i><sub>i</sub> is the initial radial separation, chosen so that the interaction potential energy between A and BC is negligible, and <i>v</i><sub>r</sub> is the initial relative speed. The choice of <i>b</i>, the impact parameter, depends on the property to be evaluated. If opacity functions (<i>P</i>(<i>b</i>)) are required, then <i>b</i> is usually selected randomly in the interval 0 &#x2192; <i>b</i><sub>max</sub>, where the latter is chosen so that trajectories run with <i>b</i> &#x2265; <i>b</i><sub>max</sub> do not lead to reaction. If, on the other hand, reaction cross-sections or differential cross-sections are required, it is more efficient to sample <i>b</i><sup>2</sup> randomly between 0 and <i>b</i><sup>2</sup><sub>max</sub>. The effect of this is to weight the sampling of trajectories to high <i>b</i> values, consistent with the fact that the probability of a collision in the range <i>b</i> &#x2192; <i>b</i> + d<i>b</i> is 2<i>&#x03C0;b</i> d<i>b</i>.</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mo stretchy="false">(</mo>
+ <msub>
+  <mi>R</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>X</mi>
+  </mrow>
+ </msub>
+ <mo>,</mo>
+ <msub>
+  <mi>R</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>Y</mi>
+  </mrow>
+ </msub>
+ <mo>,</mo>
+ <msub>
+  <mi>R</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>Z</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>,</mo>
+  <mi>b</mi>
+  <mo>,</mo>
+  <mo>&#x2212;</mo>
+  <msqrt>
+   <msubsup>
+    <mi>R</mi>
+    <mi>i</mi>
+    <mn>2</mn>
+   </msubsup>
+   <mo>&#x2212;</mo>
+   <msup>
+    <mi>b</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mn>2</mn>
+    </mrow>
+   </msup>
+  </msqrt>
+  <mo>)</mo>
+ </mrow>
+ <mo>,</mo>
+</math></p>
+<p class="noindent">and</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mo stretchy="false">(</mo>
+ <msub>
+  <mn>P</mn>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>X</mi>
+  </mrow>
+ </msub>
+ <mo>,</mo>
+ <msub>
+  <mn>P</mn>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>Y</mi>
+  </mrow>
+ </msub>
+ <mo>,</mo>
+ <msub>
+  <mn>P</mn>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>Z</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>,</mo>
+  <mn>0</mn>
+  <mo>,</mo>
+  <mi>&#x03BC;</mi>
+  <msub>
+   <mi>&#x03C5;</mi>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mi>r</mi>
+   </mrow>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+ <mo>,</mo>
+</math></p>
+
+<aside class="right" style="margin-top:-13em;" epub:type="sidebar">
+<p class="sidebar">Analogous expressions hold for the remaining components of <b>R</b> and <b>r</b>, leading to 12 coupled differential equations in total.</p>
+</aside>
+
+<aside class="right" style="margin-top:-6em;" epub:type="sidebar">
+<p class="sidebar">Because the scattering event has cylindrical symmetry about <b>v</b><sub>r</sub>, it is not necessary to run trajectories explicitly with different <i>X</i> and <i>Y</i> position and momentum components, provided the orientation of the diatomic is randomly selected (see below).</p>
+</aside>
+
+<p class="indent">The Cartesian components of the initial position vector of the diatomic, <b>r</b>, the centre-of-mass of which represents the origin of <a href="Chapter03.xhtml#fig3.9">Fig. 3.9</a>, may be expressed</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+  <mi>r</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>x</mi>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <mi>r</mi>
+ <mi>sin</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03D1;</mi>
+ <mi>cos</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03C6;</mi>
+</math></p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+  <mi>r</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>y</mi>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <mi>r</mi>
+ <mi>sin</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03D1;</mi>
+ <mi>cos</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03C6;</mi>
+</math></p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+  <mi>r</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>z</mi>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <mi>r</mi>
+ <mi>cos</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03D1;</mi>
+ <mo>,</mo>
+</math></p>
+<p class="noindent">where <i>&#x03C6;</i> and cos <i>&#x03D1;</i> are chosen randomly in the intervals 0 &#x2192; 2<i>&#x03C0;</i> and &#x2013; 1 &#x2192; +1, respectively. The selection of the initial momentum associated with the diatomic molecule is simplified if the trajectories are started at initial</p>
+</section>
+</section>
+
+<p class="noindent"><a id="page_25" class="page">Page 25, Chapter 3 The differential cross-section</a>bond lengths, <i>r</i> &#x2261; <i>R</i><sub>BC</sub> set equal to a turning point in the classical vibrational motion, which for a harmonic oscillator would be</p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+  <mi>r</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mo>&#x00B1;</mo>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <msub>
+  <mi>r</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>e</mi>
+  </mrow>
+ </msub>
+ <mo>&#x00B1;</mo>
+ <msqrt>
+  <mfrac>
+   <mrow>
+    <mn>2</mn>
+    <mi>h</mi>
+    <mi>&#x03BD;</mi>
+   </mrow>
+   <mi>k</mi>
+  </mfrac>
+  <mo stretchy="false">(</mo>
+  <mi>&#x03C5;</mi>
+  <mo>+</mo>
+  <mfrac>
+   <mn>1</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mo stretchy="false">)</mo>
+  <mo>,</mo>
+ </msqrt>
+</math></p>
+<aside class="right" style="margin-top:0.3em;" epub:type="sidebar">
+<p class="sidebar">In the QCT method the initial &#x2018;states&#x2019;of the diatomic are chosen to correspond to the known quantum mechanical energy levels of the molecule (see <a href="Chapter02.xhtml">Chapter 2</a>).</p>
+</aside>
+<p class="noindent">where <i>v</i> is the vibrational frequency, <i>k</i> is the force constant, and <i>v</i> is the initial vibrational state of BC. To ensure random selection of the vibrational phase of the diatomic molecule, the initial separation of the reactants, <i>R</i><sub>i</sub>, is modified by adding an amount <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"> <mi mathvariant="normal">&#x25B3;</mi> <msub> <mi>R</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>i</mi> </mrow> </msub> <mo>=</mo> <mfrac> <mn>1</mn> <mn>2</mn> </mfrac> <msub> <mi>v</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>r</mi> </mrow> </msub> <msub><mi>&#x03C4;</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>v</mi> <mi>i</mi> <mi>b</mi> </mrow> </msub><mi>k</mi></math>, where <i>&#x03BA;</i> is a random number between 0 and 1, and &#x03C4;<sub>vib</sub> = 1/<i>v</i> is the vibrational period. This means that by the time the reactants reach separation, <i>R</i><sub>i</sub> the vibrational phase of BC will be random. It also means that the initial momentum associated with the vibrational motion of BC, <img src="../images/25_1.jpg" alt="images"/> is zero because initially (i.e. at <i>R</i> = <i>R</i><sub>i</sub> + &#x25B3;<i>R</i><sub>i</sub>) the BC molecule is at a classical turning point, where the total vibrational energy of BC is in the form of potential energy.</p>
+<aside class="right" style="margin-top:1em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.10.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.10"><b>Fig. 3.10</b> Reactant and product coordinates for three-atom reactions.</figcaption>
+</figure>
+</aside>
+<p class="indent">The only remaining initial conditions to specify are those defining the orientation of the initial rotational angular momentum of BC. For a diatomic molecule, the angular momentum must be (randomly) oriented in a plane perpendicular to the bond axis, <b>r</b>. In terms of the magnitude of the initial angular momentum of BC, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"> <mi>j</mi> <mo stretchy="false">(</mo> <mo>&#x2261;</mo> <mi class="MJX-variant">&#x210F;</mi> <msqrt> <mi>j</mi> <mo stretchy="false">(</mo> <mi>j</mi> <mo>+</mo> <mn>1</mn> <mo stretchy="false">)</mo> </msqrt> <mo stretchy="false">)</mo> </math>, and the orientation angle <i>&#x03B7;</i> defined in <a href="Chapter03.xhtml#fig3.9">Fig. 3.9</a>, the components of the linear momentum of BC may be written</p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+  <mn>P</mn>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>x</mi>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <mfrac>
+  <msub>
+   <mi>j</mi>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mi>x</mi>
+   </mrow>
+  </msub>
+  <mi>r</mi>
+ </mfrac>
+ <mo>=</mo>
+ <mo>&#x2212;</mo>
+ <mfrac>
+  <mi>j</mi>
+  <mi>r</mi>
+ </mfrac>
+ <mo stretchy="false">(</mo>
+ <mi>sin</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03C6;</mi>
+ <mi>cos</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03B7;</mi>
+ <mo>+</mo>
+ <mi>cos</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03C6;</mi>
+ <mi>cos</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03D1;</mi>
+ <mi>sin</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03B7;</mi>
+ <mo stretchy="false">)</mo>
+</math></p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+  <mn>P</mn>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>y</mi>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <mfrac>
+  <msub>
+   <mi>j</mi>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mi>y</mi>
+   </mrow>
+  </msub>
+  <mi>r</mi>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <mi>j</mi>
+  <mi>r</mi>
+ </mfrac>
+ <mo stretchy="false">(</mo>
+ <mi>cos</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03C6;</mi>
+ <mi>cos</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03B7;</mi>
+ <mo>&#x2212;</mo>
+ <mi>sin</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03C6;</mi>
+ <mi>cos</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03D1;</mi>
+ <mi>sin</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03B7;</mi>
+ <mo stretchy="false">)</mo>
+</math></p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+  <mn>P</mn>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>z</mi>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <mfrac>
+  <msub>
+   <mi>j</mi>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mi>z</mi>
+   </mrow>
+  </msub>
+  <mi>r</mi>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <mi>j</mi>
+  <mi>r</mi>
+ </mfrac>
+ <mo stretchy="false">(</mo>
+ <mi>sin</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03D1;</mi>
+ <mi>sin</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03B7;</mi>
+ <mo stretchy="false">)</mo>
+ <mo>,</mo>
+</math></p>
+<p class="noindent">where <i>&#x03B7;</i> is chosen randomly in the interval 0 &#x2192; 2<i>&#x03C0;</i>.</p>
+<p class="indent">Once the initial conditions have been selected, the equations of motion are integrated numerically until the atoms are widely separated once more. Reaction to produce AB + C, for example, is deemed to have occurred if the bond lengths <i>R</i><sub>AC</sub> and <i>R</i><sub>BC</sub> are both larger than a threshold value at which the influence of the potential energy surface in these coordinates is negligible. Similar criteria define both non-reactive (elastic and inelastic) collisions and reaction to produce AC + B. Each trajectory must then be analysed to establish the rotational and vibrational energies and states of the AB product and the scattering angle. To this end it is helpful to express the positions and momenta of the atoms in a new set of (CM) coordinates, <b>R</b>&#x2032; and <b>r</b>&#x2032;, appropriate for the AB and C products of reaction, as illustrated in <a href="Chapter03.xhtml#fig3.10">Fig. 3.10</a>. Assignment of the products to &#x2018;quantum states&#x2019; is achieved using an energy (and angular momentum) binning procedure, in which the central energy of the bin corresponds to a known energy level of the product. A similar approach is taken to determine the differential cross-section. The scattering angle (defined conventionally as the angle between the CM velocity vectors of the incoming atom and the outgoing AB diatomic) for a given trajectory is given by <img src="../images/in29_5.jpg" alt="images"/>, where <img src="../images/in29_6.jpg" alt="images"/> is the relative velocity of the products. The latter must be expressed in terms of the reactant coordinates, for which <b>v</b><sub>r</sub> is parallel to <i>Z</i>. After running a number of trajectories, <i>N</i>, employing randomly selected</p>
+<aside class="right" style="margin-top:-29em;" epub:type="sidebar">
+<p class="sidebar">The reactant and product (CM) coordinate systems are related by the following transformation:</p>
+<p class="eqsidebar"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mrow>
+  <mo>(</mo>
+  <mtable rowspacing="4pt" columnspacing="1em">
+   <mtr>
+    <mtd>
+     <msup>
+      <mi>R</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+       <mn>&#x2032;</mn>
+      </mrow>
+     </msup>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <msup>
+      <mi>r</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+       <mn>&#x2032;</mn>
+      </mrow>
+     </msup>
+    </mtd>
+   </mtr>
+  </mtable>
+  <mo>)</mo>
+ </mrow>
+ <mo>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mtable rowspacing="4pt" columnspacing="1em">
+   <mtr>
+    <mtd>
+     <mo>&#x2212;</mo>
+     <mi>a</mi>
+    </mtd>
+    <mtd>
+     <mo>&#x2212;</mo>
+     <mi>b</mi>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mo>&#x2212;</mo>
+     <mi>c</mi>
+    </mtd>
+    <mtd>
+     <mo>&#x2212;</mo>
+     <mi>d</mi>
+    </mtd>
+   </mtr>
+  </mtable>
+  <mo>)</mo>
+ </mrow>
+ <mrow>
+  <mo>(</mo>
+  <mtable rowspacing="4pt" columnspacing="1em">
+   <mtr>
+    <mtd>
+     <mi>R</mi>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mi>r</mi>
+    </mtd>
+   </mtr>
+  </mtable>
+  <mo>)</mo>
+ </mrow>
+</math></p>
+
+<p class="sidebar">where <i>a</i> = <i>m</i><sub>A</sub>/<i>m</i><sub>AB</sub>, <i>b</i> = <i>&#x03BC;</i><sub>BC</sub>/<i>&#x03BC;</i>&#x2032;, <i>c</i>=1, and <i>d</i> = <i>m</i><sub>c</sub>/<i>m</i><sub>BC</sub>; <i>&#x03BC;</i>&#x2032; is the reduced mass of the product, AB and C, pair. The same transformation applies both to the Cartesian components of each of these position vectors, and to the associated velocities (i.e. the time derivative of the above equation).</p>
+<p class="sidebar">We have assumed that the <i>square</i> of the impact parameter has been sampled uniformly, rather than <i>b</i> itself, as described above. This procedure circumvents the need to integrate explicitly over the opacity function when calculating the differential and reaction cross-sections.</p>
+</aside>
+
+
+<p class="noindent"><a id="page_26" class="page">Page 26, Chapter 3 The differential cross-section</a>initial conditions, the differential cross-section is obtained by binning the trajectories in cos<i>&#x03B8;</i> &#x2018;bins&#x2019;, of width &#x25B3; cos<i>&#x03B8;</i>, and evaluating the equation</p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <mrow>
+   <mtext>d</mtext>
+   <msub>
+    <mi>&#x03C3;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>r</mi>
+    </mrow>
+   </msub>
+  </mrow>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C9;</mi>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <mrow>
+   <msub>
+    <mi>N</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>r</mi>
+    </mrow>
+   </msub>
+   <mo stretchy="false">(</mo>
+   <mi>&#x03B8;</mi>
+   <mo stretchy="false">)</mo>
+  </mrow>
+  <mi>N</mi>
+ </mfrac>
+ <mfrac>
+  <mrow>
+   <mi>&#x03C0;</mi>
+   <msubsup>
+    <mi>b</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>m</mi>
+     <mi>a</mi>
+     <mi>x</mi>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mn>2</mn>
+    </mrow>
+   </msubsup>
+  </mrow>
+  <mrow>
+   <mn>2</mn>
+   <mi>&#x03C0;</mi>
+   <mi mathvariant="normal">&#x25B3;</mi>
+   <mi>cos</mi>
+   <mo>&#x2061;</mo>
+   <mi>&#x03B8;</mi>
+  </mrow>
+ </mfrac>
+<mo>&#x00A0;&#x00A0;&#x00A0;</mo>
+ <mi>N</mi>
+ <mo stretchy="false">&#x2192;</mo>
+ <mi mathvariant="normal">&#x221E;</mi>
+ <mo>,</mo>
+</math></p>
+
+<p class="noindent">where <i>N</i><sub>r</sub>(<i>&#x03B8;</i>) is the number of <i>reactive</i> trajectories in the range cos<i>&#x03B8;</i> &#x2192; cos<i>&#x03B8;</i> + &#x25B3; cos<i>&#x03B8;</i>.</p>
+<section epub:type="chapter">
+<h3 class="h3">Molecular beam and other scattering experiments</h3>
+<p class="indent"></p>
+<p class="noindent">For a chemical reaction occurring at a well-defined initial kinetic energy, for example</p>
+<p class="eq1">A + BC &#x2192; AB(<i>v</i>&#x2032;, <i>j</i>&#x2032;) + C,</p>
+<p class="noindent">the reaction products may be born in a variety of internal (<i>v</i>&#x2032;, <i>j</i>&#x2032;) states. They will be endowed, therefore, with a distribution of relative speeds, reflecting the population of these different product internal states. The ideal experiment would be to measure the intensity or flux of the scattered products as functions of laboratory scattering angle <i>and</i> speed, for a well-defined reactant collision energy and BC internal state. Attempts to achieve this goal most commonly employ the crossed molecular beam technique, coupled with the universal detector, the (time-of-flight) electron impact ionization mass spectrometer. A new generation of laser-based spectroscopic detection techniques is also occasionally used in the crossed molecular beam environment. Although these are less universally applicable than mass spectrometry, they offer the advantage of providing higher product internal energy resolution than more conventional methods.</p>
+<aside class="right" style="margin-top:3em;" epub:type="sidebar">
+<p class="sidebar">A detailed description of the molecular beam experiment can be found in Bernstein&#x2019;s <i>Chemical dynamics via molecular beam and laser techniques</i>.</p>
+</aside>
+<p class="noindent">&#x00A0;</p>
+<p class="noindent"><i>The crossed molecular beam experiment</i>. The generation of molecular beams is generally achieved in one of two ways, depending on the reactants to be employed. Many of the early applications of the molecular beam strategy were to reactions involving alkali metal atoms. In these experiments, an <i>effusive</i> beam of such atoms is generated by heating the metal in an oven and allowing the gas-phase atoms to escape via a small pin-hole into a high vacuum scattering chamber. The molecular beam thus generated is characterized by a rather broad speed distribution, characteristic of the temperature of the oven source.</p>
+<p class="indent">Molecular beams of stable molecular reactants are generally produced by an alternative method. This involves adiabatic expansion of very high pressures of the relevant gas, often &#x2018;seeded&#x2019; in an inert carrier gas such as He, through a pin-hole or <i>nozzle</i>. Depending on the nozzle diameter and backing pressure employed, a directed molecular flow can be generated, which is characterized by very high molecular speeds in the beam direction, and very low speeds orthogonal to it. Pulsed molecular beams may also be produced by opening the nozzle in short bursts using, for example, a piezoelectric device. Although such procedures reduce the duty cycle of the experiment (the fraction of time during which useful data can be collected), pulsing the molecular beam reduces the total gas flow through the apparatus, allowing relatively small vacuum pumps to be employed. It also enables experiments to be conducted with high reactant backing pressures, which produces cold and intense molecular beams. Pulsed molecular beams are ideally suited to</p>
+
+<p class="noindent"><a id="page_27" class="page">Page 27, Chapter 3 The differential cross-section</a>applications in which the detection technique is also pulsed, as is often the case with laser-based methods. Both the pulsed and continuous, non-effusive methods have the additional advantage that the rotational (and, to a lesser extent, vibrational) degrees of freedom of the reactant molecules are cooled by collisional relaxation in the immediate post-nozzle region: rotational temperatures of a few kelvin are routinely achieved. More recent developments have focused primarily on extending the technique to allow the generation of beams of atomic and radical species, for example by chemical reaction or electrical discharge immediately prior to the molecular expansion.</p>
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.11.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.11"><b>Fig. 3.11</b> Newton diagram illustrating the laboratory to CM transformation.</figcaption>
+</figure>
+</aside>
+<p class="indent">The molecular beams, generated using the methods just described, are usually collimated using a <i>skimmer</i> prior to crossing in the interaction region of the scattering chamber. The latter is maintained at very low pressures to avoid secondary collisions, which would lead to energy and momentum transfer and distort the angular and product state information of interest. The beam velocities and hence the collision energy may be tuned by employing different backing pressures and carrier gases, or by allowing the reactant beams to cross at different intersection angles. The reaction products are detected at some well-defined distance from the interaction region and at a variable laboratory scattering angle using electron impact, time-of-flight mass spectrometry.</p>
+<aside class="right" style="margin-top:-1em;" epub:type="sidebar">
+<p class="sidebar">The time-of-flight mass spectrometer is a variant of conventional mass spectrometry which allows the number of products arriving at the detector to be resolved as a function of time. Knowledge of the path length from the scattering centre allows the speed of the products to be calculated from the measured arrival times.The timing of the experiment is usually controlled by chopping or pulsing the reactant molecular beam: the time resolution allows both the mass and the speed distribution of the products to be determined, as a function of laboratory scattering angle.</p>
+</aside>
+<p class="indent">The raw data from these experiments consist of the intensity of the reaction product (proportional to the product number density) as a function of the laboratory (LAB) speed and laboratory angle, usually defined with respect to the direction of one of the reactant molecular beams. To obtain the differential cross-section, and the relative speed of the reaction products, the signal intensity must be converted to flux (see <a href="Chapter03.xhtml#eq3.1">eqn 3.1</a>) by multiplying by the product speed, and then transformed from the laboratory frame to the centre-of-mass (CM) frame. The <i>Newton diagram</i> shown in <a href="Chapter03.xhtml#fig3.11">Fig. 3.11</a> illustrates the key features of this transformation, where &#x2018;<b>v</b>&#x2019; is used to denote a LAB velocity and &#x2018;<b>w</b>&#x2019; to denote a velocity in the CM frame. The information obtained is usually plotted in the form of a product flux velocity&#x2013;angle contour plot, in which the CM corresponds to a point at the centre of the diagram, and contours represent loci of equal product flux as a function of CM scattering angle and product speed. Such a diagram is illustrated in <a href="Chapter03.xhtml#fig3.12">Fig. 3.12</a>.<sup>17</sup></p>
+<p class="noindent">&#x00A0;</p>
+<aside class="right" style="margin-top:0em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.12.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.12"><b>Fig. 3.12</b> HF product flux contour plot for the reaction F + H<sub>2</sub>.</figcaption>
+</figure>
+</aside>
+<p class="noindent"><i>Laser-based techniques</i>. Although crossed molecular beam experiments provide well-defined reactant kinetic energies and good angular resolution, one disadvantage of the electron impact ionization mass spectrometric detector is its comparatively low product kinetic energy resolution. This low resolution means that, except in very favourable cases, it is not possible to use the technique to obtain differential cross-sections with product quantum state resolution.</p>
+<p class="indent">Spectroscopic techniques for probing the reaction products have traditionally been applied to determine the population distribution over product internal states (see <a href="Chapter04.xhtml#sub4.1">Section 4.1</a>). Such techniques, which generally employ highly monochromatic laser radiation, inherently offer greater product state resolution, but are rarely used in conjunction with the crossed molecular beam environment, because the number density of product molecules born in specific quantum states is typically too small to allow reliable detection. One pioneering study, which did combine the crossed molecular beam with laser-</p>
+
+<p class="noindent"><a id="page_28" class="page">Page 28, Chapter 3 The differential cross-section</a>based detection methods, employed the laser-induced fluorescence technique to probe the OH products of the H + NO<sub>2</sub> reaction.<sup>14</sup> The study made use of the Doppler effect to obtain product speed and angular distributions for rovibrationally state-selected OH products of the reaction. Continued improvements in detection sensitivity are beginning to result in more widespread use of techniques such as this to obtain both product internal state distributions and state resolved differential cross-sections.<sup>15</sup></p>
+<p class="indent">A more recent alternative strategy,<sup>16</sup> which does not employ crossed molecular beams, uses pulsed laser photolysis of a suitable precursor molecule to generate &#x2018;beams&#x2019; of fast-moving atom or radical species at low pressures (see <a href="Chapter04.xhtml#sub4.1">Section 4.1</a>). Pulsed laser probing of the reaction products after a short &#x2018;pump-probe&#x2019; delay then makes use of the Doppler effect to obtain information on the velocity distribution of the reaction products, from which the CM differential cross-section can be obtained. The technique is ideally suited to reactions involving three atoms, and to obtain the highest energy and angular information the use of translationally cold precursor and &#x2018;target&#x2019; reactant molecules is required. The translational cooling is achieved using the jet-cooling technique (see <a href="Chapter02.xhtml#sub2.3">Section 2.3</a>), by co-expanding the precursor and target molecules in a pulsed molecular beam. The reactant number densities generated by this method are still orders of magnitude higher than in the crossed molecular beam experimental configuration.</p>
+<section epub:type="chapter">
+<h2 class="h2" id="sub3.3">3.3<span class="space">&#160;</span>Case studies</h2>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Direct reactions</h3>
+<p class="noindent">The velocity&#x2013;angle contour map for the reaction</p>
+<figure class="fig">
+<img src="../images/28_1.jpg" alt="images"/>
+</figure>
+<aside class="right" style="margin-top:6em;" epub:type="sidebar">
+<p class="sidebar">This reaction, together with that of D +I<sub>2</sub> described below, provide examples of <i>kinematically constrained</i> reactions (see <a href="Chapter04.xhtml#sub4.3">Section 4.3</a>).</p>
+</aside>
+
+<p class="noindent">was shown in <a href="Chapter03.xhtml#fig3.12">Fig. 3.12</a>.<sup>17</sup> The majority of HF products are found in the backward hemisphere, peaking at scattering angles around 180&#x00B0; relative to the reactant F atom direction. In conjunction with the low reaction cross-section, the data are suggestive of preferred reaction at low impact parameters. The wide rovibrational energy level spacing in HF facilitates the resolution of different product vibrational states in the velocity&#x2013;angle contour plot (labelled <i>&#x03C5;&#x2032;</i> in <a href="Chapter03.xhtml#fig3.12">Fig. 3.12</a>). Therefore, plots such as these also provide information on the distribution of HF molecules in different product vibrational states (see <a href="Chapter04.xhtml#sub4.3">Section 4.3</a>). Rather strikingly, HF products born in the highest vibrational levels (corresponding to the innermost circle in <a href="Chapter03.xhtml#fig3.12">Fig. 3.12</a>) are scattered selectively into the forward hemisphere. Classical trajectory calculations<sup>19</sup> on an accurate potential energy surface<sup>4</sup>, which account for many of the features displayed experimentally, reveal that the highly vibrationally excited products arise from comparatively high impact parameter collisions. However, one failing of the classical calculations is that the HF(<i>&#x03C5;&#x2032;</i> = 3) differential cross-sections do not show sufficient intensity in the forward direction, compared with experiment. Quantum mechanical calculations<sup>20</sup> on the same surface show better agreement with experiment. They display enhanced scattering into the forward hemisphere, which arises from quantum mechanical tunnelling. Classically, reaction at very large impact parameters is limited at a given collision energy by the height of the centrifugal barrier on the effective <a id="page_29" class="page">Page 29, Chapter 3 The differential cross-section</a>potential. Quantum mechanically, reaction can occur at larger orbital angular momenta, because the reactants can tunnel through the centrifugal barrier. These highest <i>L</i> reactive collisions are scattered primarily in the forward direction.</p>
+<aside class="right" style="margin-top:-25em;" epub:type="sidebar">
+<p class="sidebar">More recent experiments<sup>18</sup> have yielded product <i>rotationally</i> resolved differential cross-sections.</p>
+</aside>
+
+
+<figure class="fig">
+<img src="../images/fig_3.13.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.13"><b>Fig. 3.13</b> KI product flux contour plots for the reactions K + I<sub>2</sub> (left) and K + CH<sub>3</sub>I (right).</figcaption>
+</figure>
+
+<p class="indent">Further examples of differential reactive cross-sections are provided by the two reactions<sup>21,22</sup></p>
+<figure class="fig">
+<img src="../images/29_1.jpg" alt="images"/>
+</figure>
+<p class="noindent">and</p>
+<figure class="fig">
+<img src="../images/29_2.jpg" alt="images"/>
+</figure>
+<p class="noindent">Both reactions proceed via the <i>harpoon mechanism</i>, but the two display contrasting characteristics associated with preferential reaction at large and small impact parameters. This arises because the charge transfers by which these reactions proceed occur at very different reactant separations in the two cases. For the K + I<sub>2</sub> reaction, charge transfer occurs at large <i>R</i>, and the reaction probability, <i>P</i>(<i>b</i>), is close to unity over a very large range of impact parameters. Thus both the integral and the differential reaction cross-sections are dominated by the more probable high impact parameter collisions, which lead to forward scattering (see <a href="Chapter03.xhtml#fig3.13">Fig. 3.13</a>). By contrast, the reactants in the K + CH<sub>3</sub>I reaction must be very close together before charge transfer can take place. In consequence, the opacity function peaks at small impact parameters, as is evident from the low reaction cross-section and the strong backward peaking differential cross-section, shown in <a href="Chapter03.xhtml#fig3.13">Fig. 3.13</a>.</p>
+<aside class="right" style="margin-top:-12em;" epub:type="sidebar">
+<p class="sidebar">The velocity&#x2013;angle maps shown in <a href="Chapter03.xhtml#fig3.13">Fig. 3.13</a> also provide information on the population of the internal states of the Kl products (see <a href="Chapter04.xhtml#sub4.2">Section 4.2</a>).</p>
+</aside>
+<p class="indent">The angular distribution of the scattered products in the reaction<sup>23</sup></p>
+<figure class="fig">
+<img src="../images/29_3.jpg" alt="images"/>
+</figure>
+<aside class="right" style="margin-top:-3em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.14.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.14"><b>Fig. 3.14</b> DI product flux contour plot for the reaction D + I<sub>2</sub>.</figcaption>
+</figure>
+</aside>
+<p class="noindent">provides another, distinctive example (see <a href="Chapter03.xhtml#fig3.14">Fig. 3.14</a>). The DI products are found preferentially in the sideways direction, perpendicular to the reactant relative velocity vector. One interpretation for this scattering is that it reflects a preferential sideways angle of attack of the D atom to the I<sub>2</sub> bond. Because the D atom is much lighter than iodine, the direction of recoil of the DI product is determined by the angle of attack, and is little altered by the momentum carried by the incoming D atom.</p>
+<p class="indent">As a final example, we turn to an isotopic variant of the simplest of all chemical reactions involving neutral species, namely</p>
+<figure class="fig">
+<img src="../images/29_4.jpg" alt="images"/>
+</figure>
+<a id="page_30" class="page" style="width:60%;">Page 30, Chapter 3 The differential cross-section</a>
+<figure class="fig">
+<img src="../images/fig_3.15.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:100%;" id="fig3.15"><b>Fig. 3.15</b> D atom time-of-flight spectra for the reaction H + D<sub>2</sub> at the LAB scattering angles shown. These LAB angles correspond approximately to backward (left) and sideways (right) HD scattering. The labelled peaks are associated with the production of HD co-products in different rovibrational states.</figcaption>
+</figure>
+<p class="noindent">The data, shown in <a href="Chapter03.xhtml#fig3.15">Fig. 3.15</a>, were obtained using a state-of-the-art spectroscopic method for ionizing the product D atoms, which allowed a higher product D atom time-of-flight resolution to be obtained than can be had with conventional, electron impact ionization mass-spectrometry.<sup>24</sup> The resulting D atom speed resolution is so high that differential cross-sections of individual rovibrational states of the DH co-product can be resolved. The reaction is dominated by low impact parameter, near-collinear collisions, for which the reaction barrier is a minimum, and the general observation of backward scattering is in qualitative accord with expectation based on the simple opacity model. Collinear collisions at low impact parameters cannot provide a mechanism for generating HD product rotation, and it is significant that little product rotation is observed experimentally. Furthermore, the most sharply backward scattered HD products correspond to those produced in low rotational states. Higher HD rotational states originate from higher impact parameter reactive collisions, and the scattering of these products is less focused in the backward direction. The differential cross-sections and product quantum state populations have been calculated both quantum mechanically and classically. Both calculations, particularly the former, are in good accord with experiment.<sup>24</sup></p>
+<aside class="right" style="margin-top:2em;" epub:type="sidebar">
+<p class="sidebar">The rotational period of a complex (= 2&#x03C0;/<i>&#x03C9;</i>) can be estimated classically from the equation <i>J</i> = <i>I</i><i>&#x03C9;</i>, where <i>J</i> is the magnitude of the total rotational angular momentum of the complex, <i>I</i> its moment of inertia (about the rotational axis of interest), and <i>&#x03C9;</i> the angular velocity, in radians s<sup>&#x2013;1</sup>.The magnitude of the angular momentum can be estimated quantum mechanically, using the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"> <mi>J</mi> <mo>=</mo> <mi class="MJX-variant">&#x210F;</mi> <msqrt> <mi>J</mi> <mo stretchy="false">(</mo> <mi>J</mi> <mo>+</mo> <mn>1</mn> <mo stretchy="false">)</mo> </msqrt> </math>, where <img src="../images/in29_2.jpg" alt="images"/> is the total angular momentum quantum number of the complex.</p>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Reactions proceeding via a long-lived complex</h3>
+<p class="noindent">For reactions which proceed via the intermediacy of a long-lived complex, the opacity model can no longer guide interpretation of the differential cross-section. If the lifetime of the intermediate complex is long compared with the rotational period of the complex, then the approximate correlation between impact parameter and scattering angle observed for direct reactions no longer applies. Such reactions display differential cross-sections which are symmetric about the sideways scattering angle of 90&#x00B0;. The precise shape of the differential cross-section depends on the structure of the complex (e.g. whether it is a prolate or oblate top), and on angular momentum conservation constraints (see <a href="Chapter04.xhtml#sub4.3">Section 4.3</a>).</p>
+<a id="page_31" class="page" style="width:60%;">Page 31, Chapter 3 The differential cross-section</a>
+<aside class="right" style="margin-top:2em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.16.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.16"><b>Fig. 3.16</b> The origin of forward&#x2013;backward symmetry in the differential cross-section for a long-lived diatomic complex.</figcaption>
+</figure>
+</aside>
+<p class="indent">Imagine a complex is formed on combination of species A and B with orbital angular momentum <i>L</i> (in this simple example, we assume that the rotational angular momentum of the reactants is zero, and that the orbital angular momentum is conserved). The reactants can approach at any azimuthal angle <i>&#x03D5;</i> (see <a href="Chapter03.xhtml#fig3.5">Fig. 3.5</a>), such that <b>L</b>, which must be perpendicular to <b>v</b><sub>r</sub>, can point anywhere on the circle, as illustrated in <a href="Chapter03.xhtml#fig3.16">Fig. 3.16</a>. For a given direction of <b>L</b>, the collision is confined to a plane, and thus, if the complex survives for many rotational periods, the probability of scattering at angles between <i>&#x03B8;</i> and <i>&#x03B8;</i> + d<i>&#x03B8;</i> must be uniform. Averaging over all collision encounters, with different orientations of <b>L</b>, yields a scattering probability in the ranges <i>&#x03B8;</i> &#x2192; <i>&#x03B8;</i> + d<i>&#x03B8;</i> and <i>&#x03D5;</i> &#x2192; <i>&#x03D5;</i> + d<i>&#x03D5;</i> which is independent of polar angles. Thus we may write</p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mn>P</mn>
+ <mo stretchy="false">(</mo>
+ <mi>&#x03B8;</mi>
+ <mo>,</mo>
+ <mi>&#x03D5;</mi>
+ <mo stretchy="false">)</mo>
+ <mi>sin</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03B8;</mi>
+ <mi>d</mi>
+ <mi>&#x03B8;</mi>
+ <mi>d</mi>
+ <mi>&#x03D5;</mi>
+ <mo>&#x2261;</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mi>&#x03C3;</mi>
+ </mfrac>
+ <mfrac>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C3;</mi>
+  </mrow>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C9;</mi>
+  </mrow>
+ </mfrac>
+ <mi>sin</mi>
+ <mo>&#x2061;</mo>
+ <mi>&#x03B8;</mi>
+ <mi>d</mi>
+ <mi>&#x03B8;</mi>
+ <mi>d</mi>
+ <mi>&#x03D5;</mi>
+ <mo>=</mo>
+ <mi>N</mi>
+ <mi>d</mi>
+ <mi>&#x03B8;</mi>
+ <mi>d</mi>
+ <mi>&#x03D5;</mi>
+ <mo>,</mo>
+</math></p>
+<p class="noindent">where <i>N</i> is a normalization constant. Rearranging this expression, together with evaluating the constant, yields</p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <mn>1</mn>
+  <mi>&#x03C3;</mi>
+ </mfrac>
+ <mfrac>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C3;</mi>
+  </mrow>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>&#x03C9;</mi>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mrow>
+   <mn>2</mn>
+   <msup>
+    <mi>&#x03C0;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mn>2</mn>
+    </mrow>
+   </msup>
+   <mi>sin</mi>
+   <mo>&#x2061;</mo>
+   <mi>&#x03B8;</mi>
+  </mrow>
+ </mfrac>
+ <mo>.</mo>
+</math></p>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.17.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.17"><b>Fig. 3.17</b> BrO product flux contour plot for the reaction O + Br<sub>2</sub>.</figcaption>
+</figure>
+</aside>
+<p class="noindent">The differential cross-section is predicted to peak symmetrically in the forward and backward directions. An example of a reaction showing a differential cross-section with near-symmetric forward and backward peaks, O + Br<sub>2</sub>, is shown in <a href="Chapter03.xhtml#fig3.17">Fig. 3.17</a>.<sup>25</sup></p>
+<p class="indent">More commonly, the lifetime of the reactive intermediate is not long compared with its rotational period (and <i>L</i> is not conserved), and in such circumstances, some asymmetry in the differential cross-section is observed. An example is the insertion reaction of O(<sup>1</sup>D) + H<sub>2</sub>, which shows a slight preference for backward scattering in the state averaged differential cross-section at low collision energies. The product state resolved differential cross-section for OH(<i>v</i>&#x2032; = 0, <i>j</i>&#x2032; = 14) shows more pronounced backward scattering<sup>26</sup> (see <a href="Chapter03.xhtml#fig3.18">Fig. 3.18</a>), and QCT calculations suggest that this behaviour arises because a small subset of intermediate complexes (in particular, those H<sub>2</sub>O complexes which decay to OH(<i>v</i>&#x2032; = 0) products in low rotational levels) decay on timescales shorter than the rotational period. At higher collision energies, backward scattering becomes more dominant.<sup>27</sup> This behaviour has been ascribed (in contrast to the above mechanism) to competing reaction on an electronically excited potential energy surface, which does not correlate with the ground electronic state of the water molecule.<sup>5, 27</sup> Reaction on this upper surface is believed to occur via a direct abstractive, rather than an insertion mechanism, and yields backward scattered products.</p>
+<aside class="right" style="margin-top:-18em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.18.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.18"><b>Fig. 3.18</b> Differential cross-section for the reaction O(<sup>1</sup>D) + H<sub>2</sub>.The detected OH products were in <i>v</i>&#x2032; = 0, <i>j</i>&#x2032; = 14.</figcaption>
+</figure>
+</aside>
+</section>
+</section>
+<section epub:type="chapter">
+<h2 class="h2" id="sub3.4">3.4<span class="space">&#160;</span>Stereochemistry</h2>
+<aside class="right" style="margin-top:-1em;" epub:type="sidebar">
+<p class="sidebar">Stereochemistry or <i>stereodynamics</i> is also concerned with the polarization of the angular momentum of the reaction products, i.e. with the angular distribution of the product rotational angular momentum. Polarized light can be employed both to polarize the angular momentum of the reactants and interrogate the angular momentum polarization of the products.<sup>16, 28</sup></p>
+</aside>
+<p class="noindent">We have seen that differential cross-sections for direct reactions provide some insight into the distribution of impact parameters and angles of attack which lead to reaction. <i>Stereochemistry</i> is the area of reaction dynamics concerned with the reactant orientation dependence of chemical reactivity. To obtain more direct stereochemical information it is necessary to pre-orient the reactants, and thereby exert some control over whether collisions take place in preferred collinear (&#x2018;heads&#x2019; or &#x2018;tails&#x2019;) or side-on configurations.</p>
+<a id="page_32" class="page" style="width:60%;">Page 32, Chapter 3 The differential cross-section</a>
+<p class="indent">A number of ways have been developed for pre-orienting molecules. The simplest method, which is suitable for reactant molecules which have a dipole moment, is to orient them in a strong electric field. Although the technique can be applied to a wide variety of molecular systems, the main disadvantage of the technique is that the net orientation achieved in the electric field depends on the initial angular momentum of the molecule, in the field-free region of the molecular beam expansion. Although highly oriented molecules can be generated if, initially, only low angular momentum states of the molecule are populated (such as would be the case in the coldest of molecular beams), higher angular momentum states are more difficult to orient, as they undergo wide-angle pendular-type motion in the electric field. One way of dealing with this problem is to pre-select the angular momentum state of reactant molecules prior to their entering the homogeneous electric field region. This can be achieved by using an inhomogeneous hexadecapole electrostatic field, for example.</p>
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<p class="sidebar">The inhomogeneous electrostatic field is used to focus molecules in specific J, K, and M<sub>J</sub> states through slits placed in the molecular beam flight path. The method is most easily applied to prolate symmetric top reactants.</p>
+</aside>
+<p class="indent">The molecular beam of oriented reactant molecules is crossed with that of the co-reactants at a well-defined angle to the homogeneous electric field. In the example presented in <a href="Chapter03.xhtml#fig3.19">Fig. 3.19</a>, the products (RbI) of the reaction</p>
+<figure class="fig">
+<img src="../images/32_1.jpg" alt="images"/>
+</figure>
+<aside class="right" style="margin-top:-3.5em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_3.19.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig3.19"><b>Fig. 3.19</b> The reaction probability for the Rb + CH<sub>3</sub>I reaction as a function of angle of attack between the incoming Rb atom and the C&#x2013;I bond axis.</figcaption>
+</figure>
+</aside>
+<p class="noindent">were detected mass spectrometrically in the backward scattered direction. The figure represents the reaction probability (for producing backward scattered RbI) as a function of orientational angle between the reactant relative velocity vector and the C&#x2013;I bond (which coincides with the direction of the dipole moment). The reaction probability peaks when the incoming Rb atoms approach head-on with the iodine end of the methyl iodide molecule, and decays to zero when the Rb attacks tails-on (i.e. towards the CH<sub>3</sub> group of the reactant).<sup>29</sup> Thus, there is a <i>cone of acceptance</i> around the iodine end of the molecule, along which the Rb atom must approach if it is to react. The data provide direct experimental evidence for the steric effect, widely invoked in fields such as synthetic organic chemistry.</p>
+<p class="indent">An alternative technique has been applied to a study of the reaction</p>
+<figure class="fig">
+<img src="../images/32_2.jpg" alt="images"/>
+</figure>
+<p class="noindent">which is believed to proceed via the HOCO intermediate.<sup>30</sup> The reaction was initiated by laser photolysis of the HX&#x2013;CO<sub>2</sub> (X=Cl, Br, and I) van der Waals complex (see <a href="Chapter02.xhtml">Chapter 2</a>):<sup>31</sup> the HBr chromophore absorbs the radiation, generating translationally excited H atoms, whose direction of travel is determined by the geometry of the complex in its zero-point vibrational level. Experiments of this type provide some control over both the impact parameter and orientation angle of the reactants, and have been used to determine energy disposal data, which can be compared with those obtained from the gas phase &#x2018;hot atom&#x2019; reaction (see <a href="Chapter04.xhtml">Chapter 4</a>), and to obtain estimates of the lifetime of the intermediate HOCO complex.</p>
+</section>
+</section>
+</body>
+</html>

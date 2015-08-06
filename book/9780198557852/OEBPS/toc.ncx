@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+<head>
+<meta name="dtb:uid" content="978-0-19-855785-2"/>
+<meta name="dtb:depth" content="1"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle><text>Molecular Spectroscopy</text></docTitle>
+<navMap>
+<navPoint id="1" playOrder="1"><navLabel><text>Oxford Chemistry Primers</text></navLabel><content src="xhtml/Oxford_Chemistry_Primers.xhtml"/></navPoint>
+<navPoint id="2" playOrder="2"><navLabel><text>Title Page</text></navLabel><content src="xhtml/Titlepage.xhtml"/></navPoint>
+<navPoint id="3" playOrder="3"><navLabel><text>Copyright Page</text></navLabel><content src="xhtml/Copyright.xhtml"/></navPoint>
+<navPoint id="4" playOrder="4"><navLabel><text>Series Editor&#x2019;s Foreword</text></navLabel><content src="xhtml/Series_Editors_Foreword.xhtml"/></navPoint>
+<navPoint id="5" playOrder="5"><navLabel><text>Preface</text></navLabel><content src="xhtml/Preface.xhtml"/></navPoint>
+<navPoint id="6" playOrder="6"><navLabel><text>Contents</text></navLabel><content src="xhtml/Contents.xhtml"/></navPoint>
+<navPoint id="7" playOrder="7"><navLabel><text>1 Radiation and matter</text></navLabel><content src="xhtml/Chapter1.xhtml#ch1"/>
+<navPoint id="8" playOrder="8"><navLabel><text>1.1 Introduction</text></navLabel><content src="xhtml/Chapter1.xhtml#ch1.1"/></navPoint>
+<navPoint id="9" playOrder="9"><navLabel><text>1.2 The basic spectroscopic experiment</text></navLabel><content src="xhtml/Chapter1.xhtml#ch1.2"/></navPoint>
+<navPoint id="10" playOrder="10"><navLabel><text>1.3 Electromagnetic radiation</text></navLabel><content src="xhtml/Chapter1.xhtml#ch1.3"/></navPoint>
+<navPoint id="11" playOrder="11"><navLabel><text>1.4 The interaction between radiation and matter</text></navLabel><content src="xhtml/Chapter1.xhtml#ch1.4"/></navPoint>
+<navPoint id="12" playOrder="12"><navLabel><text>1.5 Relative energy units in spectroscopy</text></navLabel><content src="xhtml/Chapter1.xhtml#ch1.5"/></navPoint></navPoint>
+<navPoint id="13" playOrder="13"><navLabel><text>2 Quantization and molecular energy levels</text></navLabel><content src="xhtml/Chapter2.xhtml#ch2"/>
+<navPoint id="14" playOrder="14"><navLabel><text>2.1 Introduction</text></navLabel><content src="xhtml/Chapter2.xhtml#ch2.1"/></navPoint>
+<navPoint id="15" playOrder="15"><navLabel><text>2.2 The Schrodinger equation</text></navLabel><content src="xhtml/Chapter2.xhtml#ch2.2"/></navPoint>
+<navPoint id="16" playOrder="16"><navLabel><text>2.3 Molecular wavefunctions: Born-Oppenheimer separation</text></navLabel><content src="xhtml/Chapter2.xhtml#ch2.3"/></navPoint>
+<navPoint id="17" playOrder="17"><navLabel><text>2.4 Pauli exclusion principle: nuclear statistical weights</text></navLabel><content src="xhtml/Chapter2.xhtml#ch2.4"/></navPoint></navPoint>
+<navPoint id="18" playOrder="18"><navLabel><text>3 Transition probabilities and selection rules</text></navLabel><content src="xhtml/Chapter3.xhtml#ch3"/>
+<navPoint id="19" playOrder="19"><navLabel><text>3.1 Spectroscopic transitions</text></navLabel><content src="xhtml/Chapter3.xhtml#ch3.1"/></navPoint>
+<navPoint id="20" playOrder="20"><navLabel><text>3.2 Radiative relaxation; Einstein A and B coefficients</text></navLabel><content src="xhtml/Chapter3.xhtml#ch3.2"/></navPoint>
+<navPoint id="21" playOrder="21"><navLabel><text>3.3 Absorption coefficients</text></navLabel><content src="xhtml/Chapter3.xhtml#ch3.3"/></navPoint>
+<navPoint id="22" playOrder="22"><navLabel><text>3.4 Spectroscopic selection rules and intensities</text></navLabel><content src="xhtml/Chapter3.xhtml#ch3.4"/></navPoint></navPoint>
+<navPoint id="23" playOrder="23"><navLabel><text>4 Rotational spectroscopy</text></navLabel><content src="xhtml/Chapter4.xhtml#ch4"/>
+<navPoint id="24" playOrder="24"><navLabel><text>4.1 Introduction</text></navLabel><content src="xhtml/Chapter4.xhtml#ch4.1"/></navPoint>
+<navPoint id="25" playOrder="25"><navLabel><text>4.2 The rotational Hamiltonian: eigenvalues and eigenvectors</text></navLabel><content src="xhtml/Chapter4.xhtml#ch4.2"/></navPoint>
+<navPoint id="26" playOrder="26"><navLabel><text>4.3 Rotational wavefunctions, form and symmetry</text></navLabel><content src="xhtml/Chapter4.xhtml#ch4.3"/></navPoint>
+<navPoint id="27" playOrder="27"><navLabel><text>4.4 Selection rules and the rotational spectrum</text></navLabel><content src="xhtml/Chapter4.xhtml#ch4.4"/></navPoint>
+<navPoint id="28" playOrder="28"><navLabel><text>4.5 Centrifugal distortion</text></navLabel><content src="xhtml/Chapter4.xhtml#ch4.5"/></navPoint>
+<navPoint id="29" playOrder="29"><navLabel><text>4.6 Determination of bond lengths; vibrational averaging</text></navLabel><content src="xhtml/Chapter4.xhtml#ch4.6"/></navPoint>
+<navPoint id="30" playOrder="30"><navLabel><text>4.7 The Stark effect: molecules in electric fields</text></navLabel><content src="xhtml/Chapter4.xhtml#ch4.7"/></navPoint></navPoint>
+<navPoint id="31" playOrder="31"><navLabel><text>5 Vibrational spectroscopy</text></navLabel><content src="xhtml/Chapter5.xhtml#ch5"/>
+<navPoint id="32" playOrder="32"><navLabel><text>5.1 Introduction</text></navLabel><content src="xhtml/Chapter5.xhtml#ch5.1"/></navPoint>
+<navPoint id="33" playOrder="33"><navLabel><text>5.2 The simple harmonic oscillator: reduction to one-body form</text></navLabel><content src="xhtml/Chapter5.xhtml#ch5.2"/></navPoint>
+<navPoint id="34" playOrder="34"><navLabel><text>5.3 Eigenvalues and eigenfunctions of the simple harmonic oscillator</text></navLabel><content src="xhtml/Chapter5.xhtml#ch5.3"/></navPoint>
+<navPoint id="35" playOrder="35"><navLabel><text>5.4 The quantum harmonic oscillator: non-classical behaviour</text></navLabel><content src="xhtml/Chapter5.xhtml#ch5.4"/></navPoint>
+<navPoint id="36" playOrder="36"><navLabel><text>5.5 Vibrational selection rules and spectrum of the simple harmonic oscillator</text></navLabel><content src="xhtml/Chapter5.xhtml#ch5.5"/></navPoint>
+<navPoint id="37" playOrder="37"><navLabel><text>5.6 The anharmonic oscillator</text></navLabel><content src="xhtml/Chapter5.xhtml#ch5.6"/></navPoint>
+<navPoint id="38" playOrder="38"><navLabel><text>5.7 Energy levels of the vibrating rotator</text></navLabel><content src="xhtml/Chapter5.xhtml#ch5.7"/></navPoint>
+<navPoint id="39" playOrder="39"><navLabel><text>5.8 The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter5.xhtml#ch5.8"/></navPoint></navPoint>
+<navPoint id="40" playOrder="40"><navLabel><text>6 Raman spectroscopy The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter6.xhtml#ch6"/>
+<navPoint id="41" playOrder="41"><navLabel><text>6.1 Introduction The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter6.xhtml#ch6.1"/></navPoint>
+<navPoint id="42" playOrder="42"><navLabel><text>6.2 The nature of the interaction in Raman scattering: selection rules The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter6.xhtml#ch6.2"/></navPoint>
+<navPoint id="43" playOrder="43"><navLabel><text>6.3 Rotational Raman spectroscopy The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter6.xhtml#ch6.3"/></navPoint>
+<navPoint id="44" playOrder="44"><navLabel><text>6.4 Vibrational Raman spectrum The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter6.xhtml#ch6.4"/></navPoint></navPoint>
+<navPoint id="45" playOrder="45"><navLabel><text>7 Electronic spectroscopy The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter7.xhtml#ch7"/>
+<navPoint id="46" playOrder="46"><navLabel><text>7.1 Introduction The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter7.xhtml#ch7.1"/></navPoint>
+<navPoint id="47" playOrder="47"><navLabel><text>7.2 Description of electronic states The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter7.xhtml#ch7.2"/></navPoint>
+<navPoint id="48" playOrder="48"><navLabel><text>7.3 The vibrational and rotational structure of electronic states The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter7.xhtml#ch7.3"/></navPoint>
+<navPoint id="49" playOrder="49"><navLabel><text>7.4 Transitions in electronic spectroscopy: selection rules The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter7.xhtml#ch7.4"/></navPoint>
+<navPoint id="50" playOrder="50"><navLabel><text>7.5 The vibrational (band) structure of an electronic spectrum The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter7.xhtml#ch7.5"/></navPoint>
+<navPoint id="51" playOrder="51"><navLabel><text>7.6 Dissociation and predissociation The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter7.xhtml#ch7.6"/></navPoint></navPoint>
+<navPoint id="52" playOrder="52"><navLabel><text>8 Photoelectron spectroscopy The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter8.xhtml#ch8"/>
+<navPoint id="53" playOrder="53"><navLabel><text>8.1 Introduction The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter8.xhtml#ch8.1"/></navPoint>
+<navPoint id="54" playOrder="54"><navLabel><text>8.2 Principles of photoelectron spectroscopy The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter8.xhtml#ch8.2"/></navPoint>
+<navPoint id="55" playOrder="55"><navLabel><text>8.3 Examples of a photoelectron spectrum: molecular nitrogen The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter8.xhtml#ch8.3"/></navPoint>
+<navPoint id="56" playOrder="56"><navLabel><text>8.4 Autoionization The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter8.xhtml#ch8.4"/></navPoint>
+<navPoint id="57" playOrder="57"><navLabel><text>8.5 Zero kinetic energy (ZEKE) spectroscopy The vibration-rotation spectrum</text></navLabel><content src="xhtml/Chapter8.xhtml#ch8.5"/></navPoint></navPoint>
+<navPoint id="58" playOrder="58"><navLabel><text>Bibliography The vibration-rotation spectrum</text></navLabel><content src="xhtml/Bibliography.xhtml#bib"/></navPoint>
+<navPoint id="59" playOrder="59"><navLabel><text>Index The vibration-rotation spectrum</text></navLabel><content src="xhtml/Index.xhtml#ind"/></navPoint>
+</navMap>
+</ncx>

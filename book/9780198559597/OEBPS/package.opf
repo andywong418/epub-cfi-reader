@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="p9780198559597">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:identifier id="p9780198559597">978-0-19-855959-7</dc:identifier>
+<dc:title>Core Carbonyl Chemistry</dc:title>
+<dc:language>en-US</dc:language>
+<dc:creator>John Jones</dc:creator>
+<dc:publisher>Oxford University Press</dc:publisher>
+<meta property="dcterms:modified">2015-05-23T16:38:35Z</meta>
+<meta name="cover" content="cover-image"/>
+</metadata>
+<manifest>
+<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="toc" properties="nav" href="xhtml/toc.xhtml" media-type="application/xhtml+xml"/>
+<item id="stylesheet" href="styles/stylesheet.css" media-type="text/css"/>
+<item id="front01" href="xhtml/Oxford_Chemistry_Primers.xhtml" media-type="application/xhtml+xml"/>
+<item id="title" href="xhtml/Titlepage.xhtml" media-type="application/xhtml+xml"/>
+<item id="copyright" href="xhtml/Copyrightpage.xhtml" media-type="application/xhtml+xml"/>
+<item id="front02" href="xhtml/Series_Editor's_Foreword.xhtml" media-type="application/xhtml+xml"/>
+<item id="front03" href="xhtml/Preface.xhtml" media-type="application/xhtml+xml"/>
+<item id="contents" href="xhtml/Contents.xhtml" media-type="application/xhtml+xml"/>
+<item id="abbreviations" href="xhtml/Abbreviations.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter01" href="xhtml/Chapter01.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter02" href="xhtml/Chapter02.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter03" href="xhtml/Chapter03.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter04" href="xhtml/Chapter04.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter05" href="xhtml/Chapter05.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter06" href="xhtml/Chapter06.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter07" href="xhtml/Chapter07.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter08" href="xhtml/Chapter08.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter09" href="xhtml/Chapter09.xhtml" media-type="application/xhtml+xml"/>
+<item id="epilogue" href="xhtml/Epilogue.xhtml" media-type="application/xhtml+xml"/>
+<item id="notes" href="xhtml/Notes.xhtml" media-type="application/xhtml+xml"/>
+<item id="reading" href="xhtml/Additional_Reading.xhtml" media-type="application/xhtml+xml"/>
+<item id="index" href="xhtml/Index.xhtml" media-type="application/xhtml+xml"/>
+<item id="img001" href="images/copy.jpg" media-type="image/jpeg"/>
+<item id="img002" href="images/f0001-01.jpg" media-type="image/jpeg"/>
+<item id="img003" href="images/f0001-02.jpg" media-type="image/jpeg"/>
+<item id="img004" href="images/f0001-03.jpg" media-type="image/jpeg"/>
+<item id="img005" href="images/f0001-04.jpg" media-type="image/jpeg"/>
+<item id="img006" href="images/f0001-05.jpg" media-type="image/jpeg"/>
+<item id="img007" href="images/f0001-06.jpg" media-type="image/jpeg"/>
+<item id="img008" href="images/f0001-07.jpg" media-type="image/jpeg"/>
+<item id="img009" href="images/f0001-08.jpg" media-type="image/jpeg"/>
+<item id="img010" href="images/f0001-09.jpg" media-type="image/jpeg"/>
+<item id="img011" href="images/f0001-10.jpg" media-type="image/jpeg"/>
+<item id="img012" href="images/f0002-01.jpg" media-type="image/jpeg"/>
+<item id="img013" href="images/f0002-02.jpg" media-type="image/jpeg"/>
+<item id="img014" href="images/f0002-03.jpg" media-type="image/jpeg"/>
+<item id="img015" href="images/f0003-01.jpg" media-type="image/jpeg"/>
+<item id="img016" href="images/f0003-02.jpg" media-type="image/jpeg"/>
+<item id="img017" href="images/f0004-01.jpg" media-type="image/jpeg"/>
+<item id="img018" href="images/f0004-02.jpg" media-type="image/jpeg"/>
+<item id="img019" href="images/f0004-03.jpg" media-type="image/jpeg"/>
+<item id="img020" href="images/f0004-04.jpg" media-type="image/jpeg"/>
+<item id="img021" href="images/f0004-05.jpg" media-type="image/jpeg"/>
+<item id="img022" href="images/f0004-06.jpg" media-type="image/jpeg"/>
+<item id="img023" href="images/f0005-01.jpg" media-type="image/jpeg"/>
+<item id="img024" href="images/f0005-02.jpg" media-type="image/jpeg"/>
+<item id="img025" href="images/f0005-03.jpg" media-type="image/jpeg"/>
+<item id="img026" href="images/f0005-04.jpg" media-type="image/jpeg"/>
+<item id="img027" href="images/f0005-05.jpg" media-type="image/jpeg"/>
+<item id="img028" href="images/f0006-01.jpg" media-type="image/jpeg"/>
+<item id="img029" href="images/f0006-02.jpg" media-type="image/jpeg"/>
+<item id="img030" href="images/f0006-03.jpg" media-type="image/jpeg"/>
+<item id="img031" href="images/f0006-04.jpg" media-type="image/jpeg"/>
+<item id="img032" href="images/f0007-01.jpg" media-type="image/jpeg"/>
+<item id="img033" href="images/f0007-02.jpg" media-type="image/jpeg"/>
+<item id="img034" href="images/f0008-01.jpg" media-type="image/jpeg"/>
+<item id="img035" href="images/f0008-02.jpg" media-type="image/jpeg"/>
+<item id="img036" href="images/f0009-01.jpg" media-type="image/jpeg"/>
+<item id="img037" href="images/f0009-02.jpg" media-type="image/jpeg"/>
+<item id="img038" href="images/f0009-03.jpg" media-type="image/jpeg"/>
+<item id="img039" href="images/f0009-04.jpg" media-type="image/jpeg"/>
+<item id="img040" href="images/f0009-05.jpg" media-type="image/jpeg"/>
+<item id="img041" href="images/f0009-06.jpg" media-type="image/jpeg"/>
+<item id="img042" href="images/f0010-01.jpg" media-type="image/jpeg"/>
+<item id="img043" href="images/f0010-02.jpg" media-type="image/jpeg"/>
+<item id="img044" href="images/f0010-03.jpg" media-type="image/jpeg"/>
+<item id="img045" href="images/f0010-04.jpg" media-type="image/jpeg"/>
+<item id="img046" href="images/f0011-01.jpg" media-type="image/jpeg"/>
+<item id="img047" href="images/f0011-02.jpg" media-type="image/jpeg"/>
+<item id="img048" href="images/f0012-01.jpg" media-type="image/jpeg"/>
+<item id="img049" href="images/f0012-02.jpg" media-type="image/jpeg"/>
+<item id="img050" href="images/f0012-03.jpg" media-type="image/jpeg"/>
+<item id="img051" href="images/f0012-04.jpg" media-type="image/jpeg"/>
+<item id="img052" href="images/f0013-01.jpg" media-type="image/jpeg"/>
+<item id="img053" href="images/f0013-02.jpg" media-type="image/jpeg"/>
+<item id="img054" href="images/f0013-03.jpg" media-type="image/jpeg"/>
+<item id="img055" href="images/f0013-04.jpg" media-type="image/jpeg"/>
+<item id="img056" href="images/f0013-05.jpg" media-type="image/jpeg"/>
+<item id="img057" href="images/f0013-06.jpg" media-type="image/jpeg"/>
+<item id="img058" href="images/f0014-01.jpg" media-type="image/jpeg"/>
+<item id="img059" href="images/f0014-02.jpg" media-type="image/jpeg"/>
+<item id="img060" href="images/f0014-03.jpg" media-type="image/jpeg"/>
+<item id="img061" href="images/f0015-01.jpg" media-type="image/jpeg"/>
+<item id="img062" href="images/f0015-02.jpg" media-type="image/jpeg"/>
+<item id="img063" href="images/f0015-03.jpg" media-type="image/jpeg"/>
+<item id="img064" href="images/f0016-01.jpg" media-type="image/jpeg"/>
+<item id="img065" href="images/f0016-02.jpg" media-type="image/jpeg"/>
+<item id="img066" href="images/f0016-03.jpg" media-type="image/jpeg"/>
+<item id="img067" href="images/f0016-04.jpg" media-type="image/jpeg"/>
+<item id="img068" href="images/f0016-05.jpg" media-type="image/jpeg"/>
+<item id="img069" href="images/f0017-01.jpg" media-type="image/jpeg"/>
+<item id="img070" href="images/f0017-02.jpg" media-type="image/jpeg"/>
+<item id="img071" href="images/f0017-03.jpg" media-type="image/jpeg"/>
+<item id="img072" href="images/f0017-04.jpg" media-type="image/jpeg"/>
+<item id="img073" href="images/f0017-05.jpg" media-type="image/jpeg"/>
+<item id="img074" href="images/f0018-01.jpg" media-type="image/jpeg"/>
+<item id="img075" href="images/f0018-02.jpg" media-type="image/jpeg"/>
+<item id="img076" href="images/f0018-03.jpg" media-type="image/jpeg"/>
+<item id="img077" href="images/f0018-04.jpg" media-type="image/jpeg"/>
+<item id="img078" href="images/f0018-05.jpg" media-type="image/jpeg"/>
+<item id="img079" href="images/f0019-01.jpg" media-type="image/jpeg"/>
+<item id="img080" href="images/f0019-02.jpg" media-type="image/jpeg"/>
+<item id="img081" href="images/f0019-03.jpg" media-type="image/jpeg"/>
+<item id="img082" href="images/f0019-04.jpg" media-type="image/jpeg"/>
+<item id="img083" href="images/f0019-05.jpg" media-type="image/jpeg"/>
+<item id="img084" href="images/f0020-01.jpg" media-type="image/jpeg"/>
+<item id="img085" href="images/f0020-02.jpg" media-type="image/jpeg"/>
+<item id="img086" href="images/f0020-03.jpg" media-type="image/jpeg"/>
+<item id="img087" href="images/f0021-01.jpg" media-type="image/jpeg"/>
+<item id="img088" href="images/f0021-02.jpg" media-type="image/jpeg"/>
+<item id="img089" href="images/f0021-03.jpg" media-type="image/jpeg"/>
+<item id="img090" href="images/f0021-04.jpg" media-type="image/jpeg"/>
+<item id="img091" href="images/f0022-01.jpg" media-type="image/jpeg"/>
+<item id="img092" href="images/f0022-02.jpg" media-type="image/jpeg"/>
+<item id="img093" href="images/f0023-01.jpg" media-type="image/jpeg"/>
+<item id="img094" href="images/f0023-02.jpg" media-type="image/jpeg"/>
+<item id="img095" href="images/f0023-03.jpg" media-type="image/jpeg"/>
+<item id="img096" href="images/f0023-04.jpg" media-type="image/jpeg"/>
+<item id="img097" href="images/f0024-01.jpg" media-type="image/jpeg"/>
+<item id="img098" href="images/f0024-02.jpg" media-type="image/jpeg"/>
+<item id="img099" href="images/f0025-01.jpg" media-type="image/jpeg"/>
+<item id="img100" href="images/f0025-02.jpg" media-type="image/jpeg"/>
+<item id="img101" href="images/f0026-01.jpg" media-type="image/jpeg"/>
+<item id="img102" href="images/f0026-02.jpg" media-type="image/jpeg"/>
+<item id="img103" href="images/f0027-01.jpg" media-type="image/jpeg"/>
+<item id="img104" href="images/f0027-02.jpg" media-type="image/jpeg"/>
+<item id="img105" href="images/f0027-03.jpg" media-type="image/jpeg"/>
+<item id="img106" href="images/f0027-04.jpg" media-type="image/jpeg"/>
+<item id="img107" href="images/f0027-05.jpg" media-type="image/jpeg"/>
+<item id="img108" href="images/f0028-01.jpg" media-type="image/jpeg"/>
+<item id="img109" href="images/f0028-02.jpg" media-type="image/jpeg"/>
+<item id="img110" href="images/f0028-03.jpg" media-type="image/jpeg"/>
+<item id="img111" href="images/f0029-01.jpg" media-type="image/jpeg"/>
+<item id="img112" href="images/f0029-02.jpg" media-type="image/jpeg"/>
+<item id="img113" href="images/f0029-03.jpg" media-type="image/jpeg"/>
+<item id="img114" href="images/f0030-01.jpg" media-type="image/jpeg"/>
+<item id="img115" href="images/f0030-02.jpg" media-type="image/jpeg"/>
+<item id="img116" href="images/f0030-03.jpg" media-type="image/jpeg"/>
+<item id="img117" href="images/f0030-04.jpg" media-type="image/jpeg"/>
+<item id="img118" href="images/f0031-01.jpg" media-type="image/jpeg"/>
+<item id="img119" href="images/f0031-02.jpg" media-type="image/jpeg"/>
+<item id="img120" href="images/f0031-03.jpg" media-type="image/jpeg"/>
+<item id="img121" href="images/f0031-04.jpg" media-type="image/jpeg"/>
+<item id="img122" href="images/f0032-01.jpg" media-type="image/jpeg"/>
+<item id="img123" href="images/f0032-02.jpg" media-type="image/jpeg"/>
+<item id="img124" href="images/f0032-03.jpg" media-type="image/jpeg"/>
+<item id="img125" href="images/f0032-04.jpg" media-type="image/jpeg"/>
+<item id="img126" href="images/f0033-01.jpg" media-type="image/jpeg"/>
+<item id="img127" href="images/f0033-02.jpg" media-type="image/jpeg"/>
+<item id="img128" href="images/f0033-03.jpg" media-type="image/jpeg"/>
+<item id="img129" href="images/f0033-04.jpg" media-type="image/jpeg"/>
+<item id="img130" href="images/f0033-05.jpg" media-type="image/jpeg"/>
+<item id="img131" href="images/f0033-06.jpg" media-type="image/jpeg"/>
+<item id="img132" href="images/f0034-01.jpg" media-type="image/jpeg"/>
+<item id="img133" href="images/f0034-02.jpg" media-type="image/jpeg"/>
+<item id="img134" href="images/f0034-03.jpg" media-type="image/jpeg"/>
+<item id="img135" href="images/f0035-01.jpg" media-type="image/jpeg"/>
+<item id="img136" href="images/f0036-01.jpg" media-type="image/jpeg"/>
+<item id="img137" href="images/f0036-02.jpg" media-type="image/jpeg"/>
+<item id="img138" href="images/f0036-03.jpg" media-type="image/jpeg"/>
+<item id="img139" href="images/f0037-01.jpg" media-type="image/jpeg"/>
+<item id="img140" href="images/f0037-02.jpg" media-type="image/jpeg"/>
+<item id="img141" href="images/f0037-03.jpg" media-type="image/jpeg"/>
+<item id="img142" href="images/f0037-04.jpg" media-type="image/jpeg"/>
+<item id="img143" href="images/f0038-01.jpg" media-type="image/jpeg"/>
+<item id="img144" href="images/f0038-02.jpg" media-type="image/jpeg"/>
+<item id="img145" href="images/f0039-01.jpg" media-type="image/jpeg"/>
+<item id="img146" href="images/f0039-02.jpg" media-type="image/jpeg"/>
+<item id="img147" href="images/f0039-03.jpg" media-type="image/jpeg"/>
+<item id="img148" href="images/f0040-01.jpg" media-type="image/jpeg"/>
+<item id="img149" href="images/f0040-02.jpg" media-type="image/jpeg"/>
+<item id="img150" href="images/f0040-03.jpg" media-type="image/jpeg"/>
+<item id="img151" href="images/f0041-01.jpg" media-type="image/jpeg"/>
+<item id="img152" href="images/f0041-02.jpg" media-type="image/jpeg"/>
+<item id="img153" href="images/f0042-01.jpg" media-type="image/jpeg"/>
+<item id="img154" href="images/f0043-01.jpg" media-type="image/jpeg"/>
+<item id="img155" href="images/f0043-02.jpg" media-type="image/jpeg"/>
+<item id="img156" href="images/f0043-03.jpg" media-type="image/jpeg"/>
+<item id="img157" href="images/f0043-04.jpg" media-type="image/jpeg"/>
+<item id="img158" href="images/f0044-01.jpg" media-type="image/jpeg"/>
+<item id="img159" href="images/f0044-02.jpg" media-type="image/jpeg"/>
+<item id="img160" href="images/f0044-03.jpg" media-type="image/jpeg"/>
+<item id="img161" href="images/f0045-01.jpg" media-type="image/jpeg"/>
+<item id="img162" href="images/f0045-02.jpg" media-type="image/jpeg"/>
+<item id="img163" href="images/f0045-03.jpg" media-type="image/jpeg"/>
+<item id="img164" href="images/f0046-01.jpg" media-type="image/jpeg"/>
+<item id="img165" href="images/f0046-02.jpg" media-type="image/jpeg"/>
+<item id="img166" href="images/f0046-03.jpg" media-type="image/jpeg"/>
+<item id="img167" href="images/f0046-04.jpg" media-type="image/jpeg"/>
+<item id="img168" href="images/f0047-01.jpg" media-type="image/jpeg"/>
+<item id="img169" href="images/f0047-02.jpg" media-type="image/jpeg"/>
+<item id="img170" href="images/f0048-01.jpg" media-type="image/jpeg"/>
+<item id="img171" href="images/f0048-02.jpg" media-type="image/jpeg"/>
+<item id="img172" href="images/f0048-03.jpg" media-type="image/jpeg"/>
+<item id="img173" href="images/f0048-04.jpg" media-type="image/jpeg"/>
+<item id="img174" href="images/f0049-01.jpg" media-type="image/jpeg"/>
+<item id="img175" href="images/f0049-02.jpg" media-type="image/jpeg"/>
+<item id="img176" href="images/f0049-03.jpg" media-type="image/jpeg"/>
+<item id="img177" href="images/f0049-04.jpg" media-type="image/jpeg"/>
+<item id="img178" href="images/f0049-05.jpg" media-type="image/jpeg"/>
+<item id="img179" href="images/f0050-01.jpg" media-type="image/jpeg"/>
+<item id="img180" href="images/f0050-02.jpg" media-type="image/jpeg"/>
+<item id="img181" href="images/f0051-01.jpg" media-type="image/jpeg"/>
+<item id="img182" href="images/f0051-02.jpg" media-type="image/jpeg"/>
+<item id="img183" href="images/f0051-03.jpg" media-type="image/jpeg"/>
+<item id="img184" href="images/f0052-01.jpg" media-type="image/jpeg"/>
+<item id="img185" href="images/f0052-02.jpg" media-type="image/jpeg"/>
+<item id="img186" href="images/f0052-03.jpg" media-type="image/jpeg"/>
+<item id="img187" href="images/f0053-01.jpg" media-type="image/jpeg"/>
+<item id="img188" href="images/f0053-02.jpg" media-type="image/jpeg"/>
+<item id="img189" href="images/f0054-01.jpg" media-type="image/jpeg"/>
+<item id="img190" href="images/f0054-02.jpg" media-type="image/jpeg"/>
+<item id="img191" href="images/f0054-03.jpg" media-type="image/jpeg"/>
+<item id="img192" href="images/f0054-04.jpg" media-type="image/jpeg"/>
+<item id="img193" href="images/f0055-01.jpg" media-type="image/jpeg"/>
+<item id="img194" href="images/f0055-02.jpg" media-type="image/jpeg"/>
+<item id="img195" href="images/f0055-03.jpg" media-type="image/jpeg"/>
+<item id="img196" href="images/f0056-01.jpg" media-type="image/jpeg"/>
+<item id="img197" href="images/f0056-02.jpg" media-type="image/jpeg"/>
+<item id="img198" href="images/f0056-03.jpg" media-type="image/jpeg"/>
+<item id="img199" href="images/f0057-01.jpg" media-type="image/jpeg"/>
+<item id="img200" href="images/f0057-02.jpg" media-type="image/jpeg"/>
+<item id="img201" href="images/f0058-01.jpg" media-type="image/jpeg"/>
+<item id="img202" href="images/f0058-02.jpg" media-type="image/jpeg"/>
+<item id="img203" href="images/f0058-03.jpg" media-type="image/jpeg"/>
+<item id="img204" href="images/f0059-01.jpg" media-type="image/jpeg"/>
+<item id="img205" href="images/f0059-02.jpg" media-type="image/jpeg"/>
+<item id="img206" href="images/f0059-03.jpg" media-type="image/jpeg"/>
+<item id="img207" href="images/f0059-04.jpg" media-type="image/jpeg"/>
+<item id="img208" href="images/f0060-01.jpg" media-type="image/jpeg"/>
+<item id="img209" href="images/f0060-02.jpg" media-type="image/jpeg"/>
+<item id="img210" href="images/f0060-03.jpg" media-type="image/jpeg"/>
+<item id="img211" href="images/f0060-04.jpg" media-type="image/jpeg"/>
+<item id="img212" href="images/f0061-01.jpg" media-type="image/jpeg"/>
+<item id="img213" href="images/f0061-02.jpg" media-type="image/jpeg"/>
+<item id="img214" href="images/f0061-03.jpg" media-type="image/jpeg"/>
+<item id="img215" href="images/f0062-01.jpg" media-type="image/jpeg"/>
+<item id="img216" href="images/f0062-02.jpg" media-type="image/jpeg"/>
+<item id="img217" href="images/f0062-03.jpg" media-type="image/jpeg"/>
+<item id="img218" href="images/f0063-01.jpg" media-type="image/jpeg"/>
+<item id="img219" href="images/f0063-02.jpg" media-type="image/jpeg"/>
+<item id="img220" href="images/f0063-03.jpg" media-type="image/jpeg"/>
+<item id="img221" href="images/f0064-01.jpg" media-type="image/jpeg"/>
+<item id="img222" href="images/f0064-02.jpg" media-type="image/jpeg"/>
+<item id="img223" href="images/f0064-03.jpg" media-type="image/jpeg"/>
+<item id="img224" href="images/f0064-04.jpg" media-type="image/jpeg"/>
+<item id="img225" href="images/f0064-05.jpg" media-type="image/jpeg"/>
+<item id="img226" href="images/f0065-01.jpg" media-type="image/jpeg"/>
+<item id="img227" href="images/f0065-02.jpg" media-type="image/jpeg"/>
+<item id="img228" href="images/f0066-01.jpg" media-type="image/jpeg"/>
+<item id="img229" href="images/f0066-02.jpg" media-type="image/jpeg"/>
+<item id="img230" href="images/f0066-03.jpg" media-type="image/jpeg"/>
+<item id="img231" href="images/f0067-01.jpg" media-type="image/jpeg"/>
+<item id="img232" href="images/f0067-02.jpg" media-type="image/jpeg"/>
+<item id="img233" href="images/f0067-03.jpg" media-type="image/jpeg"/>
+<item id="img234" href="images/f0068-01.jpg" media-type="image/jpeg"/>
+<item id="img235" href="images/f0068-02.jpg" media-type="image/jpeg"/>
+<item id="img236" href="images/f0068-03.jpg" media-type="image/jpeg"/>
+<item id="img237" href="images/f0068-04.jpg" media-type="image/jpeg"/>
+<item id="img238" href="images/f0068-05.jpg" media-type="image/jpeg"/>
+<item id="img239" href="images/f0068-06.jpg" media-type="image/jpeg"/>
+<item id="img240" href="images/f0069-01.jpg" media-type="image/jpeg"/>
+<item id="img241" href="images/f0069-02.jpg" media-type="image/jpeg"/>
+<item id="img242" href="images/f0069-03.jpg" media-type="image/jpeg"/>
+<item id="img243" href="images/f0069-04.jpg" media-type="image/jpeg"/>
+<item id="img244" href="images/f0070-01.jpg" media-type="image/jpeg"/>
+<item id="img245" href="images/f0070-02.jpg" media-type="image/jpeg"/>
+<item id="img246" href="images/f0070-03.jpg" media-type="image/jpeg"/>
+<item id="img247" href="images/f0071-01.jpg" media-type="image/jpeg"/>
+<item id="img248" href="images/f0071-02.jpg" media-type="image/jpeg"/>
+<item id="img249" href="images/f0071-03.jpg" media-type="image/jpeg"/>
+<item id="img250" href="images/f0072-01.jpg" media-type="image/jpeg"/>
+<item id="img251" href="images/f0072-02.jpg" media-type="image/jpeg"/>
+<item id="img252" href="images/f0072-03.jpg" media-type="image/jpeg"/>
+<item id="img253" href="images/f0072-04.jpg" media-type="image/jpeg"/>
+<item id="img254" href="images/f0073-01.jpg" media-type="image/jpeg"/>
+<item id="img255" href="images/f0073-02.jpg" media-type="image/jpeg"/>
+<item id="img256" href="images/f0073-03.jpg" media-type="image/jpeg"/>
+<item id="img257" href="images/f0073-04.jpg" media-type="image/jpeg"/>
+<item id="img258" href="images/f0074-01.jpg" media-type="image/jpeg"/>
+<item id="img259" href="images/f0074-02.jpg" media-type="image/jpeg"/>
+<item id="img260" href="images/f0074-03.jpg" media-type="image/jpeg"/>
+<item id="img261" href="images/f0075-01.jpg" media-type="image/jpeg"/>
+<item id="img262" href="images/f0075-02.jpg" media-type="image/jpeg"/>
+<item id="img263" href="images/f0075-03.jpg" media-type="image/jpeg"/>
+<item id="img264" href="images/f0075-04.jpg" media-type="image/jpeg"/>
+<item id="img265" href="images/f0076-01.jpg" media-type="image/jpeg"/>
+<item id="img266" href="images/f0076-02.jpg" media-type="image/jpeg"/>
+<item id="img267" href="images/f0076-03.jpg" media-type="image/jpeg"/>
+<item id="img268" href="images/f0076-04.jpg" media-type="image/jpeg"/>
+<item id="img269" href="images/f0076-05.jpg" media-type="image/jpeg"/>
+<item id="img270" href="images/f0077-01.jpg" media-type="image/jpeg"/>
+<item id="img271" href="images/f0077-02.jpg" media-type="image/jpeg"/>
+<item id="img272" href="images/f0077-03.jpg" media-type="image/jpeg"/>
+<item id="img273" href="images/f0077-04.jpg" media-type="image/jpeg"/>
+<item id="img274" href="images/f0077-05.jpg" media-type="image/jpeg"/>
+<item id="img275" href="images/f0078-01.jpg" media-type="image/jpeg"/>
+<item id="img276" href="images/f0079-01.jpg" media-type="image/jpeg"/>
+<item id="img277" href="images/f0081-01.jpg" media-type="image/jpeg"/>
+<item id="img278" href="images/f0081-02.jpg" media-type="image/jpeg"/>
+<item id="img279" href="images/f0081-03.jpg" media-type="image/jpeg"/>
+<item id="img280" href="images/f0081-04.jpg" media-type="image/jpeg"/>
+<item id="img281" href="images/f0081-05.jpg" media-type="image/jpeg"/>
+<item id="img282" href="images/f0082-01.jpg" media-type="image/jpeg"/>
+<item id="img283" href="images/f0082-02.jpg" media-type="image/jpeg"/>
+<item id="img284" href="images/f0082-03.jpg" media-type="image/jpeg"/>
+<item id="img285" href="images/f0082-04.jpg" media-type="image/jpeg"/>
+<item id="img286" href="images/f0082-05.jpg" media-type="image/jpeg"/>
+<item id="img287" href="images/f0083-01.jpg" media-type="image/jpeg"/>
+<item id="img288" href="images/f0083-02.jpg" media-type="image/jpeg"/>
+<item id="img289" href="images/f0083-03.jpg" media-type="image/jpeg"/>
+<item id="img290" href="images/f0083-04.jpg" media-type="image/jpeg"/>
+<item id="img291" href="images/f0084-01.jpg" media-type="image/jpeg"/>
+<item id="img292" href="images/f0084-02.jpg" media-type="image/jpeg"/>
+<item id="img293" href="images/f0084-03.jpg" media-type="image/jpeg"/>
+<item id="img294" href="images/f0085-01.jpg" media-type="image/jpeg"/>
+<item id="img295" href="images/f0085-02.jpg" media-type="image/jpeg"/>
+<item id="img296" href="images/f0085-03.jpg" media-type="image/jpeg"/>
+<item id="img297" href="images/f0085-04.jpg" media-type="image/jpeg"/>
+<item id="img298" href="images/f0086-01.jpg" media-type="image/jpeg"/>
+<item id="img299" href="images/pub.jpg" media-type="image/jpeg"/>
+<item id="img300" href="images/f0048-05.jpg" media-type="image/jpeg"/>
+</manifest>
+<spine toc="ncx">
+<itemref idref="front01"/>
+<itemref idref="title"/>
+<itemref idref="copyright"/>
+<itemref idref="front02"/>
+<itemref idref="front03"/>
+<itemref idref="contents"/>
+<itemref idref="abbreviations"/>
+<itemref idref="chapter01"/>
+<itemref idref="chapter02"/>
+<itemref idref="chapter03"/>
+<itemref idref="chapter04"/>
+<itemref idref="chapter05"/>
+<itemref idref="chapter06"/>
+<itemref idref="chapter07"/>
+<itemref idref="chapter08"/>
+<itemref idref="chapter09"/>
+<itemref idref="epilogue"/>
+<itemref idref="notes"/>
+<itemref idref="reading"/>
+<itemref idref="index"/>
+</spine>
+</package>

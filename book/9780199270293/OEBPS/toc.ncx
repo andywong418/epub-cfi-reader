@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+<head>
+<meta name="dtb:uid" content="978-0-19-927029-3"/>
+<meta name="dtb:depth" content="1"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle><text>Organic Chemistry</text></docTitle>
+<navMap>
+<navPoint id="navpoint1" playOrder="1"><navLabel><text>Cover Page</text></navLabel><content src="xhtml/cover_page.xhtml"/></navPoint>
+<navPoint id="navpoint2" playOrder="2"><navLabel><text>Halftitle Page</text></navLabel><content src="xhtml/halftitle_page.xhtml"/></navPoint>
+<navPoint id="navpoint3" playOrder="3"><navLabel><text>Title page</text></navLabel><content src="xhtml/title_page.xhtml"/></navPoint>
+<navPoint id="navpoint4" playOrder="4"><navLabel><text>Copyright page</text></navLabel><content src="xhtml/copyright_page.xhtml"/></navPoint>
+<navPoint id="navpoint5" playOrder="5"><navLabel><text>Brief contents</text></navLabel><content src="xhtml/brief_contents.xhtml"/></navPoint>
+<navPoint id="navpoint6" playOrder="6"><navLabel><text>Contents</text></navLabel><content src="xhtml/contents.xhtml"/></navPoint>
+<navPoint id="navpoint7" playOrder="7"><navLabel><text>Abbreviations</text></navLabel><content src="xhtml/abbreviations.xhtml"/></navPoint>
+<navPoint id="navpoint8" playOrder="8"><navLabel><text>Preface to the second edition</text></navLabel><content src="xhtml/preface_to_the_second_edition.xhtml"/></navPoint>
+<navPoint id="navpoint9" playOrder="9"><navLabel><text>Organic chemistry and this book</text></navLabel><content src="xhtml/organic_chemistry_and_this_book.xhtml"/></navPoint>
+<navPoint id="navpoint10" playOrder="10"><navLabel><text>1 What is organic chemistry?</text></navLabel><content src="xhtml/chapter_1.xhtml"/>
+<navPoint id="navpoint11" playOrder="11"><navLabel><text>Organic chemistry and you</text></navLabel><content src="xhtml/chapter_1.xhtml#sec_1.1"/></navPoint>
+<navPoint id="navpoint12" playOrder="12"><navLabel><text>Organic compounds</text></navLabel><content src="xhtml/chapter_1.xhtml#sec_1.2"/></navPoint>
+<navPoint id="navpoint13" playOrder="13"><navLabel><text>Organic chemistry and industry</text></navLabel><content src="xhtml/chapter_1.xhtml#sec_1.3"/></navPoint>
+<navPoint id="navpoint14" playOrder="14"><navLabel><text>Organic chemistry and the periodic table</text></navLabel><content src="xhtml/chapter_1.xhtml#sec_1.4"/></navPoint>
+<navPoint id="navpoint15" playOrder="15"><navLabel><text>Organic chemistry and this book</text></navLabel><content src="xhtml/chapter_1.xhtml#sec_1.5"/></navPoint>
+<navPoint id="navpoint16" playOrder="16"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_1.xhtml#sec_1.6"/></navPoint>
+</navPoint>
+<navPoint id="navpoint17" playOrder="17"><navLabel><text>2 Organic structures</text></navLabel><content src="xhtml/chapter_2.xhtml"/>
+<navPoint id="navpoint18" playOrder="18"><navLabel><text>Hydrocarbon frameworks and functional groups</text></navLabel><content src="xhtml/chapter_2.xhtml#sec_2.2"/></navPoint>
+<navPoint id="navpoint19" playOrder="19"><navLabel><text>Drawing molecules</text></navLabel><content src="xhtml/chapter_2.xhtml#sec_2.3"/></navPoint>
+<navPoint id="navpoint20" playOrder="20"><navLabel><text>Hydrocarbon frameworks</text></navLabel><content src="xhtml/chapter_2.xhtml#sec_2.4"/></navPoint>
+<navPoint id="navpoint21" playOrder="21"><navLabel><text>Functional groups</text></navLabel><content src="xhtml/chapter_2.xhtml#sec_2.5"/></navPoint>
+<navPoint id="navpoint22" playOrder="22"><navLabel><text>Carbon atoms carrying functional groups can be classified by oxidation level</text></navLabel><content src="xhtml/chapter_2.xhtml#sec_2.6"/></navPoint>
+<navPoint id="navpoint23" playOrder="23"><navLabel><text>Naming compounds</text></navLabel><content src="xhtml/chapter_2.xhtml#sec_2.7"/></navPoint>
+<navPoint id="navpoint24" playOrder="24"><navLabel><text>What do chemists really call compounds?</text></navLabel><content src="xhtml/chapter_2.xhtml#sec_2.8"/></navPoint>
+<navPoint id="navpoint25" playOrder="25"><navLabel><text>How should you name compounds?</text></navLabel><content src="xhtml/chapter_2.xhtml#sec_2.8.6"/></navPoint>
+<navPoint id="navpoint26" playOrder="26"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_2.xhtml#sec_2.9"/></navPoint>
+</navPoint>
+<navPoint id="navpoint27" playOrder="27"><navLabel><text>3 Determining organic structures</text></navLabel><content src="xhtml/chapter_3.xhtml"/>
+<navPoint id="navpoint28" playOrder="28"><navLabel><text>Introduction</text></navLabel><content src="xhtml/chapter_3.xhtml#sec_3.1"/></navPoint>
+<navPoint id="navpoint29" playOrder="29"><navLabel><text>Mass spectrometry</text></navLabel><content src="xhtml/chapter_3.xhtml#sec_3.2"/></navPoint>
+<navPoint id="navpoint30" playOrder="30"><navLabel><text>Mass spectrometry detects isotopes</text></navLabel><content src="xhtml/chapter_3.xhtml#sec_3.3"/></navPoint>
+<navPoint id="navpoint31" playOrder="31"><navLabel><text>Atomic composition can be determined by high-resolution mass spectrometry</text></navLabel><content src="xhtml/chapter_3.xhtml#sec_3.4"/></navPoint>
+<navPoint id="navpoint32" playOrder="32"><navLabel><text>Nuclear magnetic resonance</text></navLabel><content src="xhtml/chapter_3.xhtml#sec_3.5"/></navPoint>
+<navPoint id="navpoint33" playOrder="33"><navLabel><text>Regions of the 13C NMR spectrum</text></navLabel><content src="xhtml/chapter_3.xhtml#sec_3.6"/></navPoint>
+<navPoint id="navpoint34" playOrder="34"><navLabel><text>Different ways of describing chemical shift</text></navLabel><content src="xhtml/chapter_3.xhtml#sec_3.7"/></navPoint>
+<navPoint id="navpoint35" playOrder="35"><navLabel><text>A guided tour of the 13C NMR spectra of some simple molecules</text></navLabel><content src="xhtml/chapter_3.xhtml#sec_3.8"/></navPoint>
+<navPoint id="navpoint36" playOrder="36"><navLabel><text>The 1H NMR spectrum</text></navLabel><content src="xhtml/chapter_3.xhtml#sec_3.9"/></navPoint>
+<navPoint id="navpoint37" playOrder="37"><navLabel><text>Infrared spectra</text></navLabel><content src="xhtml/chapter_3.xhtml#sec_3.10"/></navPoint>
+<navPoint id="navpoint38" playOrder="38"><navLabel><text>Mass spectra, NMR, and IR combined make quick identification possible</text></navLabel><content src="xhtml/chapter_3.xhtml#sec_3.11"/></navPoint>
+<navPoint id="navpoint39" playOrder="39"><navLabel><text>Double bond equivalents help in the search for a structure</text></navLabel><content src="xhtml/chapter_3.xhtml#sec_3.12"/></navPoint>
+<navPoint id="navpoint40" playOrder="40"><navLabel><text>Looking forward to Chapters 13 and 18</text></navLabel><content src="xhtml/chapter_3.xhtml#sec_3.13"/></navPoint>
+<navPoint id="navpoint41" playOrder="41"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_3.xhtml#sec_3.14"/></navPoint>
+</navPoint>
+<navPoint id="navpoint42" playOrder="42"><navLabel><text>4 Structure of molecules</text></navLabel><content src="xhtml/chapter_4.xhtml"/>
+<navPoint id="navpoint43" playOrder="43"><navLabel><text>Introduction</text></navLabel><content src="xhtml/chapter_4.xhtml#sec_4.1"/></navPoint>
+<navPoint id="navpoint44" playOrder="44"><navLabel><text>Electrons occupy atomic orbitals</text></navLabel><content src="xhtml/chapter_4.xhtml#sec_4.2"/></navPoint>
+<navPoint id="navpoint45" playOrder="45"><navLabel><text>Molecular orbitals&#x2014;diatomic molecules</text></navLabel><content src="xhtml/chapter_4.xhtml#sec_4.3"/></navPoint>
+<navPoint id="navpoint46" playOrder="46"><navLabel><text>Bonds between different atoms</text></navLabel><content src="xhtml/chapter_4.xhtml#sec_4.4"/></navPoint>
+<navPoint id="navpoint47" playOrder="47"><navLabel><text>Hybridization of atomic orbitals</text></navLabel><content src="xhtml/chapter_4.xhtml#sec_4.5"/></navPoint>
+<navPoint id="navpoint48" playOrder="48"><navLabel><text>Rotation and rigidity</text></navLabel><content src="xhtml/chapter_4.xhtml#sec_4.6"/></navPoint>
+<navPoint id="navpoint49" playOrder="49"><navLabel><text>Conclusion</text></navLabel><content src="xhtml/chapter_4.xhtml#sec_4.7"/></navPoint>
+<navPoint id="navpoint50" playOrder="50"><navLabel><text>Looking forward</text></navLabel><content src="xhtml/chapter_4.xhtml#sec_4.8"/></navPoint>
+<navPoint id="navpoint51" playOrder="51"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_4.xhtml#sec_4.9"/></navPoint>
+</navPoint>
+<navPoint id="navpoint52" playOrder="52"><navLabel><text>5 Organic reactions</text></navLabel><content src="xhtml/chapter_5.xhtml"/>
+<navPoint id="navpoint53" playOrder="53"><navLabel><text>Chemical reactions</text></navLabel><content src="xhtml/chapter_5.xhtml#sec_5.1"/></navPoint>
+<navPoint id="navpoint54" playOrder="54"><navLabel><text>Nucleophiles and electrophiles</text></navLabel><content src="xhtml/chapter_5.xhtml#sec_5.2"/></navPoint>
+<navPoint id="navpoint55" playOrder="55"><navLabel><text>Curly arrows represent reaction mechanisms</text></navLabel><content src="xhtml/chapter_5.xhtml#sec_5.3"/></navPoint>
+<navPoint id="navpoint56" playOrder="56"><navLabel><text>Drawing your own mechanisms with curly arrows</text></navLabel><content src="xhtml/chapter_5.xhtml#sec_5.4"/></navPoint>
+<navPoint id="navpoint57" playOrder="57"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_5.xhtml#sec_5.5"/></navPoint>
+</navPoint>
+<navPoint id="navpoint58" playOrder="58"><navLabel><text>6 Nucleophilic addition to the carbonyl group</text></navLabel><content src="xhtml/chapter_6.xhtml"/>
+<navPoint id="navpoint59" playOrder="59"><navLabel><text>Molecular orbitals explain the reactivity of the carbonyl group</text></navLabel><content src="xhtml/chapter_6.xhtml#sec_6.1"/></navPoint>
+<navPoint id="navpoint60" playOrder="60"><navLabel><text>Attack of cyanide on aldehydes and ketones</text></navLabel><content src="xhtml/chapter_6.xhtml#sec_6.2"/></navPoint>
+<navPoint id="navpoint61" playOrder="61"><navLabel><text>The angle of nucleophilic attack on aldehydes and ketones</text></navLabel><content src="xhtml/chapter_6.xhtml#sec_6.3"/></navPoint>
+<navPoint id="navpoint62" playOrder="62"><navLabel><text>Nucleophilic attack by &#x2018;hydride&#x2019; on aldehydes and ketones</text></navLabel><content src="xhtml/chapter_6.xhtml#sec_6.4"/></navPoint>
+<navPoint id="navpoint63" playOrder="63"><navLabel><text>Addition of organometallic reagents to aldehydes and ketones</text></navLabel><content src="xhtml/chapter_6.xhtml#sec_6.5"/></navPoint>
+<navPoint id="navpoint64" playOrder="64"><navLabel><text>Addition of water to aldehydes and ketones</text></navLabel><content src="xhtml/chapter_6.xhtml#sec_6.6"/></navPoint>
+<navPoint id="navpoint65" playOrder="65"><navLabel><text>Hemiacetals from reaction of alcohols with aldehydes and ketones</text></navLabel><content src="xhtml/chapter_6.xhtml#sec_6.7"/></navPoint>
+<navPoint id="navpoint66" playOrder="66"><navLabel><text>Ketones also form hemiacetals</text></navLabel><content src="xhtml/chapter_6.xhtml#sec_6.8"/></navPoint>
+<navPoint id="navpoint67" playOrder="67"><navLabel><text>Acid and base catalysis of hemiacetal and hydrate formation</text></navLabel><content src="xhtml/chapter_6.xhtml#sec_6.9"/></navPoint>
+<navPoint id="navpoint68" playOrder="68"><navLabel><text>Bisulfite addition compounds</text></navLabel><content src="xhtml/chapter_6.xhtml#sec_6.10"/></navPoint>
+<navPoint id="navpoint69" playOrder="69"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_6.xhtml#sec_6.11"/></navPoint>
+</navPoint>
+<navPoint id="navpoint70" playOrder="70"><navLabel><text>7 Delocalization and conjugation</text></navLabel><content src="xhtml/chapter_7.xhtml"/>
+<navPoint id="navpoint71" playOrder="71"><navLabel><text>Introduction</text></navLabel><content src="xhtml/chapter_7.xhtml#sec_7.1"/></navPoint>
+<navPoint id="navpoint72" playOrder="72"><navLabel><text>The structure of ethene (ethylene, CH2=CH2)</text></navLabel><content src="xhtml/chapter_7.xhtml#sec_7.2"/></navPoint>
+<navPoint id="navpoint73" playOrder="73"><navLabel><text>Molecules with more than one C=C double bond</text></navLabel><content src="xhtml/chapter_7.xhtml#sec_7.3"/></navPoint>
+<navPoint id="navpoint74" playOrder="74"><navLabel><text>The conjugation of two &#960; bonds</text></navLabel><content src="xhtml/chapter_7.xhtml#sec_7.4"/></navPoint>
+<navPoint id="navpoint75" playOrder="75"><navLabel><text>UV and visible spectra</text></navLabel><content src="xhtml/chapter_7.xhtml#sec_7.5"/></navPoint>
+<navPoint id="navpoint76" playOrder="76"><navLabel><text>The allyl system</text></navLabel><content src="xhtml/chapter_7.xhtml#sec_7.6"/></navPoint>
+<navPoint id="navpoint77" playOrder="77"><navLabel><text>Delocalization over three atoms is a common structural feature</text></navLabel><content src="xhtml/chapter_7.xhtml#sec_7.7"/></navPoint>
+<navPoint id="navpoint78" playOrder="78"><navLabel><text>Aromaticity</text></navLabel><content src="xhtml/chapter_7.xhtml#sec_7.8"/></navPoint>
+<navPoint id="navpoint79" playOrder="79"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_7.xhtml#sec_7.9"/></navPoint>
+</navPoint>
+<navPoint id="navpoint80" playOrder="80"><navLabel><text>8 Acidity, basicity, and pKa</text></navLabel><content src="xhtml/chapter_8.xhtml"/>
+<navPoint id="navpoint81" playOrder="81"><navLabel><text>Organic compounds are more soluble in water as ions</text></navLabel><content src="xhtml/chapter_8.xhtml#sec_8.1"/></navPoint>
+<navPoint id="navpoint82" playOrder="82"><navLabel><text>Acids, bases, and pKa 165</text></navLabel><content src="xhtml/chapter_8.xhtml#sec_8.2"/></navPoint>
+<navPoint id="navpoint83" playOrder="83"><navLabel><text>Acidity</text></navLabel><content src="xhtml/chapter_8.xhtml#sec_8.3"/></navPoint>
+<navPoint id="navpoint84" playOrder="84"><navLabel><text>The definition of pKa 168</text></navLabel><content src="xhtml/chapter_8.xhtml#sec_8.4"/></navPoint>
+<navPoint id="navpoint85" playOrder="85"><navLabel><text>Constructing a pKa scale</text></navLabel><content src="xhtml/chapter_8.xhtml#sec_8.5"/></navPoint>
+<navPoint id="navpoint86" playOrder="86"><navLabel><text>Nitrogen compounds as acids and bases</text></navLabel><content src="xhtml/chapter_8.xhtml#sec_8.6"/></navPoint>
+<navPoint id="navpoint87" playOrder="87"><navLabel><text>Substituents affect the pKa 175</text></navLabel><content src="xhtml/chapter_8.xhtml#sec_8.7"/></navPoint>
+<navPoint id="navpoint88" playOrder="88"><navLabel><text>Carbon acids</text></navLabel><content src="xhtml/chapter_8.xhtml#sec_8.8"/></navPoint>
+<navPoint id="navpoint89" playOrder="89"><navLabel><text>pKa in action&#x2014;the development of the drug cimetidine</text></navLabel><content src="xhtml/chapter_8.xhtml#sec_8.9"/></navPoint>
+<navPoint id="navpoint90" playOrder="90"><navLabel><text>Lewis acids and bases</text></navLabel><content src="xhtml/chapter_8.xhtml#sec_8.10"/></navPoint>
+<navPoint id="navpoint91" playOrder="91"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_8.xhtml#sec_8.11"/></navPoint>
+</navPoint>
+<navPoint id="navpoint92" playOrder="92"><navLabel><text>9 Using organometallic reagents to make C&#x2013;C bonds</text></navLabel><content src="xhtml/chapter_9.xhtml"/>
+<navPoint id="navpoint93" playOrder="93"><navLabel><text>Introduction</text></navLabel><content src="xhtml/chapter_9.xhtml#sec_9.1"/></navPoint>
+<navPoint id="navpoint94" playOrder="94"><navLabel><text>Organometallic compounds contain a carbon&#x2013;metal bond</text></navLabel><content src="xhtml/chapter_9.xhtml#sec_9.2"/></navPoint>
+<navPoint id="navpoint95" playOrder="95"><navLabel><text>Making organometallics</text></navLabel><content src="xhtml/chapter_9.xhtml#sec_9.3"/></navPoint>
+<navPoint id="navpoint96" playOrder="96"><navLabel><text>Using organometallics to make organic molecules</text></navLabel><content src="xhtml/chapter_9.xhtml#sec_9.4"/></navPoint>
+<navPoint id="navpoint97" playOrder="97"><navLabel><text>Oxidation of alcohols</text></navLabel><content src="xhtml/chapter_9.xhtml#sec_9.5"/></navPoint>
+<navPoint id="navpoint98" playOrder="98"><navLabel><text>Looking forward</text></navLabel><content src="xhtml/chapter_9.xhtml#sec_9.6"/></navPoint>
+<navPoint id="navpoint99" playOrder="99"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_9.xhtml#sec_9.7"/></navPoint>
+</navPoint>
+<navPoint id="navpoint100" playOrder="100"><navLabel><text>10  Nucleophilic substitution at the carbonyl group</text></navLabel><content src="xhtml/chapter_10.xhtml"/>
+<navPoint id="navpoint101" playOrder="101"><navLabel><text>The product of nucleophilic addition to a carbonyl group is not always a stable compound</text></navLabel><content src="xhtml/chapter_10.xhtml#sec_10.1"/></navPoint>
+<navPoint id="navpoint102" playOrder="102"><navLabel><text>Carboxylic acid derivatives</text></navLabel><content src="xhtml/chapter_10.xhtml#sec_10.2"/></navPoint>
+<navPoint id="navpoint103" playOrder="103"><navLabel><text>Why are the tetrahedral intermediates unstable?</text></navLabel><content src="xhtml/chapter_10.xhtml#sec_10.3"/></navPoint>
+<navPoint id="navpoint104" playOrder="104"><navLabel><text>Not all carboxylic acid derivatives are equally reactive</text></navLabel><content src="xhtml/chapter_10.xhtml#sec_10.4"/></navPoint>
+<navPoint id="navpoint105" playOrder="105"><navLabel><text>Acid catalysts increase the reactivity of a carbonyl group</text></navLabel><content src="xhtml/chapter_10.xhtml#sec_10.5"/></navPoint>
+<navPoint id="navpoint106" playOrder="106"><navLabel><text>Acid chlorides can be made from carboxylic acids using SOCl2 or PCl5</text></navLabel><content src="xhtml/chapter_10.xhtml#sec_10.6"/></navPoint>
+<navPoint id="navpoint107" playOrder="107"><navLabel><text>Making other compounds by substitution reactions of acid derivatives</text></navLabel><content src="xhtml/chapter_10.xhtml#sec_10.7"/></navPoint>
+<navPoint id="navpoint108" playOrder="108"><navLabel><text>Making ketones from esters: the problem</text></navLabel><content src="xhtml/chapter_10.xhtml#sec_10.8"/></navPoint>
+<navPoint id="navpoint109" playOrder="109"><navLabel><text>Making ketones from esters: the solution</text></navLabel><content src="xhtml/chapter_10.xhtml#sec_10.9"/></navPoint>
+<navPoint id="navpoint110" playOrder="110"><navLabel><text>To summarize. . .</text></navLabel><content src="xhtml/chapter_10.xhtml#sec_10.10"/></navPoint>
+<navPoint id="navpoint111" playOrder="111"><navLabel><text>And to conclude. . .</text></navLabel><content src="xhtml/chapter_10.xhtml#sec_10.11"/></navPoint>
+<navPoint id="navpoint112" playOrder="112"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_10.xhtml#sec_10.12"/></navPoint>
+</navPoint>
+<navPoint id="navpoint113" playOrder="113"><navLabel><text>11  Nucleophilic substitution at C=O with loss of carbonyl oxygen</text></navLabel><content src="xhtml/chapter_11.xhtml"/>
+<navPoint id="navpoint114" playOrder="114"><navLabel><text>Introduction</text></navLabel><content src="xhtml/chapter_11.xhtml#sec_11.1"/></navPoint>
+<navPoint id="navpoint115" playOrder="115"><navLabel><text>Aldehydes can react with alcohols to form hemiacetals</text></navLabel><content src="xhtml/chapter_11.xhtml#sec_11.2"/></navPoint>
+<navPoint id="navpoint116" playOrder="116"><navLabel><text>Acetals are formed from aldehydes or ketones plus alcohols in the presence of acid</text></navLabel><content src="xhtml/chapter_11.xhtml#sec_11.3"/></navPoint>
+<navPoint id="navpoint117" playOrder="117"><navLabel><text>Amines react with carbonyl compounds</text></navLabel><content src="xhtml/chapter_11.xhtml#sec_11.4"/></navPoint>
+<navPoint id="navpoint118" playOrder="118"><navLabel><text>Imines are the nitrogen analogues of carbonyl compounds</text></navLabel><content src="xhtml/chapter_11.xhtml#sec_11.5"/></navPoint>
+<navPoint id="navpoint119" playOrder="119"><navLabel><text>Summary</text></navLabel><content src="xhtml/chapter_11.xhtml#sec_11.6"/></navPoint>
+<navPoint id="navpoint120" playOrder="120"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_11.xhtml#sec_11.7"/></navPoint>
+</navPoint>
+<navPoint id="navpoint121" playOrder="121"><navLabel><text>12  Equilibria, rates, and mechanisms</text></navLabel><content src="xhtml/chapter_12.xhtml"/>
+<navPoint id="navpoint122" playOrder="122"><navLabel><text>How far and how fast?</text></navLabel><content src="xhtml/chapter_12.xhtml#sec_12.1"/></navPoint>
+<navPoint id="navpoint123" playOrder="123"><navLabel><text>How to make the equilibrium favour the product you want</text></navLabel><content src="xhtml/chapter_12.xhtml#sec_12.2"/></navPoint>
+<navPoint id="navpoint124" playOrder="124"><navLabel><text>Entropy is important in determining equilibrium constants</text></navLabel><content src="xhtml/chapter_12.xhtml#sec_12.3"/></navPoint>
+<navPoint id="navpoint125" playOrder="125"><navLabel><text>Equilibrium constants vary with temperature</text></navLabel><content src="xhtml/chapter_12.xhtml#sec_12.4"/></navPoint>
+<navPoint id="navpoint126" playOrder="126"><navLabel><text>Introducing kinetics: how to make reactions go faster and cleaner</text></navLabel><content src="xhtml/chapter_12.xhtml#sec_12.5"/></navPoint>
+<navPoint id="navpoint127" playOrder="127"><navLabel><text>Rate equations</text></navLabel><content src="xhtml/chapter_12.xhtml#sec_12.6"/></navPoint>
+<navPoint id="navpoint128" playOrder="128"><navLabel><text>Catalysis in carbonyl substitution reactions</text></navLabel><content src="xhtml/chapter_12.xhtml#sec_12.7"/></navPoint>
+<navPoint id="navpoint129" playOrder="129"><navLabel><text>Kinetic versus thermodynamic products</text></navLabel><content src="xhtml/chapter_12.xhtml#sec_12.8"/></navPoint>
+<navPoint id="navpoint130" playOrder="130"><navLabel><text>Summary of mechanisms from Chapters 6&#x2013;12</text></navLabel><content src="xhtml/chapter_12.xhtml#sec_12.9"/></navPoint>
+<navPoint id="navpoint131" playOrder="131"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_12.xhtml#sec_12.10"/></navPoint>
+</navPoint>
+<navPoint id="navpoint132" playOrder="132"><navLabel><text>13  1H NMR: Proton nuclear magnetic resonance</text></navLabel><content src="xhtml/chapter_13.xhtml"/>
+<navPoint id="navpoint133" playOrder="133"><navLabel><text>The differences between carbon and proton NMR</text></navLabel><content src="xhtml/chapter_13.xhtml#sec_13.1"/></navPoint>
+<navPoint id="navpoint134" playOrder="134"><navLabel><text>Integration tells us the number of hydrogen atoms in each peak</text></navLabel><content src="xhtml/chapter_13.xhtml#sec_13.2"/></navPoint>
+<navPoint id="navpoint135" playOrder="135"><navLabel><text>Regions of the proton NMR spectrum</text></navLabel><content src="xhtml/chapter_13.xhtml#sec_13.3"/></navPoint>
+<navPoint id="navpoint136" playOrder="136"><navLabel><text>Protons on saturated carbon atoms</text></navLabel><content src="xhtml/chapter_13.xhtml#sec_13.4"/></navPoint>
+<navPoint id="navpoint137" playOrder="137"><navLabel><text>The alkene region and the benzene region</text></navLabel><content src="xhtml/chapter_13.xhtml#sec_13.5"/></navPoint>
+<navPoint id="navpoint138" playOrder="138"><navLabel><text>The aldehyde region: unsaturated carbon bonded to oxygen</text></navLabel><content src="xhtml/chapter_13.xhtml#sec_13.6"/></navPoint>
+<navPoint id="navpoint139" playOrder="139"><navLabel><text>Protons on heteroatoms have more variable shifts than protons on carbon</text></navLabel><content src="xhtml/chapter_13.xhtml#sec_13.7"/></navPoint>
+<navPoint id="navpoint140" playOrder="140"><navLabel><text>Coupling in the proton NMR spectrum</text></navLabel><content src="xhtml/chapter_13.xhtml#sec_13.8"/></navPoint>
+<navPoint id="navpoint141" playOrder="141"><navLabel><text>To conclude</text></navLabel><content src="xhtml/chapter_13.xhtml#sec_13.9"/></navPoint>
+<navPoint id="navpoint142" playOrder="142"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_13.xhtml#sec_13.10"/></navPoint>
+</navPoint>
+<navPoint id="navpoint143" playOrder="143"><navLabel><text>14  Stereochemistry</text></navLabel><content src="xhtml/chapter_14.xhtml"/>
+<navPoint id="navpoint144" playOrder="144"><navLabel><text>Some compounds can exist as a pair of mirror-image forms</text></navLabel><content src="xhtml/chapter_14.xhtml#sec_14.1"/></navPoint>
+<navPoint id="navpoint145" playOrder="145"><navLabel><text>Diastereoisomers are stereoisomers that are not enantiomers</text></navLabel><content src="xhtml/chapter_14.xhtml#sec_14.2"/></navPoint>
+<navPoint id="navpoint146" playOrder="146"><navLabel><text>Chiral compounds with no stereogenic centres</text></navLabel><content src="xhtml/chapter_14.xhtml#sec_14.3"/></navPoint>
+<navPoint id="navpoint147" playOrder="147"><navLabel><text>Axes and centres of symmetry</text></navLabel><content src="xhtml/chapter_14.xhtml#sec_14.4"/></navPoint>
+<navPoint id="navpoint148" playOrder="148"><navLabel><text>Separating enantiomers is called resolution</text></navLabel><content src="xhtml/chapter_14.xhtml#sec_14.5"/></navPoint>
+<navPoint id="navpoint149" playOrder="149"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_14.xhtml#sec_14.6"/></navPoint>
+</navPoint>
+<navPoint id="navpoint150" playOrder="150"><navLabel><text>15  Nucleophilic substitution at saturated carbon</text></navLabel><content src="xhtml/chapter_15.xhtml"/>
+<navPoint id="navpoint151" playOrder="151"><navLabel><text>Mechanisms for nucleophilic substitution</text></navLabel><content src="xhtml/chapter_15.xhtml#sec_15.1"/></navPoint>
+<navPoint id="navpoint152" playOrder="152"><navLabel><text>How can we decide which mechanism (SN1 or SN2) will apply to a given organic compound?</text></navLabel><content src="xhtml/chapter_15.xhtml#sec_15.2"/></navPoint>
+<navPoint id="navpoint153" playOrder="153"><navLabel><text>A closer look at the SN1 reaction</text></navLabel><content src="xhtml/chapter_15.xhtml#sec_15.3"/></navPoint>
+<navPoint id="navpoint154" playOrder="154"><navLabel><text>A closer look at the SN2 reaction</text></navLabel><content src="xhtml/chapter_15.xhtml#sec_15.4"/></navPoint>
+<navPoint id="navpoint155" playOrder="155"><navLabel><text>Contrasts between SN1 and SN2</text></navLabel><content src="xhtml/chapter_15.xhtml#sec_15.5"/></navPoint>
+<navPoint id="navpoint156" playOrder="156"><navLabel><text>The leaving group in SN1 and SN2 reactions</text></navLabel><content src="xhtml/chapter_15.xhtml#sec_15.6"/></navPoint>
+<navPoint id="navpoint157" playOrder="157"><navLabel><text>The nucleophile in SN1 reactions</text></navLabel><content src="xhtml/chapter_15.xhtml#sec_15.7"/></navPoint>
+<navPoint id="navpoint158" playOrder="158"><navLabel><text>The nucleophile in the SN2 reaction</text></navLabel><content src="xhtml/chapter_15.xhtml#sec_15.8"/></navPoint>
+<navPoint id="navpoint159" playOrder="159"><navLabel><text>Nucleophiles and leaving groups compared</text></navLabel><content src="xhtml/chapter_15.xhtml#sec_15.9"/></navPoint>
+<navPoint id="navpoint160" playOrder="160"><navLabel><text>Looking forward: elimination and rearrangement reactions</text></navLabel><content src="xhtml/chapter_15.xhtml#sec_15.10"/></navPoint>
+<navPoint id="navpoint161" playOrder="161"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_15.xhtml#sec_15.11"/></navPoint>
+</navPoint>
+<navPoint id="navpoint162" playOrder="162"><navLabel><text>16  Conformational analysis</text></navLabel><content src="xhtml/chapter_16.xhtml"/>
+<navPoint id="navpoint163" playOrder="163"><navLabel><text>Bond rotation allows chains of atoms to adopt a number of conformations</text></navLabel><content src="xhtml/chapter_16.xhtml#sec_16.1"/></navPoint>
+<navPoint id="navpoint164" playOrder="164"><navLabel><text>Conformation and configuration</text></navLabel><content src="xhtml/chapter_16.xhtml#sec_16.2"/></navPoint>
+<navPoint id="navpoint165" playOrder="165"><navLabel><text>Barriers to rotation</text></navLabel><content src="xhtml/chapter_16.xhtml#sec_16.3"/></navPoint>
+<navPoint id="navpoint166" playOrder="166"><navLabel><text>Conformations of ethane</text></navLabel><content src="xhtml/chapter_16.xhtml#sec_16.4"/></navPoint>
+<navPoint id="navpoint167" playOrder="167"><navLabel><text>Conformations of propane</text></navLabel><content src="xhtml/chapter_16.xhtml#sec_16.5"/></navPoint>
+<navPoint id="navpoint168" playOrder="168"><navLabel><text>Conformations of butane</text></navLabel><content src="xhtml/chapter_16.xhtml#sec_16.6"/></navPoint>
+<navPoint id="navpoint169" playOrder="169"><navLabel><text>Ring strain</text></navLabel><content src="xhtml/chapter_16.xhtml#sec_16.7"/></navPoint>
+<navPoint id="navpoint170" playOrder="170"><navLabel><text>A closer look at cyclohexane</text></navLabel><content src="xhtml/chapter_16.xhtml#sec_16.8"/></navPoint>
+<navPoint id="navpoint171" playOrder="171"><navLabel><text>Substituted cyclohexanes</text></navLabel><content src="xhtml/chapter_16.xhtml#sec_16.9"/></navPoint>
+<navPoint id="navpoint172" playOrder="172"><navLabel><text>To conclude. . .</text></navLabel><content src="xhtml/chapter_16.xhtml#sec_16.10"/></navPoint>
+<navPoint id="navpoint173" playOrder="173"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_16.xhtml#sec_16.11"/></navPoint>
+</navPoint>
+<navPoint id="navpoint174" playOrder="174"><navLabel><text>17  Elimination reactions</text></navLabel><content src="xhtml/chapter_17.xhtml"/>
+<navPoint id="navpoint175" playOrder="175"><navLabel><text>Substitution and elimination</text></navLabel><content src="xhtml/chapter_17.xhtml#sec_17.1"/></navPoint>
+<navPoint id="navpoint176" playOrder="176"><navLabel><text>How the nucleophile affects elimination versus substitution</text></navLabel><content src="xhtml/chapter_17.xhtml#sec_17.2"/></navPoint>
+<navPoint id="navpoint177" playOrder="177"><navLabel><text>E1 and E2 mechanisms</text></navLabel><content src="xhtml/chapter_17.xhtml#sec_17.3"/></navPoint>
+<navPoint id="navpoint178" playOrder="178"><navLabel><text>Substrate structure may allow E1</text></navLabel><content src="xhtml/chapter_17.xhtml#sec_17.4"/></navPoint>
+<navPoint id="navpoint179" playOrder="179"><navLabel><text>The role of the leaving group</text></navLabel><content src="xhtml/chapter_17.xhtml#sec_17.5"/></navPoint>
+<navPoint id="navpoint180" playOrder="180"><navLabel><text>E1 reactions can be stereoselective</text></navLabel><content src="xhtml/chapter_17.xhtml#sec_17.6"/></navPoint>
+<navPoint id="navpoint181" playOrder="181"><navLabel><text>E2 eliminations have anti-periplanar transition states</text></navLabel><content src="xhtml/chapter_17.xhtml#sec_17.7"/></navPoint>
+<navPoint id="navpoint182" playOrder="182"><navLabel><text>The regioselectivity of E2 eliminations</text></navLabel><content src="xhtml/chapter_17.xhtml#sec_17.8"/></navPoint>
+<navPoint id="navpoint183" playOrder="183"><navLabel><text>Anion-stabilizing groups allow another mechanism&#x2014;E1cB</text></navLabel><content src="xhtml/chapter_17.xhtml#sec_17.9"/></navPoint>
+<navPoint id="navpoint184" playOrder="184"><navLabel><text>To conclude</text></navLabel><content src="xhtml/chapter_17.xhtml#sec_17.10"/></navPoint>
+<navPoint id="navpoint185" playOrder="185"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_17.xhtml#sec_17.11"/></navPoint>
+</navPoint>
+<navPoint id="navpoint186" playOrder="186"><navLabel><text>18  Review of spectroscopic methods</text></navLabel><content src="xhtml/chapter_18.xhtml"/>
+<navPoint id="navpoint187" playOrder="187"><navLabel><text>There are three reasons for this chapter</text></navLabel><content src="xhtml/chapter_18.xhtml#sec_18.1"/></navPoint>
+<navPoint id="navpoint188" playOrder="188"><navLabel><text>Spectroscopy and carbonyl chemistry</text></navLabel><content src="xhtml/chapter_18.xhtml#sec_18.2"/></navPoint>
+<navPoint id="navpoint189" playOrder="189"><navLabel><text>Acid derivatives are best distinguished by infrared</text></navLabel><content src="xhtml/chapter_18.xhtml#sec_18.3"/></navPoint>
+<navPoint id="navpoint190" playOrder="190"><navLabel><text>Small rings introduce strain inside the ring and higher s character outside it</text></navLabel><content src="xhtml/chapter_18.xhtml#sec_18.4"/></navPoint>
+<navPoint id="navpoint191" playOrder="191"><navLabel><text>Simple calculations of C=O stretching frequencies in IR spectra</text></navLabel><content src="xhtml/chapter_18.xhtml#sec_18.5"/></navPoint>
+<navPoint id="navpoint192" playOrder="192"><navLabel><text>NMR spectra of alkynes and small rings</text></navLabel><content src="xhtml/chapter_18.xhtml#sec_18.6"/></navPoint>
+<navPoint id="navpoint193" playOrder="193"><navLabel><text>Proton NMR distinguishes axial and equatorial protons in cyclohexanes</text></navLabel><content src="xhtml/chapter_18.xhtml#sec_18.7"/></navPoint>
+<navPoint id="navpoint194" playOrder="194"><navLabel><text>Interactions between different nuclei can give enormous coupling constants</text></navLabel><content src="xhtml/chapter_18.xhtml#sec_18.8"/></navPoint>
+<navPoint id="navpoint195" playOrder="195"><navLabel><text>Identifying products spectroscopically</text></navLabel><content src="xhtml/chapter_18.xhtml#sec_18.9"/></navPoint>
+<navPoint id="navpoint196" playOrder="196"><navLabel><text>Tables</text></navLabel><content src="xhtml/chapter_18.xhtml#sec_18.10"/></navPoint>
+<navPoint id="navpoint197" playOrder="197"><navLabel><text>Shifts in proton NMR are easier to calculate and more informative than those in carbon NMR</text></navLabel><content src="xhtml/chapter_18.xhtml#sec_18.11"/></navPoint>
+<navPoint id="navpoint198" playOrder="198"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_18.xhtml#sec_18.12"/></navPoint>
+</navPoint>
+<navPoint id="navpoint199" playOrder="199"><navLabel><text>19  Electrophilic addition to alkenes</text></navLabel><content src="xhtml/chapter_19.xhtml"/>
+<navPoint id="navpoint200" playOrder="200"><navLabel><text>Alkenes react with bromine</text></navLabel><content src="xhtml/chapter_19.xhtml#sec_19.1"/></navPoint>
+<navPoint id="navpoint201" playOrder="201"><navLabel><text>Oxidation of alkenes to form epoxides</text></navLabel><content src="xhtml/chapter_19.xhtml#sec_19.2"/></navPoint>
+<navPoint id="navpoint202" playOrder="202"><navLabel><text>Electrophilic addition to unsymmetrical alkenes is regioselective</text></navLabel><content src="xhtml/chapter_19.xhtml#sec_19.3"/></navPoint>
+<navPoint id="navpoint203" playOrder="203"><navLabel><text>Electrophilic addition to dienes</text></navLabel><content src="xhtml/chapter_19.xhtml#sec_19.4"/></navPoint>
+<navPoint id="navpoint204" playOrder="204"><navLabel><text>Unsymmetrical bromonium ions open regioselectively</text></navLabel><content src="xhtml/chapter_19.xhtml#sec_19.5"/></navPoint>
+<navPoint id="navpoint205" playOrder="205"><navLabel><text>Electrophilic additions to alkenes can be stereospecific</text></navLabel><content src="xhtml/chapter_19.xhtml#sec_19.6"/></navPoint>
+<navPoint id="navpoint206" playOrder="206"><navLabel><text>Adding two hydroxyl groups: dihydroxylation</text></navLabel><content src="xhtml/chapter_19.xhtml#sec_19.7"/></navPoint>
+<navPoint id="navpoint207" playOrder="207"><navLabel><text>Breaking a double bond completely: periodate cleavage and ozonolysis</text></navLabel><content src="xhtml/chapter_19.xhtml#sec_19.8"/></navPoint>
+<navPoint id="navpoint208" playOrder="208"><navLabel><text>Adding one hydroxyl group: how to add water across a double bond</text></navLabel><content src="xhtml/chapter_19.xhtml#sec_19.9"/></navPoint>
+<navPoint id="navpoint209" playOrder="209"><navLabel><text>To conclude. . .a synopsis of electrophilic addition reactions</text></navLabel><content src="xhtml/chapter_19.xhtml#sec_19.10"/></navPoint>
+<navPoint id="navpoint210" playOrder="210"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_19.xhtml#sec_19.11"/></navPoint>
+</navPoint>
+<navPoint id="navpoint211" playOrder="211"><navLabel><text>20  Formation and reactions of enols and enolates</text></navLabel><content src="xhtml/chapter_20.xhtml"/>
+<navPoint id="navpoint212" playOrder="212"><navLabel><text>Would you accept a mixture of compounds as a pure substance?</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.1"/></navPoint>
+<navPoint id="navpoint213" playOrder="213"><navLabel><text>Tautomerism: formation of enols by proton transfer</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.2"/></navPoint>
+<navPoint id="navpoint214" playOrder="214"><navLabel><text>Why don&#x2019;t simple aldehydes and ketones exist as enols?</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.3"/></navPoint>
+<navPoint id="navpoint215" playOrder="215"><navLabel><text>Evidence for the equilibration of carbonyl compounds with enols</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.4"/></navPoint>
+<navPoint id="navpoint216" playOrder="216"><navLabel><text>Enolization is catalysed by acids and bases</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.5"/></navPoint>
+<navPoint id="navpoint217" playOrder="217"><navLabel><text>The intermediate in the base-catalysed reaction is an enolate ion</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.6"/></navPoint>
+<navPoint id="navpoint218" playOrder="218"><navLabel><text>Summary of types of enol and enolate</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.7"/></navPoint>
+<navPoint id="navpoint219" playOrder="219"><navLabel><text>Stable enols</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.8"/></navPoint>
+<navPoint id="navpoint220" playOrder="220"><navLabel><text>Consequences of enolization</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.9"/></navPoint>
+<navPoint id="navpoint221" playOrder="221"><navLabel><text>Reaction with enols or enolates as intermediates</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.10"/></navPoint>
+<navPoint id="navpoint222" playOrder="222"><navLabel><text>Stable equivalents of enolate ions</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.11"/></navPoint>
+<navPoint id="navpoint223" playOrder="223"><navLabel><text>Enol and enolate reactions at oxygen: preparation of enol ethers</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.12"/></navPoint>
+<navPoint id="navpoint224" playOrder="224"><navLabel><text>Reactions of enol ethers</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.13"/></navPoint>
+<navPoint id="navpoint225" playOrder="225"><navLabel><text>To conclude</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.14"/></navPoint>
+<navPoint id="navpoint226" playOrder="226"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_20.xhtml#sec_20.15"/></navPoint>
+</navPoint>
+<navPoint id="navpoint227" playOrder="227"><navLabel><text>21  Electrophilic aromatic substitution</text></navLabel><content src="xhtml/chapter_21.xhtml"/>
+<navPoint id="navpoint228" playOrder="228"><navLabel><text>Introduction: enols and phenols</text></navLabel><content src="xhtml/chapter_21.xhtml#sec_21.1"/></navPoint>
+<navPoint id="navpoint229" playOrder="229"><navLabel><text>Benzene and its reactions with electrophiles</text></navLabel><content src="xhtml/chapter_21.xhtml#sec_21.2"/></navPoint>
+<navPoint id="navpoint230" playOrder="230"><navLabel><text>Electrophilic substitution on phenols</text></navLabel><content src="xhtml/chapter_21.xhtml#sec_21.3"/></navPoint>
+<navPoint id="navpoint231" playOrder="231"><navLabel><text>A nitrogen lone pair activates even more strongly</text></navLabel><content src="xhtml/chapter_21.xhtml#sec_21.4"/></navPoint>
+<navPoint id="navpoint232" playOrder="232"><navLabel><text>Alkyl benzenes also react at the ortho and para positions</text></navLabel><content src="xhtml/chapter_21.xhtml#sec_21.5"/></navPoint>
+<navPoint id="navpoint233" playOrder="233"><navLabel><text>Electron-withdrawing substituents give meta products</text></navLabel><content src="xhtml/chapter_21.xhtml#sec_21.6"/></navPoint>
+<navPoint id="navpoint234" playOrder="234"><navLabel><text>Halogens show evidence of both electron withdrawal and donation</text></navLabel><content src="xhtml/chapter_21.xhtml#sec_21.7"/></navPoint>
+<navPoint id="navpoint235" playOrder="235"><navLabel><text>Two or more substituents may cooperate or compete</text></navLabel><content src="xhtml/chapter_21.xhtml#sec_21.8"/></navPoint>
+<navPoint id="navpoint236" playOrder="236"><navLabel><text>Some problems and some opportunities</text></navLabel><content src="xhtml/chapter_21.xhtml#sec_21.9"/></navPoint>
+<navPoint id="navpoint237" playOrder="237"><navLabel><text>A closer look at Friedel&#x2013;Crafts chemistry</text></navLabel><content src="xhtml/chapter_21.xhtml#sec_21.10"/></navPoint>
+<navPoint id="navpoint238" playOrder="238"><navLabel><text>Exploiting the chemistry of the nitro group</text></navLabel><content src="xhtml/chapter_21.xhtml#sec_21.11"/></navPoint>
+<navPoint id="navpoint239" playOrder="239"><navLabel><text>Summary</text></navLabel><content src="xhtml/chapter_21.xhtml#sec_21.12"/></navPoint>
+<navPoint id="navpoint240" playOrder="240"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_21.xhtml#sec_21.13"/></navPoint>
+</navPoint>
+<navPoint id="navpoint241" playOrder="241"><navLabel><text>22  Conjugate addition and nucleophilic aromatic substitution</text></navLabel><content src="xhtml/chapter_22.xhtml"/>
+<navPoint id="navpoint242" playOrder="242"><navLabel><text>Alkenes conjugated with carbonyl groups</text></navLabel><content src="xhtml/chapter_22.xhtml#sec_22.1"/></navPoint>
+<navPoint id="navpoint243" playOrder="243"><navLabel><text>Conjugated alkenes can be electrophilic</text></navLabel><content src="xhtml/chapter_22.xhtml#sec_22.2"/></navPoint>
+<navPoint id="navpoint244" playOrder="244"><navLabel><text>Summary: factors controlling conjugate addition</text></navLabel><content src="xhtml/chapter_22.xhtml#sec_22.3"/></navPoint>
+<navPoint id="navpoint245" playOrder="245"><navLabel><text>Extending the reaction to other electron-deficient alkenes</text></navLabel><content src="xhtml/chapter_22.xhtml#sec_22.4"/></navPoint>
+<navPoint id="navpoint246" playOrder="246"><navLabel><text>Conjugate substitution reactions</text></navLabel><content src="xhtml/chapter_22.xhtml#sec_22.5"/></navPoint>
+<navPoint id="navpoint247" playOrder="247"><navLabel><text>Nucleophilic epoxidation</text></navLabel><content src="xhtml/chapter_22.xhtml#sec_22.6"/></navPoint>
+<navPoint id="navpoint248" playOrder="248"><navLabel><text>Nucleophilic aromatic substitution</text></navLabel><content src="xhtml/chapter_22.xhtml#sec_22.7"/></navPoint>
+<navPoint id="navpoint249" playOrder="249"><navLabel><text>The addition&#x2013;elimination mechanism</text></navLabel><content src="xhtml/chapter_22.xhtml#sec_22.8"/></navPoint>
+<navPoint id="navpoint250" playOrder="250"><navLabel><text>The SN1 mechanism for nucleophilic aromatic substitution: diazonium compounds</text></navLabel><content src="xhtml/chapter_22.xhtml#sec_22.9"/></navPoint>
+<navPoint id="navpoint251" playOrder="251"><navLabel><text>The benzyne mechanism</text></navLabel><content src="xhtml/chapter_22.xhtml#sec_22.10"/></navPoint>
+<navPoint id="navpoint252" playOrder="252"><navLabel><text>To conclude...</text></navLabel><content src="xhtml/chapter_22.xhtml#sec_22.11"/></navPoint>
+<navPoint id="navpoint253" playOrder="253"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_22.xhtml#sec_22.12"/></navPoint>
+</navPoint>
+<navPoint id="navpoint254" playOrder="254"><navLabel><text>23  Chemoselectivity and protecting groups</text></navLabel><content src="xhtml/chapter_23.xhtml"/>
+<navPoint id="navpoint255" playOrder="255"><navLabel><text>Selectivity</text></navLabel><content src="xhtml/chapter_23.xhtml#sec_23.1"/></navPoint>
+<navPoint id="navpoint256" playOrder="256"><navLabel><text>Reducing agents</text></navLabel><content src="xhtml/chapter_23.xhtml#sec_23.2"/></navPoint>
+<navPoint id="navpoint257" playOrder="257"><navLabel><text>Reduction of carbonyl groups</text></navLabel><content src="xhtml/chapter_23.xhtml#sec_23.3"/></navPoint>
+<navPoint id="navpoint258" playOrder="258"><navLabel><text>Hydrogen as a reducing agent: catalytic hydrogenation</text></navLabel><content src="xhtml/chapter_23.xhtml#sec_23.4"/></navPoint>
+<navPoint id="navpoint259" playOrder="259"><navLabel><text>Getting rid of functional groups</text></navLabel><content src="xhtml/chapter_23.xhtml#sec_23.5"/></navPoint>
+<navPoint id="navpoint260" playOrder="260"><navLabel><text>Dissolving metal reductions</text></navLabel><content src="xhtml/chapter_23.xhtml#sec_23.6"/></navPoint>
+<navPoint id="navpoint261" playOrder="261"><navLabel><text>Selectivity in oxidation reactions</text></navLabel><content src="xhtml/chapter_23.xhtml#sec_23.7"/></navPoint>
+<navPoint id="navpoint262" playOrder="262"><navLabel><text>Competing reactivity: choosing which group reacts</text></navLabel><content src="xhtml/chapter_23.xhtml#sec_23.8"/></navPoint>
+<navPoint id="navpoint263" playOrder="263"><navLabel><text>A survey of protecting groups</text></navLabel><content src="xhtml/chapter_23.xhtml#sec_23.9"/></navPoint>
+<navPoint id="navpoint264" playOrder="264"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_23.xhtml#sec_23.10"/></navPoint>
+</navPoint>
+<navPoint id="navpoint265" playOrder="265"><navLabel><text>24  Regioselectivity</text></navLabel><content src="xhtml/chapter_24.xhtml"/>
+<navPoint id="navpoint266" playOrder="266"><navLabel><text>Introduction</text></navLabel><content src="xhtml/chapter_24.xhtml#sec_24.1"/></navPoint>
+<navPoint id="navpoint267" playOrder="267"><navLabel><text>Regioselectivity in electrophilic aromatic substitution</text></navLabel><content src="xhtml/chapter_24.xhtml#sec_24.2"/></navPoint>
+<navPoint id="navpoint268" playOrder="268"><navLabel><text>Electrophilic attack on alkenes</text></navLabel><content src="xhtml/chapter_24.xhtml#sec_24.3"/></navPoint>
+<navPoint id="navpoint269" playOrder="269"><navLabel><text>Regioselectivity in radical reactions</text></navLabel><content src="xhtml/chapter_24.xhtml#sec_24.4"/></navPoint>
+<navPoint id="navpoint270" playOrder="270"><navLabel><text>Nucleophilic attack on allylic compounds</text></navLabel><content src="xhtml/chapter_24.xhtml#sec_24.5"/></navPoint>
+<navPoint id="navpoint271" playOrder="271"><navLabel><text>Electrophilic attack on conjugated dienes</text></navLabel><content src="xhtml/chapter_24.xhtml#sec_24.6"/></navPoint>
+<navPoint id="navpoint272" playOrder="272"><navLabel><text>Conjugate addition</text></navLabel><content src="xhtml/chapter_24.xhtml#sec_24.7"/></navPoint>
+<navPoint id="navpoint273" playOrder="273"><navLabel><text>Regioselectivity in action</text></navLabel><content src="xhtml/chapter_24.xhtml#sec_24.8"/></navPoint>
+<navPoint id="navpoint274" playOrder="274"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_24.xhtml#sec_24.9"/></navPoint>
+</navPoint>
+<navPoint id="navpoint275" playOrder="275"><navLabel><text>25  Alkylation of enolates</text></navLabel><content src="xhtml/chapter_25.xhtml"/>
+<navPoint id="navpoint276" playOrder="276"><navLabel><text>Carbonyl groups show diverse reactivity</text></navLabel><content src="xhtml/chapter_25.xhtml#sec_25.1"/></navPoint>
+<navPoint id="navpoint277" playOrder="277"><navLabel><text>Some important considerations that affect all alkylations</text></navLabel><content src="xhtml/chapter_25.xhtml#sec_25.2"/></navPoint>
+<navPoint id="navpoint278" playOrder="278"><navLabel><text>Nitriles and nitroalkanes can be alkylated</text></navLabel><content src="xhtml/chapter_25.xhtml#sec_25.3"/></navPoint>
+<navPoint id="navpoint279" playOrder="279"><navLabel><text>Choice of electrophile for alkylation</text></navLabel><content src="xhtml/chapter_25.xhtml#sec_25.4"/></navPoint>
+<navPoint id="navpoint280" playOrder="280"><navLabel><text>Lithium enolates of carbonyl compounds</text></navLabel><content src="xhtml/chapter_25.xhtml#sec_25.5"/></navPoint>
+<navPoint id="navpoint281" playOrder="281"><navLabel><text>Alkylations of lithium enolates</text></navLabel><content src="xhtml/chapter_25.xhtml#sec_25.6"/></navPoint>
+<navPoint id="navpoint282" playOrder="282"><navLabel><text>Using specific enol equivalents to alkylate aldehydes and ketones</text></navLabel><content src="xhtml/chapter_25.xhtml#sec_25.7"/></navPoint>
+<navPoint id="navpoint283" playOrder="283"><navLabel><text>Alkylation of &#946;-dicarbonyl compounds</text></navLabel><content src="xhtml/chapter_25.xhtml#sec_25.10"/></navPoint>
+<navPoint id="navpoint284" playOrder="284"><navLabel><text>Ketone alkylation poses a problem in regioselectivity</text></navLabel><content src="xhtml/chapter_25.xhtml#sec_25.11"/></navPoint>
+<navPoint id="navpoint285" playOrder="285"><navLabel><text>Enones provide a solution to regioselectivity problems</text></navLabel><content src="xhtml/chapter_25.xhtml#sec_25.12"/></navPoint>
+<navPoint id="navpoint286" playOrder="286"><navLabel><text>Using Michael acceptors as electrophiles</text></navLabel><content src="xhtml/chapter_25.xhtml#sec_25.14"/></navPoint>
+<navPoint id="navpoint287" playOrder="287"><navLabel><text>To conclude. . .</text></navLabel><content src="xhtml/chapter_25.xhtml#sec_25.22"/></navPoint>
+<navPoint id="navpoint288" playOrder="288"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_25.xhtml#sec_25.23"/></navPoint>
+</navPoint>
+<navPoint id="navpoint289" playOrder="289"><navLabel><text>26  Reactions of enolates with carbonyl compounds: the aldol and Claisen reactions</text></navLabel><content src="xhtml/chapter_26.xhtml"/>
+<navPoint id="navpoint290" playOrder="290"><navLabel><text>Introduction</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.1"/></navPoint>
+<navPoint id="navpoint291" playOrder="291"><navLabel><text>The aldol reaction</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.2"/></navPoint>
+<navPoint id="navpoint292" playOrder="292"><navLabel><text>Cross-condensations</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.3"/></navPoint>
+<navPoint id="navpoint293" playOrder="293"><navLabel><text>Specific enol equivalents can be used to control aldol reactions</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.4"/></navPoint>
+<navPoint id="navpoint294" playOrder="294"><navLabel><text>How to control aldol reactions of esters</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.5"/></navPoint>
+<navPoint id="navpoint295" playOrder="295"><navLabel><text>How to control aldol reactions of aldehydes</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.6"/></navPoint>
+<navPoint id="navpoint296" playOrder="296"><navLabel><text>How to control aldol reactions of ketones</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.7"/></navPoint>
+<navPoint id="navpoint297" playOrder="297"><navLabel><text>Intramolecular aldol reactions</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.8"/></navPoint>
+<navPoint id="navpoint298" playOrder="298"><navLabel><text>Acylation at carbon</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.9"/></navPoint>
+<navPoint id="navpoint299" playOrder="299"><navLabel><text>Crossed ester condensations</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.10"/></navPoint>
+<navPoint id="navpoint300" playOrder="300"><navLabel><text>Summary of the preparation of keto-esters by the Claisen reaction</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.11"/></navPoint>
+<navPoint id="navpoint301" playOrder="301"><navLabel><text>Controlling acylation with specific enol equivalents</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.12"/></navPoint>
+<navPoint id="navpoint302" playOrder="302"><navLabel><text>Intramolecular crossed Claisen ester condensations</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.13"/></navPoint>
+<navPoint id="navpoint303" playOrder="303"><navLabel><text>Carbonyl chemistry&#x2014;where next?</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.14"/></navPoint>
+<navPoint id="navpoint304" playOrder="304"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_26.xhtml#sec_26.15"/></navPoint>
+</navPoint>
+<navPoint id="navpoint305" playOrder="305"><navLabel><text>27  Sulfur, silicon, and phosphorus in organic chemistry</text></navLabel><content src="xhtml/chapter_27.xhtml"/>
+<navPoint id="navpoint306" playOrder="306"><navLabel><text>Useful main group elements</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.1"/></navPoint>
+<navPoint id="navpoint307" playOrder="307"><navLabel><text>Sulfur: an element of contradictions</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.2"/></navPoint>
+<navPoint id="navpoint308" playOrder="308"><navLabel><text>Sulfur-stabilized anions</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.3"/></navPoint>
+<navPoint id="navpoint309" playOrder="309"><navLabel><text>Sulfonium salts</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.4"/></navPoint>
+<navPoint id="navpoint310" playOrder="310"><navLabel><text>Sulfonium ylids</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.5"/></navPoint>
+<navPoint id="navpoint311" playOrder="311"><navLabel><text>Silicon and carbon compared</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.6"/></navPoint>
+<navPoint id="navpoint312" playOrder="312"><navLabel><text>Allyl silanes as nucleophiles</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.7"/></navPoint>
+<navPoint id="navpoint313" playOrder="313"><navLabel><text>The selective synthesis of alkenes</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.8"/></navPoint>
+<navPoint id="navpoint314" playOrder="314"><navLabel><text>The properties of alkenes depend on their geometry</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.9"/></navPoint>
+<navPoint id="navpoint315" playOrder="315"><navLabel><text>Exploiting cyclic compounds</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.10"/></navPoint>
+<navPoint id="navpoint316" playOrder="316"><navLabel><text>Equilibration of alkenes</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.11"/></navPoint>
+<navPoint id="navpoint317" playOrder="317"><navLabel><text>E and Z alkenes can be made by stereoselective addition to alkynes</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.12"/></navPoint>
+<navPoint id="navpoint318" playOrder="318"><navLabel><text>Predominantly E alkenes can be formed by stereoselective elimination reactions</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.13"/></navPoint>
+<navPoint id="navpoint319" playOrder="319"><navLabel><text>The Julia olefination is regiospecific and connective</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.14"/></navPoint>
+<navPoint id="navpoint320" playOrder="320"><navLabel><text>Stereospecific eliminations can give pure single isomers of alkenes</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.15"/></navPoint>
+<navPoint id="navpoint321" playOrder="321"><navLabel><text>Perhaps the most important way of making alkenes&#x2014;the Wittig reaction</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.16"/></navPoint>
+<navPoint id="navpoint322" playOrder="322"><navLabel><text>To conclude</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.17"/></navPoint>
+<navPoint id="navpoint323" playOrder="323"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_27.xhtml#sec_27.18"/></navPoint>
+</navPoint>
+<navPoint id="navpoint324" playOrder="324"><navLabel><text>28  Retrosynthetic analysis</text></navLabel><content src="xhtml/chapter_28.xhtml"/>
+<navPoint id="navpoint325" playOrder="325"><navLabel><text>Creative chemistry</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.1"/></navPoint>
+<navPoint id="navpoint326" playOrder="326"><navLabel><text>Retrosynthetic analysis: synthesis backwards</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.2"/></navPoint>
+<navPoint id="navpoint327" playOrder="327"><navLabel><text>Disconnections must correspond to known, reliable reactions</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.3"/></navPoint>
+<navPoint id="navpoint328" playOrder="328"><navLabel><text>Synthons are idealized reagents</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.4"/></navPoint>
+<navPoint id="navpoint329" playOrder="329"><navLabel><text>Multiple step syntheses: avoid chemoselectivity problems</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.5"/></navPoint>
+<navPoint id="navpoint330" playOrder="330"><navLabel><text>Functional group interconversion</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.6"/></navPoint>
+<navPoint id="navpoint331" playOrder="331"><navLabel><text>Two-group disconnections are better than one-group disconnections</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.7"/></navPoint>
+<navPoint id="navpoint332" playOrder="332"><navLabel><text>C&#x2013;C disconnections</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.8"/></navPoint>
+<navPoint id="navpoint333" playOrder="333"><navLabel><text>Available starting materials</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.9"/></navPoint>
+<navPoint id="navpoint334" playOrder="334"><navLabel><text>Donor and acceptor synthons</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.10"/></navPoint>
+<navPoint id="navpoint335" playOrder="335"><navLabel><text>Two-group C&#x2013;C disconnections</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.11"/></navPoint>
+<navPoint id="navpoint336" playOrder="336"><navLabel><text>1,5-Related functional groups</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.12"/></navPoint>
+<navPoint id="navpoint337" playOrder="337"><navLabel><text>&#x2018;Natural reactivity&#x2019; and &#x2018;umpolung&#x2019;</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.13"/></navPoint>
+<navPoint id="navpoint338" playOrder="338"><navLabel><text>To conclude. . .</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.14"/></navPoint>
+<navPoint id="navpoint339" playOrder="339"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_28.xhtml#sec_28.15"/></navPoint>
+</navPoint>
+<navPoint id="navpoint340" playOrder="340"><navLabel><text>29  Aromatic heterocycles 1: reactions</text></navLabel><content src="xhtml/chapter_29.xhtml"/>
+<navPoint id="navpoint341" playOrder="341"><navLabel><text>Introduction</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.1"/></navPoint>
+<navPoint id="navpoint342" playOrder="342"><navLabel><text>Aromaticity survives when parts of benzene&#x2019;s ring are replaced by nitrogen atoms</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.2"/></navPoint>
+<navPoint id="navpoint343" playOrder="343"><navLabel><text>Pyridine is a very unreactive aromatic imine</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.3"/></navPoint>
+<navPoint id="navpoint344" playOrder="344"><navLabel><text>Six-membered aromatic heterocycles can have oxygen in the ring</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.4"/></navPoint>
+<navPoint id="navpoint345" playOrder="345"><navLabel><text>Five-membered aromatic heterocycles are good at electrophilic substitution</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.5"/></navPoint>
+<navPoint id="navpoint346" playOrder="346"><navLabel><text>Furan and thiophene are oxygen and sulfur analogues of pyrrole</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.6"/></navPoint>
+<navPoint id="navpoint347" playOrder="347"><navLabel><text>More reactions of five-membered heterocycles</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.7"/></navPoint>
+<navPoint id="navpoint348" playOrder="348"><navLabel><text>Five-membered rings with two or more nitrogen atoms</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.8"/></navPoint>
+<navPoint id="navpoint349" playOrder="349"><navLabel><text>Benzo-fused heterocycles</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.9"/></navPoint>
+<navPoint id="navpoint350" playOrder="350"><navLabel><text>Putting more nitrogen atoms in a six-membered ring</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.10"/></navPoint>
+<navPoint id="navpoint351" playOrder="351"><navLabel><text>Fusing rings to pyridines: quinolines and isoquinolines</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.11"/></navPoint>
+<navPoint id="navpoint352" playOrder="352"><navLabel><text>Aromatic heterocycles can have many nitrogens but only one sulfur or oxygen in any ring</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.12"/></navPoint>
+<navPoint id="navpoint353" playOrder="353"><navLabel><text>There are thousands more heterocycles out there</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.13"/></navPoint>
+<navPoint id="navpoint354" playOrder="354"><navLabel><text>Which heterocyclic structures should you learn?</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.14"/></navPoint>
+<navPoint id="navpoint355" playOrder="355"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_29.xhtml#sec_29.15"/></navPoint>
+</navPoint>
+<navPoint id="navpoint356" playOrder="356"><navLabel><text>30  Aromatic heterocycles 2: synthesis</text></navLabel><content src="xhtml/chapter_30.xhtml"/>
+<navPoint id="navpoint357" playOrder="357"><navLabel><text>Thermodynamics is on our side</text></navLabel><content src="xhtml/chapter_30.xhtml#sec_30.1"/></navPoint>
+<navPoint id="navpoint358" playOrder="358"><navLabel><text>Disconnect the carbon&#x2013;heteroatom bonds first</text></navLabel><content src="xhtml/chapter_30.xhtml#sec_30.2"/></navPoint>
+<navPoint id="navpoint359" playOrder="359"><navLabel><text>Pyrroles, thiophenes, and furans from 1,4-dicarbonyl compounds</text></navLabel><content src="xhtml/chapter_30.xhtml#sec_30.3"/></navPoint>
+<navPoint id="navpoint360" playOrder="360"><navLabel><text>How to make pyridines: the Hantzsch pyridine synthesis</text></navLabel><content src="xhtml/chapter_30.xhtml#sec_30.4"/></navPoint>
+<navPoint id="navpoint361" playOrder="361"><navLabel><text>Pyrazoles and pyridazines from hydrazine and dicarbonyl compounds</text></navLabel><content src="xhtml/chapter_30.xhtml#sec_30.5"/></navPoint>
+<navPoint id="navpoint362" playOrder="362"><navLabel><text>Pyrimidines can be made from 1,3-dicarbonyl compounds and amidines</text></navLabel><content src="xhtml/chapter_30.xhtml#sec_30.6"/></navPoint>
+<navPoint id="navpoint363" playOrder="363"><navLabel><text>Unsymmetrical nucleophiles lead to selectivity questions</text></navLabel><content src="xhtml/chapter_30.xhtml#sec_30.7"/></navPoint>
+<navPoint id="navpoint364" playOrder="364"><navLabel><text>Isoxazoles are made from hydroxylamine or by cycloaddition</text></navLabel><content src="xhtml/chapter_30.xhtml#sec_30.8"/></navPoint>
+<navPoint id="navpoint365" playOrder="365"><navLabel><text>Tetrazoles and triazoles are also made by cycloadditions</text></navLabel><content src="xhtml/chapter_30.xhtml#sec_30.9"/></navPoint>
+<navPoint id="navpoint366" playOrder="366"><navLabel><text>The Fischer indole synthesis</text></navLabel><content src="xhtml/chapter_30.xhtml#sec_30.10"/></navPoint>
+<navPoint id="navpoint367" playOrder="367"><navLabel><text>Quinolines and isoquinolines</text></navLabel><content src="xhtml/chapter_30.xhtml#sec_30.11"/></navPoint>
+<navPoint id="navpoint368" playOrder="368"><navLabel><text>More heteroatoms in fused rings mean more choice in synthesis</text></navLabel><content src="xhtml/chapter_30.xhtml#sec_30.12"/></navPoint>
+<navPoint id="navpoint369" playOrder="369"><navLabel><text>Summary: the three major approaches to the synthesis of aromatic heterocycles</text></navLabel><content src="xhtml/chapter_30.xhtml#sec_30.13"/></navPoint>
+<navPoint id="navpoint370" playOrder="370"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_30.xhtml#sec_30.14"/></navPoint>
+</navPoint>
+<navPoint id="navpoint371" playOrder="371"><navLabel><text>31  Saturated heterocycles and stereoelectronics</text></navLabel><content src="xhtml/chapter_31.xhtml"/>
+<navPoint id="navpoint372" playOrder="372"><navLabel><text>Introduction</text></navLabel><content src="xhtml/chapter_31.xhtml#sec_31.1"/></navPoint>
+<navPoint id="navpoint373" playOrder="373"><navLabel><text>Reactions of saturated heterocycles</text></navLabel><content src="xhtml/chapter_31.xhtml#sec_31.2"/></navPoint>
+<navPoint id="navpoint374" playOrder="374"><navLabel><text>Conformation of saturated heterocycles</text></navLabel><content src="xhtml/chapter_31.xhtml#sec_31.3"/></navPoint>
+<navPoint id="navpoint375" playOrder="375"><navLabel><text>Making heterocycles: ring-closing reactions</text></navLabel><content src="xhtml/chapter_31.xhtml#sec_31.4"/></navPoint>
+<navPoint id="navpoint376" playOrder="376"><navLabel><text>Ring size and NMR</text></navLabel><content src="xhtml/chapter_31.xhtml#sec_31.5"/></navPoint>
+<navPoint id="navpoint377" playOrder="377"><navLabel><text>Geminal (2J ) coupling</text></navLabel><content src="xhtml/chapter_31.xhtml#sec_31.6"/></navPoint>
+<navPoint id="navpoint378" playOrder="378"><navLabel><text>Diastereotopic groups</text></navLabel><content src="xhtml/chapter_31.xhtml#sec_31.7"/></navPoint>
+<navPoint id="navpoint379" playOrder="379"><navLabel><text>To summarize. . .</text></navLabel><content src="xhtml/chapter_31.xhtml#sec_31.8"/></navPoint>
+<navPoint id="navpoint380" playOrder="380"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_31.xhtml#sec_31.9"/></navPoint>
+</navPoint>
+<navPoint id="navpoint381" playOrder="381"><navLabel><text>32  Stereoselectivity in cyclic molecules</text></navLabel><content src="xhtml/chapter_32.xhtml"/>
+<navPoint id="navpoint382" playOrder="382"><navLabel><text>Introduction</text></navLabel><content src="xhtml/chapter_32.xhtml#sec_32.1"/></navPoint>
+<navPoint id="navpoint383" playOrder="383"><navLabel><text>Stereochemical control in six-membered rings</text></navLabel><content src="xhtml/chapter_32.xhtml#sec_32.2"/></navPoint>
+<navPoint id="navpoint384" playOrder="384"><navLabel><text>Reactions on small rings</text></navLabel><content src="xhtml/chapter_32.xhtml#sec_32.3"/></navPoint>
+<navPoint id="navpoint385" playOrder="385"><navLabel><text>Regiochemical control in cyclohexene epoxides</text></navLabel><content src="xhtml/chapter_32.xhtml#sec_32.4"/></navPoint>
+<navPoint id="navpoint386" playOrder="386"><navLabel><text>Stereoselectivity in bicyclic compounds</text></navLabel><content src="xhtml/chapter_32.xhtml#sec_32.5"/></navPoint>
+<navPoint id="navpoint387" playOrder="387"><navLabel><text>Fused bicyclic compounds</text></navLabel><content src="xhtml/chapter_32.xhtml#sec_32.6"/></navPoint>
+<navPoint id="navpoint388" playOrder="388"><navLabel><text>Spirocyclic compounds</text></navLabel><content src="xhtml/chapter_32.xhtml#sec_32.7"/></navPoint>
+<navPoint id="navpoint389" playOrder="389"><navLabel><text>Reactions with cyclic intermediates or cyclic transition states</text></navLabel><content src="xhtml/chapter_32.xhtml#sec_32.8"/></navPoint>
+<navPoint id="navpoint390" playOrder="390"><navLabel><text>To summarize. . .</text></navLabel><content src="xhtml/chapter_32.xhtml#sec_32.9"/></navPoint>
+<navPoint id="navpoint391" playOrder="391"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_32.xhtml#sec_32.10"/></navPoint>
+</navPoint>
+<navPoint id="navpoint392" playOrder="392"><navLabel><text>33  Diastereoselectivity</text></navLabel><content src="xhtml/chapter_33.xhtml"/>
+<navPoint id="navpoint393" playOrder="393"><navLabel><text>Looking back</text></navLabel><content src="xhtml/chapter_33.xhtml#sec_33.1"/></navPoint>
+<navPoint id="navpoint394" playOrder="394"><navLabel><text>Prochirality</text></navLabel><content src="xhtml/chapter_33.xhtml#sec_33.2"/></navPoint>
+<navPoint id="navpoint395" playOrder="395"><navLabel><text>Additions to carbonyl groups can be diastereoselective even without rings</text></navLabel><content src="xhtml/chapter_33.xhtml#sec_33.3"/></navPoint>
+<navPoint id="navpoint396" playOrder="396"><navLabel><text>Stereoselective reactions of acyclic alkenes</text></navLabel><content src="xhtml/chapter_33.xhtml#sec_33.4"/></navPoint>
+<navPoint id="navpoint397" playOrder="397"><navLabel><text>Aldol reactions can be stereoselective</text></navLabel><content src="xhtml/chapter_33.xhtml#sec_33.5"/></navPoint>
+<navPoint id="navpoint398" playOrder="398"><navLabel><text>Single enantiomers from diastereoselective reactions</text></navLabel><content src="xhtml/chapter_33.xhtml#sec_33.6"/></navPoint>
+<navPoint id="navpoint399" playOrder="399"><navLabel><text>Looking forward</text></navLabel><content src="xhtml/chapter_33.xhtml#sec_33.7"/></navPoint>
+<navPoint id="navpoint400" playOrder="400"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_33.xhtml#sec_33.8"/></navPoint>
+</navPoint>
+<navPoint id="navpoint401" playOrder="401"><navLabel><text>34  Pericyclic reactions 1: cycloadditions</text></navLabel><content src="xhtml/chapter_34.xhtml"/>
+<navPoint id="navpoint402" playOrder="402"><navLabel><text>A new sort of reaction</text></navLabel><content src="xhtml/chapter_34.xhtml#sec_34.1"/></navPoint>
+<navPoint id="navpoint403" playOrder="403"><navLabel><text>The Woodward&#x2013;Hoffmann description of the Diels&#x2013;Alder reaction</text></navLabel><content src="xhtml/chapter_34.xhtml#sec_34.2"/></navPoint>
+<navPoint id="navpoint404" playOrder="404"><navLabel><text>Trapping reactive intermediates by cycloadditions</text></navLabel><content src="xhtml/chapter_34.xhtml#sec_34.3"/></navPoint>
+<navPoint id="navpoint405" playOrder="405"><navLabel><text>Other thermal cycloadditions</text></navLabel><content src="xhtml/chapter_34.xhtml#sec_34.4"/></navPoint>
+<navPoint id="navpoint406" playOrder="406"><navLabel><text>Photochemical [2 + 2] cycloadditions</text></navLabel><content src="xhtml/chapter_34.xhtml#sec_34.5"/></navPoint>
+<navPoint id="navpoint407" playOrder="407"><navLabel><text>Thermal [2 + 2] cycloadditions</text></navLabel><content src="xhtml/chapter_34.xhtml#sec_34.6"/></navPoint>
+<navPoint id="navpoint408" playOrder="408"><navLabel><text>Making five-membered rings: 1,3-dipolar cycloadditions</text></navLabel><content src="xhtml/chapter_34.xhtml#sec_34.7"/></navPoint>
+<navPoint id="navpoint409" playOrder="409"><navLabel><text>Two very important synthetic reactions: cycloaddition of alkenes with osmium tetroxide and with ozone</text></navLabel><content src="xhtml/chapter_34.xhtml#sec_34.8"/></navPoint>
+<navPoint id="navpoint410" playOrder="410"><navLabel><text>Summary of cycloaddition reactions</text></navLabel><content src="xhtml/chapter_34.xhtml#sec_34.9"/></navPoint>
+<navPoint id="navpoint411" playOrder="411"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_34.xhtml#sec_34.10"/></navPoint>
+</navPoint>
+<navPoint id="navpoint412" playOrder="412"><navLabel><text>35  Pericyclic reactions 2: sigmatropic and electrocyclic reactions</text></navLabel><content src="xhtml/chapter_35.xhtml"/>
+<navPoint id="navpoint413" playOrder="413"><navLabel><text>Sigmatropic rearrangements</text></navLabel><content src="xhtml/chapter_35.xhtml#sec_35.1"/></navPoint>
+<navPoint id="navpoint414" playOrder="414"><navLabel><text>Orbital descriptions of [3,3]-sigmatropic rearrangements</text></navLabel><content src="xhtml/chapter_35.xhtml#sec_35.2"/></navPoint>
+<navPoint id="navpoint415" playOrder="415"><navLabel><text>The direction of [3,3]-sigmatropic rearrangements</text></navLabel><content src="xhtml/chapter_35.xhtml#sec_35.3"/></navPoint>
+<navPoint id="navpoint416" playOrder="416"><navLabel><text>[2,3]-Sigmatropic rearrangements</text></navLabel><content src="xhtml/chapter_35.xhtml#sec_35.4"/></navPoint>
+<navPoint id="navpoint417" playOrder="417"><navLabel><text>[1,5]-Sigmatropic hydrogen shifts</text></navLabel><content src="xhtml/chapter_35.xhtml#sec_35.5"/></navPoint>
+<navPoint id="navpoint418" playOrder="418"><navLabel><text>Electrocyclic reactions</text></navLabel><content src="xhtml/chapter_35.xhtml#sec_35.6"/></navPoint>
+<navPoint id="navpoint419" playOrder="419"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_35.xhtml#sec_35.7"/></navPoint>
+</navPoint>
+<navPoint id="navpoint420" playOrder="420"><navLabel><text>36  Participation, rearrangement, and fragmentation</text></navLabel><content src="xhtml/chapter_36.xhtml"/>
+<navPoint id="navpoint421" playOrder="421"><navLabel><text>Neighbouring groups can accelerate substitution reactions</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.1"/></navPoint>
+<navPoint id="navpoint422" playOrder="422"><navLabel><text>Rearrangements occur when a participating group ends up bonded to a different atom</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.2"/></navPoint>
+<navPoint id="navpoint423" playOrder="423"><navLabel><text>Carbocations readily rearrange</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.3"/></navPoint>
+<navPoint id="navpoint424" playOrder="424"><navLabel><text>The pinacol rearrangement</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.4"/></navPoint>
+<navPoint id="navpoint425" playOrder="425"><navLabel><text>The dienone-phenol rearrangement</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.5"/></navPoint>
+<navPoint id="navpoint426" playOrder="426"><navLabel><text>The benzilic acid rearrangement</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.6"/></navPoint>
+<navPoint id="navpoint427" playOrder="427"><navLabel><text>The Favorskii rearrangement</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.7"/></navPoint>
+<navPoint id="navpoint428" playOrder="428"><navLabel><text>Migration to oxygen: the Baeyer&#x2013;Villiger reaction</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.8"/></navPoint>
+<navPoint id="navpoint429" playOrder="429"><navLabel><text>The Beckmann rearrangement</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.9"/></navPoint>
+<navPoint id="navpoint430" playOrder="430"><navLabel><text>Polarization of C&#x2013;C bonds helps fragmentation</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.10"/></navPoint>
+<navPoint id="navpoint431" playOrder="431"><navLabel><text>Fragmentations are controlled by stereochemistry</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.11"/></navPoint>
+<navPoint id="navpoint432" playOrder="432"><navLabel><text>Ring expansion by fragmentation</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.12"/></navPoint>
+<navPoint id="navpoint433" playOrder="433"><navLabel><text>Controlling double bonds using fragmentation</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.13"/></navPoint>
+<navPoint id="navpoint434" playOrder="434"><navLabel><text>The synthesis of nootkatone: fragmentation showcase</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.14"/></navPoint>
+<navPoint id="navpoint435" playOrder="435"><navLabel><text>Looking forward</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.15"/></navPoint>
+<navPoint id="navpoint436" playOrder="436"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_36.xhtml#sec_36.16"/></navPoint>
+</navPoint>
+<navPoint id="navpoint437" playOrder="437"><navLabel><text>37  Radical reactions</text></navLabel><content src="xhtml/chapter_37.xhtml"/>
+<navPoint id="navpoint438" playOrder="438"><navLabel><text>Radicals contain unpaired electrons</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.2"/></navPoint>
+<navPoint id="navpoint439" playOrder="439"><navLabel><text>Radicals form by homolysis of weak bonds</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.3"/></navPoint>
+<navPoint id="navpoint440" playOrder="440"><navLabel><text>Most radicals are extremely reactive. . .</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.4"/></navPoint>
+<navPoint id="navpoint441" playOrder="441"><navLabel><text>How to analyse the structure of radicals: electron spin resonance</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.5"/></navPoint>
+<navPoint id="navpoint442" playOrder="442"><navLabel><text>Radical stability</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.6"/></navPoint>
+<navPoint id="navpoint443" playOrder="443"><navLabel><text>How do radicals react?</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.7"/></navPoint>
+<navPoint id="navpoint444" playOrder="444"><navLabel><text>Radical&#x2013;radical reactions</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.8"/></navPoint>
+<navPoint id="navpoint445" playOrder="445"><navLabel><text>Radical chain reactions</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.9"/></navPoint>
+<navPoint id="navpoint446" playOrder="446"><navLabel><text>Chlorination of alkanes</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.10"/></navPoint>
+<navPoint id="navpoint447" playOrder="447"><navLabel><text>Allylic bromination</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.11"/></navPoint>
+<navPoint id="navpoint448" playOrder="448"><navLabel><text>Reversing the selectivity: radical substitution of Br by H</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.12"/></navPoint>
+<navPoint id="navpoint449" playOrder="449"><navLabel><text>Carbon&#x2013;carbon bond formation with radicals</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.13"/></navPoint>
+<navPoint id="navpoint450" playOrder="450"><navLabel><text>The reactivity pattern of radicals is quite different from that of polar reagents</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.14"/></navPoint>
+<navPoint id="navpoint451" playOrder="451"><navLabel><text>Alkyl radicals from boranes and oxygen</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.15"/></navPoint>
+<navPoint id="navpoint452" playOrder="452"><navLabel><text>Intramolecular radical reactions are more efficient than intermolecular ones</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.16"/></navPoint>
+<navPoint id="navpoint453" playOrder="453"><navLabel><text>Looking forward</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.17"/></navPoint>
+<navPoint id="navpoint454" playOrder="454"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_37.xhtml#sec_37.18"/></navPoint>
+</navPoint>
+<navPoint id="navpoint455" playOrder="455"><navLabel><text>38  Synthesis and reactions of carbenes</text></navLabel><content src="xhtml/chapter_38.xhtml"/>
+<navPoint id="navpoint456" playOrder="456"><navLabel><text>Diazomethane makes methyl esters from carboxylic acids</text></navLabel><content src="xhtml/chapter_38.xhtml#sec_38.1"/></navPoint>
+<navPoint id="navpoint457" playOrder="457"><navLabel><text>Photolysis of diazomethane produces a carbene</text></navLabel><content src="xhtml/chapter_38.xhtml#sec_38.2"/></navPoint>
+<navPoint id="navpoint458" playOrder="458"><navLabel><text>How do we know that carbenes exist?</text></navLabel><content src="xhtml/chapter_38.xhtml#sec_38.3"/></navPoint>
+<navPoint id="navpoint459" playOrder="459"><navLabel><text>Ways to make carbenes</text></navLabel><content src="xhtml/chapter_38.xhtml#sec_38.4"/></navPoint>
+<navPoint id="navpoint460" playOrder="460"><navLabel><text>Carbenes can be divided into two types</text></navLabel><content src="xhtml/chapter_38.xhtml#sec_38.5"/></navPoint>
+<navPoint id="navpoint461" playOrder="461"><navLabel><text>How do carbenes react?</text></navLabel><content src="xhtml/chapter_38.xhtml#sec_38.6"/></navPoint>
+<navPoint id="navpoint462" playOrder="462"><navLabel><text>Carbenes react with alkenes to give cyclopropanes</text></navLabel><content src="xhtml/chapter_38.xhtml#sec_38.7"/></navPoint>
+<navPoint id="navpoint463" playOrder="463"><navLabel><text>Insertion into C&#x2013;H bonds</text></navLabel><content src="xhtml/chapter_38.xhtml#sec_38.8"/></navPoint>
+<navPoint id="navpoint464" playOrder="464"><navLabel><text>Rearrangement reactions</text></navLabel><content src="xhtml/chapter_38.xhtml#sec_38.9"/></navPoint>
+<navPoint id="navpoint465" playOrder="465"><navLabel><text>Nitrenes are the nitrogen analogues of carbenes</text></navLabel><content src="xhtml/chapter_38.xhtml#sec_38.10"/></navPoint>
+<navPoint id="navpoint466" playOrder="466"><navLabel><text>Alkene metathesis</text></navLabel><content src="xhtml/chapter_38.xhtml#sec_38.11"/></navPoint>
+<navPoint id="navpoint467" playOrder="467"><navLabel><text>Summary</text></navLabel><content src="xhtml/chapter_38.xhtml#sec_38.12"/></navPoint>
+<navPoint id="navpoint468" playOrder="468"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_38.xhtml#sec_38.13"/></navPoint>
+</navPoint>
+<navPoint id="navpoint469" playOrder="469"><navLabel><text>39  Determining reaction mechanisms</text></navLabel><content src="xhtml/chapter_39.xhtml"/>
+<navPoint id="navpoint470" playOrder="470"><navLabel><text>There are mechanisms and there are mechanisms</text></navLabel><content src="xhtml/chapter_39.xhtml#sec_39.1"/></navPoint>
+<navPoint id="navpoint471" playOrder="471"><navLabel><text>Determining reaction mechanisms: the Cannizzaro reaction</text></navLabel><content src="xhtml/chapter_39.xhtml#sec_39.2"/></navPoint>
+<navPoint id="navpoint472" playOrder="472"><navLabel><text>Be sure of the structure of the product</text></navLabel><content src="xhtml/chapter_39.xhtml#sec_39.3"/></navPoint>
+<navPoint id="navpoint473" playOrder="473"><navLabel><text>Systematic structural variation</text></navLabel><content src="xhtml/chapter_39.xhtml#sec_39.4"/></navPoint>
+<navPoint id="navpoint474" playOrder="474"><navLabel><text>The Hammett relationship</text></navLabel><content src="xhtml/chapter_39.xhtml#sec_39.5"/></navPoint>
+<navPoint id="navpoint475" playOrder="475"><navLabel><text>Other kinetic evidence for reaction mechanisms</text></navLabel><content src="xhtml/chapter_39.xhtml#sec_39.6"/></navPoint>
+<navPoint id="navpoint476" playOrder="476"><navLabel><text>Acid and base catalysis</text></navLabel><content src="xhtml/chapter_39.xhtml#sec_39.7"/></navPoint>
+<navPoint id="navpoint477" playOrder="477"><navLabel><text>The detection of intermediates</text></navLabel><content src="xhtml/chapter_39.xhtml#sec_39.8"/></navPoint>
+<navPoint id="navpoint478" playOrder="478"><navLabel><text>Stereochemistry and mechanism</text></navLabel><content src="xhtml/chapter_39.xhtml#sec_39.9"/></navPoint>
+<navPoint id="navpoint479" playOrder="479"><navLabel><text>Summary of methods for the investigation of mechanism</text></navLabel><content src="xhtml/chapter_39.xhtml#sec_39.10"/></navPoint>
+<navPoint id="navpoint480" playOrder="480"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_39.xhtml#sec_39.11"/></navPoint>
+</navPoint>
+<navPoint id="navpoint481" playOrder="481"><navLabel><text>40  Organometallic chemistry</text></navLabel><content src="xhtml/chapter_40.xhtml"/>
+<navPoint id="navpoint482" playOrder="482"><navLabel><text>Transition metals extend the range of organic reactions</text></navLabel><content src="xhtml/chapter_40.xhtml#sec_40.1"/></navPoint>
+<navPoint id="navpoint483" playOrder="483"><navLabel><text>The 18 electron rule</text></navLabel><content src="xhtml/chapter_40.xhtml#sec_40.2"/></navPoint>
+<navPoint id="navpoint484" playOrder="484"><navLabel><text>Bonding and reactions in transition metal complexes</text></navLabel><content src="xhtml/chapter_40.xhtml#sec_40.3"/></navPoint>
+<navPoint id="navpoint485" playOrder="485"><navLabel><text>Palladium is the most widely used metal in homogeneous catalysis</text></navLabel><content src="xhtml/chapter_40.xhtml#sec_40.4"/></navPoint>
+<navPoint id="navpoint486" playOrder="486"><navLabel><text>The Heck reaction couples together an organic halide or triflate and an alkene</text></navLabel><content src="xhtml/chapter_40.xhtml#sec_40.5"/></navPoint>
+<navPoint id="navpoint487" playOrder="487"><navLabel><text>Cross-coupling of organometallics and halides</text></navLabel><content src="xhtml/chapter_40.xhtml#sec_40.6"/></navPoint>
+<navPoint id="navpoint488" playOrder="488"><navLabel><text>Allylic electrophiles are activated by palladium(0)</text></navLabel><content src="xhtml/chapter_40.xhtml#sec_40.7"/></navPoint>
+<navPoint id="navpoint489" playOrder="489"><navLabel><text>Palladium-catalysed amination of aromatic rings</text></navLabel><content src="xhtml/chapter_40.xhtml#sec_40.8"/></navPoint>
+<navPoint id="navpoint490" playOrder="490"><navLabel><text>Alkenes coordinated to palladium(II) are attacked by nucleophiles</text></navLabel><content src="xhtml/chapter_40.xhtml#sec_40.9"/></navPoint>
+<navPoint id="navpoint491" playOrder="491"><navLabel><text>Palladium catalysis in the total synthesis of a natural alkaloid</text></navLabel><content src="xhtml/chapter_40.xhtml#sec_40.10"/></navPoint>
+<navPoint id="navpoint492" playOrder="492"><navLabel><text>An overview of some other transition metals</text></navLabel><content src="xhtml/chapter_40.xhtml#sec_40.11"/></navPoint>
+<navPoint id="navpoint493" playOrder="493"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_40.xhtml#sec_40.12"/></navPoint>
+</navPoint>
+<navPoint id="navpoint494" playOrder="494"><navLabel><text>41  Asymmetric synthesis</text></navLabel><content src="xhtml/chapter_41.xhtml"/>
+<navPoint id="navpoint495" playOrder="495"><navLabel><text>Nature is asymmetric</text></navLabel><content src="xhtml/chapter_41.xhtml#sec_41.1"/></navPoint>
+<navPoint id="navpoint496" playOrder="496"><navLabel><text>The chiral pool: Nature&#x2019;s chiral centres &#x2018;off the shelf&#x2019;</text></navLabel><content src="xhtml/chapter_41.xhtml#sec_41.2"/></navPoint>
+<navPoint id="navpoint497" playOrder="497"><navLabel><text>Resolution can be used to separate enantiomers</text></navLabel><content src="xhtml/chapter_41.xhtml#sec_41.3"/></navPoint>
+<navPoint id="navpoint498" playOrder="498"><navLabel><text>Chiral auxiliaries</text></navLabel><content src="xhtml/chapter_41.xhtml#sec_41.4"/></navPoint>
+<navPoint id="navpoint499" playOrder="499"><navLabel><text>Chiral reagents</text></navLabel><content src="xhtml/chapter_41.xhtml#sec_41.5"/></navPoint>
+<navPoint id="navpoint500" playOrder="500"><navLabel><text>Asymmetric catalysis</text></navLabel><content src="xhtml/chapter_41.xhtml#sec_41.6"/></navPoint>
+<navPoint id="navpoint501" playOrder="501"><navLabel><text>Asymmetric formation of carbon&#x2013;carbon bonds</text></navLabel><content src="xhtml/chapter_41.xhtml#sec_41.7"/></navPoint>
+<navPoint id="navpoint502" playOrder="502"><navLabel><text>Asymmetric aldol reactions</text></navLabel><content src="xhtml/chapter_41.xhtml#sec_41.8"/></navPoint>
+<navPoint id="navpoint503" playOrder="503"><navLabel><text>Enzymes as catalysts</text></navLabel><content src="xhtml/chapter_41.xhtml#sec_41.9"/></navPoint>
+<navPoint id="navpoint504" playOrder="504"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_41.xhtml#sec_41.10"/></navPoint>
+</navPoint>
+<navPoint id="navpoint505" playOrder="505"><navLabel><text>42  Organic chemistry of life</text></navLabel><content src="xhtml/chapter_42.xhtml"/>
+<navPoint id="navpoint506" playOrder="506"><navLabel><text>Primary metabolism</text></navLabel><content src="xhtml/chapter_42.xhtml#sec_42.1"/></navPoint>
+<navPoint id="navpoint507" playOrder="507"><navLabel><text>Life begins with nucleic acids</text></navLabel><content src="xhtml/chapter_42.xhtml#sec_42.2"/></navPoint>
+<navPoint id="navpoint508" playOrder="508"><navLabel><text>Proteins are made of amino acids</text></navLabel><content src="xhtml/chapter_42.xhtml#sec_42.3"/></navPoint>
+<navPoint id="navpoint509" playOrder="509"><navLabel><text>Sugars&#x2014;just energy sources?</text></navLabel><content src="xhtml/chapter_42.xhtml#sec_42.4"/></navPoint>
+<navPoint id="navpoint510" playOrder="510"><navLabel><text>Lipids</text></navLabel><content src="xhtml/chapter_42.xhtml#sec_42.5"/></navPoint>
+<navPoint id="navpoint511" playOrder="511"><navLabel><text>Mechanisms in biological chemistry</text></navLabel><content src="xhtml/chapter_42.xhtml#sec_42.6"/></navPoint>
+<navPoint id="navpoint512" playOrder="512"><navLabel><text>Natural products</text></navLabel><content src="xhtml/chapter_42.xhtml#sec_42.7"/></navPoint>
+<navPoint id="navpoint513" playOrder="513"><navLabel><text>Fatty acids and other polyketides are made from acetyl CoA</text></navLabel><content src="xhtml/chapter_42.xhtml#sec_42.8"/></navPoint>
+<navPoint id="navpoint514" playOrder="514"><navLabel><text>Terpenes are volatile constituents of plants</text></navLabel><content src="xhtml/chapter_42.xhtml#sec_42.9"/></navPoint>
+<navPoint id="navpoint515" playOrder="515"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_42.xhtml#sec_42.10"/></navPoint>
+</navPoint>
+<navPoint id="navpoint516" playOrder="516"><navLabel><text>43  Organic chemistry today</text></navLabel><content src="xhtml/chapter_43.xhtml"/>
+<navPoint id="navpoint517" playOrder="517"><navLabel><text>Science advances through interaction between disciplines</text></navLabel><content src="xhtml/chapter_43.xhtml#sec_43.1"/></navPoint>
+<navPoint id="navpoint518" playOrder="518"><navLabel><text>Chemistry vs viruses</text></navLabel><content src="xhtml/chapter_43.xhtml#sec_43.2"/></navPoint>
+<navPoint id="navpoint519" playOrder="519"><navLabel><text>The future of organic chemistry</text></navLabel><content src="xhtml/chapter_43.xhtml#sec_43.3"/></navPoint>
+<navPoint id="navpoint520" playOrder="520"><navLabel><text>Further reading</text></navLabel><content src="xhtml/chapter_43.xhtml#sec_43.4"/></navPoint>
+</navPoint>
+<navPoint id="navpoint521" playOrder="521"><navLabel><text>Figure acknowledgements</text></navLabel><content src="xhtml/figure_acknowledgements.xhtml"/></navPoint>
+<navPoint id="navpoint522" playOrder="522"><navLabel><text>Periodic table of the elements</text></navLabel><content src="xhtml/periodic_table_of_the_elements.xhtml"/></navPoint>
+<navPoint id="navpoint523" playOrder="523"><navLabel><text>Index</text></navLabel><content src="xhtml/index.xhtml"/></navPoint>
+</navMap>
+</ncx>

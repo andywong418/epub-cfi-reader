@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Photochemistry</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div>
+<section epub:type="chapter" id="ch04">
+<a id="page_58" class="page" style="width:70%;">Page 58, Photochemical kinetics</a>
+<h1 class="main">4<span class="space">&#160;</span>Photochemical kinetics</h1>
+<section epub:type="chapter" id="sec_4.1">
+<h2 class="h2">4.1<span class="space">&#160;</span>Reaction rates and photochemistry</h2>
+<p class="noindent">In this chapter, we shall show how an analysis of information about the rates of reactions can lead to a better and more quantitative understanding of photochemical processes. <i>Reaction kinetics</i> is the part of chemistry that deals with reaction rates, and photochemical kinetics affords valuable insights into the mechanisms of photochemical reactions and even into the detailed nature of individual elementary reaction steps. The kinetic approach is also a valuable adjunct to studies of absorption spectra, fluorescence, and many other optical and photochemical phenomena. Its use has been implicit in much of the discussion of earlier chapters, and it is the intention now to give a more specific account of the relation between kinetics and photochemistry.</p>
+</section>
+<section epub:type="chapter" id="sec_4.2">
+<h2 class="h2">4.2<span class="space">&#160;</span>Multistep reaction schemes</h2>
+<p class="noindent">One feature of many photochemical processes is that secondary steps follow the primary event that follows the initial absorption of light (see <a href="Chapter01.xhtml#page_10">p. 10</a> and <a href="Chapter01.xhtml#nt1.20">Note 1.20</a>). Kinetic tools are of particular value in unravelling the complexities of such <i>multistep</i> systems.</p>
+<h3 class="h3" style="margin-top:1em;">Stationary-state treatments</h3>
+<p class="noindent" style="margin-top:-0.5em;">A simple example will show the kinetic approach to the elucidation of reaction mechanisms and indicate how rate constants can be extracted from experimental data. The photolysis of mixtures of ozone and oxygen by red light might be expected to proceed via the mechanism</p>
+<figure class="fig1a" id="eq4.1-4.3">
+<img src="../images/page58-1.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-4.0em;" epub:type="sidebar">
+<p class="noindent2"><a id="nt4.1"/><b>4.1</b> The &#x2018;third-body&#x2019;, M, is necessary in <a href="#eq4.1-4.3">reaction (4.3)</a>, as in many other recombination reactions, to stabilize the energy-rich O<sub>3</sub> molecule initially formed; the molecule would otherwise fall apart again.</p>
+</aside>
+<p class="indent">The appearance of M in <a href="#eq4.1-4.3">eqn (4.3)</a> is explained in <a href="#nt4.1">Note 4.1</a>. It is assumed that the quantum yield for the primary process, &#x03D5;<sub>1</sub>; is unity, in accordance with experimental observation. The rate of the production of O atoms in <a href="#eq4.1-4.3">reaction (4.1)</a> is then just equal to <i>I</i><sub>abs</sub>, the intensity of light absorbed [<a href="#nt4.2">Note 4.2</a>]. Thus, the rate equations for the formation of O and loss of O<sub>3</sub> are</p>
+<figure class="fig1a" id="eq4.4-4.5">
+<img src="../images/page58-2.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-8.3em;" epub:type="sidebar">
+<p class="noindent2"><a id="nt4.2"/><b>4.2</b> The rate of production of O atoms in <a href="#eq4.1-4.3">reaction (4.1)</a> is &#x03D5;<sub>1</sub>I<sub>abs</sub>; &#x03D5;<sub>1</sub> is approximately unity, so that the production rate is simply I<sub>abs</sub> (see beginning of <a href="#sec_4.3">Section 4.3</a> for an explanation).</p>
+</aside>
+
+<p class="indent"> <a id="page_59" class="page">Page 59, Photochemical kinetics</a><span class="space">&#160;</span><span class="space">&#160;</span>Multistep reaction schemes are interpreted kinetically by writing down the differential equations, such as <a href="#eq4.4-4.5">eqn (4.4.)</a> or <a href="#eq4.4-4.5">(4.5)</a>, for all the species of interest, including the intermediates. Solution of these equations then allows the variation of the concentration of each of the species with time to be predicted. Analytical (i.e. algebraic) solution of the many simultaneous differential equations is rarely possible, but numerical solutions using computers are widely used. Such methods do not, however, afford much insight into the underlying chemistry of the system. For some highly reactive intermediates [<a href="#nt4.3">Note 4.3</a>], the <i>stationary (or steady) state hypothesis</i> (SSH) provides a simplification that will permit algebraic solution of the kinetic equations. The idea behind the SSH is that an intermediate, X, can reach a concentration that is very nearly constant with time. So long as the rate of loss of X increases with increased concentration of X, after the reaction is started [X] will then increase until the rate of its loss is equal to that of its formation. A <i>steady state</i> for [X] has been reached, and d[X]/d<i>t</i> is very nearly zero.</p>
+<aside class="abc" style="margin-top:-10.3em;" epub:type="sidebar">
+<p class="noindent2"><a id="nt4.3"/><b>4.3</b> The reactive intermediates encountered in photochemistry, to which the text refers, are atoms, radicals, electronically and vibrationally excited species, and sometimes ions.</p>
+</aside>
+<p class="indent">In applying the SSH to our example of ozone photolysis, we set the differential in <a href="#eq4.4-4.5">eqn (4.4)</a> to zero, since atomic oxygen is a highly reactive intermediate. To simplify the appearance of the equations, let us rewrite <a href="#eq4.4-4.5">eqn (4.4)</a> in the form</p>
+<figure class="fig1a" id="eq4.6">
+<img src="../images/page59-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">where <i>k</i>&#x2032; = <i>k</i><sub>2</sub>[O<sub>3</sub>] + <i>k</i><sub>3</sub>[O<sub>2</sub>][M]. We proceed now on the assumption that the SSH hypothesis holds for this system, and return later to the question of its validity. Setting <a href="#eq4.6">eqn (4.6)</a> to zero yields the value for the steady-state concentration of oxygen</p>
+<figure class="fig1a" id="eq4.7">
+<img src="../images/page59-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">This value for the atomic oxygen concentration can then be used for substitution in <a href="#eq4.4-4.5">eqn (4.5)</a> to obtain the rate of ozone loss. Performing this substitution leads to the result for the rate of photolysis</p>
+<figure class="fig1a" id="eq4.8">
+<img src="../images/page59-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">Inversion of <a href="#eq4.8">eqn (4.8)</a> yields the result</p>
+<figure class="fig1a" id="eq4.9">
+<img src="../images/page59-4.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-14.7em;" epub:type="sidebar">
+<figure class="fig2" id="fig4.1">
+<img src="../images/page59-5.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2"><b>Fig. 4.1</b> Plot of 1/rate against [O<sub>2</sub>][M]/[O<sub>3</sub>] for photolysis of ozone by red light.</p>
+</figcaption></figure>
+</aside>
+<p class="noindent"><a href="#fig4.1">Figure 4.1</a> shows data for some real experiments plotted in the form of <a href="#eq4.9">eqn (4.9)</a>. The graph is essentially linear, which provides strong, but circumstantial, evidence that the hypothetical mechanism is correct. Information about the rate constants <i>k</i><sub>2</sub> and <i>k</i><sub>3</sub> can also be obtained from the graph. The units used to measure the rate of reaction are arbitrary, and the absolute intensity of light absorbed need not be measured: the ratio of the <a id="page_60" class="page">Page 60, Photochemical kinetics</a> slope to intercept is simply <i>k</i><sub>3</sub>/<i>k</i><sub>2</sub>, because the scaling factors for rate and intensity terms are the same and therefore cancel [<a href="#nt4.4">Note 4.4</a>]. This ratio fits well with independent measurements of the individual values for <i>k</i><sub>2</sub> and <i>k</i><sub>3</sub> (see <a href="#page_61">p. 61</a>).</p>
+<aside class="abc" style="margin-top:-4.0em;" epub:type="sidebar">
+<p class="noindent2"><a id="nt4.4"/><b>4.4</b> From <a href="#eq4.9">eqn (4.9)</a>, it is evident that a graph of 1/rate versus [O<sub>2</sub>][M]/[O<sub>3</sub>] should have an intercept of 1/(2<i>I</i><sub>abs</sub>) and a slope of <i>k</i><sub>3</sub>(2<i>I</i><sub>abs</sub>). It therefore follows that the ratio of slope to intercept is <i>k</i><sub>3</sub>/<i>k</i><sub>2</sub>, the two <i>I</i><sub>abs</sub> terms cancelling each other out (see also <a href="#page_64">p. 64</a>).</p>
+</aside>
+<h3 class="h3" style="margin-top:0.8em;">Validity of the steady-state assumption</h3>
+<p class="noindent">We must now return to the question of the applicability of the SSH to the ozone photolysis system. The problem is to know if the concentration of O calculated using the SSH bears any relation to actual concentrations. Our example has been chosen because it can also be solved analytically. So long as the extent of photolysis is small, <i>I</i><sub>abs</sub>, [O<sub>2</sub>], [O<sub>3</sub>] and [M] can all be taken as nearly independent of time, and <a href="#eq4.6">eqn (4.6)</a> can be integrated to yield</p>
+<figure class="fig1a" id="eq4.10">
+<img src="../images/page60-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">where <i>t</i> is the time for which the system has been illuminated. In a typical experiment, <i>k</i>&#x2032; might turn out to be 400 s<sup>&#x2212;1</sup>. Dividing <a href="#eq4.10">eqn (4.10)</a> by (<a href="#eq4.7">4.7</a>) gives the ratio [O]/[O]<sub>ss</sub> as [1 &#x2212; expi(&#x2212;<i>k&#x2032;t</i>)]; values of this ratio are given for different times in <a href="#nt4.5">Note 4.5</a>. It can be seen that, so long as <i>t</i> is greater than about 0.01s, the true concentration approaches the one calculated by the SSH to within two percent, and the SSH approximation is probably good enough. This conclusion suggests that the steady-state treatment would be perfectly adequate in dealing with an experiment in which ozone was being photolysed slowly over a period of minutes or hours. We should recognize, however, that the treatment would not be satisfactory if the concentrations of reactants were several orders of magnitude smaller than those postulated, or if measurements on a smaller time scale were required. In principle, the applicability of the SSH should be established for any particular kinetic system before it is used. The reason why the SSH can be applied to highly reactive intermediates should now be clear: the more reactive the intermediate, the greater the value of the rate constant for loss (for example <i>k&#x2032;</i> in <a href="#eq4.10">eqn (4.10)</a>), and the shorter the time taken for the steady state to be approached sufficiently closely.</p>
+<aside class="abc" style="margin-top:-19em;" epub:type="sidebar">
+<p class="noindent2"><a id="nt4.5"/><b>4.5</b> Approach to steady state (for <i>k</i>&#x2032; = 400s<sup>&#x2212;1</sup>)</p>
+<table class="tablec1">
+<tr>
+<td style="vertical-align:top; padding-right: 2em;"><i>t</i>/s</td><td style="vertical-align:top;">[O]/[O]<sub>ss</sub></td>
+</tr>
+<tr>
+<td style="vertical-align:top;">10<sup>&#x2212;3</sup></td><td style="vertical-align:top;">0.33</td>
+</tr>
+<tr>
+<td style="vertical-align:top;">10<sup>&#x2212;2</sup></td><td style="vertical-align:top;">0.98</td>
+</tr>
+<tr>
+<td style="vertical-align:top;">1</td><td style="vertical-align:top;">&#x2212;1</td>
+</tr>
+</table>
+</aside>
+<h3 class="h3" style="margin-top:0.8em;">Time-resolved experiments</h3>
+<p class="noindent">One feature of steady-state experiments, which is highlighted by the example of ozone photolysis, is that only <i>ratios</i> of rate constants can be obtained from the kinetic analysis. This result is a consequence of the steady state being established because of competition between production and loss processes. Although much valuable information can be extracted, especially if one of the rate constants involved can be determined absolutely in some other way, the limitation does seriously restrict the applicability of steady-state experiments to kinetic investigations. The alternative approach is to study the reaction system in a <i>time-resolved</i> manner, using <i>non-stationary</i> conditions. For highly reactive intermediates, very little time is taken to reach the steady state; the non-stationary experiments have therefore depended upon the development of <a id="page_61" class="page">Page 61, Photochemical kinetics</a> suitable techniques with very fast time resolution. In photochemistry, one of the most powerful and important of these has been <i>flash photolysis</i> (<a href="Chapter01.xhtml#page_17">p. 17</a>). A short-duration flash of light from a discharge tube or laser is used to initiate the photochemical reaction, and the transient changes in concentration of reactants, products, or, most frequently, the intermediates themselves are monitored as a function of time. Successive developments have brought the time-scale of flash photolysis down from 10<sup>&#x2212;3</sup>s in early experiments (a major advance at the time) to as little as 10<sup>&#x2212;15</sup>s in some specialized current experiments. One important aspect of the flash-photolysis technique is that it has permitted positive identification, by direct spectroscopic methods, of reaction intermediates whose existence had hitherto been hypothetical.</p>
+<p class="indent">To explain how flash-photolysis experiments may be used to determine rate constants, let us revert to the example of ozone photolysis. Consider what would happen if the ozone were exposed to a flash of light rather than to steady illumination. Immediately after the flash, some of the ozone would have been dissociated to form atomic oxygen, but no further O can be formed. The losses of atomic oxygen in reactions (<a href="#eq4.1-4.3">4.2</a>) and (<a href="#eq4.1-4.3">4.3</a>) will continue, and <a href="#eq4.6">eqn (4.6)</a> simplifies, in the absence of light and therefore of the <i>I</i><sub>abs</sub> term, to</p>
+<figure class="fig1a" id="eq4.11">
+<img src="../images/page61-1.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-12.0em;" epub:type="sidebar">
+<figure class="fig2" id="fig4.2">
+<img src="../images/page61-2.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2"><b>Fig. 4.2</b> Plot of ln[O]/[O]<sub>0</sub> as a function of <i>t</i>, showing the decay of atomic oxygen for two initial ozone concentrations.</p>
+</figcaption></figure>
+</aside>
+<p class="noindent">So long as the extent of the secondary reactions is small, [O<sub>3</sub>], [O<sub>2</sub>], and thus <i>k</i>&#x2032; can be assumed to be roughly constant, and the differential equations can be integrated to</p>
+<figure class="fig1a" id="eq4.12">
+<img src="../images/page61-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">where [O]<sub>0</sub> is the concentration of atomic oxygen immediately after the flash. Atomic oxygen concentrations can be measured in flash-photolysis experiments by direct techniques, including absorption and fluorescence methods. <a href="#eq4.12">Equation (4.12)</a> indicates that if the (natural) logarithm of [O]/[O]<sub>0</sub> is plotted as a function of <i>t</i>, a straight line will result. <a href="#fig4.2">Figure 4.2</a> shows the types of decay that might be expected for two different initial ozone concentrations. The slopes of these lines are equal to &#x2212;<i>k</i>&#x2032;, and a further plot of <i>k</i>&#x2032; against [O<sub>3</sub>] (<a href="#fig4.3">Fig. 4.3</a>) produces a straight line of slope <i>k</i><sub>2</sub> and intercept <i>k</i><sub>3</sub>[O<sub>2</sub>][M]. Since [O<sub>2</sub>][M] is known, both <i>k</i><sub>2</sub> and <i>k</i><sub>3</sub> can thus be calculated. The significant feature of <a href="#eq4.12">eqn (4.12)</a>, in the context of this section, is that the two rate constants are separated out in a sum, rather than combined in a ratio as in the steady-state expression (<a href="#eq4.9">4.9</a>).</p>
+<aside class="abc" style="margin-top:-12.0em;" epub:type="sidebar">
+<figure class="fig2" id="fig4.3">
+<img src="../images/page61-4.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2"><b>Fig. 4.3</b> Plot of <i>k</i>&#x2032; as a function of [O<sub>3</sub>].</p>
+</figcaption></figure>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_4.3">
+<h2 class="h2">4.3<span class="space">&#160;</span>Quantum yields and rates</h2>
+<p class="noindent">The concept of the <i>quantum yield</i> of a photochemical process was introduced in <a href="Chapter01.xhtml#sec_1.8">Section 1.8</a>. The <i>primary</i> yield, &#x03D5;, gives an indication of the likelihood of the decay of a species via a particular primary channel, such as dissociation or fluorescence, amongst all the various different channels available (see <a id="page_62" class="page">Page 62, Photochemical kinetics</a> <a href="Chapter01.xhtml#fig1.5">Fig. 1.5</a>). Since each photon absorbed excites one molecule (the Stark&#x2013;Einstein Law, <a href="Chapter01.xhtml#page_10">p. 10</a>), &#x03D5; is the number of molecules undergoing the process of interest divided by the numbers of photons absorbed [<a href="#nt4.6">Note 4.6</a>]. Quantum yields may also be expressed in terms of <i>rates</i> of reaction rather than in terms of absolute numbers. An <i>intensity</i> of radiation, <i>I</i>, refers to an energy per unit time, and it is frequently convenient to express the <i>absorbed intensity</i>, <i>I</i><sub>abs</sub>, as the energy absorbed in unit time by unit volume: it is then in the same form as a rate expressed in concentration units, with energies (numbers of photons) replacing concentrations (numbers of molecules). We can therefore express &#x03D5; in two ways</p>
+<aside class="abc" style="margin-top:-10.3em;" epub:type="sidebar">
+<p class="noindent2"><a id="nt4.6"/><b>4.6</b> Of course, any one excited molecule has to decay in one particular manner. However, ordinary sized samples contain huge numbers of molecules, and &#x03D5; represents the fraction of these decaying by the chosen route.</p>
+</aside>
+<p class="noindent" style="text-align:center;margin-bottom:0.8em;margin-top:0.8em" id="eq4.13"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>&#x03D5;</mn><mtext>&#160;=</mtext><mfrac>
+  <mrow>
+   <mtext>number</mtext><mtext>&#x2009;</mtext><mtext>of</mtext><mtext>&#x2009;</mtext><mtext>chemical</mtext><mtext>&#x2009;</mtext><mtext>events</mtext>
+  </mrow>
+  <mrow>
+   <mtext>number&#x00A0;of&#x00A0;photons&#x00A0;absorbed</mtext>
+  </mrow>
+ </mfrac>
+ 
+</math></p>
+<p class="noindent" style="margin-bottom:0.8em;text-align:right;margin-top:-2.1em;">(4.13)</p>
+
+
+<p class="noindent" style="text-align:center;margin-bottom:0.8em;margin-top:0.8em"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>&#x03D5;</mn><mtext>&#160;=</mtext><mfrac>
+  <mrow>
+   <mtext>number&#x00A0;of&#x00A0;chemical&#x00A0;events/unit&#x00A0;time</mtext>
+  </mrow>
+  <mrow>
+   <mtext>number&#x00A0;of&#x00A0;photons&#x00A0;absorbed/unit&#x00A0;time</mtext>
+  </mrow>
+ </mfrac>
+ 
+</math>
+
+</p>
+
+<p class="noindent" style="text-align:center;margin-bottom:0.8em;margin-top:0.8em" id="eq4.14"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mo>&#160;=</mo><mfrac>
+  <mrow>
+   <mtext>rate&#x00A0;of&#x00A0;chemical&#x00A0;process</mtext>
+  </mrow>
+  <mrow>
+   <mtext>intensity&#x00A0;of&#x00A0;light&#x00A0;absorbed</mtext>
+  </mrow>
+ </mfrac>
+ <mo>=</mo><mfrac>
+  <mrow>
+   <mtext>d</mtext><mrow><mo>[</mo> <mtext>X</mtext> <mo>]</mo></mrow><mtext>/dt</mtext>
+  </mrow>
+  <mrow>
+   <msub>
+    <mi>I</mi>
+    <mrow>
+     <mtext>abs</mtext>
+    </mrow>
+   </msub>
+   
+  </mrow>
+ </mfrac>
+ 
+</math>
+</p>
+<p class="noindent" style="margin-bottom:1.8em;text-align:right;margin-top:-2.8em;">(4.14)</p>
+<p class="noindent">where d[X]/d<i>t</i> is the rate of the particular channel under discussion.</p>
+<p class="indent">The second part of the expression in <a href="#eq4.14">eqn (4.14)</a> is the most convenient way of handling quantum yields in kinetic expressions, because the rate of the process, d[X]/d<i>t</i>, is simply equal to &#x03D5;<i>I</i><sub>abs</sub>. This is the form of equation that we have already used for the rate of the primary process earlier in this chapter (see <a href="#sec_4.2">Section 4.2</a>, with &#x03D5; = 1 for <a href="#eq4.1-4.3">reaction (4.1)</a>). Note that, if the particular channel is not specified, the rate of reaction involved is <i>the rate of disappearance of reactant</i>.</p>
+<p class="indent">The treatment just presented also provides a justification for the way that rates have been used to calculate quantum yields, as for example in connection with fluorescence on <a href="Chapter03.xhtml#page_42">p. 42</a>. The procedure has been to take the ratio of the rate of the process of interest (eg, fluorescence) to the sum of the rates of all processes occurring (eg, fluorescence, quenching, and ISC). Since the sum, &#x03D5;<sub>total</sub>, of the quantum yields for the individual processes &#x03D5;<sub>i</sub>, is unity (see <a href="Chapter03.xhtml#eq3.1">eqn (3.1)</a>), examination of the equation</p>
+
+<p class="noindent" style="text-align:center;margin-bottom:0.8em;margin-top:0.8em" id="eq4.15"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msub>
+      <mn>&#x03D5;</mn>
+      <mn>i</mn>
+     </msub>
+     <mo>=</mo><mfrac>
+      <mrow>
+       <mtext>d</mtext><mrow><mo>[</mo> <mrow>
+        <msub>
+         <mtext>X</mtext>
+         <mtext>i</mtext>
+        </msub>
+        
+       </mrow> <mo>]</mo></mrow><mtext>/dt</mtext>
+      </mrow>
+      <mrow>
+       <msub>
+        <mi>I</mi>
+        <mrow>
+         <mtext>abs</mtext>
+        </mrow>
+       </msub>
+       
+      </mrow>
+     </mfrac>
+     <mo>;</mo>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <msub>
+      <mn>&#x03D5;</mn>
+      <mrow>
+       <mn>t</mn><mn>o</mn><mn>t</mn><mn>a</mn><mn>l</mn>
+      </mrow>
+     </msub>
+     <mo>=</mo><mn>1</mn><mo>=</mo><mstyle displaystyle='true'>
+      <mo>&#x2211;</mo> <mrow>
+       <mfrac>
+        <mrow>
+         <mtext>d</mtext><mrow><mo>[</mo> <mrow>
+          <msub>
+           <mtext>X</mtext>
+           <mtext>i</mtext>
+          </msub>
+          
+         </mrow> <mo>]</mo></mrow><mtext>/dt</mtext>
+        </mrow>
+        <mrow>
+         <msub>
+          <mi>I</mi>
+          <mrow>
+           <mtext>abs</mtext>
+          </mrow>
+         </msub>
+         
+        </mrow>
+       </mfrac>
+       
+      </mrow>
+     </mstyle>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p class="noindent" style="margin-bottom:0.8em;text-align:right;margin-top:-2.8em;">(4.15)</p>
+
+<p class="noindent">makes it evident that</p>
+
+<p class="noindent" style="text-align:center;margin-bottom:0.8em;margin-top:0.8em" id="eq4.16"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <msub>
+  <mn>&#x03D5;</mn>
+  <mn>i</mn>
+ </msub>
+ <mo>=</mo><mfrac>
+  <mrow>
+   <mtext>d</mtext><mrow><mo>[</mo> <mrow>
+    <msub>
+     <mtext>X</mtext>
+     <mtext>i</mtext>
+    </msub>
+    
+   </mrow> <mo>]</mo></mrow><mtext>/dt</mtext>
+  </mrow>
+  <mrow>
+   <mstyle displaystyle='true'>
+    <mo>&#x2211;</mo> <mrow>
+     <mtext>d</mtext><mrow><mo>[</mo> <mrow>
+      <msub>
+       <mtext>X</mtext>
+       <mtext>i</mtext>
+      </msub>
+      
+     </mrow> <mo>]</mo></mrow><mtext>/dt</mtext>
+    </mrow>
+   </mstyle>
+  </mrow>
+ </mfrac>
+ 
+</math>
+</p>
+<p class="noindent" style="margin-bottom:1.5em;text-align:right;margin-top:-3em;">(4.16)</p>
+<p class="indent">The occurrence of secondary reactions can make the <i>overall quantum yield</i>, &#x03A6;, for a photochemical reaction exceed the primary quantum yield by a factor that depends on the number of reaction steps that follow the initiating, primary one [<a href="Chapter01.xhtml#nt1.20">Note 1.20</a>]. Thus, if &#x03D5; is unity, &#x03A6; can be greater than unity, and can be<a id="page_63" class="page">Page 63, Photochemical kinetics</a> much bigger if a chain reaction follows the primary step. A quantity often discussed in connection with thermal chain reactions is the <i>kinetic chain length</i>, v. This quantity is the number of hypothetical &#x2018;links&#x2019; in the chain (i.e. the number of times the reactions occur), and is thus the total number of reactant molecules consumed for each chain started, or, in rate terms [<a href="#nt4.7">Note 4.7</a>],</p>
+<aside class="abc" style="margin-top:-2.5em;" epub:type="sidebar">
+<p class="noindent2"><a id="nt4.7"/><b>4.7</b> <a href="#eq4.17">Equation (4.17)</a> is stated in the same form as <a href="#eq4.14">eqn (4.14)</a>. The number of molecules consumed per unit time is the rate of reactant consumption and the number of chains started per unit time is the rate of initiation.</p>
+</aside>
+
+<p class="noindent" style="text-align:center;margin-bottom:0.8em;margin-top:0.8em" id="eq4.17">
+<math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mtext>v&#160;=</mtext><mfrac>
+  <mrow>
+   <mtext>rate&#x00A0;of&#x00A0;reactant&#x00A0;consumption</mtext>
+  </mrow>
+  <mrow>
+   <mtext>rate&#x00A0;of&#x00A0;initiation</mtext>
+  </mrow>
+ </mfrac>
+ 
+</math>
+</p>
+<p class="noindent" style="margin-bottom:0.8em;text-align:right;margin-top:-2.3em;">(4.17)</p>
+<p class="noindent">Since, in a photochemical reaction, the rate of formation of intermediates, and thus the rate of initiation of the secondary reactions, is &#x03D5;<i>I</i><sub>abs</sub>, and the overall rate of reaction is &#x03A6;<i>I</i><sub>abs</sub>, it is evident that &#x03BD; = &#x03A6;/&#x03D5;.</p>
+<p class="indent">An example will illustrate how kinetic expressions for rates and quantum yields are related very simply to each other. Consider the example of ozone photolysis by red radiation with which we started our discussion of steady-state kinetics. <a href="#eq4.8">Equation (4.8)</a> gives the rate of reaction derived using the stationary state hypothesis. The overall quantum yield, &#x03A6;, for this process is just &#x2212;d[O<sub>3</sub>]/d<i>t</i> divided by <i>I</i><sub>abs</sub>, and is thus given by</p>
+<figure class="fig1a" id="eq4.18">
+<img src="../images/page63-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">It is worth noting that this equation predicts a value of &#x03A6; approaching two when [O<sub>3</sub>] is large, and this is the value found by experiment.</p>
+</section>
+<section epub:type="chapter" id="sec_4.4">
+<h2 class="h2">4.4<span class="space">&#160;</span>Kinetics and quantum yields of emission processes</h2>
+<h3 class="h3" style="margin-top:0.8em;">Steady-state quenching: the Stern&#x2013;Volmer relation</h3>
+<p class="noindent">In <a href="Chapter03.xhtml">Chapter 3</a> (<a href="Chapter03.xhtml#page_42">p. 42</a>; see also <a href="Chapter03.xhtml#fig3.2">Fig. 3.2</a>), we introduced the Stern&#x03D5;Volmer relation that describes the decrease in intensity of fluorescence brought about by addition of a quencher. The subject was presented in terms of the competing reactions, using the approach embodied in <a href="#eq4.16">eqn (4.16)</a> that we have just derived. It is instructive and useful to re-examine the simple quenching process explicitly in terms of intensities and rates of reactions. The photochemical scheme, in its simplest form, consists of the reactions</p>
+<aside class="abc" style="margin-top:-2.0em;" epub:type="sidebar">
+<p class="noindent2"><a id="nt4.8"/><b>4.8</b> The rates for the reactions given in the text are</p>
+<table class="tablec1">
+<tr>
+<td style="vertical-align:top; padding-right: 1em;">(4.19)</td><td style="vertical-align:top;"><i>I</i><sub>abs</sub></td>
+</tr>
+<tr>
+<td style="vertical-align:top;">(4.20)</td><td style="vertical-align:top;"><i>A</i>[A*]</td>
+</tr>
+<tr>
+<td style="vertical-align:top;">(4.21)</td><td style="vertical-align:top;"><i>k</i><sub>q</sub>[A*][M]</td>
+</tr>
+</table>
+</aside>
+<figure class="fig1a" id="eq4.19-4.21">
+<img src="../images/page63-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">which are, respectively, excitation by absorption, fluorescent emission, and quenching. With the definitions of the rate constants given in <a href="#nt4.8">Note 4.8</a> (see also <a href="Chapter03.xhtml#page_42">p. 42</a>), we may write the rate equation for A* as</p>
+<a id="page_64" class="page">Page 64, Photochemical kinetics</a>
+<p class="fig1a" id="eq4.22"><math xmlns='http://www.w3.org/1998/Math/MathML'><semantics><mrow><mfrac><mrow><mtext>d</mtext><mrow><mo>[</mo><mrow><msup><mtext>A</mtext><mo>&#x2217;</mo></msup></mrow><mo>]</mo></mrow></mrow><mrow><mtext>d</mtext><mi>t</mi></mrow></mfrac><mo>=</mo><msub><mi>I</mi><mrow><mtext>abs</mtext></mrow></msub><mo>&#x2212;</mo><mi>A</mi><mrow><mo>[</mo><mrow><msup><mtext>A</mtext><mo>&#x2217;</mo></msup></mrow><mo>]</mo></mrow><mo>&#x2212;</mo><msub><mi>k</mi><mtext>q</mtext></msub><mrow><mo>[</mo><mrow><msup><mtext>A</mtext><mo>&#x2217;</mo></msup></mrow><mo>]</mo></mrow><mrow><mo>[</mo><mtext>M</mtext><mo>]</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mn>4.22</mn></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<p class="noindent">This equation is the exact equivalent of <a href="#eq4.4-4.5">eqn (4.4)</a>. In the steady state, this equation may be set equal to zero, so that</p>
+<p class="fig1a" id="eq4.23"><math xmlns='http://www.w3.org/1998/Math/MathML'><semantics><mrow><mrow><mo>[</mo><mrow><msup><mtext>A</mtext><mo>&#x2217;</mo></msup></mrow><mo>]</mo></mrow><mo>=</mo><msub><mi>I</mi><mrow><mtext>abs</mtext></mrow></msub><mo>/</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>+</mo><msub><mi>k</mi><mtext>q</mtext></msub><mrow><mo>[</mo><mtext>M</mtext><mo>]</mo></mrow></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mn>4.23</mn></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<p class="noindent">The fluorescence emission intensity, <i>I</i><sub>f</sub>, is the rate of process (4.20)</p>
+<p class="fig1a" id="eq4.24"><math xmlns='http://www.w3.org/1998/Math/MathML'><semantics><mrow><msub><mi>I</mi><mtext>f</mtext></msub><mo>=</mo><mi>A</mi><mo stretchy='false'>[</mo><msup><mtext>A</mtext><mo>&#x2217;</mo></msup><mo stretchy='false'>]</mo><mo>=</mo><msub><mi>I</mi><mrow><mtext>abs</mtext></mrow></msub><mi>A</mi><mo>/</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>+</mo><msub><mi>k</mi><mtext>q</mtext></msub><mrow><mo>[</mo><mtext>M</mtext><mo>]</mo></mrow></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mn>4.24</mn></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<p class="noindent">On inversion, this equation becomes</p>
+<p class="fig1a" id="eq4.25"><math xmlns='http://www.w3.org/1998/Math/MathML'><semantics><mrow><mfrac><mn>1</mn><mrow><msub><mi>I</mi><mtext>f</mtext></msub></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>I</mi><mrow><mtext>abs</mtext></mrow></msub></mrow></mfrac><mrow><mo>[</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><msub><mi>k</mi><mi>q</mi></msub><mrow><mo>[</mo><mtext>M</mtext><mo>]</mo></mrow></mrow><mi>A</mi></mfrac></mrow><mo>]</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mn>4.25</mn></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<aside class="abc" style="margin-top:-10.0em;" epub:type="sidebar">
+<figure class="fig2" id="fig4.4">
+<img src="../images/page64-1.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2"><b>Fig. 4.4</b> Stern&#x2013;Volmer plot for the quenching of fluorescence.</p>
+</figcaption></figure>
+</aside>
+<p class="noindent">Because <i>I</i><sub>f</sub>/<i>I</i><sub>abs</sub> = &#x03D5;<sub>f</sub> by definition, so that <i>I</i><sub>abs</sub>/<i>I</i><sub>f</sub> is equal to 1/&#x03D5;<sub>f</sub>, this equation is exactly the same as <a href="Chapter03.xhtml#eq3.5">eqn (3.5)</a> although it has been derived in a slightly different way. <a href="#fig4.4">Figure 4.4</a> shows the same data as were given in <a href="Chapter03.xhtml#fig3.2">Fig. 3.2</a>, but now plotted out in intensity form. The intercept is 1/<i>I</i><sub>abs</sub> and the slope is (1/<i>I</i><sub>abs</sub>) &#x00D7; (<i>k</i><sub><i>q</i></sub>/<i>A</i>) so that the ratio of slope to intercept is the ratio <i>k<sub>q</sub></i>/<i>A</i> discussed in connection with <a href="Chapter03.xhtml#eq3.5">eqn (3.5)</a>. Measurement of <i>absolute</i> intensities is difficult (see <a href="Chapter01.xhtml#page_14">pages 14</a>&#x2013;<a href="Chapter01.xhtml#page_15">15</a>), and it is usual to measure both <i>I</i><sub>abs</sub> and <i>I</i><sub>f</sub> in arbitrary units. Because the slope is divided by the intercept in the present calculation, the scaling factor for the units cancels out. The ratio is thus independent of whatever the true calibration factor may be.</p>
+<h3 class="h3" style="margin-top:1em;">Lifetimes in emission studies</h3>
+<p class="noindent">As explained on <a href="Chapter04.xhtml#page_60">pages 60</a>&#x2013;<a href="Chapter04.xhtml#page_61">61</a>, time-resolved photochemical experiments can potentially yield much more detailed information than steady-state ones. The advantages of time-resolved measurements are particularly evident in the measurement of emission lifetimes of fluorescence and phosphorescence.</p>
+<p class="indent">In order to explain the meaning of the expression <i>lifetime</i> in kinetic terms, it is useful first to describe the kind of experiment that is behind all the studies envisaged here. A sample of luminescent material is irradiated with a brief flash of light, as in flash photolysis. The flash might typically last 10<sup>&#x2212;10</sup>s in a present-day experiment, while the decay of emission might be measurable over 10<sup>&#x2212;7</sup>s or more. For the present purposes, therefore, it is perfectly reasonable to consider that there is no exciting radiation present at all after the flash, during which time the intensity measurements are made. For a species A excited to A* in a pulsed form of reaction (<a href="#eq4.19-4.21">4.19</a>) and decaying in reactions (<a href="#eq4.19-4.21">4.20</a>) and (<a href="#eq4.19-4.21">4.21</a>), the differential kinetic equation is closely similar to <a href="#eq4.11">eqn (4.11)</a>, and is</p>
+<p class="fig1a" id="eq4.26"><math xmlns='http://www.w3.org/1998/Math/MathML'><semantics><mrow><mfrac><mrow><mtext>d</mtext><mrow><mo>[</mo><mrow><msup><mtext>A</mtext><mo>&#x2217;</mo></msup></mrow><mo>]</mo></mrow></mrow><mrow><mtext>d</mtext><mi>t</mi></mrow></mfrac><mo>=</mo><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><mi>A</mi><mrow><mo>[</mo><mrow><msup><mtext>A</mtext><mo>&#x2217;</mo></msup></mrow><mo>]</mo></mrow><mo>+</mo><msub><mi>k</mi><mtext>q</mtext></msub><mrow><mo>[</mo><mrow><msup><mtext>A</mtext><mo>&#x2217;</mo></msup></mrow><mo>]</mo></mrow><mrow><mo>[</mo><mtext>M</mtext><mo>]</mo></mrow></mrow><mo>)</mo></mrow><mo>=</mo><mo>&#x2212;</mo><msup><mi>k</mi><mo>&#x2032;</mo></msup><mrow><mo>[</mo><mrow><msup><mtext>A</mtext><mo>&#x2217;</mo></msup></mrow><mo>]</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mn>4.26</mn></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<p class="indent"><a id="page_65" class="page">Page 65, Photochemical kinetics</a>As in all the previous examples, the losses of A* are effectively all first order (processes such as reaction (<a href="#eq4.19-4.21">4.21</a>) are pseudo-first order, because [M] does not vary with time), so that it is possible to simplify the equations by writing a combined first-order rate constant, <i>k</i>&#x2032;. The integrated form of <a href="#eq4.26">eqn (4.26)</a> is the same in form as <a href="#eq4.12">eqn (4.12)</a>, and, since <i>I</i><sub>f</sub> = <i>A</i>[A*], it follows that</p>
+<p class="fig1a" id="eq4.27" style="margin-left:3em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><semantics><mtable columnalign='left'><mtr><mtd><msub><mi>I</mi><mtext>f</mtext></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>I</mi><mtext>f</mtext></msub><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mtext>exp</mtext><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><msup><mi>k</mi><mo>&#x2032;</mo></msup><mi>t</mi></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>=</mo><msub><mi>I</mi><mtext>f</mtext></msub><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mtext>exp</mtext><mrow><mo>{</mo><mrow><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>+</mo><msub><mi>k</mi><mtext>q</mtext></msub><mrow><mo>[</mo><mtext>M</mtext><mo>]</mo></mrow></mrow><mo>)</mo></mrow><mi>t</mi></mrow><mo>}</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mn>4.27</mn></mrow><mo>)</mo></mrow></mtd></mtr></mtable></semantics></math></p>
+<p class="noindent">where <i>I</i><sub>f</sub>(0) and <i>I</i><sub>f</sub>(<i>t</i>) are the emission intensities at zero time and at the measurement time, <i>t</i>, respectively. The exponential decay curve implied by this equation is represented in <a href="#fig4.5">Fig. 4.5</a>. The markings in the figure show both the ordinary half-life, which is the time taken for <i>I</i><sub>f</sub> to decay to half of its initial intensity, and the rather simpler lifetime, &#x03C4;, which is the time taken for <i>I</i><sub>f</sub> to decay to 1/e of its initial value; the simplicity is mathematical, since &#x03C4; is equal to 1/A [<a href="Chapter01.xhtml#nt1.9">Note 1.9</a>].</p>
+<aside class="abc" style="margin-top:-18.0em;" epub:type="sidebar">
+<figure class="fig2" id="fig4.5">
+<img src="../images/page65-1.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2"><b>Fig. 4.5</b> Plot of <i>I</i><sub>f</sub> as a function of <i>t</i> showing &#x03C4; and &#x03c4;<sub>&#x00BD;</sub> for the exponential decay implied by <a href="#eq4.27">eqn (4.27)</a>.</p>
+</figcaption></figure>
+</aside>
+<p class="indent">It is usual to plot the decay of intensity with a logarithmic scale for the ordinate (y-axis), as illustrated in <a href="#fig4.6">Fig. 4.6</a>; the slopes are just &#x2212;<i>k</i>&#x2032; = &#x2212;(<i>A</i> + <i>k</i><sub>q</sub>[M]). Results are shown for three different concentrations of quencher [M], and illustrate clearly the dependence of <i>k</i>&#x2032; on [M]. The final step in extracting the individual rate constants is to plot the values of <i>k</i>&#x2032; from these slopes against [M] in a further graph, shown here as <a href="#fig4.7">Fig. 4.7</a>. The slope of this graph is <i>k</i><sub>q</sub> and the intercept is <i>A</i>.</p>
+<aside class="abc" style="margin-top:-6.0em;" epub:type="sidebar">
+<figure class="fig2" id="fig4.6">
+<img src="../images/page65-2.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2"><b>Fig. 4.6</b> Plot of ln<i>I</i><sub>f</sub> as a function of <i>t</i>.</p>
+</figcaption></figure>
+</aside>
+<h3 class="h3" style="margin-top:0.8em;">Lifetimes in more complex cases: radiationless processes</h3>
+<p class="noindent">The discussion of <a href="Chapter03.xhtml">Chapter 3</a> will have shown how intramolecular radiationless energy transfer processes can add to the emission and quenching losses in real cases of fluorescence and phosphorescence. For example, another ISC step, S<sub>1</sub> &#x21DD; T<sub>1</sub></p>
+<figure class="fig1a" id="eq4.28">
+<img src="../images/page65-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">can add to the three simplest reactions (<a href="#eq4.19-4.21">4.19</a>) to (<a href="#eq4.19-4.21">4.21</a>). One consequence of ISC is that the effective lifetime is shorter than the &#x2018;natural&#x2019; radiative lifetime (1/<i>A</i>), even though no collisions are occurring. The way in which the rate constant for the process, say <i>k</i><sub>ISC</sub> is obtained provides an interesting example of how both steady-state and time-resolved studies may be combined. In order to make the example that follows reasonably simple, it will be assumed that bimolecular quenching, reaction (<a href="#eq4.19-4.21">4.21</a>), can be neglected. If it cannot, then the procedures described in the previous section, and the extrapolation to zero [M] embodied in <a href="#fig4.7">Fig. 4.7</a>, can be used to remove the effects of quenching. <a href="#eq4.26">Equation (4.26)</a> now becomes</p>
+<p class="fig1a" id="eq4.29"><math xmlns='http://www.w3.org/1998/Math/MathML'><semantics><mrow><mfrac><mrow><mtext>d</mtext><mrow><mo>[</mo><mrow><msup><mtext>A</mtext><mo>&#x2217;</mo></msup></mrow><mo>]</mo></mrow></mrow><mrow><mtext>d</mtext><mi>t</mi></mrow></mfrac><mo>=</mo><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><mi>A</mi><mrow><mo>[</mo><mrow><msup><mtext>A</mtext><mo>&#x2217;</mo></msup></mrow><mo>]</mo></mrow><mo>+</mo><msub><mi>k</mi><mrow><mtext>ISC</mtext></mrow></msub><mrow><mo>[</mo><mrow><msup><mtext>A</mtext><mo>&#x2217;</mo></msup></mrow><mo>]</mo></mrow></mrow><mo>)</mo></mrow><mo>=</mo><mo>&#x2212;</mo><msup><mi>k</mi><mo>&#x2032;</mo></msup><mrow><mo>[</mo><mrow><msup><mtext>A</mtext><mo>&#x2217;</mo></msup></mrow><mo>]</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mn>4.29</mn></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<aside class="abc" style="margin-top:-14.7em;" epub:type="sidebar">
+<figure class="fig2" id="fig4.7">
+<img src="../images/page65-4.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2"><b>Fig. 4.7</b> Plot of <i>k</i>&#x2032; as a function of [M].</p>
+</figcaption></figure>
+</aside>
+<p class="noindent">This equation is the same as <a href="#eq4.26">eqn (4.26)</a>, but with <i>k</i><sub>q</sub>[M] replaced by <i>k</i><sub>ISC</sub>.<a id="page_66" class="page">Page 66, Photochemical kinetics</a> The problem is that the two terms making up <i>k</i>&#x2032; are just additive (<i>A</i> + <i>k</i><sub>ISC</sub>). Time-resolved experiments will provide this sum, but cannot, as they stand, resolve the sum into its two components. One solution is to make steady-state intensity measurements as well. The analogue of <a href="#eq4.25">eqn (4.25)</a> for this situation is</p>
+<p class="fig1a" id="eq4.30"><math xmlns='http://www.w3.org/1998/Math/MathML'><semantics><mrow><mfrac><mn>1</mn><mrow><msub><mi>I</mi><mtext>f</mtext></msub></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>I</mi><mrow><mtext>abs</mtext></mrow></msub></mrow></mfrac><mrow><mo>[</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><msub><mi>k</mi><mrow><mtext>ISC</mtext></mrow></msub></mrow><mi>A</mi></mfrac></mrow><mo>]</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mn>4.30</mn></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<p class="noindent">so that measurement of both <i>I</i><sub>abs</sub> and <i>I</i><sub>f</sub> will allow the value of <i>k</i><sub>ISC</sub>/<i>A</i> to be obtained. The sum of <i>A</i> and <i>k</i><sub>ISC</sub> is known from the time-resolved experiments, and the ratio from the steady-state ones. It is now a simple matter to calculate the individual values [<a href="#nt4.9">Note 4.9</a>].</p>
+<aside class="abc" style="margin-top:-4.0em;" epub:type="sidebar">
+<p class="noindent2"><a id="nt4.9"/><b>4.9</b> The individual values come from the sum and the ratio by simple manipulation</p>
+<table style="width:100%;margin-top:0.5em;">
+<tr><td>If</td><td><i>a</i></td><td>=</td><td><i>A</i> + <i>k</i><sub>ISC</sub></td></tr>
+<tr><td>and</td><td><i>b</i></td><td>=</td><td><i>k</i><sub>ISC</sub>/<i>A</i></td></tr>
+<tr><td></td><td><i>k</i><sub>ISC</sub></td><td>=</td><td><i>A.b</i></td></tr>
+<tr><td>&#8756;</td><td><i>a</i></td><td>=</td><td><i>A + A.b</i></td></tr>
+<tr><td></td><td></td><td>=</td><td><i>A(1+b)</i></td></tr>
+<tr><td>&#8756;</td><td><i>A</i></td><td>=</td><td><i>a/(1+b)</i></td></tr>
+<tr><td>and</td><td><i>k</i><sub>ISC</sub></td><td>=</td><td><i>a.b/(1+b)</i></td></tr>
+</table>
+</aside>
+<h3 class="h3" style="margin-top:1em;">Absolute emission intensities</h3>
+<p class="noindent">The steady-state calculations just described require determination of both <i>I</i><sub>abs</sub> and <i>I</i><sub>f</sub>, the measurements corresponding to a determination of the absolute quantum yield for fluorescence. Strictly speaking, it is not necessary to measure the intensities on an absolute scale, because only their ratio is used (see <a href="#page_60">pages 60</a> and <a href="#page_64">64</a>). They must, however, be measured on the same relative scale, so that a link has to be made between the absorbed intensity, which is likely to be high, and the emitted intensity, which can be weak. Absolute intensity measurements were described in <a href="Chapter01.xhtml#sec_1.10">Section 1.10</a>. The same principles apply to the determination of emission intensities, with a requirement ultimately to measure absolute energies and convert them to intensities through Planck&#x2019;s Law. The problem lies in the low energies often encountered. There are a number of emission systems (fluorescent and chemiluminescent) for which the absolute yields have been measured and which can be used in the same manner as chemical actinometers, possibly in order to calibrate photomultipliers or other detectors of radiation. These studies are demanding, and it is fortunate that many of the important measurements on emission systems do not, in fact, require absolute measurements to be used.</p>
+</section>
+</section>
+</div>
+</body>
+</html>

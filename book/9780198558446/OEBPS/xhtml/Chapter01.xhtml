@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Oscillations, waves, and chaos in chemical kinetics</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<div>
+<a id="page_1" class="page" style="width:70%;">Page 1, Introduction to basic concepts</a>
+<section epub:type="chapter" id="ch01">
+<h1 class="main">1 <span class="space">&#160;</span>Introduction to basic concepts</h1>
+<p class="noindent">&#160;</p>
+<aside class="abc" style="margin-top:4em;" epub:type="sidebar">
+<p class="noindent4" style="margin-left:0em;">A.M. Zhabotinsky (1991). A history of chemical oscillations and waves. <i>Chaos</i>, <b>1</b>, 379&#x2013;86.</p></aside>
+<p class="noindent">The phenomena of this book, such as oscillations, ignitions, and chemical patterns, have become of great interest across the world chemistry community in recent years. There is, however, a long history that has unfolded in this area paving the way for the explosion of activity of the last two decades. <a href="#tab1.1">Table 1.1</a> indicates something of a personal choice of &#x2018;significant events&#x2019; and begins with observations accredited to Robert Boyle in the seventeenth century. Boyle noted a periodic &#x2018;flaring-up&#x2019; of phosphorus in a loosely stoppered flask arising from the interaction of chemical kinetics and diffusion. The reaction between phosphorus and oxygen is a branched chain process that leads to an ignition. The ignition consumes the oxygen available in the flask and so the reaction ceases. As more oxygen diffuses into the flask, the reaction does not immediately recommence. Instead, the oxygen concentration must reach a &#x2018;critical&#x2019; value before the chain branching leads to another ignition process. Other isolated observations were reported up to the beginning of the present century in a range of chemical and physical systems. The Landolt clock reaction (1886) has become a staple example of interesting kinetics and will be one of the systems discussed in this book.</p>
+<aside class="abc" style="margin-top:4em;" epub:type="sidebar">
+<p class="noindent4" style="margin-left:0em;">This story is told by A.T. Winfree (1984). The prehistory of the Belousov&#x2013;Zhabotinsky reaction. <i>J. Chem. Educ</i>, <b>61</b>, 661&#x2013;3.</p></aside>
+<p class="indent">A &#x2018;Dark Ages&#x2019; period between approximately 1900 and 1960 saw theoretical chemists hold in disdain any claims that chemical reactions could oscillate. There was a firm conviction that the second law of thermodynamics would just not allow that sort of abnormality&#x2014;at least in homogeneous systems. Perhaps the greatest victim of that completely incorrect prejudice was Boris Belousov, whose attempts at publication of the observations of oscillations in the reaction that now bears his name jointly with Anatol Zhabotinsky were totally frustrated by those who &#x2018;knew better&#x2019;. The new dawn of the modern period arose with the joint emergence of irrefutable experimental evidence of Belousov&#x2019;s oscillations by Zhabotinsky and the breaking of the theoretical chains by Ilya Progogine and his group in Brussels. (It might also be noted that chemical engineers and combustion scientists who did not know that chemists &#x2018;knew&#x2019; that oscillations were impossible had been happily making considerable progress in this area since 1945.)</p>
+<p class="indent">In the last two decades, a great deal of mastery has been achieved that allows oscillatory reactions almost to be designed at will. This book introduces many of the phenomena and their simplest chemical interpretation. The subject area is that of &#x2018;applied chemical kinetics&#x2019;, in some cases coupled to fluid flow or molecular diffusion. The remainder of this chapter revises some standard chemical kinetics and introduces the more specialist concepts of <i>nonlinearity</i> and <i>feedback.</i> Specific examples of these are <a id="page_2" class="page">Page 2, Introduction to basic concepts</a></p>
+
+<p class="noindent2" style="margin-top:1em;"><a id="tab1.1"></a><b>Table 1.1</b> Some important dates in nonlinear chemical kinetics</p>
+<table class="width100b" style="width:70%;margin-bottom:1em;margin-top:1em;">
+<tr>
+<td style="verticle-align:top; border-top:1pt solid black; border-bottom:1pt solid black;"><p class="tabled">Period</p></td>
+<td style="verticle-align:top; padding-left:1em; border-top:1pt solid black; border-bottom:1pt solid black;"><p class="tabled">Experiment</p></td>
+<td style="verticle-align:top; padding-left:1em; border-top:1pt solid black; border-bottom:1pt solid black;"><p class="tabled">Theory</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled-1">late 1600s</p></td>
+<td style="verticle-align:top; padding-left:1em;" colspan="2"><p class="tabled-1">Boyle: oscillatory P ignition</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled-1">early 1800s</p></td>
+<td style="verticle-align:top; padding-left:1em;" colspan="2"><p class="tabled-1">Fechner: oscillatory dissolution</p>
+<p class="tabled-1">Davy: cool flames</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled-1">1830s</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Munck: oscillatory P ignition</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1"></p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled-1">1886&#x2013;1905</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Landolt, Dushman, Roebuck: iodate clock</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1"></p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;" rowspan="3"><p class="tabled-1">1910s</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Morgan: gas evolution oscillators</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Luther: waves</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Heathcote: iron nerve</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Liljenroth: nonisothermal CSTR</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Bredig: beating Hg heart</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Lotka: biological model for oscillations</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled-1">1920&#x2013;30s</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Bray: iodate-H<sub>2</sub>O<sub>2</sub> oscillations</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Fisher; Kolmogorov: waves</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled-1">1940s</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Newitt and Thornes: cool flames in propane oxidation</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Zel&#x2019;dovich: isolas and mushrooms</p>
+<p class="tabled-1">Denbigh: autocatalytic reactions</p>
+<p class="tabled-1">Sal&#x2019;nikov: model for thermokinetic oscillations</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled-1">early 1950s</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Ashmore and Norrish: CO oscillations (batch)</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Turing: pattern formation</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled-1">late 1950s</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Belousov: BZ reaction (batch) oscillations</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Aris and Amundson: stability analysis</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;" rowspan="2"><p class="tabled-1">early 1960s</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Zhabotinsky: BZ (batch and waves)</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Prigogine and Nicolis: Brusselator model</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Ghosh and Chance: glycolytic oscillations</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Lorenz: chaos</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled-1">late 1960s</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Linnett <i>et al</i>.: CO oscillations (batch)</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Gray and Yang: local stability analysis for hydrocarbons</p>
+<p class="tabled-1">Selkov model for glycolytic oscillations</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled-1">1972&#x2013;4</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Field K&#x00F6;r&#x00F6;s, Noyes: BZ mechanism</p>
+<p class="tabled-1">Winfree: BZ spiral waves</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Oregonator model</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled-1">1973</p></td>
+<td style="verticle-align:top; padding-left:1em;" colspan="2"><p class="tabled-1">Briggs-Rauscher oscillating reaction</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;" rowspan="4"><p class="tabled-1">late 1970s</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Epstein, De Kepper, Orban, Kustin: design of oscillators</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Boissonade and De Kepper: cross-shaped diagrams (CSTRs)</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Schmitz and Hudson: BZ chaos and mixed-mode oscillations</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">May: chaos in maps</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Degn and Olsen: chaos in enzyme systems</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Rossler: chaos</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Leeds groups: CO, H<sub>2</sub> and hydrocarbons (CSTR)</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Feigenbaum: chaos</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;" rowspan="3"><p class="tabled-1">early 1980s</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Texas BZ chaos</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Tyson and Keener: BZ spirals and scrolls</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Showalter and Ganapathi: isolas and mushrooms</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Leeds groups: isolas and mushrooms in autocatalytic models</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled">Epstein and Orban: chlorite-thiosulfate chaos Stanford, Dortmund and Bordeaux groups: imaging of spirals Hudson: electrodissolution oscillations</p></td>
+<td style="verticle-align:bottom; padding-left:1em;"><p class="tabled-1">Balakotaiah &#x0026; Luss: singularity theory</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled-1">late 1980s</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">De Kepper, Boissonade, Ouyang and Swinney; Epstein and Lengyel: unstirred flow reactors and pattern formation</p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled-1">Field and Gyorgyi: models of BZ chaos</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top; border-bottom:1pt solid black;"><p class="tabled-1">1990&#x2013;</p></td>
+<td style="verticle-align:top; padding-left:1em; border-bottom:1pt solid black;"><p class="tabled-1">Leeds group: chaos in CO + O<sub>2</sub> reaction</p></td>
+<td style="verticle-align:top; padding-left:1em; border-bottom:1pt solid black;"><p class="tabled-1">Showalter group: controlling chaos</p></td>
+</tr>
+</table>
+<p class="noindent"><a id="page_3" class="page">Page 3, Introduction to basic concepts</a>discussed in terms of the three chemical reactions that will be used throughout this book: the Belousov-Zhabotinsky reaction, the Landolt clock reaction and the gas-phase oxidation of hydrogen.</p>
+<section epub:type="chapter" id="sec_1.1">
+<h2 class="h2">1.1<span class="space">&#160;</span>Mechanisms and rate laws: law of mass action</h2>
+<p class="noindent">The quantitative interpretation of experimental results in chemical kinetics is frequently based on the construction and subsequent analysis of <i>mechanisms</i> or <i>models.</i> Mechanisms typically aim for a semiquantitative match to a particular reaction; models are often deliberately simpler and attempt to catch the main qualitative features of a broader class of reactions.</p>
+<h3 class="h3">Elementary steps</h3>
+<p class="noindent">If we propose a sequence of individual reactions which are likely to be significant in carrying the reaction from the original reactant to the final products, the corresponding <i>reaction rate equations</i> can then be written out based on the <i>law of mass action.</i> The reaction rate equations specify the rates at which the concentrations of the various chemical species change with time, and how these rates depend upon those concentrations. The idea is to break the overall reaction up into a number of component reactions. Typical of such a component is an <i>elementary step.</i> An example of an elementary step is the following, between a hydrogen atom and an oxygen molecule:</p>
+<figure class="fig1a" id="eq1.1">
+ <img src="../images/page3-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">The rate of an elementary step is given simply in terms of the concentrations of the participating reactants (those on the left-hand side of the reaction step). For the above example:</p>
+<figure class="fig1a" id="eq1.2">
+ <img src="../images/page3-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">Elementary steps are typically, but not exclusively, <i>bimolecular</i>&#x2014;involving two species. The reaction is envisaged as occurring in a single collision between the reactants. Bimolecular reactions then give rise to a quadratic dependence of rate on concentration, i.e., to an overall <i>second-order</i> process. <a href="#eq1.2">Equation (1.2)</a> also involves a coefficient <i>k</i>. This is the <i>reaction rate coefficient</i> or <i>reaction rate constant</i>. Typically, rate constants are independent of concentration but they may be quite sensitive functions of the temperature. This temperature dependence can frequently be expressed in the form</p>
+<figure class="fig1a" id="eq1.3">
+ <img src="../images/page3-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">where <i>T</i> is the thermodynamic (absolute) temperature and <i>R</i> is the universal gas constant (<i>R</i> = 8.314 J K<sup>&#x2212;1</sup> mol<sup>&#x2212;1</sup>). The parameter <i>A</i> is termed the <i>pre-exponential factor</i> and <i>E</i> is known as the <i>activation energy</i>. Many chemical reactions are exothermic or endothermic. The consequent evolution or removal of energy may cause local temperature rises in the reacting mixture <a id="page_4" class="page">Page 4, Introduction to basic concepts</a>and the Arrhenius temperature dependence of <i>k</i> may then have important consequences.</p>
+<h3 class="h3">Overall rate equations</h3>
+<p class="noindent">The overall rate equations for a given mechanism are derived by combining the rates of all the individual elementary steps. The hydrogen&#x2013;oxygen reaction is an example that will be used in various places in this book. An acceptable mechanism for this system over a limited (but very interesting) range of pressure and temperature involves the following elementary steps:</p>
+<figure class="figure-bh" id="step0-4">
+<img src="../images/page4-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">In each case, the rate of the individual step has been derived from the law of mass action. The rate is defined as the rate at which the reactant species disappears. In the last step, this means that a noninteger <i>stoichiometric factor</i> arises.</p>
+<p class="indent">The reaction rate equations can now be constructed. As an example, we can consider the rate of change of the hydroxyl radical concentration, d[OH]/dt. Two OH radicals are produced in the first step and one is produced in each of <a href="#step0-4">steps (2)</a> and <a href="#step0-4">(3)</a>, whilst an OH radical is removed in <a href="#step0-4">step (1)</a>. The rate of equation is thus</p>
+<figure class="fig1a" id="eq1.4">
+<img src="../images/page4-2.jpg" alt="images"/>
+</figure>
+<p class="indent">The full set of governing rate equations for the six different chemical species in this mechanism is shown in <a href="#tab1.2">Table 1.2</a>. A number of general features can be noted from these equations. Any removal term (i.e., any term preceded by a minus sign) involves the concentration of the species being removed. Chemically, this is almost self-evident: a species must be directly involved in any step that consumes it. An important consequence of this is that chemical concentrations will not become negative. If the concentration of any given species becomes zero, then all the removal terms also vanish, so the rate of change of that concentration must then be either zero or positive.</p>
+<p class="indent">A second feature typical of most elementary steps is that the production terms in any rate equation do not involve the concentration of the species being produced. This is not always the case, and becomes more common when we move to empirical rate equations in later sections.</p>
+<p class="indent">Although there are six rate equations listed in <a href="#tab1.2">Table 1.2</a>, the concentrations of the six chemical species cannot all vary independently. There are two different types of chemical building blocks, the H atom and the O atom <a id="page_5" class="page">Page 5, Introduction to basic concepts</a>from which all the species are formed. As no reaction converts H to O, or vice versa, the total number of each of these atoms must be conserved. Thus, here there are two additional <i>conservation conditions:</i> if the initial composition is that of pure H<sub>2</sub> and O<sub>2</sub> at concentrations [H<sub>2</sub>]<sub>0</sub> and [O<sub>2</sub>]<sub>0</sub> respectively, then at all times we have</p>
+<p class="noindent2" id="tab1.2" style="margin-top:1em;"><b>Table 1.2</b> Governing rate equations for the H<sub>2</sub> + O<sub>2</sub> mechanism (0)-(4)</p>
+<figure class="figure-bh" style="margin-top: 0.2em;">
+<img src="../images/page5-1.jpg" alt="images"/>
+</figure>
+
+<figure class="fig1a" id="eq1.5">
+<img src="../images/page5-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">and</p>
+<figure class="fig1a" id="eq1.6">
+<img src="../images/page5-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">Thus if [H], [O], [H<sub>2</sub>], and [OH] are known, [H<sub>2</sub>O] and [O<sub>2</sub>] are constrained to have the appropriate values to satisfy <a href="#eq1.5">Eqns (1.5)</a> and <a href="#eq1.6">(1.6)</a>. With six rate equations and two conservation conditions, the system has four <i>degrees of freedom</i> or four <i>independent concentrations</i>.</p>
+<h3 class="h3">Nonelementary processes</h3>
+<p class="noindent">In many real situations, a kinetic mechanism involving only true elementary steps is not attainable&#x2014;or always needed. Often a number of elementary steps are so intimately coupled that it is only possible to observe their overall effect: we refer then to an <i>overall process</i>. In these situations, experimentally-determined <i>empirical rate laws</i> are particularly useful. The Belousov-Zhabotinsky (BZ) reaction will feature prominently in later chapters. As a part of the mechanism for that system, the following processes are important</p>
+<figure class="figure-bh" id="step5">
+<img src="../images/page5-4.jpg" alt="images"/>
+</figure>
+<figure class="figure-bh" id="step6-7">
+<a id="page_6" class="page" style="width:70%;">Page 6, Introduction to basic concepts</a>
+<img src="../images/page6-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">None of these is necessarily believed to be an elementary step even though they have each been written in the same stoichiometric form as the elementary steps seen above in the H<sub>2</sub> + O<sub>2</sub> mechanism. Here, the form of reactions <a href="#step5">(5)</a>&#x2013;<a href="#step6-7">(7)</a> is partly to identify the species that disappear in each process (the &#x2018;reactants&#x2019;) and those that are formed (the &#x2018;products&#x2019;). In some cases, this form is also partly intended to convey information about the empirical rate laws which have been determined for each particular process. Thus, for process <a href="#step5">(5)</a> the rate of conversion of bromate or bromide ions into the species HBrO<sub>2</sub> and HOBr is found to be first order in <img src="../images/page6-2.jpg" alt="images"/> and in [Br<sup>&#x2212;</sup>] and second order in the concentration of H<sup>+</sup>; thus we can write for process <a href="#step5">(5)</a></p>
+<figure class="fig1a" id="eq1.7">
+<img src="../images/page6-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">There is no suggestion, however, that this conversion is brought about by a single reactive collision between the four species on the left-hand side of reaction <a href="#step5">(5)</a>. In general, it is wise to quote the empirical rate law with the reaction step, as the law of mass action form does not always apply. Once all the important overall processes and their empirical rate laws have been identified, these are again combined to produce the full rate equations for the total rates of change of each concentration.</p>
+</section>
+<section epub:type="chapter" id="sec_1.2">
+<h2 class="h2">1.2<span class="space">&#160;</span>Nonlinearity and feedback: twin impostors</h2>
+<p class="noindent">The buzzwords &#x2018;nonlinearity&#x2019; and &#x2018;feedback&#x2019; are the key features of the chemical kinetics underlying all the exotic phenomena to be described in this book. In this section, we will see that both are really rather common and &#x2018;normal&#x2019; features of chemical reactions.</p>
+<h3 class="h3">Nonlinearity</h3>
+<p class="noindent">As mentioned in the previous section, the simplest type of chemical reaction is the elementary step, which we might represent with the general form</p>
+<figure class="fig1a" id="eq1.8">
+<img src="../images/page6-4.jpg" alt="images"/>
+</figure>
+<p class="noindent">with</p>
+<figure class="fig1a" id="eq1.9">
+<img src="../images/page6-5.jpg" alt="images"/>
+</figure>
+<p class="noindent">In many kinetic studies aimed at determining the reaction rate constant <i>k</i>, the concentration of one of the two reactions, BC say, will be arranged to be in great excess over that of the other. The concentration of the species in excess can then be treated as a constant, giving a pseudo-first-order <a id="page_7" class="page">Page 7, Introduction to basic concepts</a>reaction. This is the only example of linear system in chemical kinetics. All non-first-order processes are nonlinear and thus <i>nonlinearity is the rule</i>, rather than the exception.</p>
+<p class="indent">The meaning of nonlinearity is particularly easily visualized if we plot the variation of the reaction rate with the <i>extent of reaction</i> &#x03BE;. The latter is related to the instantaneous concentration of the reactant such that &#x03BE; varies between 0 (at the beginning of the reaction) and 1 (corresponding to complete conversion to products). Thus for the above equation, we may take &#x03BE; = ([A]<sub>0</sub> &#x2212; [A])/[A]<sub>0</sub> where [A]<sub>0</sub> is the initial concentration. The reaction rate can now also be explicitly defined as d&#x03BE;/d<i>t</i> = (1/[A]<sub>0</sub>)(d[A]/d<i>t</i>). <a href="#fig1.1">Figure 1.1</a> shows d&#x03BE;/d<i>t</i> as a function of &#x03BE; for a various possible rate laws. For first-order reaction, d&#x03BE;/d<i>t</i> = <i>k</i>(1 &#x2212; &#x03BE;). This gives a straight line, i.e., a linear relationship. If instead of choosing BC to be in excess, the two reactants begin with equal concentrations, we would find simple second-order kinetics, d&#x03BE;/d/<sup>t</sup> = <i>k</i>(1 &#x2212; &#x03BE;)<sup>2</sup>, giving a parabolic and hence <i>nonlinear</i> plot. Also shown is a curve corresponding to half-order kinetics, such as may arise from an empirical rate law for a nonelementary process: again, the dependence is not linear.</p>
+<aside class="abc" style="margin-top:-23em;">
+<figure class="fig1" id="fig1.1">
+ <img src="../images/page7-1.jpg" alt="images"/>
+<figcaption style="width:130%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 1.1</b> The dependence of reaction rate R = (&#x2212;d&#x03BE;/d<i>t</i>) on extent of conversion &#x03BE; for half-order (<i>n</i> = &#x00BD;, first-order (<i>n</i> = 1) and second-order (<i>n</i> = 2) kinetics. The rate is normalized by the maximum rate <i>R</i><sub>max</sub>, which, for these deceleratory systems, corresponds to the initial rate with &#x03BE; = 0.</p>
+</figcaption></figure>
+</aside>
+<h3 class="h3">Feedback</h3>
+<p class="noindent">Nonlinearity is of mild interest, although now we see that it is really rather an old friend amongst chemical systems. The real fun starts when the chemistry allows for <i>feedback</i> as well. Feedback arises when the products of later steps in the mechanism influence the rate of some of the earlier reactions (and, hence, the rate of their own production). This may take the form either of positive feedback (self-acceleration) or negative feedback (selfinhibition). Several examples of feedback and the consequences it may have on chemical systems are given in <a href="#tab1.3">Table 1.3</a>. We will consider some specific examples in the next section, but here indicate the general features.</p>
+<aside class="abc" style="margin-top:-8em;">
+<figure class="fig1" id="fig1.2">
+ <img src="../images/page7-2.jpg" alt="images"/>
+<figcaption style="width:130%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 1.2</b> The dependence of reaction rate R = (&#x2212;d&#x03BE;/d<i>t</i>) on extent of conversion &#x03BE; for example acceleratory systems with feedback: (a) quadratic autocatalysis; (b) cubic autocatalysis; and (c) an exothermic reaction. The rate is again normalized by the maximum rate <i>R</i><sub>max</sub> in each case, but this does not now occur at zero extent of reaction.</p>
+</figcaption></figure>
+</aside>
+<p class="indent">All of the rate laws illustrated in <a href="#fig1.1">Fig. 1.1</a>, even the nonlinear ones, show rates decreasing monotonically as the extent of reaction increases. These systems have their maximum rate initially and as the reactants are consumed, so the rate falls. These are classed as <i>deceleratory reactions</i>. Self-accelerating or <i>acceleratory systems</i> are characterised by rate-extent curves that as well as being nonlinear, show an initial increase in rate with increasing extent of reaction. Some possible examples are indicated in <a href="#fig1.2">Fig. 1.2</a>. The maximum rate now occurs for some nonzero extent, once the reaction has really got itself going. Ultimately the rate begins to fall, tending to zero at complete conversion. Curves (a) and (b) show the two basic forms: an approximate parabola, with the rate increasing relatively quickly in the initial phase of the reaction and the maximum at roughly 50% conversion, and a &#x2018;cubic-type&#x2019; curve that increases more slowly in the initial stages and attains its maximum nearer to the end of the reaction. The parabolic curve (a) can be usefully approximated by fitting a rate law of the form</p>
+<figure class="fig1a" id="eq1.10">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>d</mtext><mi>&#x03BE;</mi><mo>/</mo><mtext>d</mtext><mi>t</mi><mo>=</mo><mi>k</mi><mi>&#x03BE;</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>&#x2212;</mo><mi>&#x03BE;</mi></mrow><mo>)</mo></mrow></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.10</mn><mo stretchy='false'>)</mo></math>
+</figure>
+<p class="indent"><a id="page_8" class="page">Page 8, Introduction to basic concepts</a></p>
+<p class="noindent2" style="margin-top:1em;"><a id="tab1.3"></a><b>Table 1.3</b> Examples of feedback and its consequences in chemical systems</p>
+<table class="width100b" style="width:70%;margin-bottom:1em;margin-top:0.3em;">
+<tr>
+<td style="vertical-align:top; border-top:1pt solid black;" colspan="2"><p class="tabled"><b>Gas phase</b> (combustion processes, isomerizations)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">chain branching</p></td>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">ignition limits</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">self-inhibition</p></td>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">oscillations and chaos</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">thermal feedback</p></td>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">thermal runaway</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">chain-thermal feedback</p></td>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">engine knock</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" colspan="2"><p class="tabled"><b>Solution phase</b> (BZ family, redox reactions)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">autocatalysis</p></td>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">clock reactions</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">self-inhibition</p></td>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">travelling wavefronts and wave trains<br/>oscillations and chaos<br/>spatial patterns</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" colspan="2"><p class="tabled"><b>Solid phase</b> (pyrotechnics)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">thermal feedback</p></td>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">nonsteady burning velocity<br/>thermal runaway (haystacks, etc.)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" colspan="2"><p class="tabled"><b>Gas-liquid</b> (partial oxidation processes)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">phase exchange</p></td>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">oscillations and chaos</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" colspan="2"><p class="tabled"><b>Gas-solid</b> (heterogeneous catalysis, catalytic convertors)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">competitive adsorption</p></td>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">multistability</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">concentration dependent adsorption or phase changes</p></td>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">oscillations and chaos</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" colspan="2"><p class="tabled"><b>Solid-liquid</b> (electrodissolution, corrosion)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">pH-dependent dissolution potentials film growth</p></td>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">oscillations and chaos film growth</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" colspan="2"><p class="tabled"><b>Biological systems</b> (enzyme processes, glycolysis, nerve conduction, life)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">allosteric effects</p></td>
+<td style="vertical-align:top; padding-left:1em;"><p class="tabled">oscillations and chaos</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding-left:1em; border-bottom:1pt solid black;"><p class="tabled">Chemotaxis</p></td>
+<td style="vertical-align:top; padding-left:1em; border-bottom:1pt solid black;"><p class="tabled">signal transmission<br/>spatial aggregation<br/>limb development<br/>evolution of form</p></td>
+</tr>
+</table>
+<p class="noindent">and curve (b) by</p>
+<figure class="fig1a" id="eq1.11">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>d</mtext><mi>&#x03BE;</mi><mo>/</mo><mtext>d</mtext><mi>t</mi><mo>=</mo><mi>k</mi><msup><mi>&#x03BE;</mi><mn>2</mn></msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>&#x2212;</mo><mi>&#x03BE;</mi></mrow><mo>)</mo></mrow></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.11</mn><mo stretchy='false'>)</mo></math>
+</figure>
+<p class="noindent">These two rate laws have sometimes been translated into law of mass action forms such as</p>
+<figure class="fig1a" id="eq1.12">
+<img src="../images/page8-1.jpg" alt="images"/>
+</figure>
+<figure class="fig1a" id="eq1.13">
+<img src="../images/page8-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">where a and b represent the concentrations of A and B respectively. These are <i>model schemes</i>, in the sense described at the beginning of <a href="#sec_1.1">Section 1.1</a>, for chemical autocatalysis. A more formal definition of autocatalysis involves <a id="page_9" class="page">Page 9, Introduction to basic concepts</a> the occurrence of a term in the rate equation for a given species in which that species appears with a positive stoichiometric coefficient. Thus, in the above models, <i>d</i>b/d<i>t</i> = + <i>k</i><sub>q</sub><i>ab</i> or + <i>k</i><sub>c</sub><i>ab</i><sup>2</sup> with a stoichiometric coefficient of +1.</p>
+<p class="indent">Many chemical systems can be modelled qualitatively by one or other of these forms, or by a weighted combination of the two. We will discuss the iodate&#x2013;iodide reductant system which has such &#x2018;mixed&#x2019; quadratic and cubic autocatalysis.</p>
+<p class="indent">Also shown in <a href="#fig1.2">Fig. 1.2</a> is the curve (c) for which d&#x03BE;/d<i>t</i> = (1 &#x2212; &#x03BE;)e<sup><i>B</i>&#x03BE;</sup>. This approximates the thermal feedback for a first order, exothermic chemical reaction in an adiabatic reactor: the parameter <i>B</i> typically has a value of 20, making the curve peak at high extents of reaction.</p>
+</section>
+<section epub:type="chapter" id="sec_1.3">
+
+<h2 class="h2">1.3<span class="space">&#160;</span>Specific examples of chemical feedback</h2>
+<p class="noindent">The examples of oscillations, travelling waves, etc., throughout this book will be based mainly on three specific chemical systems: the BZ reaction, the H<sub>2</sub> + O<sub>2</sub> reaction and the iodate-reductant reaction. Each of these has a mechanism for chemical feedback that can be exposed in relatively familiar kinetic arguments.</p>
+<h3 class="h3">Belousov-Zhabotinsky reaction</h3>
+<p class="noindent">The core of the feedback process in the BZ system is formed by the pair of overall steps</p>
+<figure class="figure-bh" id="step8-9">
+<img src="../images/page9-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">Here M<sub>red</sub> and M<sub>ox</sub> are the reduced and oxidized forms, respectively, of a metal ion redox catalyst, such as the Ce(III)/Ce(IV) or ferroin/ferriin couples. So, one HBrO<sub>2</sub> forms two <img src="../images/page9-2.jpg" alt="images"/> radicals. If each of these go on to produce an HBrO<sub>2</sub> molecule in <a href="#step8-9">step (9)</a> we have the overall stoichiometry</p>
+<figure class="fig1a" id="eq1.14">
+<img src="../images/page9-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">which shows a strong similarity to the quadratic rate law (1.12), with B = HBrO<sub>2</sub>.</p>
+<p class="indent">The radical intermediate <img src="../images/page9-2.jpg" alt="images"/> is particularly reactive and tempts us to use one or other of the kineticists favourite tricks that reveal the actual mathematical form for the autocatalysis in these steps. First we write the net rate of production of HBrO<sub>2</sub> through this process:</p>
+<figure class="fig1a" id="eq1.15">
+<img src="../images/page9-4.jpg" alt="images"/>
+</figure>
+<p class="indent">If the Ce(III)/Ce(IV) couple is used, then <a href="#step8-9">reaction (9)</a> is rather slow and <a href="#step8-9">reaction (8)</a> rapidly attains a <i>quasi-equilibrium</i> balance. Thus</p>
+<figure class="fig1a" id="eq1.16">
+<img src="../images/page9-5.jpg" alt="images"/>
+</figure>
+<p class="noindent">Substituting this into <a href="#eq1.15">Eqn (1.15)</a> then gives</p>
+<figure class="fig1a" id="eq1.17"><a id="page_10" class="page">Page 10, Introduction to basic concepts</a>
+<img src="../images/page10-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">The positive sign indicates that this is indeed an autocatalytic form which is suitably represented by the overall process.</p>
+<figure class="fig1a" id="eq1.18">
+<img src="../images/page10-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">which is simply one half of <a href="#eq1.14">Eqn (1.14)</a> but here carries with it the implication of half-order kinetics with respect to the autocatalyst.</p>
+<p class="indent">If the ferroin/ferriin couple is used, <a href="#step8-9">reaction (9)</a> is relatively fast compared to the reverse step in <a href="#step8-9">reaction (8)</a>. In this case, a simple <i>steady-state</i> treatment for <img src="../images/page10-3.jpg" alt="images"/> neglecting the reverse step yields</p>
+<figure class="fig1a" id="eq1.19">
+ <img src="../images/page10-4.jpg" alt="images"/>
+</figure>
+<p class="noindent">Substituting this into <a href="#eq1.15">Eqn (1.15)</a> and, again, ignoring the reverse step (&#x2013;8), we find</p>
+<figure class="fig1a" id="eq1.20">
+ <img src="../images/page10-5.jpg" alt="images"/>
+</figure>
+<p class="noindent">showing autocatalytic growth depending on the first power of the HBrO<sub>2</sub> concentration.</p>
+<h3 class="h3">The H<sub>2</sub> + O<sub>2</sub> reaction</h3>
+<p class="noindent">Feedback in gas-phase reactions has exactly the same form as autocatalysis, but is usually referred to as <i>chain branching</i>. The <i>branching cycle</i> that drives this reaction is formed from <a href="#step0-4">reactions (1)</a>&#x2013;<a href="#step0-4">(3)</a> from the set given in <a href="#sec_1.1">Section 1.1</a>. The easiest way to see this in operation is to imagine the fate of a single H atom entering this cycle. This reacts via <a href="#step0-4">step (2)</a> to produce an OH radical and an O atom. The O atom reacts relatively quickly via <a href="#step0-4">step (3)</a> to produce a second OH radical and to yield an H atom. The two OH radicals also both react quickly, via <a href="#step0-4">step (1)</a>, each yielding an H atom. Thus one H atom has given rise to three, a net gain of two radicals in the system. Taking 2(1) + (2) + (3) gives the overall stoichiometry</p>
+<figure class="fig1a" id="eq1.21">
+ <img src="../images/page10-6.jpg" alt="images"/>
+</figure>
+<p class="noindent">The slowest, or <i>rate determining step</i> in this sequence is <a href="#step0-4">step (2)</a>, so the rate of increase of the H atom concentration grows with the increasing concentration of H atoms. We may also note, in passing, that the high free energy demand in effectively dissociating an H<sub>2</sub> molecule into two H atoms is met by the accompanying production of two molecules of water.</p>
+<p class="indent">A simple steady-state analysis for the full <a href="#step0-4">scheme (0)&#x2013;(4)</a>, setting d[O]/d<i>t</i> and d[OH]/d<i>t</i> = 0 in <a href="#tab1.2">Table 1.2</a>, yields the following equation for d[H]/d<i>t</i>:</p>
+<figure class="fig1a" id="eq1.22">
+ <img src="../images/page10-7.jpg" alt="images"/>
+</figure>
+<p class="noindent">The coefficient for [H] in the last term on the right-hand side measures the relative rate of the competing branching cycle and the termination <a href="#step0-4">step (4)</a> that removes radicals from the system. This is known as the <i>net branching factor</i>, &#x03D5; = 2<i>k</i><sub>2</sub>[O<sub>2</sub>] &#x2212; <i>k</i><sub>4</sub>, and may be either positive or negative depending on the values of <i>k</i><sub>2</sub>, <i>k</i><sub>4</sub>, and [O<sub>2</sub>]. The value of <i>k</i><sub>2</sub> is particularly sensitive to the <a id="page_11" class="page">Page 11, Introduction to basic concepts</a> temperature as this step has a high activation energy. The values of <i>k<sub>4</sub></i> and [O<sub>2</sub>] are pressure-dependent: <i>k</i><sub>4</sub> decreases as the pressure increases as radicals diffuse less easily to the walls, where termination occurs. Under conditions such that &#x03D5; is positive, Eqn (<a href="#eq1.22">1.32</a>) indicates exponential growth in the radical concentration, leading to an ignition event. If termination wins, &#x03D5; &#x003C; 0 and there is no net autocatalysis.</p>
+<h3 class="h3">Iodate-iodide-reductant reaction</h3>
+<p class="noindent">The two cases considered so far typically give rise to &#x2018;quadratic-type&#x2019; autocatalysis. A higher-order dependence of the reaction rate on the autocatalytic species arises in the system of acidified iodate ions in the presence of a suitable reductant such as arsenite ion <img src="../images/page11-1.jpg" alt="images"/>. The chemistry here is not so well established, but can be represented by two overall processes with empirical rate laws. First, there is the reduction of iodate by iodide to give iodine in the Dushman reaction:</p>
+<figure class="figure-bh" id="step10">
+<img src="../images/page11-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">The rate law for this process, <img src="../images/page11-3.jpg" alt="images"/>, has been determined experimentally to involve the contribution of two channels that differ in their order with respect to iodide:</p>
+<figure class="fig1a" id="eq1.34">
+ <img src="../images/page11-4.jpg" alt="images"/>
+</figure>
+<p class="noindent">with <i>k</i><sub>&#x03B1; 1</sub> = 4.5 &#x00D7; 10<sup>3</sup> M<sup>&#x2212;3</sup> s<sup>&#x2212;1</sup> and <i>k</i><sub>&#x03B1; 2</sub> = 1.0 &#x00D7; 10<sup>8</sup> M<sup>&#x2212;4</sup> s<sup>&#x2212;1</sup>.</p>
+<p class="indent">The iodine thus formed is reduced back to iodide in a rapid process known as the Roebuck reaction</p>
+<figure class="figure-bh" id="step11">
+<img src="../images/page11-5.jpg" alt="images"/>
+</figure>
+<p class="noindent">which has an empirical rate law,</p>
+<figure class="fig1a" id="eq1.24">
+ <img src="../images/page11-6.jpg" alt="images"/>
+</figure>
+<p class="noindent">with <i>k</i><sub>&#x03B2;</sub> = 3.2 &#x00D7; 10<sup>&#x2212;3</sup> M s<sup>&#x2212;1</sup>.</p>
+<p class="indent">Combining (10) + 3(11), gives the overall stoichiometry</p>
+<figure class="fig1a" id="eq1.25">
+ <img src="../images/page11-7.jpg" alt="images"/>
+</figure>
+<p class="noindent">so there is net production of I<sup>&#x2212;</sup> at a rate determined by the Dushman process:</p>
+<figure class="fig1a" id="eq1.26">
+ <img src="../images/page11-8.jpg" alt="images"/>
+</figure>
+<p class="noindent">In buffered solution, [H<sup>+</sup>] is constant and so this rate law compares exactly with the mixed quadratic and cubic form of <a href="#sec_1.1">Section 1.1</a>, with <img src="../images/page11-9.jpg" alt="images"/> and the autocatalyst B = I<sup>&#x2212;</sup>.</p>
+<p class="indent">Another reductant, bisulphite ion <img src="../images/page11-10.jpg" alt="images"/>, can also be used in this reaction with similar effect. In this case, there is a slight modification as <img src="../images/page11-10.jpg" alt="images"/> reacts directly with <img src="../images/page11-11.jpg" alt="images"/> to produce</p>
+<figure class="figure-bh" id="step12">
+<img src="../images/page11-12.jpg" alt="images"/>
+</figure>
+<p class="noindent"><a id="page_12" class="page">Page 12, Introduction to basic concepts</a>with</p>
+<figure class="fig1a" id="eq1.27">
+ <img src="../images/page12-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">This system forms the classic Landolt clock reaction, widely used in lecture demonstrations, and which we will discuss in <a href="Chapter02.xhtml#ch02">Chapter 2</a>.</p>
+<p class="indent"><a href="#tab1.3">Table 1.3</a> lists some other forms of feedback arising in a range of physical situations and some of the resulting responses observed in consequence.</p>
+</section>
+<section epub:type="chapter" id="sec_1.4">
+
+<h2 class="h2">1.4<span class="space">&#160;</span>Closed and open systems</h2>
+<h3 class="h3">Closed systems</h3>
+<p class="noindent">Many reactions are still carried out or occur naturally in thermodynamically closed systems. Some special considerations apply to such systems that limit the range of possible, long-time behaviour&#x2014;although not as much as was once believed. Once a closed system has been assembled with specific initial concentrations, pressure and temperature, etc., there is a uniquely specified corresponding chemical equilibrium state. Multiple equilibrium solutions are not allowed. Not only this, but the final approach of the system to this equilibrium state cannot have any overshoot: reactions cannot oscillate about their chemical equilibrium state. This distinguishes chemical from mechanical systems such as a pendulum which can settle to its final state in a damped oscillatory manner.</p>
+<p class="indent">This restriction is based on the principle of <i>detailed balance</i>. All chemical reactions are formally reversible to some greater or lesser extent. Thus we should write reaction (1.9) as</p>
+<figure class="fig1a" id="eq1.28">
+ <img src="../images/page12-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">with the net rate of reaction then given by</p>
+<figure class="fig1a" id="eq1.29">
+ <img src="../images/page12-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">where <i>k</i><sub>+</sub> and <i>k</i><sub>&#x2212;</sub> are the forward and reverse rate constants.</p>
+<p class="indent">The stoichiometric equation for the H<sub>2</sub> + O<sub>2</sub> reaction can also be written as a reversible process</p>
+<figure class="fig1a" id="eq1.30">
+ <img src="../images/page12-4.jpg" alt="images"/>
+</figure>
+<p class="noindent">although this case is more complicated. Not only will the equilibrium composition have nonzero concentrations of the reactant and product species, there will also be nonzero concentrations of the various radical intermediates such as O, H, and OH. All of the elementary steps in the kinetic mechanism will be more or less reversible.</p>
+<p class="indent">At the equilibrium state, the concentrations of the participating species adjust themselves so that the net rate of production of each species is zero simultaneously. The rate equation for each species will contain various production terms, corresponding to the reaction steps that produce the given species, and removal terms corresponding to steps that convert that species to another (these include the reverse of each production step). The <a id="page_13" class="page">Page 13, Introduction to basic concepts</a> equilibrium state is achieved not just by ensuring that the net rate of production exactly equals the net rate of removal for each species, but that for <i>every</i> reaction step in the mechanism <i>the forward rate becomes exactly equal to the reverse rate:</i> all the reaction steps are balanced. This is a very special requirement, appropriate only to chemical reactions in closed systems. (Perhaps it is not surprising that it needs infinite time for the equilibrium state to be attained.)</p>
+<p class="indent">The requirement of a monotonic approach to the chemical equilibrium state does not, however, rule out &#x2018;interesting behaviour&#x2019; such as oscillations in closed systems. Reactions are usually set up with initial conditions that are far from the corresponding equilibrium state, and chemical systems &#x2018;far from equilibrium&#x2019; are not constrained so tightly. It does, however, mean that such oscillations cannot last forever: they must cease as the system gets close to its equilibrium state, i.e., after a sufficiently long time. Oscillations are necessarily transient, but possibly very long-lived, in closed systems.</p>
+<h3 class="h3">Open systems</h3>
+<p class="noindent">When systems exchange mass with their surroundings, and hence are thermodynamically <i>open</i>, the inflow and outflow means that individual molecules spend only a finite time in the reactor. The simplest example of an open system is the continuous-flow reactor, particularly if this is well stirred. More complex examples include living things and atmospheres. The finite <i>residence time</i> in such systems means that the reaction does not approach the chemical equilibrium state it would find if it were closed. The restriction mentioned above do not, therefore, apply.</p>
+<p class="indent">In flow systems, reactions may evolve to <i>steady states</i> for which the rates of chemical production and removal of each species just balance the rates of inflow and outflow of those species. In some cases, more than one steady state may coexist. Oscillations may occur and last forever, and have the time to develop into more complex responses, as we shall see.</p>
+</section>
+</section>
+</div>
+</body>
+</html>

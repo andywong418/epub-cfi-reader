@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="p9780198557364">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:identifier id="p9780198557364">978-0-19-855736-4</dc:identifier>
+<dc:title>Applications of Artificial Intelligence in Chemistry</dc:title>
+<dc:language>en-US</dc:language>
+<dc:creator>Hugh M. Cartwright</dc:creator>
+<dc:publisher>Oxford University Press</dc:publisher>
+<meta property="dcterms:modified">2015-05-16T16:38:35Z</meta>
+<meta name="cover" content="cover-image"/>
+</metadata>
+<manifest>
+<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="toc" properties="nav" href="xhtml/toc.xhtml" media-type="application/xhtml+xml"/>
+<item id="stylesheet" href="styles/stylesheet.css" media-type="text/css"/>
+<item id="front01" href="xhtml/Oxford_Chemistry_Primers.xhtml" media-type="application/xhtml+xml"/>
+<item id="title" href="xhtml/Titlepage.xhtml" media-type="application/xhtml+xml"/>
+<item id="copyright" href="xhtml/Copyrightpage.xhtml" media-type="application/xhtml+xml"/>
+<item id="front02" href="xhtml/Series_Editor's_Foreword.xhtml" media-type="application/xhtml+xml"/>
+<item id="front03" href="xhtml/Preface.xhtml" media-type="application/xhtml+xml"/>
+<item id="contents" href="xhtml/Contents.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter01" href="xhtml/Chapter01.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter02" properties="remote-resources scripted mathml" href="xhtml/Chapter02.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter03" href="xhtml/Chapter03.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter04" properties="remote-resources scripted mathml" href="xhtml/Chapter04.xhtml" media-type="application/xhtml+xml"/>
+<item id="index" href="xhtml/Index.xhtml" media-type="application/xhtml+xml"/>
+
+<item id="script001" href="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" media-type="text/jscript"/>
+
+
+<item id="page15-1" href="images/page15-1.jpg" media-type="image/jpeg"/>
+<item id="page47-2" href="images/page47-2.jpg" media-type="image/jpeg"/>
+<item id="page63-1" href="images/page63-1.jpg" media-type="image/jpeg"/>
+<item id="page9-1" href="images/page9-1.jpg" media-type="image/jpeg"/>
+<item id="page14-2" href="images/page14-2.jpg" media-type="image/jpeg"/>
+<item id="pub" href="images/pub.jpg" media-type="image/jpeg"/>
+<item id="page17-1" href="images/page17-1.jpg" media-type="image/jpeg"/>
+<item id="page30-1" href="images/page30-1.jpg" media-type="image/jpeg"/>
+<item id="copy" href="images/copy.jpg" media-type="image/jpeg"/>
+<item id="page16-1" href="images/page16-1.jpg" media-type="image/jpeg"/>
+<item id="page29-1" href="images/page29-1.jpg" media-type="image/jpeg"/>
+<item id="page25-1" href="images/page25-1.jpg" media-type="image/jpeg"/>
+<item id="page27-4" href="images/page27-4.jpg" media-type="image/jpeg"/>
+<item id="page24-1" href="images/page24-1.jpg" media-type="image/jpeg"/>
+<item id="page27-3" href="images/page27-3.jpg" media-type="image/jpeg"/>
+<item id="page34-1" href="images/page34-1.jpg" media-type="image/jpeg"/>
+<item id="page7-1" href="images/page7-1.jpg" media-type="image/jpeg"/>
+<item id="page14-1" href="images/page14-1.jpg" media-type="image/jpeg"/>
+<item id="page26-2" href="images/page26-2.jpg" media-type="image/jpeg"/>
+<item id="page22-2" href="images/page22-2.jpg" media-type="image/jpeg"/>
+<item id="page64-1" href="images/page64-1.jpg" media-type="image/jpeg"/>
+<item id="page25-2" href="images/page25-2.jpg" media-type="image/jpeg"/>
+<item id="page27-1" href="images/page27-1.jpg" media-type="image/jpeg"/>
+<item id="page18-2" href="images/page18-2.jpg" media-type="image/jpeg"/>
+<item id="page23-1" href="images/page23-1.jpg" media-type="image/jpeg"/>
+<item id="page27-2" href="images/page27-2.jpg" media-type="image/jpeg"/>
+<item id="page22-1" href="images/page22-1.jpg" media-type="image/jpeg"/>
+<item id="page28-1" href="images/page28-1.jpg" media-type="image/jpeg"/>
+<item id="page86-1" href="images/page86-1.jpg" media-type="image/jpeg"/>
+<item id="page65-3" href="images/page65-3.jpg" media-type="image/jpeg"/>
+<item id="page80-1" href="images/page80-1.jpg" media-type="image/jpeg"/>
+<item id="page26-1" href="images/page26-1.jpg" media-type="image/jpeg"/>
+<item id="page18-1" href="images/page18-1.jpg" media-type="image/jpeg"/>
+<item id="page86-3" href="images/page86-3.jpg" media-type="image/jpeg"/>
+<item id="page85-2" href="images/page85-2.jpg" media-type="image/jpeg"/>
+<item id="page68-1" href="images/page68-1.jpg" media-type="image/jpeg"/>
+<item id="page73-1" href="images/page73-1.jpg" media-type="image/jpeg"/>
+<item id="page75-1" href="images/page75-1.jpg" media-type="image/jpeg"/>
+<item id="page74-1" href="images/page74-1.jpg" media-type="image/jpeg"/>
+<item id="page68-2" href="images/page68-2.jpg" media-type="image/jpeg"/>
+<item id="page78-1" href="images/page78-1.jpg" media-type="image/jpeg"/>
+<item id="page43-1" href="images/page43-1.jpg" media-type="image/jpeg"/>
+<item id="page85-1" href="images/page85-1.jpg" media-type="image/jpeg"/>
+<item id="page36-1" href="images/page36-1.jpg" media-type="image/jpeg"/>
+<item id="page86-2" href="images/page86-2.jpg" media-type="image/jpeg"/>
+<item id="page63-3" href="images/page63-3.jpg" media-type="image/jpeg"/>
+<item id="page48-1" href="images/page48-1.jpg" media-type="image/jpeg"/>
+<item id="page47-1" href="images/page47-1.jpg" media-type="image/jpeg"/>
+<item id="page63-2" href="images/page63-2.jpg" media-type="image/jpeg"/>
+<item id="page65-2" href="images/page65-2.jpg" media-type="image/jpeg"/>
+<item id="page88-1" href="images/page88-1.jpg" media-type="image/jpeg"/>
+<item id="page5-1" href="images/page5-1.jpg" media-type="image/jpeg"/>
+<item id="page65-1" href="images/page65-1.jpg" media-type="image/jpeg"/>
+<item id="page51-1" href="images/page51-1.jpg" media-type="image/jpeg"/>
+<item id="page66-1" href="images/page66-1.jpg" media-type="image/jpeg"/>
+<item id="page59-1" href="images/page59-1.jpg" media-type="image/jpeg"/>
+<item id="page71-1" href="images/page71-1.jpg" media-type="image/jpeg"/>
+<item id="page43-2" href="images/page43-2.jpg" media-type="image/jpeg"/>
+<item id="page49-1" href="images/page49-1.jpg" media-type="image/jpeg"/>
+<item id="page41-1" href="images/page41-1.jpg" media-type="image/jpeg"/>
+<item id="page70-1" href="images/page70-1.jpg" media-type="image/jpeg"/>
+<item id="page46-1" href="images/page46-1.jpg" media-type="image/jpeg"/>
+<item id="page6-1" href="images/page6-1.jpg" media-type="image/jpeg"/>
+<item id="page78-2" href="images/page78-2.jpg" media-type="image/jpeg"/>
+<item id="page77-1" href="images/page77-1.jpg" media-type="image/jpeg"/>
+           
+</manifest>
+<spine toc="ncx">    
+<itemref idref="front01"/>
+<itemref idref="title"/>
+<itemref idref="copyright"/>
+<itemref idref="front02"/>
+<itemref idref="front03"/>
+<itemref idref="contents"/>
+<itemref idref="chapter01"/>
+<itemref idref="chapter02"/>
+<itemref idref="chapter03"/>
+<itemref idref="chapter04"/>
+<itemref idref="index"/>
+</spine>   
+</package>

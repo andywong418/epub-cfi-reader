@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Modern Liquid Phase Kinetics</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<a id="page_42" class="page" style="width:70%;">Page 42, Solvent effects on reaction rates</a>
+<section epub:type="chapter" id="ch04"> 
+<h1 class="main">4<span class="space">&#160;</span>Solvent effects on reaction rates</h1>
+<section epub:type="chapter" id="sec_4.1"> 
+<h2 class="h2">4.1<span class="space">&#160;</span>Introduction</h2>
+<p class="noindent">The solvent may have several roles in a chemical reaction: the provision of a reaction medium, solvation of the reaction components, and direct involvement as a reactant. At the simplest level, the presence of the solvent alters both the frequency and pattern of collisions between the solute molecules compared with the gas phase. The kinetic energy of the molecules is approximately the same in solution as in the gas phase (at the same temperature), but there are two modifications with respect to the collision frequency.</p>
+<p class="noindent">(i) The <i>free space</i> between the solvent molecules amounts to only approximately one quarter of the total volume, assuming close-packed spheres. This tends to increase the collision frequency, and the effect is maximal when r(solute) &#8810; r(solvent)&#x2014;at the other extreme the effect vanishes.</p>
+<p class="noindent">(ii) The <i>grouping</i> of the collisions is different, as illustrated in <a href="#fig4_1">Fig. 4.1</a>. In solution, collisions tend to be repeated, with multiple collisions occurring between the same two molecules. These sets of collisions, usually referred to as <i>encounters</i>, arise because the solvent molecules are inclined to form a &#x2018;cage&#x2019; surrounding the colliding pair, holding them for a period until they diffuse apart.</p>
+<figure class="figure-bh" style="margin-left:4em;" id="fig4_1">
+<img src="../images/fig4_1.jpg" alt="img"/>
+<figcaption style="margin-left:-5em;"><b>Fig. 4.1</b> Distributions of collisions: (a) gas phase and (b) in solution.</figcaption></figure>
+<p class="noindent">For the fastest reactions, the so-called <i>diffusion-controlled</i> reactions, which occur at every collision (<a href="Chapter05.xhtml">Ch. 5</a>), the encounter number is of prime significance. The majority of reactions, however, involve an activation energy, and it is the total number of collisions which is relevant; this number is substantially the same in the gas phase and in solution.</p>
+<p class="indent">Of much greater importance for reactions in solution are the interactions between the solute molecules or ions and the solvent molecules, with which they are always in intimate contact. Solvent-solute interactions are responsible for the large and even spectacular changes in reaction rates which often accompany changes in solvent. Reactions involving ionic species are particularly sensitive to solvent, because of the very large magnitudes of ion-solvent interaction energies. These amount to several hundred kJ mol<sup>-1</sup> even for monovalent ions.</p>
+<p class="noindent">&#160;</p>
+<a id="page_43" class="page" style="width:70%;">Page 43, Solvent effects on reaction rates</a>
+<p class="noindent">&#160;</p>
+<p class="indent">A good example of the sensitivity of reaction rate to solvent is provided by the aromatic nucleophilic substitution reaction of the azide ion with 4- fluoronitrobenzene, <a href="#tab4-1">Table 4.1</a> (Cox and Parker 1973).</p>
+<p class="tcaption" id="tab4-1"><b>Table 4.1</b> Rate constants in solvents (S) at 25&#x00B0;C for reaction:</p>
+<figure class="figure-bh" style="margin-left:4em;">
+<img src="../images/tab4_1.jpg" alt="img"/>
+</figure>
+<p class="noindent">The results in <a href="#tab4-1">Table 4.1</a> are typical of those for bimolecular reactions of anions, Y<sup>&#8211;</sup>, with molecules, RX, such as substitution, <a href="#eqn_4.1">eqn 4.1</a>,</p>
+<p class="eqn" id="eqn_4.1">Y<sup>&#8211;</sup> &#x002B;RX&#x2192;YR &#x002B; X<sup>&#8211;</sup><span class="no">(4.1)</span></p>
+<p class="noindent">elimination, proton abstraction, and addition. In all cases, there is a large rate increase when the solvent is changed from a protic solvent (i.e., a solvent containing a relatively acidic proton), such as water or methanol, to a polar aprotic solvent such as dimethylformamide (DMF).</p>
+<p class="indent">A somewhat smaller, but nevertheless significant, dependence of rate upon solvent is observed for reactions in which ionic species are generated from neutral molecules. This is illustrated in <a href="#tab4-2">Table 4.2</a> for the reaction between triethylamine and ethyl iodide (Grimm <i>et al</i>. 1931), for which there is a general increase in rate constant with solvent polarity.</p>
+<p class="tcaption" id="tab4-2"><b>Table 4.2</b> Rate constants in several solvents at 100&#x00B0;C for reaction:<br/>(C<sub>2</sub>H<sub>5</sub>)<sub>3</sub>N&#x002B;C<sub>2</sub>H<sub>5</sub>I&#x2192;(C<sub>2</sub>H<sub>5</sub>)<sub>4</sub>N&#x002B;I<sup>&#8211;</sup></p>
+<table style="border-bottom:1pt solid black;border-top:1pt solid black;margin-left:0em;width:70%;">
+<tr><td>Solvent</td><td style="text-align:center;">hexane</td><td style="text-align:center;">benzene</td><td style="text-align:center;">C<sub>6</sub>H<sub>5</sub>Br</td><td style="text-align:center;">acetone</td><td style="text-align:center;">C<sub>6</sub>H<sub>5</sub>NO<sub>2</sub></td></tr>
+<tr><td>10<sup>5</sup>k/M<sup>-1</sup>s<sup>-1</sup></td><td style="text-align:center;">0.5</td><td style="text-align:center;">39.8</td><td style="text-align:center;">166.0</td><td style="text-align:center;">265.0</td><td style="text-align:center;">1383</td></tr>
+</table>
+<p class="noindent">It is a considerable challenge to account for these effects, which are often of great practical significance. It is useful as a starting point to consider the more familiar case of the influence of solvent or reaction media on <i>equilibria</i>, for example <a href="#eqn_4.2">eqn 4.2</a>,</p>
+<p class="eqn" id="eqn_4.2"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mtext>A</mtext><mo>+</mo><mtext>B</mtext><mover>
+   <mo>&#x21CC;</mo>
+   <mrow>
+    <msub>
+     <mi>K</mi>
+     <mtext>e</mtext>
+    </msub>
+    
+   </mrow>
+  </mover>
+  <mtext>C</mtext>
+ </mrow>
+</math><span class="no">(4.2)</span></p>
+<p class="noindent">Solvent (or medium) effects on equilibria are allowed for by expressing the true thermodynamic equilibrium constant, <i>K</i><sub>e</sub>, in terms of activities, or alternatively concentrations multiplied by activity coefficients, <a href="#eqn_4.3">eqn 4.3</a></p>
+<p class="eqn" id="eqn_4.3"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>K</mi>
+   <mi>e</mi>
+  </msub>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <msub>
+     <mi>a</mi>
+     <mtext>C</mtext>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <msub>
+     <mi>a</mi>
+     <mtext>A</mtext>
+    </msub>
+    <msub>
+     <mi>a</mi>
+     <mtext>B</mtext>
+    </msub>
+    
+   </mrow>
+  </mfrac>
+  <mo>=</mo><mfrac>
+   <mi>C</mi>
+   <mrow>
+    <mi>A</mi><mi>B</mi>
+   </mrow>
+  </mfrac>
+  <mfrac>
+   <mrow>
+    <msub>
+     <mtext>&#x03B3;</mtext>
+     <mtext>C</mtext>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <msub>
+     <mtext>&#x03B3;</mtext>
+     <mtext>A</mtext>
+    </msub>
+    <msub>
+     <mtext>&#x03B3;</mtext>
+     <mtext>B</mtext>
+    </msub>
+    
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+<span class="no">(4.3)</span></p>
+<p class="noindent">where a<sub>i</sub> and &#947;<sub>i</sub> represent the activity and activity coefficients, respectively, of species <i>i.</i> The activity coefficients provide a quantitative measure of the <a id="page_44" class="page">Page 44, Solvent effects on reaction rates</a>change in interaction energies resulting from a transfer from dilute solution in the reference solvent (&#947;<sub>i</sub> &#x003D; 1) to the solvent in question. It might therefore be thought that solvent effects on rates could be treated in a directly similar manner, i.e., the corresponding rate expression for <a href="#eqn_4.2">eqn 4.2</a> should be phrased similarly in terms of activities,</p>
+<aside class="abc" style="margin-top:-5.5em;" epub:type="sidebar">
+<p class="noindent2">Solutions should be dilute to avoid additional contributions to &#947;<sub>i</sub> from solute-solute interactions.</p>
+</aside>
+<p class="eqn" id="eqn_4.4"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mrow><mrow>
+   <mo>&#x2212;</mo><mi>d</mi><mi>A</mi>
+  </mrow><mo>/</mo><mrow>
+   <mi>d</mi><mi>t</mi><mo>=</mo><msub>
+    <mi>k</mi>
+    <mn>1</mn>
+   </msub>
+   <msub>
+    <mi>a</mi>
+    <mtext>A</mtext>
+   </msub>
+   <msub>
+    <mi>a</mi>
+    <mtext>B</mtext>
+   </msub>
+   <mo>&#x2212;</mo><msub>
+    <mi>k</mi>
+    <mrow>
+     <mo>&#x2212;</mo><mn>1</mn>
+    </mrow>
+   </msub>
+   <msub>
+    <mi>a</mi>
+    <mtext>C</mtext>
+   </msub>
+   
+  </mrow></mrow>
+  
+ </mrow>
+</math>
+<span class="no">(4.4)</span></p>
+<p class="noindent" style="margin-left:5em;">or equivalently</p>
+<p class="eqn" id="eqn_4.5"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mrow><mrow>
+   <mo>&#x2212;</mo><mi>d</mi><mi>A</mi>
+  </mrow><mo>/</mo><mrow>
+   <mi>d</mi><mi>t</mi><mo>=</mo><msub>
+    <mi>k</mi>
+    <mn>1</mn>
+   </msub>
+   <mi>A</mi><mi>B</mi><msub>
+    <mtext>&#x03B3;</mtext>
+    <mtext>A</mtext>
+   </msub>
+   <msub>
+    <mtext>&#x03B3;</mtext>
+    <mtext>B</mtext>
+   </msub>
+   <mo>&#x2212;</mo><msub>
+    <mi>k</mi>
+    <mrow>
+     <mo>&#x2212;</mo><mn>1</mn>
+    </mrow>
+   </msub>
+   <mi>C</mi><msub>
+    <mtext>&#x03B3;</mtext>
+    <mtext>C</mtext>
+   </msub>
+   
+  </mrow></mrow>
+  
+ </mrow>
+</math>
+<span class="no">(4.5)</span></p>
+<p class="noindent">where <i>k<sub>1</sub></i> and <i>k</i><sub>-1</sub> are the rate constants for the forward and reverse reactions, respectively. These expressions are, of course, completely consistent with the thermodynamic requirements of the reaction. They do not in general, however, lead to good agreement with the observed kinetic behaviour.</p>
+<aside class="abc" style="margin-top:-4.5em;" epub:type="sidebar">
+<p class="noindent2">At equilibrium, dA/dt = 0 and hence k<sub>1</sub>AB&#956;<sub>A</sub>&#956;<sub>B</sub> = k<sub>-1</sub>C&#956;<sub>C</sub>, i.e., <i>K</i>e = k<sub>1</sub>/k<sub>-1</sub> = C&#956;<sub>C</sub>/(AB&#956;<sub>A</sub>&#956;<sub>B</sub>), in agreement with <a href="#eqn_4.3">eqn 4.3</a>.</p></aside>
+<p class="indent">The limitations of <a href="#eqn_4.5">eqn 4.5</a> and analogous rate equations for irreversible reactions are immediately apparent from a consideration of the solvent dependence of parallel reactions (<a href="Chapter03.xhtml">Ch. 3</a>, <a href="Chapter03.xhtml#sec_3.3">Sect. 3.3</a>); for example, the competing <i>O</i>- and <i>C</i>-alkylations of the phenoxide ion with allyl or benzyl halides (Kornblum <i>et al.</i> 1963)</p>
+<figure class="eqn" id="eqn_4.6"><img src="../images/eqn4-6.jpg" alt="img"/><span class="no">(4.6)</span></figure>
+<p class="noindent">If the relative rates of the reactions were dependent only upon the activities of the reactants (which are, of course, common), the product ratio would be independent of solvent. In practice, however, the proportion of the <i>C</i>-isomers (<i>o-</i> and <i>p</i>-alkylated) varies from less than 1&#x0025; in solvents such as tetrahydrofuran to more than 70&#x0025; in strongly hydrogen-bonding solvents such as water and fluorinated alcohols.</p>
+<p class="indent">Much better agreement with experiment is obtained by the inclusion in <a href="#eqn_4.5">eqn 4.5</a> of an additional activity coefficient, &#947;<sub>&#8225;</sub>, so that</p>
+<p class="eqn" id="eqn_4.7"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mrow><mrow>
+   <mo>&#x2212;</mo><mi>d</mi><mi>A</mi>
+  </mrow><mo>/</mo><mrow>
+   <mi>d</mi><mi>t</mi><mo>=</mo><mrow><mrow>
+    <msub>
+     <mi>k</mi>
+     <mn>1</mn>
+    </msub>
+    <mi>A</mi><mi>B</mi><msub>
+     <mtext>&#x03B3;</mtext>
+     <mtext>A</mtext>
+    </msub>
+    <msub>
+     <mtext>&#x03B3;</mtext>
+     <mtext>B</mtext>
+    </msub>
+    
+   </mrow><mo>/</mo><mrow>
+    <msub>
+     <mtext>&#x03B3;</mtext>
+     <mo>&#x2021;</mo>
+    </msub>
+    <mo>&#x2212;</mo><msub>
+     <mi>k</mi>
+     <mrow>
+      <mo>&#x2212;</mo><mn>1</mn>
+     </mrow>
+    </msub>
+    <msub>
+     <mi>C</mi>
+     <mrow>
+      <mtext>&#x03B3;</mtext><mi>C</mi><mo>/</mo><msub>
+       <mtext>&#x03B3;</mtext>
+       <mo>&#x2021;</mo>
+      </msub>
+      
+     </mrow>
+    </msub>
+    
+   </mrow></mrow>
+   
+  </mrow></mrow>
+  
+ </mrow>
+</math>
+<span class="no">(4.7)</span></p>
+<p class="noindent">The activity coefficient, &#947;<sub>&#8225;</sub>, according to <i>transition state theory</i>, represents the activity coefficient of the <i>transition state</i> or, more strictly, the <i>activated complex</i> of the reaction (see below). Note that the activity coefficient, &#947;<sub>&#8225;</sub>, must cancel at equilibrium in order to satisfy the equilibrium expression. Thus the explanation for the variable product composition in the phenol alkylation above lies in a differential interaction of the solvent with transition states for <i>C</i>- and <i>O</i>-alkylations.</p>
+</section>
+<section epub:type="chapter" id="sec_4.2">
+<h2 class="h2">4.2<span class="space">&#160;</span><b>Transition-state theory</b></h2>
+<p class="noindent">The potential energy of interacting molecules during collision varies with the relative positions of the various nuclei, and the dependence of energy upon the <a id="page_45" class="page">Page 45, Solvent effects on reaction rates</a>coordinates of the nuclei for any particular reaction system can be represented by a potential energy surface. The exact calculation of potential energy surfaces remains difficult, but within any such surface there will be a minimum energy pathway between reactants and products, the so-called <i>reaction pathway</i>. The energy changes along this pathway are illustrated schematically in <a href="#fig4_2">Fig. 4.2</a> for the reaction of Cl<sup>-</sup> with CH<sub>3</sub>I, in which the starting and end-regions correspond to Cl<sup>-</sup> being far removed from CH<sub>3</sub>I, and I<sup>-</sup> being far removed from CH<sub>3</sub>Cl, respectively. The small region around the position of maximum energy between reactants and products is known as the transition state, and a system in this region, represented by [Cl...CH<sub>3</sub>...I]<sup>-&#8225;</sup>, is known as the <i>activated complex</i> or the <i>transition-state complex</i>.</p>
+<aside class="abc" style="margin-top:-13.5em;" epub:type="sidebar">
+<figure style="margin-left:0em;" id="fig4_2">
+<img src="../images/fig4_2.jpg" alt="img"/>
+<figcaption style="width:100%;text-align:left;margin-left:0em;"><b>Fig. 4.2</b> Free energy profile for the reaction between Cl<sub>-</sub> and CH<sup>3</sup>I.</figcaption></figure>
+</aside>
+<p class="indent">The fundamental assumption of transition-state theory is that there is an equilibrium between reactants and the activated complex, X<sup>&#8225;</sup>,</p>
+<p class="eqn"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mtext>A</mtext><mo>+</mo><mtext>B</mtext><mover>
+   <mo>&#x21CC;</mo>
+   <mrow>
+    <msup>
+     <mi>K</mi>
+     <mo>&#x2021;</mo>
+    </msup>
+    
+   </mrow>
+  </mover>
+  <msup>
+   <mtext>X</mtext>
+   <mo>&#x2021;</mo>
+  </msup>
+  <mo>&#x2192;</mo><mtext>&#x2009;</mtext><mtext>products</mtext>
+ </mrow>
+</math>
+<span class="no" style="margin-top:0.5em;">(4.8)</span></p>
+<p class="noindent">The rate of reaction is given by the rate of crossing the transition state, i.e., the concentration of transition-state complexes (<i>X</i><sup>&#8225;</sup> = <i>K</i><sup>&#8225;</sup><i>AB</i>)m ultiplied by the frequency with which the complexes cross the barrier. It can be shown from this that the rate constant, k, is given by <a href="#eqn_4.9">eqn 4.9</a></p>
+<p class="eqn" id="eqn_4.9"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>k</mi><mo>=</mo><mrow><mo>(</mo>
+   <mrow>
+    <mrow><mrow>
+     <msub>
+      <mi>k</mi>
+      <mi>B</mi>
+     </msub>
+     <mi>T</mi>
+    </mrow><mo>/</mo><mi>h</mi></mrow>
+    
+   </mrow>
+  <mo>)</mo></mrow><msup>
+   <mi>K</mi>
+   <mo>&#x2021;</mo>
+  </msup>
+  
+ </mrow>
+</math>
+<span class="no">(4.9)</span></p>
+<p class="noindent">where <i>k<sub>B</sub></i> is the Boltzmann constant, <i>h</i> the Planck constant, and <i>T</i> the absolute temperature. This simple and general equation predicts that the rate constant is a product of an equilibrium constant and a universal frequency factor, <i>k<sub>B</sub></i><i>T/h</i>, which has the dimensions of (time)<sup>-1</sup>.</p>
+<aside class="abc" style="margin-top:-5.5em;" epub:type="sidebar">
+<p class="noindent2">A full derivation of the equations of transition-state theory and a discussion of the underlying assumptions is given by Moore and Pearson (1981).</p>
+</aside>
+<p class="indent">Equation 4.9 provides the simplest basis for interpreting the effect of solvent on reaction rates, and in the following sections we consider the application of transition-state theory to some important reaction types. Before discussing this further, however, it is useful to express the rate constant in terms of the thermodynamic functions corresponding to <i>K</i><sup>&#8225;</sup> :</p>
+<p class="eqn" id="eqn_4.10"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x0394;</mi><msup>
+   <mi>G</mi>
+   <mo>&#x2021;</mo>
+  </msup>
+  <mo>=</mo><mo>&#x2212;</mo><mi>R</mi><mi>T</mi><mtext>ln</mtext><msup>
+   <mi>K</mi>
+   <mo>&#x2021;</mo>
+  </msup>
+  <mo>=</mo><mi>&#x0394;</mi><msup>
+   <mi>H</mi>
+   <mo>&#x2021;</mo>
+  </msup>
+  <mo>&#x2212;</mo><mi>T</mi><mi>&#x0394;</mi><msup>
+   <mi>S</mi>
+   <mo>&#x2021;</mo>
+  </msup>
+  
+ </mrow>
+</math>
+<span class="no">(4.10)</span></p>
+<p class="noindent">and hence by substituting K<sup>&#8225;</sup> = exp(-&#916;G<sup>&#8225;</sup>/RT) in <a href="#eqn_4.9">eqn 4.9</a></p>
+<p class="eqn" id="eqn_4.11"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>k</mi><mo>=</mo><mfrac>
+   <mrow>
+    <msub>
+     <mi>k</mi>
+     <mi>B</mi>
+    </msub>
+    <mi>T</mi>
+   </mrow>
+   <mi>h</mi>
+  </mfrac>
+  <msup>
+   <mtext>e</mtext>
+   <mrow>
+    <mrow><mrow>
+     <mo>&#x2212;</mo><mi>&#x0394;</mi><msup>
+      <mi>G</mi>
+      <mo>&#x2021;</mo>
+     </msup>
+     
+    </mrow><mo>/</mo><mrow>
+     <mi>R</mi><mi>T</mi>
+    </mrow></mrow>
+    
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+<span class="no">(4.11)</span></p>
+<p class="eqn" id="eqn_4.12"><math xmlns="http://www.w3.org/1998/Math/MathML" style="margin-left:2.8em;">
+ <mrow>
+  <mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>=</mo><mfrac>
+   <mrow>
+    <msub>
+     <mi>k</mi>
+     <mi>B</mi>
+    </msub>
+    <mi>T</mi>
+   </mrow>
+   <mi>h</mi>
+  </mfrac>
+  <msup>
+   <mtext>e</mtext>
+   <mrow>
+    <mrow><mrow>
+     <mi>&#x0394;</mi><msup>
+      <mi>S</mi>
+      <mo>&#x2021;</mo>
+     </msup>
+     
+    </mrow><mo>/</mo><mi>R</mi></mrow>
+    
+   </mrow>
+  </msup>
+  <msup>
+   <mtext>e</mtext>
+   <mrow>
+    <mrow><mrow>
+     <mo>&#x2212;</mo><mi>&#x0394;</mi><msup>
+      <mi>H</mi>
+      <mo>&#x2021;</mo>
+     </msup>
+     
+    </mrow><mo>/</mo><mrow>
+     <mi>R</mi><mi>T</mi>
+    </mrow></mrow>
+    
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+<span class="no">(4.12)</span></p>
+<p class="noindent">Thus, according to transition-state theory, solvent effects upon rate constants may be understood in terms of the influence of the solvent upon the equilibrium between the reactants and transition state, and hence upon the free energy of activation, &#916;G<sup>&#8225;</sup>.</p>
+<aside class="abc" style="margin-top:-4.5em;" epub:type="sidebar">
+<p class="noindent2">It is understood that the quantities &#916;<i>G</i><sup>&#8225;</sup>, &#916;<i>H</i><sup>&#8225;</sup>, and &#916;<i>S</i><sup>&#8225;</sup> are values for standard states, the nature of which should be clearly defined.</p>
+</aside>
+</section>
+<a id="page_46" class="page" style="width:70%;">Page 46, Solvent effects on reaction rates</a>
+<section epub:type="chapter" id="sec_4.3"> 
+<h2 class="h2">4.3<span class="space">&#160;</span>Application of transition-state theory to solvent
+effects</h2>
+<p class="noindent">The transfer of a reaction from reference solvent, <i>O</i>, to solvent, <i>S</i>, will in general cause accompanying changes in the standard free energies of both the reactants and the activated complex. This is illustrated schematically in <a href="#fig4_3">Fig. 4.3</a> for a case in which the reactant and transition state free energies are both increased in solvent <i>S</i> relative to reference solvent <i>O</i>. The reaction rate will be altered wherever there is a differential effect of solvent upon reactants and transition state. A rate increase will be favoured by an increase in the free energies (i.e., destabilization) of the reactants and/or a decrease in free energy (stabilization) of the transition state&#x2014;both will tend to reduce the free energy of activation. It can be seen from <a href="#fig4_3">Fig. 4.3</a> that the changes in free energies of the reactants,  <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>&#x0394;</mi><msubsup>
+  <mi>G</mi>
+  <mrow>
+   <mi>t</mi><mi>r</mi>
+  </mrow>
+  <mi>o</mi>
+ </msubsup>
+ <mo stretchy='false'>(</mo><mtext>R</mtext><mo stretchy='false'>)</mo>
+</math>
+, and transition state, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>&#x0394;</mi><msubsup>
+  <mi>G</mi>
+  <mrow>
+   <mi>t</mi><mi>r</mi>
+  </mrow>
+  <mi>o</mi>
+ </msubsup>
+ <mo stretchy='false'>(</mo><mtext>&#8225;</mtext><mo stretchy='false'>)</mo>
+</math>, on transfer between the solvents are given by <a href="#eqn_4.13">eqns 4.13</a> and <a href="#eqn_4.14">4.14</a>, respectively,</p>
+<p class="eqn" id="eqn_4.13"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x0394;</mi><msubsup>
+   <mi>G</mi>
+   <mrow>
+    <mtext>tr</mtext>
+   </mrow>
+   <mo>&#x2218;</mo>
+  </msubsup>
+  <mrow><mo>(</mo>
+   <mtext>R</mtext>
+  <mo>)</mo></mrow><mo>=</mo><msubsup>
+   <mi>G</mi>
+   <mi>S</mi>
+   <mo>&#x2218;</mo>
+  </msubsup>
+  <mrow><mo>(</mo>
+   <mtext>R</mtext>
+  <mo>)</mo></mrow><mo>&#x2212;</mo><msubsup>
+   <mi>G</mi>
+   <mi>O</mi>
+   <mo>&#x2218;</mo>
+  </msubsup>
+  <mrow><mo>(</mo>
+   <mtext>R</mtext>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+<span class="no">(4.13)</span></p>
+<p class="eqn" id="eqn_4.14"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x0394;</mi><msubsup>
+   <mi>G</mi>
+   <mrow>
+    <mtext>tr</mtext>
+   </mrow>
+   <mo>&#x2218;</mo>
+  </msubsup>
+  <mrow><mo>(</mo>
+   <mo>&#x2021;</mo>
+  <mo>)</mo></mrow><mo>=</mo><msubsup>
+   <mi>G</mi>
+   <mi>S</mi>
+   <mo>&#x2218;</mo>
+  </msubsup>
+  <mrow><mo>(</mo>
+   <mo>&#x2021;</mo>
+  <mo>)</mo></mrow><mo>&#x2212;</mo><msubsup>
+   <mi>G</mi>
+   <mi>O</mi>
+   <mo>&#x2218;</mo>
+  </msubsup>
+  <mrow><mo>(</mo>
+   <mo>&#x2021;</mo>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+<span class="no">(4.14)</span></p>
+<p class="noindent">and the change in the free energy of activation, &#x0394;&#x0394;G<sup>&#8225;</sup> by <a href="#eqn_4.15">eqn 4.15</a></p>
+<p class="eqn" id="eqn_4.15"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x0394;</mi><mi>&#x0394;</mi><msup>
+   <mi>G</mi>
+   <mo>&#x2021;</mo>
+  </msup>
+  <mo>=</mo><mi>&#x0394;</mi><msubsup>
+   <mi>G</mi>
+   <mrow>
+    <mtext>tr</mtext>
+   </mrow>
+   <mo>&#x2218;</mo>
+  </msubsup>
+  <mrow><mo>(</mo>
+   <mo>&#x2021;</mo>
+  <mo>)</mo></mrow><mo>&#x2212;</mo><mi>&#x0394;</mi><msubsup>
+   <mi>G</mi>
+   <mrow>
+    <mtext>tr</mtext>
+   </mrow>
+   <mo>&#x2218;</mo>
+  </msubsup>
+  <mrow><mo>(</mo>
+   <mtext>R</mtext>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+<span class="no">(4.15)</span></p>
+<p class="noindent"><a href="#fig4_3">Fig. 4.3</a> and <a href="#eqn_4.15">eqn 4.15</a>, which relate the change in the free energy of activation to the changes in free energy of the reactants and transition state, provide the fundamental basis for a discussion of solvent effects on rates. It remains, however, to express quantitatively the solvent dependence of the observed rate constants in terms of these effects. This can be done equivalently using either activity coefficients or the corresponding changes in free energy; the two are simply related for species <i>i</i> by <a href="#eqn_4.16">eqn 4.16</a> (Cox and Waghorne 1980)</p>
+<aside class="abc" style="margin-top:-20.5em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;" id="fig4_3">
+<img src="../images/fig4_3.jpg" alt="img"/>
+<figcaption style="text-align:left;margin-left:0em;"><b>Fig. 4.3</b> Illustration of the relationship between the changes in free energy of the reactants, R, and transition state, &#8225;, and the free energy of activation on transfer from reference solvent, <i>O</i>, to solvent S (Buncel and Wilson 1979).</figcaption></figure>
+</aside>
+<p class="eqn" id="eqn_4.16"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x0394;</mi><msubsup>
+   <mi>G</mi>
+   <mrow>
+    <mtext>tr</mtext>
+   </mrow>
+   <mo>&#x2218;</mo>
+  </msubsup>
+  <mrow><mo>(</mo>
+   <mi>i</mi>
+  <mo>)</mo></mrow><mo>=</mo><mi>R</mi><mi>T</mi><mi>ln</mi><msub>
+   <mtext>&#x03B3;</mtext>
+   <mi>i</mi>
+  </msub>
+  
+ </mrow>
+</math>
+<span class="no">(4.16)</span></p>
+<p class="noindent">If we now include this within the formulation of transition-state theory, we obtain for a bimolecular reaction A &#x002B; B &#8594; products,</p>
+<p class="eqn" id="eqn_4.17"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msup>
+   <mi>K</mi>
+   <mo>&#x2021;</mo>
+  </msup>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <msup>
+     <mi>X</mi>
+     <mo>&#x2021;</mo>
+    </msup>
+    
+   </mrow>
+   <mrow>
+    <mi>A</mi><mi>B</mi>
+   </mrow>
+  </mfrac>
+  <mfrac>
+   <mrow>
+    <msub>
+     <mtext>&#x03B3;</mtext>
+     <mo>&#x2021;</mo>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <msub>
+     <mtext>&#x03B3;</mtext>
+     <mtext>A</mtext>
+    </msub>
+    <msub>
+     <mtext>&#x03B3;</mtext>
+     <mtext>B</mtext>
+    </msub>
+    
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+<span class="no">(4.17)</span></p>
+<p class="noindent">and hence <i>X</i><sup>&#8225;</sup> &#x003D; <i>K</i><sup>&#8225;</sup><i>AB</i>&#947;<sub>A</sub>&#947;<sub>B</sub>/&#947;<sub>&#8225;</sub>, so that</p>
+<aside class="abc" style="margin-top:-2.5em;" epub:type="sidebar">
+<p class="noindent2">Note that as the activity coefficients, 7,&#x00B7;, equal one in the reference solvent, 0, k<sub>0</sub> &#x003D; (k<sub>B</sub>T/H)K<sup>x</sup>.</p>
+</aside>
+<p class="eqn" id="eqn_4.18"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>k</mi><mi>s</mi><mo>=</mo><mfrac>
+   <mrow>
+    <msub>
+     <mi>k</mi>
+     <mtext>B</mtext>
+    </msub>
+    <mi>T</mi>
+   </mrow>
+   <mi>h</mi>
+  </mfrac>
+  <msup>
+   <mi>K</mi>
+   <mo>&#x2021;</mo>
+  </msup>
+  <mfrac>
+   <mrow>
+    <msub>
+     <mtext>&#x03B3;</mtext>
+     <mtext>A</mtext>
+    </msub>
+    <msub>
+     <mtext>&#x03B3;</mtext>
+     <mtext>B</mtext>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <msub>
+     <mtext>&#x03B3;</mtext>
+     <mo>&#x2021;</mo>
+    </msub>
+    
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+<span class="no">(4.18)</span></p>
+<p class="noindent">The effect of solvent upon the rate constant is then given by <a href="#eqn_4.19">eqn 4.19</a></p>
+<p class="eqn" id="eqn_4.19"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mrow><mrow>
+   <mi>k</mi><mi>s</mi>
+  </mrow><mo>/</mo><mrow>
+   <mi>k</mi><mi>o</mi>
+  </mrow></mrow>
+  <mo>=</mo><mrow><mrow>
+   <msub>
+    <mtext>&#x03B3;</mtext>
+    <mtext>A</mtext>
+   </msub>
+   <msub>
+    <mtext>&#x03B3;</mtext>
+    <mtext>B</mtext>
+   </msub>
+   
+  </mrow><mo>/</mo><mrow>
+   <msub>
+    <mtext>&#x03B3;</mtext>
+    <mo>&#x2021;</mo>
+   </msub>
+   
+  </mrow></mrow>
+  
+ </mrow>
+</math>
+<span class="no">(4.19)</span></p>
+<p class="noindent">or equivalently by <a href="#eqn_4.20">eqn 4.20</a></p>
+<p class="eqn" id="eqn_4.20"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>ln</mi><mrow><mo>(</mo>
+   <mrow>
+    <mrow><mrow>
+     <mi>k</mi><mi>s</mi>
+    </mrow><mo>/</mo><mrow>
+     <mi>k</mi><mi>o</mi>
+    </mrow></mrow>
+    
+   </mrow>
+  <mo>)</mo></mrow><mo>=</mo><mrow><mrow>
+   <mrow><mo>{</mo> <mrow>
+    <mi>&#x0394;</mi><msubsup>
+     <mi>G</mi>
+     <mrow>
+      <mtext>tr</mtext>
+     </mrow>
+     <mo>&#x00B0;</mo>
+    </msubsup>
+    <mrow><mo>(</mo>
+     <mtext>A</mtext>
+    <mo>)</mo></mrow><mo>+</mo><mi>&#x0394;</mi><msubsup>
+     <mi>G</mi>
+     <mrow>
+      <mtext>tr</mtext>
+     </mrow>
+     <mo>&#x00B0;</mo>
+    </msubsup>
+    <mrow><mo>(</mo>
+     <mtext>B</mtext>
+    <mo>)</mo></mrow><mo>&#x2212;</mo><mi>&#x0394;</mi><msubsup>
+     <mi>G</mi>
+     <mrow>
+      <mtext>tr</mtext>
+     </mrow>
+     <mo>&#x00B0;</mo>
+    </msubsup>
+    <mrow><mo>(</mo>
+     <mo>&#x2021;</mo>
+    <mo>)</mo></mrow>
+   </mrow> <mo>}</mo></mrow>
+  </mrow><mo>/</mo><mrow>
+   <mi>R</mi><mi>T</mi>
+  </mrow></mrow>
+  
+ </mrow>
+</math>
+<span class="no">(4.20)</span></p>
+<p class="noindent">Equations 4.19 and 4.20 show the extent to which solvent effects on the rate constant are due to changes in the solvation of the reactants, A and B, and of the <a id="page_47" class="page">Page 47, Solvent effects on reaction rates</a>activated complex, X<sup>&#8225;</sup>. They can readily be generalized to include any number of reactants. In this chapter we will normally discuss results in terms of free energy changes (<a href="#fig4_3">Fig. 4.3</a>) rather than activity coefficients, as most readers will find this more comfortable.</p>
+<h3 class="h3"><b>Solvation energies</b></h3>
+<p class="noindent">An examination of the kinetic results for various reaction types will benefit from a brief preliminary survey of the magnitudes of the solute-solvent interaction energies for ions and nonelectrolytes. We look first at the total solvation energies of ions via the hydration energies (i.e., energies of hydration of gaseous ions), and then at the transfer of both electrolytes and nonelectrolytes among solvents.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent"><i>Hydration energies</i></p>
+<p class="noindent">The free energy of hydration of cations, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>&#x0394;</mi><msubsup>
+  <mi>G</mi>
+  <mrow>
+   <mi>h</mi>
+  </mrow>
+  <mi>o</mi>
+ </msubsup>
+</math>, refers to the process in <a href="#eqn_4.21">eqn 4.21</a>, and similarly for anions.</p>
+<figure class="eqn" id="eqn_4.21"><img src="../images/eqn4-21.jpg" alt="img"/><span class="no">(4.21)</span></figure>
+<p class="noindent">Some representative values are included in <a href="#tab4-3">Table 4.3</a> (Marcus 1985).</p>
+<aside class="abc" style="margin-top:-7.5em;" epub:type="sidebar">
+<p class="noindent2">It should be noted in the following that a net change in solvation energy of reactants and transition state of 5.7 kJ mol<sup>-1</sup> corresponds to a change in rate constant by one order of magnitude at 25&#x00B0; C.</p>
+</aside>
+<p class="tcaption" id="tab4-3"><b>Table 4.3</b> Free energies of hydration of ions at 25&#x00B0;C.</p>
+<figure class="figure-bh" style="margin-left:6em;">
+<img src="../images/tab4_3.jpg" alt="img"/>
+</figure>
+<p class="noindent">&#160;</p>
+<p class="indent">The energies involved are strikingly large and very sensitive to ion size and charge. Detailed experimental and theoretical studies of ions in the gas phase suggests that the major part of the energy comes from electrostatic interactions between ions and the first 1-2 layers of solvent molecules surrounding them. The very high energies required to form gaseous ions provides an immediate explanation for the chief difference between reactions in solution and the gas phase, namely the participation or not of ions.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent"><i>Free energies of transfer among solvents</i></p>
+<p class="noindent"><b>(i) Electrolytes.</b> The <i>changes</i> in ion-solvent interactions among solvents are small compared with the absolute values, but show similar trends with ionic size and charge. The energies corresponding to these changes, together with those for nonelectrolytes, determine the solvent dependence of reaction rates. <a id="page_48" class="page">Page 48, Solvent effects on reaction rates</a>Particularly important trends in the solvation of anions are illustrated in <a href="#tab4-4">Table 4.4</a> showing results for the transfer of sodium salts, NaX, from water to various non-aqueous solvents, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>&#x0394;</mi><msubsup>
+  <mi>G</mi>
+  <mrow>
+   <mi>t</mi><mi>r</mi>
+  </mrow>
+  <mi>o</mi>
+ </msubsup>
+ <mo stretchy='false'>(</mo><mtext>NaX</mtext><mo stretchy='false'>)</mo>
+</math> (Cox and Waghorne 1980).</p>
+<aside class="abc" style="margin-top:-3.5em;" epub:type="sidebar">
+<p class="noindent2">The free energies of transfer of electrolytes are most commonly obtained directly from the change in solubility, provided that the solid salt does not form a solvate.</p></aside>
+<p class="tcaption" id="tab4-4"><b>Table 4.4</b> Changes in free energy on transfer of salts, NaX, from water to non-aqueous solvents at 25&#x00B0;C.</p>
+<figure class="figure-bh" style="margin-left:6em;">
+<img src="../images/tab4_4.jpg" alt="img"/>
+</figure>
+<p class="indent">The most graphic conclusion from <a href="#tab4-4">Table 4.4</a> is that small anions show a much bigger increase in free energy than larger, polarizable anions when transferred from water or methanol (<i>protic</i> solvents which contain relatively acidic protons) to <i>aprotic</i> solvents, such as DMF, Me<sub>2</sub>SO, MeCN, tetrahydrofuran, etc; compare the transfer of NaCl and Nal from water to DMF. This arises mainly because anions such as Cl<sup>&#x2013;</sup>, and notably also OH<sup>&#x2013;</sup>, F<sup>&#x2013;</sup>, and OAc<sup>&#x2013;</sup>, are strongly stabilized by hydrogen-bonding in protic solvents. By contrast, the larger anions with delocalized charges, such as picrate (2,4,6-trinitrophenolate) and tetraphenylborate <math xmlns="http://www.w3.org/1998/Math/MathML"> <msubsup>
+  <mtext>(BPH</mtext>
+  <mn>4</mn>
+  <mo>&#x2212;</mo>
+ </msubsup>
+ <mo stretchy='false'>)</mo>
+</math>, are relatively much more strongly solvated in typical non-aqueous media, where dispersion force interactions are larger. The effects are substantial &#x2014;<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>&#x0394;</mi><msubsup>
+  <mi>G</mi>
+  <mrow>
+   <mi>tr</mi>
+  </mrow>
+  <mi>o</mi>
+ </msubsup>
+</math> values for Cl<sup>&#x2013;</sup> are on average some <i>75 kJ mol<sup>-1</sup></i> more positive than those for <math xmlns="http://www.w3.org/1998/Math/MathML"> <msubsup>
+  <mtext>BPH</mtext>
+  <mn>4</mn>
+  <mo>&#x2212;</mo>
+ </msubsup>
+</math> and will be seen to account for the very large solvent effects observed for many important classes of reactions involving anions as nucleophiles or bases.</p>
+<p class="indent">Such simple trends with size and solvent do not exist among the various cations&#x2014;more specific binding, often described under the general heading of &#x2018;hard-soft&#x2019; interactions, and factors such as ligand field effects for transition metal cations play an important role. However, the results suggest that in most instances solvents such as DMF and Me<sub>2</sub>SO (1), which are stronger Lewis bases than water, solvate cations more strongly. This is consistent with the highly polar nature of such solvents and the relatively high negative charge density on the carbonyl or sulfoxide oxygens. The reverse is true for solvents which are poorer Lewis bases; for example, MeCN and the vast range of nonpolar organic solvents.</p>
+<aside class="abc" style="margin-top:-10.5em;" epub:type="sidebar">
+<figure class="figure-bh">
+<img src="../images/fig4-1.jpg" alt="img"/>
+</figure></aside>
+<p class="noindent"><b>(ii) Nonelectrolytes.</b> Typical nonelectrolytes show little change in free energy when transferred among <i>nonaqueous</i> solvents, compared with electrolytes. However, they generally have substantially higher free energies (lower solubilities) in water. Uncharged reactants, therefore, do not normally contribute significantly to solvent effects on rates. Results for CH<sub>3</sub>I and <i>t</i>-BuCl are shown in <a href="#tab4-5">Table 4.5</a> and are indicative generally of the behaviour of neutral organic substrates (Parker 1969, p. 5).</p>
+<a id="page_49" class="page" style="width:70%;">Page 49, Solvent effects on reaction rates</a>
+<p class="tcaption" id="tab4-5"><b>Table 4.5</b> Free energies of transfer of nonelectrolytes from water to nonaqueous solvents at 25&#x00B0;C.</p>
+<figure class="figure-bh" style="margin-left:4em;">
+<img src="../images/tab4_5.jpg" alt="img"/>
+</figure>
+<p class="blockquote">The discussion above may be summarized as follows.</p>
+<p class="noindent">&#160;</p>
+<ul>
+<li>The absolute solvation energies are very large (several hundred to severs thousand kJ mol<sup>-1</sup>) and are strongly dependent upon ionic size and charge.</li>
+<li>Variations in ionic solvation among solvents, up to 100 kJ mol<sup>-1</sup>, an sufficiently large to cause pronounced changes in reactivity. Small anion of high charge density are markedly favoured by protic solvents relativi to larger, more polarizable anions. Cations tend to be more strongl; solvated by solvents which are strong Lewis bases, such as dimethy sulfoxide and dimethylformamide.</li>
+<li>Nonelectrolytes exhibit comparatively small variations in free energ; among solvents. The biggest (unfavourable) changes occur on transfe from nonaqueous solvents to water.</li>
+</ul>
+<h3 class="h3">Anion-molecule reactions</h3>
+<p class="noindent">Probably the largest and best characterized solvent effects are exhibited by bimolecular reactions between anions and uncharged molecules, of the general type represented by <a href="#eqn_4.22">eqn 4.22</a> (compare <a href="#tab4-1">Table 4.1</a>, <a href="#fig4_2">Fig. 4.2</a>):</p>
+<p class="eqn" id="eqn_4.22"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msup>
+   <mtext>Y</mtext>
+   <mo>&#x2212;</mo>
+  </msup>
+  <mo>+</mo><mtext>RX</mtext><mo>&#x21CC;</mo><msup>
+   <mrow>
+    <mrow><mo>[</mo> <mrow>
+     <mtext>YRX</mtext>
+    </mrow> <mo>]</mo></mrow>
+   </mrow>
+   <mrow>
+    <mo>&#x2212;</mo><mo>&#x2021;</mo>
+   </mrow>
+  </msup>
+  <mo>&#x2192;</mo><mtext>YR</mtext><mo>+</mo><msup>
+   <mtext>X</mtext>
+   <mo>&#x2212;</mo>
+  </msup>
+  
+ </mrow>
+</math>
+<span class="no">(4.22)</span></p>
+<p class="noindent">The reactions are much faster in polar aprotic solvents, often by a factor as large as 10<sup>6</sup>, than in water or the simple alcohols. This situation is illustrated by the data for the aromatic nucleophilic substitution reaction (S<sub>N</sub>Ar) of 4&#x2013;fluoronitrobenzene in <a href="#tab4-1">Table 4.1</a>, and in <a href="#tab4-6">Table 4.6</a> for the simple bimolecular nucleophilic reaction (Parker 1969, p. 12):</p>
+<p class="eqn" id="eqn_4.23">Cl<sup>&#x2013;</sup>+CH<sub>3</sub>I&#8594;CH<sub>3</sub>Cl+I<sup>&#x2013;</sup><span class="no">(4.23)</span></p>
+<p class="tcaption" id="tab4-6"><b>Table 4.6</b> Rate constants at 25&#x00B0;C for reaction:<br/> Cl<sup>&#x2013;</sup> &#x002B; CH<sub>3</sub>I &#8594; CH<sub>3</sub>Cl &#x002B;I<sup>&#x2013;</sup> </p>
+<figure class="figure-bh" style="margin-left:6em;">
+<img src="../images/tab4_6.jpg" alt="img"/>
+</figure>
+<a id="page_50" class="page" style="width:70%;">Page 50, Solvent effects on reaction rates</a>
+
+<p class="indent">The reason lies in the greater size, polarizability, and charge dispersion of the transition state (e.g. 2) compared with the smaller reactant anions. We have seen in the previous section that in water, where anions are solvated by hydrogen-bonding (A<sup>-</sup> &#x00B7; &#x00B7; &#x00B7; HOH), small anions are stabilized much more than large ones; whereas in polar aprotic solvents, where solvation is by nonspecific ion-dipolar and dispersion forces, there is less difference between large and small anions. The overall effect is a significant decrease in the free energy of activation on transfer from water (or simple alcohols) to polar aprotic solvents. This is illustrated schematically in <a href="#fig4_4">Fig. 4.4</a>.</p>
+<aside class="abc" style="margin-top:-10.5em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;">
+<img src="../images/fig4-2.jpg" alt="img"/>
+</figure></aside>
+<p class="indent">The results for the nucleophilic substitution reactions in Tables 4.1 and 4.6 are typical of those for reactions of anions acting as nucleophiles or bases. Examples include elimination reactions and proton abstraction from carbon acids, such as ketones or nitroalkanes:</p>
+<figure class="eqn" id="eqn_4.24"><img src="../images/eqn4-24.jpg" alt="img"/><span class="no">(4.24)</span></figure>
+<p class="noindent">The formation of nitroalkane anions and especially also enolate anions is an integral part of many synthetically important condensation reactions.</p>
+<h3 class="h3">Cation-molecule reactions: metal ion complexation</h3>
+<p class="noindent">Complexation reactions are amongst the most common and important undergone by cations. It is necessary here to recognize explicitly the involvement of the solvent, as in <a href="#eqn_4.25">eqn 4.25</a> for cation M<sup>n&#x002B;</sup>,</p>
+<p class="eqn" id="eqn_4.25"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msubsup>
+   <mrow>
+    <mtext>MS</mtext>
+   </mrow>
+   <mi>m</mi>
+   <mrow>
+    <mi>n</mi><mo>+</mo>
+   </mrow>
+  </msubsup>
+  <mo>+</mo><mtext>L</mtext><munderover>
+   <mo>&#x21CC;</mo>
+   <mrow>
+    <msub>
+     <mi>k</mi>
+     <mi>d</mi>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <msub>
+     <mi>k</mi>
+     <mi>f</mi>
+    </msub>
+    
+   </mrow>
+  </munderover>
+  <msubsup>
+   <mrow>
+    <mtext>MLS</mtext>
+   </mrow>
+   <mrow>
+    <mi>m</mi><mo>&#x2212;</mo><mn>1</mn>
+   </mrow>
+   <mrow>
+    <mi>n</mi><mo>+</mo>
+   </mrow>
+  </msubsup>
+  <mo>+</mo><mtext>S</mtext>
+ </mrow>
+</math>
+<span class="no">(4.25)</span></p>
+<aside class="abc" style="margin-top:-13.5em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;" id="fig4_4">
+<img src="../images/fig4_4.jpg" alt="img"/>
+<figcaption style="width:100%;text-align:left;margin-left:0em;"><b>Fig. 4.4</b> Reaction profiles illustrating the effect of solvent on the reaction between Cl<sup>-1</sup> and CH<sub>3</sub>I. Note that the exact position of the two curves relative to one another is uncertain; the important feature is the lower free energy of activation in Me<sub>2</sub>SO.</figcaption></figure></aside>
+<p class="noindent">in which L represents the incoming ligand and S a solvent molecule. Thus the solvent acts directly as a leaving or as entering group, depending on the direction of the reaction. There is good evidence from kinetic and spectroscopic studies that the reactions may best be represented in terms of a two-step mechanism (Eigen and Wilkins 1965), <a href="#eqn_4.26">eqn 4.26</a></p>
+<p class="eqn" id="eqn_4.26"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msubsup>
+   <mrow>
+    <mtext>MS</mtext>
+   </mrow>
+   <mi>m</mi>
+   <mrow>
+    <mi>n</mi><mo>+</mo>
+   </mrow>
+  </msubsup>
+  <mo>+</mo><mtext>L</mtext><mover>
+   <mo>&#x21CC;</mo>
+   <mrow>
+    <msub>
+     <mi>K</mi>
+     <mrow>
+      <mi>o</mi><mi>s</mi>
+     </mrow>
+    </msub>
+    
+   </mrow>
+  </mover>
+  <msup>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <msub>
+       <mrow>
+        <mtext>MS</mtext>
+       </mrow>
+       <mi>m</mi>
+      </msub>
+      <mtext>L</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mrow>
+    <mi>n</mi><mo>+</mo>
+   </mrow>
+  </msup>
+  <mover>
+   <mo>&#x2192;</mo>
+   <mrow>
+    <msub>
+     <mi>k</mi>
+     <mn>2</mn>
+    </msub>
+    
+   </mrow>
+  </mover>
+  <msubsup>
+   <mrow>
+    <mtext>MLS</mtext>
+   </mrow>
+   <mrow>
+    <mi>m</mi><mo>&#x2212;</mo><mn>1</mn>
+   </mrow>
+   <mrow>
+    <mi>n</mi><mo>+</mo>
+   </mrow>
+  </msubsup>
+  <mo>+</mo><mtext>S</mtext>
+ </mrow>
+</math>
+<span class="no">(4.26)</span></p>
+<p class="noindent">The first step is the formation of an outer-sphere complex, via a rapid preequilibrium, and the second is a rate-limiting reaction to form a complex in which the cation and ligand are in direct contact.</p>
+<p class="indent">It is found experimentally that for a wide range of simple ligand exchange or complexation reactions the rate constant for the second (substitution) step, <i>k<sub>2</sub>,</i> is closely similar to the rate constant for solvent exchange between the bulk solvent and the coordination sphere of the cation, <i>k<sub>s</sub></i>, and almost independent of the ligand&#x2014;results for reactions in water are shown in <a href="#fig4_5">Fig. 4.5</a>. This means that the rate constant for complex formation can be approximated by</p>
+<p class="eqn" id="eqn_4.27"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>k</mi>
+   <mi>f</mi>
+  </msub>
+  <mtext>=</mtext><msub>
+   <mi>K</mi>
+   <mrow>
+    <mtext>os</mtext>
+   </mrow>
+  </msub>
+  <msub>
+   <mi>k</mi>
+   <mtext>S</mtext>
+  </msub>
+  
+ </mrow>
+</math>
+<span class="no">(4.27)</span></p>
+<p class="noindent">The outer-sphere equilibrium constant, <i>K</i><sub>os</sub>, has a value typically of c. 0.1 M<sup>-1</sup> for a neutral ligand, almost independent of solvent.</p>
+
+<a id="page_51" class="page" style="width:70%;">Page 51, Solvent effects on reaction rates</a>
+<p class="indent">Rate constants for solvent exchange at Ni<sup>2&#x002B;</sup> and Mn<sup>2&#x002B;</sup> are given in <a href="#tab4-7">Table 4.7</a> (Marcus 1985). They vary over about one to two orders of magnitude across the range of solvents studied and do not correlate in any simple way with ion-solvent interaction energies. It may be concluded from this that very little solvation energy is lost during the exchange process, which presumably proceeds via a transition state of the form [S* &#x00B7; &#x00B7; &#x00B7; MS<sub>m-1</sub> &#x00B7; &#x00B7; &#x00B7; S]<sup>n&#x002B;&#8225;</sup> (S* represents the incoming solvent molecule).</p>
+<p class="tcaption" id="tab4-7"><b>Table 4.7</b> Solvent exchange rates for Ni(II) and Mn(II) ions in various solvents at 25&#x00B0;C.</p>
+<figure class="figure-bh" style="margin-left:6em;">
+<img src="../images/tab4_7.jpg" alt="img"/>
+</figure>
+<p class="indent">The rates of complex formation between Ni<sup>2&#x002B;</sup> and pyridine are given in <a href="#tab4-8">Table 4.8</a> (Coetzee 1977). They show only a small variation with solvent, as expected from the results above for solvent exchange at Ni<sup>2&#x002B;</sup>.</p>
+<aside class="abc" style="margin-top:-13.5em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;" id="fig4_5">
+<img src="../images/fig4_5.jpg" alt="img"/>
+<figcaption style="width:100%;text-align:left;margin-left:0em;"><b>Fig. 4.5</b> First-order rate constants for substitution of water by various ligands in the coordination spheres of Ni<sup>2+</sup> and Cu<sup>2+</sup>, <i>k<sub>2</sub></i> from <a href="#eqn_4.26">eqn 4.26</a> (Diebler et al 1969).</figcaption></figure></aside>
+<p class="tcaption" id="tab4-8"><b>Table 4.8</b> Rate constants for complex formation between Ni(II) and pyridine at 25&#x00B0;C.</p>
+<figure class="figure-bh" style="margin-left:6em;">
+<img src="../images/tab4_8.jpg" alt="img"/>
+</figure>
+<p class="indent">Complex formation between cations and <i>macrocyclic</i> ligands, such as the bicyclic diaza-crown ligand (2,2,2), shows somewhat different solvent behaviour. Complexation frequently involves complete replacement of solvent molecules in the inner coordination sphere of the cation by binding sites of the ligand, and more systematic changes of rate constants with solvent are observed. An example is the complexation of K<sup>&#x002B;</sup> by (2,2,2)</p>
+<aside class="abc" style="margin-top:-7.5em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:4em;">
+<img src="../images/fig4-3.jpg" alt="img"/>
+</figure>
+</aside>
+<p class="eqn" id="eqn_4.28"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msup>
+   <mtext>K</mtext>
+   <mo>+</mo>
+  </msup>
+  <mo>+</mo><mrow><mo>(</mo>
+   <mrow>
+    <mn>2</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>2</mn>
+   </mrow>
+  <mo>)</mo></mrow><munderover>
+   <mo>&#x21CC;</mo>
+   <mrow>
+    <msub>
+     <mi>k</mi>
+     <mi>d</mi>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <msub>
+     <mi>k</mi>
+     <mi>f</mi>
+    </msub>
+    
+   </mrow>
+  </munderover>
+  <mtext>K</mtext><msup>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mn>2</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>2</mn>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mo>+</mo>
+  </msup>
+  
+ </mrow>
+</math>
+<span class="no">(4.28)</span></p>
+<p class="noindent">for which some results are given in <a href="#tab4-9">Table 4.9</a> (Cox <i>et al</i> 1981).</p>
+<p class="tcaption" id="tab4-9"><b>Table 4.9</b> Rates of formation and dissociation of K(2,2,2)&#x002B; in several solvents at 25&#x00B0;C.</p>
+<figure class="figure-bh" style="margin-left:6em;">
+<img src="../images/tab4_9.jpg" alt="img"/>
+</figure>
+<a id="page_52" class="page" style="width:70%;">Page 52, Solvent effects on reaction rates</a>
+<p class="indent">In the forward direction, formation of the transition state will involve at least some loss of solvation energy, depending upon the extent of penetration of the ligand cavity by the incoming cation. Therefore, the formation reaction is more difficult in solvents which interact more strongly with the potassium cation, such as Me<sub>2</sub>SO. The reverse is true for the dissociation reaction.</p>
+<h3 class="h3">Cation-anion reactions</h3>
+<p class="noindent">The simplest reaction involving charge neutralization is ion-pair formation. For larger ions, ion-pair formation is essentially diffusion controlled (<a href="Chapter05.xhtml">Ch. 5</a>, <a href="Chapter05.xhtml#sec_5.2">Sect. 5.2</a>) and therefore does not appear to involve any significant solvation effects.</p>
+<p class="indent">Nucleophilic substitution reactions of anions with cationic substrates, as in <a href="#eqn_4.29">eqn 4.29</a> (Parker 1969, p. 18) behave</p>
+<figure class="eqn" id="eqn_4.29"><img src="../images/eqn4-29.jpg" alt="img"/><span class="no">(4.29)</span></figure>
+<p class="noindent">somewhat similarly to those discussed above for neutral substrates. The rate constant in DMF, for example, is some 10<sup>3</sup> that in methanol, consistent with a large increase in the activity of the azide anion. The effect is, however, smaller than that for the corresponding reaction of the azide anion with the neutral substrate, CH<sub>3</sub>I, for which the rate increases by a factor of 4&#215;l0<sup>4</sup>. This suggests some stabilization of the reactant cation by DMF. The relative reactivities of anionic nucleophiles such as F<sup>&#x2013;</sup> or  <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+  <msubsup>
+   <mtext>N</mtext>
+   <mn>3</mn>
+   <mo>&#x2212;</mo>
+  </msubsup>
+ </mrow>
+</math> with resonance stabilized triarylmethyl cations, Ar<sub>3</sub>C<sup>+</sup>,</p>
+<figure class="eqn" id="eqn_4.30"><img src="../images/eqn4-30.jpg" alt="img"/><span class="no">(4.30)</span></figure>
+<p class="noindent">are very sensitive to solvent, whereas the relative reactivities of the cations are strikingly solvent-independent (Ritchie 1972). In all of these cases it seems that the desolvation of the anion on forming the transition state is considerable.</p>
+<h3 class="h3">Uncharged molecules producing ions</h3>
+<p class="noindent">The reactions discussed to date have involved stronger solvation of the reactants, because the transition state was uncharged or at least had a more dispersed charge than the reactants. Ion-forming reactions, on the other hand, have transition states which are more polar than the reactants; e.g., the reaction exhibited in <a href="#tab4-2">Table 4.2</a> between triethylamine and ethyl iodide, with transition state (<b>3</b>). Thus polar or polarizable solvents favour the dipolar transition state, leading to a lowering of the free energy of activation. The effects can be large&#x2014;for example, in the formation of tetraethyl ammonium iodide (<a href="#tab4-2">Table 4.2</a>), <i>k</i>(nitrobenzene)/<i>k</i>(hexane) &#x003D; 2.7 &#215; 10<sup>3</sup>, which corresponds to a lowering of the free energy of activation in nitrobenzene by 24.5 kJ mol<sup>-1</sup> (<a href="#eqn_4.11">eqn 4.11</a>).</p>
+<p class="indent">Such results are quite general for ion-forming reactions. One of the most widely studied reactions of this type is that between trimethylamine and <i>p-</i> nitrobenzyl chloride,</p>
+<aside class="abc" style="margin-top:-10.5em;" epub:type="sidebar">
+<figure class="figure-bh">
+<img src="../images/fig4-4.jpg" alt="img"/>
+</figure>
+<p class="noindent2">It is interesting to note that this corresponds to c. half of the reduction in free energy of the product ion-pair (NEt<sub>4</sub>N<sup>+</sup>I<sup>-</sup>) on transfer from hexane to nitrobenzene (Abraham 1971).</p>
+</aside>
+<figure class="eqn" id="eqn_4.31"><img src="../images/eqn4-31.jpg" alt="img"/><span class="no">(4.31)</span></figure>
+<a id="page_53" class="page" style="width:70%;">Page 53, Solvent effects on reaction rates</a>
+<p class="noindent">selected data for which are given in <a href="#tab4-10">Table 4.10</a> (Abraham 1971). Again, it can be seen that the reaction is strongly favoured by the more polar solvents.</p>
+<p class="tcaption" id="tab4-10"><b>Table 4.10</b> Rate constants for the reaction of trimethylamine with <i>p</i>-nitrobenzyl chloride, <a href="#eqn_4.31">eqn 4.31</a>, at 25&#x00B0;C.</p>
+<figure class="figure-bh" style="margin-left:6em;">
+<img src="../images/tab4_10.jpg" alt="img"/>
+</figure>
+<h3 class="h3">Nonpolar reactions</h3>
+<p class="noindent">Reactions between neutral molecules which do not develop dipolar or radical transition states usually display only very small solvent effects. Indeed it is often possible to study such reactions in the gas phase as well as in solution, and very little difference in rate constant is observed. The reason is that the charge distribution in the transition state and the ground state is very similar. The large class of concerted reactions known as <i>pericyclic reactions</i>, of which the Diels-Alder 1,4-addition reactions of alkenes (dienophiles) to conjugated dienes (dienes) are prominent examples, fall into this category.</p>
+<p class="indent">The behaviour of Diels-Alder reactions is typified by the dimerization of cyclopentadiene to give <i>endo-</i>dicyclopentadiene, <a href="#eqn_4.32">eqn 4.32</a>.</p>
+<figure class="eqn" id="eqn_4.32"><img src="../images/eqn4-32.jpg" alt="img"/><span class="no">(4.32)</span></figure>
+<p class="noindent">The second-order rate constant has been measured in the gas phase and in a variety of solvents of varying polarity, and is almost constant, <a href="#tab4-11">Table 4.11</a> (Wasser- man 1952). The same is true even where the dienes or the dienophiles have permanent dipoles, as these are usually incorporated practically unchanged into the product without any particular increase or decrease during the reaction.</p>
+<p class="tcaption" id="tab4-11"><b>Table 4.11</b> Solvent effects in cyclopentadiene dimerization (20&#x00B0;C).</p>
+<figure class="figure-bh" style="margin-left:6em;">
+<img src="../images/tab4_11.jpg" alt="img"/>
+</figure>
+<p class="noindent">Significant solvent effects are, however, observed for some reactions involving both neutral reactants and products. The rate constant for the cycloaddition reaction of <i>n</i>-butyl vinyl ether with tetracyanoethene,</p>
+<figure class="eqn" id="eqn_4.33"><img src="../images/eqn4-33.jpg" alt="img"/><span class="no">(4.33)</span></figure>
+<a id="page_54" class="page" style="width:70%;">Page 54, Solvent effects on reaction rates</a>
+
+<p class="noindent">for example, is 2600 times larger in acetonitrile than in cyclohexane (Steiner and Huisgen 1973). However, this reaction proceeds via a zwitterionic intermediate <b>(4),</b> formed in the rate-limiting step, which then closes rapidly to give the final product. The solvent dependence, therefore, resembles much more closely that of the ionization reactions considered in the previous section.</p>
+<aside class="abc" style="margin-top:-7.5em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;">
+<img src="../images/fig4-5.jpg" alt="img"/>
+</figure>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_4.4">
+<h2 class="h2">4.4<span class="space">&#160;</span>Properties of solvents</h2>
+<p class="noindent">We have seen above that solvent effects on reaction rates reflect the differential solvation of reactants and transition states, expressed quantitatively by eqns 4.19 or 4.20. From a practical point of view it would be very useful to be able to define properties of solvents which provide a measure of their polarity or solvating powers. A wide range of physical and empirical parameters have been used for this purpose, and in this section we discuss briefly some of these. Properties of various solvents are listed in <a href="#tab4-12">Table 4.12</a>&#x2014;more comprehensive compilations are given by Marcus (1985) and Reichardt (1988).</p>
+<p class="noindent"><b>Dielectric constant,</b> <i>&#949;</i>. This is a bulk property of the solvent and does not give other than a very general indication of solvent polarity or ability to solvate ions. Quantitative correlations between rate and dielectric constant, via the Kirkwood dielectric function, (<i>&#949;</i> - l)/(2<i>&#949;</i> + 1), have met with little success, even for ionization reactions, such as that between NEt<sub>3</sub> and EtI (<a href="#tab4-2">Table 4.2</a>) (Reichardt 1988).</p>
+<p class="tcaption" id="tab4-12"><b>Table 4.12</b> Properties of solvents<sup>0</sup>.</p>
+<figure class="figure-bh" style="margin-left:6em;">
+<img src="../images/tab4_12.jpg" alt="img"/>
+</figure>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="noindent2">For two charges <i>q</i> and <i>&#x2013;q</i> separated by a distance <i>r, &#x03BC; = qr,</i> with a direction from negative to positive charge.</p>
+</aside>
+<p class="noindent"><b>Dipole moment,</b> <i>&#x03BC;</i>. The dipole moment, although a molecular property, is not an effective measure of solvating ability. This may be attributed to the fact that the dipole moment does not give an indication of the accessibility of the <a id="page_55" class="page">Page 55, Solvent effects on reaction rates</a>dipolar charge or indeed directly of the magnitude of the charge. For example, a large dipole moment may simply be an indication of a large separation of the constituent charges.</p>
+<p class="noindent"><b>Donor number, DN.</b> Donor numbers are a measure of the ability of <i>solvent molecules</i> to donate electron pairs to suitable acceptors. They are defined as the negative enthalpy of adduct formation between a solvent molecule, S, and SbCI<sub>5</sub> in 1,2-dichloroethane (Gutmann 1978),</p>
+<aside class="abc" style="margin-top:-7.5em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;">
+<img src="../images/fig4-6.jpg" alt="img"/>
+</figure>
+</aside>
+<figure class="eqn" id="eqn_4.34"><img src="../images/eqn4-34.jpg" alt="img"/><span class="no">(4.34)</span></figure>
+<p class="noindent">The values are largest for strong Lewis bases such as dimethyl sulfoxide, and they tend to correlate with the solvation energies of cations.</p>
+<p class="noindent"><b>Acceptor number, AN.</b> Acceptor numbers were introduced to complement donor numbers, and they relate to the acceptance of electron pairs by solvent molecules. They are derived from the <b>NMR</b> chemical shifts of phosphorus produced when Et<sub>3</sub>PO is dissolved in different solvents (Gutmann 1978). Electron donation to the solvent from the oxygen bonded to phosphorus leads to P deshielding and hence a solvent-dependent, down-field shift. Values for the different solvents are scaled between zero (hexane) and 100 (Et<sub>3</sub>PO&#8594;SbCI<sub>5</sub> complex in 1,2-dichloroethane). Acceptor numbers are highest for protic solvents because of their ability to form strong hydrogen-bonds. They tend, therefore, to give a measure of the ability of solvents to stabilize anions. <b>E</b><sub><i>T</i></sub>(<b>30</b>) <b>value.</b> The electronic transitions of various indicators are strongly solvent-dependent, and the transition energies in different solvents have been used as empirical measures of solvent polarity. The most widely used of these parameters is the E<sub><i>T</i></sub>(30) value, which is the lowest energy transition of the pyridinium phenol betain, (5), expressed in kcal mol<sup>-1</sup> (Reichardt 1988). Like the acceptor numbers, E<sub><i>T</i></sub>(30) values are highest for protic solvents.</p>
+<p class="indent">The properties listed in <a href="#tab4-12">Table 4.12</a> show clearly that solvents such as <i>n-</i> hexane have low polarities according to any of the criteria included. There is, however, no single measure of polarity for the more polar solvents, as their solvating abilities depend very much upon whether they are required to stabilize positive or negative charge.</p>
+<aside class="abc" style="margin-top:-13.5em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;">
+<img src="../images/fig4-7.jpg" alt="img"/>
+</figure>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_ref4">
+<h2 class="h2">References</h2>
+<p class="noindent">Abraham, M. H. (1971). <i>J. Chem. Soc. B,</i> 299.</p>
+<p class="noindent">Buncel E. and Wilson, H. (1979). <i>Acc. Chem. Res.,</i> <b>12</b>, 42.</p>
+<p class="noindent">Coetzee, J. F. (1977). <i>Pure Appl. Chem.,</i> <b>49</b>, 27.</p>
+<p class="noindent">Cox, B. G., Garcia-Rosas, J., and Schneider, H. (1981). <i>J. Am. Chem. Soc.,</i> <b>103</b>, 1054.</p>
+<p class="noindent">Cox, B. G. and Parker, A. J. (1973). <i>J. Am. Chem. Soc.,</i> <b>95</b>, 408.</p>
+<p class="noindent">Cox, B. G. and Waghorne, W. E. (1980). <i>Chem. Soc. Rev.,</i> <b>9</b>, 381.</p>
+<p class="noindent">Diebler, H., Eigen, M., Ilgenfritz, G., Maass, G., and Winkler, R. (1969). <i>Pure Appl. Chem.,</i> <b>20</b>, 93.</p>
+<p class="noindent">Eigen, M. and Wilkins, R. G. (1965). <i>Adv. Chem. Ser. No. 49,</i> 55.</p>
+<p class="noindent">Grimm, H. G., Ruf, H., and Wolff, H. (1931). <i>Z. Phys. Chem.,</i> <b>13B</b>, 301. </p>
+<a id="page_56" class="page" style="width:70%;">Page 56, Solvent effects on reaction rates</a>
+<p class="noindent">Gutmann, V. (1978). <i>The donor-acceptor approach to molecular interactions.</i> Plenum Press, New York. Academic Press. New York.</p>
+<p class="noindent">Kornblum, N., Berrigan, P. J., and Le Noble, W. J. (1963). <i>J. Am. Chem. Soc.,</i> <b>85</b>, 1141.</p>
+<p class="noindent">Marcus, Y. (1985). <i>Ion solvation.</i> Wiley, Chichester.</p>
+<p class="noindent">Moore, J. W. and Pearson, R. G. (1981). <i>Kinetics and mechanism</i>, (3rd edn). Wiley, New York.</p>
+<p class="noindent">Parker, A. J. (1969). <i>Chem. Rev.,</i> <b>69</b>, 1.</p>
+<p class="noindent">Reichardt, C. (1988). <i>Solvents and solvent effects in organic chemistry.</i> VCH Verlagsgesellschaft, Weinheim.</p>
+<p class="noindent">Ritchie, C. D. (1972). <i>Acc. Chem. Res.,</i> <b>5</b>, 348.</p>
+<p class="noindent">Steiner, G. and Huisgen, R. (1973). <i>Tetrahedron Lett.,</i> 3763, 3769.</p>
+<p class="noindent">Wassermann, A. (1952). <i>Monatsch. Chem.,</i> <b>83</b>, 543.</p>
+</section>
+<section epub:type="chapter" id="br4">
+<h2 class="h2">Background reading</h2>
+<p class="noindent">Buncel E. and Wilson, H. (1979). <i>Acc. Chem. Res.,</i> <b>12</b>, 42.</p>
+<p class="noindent">Parker, A. J. (1969). <i>Chem. Rev.,</i> <b>69</b>, 1.</p>
+<p class="noindent">Reichardt, C. (1988). <i>Solvents and solvent effects in organic chemistry.</i> VCH Verlagsgesellschaft, Weinheim.</p>
+</section>
+</section>
+</body>
+</html>

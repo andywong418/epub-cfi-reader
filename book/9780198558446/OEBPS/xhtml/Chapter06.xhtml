@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Oscillations, waves, and chaos in chemical kinetics</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<div>
+<section epub:type="chapter" id="ch06">
+<a id="page_67" class="page" style="width:70%;">Page 67, Oscillatory reactions in flow systems</a>
+<h1 class="main">6<span class="space">&#160;</span>Oscillatory reactions in flow systems</h1>
+<p class="noindent">&#160;</p>
+<p class="noindent">The gas-phase reaction between hydrogen and oxygen is a classic &#x2018;set piece&#x2019; of undergraduate kinetics courses, illustrating the influence of branched-chain kinetics on the simplest of all combustion reactions. Chain branching provides feedback and this reaction also proves to be a classic nonlinear kinetic system. In closed vessels, the <i>p</i>&#x2212;<i>T</i><sub>a</sub> ignition limits are evidence of <i>parametric sensitivity</i>: two systems with similar initial conditions but on either side of the limit evolve to final equilibrium states that are very similar, but in one case the reaction proceeds slowly whilst in the other it occurs explosively. In a flow system, oscillations and true steady state bifurcations emerge.</p>
+<section epub:type="chapter" id="sec_6.1">
+<h2 class="h2" style="margin-bottom:-0.7em;">6.1<span class="space">&#160;</span>The H<sub>2</sub> + O<sub>2</sub> reaction in closed vessels</h2>
+<h3 class="h3">Ignition limits</h3>
+<p class="noindent">The behaviour of H<sub>2</sub> + O<sub>2</sub> mixtures at subatmospheric pressures over the temperature range 700-800K is summarized in <a href="#fig6.1">Fig. 6.1</a>. Two distinct modes of reaction are observed depending on the exact initial pressure and temperature: <i>slow reaction</i>, in which the rate of conversion of the reactants to the product H<sub>2</sub>O may be imperceptibly low, and <i>ignition</i>, for which the reaction proceeds on a millisecond timescale with explosive force and a considerable temperature excursion. The locus of <i>p</i>&#x2212;<i>T</i><sub>a</sub> conditions separating these two forms gives rise to the <i>p</i>&#x2212;<i>T</i><sub>a</sub> <i>ignition limits</i>: the three branches of the curve are labelled as the first, second, and third limits in order of increasing pressure. The exact location of these limits depends on various factors: the vessel size, packing, and coating (these affect the first limit most) and the initial gas composition including inert gases (mainly affecting the second limit).</p>
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+<figure class="fig2" id="fig6.1">
+<img src="../images/page67-1.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 6.1</b> Typical pressure&#x2013;ambient temperature (<i>p</i>&#x2212;<i>T</i><sub>a</sub>) ignition limits for the H<sub>2</sub> + O<sub>2</sub> reaction in a closed vessel.</p>
+</figcaption></figure>
+</aside>
+<h3 class="h3">Kinetic feedback mechanism</h3>
+<p class="noindent">Although the reaction is strongly exothermic and self-heating can be detected in the slow reaction zone, the primary mechanism for the transition from slow reaction to ignition in the vicinity of the first and second limits (<i>p</i> &#x003C; 100 Torr) is the branched-chain kinetics. Three overall processes can be distinguished: <i>initiation</i>, the <i>branching cycle</i>, and the <i>termination steps</i>.</p>
+<p class="indent">Initiation processes, in general, are not easy to identify in branched-chain systems but for the present purposes the step</p>
+<a id="page_68" class="page" style="width: 70%;">Page 68, Oscillatory reactions in flow systems</a>
+<figure class="figure-bh" id="step0">
+<img src="../images/page68-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">can serve as the route from the products to the first radical species. (In the subsequent analysis, HO<sub>2</sub> will be treated as a relatively unreactive species, even though it is formally a radical: the significant radical formed in <a href="#eq6.1">Eqn (6.1)</a> is the highly reactive H atom. The concentrations of the reactants H<sub>2</sub> and O<sub>2</sub> will also be considered as effectively constant.)</p>
+<p class="indent">The branching cycle was discussed earlier (1.3). It comprises the following elementary steps:</p>
+<figure class="figure-bh" id="step1-3">
+<img src="../images/page68-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">These contribute to an overall branching process:</p>
+<figure class="fig1" style="margin-left:-1em;">
+<img src="../images/page68-3.jpg" alt="images"/>
+</figure>
+<p class="indent">Chain branching competes with termination, which removes radicals from the system. In the vicinity of the lower limits, the important termination processes are:</p>
+<figure class="figure-bh" id="step4-5">
+<img src="../images/page68-4.jpg" alt="images"/>
+</figure>
+<p class="noindent">The net termination rate is simply the sum of the rates of these individual steps:</p>
+<figure class="fig1a" id="eq6.1">
+<img src="../images/page68-5.jpg" alt="images"/>
+</figure>
+<p class="noindent"><a href="#step4-5">Step (5)</a> involves a <i>third body</i> species M. The role of M is to remove energy from the newly formed HO<sub>2</sub> complex and hence stabilize the product before it redissociates or reacts via the channel corresponding to <a href="#step1-3">step (2)</a>. Any species present in the reaction mixture can play this third body role, although the most important third bodies will be those present in the greatest concentrations (H<sub>2</sub>, O<sub>2</sub>, inert diluents and, in the later stages of the reaction, H<sub>2</sub>O). We will consider the form of <a href="#step4-5">step (5)</a> in more detail shortly.</p>
+<h3 class="h3">Ignition limit condition</h3>
+<p class="noindent">The rate at which the H atom concentration changes can be written in terms of the rates of initiation, branching, and termination</p>
+<p class="noindent" id="eq6.2" style="margin-left:13.2em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mtext>d</mtext><mrow><mo>[</mo> <mtext>H</mtext> <mo>]</mo></mrow></mrow><mo>/</mo><mrow><mtext>d</mtext><mi>t</mi></mrow></mrow><mo>=</mo><msub><mi>r</mi><mtext>i</mtext></msub><mo>+</mo><mn>2</mn><msub><mi>r</mi><mtext>b</mtext></msub><mo>&#x2212;</mo><msub><mi>r</mi><mtext>t</mtext></msub><mo>=</mo><msub><mi>r</mi><mtext>i</mtext></msub>
+<mo>+</mo><mtext>&#x03D5;</mtext><mrow><mo>[</mo> <mtext>H</mtext> <mo>]</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.2</mn><mo stretchy='false'>)</mo></math>
+</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">Formally, this equation can be obtained by evaluating the expressions for the steady-state concentrations of OH and O and substituting these into the rate equation for [H].</p>
+</aside>
+<p class="noindent">where</p>
+<p class="noindent" id="eq6.3" style="margin-left:15em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>&#x03D5;</mtext><mo>=</mo><mn>2</mn><mi>k</mi><mrow><mo>[</mo> <mrow><msub><mtext>O</mtext><mn>2</mn></msub></mrow> <mo>]</mo></mrow><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><msub><mi>k</mi><mn>4</mn></msub><mo>+</mo><msub><mi>k</mi><mn>5</mn></msub><mrow><mo>[</mo> <mrow><msub><mtext>O</mtext><mn>2</mn></msub></mrow> <mo>]</mo></mrow><mrow><mo>[</mo> <mtext>M</mtext> <mo>]</mo></mrow></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.3</mn><mo stretchy='false'>)</mo></math>
+</p>
+<p class="noindent">is the <i>net branching factor</i>.</p>
+<p class="indent">For a given initial composition, pressure and temperature, <i>r</i><sub>i</sub> and &#x03D5; are effectively constants and <a href="#eq6.2">Eqn (6.2)</a> can be integrated relatively easily to give <a id="page_69" class="page">Page 69, Oscillatory reactions in flow systems</a>(strictly, for &#x03D5;&#x2260;0). This exponential time dependence of the H atom concentration differs qualitatively for the two possible cases of &#x03D5; &#x003C; 0 and &#x03D5; &#x003E; 0.</p>
+
+<p class="noindent" id="eq6.4" style="margin-top:0.8em;margin-bottom:0.8em;margin-left:18.5em;">
+
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>[</mo> <mtext>H</mtext> <mo>]</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mrow><mrow><msub><mi>r</mi><mtext>i</mtext></msub></mrow><mo>/</mo><mtext>&#x03D5;</mtext></mrow></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msup><mtext>e</mtext><mrow><mtext>&#x03D5;</mtext><mi>t</mi></mrow></msup><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.4</mn><mo stretchy='false'>)</mo></math>
+</p>
+<p class="noindent1"><b>&#x03D5; &#x003C; 0</b>: If the net branching factor is negative, i.e., if the termination rate exceeds the branching rate at all times, <a href="#eq6.4">Eqn (6.4)</a> can be rewritten as</p>
+<p class="noindent" id="eq6.5" style="margin-top:0.8em;margin-bottom:0.8em;margin-left:19.4em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>[</mo> <mtext>H</mtext> <mo>]</mo></mrow><mo>=</mo><msub><mrow><mo>[</mo> <mtext>H</mtext> <mo>]</mo></mrow><mrow><mtext>ss</mtext></mrow></msub><mrow><mo>(</mo><mrow><mn>1</mn><mo>&#x2212;</mo><msup><mtext>e</mtext><mrow><mtext>&#x03D5;</mtext><mi>t</mi></mrow></msup></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.5</mn><mo stretchy='false'>)</mo></math>
+</p>
+<p class="noindent">where [H]<sub>ss</sub> = <i>r</i><sub>i</sub>/&#x03D5; (which is a positive quantity for &#x03D5; &#x003C; 0). This shows that [H] approaches its steady-state value, determined by the balance between production through the initiation process and removal by the net termination, as indicated by curve (a) in <a href="#fig6.2">Fig. 6.2</a>. The approach is exponential as the term e<sup>&#x03D5;<i>t</i></sup> decays with &#x03D5; &#x003C; 0. Because the initiation rate is typically very low, the steady-state radical concentration will also typically be low, unless &#x03D5; is very close to zero. In general, then, the condition &#x03D5; &#x003C; 0 corresponds to the case of slow reaction in the <i>p</i>&#x2212;<i>T</i><sub>a</sub> diagram.</p>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<figure class="fig2" id="fig6.2">
+<img src="../images/page69-1.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 6.2</b> Different evolution of the H atom concentration for systems with (a) &#x03D5; &#x003C; 0 evolving to steady state and (b) &#x03D5; &#x003E; 0 accelerating to ignition.</p>
+</figcaption></figure>
+</aside>
+<p class="noindent1"><b>&#x03D5; &#x003E; 0</b>: Under conditions such that the branching rate exceeds the total termination rate, <a href="#eq6.4">Eqn (6.4)</a> indicates that the H atom concentration will grow exponentially and continuously in time, curve (b) in <a href="#fig6.2">Fig. 6.2</a>. Ultimately, the steady-state approximation and the assumption that the reactant concentrations can be treated as constants will break down, but this accelerating rate is clearly quite different from the exponential decay to a low steady radical concentration and, instead, corresponds to explosive behaviour.</p>
+<h3 class="h3">Interpretation of ignition condition</h3>
+<p class="noindent">The case separating slow reaction from ignition is now clearly that for which &#x03D5; = 0, i.e., for which the rates of branching and termination are exactly balanced. In full, this condition becomes</p>
+<figure class="fig1a" id="eq6.6">
+<img src="../images/page69-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">The rate constants are functions of the temperature, whilst [O<sub>2</sub>] and [M] depend on the pressure. <a href="#eq6.6">Equation (6.6)</a> is thus an expression for the ignition limit pressure, <i>p</i><sub>ign</sub>, as a function of the ambient temperature, <i>T</i><sub>a</sub>. For the moment, we may approximate [M], the total concentration of possible third bodies, by <i>p</i><sub>ign</sub>/<i>RT</i><sub>a</sub> and take <i>k</i><sub>4</sub> to be independent of pressure. <a href="#eq6.6">Equation (6.6)</a> then has a quadratic form:</p>
+<p class="noindent" id="eq6.7" style="margin-left:8.7em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>2</mn><msub>
+  <mi>k</mi>
+  <mn>2</mn>
+ </msub>
+ <msub>
+  <mi>x</mi>
+  <mrow>
+   <msub>
+    <mi>o</mi>
+    <mn>2</mn>
+   </msub>
+     </mrow>
+ </msub>
+ <mrow><mo>(</mo>
+  <mrow>
+   <mrow><mrow>
+    <msub>
+     <mi>p</mi>
+     <mrow>
+      <mi>i</mi><mi>g</mi><mi>n</mi>
+     </mrow>
+    </msub>
+    </mrow><mo>/</mo><mrow>
+    <mi>R</mi><msub>
+     <mi>T</mi>
+     <mi>a</mi>
+    </msub>
+</mrow></mrow>
+  </mrow>
+ <mo>)</mo></mrow><mo>=</mo><msub>
+  <mi>k</mi>
+  <mn>4</mn>
+ </msub>
+ <mo>+</mo><msub>
+  <mi>k</mi>
+  <mn>5</mn>
+ </msub>
+ <msub>
+  <mi>x</mi>
+  <mrow>
+   <msub>
+    <mi>o</mi>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+ </msub>
+ <msup>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mrow><mrow>
+     <msub>
+      <mi>p</mi>
+      <mrow>
+       <mi>i</mi><mi>g</mi><mi>n</mi>
+      </mrow>
+     </msub>
+    </mrow><mo>/</mo><mrow>
+     <mi>R</mi><msub>
+      <mi>T</mi>
+      <mi>a</mi>
+     </msub>
+    </mrow></mrow>
+   </mrow>
+  <mo>)</mo></mrow>
+  <mn>2</mn>
+ </msup>
+ <mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.7</mn><mo stretchy='false'>)</mo>
+</math>
+</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="fig2" id="fig6.3">
+<img src="../images/page69-3.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 6.3</b> The two roots of Eqn (6.14) define the first and second <i>p</i>-<i>T</i><sub>a</sub>, ignition limits along which &#x03D5; = 0. To the left of the limit, &#x03D5; &#x003C; 0 and there is slow reaction with branching controlled by termination; to the right of the limit, &#x03D5; &#x003E; 0 and ignition occurs.</p>
+</figcaption></figure>
+</aside>
+<p class="noindent">which has either two or no positive real roots, depending on <i>T</i><sub>a</sub> (and, hence, the rate constants) and the mole fraction of oxygen, x<sub>o<sub>2</sub></sub>. The two real roots would then give the ignition limit pressures for a given <i>T</i><sub>a</sub> (<a href="#fig6.3">Fig. 6.3</a>); as <i>T</i><sub>a</sub> is reduced, these two roots merge and become a complex pair at the junction of the first and second limits.</p>
+<p class="noindent"><a id="page_70" class="page">Page 70, Oscillatory reactions in flow systems</a></p>
+<h3 class="h3">First limit</h3>
+<p class="noindent">In fact, the termination <a href="#step4-5">step (4)</a> is determined by the diffusion of H atoms to the walls and, hence, <i>k</i><sub>4</sub> is likely to decrease as the pressure increases. This termination process will be most influential at the lowest pressures, appropriate to the first limit. At low pressures, the three body process (5) is also likely to be unimportant, so the condition for the first limit can be simplified to a balance between the branching cycle and termination <a href="#step4-5">step (4)</a>, giving</p>
+<p class="noindent" id="eq6.8" style="margin-left:17.8em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <msub>
+  <mi>k</mi>
+  <mn>2</mn>
+ </msub>
+ <msub>
+  <mi>x</mi>
+  <mrow>
+   <msub>
+    <mi>o</mi>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+ </msub>
+ <mrow><mo>(</mo>
+  <mrow>
+   <mrow><mrow>
+    <msub>
+     <mi>p</mi>
+     <mrow>
+      <mi>i</mi><mi>g</mi><mi>n</mi>
+     </mrow>
+    </msub>
+   </mrow><mo>/</mo><mrow>
+    <mi>R</mi><msub>
+     <mi>T</mi>
+     <mi>a</mi>
+    </msub>
+   </mrow></mrow>
+  </mrow>
+ <mo>)</mo></mrow><mo>=</mo><msub>
+  <mi>k</mi>
+  <mn>4</mn>
+ </msub>
+ <mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.8</mn><mo stretchy='false'>)</mo>
+</math>
+</p>
+<p class="noindent">At the lowest pressures, <i>p</i> &#x003C; <i>p</i><sub>ign</sub>, the rate of the gas-phase branching process is reduced below that of the termination step; H atoms, on average, reach the wall and are removed before they react with an O<sub>2</sub> molecule. Termination controls the reaction and a steady state can be established. As the pressure is increased, so the branching rate increases proportionately and the termination rate decreases. The two rates become exactly equal at <i>p</i><sub>ign</sub> and for <i>p</i> &#x003E; <i>p</i><sub>ign</sub>, the branching process wins out.</p>
+<p class="indent">The rate constant <i>k</i><sub>2</sub> is a sensitive function of the temperature as it has a relatively high activation energy, <i>E</i><sub>2</sub> = 70 kJ mol<sup>&#x2212;1</sup>; the termination process, on the other hand, will not change much with temperature. Thus <i>p</i><sub>ign</sub> will decrease as <i>T</i><sub>a</sub> increases. The nature of the vessel surface is important here, different surface coatings or surface-to-volume ratios will be reflected in different appropriate values for <i>k</i><sub>4</sub>. Vessels coated with &#x2018;aged&#x2019; boric acid are almost incapable of effecting the termination step, so <i>k</i><sub>4</sub> &#x2248; 0 and the first limit effectively does not exist. With a more active surface, such as KCl, the first limit is raised to sufficiently pressures that it can be relatively easily located experimentally.</p>
+<h3 class="h3">Second limit</h3>
+<p class="noindent">As the pressure is increased, so the simple termination of H atoms at the wall via <a href="#step4-5">step (4)</a> becomes less important. It is the competition between the second-order branching process and the third-order termination <a href="#step4-5">step (5)</a> that determines the critical pressure for the second limit. The condition for a balance: above the limit, the termination step controls the reaction, but as the pressure is decreased the rate of this step decreases more quickly than that of the branching step. The two rates become equal when <i>p</i> = <i>p</i><sub>ign</sub>, given approximately from <a href="#eq6.6">Eqns (6.6)</a> or <a href="#eq6.7">(6.7)</a> by</p>
+<p class="noindent" id="eq6.9" style="margin-left:19em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>2</mn><msub>
+  <mi>k</mi>
+  <mn>2</mn>
+ </msub>
+ <mo>=</mo><msub>
+  <mi>k</mi>
+  <mn>5</mn>
+ </msub>
+ <mrow><mo>(</mo>
+  <mrow>
+   <mrow><mrow>
+    <msub>
+     <mi>p</mi>
+     <mrow>
+      <mi>i</mi><mi>g</mi><mi>n</mi>
+     </mrow>
+    </msub>
+   </mrow><mo>/</mo><mrow>
+    <mi>R</mi><msub>
+     <mi>T</mi>
+     <mi>a</mi>
+    </msub>
+   </mrow></mrow>
+  </mrow>
+ <mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.9</mn><mo stretchy='false'>)</mo>
+</math>
+</p>
+<p class="indent">Again, <i>k</i><sub>2</sub> is a sensitive function of the temperature, increasing as <i>T</i><sub>a</sub> increases. The temperature dependence of <i>k</i><sub>5</sub> is more subtle. The role of the third body is to remove energy and hence stabilize the produce relative to redissociation. The more thermal energy the species possesses, the greater the excess that needs to be removed. This makes stabilization harder to achieve at higher temperatures, so <i>k</i><sub>5</sub> effectively <i>decreases</i> as <i>T</i><sub>a</sub> increases. The critical condition <a href="#eq6.9">(6.9)</a> thus indicates that <i>p</i><sub>ign</sub> should increase as the ambient temperature is raised.</p>
+<a id="page_71" class="page" style="width:70%;">Page 71, Oscillatory reactions in flow systems</a>
+<p class="indent">To explain the influence of the initial gas composition and of inert gases on the location of the limit, we need to consider the termination process (5) more carefully. Various species present at reasonable concentrations can play the role of the third body M, but not all species are necessarily as efficient as each other in facilitating the required energy transfer. It turns out that the light molecule H<sub>2</sub> is approximately three times more efficient than the heavier O<sub>2</sub> or N<sub>2</sub> (which have approximately the same efficiency); the triatomic product H<sub>2</sub>O has especially suitable energy levels into which the excess energy can be transferred effectively and so is approximately six times more efficient than H<sub>2</sub>.</p>
+<p class="indent">If we consider a mixture of H<sub>2</sub>, O<sub>2</sub>, and N<sub>2</sub> then the total termination process (5) actually occurs through the three steps</p>
+<figure class="figure-bh" style="margin-left:0em;">
+<img src="../images/page71-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">with <math xmlns='http://www.w3.org/1998/Math/MathML'><msub>
+  <mi>k</mi>
+  <mrow>
+   <mtext>t</mtext><mo>,</mo><msub>
+    <mtext>H</mtext>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+ </msub>
+ <mo>&#x2248;</mo><mn>3</mn><msub>
+  <mi>k</mi>
+  <mrow>
+   <mtext>t</mtext><mo>,</mo><msub>
+    <mtext>O</mtext>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+ </msub></math> and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <msub>
+  <mi>k</mi>
+  <mrow>
+   <mtext>t</mtext><mo>,</mo><msub>
+    <mtext>O</mtext>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+ </msub>
+ <mo>&#x2248;</mo><msub>
+  <mi>k</mi>
+  <mrow>
+   <mtext>t</mtext><mo>,</mo><msub>
+    <mtext>N</mtext>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+ </msub>
+</math>. The termination rate then becomes</p>
+<figure class="fig1a" id="eq6.10">
+<img src="../images/page71-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">This can be written in the form</p>
+<figure class="fig1a" id="eq6.11">
+<img src="../images/page71-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">where [M] = <i>p</i>/<i>RT</i><sub>a</sub> is, as before, the total concentration of species in the gas phase. The reaction rate constant <i>k</i><sub>t, H<sub>2</sub></sub> is now specified as that with H<sub>2</sub> as the third body. The correction factor {&#x2211;<i>a</i><sub>i</sub><i>x</i><sub>i</sub>} involves the mole fractions of the various species <i>i</i> = H<sub>2</sub>, O<sub>2</sub>, N<sub>2</sub>, and the <i>third body efficiencies</i> <i>a</i><sub>i</sub> = <i>k</i><sub>t,i</sub>/<i>k</i><sub>t,H<sub>2</sub></sub>. By definition, the third body efficiency of H<sub>2</sub> is unity, whilst <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <msub>
+  <mi>a</mi>
+  <mrow>
+   <msub>
+    <mtext>O</mtext>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+ </msub>
+ <mo>&#x2248;</mo><msub>
+  <mi>a</mi>
+  <mrow>
+   <msub>
+    <mtext>N</mtext>
+    <mn>2</mn>
+   </msub>
+  </mrow>
+ </msub>
+ <mo>&#x2248;</mo><mfrac bevelled='true'>
+  <mn>1</mn>
+  <mn>3</mn>
+ </mfrac>
+</math> and, for later reference, <i>a</i><sub>H<sub>2</sub>O</sub> &#x2248; 6.</p>
+<aside class="abc" style="margin-top:-9.7em;" epub:type="sidebar">
+<figure class="fig2" id="fig6.4">
+<img src="../images/page71-4.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 6.4</b> The influence of composition, via third body efficiencies of H<sub>2</sub> and O<sub>2</sub>, on the second ignition limit: (a) H<sub>2</sub> + 2O<sub>2</sub>; (b) H<sub>2</sub> + O<sub>2</sub>; (c) 2H<sub>2</sub> + O<sub>2</sub>. Increasing the concentration of the relatively more efficient third body H<sub>2</sub> shiftsthe limit to higher temperatures.</p>
+</figcaption></figure>
+</aside>
+<p class="indent">Because the <i>a</i><sub><i>i</i></sub> terms are not all equal to unity, <i>r</i><sub>t</sub> is now a function of the mixture composition. Replacing H<sub>2</sub> by a less efficient third body such as O<sub>2</sub> decreases the termination rate and, hence, alters the critical pressure (<i>p</i><sub>ign</sub> increases in this case so the second limit moves to lower temperatures, as indicated in <a href="#fig6.4">Fig 6.4</a>).</p>
+<p class="indent">The nature of the surface can also play a role at this limit, even though the branching and termination steps have been portrayed as occurring in the gas phase. This arises through the subsequent fate of the HO<sub>2</sub> species. Although a radical, it is much less reactive than H, OH, and O and under the prevailing conditions it can reach the vessel walls unreacted. If the surface is efficient at removing HO<sub>2</sub>, the chain will effectively end as soon as HO<sub>2</sub> is formed in <a href="#step4-5">step (5)</a>. With inefficient or reflective surfaces, such as aged boric acid, HO<sub>2</sub>, is not removed and so its concentration can build up. Other reactions then become important, including the step</p>
+<figure class="fig1" style="margin-left:-1em;">
+<img src="../images/page71-5.jpg" alt="images"/>
+</figure>
+<p class="noindent">If H<sub>2</sub>O<sub>2</sub> remains intact, <a href="#step4-5">step (5)</a> still constitutes a termination, but at higher pressures, H<sub>2</sub>O<sub>2</sub> may be thermally dissociated via <a id="page_72" class="page">Page 72, Oscillatory reactions in flow systems</a>returning radicals to the pool. The mathematical analysis of the larger scheme appropriate to such vessel-coating is slightly different from that given above, but has the same essential feature of a low steady-state reaction rate giving rise to explosive growth as the pressure is deceased or the ambient temperature is increased.</p>
+<figure class="fig1" style="margin-left:-1em;">
+<img src="../images/page72-1.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">R.R. Baldwin and R.W. Walker (1972). In <i>Essays in chemistry</i> (ed. J.A. Barnard, R.D. Gillard, and R.F. Hudson), Vol. 33, pp. 1&#x2013;37. Academic Press, London.</p></aside>
+</section>
+<section epub:type="chapter" id="sec_6.2">
+<h2 class="h2" style="margin-bottom:-0.8em;">6.2<span class="space">&#160;</span>H<sub>2</sub> + O<sub>2</sub> reaction in a CSTR</h2>
+<h3 class="h3">Ignition limit</h3>
+<figure class="fig2" id="fig6.5">
+<img src="../images/page72-2.jpg" alt="images" style="margin-left:-12em;"/>
+<figcaption style="width:75%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:0em;text-align:justify;"><b>Fig. 6.5</b> The <i>p</i>&#x2212;<i>T</i><sub>a</sub>, limits for the H<sub>2</sub> + O<sub>2</sub> reaction in a well-stirred flow reactor. An ignition limit separates slow reaction from ignition, but two forms of ignition behaviour occur: oscillatory and steady flame.</p>
+</figcaption></figure>
+<aside class="abc" style="margin-top:5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">P. Gray, J.F. Griffiths, and S.K. Scott (1984). <i>Proc. R. Soc.</i> <b>A394</b>, 243.</p></aside>
+<p class="noindent">The H<sub>2</sub> + O<sub>2</sub> reaction has also been studied in a well-stirred, flow reactor over a range of pressure and temperature similar to that for the second ignition limit above (10 &#x003C; p &#x003C; 100 Torr; 650 &#x003C; T &#x003C; 800 K). The system can again choose between slow reaction or ignition, and there is a sharp boundary in the form of an ignition limit between these. The slow reaction state is now a true steady state, with a balance between chemical kinetics and the inflow and outflow rates. On the ignition side of the limit, however, the system is substantially different from a closed reactor. In the closed system, ignition is a one-off event that leads to essentially complete conversion of the reactants to the product H<sub>2</sub>O. In a flow reactor, however, the reactants will be replenished and the product removed. Two forms of behaviour are observed beyond the limit, as indicated in <a href="#fig6.5">Fig 6.5</a>. At higher pressures (<i>p</i> &#x003E; <i>c</i>. 40 Torr) a <i>steady flame</i> is supported; the ignited state is maintained at a 800 steady rate exactly matching the inflow rate of the reactants. Because the system is operated with only moderate flow rates (the mean residence time is typically of the order of 2 to 10s) the maximum reaction rate is limited and <a id="page_73" class="page">Page 73, Oscillatory reactions in flow systems</a>so the &#x2018;flame&#x2019; is accompanied by a relatively low increase in temperature, perhaps of the order of 10 to 20K.</p>
+<h3 class="h3">Oscillatory ignition</h3>
+<p class="noindent">At lower pressures, the system exhibits an oscillatory ignition. On crossing the limit, e.g., by increasing the ambient (oven) temperature, there is an ignition very similar to that observed in a closed vessel, with a transient gas temperature rise of several thousand kelvin. Complete consumption of the reactants occurs on a millisecond timescale. The reaction rate then falls to zero and the temperature falls back to the ambient. There is then a period of essentially no reaction, during which the reactant concentration builds up again and the product concentration decreases through the flow. Some time later, perhaps several minutes, the system has returned to a composition at which ignition develops again and the cycle is repeated. Example records of temperature rise, light emission, and species concentrations as functions of time in this oscillatory ignition region are shown in <a href="#fig6.6">Fig. 6.6</a>. These waveforms are appropriate to a system located just beyond the ignition limit, where the oscillations are sharp and separated by periods of quiescence. The thermocouple signal is strongly attenuated in the ignition event and so does not give a good estimate of the magnitude of the temperature excursion. A more accurate record is provided via the rotational fine structure on the OH signal determined by laser absorbance spectroscopy. This record, <a href="#fig6.7">Fig. 6.7</a>, also allows the OH concentration to be measured as a function of time during the oscillation. The H atom concentration can be followed using resonance-enhanced multiphoton ionization (REMPI), although absolute concentrations are not obtained in this way.</p>
+<aside class="abc" style="margin-top:-14em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">D.L. Baulch, J.F. Griffiths, W. Kordylewski, and R. Richter(1991). phil. Trans. R. Soc., <b>A337</b>, 199&#x2013;210.</p></aside>
+<h3 class="h3">Self-inhibition</h3>
+<p class="noindent">The feedback process leading to the development of ignition in the H<sub>2</sub> + O<sub>2</sub> system, based on the competition between branching and termination, has been discussed. A second aspect is important in the clockwork driving the oscillatory nature observed in flow reactors, namely <i>self-inhibition.</i> The product of the ignition event is the H<sub>2</sub>O species. As mentioned previously,</p>
+<figure class="fig2" id="fig6.6">
+<img src="../images/page73-1.jpg" alt="images" style="margin-left:-12em;"/>
+<figcaption style="width:55%; margin-top: 1em;">
+<p class="fcaption2" style="margin-left:0em;text-align:justify;"><b>Fig. 6.6</b> Example experimental records for oscillatory ignition of (a) self-heating, &#x0394;<i>T</i> = <i>T</i><sub>gas</sub> &#x2212; <i>T</i><sub>a</sub>; (b) light intensity <i>l</i>, (c) [H<sub>2</sub>O] and (d) [O<sub>2</sub>].</p>
+</figcaption></figure>
+<figure class="fig1" id="fig6.7">
+<a id="page_74" class="page">Page 74, Oscillatory reactions in flow systems</a><img src="../images/page74-1.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<p class="noindent2" style="margin-left:0em;width:95%;text-align:justify;"><b>Fig. 6.7</b> Example records of oscillatory ignition from laser absorption and REMPl experiments. (Reprinted with permission from Baulch <i>etal</i>. (1991). <i>Phil. Trans. R. Soc</i>. <b>A337</b>, 199. &#x00A9; The Royal Society, London.)</p>
+</figcaption></figure>
+<p class="noindent">this has a significantly higher third-body efficiency in the termination <a href="#step4-5">step (5)</a> than the reactants H<sub>2</sub> and O<sub>2</sub> from which it is formed. Thus the change in composition that arises during the ignition gives rise to a change in the competition between branching and termination. At any given instant, the net branching factor can be calculated from</p>
+<figure class="fig1a" id="eq6.12">
+<img src="../images/page74-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">The flow rate <i>k</i><sub>f</sub> appears as another termination process as H atoms flow out of the reactor. In fact, under the conditions for which this reaction has been studied, neither <i>k</i><sub>4</sub> nor <i>k</i><sub>f</sub> make a significant contribution to <a href="#eq6.12">Eqn (6.12)</a> and so the sign of &#x03D5; is determined again by the competition between <a href="#step1-3">steps (2)</a> and <a href="#step4-5">(5)</a>:</p>
+<figure class="fig1a" id="eq6.13">
+<img src="../images/page74-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">Exactly on the limit, &#x03D5; = 0. As the slow reaction does not give rise to much consumption of the reactants, the mole fractions that are significantly in <a href="#eq6.13">Eqn (6.13)</a> at the limit are those corresponding to the inflow composition, e.g. x<sub>H<sub>2</sub></sub> = <i>x</i><sub>O<sub>2</sub></sub> = &#x00BD;. For some slightly higher ambient temperature, <i>k</i><sub>2</sub> will increase so &#x03D5; becomes positive and the system develops into ignition.</p>
+<p class="indent">After the ignition event, and once the temperature and pressure have recovered from their corresponding excursions, the composition of the system is quite different. Now the significant contributions to the term {&#x2211;<i>a</i><sub>i</sub><i>x</i><sub>i</sub>} involve that from the product and any contribution from the reactant in stoichiometric excess. As a<sub>H<sub>2</sub>O</sub> is so much larger than a<sub>H<sub>2</sub></sub> or a<sub>O<sub>2</sub></sub>, the net branching factor for this new composition may be negative. This effectively prevents the inflowing H<sub>2</sub> and O<sub>2</sub> from reacting in the immediate post-ignition period. As the flow process slowly increases a<sub>H<sub>2</sub></sub> and a<sub>O<sub>2</sub></sub> and decreases a<sub>H<sub>2</sub>O</sub>, So &#x03D5; increases again, passing through zero at some later stage at which the chemistry &#x2018;switches on&#x2019; again. Effectively, the position of the ignition limit changes the composition: the system is at a point in <a href="#fig6.3">Fig. 6.3</a> <a id="page_75" class="page">Page 75, Oscillatory reactions in flow systems</a>just to the right of the limit, as appropriate to the inflow composition. After the ignition, the system remains at the same point on the diagram, but, in the presence of the more efficient third body H<sub>2</sub>O, the limit now jumps to the right, lying at higher <i>T</i><sub>a</sub>, so the system is now in the slow reaction zone appropriate to the new composition. As the flow process continues, so the limit drifts slowly back to the lower temperatures and an ignition follows as it passes over the <i>p</i>&#x2212;<i>T</i><sub>a</sub> location of the system.</p>
+<p class="indent">So, we see that the product suppresses further reaction, providing self-inhibition in this system. The period between ignition events is primarily determined by the flow, i.e., by the mean residence time of species in the reactor&#x2014;but the oscillatory event is a combination of flow and kinetic feedback. Various other phenomena described earlier, such as bistability and birhythmicity, have been observed in this system.</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">S.K. Scott (1991). <i>Chemical chaos</i>, Chap. 9, pp. 284&#x2013;95, Oxford University Press.</p></aside>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_6.3">
+<h2 class="h2">6.3<span class="space">&#160;</span>The CO + O<sub>2</sub> reactions</h2>
+<p class="noindent">The reaction between CO and O<sub>2</sub> is as simple in stoichiometry as that between H<sub>2</sub> and O<sub>2</sub></p>
+<figure class="fig1" style="margin-left:-1em;">
+<img src="../images/page75-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">The reaction is slightly more exothermic, &#x0394;<i>H</i>-286 kJ mol<sup>&#x2212;1</sup> compared with &#x2212;247 kJ mol<sup>&#x2212;1</sup> for the H<sub>2</sub> + &#x00BD;O<sub>2</sub> reaction, but again the principle feedback arises through isothermal branched-chain kinetics competing with termination. The reaction is of considerable technical importance. With any hydrocarbon fuel, the initial reactions involve degradation of the initial molecular structure and the formation of CO. The subsequent oxidation of CO represents the major source of both heat evolution and the final production of CO<sub>2</sub>. The product is intimately involved with the greenhouse effect contributing to possible global warming. Not surprisingly, therefore, the CO + O<sub>2</sub> reaction has as long a history of study as the H<sub>2</sub> + O<sub>2</sub> system. In contrast with the latter, however, the oxidation of CO has yielded to mechanistic understanding &#x2013; and, indeed, even to a basic agreement over the observed phenomena &#x2013; only slowly.</p>
+<p class="indent">It appears doubtful that the CO + O<sub>2</sub> reaction can support any chemical feedback process in its own rights. The reaction is, however, extremely sensitive to minute traces of hydrogen or hydrogen-containing species such as CH<sub>4</sub> or H<sub>2</sub>O. It is not clear that the reaction has been, or ever could be, studied in the absence of such impurities&#x2014;and clearly in the context of hydrocarbon oxidation, substantial sources of H will be present. The branching and termination kinetics of the H<sub>2</sub> + O<sub>2</sub> system can, thus, operate here too.</p>
+<h3 class="h3">Closed vessel studies</h3>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">M. Prettre and P. Laffitte (1929). <i>C. R. Acad. Sci.</i>, <b>189</b>, 177; P.G. Ashmore and R.G.W. Norrish (1951). <i>Nature</i>, <b>167</b>, 390.</p></aside>
+<p class="noindent">The reaction between CO and O<sub>2</sub> can support chemiluminescence as the product CO<sub>2</sub> can be formed in an electronically excited state. <i>Steady glow</i> <a id="page_76" class="page">Page 76, Oscillatory reactions in flow systems</a>was observed by Prettre and Laffitte in 1929, whilst Ashmore and Norrish observed long-lived sequences of <i>oscillatory glow</i>, with up to 100 pulses of light emission, in 1939, in a closed vessel (these results were not published until 1951). Ashmore and Norrish&#x0027;s reactor had previously been used to study the inhibiting effects of chloropicrin (CCl<sub>3</sub>NO<sub>2</sub>). Cleaning the reactor surface removed the oscillatory response, but this could be recovered by exposing the surface to the inhibitor again. The reaction is sensitive to the surface condition as well as to hydrogen. Other studies of the oscillatory glow (also termed the <i>lighthouse effect)</i> showed that suitably aged surfaces, without inhibitors, can support this mode. An example record is shown in <a href="#fig6.8">Fig. 6.8</a>. The emission, either steady or oscillatory, ceases well before complete reactant consumption.</p>
+<figure class="fig2" id="fig6.8">
+<img src="../images/page76-1.jpg" alt="images" style="margin-left:-12em;"/>
+<figcaption style="width:80%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 6.8</b> Examples of long and short trains of oscillatory glow for CO + O<sub>2</sub> in closed vessels showing emitted light intensity and CO consumption.</p>
+</figcaption></figure>
+
+<aside class="abc" style="margin-top:4em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">J.R. Bond, P. Gray, J.F. Griffiths, and S.K. Scott (1982). <i>Proc. R. Soc</i>, <b>A381</b>, 293.</p></aside>
+<p class="indent">Steady and oscillatory glow are alternatives and appear to occur at exactly the same <i>p</i>&#x2212;<i>T</i><sub>a</sub> and composition conditions, being distinguished only by the state of the reactor surface. In a sequence of repeated identical experiments, the reaction will initially support steady glow; as the surface becomes suitably developed, so steady evolution gives rise to runs that exhibit oscillatory character; after, say, 100 experiments the oscillatory nature is lost again and all subsequent repetitions show just steady glow unless the reactor retreated with acid-washing. Oscillatory glow is most easily obtained in &#x2018;dry systems&#x2019;, from which as much hydrogenous matter as possible has been removed, e.g., by storage of the reactants over liquid O<sub>2</sub>. The oscillations can, however, be observed even in the presence of up to 0.15% H<sub>2</sub>, but with increasing &#x2018;wetness&#x2019; and ignition peninsula due to the <a id="page_77" class="page">Page 77, Oscillatory reactions in flow systems</a>H<sub>2</sub> + O<sub>2</sub> system also appears, moving to lower temperatures as the H<sub>2</sub> concentration increases and so invading the glow peninsula.</p>
+<h3 class="h3">Flow reactor studies</h3>
+<p class="noindent">In continuous flow reactors, the steady and oscillatory glow responses  become indefinitely sustained. In this configuration, these modes appear to Scott (1985). arise under different <i>p</i>&#x2212;<i>T</i><sub>a</sub> conditions, as indicated in <a href="#fig6.9">Fig 6.9(a,b)</a>. If H<sub>2</sub> is added to the inflowing reactants, an oscillatory ignition mode can also be sustained. Again, this resides within a peninsula bounded by first and second limits, that moves across the <i>p</i>&#x2212;<i>T</i><sub>a</sub> plane as the H<sub>2</sub> concentration increases, invading the regions of glow as indicated in <a href="#fig6.9">Figs 6.9</a>(c-e). Oscillatory ignition is distinguished from oscillatory glow by the extent of the fuel (CO) consumed in the light emission stage (virtually complete in ignition, possibly undetectably small for glow), the intensity of the emission and the temperature excursion (from several hundred to thousand kelvin for ignition, from less than &#x00BC; to 20K for glow). In each case, there appears to be complete consumption of H<sub>2</sub>.</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">P. Gray, J.F. Griffiths, and S.K. Scott (1985). <i>Proc. R. Soc</i>., <b>A397</b>, 21.</p></aside>
+<figure class="fig2" id="fig6.9">
+<img src="../images/page77-1.jpg" alt="images" style="margin-left:-12em;"/>
+<figcaption style="width:75%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:0em;"><b>Fig. 6.9</b> The variation of the <i>p</i>&#x2212;<i>T</i><sub>a</sub> regions for slow reaction, steady glow, oscillatory glow, and oscillatory ignition for the CO + O<sub>2</sub> reaction in a flow reactor in the presence of H<sub>2</sub>: (a) no added H<sub>2</sub>; (b) with 150 ppm H<sub>2</sub>; (c) with 1500 ppm H<sub>2</sub>; (d) with 7500 ppm H<sub>2</sub>; (e) with 10% H<sub>2</sub>.</p>
+</figcaption></figure>
+<p class="indent"><a id="page_78" class="page">Page 78, Oscillatory reactions in flow systems</a></p>
+<h3 class="h2">Mechanistic interpretation</h3>
+<p class="noindent">Accepting that the branching and termination steps (<a href="#step0">0</a>&#x2013;<a href="#step4-5">5</a>) of the H<sub>2</sub> + O<sub>2</sub> system are of importance, the number of additional reactions arising from the CO is somewhat limited. The step</p>
+<figure class="figure-bh" id="step6">
+<img src="../images/page78-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">is significant as the major route from CO to CO<sub>2</sub> in this, and other systems but as a simple propagation step does not alter the radical pool. A second source of CO<sub>2</sub> is via the step</p>
+<figure class="figure-bh" id="step7">
+<img src="../images/page78-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">which has significance as it converts the unreactive HO<sub>2</sub> into the reactive radical OH and hence would weaken the net termination via <a href="#step4-5">step (5)</a>.</p>
+<p class="indent">Perhaps the most significant addition is the step</p>
+<figure class="figure-bh" id="step8">
+<img src="../images/page78-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">The product here is a triplet state molecule (due to the triplet character of the ground state O atom) and hence this provides the source of the chemiluminescence. More importantly, this is a termination step involving O atoms. At low H<sub>2</sub> concentrations, this can compete with <a href="#step1-3">step (3)</a>. The latter is an important link in the branching cycle.</p>
+<p class="indent">The details of the kinetic basis for oscillatory glow have not been fully established, but a qualitative picture appears to be emerging. For a true ignition, <a href="#step8">step (8)</a> remains unimportant throughout the whole event. The net branching factor based on <a href="#step1-3">steps (2)</a> and <a href="#step4-5">(5)</a> becomes positive as, say, the ambient temperature is increased and an ignition develops. This ceases as the product builds up and the reactants (H<sub>2</sub> and CO) are extensively consume. The self-inhibition from H<sub>2</sub>O and also of CO<sub>2</sub> prevents the inflowing gases from reacting immediately, as described for the H<sub>2</sub> + O<sub>2</sub> system. For oscillatory glow, reaction (8) participates. As the initial reaction develops, H<sub>2</sub> and CO are both consumed, but if CO is in great excess over H<sub>2</sub> the fall in concentration of the former is proportionately less. As the CO/H<sub>2</sub> ratio increases dramatically, so the competition for O atoms swings in favour of the termination <a href="#step8">step (8)</a> away from the branching <a href="#step1-3">step (3)</a>. The radical concentrations will fall again, without significant consumption of the major fuel and, hence, without significant release of heat. The CO/H<sub>2</sub> ratio will fall again with the subsequent net inflow of fresh H<sub>2</sub> and the process can repeat.</p>
+<p class="indent">Such &#x2018;hand-waving&#x2019; explanations of oscillations often sound seductively reasonable, only to fail quantitative test. However, computations on small kinetic schemes involving the above steps with recommended values for the rate constants confirm the basic form of this account. The explanation must be adapted to encompass oscillatory glow in closed systems, where there is no replenishment of the H<sub>2</sub> concentration by flow. A possible route is the water-gas shift process</p>
+<figure class="fig1" style="margin-left:-1em;">
+<img src="../images/page78-4.jpg" alt="images"/>
+</figure>
+<p class="noindent"><a id="page_79" class="page">Page 79, Oscillatory reactions in flow systems</a>This might be established via heterogeneous reactions on the vessel walls, helping to account for the sensitivity of the glow to the state of the surface in closed reactors&#x2014;an effect that appears much less apparent in flow systems (the required experimental conditions for oscillatory glow are also somewhat different in the two types of system).</p>
+<h3 class="h3">Development of oscillations: chaos</h3>
+<figure class="fig2" id="fig6.11">
+<img src="../images/page79-2.jpg" alt="images" style="margin-left:-12em;"/>
+<figcaption style="width:78%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:0em;"><b>Fig. 6.11</b> Representative scans through the region of complex oscillations made by allowing the ambient temperature to increase slowly at fixed pressure: (a) <i>p</i> = 40 Torr showing a region of period-2 oscillations; (b) <i>p</i> = 20 Torr showing various waveforms.</p>
+</figcaption></figure>
+<aside class="abc" style="margin-top:-27em;" epub:type="sidebar">
+<figure class="fig2" id="fig6.10">
+<img src="../images/page79-1.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 6.10</b> The <i>p</i>&#x2212;<i>T</i><sub>a</sub> regions for slow reaction, oscillatory ignition, and steady flame for CO + O<sub>2</sub> with 1% H<sub>2</sub> in a flow reactor. The hatched region corresponds to conditions for complex oscillations.</p>
+<p class="noindent2" style="margin-left:1em; margin-top: 2em;">B.R. Johnson and S.K. Scott (1990). <i>J. Chem. Soc. Faraday Trans</i>., <b>86</b>, 3701; (1991). <i>Chaos</i>, <b>1</b>, 387.</p>
+</figcaption></figure>
+</aside>
+<p class="noindent">For equimolar mixtures of CO and O<sub>2</sub> containing &#x00BD;%H<sub>2</sub>, the ignition limit has moved to sufficiently low ambient temperatures so as to cover the regions of oscillatory and steady glow for pressures less than 50 Torr, as indicated in <a href="#fig6.10">Fig. 6.10</a>. Just at the right of the ignition limit, the system displays oscillatory ignition that have the &#x2018;relaxational&#x2019; form described earlier, with sharp spikes separated by periods of replenishment accompanied by virtually no reaction. Each ignition has exactly the same amplitude and period as its predecessor, i.e., there is a <i>period-1</i> waveform. At the highest ambient temperatures, the oscillations give way to a steady flame. If the reactor is operated at the highest or lowest pressures indicated in the figure, the oscillations retain their period-1 character across the whole region of oscillatory ignition, simply decreasing in amplitude as <i>T</i><sub>a</sub> increases. For intermediate pressures, 15 &#x003C; <i>p</i>/Torr &#x003C; 45 roughly, there is a more interesting sequence. The development of the waveform as <i>T</i><sub>a</sub> is allowed to increase slowly, so as to traverse the region of <i>complex oscillations</i> indicated in <a href="#fig6.10">Fig. 6.10</a> is illustrated for two cases in <a href="#fig6.11">Fig. 6.11</a>. Trace (a) corresponds to a relatively high pressure within this range, <i>p</i> = 40 Torr, which just catches the upper tip of this region. Over a narrow range of temperature, centred on <i>T</i><sub>a</sub> = 803.3K, a different, <i>period-2</i> waveform is observed in which there is one large and one small excursion in each repeating unit. As the period <a id="page_80" class="page">Page 80, Oscillatory reactions in flow systems</a>between each excursion, of either size, is roughly the same as that between each excursion in the period-1 mode, the total period becomes doubled: this change from period-1 to period-2 is known as a <i>period-doubling</i>. The figure also shows how the difference in amplitude grows smoothly as the system enters this region: there is no sharp jump immediately from period-1 to period-2 with a clear large&#x2013;small character. This is, thus, a <i>supercritical period-doubling bifurcation</i>. As <i>T</i><sub>a</sub> rises further, the difference in amplitude decreases again and there is the reverse process&#x2014;<i>a period halving</i>&#x2014;to yield small amplitude period-1 oscillations. As the ambient temperature increases further, the period-1 oscillation gives way to a steady state via a supercritical Hopf bifurcation (see <a href="Chapter05.xhtml#sec_5.6">Section 5.6</a>).</p>
+<figure class="fig2" id="fig6.12">
+<img src="../images/page80-1.jpg" alt="images" style="margin-left:-12em;"/>
+<figcaption style="width:75%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 6.12</b> Time series (temperature excess, &#x2206;<i>T</i>) captured for steady experimental conditions with <i>p</i> = 20 Torr: (a) period-1 ; (b) period-2; (c) period-4; (d) chaotic response; (e) period-5; (f) period-3. Tpis sequence is observed as the ambient temperature is increased stepwise.</p>
+</figcaption></figure>
+<p class="indent">The scan in <a href="#fig6.11">Fig. 6.11(b)</a> corresponds to a lower pressure, <i>p</i> = 20 Torr, so the system passes through the widest section of the complex oscillation region. There is, effectively, more room for additional changes in the waveform and, specifically, for more period doublings. A period-4 solution can be seen clearly emerging from the period-2. There is then a region of very <a id="page_81" class="page">Page 81, Oscillatory reactions in flow systems</a>complex structure, before period-4, then period-2 and finally period-1 emerge as <i>T</i><sub>a</sub> sweeps through this region. In order to unravel the complex structure between the period-4 states, the experiments must be repeated with the ambient temperature allowed to stabilize at various values within this range. The &#x2018;post-transient&#x2019; oscillations obtained under these conditions, some of which are presented in <a href="#fig6.12">Fig. 6.12</a>, show that additional period doublings to yield period-8, period-16, and higher periodicities follow very closely on each others heels after the period-4. The range of <i>T</i><sub>a</sub> over which these can be observed decreases as the periodicity increases. This <i>accumulation of period-doubling bifurcations</i> allows the system to develop a waveform with an infinitely-long repeating unit, such as is shown in <a href="#fig6.12">Fig 6.12(d)</a>. Such <i>aperiodic</i> or <i>chaotic</i> responses have some unfamiliar properties, but are simply a natural consequence of chemical feedback.</p>
+</section>
+<section epub:type="chapter" id="sec_6.4">
+<h2 class="h2">6.4<span class="space">&#160;</span> Characteristics of chaos</h2>
+<p class="noindent">The first task when faced with a complex time-dependent response is to distinguish between genuine chaos and experimental noise. Although such noise will generally have small amplitude, the chemical nonlinearities can produce an amplification effect. A simple test between these possibilities is to construct a <i>next-amplitude map</i> from the experimental data. If we plot the peak temperature rise for the first excursion in <a href="#fig6.12">Fig. 6.12(d)</a> against the peak temperature of the second, then the peak temperature of the second against that of the third and so on, these &#x0394;<i>T</i><sub>max,n</sub> vs. &#x0394;<i>T</i><sub>max,n+1</sub> pairs lie as shown in <a href="#fig6.13">Fig. 6.13</a>. The points do not lie randomly distributed over the whole diagram, as they would if stochastic noise were driving the complexity. Instead they seem to lie on a relatively simple, single-humped curve exhibiting a maximum. This, in turn, suggests that these is some rule determining the size of the next ignition in terms of the amplitude of the most recent ignition, hence the phrase <i>deterministic chaos.</i> (Similar next-amplitude maps can be formed in the same way for the period-<i>n</i> responses: these simply give rise to a discrete set of <i>n</i>-points between which the system jumps as it evolves.)</p>
+<aside class="abc" style="margin-top:-23em;" epub:type="sidebar">
+<figure class="fig2" id="fig6.13">
+<img src="../images/page81-1.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 6.13</b> Next-maximum map, plotting digitized thermocouple record at the peak temperature excess for one ignition against the same record for the next ignition successively through the time series.</p>
+</figcaption></figure>
+</aside>
+<p class="indent">Another approach frequently used to test for ordered structure within apparent chaos is the method of <i>reconstructing attractors</i>. The experimental thermocouple record consists of a series of measurements related to the temperature rise in the reacting gases taken at regular time intervals (e.g., every 10 ms): &#x0394;<i>T</i>(<i>t</i><sub>1</sub>), &#x0394;<i>T</i>(<i>t</i><sub>2</sub>), &#x0394;<i>T</i>(<i>t</i><sub>3</sub>), etc., where <i>t</i><sub><i>n</i></sub> = <i>n</i>(&#x0394;<i>t</i>) and &#x0394;<i>T</i> is the sampling interval. This record can be used to obtain a sequence of <i>x-y</i> pairs using the method of <i>time delay</i>. We choose a delay time <i>t</i><sub>d</sub> = m(&#x0394;<i>t</i>) where <i>m</i> is some integer; the <i>x-y</i> pairs are now formed by taking &#x0394;<i>T</i>(<i>t</i><sub><i>i</i></sub>) and &#x0394;<i>T</i>(<i>t</i><sub><i>i</i></sub> + <i>t</i><sub><i>d</i></sub>). So, for example, if we choose a sampling time of 10 ms and a delay time of 100 ms, so <i>m</i> = 10, we take the following pairs: (&#x0394;<i>T</i>(<i>t</i><sub>1</sub>), &#x0394;<i>T</i>(<i>t</i><sub>11</sub>), (&#x0394;<i>T</i>(<i>t</i><sub>2</sub>), &#x0394;<i>T</i>(<i>t</i><sub>12</sub>), (&#x0394;<i>T</i>(<i>t</i><sub>3</sub>), &#x0394;<i>T</i>(<i>t</i><sub>l3</sub>)) and so on. Performing this for the data corresponding to the various responses in <a href="#fig6.12">Fig. 6.12</a> yields the attractors shown in <a href="#fig6.14">Fig. 6.14</a>. For the period-<i>n</i> responses closed circuits with <i>n</i>-loops emerge. These period-<i>n</i> limit cycles (see <a href="Chapter03.xhtml#sec_3.4">Section 3.4</a>) correspond to <a id="page_82" class="page">Page 82, Oscillatory reactions in flow systems</a>the <i>asymptotic trajectories</i> to which the system is &#x2018;attracted; and on which it continues to move for as long as the experimental conditions are maintained constant.</p>
+<figure class="fig2" id="fig6.14">
+<img src="../images/page82-1.jpg" alt="images" style="margin-left:-12em;"/>
+<figcaption style="width:75%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 6.14</b> Reconstructed attractors, shown in two-dimensional projection, for the time series in <a href="#fig6.12">Fig. 6.12</a> using the delay method.</p>
+</figcaption></figure>
+
+<p class="indent">The attractor emerging from the aperiodic time series has a more complex form, <a href="#fig6.14">Fig. 6.14(d)</a>, but essentially still comprises a series of circuits (there will be an infinite number). In fact the circuits finally add up to provide something more than a simple one-dimensional structure. The period-<i>n</i> limit cycles are all one-dimensional objects (lines), where as this <i>strange attractor</i> actually has a dimension that is greater than 1: it is a <i>fractal</i> and has a non-integer dimension slightly greater than two.</p>
+<p class="indent">The major aspect of chaotic evolution or &#x2018;motion on a strange attractor&#x2019; that is so different from more familiar responses arises when the evolution of two very similar, but slightly different, systems are compared. These systems may have exactly identical experimental conditions, in terms of <i>p</i>, <i>T</i><sub>a</sub>, mixture composition, etc., but vary to some small extent in their initial conditions. Such small differences are inevitable in any experimental or <a id="page_83" class="page">Page 83, Oscillatory reactions in flow systems</a>&#x2018;real&#x2019; context as exactly identical systems to the finest level of detail can never be reproduced. Under experimental conditions such that the systems evolve from their initial states to (the same) final steady state, the small differences between them <i>decrease</i> (usually exponentially) in time. This is why the scientific approach of repeating experiments and taking means and standard deviations has become so well established.</p>
+<p class="indent">A similar convergence from different, but similar, initial conditions arises when the system evolves to a period-<i>n</i> limit cycle. Under these conditions, however, some residual difference may remain, as a difference in phase in the oscillations of the two systems. For chaotic systems, however, small initial differences <i>increase</i> exponentially in time; two systems, no matter how similar in their initial conditions, grow less similar in time. The rate at which this growth in disparity occurs depends on the given system, but is a characteristic feature of all chaotic responses. In this situation, the long-term prediction of the behaviour of a given system is also impossible&#x2014;not because of ignorance, but as a real matter of fact. Only if the initial conditions (i.e. the initial concentrations and temperature) of the system could be specified to infinite precision could the real evolution be predicted. This also assumes that we have an exact chemical mechanism and infinitely precise values for the rate constants, their temperature dependence, and the experimental conditions. As the &#x2018;problem&#x2019; lies within the fundamental properties of nonlinear feedback, spending extra money on a more precise determination of rate constants, for instance, does not help. Worse still, the improvement in predictability increases only logarithmically with increasing precision to which the initial conditions are known.</p>
+<p class="indent">All is not lost, however; what is needed is a new way of approaching the problem. Means and standard deviations, and multiple repetitions of experiments are not the appropriate route. Various quantitative methods exist for assessing how long a chaotic system will remain predictable, <i>within certain acceptable limits.</i> Thus, we might be able to predict the future evolution of a given system with &#x00B1;10% accuracy for 2 hours, say, or with &#x00B1;20% accuracy for 2.9 hours. The <i>predictability horizon</i> depends on how well we can know the initial conditions, how fast similar systems diverge, and on how much we are prepared to tolerate uncertainty. Ultimately, however, the responses of two non-exactly identical systems become completely uncorrelated. This is the message from chaos.</p>
+</section>
+<section epub:type="chapter" id="sec_6.5">
+<h2 class="h2" style="margin-bottom:-0.8em;">6.5<span class="space">&#160;</span>Hydrocarbon oxidations: cool flames</h2>
+<h3 class="h3">Closed vessel behaviour</h3>
+<p class="noindent">Oscillations and ignitions arise in the combustion of hydrocarbon fuels and have considerable technological significance. Alkane species and their derivatives (alkenes and partially oxygenated products such as aldehydes) react spontaneously with O<sub>2</sub> at temperatures around 400&#x2013;500K&#x2014;although methane requires a significantly higher temperature. In closed systems, there is an oscillatory mode known as <i>cool flame</i> behaviour. In a cool flame, <a id="page_84" class="page">Page 84, Oscillatory reactions in flow systems</a>a proportion of the reactants are consumed and converted to partially oxygenated products including peracids, alcohols, and peroxides. There is a faint chemiluminescent emission in the blue region of the spectrum from electronically excited HCHO. This reaction event is accompanied by a temperature excursion of between 10 and 200K, typically. Sequences of up to ten such cool flames may be observed, but the effects of reactant consumption are pronounced and prevent this mode of reaction from being sustained to any great extent. Cool flames are quite different from true (one-off) ignitions, in which the major products are CO, CO<sub>2</sub>, and H<sub>2</sub>O and the temperature rise is of the order of 2000K.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">J.F. Griffiths (1986). <i>Adv. Chem. Phys.</i>, <b>64</b>, 203; J.F. Griffiths and S.K. Scott (1987). <i>Prog. Energy Combust. Sci.</i>, <b>13</b>, 161.</p></aside>
+<h3 class="h3">Behaviour in a CSTR</h3>
+<p class="noindent">In flow reactors, the cool flame mode can be sustained indefinitely, allowing it to be studied free from imposed transient effects. Some typical concentration histories for ethanal oxidation are shown in <a href="#fig6.15">Fig. 6.15</a>. Cool flames occur in a region of the <i>p</i>&#x2212;<i>T</i><sub>a</sub> ignition diagram distinct from that for true ignition, as indicated in <a href="#fig6.16">Fig. 6.16</a>. There are also regions corresponding to two different steady state forms of reaction and a region of <i>complex ignition.</i></p>
+<p class="indent">At the lowest vessel temperatures, the reaction sits in a steady state of low extent of conversion of the reactants. A steady-state temperature rise can be measured, and this increases as the vessel temperature increases. At the highest vessel temperatures is a second region of steady-state reaction, but this now corresponds to high extents of reactant consumption and so is akin to the steady-flame state in the H<sub>2</sub> + O<sub>2</sub> reaction. In this region, the steady-state-temperature excess <i>decreases</i> with increasing vessel temperature. This remarkable phenomenon is termed the <i>negative temperature coefficient</i> or <i>n.t.c.</i></p>
+<figure class="fig2" id="fig6.15">
+<img src="../images/page84-1.jpg" alt="images" style="margin-left:-12em;"/>
+<figcaption style="width:75%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 6.15</b> a) Representative concentration, (b) temperature excess, and (c) emitted light intensity records for cool flame oxidation of ethanal in a CSTR. (Reprinted with permission from P. Gray, J.F. Griffiths, S.M. Hasko, and P.G. Lignola (1981). <i>Proc. R. Soc.</i> <b>A374</b>, 313. &#x00A9;The Royal Society, London.)</p>
+</figcaption></figure>
+<aside class="abc" style="margin-top:-33em;" epub:type="sidebar">
+<figure class="fig2" id="fig6.16">
+<img src="../images/page84-2.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 6.16</b> The <i>p</i>&#x2212;<i>T</i><sub>a</sub> diagram for ethanal oxidation in a CSTR showing the regions of I slow reaction, II two-stage ignition, III multi-stage ignition, IV cool flames, and V steady glow. (Reprinted with permission from P. Gray, J.F. Griffiths, S.M. Hasko, and P.G. Lignola (1981). <i>Proc. R. Soc</i>. <b>A374</b>, 313. The Royal Society, London.)</p>
+</figcaption></figure>
+</aside>
+<p class="indent"><a id="page_85" class="page">Page 85, Oscillatory reactions in flow systems</a></p>
+<figure class="fig2" id="fig6.17">
+<img src="../images/page85-1.jpg" alt="images" style="margin-left:-12em;"/>
+<figcaption style="width:75%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 6.17</b> (a) Representative concentration, (b) temperature excess, and (c) emitted light intensity records for ignition in the oxidation of ethanal in a CSTR: the enlargements of the &#x0394;<i>T</i> and <i>I</i> traces (d,e) show the two-stage character of the ignition event. (Reprinted with permission from P. Gray, J.F. Griffiths, S.M. Hasko and P.G. Lignola (1981). <i>Proc. R. Soc</i>., <b>A374</b>. 313. &#x00A9; The Royal Society, London.)</p>
+</figcaption></figure>
+<p class="indent">The waveform corresponding to the ignition response shows some important fine structure, as indicated in <a href="#fig6.17">Fig. 6.17</a>. As a precursor to the actual &#x2018;explosion event&#x2019;, there is a slower first stage which has many similarities to the evolution of the system in the cool flame region. The transition from the first to the second stage in the ignition process produces a shoulder in the emission intensity and temperature rise records as indicated. The complex or <i>multi-stage ignition</i> region supports two-stage ignition events preceded by distinct cool flame events. <a href="#fig6.18">Figure 6.18</a> shows the temperature rise record for a four-stage ignition which has a repeating unit comprising two cool flames followed by a two-stage ignition. The number of cool flames between each two-stage ignition increases as the vessel temperature is increased through this region until the boundary with the cool flame region is reached.</p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="fig2" id="fig6.18">
+<img src="../images/page85-2.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 6.18</b> Temperature excess record for a four-stage ignition. (Reprinted with permission from P. Gray, J.F. Giffiths, S.M. Hasko, and P.G. Lignola (1981). <i>Proc R. Soc</i>, <b>A374</b>, 313. &#x00A9; The Royal Society, London.</p>
+</figcaption></figure>
+</aside>
+<h3 class="h3">Thermokinetic mechanism</h3>
+<p class="noindent">The mechanism for this behaviour involves crucially both chemical and thermal feedback. At the heart of the oscillatory clockwork is an equilibrium step involving a radical species, R<sup>.</sup> and the O<sub>2</sub> molecule</p>
+<figure class="figure-bh" id="step9">
+<img src="../images/page85-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">This equilibrium is highly temperature-sensitive because of the exothermic nature of the bond formation process. At low temperatures, the equilibrium lies in favour of the product RO<sub>2</sub>. Subsequent reaction of the RO<sub>2</sub> species <a id="page_86" class="page">Page 86, Oscillatory reactions in flow systems</a>lead to a series of chain-branching steps and, hence, to an acceleration of the overall rate of oxidation. These subsequent oxidation processes are significantly exothermic and so there is an increasing rise in the temperature of the reacting gas mixture. As the temperature increases, so the equilibrium in <a href="#step9">step (9)</a> swings back in favour of the reactants. The system then changes to reactions involving R<sup>.</sup> rather than RO<sub>2</sub><sup>.</sup>. These reaction tend to involve chain termination steps, so decreasing the overall rate of oxidation and, hence, the rate of heat evolution. If the reacting mixture cools sufficiently, the equilibrium may switch back in favour of the RO<sub>2</sub><sup>.</sup> species and allow branched-chain acceleration again, followed by a switch back to R<sup>.</sup> chemistry as the temperature increase. This combination of positive chemical feedback and effective thermal inhibition accounts both for the existence of cool flame oscillations and of the n.t.c.</p>
+<h3 class="h3">Chemical considerations</h3>
+<p class="noindent">The simplest realization of the thermokinetic mechanism described above arises with fuel molecules such as ethanal, in which a moderately reactive site exists, the&#x2014;CHO hydrogen atom in this case. The reactions following on from <a href="#step9">step (9)</a>, in which R is CH<sub>3</sub>, are then</p>
+<figure class="figure-bh" id="step10">
+<img src="../images/page86-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">The radical CH<sub>3</sub>CO can propagate the chain further (decomposing to CH<sub>3</sub> and CO), whilst CH<sub>3</sub>O<sub>2</sub>H also dissociates</p>
+<figure class="figure-bh" id="step11">
+<img src="../images/page86-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">to produce two more radicals. The increase in radical concentration through this subsequent step is termed <i>degenerate branching</i> to distinguish it from the direct branching in <a href="#step1-3">steps (2)</a> and <a href="#step1-3">(3)</a>.</p>
+<p class="indent">The channel involving methyl radical when the equilibrium in <a href="#step9">step (9)</a> lies to the left is simply the recombination process leading to the formation of ethane, CH<sub>3</sub> + CH<sub>3</sub> &#x2192; C<sub>2</sub>H<sub>6</sub>.</p>
+<p class="indent">For more general hydrocarbon systems, the H atom abstraction in <a href="#step10">step (10)</a> has a significant activation energy (<i>E</i> &#x003E; 60kJ mol<sup>&#x2212;1</sup> compared to <i>E</i> = 44kJ mol<sup>&#x2212;1</sup> for ethanal) and hence would proceed too slowly to support the cool flame phenomena. Instead, the general mechanism from RO<sub>2</sub> involves <i>intramolecular H atom abstraction.</i> <a href="#step9">Step (9)</a> can be represented as</p>
+<figure class="figure-bh" id="step12">
+<img src="../images/page86-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">This then allows abstraction by the O atom of the H-atom on a &#x03B2;-C via the formation of a sterically favoured, six-membered ring</p>
+<figure class="figure-bh" id="step13">
+<img src="../images/page86-4.jpg" alt="images"/>
+</figure>
+<p class="noindent">A second O<sub>2</sub> molecule can add to the new radical site, and this can then abstract the activated H atom from the carbon atom that had the original <a id="page_87" class="page">Page 87, Oscillatory reactions in flow systems</a>radical site, again via a six-membered ring. The resulting radical species will then dissociate:</p>
+<figure class="figure-bh" id="step14">
+<img src="../images/page87-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">The opening of the oxide ring may well then follow. In this way, the internal molecular structure of the fuel can play a significant role in determining whether suitable &#x03B2;-C sites exist, etc.</p>
+<p class="indent">The spontaneous reactions of hydrocarbon species of the above type are significant in the phenomenon of <i>engine knock.</i> In a spark ignition engine, the flame front initiated by the spark at the optimum moment towards the end of the compression stroke propagates through the combustion cylinder. This front compresses the unreacted gas ahead, which has already been heated to some extent in the compression stroke itself. This additional heating can initiate the spontaneous reactions on a timescale sufficiently short to occur before the flame fully traverses the cylinder. The resulting reduction in the energy content arising from the partial oxidation and pressure fronts induced cause inefficiency in the combustion process and mechanical events that give rise to the acoustic &#x2018;knocking&#x2019;. Knowledge of the underlying chemical cause of this spontaneous reaction is necessary to improve the resistance of fuels to knock as conventional antiknocks such as tetraethyl lead are withdrawn.</p>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_6.6">
+<h2 class="h2">6.6<span class="space">&#160;</span>BZ reaction in a CSTR</h2>
+<p class="noindent">The BZ reaction has been widely studied in well-stirred flow reactors. For moderate flow rates, the reaction exhibits large amplitude oscillations very similar to those observed in closed systems (Chapter 3), but with the oscillations now being indefinitely sustained and each excursion having exactly the same amplitude and period as the previous one; the slow variations in the background concentrations of the reactants and the build-up of product concentrations is now prevented by the continuous flow process. More complex oscillations emerge, however, at both low and high flow rates.</p>
+<h3 class="h3">Low flow rate behaviour</h3>
+<aside class="abc" style="margin-top:5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">J.-C. Roux, R.H. Simoyi, and H.L. Swinney(1983). <i>Physica</i>, <b>8D</b>, 257.</p></aside>
+<p class="noindent">As the flow rate is reduced in the BZ system, so the oscillatory response changes from the simple, large amplitude period-1 waveform just described. The system undergoes a period-doubling cascade similar to that presented for the CO + O<sub>2</sub> system in <a href="#sec_6.3">Section 6.3</a>. This gives rise to a range of flow rates over which the system exhibits chaos. Next maximum maps in this region show the same simple hump shape as indicated in <a href="#fig6.13">Fig. 6.13</a> and the consequences of this chaos are the same as that for the CO + O<sub>2</sub> system. If the flow rate is decreased further, there is a period-halving sequence that produces a small amplitude period-1 solution. At yet lower flow rates, the oscillations give way to stable steady-state behaviour and this steady-state composition <a id="page_88" class="page">Page 88, Oscillatory reactions in flow systems</a>approaches the (closed vessel) equilibrium composition smoothly as the flow rate is reduced to zero.</p>
+<h3 class="h3">High flow rate behaviour</h3>
+<p class="noindent">At high flow rates, the large amplitude, period-1 solution also becomes more complex. The sequence of increasing complexity is indicated in <a href="#fig6.19">Fig. 6.19</a>. This change in waveform is sometimes, and rather inaccurately, termed <i>period-adding.</i> In fact, the sequence sees an increase in the number of individual excursions that go to form a total repeating unit, so might be better termed <i>maximum-adding or peak-adding.</i> The basic sequence is to go from one large peak (<a href="#fig6.19">Fig. 6.19a</a>) to a repeating unit consisting of one large and one small peak (a 1<sup>1</sup> state, <a href="#fig6.19">Fig. 6.19c</a>) and subsequently to one large and two small (1<sup>2</sup>, <a href="#fig6.19">Fig. 6.19f</a>) and so on through 1<sup>3</sup>, 1<sup>4</sup>, etc. Eventually, the number of small peaks becomes effectively infinite, so there are no large peaks in the repeating unit, giving a 1<sup>&#x221E;</sup> or 0<sup>1</sup> state, i.e., a small amplitude period-1 oscillation. In between these <i>parent</i> states are <i>concatenations</i>, consisting of mixed parent states. Thus between the 1<sup>0</sup> and 1<sup>1</sup> states is a range of flow rates for which a 1<sup>0</sup>1<sup>1</sup> state is observed. This state, which can also be denoted 2<sup>1</sup> has two large and one small peak per repeating unit, <a href="#fig6.19">Fig. 6.19(b)</a>. Further levels of concatenation can be found on closer inspection. A sequence between the 1<sup>2</sup> and 1<sup>3</sup> states consisting of (1<sup>2</sup>)<sup>2</sup>1<sup>3</sup>, i.e., a repeating unit consisting of one large and two small repeated twice followed by one large and three small, 1<sup>2</sup>1<sup>3</sup>, 1<sup>2</sup>(1<sup>3</sup>)<sup>2</sup>, 1<sup>2</sup>(1<sup>3</sup>)<sup>3</sup>, 1<sup>2</sup>(1<sup>3</sup>)<sup>4</sup>and 1<sup>2</sup>(1<sup>3</sup>)<sup>5</sup> as the flow rate increases has been reported.</p>
+<aside class="abc" style="margin-top:1em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">J. Maselko and H.L. Swinney (1986). <i>J. Chem. Phys</i>., <b>85</b>, 6430.</p></aside>
+<p class="indent">In between some of these higher levels of concatenation, the system may show mixing of parent units that does not occur in a periodic way. For instance, in <a href="#fig6.19">Fig. 6.19(e)</a> the 1<sup>1</sup> and 1<sup>2</sup> appear aperiodically. Similar chaotic mixing is observed in the concatenations between the 1<sup>2</sup> and 1<sup>3</sup>, and the 1<sup>3</sup> and 1<sup>4</sup> parents, <a href="#fig6.19">Fig. 6.19(g)</a> and <a href="#fig6.19">(i)</a> respectively.</p>
+<h3 class="h3">Mechanistic interpretations of chaos in BZ reaction</h3>
+<p class="noindent">Much of the modelling of the BZ reaction in <a href="Chapter03.xhtml">Chapters 3</a> and <a href="Chapter04.xhtml">4</a> made use of a two-variable version of the Oregonator scheme. Models with two independent species can reproduce simple oscillations, but cannot give rise to complex oscillations or chaos: a minimum of three independent species is needed. The first numerical studies of the BZ reaction in a flow system used enlarged versions of the FKN mechanism, either including more species, such as HOBr, as participants in the chemistry rather than just products, or allowed the stoichiometric factor <i>f</i> to vary with the instantaneous composition in the reactor. The studies quickly produced the complex concatenated periodic states described above. However, these models based on the original Oregonator form typically failed to produce the aperiodic behaviour reported in experiments. This led to the opinion that this &#x2018;high flow rate&#x2019; chaos might be an artifact of the experiments. Various causes were suggested and explored. A real experiment might have an imperfectly controlled flow rate, especially if peristaltic pumps are used. The apparently chaotic responses might arise because the system is continuously being moved back</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">F.W. Schneider and A.F. Munster  (1991). J. <i>Phys. Chem.</i>, <b>95</b>, 2130.</p></aside>
+<p class="indent"><a id="page_89" class="page">Page 89, Oscillatory reactions in flow systems</a></p>
+<figure class="fig2" id="fig6.19">
+<img src="../images/page89-1.jpg" alt="images" style="margin-left:-12em;"/>
+<figcaption style="width:77%; margin-top: 1em;">
+<p class="noindent2"><b>Fig. 6.19</b> Complex oscillations and chaos at high flow rates for the BZ reaction in a CSTR showing concatenations between states of large and small amplitude peaks. (Reprinted with permission from J.L. Hudson, M. Hart, and D. Marinko (1979). <i>J. Chem. Phys</i>., 71,1601. &#x00A9; American Institute of Physics.)</p>
+</figcaption>
+</figure>
+<p class="noindent"><a id="page_90" class="page">Page 90, Oscillatory reactions in flow systems</a>and forth over a range in which various periodic states occur close together, so that different states are picked out almost randomly at different times. Another possibility is that the mixing within the reactor will be less than perfect. In the vicinity of the inlet ports, especially, local regions that vary significantly in compositions from the bulk of the reactor may arise. Oscillations in these regions might then have a different natural period and waveform and might &#x2018;force&#x2019; the behaviour in the bulk of the reactor by imposing an effectively time-dependent inflow composition.</p>
+<p class="indent">The simple next-maximum map approach can be used to distinguish between noise and chaos, as indicated in <a href="#sec_6.5">Section 6.5</a>, and the aperiodic traces in <a href="#fig6.19">Fig. 6.19</a> do indeed show simple humped maps, confirming chaos not noise. Such a test cannot prove that the chaos arises from the chemistry, however. If the chaos arose from fluid turbulence, this <i>universal property</i> of chaos would still emerge. Only recently has a chemically-sound model been derived that reproduces the observed sequences including the interposed chaotic states on the concatenations. Gy&#x00F6;rgyi and Field have produced a set of models that, using either steady state or quasi-equilibrium assumptions, can be reduced to a four-species scheme that involves the original Oregonator variables [HBrO<sub>2</sub>], [Br<sup>&#x2212;</sup>], and [M<sub>ox</sub>] augmented by [BrMA], where BrMA is bromomalonic acid and is formed rapidly from HOBr. The model can then be written as:</p>
+<aside class="abc" style="margin-top:1em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">L. Gy&#x00F6;rgyi and R.J. Field (1992). <i>Nature</i>, <b>355</b>, 808.</p></aside>
+<figure class="figure-bh" id="stepGF1-GF7">
+<img src="../images/page90-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">The autocatalysis of Process B appears as the reversible step <a href="#stepGF1-GF7">(GF3)</a>, limited by step <a href="#stepGF1-GF7">(GF4)</a> as before, and Process A is still represented by steps (<a href="#stepGF1-GF7">GF1</a> and <a href="#stepGF1-GF7">2</a>). Process C, the clock resetting, is now modelled by steps (<a href="#stepGF1-GF7">GF5</a>-<a href="#stepGF1-GF7">7</a>). The competition between these three steps governs how many bromide ions are produced for each M<sub>ox</sub> reduced in a more explicit way than in the original Oregonator, where the curious stoichiometric factor <i>f</i> is used. Rather than &#x2018;guestimating&#x2019; a suitable value for <i>f</i>, this approach seeks the values of the rate constants for the final three steps.</p>
+</section>
+</section>
+</div>
+</body>
+</html>

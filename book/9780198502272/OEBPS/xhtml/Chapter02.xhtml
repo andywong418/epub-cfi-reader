@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Quantum Mechanics 2: The Toolkit</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch02">
+<a id="page_24" class="page" style="width:70%;">Page 24, Chapter 2 Optimization</a>
+<h1 class="main">2<span class="space">&#160;</span>Optimization</h1>
+<section epub:type="chapter" id="sec2.1">
+<h2 class="h2" style="margin-top:3em;">2.1<span class="space">&#160;</span>The variational method</h2>
+<p class="noindent">Although some quantum-mechanical problems can be solved exactly and explicitly, most cannot, even with the aid of symmetry. Instead, it is necessary to find an approximate solution. Approximations are of two basic types:</p>
+<p class="blist" style="margin-top:1em;">&#x2022;<span class="space">&#160;</span>Simplification to a form that permits explicit solution, such as the approximation of a molecular vibration by a harmonic oscillator or a Morse oscillator;</p>
+<p class="blist" style="margin-bottom:1em;">&#x2022;<span class="space">&#160;</span>Building an accurate computational solution by superposing large numbers of simple wavefunctions.</p>
+<aside class="abc" style="margin-top:0.2em;" epub:type="sidebar">
+<p class="sidebar">Approximation to the ground state of a system systematically overestimates the energy. The best approximation is that which minimizes the energy.</p>
+</aside>
+<p class="noindent">The former type of approximation is extremely useful for gaining physical insight into the behaviour of the system, whereas the latter type is used for accurate computations.</p>
+<p class="indent">Whatever approximation is used, it must be optimized. That is, we need a foolproof way to find the best possible approximation of the assumed form. The most suitable and widely used optimization method is the <i>variational method</i>, which we have already encountered in <i>Quantum mechanics 1</i>.</p>
+<p class="indent">The basis of the variational method, proved in <i>Quantum mechanics 1</i>, Section 1.7, is that the expectation energy calculated from an approximate wavefunction must be greater than the true ground state energy. If we attempt to describe a system in its ground state with an approximate wavefunction containing a variable parameter, then the best wavefunction of this form will be the one that gives the lowest expectation energy, because this will be the closest to the true energy. The variational method consists of finding the value of the parameter that minimizes the energy.</p>
+</section>
+<section epub:type="chapter" id="sec2.2">
+<h2 class="h2">2.2<span class="space">&#160;</span>The hydrogen-like atom</h2>
+<p class="noindent">Consider a hydrogen-like atom with nuclear charge <i>Z</i> in its ground state, that is, with one electron in a 1<i>s</i> orbital. In atomic units (see <i>Quantum mechanics 1</i>, p. 27) the Schr&#x00F6;dinger equation for the electronic wavefunction is</p>
+<table style="width:100%; margin-top:1em;">
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mo>&#x2207;</m:mo><m:mn>2</m:mn></m:msup><m:mi>&#x03C8;</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mi>Z</m:mi><m:mi>r</m:mi></m:mfrac><m:mi>&#x03C8;</m:mi><m:mo>=</m:mo><m:mi>E</m:mi><m:mi>&#x03C8;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(2.1)</td>
+</tr>
+</table>
+<p class="noindent">The ground-state wavefunction for this system is given in <i>Quantum mechanics 1</i>, <a href="Chapter03.xhtml">Chapter 3</a>; nonetheless, it is instructive to look for the best possible solution of the form <i>&#x03C8;</i> = <i>N exp</i>(&#x2013;<i>&#x03B1;r</i>), which is of the same form as <a id="page_25" class="page">Page 25, Chapter 2 Optimization</a> the 1<i>s</i> orbital. In this case the variational method, with <i>&#x03B1;</i> as the parameter to be varied, should give the exact solution.</p>
+<p class="indent">First we find <i>N</i> from the normalization integral:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mn>1</m:mn><m:mo>=</m:mo><m:msup><m:mi>N</m:mi><m:mn>2</m:mn></m:msup><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:msubsup><m:mrow><m:mn>4</m:mn><m:mi>&#x03C0;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mn>2</m:mn><m:mi>&#x03B1;</m:mi><m:mi>r</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>N</m:mi><m:mn>2</m:mn></m:msup><m:mi>&#x03C0;</m:mi></m:mrow><m:mrow><m:msup><m:mi>&#x03B1;</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1.2em;">(2.2)</td>
+</tr>
+</table>
+<p class="noindent">so that <i>N</i> = (<i>&#x03B1;</i><sup>3</sup>/<i>&#x03C0;</i>)<sup>1/2</sup>. The integral can be evaluated in many different ways: by parts, by differentiation under the integral sign, by residues, and so on. In this example we shall use several integrals of this form and so we quote the standard result:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:msubsup><m:mrow><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mi>s</m:mi><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>!</m:mo></m:mrow><m:mrow><m:msup><m:mi>s</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1.2em;">(2.3)</td>
+</tr>
+</table>
+<p class="noindent">The integral we have just used is the case <i>n</i> = 2, <i>s</i> = 2<i>&#x03B1;</i>.</p>
+<p class="indent">In order to evaluate the expectation energy we need to perform the integral <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>&#x03C8;</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>&#x03C8;</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math>. Applying the Hamiltonian to <i>&#x03C8;</i>, we find</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>N</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>&#x03B1;</m:mi><m:mi>r</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>[</m:mo> <m:mrow><m:msup><m:mi>&#x03B1;</m:mi><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>&#x03B1;</m:mi></m:mrow><m:mi>R</m:mi></m:mfrac></m:mrow> <m:mo>]</m:mo></m:mrow><m:mi>N</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>&#x03B1;</m:mi><m:mi>r</m:mi></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:mfrac><m:mi>Z</m:mi><m:mi>r</m:mi></m:mfrac><m:mi>N</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>&#x03B1;</m:mi><m:mi>r</m:mi></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(2.4)</td>
+</tr>
+</table>
+<p class="noindent">so that the expectation energy is given by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mo>&#x003C;</m:mo><m:mi>E</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:msup><m:mi>N</m:mi><m:mn>2</m:mn></m:msup><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:msubsup><m:mrow><m:mn>4</m:mn><m:mi>&#x03C0;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>&#x03B1;</m:mi><m:mi>r</m:mi></m:mrow></m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow></m:mrow></m:mstyle><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>&#x03B1;</m:mi><m:mi>r</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>r</m:mi></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>&#x03C0;</m:mi><m:msup><m:mi>N</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>8</m:mn><m:mi>&#x03B1;</m:mi></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mi>&#x03B1;</m:mi></m:mrow></m:mfrac></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mi>Z</m:mi><m:mrow><m:mn>4</m:mn><m:msup><m:mi>&#x03B1;</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x03B1;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>&#x2212;</m:mo><m:mi>Z</m:mi><m:mi>&#x03B1;</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:7.1em;">(2.5)</td>
+</tr>
+</table>
+<p class="noindent">This function is a quadratic equation of the variable <i>&#x03B1;</i> and it is elementary to find that it passes through a minimum when <i>&#x03B1;</i> = <i>Z</i>. Substituting this value of <i>&#x03B1;</i> back into the expression for the expectation energy gives an energy of &#x2013;<i>Z</i><sup>2</sup>/2, which is the exact ground state energy of the hydrogen-like atom in atomic units (apart from a small correction for the finite nuclear mass).</p>
+<aside class="abc" style="margin-top:-6.3em;" epub:type="sidebar">
+<p class="sidebar" id="prb2.2.1"><b>Problem 2.2.1.</b> <i>Repeat this analysis for the lowest energy wavefunction with the symmetry of a p<sub>z</sub> orbital, &#x03A8; =</i> Nr cos&#x03B8; <i>exp(&#x2013;&#x03B1;r)</i>.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec2.3">
+<h2 class="h2">2.3<span class="space">&#160;</span>The helium atom</h2>
+<p class="noindent">As a less trivial example consider the ground state of a helium-like atom, that is, an atom with two electrons and nuclear charge <i>Z</i>. In the orbital approximation the helium atom has the ground electron configuration 1s<sup>2</sup> and the orbital function <i>&#x03C8;</i><sub>1</sub><i><sub>s</sub></i>(<b>r</b><sub>1</sub>)<i>&#x03C8;</i><sub>1</sub><i><sub>s</sub></i>(<b>r</b><sub>2</sub>), which we abbreviate |1<i>s</i><sub>1</sub>1<i>s</i><sub>2</sub>&#x003E;. This orbital function is symmetric with respect to permutation of the electrons and is associated with an antisymmetric singlet spin function.</p>
+<p class="indent">However, in the He atom there are not only attractive interactions between each electron and the nucleus, there is also an electron&#x2013;electron repulsion. The Schr&#x00F6;dinger equation in atomic coordinates is therefore<a id="page_26" class="page">Page 26, Chapter 2 Optimization</a></p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msubsup><m:mo>&#x2207;</m:mo><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup><m:mi>&#x03C8;</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mi>Z</m:mi><m:mrow><m:msub><m:mi>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mi>&#x03C8;</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msubsup><m:mo>&#x2207;</m:mo><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup><m:mi>&#x03C8;</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mi>Z</m:mi><m:mrow><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac><m:mi>&#x03C8;</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mi>&#x03C8;</m:mi><m:mo>=</m:mo><m:mi>E</m:mi><m:mi>&#x03C8;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(2.6)</td>
+</tr>
+</table>
+<p class="noindent">The Hamiltonian is the sum of two one-electron hydrogen-like Hamiltonians, one for each electron, and the electron&#x2013;electron repulsion term.</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mi>&#x03C8;</m:mi><m:mo>+</m:mo><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msub><m:mi>&#x03C8;</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mi>&#x03C8;</m:mi><m:mo>=</m:mo><m:mi>E</m:mi><m:mi>&#x03C8;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(2.7)</td>
+</tr>
+</table>
+<p class="noindent">The electron&#x2013;electron repulsion correlates the motion of the two electrons and ensures that the orbital approximation |1<i>s</i><sub>1</sub>1<i>s</i><sub>2</sub> &#x003E; is not an exact description of the electronic wavefunction of the atom. In this example we use the variational method to find the best possible description of the atom of the assumed form.</p>
+<p class="indent">We guess that the 1<i>s</i> wavefunction has same form as for the H atom, discussed in the previous example, <i>N</i> exp(&#x2013;<i>&#x03B1;r</i>), and minimize the expectation energy with respect to the parameter <i>&#x03B1;</i>. The expectation energy is the sum of three terms,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mo>&#x003C;</m:mo><m:mi>E</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x003C;</m:mo><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>1</m:mn></m:msub><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>1</m:mn></m:msub><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>2</m:mn></m:msub><m:mo>&#x003E;</m:mo></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>1</m:mn></m:msub><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>1</m:mn></m:msub><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>2</m:mn></m:msub><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>1</m:mn></m:msub><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>1</m:mn></m:msub><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>2</m:mn></m:msub><m:mo>&#x003E;</m:mo></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x003C;</m:mo><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>2</m:mn></m:msub><m:mo>&#x003E;</m:mo></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>1</m:mn></m:msub><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>1</m:mn></m:msub><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>2</m:mn></m:msub><m:mo>&#x003E;</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:7.5em;">(2.8)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:0.5em;" epub:type="sidebar">
+<p class="sidebar" id="prb2.3.1"><b>Problem 2.3.1.</b> <i>Verify that the third term is given by <a href="#eq2.9">eqn 2.9</a></i>.</p>
+</aside>
+<p class="noindent">The simplification occurs because <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub></m:mrow></m:math> only depends on the coordinates of electron 1 and |1<i>s</i><sub>2</sub> &#x003E; is normalized. We have already evaluated the first two terms in the preceding example, they are both given by <a href="#eq2.5">eqn 2.5</a>. The third term is more difficult, but it can be found by rotating the coordinates of <b>r</b><sub>2</sub> so that the <i>z</i><sub>2</sub> axis is parallel to <b>r</b><sub>1</sub>. <i>r</i><sub>12</sub> can then be expressed in terms of <i>r</i><sub>1</sub>, <i>r</i><sub>2</sub>, and <i>&#x03B8;</i><sub>2</sub>, using the cosine rule. The integral is then elementary, and gives the result</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>1</m:mn></m:msub><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>1</m:mn></m:msub><m:mn>1</m:mn><m:msub><m:mi>s</m:mi><m:mn>2</m:mn></m:msub><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mi>&#x03B1;</m:mi></m:mrow><m:mn>8</m:mn></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(2.9)</td>
+</tr>
+</table>
+<p class="noindent">Combining all three terms we find the expectation energy to be</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>E</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:msup><m:mi>&#x03B1;</m:mi><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:mn>2</m:mn><m:mi>&#x03B1;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>Z</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(2.10)</td>
+</tr>
+</table>
+<p class="noindent">which is plotted as a function of <i>&#x03B1;</i> in <a href="#fig2.1">Fig. 2.1</a> If we simply used the hydrogen-like value of the parameter <i>&#x03B1;</i> = <i>Z</i>, we would obtain the expectation energy <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x2013;</m:mo><m:mi>Z</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>Z</m:mi><m:mo>&#x2013;</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, which is &#x2013;2.75 Hartree for He. However, the minimum expectation energy is obtained when <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x03B1;</m:mi><m:mo>=</m:mo><m:mi>Z</m:mi><m:mo>&#x2013;</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math>, giving an energy of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x2212;</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>Z</m:mi><m:mo>&#x2013;</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math>, which is &#x2013;2.85 Hartree for He. The exact ground state energy of He is &#x2013;2.90 Hartree, so the variational approximation is much better than the use of unmodified 1<i>s</i> orbitals. The modification of the optimum value of <i>&#x03B1;</i> below the value of the nuclear charge can be thought of as a reduction of the effective nuclear charge.</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="fig1" id="fig2.1">
+<img src="../images/fig2.1.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 2.1</b> Dependence of the expectation energy for the He atom on the parameter <i>&#x03B1;</i></figcaption></figure>
+</aside>
+<p class="noindent"><a id="page_27" class="page">Page 27, Chapter 2 Optimization</a></p>
+<p class="indent">This result shows that the electron&#x2013;electron repulsion reduces the effective nuclear charge felt by the electrons. The best description of the form |1<i>s</i><sub>1</sub>1<i>s</i><sub>2</sub> &#x003E; is where the <i>&#x03B1;</i> parameters are characteristic of a nuclear charge <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>Z</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math>. The nuclear charge felt by each electron is said to be partly <i>screened</i> by the repulsion of the other electron.</p>
+<aside class="abc" style="margin-top:4.5em;" epub:type="sidebar">
+<p class="sidebar">A superposition of wavefunctions can be optimized by setting up and solving a set of secular equations.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec2.4">
+<h2 class="h2" style="margin-top:2em;">2.4<span class="space">&#160;</span>Optimizing superpositions</h2>
+<p class="noindent">In most quantitative applications of quantum chemistry, wavefunctions are constructed by forming a superposition, or linear combination, of many simpler wavefunctions. The most familiar example is the construction of molecular orbitals as linear combinations of atomic orbitals, the LCAO method. The variational method is used to construct the best possible superposition by minimizing the ground state energy with respect to the coefficients.</p>
+<p class="indent">Thus we want to approximate the true wavefunction by a linear combination of the form <i>&#x03C8;</i> = <i>&#x01A9;<sub>j</sub>c<sub>j</sub></i>|<i>j</i> &#x003E;, where the |<i>j</i> &#x003E; are some given set of functions. We therefore need to find the coefficients <i>c<sub>j</sub></i> which minimize the expectation energy,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>E</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mi>&#x03C8;</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>&#x03C8;</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>j</m:mi><m:mo>,</m:mo><m:mi>k</m:mi></m:mrow></m:munder><m:mrow><m:msub><m:mi>c</m:mi><m:mi>k</m:mi></m:msub><m:msub><m:mi>c</m:mi><m:mi>j</m:mi></m:msub><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(2.11)</td>
+</tr>
+</table>
+<p class="noindent">However, the coefficients <i>c</i><sub><i>j</i></sub> are not all independent. They are constrained by the necessity for the wavefunction to be normalized,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>&#x03C8;</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>&#x03C8;</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>j</m:mi><m:mo>,</m:mo><m:mi>k</m:mi></m:mrow></m:munder><m:mrow><m:msub><m:mi>c</m:mi><m:mi>k</m:mi></m:msub><m:msub><m:mi>c</m:mi><m:mi>j</m:mi></m:msub><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(2.12)</td>
+</tr>
+</table>
+<p class="noindent">In the combination of atomic orbitals to form a molecular orbital the constituent atomic orbitals on different atoms are not in general orthogonal, so it is not possible to simplify the normalization summation to <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>&#x03A3;</m:mi><m:mi>j</m:mi></m:msub><m:msubsup><m:mi>c</m:mi><m:mi>j</m:mi><m:mn>2</m:mn></m:msubsup></m:mrow></m:math>. The quantity &#x003C; <i>k</i>|<i>j</i> &#x003E; is called the <i>overlap integral</i> of the constituent function1s for obvious reasons, and in matrix notation it is written <i>S<sub>kj</sub></i>. The corresponding Hamiltonian matrix element is denoted <i>H<sub>kj</sub></i>.</p>
+<p class="indent">The mathematical method used to minimize a function subject to a constraint is the method of <i>Lagrange multipliers</i>, which is described in many textbooks of mathematics for scientists (Stephenson 1973). Differentiating the function &#x003C; <i>E</i> &#x003E; and the constraint with respect to one of the coefficients, <i>c<sub>i</sub></i>, and combining the derivatives with a Lagrange multiplier &#x03BB; we find</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>H</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:msub><m:mi>c</m:mi><m:mi>j</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03BB;</m:mi><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>S</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:msub><m:mi>c</m:mi><m:mi>j</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mstyle></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(2.13)</td>
+</tr>
+</table>
+<p class="noindent">This is a linear equation relating the coefficients <i>c<sub>j</sub></i>. A different equation is obtained by differentiating with respect to each possible coefficient <i>c<sub>i</sub></i>. Simultaneous equations obtained in this way are called <i>secular equations</i>.</p>
+<p class="indent">Multiplying each equation by the <i>c<sub>i</sub></i> used to derive it and summing over all <i>c<sub>i</sub></i> we find</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:munder><m:mrow><m:msub><m:mi>H</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:msub><m:mi>c</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>c</m:mi><m:mi>j</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03BB;</m:mi><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:munder><m:mrow><m:msub><m:mi>S</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:msub><m:mi>c</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>c</m:mi><m:mi>j</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mstyle></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.75em;">(2.14)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_28" class="page">Page 28, Chapter 2 Optimization</a>But the first summation is the expectation energy &#x003C; <i>E</i> &#x003E; and the second summation is equal to 1, by <a href="#eq2.11">eqns 2.11</a> and <a href="#eq2.12">2.12</a>. Hence the Lagrange multiplier &#x03BB; is equal to &#x003C; <i>E</i> &#x003E;.</p>
+<p class="indent">If the coefficients are combined to form the vector c then the secular equations can be written in the compact form:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext mathvariant='bold'>H</m:mtext><m:mo>-</m:mo><m:mo>&#x003C;</m:mo><m:mi>E</m:mi><m:mo>&#x003E;</m:mo><m:mi mathvariant='bold'>S</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi mathvariant='bold'>c</m:mi><m:mo>=</m:mo><m:mn mathvariant='bold'>0</m:mn></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(2.15)</td>
+</tr>
+</table>
+<p class="noindent">where <b>0</b> is the zero vector.</p>
+<p class="indent">If the matrix (<b>H</b>&#x2013; &#x003C; <i>E &#x003E;</i> <b>S</b>) has an inverse, the only possible solution of the secular equations is <b>c</b> = <b>0</b>, which is not what we are looking for. For a non-trivial solution to exist the matrix must be singular, that is, its determinant, the <i>secular determinant</i>, must be zero</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mi mathvariant='bold'>H</m:mi><m:mo>-</m:mo><m:mo>&#x003C;</m:mo><m:mi>E</m:mi><m:mo>&#x003E;</m:mo><m:mi mathvariant='bold'>S</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mi>&#x0020;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(2.16)</td>
+</tr>
+</table>
+<p class="noindent">On expanding the secular determinant, we obtain a polynomial for &#x003C; <i>E</i> &#x003E;. If there are <i>n</i> coefficients in the superposition then in general we will obtain an <i>n</i>th order polynomial, which has <i>n</i> roots. Each root is interpreted as the energy of a molecular orbital, and can then be substituted back into the secular equations to obtain the set of coefficients that determines the orbital.</p>
+<p class="indent">We have derived the secular equations by attempting to minimize the lowest energy orbital, and in return the secular equations have given us expressions for energies of <i>n</i> different orbitals. It can be shown that every orbital energy obtained in this way is greater than the true orbital energy (Levine 1983), so we have variational bounds on all <i>n</i> energy levels.</p>
+</section>
+<section epub:type="chapter" id="sec2.5">
+<h2 class="h2" style="margin-top:2em;">2.5<span class="space">&#160;</span>The hydrogen molecule ion</h2>
+<p class="noindent">The preceding discussion is rather abstract, so we illustrate the ideas by reference to the simplest conceivable system with a chemical bond, the <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>H</m:mi><m:mn>2</m:mn><m:mo>+</m:mo></m:msubsup></m:mrow></m:math> ion. In atomic units the electronic wavefunction obeys the Schr&#x00F6;dinger equation</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mo>&#x2207;</m:mo><m:mn>2</m:mn></m:msup><m:mi>&#x03C8;</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mi>a</m:mi></m:msub></m:mrow></m:mfrac><m:mi>&#x03C8;</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mi>b</m:mi></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>R</m:mi></m:mfrac><m:mi>&#x03C8;</m:mi><m:mo>=</m:mo><m:mi>E</m:mi><m:mi>&#x03C8;</m:mi><m:mo>.</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(2.17)</td>
+</tr>
+</table>
+<p class="noindent">where <i>r</i><sub>a</sub> and <i>r</i><sub>b</sub>, are the distances from the electron to nucleus a and nucleus b, respectively, and <i>R</i> is the internuclear distance. Although this equation can be solved exactly by introducing a suitable set of coordinates (Pauling and Wilson 1985), we wish to describe the bonding using the LCAO approximation, in which the valence orbitals on the constituent atoms are superposed to form the molecular orbital. The valence orbitals of the H atoms are the 1<i>s</i> orbitals centred on the two nuclei, which we denote |1 &#x003E; and |2 &#x003E;. We are therefore searching for the best possible wavefunction of the form <i>c</i><sub>1</sub>|1 &#x003E; &#x002B;<i>c</i><sub>2</sub>|2&#x003E;.</p>
+<p class="indent">The analysis of the preceding section leads to the secular equations</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.18"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>H</m:mi><m:mrow><m:mn>11</m:mn></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mi>E</m:mi><m:msub><m:mi>S</m:mi><m:mrow><m:mn>11</m:mn></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>H</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mi>E</m:mi><m:msub><m:mi>S</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>H</m:mi><m:mrow><m:mn>21</m:mn></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mi>E</m:mi><m:msub><m:mi>S</m:mi><m:mrow><m:mn>21</m:mn></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>H</m:mi><m:mrow><m:mn>22</m:mn></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mi>E</m:mi><m:msub><m:mi>S</m:mi><m:mrow><m:mn>22</m:mn></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:2em;">(2.18)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_29" class="page">Page 29, Chapter 2 Optimization</a>We can immediately see, by symmetry, that <i>H</i><sub>11</sub> = <i>H</i><sub>22</sub>, and we denote this quantity <i>&#x03B1;</i>; from normalization <i>S</i><sub>11</sub> = <i>S</i><sub>22</sub> = 1. Furthermore, because the 1<i>s</i> orbitals are real, we have <i>S</i><sub>21</sub> = <i>S</i><sub>21</sub>, denoted <i>S</i>, and <i>H</i><sub>12</sub> = <i>H</i><sub>21</sub>, which we denote <i>&#x03B2;</i>.</p>
+<p class="blist" style="margin-top:1em;">&#x2022;<span class="space">&#160;</span><i>&#x03B1;</i> is the expectation energy of an electron in a 1<i>s</i> orbital in the presence of both nuclei.</p>
+<p class="blist">&#x2022;<span class="space">&#160;</span><i>&#x03B2;</i> is measures the extent to which the orbital energies are altered by the interference of the two orbitals.</p>
+<p class="blist" style="margin-bottom:1em;">&#x2022;<span class="space">&#160;</span><i>S</i> is the <i>overlap integral</i> of the two orbitals.</p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<figure class="fig1" id="fig2.2">
+<img src="../images/fig2.2.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 2.2</b> A cut through the optimized LCAO wavefunction for the <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>H</m:mi><m:mn>2</m:mn><m:mo>+</m:mo></m:msubsup></m:mrow></m:math> molecular orbital along the z axis.</figcaption></figure>
+<figure class="fig1" id="fig2.3" style="padding-top:1em;">
+<img src="../images/fig2.3.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 2.3</b> A cut through the optimized LCAO electron density for the <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>H</m:mi><m:mn>2</m:mn><m:mo>+</m:mo></m:msubsup></m:mrow></m:math> molecular orbital along the z axis.</figcaption></figure>
+<figure class="fig1" id="fig2.4" style="padding-top:1em;">
+<img src="../images/fig2.4.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 2.4</b> A cut through the optimized LCAO wavefunction for the <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>H</m:mi><m:mn>2</m:mn><m:mo>+</m:mo></m:msubsup></m:mrow></m:math> antibonding orbital along the z axis.</figcaption></figure>
+</aside>
+<p class="noindent">The secular equations can now be rewritten</p>
+<table style="width:70%; margin-top:1em; " >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.19"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03B1;</m:mi><m:mo>&#x2212;</m:mo><m:mi>E</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03B2;</m:mi><m:mo>&#x2212;</m:mo><m:mi>E</m:mi><m:mi>S</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03B2;</m:mi><m:mo>&#x2212;</m:mo><m:mi>E</m:mi><m:mi>S</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03B1;</m:mi><m:mo>&#x2212;</m:mo><m:mi>E</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:1.8em;text-align:right;padding-right:1em;">(2.19)</td>
+</tr>
+</table>
+<p class="noindent">The unknowns in the secular equations are the energy <i>E</i> and the constants <i>c</i><sub>1</sub> and <i>c</i><sub>2</sub>, as the quantities <i>&#x03B1;</i>, <i>&#x03B2;</i>, and <i>S</i> can all be evaluated from the 1<i>s</i> orbitals by integration.</p>
+<p class="indent">For these simultaneous equations to have a non-trivial solution the secular determinant must be zero:</p>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.20"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo>|</m:mo> <m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x03B1;</m:mi><m:mo>&#x2212;</m:mo><m:mi>E</m:mi></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mi>&#x03B2;</m:mi><m:mo>&#x2212;</m:mo><m:mi>E</m:mi><m:mi>S</m:mi></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x03B2;</m:mi><m:mo>&#x2212;</m:mo><m:mi>E</m:mi><m:mi>S</m:mi></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mi>&#x03B1;</m:mi><m:mo>&#x2212;</m:mo><m:mi>E</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03B1;</m:mi><m:mo>&#x2212;</m:mo><m:mi>E</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03B2;</m:mi><m:mo>&#x2212;</m:mo><m:mi>E</m:mi><m:mi>S</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></p></td>
+<td style="padding-top:1em;text-align:right;padding-right:1em;">(2.20)</td>
+</tr>
+</table>
+<p class="noindent">which implies</p>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.21"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>E</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>&#x03B1;</m:mi><m:mo>&#x00B1;</m:mo><m:mi>&#x03B2;</m:mi></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>&#x00B1;</m:mo><m:mi>S</m:mi></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0em;text-align:right;padding-right:1em;">(2.21)</td>
+</tr>
+</table>
+<p class="noindent">Substituting the energy (<i>&#x03B1;</i> &#x002B; <i>&#x03B2;</i>)/(1 &#x002B; <i>S</i>) back into the secular equations, we find that <i>c</i><sub>1</sub> = <i>c</i><sub>2</sub>, giving the molecular orbital, after normalization,</p>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.22"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03C8;</m:mi><m:mi>g</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>2</m:mn><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>S</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0em;text-align:right;padding-right:1em;">(2.22)</td>
+</tr>
+</table>
+<p class="noindent">The wavefunction and the corresponding probability density are shown in <a href="#fig2.2">Figs 2.2</a> and <a href="#fig2.3">2.3</a>. This superposition of |1 &#x003E; and |2 &#x003E; results in constructive interference between the two AOs in the region of overlap. The molecular orbital is thus a bonding orbital, and its energy is reduced relative to <i>&#x03B1;</i> (<i>&#x03B2;</i> is negative).</p>
+<p class="indent">Similarly, for the energy (<i>&#x03B1;</i> &#x2013; <i>&#x03B2;)</i>/(1 &#x2013; <i>S</i>), we find the orbital</p>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.23"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03C8;</m:mi><m:mi>u</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>2</m:mn><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mi>S</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0em;text-align:right;padding-right:1em;">(2.23)</td>
+</tr>
+</table>
+<p class="noindent">This wavefunction is antibonding, as can be seen from <a href="#fig2.4">Fig. 2.4</a> The superposition results in destructive interference in the region of overlap, thus removing electron density from the bonding region. Its energy is increased relative to <i>&#x03B1;</i>.<a id="page_30" class="page">Page 30, Chapter 2 Optimization</a></p>
+<p class="indent">We could, instead, have used the symmetry arguments of <i>Quantum mechanics 1</i>, <a href="Chapter04.xhtml">Chapter 4</a> to show that the only possible symmetry-adapted linear combinations are those where <i>c</i><sub>1</sub> = &#x00B1;<i>c</i><sub>2</sub>. The variational method clearly arrives at the same result.</p>
+<p class="indent">The problem is now solved apart from the evaluation of the integrals, which can be evaluated explicitly. The mathematics is elementary but tedious, and we simply outline the method and the results.</p>
+<p class="indent">First we consider <i>&#x03B1;</i> and <i>&#x03B2;</i>. The Hamiltonian, <a href="#eq2.17">eqn 2.17</a>, splits into three terms: the Hamiltonian for hydrogen atom a, the potential energy of repulsion between the two nuclei (which is constant if the internuclear distance is fixed), and the potential energy of attraction between the electron and nucleus b. The energy of the ground state H atom in atomic units is <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>,therefore</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.24"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03B1;</m:mi><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>R</m:mi></m:mfrac><m:mo>&#x2212;</m:mo><m:mo>&#x003C;</m:mo><m:mn>1</m:mn><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mi>b</m:mi></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(2.24)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.25"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03B2;</m:mi><m:mo>=</m:mo><m:mo stretchy='false'>(</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>R</m:mi></m:mfrac><m:mo stretchy='false'>)</m:mo><m:mi>S</m:mi><m:mo>&#x2212;</m:mo><m:mo>&#x003C;</m:mo><m:mn>2</m:mn><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mi>b</m:mi></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0m;">(2.25)</td>
+</tr>
+</table>
+<p class="noindent">The remaining integrals, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mn>1</m:mn><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mi>b</m:mi></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo></m:mrow></m:math>, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mn>2</m:mn><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mi>b</m:mi></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo></m:mrow></m:math> and &#x003C; 2|1 &#x003E;, are called the <i>Coulomb integral</i>, the <i>resonance integral</i>, and the <i>overlap integral</i> respectively. They are most easily evaluated by using elliptical coordinates <i>&#x03BC;</i>, <i>&#x03C5;</i>, and <i>&#x03D5;</i> for the electron, defined by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.26"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03BC;</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>r</m:mi><m:mi>a</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>r</m:mi><m:mi>b</m:mi></m:msub></m:mrow><m:mi>R</m:mi></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(2.26)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.27"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03BD;</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>r</m:mi><m:mi>a</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>r</m:mi><m:mi>b</m:mi></m:msub></m:mrow><m:mi>R</m:mi></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(2.27)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="fig1" id="fig2.5">
+<img src="../images/fig2.5.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 2.5</b> Variables for elliptical coordinates.</figcaption></figure>
+</aside>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<figure class="fig1" id="fig2.6">
+<img src="../images/fig2.6.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 2.6</b> Calculated potential energy curves for the <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>H</m:mi><m:mn>2</m:mn><m:mo>+</m:mo></m:msubsup></m:mrow></m:math> ion.</figcaption></figure>
+</aside>
+<p class="noindent">(see <a href="#fig2.5">Fig. 2.5</a>). If the two nuclei lie on the <i>z</i>-axis, then with the electron they define a plane which includes the <i>z</i>-axis. The angle <i>&#x03D5;</i> is the angle between this plane and the <i>xz</i> plane. The volume element in elliptical coordinates (the Jacobian) is given by</p>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.28"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>d</m:mi><m:mi>y</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>d</m:mi><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>R</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mn>8</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>&#x03BC;</m:mi><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mi>&#x03BD;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mi>&#x03BC;</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>d</m:mi><m:mi>&#x03BD;</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>d</m:mi><m:mi>&#x03D5;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;text-align:right;padding-right:1em;">(2.28)</td>
+</tr>
+</table>
+<p class="noindent">All space is covered by permitting <i>&#x03BC;</i> to vary from 1 to &#x221E;, <i>v</i> from &#x2013;1 to 1, and <i>&#x03D5;</i> from 0 to 2<i>&#x03C0;</i>.</p>
+<p class="indent">Substituting the explicit forms of |1 &#x003E; and |2 &#x003E;, transforming to elliptical coordinates and integrating, we find</p>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.29"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mn>1</m:mn><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>2</m:mn><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mo>&#x2212;</m:mo></m:msup><m:msup><m:mrow></m:mrow><m:mi>R</m:mi></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>R</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;text-align:right;padding-right:1em;">(2.29)</td>
+</tr>
+</table>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.30"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mn>1</m:mn><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>R</m:mi></m:mfrac><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>2</m:mn><m:mi>R</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>R</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;text-align:right;padding-right:1em;">(2.30)</td>
+</tr>
+</table>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.31"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mn>2</m:mn><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>R</m:mi></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>R</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;text-align:right;padding-right:1em;">(2.31)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar" id="prb2.5.1"><b>Problem 2.5.1.</b> <i>Perform the integrations leading to <a href="#eq2.29">eqns 2.29</a> to <a href="#eq2.31">2.31</a></i>.</p>
+</aside>
+<p class="noindent">When these are inserted into the expressions for <i>&#x03B1;</i> and <i>&#x03B2;</i>, they give an explicit form for the potential energy function, shown in <a href="#fig2.6">Fig. 2.6</a> Comparison with the <a id="page_31" class="page">Page 31, Chapter 2 Optimization</a> exact solution, also shown in <a href="#fig2.6">Fig. 2.6</a>, shows that the simple LCAO approximation is not an accurate description of the molecular orbital.</p>
+<p class="indent">Several obvious improvements can be made to this bonding model. We can introduce a variational parameter into the constituent 1<i>s</i> orbitals, as we did for the helium atom. The idea behind this change is to allow for the fact that the electron is attracted to both nuclei; for example, if the nuclei are close together the constituent 1<i>s</i> orbitals might be expected to contract. The effect of this refinement is also shown in <a href="#fig2.6">Fig. 2.6</a> It can be seen to be a significant improvement.</p>
+<p class="indent">A second improvement would be to superpose combinations of higher energy atomic orbitals with the correct symmetry. For example the <i>&#x03C8;<sub>g</sub></i> orbital, which has symmetry <i>&#x03C3;<sub>g</sub></i>, can also contain contributions from 2<i>s</i><sub>1</sub> &#x002B; 2<i>s</i><sub>2</sub> and from 2<i>p<sub>z</sub></i><sub>1</sub> &#x2013; 2<i>p<sub>z</sub></i><sub>2</sub>. This strategy of expanding the basis set is a common strategy for refining the description of bonding in more complicated molecules, because it can be implemented relatively easily on a computer.</p>
+</section>
+<section epub:type="chapter" id="sec2.6">
+<h2 class="h2">2.6<span class="space">&#160;</span>The hydrogen molecule &#x2013; configuration interaction</h2>
+<p class="noindent">The discussion in the preceding section deals with a particularly simple molecule, because it contains only one electron. Most molecules of interest in chemistry are bonded by electron pairs. In this section we therefore consider how the LCAO method can be extended to the hydrogen molecule.</p>
+<p class="indent">The hydrogen molecule contains two electrons and so, in addition to the electrostatic attractions between each electron and the two nuclei and the repulsion between the two nuclei, there is also an electrostatic repulsion between the two electrons. Furthermore, as discussed in <a href="Chapter01.xhtml">Chapter 1</a>, the electronic wavefunction must be antisymmetric with respect to permutation of the two electrons.</p>
+<p class="indent">The electronic Hamiltonian for the hydrogen molecule in the Born&#x2013;Oppenheimer approximation is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.32"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>=</m:mo></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>R</m:mi></m:mfrac><m:mo>+</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msubsup><m:mo>&#x2207;</m:mo><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mrow><m:mn>1</m:mn><m:mi>a</m:mi></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mrow><m:mn>1</m:mn><m:mi>b</m:mi></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mtext>&#x2009;</m:mtext><m:mo>+</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msubsup><m:mo>&#x2207;</m:mo><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mrow><m:mn>2</m:mn><m:mi>a</m:mi></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mtable columnalign='left'><m:mtr><m:mtd><m:mn>2</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>b</m:mi></m:mtd></m:mtr></m:mtable></m:msub></m:mrow></m:mfrac></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:6.5em;">(2.32)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-12.75em;" epub:type="sidebar">
+<p class="sidebar">The electronic Hamiltonian of any molecule is essentially similar to this. It contains a constant nuclear repulsion energy, a single-electron operator for each electron, representing the electron kinetic energy and the electron-nucleus attractions, and a two-electron operator for each possible combination of two electrons, representing the electron-electron repulsions.</p>
+</aside>
+<p class="noindent">where a and b denote the two nuclei and 1 and 2 the two electrons. This Hamiltonian is the sum of four terms. The first term, the inter-nuclear repulsion energy, is independent of the coordinates of the electrons. The second term represents the kinetic energy of electron 1 and the potential energy of its interaction with the two nuclei &#x2013; it depends on the coordinates of electron 1 only; likewise the third term depends on the coordinates of electron 2 only. These terms are known as single-electron operators. The final term, the electron&#x2013;electron repulsion, is a two-electron operator, because it depends on the coordinates of both electrons. We therefore abbreviate the Hamiltonian in the form</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.33"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>R</m:mi></m:mfrac><m:mo>+</m:mo><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(2.33)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_32" class="page">Page 32, Chapter 2 Optimization</a>In the simplest approximation, the <i>minimal basis</i> description, the molecular orbitals are the same as those for <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>H</m:mi><m:mn>2</m:mn><m:mo>+</m:mo></m:msubsup></m:mrow></m:math>, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>2</m:mn><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>/</m:mo><m:msqrt><m:mrow><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>S</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msqrt></m:mrow></m:math> for the <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>g</m:mi><m:mo>+</m:mo></m:msubsup></m:mrow></m:math> bonding orbital (|<i>g</i> &#x003E;), and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>2</m:mn><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>/</m:mo><m:msqrt><m:mrow><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>S</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msqrt></m:mrow></m:math> for the antibonding orbital (|<i>u</i> &#x003E;).</p>
+<p class="indent">We expect that both electrons will occupy the bonding orbital in the ground electron configuration. Let us denote the resulting product wavefunction |<i>gg</i> &#x003E;. To ensure the correct symmetry with respect to permutation of the electrons this orbital wavefunction must be multiplied by an antisymmetric, singlet, spin function <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x2013;</m:mo><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>/</m:mo><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:math> (see <a href="Chapter01.xhtml">Chapter 1</a>).</p>
+<p class="indent">The expectation energy is given by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.34"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>E</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(2.34)</td>
+</tr>
+</table>
+<p class="noindent">where we have used the normalization property &#x003C; <i>g</i>|<i>g</i> &#x003E; = 1 and the fact that <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math>, since the single-electron operators differ only by the label on the electron.</p>
+<p class="indent">Let us now consider all the possible electron configurations in this minimal basis description of the hydrogen molecule. The configuration of lowest energy is where both electrons occupy the <i>&#x03C3;<sub>g</sub></i> bonding orbital. This configuration has the term symbol <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mrow></m:mrow><m:mn>1</m:mn></m:msup><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>g</m:mi><m:mo>+</m:mo></m:msubsup></m:mrow></m:math> (see <i>Quantum mechanics 1</i>, <a href="Chapter04.xhtml">Chapter 4</a> and <a href="Chapter01.xhtml">Chapter 1</a>). The first excited configuration has one electron excited to the <i>&#x03C3;<sub>u</sub></i> orbital, giving terms <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mrow></m:mrow><m:mn>1</m:mn></m:msup><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>u</m:mi><m:mo>+</m:mo></m:msubsup></m:mrow></m:math> and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mrow></m:mrow><m:mn>3</m:mn></m:msup><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>u</m:mi><m:mo>+</m:mo></m:msubsup></m:mrow></m:math>, whereas the second excited configuration has both electrons in the antibonding orbital, and gives a second <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mrow></m:mrow><m:mn>1</m:mn></m:msup><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>g</m:mi><m:mo>+</m:mo></m:msubsup></m:mrow></m:math> term.</p>
+<p class="indent">Both the ground configuration and the doubly excited configuration give wavefunctions with the same symmetry, so it is natural to ask whether we can obtain an improved description of the ground state wavefunction by mixing them, that is, by finding coefficients <i>c</i><sub>1</sub> and <i>c</i><sub>2</sub> that minimize the energy of the combination <i>c</i><sub>1</sub>|<i>gg</i> &#x003E; &#x002B; <i>c</i><sub>2</sub>|<i>uu</i> &#x003E;. This method, in which we improve the ground-state wavefunction by mixing in excited configurations with the same symmetry, is known as <i>configuration interaction</i>, or <b>CI</b> for short, and is one of the most important methods in modern quantum chemistry.</p>
+<p class="indent">Since |<i>gg</i> &#x003E; and |<i>uu</i> &#x003E; are orthogonal, the overlap integral is zero, and the secular equations can be written</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.35"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:mi>E</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>u</m:mi><m:mi>u</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x003C;</m:mo><m:mi>u</m:mi><m:mi>u</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x003C;</m:mo><m:mi>u</m:mi><m:mi>u</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>u</m:mi><m:mi>u</m:mi><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:mi>E</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:3em;">(2.35)</td>
+</tr>
+</table>
+<p class="noindent">By splitting the Hamiltonian into one-electron and two-electron terms the matrix elements can be simplified to</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.36"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mi>r</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>&#x003C;</m:mo><m:mi>u</m:mi><m:mi>u</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mi>u</m:mi><m:mi>u</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mi>r</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>u</m:mi><m:mi>u</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>&#x003C;</m:mo><m:mi>u</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>u</m:mi><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:mi>u</m:mi><m:mi>u</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mi>r</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>u</m:mi><m:mi>u</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:2.5em;">(2.36)</td>
+</tr>
+</table>
+<p class="noindent">The single-electron integrals <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math> and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>u</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msub><m:mover accent='true'><m:mi>h</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>u</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math> are the energies of the |<i>g</i> &#x003E; and |<i>u</i> &#x003E; orbitals (the same as in the <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn><m:mo>+</m:mo></m:msubsup></m:mrow></m:math> ion), and are denoted <i>&#x03F5;</i>.</p>
+<p class="noindent"><a id="page_33" class="page">Page 33, Chapter 2 Optimization</a>Two-electron integrals in which each electron occupies the same orbital in both the bra and the ket are known as <i>Coulomb integrals</i>, and are denoted <i>J</i>. Two-electron integrals where the electrons occupy different orbitals in the bra and the ket are known as <i>exchange integrals</i>, and denoted <i>K</i>. Thus we have</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.37"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:msub><m:mi>J</m:mi><m:mrow><m:mi>g</m:mi><m:mi>g</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mi>r</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>J</m:mi><m:mrow><m:mi>g</m:mi><m:mi>u</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mi>u</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mi>r</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>u</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mi>u</m:mi><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mi>r</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>u</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>J</m:mi><m:mrow><m:mi>u</m:mi><m:mi>u</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mi>u</m:mi><m:mi>u</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mi>r</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>u</m:mi><m:mi>u</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>K</m:mi><m:mrow><m:mi>g</m:mi><m:mi>u</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mi>u</m:mi><m:mi>u</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mi>r</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mi>r</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>u</m:mi><m:mi>u</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mi>g</m:mi><m:mi>u</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mi>r</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>u</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mi>u</m:mi><m:mi>g</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mi>r</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>u</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:7.25em;">(2.37)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<p class="sidebar" id="prb2.6.1"><b>Problem 2.6.1.</b> <i>Show that the four expressions for</i> K<sub>gu</sub> <i>are identical</i>.</p>
+</aside>
+<p class="noindent">The ground state energy is therefore the lowest eigenvalue of the <b>CI</b> matrix</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mn>2</m:mn><m:msub><m:mo>&#x2208;</m:mo><m:mi>g</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>J</m:mi><m:mrow><m:mi>g</m:mi><m:mi>g</m:mi></m:mrow></m:msub></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:msub><m:mi>K</m:mi><m:mrow><m:mi>g</m:mi><m:mi>u</m:mi></m:mrow></m:msub></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:msub><m:mi>K</m:mi><m:mrow><m:mi>g</m:mi><m:mi>u</m:mi></m:mrow></m:msub></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mn>2</m:mn><m:msub><m:mo>&#x2208;</m:mo><m:mi>u</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>J</m:mi><m:mrow><m:mi>u</m:mi><m:mi>u</m:mi></m:mrow></m:msub></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p>
+<p class="noindent">Because the off-diagonal elements of this matrix are non-zero it is clear that further improvement of the variational energy can be obtained by the CI method. This improvement is notable when the molecule is close to dissociation. The wavefunction for the ground configuration can be expanded in terms of the constituent 1<i>s</i> orbitals,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.38"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>11</m:mn><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>12</m:mn><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>21</m:mn><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>22</m:mn><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>S</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(2.38)</td>
+</tr>
+</table>
+<p class="noindent">When the molecule is close to dissociation this wavefunction is not a good description of the molecule because it gives a probability of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> to ionic configurations (|11 &#x003E; and |22 &#x003E;), in which both electrons are found in the same 1<i>s</i> orbital, and are therefore close to the same nucleus. However, H<sub>2</sub> always dissociates into two H atoms, rather than giving ions half the time. For this reason Heitler and London proposed an alternative to the molecular orbital description, which is more appropriate for large inter-nuclear distances, known as <i>valence bond</i> theory.</p>
+<p class="indent">The valence bond orbital wavefunction is given by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.39"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03C8;</m:mi><m:mrow><m:mi>V</m:mi><m:mi>B</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>12</m:mn><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>21</m:mn><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mi>S</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(2.39)</td>
+</tr>
+</table>
+<p class="noindent">neglecting the ionic contributions. The valence bond description is good close to dissociation, but needs to have the ionic terms |11 &#x003E; and |22 &#x003E; mixed in at smaller internuclear separations.</p>
+<p class="indent">The minimal basis CI description leads to the best wavefunction of the form</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.40"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>u</m:mi><m:mi>u</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>11</m:mn><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>22</m:mn><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>12</m:mn><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>21</m:mn><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:2.5em;">(2.40)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_34" class="page">Page 34, Chapter 2 Optimization</a>which can be thought of either as the best possible combination of electron configurations in the molecular orbital theory, or as the best possible combination of the valence bond wavefunction with ionic terms, or as the best possible combination of simple MO theory and simple VB theory. For example, the inclusion of CI as a refinement of the molecular orbital theory leads to the correct dissociation products. Simple MO, VB, and CI potential energy curves for H<sub>2</sub> are shown in <a href="#fig2.7">Fig. 2.7</a></p>
+<p class="indent">The molecular orbital and valence bond theories are both approximations to reality. Both theories can be refined; molecular orbital theory by CI and VB theory by the inclusion of ionic terms. These refinements lead essentially to the same picture. For more details see McWeeny (1992).</p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="fig1" id="fig2.7">
+<img src="../images/fig2.7.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 2.7</b> H<sub>2</sub> molecule PE curves.</figcaption></figure>
+</aside>
+<section epub:type="chapter">
+<h3 class="h3">Lowest triplet state of H<sub>2</sub></h3>
+<p class="noindent">We complete our discussion of hydrogen by considering the lowest triplet state. The triplet spin functions, such as <i>&#x03B1;&#x03B1;</i>, are symmetric with respect to permuting the electrons, so the orbital function must be antisymmetric. The lowest configuration that can give an antisymmetric orbital wavefunction is where one electron is excited into the <i>&#x03C3;<sub>u</sub></i> antibonding orbital, giving a <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mrow></m:mrow><m:mn>3</m:mn></m:msup><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>u</m:mi><m:mo>+</m:mo></m:msubsup></m:mrow></m:math> term. There is also a singlet state from the same configuration, giving a <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mrow></m:mrow><m:mn>1</m:mn></m:msup><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>u</m:mi><m:mo>+</m:mo></m:msubsup></m:mrow></m:math> term. We shall consider both of these together, since both energy levels arise from the same electron configuration. The resulting orbital functions are</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.41"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>g</m:mi><m:mi>u</m:mi><m:mo>&#x003E;</m:mo><m:mo>&#x2213;</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>u</m:mi><m:mi>g</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(2.41)</td>
+</tr>
+</table>
+<p class="noindent">where the &#x2013; sign refers to the triplet state and the &#x002B; sign the singlet. The expectation energy is found by the usual method of splitting the Hamiltonian into one- and two-electron terms, with the result</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.42"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>E</m:mi><m:mo>&#x2213;</m:mo></m:msub><m:mo>=</m:mo><m:msub><m:mo>&#x2208;</m:mo><m:mi>g</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mo>&#x2208;</m:mo><m:mi>u</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>J</m:mi><m:mrow><m:mi>g</m:mi><m:mi>u</m:mi></m:mrow></m:msub><m:mo>&#x2213;</m:mo><m:msub><m:mi>K</m:mi><m:mrow><m:mi>g</m:mi><m:mi>u</m:mi></m:mrow></m:msub></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(2.42)</td>
+</tr>
+</table>
+<p class="noindent">The singlet and triplet wavefunctions have different energies as a result of the exchange correction <i>K<sub>gu</sub></i>, which comes from the antisymmetrization of the electronic wavefunction with respect to permuting the two electrons. Had we simply used the product wavefunction |<i>gu</i> &#x003E;, which does not recognize this permutation symmetry, the exchange energy would not have appeared.</p>
+<p class="indent">Nearly all closed shell molecules have excited triplet states, whose energies are lower than the excited singlet states with the same electron configuration, because the electron repulsion in the antisymmetrized triplet state is less than that in the orbitally symmetric singlet state, as discussed in <a href="Chapter01.xhtml">Chapter 1</a>.</p>
+<p class="ref"><b>References</b></p>
+<p class="refer">Green, N. J. B. (1997). <i>Quantum mechanics 1</i>. Oxford Chemistry Primer, Oxford.</p>
+<p class="refer">Levine, I. N. (1983). <i>Quantum chemistry</i>. Allyn and Bacon, Boston.</p>
+<p class="refer">McWeeny, R. (1992). <i>Methods of molecular quantum mechanics</i>. Academic Press, London.</p>
+<p class="noindent"><a id="page_35" class="page">Page 35, Chapter 2 Optimization</a></p>
+<p class="refer">Pauling, L. and Wilson, E. B. (1985). <i>Introduction to quantum mechanics</i>. Dover, New York, Section 42c.</p>
+<p class="refer">Stephenson, G. (1973). <i>Mathematical methods for science students</i>. Longman, London.</p>
+</section>
+</section>
+</section>
+</body>
+</html>

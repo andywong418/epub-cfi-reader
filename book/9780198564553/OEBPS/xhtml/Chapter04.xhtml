@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en-US">
+<head>
+<meta charset="utf-8" />
+<title>Radiation Heat Transfer</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch04">
+<a id="page_31" class="page" style="width:70%;">Page 31, Chapter 4 Heat exchange between grey surfaces</a>
+<h1 class="main">4<span class="space">&#160;</span>Heat exchange between grey surfaces</h1>
+<section epub:type="chapter" id="sec4.1">
+<h2 class="h2"><b>4.1<span class="space">&#160;</span>Introduction</b></h2>
+<p class="noindent">Any assumption of black body behaviour is an idealisation, which may be closely approximated by some surfaces, but is wholly inadequate for many practical systems. For non-black surfaces, we have the additional complication of reflection of incident radiation, such that the radiation leaving the surface is composed of emission plus reflection. We will confine ourselves in this book to opaque, grey surfaces, i.e. surfaces where we can assume that <i>&#x03B5;</i> = <i>&#x03B1;</i> = 1 &#x2013; <i>&#x03C1;</i>. There are three important equations which will be used when dealing with grey surfaces. These are the equivalent of <a href="Chapter03.xhtml#eq3.2">Equations 3.2</a> and <a href="Chapter03.xhtml#eq3.3">3.3</a> previously derived for black surfaces.</p>
+<p class="indent">Consider two grey surfaces (<i>i</i> and <i>j</i>) and the radiative fluxes associated with one of those surfaces. The radiation from surface <i>i</i> to surface <i>j</i> will be the fraction of the radiation leaving surface <i>i</i> which is incident on surface <i>j</i>, i.e. <i>J<sub>i</sub>A<sub>i</sub>F<sub>ij</sub></i>, where <i>J</i><sub>i</sub>, is the radiosity of surface <i>i</i> and includes both emission and any incident radiation which is reflected. Similarly, the radiation from surface <i>j</i> to surface <i>i</i> will be <i>J<sub>i</sub>A<sub>i</sub>F<sub>ij</sub></i> =<i>J<sub>i</sub>A<sub>i</sub>F<sub>ij </sub></i>(using reciprocity). The net transfer of radiation (<i>Q<sub>ij</sub></i>) directly from surface <i>i</i> to surface <i>j</i> will be the difference between these terms, i.e.</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>J</m:mi><m:mi>i</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mi>j</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(4.1)</td>
+</tr>
+</table>
+<p class="noindent">Thus the transfer rate is dependent on the difference between the <i>radiosity</i> of each surface. This contrasts with black surfaces, where radiative transfer depends on the difference between the <i>emissive power</i> of each surface (<a href="Chapter03.xhtml#eq3.2">Equations 3.2</a>). The net radiation <i>Q<sub>i</sub></i> leaving surface <i>i</i> in all directions will be:</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>J</m:mi><m:mi>i</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mi>j</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.2)</td>
+</tr>
+</table>
+<p class="noindent">There is an alternative formulation for <i>Q<sub>i</sub></i>. The net heat flow must be the difference between the leaving flux and the incident flux:</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>J</m:mi><m:mi>i</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>G</m:mi><m:mi>i</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:math></p></td>
+<td>(4.3)</td>
+</tr>
+</table>
+<p class="noindent">From the definition of radiosity (<a href="Chapter01.xhtml#eq1.6">Equations 1.6</a>), we have:</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<tr>
+<td style="padding-left:11em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>G</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>J</m:mi><m:mi>i</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>W</m:mi><m:mi>i</m:mi></m:msub></m:mrow><m:mrow><m:msub><m:mi>&#x03C1;</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>J</m:mi><m:mi>i</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mi>i</m:mi></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mi>i</m:mi><m:mn>4</m:mn></m:msubsup></m:mrow><m:mrow><m:msub><m:mi>&#x03C1;</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mfrac></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">which on substituting into <a href="#eq4.3">Equations 4.3</a> gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<tr>
+<td style="padding-left:11em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub><m:mrow><m:mo>[</m:mo> <m:mrow><m:mfrac><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mi>i</m:mi></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mi>i</m:mi><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mi>i</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mi>i</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msub><m:mi>&#x03C1;</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mfrac></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent"><a id="page_32" class="page">Page 32, Chapter 4 Heat exchange between grey surfaces</a>Applying the grey body approximation (<i>&#x03B5;</i> = 1 &#x2013; <i>&#x03C1;</i>) then gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mi>i</m:mi></m:msub></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>(</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mi>i</m:mi><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mi>i</m:mi></m:msub><m:mo stretchy='false'>)</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.4)</td>
+</tr>
+</table>
+<p class="noindent"><a href="#eq4.1">Equations 4.1</a>, <a href="#eq4.2">4.2</a>, and <a href="#eq4.4">4.4</a> will form the basis of all radiative problems with grey surfaces.</p>
+</section>
+<section epub:type="chapter" id="sec4.2">
+<h2 class="h2"><b>4.2<span class="space">&#160;</span>Transfer between two surfaces</b></h2>
+<p class="noindent">The additional complexities associated with non-black systems are illustrated in even the simplest system involving just two surfaces. The difficulties arise because of the radiosity terms in the governing equations. The temperature of a surface (and hence its emissive power) can be measured relatively easily, but the radiosity is almost certainly unknown. Therefore, analysis of any system involving non-black surfaces invariably requires solving a set of equations to obtain radiosities, from which heat transfer rates can then be determined.</p>
+<p class="indent">Consider two very large parallel plates (<a href="#fig4.1">Figure 4.1</a>), with temperatures <i>T</i><sub>1</sub>, <i>T</i><sub>2</sub> and emissivities &#x03B5;<sub>1</sub>, &#x03B5;<sub>2</sub>. Suppose that we wish to calculate the rate of radiative transfer from plate 1 to plate 2. Since all the radiation leaving one plate must be intercepted by the other plate, we have <i>G</i><sub>1</sub> = <i>J</i><sub>2</sub>, <i>G</i><sub>2</sub> = <i>J</i><sub>1</sub> and <i>F</i><sub>12</sub> = <i>F</i><sub>21</sub> = 1. From <a href="#eq4.1">Equations 4.1</a> the radiative flux is simply (<i>J</i><sub>1</sub> &#x2013; <i>J</i><sub>2</sub>). The radiosities are unknown, so we use our basic definition (<a href="Chapter01.xhtml#eq1.6">Equations 1.6</a>) to link radiosities with the temperature and physical properties of each surface. Applying <a href="Chapter01.xhtml#eq1.6">Equations 1.6</a> to each surface gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:9em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>G</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>=</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>G</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>=</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<p class="noindent">These can be rearranged as two simultaneous equations in <i>J</i><sub>1</sub> and <i>J</i><sub>2</sub>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow></m:math></p></td>
+<td>(4.5)</td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow></m:math></p></td>
+<td>(4.6)</td>
+</tr>
+</table>
+<p class="noindent">Eliminating <i>J<sub>2</sub></i> from <a href="#eq4.5">Equations 4.5</a> and <a href="#eq4.6">4.6</a> gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow></m:math></p></td>
+<td>(4.7)</td>
+</tr>
+</table>
+<p class="noindent">Eliminating <i>J</i><sub>1</sub> from <a href="#eq4.5">Equations 4.5</a> and <a href="#eq4.6">4.6</a> gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow></m:math></p></td>
+<td>(4.8)</td>
+</tr>
+</table>
+<figure class="imgc" id="fig4.1">
+<img src="../images/fig4.1.jpg" alt="images"/>
+<figcaption><b>Figure 4.1</b> Geometry for radiative transfer between two large parallel plates.</figcaption>
+</figure>
+<p class="noindent"><a id="page_33" class="page">Page 33, Chapter 4 Heat exchange between grey surfaces</a>Subtracting <a href="#eq4.8">Equations 4.8</a> from <a href="#eq4.7">Equations 4.7</a> and rearranging gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.9)</td>
+</tr>
+</table>
+<p class="noindent">So far the analysis has been general to all non-black surfaces, and <i>Q</i><sub>12</sub> can be calculated if <i>T</i>, <i>&#x03B5;</i>, and <i>&#x03C1;</i> are known for each surface. The expression can be simplified, if the surfaces are grey and opaque. If we introduce <i>&#x03C1;</i> = 1 &#x2013; <i>&#x03B5;</i> for each surface, <a href="#eq4.9">Equations 4.9</a> becomes, after some manipulation:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Flux</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msubsup><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(4.10)</td>
+</tr>
+</table>
+<p class="noindent">We have now achieved our aim and derived an expression for the radiative flux in terms of the temperature and physical properties (the emissivity) of the two surfaces. It is worth comparing <a href="#eq4.10">Equations 4.10</a> with the flux for a pair of black parallel plates, which is simply <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:math>. The first bracketed term in <a href="#eq4.10">Equations 4.10</a> is a factor by which the radiative flux for black plates is reduced when the surfaces are grey. It is generally known as the <i>grey radiation factor</i>, and <a href="#eq4.10">Equations 4.10</a> can be rewritten:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Flux</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mn>1</m:mn><m:mn>2</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.11)</td>
+</tr>
+</table>
+<p class="noindent">where <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mn>1</m:mn><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:math> is the grey radiation factor for two large parallel plates. Since the emissivity must be between 0 and 1, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mn>1</m:mn><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:math> must be less than 1. In the more general case where <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mn>1</m:mn><m:mn>2</m:mn></m:mrow></m:msub><m:mo>&#x003C;</m:mo><m:mn>1</m:mn></m:mrow></m:math>, it can be shown that <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mn>1</m:mn><m:mn>2</m:mn></m:mrow></m:msub><m:mo>&#x2264;</m:mo><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mn>1</m:mn><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:math>, with the equality holding for black surfaces. <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mn>1</m:mn><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:math> can therefore be seen as a modified view factor from surface 1 to surface 2, which takes account of the non-black nature of the surfaces. In general we have</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:8em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Flux</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mn>1</m:mn><m:mn>2</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">and the flux is determined <i>either</i> from the emissive powers and the grey radiation factor, <i>or</i> from the radiosities and the view factor.</p>
+</section>
+<section epub:type="chapter" id="sec4.3">
+<h2 class="h2"><b>4.3<span class="space">&#160;</span>Network analogy for grey surfaces</b></h2>
+<p class="noindent">We have seen how the solution of radiation problems for black surfaces can be accelerated by using an equivalent electrical circuit. The network approach can also be used for grey surfaces, provided that we take account of the non-ideal nature of the surface. Let us recall <a href="#eq4.1">Equations 4.1</a> and <a href="#eq4.4">4.4</a>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>J</m:mi><m:mi>i</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mi>j</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.1)</td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mi>i</m:mi></m:msub></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mi>i</m:mi><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mi>i</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.4)</td>
+</tr>
+</table>
+<p class="noindent"><a href="#eq4.1">Equations 4.1</a> suggests that direct radiative exchange between two surfaces can be represented as the current flow through a conductance connecting two radiosity nodes. <a href="#eq4.4">Equations 4.4</a> suggests that the heat flow to/from a surface may be represented as the current flow through a conductance A<i><sub>i</sub>&#x03B5;<sub>i</sub></i>/(1&#x2013;&#x03B5;<i><sub>i</sub></i>) connecting a node at a potential equal to the black body emissive power for that surface to a radiosity node for that surface. This second term can be <a id="page_34" class="page">Page 34, Chapter 4 Heat exchange between grey surfaces</a>thought of a surface conductance term which takes into account the non-ideal (non-black) of the surface.</p>
+<figure class="imgc" id="fig4.2">
+<img src="../images/fig4.2.jpg" alt="images"/>
+<figcaption><b>Figure 4.2</b> Equivalent electrical network for two grey surface enclosure.</figcaption>
+</figure>
+<p class="indent">We can now construct a network equivalent for the two grey plate problem (<a href="#fig4.2">Figure 4.2</a>). There will be a surface conductance term for each surface, plus the direct exchange conductance. <a href="#fig4.2">Figure 4.2</a> is, in fact, applicable to any system with two grey surfaces. We are looking to determine the heat flow (current) from surface 1 to surface 2. In principle we could determine the current through any one of the three conductances; however, given that in such a problem we generally know the temperatures, the normal procedure is to determine the net conductance (<i>C</i><sub>T</sub>) between <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow></m:math> and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow></m:math>, i.e.</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:12em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mtext>T</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">If the temperatures are known and <i>C</i><sub>T</sub> can be found from the network, <i>Q</i><sub>12</sub> may be calculated.</p>
+<p class="indent">Consider first the case of two very large grey plates. In such a system it is convenient to work with unit surface area, i.e. <i>A</i><sub>1</sub> = <i>A</i><sub>2</sub> = 1. The circuit is three conductances in series, so</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:12em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>C</m:mi><m:mtext>T</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">Noting that <i>F</i><sub>12</sub> = 1 in this case, this can be rearranged easily to give</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>C</m:mi><m:mtext>T</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msubsup><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.12)</td>
+</tr>
+</table>
+<p class="noindent">Thus we have reached <a href="#eq4.10">Equations 4.10</a> and <a href="#eq4.11">4.11</a> with a fraction of the algebraic manipulation.</p>
+<p class="indent">As indicated above, all two-surface problems are electrically equivalent, differing only in the magnitude of the conductances. For instance, for concentric cylinders and spheres, the net conductance is given by:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:11em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>C</m:mi><m:mtext>T</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac></m:mrow></m:math></td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>C</m:mi><m:mtext>T</m:mtext></m:msub><m:mo>=</m:mo><m:mrow><m:msub><m:mi>A</m:mi><m:mtext>1</m:mtext></m:msub><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msubsup><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msubsup><m:mo>+</m:mo><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>(</m:mo><m:msubsup><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo stretchy='false'>)</m:mo></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(4.13)</td>
+</tr>
+</table>
+<p class="noindent">The term in brackets is the grey radiation factor for concentric cylinders and spheres. There are three important limiting cases for this geometry.</p>
+<p class="blistk">(i)<span class="space">&#160;</span>If the separation between the surfaces is very small, then A<sub>1</sub> &#x2248; A<sub>2</sub>, which means that <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mn>1</m:mn><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:math> reduces to that for parallel plates (<a href="#eq4.12">Equations 4.12</a>).</p>
+<p class="blistk">(ii)<span class="space-n">&#160;</span>If the outer surface is black, then <i>&#x03B5;<sub>2</sub></i> = 1, and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mn>1</m:mn><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:math> &#x2192; &#x03B5;<sub>1</sub>.</p>
+<p class="noindent"><a id="page_35" class="page">Page 35, Chapter 4 Heat exchange between grey surfaces</a></p>
+<p class="blistk1">(iii)<span class="space-n1">&#160;</span>If the separation between the surfaces is very large, then Ai &#x003C;&#x003C; A<sub>2</sub>, and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mn>1</m:mn><m:mn>2</m:mn></m:mrow></m:msub><m:mo>&#x2192;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math>.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">From cases (ii) and (iii) we conclude that if we have a small object within a very large enclosure, the walls of the enclosure appear black to the object. This is because the further away the walls, the lower the amount of radiation from the object that is reflected off the walls back to the object.</p>
+</section>
+<section epub:type="chapter" id="sec4.4">
+<h2 class="h2"><b>4.4<span class="space">&#160;</span>Three-surface grey enclosures&#x2014;grey refractory surfaces</b></h2>
+<p class="noindent">The three surface problem described in <a href="Chapter03.xhtml#sec3.2">Section 3.2</a> can be extended to include grey surfaces. We will consider only a network approach for a furnace with a heat source, a heat sink, and refractory walls which are all grey. The network is shown in <a href="#fig4.3">Figure 4.3</a>. All pairs of surfaces are linked with conductances of the form <i>A<sub>i</sub>F<sub>ij</sub></i>. We have surface conductance terms for the heat source and heat sink, as determined by <a href="#eq4.4">Equations 4.4</a>. Note that a refractory surface requires <i>no</i> surface conductance. By definition a refractory has no net flux from/to the surface, i.e. <i>Q</i><sub>R</sub> = 0. Thus, from <a href="#eq4.4">Equations 4.4</a> we see that <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>J</m:mi><m:mi>R</m:mi></m:msub><m:mo>=</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mi>R</m:mi><m:mn>4</m:mn></m:msubsup></m:mrow></m:math>. In other words, the radiosity of a grey refractory surface is the same as a black body at the same temperature&#x2014;the emissivity of the refractory surface is immaterial.</p>
+<p class="indent">We require the overall conductance between <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow></m:math> and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow></m:math>. Note that the triangle of conductances connecting the three surfaces is identical to that in the black furnace (<a href="Chapter03.xhtml#fig3.3">Figure 3.3</a>), and has a net conductance<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mrow><m:mover accent='true'><m:mi>F</m:mi><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:math>. The problem is therefore reduced to three series conductances, and we may write:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:12em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>C</m:mi><m:mtext>T</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mrow><m:mover accent='true'><m:mi>F</m:mi><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">On rearrangement we obtain:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>C</m:mi><m:mtext>T</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>[</m:mo> <m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mrow><m:mover accent='true'><m:mi>F</m:mi><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(4.14)</td>
+</tr>
+</table>
+<p class="noindent">By analogy with the black furnace, we can define the term in brackets as the <i>total grey radiation factor</i>, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mrow><m:mover accent='true'><m:mi>&#x2131;</m:mi><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:math>, such that <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mtext>T</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mrow><m:mover accent='true'><m:mi>&#x2131;</m:mi><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:math>. Inspection of <a href="#eq4.14">Equations 4.14</a> shows that if the surfaces are black, then <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mrow><m:mover accent='true'><m:mi>&#x2131;</m:mi><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mrow><m:mover accent='true'><m:mi>F</m:mi><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:math>, as expected.</p>
+<figure class="imgc" id="fig4.3">
+<img src="../images/fig4.3.jpg" alt="images"/>
+<figcaption><b>Figure 4.3</b> Equivalent electrical network for a three-surface grey enclosure (one heat source, one heat sink, one refractory surface).</figcaption>
+</figure>
+<p class="noindent"><a id="page_36" class="page">Page 36, Chapter 4 Heat exchange between grey surfaces</a></p>
+<p class="indent">We can find the temperature of the refractory (<i>T<sub>R</sub></i>) by carrying out appropriate current balances. For the black furnace, one balance sufficed. For the grey furnace, a current balance on the refractory surface introduces two further unknowns, <i>J</i><sub>1</sub> and <i>J</i><sub>2</sub>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:8em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>A</m:mi><m:mtext>R</m:mtext></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>R</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mtext>R</m:mtext></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>R</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">We then require two further balances around nodes <i>J</i><sub>1</sub> and <i>J</i><sub>2</sub>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:3em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='right'><m:mtr columnalign='right'><m:mtd columnalign='right'><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:msub><m:mi>A</m:mi><m:mtext>R</m:mtext></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>R</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='right'><m:mtd columnalign='right'><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:msub><m:mi>A</m:mi><m:mtext>R</m:mtext></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>R</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">We therefore have three equations and three unknowns, which can be solved for <i>T</i><sub>R</sub> and, if required, the two radiosities. Clearly solution of this set of equations by hand is tedious. Already the limitations of the analogy are apparent: use of networks can give rates of heat transfer quite quickly, but, if temperatures or radiosities are required, we are often still required to solve a set of simultaneous equations.</p>
+</section>
+<section epub:type="chapter" id="sec4.5">
+<h2 class="h2"><b>4.5<span class="space">&#160;</span>Multi-surface problems</b></h2>
+<p class="noindent">Systems involving more than three grey surfaces are rarely convenient to solve using the above methods, so we need to resort to other analytical methods. Matrix methods for sets of simultaneous equations are particularly useful. For any surface in a system, we generally know either its temperature or the heat flux to/from it. Let us recall <a href="#eq4.2">Equations 4.2</a> and <a href="#eq4.4">4.4</a>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>J</m:mi><m:mi>i</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mi>j</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.2)</td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mi>i</m:mi></m:msub></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mi>i</m:mi><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mi>i</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.4)</td>
+</tr>
+</table>
+<p class="noindent">which can be combined to give for any surface <i>i</i>.</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mi>i</m:mi></m:msub></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mi>i</m:mi><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mi>i</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>J</m:mi><m:mi>i</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mi>j</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.15)</td>
+</tr>
+</table>
+<p class="noindent">Consider each surface in turn. If its temperature is known, we can use <a href="#eq4.15">Equations 4.15</a> to give an equation solely in terms of the radiosities of each surface; if the heat flux is known, we can use <a href="#eq4.2">Equations 4.2</a> to give an equation which is also solely in terms of the radiosities of each surface. Thus any <i>N</i>-surface problem can be defined by a set of <i>N</i> equations with <i>N</i> unknown radiosities:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:9em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>11</m:mn></m:mrow></m:msub><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:mn>..........</m:mn><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mi>N</m:mi></m:mrow></m:msub><m:msub><m:mi>J</m:mi><m:mi>N</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>21</m:mn></m:mrow></m:msub><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mn>22</m:mn></m:mrow></m:msub><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:mn>..........</m:mn><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mn>2</m:mn><m:mi>N</m:mi></m:mrow></m:msub><m:msub><m:mi>J</m:mi><m:mi>N</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:mo>&#x22EE;</m:mo><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x22EE;</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mn>1</m:mn></m:mrow></m:msub><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mn>2</m:mn></m:mrow></m:msub><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:mn>..........</m:mn><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mi>N</m:mi></m:mrow></m:msub><m:msub><m:mi>J</m:mi><m:mi>N</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mi>N</m:mi></m:msub></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent"><a id="page_37" class="page">Page 37, Chapter 4 Heat exchange between grey surfaces</a>The coefficients <i>a<sub>ij</sub></i> and <i>C<sub>i</sub></i> will be functions of the known view factors and temperatures or heat fluxes. These equations can be expressed in matrix form:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:3em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mstyle mathvariant='bold' mathsize='normal'><m:mi>A</m:mi><m:mi>J</m:mi></m:mstyle><m:mo>=</m:mo><m:mstyle mathvariant='bold' mathsize='normal'><m:mi>C</m:mi></m:mstyle><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>where</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mstyle mathvariant='bold' mathsize='normal'><m:mi>A</m:mi></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>11</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mo>&#x22EF;</m:mo></m:mtd><m:mtd><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mi>N</m:mi></m:mrow></m:msub></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>21</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>22</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mo>&#x22EF;</m:mo></m:mtd><m:mtd><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>2</m:mn><m:mi>N</m:mi></m:mrow></m:msub></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x22EE;</m:mo></m:mtd><m:mtd><m:mo>&#x22EE;</m:mo></m:mtd><m:mtd><m:mo>&#x22EE;</m:mo></m:mtd><m:mtd><m:mo>&#x22EE;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mn>1</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mo>&#x22EF;</m:mo></m:mtd><m:mtd><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>N</m:mi><m:mi>N</m:mi></m:mrow></m:msub></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd><m:mrow><m:mstyle mathvariant='bold' mathsize='normal'><m:mi>J</m:mi></m:mstyle><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x22EE;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>J</m:mi><m:mi>N</m:mi></m:msub></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd><m:mstyle mathvariant='bold' mathsize='normal'><m:mi>C</m:mi></m:mstyle></m:mtd></m:mtr></m:mtable><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>C</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x22EE;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>C</m:mi><m:mi>N</m:mi></m:msub></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">The solution of the equations for the radiosities is obtained by inverting matrix <b>A</b>, such that:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:7em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mstyle mathvariant='bold' mathsize='normal'><m:mi>J</m:mi></m:mstyle><m:mo>=</m:mo><m:msup><m:mstyle mathvariant='bold' mathsize='normal'><m:mi>A</m:mi></m:mstyle><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mstyle mathvariant='bold' mathsize='normal'><m:mi>C</m:mi></m:mstyle></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>where</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:msup><m:mstyle mathvariant='bold' mathsize='normal'><m:mi>A</m:mi></m:mstyle><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>b</m:mi><m:mrow><m:mn>11</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>b</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mo>&#x22EF;</m:mo></m:mtd><m:mtd><m:mrow><m:msub><m:mi>b</m:mi><m:mrow><m:mn>1</m:mn><m:mi>N</m:mi></m:mrow></m:msub></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>b</m:mi><m:mrow><m:mn>21</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>b</m:mi><m:mrow><m:mn>22</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mo>&#x22EF;</m:mo></m:mtd><m:mtd><m:mrow><m:msub><m:mi>b</m:mi><m:mrow><m:mn>2</m:mn><m:mi>N</m:mi></m:mrow></m:msub></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x22EE;</m:mo></m:mtd><m:mtd><m:mo>&#x22EE;</m:mo></m:mtd><m:mtd><m:mo>&#x22EE;</m:mo></m:mtd><m:mtd><m:mo>&#x22EE;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>b</m:mi><m:mrow><m:mi>N</m:mi><m:mn>1</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>b</m:mi><m:mrow><m:mi>N</m:mi><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mo>&#x22EF;</m:mo></m:mtd><m:mtd><m:mrow><m:msub><m:mi>b</m:mi><m:mrow><m:mi>N</m:mi><m:mi>N</m:mi></m:mrow></m:msub></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">The elements of both matrices on the right-hand side of the equation are known, so each radiosity may be calculated. Once the radiosities are known, all the unknown temperatures and heat fluxes may be calculated. Matrix inversion is extremely laborious by hand, but is readily carried out on a computer.</p>
+</section>
+</section>
+</body>
+</html>

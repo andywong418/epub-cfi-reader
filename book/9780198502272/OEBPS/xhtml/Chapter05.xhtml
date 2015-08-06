@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Quantum Mechanics 2: The Toolkit</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch05">
+<a id="page_76" class="page" style="width:70%;">Page 76, Chapter 5 Time</a>
+<h1 class="main">5<span class="space">&#160;</span>Time</h1>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec5.1">
+<h2 class="h2">5.1<span class="space">&#160;</span>The time-dependent Schr&#x00F6;dinger equation</h2>
+<p class="noindent">Up to this point we have made no attempt to use quantum mechanics to describe time-dependent phenomena, even though much of chemistry deals with dynamics on a molecular scale; the kinetics of chemical reaction, the motion and collision of molecules are obvious examples. However, the position of time in the Schr&#x00F6;dinger theory is not wholly satisfactory. Time is not treated as an observable in the same way as position or momentum, but as a parameter, which can be used to follow the evolution of an event. Time is not therefore represented by an operator.</p>
+<aside class="abc" style="margin-top:-8.5em;" epub:type="sidebar">
+<p class="sidebar">Time does not appear in a consistent or natural way in the Schr&#x00F6;dinger theory.</p>
+</aside>
+<p class="indent">However, this view is incomplete: in the theory or relativity time becomes a fourth spatial dimension. Changing frame of reference is a linear transformation of coordinate system in four-dimensional space-time. Quantum mechanics should show this symmetry by treating time in the same way as the three spatial dimensions so that transformations between different frames of reference can be made in a consistent way. This is not possible in the Schrodinger theory, a defect rectified in the relativistic theory of Dirac, which is beyond the scope of this book (see Dirac 1958; Bjorken and Drell 1964; Davydov 1976).</p>
+<p class="indent">In spite of this defect, classical (non-relativistic) mechanics provides an accurate description of macroscopic systems unless speeds approach the magnitude of the speed of light. In the same way, the Schrodinger time-dependent theory provides an accurate description of transient phenomena on the microscopic scale as long as speeds remain small.</p>
+<p class="indent">The best way of deriving the time-dependent Schrodinger equation is to start with the fully relativistic Dirac theory and take the appropriate limit. This has the virtue of introducing both time and spin in a proper way. However, the same result can be obtained in a much more physically intuitive way, by returning to the description of a free particle travelling in one dimension with a momentum <i>p.</i> The wavefunction of such a particle was given in <i>Quantum mechanics 1</i>, <a href="Chapter01.xhtml#sec1.3">Section 1.3</a> as</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03C8;</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>i</m:mi><m:mi>x</m:mi><m:mo>/</m:mo><m:mi>&#x03BB;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(5.1)</td>
+</tr>
+</table>
+<p class="noindent">where &#x03BB; is the de Broglie wavelength. Since this wavefunction represents a particle travelling through space with momentum <i>p</i> = <i>h/</i>&#x03BB;<i>,</i> it is natural to attempt to include time in such a way that the wavefunction becomes a travelling wave in the positive <i>x</i> direction:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03C8;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>exp</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>i</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>/</m:mo><m:mi>&#x03BB;</m:mi><m:mo>&#x2212;</m:mo><m:mi>v</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(5.2)</td>
+</tr>
+</table>
+<p class="noindent">If we take a snapshot of the wavefunction at a particular time we can see that real and imaginary parts vary sinusoidally with a wavelength &#x03BB;. Alternatively, <a id="page_77" class="page">Page 77, Chapter 5 Time</a>if we sit at a particular point and watch the wave go past we see that it oscillates sinusoidally in time with a frequency <i>v.</i> The energy of the particle is given by the usual formula <i>E=p</i><sup>2</sup><i>/</i>2<i>m</i>; we postulate that this should be consistent with Planck&#x2019;s law <i>E = hv</i>; equating the two and using the de Broglie relation we find that <a href="#eq5.2">eqn 5.2</a> can be rewritten as</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03C8;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>exp</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>i</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>p</m:mi><m:mi>x</m:mi><m:mo>&#x2212;</m:mo><m:mi>E</m:mi><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(5.3)</td>
+</tr>
+</table>
+<p class="noindent">It we differentiate &#x03A8; with respect to time and multiply by i<i>&#x0127;</i></p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>i</m:mi><m:mi>&#x210F;</m:mi><m:mfrac><m:mrow><m:mo>&#x2202;</m:mo><m:mi>&#x03C8;</m:mi></m:mrow><m:mrow><m:mo>&#x2202;</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>E</m:mi><m:mi>&#x03C8;</m:mi></m:mrow></m:math></p></td>
+<td>(5.4)</td>
+</tr>
+</table>
+<p class="noindent">The time derivative operator has the same effect on the wavefunction of a free particle as the Hamiltonian. In the Schr&#x00F6;dinger theory this relationship is assumed to be general, leading to the time-dependent Schr&#x00F6;dinger equation:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>i</m:mi><m:mi>&#x210F;</m:mi><m:mfrac><m:mrow><m:mo>&#x2202;</m:mo><m:mi>&#x03C8;</m:mi></m:mrow><m:mrow><m:mo>&#x2202;</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>&#x03C8;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(5.5)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar">The wavelength and frequency of a quantum mechanical matter wave are related by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>h</m:mi><m:mo>/</m:mo><m:mn>2</m:mn><m:mi>m</m:mi><m:msup><m:mi>&#x03BB;</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></p></td>
+<td style="padding-left:1em;">(5.6)</td>
+</tr>
+</table>
+<p class="sidebar">This equation differs from the corresponding equation for light by a factor of 2 because the kinetic energy of a free particle is equal to <i>mv</i><sup>2</sup><i>/</i>2<i>,</i> whereas the energy of a photon is <i>mc</i><sup>2</sup>.</p>
+</aside>
+<p class="noindent">The form of the time derivative operator and the appearance of the energy in the imaginary exponent of the wavefunction are strongly suggestive that the energy has the properties of the momentum conjugate to <i>t,</i> and indeed in the relativistic Dirac theory the energy operator does have this interpretation (Dirac 1958; Davydov 1976).</p>
+</section>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec5.2">
+<h2 class="h2">5.2<span class="space">&#160;</span>Stationary states</h2>
+<p class="noindent">The time-dependent Schr&#x00F6;dinger equation is the quantum mechanical analogue of Hamilton&#x2019;s equation of motion in classical mechanics. Because of this relationship wavefunctions with an exactly defined energy (eigenfunc-tions of the Hamiltonian) have a particularly simple dependence on time, corresponding to the classical observation that the energy of an isolated system is a constant of the motion. This may be seen by applying the separation of variables method (<i>Quantum mechanics 1,</i> <a href="Chapter02.xhtml">Chapter 2</a>) to <a href="#eq5.5">eqn 5.5</a>. (In this chapter we use <i>&#x03C8;</i> for a time-independent wavefunction and &#x03A8; for a time-dependent wavefunction.)</p>
+<p class="indent">Searching for a solution of the form <i>&#x03A4;</i>(<i>t</i>)<i>&#x03C8;</i>(<b><i>r</i></b>) we arrive at the separated equations</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>&#x03C8;</m:mi><m:mo>=</m:mo><m:mi>E</m:mi><m:mi>&#x03C8;</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mi>E</m:mi></m:mrow><m:mi>&#x210F;</m:mi></m:mfrac><m:mi>T</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:2.5em;">(5.7)</td>
+</tr>
+</table>
+<p class="noindent">where <i>E</i> is the separation constant. Such a solution exists if <i>&#x03C8;</i> is an eigenfunction of the Hamiltonian, that is, a solution of the time-independent Schr&#x00F6;dinger equation, and <i>E</i> is the energy, in which case the solution to the time-dependent Schr&#x00F6;dinger equation is given by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03C8;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>&#x03C8;</m:mi><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mi>E</m:mi><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(5.8)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_78" class="page">Page 78, Chapter 5 Time</a>As long as the Hamiltonian itself does not depend on time, the spatial part of the wavefunction remains constant and, in consequence, so does the energy; just as in classical mechanics, the energy is a constant of the motion. For this reason eigenfunctions of the Hamiltonian are referred to as <i>stationary states.</i></p>
+<p class="indent">When the Hamiltonian is time-independent, these solutions can be used in conjunction with the method of expansion in eigenfunctions (<i>Quantum mechanics 1,</i> <a href="Chapter01.xhtml#sec1.5">Section 1.5</a>) to describe the time evolution of any wavefunction. Let the eigenfunctions of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> be represented as kets, so that, for example, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mo>|</m:mo> <m:mrow><m:mi>j</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:msub><m:mi>E</m:mi><m:mi>j</m:mi></m:msub></m:mrow> <m:mo>|</m:mo></m:mrow><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math>, and suppose that at time zero the system of interest has wavefunction <i>&#x03C8;,</i> which can be expanded,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03C8;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>r</m:mi><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>&#x03C8;</m:mi><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>c</m:mi><m:mi>j</m:mi></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(5.9)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:2em;" epub:type="sidebar">
+<p class="sidebar" id="prb5.2.1"><b>Problem 5.2.1.</b> <i>Prove by direct substitution that <a href="#eq5.10">eqn 5.10</a> is a solution of the time-dependent Schr&#x00F6;dinger equation.</i></p>
+<p class="noindent">&#160;</p>
+<p class="sidebar" id="prb5.2.2"><b>Problem 5.2.2.</b> <i>Show that the expectation energy is time-independent.</i></p>
+<p class="noindent">&#160;</p>
+<p class="sidebar" id="prb5.2.3"><b>Problem 5.2.3.</b> <i>Show that the normalization of &#x03A8;</i> <i>is time-independent. (Hint: <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> is Hermitian, so that its eigenfunctions are orthogonal.)</i></p>
+</aside>
+<p class="noindent">To describe the time-dependence of the system it is simply necessary to multiply each term in the summation by exp(&#x2013;i<i>E<sub>j</sub>t/&#x0127;</i>)<i>,</i> using the appropriate energy. Each term will then obey <a href="#eq5.5">eqn 5.5</a> separately, hence so will any superposition of them:</p>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03C8;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>r</m:mi><m:mo>.</m:mo><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>c</m:mi><m:mi>j</m:mi></m:msub></m:mrow></m:mstyle><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:msub><m:mi>E</m:mi><m:mi>j</m:mi></m:msub><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;text-align:right;padding-right:1em;">(5.10)</td>
+</tr>
+</table>
+<p class="noindent">We also note that the probability of finding the system in a particular stationary state, <i>|k</i> &#x003E;, is time-independent:</p>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>p</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:msubsup><m:mi>c</m:mi><m:mi>k</m:mi><m:mo>&#x2217;</m:mo></m:msubsup><m:msub><m:mi>c</m:mi><m:mi>k</m:mi></m:msub><m:mo>&#x00D7;</m:mo><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>i</m:mi><m:msub><m:mi>E</m:mi><m:mi>k</m:mi></m:msub><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>-</m:mo><m:mi>i</m:mi><m:msub><m:mi>E</m:mi><m:mi>k</m:mi></m:msub><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>c</m:mi><m:mi>k</m:mi><m:mo>&#x2217;</m:mo></m:msubsup><m:msub><m:mi>c</m:mi><m:mi>k</m:mi></m:msub></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;text-align:right;padding-right:1em;">(5.11)</td>
+</tr>
+</table>
+<p class="noindent">because the two complex conjugate exponentials cancel out. Thus, if the Hamiltonian is time-independent the system is stationary in the sense that the probability distribution of the energy is independent of time.</p>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec5.3">
+<h2 class="h2">5.3<span class="space">&#160;</span>Equations of motion</h2>
+<p class="noindent">However, other observable physical properties are not necessarily time-independent. Let us investigate the expectation of some observable A, represented by the time-independent operator <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mover accent='true'><m:mi>A</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> Differentiating under the integral sign, and using the product rule, we find:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mo>&#x003C;</m:mo><m:mi>A</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:mo>&#x222B;</m:mo><m:mrow><m:mfrac><m:mrow><m:mo>&#x2202;</m:mo><m:msup><m:mi>&#x03C8;</m:mi><m:mo>&#x2217;</m:mo></m:msup></m:mrow><m:mrow><m:mo>&#x2202;</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mover accent='true'><m:mi>A</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mtext>&#x2009;</m:mtext><m:mi>&#x03A8;</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>&#x03C4;</m:mi><m:mo>+</m:mo><m:mstyle displaystyle='true'><m:mrow><m:mo>&#x222B;</m:mo><m:mrow><m:msup><m:mi>&#x03A8;</m:mi><m:mo>&#x2217;</m:mo></m:msup><m:mfrac><m:mrow><m:mo>&#x2202;</m:mo><m:mover accent='true'><m:mi>A</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow><m:mrow><m:mo>&#x2202;</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mi>&#x03A8;</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>&#x03C4;</m:mi><m:mo>+</m:mo><m:mstyle displaystyle='true'><m:mrow><m:mo>&#x222B;</m:mo><m:mrow><m:msup><m:mi>&#x03A8;</m:mi><m:mo>&#x2217;</m:mo></m:msup><m:mover accent='true'><m:mi>A</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mfrac><m:mrow><m:mo>&#x2202;</m:mo><m:mi>&#x03A8;</m:mi></m:mrow><m:mrow><m:mo>&#x2202;</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mtext>d</m:mtext><m:mi>&#x03C4;</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.12)</td>
+</tr>
+</table>
+<p class="noindent">The second term is zero if the operator <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>A</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> is independent of time. In the first and third terms we use the time-dependent Schr&#x00F6;dinger equation for the time derivative to obtain</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mo>&#x003C;</m:mo><m:mi>A</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>i</m:mi><m:mi>&#x210F;</m:mi></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:mo>&#x222B;</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>&#x2217;</m:mo></m:msup><m:msup><m:mi>&#x03A8;</m:mi><m:mo>&#x2217;</m:mo></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mover accent='true'><m:mi>A</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>&#x03A8;</m:mi><m:mtext>&#x2009;</m:mtext></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>&#x03C4;</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mi>i</m:mi><m:mi>&#x210F;</m:mi></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:mo>&#x222B;</m:mo><m:mrow><m:msup><m:mi>&#x03A8;</m:mi><m:mo>&#x2217;</m:mo></m:msup><m:mover accent='true'><m:mi>A</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>&#x03A8;</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>d</m:mi><m:mi>&#x03C4;</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p>
+<p class="noindent">Since <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> is Hermitian we can simplify the first term</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:mo>&#x222B;</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>&#x2217;</m:mo></m:msup><m:msup><m:mi>&#x03C8;</m:mi><m:mo>&#x2217;</m:mo></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mover accent='true'><m:mi>A</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow></m:mrow></m:mstyle><m:mi>&#x03C8;</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>d</m:mi><m:mi>&#x03C4;</m:mi><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:mo>&#x222B;</m:mo><m:mrow><m:msup><m:mi>&#x03C8;</m:mi><m:mo>&#x2217;</m:mo></m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mover accent='true'><m:mi>A</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow></m:mrow></m:mstyle><m:mi>&#x03C8;</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>d</m:mi><m:mi>&#x03C4;</m:mi></m:mrow></m:math></p>
+<p class="noindent"><a id="page_79" class="page">Page 79, Chapter 5 Time</a>leaving the result</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mo>&#x003C;</m:mo><m:mi>A</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>i</m:mi><m:mi>&#x210F;</m:mi></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:mo>&#x222B;</m:mo><m:mrow><m:msup><m:mi>&#x03C8;</m:mi><m:mo>&#x2217;</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mover accent='true'><m:mi>A</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>&#x2212;</m:mo><m:mover accent='true'><m:mi>A</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>&#x03C8;</m:mi></m:mrow></m:mrow></m:mstyle><m:mi>d</m:mi><m:mi>&#x03C4;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.13)</td>
+</tr>
+</table>
+<p class="noindent">If the operator <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>A</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> commutes with the Hamiltonian the quantity <i>A</i> is said to be <i>conserved</i> because its expectation (and its probability distribution) are time-independent. Classically, such a quantity is said to be a constant of the motion.</p>
+<p class="indent">The results of the two problems are the quantum mechanical generalization of the classical equations of motion of the particle. The first says that the rate of change of position is the velocity, and the second is essentially the generalization of Newton&#x2019;s second law, force (minus gradient of potential energy) = rate of change of momentum, and is often known as <i>Ehrenfest&#x2019;s theorem.</i></p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<p class="sidebar" id="prb5.3.1"><b>Problem 5.3.1.</b> <i>Show that the time-derivative of the expectation x coordinate of a particle is the x component of the expectation velocity.</i></p>
+<p class="noindent">&#160;</p>
+<p class="sidebar" id="prb5.3.2"><b>Problem 5.3.2.</b> <i>Show that the rate of change of the expectation momentum in the x direction is given by</i></p>
+<p class="imgc" style="padding-left:1.5em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mo>&#x003C;</m:mo><m:msub><m:mi>p</m:mi><m:mi>x</m:mi></m:msub><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mo>&#x2329;</m:mo><m:mfrac><m:mrow><m:mo>&#x2202;</m:mo><m:mi>v</m:mi></m:mrow><m:mrow><m:mo>&#x2202;</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>&#x232A;</m:mo></m:mrow></m:math></p>
+<p class="sidebar"><i>where V(x) is the potential energy.</i></p>
+</aside>
+<section epub:type="chapter">
+<h3 class="h3">A two-state system</h3>
+<p class="noindent">As a simple example of a time-dependent phenomenon let us consider a system with two states. The system we shall consider is a pair of free radicals in a strong magnetic field. The two radicals are different chemical species, and their energies are modified by the field according to the Zeeman effect (<a href="Chapter04.xhtml#sec4.2">Section 4.2</a>), so that the energy of the pair becomes (see <a href="Chapter04.xhtml#eq4.12">eqn 4.12</a>)</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>E</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>g</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>g</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub><m:mi>B</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(5.14)</td>
+</tr>
+</table>
+<p class="noindent">In particular, the states <i>|&#x03B1;&#x03B2;</i> &#x003E; and <i>|&#x03B2;&#x03B1;</i> &#x003E; have the energies <i>&#x00B1;&#x0127;&#x03C9;/</i>2<i>,</i> where <i>&#x0127;&#x03C9; =</i> (<i>g</i><sub>1</sub> &#x2013; <i>g</i><sub>2</sub>)<i>&#x03BC;</i><sub>B</sub><i>B.</i>Suppose that the radical pair is formed by flash photolysis in a singlet state, which is a superposition of the two states <i>|&#x03B1;&#x03B2;</i> &#x003E; and <i>|&#x03B2;&#x03B1;</i> &#x003E;:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>S</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo>|</m:mo> <m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo></m:mrow> <m:mo>|</m:mo></m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(5.15)</td>
+</tr>
+</table>
+<p class="noindent">and recall that the triplet state <i>|T</i><sub>0</sub> &#x003E; is a similar superposition, with a plus sign in place of the minus sign.</p>
+<p class="indent">If the initial wavefunction is <i>|S</i> &#x003E;, we can immediately write down the wavefunction at time <i>t</i> from <a href="#eq5.10">eqn 5.10</a>:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03C8;</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mi>&#x03C9;</m:mi><m:mi>t</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:msup><m:mrow><m:mo>|</m:mo> <m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mi>&#x03C9;</m:mi><m:mi>t</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mrow> <m:mo>|</m:mo></m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(5.16)</td>
+</tr>
+</table>
+<p class="noindent">However, there are two non-commuting observables in this system. The energy, which is conserved, as discussed above, and the total spin quantum number of the pair, which determines its singlet or triplet nature. If we express &#x03A8; in terms of <i>|S &#x003E;</i> and <i>|T</i><sub>0</sub> &#x003E; we can see this more clearly</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>&#x03C8;</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mi>&#x03C9;</m:mi><m:mi>t</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo>|</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mn>0</m:mn></m:msub><m:mo>&#x003E;</m:mo><m:mo>+</m:mo></m:mrow> <m:mo>|</m:mo></m:mrow><m:mi>S</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mi>&#x03C9;</m:mi><m:mi>t</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo>|</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mn>0</m:mn></m:msub><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo></m:mrow> <m:mo>|</m:mo></m:mrow><m:mi>S</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mi>cos</m:mi><m:mtext>&#x2009;</m:mtext><m:mfrac><m:mrow><m:mi>&#x03C9;</m:mi><m:mi>t</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>|</m:mo> <m:mrow><m:mi>S</m:mi><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>sin</m:mi><m:mfrac><m:mrow><m:mi>&#x03C9;</m:mi><m:mi>t</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow> <m:mo>|</m:mo></m:mrow><m:msub><m:mi>T</m:mi><m:mn>0</m:mn></m:msub><m:mo>&#x003E;</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:3em;">(5.17)</td>
+</tr>
+</table>
+<p class="noindent">The singlet probability is therefore <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> (1 &#x002B; cos <i>&#x03C9;t</i>)<i>,</i> and the triplet probability is <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> (1 &#x2013; cos <i>&#x03C9;t</i>). We can see that the singlet probability oscillates coherently <a id="page_80" class="page">Page 80, Chapter 5 Time</a> between 1 and 0 with a period <i>2&#x03C0;/&#x03C9;,</i> as shown in <a href="#fig5.1">Fig. 5.1</a>. This is an example of a phenomenon known as <i>Rabi oscillation.</i></p>
+<p class="indent">The singlet probability is an observable because when two radicals encounter, their fate depends on this spin state. For example, in some cases only the singlet state leads to reaction &#x2013; then the singlet probability corresponds to the probability of reaction on encounter. In other cases reaction leads to a singlet state, which fluoresces, or to a triplet state, which does not. Either way, the rate of formation of the singlet state oscillates coherently. Such oscillations have been observed experimentally in several systems, and are known as <i>quantum beats.</i></p>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<figure class="fig1" id="fig5.1">
+<img src="../images/fig5.1.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 5.1</b> The coherent oscillation of the singlet probability of a radical pair in a magnetic field calculated from <a href="#eq5.17">eqn 5.17</a>.</figcaption></figure>
+<p class="noindent" style="width:100%;text-align:left;">A wavepacket is a wavefunction prepared in such a way that it is localized in space. It is a superposition of several stationary states with well defined phase relationships.</p>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Wavepackets</h3>
+<p class="noindent">Many important modern experiments prepare systems in such a way that the initial wavefunction is not an eigenstate of the Hamiltonian. If this initial wavefunction is localized in space in some way, the terms that appear in <a href="#eq5.10">eqn 5.10</a> must have a definite phase relationship so that they interfere constructively in the region where the particle is localized and destructively elsewhere. Such a state is often called a wavepacket to emphasize its localization. A wavepacket does not necessarily remain localized, it will generally tend to spread out as time evolves, but its time evolution is entirely determined by the different rates at which the phases of each term in the expansion increase, following <a href="#eq5.10">eqn 5.10</a>.</p>
+<p class="indent">Several types of experiment in modern chemistry produce wavepackets. The best known is the vibrational wavepacket, in which a molecule undergoes an electronic transition into a superposition of excited vibrational states of the excited potential energy surface, determined by the Franck&#x2013;Condon factors. In a diatomic molecule the wavepacket produced in this way oscillates back and forth in the potential well in a pseudo-classical way, gradually spreading out and producing interference effects. If the curve crosses a dissociative state then every time the wavepacket passes through the crossing region a part of it follows the dissociative curve and is lost. The rest remains bound. Another example is a pulse of light in a mode-locked laser, which is a superposition of the longitudinal modes (standing waves) of the laser cavity, and bounces back and forth between the mirrors at the ends of the cavity.</p>
+<p class="indent">Similar experiments can be performed with electronic wavepackets, that is, superpositions of electronic wavefunctions, by exciting an atom or molecule very close to its ionization limit, where the energy levels obey the Rydberg formula and are very closely spaced so that several states can be excited simultaneously and coherently. The wavepacket is produced in the core region and then orbits in a semi-classical manner, following the appropriate elliptical Sommerfeld orbit. The wavepacket spreads out as it orbits, and eventually the front end catches the back end and interference results. Every time the wavepacket passes through the core region a small part of it autoionizes and can be detected. In this way it is possible to watch electrons orbit in real time.</p>
+<p class="indent">These experiments may seem simply to be curiosities, but they illustrate how many photochemical reactions occur. Absorption of light produces a wavepacket in the Franck-Condon footprint on the excited state potential <a id="page_81" class="page">Page 81, Chapter 5 Time</a> energy surface; the subsequent motion of this vibrational wavepacket determines the chemical rearrangement of the nuclei. In principle this is a very powerful method for analysing photochemical reactions, but at present it is limited to small molecules because of the large number of dimensions (degrees of freedom) required for larger molecules. Larger molecules are generally dealt with, either by reducing the number of dimensions in the calculation, or by propagating classical trajectories rather than wavepackets. It is likely, however, that this area will see substantial progress in the next few years.</p>
+<aside class="abc" style="margin-top:3.5em;" epub:type="sidebar">
+<p class="sidebar">In a sudden change the Hamiltonian changes very rapidly and the wavefunction does not have time to respond.</p>
+</aside>
+</section>
+</section>
+<section epub:type="chapter" id="sec5.4">
+<h2 class="h2">5.4<span class="space">&#160;</span>Sudden changes</h2>
+<p class="noindent">So far we have dealt with phenomena where the Hamiltonian is constant in time. There are many physical phenomena in which the Hamiltonian depends on time. We shall start by considering the Umiting case where <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> changes very rapidly, and permanently, to a new form; for example when a nucleus undergoes radioactive decay in an atom its charge is altered permanently, altering the motion of the electrons in the atom. Another example of a sudden change occurs when a molecule undergoes an electronic transition; the rearrangement of the electrons leads to a change in the potential energy function for the nuclear motion, and so affects the molecular vibrations.</p>
+<p class="indent">In order to analyse a change of this type, consider a system in which the Hamiltonian is <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>0</m:mn></m:msub></m:mrow></m:math>, and the wavefunction is given by a stationary state <i>&#x03C8;<sub>k</sub></i> At time zero the Hamiltonian rapidly and irreversibly changes to <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> If the change takes place sufficiently rapidly, the wavefunction does not have time to respond, and the system finds itself immediately after time zero with an unaltered wavefunction <i>&#x03C8;<sub>k</sub></i> which is no longer a stationary state of the new Hamiltonian. This is the essential physical content of the <i>sudden approximation.</i></p>
+<p class="indent">However, the wavefunction <i>&#x03C8;<sub>k</sub></i> can be expressed as an expansion in terms of the eigenfunctions of the new Hamiltonian, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math>,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.18"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03C8;</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mo>&#x2211;</m:mo> <m:mrow><m:mi>a</m:mi><m:msub><m:mi>k</m:mi><m:mi>j</m:mi></m:msub><m:msub><m:mi>&#x03D5;</m:mi><m:mi>j</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td>(5.18)</td>
+</tr>
+</table>
+<p class="noindent">and following the method of <i>Quantum mechanics 1,</i> <a href="Chapter01.xhtml#sec1.5">Section 1.5</a>, the coefficients in the summation are given by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.19"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>a</m:mi><m:msub><m:mi>k</m:mi><m:mi>j</m:mi></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:mo>&#x222B;</m:mo><m:mrow><m:msubsup><m:mi>&#x03D5;</m:mi><m:mi>j</m:mi><m:mo>&#x2217;</m:mo></m:msubsup></m:mrow></m:mrow></m:mstyle><m:msub><m:mi>&#x03C8;</m:mi><m:mi>k</m:mi></m:msub><m:mi>d</m:mi><m:mi>&#x03C4;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.19)</td>
+</tr>
+</table>
+<p class="noindent">Since the Hamiltonian does not alter after time zero, the amplitude for the system to occupy state <i>&#x03D5;<sub>j</sub></i> at some subsequent time <i>t</i> is given by <i>a<sub>kj</sub> exp(</i>&#x2013;<i>iE<sub>j</sub>t/&#x0127;</i>)<i>,</i> and so the probability of finding the system in this state is stationary and equal to <i>|a<sub>kj</sub>|</i><sup>2</sup>.</p>
+<section epub:type="chapter">
+<h3 class="h3">Radioactive decay</h3>
+<p class="noindent">As an example of the sudden approximation let us consider what happens to a tritium atom in its ground state when the nucleus undergoes a beta decay, and becomes a nucleus of <sup>3</sup>He. Explicitly, let us calculate the probability that the <a id="page_82" class="page">Page 82, Chapter 5 Time</a> resulting helium ion will be found in its ground state, in which the electron occupies the <i>Is</i> orbital, on the assumption that the radioactive decay takes place instantly on an electronic timescale.</p>
+<p class="indent">The initial wavefunction is the 1<i>s</i> orbital of a hydrogen atom and is given by (in atomic coordinates)</p>
+<aside class="abc" style="margin-top:-2.5em;" epub:type="sidebar">
+<p class="sidebar" id="prb5.4.1"><b>Problem 5.4.1.</b> <i>Explain why, if the tritium atom is in its ground state, the probability of forming the helium ion with the electron in a p orbital is exactly zero. (Similarly for any type of orbital other than an s orbital.)</i></p>
+</aside>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:3.85%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.20"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03C8;</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mi>&#x03C0;</m:mi></m:msqrt></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>r</m:mi></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:0em;text-align:right;padding-right:1em;">(5.20)</td>
+</tr>
+</table>
+<p class="noindent">We wish to calculate the probability that the final state is the 1<i>s</i> orbital of a He<sup>&#x002B;</sup> ion, which is given by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.21"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03D5;</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow><m:mrow><m:msqrt><m:mi>&#x03C0;</m:mi></m:msqrt></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>2</m:mn><m:mi>r</m:mi></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.21)</td>
+</tr>
+</table>
+<p class="noindent">Substituting these wavefunctions into the integral for the expansion coefficient <i>a</i><sub>1</sub><i><sub>s</sub></i><sub>1</sub><i><sub>s</sub></i>, we find</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.22"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mi>s</m:mi><m:mn>1</m:mn><m:mi>s</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow><m:mi>&#x03C0;</m:mi></m:mfrac><m:mn>4</m:mn><m:mi>&#x03C0;</m:mi><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:msubsup><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>3</m:mn><m:mi>r</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>16</m:mn><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow><m:mrow><m:mn>27</m:mn></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.22)</td>
+</tr>
+</table>
+<p class="noindent">Hence the probability of forming the ion in its ground electronic state is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.23"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mrow><m:mrow><m:mo>|</m:mo> <m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mi>s</m:mi><m:mn>1</m:mn><m:mi>s</m:mi></m:mrow></m:msub></m:mrow> <m:mo>|</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>512</m:mn></m:mrow><m:mrow><m:mn>729</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.8381</m:mn><m:mo>&#x22EF;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.23)</td>
+</tr>
+</table>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">The Franck-Condon principle</h3>
+<p class="noindent">When an electronic transition takes place in a molecule the electron distribution is rearranged. It is this electron distribution which holds the molecule together and defines the potential energy function for the molecular vibrations. Since electrons move on the order of 1000 times faster than nuclei, the electronic transition is effectively instantaneous on the timescale of nuclear motion, and therefore the sudden approximation is appropriate. Before the transition the molecule has vibrational wavefunction <i>&#x03C8;<sub>k</sub></i> and the transition is sufficiently fast that this wavefunction is not altered. After the transition the potential energy function (and therefore the vibrational Hamiltonian) is changed, thus <i>&#x03C8;<sub>k</sub></i> is no longer a stationary state.</p>
+<p class="indent">According to the sudden approximation, however, the amplitude for finding the molecule in vibrational state <i>&#x03D5;<sub>i</sub></i>&#x00B7;is <i>a<sub>kj</sub>,</i> defined by <a href="#eq5.19">eqn 5.19</a>, and the probability of transition to this vibrational state is therefore |<i>a<sub>kj</sub></i>|<sup>2</sup>.&#x00B7;In this context the coefficient <i>a<sub>kj</sub></i> is the overlap integral between the initial vibrational wavefunction, an eigenfunction <i>of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>0</m:mn></m:msub></m:mrow></m:math>,</i> and the final vibrational wavefunction, an eigenfunction of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> The intensity of transition is weighted by the Franck-Condon factor, which is the square modulus of the overlap integral, as previously discussed in <i>Quantum mechanics 1,</i> <a href="Chapter02.xhtml#sec2.5">Section 2.5</a>.</p>
+<p class="indent">The discussion of this section shows clearly the relationship between the conventional derivation of the Franck&#x2013;Condon principle and the idea of a sudden change in the potential energy. The FranckCondon principle is often explained in classical terms, by saying that the sudden change in the potential energy function means that the nuclei suddenly find themselves in a non-<a id="page_83" class="page">Page 83, Chapter 5 Time</a>equilibrium configuration, therefore the bond is either compressed or stretched and responds by vibrating, like a spring. This explanation is at best only a classical analogy we can see from the analysis here that the sudden change in the potential energy does not lead to any change in the wavefunction, and to find the distribution of new vibrational states we simply expand the wavefunction in a series of eigenfunctions of the new Hamiltonian. The expansion coefficients are the overlap integrals, which can be either positive or negative and do not correspond to the probability of finding the bond at a particular extension.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec5.5">
+<h2 class="h2">5.5<span class="space">&#160;</span>Time-dependent perturbations</h2>
+<p class="noindent">In the remainder of this chapter we consider systems in which the Hamiltonian is time-dependent. There are many examples of such systems. One of the most important in chemistry is the interaction of a molecule with light, another is the collision of two molecules, or an electron and a molecule. In each of these cases the external perturbation acts for some period of time and the Hamiltonian then returns to a constant form. The action of the perturbation is to induce transitions between the stationary states of the original system.</p>
+<p class="indent">Let us assume that the time-dependent Hamiltonian can be split into two parts, one of which is constant, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>0</m:mn></m:msub></m:mrow></m:math> , and the other contains the time-dependent perturbation, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mover accent='true'><m:mi>V</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.24"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>i</m:mi><m:mi>&#x210F;</m:mi><m:mfrac><m:mrow><m:mo>&#x2202;</m:mo><m:mi>&#x03C8;</m:mi></m:mrow><m:mrow><m:mo>&#x2202;</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:mi>&#x03BB;</m:mi><m:mover accent='true'><m:mi>V</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>&#x03C8;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.24)</td>
+</tr>
+</table>
+<p class="noindent">As in <a href="Chapter03.xhtml">Chapter 3</a>, since a perturbation method is used, the parameter &#x03BB; is introduced to keep track of the level of approximation. <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>V</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> is assumed to be small. The stationary states of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>0</m:mn></m:msub></m:mrow></m:math> <i>,</i> with energy <i>E<sub>j</sub>,</i> will be denoted <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>&#x03C8;</m:mi><m:mi>j</m:mi></m:msub><m:mo>=</m:mo><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:msub><m:mi>E</m:mi><m:mi>j</m:mi></m:msub><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>|</m:mo><m:mi>j</m:mi></m:mrow><m:mo>&#x003E;</m:mo></m:mrow></m:math>. In particular, at time zero the system will be assumed to occupy a stationary state <i>&#x03A8;<sub>i</sub></i>. The normal method for attempting a solution of the full time-dependent Schr&#x00F6;dinger equation is to express the unknown solution as an expansion in the known stationary states of the unperturbed equation:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.25"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>c</m:mi><m:mrow><m:mi>j</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:msub><m:mi>E</m:mi><m:mi>j</m:mi></m:msub><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.25)</td>
+</tr>
+</table>
+<p class="noindent">Substituting this summation into the time-dependent Schr&#x00F6;dinger equation, we find</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.26"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>i</m:mi><m:mi>&#x210F;</m:mi><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:msub><m:mi>E</m:mi><m:mi>j</m:mi></m:msub><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow></m:msup><m:mrow><m:mo>|</m:mo><m:mrow><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:msub><m:mi>c</m:mi><m:mrow><m:mi>j</m:mi><m:mi>i</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow></m:mstyle><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:msub><m:mi>E</m:mi><m:mi>j</m:mi></m:msub><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow></m:msup><m:msub><m:mi>c</m:mi><m:mrow><m:mi>j</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mi>&#x03BB;</m:mi><m:mover accent='true'><m:mi>V</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mo>|</m:mo><m:mrow><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.26)</td>
+</tr>
+</table>
+<p class="noindent">Premultiplying both sides by <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>k</m:mi><m:mo>&#x2217;</m:mo></m:msubsup></m:mrow></m:math> and integrating over all space, only one term of the summation on the left hand side survives (because the &#x03A8;<i><sub>j</sub></i><sub>;</sub>&#x00B7; are orthogonal), giving</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.27"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>i</m:mi><m:mi>&#x210F;</m:mi><m:mfrac><m:mrow><m:mi>d</m:mi><m:msub><m:mi>c</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>i</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow></m:msup></m:mrow></m:mstyle><m:msub><m:mi>c</m:mi><m:mrow><m:mi>j</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mi>&#x03BB;</m:mi><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>V</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.27)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_84" class="page">Page 84, Chapter 5 Time</a>where <i>&#x0127;&#x03C9;<sub>kj</sub> = E<sub>k</sub> &#x2013; E<sub>j</sub>.</i> The set of coupled differential equations derived in this way is an exact transformation of the Schr&#x00F6;dinger equation. In many applications the mathematical analysis would stop here, since there are standard numerical routines for the computational solution of systems of this form. However, a great deal can be learned from an approximate analysis using perturbation theory. We therefore search for a solution of the form</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.28"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>c</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msubsup><m:mi>c</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:mi>&#x03BB;</m:mi><m:msubsup><m:mi>c</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:mo>&#x22EF;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(5.28)</td>
+</tr>
+</table>
+<p class="noindent">and obtain a set of equations for each order of approximation in terms of the previous order:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.29"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>i</m:mi><m:mi>&#x210F;</m:mi><m:mfrac><m:mrow><m:mi>d</m:mi><m:msubsup><m:mi>c</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.29)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.30"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>i</m:mi><m:mi>&#x210F;</m:mi><m:mfrac><m:mrow><m:mi>d</m:mi><m:msubsup><m:mi>c</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>i</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow></m:msup><m:msubsup><m:mi>c</m:mi><m:mrow><m:mi>j</m:mi><m:mi>i</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>V</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.30)</td>
+</tr>
+</table>
+<p class="noindent">The unperturbed wavefunction is &#x03A8;<i><sub>i</sub></i>, so in the zero-order approximation we can write <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:msubsup><m:mi>c</m:mi><m:mrow><m:mi>i</m:mi><m:mi>i</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:msubsup><m:mi>c</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>. The first-order approximation is now given by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.31"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>i</m:mi><m:mi>&#x210F;</m:mi><m:mfrac><m:mrow><m:mi>d</m:mi><m:msubsup><m:mi>c</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>i</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow></m:msup><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>V</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.31)</td>
+</tr>
+</table>
+<p class="noindent">which can be integrated to give</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.32"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>i</m:mi><m:mi>&#x210F;</m:mi><m:msubsup><m:mi>c</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>t</m:mi></m:msubsup><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>i</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow></m:msup><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>V</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.32)</td>
+</tr>
+</table>
+<p class="noindent">This completes the development of the first-order solution.</p>
+<aside class="abc" style="margin-top:3.5em;" epub:type="sidebar">
+<p class="sidebar">If the Hamiltonian changes very slowly the system remains in a stationary state throughout. No transitions are excited. Such a transition is called <i>adiabatic.</i></p>
+</aside>
+<section epub:type="chapter">
+<h3 class="h3">Very slow changes</h3>
+<p class="noindent">We notice that if the Hamiltonian changes from one form to another, then the integral in <a href="#eq5.32">eqn 5.32</a> cannot be easily evaluated because it varies sinusoidally at long times. This problem can be remedied by an integration by parts:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.33"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>c</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:msubsup><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mfrac><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>i</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow></m:msup><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>V</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:mi>&#x210F;</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mn>0</m:mn><m:mi>t</m:mi></m:msubsup><m:mo>+</m:mo><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>t</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>i</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>&#x210F;</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mrow><m:mo>&#x2202;</m:mo><m:mover accent='true'><m:mi>V</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow><m:mrow><m:mo>&#x2202;</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.33)</td>
+</tr>
+</table>
+<p class="noindent">The first term vanishes at <i>t</i> = 0, where the perturbation is zero, and at long times the upper limit becomes the first-order correction to the final wavefunction (see <a href="Chapter03.xhtml">Chapter 3</a>). The first term does not, therefore, induce transitions, but describes how a stationary state of the initial Hamiltonian evolves into the corresponding stationary state of the perturbed Hamiltonian.</p>
+<p class="indent">The second term contains all the information about transitions induced by the perturbation. The transition probability is given by the square modulus,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.34"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>P</m:mi><m:mrow><m:mi>i</m:mi><m:mo>&#x2192;</m:mo><m:mi>k</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>&#x007C;</m:mo> <m:mrow><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>t</m:mi></m:msubsup><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>i</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mi>t</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>&#x210F;</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mfrac><m:mrow><m:mo>&#x2202;</m:mo><m:mover accent='true'><m:mi>V</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow><m:mrow><m:mo>&#x2202;</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow> <m:mo>&#x007C;</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:1.25em;">(5.34)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_85" class="page">Page 85, Chapter 5 Time</a>If the Hamiltonian changes little on timescales of the order of 1/<i>&#x03C9;<sub>ki</sub></i>, the sinusoidally varying function exp(i<i>&#x03C9;<sub>ki</sub>t</i>) will pass through many oscillations before the Hamiltonian changes appreciably. In this case the integral will be close to zero and no transitions will take place. Such a change is called <i>adiabatic.</i> In an adiabatic change the Hamiltonian changes so slowly that the wavefunction effectively remains in a stationary state, and no transitions are induced to other states. This is the opposite of the sudden approximation. Many theories of chemical kinetics rely on the adiabatic approximation, since they treat chemical reaction in terms of nuclear motion along a single potential energy curve or surface.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Absorption of light</h3>
+<p class="noindent">The final important type of time-dependent perturbation is found when the perturbation itself fluctuates sinusoidally. This type of perturbation is characteristic of the interaction of a molecule with light, leading to the absorption or emission of electromagnetic radiation. Such a perturbation is tvpicallv of the form</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.35"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mover accent='true'><m:mi>V</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mover accent='true'><m:mi>W</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>sin</m:mi><m:mi>&#x03C9;</m:mi><m:mi>t</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(5.35)</td>
+</tr>
+</table>
+<p class="noindent">where <i><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>W</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math></i>is independent of time. In absorption spectroscopy <i><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>W</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math></i>is proportional to the component of the dipole moment operator in the direction of the electric vector of the light.</p>
+<p class="indent">Applying <a href="#eq5.32">eqn 5.32</a> we find the first-order coefficient</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.36"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>c</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>W</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>i</m:mi><m:mi>&#x210F;</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo> <m:mrow><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>i</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mo>+</m:mo><m:mi>&#x03C9;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mo>+</m:mo><m:mi>&#x03C9;</m:mi></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>i</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03C9;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03C9;</m:mi></m:mrow></m:mfrac></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(5.36)</td>
+</tr>
+</table>
+<p class="noindent">The absorption of light leading to excitation from state <i>|i &#x003E;</i> to state <i>|k</i> &#x003E; is not normally important unless the frequency is close to resonance with frequency <i>&#x03C9;<sub>ki</sub>.</i> Under these conditions |<i>&#x03C9;<sub>ki</sub> &#x2013; &#x03C9;|&#x003C;&#x003C;|&#x03C9;<sub>ki</sub>|</i> and the first term of <a href="#eq5.36">eqn 5.36</a> is negligible in comparison to the second term. We therefore have</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.37"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>c</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>W</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>i</m:mi><m:mi>&#x210F;</m:mi></m:mrow></m:mfrac><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>i</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03C9;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03C9;</m:mi></m:mrow></m:mfrac><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow></m:mrow></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mrow><m:mfrac><m:mrow><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>W</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x210F;</m:mi></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mi>i</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03C9;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>t</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:msup><m:mfrac><m:mrow><m:mi>sin</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03C9;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>t</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03C9;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:4em;">(5.37)</td>
+</tr>
+</table>
+<p class="noindent">leading to the transition probability known as the <i>golden rule</i> (<a href="#fig5.2">Fig. 5.2</a>):</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.38"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>P</m:mi><m:mrow><m:mi>i</m:mi><m:mo>&#x2192;</m:mo><m:mi>k</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>W</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mfrac><m:mrow><m:msup><m:mrow><m:mi>sin</m:mi></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>[</m:mo> <m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03C9;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>t</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03C9;</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03C9;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(5.38)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-22em;" epub:type="sidebar">
+<figure class="fig1" id="fig5.2">
+<img src="../images/fig5.2.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 5.2</b> The frequency dependence of the absorption probability according to the golden rule.</figcaption></figure>
+</aside>
+<p class="noindent">The similar case where <i>&#x03C9;</i> is close to &#x2013;<i>&#x03C9;<sub>ki</sub></i> leads to the phenomenon of stimulated emission.</p>
+<p class="indent">The transition probability is the square modulus of this coefficient and is seen to be proportional to <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mover accent='true'><m:mi>W</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>2</m:mn></m:msup></m:mrow></m:math>, the square modulus of the dipole moment matrix element. This is the origin of selection rules in spectroscopy, <a id="page_86" class="page">Page 86, Chapter 5 Time</a>whose consequences have already been discussed, for example in <i>Quantum mechanics 1</i>, Section 4.8.</p>
+</section>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec5.6">
+<h2 class="h2">5.6<span class="space">&#160;</span>The quantum Zeno paradox</h2>
+<p class="noindent">We finish the discussion of time-dependent phenomena with a curiosity, which illustrates very clearly the differences between the classical and quantum mechanical conceptions of probability. Let us return to a two-state system like the radical pair discussed in <a href="#sec5.3">Section 5.3</a>, whose stationary states are separated by an energy difference <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x210F;</m:mi><m:mi>&#x03C9;</m:mi></m:mrow></m:math>. In terms of the eigenstates of some observable (e.g. <i>M<sub>s</sub></i>) which does not commute with the Hamiltonian these states are <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>0</m:mn><m:mo>&#x003E;</m:mo><m:mo>&#x00B1;</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>/</m:mo><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:math>. This is the simplest possible example of a time-dependent system, and it acts as a model for many real physical phenomena, for example the radical pair of <a href="#sec5.3">Section 5.3</a>, the inversion of the ammonia molecule, resonance in the <i>&#x03C0;</i> bonding of the benzene molecule, the delocalization of a hole in a Is orbital of the <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>N</m:mi><m:mn>2</m:mn><m:mo>+</m:mo></m:msubsup></m:mrow></m:math> ion (see Feynman <i>et al.</i> 1965) for discussions of many such systems).</p>
+<p class="indent">We have already seen in <a href="#sec5.3">Section 5.3</a> that if the system is initially described by the wavefunction |0 &#x003E;, then the subsequent evolution of the wavefunction is given by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.39"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03A8;</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C9;</m:mi><m:mi>t</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>0</m:mn><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C9;</m:mi><m:mi>t</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td>(5.39)</td>
+</tr>
+</table>
+<p class="noindent">At time <i>T = &#x03C0;/&#x03C9;</i> the waverunction will be given by &#x2013;i|1 &#x003E;, that is a measurement at time <i>T</i> is certain to find the particle in state |1 &#x003E;. Similarly at 2<i>T</i> the wavefunction has evolved coherently to &#x2013;|0 &#x003E;, and a measurement is sure to find the system back in its original state. In the absence of any external perturbation this coherent oscillation will continue indefinitely.</p>
+<p class="indent">However, let us now consider the effect of making a measurement at <i>T/</i>2. At this moment the wavefunction is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.40"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03A8;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>T</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>0</m:mn><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(5.40)</td>
+</tr>
+</table>
+<p class="noindent">Let us further assume that the measurement is effectively instantaneous on the timescale of <i>T,</i> and that if the system is found to be in state |0 &#x003E;, by the measurement, then the wavefunction &#x2018;collapses&#x2019; on to |0 &#x003E;, and similarly for state |1 &#x003E;. (Such idealized measurements do exist, for example the Stern-Gerlach experiment.) Once the measurement has been made, the wavefunction starts to evolve coherently again.</p>
+<p class="indent">At <i>T/</i>2 the measurement is equally likely to find the system in each of the two states. But there is an important difference between the system before the measurement, which is a quantum mechanical superposition of the two states |0 &#x003E; and |1 &#x003E;, and after the measurement, which is a classical probability, that is the system either has wavefunction |0 &#x003E;, with probability <i><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></i>or it has wavefunction |1 &#x003E; with probability <i><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>.</i> If the state is found to be |0 &#x003E;, then at time <i>T</i> (that is, after a second period <i>T/</i>2) the wavefunction will again be given by <a href="#eq5.40">eqn 5.40</a>, and the probability of finding state |1 &#x003E; is only <i><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>.</i></p>
+<p class="noindent"><a id="page_87" class="page">Page 87, Chapter 5 Time</a>Similarly, if the state at <i>T/</i>2 was found to be |1 &#x003E;, the wavefunction at <i>T</i> would be</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.41"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03C8;</m:mi><m:mrow><m:mo>(</m:mo><m:mi>T</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>0</m:mn><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(5.41)</td>
+</tr>
+</table>
+<p class="noindent">and again, the probability of finding the system in |1 &#x003E; is <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>. Combining these two possibilities we conclude that the effect of making an observation at <i>T</i>/2 is to reduce the probability of finding the system in |1 &#x003E; at time <i>T</i> from 1 to <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>.</p>
+<p class="indent">This analysis can be generalized. Let <i>T</i> be divided into <i>n</i> equal intervals, and let an observation be made at each division. If the previous measurement was |0 &#x003E; the wavefunction at the next measurement is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.42"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03C8;</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C0;</m:mi><m:mo>/</m:mo><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>0</m:mn><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C9;</m:mi><m:mi>&#x03C0;</m:mi><m:mo>/</m:mo><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td>(5.42)</td>
+</tr>
+</table>
+<p class="noindent">and the same equation applies with |0 &#x003E; and |1 &#x003E; reversed if the previous measurement was |1 &#x003E;.</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar" id="prb5.6.1"><b>Problem 5.6.1.</b> <i>Solve the recurrence relation for P<sub>k</sub> to obtain <a href="#eq5.44">eqn 5.44</a>.</i></p>
+</aside>
+<p class="indent">Now let the probability that the <i>k</i>th measurement gives |1 &#x003E; be denoted <i>P<sub>k</sub>.</i> Then it is easy to see that</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.43"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>P</m:mi><m:mrow><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>P</m:mi><m:mi>k</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mrow><m:mi>sin</m:mi></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C0;</m:mi><m:mo>/</m:mo><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>P</m:mi><m:mi>k</m:mi></m:msub><m:msup><m:mrow><m:mi>cos</m:mi></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C0;</m:mi><m:mo>/</m:mo><m:mn>2</m:mn><m:mi>n</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(5.43)</td>
+</tr>
+</table>
+<p class="noindent">which is a recurrence relationship for the <i>P<sub>k</sub></i>, whose solution is given by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.44"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>P</m:mi><m:mi>k</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mrow><m:mi>cos</m:mi></m:mrow><m:mi>k</m:mi></m:msup><m:mfrac><m:mi>&#x03C0;</m:mi><m:mi>k</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(5.44)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar" id="prb5.6.2"><b>Problem 5.6.2.</b> <i>Prove that P<sub>n</sub> vanishes in the limit n</i> &#x2192; &#x221E;.</p>
+</aside>
+<p class="indent">But <i>P<sub>n</sub></i> is the probability of finding |1 &#x003E; after <i>n</i> intervals, that is, at time <i>T.</i> We can see that for <i>n</i> = 1 the general formula gives a probability of 1, and for <i>n</i> = 2 we get <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> as argued above. For <i>n</i> = 3 the probability is <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>7</m:mn><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math>, and as the number of divisions increases the probability of finding the system in state |1 &#x003E; decreases towards zero in the limit <i>n</i> &#x2192; &#x221E;.</p>
+<p class="indent">Thus we see that the more often we measure to see if we have reached state |1 &#x003E;, the less likely we are ever to get there. The disturbance induced by the act of making the measurement collapses the coherent quantum mechanical superposition of states into a classical probabilistic mixture of pure states, that is, it destroys the coherence (phase relationship) between the states; the effect of this change is to inhibit the transition from one state to another. This analysis gives a new twist to the observation &#x2018;a watched pot never boils&#x2019;.</p>
+<p class="ref"><b>References</b></p>
+<p class="refer">Bjorken, J. D. and Drell, S. D. (1964). <i>Relativistic quantum mechanics.</i> McGraw-Hill, New York.</p>
+<p class="refer">Davydov, A. S. (1976). <i>Quantum mechanics,</i> 2nd edn. Pergamon Press, Oxford.</p>
+<p class="refer">Dirac, P.&#x005C; A.&#x005C; M. (1958). <i>The principles of quantum mechanics</i>, 4th edn. Clarendon Press, Oxford.</p>
+<p class="noindent"><a id="page_88" class="page">Page 88, Chapter 5 Time</a></p>
+<p class="refer">Feynman, R. P., Leighton, R. B., and Sands, M. (1965). <i>The Feynman lectures on physics,</i> Vol. III. Addison-Wesley, Reading.</p>
+<p class="refer">Green, N. J. B. (1997). <i>Quantum mechanics 1.</i> Oxford Chemistry Primer, Oxford.</p>
+</section>
+</section>
+</body>
+</html>

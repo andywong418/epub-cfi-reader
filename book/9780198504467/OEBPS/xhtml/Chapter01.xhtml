@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Computers in Chemistry</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+</head>
+<body>
+<section epub:type="chapter" id="ch01">
+<a id="page_1" class="page" style="width:70%;">Page 1, Chapter 1 Introduction</a>
+<h1 class="main">1<span class="space">&#160;</span>Introduction</h1>
+<p class="banoindent">Computers and chemistry have been linked ever since useful calculating machines were invented. Today, you are hard-pressed to find a research room that doesn&#x2019;t contain a computer of some sort; indeed whole branches of chemistry have been made possible through the use of digital computers.</p>
+<p class="baindent">The use of computers in chemistry is not restricted to computation though: they are used in applications ranging from control of equipment and data acquisition to accessing databases both locally and on remote systems. This primer gives the reader an introduction to these many varied aspects of the use of computers in chemistry.</p>
+<section epub:type="chapter" id="ch1.1">
+<h2 class="h2">1.1 A brief history of computers</h2>
+<p class="banoindent">In order to fully understand some of the concepts introduced later, it is helpful to have a basic knowledge of the history of computing.</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;"><b>Computer: 1.</b> One who computes; a calculator, reckoner;<i> spec</i>. a person employed to make calculations in an observatory, in surveying, etc. 2. A calculating-machine; esp. an automatic electronic device for performing mathematical or logical operations.<br/> (source: Oxford English Dictionary, New Edition)</p>
+</aside>
+<p class="baindent">The original meaning, and one that is still valid, of &#x2018;computer&#x2019; is &#x201C;one who computes&#x201D;. Indeed the Oxford English Dictionary still lists this definition before all others. The contemporary usage of the word &#x2018;computer&#x2019; is not actually that modern: the first recorded use of the word to mean a machine to perform computations was in the late nineteenth century. However, it was not until midway through the twentieth century that it came to mean an electronic machine capable of being programmed to perform a predefined sequence of calculations.</p>
+<p class="baindent">The father of mechanical calculating machines must be Charles Babbage. He built a prototype of his Difference Engine in 1822 and shortly after, in 1834, he conceived the first automatic digital computer, the Analytical Engine. Babbage&#x2019;s machine contained many elements that became building blocks of modern computers, such as an arithmetic unit, a memory for storing numbers, an input/output medium, and sequential control. Unfortunately Babbage never completed the Analytical Engine, largely due to lack of funds and insufficient precision in the machining methods of the day; the device was eventually constructed successfully in 1991 and now resides in the Science Museum, London.</p>
+<p class="baindent">Babbage was not the first to invent a machine for performing calculations. As early as 1623, Wilhelm Schickard, a friend of the astronomer Kepler, invented the first mechanical calculator, although the records of this machine were subsequently lost in the Thiry Years&#x2019; War. Later, in 1642, Blaise Pascal invented a machine that could perform addition and subtraction, and in the 1670s the German mathematician Liebniz developed a more advanced calculator that was able to multiply, divide, and calculate square roots.</p>
+<p class="baindent">The next major step in computer development was that of the Frenchman Joseph-Marie Jacquard. In 1804, he developed an automatic loom in which the woven pattern was controlled by a series of punched cards. Babbage was later to use the idea of punched cards in his Analytical Engine.</p>
+<p class="banoindent"><a id="page_2" class="page">Page 2, Chapter 1 Introduction</a></p>
+<p class="baindent">After Babbage, the next significant milestone was the work of the English logician George Boole. One of Boole&#x2019;s theories, first published in 1847, concerned the application of logical operators (e.g. AND, OR, and NOT) to binary numbers. This theory formed the elements of<i> Boolean Algebra</i>, the basis on which the circuits within modern digital computers operate.</p>
+<p class="baindent">The American census of 1890 provided another, unlikely, milestone. Herman Hollerith, an American statistician working for the U.S. Postal Service during the 1880 census, conceived of an electromechanical machine that could sort and tabulate the census data; using the machine resulted in the data being processed in one-third the time normally required. Hollerith founded the Tabulating Machine Company in 1896; this company later became the International Business Machines Corporation, more commonly known as IBM.</p>
+</section>
+<section epub:type="chapter" id="ch1.2">
+<h2 class="h2">1.2 Computers in chemistry</h2>
+<p class="banoindent">There has been a long and fruitful association between chemistry and computing. To a large extent it has been a symbiotic relationship: not only has the presence of computers opened-up new areas of chemical research, but the needs of chemists has been a major contributory factor in the development of larger and faster computers.</p>
+<p class="baindent">The first large users of computer power within the chemistry community were the crystallographers. In the 1950s, developments in crystallography had slowed because of an inability to rapidly and reliably perform the calculations necessary to derive a structure. The development of computers meant that the required calculations could be completed and that particular branch of science was revitalised.</p>
+<p class="baindent">Chemistry and computing became so entwined that in many universities it was the chemistry department that was the impetus behind the installation of sizeable computer facilities. Indeed, even to this day in Oxford, computing is filed under chemistry in the University administration, since it was under the auspices of the chemistry department that the first computer facility was installed.</p>
+<p class="baindent">It wasn&#x2019;t long before crystallographers weren&#x2019;t the only chemists interested in computers. Many traditional fields of physical and inorganic chemistry, such as spectroscopy, were revitalised by computers, and yet others, such as theoretical chemistry or molecular modelling, owe their whole existence to computers. Computers have not just had an impact because of their computing power, many modern experiments, in which data is collected by computers, would have been very different in the pre-computer age.</p>
+<p class="baindent">Over the last 10 years or so, computers have had an even more profound effect on the life of a chemist. Not only are computers used as part of the experimental procedure, but they are now also vital to all aspects of chemistry: from researching the background to a piece of work using the Internet, to producing and publishing the final results, from passing email between co-workers to virtual conferences.</p>
+</section>
+<section epub:type="chapter" id="ch1.3">
+<a id="page_3" class="page" style="width:70%;">Page 3, Chapter 1 Introduction</a>
+<h2 class="h2">1.3 Introduction to digital electronics</h2>
+<p class="banoindent">It would be impractical to try and give a full introduction to electronics here, but in order to fully understand some of the material in later sections it is necessary that the reader has at least some knowledge of electronics. Much of the groundwork is covered in Wayne&#x2019;s primer<i> Chemical Instrumentation,</i> with a more advanced coverage being provided by Horowitz &#x0026; Hill. It will be assumed that the reader of this primer has a basic knowledge of the &#x2018;physics&#x2019; of electronics,<i> i.e.</i> resistance, capacitance, and inductance; further, it is assumed that a basic knowledge of semiconductors such as diodes and transistors is held.</p>
+<p class="baindent">The area of electronics concentrated on here is that of<i> digital electronics.</i> Digital electronics is, to a large extent, much simpler than<i> analogue</i> electronics &#x2013; it is usually just a matter of connecting basic building blocks together to produce the desired result. Digital electronics is also much simplified by the fact there are only two possible states: either &#x2018;on&#x2019; or &#x2018;off&#x2019;. These two states are often called &#x2018;1&#x2019; and &#x2018;0&#x2019; or &#x2018;high&#x2019; and &#x2018;low&#x2019; or &#x2019;true&#x2019; and &#x2018;false&#x2019;.</p>
+<h3 class="h3"><b>Logic gates</b></h3>
+<p class="banoindent">The basic units of digital electronics are called<i> gates</i>; these are devices that have one or more inputs and a single output, the state of the output is determined by the combination of states of the inputs. The basic gates are: buffers, OR, and AND; their negative counterparts are: inverters (NOT), NOR and NAND. The basic operation of these gates follows Boolean logic (indeed they are often called<i> logic gates</i>), <i>i.e.</i> the output of a two input AND gate is on only if input A<b> and</b> input B are both on, similarly the output of a two input OR gate is on if either input A<b> or</b> input B is on. The NAND and NOR gates are similar except that the output is inverted,<i> i.e.</i> the output of a NAND gate is off only if input A<b> and</b> input B are both on.</p>
+<p class="baindent">The operation of a logic gate, or a group of gates, is generally described by a<i> truth table.</i> The truth table lists all possible combination of inputs and the corresponding outputs. The truth tables, along with the associated symbol and logical function, for each of the basic gate types is shown in <a href="#fig1.1">Fig. 1.1</a>; a ring (<b>&#x006F;</b>) on an input or output of a symbol shows inversion.</p>
+<figure class="image" id="fig1.1">
+<img src="../images/img1.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-9em;" epub:type="sidebar">
+Fig. 1.1 The three basic logic gates, their symbols, and associated truth tables</aside></figcaption>
+</figure>
+<p class="baindent">More complex gates can be built out of these basic gates. Take for example the logical exclusive-OR (or XOR) gate. With the XOR function the <a id="page_4" class="page">Page 4, Chapter 1 Introduction</a>output is high if, and only if, only one of the two inputs is high. The logical expression of this functionality is thus <span class="tb">A</span>B &#x002B; A<span class="tb">B</span> showing immediately how the XOR gate can be made from a combination of NOT, AND and OR functions (<a href="#fig1.2">Fig. 1.2</a>). The XOR function is widely used and so is given its own mathematical (&#x02295;) and logical symbol (<a href="#fig1.2">Fig. 1.2</a>). In actual fact though, nearly all logic operations can be performed using solely NAND and NOT gates: this can be illustrated by the construction of OR gate simply by inverting the inputs to a NAND gate (<a href="#fig1.3">Fig. 1.3</a>).</p>
+<figure class="image" id="fig1.2">
+<img src="../images/img2.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-5em;" epub:type="sidebar">
+Fig. 1.2 The XOR gate</aside></figcaption>
+</figure>
+<figure class="image" id="fig1.3">
+<img src="../images/img3.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-6em;" epub:type="sidebar">Fig. 1.3 The OR function constructed using the NAND gate</aside>
+</figcaption>
+</figure>
+<aside class="abc" style="margin-top:0.5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">The term &#x2018;TTL&#x2019; refers to the type of electronics and construction used in the design of the integrated circuit and stands for Transistor-Transistor Logic. Other types are DTL (Diode-Transistor Logic) and CMOS (Complementary Metal Oxide Semiconductor).</p></aside>
+<p class="baindent">Although these digital circuits generally operate at two discrete levels (<i>i.e.</i> on or off), they are made up of analogue components. In fact the gates can often be thought of as high-gain amplifiers. One consequence of this is that input voltage levels between the nominal &#x2018;on&#x2019; or &#x2018;off&#x2019; states can cause unpredictable behaviour of the output. Take for example TTL logic gates: the &#x2018;off&#x2019; level is defined to be &#x003C; 0.8V, whereas the &#x2018;on&#x2019; level is &#x003E;2V. The gap between on and off levels is not an issue when gates are connected together, but may be a problem when interfacing to the outside world. The solution to this is to use a device called a<i> Schmitt Trigger.</i> A Schmitt Trigger is a logical element that switches state at predetermined levels; for instance in TTL Schmitt devices, the positive-going threshold when the device turns on is 1.7V, whereas the negative-going threshold, when the device turns off, is 0.9V. This<i> hysteresis</i> of 0.8V is important in interfacing noisy, slowly changing signals to digital circuits (see <a href="#fig1.4">Fig. 1.4</a>).</p>
+<h3 class="h3"><b>Bistable devices</b></h3>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="image" id="fig1.4" style="margin-left:1.25em;">
+<img src="../images/img4.jpg" alt="images"/>
+<figcaption>Fig. 1.4 The Schmitt trigger</figcaption>
+</figure>
+</aside>
+<p class="banoindent">In the devices described so far the output state follows exactly the conditions of the inputs,<i> i.e.</i> if the output goes high because an input goes high, then when that input goes low again, the output will go low. However, there is a group of devices in which this is not always the case &#x2013; the so-called bistable devices. These devices, as their name suggests, are stable in two distinct states; that is to say, the output state is determined by a special combination of the inputs, and when the input conditions are changed, the output will remain in that state. The output state can then be changed back by a different set of input conditions. These bistables are often called<i> flip-flops</i> as they can be flipped and flopped from one state to the other.
+<a id="page_5" class="page">Page 5, Chapter 1 Introduction</a></p>
+<aside class="abc" style="margin-top:3em;" epub:type="sidebar">
+<figure class="image" id="fig1.5" style="margin-left:1.25em;">
+<img src="../images/img5.jpg" alt="images"/>
+<figcaption>Fig. 1.5 The R-S flip flop. Q<sub>0</sub> is the value of Q before the inputs attained their present state.</figcaption></figure>
+</aside>
+<p class="baindent">The simplest bistable is the R-S flip-flop. The name &#x2018;R-S&#x2019; comes from the fact that these devices can be<i> set</i> or<i> reset</i> to a particular state. From the truth table shown in <a href="#fig1.5">Fig 1.5</a>, it is evident that when either input R or S goes high, the output will go high or low respectively; however when both R and S are low, the output will remain in whatever state it was in before the inputs went low. Typically R-S flip-flops are used for switch debouncing: when any mechanical switch is activated there is a very short period of time when the contacts bounce after they are closed (the effect may be that the switch appears to open and close rapidly for a millisecond or so), this bounce can cause many problems with logic circuits especially those that &#x2018;count&#x2019; how many times a switch is depressed. The debouncing is achieved by connecting each input of the R-S flip-flop to one pole of the switch and arranging for these inputs to also be connected to ground<i> via</i> a pull-down resistor (see <a href="#fig1.6">Fig. 1.6</a>). Now, when the switch is moved from the R to the S position, the first contact of the switch will cause the flip-flop to change state; any bounces of the switch will only cause input S to go low, it will not cause input R to go high, thus the output will remain steady &#x2013; at least until the switch is returned to the R position.</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<figure class="image" id="fig1.6" style="margin-left:1.25em;">
+<img src="../images/img6.jpg" alt="images"/>
+<figcaption>Fig. 1.6 The R-S flip-flop as a switch debouncer</figcaption></figure>
+</aside>
+<p class="baindent">The next level of sophistication of the flip-flop is the D-type. These flip- flops are basically data latches (hence the name &#x2018;D-type&#x2019;). A latch is a device whose outputs can be locked into a state that reflects the inputs on a given signal. Hence they are used to effectively &#x2018;freeze&#x2019; a signal at a particular time, and are very crude memory devices. In the device shown in <a href="#fig1.7">Fig 1.7</a>, the output remains in the same state so long as the CLK input is low; however when the CLK input goes high, the Q output is set to the same state as the D input. In this particular example, the Q output will continue to mimic the D input for as long as the CLK input is high. In other similar devices, the information is transferred from the D input to the Q output only when the CLK input performs a low to high transition; such devices are said to be <i>edge-triggered.</i> The advantage of edge-triggering a device is that events can be synchronised within a circuit much more easily than with level triggering (hence the labelling of such inputs as &#x2018;clocks&#x2019;).</p>
+<figure class="image" id="fig1.7" style="margin-left:0.5em;">
+<img src="../images/img7.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-6em;" epub:type="sidebar">Fig. 1.7 The D-type flip-flop</aside>
+</figcaption></figure>
+<figure class="image" id="fig1.8" style="margin-left:0.5em;">
+<img src="../images/img8.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-5em;" epub:type="sidebar">Fig. 1.8 The J-K flip-flop</aside>
+</figcaption>
+</figure>
+<p class="baindent">The final type of flip-flop we will consider here is the J-K flip-flop. Like the others described above, data can be latched into the device, but in this case, if both the inputs are high, the output<i> toggles</i> on a clock edge, i.e. it changes to the opposite state (<a href="#fig1.8">Fig. 1.8</a>). If the clock input is regularly <a id="page_6" class="page">Page 6, Chapter 1 Introduction</a>changed, the output will change at half the frequency of the clock. Further, if the output of the flip-flop is connected to the clock input of another, the output of the second one will change at a quarter of the frequency of the original clock. We have, therefore, the basic device for counting or dividing. The flip-flops can be<i> cascaded</i> to whatever depth we require to provide either a 2<sup>n</sup> divider or a counter with a maximum count of 2<sup>n</sup> (<a href="#fig1.9">Fig. 1.9</a>).</p>
+
+<figure class="image" id="fig1.9" style="margin-left:0.5em;">
+<img src="../images/img9.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-17em;" epub:type="sidebar">Fig. 1.9 Cascaded J-K flip-flops. This arrangement is the basis of a counter. The lower diagram shows the state of each output at each successive clock pulse.</aside>
+</figcaption>
+</figure>
+<p class="baindent">It should be stressed that the schematics of the flip-flops shown here are simplified to illustrate their basic properties, there are many refinements used in real devices to minimise things such as clock edge effects and propagation delays, and to provide extra features such as preset and clear functions.</p>
+<figure class="image" id="fig1.10" style="margin-left:0.5em;">
+<img src="../images/img10.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-18em;" epub:type="sidebar">Fig. 1.10 RS flip-flops connected as a shift register. Each output takes on the value of the previous one on each positive going edge of the clock. The effect is to shift the data along one position on each clock pulse as can be seen by the single pulse on the input<i> rippling</i> along the outputs.</aside>
+</figcaption>
+</figure>
+<p class="baindent">One further use for flip-flops, which is of importance in computing, is in the construction of<i> shift registers.</i> Shift registers find many uses in computing and digital electronics: a binary number shifted right or left is mathematically equivalent to multiplication or division by 2 respectively; the action of shifting a group of bits is the basis of converting a parallel signal to a serial signal (and<i> vice versa);</i> and so on. The basic shift register is made up of a series clocked R-S flip-flops, the Q and <img src="../images/im.jpg" alt="images"/> outputs of one connected to the S and R inputs of the next; the clocks are all connected together (see <a href="#fig1.10">Fig. 1.10</a>). On one of the clock edges (typically the positive going edge), the <a id="page_7" class="page">Page 7, Chapter 1 Introduction</a>information on the inputs of each flip-flop is transferred to the outputs, and the information is shifted along one place: output Q<sub>D</sub> takes on the value of Q<sub>C</sub>, Q<sub>C</sub> takes on the value of Q<sub>B</sub> and so on, Q<sub>A</sub> takes the value present at the serial input. The serial output at Q<sub>D</sub> will be the same as the serial input, only delayed by 4 clock cycles, hence creating a<i> delay line.</i> The outputs Q<sub>A</sub> to Q<sub>D</sub> will reflect the state of the serial input during the last 4 clock cycles (Q<sub>A</sub> being the most recent), resulting in a serial to parallel converter, similarly the output at Q<sub>D</sub> will be a serial representation of Q<sub>A</sub> to Q<sub>D</sub>.</p>
+
+</section>
+<section epub:type="chapter" id="ch1.4">
+<h2 class="h2">1.4 Number systems</h2>
+<p class="banoindent">As we have already seen, computers and logic circuits operate as binary devices,<i> i.e.</i> their outputs can be in one of two states. Consequently, in order that more than two discrete states may be represented at any one time, a number of these single binary devices can be grouped together. Most often these groups of binary outputs are interpreted as representing numbers and are called<i> binary numbers;</i> each individual digit of these numbers are called <i>binary digits</i>, or<i> bits.</i></p>
+<p class="baindent">Binary numbers work in a similar way to the more familiar decimal numbers. In school we learnt that the number 294 means &#x007B;2 hundreds &#x002B; 9 tens &#x002B; 4 units&#x007D;, with each digit representing a power of 10 higher than its right hand neighbour.</p>
+<p class="image">2 &#x00D7; 10<sup>2</sup> &#x002B; 9 &#x00D7; 10<sup>1</sup> &#x002B; 4 &#x00D7; 10<sup>0</sup> &#x003D; 294</p>
+<p class="baindent">The only thing different about binary numbers is that each successive place to the left represents a power of 2 higher, and the only digits possible are 0 and 1. Thus the binary number 11011 means in decimal</p>
+<div class="image" style="margin-left:7em;">
+<p class="image1">1 &#x00D7; 2<sup>4</sup> &#x002B; 1 &#x00D7; 2<sup>3</sup> &#x002B; 0 &#x00D7; 2<sup>2</sup> &#x002B; 1 &#x00D7; 2<sup>1</sup> &#x002B; 1 &#x00D7; 2<sup>0</sup></p>
+<p class="imagel">= &#x00A0;16 &#x2003;&#x00A0;&#x00A0;+ 8&#x2003;&#x2003;&#x00A0;+ 0&#x2003;&#x2003;&#x00A0;+ 2&#x2003;&#x2003; + 1&#x2003;&#x2003;&#x00A0;</p>
+<p class="imagel">= &#x00A0;27</p>
+</div>
+<p class="baindent">There is, obviously, scope for much confusion between, for example, the binary number 10 and the decimal number 10. Where there is possible ambiguity, it is usual to distinguish between them by adding a letter &#x2018;B&#x2019; after the binary number and a letter &#x2018;D&#x2019; after the decimal number. Thus 10B&#x003D;2D and 11011 B&#x003D;27D.</p>
+<p class="baindent">As binary numbers get larger, the number of digits required to represent them rapidly gets too large to handle. A 16-bit binary number can only represent up to 65535 in decimal, but is already very cumbersome to read and write. Consequently it is usual to split the binary number into groups of digits and represent those groups as numbers. The usual grouping is either three or four bits, resulting in groups representing either a maximum of 8 or 16 in decimal. The most convenient method of writing these groups is as a single digit, resulting in either base-8 or base-16 numbers, or, as they are more commonly called,<i> octal</i> or<i> hexadecimal.</i> Octal numbers are not used very often now, so we will concentrate on hexadecimal numbers.</p>
+<h3 class="h3"><b>Hexadecimal</b></h3>
+<p class="banoindent">A single hexadecimal digit can represent a decimal number from 0 to 15. It is thus difficult to represent all the possible hexadecimal digits using only<a id="page_8" class="page">Page 8, Chapter 1 Introduction</a></p>
+<aside class="abc" style="margin-top:0.5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">Hexadecimal numbers are indicated by suffixing the number with &#x2018;H&#x2019;<i> i.e.</i> 32H. They may also be prefixed by &#x2018;0x&#x2019;, as in 0x32, or &#x2018;#&#x2019;, as in #32, or &#x0026;H as in &#x0026;H32 depending on the standard practices in particular circumstances.</p>
+</aside>
+<p class="banoindent">decimal digits. The solution is to extend the range of characters used to represent the digits by including the first six alphabetic characters,<i> i.e.</i> &#x2018;A&#x2019; to &#x2018;F&#x2019;. &#x2018;A&#x2019; thus stands for 10, &#x2018;B&#x2019; for 11 and so on up to &#x2019;F&#x2019;, which stands for 15 in decimal. Hexadecimal numbers work in the same way as any other number base, except that each place to the left in the hexadecimal number is a higher power of 16. Thus the hexadecimal number 3FA04 is equivalent to the decimal.</p>
+<div class="image" style="margin-left:6em;">
+<p class="image2" style="margin-left:3.3em;">3 &#x00D7; 16<sup>4</sup> &#x00A0;&#x002B; F &#x00D7; 16<sup>3</sup> &#x00A0;&#x00A0;&#x002B; A &#x00D7; 16<sup>2</sup> &#x00A0;&#x002B; 0 &#x00D7; 16<sup>1</sup> &#x002B; 4 &#x00D7; 16<sup>0</sup></p>
+<p class="image2">= 3 &#x00D7; 16<sup>4</sup> &#x00A0;&#x002B; 15 &#x00D7; 16<sup>3</sup> &#x002B; 10 &#x00D7; 16<sup>2</sup> &#x002B; 0 &#x00D7; 16<sup>1</sup> &#x002B; 4 &#x00D7; 16<sup>0</sup></p>
+<p class="image0">= 196608 + 61440&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;+ 2560 &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0; + 0 &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;+ 4&#x2003;&#x2003;&#x00A0;</p>
+<p class="image1">= 260612</p>
+</div>
+<p class="baindent">Initially the concept of using letters in numbers may be a bit strange, but with use, it will become natural. Converting between binary and hexadecimal is very easy. Since each hexadecimal digit represents four binary digits, all that is required is to concatenate the binary representation of each hexadecimal digit in order to construct the binary number:</p>
+<table class="image123"><tr><td class="table1">3</td><td class="table1">F</td><td class="table1">A</td><td class="table1">0</td><td class="table1">4</td></tr>
+<tr><td class="table1">0011</td><td class="table1">1111</td><td class="table1">1010</td><td class="table1">0000</td><td class="table1">0100</td></tr>
+</table>
+<p class="banoindent">So the binary number equivalent of 3FA04 is 00111111101000000100. Going the other way is just as easy: the binary number is split into groups of four bits and the hexadecimal number equivalent of each group is written down.</p>
+<h3 class="h3"><b>Negative numbers</b></h3>
+<p class="banoindent">The representation and manipulation of negative numbers in binary and hexadecimal is often a cause of problems. In decimal, a sign indicator (<i>i.e.</i> the minus sign &#x2018;&#x2013;&#x2019;) is placed in front of a number to indicate that its value is less than zero. This is fine for human readers, but it makes mathematics difficult as it is full of special cases and rules to help deal with the sign indicator. In binary, life is easier as there are usually only a fixed number of bits available. Thus, in decimal, when you reduce the value of 0 by 1 you get &#x2212;1, whereas in binary, if you reduce 0000 by 1 you get 1111,<i> i.e.</i> the number <i>wraps round.</i> This may at first seem odd, translating these numbers into decimal effectively means that reducing 0 by 1 gives 15&#x0021;</p>
+<p class="baindent">The situation can be made much clearer by considering that in a<i> signed</i> binary number, the most significant digit of the binary number represents its negative decimal equivalent. So, in our 4-bit number, the most significant bit represents not 2<sup>3</sup>, but &#x2013;2<sup>3</sup>. So, 1111 represents not 15, but</p>
+<p></p>
+<p class="image2" style="margin-left:6em;">1 &#x00D7; (&#x2212;2<sup>3</sup>) + 1 &#x00D7; 2<sup>2</sup> + 1 &#x00D7; 2<sup>1</sup> + 1 &#x00D7; 2<sup>0</sup></p>
+<p class="image0" style="margin-left:5.75em;">= &#x00A0;&#x2212;8 &#x2003;&#x2003;&#x2003;+ 4&#x2003;&#x00A0;&#x2003; + 2 &#x2003;&#x2003;&#x00A0;&#x00A0;+ 1&#x2003;&#x2003;&#x00A0;</p>
+<p class="image1" style="margin-left:5.75em;">= &#x00A0;&#x2212;1</p>
+<p class="banoindent">It is thus very important when dealing with binary numbers to know if they represent<i> signed</i> or<i> unsigned</i> numbers. This method of representing numbers in binary is called<i> two&#x2019;s complement</i> and is the most common method.</p>
+<p class="baindent">It is relatively easy to calculate the two&#x2019;s complement of any number, all that is necessary is to invert each of the digits in the positive equivalent of the number, then add one (forgetting any carry digit). Thus, the 8-bit two&#x2019;s<a id="page_9" class="page">Page 9, Chapter 1 Introduction</a></p>
+<aside class="abc" style="margin-top:1.5em;" epub:type="sidebar" id="tab1.1">
+<p class="noindent2" style="margin-left:1em;">Table 1.1 The binary and hexadecimal equivalent of some signed numbers</p>
+<table style="margin-left:1em;margin-top:0.5em;width:100%;">
+<colgroup>
+<col style="width:20%;"/>
+<col style="width:50%;"/>
+<col style="width:30%;"/>
+</colgroup>
+<tr>
+<td>&#x002B; 127</td>
+<td style="text-align:center;">01111111</td>
+<td>7F</td></tr>
+<tr>
+<td>&#x002B; 126</td>
+<td style="text-align:center;">01111110</td>
+<td>7E</td>
+</tr>
+<tr>
+<td>&#x002B; 37</td>
+<td style="text-align:center;">00100101</td>
+<td>25</td>
+</tr>
+<tr>
+<td>&#x002B; 2</td>
+<td style="text-align:center;">00000010</td>
+<td>02</td>
+</tr>
+<tr>
+<td>&#x002B; 1</td>
+<td style="text-align:center;">00000001</td>
+<td>01</td>
+</tr>
+<tr>
+<td>0</td>
+<td style="text-align:center;">00000000</td>
+<td>00</td>
+</tr>
+<tr>
+<td>&#x2013; 1</td>
+<td style="text-align:center;">11111111</td>
+<td>FF</td>
+</tr>
+<tr>
+<td>&#x2013; 2</td>
+<td style="text-align:center;">11111110</td>
+<td>FE</td>
+</tr>
+<tr>
+<td>&#x2013; 37</td>
+<td style="text-align:center;">11011011</td>
+<td>DB</td>
+</tr>
+<tr>
+<td>&#x2013; 127</td>
+<td style="text-align:center;">10000001</td>
+<td>81</td>
+</tr>
+<tr>
+<td>&#x2013; 128</td>
+<td style="text-align:center;">10000000</td>
+<td>80</td>
+</tr></table>
+</aside>
+<p class="banoindent">complement representation of &#x2013;37 is given by taking the binary equivalent of &#x002B;37, 00100101, inverting all the digits to give 11011010, then adding 1 to give 11011011. In order to verify that this is indeed the correct representation of &#x2013;37, we can add 37 to it and we should get zero, since &#x2013;37 &#x002B; 37 &#x003D; 0. If we perform this binary addition (<i>i.e.</i> 11011011 &#x002B; 00100101) we get as the result 100000000, which, as this is an 8-bit system, is zero.</p>
+<p class="baindent"><a href="#tab1.1">Table 1.1</a> shows the 8-bit binary and hexadecimal equivalents of some positive and negative numbers. From this it is obvious that a negative number always has the most significant bit set, but it must be stressed that this is not a sign indicator in the same way as the negative sign is in decimal numbers: it is a useful consequence of the number system used.</p>
+<p class="baindent">It was mentioned briefly previously that it is important to know if a binary number is signed or not. There are a few situations where this becomes particularly critical. As we will see in later chapters, the data collected from digital devices is, for example, 8-bit. This would mean that a voltage, say, is represented as having 256 discrete steps ranging from 00H to FFH. If this number were stored in a variable in a program that is interpreted as a signed number, then the program will treat this number incorrectly. A voltage represented by 7FH would be correctly interpreted as 127D, but just a small amount higher voltage will be represented by 80H, which would be incorrectly interpreted as &#x2013;128D. Any mathematics performed using such incorrectly interpreted numbers will, obviously, be wrong.</p>
+<p class="baindent">This<i> wrapping</i> of signed numbers from a large positive value to a large negative value is not just an inconvenience. By the time that many will be reading this book, the<i> Millennium bug</i> or<i> Y2K bug</i> will have been and gone. (Indeed, if the prophets of doom are correct, there may be no one reading this book&#x0021;) But there is another less publicised date problem in the future. Many Unix systems represent the date as a number of seconds since January 1<sup>st</sup> 1970; this number of seconds is most often held as a 16-bit number. Unfortunately, that number is a signed number. Sometime in early 2038, that signed number will reach 7FFFFFFFH, or about 2.15 &#x00D7; 10<sup>9</sup> seconds. The next second, the number will be 80000000H, or, because it is a signed binary number, &#x2212;2.15 &#x00D7; 10<sup>9</sup>. At that point the date will be interpreted as sometime in 1902 with obvious consequences. The date in 1902 that this occurs on happens to be a Friday 13<sup>th</sup>&#x0021;</p>
+<aside class="abc" style="margin-top:-3.7em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">In the UK it is thought that a Friday that is the 13<sup>th</sup> in the month is an unlucky day.</p></aside>
+<h3 class="h3"><b>Fractional numbers</b></h3>
+<p class="banoindent">So far we have only dealt with whole numbers, or<i> integers.</i> In most scientific work it is necessary to use some form of fractional, or<i> real</i> numbers. In decimal, fractional numbers are represented as powers of 10 less than zero. So the number 178.125 is actually l &#x00D7; 10<sup>2</sup> &#x002B; 7 &#x00D7; 10<sup>1</sup> &#x002B; 8 &#x00D7; 10<sup>0</sup> &#x002B; l &#x00D7; 10<sup>&#x2013;1</sup> &#x002B; 2 &#x00D7; 10<sup>&#x2013;2</sup> &#x002B; 5 &#x00D7; 10 <sup>&#x2013;3</sup>. Alternatively the so-called<i> scientific</i> format may be used in which the number is represented as a<i> mantissa</i>, whose value is between 1 and 10, and<i> exponent</i> signifying the power of 10 that the mantissa needs to be multiplied by to obtain the original number. So, the number 178.125 can be written as 1.78125 &#x00D7; 10<sup>2</sup>, or 1.78125E2.</p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">The symbol &#x2018;&#x0394;&#x2019; is used to show the transition point between units and fractions in binary numbers, the same as &#x2018;.&#x2019; is used in decimal numbers.</p></aside>
+<p class="baindent">All these formats are equally as acceptable for binary numbers. For instance the decimal number 178.125 can be represented as 10110010<sub>&#x0394;</sub>001, that is<a id="page_10" class="page">Page 10, Chapter 1 Introduction</a></p>
+<p class="image2" style="margin-left:1em;">1 &#x00D7; 2<sup>7</sup> + 0 &#x00D7; 2<sup>6</sup> + 1 &#x00D7; 2<sup>5</sup> + 1 &#x00D7; 2<sup>4</sup> + 0 &#x00D7; 2<sup>3</sup> + 0 &#x00D7; 2<sup>2</sup> + 1 &#x00D7; 2<sup>1</sup> + 0 &#x00D7;2<sup>0</sup> + 0 &#x00D7; 2<sup>&#x2212;1</sup> + 0 &#x00D7; 2<sup>&#x2212;2</sup> + 1 &#x00D7; 2<sup>&#x2212;3</sup></p>
+<p class="baindentt">= 128 + 32 + 16 + 2 + &#x215B;</p>
+<p class="baindentt">= 178.125</p>
+<p class="baindentt" style="width:70%;">However these straight binary fractions are not really suitable for use in calculations since in order to represent a number of any significant size would require many bits. So, in the same way as scientific notation can be used to represent decimal numbers, binary scientific notation can be used to represent binary numbers. Taking the same binary number as before, this can be represented as 1<sub>&#x0394;</sub>0110010001 &#x00D7; 2<sup>111</sup> (where all the numbers are binary), or 1<sub>&#x0394;</sub>0110010001E111.</p>
+<p class="baindent">One complication is the matter of negative numbers, both in the mantissa and the exponent. The use of two&#x2019;s complement for the mantissa is of no benefit in this case, since any mathematics can not be performed directly because of the presence of the exponent. Consequently the representation of the number in the computer usually just includes a<i> sign-bit.</i> This is a single bit, usually the most significant bit, that when set indicates that the mantissa is negative.</p>
+<p class="baindent">Negative exponents,<i> i.e.</i> those representing numbers less than one, are often expressed as a<i> biased</i> or<i> offset</i> two&#x2019;s complement number. This just means that the exponent is expressed as a two&#x2019;s complement number, then a fixed offset is added to it. The constant added to the exponent depends on the total number of bits allocated for its storage, if this is 8 bits, then constant is 127 (7FH). We can thus see that an exponent of 111 B, as above, will be represented as 10000110. The reasoning behind using such a scheme is that it makes comparing magnitudes much easier than if a straight two&#x2019;s complement system is used.</p>
+<p class="baindent">The most common format for storing real numbers in computers is the <i>IEEE format.</i> This takes all the above principles and packs them in a well-defined format into a binary number. There are two sizes of IEEE number: short real and long real. The short real uses a 23-bit mantissa, an 8-bit exponent and a sign bit, making a total of 32 bits. The long real on the other hand is a 64-bit number consisting of a sign bit, 52-bit mantissa and 11-bit exponent. In both these formats the mantissa is expressed without the leading 1, since all mantissas are between 1 and 2 (<i>i.e.</i> IB and 10B) and so they all start with 1<sub>&#x0394;</sub>. The range of decimal numbers representable by the short and long integers and the number of significant decimal digits is shown in <a href="#tab1.2">Table 1.2.</a></p>
+<aside class="abc" style="margin-top:1.5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">Table 1.2 Floating point data types</p></aside>
+<table class="width70tb" id="tab1.2">
+<tr>
+<td class="borbwi25"><p class="table1">Data Type</p></td>
+<td class="borbwi10"><p class="table1">Bits</p></td>
+<td class="borbwi25"><p class="table1">Significant decimal digits</p></td>
+<td class="borbwi40"><p class="table1">Approximate decimal range</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="table1">Short Real<br/>(single precision)</p></td><td style="vertical-align:top;"><p class="table1">32</p></td><td style="vertical-align:top;"><p class="table1">6 &#x2013; 7</p></td><td style="vertical-align:top;"><p class="table1">8.43 &#x00D7; 10<sup>-37</sup> &#x2264; &#x007C;<i>x</i>&#x007C; &#x2264; 3.37 &#x00D7; 10<sup>38</sup></p></td>
+</tr>
+<tr><td style="vertical-align:top;"><p class="table1">Long real<br/>(double precision)</p></td><td style="vertical-align:top;"><p class="table1">64</p></td><td style="vertical-align:top;"><p class="table1">15 &#x2013; 16</p></td><td style="vertical-align:top;"><p class="table1">4.19 &#x00D7; 10<sup>-307</sup> &#x2264; &#x007C;<i>x</i>&#x007C; &#x2264; 1.67 &#x00D7; 10<sup>308</sup></p></td>
+</tr></table>
+<p class="baindent">It should also be remembered that just as there are decimal fractions, such as &#x2153; that can not be represented exactly, there are binary fractions that also can not be represented exactly. One such is &#x2018;0.1&#x2019;: the 16-bit binary fraction representing 0.1 is 1<sub>&#x0394;</sub>1001100110011001E100, but this number only approximately equals 0.1, it being about 5.7 &#x00D7; 10<sup>&#x2212;7</sup> less. Such rounding errors <a id="page_11" class="page">Page 11, Chapter 1 Introduction</a> may become significant when, for instance, performing subtractions on two very close numbers, but the large number of bits in the IEEE format numbers means that the difference between such irrational binary numbers and their decimal equivalent is kept very small.</p>
+<p class="baindent">The final problem with manipulating real numbers is that of exceptional values. <a href="#tab1.2">Table 1.2</a> shows the range of values that the real numbers can take: notice that zero is not included in any of the ranges. This is because zero is represented absolutely by a mantissa and exponent of all zeroes. Surprisingly, it is possible to have a positive zero or a negative zero; the sign of zero is significant in some operations. Other special numbers are +&#x0221E;, &#x2212;&#x0221E; and <i>indefinite.</i> The &#x00B1;&#x0221E; is generated when, for example, division by zero is attempted;<i> indefinite</i> is a result of operations such as <img src="../images/im1.jpg" alt="images"/>. Each of these conditions is represented by specific combinations of mantissa and exponent. Often, when dealing with floating point numbers, you may see &#x2018;NAN&#x2019;, this means &#x2018;not a number&#x2019; and results from an invalid combination of bits. The individual cases just mentioned are special classes of NANs.</p>
+</section>
+</section>
+</body>
+</html>

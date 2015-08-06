@@ -1,0 +1,4600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Modern Liquid Phase Kinetics</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+
+<a id="page_57" class="page" style="width:70%;">Page 57, Fast reactions in solution</a>
+
+<section epub:type="chapter" id="ch05">
+<h1 class="main">5<span class="space">&#160;</span>Fast reactions in solution</h1>
+<section epub:type="chapter" id="sec_5.1">
+<p class="noindent">&#160;</p>
+
+<h2 class="h2">5.1<span class="space">&#160;</span>Introduction</h2>
+<p class="noindent-ka">Classical kinetic studies of the rates and mechanisms of chemical reactions normally permit only the determination of the overall rate constant for reaction, and this may include several equilibrium constants or sets of rate constants, depending upon where the rate-limiting step occurs. In chemistry, however, we are interested particularly in change at an atomic or molecular level and fundamental processes of this kind are generally so fast that special techniques are needed to follow them. The catalysis of reactions by acids and bases, for example, frequently involves the coupling of extremely fast proton-transfer reactions with other chemical processes to produce slow observable changes. We will, somewhat arbitrarily, define fast reactions as those with half-lives of less than one second, i.e., reactions which are too fast to be studied conveniently by conventional techniques. In studying such reactions it is necessary not only to be able to record the reaction in an appropriately short time interval, but also to initiate it in an equally short time. The latter is frequently the more difficult problem.</p>
+<p class="indent-ka">A summary of currently important techniques for studying fast reactions is given in <a href="#fig_5.1">Fig. 5.1</a>. The upper limit for chemical transformations is set by the period of a molecular vibration, which is commonly in the range 10<sup>12</sup> to 10<sup>13</sup> s. At these extremely short times it is difficult to distinguish between &#8216;physical&#8217; and &#8216;chemical&#8217; transformations; energy barriers become large enough for a process to be considered chemical at times of approximately 10<sup>10</sup> s or longer. Bimolecular reactions consist of at least two steps: the approach of the two species, controlled by diffusion, and the real chemical transformation. Second-order rate constants cannot, therefore, exceed those for the diffusion process; this limits the maximum attainable to around 10<sup>9</sup>&#8722;10<sup>11</sup> M<sup>&#8722;1</sup> s<sup>&#8722;1</sup> (see below). The corresponding time-ranges of such reactions depend upon the reactant concentrations used (t ~ 1/<i>kA</i>, where <i>k</i> is the second-order rate constant and <i>A</i> is the larger of the concentrations of the two reacting species), but it is clear that even the highest rate constants can be accommodated by one or other of the techniques in <a href="#fig_5.1">Fig. 5.1</a>.</p>
+<aside class="abc" style="margin-top:-21em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;" id="fig_5.1">
+<img src="../images/page57-1.jpg" alt="img"/>
+<figcaption style="text-align:left;width:100%;"><b>Fig. 5.1</b>&#160;&#160;&#160;&#160;Characteristic time-ranges of fast reaction methods.</figcaption>
+</figure>
+</aside>
+<p class="indent-ka">There is in principle no great difficulty with respect to monitoring a reaction in attaining a time resolution down to 10<sup>&#8722;9</sup> s, provided that reactant concentrations are amenable to optical (absorbance, fluorescence) or electrical (conductance) measurements. The limiting factor in studying fast reactions is normally the mixing time, which for laboratory stirrers is at best around 0.1 s. This time can be reduced to 10<sup>&#8722;3</sup> s using <i>continuous-flow</i> or <i>stopped-flow</i> techniques, in which jets of the two reacting solutions impinge in a carefully designed mixing chamber. However, even by combining these techniques with <a id="page_58" class="page">Page 58, Fast reactions in solution</a>low reagent concentrations, the determination of second-order rate constants is restricted to values of c. 10<sup>6</sup> M<sup>-1</sup> s<sup>-1</sup>. To go significantly beyond this it is necessary to circumvent the mixing problem.</p>
+<p class="indent-ka">Much faster reactions can be studied by the use of <i>relaxation methods</i>, whereby a system at equilibrium is perturbed by a rapid change in some external parameter, such as pressure or temperature. The re-establishment of equilibrium is then observed by optical or electrical means. The method can only be applied to systems in which detectable concentrations of both reactants and products are present at equilibrium, but mixing problems are avoided completely.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="noindent2" style="text-align:left;width:100%;">Further improvements can be achieved using specialized reactors in which the reaction is observed <i>along</i> the direction of flow and a correction is made for the finite time of mixing (Strehlow 1992, <a href="Chapter03.xhtml#ch03">Ch. 3</a>).</p>
+</aside>
+
+<p class="indent-ka">An important class of methods, which may be termed <i>lifetime methods</i> or <i>line-broadening methods</i>, is based upon the observation of spectroscopic lineshapes. The methods are applied to systems in perfect equilibrium and involve neither mixing problems nor the perturbation of equilibria. They depend upon the <i>uncertainty principle</i>, according to which a state having a lifetime &#964; has an uncertainty in its energy <i>&#948;E</i>, given by <i>&#948;E</i> &#x007E; <i>h/2&#960;&#964;</i>, and hence in the transition frequency, <i>&#957;, (<i>E</i> = <i>h&#957;</i>)</i> of <i>&#948;&#957;</i> = <i>&#948;E</i>/<i>h</i> &#x007E; 1/2<i>&#960;&#964;</i>  Thus a reduction in the lifetime of a particular state through chemical reaction or other means will lead to a broadening of the spectroscopic line on a frequency scale. Optical spectra are rarely used because of the extremely fast reactions required to produce measurable kinetic line-broadening (<a href="#fig_5.1">Fig. 5.1</a>). Of much wider utility is the line broadening technique in <i>nuclear magnetic resonance</i> (NMR), applicable over the time-range 1&#8722;10<sup>&#8722;3</sup> s for proton resonance, and down to 10<sup>&#8722;6</sup> s for nuclei such as <sup>17</sup>O and <sup>13</sup>C. Closely related is the technique of <i>electron paramagnetic resonance</i> (EPR), which may be used to study species with unpaired electrons; the time-range extends from about 10<sup>&#8722;5</sup>&#8722;10<sup>&#8722;10</sup> s.</p>
+<p class="indent-ka">The final technique which we shall consider is that of <i>flash photolysis</i>, in which the perturbing function is an intense flash of light. Here the photons emitted in a flash of short duration (a few <i>&#956;</i>s or less) are absorbed by molecules or ions which may then undergo a variety of processes: fluorescence, radiationless transitions to the ground state, intersystem-crossing into a lower triplet state, or various chemical changes. With the advent of modern pulse lasers, the time resolution of flash photolysis has been reduced to the picosecond level.</p>
+<h3 class="h3">Diffusion-controlled reactions</h3>
+<p class="noindent-ka">It is of some interest to enquire as to the maximum rate at which reactions can occur. For unimolecular reactions, we have seen that the rate constants could be as great as 10<sup>12</sup>&#8722;10<sup>13</sup> s<sup>&#8722;1</sup>. Of more general importance, however, are bimolecular reactions. These must involve an approach of the reacting species as well as the chemical reaction. Where any limitations due to mixing (<i>macroscopic diffusion control</i>) are eliminated, through use, for example, of relaxation techniques (<a href="Chapter05.xhtml#sec_5.3">Sect. 5.3</a>), the maximum rate of a bimolecular reaction is equal to the rate of encounter of the two molecules; such reactions are called <i>diffusion-controlled</i> or <i>encounter-controlled.</i></p>
+<p class="indent-ka">The approximate magnitude of rate constants for diffusion-controlled reactions can be deduced from a simplified theoretical model for the diffusion process first introduced by Smoluchowski (1917), to account for the rates of co-agulation <a id="page_59" class="page">Page 59, Fast reactions in solution</a>of colloids. It is assumed that the reacting molecules may be treated as spheres undergoing normal Brownian motion in a viscous fluid which react when they approach to a distance <i>r</i><sub>AB</sub>. If the forces between the molecules are neglected, it may be shown that the second order rate constant is given by</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msub>
+      <mi>k</mi>
+      <mn>2</mn>
+     </msub>
+     <mo>=</mo><mn>4000</mn><mi>&#x03C0;</mi><mtext>&#x2009;</mtext><msub>
+      <mi>r</mi>
+      <mrow>
+       <mtext>AB</mtext>
+      </mrow>
+     </msub>
+     <mi>L</mi><mrow><mo>(</mo>
+      <mrow>
+       <msub>
+        <mi>D</mi>
+        <mtext>A</mtext>
+       </msub>
+       <mo>+</mo><msub>
+        <mi>D</mi>
+        <mtext>B</mtext>
+       </msub>
+       
+      </mrow>
+     <mo>)</mo></mrow>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.1">(5.1)</p>
+<p class="noindent-ka">in which <i>L</i> is the Avagadro number, <i>D</i><sub>A</sub> and <i>D</i><sub>B</sub> are the diffusion coefficients (<a href="Chapter06.xhtml#ch06">Ch. 6</a>) of the reacting species, A and B, in units of m<sup>2</sup> s<sup>&#8722;1</sup>, and <i>r</i><sub>AB</sub> is in metres.</p>
+<p class="indent-ka">A further useful approximation can be made by utilizing the Stokes-Einstein relationship between the diffusion coefficient of species <i>i</i>, <i>D<sub>i</sub></i>, the radius, <i>r</i><sub><i>i</i></sub>, and the solvent viscosity, <i>&#951;</i>,</p>
+<p class="math" style="margin-left:-2em;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msub>
+  <mi>D</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>=</mo><mrow><mrow>
+  <msub>
+   <mi>k</mi>
+   <mtext>B</mtext>
+  </msub>
+  <mi>T</mi>
+ </mrow><mo>/</mo><mrow>
+  <mn>6</mn><mi>&#x03C0;</mi>
+ </mrow></mrow>
+ <mi>&#x03B7;</mi><msub>
+  <mi>r</mi>
+  <mi>i</mi>
+ </msub>
+ 
+</math>
+</p>
+<p class="noindent-ka">where <i>k<sub>B</sub></i> is the Boltzmann constant. Substituting this into <a href="#eqn_5.1">eqn 5.1</a> and noting that r<sub>AB</sub> = <i>r</i><sub>A</sub> + <i>r</i><sub>B</sub> gives</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msub>
+      <mi>k</mi>
+      <mn>2</mn>
+     </msub>
+     <mo>=</mo><mfrac>
+      <mrow>
+       <mn>2000</mn><mi>L</mi><msub>
+        <mi>k</mi>
+        <mi>B</mi>
+       </msub>
+       <mi>T</mi>
+      </mrow>
+      <mrow>
+       <mn>3</mn><mi>&#x03B7;</mi>
+      </mrow>
+     </mfrac>
+     <mrow><mo>(</mo>
+      <mrow>
+       <mn>2</mn><mo>+</mo><mfrac>
+        <mrow>
+         <msub>
+          <mi>r</mi>
+          <mtext>A</mtext>
+         </msub>
+         
+        </mrow>
+        <mrow>
+         <msub>
+          <mi>r</mi>
+          <mtext>B</mtext>
+         </msub>
+         
+        </mrow>
+       </mfrac>
+       <mo>=</mo><mfrac>
+        <mrow>
+         <msub>
+          <mi>r</mi>
+          <mtext>B</mtext>
+         </msub>
+         
+        </mrow>
+        <mrow>
+         <msub>
+          <mi>r</mi>
+          <mtext>A</mtext>
+         </msub>
+         
+        </mrow>
+       </mfrac>
+       
+      </mrow>
+     <mo>)</mo></mrow>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-3em;width:70%;" id="eqn_5.2">(5.2)</p>
+<p class="noindent-ka">If the two molecules are of similar size (r<sub>A</sub> &#x007E; r<sub>B</sub>), the radii cancel and the rate constant is approximately independent of the species involved:</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msub>
+      <mi>k</mi>
+      <mn>2</mn>
+     </msub>
+     <mo>&#x223C;</mo><mrow><mrow>
+      <mn>8000</mn><mi>L</mi><msub>
+       <mi>k</mi>
+       <mi>B</mi>
+      </msub>
+      <mi>T</mi>
+     </mrow><mo>/</mo><mrow>
+      <mn>3</mn><mi>&#x03B7;</mi>
+     </mrow></mrow>
+     <mo>=</mo><mrow><mrow>
+      <mn>8000</mn><mi>R</mi><mi>T</mi>
+     </mrow><mo>/</mo><mrow>
+      <mn>3</mn><mi>&#x03B7;</mi>
+     </mrow></mrow>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.3">(5.3)</p>
+<p class="indent-ka">Values of the second-order rate constant for diffusion controlled reactions at 25&#x00B0;C calculated from <a href="#eqn_5.3">eqn 5.3</a> vary from around 3 &#215; 10<sup>9</sup> M<sup>&#8722;1</sup> s<sup>&#8722;1</sup> for the more viscous solvents, such as dimethyl sulfoxide(<i>&#951;</i> = 2.0 &#215; 10<sup>-3</sup> Pa s), to 7.4 &#215; 10<sup>9</sup>M<sup>&#8722;1</sup> s<sup>&#8722;1</sup> for water(<i>&#951;</i> = 8.9 &#215; 10<sup>&#8722;4</sup>Pa s),and 2.0 &#215; 10<sup>,0</sup>M<sup>&#8722;1</sup> s<sup>&#8722;1</sup> for low viscosity solvents, such as hexane (<i>&#951;</i> = 3.0 &#215; 10&#8220;<sup>&#8722;4</sup> Pa s). The latter value may be compared with that determined experimentally for the recombination of iodine atoms in hexane: <i>k</i><sub>2</sub> = 1.3 x&#215; lO<sup>10</sup>M<sup>&#8722;1</sup> s<sup>&#8722;1</sup>. Similar semiquantitative agreement is found with experimental results on a variety of very fast reactions.</p>
+<aside class="abc" style="margin-top:-10.3em;" epub:type="sidebar">
+<p class="noindent2" style="text-align:left;width:100%;">Electrostatic interactions cause rate enhancements for oppositely charged ions and retardations for ions of the same charge. The diffusion velocity is modified for ions of charge <i>z</i><sub>A</sub>, <i>z</i><sub>B</sub> in a solvent of relative permittivity <i>&#8712;<sub>r</sub></i> by a facto <i>&#948;</i>(e<sup><i>&#948;</i></sup> &#8722; 1), where <i>&#948;</i> = <i>z</i><sub>A</sub><i>z</i><sub>B</sub>e<sup>2</sup>/4<i>&#960;&#8712;</i><sub>0</sub><i>&#8712;<sub>r</sub></i> <sub>AB</sub><i>RT</i> (Strehlow 1992, <a href="Chapter02.xhtml#ch02">Ch. 2</a>).</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_5.2">
+<h2 class="h2">5.2<span class="space">&#160;</span>Flow methods</h2>
+<p class="noindent-ka">The principle of flow or rapid-mixing methods is simple: the two reactant solutions are forced rapidly into a mixing chamber and the mixed solution passes down an observation tube with a velocity of several metres per second, <a href="#fig_5.2">Fig. 5.2</a>. The extent of reaction at various distances along the observation tube (corresponding to various times) is normally found by measuring a convenient physical property such as the optical absorbance or electrical conductivity. The time resolution of most rapid-mixing devices is limited by the mixing time to about 1 ms.</p>
+<p class="indent-ka">The kinetics associated with <i>continuous-flow</i> devices of the type illustrated in <a href="#fig_5.2">Fig. 5.2</a> have been discussed (<a href="Chapter02.xhtml#ch02">Ch. 2</a>, <a href="Chapter02.xhtml#sec_2.6">Sect. 2.6</a>)&#8212;they are identical in form <a id="page_60" class="page">Page 60, Fast reactions in solution</a>to those for conventional static reactions except that the extent of reaction is governed by the <i>residence time</i>, <i>t</i><sub>r</sub>, in the observation tube. For example, for a first-order reaction, A &#8594; P, the concentration of A at various points along the tube is given by</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;" id="fig_5.2">
+<img src="../images/page60-1.jpg" alt="img"/>
+<figcaption style="text-align:left;width:100%;"><b>Fig. 5.2</b>&#160;&#160;&#160;&#160;Continuous-flow reactor</figcaption>
+</figure>
+</aside>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mi>A</mi><mo>=</mo><msub>
+      <mi>A</mi>
+      <mn>0</mn>
+     </msub>
+     <msup>
+      <mtext>e</mtext>
+      <mrow>
+       <mo>&#x2212;</mo><mi>k</mi><msub>
+        <mi>t</mi>
+        <mi>r</mi>
+       </msub>
+       
+      </mrow>
+     </msup>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.4">(5.4)</p>
+<p class="noindent-ka">The residence time can be defined equivalently in terms of the distance, <i>d</i>, along the tube and flow velocity, <i>u</i> (expressed in m s<sup>&#8722;1</sup>), i.e., <i>t</i><sub>r</sub> = <i>d/u</i>, or the volume traversed, <i>V</i>, and flow rate, &#957; m<sup>3</sup> s<sup>&#8722;1</sup>, i.e., <i>t</i><sub>r</sub> = <i>V/&#957;.</i> It is important to note that at any particular point along the tube the concentration remains constant with time, so that rapid recording of the concentration is not required.</p>
+
+<p class="indent-ka">Continuous-flow reactors are not widely used to measure reaction rates, because of the difficulty of construction and the requirement for quite large volumes of solution.</p>
+<h3 class="h3">Stopped-flow</h3>
+<p class="noindent-ka">A much more widely used flow technique is that of <i>stopped-flow</i>, illustrated schematically in <a href="#fig_5.3">Fig. 5.3</a>. As before, two reactant solutions are mixed rapidly by being forced into a mixing chamber, M, but from the observation tube the solution flows into a third syringe, the piston of which is suddenly stopped by coming up against a seating or an external stop. Stopping occurs within a millisecond or two. There is an observation point, O, close to the mixing chamber, and measurement via the detecting system is triggered at the moment of stopping by, for example, a microswitch operated by the piston of the stopping syringe. Flow velocities are typically around 10 m s<sup>&#8722;1</sup> so that an element of solution which comes to rest at an observation point about 1 cm from the mixing chamber will have been mixed for about 1 ms. It is difficult to reduce this time significantly because flow velocities much above 20 m s<sup>&#8722;1</sup> lead to cavitation. The major advantages of stopped-flow over continuous-flow reactors is that only very small volumes of solution are required and the flow rates need not be controlled.</p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;" id="fig_5.3">
+<img src="../images/page60-2.jpg" alt="img"/>
+<figcaption style="text-align:left;width:100%;"><b>Fig. 5.3</b>&#160;&#160;&#160;&#160;Stopped-flow apparatus: A, B, reactant solutions; M, mixing chamber; O, observation point; S, stopping piston.</figcaption>
+</figure>
+</aside>
+<p class="indent-ka">The kinetics are identical to those in a normal static batch reaction (<a href="Chapter02.xhtml#ch02">Ch. 2</a>, <a href="Chapter02.xhtml#sec_2.2">Sect. 2.2</a>) as it is the change in concentration with time of a particular (station-ary) element of solution that is measured. The difference between stopped-flow and conventional kinetics lies solely in the rapid mixing of the stopped-flow method. Rapid-response monitoring is required and an important consequence of real-time monitoring is the mandatory use of physical parameters to follow the reaction. It is therefore a considerable advantage to work under first-order or pseudo-first-order conditions. A good example is provided by the oxidation of ascorbic acid (H<sub>2</sub>A) to dehydroascorbic acid (A) by the redox indicator 2,6-dichloroindophenol (1) (Tonomura <i>et</i> al 1978),</p>
+
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;">
+<img src="../images/page60-3.jpg" alt="img"/>
+</figure>
+</aside>
+<figure class="figure-bh" style="margin-left:8em;">
+<img src="../images/page60-4.jpg" alt="img"/>
+</figure>
+
+<a id="page_61" class="page" style="width:70%;">Page 61, Fast reactions in solution</a>
+
+<p class="noindent-ka">The reaction, which can be used to detect the presence of ascorbic acid, is accompanied by an increase in absorbance at 500 nm, corresponding to formation of the blue reduced form of the indicator. Under pseudo-first-order conditions (excess ascorbic acid), the rate law is given by</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mrow><mrow>
+      <mo>&#x2212;</mo><mi>d</mi><mrow><mo>[</mo> <mrow>
+       <mn>2</mn><mo>,</mo><mtext>&#x2009;</mtext><mn>6</mn><mtext>-dichloroindophenol</mtext>
+      </mrow> <mo>]</mo></mrow>
+     </mrow><mo>/</mo><mrow>
+      <mi>d</mi><mi>t</mi>
+     </mrow></mrow>
+     <mo>=</mo><msub>
+      <mi>k</mi>
+      <mn>1</mn>
+     </msub>
+     <mrow><mo>[</mo> <mrow>
+      <mn>2</mn><mo>,</mo><mtext>&#x2009;</mtext><mn>6</mn><mtext>-dichloroindophenol</mtext>
+     </mrow> <mo>]</mo></mrow>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.5">(5.5)</p>
+<p class="noindent-ka">where <i>k</i><sub>1</sub> = <i>k</i><sub>2</sub>[H<sub>2</sub>A], and <i>k</i><sub>2</sub> is the second-order rate constant for the redox reaction. It readily follows (<a href="Chapter02.xhtml#ch02">Ch. 2</a>, <a href="Chapter02.xhtml#sec_2.5">Sect. 2.5</a>) that the integrated rate equation expressed in terms of the absorbance, <i>D</i>, at 500 nm is</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mi>ln</mi><mrow><mo>(</mo>
+      <mrow>
+       <msub>
+        <mi>D</mi>
+        <mi>&#x221E;</mi>
+       </msub>
+       <mo>&#x2212;</mo><mi>D</mi>
+      </mrow>
+     <mo>)</mo></mrow><mo>=</mo><mo>&#x2212;</mo><msub>
+      <mi>k</mi>
+      <mn>1</mn>
+     </msub>
+     <mi>t</mi><mo>+</mo><mi>ln</mi><mrow><mo>(</mo>
+      <mrow>
+       <msub>
+        <mi>D</mi>
+        <mi>&#x221E;</mi>
+       </msub>
+       <mo>&#x2212;</mo><msub>
+        <mi>D</mi>
+        <mn>0</mn>
+       </msub>
+       
+      </mrow>
+     <mo>)</mo></mrow>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.6">(5.6)</p>
+<p class="noindent-ka">where <i>D</i><sub>0</sub> and <i>D</i><sub>&#8734;</sub> are the absorbances at the beginning and end of the reaction, respectively. Thus a plot of ln(<i>D</i><sub>&#8734;</sub> &#8722; <i>D</i>) versus <i>t</i> will be a straight line of slope &#8722;<i>k</i><sub>1</sub></p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="noindent2" style="text-align:left;width:100%;">For small absorbance changes, In(D<sub>&#8734;</sub> &#8722; <i>D</i>) (<i>l</i><sub>&#8734;</sub> &#8722; <i>l</i>), where l is the intensity of the transmitted light. Thus <a href="#eqn_5.6">eqn 5.6</a> may be replaced by ln(<i>l</i><sub>&#8734;</sub> &#8722; <i>l</i>) = &#8722;<i>k<sub>1</sub>t</i> + ln(<i>l</i><sub>&#8734;</sub> &#8722; <i>l</i><sub>0</sub>).</p>
+</aside>
+<p class="indent-ka">Rapid redox reactions are amongst the most common classes of reactions studied by stopped-flow techniques&#8212;they are normally effectively irreversible and therefore not amenable to the relaxation methods (<a href="#sec_5.3">Sect. 5.3</a>)but a variety of biochemical reactions, organic reactions, and complex formation reactions has also been studied. Double-mixing stopped-flow, in which two initial reactants are mixed and allowed to react for a preset time before the addition of another reagent in a second mixing chamber, can be used to advantage in the study of reactive intermediates (McClelland and S&#248;rensen 1990).</p>
+
+</section>
+<section epub:type="chapter" id="sec_5.3">
+<h2 class="h2">5.3<span class="space">&#160;</span>Chemical relaxation</h2>
+<aside class="abc" style="margin-top:-2.5em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;" id="fig_5.4">
+<img src="../images/page61-1.jpg" alt="img"/>
+<figcaption style="text-align:left;width:100%;"><b>Fig. 5.4</b>&#160;&#160;&#160;&#160;Temperature and reaction profile during a temperature-jump experiment for M<sup><i>n</i>+</sup> + L &#8651; ML<sup><i>n</i>+</sup></figcaption></figure>
+</aside>
+<p class="noindent-ka">All chemical relaxation methods rely on the perturbation of a system at equilibrium by a change in an external parameter such as temperature or pressure. Provided the alteration in conditions is sufficiently rapid, there will be a time-lag between the application of the perturbation and the approach of the system to the new equilibrium position. This time-lag is related to the forward and reverse rate constants of the system. The perturbation may be effected in two distinct ways:</p>
+<p class="li-a4">&#8226;<span class="space">&#160;</span>single pulse or <i>jump methods</i>, which involve a single perturbation brought about by a sudden change in, for example, temperature, pressure, or electric field;</p>
+
+<p class="li-a4">&#8226;<span class="space">&#160;</span>periodic disturbance or <i>stationary methods</i>, in which a periodic disturbance, normally sinusoidal, is established using ultrasonic waves or a high-frequency electric field.</p>
+<p class="indent-ka" style="margin-top:0.5em;">The principle of relaxation methods is illustrated in <a href="#fig_5.4">Fig. 5.4</a> for an endothermic metal ion complexation reaction with ligand, L,</p>
+<p class="center-ka" style="margin-left:0.5em;">M<sup><i>n</i>+</sup> + L &#8651; ML<sup><i>n</i>+</sup></p>
+<p style="text-align:right;margin-top:-2.2em;width:70%;" id="eqn_5.7">(5.7)</p>
+<p class="noindent-ka">If the system, initially at equilibrium at 20&#x00B0;C, is subjected to a rapid temperature <a id="page_62" class="page">Page 62, Fast reactions in solution</a>change to (say) 25&#x00B0;C (curve a) it will no longer be at equilibrium. Reaction will therefore occur to re-establish equilibrium (curves b and c), in this case by increasing the concentration of ML<sup><i>n</i>+</sup> and correspondingly reducing the free ligand (and metal ion) concentration. The rate constants for formation and dissociation of the complex, ML<sup><i>n</i>+</sup>, can then be determined from the rate of approach to the new equilibrium position.</p>
+<p class="indent-ka">The return of the perturbed system to equilibrium is characterized by a relaxation time, <i>&#964;</i>. For a single-step, reversible reaction of first order in each direction, A &#8651; B, <i>&#964;</i> is defined by <a href="#eqn_5.8">eqn 5.8</a></p>
+<p class="math" style="margin-left:2em;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mfrac>
+      <mrow>
+       <mi>d</mi><msub>
+        <mi>c</mi>
+        <mi>i</mi>
+       </msub>
+       
+      </mrow>
+      <mrow>
+       <mi>d</mi><mi>t</mi>
+      </mrow>
+     </mfrac>
+     <mo>=</mo><mo>&#x2212;</mo><mfrac>
+      <mn>1</mn>
+      <mi>&#x03C4;</mi>
+     </mfrac>
+     <mrow><mo>(</mo>
+      <mrow>
+       <msub>
+        <mi>c</mi>
+        <mi>i</mi>
+       </msub>
+       <mo>&#x2212;</mo><msub>
+        <mover accent='true'>
+         <mi>c</mi>
+         <mo>&#x00AF;</mo>
+        </mover>
+        
+        <mi>i</mi>
+       </msub>
+       
+      </mrow>
+     <mo>)</mo></mrow>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.8em;width:70%;" id="eqn_5.8">(5.8)</p>
+<p class="noindent-ka">where c, represents the concentration of species <i>i</i> (in this case, A or B) at time <i>t</i>, and <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mi>i</mi>
+  </msub>
+  
+ </mrow>
+</math>
+ the equilibrium concentration of <i>i.</i> Thus, 1/<i>&#964;</i> is the overall first-order rate constant for the return of the system to equilibrium.</p>
+<p class="indent-ka">The evaluation of <i>&#964;</i> is most commonly achieved via the integrated form of <a href="#eqn_5.8">eqn 5.8</a> (<a href="Chapter02.xhtml#ch02">Ch. 2</a>, <a href="Chapter02.xhtml#sec_2.3">Sect. 2.3</a>), i.e., <a href="#eqn_5.9">eqn 5.9</a> or its equivalent, <a href="#eqn_5.10">eqn 5.10</a>,</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>ln</mi><mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <msub>
+       <mover accent='true'>
+        <mi>c</mi>
+        <mo>&#x00AF;</mo>
+       </mover>
+       
+       <mi>i</mi>
+      </msub>
+      <mo>&#x2212;</mo><msub>
+       <mi>c</mi>
+       <mi>i</mi>
+      </msub>
+      
+     </mrow>
+     <mrow>
+      <msub>
+       <mover accent='true'>
+        <mi>c</mi>
+        <mo>&#x00AF;</mo>
+       </mover>
+       
+       <mi>i</mi>
+      </msub>
+      <mo>&#x2212;</mo><msub>
+       <mi>c</mi>
+       <mn>0</mn>
+      </msub>
+      
+     </mrow>
+    </mfrac>
+    
+   </mrow>
+  <mo>)</mo></mrow><mo>=</mo><mo>&#x2212;</mo><mfrac>
+   <mn>1</mn>
+   <mi>&#x03C4;</mi>
+  </mfrac>
+  <mi>r</mi><mi>t</mi>
+ </mrow>
+</math>
+</p>
+<p style="text-align:right;margin-top:-3em;width:70%;" id="eqn_5.9">(5.9)</p>
+<p class="math" style="margin-top:2em;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mi>i</mi>
+  </msub>
+  <mo>&#x2212;</mo><msub>
+   <mi>c</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>=</mo><mrow><mo>(</mo>
+   <mrow>
+    <msub>
+     <mover accent='true'>
+      <mi>c</mi>
+      <mo>&#x00AF;</mo>
+     </mover>
+     
+     <mi>i</mi>
+    </msub>
+    <mo>&#x2212;</mo><msub>
+     <mi>c</mi>
+     <mn>0</mn>
+    </msub>
+    
+   </mrow>
+  <mo>)</mo></mrow><msup>
+   <mi>e</mi>
+   <mrow>
+    <mo>&#x2212;</mo><mrow><mn>1</mn><mo>/</mo><mi>&#x03C4;</mi></mrow>
+    
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.10">(5.10)</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="noindent2" style="text-align:left;width:100%;">It is conventional in relaxation kinetics to represent the concentration of species <i>i</i> by <i>c<sub>i</sub></i>, and the equilibrium value by adding a bar, as in <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mi>i</mi>
+  </msub>
+  
+ </mrow>
+</math>; we will adopt this practice throughout this chapter.</p>
+</aside>
+<p class="noindent-ka">where <i>c</i><sub>0</sub> is the value of <i>c<sub>i</sub></i> immediately after the disturbance, when the system is not at equilibrium. A plot of ln(<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mi>i</mi>
+  </msub>
+  
+ </mrow>
+</math>, &#8722; <i>c<sub>i</sub></i>) versus time will therefore give a straight line of slope &#8722;1/<i>&#964;</i>; alternatively, a nonlinear least-squares fit of the data to <a href="#eqn_5.10">eqn 5.10</a> can be used to give <i>&#964;</i>, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mi>i</mi>
+  </msub>
+  
+ </mrow>
+</math>, and <i>c</i><sub>0</sub> simultaneously.</p>
+<p class="indent-ka">It follows readily from <a href="#eqn_5.9">eqn 5.9</a> that <i>&#964;</i> corresponds to the time required to reduce the difference between actual and equilibrium concentrations to 1/e of the original difference. It is of the same order of magnitude as the reaction half-life, <i>t</i><sub>1/2</sub> from <a href="#eqn_5.9">eqn 5.9</a> (cf. <a href="Chapter02.xhtml#ch02">Ch. 2</a>, <a href="Chapter02.xhtml#sec_2.3">Sect. 2.3</a>),</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mrow><mrow>
+      <msub>
+       <mi>t</mi>
+       <mrow>
+        <mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow>
+        
+       </mrow>
+      </msub>
+      
+     </mrow><mo>/</mo><mi>&#x03C4;</mi></mrow>
+     <mo>=</mo><mi>ln</mi><mn>2</mn><mo>=</mo><mn>0.693</mn>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>&#160;</mo><mn>&#160;</mn><mo stretchy='false'>&#160;</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.11">(5.11)</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="noindent2" style="text-align:left;width:100%;">Again, in practice it is not concentrations but a physical property proportional to concentration, such as absorbance or conductance, which is measured.</p>
+</aside>
+
+<p class="indent-ka">The simple and exact equation defining <i>&#964;</i>, <a href="#eqn_5.8">eqn 5.8</a>, applies strictly only to single-step, first-order reactions, such as conformational changes or isomer- izations. This apparently imposes a severe limitation on its usefulness, as the majority of reactions of interest, e.g., complexation, enzyme-substrate complex formation, etc., are at least of second-order in one direction. However, in practice the perturbations to equilibrium produced during relaxation experiments are very small and under these conditions all terms involving higher-than-first- order deviations from equilibrium can be neglected. Thus, <i>under conditions of small perturbation</i>, all single-step reactions may be described by <a href="#eqn_5.8">eqn 5.8</a>. This will become clear in the following section in which the relationships between the relaxation time and the rate constants governing reaction equilibria are derived. It should be noted that it is this feature of relaxation methods which is primarily responsible for their great success in the study of rapid-reaction kinetics.</p>
+
+<a id="page_63" class="page" style="width:70%;">Page 63, Fast reactions in solution</a>
+
+<h3 class="h3">Relaxation time and its relation to rate constants</h3>
+<p class="noindent-ka"><b>First-order reactions</b>. Consider a reaction which is first order in both directions, such as the hydration of pyruvic acid,</p>
+<figure class="figure-bh" style="margin-left:3em;">
+<img src="../images/page63-2.jpg" alt="img"/>
+</figure>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<p class="noindent2" style="text-align:left;width:100%;">The solvent water is in large (constant) excess and therefore does not appear in the rate equation.</p>
+</aside>
+<p class="noindent-ka">which we represent in general by</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mtext>A</mtext><munderover>
+      <mo>&#x21CC;</mo>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mrow>
+         <mo>&#x2212;</mo><mn>1</mn>
+        </mrow>
+       </msub>
+       
+      </mrow>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mn>1</mn>
+       </msub>
+       
+      </mrow>
+     </munderover>
+     <mtext>B</mtext>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>&#160;</mo><mn>&#160;</mn><mo stretchy='false'>&#160;</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+
+</p>
+<p style="text-align:right;margin-top:-3em;width:70%;" id="eqn_5.12">(5.12)</p>
+<p class="noindent-ka">The change in concentration of component A, for example, following a sudden disturbance is represented in <a href="#fig_5.5">Fig. 5.5</a>. The concentration, <i>c</i><sub>A</sub>, at any time <i>t</i> can be expressed in terms of <i>x</i>, the distance from the new equilibrium position, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>A</mn>
+  </msub>
+  
+ </mrow>
+</math>,</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msub>
+      <mi>c</mi>
+      <mtext>A</mtext>
+     </msub>
+     <mo>=</mo><msub>
+      <mover accent='true'>
+       <mi>c</mi>
+       <mo>&#x00AF;</mo>
+      </mover>
+      
+      <mtext>A</mtext>
+     </msub>
+     <mo>&#x2212;</mo><mi>x</mi>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.13">(5.13)</p>
+<p class="noindent-ka">It follows from the stoichiometry that <i>c</i><sub>B</sub> must be equidistant (but in the opposite direction) from its equilibrium value, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>B</mn>
+  </msub>
+  
+ </mrow>
+</math>, hence</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msub>
+      <mi>c</mi>
+      <mtext>B</mtext>
+     </msub>
+     <mo>=</mo><msub>
+      <mover accent='true'>
+       <mi>c</mi>
+       <mo>&#x00AF;</mo>
+      </mover>
+      
+      <mtext>B</mtext>
+     </msub>
+     <mo>+</mo><mi>x</mi>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.14">(5.14)</p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;" id="fig_5.5">
+<img src="../images/page63-1.jpg" alt="img"/>
+<figcaption style="text-align:left;width:100%;"><b>Fig.5.5</b> Approach to equilibrium for A &#8651; B.</figcaption>
+</figure>
+</aside>
+<p class="noindent-ka">The net forward rate at any time <i>t</i> <b>is:</b></p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo>&#x2212;</mo><mrow><mrow>
+      <mi>d</mi><msub>
+       <mi>c</mi>
+       <mtext>A</mtext>
+      </msub>
+      
+     </mrow><mo>/</mo><mrow>
+      <mi>d</mi><mi>t</mi>
+     </mrow></mrow>
+     <mo>=</mo><msub>
+      <mi>k</mi>
+      <mn>1</mn>
+     </msub>
+     <msub>
+      <mi>c</mi>
+      <mtext>A</mtext>
+     </msub>
+     <mo>&#x2212;</mo><msub>
+      <mi>k</mi>
+      <mrow>
+       <mo>&#x2212;</mo><mn>1</mn>
+      </mrow>
+     </msub>
+     <msub>
+      <mi>c</mi>
+      <mtext>B</mtext>
+     </msub>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.15">(5.15)</p>
+<p class="noindent-ka">Substituting for <i>c</i><sub>A</sub> and c<sub>B</sub> from <a href="#eqn_5.13">eqns 5.13</a> and <a href="#eqn_5.14">5.14</a>, and noting that at equilibrium, <i>dc</i><sub>A</sub>/<i>dt</i> = 0 and hence <i>k</i><sub>1</sub> <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>A</mn>
+  </msub>
+  
+ </mrow>
+</math> &#8722; <i>k</i><sub>&#8722;1</sub><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>B</mn>
+  </msub>
+  
+ </mrow>
+</math> = 0, we obtain</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mrow><mrow>
+      <mi>d</mi><mi>x</mi>
+     </mrow><mo>/</mo><mrow>
+      <mi>d</mi><mi>t</mi>
+     </mrow></mrow>
+     <mo>=</mo><mo>&#x2212;</mo><mrow><mo>(</mo>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mn>1</mn>
+       </msub>
+       <mo>+</mo><msub>
+        <mi>k</mi>
+        <mrow>
+         <mo>&#x2212;</mo><mn>1</mn>
+        </mrow>
+       </msub>
+       
+      </mrow>
+     <mo>)</mo></mrow><mi>x</mi>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.16">(5.16)</p>
+<p class="noindent-ka">This is the well-known equation for a reversible reaction of the first order in each direction (<a href="Chapter03.xhtml#ch03">Ch. 3</a>, <a href="Chapter03.xhtml#sec_3.2">Sect. 3.2</a>) and is valid irrespective of the magnitude of the displacement <i>x.</i> It may be seen by comparison with <a href="#eqn_5.8">eqn 5.8</a> that for this case the relaxation time, <i>&#964;</i>, is given by</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mrow><mn>1</mn><mo>/</mo><mi>&#x03C4;</mi></mrow>
+     <mo>=</mo><msub>
+      <mi>k</mi>
+      <mn>1</mn>
+     </msub>
+     <mo>+</mo><msub>
+      <mi>k</mi>
+      <mrow>
+       <mo>&#x2212;</mo><mn>1</mn>
+      </mrow>
+     </msub>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.17">(5.17)</p>
+<p class="noindent-ka">The magnitudes of the individual rate constants can only be obtained if the value of the equilibrium constant, <i>K</i><sub>1</sub> = <i>k</i><sub>1</sub>/<i>k</i><sub>&#8722;1</sub>, is known from independent measurements.</p>
+<p class="noindent-ka"><b>Reaction A</b>+ <b>B</b> &#8651; <b>C</b>. Many equilibria, such as complex formation, ion association, and acid dissociation, can be represented by <a href="#eqn_5.18">eqn 5.18</a></p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mtext>A&#x00A0;+&#x00A0;B&#x00A0;</mtext><munderover>
+      <mo>&#x21CC;</mo>
+      <mrow>
+       <msub>
+        <mi>K</mi>
+        <mrow>
+         <mo>&#x2212;</mo><mn>1</mn>
+        </mrow>
+       </msub>
+       
+      </mrow>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mn>1</mn>
+       </msub>
+       
+      </mrow>
+     </munderover>
+     <mtext>C</mtext>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-3em;width:70%;" id="eqn_5.18">(5.18)</p>
+<p class="noindent-ka">for which the net forward rate at time <i>t</i> can be written</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo>&#x2212;</mo><mrow><mrow>
+      <mi>d</mi><msub>
+       <mi>c</mi>
+       <mtext>A</mtext>
+      </msub>
+      
+     </mrow><mo>/</mo><mrow>
+      <mi>d</mi><mi>t</mi>
+     </mrow></mrow>
+     <mo>=</mo><msub>
+      <mi>k</mi>
+      <mn>1</mn>
+     </msub>
+     <msub>
+      <mi>c</mi>
+      <mtext>A</mtext>
+     </msub>
+     <msub>
+      <mi>c</mi>
+      <mtext>B</mtext>
+     </msub>
+     <mo>&#x2212;</mo><msub>
+      <mi>k</mi>
+      <mrow>
+       <mo>&#x2212;</mo><mn>1</mn>
+      </mrow>
+     </msub>
+     <msub>
+      <mi>c</mi>
+      <mtext>C</mtext>
+     </msub>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.19">(5.19)</p>
+<p class="noindent-ka">After the perturbation the concentrations of each species, <i>c<sub>i</sub></i>, will differ from the new equilibrium values by an amount <i>x<sub>i</sub></i>, i.e.,</p>
+
+<a id="page_64" class="page" style="width:70%;">Page 64, Fast reactions in solution</a>
+
+
+<p class="math" style="margin-left:-2em;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msub>
+      <mi>c</mi>
+      <mtext>A</mtext>
+     </msub>
+     <mo>=</mo><msub>
+      <mover accent='true'>
+       <mi>c</mi>
+       <mo>&#x00AF;</mo>
+      </mover>
+      
+      <mtext>A</mtext>
+     </msub>
+     <mo>+</mo><msub>
+      <mi>x</mi>
+      <mtext>A</mtext>
+     </msub>
+     <mo>;</mo>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <msub>
+      <mi>c</mi>
+      <mtext>B</mtext>
+     </msub>
+     <mo>=</mo><msub>
+      <mover accent='true'>
+       <mi>c</mi>
+       <mo>&#x00AF;</mo>
+      </mover>
+      
+      <mtext>B</mtext>
+     </msub>
+     <mo>+</mo><msub>
+      <mi>x</mi>
+      <mtext>B</mtext>
+     </msub>
+     <mo>;</mo>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <msub>
+      <mi>c</mi>
+      <mtext>C</mtext>
+     </msub>
+     <mo>=</mo><msub>
+      <mover accent='true'>
+       <mi>c</mi>
+       <mo>&#x00AF;</mo>
+      </mover>
+      
+      <mtext>C</mtext>
+     </msub>
+     <mo>+</mo><msub>
+      <mi>x</mi>
+      <mtext>C</mtext>
+     </msub>
+     <mo>;</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p class="noindent-ka">It is apparent from the reaction stoichiometry and the conservation of mass that we can replace the <i>x<sub>i</sub></i> by a single variable <i>x</i>, where <i>x</i> = <i>x</i><sub>C</sub> = &#8722;<i>x</i><sub>B</sub> = &#8722;<i>x</i><sub>A</sub>. Substituting for <i>c</i><sub>A</sub>, <i>c</i><sub>B</sub> and <i>c</i><sub>C</sub> in terms of the displacement, <i>x</i>, and again including the equilibrium condition (<i>k</i><sub>1</sub><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>A</mn>
+  </msub>
+</mrow>
+</math>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>B</mn>
+  </msub></mrow></math> = <i>k</i><sub>&#8722;1</sub><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>C</mn>
+  </msub></mrow></math>) gives</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mrow><mrow>
+      <mi>d</mi><mi>x</mi>
+     </mrow><mo>/</mo><mrow>
+      <mi>d</mi><mi>t</mi>
+     </mrow></mrow>
+     <mo>=</mo><mo>&#x2212;</mo><msub>
+      <mi>k</mi>
+      <mn>1</mn>
+     </msub>
+     <mrow><mo>[</mo> <mrow>
+      <mrow><mo>(</mo>
+       <mrow>
+        <msub>
+         <mover accent='true'>
+          <mi>c</mi>
+          <mo>&#x00AF;</mo>
+         </mover>
+         
+         <mtext>A</mtext>
+        </msub>
+        <mo>+</mo><msub>
+         <mover accent='true'>
+          <mi>c</mi>
+          <mo>&#x00AF;</mo>
+         </mover>
+         
+         <mtext>B</mtext>
+        </msub>
+        
+       </mrow>
+      <mo>)</mo></mrow><mi>x</mi><mo>&#x2212;</mo><msup>
+       <mi>x</mi>
+       <mn>2</mn>
+      </msup>
+      
+     </mrow> <mo>]</mo></mrow><mo>&#x2212;</mo><msub>
+      <mi>k</mi>
+      <mrow>
+       <mo>&#x2212;</mo><mn>1</mn>
+      </mrow>
+     </msub>
+     <mi>x</mi>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.20">(5.20)</p>
+<aside class="abc" style="margin-top:-8.5em;" epub:type="sidebar">
+<p class="noindent2" style="text-align:left;width:100%;">Note that the <i>x<sub>i</sub></i> can have positive or negative values, depending on the direction of the displacement from equilibrium.</p>
+</aside>
+<p class="noindent-ka"><a href="#eqn_5.20">Equation 5.20</a>, which is exact, contains a second-order term in <i>x</i><sup>2</sup>. However, under the particular conditions of chemical relaxation methods whereby the displacement from equilibrium is very small, i.e., <i>x</i> &#8810; <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>A</mn>
+  </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>B</mn>
+  </msub></mrow></math>, <i>x</i><sup>2</sup> is negligibly small compared with (<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>A</mn>
+  </msub></mrow></math> + <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>B</mn>
+  </msub></mrow></math>)<i>x</i>; thus to a good approximation</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mrow><mrow>
+      <mi>d</mi><mi>x</mi>
+     </mrow><mo>/</mo><mrow>
+      <mi>d</mi><mi>t</mi>
+     </mrow></mrow>
+     <mo>=</mo><mo>&#x2212;</mo><mrow><mo>[</mo> <mrow>
+      <mi>k</mi><mn>1</mn><mrow><mo>(</mo>
+       <mrow>
+        <msub>
+         <mover accent='true'>
+          <mi>c</mi>
+          <mo>&#x00AF;</mo>
+         </mover>
+         
+         <mtext>A</mtext>
+        </msub>
+        <mo>+</mo><msub>
+         <mover accent='true'>
+          <mi>c</mi>
+          <mo>&#x00AF;</mo>
+         </mover>
+         
+         <mtext>B</mtext>
+        </msub>
+        
+       </mrow>
+      <mo>)</mo></mrow><mo>+</mo><msub>
+       <mi>k</mi>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </msub>
+      
+     </mrow> <mo>]</mo></mrow><mi>x</mi>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.21">(5.21)</p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;" id="fig_5.6">
+<img src="../images/page64-1.jpg" alt="img"/>
+<figcaption style="text-align:left;width:100%;"><b>Fig. 5.6</b>&#160;&#160;&#160;&#160;Determination of rate constants for the system A + B &#8651; c</figcaption>
+</figure>
+</aside>
+<p class="noindent-ka">This is a first-order equation which can be written as</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mrow><mrow>
+      <mi>d</mi><mi>x</mi>
+     </mrow><mo>/</mo><mrow>
+      <mi>d</mi><mi>t</mi>
+     </mrow></mrow>
+     <mo>=</mo><mo>&#x2212;</mo><mrow><mo>(</mo>
+      <mrow>
+       <mrow><mn>1</mn><mo>/</mo><mi>&#x03C4;</mi></mrow>
+       
+      </mrow>
+     <mo>)</mo></mrow><mi>x</mi>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.22">(5.22)</p>
+<p class="noindent-ka">Where</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mrow><mn>1</mn><mo>/</mo><mi>&#x03C4;</mi></mrow>
+     <mo>=</mo><msub>
+      <mi>k</mi>
+      <mn>1</mn>
+     </msub>
+     <mrow><mo>(</mo>
+      <mrow>
+       <msub>
+        <mover accent='true'>
+         <mi>c</mi>
+         <mo>&#x00AF;</mo>
+        </mover>
+        
+        <mtext>A</mtext>
+       </msub>
+       <mo>+</mo><msub>
+        <mover accent='true'>
+         <mi>c</mi>
+         <mo>&#x00AF;</mo>
+        </mover>
+        
+        <mtext>B</mtext>
+       </msub>
+       
+      </mrow>
+     <mo>)</mo></mrow><mo>+</mo><msub>
+      <mi>k</mi>
+      <mrow>
+       <mo>&#x2212;</mo><mn>1</mn>
+      </mrow>
+     </msub>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.23">(5.23)</p>
+<p class="indent-ka">It is evident from <a href="#eqn_5.1">eqn 5.23</a> that the rate constants <i>k</i><sub>1</sub> and <i>k</i><sub>&#8722;1</sub> can be determined by finding <i>&#964;</i> experimentally at a series of reactant concentrations and plotting <i>&#964;</i><sup>&#8722;1</sup> against (<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>A</mn>
+  </msub></mrow></math> + <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>B</mn>
+  </msub></mrow></math> ), <a href="#fig_5.6">Fig. 5.6</a>; the slope gives <i>k</i><sub>1</sub> and the intercept <i>k</i><sub>&#8722;1</sub></p>
+<p class="noindent-ka"><b>Other single-step equilibria.</b> Application of the principles used to derive <a href="#eqn_5.21">eqn 5.21</a> shows that for any general equilibrium represented by</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>a</mi><mtext>A+</mtext><mi>b</mi><mtext>B+</mtext><mi>c</mi><mtext>C+&#x2026;</mtext><munderover>
+  <mo>&#x21CC;</mo>
+  <mrow>
+   <msub>
+    <mtext>k</mtext>
+    <mrow>
+     <mtext>-1</mtext>
+    </mrow>
+   </msub>
+   
+  </mrow>
+  <mrow>
+   <msub>
+    <mtext>k</mtext>
+    <mtext>1</mtext>
+   </msub>
+   
+  </mrow>
+ </munderover>
+ <mtext>&#x2026;+</mtext><mi>x</mi><mtext>X+</mtext><mi>y</mi><mtext>Y+</mtext><mi>z</mi><mtext>Z</mtext>
+</math>
+</p>
+<p class="noindent-ka">the chemical relaxation process is always of the first order, with a rate expression of the form given in <a href="#eqn_5.8">eqn 5.8</a>, provided that the perturbation is small. A compilation of the relaxation times for some common single-step equilibria is given in <a href="#tab_5.1">Table 5.1.</a></p>
+<figure class="figure-bh" style="margin-left:-7em;text-align:center;" id="tab_5.1">
+<img src="../images/page64-2.jpg" alt="img"/>
+</figure>
+
+<a id="page_65" class="page" style="width:70%;">Page 65, Fast reactions in solution</a>
+
+<p class="li-a4">&#8226;<span class="space">&#160;</span>The relaxation time expressions always contain terms for the forward and reverse reactions in an <i>additive</i> manner.</p>
+<p class="li-a4">&#8226;<span class="space">&#160;</span>All first-order reactions are represented by their rate constants only.</p>
+<p class="li-a4">&#8226;<span class="space">&#160;</span>Terms associated with higher-order reactions contain some function of the reactant concentrations as well as the rate constants; the order of their concentration dependence is always <i>n</i> &#8722; 1, where <i>n</i> is the reaction order. For the most common case, a bimolecular reaction, it is always the sum of the equilibrium concentrations of the reactants multiplied by the rate constant.</p>
+<p class="li-a4">&#8226;<span class="space">&#160;</span>When there is a concentration dependence of the relaxation time it is usually possible to determine both the forward and reverse rate constant and hence the equilibrium constant.</p>
+<p class="noindent-ka" style="margin-top:1em;"><b>Consecutive or coupled reactions.</b> Many reaction mechanisms involve more than one step and are therefore characterized by more than one relaxation time. If the intermediate states achieve measurable concentrations then several or all of the relaxation times may be observed. A very common case is that described by <a href="#eqn_5.24">eqn 5.24</a></p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mtext>A+B</mtext><munderover>
+      <mo>&#x21CC;</mo>
+      <mrow>
+       <msub>
+        <mi>K</mi>
+        <mrow>
+         <mo>&#x2212;</mo><mn>1</mn>
+        </mrow>
+       </msub>
+       
+      </mrow>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mn>1</mn>
+       </msub>
+       
+      </mrow>
+     </munderover>
+     <mtext>&#x2009;</mtext><mtext>C</mtext><munderover>
+      <mo>&#x21CC;</mo>
+      <mrow>
+       <msub>
+        <mi>K</mi>
+        <mrow>
+         <mo>&#x2212;</mo><mn>2</mn>
+        </mrow>
+       </msub>
+       
+      </mrow>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mn>2</mn>
+       </msub>
+       
+      </mrow>
+     </munderover>
+     <mtext>D</mtext>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-3em;width:70%;" id="eqn_5.24">(5.24)</p>
+<p class="noindent-ka">It may represent metal ion complex formation via an outer-sphere complex (<a href="Chapter04.xhtml#ch04">Ch. 4</a>, <a href="Chapter04.xhtml#sec_4.3">Sect. 4.3</a>), or one of numerous examples of chemical reactions in which one of the components is involved in an acid-base equilibrium; for example, the lactol formation of <i>o</i>-formylbenzoic acid (McClelland and S&#248;rensen 1986)</p>
+<figure class="figure-bh" style="margin-left:8.5em;">
+<img src="../images/page65-1.jpg" alt="img"/>
+</figure>
+<p class="indent-ka">In the particular case of a fast reaction (the first step in the above example) coupled to a slow reaction, the short relaxation time can be calculated without taking into account the slow process, i.e.,</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mrow><mn>1</mn><mo>/</mo><mrow>
+      <msub>
+       <mi>&#x03C4;</mi>
+       <mn>1</mn>
+      </msub>
+      <mo>=</mo><msub>
+       <mi>k</mi>
+       <mn>1</mn>
+      </msub>
+      <mrow><mo>(</mo>
+       <mrow>
+        <msub>
+         <mover accent='true'>
+          <mi>c</mi>
+          <mo>&#x00AF;</mo>
+         </mover>
+         
+         <mtext>A</mtext>
+        </msub>
+        <mo>+</mo><msub>
+         <mover accent='true'>
+          <mi>c</mi>
+          <mo>&#x00AF;</mo>
+         </mover>
+         
+         <mtext>B</mtext>
+        </msub>
+        
+       </mrow>
+      <mo>)</mo></mrow><mo>+</mo><msub>
+       <mi>k</mi>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </msub>
+      
+     </mrow></mrow>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.25">(5.25)</p>
+<p class="noindent-ka">However, in the slow reaction all species are involved either directly or indirectly through the rapid equilibration of the first step. Reduction to one variable (most conveniently the displacement of D from its equilibrium position) is achieved through a combination of mass balance and the equilibrium position of the fast process to give the result</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mrow><mn>1</mn><mo>/</mo><mi>&#x03C4;</mi></mrow>
+     <mo>=</mo><msub>
+      <mi>k</mi>
+      <mn>2</mn>
+     </msub>
+     <mfrac>
+      <mrow>
+       <msub>
+        <mi>K</mi>
+        <mn>1</mn>
+       </msub>
+       <mrow><mo>(</mo>
+        <mrow>
+         <msub>
+          <mover accent='true'>
+           <mi>c</mi>
+           <mo>&#x00AF;</mo>
+          </mover>
+          
+          <mtext>A</mtext>
+         </msub>
+         <mo>+</mo><msub>
+          <mover accent='true'>
+           <mi>c</mi>
+           <mo>&#x00AF;</mo>
+          </mover>
+          
+          <mtext>B</mtext>
+         </msub>
+         
+        </mrow>
+       <mo>)</mo></mrow>
+      </mrow>
+      <mrow>
+       <mn>1</mn><mo>+</mo><msub>
+        <mi>K</mi>
+        <mn>1</mn>
+       </msub>
+       <mrow><mo>(</mo>
+        <mrow>
+         <msub>
+          <mover accent='true'>
+           <mi>c</mi>
+           <mo>&#x00AF;</mo>
+          </mover>
+          
+          <mtext>A</mtext>
+         </msub>
+         <mo>+</mo><msub>
+          <mover accent='true'>
+           <mi>c</mi>
+           <mo>&#x00AF;</mo>
+          </mover>
+          
+          <mtext>B</mtext>
+         </msub>
+         
+        </mrow>
+       <mo>)</mo></mrow>
+      </mrow>
+     </mfrac>
+     <mo>+</mo><msub>
+      <mi>k</mi>
+      <mrow>
+       <mo>&#x2212;</mo><mn>2</mn>
+      </mrow>
+     </msub>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-3em;width:70%;" id="eqn_5.26">(5.26)</p>
+<p class="noindent-ka">where <i>K</i><sub>1</sub> is the equilibrium constant for the fast step (Problem 5.3).</p>
+
+<a id="page_66" class="page" style="width:70%;">Page 66, Fast reactions in solution</a>
+
+<p class="indent-ka">The concentration dependence of the relaxation time is illustrated in <a href="#fig_5.7">Fig. 5.7</a>, which shows that in principle the rate constants <i>k</i><sub>2</sub> and <i>k</i><sub>&#8722;2</sub> and the equilibrium constant <i>K</i><sub>1</sub> can be determined from a plot of 1/&#964;<sub>2</sub> against (<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>A</mn>
+  </msub></mrow></math> + <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>B</mn>
+  </msub></mrow></math>). It might be noted that where <i>K</i><sub>1</sub> is low, or where reactions are investigated at concentrations such that <i>K</i><sub>1</sub>(<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>A</mn>
+  </msub></mrow></math> + <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>c</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>B</mn>
+  </msub></mrow></math>) &#8810; 1, the relaxation expression is identical in form to that of a single-step equilibrium A + B &#8651; D; the apparent forward rate constant is, however, equal to <i>k</i><sub>2</sub><i>K</i><sub>1</sub> This situation pertains to many metal ion complexation reactions, for which the constant <i>K</i><sub>1</sub> corresponds to the equilibrium constant for outer-sphere complex formation (<a href="Chapter04.xhtml#ch04">Ch. 4</a>, <a href="Chapter04.xhtml#sec_4.3">Sect. 4.3</a>).</p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;" id="fig_5.7">
+<img src="../images/page66-1.jpg" alt="img"/>
+<figcaption style="text-align:left;width:100%;"><b>Fig. 5.7</b>&#160;&#160;&#160;&#160;Relaxation time for the slow step in coupled equilibria.</figcaption>
+</figure>
+</aside>
+<p class="indent-ka">The above treatment is only permissible if <i>&#964;</i><sub>2</sub> &#62; 10<i>&#964;</i><sub>1</sub>. Where two (or more) consecutive reactions occur with comparable relaxation times, they cannot be treated separately. Rather a set of normal relaxation times are observed, arising from linear combinations of the various displacements from equilibrium. These are exactly equivalent to the normal modes in vibrational spectroscopy which arise from the coupled motion of the individual atoms. A full treatment of coupled equilibria is given elsewhere (Strehlow 1992, Ch. 4; Bernasconi 1976, Chs. 3, 4).</p>
+<p class="noindent-ka">&#160;</p>
+<h3 class="h3">Jump methods</h3>
+<p class="noindent-ka"><b>Temperature-jump.</b> The temperature-jump (T-jump) method is probably the most versatile and widely used of all relaxation methods. Most chemical equilibria are quite temperature-dependent, and the rate of change of the equilibrium constant with temperature depends upon the standard enthalpy of reaction, &#916;<i>H</i><sup>0</sup>, <a href="#eqn_5.27">eqn 5.27</a>.</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msub>
+      <mrow>
+       <mrow><mo>(</mo>
+        <mrow>
+         <mfrac>
+          <mrow>
+           <mo>&#x2202;</mo><mi>ln</mi><mtext>&#x2009;</mtext><mi>K</mi>
+          </mrow>
+          <mrow>
+           <mo>&#x2202;</mo><mi>T</mi>
+          </mrow>
+         </mfrac>
+         
+        </mrow>
+       <mo>)</mo></mrow>
+      </mrow>
+      <mi>P</mi>
+     </msub>
+     <mo>=</mo><mfrac>
+      <mrow>
+       <mi>&#x0394;</mi><msup>
+        <mi>H</mi>
+        <mn>0</mn>
+       </msup>
+       
+      </mrow>
+      <mrow>
+       <mi>R</mi><msup>
+        <mi>T</mi>
+        <mn>2</mn>
+       </msup>
+       
+      </mrow>
+     </mfrac>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-3em;width:70%;" id="eqn_5.27">(5.27)</p>
+<p class="noindent-ka">Even in the unlikely event that the enthalpy change is zero, the system can still often be perturbed by coupling it to another temperature-dependent equilibrium, such as a buffer with a strongly temperature-dependent ionization constant.</p>
+<p class="indent-ka">The most common method of producing a rapid temperature change is by passing a high current of short duration through an electrolyte solution via the discharge of a high-voltage capacitor (Joule heating). The friction of the ions moving in the electric field causes a rapid rise in temperature. The principle of the apparatus with spectrophotometric detection is outlined in <a href="#fig_5.8">Fig. 5.8</a>.</p>
+<figure class="figure-bh" style="margin-left:0em;" id="fig_5.8">
+<img src="../images/page66-2.jpg" alt="img"/>
+<figcaption style="text-align:left;width:70%;"><b>Fig. 5.8</b>&#160;&#160;&#160;&#160;Temperature-jump apparatus: HV, high-voltage power supply; C, capacitor; G, spark gap; L, light source; M, monochromator; S, cell; P, photodetector.</figcaption>
+</figure>
+
+<a id="page_67" class="page" style="width:70%;">Page 67, Fast reactions in solution</a>
+
+<p class="indent-ka">The capacitor, C, is charged to a high voltage, <i>U</i><sub>0</sub>, and the spark gap, G, is then fired, so that C discharges through the cell, S, containing the solution under investigation. The main requirements of the apparatus are apparent in the factors governing the rate and magnitude of the temperature rise. The temperature rises exponentially with a heating time constant <i>&#964;</i> = <i>RC</i>/2, where <i>R</i> is the cell resistance and <i>C</i> is the capacitance of the capacitor; the magnitude of the rise is proportional to the energy of the discharge, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>C</mi><msubsup>
+   <mi>U</mi>
+   <mn>0</mn>
+   <mn>2</mn>
+  </msubsup>
+  <mo>/</mo><mn>2</mn>
+ </mrow>
+</math>
+ Taken together, these show that the most favourable results are achieved with a small capacitance and a low solution resistance (fast discharge of C), and a high voltage, <i>U</i><sub>0</sub> (reasonable temperature rise). The low resistance is achieved by adding an inert electrolyte to the cell, and typical values of the various parameters are: <i>C</i> = 0.1<i>&#956;</i>F, <i>U</i><sub>0</sub> = 30 kV, <i>R</i> = 50&#937;. Such a combination will produce a temperature rise of about 5&#x00B0;C with a heating time constant of 2.5 <i>&#956;</i>s for a 2 ml cell containing an aqueous solution. The corresponding change in equilibrium constant (<a href="#eqn_5.27">eqn 5.27</a>) is about 6 % for a normal proton-transfer reaction with &#916;<i>H</i><sub>0</sub> = 10 kJ mol<sup>&#8722;1</sup>.</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="figure-bh" style="margin-left:0em;" id="fig_5.9">
+<img src="../images/page67-1.jpg" alt="img"/>
+<figcaption style="text-align:left;width:100%;"><b>Fig. 5.9</b>&#160;&#160;&#160;&#160;Temperature-jump cell for light absorption measurement. The electrodes E are platinized and the lenses Q are made of quartz.</figcaption>
+</figure>
+</aside>
+<p class="indent-ka">A typical T-jump cell (<a href="#fig_5.9">Fig. 5.9</a>) has a volume of a few ml and an optical path length of 1 cm. The incident light is focused in the middle of the cell using quartz lenses Q. The volume heated is greater than that needed for observation so that a uniform temperature increase is produced.</p>
+<p class="indent-ka">The shortest relaxation time measurable with this technique is about 1 <i>&#956;</i>s the time needed to heat the solution. This can be reduced to about 5 &#215; 10<sup>&#8722;8</sup> s by using a coaxial cable as capacitor, from which a rectangular pulse can be obtained rather than the more usual exponentially decaying one. The longest time is about 0.1 s, beyond which reactions are disturbed by the cooling of the solution after the temperature jump. The main limitations of the Joule heating method are the necessity for highly conducting solutions and high electric fields (which can be detrimental to biological structures), and restrictions on the time-range.</p>
+<p class="indent-ka">Some of the limitations can be avoided by using optical heating, which is achieved most effectively using very short laser pulses (10<sup>&#8722;8</sup>&#8722;10<sup>&#8722;9</sup> s). A good example is the iodine laser jump technique of Holtzwarth <i>et ai</i> (1977) which uses a powerful iodine laser with an emission wavelength 1.315 <i>&#956;</i>m and a pulse width between 150 ps and 5 <i>&#956;</i>s. The major advantage of this wavelength is that water absorbs strongly in this region and temperature rises of 1&#x00B0;C in the order of nanoseconds can be produced without the necessity for any added dyes to absorb the light energy. Such equipment is expensive and not widely available, but the technique clearly shows promise for observing relaxation processes in the nanosecond time region.</p>
+<p class="noindent-ka"><b>Pressure-jump.</b> The dependence of the equilibrium constant upon pressure, eqn</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msub>
+      <mrow>
+       <mrow><mo>(</mo>
+        <mrow>
+         <mfrac>
+          <mrow>
+           <mo>&#x2202;</mo><mi>ln</mi><mi>K</mi>
+          </mrow>
+          <mrow>
+           <mo>&#x2202;</mo><mi>P</mi>
+          </mrow>
+         </mfrac>
+         
+        </mrow>
+       <mo>)</mo></mrow>
+      </mrow>
+      <mi>T</mi>
+     </msub>
+     <mo>=</mo><mo>&#x2212;</mo><mfrac>
+      <mrow>
+       <mi>&#x0394;</mi><msup>
+        <mi>V</mi>
+        <mn>0</mn>
+       </msup>
+       
+      </mrow>
+      <mrow>
+       <mi>R</mi><mi>T</mi>
+      </mrow>
+     </mfrac>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-3em;width:70%;" id="eqn_5.28">(5.28)</p>
+<p class="noindent-ka">where &#916;<i>V</i><sup>0</sup> is the volume change accompanying the reaction in question, is the basis of the pressure-jump (P-jump) technique. In most applications the progress of the reaction is observed conductimetrically. It is difficult to achieve a large pressure change (typically 100-200 atm., l&#8722;2 &#215; 10<sup>7</sup> N m<sup>&#8722;2</sup>) in less than <a id="page_68" class="page">Page 68, Fast reactions in solution</a>about 50 <i>&#181;</i>s, and this time effectively defines the lower time limit of the apparatus; there are no limitations to longer times. The technique is ideally suited to the study of complexation reactions of high-charge-density cations such as Be<sup>2&#x002B;</sup> and Al<sup>3&#x002B;</sup>.</p>
+<p class="noindent"><b>Field-jump.</b> A third single-displacement method employed in the study of fast reactions is the field-jump method. This is based upon the increase in dissociation of weak electrolytes on application of an electric field. The theory of this effect, known as the second Wien effect, was developed by Onsager (1934), who showed that the equilibrium constant for a reaction A<i><sup>zl</sup></i> &#x002B; <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msup>
+   <mtext>A</mtext>
+   <mrow>
+    <mi>z</mi><mn>1</mn>
+   </mrow>
+  </msup>
+  <mo>+</mo><msup>
+   <mtext>B</mtext>
+   <mrow>
+    <mi>z</mi><mn>2</mn>
+   </mrow>
+  </msup>
+  <mo>&#x21C4;</mo><mtext>&#x2009;</mtext><msup>
+   <mtext>C</mtext>
+   <mrow>
+    <mi>z</mi><mn>1</mn><mo>+</mo><mi>z</mi><mn>2</mn>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+ varies with electric field strength <i>E</i> according to</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mfrac>
+      <mrow>
+       <mi>d</mi><mi>ln</mi><mi>K</mi>
+      </mrow>
+      <mrow>
+       <mi>d</mi><mrow><mo>|</mo> <mi>E</mi> <mo>|</mo></mrow>
+      </mrow>
+     </mfrac>
+     <mo>=</mo><mfrac>
+      <mrow>
+       <mrow><mo>|</mo> <mrow>
+        <msub>
+         <mi>z</mi>
+         <mn>1</mn>
+        </msub>
+        <msub>
+         <mi>&#x03BB;</mi>
+         <mn>1</mn>
+        </msub>
+        <mo>&#x2212;</mo><msub>
+         <mi>z</mi>
+         <mn>2</mn>
+        </msub>
+        <msub>
+         <mi>&#x03BB;</mi>
+         <mn>2</mn>
+        </msub>
+        
+       </mrow> <mo>|</mo></mrow>
+      </mrow>
+      <mrow>
+       <msub>
+        <mi>&#x03BB;</mi>
+        <mn>1</mn>
+       </msub>
+       <mo>+</mo><msub>
+        <mi>&#x03BB;</mi>
+        <mn>2</mn>
+       </msub>
+       
+      </mrow>
+     </mfrac>
+     <mfrac>
+      <mrow>
+       <mrow><mo>|</mo> <mrow>
+        <msub>
+         <mi>z</mi>
+         <mn>1</mn>
+        </msub>
+        <msub>
+         <mi>z</mi>
+         <mn>2</mn>
+        </msub>
+        
+       </mrow> <mo>|</mo></mrow><msup>
+        <mi>e</mi>
+        <mn>3</mn>
+       </msup>
+       
+      </mrow>
+      <mrow>
+       <mn>8</mn><mi>&#x03C0;</mi><msub>
+        <mo>&#x2208;</mo>
+        <mn>0</mn>
+       </msub>
+       <mo>&#x2208;</mo><msubsup>
+        <mi>k</mi>
+        <mi>B</mi>
+        <mn>2</mn>
+       </msubsup>
+       <msup>
+        <mi>T</mi>
+        <mn>2</mn>
+       </msup>
+       
+      </mrow>
+     </mfrac>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-3em;width:70%;" id="eqn_5.29">(5.29)</p>
+<p class="noindent">where <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03BB;</mi>
+   <mn>1</mn>
+  </msub>
+  
+ </mrow>
+</math>
+
+ and <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03BB;</mi>
+   <mn>2</mn>
+  </msub>
+  
+ </mrow>
+</math>
+
+ are the mobilities of A and B, <i>z<sub>i</sub></i> is the ionic charge, and <i>e</i> is the charge on an electron.</p>
+<p class="indent-ka">The voltage is applied by discharge of a high-voltage condenser, but, in contrast to the T-jump technique, the solution under study must have a high resistance in order to maintain a constant field for the duration of the experiment. Very high electrical field strengths, of the order of 10<sup>5</sup> V cm<sup>&#8722;1</sup>, are required to obtain measurable changes in the degree of ionization. The technique is of particular historical significance as it was used to determine the rate constant for the fastest known protolytic reaction&#x2014;the formation of water from H<sup>&#x002B;</sup> and OH<sup>&#8722;</sup> (Eigen and De Maeyer 1955).</p>
+<h3 class="h3">Stationary methods (ultrasonic absorption)</h3>
+
+<p class="noindent">For very fast reactions it is often advantageous to use a stationary perturbation, which imposes a periodic variation of the external parameter, rather than a single jump. In practice, most applications of stationary relaxation methods have involved sinusoidal perturbations, especially the sinusoidal pressure and temperature changes accompanying the passage of sound waves through a liquid. Ultrasonic techniques span a frequency range of about 10<sup>4</sup>&#8722;10<sup>9</sup> Hz and beyond (<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03C4;</mi>
+</math>
+ ~ 10<sup>&#8722;</sup><sup>5</sup>&#8722;10<sup>&#8722;</sup><sup>10</sup> s) and have the advantage that there are no restrictions on the types of equilibrium which can be studied.</p>
+<p class="indent-ka">The principle is illustrated in <a href="#fig_5.10">Fig. 5.10</a> for the application of a sound wave to a solution containing an equilibrium. The chemical relaxation is observed in the steady state over many periods of the perturbation. In the presence of the sound wave, the pressure <i>P</i> in the solution oscillates sinusoidally, i.e.,</p>
+
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.10">
+ <img src="../images/page68-2.jpg" alt="images"/>
+<figcaption><b>Fig. 5.10</b> Concentration changes resulting from a continuous-wave perturbation.</figcaption>
+</figure>
+</aside>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mi>P</mi><mo>=</mo><msub>
+      <mi>P</mi>
+      <mn>0</mn>
+     </msub>
+     <mi>sin</mi><mi>&#x03C9;</mi><mi>t</mi>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.30">(5.30)</p>
+
+<p class="noindent">where <i>&#x03C9;</i> &#x003D; 27<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C0;</mi><mi>&#x03BD;</mi>
+ </mrow>
+</math>
+ is the angular frequency <i>(v</i> &#x003D; frequency) and <i>P</i><sub>0</sub> is the amplitude. This is shown in the upper curve. The equilibrium will attempt to follow this change (lower curves). At sufficiently low frequency (<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C9;</mi><mi>&#x03C4;</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>&#x226A;</mo><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mn>1</mn>
+ </mrow>
+</math>
+) the equilibrium will alter exactly in phase with the pressure change with the perturbation, i.e., the shifts in the reactant concentrations, <i>x</i>, remain at their equilibrium values, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mover accent='true'>
+  <mi>x</mi>
+  <mo>&#x00AF;</mo>
+ </mover>
+ 
+</math>
+, curve 1. As the frequency increases, the shift in equilibrium will increasingly lag behind the pressure (e.g., curve 2, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C9;</mi><mi>&#x03C4;</mi>
+ </mrow>
+</math>
+ &#x003D; 1). The <a id="page_69" class="page">page 69, Fast reactions in solution</a>shift is of lower amplitude than in curve 1 (<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>x</mi>
+   <mn>0</mn>
+  </msub>
+  <mtext>&#x2009;</mtext><mo>&#x003C;</mo><mtext>&#x2009;</mtext><msub>
+   <mover accent='true'>
+    <mi>x</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>0</mn>
+  </msub>
+  
+ </mrow>
+</math>
+), and is out of phase with the pressure change. This phase difference leads to dissipation of sound energy as heat, and so to absorption of power from the sound wave. The energy loss per cycle increases and attains a maximum value at an angular frequency <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C9;</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>1</mn><mtext>&#x2009;</mtext><mo>/</mo><mi>&#x03C4;</mi>
+ </mrow>
+</math>
+. As the frequency increases further, the lag continues to increase, but the decreasing amplitude begins to dominate and the absorption falls again; at the high frequency extreme (<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C9;</mi><mtext>&#x2009;</mtext><mi>&#x03C4;</mi><mtext>&#x2009;</mtext><mo>&#x226B;</mo><mtext>&#x2009;</mtext><mn>1</mn>
+ </mrow>
+</math>
+, curve 3) little shift in equilibrium occurs.</p>
+<p class="indent-ka">Clearly, the most interesting situation is that in which <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C4;</mi><mtext>&#x2009;</mtext><mo>&#x223C;</mo><mtext>&#x2009;</mtext><mn>1</mn><mtext>&#x2009;</mtext><mo>/</mo><mtext>&#x2009;</mtext><mi>&#x03C9;</mi>
+ </mrow>
+</math>
+ and two important features should be emphasized: first, the concentrations do not reach their equilibrium values and hence the amplitude of the variation is damped, and secondly, there is a time-lag between the actual concentrations and the perturbation.</p>
+<p class="indent-ka">For a single relaxation process the absorption per cycle, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03BC;</mi>
+</math>
+ varies with frequency as in <a href="#fig_5.11">Fig. 5.11</a>; it is proportional to <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C9;</mi><mi>&#x03C4;</mi><mtext>&#x2009;</mtext><mo>/</mo><mo stretchy='false'>(</mo><mn>1</mn><mo>+</mo><msup>
+   <mi>&#x03C9;</mi>
+   <mn>2</mn>
+  </msup>
+  <msup>
+   <mi>&#x03C4;</mi>
+   <mn>2</mn>
+  </msup>
+  <mo stretchy='false'>)</mo>
+ </mrow>
+</math>
+ (see below). This function has a maximum value of 1/2 when <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C9;</mi><mi>&#x03C4;</mi><mtext>&#x2009;</mtext>
+ </mrow>
+</math>
+= 1, and thus the equation describing the curve is</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mi>&#x03BC;</mi><mo>=</mo><mn>2</mn><msub>
+      <mi>&#x03BC;</mi>
+      <mrow>
+       <mi>max</mi>
+      </mrow>
+     </msub>
+     <mrow><mrow>
+      <mi>&#x03C9;</mi><mi>&#x03C4;</mi>
+     </mrow><mo>/</mo><mrow>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mn>1</mn><mo>+</mo><msup>
+         <mi>&#x03C9;</mi>
+         <mn>2</mn>
+        </msup>
+        <msup>
+         <mi>&#x03C4;</mi>
+         <mn>2</mn>
+        </msup>
+        
+       </mrow>
+      <mo>)</mo></mrow>
+     </mrow></mrow>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.31">(5.31)</p>
+<p class="noindent">where <i>&#x03BC;</i><sub>max</sub> is the maximum value of <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03BC;</mi>
+</math>.
+ If the frequency for maximum absorption is denoted <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03C5;</mi>
+   <mrow>
+    <mi>c</mi><mtext>&#x2009;</mtext>
+   </mrow>
+  </msub>
+  <mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msub>
+   <mi>&#x03C9;</mi>
+   <mi>c</mi>
+  </msub>
+  <mtext>&#x2009;</mtext><mo>/</mo><mn>2</mn><mi>&#x03C0;</mi>
+ </mrow>
+</math>
+ then <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03C4;</mi>
+</math>
+ is given by <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C4;</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>1</mn><mtext>&#x2009;</mtext><mo>/</mo><msub>
+   <mi>&#x03C9;</mi>
+   <mi>c</mi>
+  </msub>
+  
+ </mrow>
+</math>
+.</p>
+<p class="indent-ka">For a single relaxation the displacement from equilibrium <i>x</i> will tend towards its equilibrium value, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mover accent='true'>
+   <mi>x</mi>
+   <mo>&#x00AF;</mo>
+  </mover>
+  <mtext>&#x2009;</mtext>
+ </mrow>
+</math>
+ according to <a href="#eqn_5.32">eqn 5.32</a></p>
+
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.11">
+ <img src="../images/page69-7.jpg" alt="images"/>
+<figcaption style="text-align:left;width:100%;"><b>Fig. 5.11</b> Sound absorption per cycle for a single relaxation.</figcaption>
+</figure>
+</aside>
+
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mrow><mrow>
+      <mi>d</mi><mi>x</mi>
+     </mrow><mo>/</mo><mrow>
+      <mi>d</mi><mi>t</mi>
+     </mrow></mrow>
+     <mo>=</mo><mo>&#x2212;</mo><mrow><mo>(</mo>
+      <mrow>
+       <mrow><mn>1</mn><mo>/</mo><mi>&#x03C4;</mi></mrow>
+       
+      </mrow>
+     <mo>)</mo></mrow><mrow><mo>(</mo>
+      <mrow>
+       <mi>x</mi><mo>&#x2212;</mo><mover accent='true'>
+        <mi>x</mi>
+        <mo>&#x00AF;</mo>
+       </mover>
+       
+      </mrow>
+     <mo>)</mo></mrow>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.32">(5.32)</p>
+<p class="indent-ka">For a sinusoidal variation, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mover accent='true'>
+   <mi>x</mi>
+   <mo>&#x00AF;</mo>
+  </mover>
+  <mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msub>
+   <mover accent='true'>
+    <mi>x</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>0</mn>
+  </msub>
+  
+ </mrow>
+</math>
+ sin <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C9;</mi><mi>&#x03C4;</mi>
+ </mrow>
+</math>
+, hence</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mrow><mrow>
+      <mi>d</mi><mi>x</mi>
+     </mrow><mo>/</mo><mrow>
+      <mi>d</mi><mi>t</mi>
+     </mrow></mrow>
+     <mo>=</mo><mo>&#x2212;</mo><mrow><mo>(</mo>
+      <mrow>
+       <mrow><mn>1</mn><mo>/</mo><mi>&#x03C4;</mi></mrow>
+       
+      </mrow>
+     <mo>)</mo></mrow><mrow><mo>(</mo>
+      <mrow>
+       <mi>x</mi><mo>&#x2212;</mo><msub>
+        <mover accent='true'>
+         <mi>x</mi>
+         <mo>&#x00AF;</mo>
+        </mover>
+        
+        <mn>0</mn>
+       </msub>
+       <mi>sin</mi><mi>&#x03C9;</mi><mi>&#x03C4;</mi>
+      </mrow>
+     <mo>)</mo></mrow>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.33">(5.33)</p>
+<p class="noindent">In the steady state, which is reached after a few initial cycles, the solution to <a href="#eqn_5.33">eqn 5.33</a> can be written as follows:</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mi>x</mi><mo>=</mo>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mfrac>
+      <mn>1</mn>
+      <mrow>
+       <mrow><mo>(</mo>
+        <mrow>
+         <mn>1</mn><mo>+</mo><msup>
+          <mi>&#x03C9;</mi>
+          <mn>2</mn>
+         </msup>
+         <msup>
+          <mi>&#x03C4;</mi>
+          <mn>2</mn>
+         </msup>
+         
+        </mrow>
+       <mo>)</mo></mrow>
+      </mrow>
+     </mfrac>
+     <msub>
+      <mover accent='true'>
+       <mi>x</mi>
+       <mo>&#x00AF;</mo>
+      </mover>
+      
+      <mn>0</mn>
+     </msub>
+     <mi>sin</mi><mi>&#x03C9;</mi><mi>&#x03C4;</mi><mo>&#x2212;</mo>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mfrac>
+      <mrow>
+       <mi>&#x03C9;</mi><mi>&#x03C4;</mi>
+      </mrow>
+      <mrow>
+       <mrow><mo>(</mo>
+        <mrow>
+         <mn>1</mn><mo>+</mo><msup>
+          <mi>&#x03C9;</mi>
+          <mn>2</mn>
+         </msup>
+         <msup>
+          <mi>&#x03C4;</mi>
+          <mn>2</mn>
+         </msup>
+         
+        </mrow>
+       <mo>)</mo></mrow>
+      </mrow>
+     </mfrac>
+     <msub>
+      <mover accent='true'>
+       <mi>x</mi>
+       <mo>&#x00AF;</mo>
+      </mover>
+      
+      <mn>0</mn>
+     </msub>
+     <mi>cos</mi><mi>&#x03C9;</mi><mi>&#x03C4;</mi>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-3em;width:70%;" id="eqn_5.34">(5.34)</p>
+<p class="noindent">It consists of two terms: the first represents a variation in phase with <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mover accent='true'>
+  <mi>x</mi>
+  <mo>&#x00AF;</mo>
+ </mover>
+ 
+</math>, the second a variation exactly out of phase with
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mover accent='true'>
+  <mi>x</mi>
+  <mo>&#x00AF;</mo>
+ </mover>
+ 
+</math>
+
+. It is this out-of-phase term which is responsible for the absorption of energy, and the absorption per cycle is proportional to the amplitude of this term, i.e.,</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03BC;</mi><mtext>&#x2009;</mtext><mi>&#x03B1;</mi><mtext>&#x2009;</mtext><mrow><mrow>
+  <mi>&#x03C9;</mi><mi>&#x03C4;</mi>
+ </mrow><mo>/</mo><mrow>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mn>1</mn><mo>+</mo><msup>
+     <mi>&#x03C9;</mi>
+     <mn>2</mn>
+    </msup>
+    <msup>
+     <mi>&#x03C4;</mi>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow></mrow>
+ 
+</math>
+</p>
+
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="noindent2">The equivalence equations can readily beshown via standard trigonometric functions: sin(<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C9;</mi><mi>&#x03C4;</mi><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mi>&#x03C6;</mi>
+ </mrow>
+</math>
+) = cos <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03C6;</mi>
+</math>
+ sin <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C9;</mi><mi>&#x03C4;</mi>
+ </mrow>
+</math>
+
+ - sin <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03C6;</mi>
+</math> cos <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C9;</mi><mi>&#x03C4;</mi>
+ </mrow>
+</math> with sin <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C6;</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mi>&#x03C9;</mi><mo>/</mo><msup>
+   <mrow>
+    <mo stretchy='false'>(</mo><mn>1</mn><mo>+</mo><msup>
+     <mi>&#x03C9;</mi>
+     <mn>2</mn>
+    </msup>
+    <msup>
+     <mi>&#x03C4;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mrow>
+    <mn>1</mn><mo>/</mo><mn>2</mn>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+ and cos <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C6;</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>1</mn><mo>/</mo><mi>&#x03C4;</mi><msup>
+   <mrow>
+    <mo stretchy='false'>(</mo><mn>1</mn><mo>+</mo><msup>
+     <mi>&#x03C9;</mi>
+     <mn>2</mn>
+    </msup>
+    <msup>
+     <mi>&#x03C4;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mrow>
+    <mn>1</mn><mo>/</mo><mn>2</mn>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+. Substitution of either equation into <a href="#eqn_5.33">eqn 5.33</a> will verify them as solutions.</p>
+</aside>
+
+<p class="noindent">This was stated without proof in <a href="#eqn_5.31">eqn 5.31</a>.</p>
+<p class="indent-ka">The solution can also be written in an alternative but equivalent form</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mi>x</mi><mo>=</mo><mfrac>
+      <mn>1</mn>
+      <mrow>
+       <msup>
+        <mrow>
+         <mrow><mo>(</mo>
+          <mrow>
+           <mn>1</mn><mo>+</mo><msup>
+            <mi>&#x03C9;</mi>
+            <mn>2</mn>
+           </msup>
+           <msup>
+            <mi>&#x03C4;</mi>
+            <mn>2</mn>
+           </msup>
+           
+          </mrow>
+         <mo>)</mo></mrow>
+        </mrow>
+        <mrow>
+         <mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow>
+         
+        </mrow>
+       </msup>
+       
+      </mrow>
+     </mfrac>
+     <msub>
+      <mover accent='true'>
+       <mi>x</mi>
+       <mo>&#x00AF;</mo>
+      </mover>
+      
+      <mn>0</mn>
+     </msub>
+     <mi>sin</mi><mrow><mo>(</mo>
+      <mrow>
+       <mi>&#x03C9;</mi><mi>&#x03C4;</mi><mo>&#x2212;</mo><mi>&#x03C6;</mi>
+      </mrow>
+     <mo>)</mo></mrow>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.35">(5.35)</p>
+<p class="noindent">where tan <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C6;</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mi>&#x03C9;</mi><mi>t</mi>
+ </mrow>
+</math>
+. This shows very clearly that the shift in equilibrium varies sinusoidally with the same frequency as the perturbation, but with a phase lag <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03C6;</mi>
+</math>
+ and an amplitude which varies between  <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>x</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mn>0</mn>
+  </msub>
+  <mo stretchy='false'>(</mo><mi>&#x03C9;</mi><mi>&#x03C4;</mi><mtext>&#x2009;</mtext><mo>&#x226A;</mo><mtext>&#x2009;</mtext><mn>1</mn><mo stretchy='false'>)</mo><mtext>&#x2009;</mtext>
+ </mrow>
+</math>
+ and zero <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mo stretchy='false'>(</mo><mi>&#x03C9;</mi><mi>&#x03C4;</mi><mtext>&#x2009;</mtext><mo>&#x226B;</mo><mtext>&#x2009;</mtext><mn>1</mn><mo stretchy='false'>)</mo><mtext>&#x2009;</mtext>
+ </mrow>
+</math>
+.</p>
+
+
+
+<a id="page_70" class="page" style="width:70%;">page 70, Fast reactions in solution</a>
+
+
+<p class="indent-ka">In practice it is more usual to express the absorption in terms of the absorption per cm, a, rather than the absorption per cycle, &#181;. a is defined analogously to optical absorption according to</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mi>P</mi><mo>=</mo><msub>
+      <mi>P</mi>
+      <mn>0</mn>
+     </msub>
+     <msup>
+      <mtext>e</mtext>
+      <mrow>
+       <mo>&#x2212;</mo><mi>&#x03B1;</mi><mi>z</mi>
+      </mrow>
+     </msup>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mtext>or</mtext>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mi>ln</mi><mrow><mo>(</mo>
+      <mrow>
+       <mrow><mrow>
+        <msub>
+         <mi>P</mi>
+         <mn>0</mn>
+        </msub>
+        
+       </mrow><mo>/</mo><mi>P</mi></mrow>
+       
+      </mrow>
+     <mo>)</mo></mrow><mo>=</mo><mi>&#x03B1;</mi><mi>z</mi>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.36">(5.36)</p>
+
+<p class="noindent">where P is the observed amplitude at the cell exit, Po the input amplitude from the acoustic oscillator, and z is the distance travelled through the solution, a and &#181; are simply related through the wavelength of the sound: <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03BC;</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mi>&#x03B1;</mi><mi>&#x03BB;</mi><mo>=</mo><mi>&#x03B1;</mi><mi>c</mi><mo>/</mo><mi>&#x03C5;</mi>
+ </mrow>
+</math>
+, where <i>c</i> is the velocity of the sound wave. Substituting into <a href="#eqn_5.31">eqn 5.31</a> and rearranging leads to <a href="#eqn_5.37">eqn 5.37</a> for the absorption of sound:</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mfrac>
+      <mi>&#x03B1;</mi>
+      <mrow>
+       <msup>
+        <mi>v</mi>
+        <mn>2</mn>
+       </msup>
+       
+      </mrow>
+     </mfrac>
+     <mo>=</mo><mfrac>
+      <mi>A</mi>
+      <mrow>
+       <mn>1</mn><mo>+</mo><mn>4</mn><msup>
+        <mi>&#x03C0;</mi>
+        <mn>2</mn>
+       </msup>
+       <msup>
+        <mi>v</mi>
+        <mn>2</mn>
+       </msup>
+       <msup>
+        <mi>&#x03C4;</mi>
+        <mn>2</mn>
+       </msup>
+       
+      </mrow>
+     </mfrac>
+     <mo>+</mo><mi>B</mi>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-3em;width:70%;" id="eqn_5.37">(5.37)</p>
+<p class="noindent">where <i>A</i> and <i>B</i> are constants. The constant <i>B</i> has been added to account for background absorption by the solvent, which is proportional to the square of the frequency&#8211;it arises from heat conductance and viscosity. <a href="#fig_5.12">Figure 5.12</a> shows a plot of <a href="#eqn_5.37">eqn 5.37</a>. To investigate a suspected relaxation, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03B1;</mi><mo>/</mo><msup>
+   <mi>&#x03C5;</mi>
+   <mn>2</mn>
+  </msup>
+  
+ </mrow>
+</math>
+ is measured at low and high frequencies, and where a decrease is seen, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03B1;</mi><mo>/</mo><msup>
+   <mi>&#x03C5;</mi>
+   <mn>2</mn>
+  </msup>
+  
+ </mrow>
+</math>
+ is then measured over the whole frequency range; <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03C4;</mi>
+</math>
+ can be obtained from the inflexion point, as in <a href="#fig_5.12">Fig. 5.12</a>, or from a fit of the whole curve to evaluate simultaneously, <i>A,B,</i> and <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03C4;</mi>
+</math>
+.</p>
+
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.12">
+ <img src="../images/page70-3.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2a">&#160;</p>
+<p class="noindent2" style="text-align:left;width:100%;"><b>Fig.5.12</b> Frequency dependence of the absorption of sound energy per, cm <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03B1;</mi>
+</math>
+.</p></figcaption>
+</figure>
+</aside>
+
+<p class="indent-ka">The determination of relaxation times from sound absorption methods requires measurement over a wide range of frequencies. The sound absorption increases as the second power of the frequency, and hence any given device can normally only be applied over a limited range of frequencies. An apparatus which illustrates some general principles is shown schematically in <a href="#fig_5.13">Fig. 5.13</a>. The sound wave in the solution is created by an input transducer which is energized by a pulsed oscillator (a pulsed oscillator is used to avoid excessive heating). The amplitude is then measured as a function of distance z by a second transducer, the accuracy of the measurement being increased by comparison with a signal passing through a calibrated attenuator.</p>
+<p class="indent-ka">Ultrasonic absorption is, after T-jump, the second most often used relaxation technique, but it should be noted that it is much more difficult to use than T- jump. The development and use of ultrasonic techniques for the study of chemical systems was greatly stimulated by the observation that sea water had an absorbtion 20 times that of fresh water at frequencies of around 10<sup>5</sup> Hz&#8211;this was eventually attributed to ion-pair equilibria of MgSO<sub>4</sub> (Eigen <i>et al</i> 1953, Stuehr 1986). More recently, it has been used to great advantage in the study of the complexation and conformational equilibria of antibiotics which function by facilitating the transport of ions across cell membranes (Burgermeister and Winkler-Oswatitsch 1977).</p>
+
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.13">
+ <img src="../images/page70-4.jpg" alt="images"/>
+<p class="noindent2a">&#160;</p>
+<figcaption><p class="noindent2" style="text-align:left;width:100%;"><b>Fig. 5.13</b> Measurement of ultrasonic absorption:</p></figcaption>
+</figure>
+</aside>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<p class="noindent2" style="margin-top:0.5em;">S = pulsed signal generator;</p>
+<p class="noindent2" style="margin-top:0.5em;">C = calibrated attenuator;</p>
+<p class="noindent2" style="margin-top:0.5em;">I = input transducer;</p>
+<p class="noindent2" style="margin-top:0.5em;">o = output transducer;</p>
+<p class="noindent2" style="margin-top:0.5em;">A = amplitude comparator.</p>
+
+</aside>
+</section>
+<section epub:type="chapter" id="sec_5.4">
+<h2 class="h2">5.4<span class="space">&#160;</span>Nuclear magnetic resonance</h2>
+<p class="noindent">Nuclear magnetic resonance (NMR) can be used in a conventional manner as an analytical tool to monitor reactions, but for fast reactions the most valuable<a id="page_71" class="page">page 71, Fast reactions in solution</a>source of kinetic information is the influence of the rate process on the shape and width of the nuclear magnetic resonances. The quantity measured by the NMR methods is the lifetime, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03C4;</mi>
+</math>, of some molecular species, conformation, or configuration. Consider, for example, the exchange of a proton between two different sites, A and B,</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mtext>AH</mtext><munderover>
+      <mo>&#x21CC;</mo>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mtext>B</mtext>
+       </msub>
+       
+      </mrow>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mtext>A</mtext>
+       </msub>
+       
+      </mrow>
+     </munderover>
+     <mtext>BH</mtext>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.38">(5.38)</p>
+
+<p class="noindent"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03C4;</mi>
+</math>
+<sub>A</sub> is defined by <a href="#eqn_5.39">eqn 5.39</a>, and similarly <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x03C4;</mi>
+</math>
+<sub>B</sub></p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mrow><mn>1</mn><mo>/</mo><mrow>
+      <msub>
+       <mi>&#x03C4;</mi>
+       <mtext>A</mtext>
+      </msub>
+      <mo>=</mo><msub>
+       <mi>k</mi>
+       <mtext>A</mtext>
+      </msub>
+      <mo>=</mo><mo>&#x2212;</mo><mrow><mrow>
+       <mrow><mo>(</mo>
+        <mrow>
+         <mrow><mn>1</mn><mo>/</mo><mrow>
+          <mrow><mo>[</mo> <mrow>
+           <mtext>AH</mtext>
+          </mrow> <mo>]</mo></mrow>
+         </mrow></mrow>
+         
+        </mrow>
+       <mo>)</mo></mrow><mi>d</mi><mrow><mo>[</mo> <mrow>
+        <mtext>AH</mtext>
+       </mrow> <mo>]</mo></mrow>
+      </mrow><mo>/</mo><mrow>
+       <mi>d</mi><mi>t</mi>
+      </mrow></mrow>
+      
+     </mrow></mrow>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.39">(5.39)</p>
+<p class="noindent">The two lifetimes are related by P<sub>AH</sub>/<sub>&#x03C4;A </sub>= P<sub>BH</sub>/<sub>&#x03C4;B</sub>, where Pah and Pbh are the fractional populations of the sites AH and BH, respectively; this follows from the requirement for constant total levels of AH and BH during the exchange.</p>
+
+<p class="indent-ka"><a href="#eqn_5.38">Equations 5.38</a> and <a href="#eqn_5.39">5.39</a> point to one of the major advantages of the NMR methods, namely that information can be obtained about a single rate constant (compare relaxation methods which give the sum <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msub>
+  <mi>k</mi>
+  <mtext>A</mtext>
+ </msub>
+ <mo>+</mo><msub>
+  <mi>k</mi>
+  <mtext>B</mtext>
+ </msub>
+ 
+</math>
+). Furthermore, the NMR spectrum identifies directly the atoms that exchange and can often therefore give very direct information about the reaction mechanism. It is the only technique whereby measurements can be made on fast exchange reactions for which there is no change in composition of the system. Illustrative examples are as follows:</p>
+
+<aside class="abc" style="margin-top:-14.5em;" epub:type="sidebar">
+<figure class="fig1">
+ <img src="../images/page71-5.jpg" alt="images"/>
+</figure>
+</aside>
+
+
+<p class="hang-cen-1" style="width:63%;">&#8226; Rotation about the C-N bond in dimethylformamide</p>
+
+<figure class="fig1" style="margin-left:10em;">
+ <img src="../images/page71-3.jpg" alt="images"/>
+</figure>
+
+<p class="hang-cen" style="width:63%;margin-left:4.6em;">Dimethylformamide (DMF) is planar, and at room temperature two separate proton resonances (protons a and b) are observed due to restricted rotation about the C-N bond, attributable to its partial double bond character, as in <b>2</b>.</p>
+<p class="noindent2a">&#160;</p>
+<p class="hang-cen-1" style="width:63%;">&#8226; Exchange of <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msup>
+  <mrow></mrow>
+  <mn>7</mn>
+ </msup>
+ <msup>
+  <mtext>Li</mtext>
+  <mo>+</mo>
+ </msup>
+ 
+</math>
+ between free and complexed states in the presence of the macrobicyclic ligand (2,1,1)</p>
+
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.14">
+ <img src="../images/page71-6.jpg" alt="images"/>
+<p class="noindent2a">&#160;</p>
+<figcaption><p class="noindent2" style="text-align:left;width:100%;"><b>Fig.5.14</b> <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msup>
+  <mrow></mrow>
+  <mn>7</mn>
+ </msup>
+ <msup>
+  <mtext>Li</mtext>
+  <mo>+</mo>
+ </msup>
+ 
+</math>
+-NMR spectra of an aqueous solution containing 0.5 M uo and 0.25 M (2,1,1) (Cahen <i>et al</i>. 1975).</p>
+</figcaption>
+</figure>
+</aside>
+
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msup>
+      <mrow>
+       <mtext>Li</mtext>
+      </mrow>
+      <mo>+</mo>
+     </msup>
+     <mo>+</mo><mrow><mo>(</mo>
+      <mrow>
+       <mn>2</mn><mo>,</mo><mtext>&#x2009;</mtext><mn>1</mn><mo>,</mo><mtext>&#x2009;</mtext><mn>1</mn>
+      </mrow>
+     <mo>)</mo></mrow><munderover>
+      <mo>&#x21CC;</mo>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mrow>
+         <mo>&#x2212;</mo><mn>1</mn>
+        </mrow>
+       </msub>
+       
+      </mrow>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mn>1</mn>
+       </msub>
+       
+      </mrow>
+     </munderover>
+     <mtext>Li</mtext><msup>
+      <mrow>
+       <mrow><mo>(</mo>
+        <mrow>
+         <mn>2</mn><mo>,</mo><mtext>&#x2009;</mtext><mn>1</mn><mo>,</mo><mtext>&#x2009;</mtext><mn>1</mn>
+        </mrow>
+       <mo>)</mo></mrow>
+      </mrow>
+      <mo>+</mo>
+     </msup>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mrow><mo>&#160;</mo>
+      <mrow>
+       <mn>&#160;</mn>
+      </mrow>
+     <mo>&#160;</mo></mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.41">(5.41)</p>
+<p class="indent-ka">It is apparent that chemical relaxation cannot be applied to the rotation in DMF since the equilibrium constant is identically one.</p>
+<p class="indent-ka">The changes in spectra as the reaction rates are increased by increasing temperature or by the addition of a catalyst are typified by the results shown in <a href="#fig_5.14">Fig. 5.14</a> for the Li+ complexation reaction (Cahen <i>et al</i>. 1975): the two lines broaden (<i>slow exchange</i>), coalesce (<i>intermediate exchange</i>), and finally sharpen into a single resonance (<i>fast exchange</i>). The interpretation of such <a id="page_72" class="page">page 72, Fast reactions in solution</a>changes is qualitatively as follows. The initial broadening is due to the reduction in the lifetime of the two states (free and complexed Li<sup>&#x002B;</sup> in <a href="#eqn_5.41">eqn 5.41</a>) as discussed earlier. As the exchange rates rise, the ions in the two states no longer behave as independent systems; it follows from the uncertainty principle that separate states can only be distinguished when the lifetime <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C4;</mi><mtext>&#x2009;</mtext><mo>&#x2248;</mo><mtext>&#x2009;</mtext><mn>1</mn><mo>/</mo><mn>2</mn><mi>&#x03C0;</mi><mi>&#x03B4;</mi><msub>
+   <mi>&#x03BD;</mi>
+   <mn>0</mn>
+  </msub>
+  
+ </mrow>
+</math>
+ or longer, where <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03B4;</mi><msub>
+   <mi>&#x03BD;</mi>
+   <mn>0</mn>
+  </msub>
+  
+ </mrow>
+</math>
+ is the frequency difference of the two signals in the absence of exchange. When the exchange is sufficiently rapid such that the lifetimes of the states become less than this critical value, the signals cannot be separated. The spectra are then determined by the time-average environment of the nuclei under investigation. There are random deviations from the average frequency, but the higher the exchange rate, the more nearly the fluctuations average to zero, and the sharper will be the resonance line.</p>
+<p class="indent-ka">A detailed treatment (see below) of the exchanging system represented by <a href="#eqn_5.38">eqn 5.38</a> and <a href="#fig_5.15">Fig. 5.15</a> shows that at low exchange, such that two nonoverlapping but broadened signals are observed, the <i>additional</i> line-broadening at half height due to exchange, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x0394;</mi><msub>
+   <mi>&#x03BD;</mi>
+   <mrow>
+    <mn>1</mn><mo>/</mo><mn>2</mn>
+   </mrow>
+  </msub>
+  
+ </mrow>
+</math>
+, is given by:</p>
+
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.15">
+ <img src="../images/page72-4.jpg" alt="images"/>
+<p class="noindent2a">&#160;</p>
+<figcaption><p class="noindent2" style="text-align:left;width:100%;"><b>Fig. 5.15</b> NMR spectra of nuclei in two sites, A and B.</p>
+</figcaption>
+</figure>
+</aside>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mi>&#x0394;</mi><msub>
+      <mi>v</mi>
+      <mrow>
+       <mn>1</mn><mo>/</mo><mn>2</mn><mo>,</mo><mtext>A</mtext>
+      </mrow>
+     </msub>
+     <mo>=</mo><mn>1</mn><mo>/</mo><mo stretchy='false'>(</mo><mi>&#x03C0;</mi><msub>
+      <mi>&#x03C4;</mi>
+      <mtext>A</mtext>
+     </msub>
+     <mo stretchy='false'>)</mo><mo>;</mo>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mi>&#x0394;</mi><msub>
+      <mi>v</mi>
+      <mrow>
+       <mn>1</mn><mo>/</mo><mn>2</mn><mo>,</mo><mtext>B</mtext>
+      </mrow>
+     </msub>
+     <mo>=</mo><mn>1</mn><mo>/</mo><mo stretchy='false'>(</mo><mi>&#x03C0;</mi><msub>
+      <mi>&#x03C4;</mi>
+      <mtext>B</mtext>
+     </msub>
+     <mo stretchy='false'>)</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>&#160;</mo><mn>&#160;</mn><mo stretchy='false'>&#160;</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.42">(5.42)</p>
+
+<p class="noindent">This is the most useful region for obtaining kinetic information. Coalescence occurs when <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msubsup>
+  <mi>&#x03C4;</mi>
+  <mtext>A</mtext>
+  <mrow>
+   <mo>&#x2212;</mo><mn>1</mn>
+  </mrow>
+ </msubsup>
+ <mo>+</mo><msubsup>
+  <mi>&#x03C4;</mi>
+  <mtext>B</mtext>
+  <mrow>
+   <mo>&#x2212;</mo><mn>1</mn>
+  </mrow>
+ </msubsup>
+ <mo>&#x2243;</mo><mo stretchy='false'>(</mo><msub>
+  <mi>&#x03BD;</mi>
+  <mtext>A</mtext>
+ </msub>
+ <mo>&#x2212;</mo><msub>
+  <mi>&#x03BD;</mi>
+  <mtext>B</mtext>
+ </msub>
+ <mo stretchy='false'>)</mo>
+</math>
+ for equal populations of AH and <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mn>1</mn><mo>/</mo><mi>&#x03C4;</mi><mo>=</mo><mn>1</mn><mo>/</mo><msub>
+   <mi>&#x03C4;</mi>
+   <mtext>A</mtext>
+  </msub>
+  <mo>+</mo><mtext>&#x2009;</mtext><mn>1</mn><mo>/</mo><msub>
+   <mi>&#x03C4;</mi>
+   <mi>B</mi>
+  </msub>
+  <mo>=</mo><mn>2</mn><mo>/</mo><msub>
+   <mi>&#x03C4;</mi>
+   <mtext>A</mtext>
+  </msub>
+  
+ </mrow>
+</math>
+, and</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03C4;</mi><mo>=</mo><mfrac>
+  <mrow>
+   <msqrt>
+    <mn>2</mn>
+   </msqrt>
+   
+  </mrow>
+  <mrow>
+   <mn>2</mn><mi>&#x03C0;</mi><mo stretchy='false'>(</mo><msub>
+    <mi>&#x03BD;</mi>
+    <mtext>A</mtext>
+   </msub>
+   <mo>&#x2212;</mo><msub>
+    <mi>&#x03BD;</mi>
+    <mtext>B</mtext>
+   </msub>
+   
+  </mrow>
+ </mfrac>
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>&#160;</mo><mn>&#160;</mn><mo stretchy='false'>&#160;</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.43">(5.43)</p>
+<p class="noindent">With further decrease in <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03C4;</mi>
+   <mtext>A</mtext>
+  </msub>
+  
+ </mrow>
+</math>
+ and <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03C4;</mi>
+   <mtext>B</mtext>
+  </msub>
+  
+ </mrow>
+</math>
+ the line sharpens again and the exchange broadening of the coalesced single line is given by</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi mathvariant="normal">&#x0394;<!-- ? --></mi>
+  <msub>
+    <mi>&#957;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>1</mn>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mo>/</mo>
+      </mrow>
+      <mn>2</mn>
+    </mrow>
+  </msub>
+  <mo>=</mo>
+  <mn>4</mn>
+  <mi>&#x03C0;<!-- p --></mi>
+  <mo stretchy="false">(</mo>
+  <msub>
+    <mi>&#957;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi mathvariant="normal">A</mi>
+    </mrow>
+  </msub>
+  <mo>&#x2212;<!-- - --></mo>
+  <msub>
+    <mi>&#957;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi mathvariant="normal">B</mi>
+    </mrow>
+  </msub>
+  <msup>
+    <mo stretchy="false">)</mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>2</mn>
+    </mrow>
+  </msup>
+  <msubsup>
+    <mi>P</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi mathvariant="normal">A</mi>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>2</mn>
+    </mrow>
+  </msubsup>
+  <msubsup>
+    <mi>P</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi mathvariant="normal">B</mi>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>2</mn>
+    </mrow>
+  </msubsup>
+  <mo stretchy="false">(</mo>
+  <msub>
+    <mi>&#x03C4;<!-- t --></mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi mathvariant="normal">A</mi>
+    </mrow>
+  </msub>
+  <mo>+</mo>
+  <msub>
+    <mi>&#x03C4;<!-- t --></mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi mathvariant="normal">B</mi>
+    </mrow>
+  </msub>
+  <mo stretchy="false">)</mo>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.44">(5.44)</p>
+<p class="noindent">For very fast reactions (<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03C4;</mi>
+   <mtext>A</mtext>
+  </msub>
+  <mo>,</mo><msub>
+   <mi>&#x03C4;</mi>
+   <mi>b</mi>
+  </msub>
+  <mo>&#x226A;</mo><mtext>&#x2009;</mtext><msup>
+   <mrow>
+    <mo stretchy='false'>(</mo><msub>
+     <mi>&#x03BD;</mi>
+     <mtext>A</mtext>
+    </msub>
+    <mo>&#x2212;</mo><msub>
+     <mi>&#x03BD;</mi>
+     <mi>B</mi>
+    </msub>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mrow>
+    <mo>&#x2212;</mo><mn>1</mn>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+), the exchange broadening vanishes and only a lower limit for the exchange rate can be determined.</p>
+<p class="indent-ka">The derivation of the full lineshape equations, from which <a href="#eqn_5.42">eqns 5.42</a>-<a href="#eqn_5.44">5.44</a> are obtained as limiting cases, requires a closer examination of the NMR experiment in the absence and presence of chemical exchange. This is done most simply through an essentially classical treatment of the motion of the magnetic dipoles in a magnetic field, as follows.</p>
+
+<h3 class="h3">Nuclear-spin relaxation and linewidths in absence of reaction</h3>
+
+<p class="noindent">A nucleus of spin <i>I</i> and associated magnetic moment <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03BC;</mi>
+</math>
+ in a magnetic field <i>B</i> may assume only 2<i>I</i> <i>&#x002B;</i> 1 orientations relative to the field, each corresponding to a different energy level. This is illustrated in <a href="#fig_5.16">Fig. 5.16</a> for nuclei with spin <i>I</i> &#x003D; 1 /2&#x2014;for example, <sup>1</sup>H, <sup>13</sup>C, <sup>19</sup>F, and<sup>31</sup>P. The energy difference corresponds to a frequency <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03BD;</mi>
+   <mn>0</mn>
+  </msub>
+  
+ </mrow>
+</math>
+ of radiation required to induce transitions between the energy <a id="page_73" class="page">page 73, Fast reactions in solution</a>levels (<math xmlns="http://www.w3.org/1998/Math/MathML">
+
+ <mrow>
+  <mi>&#x0394;</mi><mi>E</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mi>h</mi><msub>
+   <mi>&#x03BD;</mi>
+   <mn>0</mn>
+  </msub>
+  <mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mi>h</mi><msub>
+   <mi>&#x03C9;</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>/</mo><mn>2</mn><mi>&#x03C0;</mi>
+ </mrow>
+</math>
+, where<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03C9;</mi>
+   <mn>0</mn>
+  </msub>
+  <mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>2</mn><mi>&#x03C0;</mi><msub>
+   <mi>&#x03BD;</mi>
+   <mn>0</mn>
+  </msub>
+  
+ </mrow>
+</math>
+
+
+
+ is the angular frequency) given by</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msub>
+  <mi>&#x03BD;</mi>
+  <mn>0</mn>
+ </msub>
+ <mo>=</mo><mn>2</mn><mi>&#x03BC;</mi><mi>&#x0392;</mi><mo>/</mo><mi>h</mi><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>(</mo><mn>5.45</mn><mo stretchy='false'>)</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.45">(5.45)</p>
+<p class="noindent">Thus the resonance frequency <i>vo</i> is proportional to the magnetic field</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <msub>
+      <mi>&#x03BD;</mi>
+      <mn>0</mn>
+     </msub>
+     <mo>=</mo><mi>&#x03B3;</mi><mi>&#x0392;</mi><mo>/</mo><mn>2</mn><mi>&#x03C0;</mi>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mtext>or</mtext>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <msub>
+      <mi>&#x03C9;</mi>
+      <mn>0</mn>
+     </msub>
+     <mo>=</mo><mi>&#x03B3;</mi><mi>&#x0392;</mi>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>&#160;</mo><mn>&#160;</mn><mo stretchy='false'>&#160;</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.46">(5.46)</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.16">
+ <img src="../images/page73-6.jpg" alt="images"/>
+<p class="noindent2a">&#160;</p>
+<figcaption><p class="noindent2" style="text-align:left;width:100%;"><b>Fig. 5.16</b> Quantization of energy levels for nuclei with spin <i>I</i> = 1/2.</p>
+</figcaption>
+</figure>
+</aside>
+
+
+<p class="noindent">The proportionality constant 7, called the <i>gyromagnetic ratio</i>, is equal to <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mn>4</mn><mi>&#x03C0;</mi><mi>&#x03BC;</mi><mo>/</mo><mi>h</mi>
+ </mrow>
+</math>
+ for nuclei with <i>I &#x003D;</i> 1/2, and more generally</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03B3;</mi><mo>=</mo><mi>&#x03BC;</mi><mo>/</mo><mo stretchy='false'>(</mo><mi>I</mi><mi>h</mi><mo>/</mo><mn>2</mn><mi>&#x03C0;</mi><mo stretchy='false'>)</mo><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>&#160;</mo><mn>&#160;</mn><mo stretchy='false'>&#160;</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.47">(5.47)</p>
+<p class="noindent">Equation 5.46 is the fundamental equation of NMR.</p>
+<p class="indent-ka">The energy difference of a spin 1/2 nucleus in its two possible spin states (<a href="#fig_5.16">Fig. 5.16</a>) gives rise to Boltzmann equilibrium populations in the two states, <i>no</i> and <i>n\,</i> of</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msub>
+  <mi>n</mi>
+  <mn>1</mn>
+ </msub>
+ <mo>/</mo><msub>
+  <mi>n</mi>
+  <mn>0</mn>
+ </msub>
+ <mo>=</mo><msup>
+  <mi>e</mi>
+  <mrow>
+   <mo>&#x2212;</mo><mn>2</mn><mi>&#x03BC;</mi><mi>&#x0392;</mi><mo>/</mo><msub>
+    <mi>k</mi>
+    <mi>&#x0392;</mi>
+   </msub>
+   <mi>T</mi>
+  </mrow>
+ </msup>
+ <mo>&#x2248;</mo><mn>1</mn><mo>&#x2212;</mo><mn>2</mn><mi>&#x03BC;</mi><mi>&#x0392;</mi><mo>/</mo><msub>
+  <mi>k</mi>
+  <mi>B</mi>
+ </msub>
+ <mi>T</mi><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>&#160;</mo><mn>&#160;</mn><mo stretchy='false'>&#160;</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.48">(5.48)</p>
+<p class="noindent">The term <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mn>2</mn><mi>&#x03BC;</mi><mi>B</mi><mo>/</mo><msub>
+   <mi>k</mi>
+   <mi>B</mi>
+  </msub>
+  <mi>T</mi>
+ </mrow>
+</math>
+, although only of the order of 10<sup>-5</sup>, is sufficient to cause the small difference in population of the two levels upon which the NMR phenomenon depends. This unequal distribution of spins gives rise to a macroscopic magnetic moment <i>Mo</i> in the direction of the field (taken to be the z-direction). The establishment of the equilibrium spin distribution is not instantaneous, and the approach of a given magnetization <i>M<sub>z</sub></i> in the direction of the field to its equilibrium value, <i>Mo</i>, is found to be a first-order process:</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mo>&#x2212;</mo><mi>d</mi><msub>
+  <mi>M</mi>
+  <mi>z</mi>
+ </msub>
+ <mo>/</mo><mi>d</mi><mi>t</mi><mo>=</mo><mo stretchy='false'>(</mo><mn>1</mn><mo>/</mo><msub>
+  <mi>T</mi>
+  <mn>1</mn>
+ </msub>
+ <mo stretchy='false'>)</mo><mo stretchy='false'>(</mo><msub>
+  <mi>M</mi>
+  <mi>z</mi>
+ </msub>
+ <mo>&#x2212;</mo><msub>
+  <mi>M</mi>
+  <mn>0</mn>
+ </msub>
+ <mo stretchy='false'>)</mo><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>&#160;</mo><mn>&#160;</mn><mo stretchy='false'>&#160;</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.49">(5.49)</p>
+<p class="noindent">The time constant <i>T</i><sub>1</sub> is called the <i>spin-lattice relaxation time</i> or sometimes the <i>longitudinal relaxation time.</i> The mechanism of transfer of energy from the &#x2018;lattice&#x2019; containing the spin system is through magnetic noise (a component of which will have the required frequency, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03BD;</mi>
+   <mn>0</mn>
+  </msub>
+  
+ </mrow>
+</math>
+) caused by the Brownian motion of other magnetic nuclei in the solution. This relaxation contributes to finite linewidths in NMR spectra even in the absence of chemical exchange.</p>
+<p class="indent-ka">According to the classical picture, the individual magnetic moments (and hence also the resultant magnetic moment of the assembly of nuclei) precesses about the z-axis with frequency <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03BD;</mi>
+   <mn>0</mn>
+  </msub>
+  
+ </mrow>
+</math>
+ (<a href="#eqn_5.46">eqn 5.46</a>), illustrated in <a href="#fig_5.17">Fig. 5.17</a>. There is no net component of the total magnetic moment in the <i>xy</i> plane in the steady state due to the randomness of the precession of the individual nuclei. In the NMR experiment the sample is also subject to another smaller oscillating magnetic field <i>B</i><sub>1</sub> of frequency <i>v</i> in the jc-direction. The frequency of <i>B</i><sub>1</sub> is varied and when <i>v</i> &#x003D; <i>vo</i>, transitions between the magnetic energies will be induced, following which the spins precess in phase with the field <i>B</i><sub>1</sub>. The result is a decrease in <i>M<sub>z</sub></i> (due to a net transfer of spins from the more populated lower energy level) and the appearance of a magnetic moment <i>M<sub>xy</sub></i> in the <i>xy</i> plane.</p>
+
+<aside class="abc" style="margin-top:-27em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.17">
+ <img src="../images/page73-7.jpg" alt="images"/>
+<p class="noindent2a">&#160;</p>
+<figcaption><p class="noindent2" style="text-align:left;width:100%;"><b>Fig. 5.17</b> Precessional motion of magnetic moments in a magnetic field.</p>
+</figcaption>
+</figure>
+</aside>
+
+
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<p class="noindent2" style="text-align:left;width:100%;">In purely classical terms, this shows up as a resonance phenomenon in which there are large oscillations in the angle between the magnetic moment and the steady field <i>B</i>.</p>
+</aside>
+<p class="indent-ka">After passage of <i>B</i><sub>1</sub> through the resonance frequency, two relaxation processes tend to restore the system to its original equilibrium position. The first <a id="page_74" class="page">page 74, Fast reactions in solution</a>is the spin-lattice relaxation which restores <i>M<sub>z</sub></i> to <i>M<sub>0.</sub></i> The second is the randomization of the individual spins in the <i>xy</i> plane, which returns <i>M<sub>xy</sub></i> to its equilibrium value of zero, <a href="#eqn_5.50">eqn 5.50</a></p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mo>&#x2212;</mo><mi>d</mi><msub>
+  <mi>M</mi>
+  <mrow>
+   <mi>x</mi><mi>y</mi>
+  </mrow>
+ </msub>
+ <mo>/</mo><mi>d</mi><mi>t</mi><mo>=</mo><mo stretchy='false'>(</mo><mn>1</mn><mo>/</mo><msub>
+  <mi>T</mi>
+  <mn>2</mn>
+ </msub>
+ <mo stretchy='false'>)</mo><msub>
+  <mi>M</mi>
+  <mrow>
+   <mi>x</mi><mi>y</mi>
+  </mrow>
+ </msub>
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>&#160;</mo><mn>&#160;</mn><mo stretchy='false'>&#160;</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.50">(5.50)</p>
+<p class="noindent">The relaxation time for this process, <i>T<sub>2</sub>,</i> is called the <i>spin-spin relaxation time</i> or the <i>transverse relaxation time.</i> The process of restoration of <i>M<sub>z</sub></i> provides one mechanism for changing <i>M<sub>xy</sub></i>. However, transverse relaxation does not require spin-lattice energy exchange. The coherence in the <i>xy</i> plane can also be lost through fluctuations in the individual precession frequencies arising from random fluctuations in local magnetic fields due to neighbouring nuclei. Therefore, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>T</mi>
+   <mn>2</mn>
+  </msub>
+  <mtext>&#x2009;</mtext><mo>&#x2264;</mo><mtext>&#x2009;</mtext><msub>
+   <mi>T</mi>
+   <mn>1</mn>
+  </msub>
+  
+ </mrow>
+</math>
+.</p>
+<p class="indent-ka">Solution of the equations representing the interaction of the magnetic moment with the applied field, the so-called Bloch equations, is relatively straightforward (Sandstrom 1982, <a href="Chapter02.xhtml#ch02">Ch. 2</a>). Under normal conditions of low oscillating field <i>B</i><sub>1</sub>, the out-of-phase component of	<i>M<sub>xy</sub></i> which gives rise to the normal <i>nmr</i> absorption signal is proportional to</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ 
+ <msub>
+    <mi>T</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>2</mn>
+    </mrow>
+  </msub>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mo>/</mo>
+  </mrow>
+  <mo stretchy="false">[</mo>
+  <mn>1</mn>
+  <mo>+</mo>
+  <mn>4</mn>
+  <msup>
+    <mi>&#x03C0;<!-- p --></mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>2</mn>
+    </mrow>
+  </msup>
+  <msubsup>
+    <mi>T</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi mathvariant="normal">A</mi>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>2</mn>
+    </mrow>
+  </msubsup>
+  <mo stretchy="false">(</mo>
+  <msub>
+    <mi>v</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>0</mn>
+    </mrow>
+  </msub>
+  <mo>&#x2212;<!-- - --></mo>
+  <msub>
+    <mi>v</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+
+    </mrow>
+  </msub>
+  <msup>
+    <mo stretchy="false">)</mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>2</mn>
+    </mrow>
+  </msup>
+  <mo stretchy="false">]</mo>
+</math>
+
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.51">(5.51)</p>
+<p class="noindent">This describes a symmetrical Lorentzian curve with a width at half height, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x0394;</mi>
+   <mrow>
+    <mi>&#x03BD;</mi><mn>1</mn><mo>/</mo><mn>2</mn>
+   </mrow>
+  </msub>
+  <mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>1</mn><mo>/</mo><mi>&#x03C0;</mi><msub>
+   <mi>T</mi>
+   <mn>2</mn>
+  </msub>
+  
+ </mrow>
+</math>
+ (<a href="#fig_5.18">Fig. 5.18</a>); <i>T<sub>2</sub></i> therefore determines the natural linewidth.</p>
+
+<aside class="abc" style="margin-top:-14em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.18">
+ <img src="../images/page74-5.jpg" alt="images"/>
+<p class="noindent2a">&#160;</p>
+<figcaption><p class="noindent2" style="text-align:left;width:100%;"><b>Fig. 5.18</b> NMR absorption line.</p>
+</figcaption>
+</figure>
+</aside>
+
+
+<h3 class="h3">Influence of chemical exchange on the lineshape</h3>
+
+<p class="noindent">The exchange between two sites <i>A</i> and <i>B</i>, as in <a href="#eqn_5.38">eqn 5.38</a>, is best developed by suitable modification of the Bloch equations, following a simple treatment due to McConnell (1958). Full details are given in standard texts (Sandstrom 1982, <a href="Chapter02.xhtml#ch02">Ch. 2</a>, Strehlow 1992, <a href="Chapter06.xhtml#ch06">Ch. 6</a>) and we describe here only the principle. The total signal in the absence of exchange will be a superposition of the two individual signals, chemical shifts <i>v</i><sub>A</sub> and <i>v</i><sub>B</sub> each will have their own independent macroscopic moments with components in the <i>xy</i> plane (denoted by <small>G<sub>A</sub></small> and G<sub>B</sub>). On passage through the spectrum, the spin-lattice and spin- spin relaxations tend to restore equilibrium, but there are the two additional kinetic processes whereby magnetization <small>G<sub>A</sub></small> is transferred to site B at a rate <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mo>&#x2212;</mo><mi>d</mi><msub>
+   <mi>G</mi>
+   <mi>A</mi>
+  </msub>
+  <mo>/</mo><mi>d</mi><mi>t</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msub>
+   <mi>G</mi>
+   <mtext>A</mtext>
+  </msub>
+  <mo>/</mo><msub>
+   <mi>T</mi>
+   <mi>A</mi>
+  </msub>
+  
+ </mrow>
+</math>
+ &#x003D; and similarly <i>G<sub>B</sub></i> is transferred from A to B at a rate G<sub>B</sub>/<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03C4;</mi>
+</math>
+<sub>B</sub> The solution of the equations including all of the rate and relaxation processes is tedious but straightforward. We quote the result for the absorption v in the case of exchange between two equally populated sites for which <i><small>T<sub>2</sub>a &#x2014; T<sub>2</sub>b</small></i> &#x003D; <i>T<sub>2</sub></i> in <a href="#eqn_5.52">eqns 5.52</a> and <a href="#eqn_5.53">5.53</a> and illustrate it for several different <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03C4;</mi>
+</math>
+ values in <a href="#fig_5.19">Fig. 5.19</a>.</p>
+
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03BD;</mi><mo>=</mo><mi>C</mi><mfrac>
+  <mrow>
+   <mo stretchy='false'>(</mo><mn>1</mn><mo>+</mo><mi>&#x03C4;</mi><mo>/</mo><msub>
+    <mi>&#x03A4;</mi>
+    <mn>2</mn>
+   </msub>
+   <mo stretchy='false'>)</mo><mi>P</mi><mo>+</mo><mi>Q</mi><mi>R</mi>
+  </mrow>
+  <mrow>
+   <msup>
+    <mi>P</mi>
+    <mn>2</mn>
+   </msup>
+   <mo>+</mo><msup>
+    <mi>R</mi>
+    <mn>2</mn>
+   </msup>
+   
+  </mrow>
+ </mfrac>
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>&#160;</mo><mn>&#160;</mn><mo stretchy='false'>&#160;</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.52">(5.52)</p>
+<p class="math"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mi>P</mi>
+   </mtd>
+   <mtd>
+    <mo>=</mo>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mi>&#x03C4;</mi><mo>&#x007B;</mo><msup>
+      <mrow>
+       <mo stretchy='false'>(</mo><mn>1</mn><mo>/</mo><msub>
+        <mi>T</mi>
+        <mn>2</mn>
+       </msub>
+       <mo stretchy='false'>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+     <mo>&#x2212;</mo><msup>
+      <mrow>
+       <mo stretchy='false'>[</mo><mi>&#x03C0;</mi><mo stretchy='false'>(</mo><msub>
+        <mi>&#x03BD;</mi>
+        <mi>&#x0391;</mi>
+       </msub>
+       <mo>+</mo><msub>
+        <mi>&#x03BD;</mi>
+        <mi>&#x0392;</mi>
+       </msub>
+       <mo stretchy='false'>)</mo><mo>&#x2212;</mo><mn>2</mn><mi>&#x03C0;</mi><mi>&#x03BD;</mi><mo stretchy='false'>]</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+     <mo>+</mo><msup>
+      <mi>&#x03C0;</mi>
+      <mn>2</mn>
+     </msup>
+     <msup>
+      <mrow>
+       <mo stretchy='false'>(</mo><msub>
+        <mi>&#x03BD;</mi>
+        <mtext>A</mtext>
+       </msub>
+       <mo>&#x2212;</mo><msub>
+        <mi>&#x03BD;</mi>
+        <mi>&#x0392;</mi>
+       </msub>
+       <mo stretchy='false'>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+     <mo>&#x007D;</mo><mo>+</mo><mn>1</mn><mo>/</mo><msub>
+      <mi>T</mi>
+      <mn>2</mn>
+     </msub>
+     
+    </mrow>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mi>Q</mi>
+   </mtd>
+   <mtd>
+    <mo>=</mo>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mi>&#x03C4;</mi><mo stretchy='false'>[</mo><mi>&#x03C0;</mi><mo stretchy='false'>(</mo><msub>
+      <mi>&#x03BD;</mi>
+      <mi>&#x0391;</mi>
+     </msub>
+     <mo>+</mo><msub>
+      <mi>&#x03BD;</mi>
+      <mi>&#x0392;</mi>
+     </msub>
+     <mo stretchy='false'>)</mo><mo>&#x2212;</mo><mn>2</mn><mi>&#x03C0;</mi><mi>&#x03BD;</mi><mo stretchy='false'>]</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mi>R</mi>
+   </mtd>
+   <mtd>
+    <mo>=</mo>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>[</mo><mi>&#x03C0;</mi><mo stretchy='false'>(</mo><msub>
+      <mi>&#x03BD;</mi>
+      <mi>&#x0391;</mi>
+     </msub>
+     <mo>+</mo><msub>
+      <mi>&#x03BD;</mi>
+      <mi>&#x0392;</mi>
+     </msub>
+     <mo stretchy='false'>)</mo><mo>&#x2212;</mo><mn>2</mn><mi>&#x03C0;</mi><mi>&#x03BD;</mi><mo stretchy='false'>]</mo><mo stretchy='false'>(</mo><mn>1</mn><mo>+</mo><mn>2</mn><mi>&#x03C4;</mi><mo>/</mo><msub>
+      <mi>&#x03A4;</mi>
+      <mn>2</mn>
+     </msub>
+     <mo stretchy='false'>)</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable><mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>&#160;</mo><mn>&#160;</mn><mo stretchy='false'>&#160;</mo>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p style="text-align:right;margin-top:-2.5em;width:70%;" id="eqn_5.53">(5.53)</p>
+<p class="noindent">The general solution is given by Sandstr&#246;m (1982, <a href="Chapter02.xhtml#ch02">Ch. 2</a>).</p>
+
+
+
+
+<a id="page_75" class="page" style="width:70%;">page 75, Fast reactions in solution</a>
+
+
+<figure class="fig1" style="margin-left:2em;" id="fig_5.19">
+ <img src="../images/page75-1.jpg" alt="images"/>
+<p class="noindent2a">&#160;</p>
+<figcaption>
+<p class="noindent2-cen" style="text-align:left;margin-left:-2em;width:70%;"><b>Fig. 5.19</b> NMR spectra for exchange between two sites with equal populations.</p>
+</figcaption>
+</figure>
+
+<p class="indent-ka">The reaction rates which can be measured using this line-broadening technique must be within the range where changes in lineshape are noticeable. Natural linewidths are typically 0.3-0.5 Hz and the exchange broadening in the slow exchange region should be at least around 1 Hz in order to provide reliable results. This corresponds to a lower limit of several s<sup>-1</sup> for the exchange rate constant (<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msup>
+   <mi>&#x03C4;</mi>
+   <mrow>
+    <mo>&#x2212;</mo><mn>1</mn>
+   </mrow>
+  </msup>
+  <mtext>&#x2009;</mtext><mo>=</mo><mi>&#x03BD;</mi><mtext>&#x2009;</mtext><mi>&#x03C0;</mi><msub>
+   <mi>&#x0394;</mi>
+   <mrow>
+    <mn>1</mn><mo>/</mo><mn>2</mn>
+   </mrow>
+  </msub>
+  
+ </mrow>
+</math>
+). The upper limit depends upon the chemical shift difference of the two peaks involved, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03B4;</mi>
+   <mrow>
+    <mi>&#x03BD;</mi><mn>0</mn>
+   </mrow>
+  </msub>
+  
+ </mrow>
+</math>
+ (as does the coalescence region), and measurable changes can normally be detected for rate constants of up to around 100<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03B4;</mi>
+   <mrow>
+    <mi>&#x03BD;</mi><mn>0</mn>
+   </mrow>
+  </msub>
+  
+ </mrow>
+</math>
+ <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mo stretchy='false'>(</mo><mi>i</mi><mo>.</mo><mi>e</mi><mo>.</mo><mo>,</mo><mtext>&#x2009;</mtext><mi>&#x03C4;</mi><mi>&#x03B4;</mi><msub>
+   <mi>&#x03BD;</mi>
+   <mn>0</mn>
+  </msub>
+  <mtext>&#x2009;</mtext><mo>&#x2243;</mo><mn>0.01</mn><mo stretchy='false'>)</mo>
+ </mrow>
+</math>
+. This means that for <sup>1</sup>H-NMR, with <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03B4;</mi>
+   <mrow>
+    <mi>&#x03BD;</mi><mn>0</mn>
+   </mrow>
+  </msub>
+  
+ </mrow>
+</math>
+ in the range 10-100 Hz, rate constants covering a range of 1-10<sup>3</sup> or 10<sup>4</sup> s<sup>_1</sup> can be measured.</p>
+<p class="indent-ka">The above treatment is also valid for simple cases involving the collapse of the components of spin multiplets. For example, the proton exchange between <i>N</i>-methyl thioacetamide and water,</p>
+
+<figure class="fig1" style="margin-left:8em;" id="eqn_5.54">
+ <img src="../images/page75-2.jpg" alt="images"/>
+</figure>
+
+
+<p class="noindent">causes randomization of the <sup>1</sup>H spin (the leaving nucleus has a 50 &#x0025; chance of being replaced by one with opposite spin). As the exchange rate increases, the N-CH<sub>3</sub> doublet (caused by coupling with the <i>N</i>-H proton, <i>J</i> &#x003D; 4.95 Hz) broadens, coalesces, and sharpens into a single line. More complex cases involving exchange between spin-spin coupled protons for whch <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>J</mi><mo>&#x223C;</mo><mtext>&#x2009;</mtext><mi>&#x03B4;</mi><msub>
+   <mi>&#x03BD;</mi>
+   <mn>0</mn>
+  </msub>
+  
+ </mrow>
+</math>
+ or less (<i>J</i> is the spin-spin coupling constant) require a more rigorous quantum mechanical analysis, more particularly the <i>density matrix method.</i> This method is described elsewhere, as are alternative kinetic methods involving NMR, such as, for example, those based directly on <i>T</i><sub>1</sub> measurements (Sandstr&#246;m 1982, Strehlow 1992).</p>
+
+
+
+<a id="page_76" class="page" style="width:70%;">page 76, Fast reactions in solution</a>
+
+</section>
+<section epub:type="chapter" id="sec_5.5">
+<h2 class="h2">5.5<span class="space">&#160;</span>Flash photolysis</h2>
+
+<p class="noindent">The initiation of reactions by irradiation is the most effective and versatile technique for studying transient intermediates of chemical change. Flash photolysis allows the creation in a short interval of time of a nonequilibrium situation in a chemical system. In particular, reactive species such as radicals, excited states, and unstable ions can be produced at sufficiently high concentrations to allow their direct observation and the study of their behaviour in chemical and biological systems. Especially notable is the time resolution of flash photolysis, which is around a few microseconds for plasma flash-lamps and extends down to the picosecond range and beyond for pulsed lasers (West 1986).</p>
+<p class="indent-ka">Many important applications relate to the kinetics of transitions between excited states of molecules, producing valuable information on these states. However, in recent years the flash photolytic generation of reactive species fundamental to organic reactions, such as enols, ketenes, and carbocations, from the breakdown of the initial excitation products has greatly widened the scope of, and interest among chemists in, the technique. Activity is this area is likely to continue to increase, particularly as, at least for organic photochemistry in the microsecond region, the apparatus is easy to assemble and relatively inexpensive.</p>
+<p class="indent-ka">A schematic representation of the conventional flash photolysis apparatus most commonly employed in liquid phase kinetic studies is shown in <a href="#fig_5.20">Fig. 5.20</a>. The excitation flash is obtained from the discharge of a high-voltage capacitor through a flash-lamp. Discharge energies lie in the range 50-2000 J and the lifetimes of flash durations are between 1 and 30 <i>&#181;</i>s; excitation times below 1 <i>&#181;</i>s invariably require the use of pulsed lasers (see below). Many of the considerations concerning the relationship between the total power output and the flash duration are exactly analogous to those described in <a href="#sec_5.3">Section 5.3</a> for the temperature-jump technique. Carefully designed circuits with low impedance will allow flash duration times of about 1 <i>&#181;</i>s for a 300 J discharge. Detection is normally via optical absorption, but conductimetric detection has also been used to monitor reactions of ionic species.</p>
+
+<figure class="fig1" style="margin-left:5em;" id="fig_5.20">
+ <img src="../images/page76-1.jpg" alt="images"/>
+<p class="noindent2a">&#160;</p>
+<figcaption><p class="noindent2-cen" style="width:60%;"><b>Fig. 5.20</b> Flash photolysis apparatus for kinetic spectrophotometry.</p>
+</figcaption>
+</figure>
+
+<p class="indent-ka">A significant advance in the understanding of the kinetics and equilibria of simple enols</p>
+
+<figure class="fig1" style="margin-left:14.5em;" id="eqn_5.55">
+ <img src="../images/page76-2.jpg" alt="images"/>
+</figure>
+
+
+<p class="noindent">has come through the application of flash photolysis (Kresge 1990). Enols and enolate ions, which are essential intermediates in many important chemical and biological transformations, may be generated by a Norrish type II photoelimination, shown in <a href="#eqn_5.56">eqn 5.56</a> for acetone enol.</p>
+
+
+
+<a id="page_77" class="page" style="width:70%;">page 77, Fast reactions in solution</a>
+
+
+
+<figure class="fig1" style="margin-left:8em;" id="eqn_5.56">
+ <img src="../images/page77-1.jpg" alt="images"/>
+</figure>
+
+<p class="noindent">The enol may be produced in aqueous solution by a 20 <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03BC;</mi>
+</math>
+s pulse derived from an electrical discharge of 1000 J through the flash-lamp, and the kinetics of ketonization under a variety of acidic and basic conditions monitored by following the decrease in the intensity of the strong enol absorbance in the region <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>&#x03BB;</mi>
+</math>
+ &#x003D; 205-220 nm. A combination of forward and reverse rate constants for the enolization of acetone has shown, for example, that the equilibrium constant for enol formation, <i>K</i><sub>E</sub>&#x003D; [enol]/[ketone] &#x003D; 5 &#215; 10<sup>-9</sup> in water at 25&#x00B0;C. Details of the study of other reactive species, such as ketenes (RCH&#x003D;C&#x003D;0) and their tautomeric enol equivalents (RC&#x003D;COH), using similar techniques have also been described by Kresge (1990).</p>
+<p class="indent-ka">Excitation by pulsed lasers allows the study of species whose lifetimes approach the nanosecond region. This can, in principle, be achieved rather simply by using an apparatus analogous to that depicted in <a href="#fig_5.20">Fig. 5.20</a>, but with replacement of the flash-lamp by a pulsed laser. It must be noted, however, that the optical and measuring system must be capable of recording nanosecond transient absorptions.</p>
+<p class="indent-ka">One final example, which relies on very rapid excitation by pulsed lasers, serves to illustrate the potential of flash photolysis. This relates to the reaction of carbenium ions with a variety of nucleophiles, including alcohols, water, enol ethers, and diverse anions (Bartl <i>et ai</i> 1991). Photolysis of di- arylchloromethanes with a 20 ns laser pulse in acetonitrile gives a mixture of benzhydryl radicals and benzhydryl cations:</p>
+
+<figure class="fig1" style="margin-left:13.6em;" id="eqn_5.57">
+ <img src="../images/page77-2.jpg" alt="images"/>
+</figure>
+
+<p class="noindent">The cations exhibit distinctly different absorption spectra from those of the radicals. The rate of disappearance of the cations in the presence of known concentrations of added nucleophiles has allowed, for the first time, the direct determination of rate constants for reactions of these highly reactive carbenium ions with nucleophiles. The largest observed rate constants are around 2 &#215; 10<sup>10</sup> M<sup>-1</sup> s<sup>-1</sup> for anions and 2-4&#215;l0<sup>9</sup> M<sup>-1</sup> s<sup>-1</sup> for reaction with neutral nucleophiles, i.e., close to or at the diffusion controlled limit (<a href="#sec_5.2">Sect. 5.2</a>). The results have been used to construct a reactivity scale for different nucleophiles with carbenium ions. </p>
+
+
+
+<a id="page_78" class="page" style="width:70%;">page 78, Fast reactions in solution</a>
+
+</section>
+<section epub:type="chapter" id="sec_5.6">
+<h2 class="h2">Problems</h2>
+<p class="noindent">5.1<span class="space">&#160;</span>The hindred tertiary base, R<sub>3</sub>N, is hydrolysed in water</p>
+
+<figure class="fig1" style="margin-left:7em;">
+ <img src="../images/page78-1.jpg" alt="images"/>
+</figure>
+
+
+<p class="noindent">where <i>K</i><sub>1</sub>=k<sub>1</sub>/k<sub>-1</sub> &#x003D; [R<sub>3</sub>NH<sup>+</sup>][OH<sup>-</sup>]/[R<sub>3</sub>N] &#x003D; 1.64&#215;10<sup>-3</sup> M at 25&#x00B0;C. The following relaxation times were observed in a pressure-jump study of the equilibrium at various total amine concentrations, <i>c</i><sub>T</sub> (<i>c</i><sub>T</sub> &#x003D; [R<sub>3</sub>N] &#x002B; [R<sub>3</sub>NH<sup>+</sup>]):</p>
+
+<figure class="fig1" style="margin-left:7em;">
+ <img src="../images/page78-2.jpg" alt="images"/>
+</figure>
+
+
+<p class="noindent">Determine the forward and reverse reactions for the reaction (<a href="#sec_5.3">Sect. 5.3</a>). (<i>k</i><sub>1</sub> &#x003D; 1.67 s<sub>-1</sub> &#x003D; 9.4 &#215; lO<sup>2</sup>M<sup>-1</sup> s<sup>-l</sup>).</p>
+<p class="noindent"><b>5.2</b><span class="space">&#160;</span>When pure water is subjected to a sudden temperature rise, the conductivity increases with a relaxation time of &#964; &#x003D; 3.7 &#215; 10<sup>-5</sup> s (final temperature= 23&#186;C),</p>
+
+<figure class="fig1" style="margin-left:16em;">
+ <img src="../images/page78-3.jpg" alt="images"/>
+</figure>
+
+
+<p class="noindent">Determine the rate constant, <i>k</i><sub>1</sub>, for the recombination of H<sup>+</sup> and OH to give water. Use pK<sub>w</sub> &#x003D; 14.07 (<a href="#sec_5.3">Sect. 5.3</a>). (<i>k</i><sub>1</sub> &#x003D; 1.46 &#215; 10<sup>11</sup> M<sup>-1</sup> s<sup>-1</sup>).</p>
+<p class="noindent"><b>5.3</b><span class="space">&#160;</span>Derive <a href="#eqn_5.26">eqn 5.26</a>. Hint: note that <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>x</mi>
+   <mtext>A</mtext>
+  </msub>
+  <mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msub>
+   <mi>x</mi>
+   <mtext>B</mtext>
+  </msub>
+  <mo>;</mo><msub>
+   <mi>x</mi>
+   <mtext>B</mtext>
+  </msub>
+  <mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><msub>
+   <mi>x</mi>
+   <mtext>C</mtext>
+  </msub>
+  <mo>+</mo><msub>
+   <mi>x</mi>
+   <mtext>D</mtext>
+  </msub>
+  <mo>=</mo><mn>0</mn><mo>;</mo><msub>
+   <mi>K</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>=</mo><mtext>&#x2009;</mtext><mi>C</mi><mo>/</mo><mi>a</mi><mi>b</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mover accent='true'>
+   <mi>c</mi>
+   <mo>&#x00AF;</mo>
+  </mover>
+  <mo>/</mo><mover accent='true'>
+   <mi>a</mi>
+   <mo>&#x00AF;</mo>
+  </mover>
+  <mover accent='true'>
+   <mi>b</mi>
+   <mo>&#x00AF;</mo>
+  </mover>
+  
+ </mrow>
+</math>
+ (Bernasconi 1976, <a href="Chapter04.xhtml#ch04">Ch. 4</a>, Strehlow 1992, <a href="Chapter04.xhtml#ch04">Ch. 4</a>).</p>
+<p class="noindent"><b>5.4</b><span class="space">&#160;</span>The rate of the ring inversion in morpholine (3) can be determined from the temperature dependence of the <sup>1</sup>H-NMR signals of the N-CH<sub>2</sub> hydrogens. At low temperature separate signals are observed for the axial and equatorial hydrogens, with (&#957;<sub>a</sub>-&#957;<sub>e</sub>) = 23 Hz, but coalescence of the signals occurs at &#x2014;70&#x00B0;C (Harris 1968). Calculate the rate constant for the inversion process at this temperature (<a href="#sec_5.4">Sect. 5.4</a>). <i>(k</i> &#x003D; 51 s<sup>-1</sup>).</p>
+
+
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="fig1">
+ <img src="../images/page78-4.jpg" alt="images"/>
+</figure>
+</aside>
+
+
+<h3 class="h3">References</h3>
+
+<p class="noindent">Bartl, J., Steenken, S., and Mayr, H. (1991). <i>J. Am, Chem. Soc</i>., <b>113</b>,7710. Bernasconi, C. F. (1976). <i>Relaxation kinetics</i>, Academic Press, New York. Burgermeister, W. and Winkler-Oswatitsch, R. (1977). <i>Top. Curr.</i></p>
+<p class="noindent"><i>Chem</i>., <b>69</b>,91.</p>
+<p class="noindent">Cahen, Y. M., Dye, J. L., and Popov, A. I. (1975). <i>J. Phys. Chem</i>., <b>79</b>, 1292. Eigen, M. and De Maeyer, L. (1955). Z. <i>Elektrochem</i>., <b>59</b>, 986.</p>
+<p class="noindent">Eigen, M., Kurtze, G., and Tamm, K. (1953). Z. <i>Elektrochem</i>., <b>57</b>, 103.</p>
+<p class="noindent">Harris, R. K. (1968). <i>J. Chem. Soc. (B),</i> 686.</p>
+<p class="noindent">Holtzwarth, J. F., Schmidt, A., Wolff, H., and Volk, R. (1977). <i>J. Phys. Chem.,</i> <b>81</b>, 2300.</p>
+<p class="noindent">Kresge, A. J. (1990). <i>Acc. Chem. Res.,</i> <b>23</b>, 43.</p>
+<p class="noindent">McClelland, R. A. and S&#248;rensen, P. E. (1986). <i>Can. J. Chem.,</i> <b>64</b>, 1196.</p>
+
+<a id="page_79" class="page" style="width:70%;">page 79, Fast reactions in solution</a>
+
+<p class="noindent">McClelland, R. A. and S&#248;rensen, P. E. (1990). <i>Acta Chem. Scand.,</i> <b>44</b>. 1082. McConnell, H. M. (1958). <i>J. Chem. Phys</i>., <b>28</b>,430.</p>
+<p class="noindent">Onsager, L. (1934). <i>J. Chem. Phys.,</i> <b>2</b>, 599.</p>
+<p class="noindent">Sandstrom, J. (1982). <i>Dynamic NMR spectroscopy.</i> Academic Press, New York.</p>
+<p class="noindent">Smoluchowski, M. von. (1917). <i>Z. physik. Chem.,</i> <b>92</b>, 129.</p>
+<p class="noindent">Strehlow, H. (1992). <i>Rapid reactions in solution.</i> VCH Verlagsgesellschaft, Weinheim.</p>
+<p class="noindent">Stuehr, J. E. (1986). Ultrasonic methods. In <i>Investigation of rates and mechanisms of reactions,</i> (4th edn). Vol 6, Part II, <a href="Chapter06.xhtml#ch06">Ch. 6</a> (ed. C. F. Bernasconi). Wiley, New York.</p>
+<p class="noindent">Tonomura, B., Nakatani, H., Ohnishi, M., Yamaguchi-Ito, J., and Hiromi, K. (1978). <i>Anal</i>. <i>Biochem</i>., <b>84</b>, 370.</p>
+<p class="noindent">West, M. A. (1986). Flash and laser photolysis. In <i>Investigation of rates and mechanisms of reactions,</i> (4th edn). Vol 6, Part II, Ch. 8 (ed. C. F. Bernasconi). Wiley, New York.</p>
+<h3 class="h3">Background reading</h3>
+
+<p class="noindent">Bernasconi, C. F. (1976). <i>Relaxation kinetics.</i> Academic Press, New York. Eigen, M. and De Maeyer, L. (1974). Theoretical basis of relaxation spectrometry. In <i>Investigation of rates and mechanisms of reactions,</i> (3rd edn). Vol 6, Part II, <a href="Chapter03.xhtml#ch03">Ch. 3</a> (ed. G. G. Hammes). Wiley, New York.</p>
+<p class="noindent">Strehlow, H. (1992). <i>Rapid reactions in solution.</i> VCH Verlagsgesellschaft, Weinheim.</p>
+</section>
+</section>
+</body>
+</html>

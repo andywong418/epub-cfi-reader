@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+<head>
+<meta name="dtb:uid" content="978-0-19-855662-6"/>
+<meta name="dtb:depth" content="1"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle><text>Organic synthesis</text></docTitle>
+<navMap>
+<navPoint id="navpoint1" playOrder="1"><navLabel><text>Title Page</text></navLabel><content src="xhtml/Titlepage.xhtml"/></navPoint>
+<navPoint id="navpoint2" playOrder="2"><navLabel><text>Copyright Page</text></navLabel><content src="xhtml/Copyrightpage.xhtml"/></navPoint>
+<navPoint id="navpoint3" playOrder="3"><navLabel><text>Series Editor&#x2019;s Foreword</text></navLabel><content src="xhtml/Series_Editor's_Foreword.xhtml"/></navPoint>
+<navPoint id="navpoint4" playOrder="4"><navLabel><text>Preface</text></navLabel><content src="xhtml/Preface.xhtml"/></navPoint>
+<navPoint id="navpoint5" playOrder="5"><navLabel><text>Contents</text></navLabel><content src="xhtml/Contents.xhtml"/></navPoint>
+<navPoint id="navpoint6" playOrder="6"><navLabel><text>B1 Hydroboration</text></navLabel><content src="xhtml/ChapterB01.xhtml"/></navPoint>
+<navPoint id="navpoint7" playOrder="7"><navLabel><text>B2 Reactions of organoboranes</text></navLabel><content src="xhtml/ChapterB02.xhtml"/></navPoint>
+<navPoint id="navpoint8" playOrder="8"><navLabel><text>B3 Further reactions of organoboranes</text></navLabel><content src="xhtml/ChapterB03.xhtml"/></navPoint>
+<navPoint id="navpoint9" playOrder="9"><navLabel><text>B4 Organoboron routes to unsaturated hydrocarbons</text></navLabel><content src="xhtml/ChapterB04.xhtml"/></navPoint>
+<navPoint id="navpoint10" playOrder="10"><navLabel><text>B5 Allylboranes and borane enolates</text></navLabel><content src="xhtml/ChapterB05.xhtml"/></navPoint>
+<navPoint id="navpoint11" playOrder="11"><navLabel><text>B6 Boronic ester homologation</text></navLabel><content src="xhtml/ChapterB06.xhtml"/></navPoint>
+<navPoint id="navpoint12" playOrder="12"><navLabel><text>B Further reading</text></navLabel><content src="xhtml/BFurtherreading.xhtml"/></navPoint>
+<navPoint id="navpoint13" playOrder="13"><navLabel><text>Si01 Properties of organosilicon compounds</text></navLabel><content src="xhtml/ChapterSi01.xhtml"/></navPoint>
+<navPoint id="navpoint14" playOrder="14"><navLabel><text>Si02 Protection of hydroxy groups as silyl ethers</text></navLabel><content src="xhtml/ChapterSi02.xhtml"/></navPoint>
+<navPoint id="navpoint15" playOrder="15"><navLabel><text>Si03 Silyl enol ethers and related silyl ethers</text></navLabel><content src="xhtml/ChapterSi03.xhtml"/></navPoint>
+<navPoint id="navpoint16" playOrder="16"><navLabel><text>Si04 Alkene synthesis (Peterson olefination)</text></navLabel><content src="xhtml/ChapterSi04.xhtml"/></navPoint>
+<navPoint id="navpoint17" playOrder="17"><navLabel><text>Si05 Alkynyl-, vinyl-, and arylsilanes</text></navLabel><content src="xhtml/ChapterSi05.xhtml"/></navPoint>
+<navPoint id="navpoint18" playOrder="18"><navLabel><text>Si06 Allysilanes and acylsilanes</text></navLabel><content src="xhtml/ChapterSi06.xhtml"/></navPoint>
+<navPoint id="navpoint19" playOrder="19"><navLabel><text>Si Further reading</text></navLabel><content src="xhtml/SiFurtherreading.xhtml"/></navPoint>
+<navPoint id="navpoint20" playOrder="20"><navLabel><text>Index</text></navLabel><content src="xhtml/Index.xhtml"/></navPoint>
+</navMap>
+</ncx>

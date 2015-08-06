@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Mass transport</title>
+<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div>
+
+<section epub:type="chapter" id="ch02">
+<a id="page_13" class="page" style="width:70%">Page 13, Mass transport</a>
+
+<h1 class="main"><b>2</b><span class="space">&#160;</span><b>Mass transport</b></h1>
+<p class="noindent">&#160;</p>
+
+<p class="noindent"><a href="Chapter01.xhtml">Chapter 1</a> considered the rate of an electron transfer reaction occuring at the electrode/solution interface. However, it is clear that other physical processes may contribute to the overall kinetics of any particular reaction. In particular, it can be appreciated that in order for electrolysis to proceed the reactant molecule must be transported from the bulk solution to the electrode interface, and that the reaction products, once formed, will themselves diffuse away from the electrode. A basic summary of the steps involved is shown in <a href="#fig_2.1">Fig. 2.1</a></p>
+
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+
+<figure class="fig1" id="fig_2.1">
+<img src="../images/page_13_1.jpg" alt="images"/>
+<figcaption class="aside1"><b>Fig. 2.1</b> Schematic of some of the processes that influence the rate of an electrode reaction in which A is reduced to B.</figcaption></figure></aside>
+
+<p class="indent3-ka">The overall reaction rate will be limited by the slowest step. A particular
+reaction might therefore be controlled either by the kinetics of electron 
+fer or by the rate at which material is brought to (or from) the electrode through mass
+ transport (e.g. diffusion).</p>
+
+<p class="indent3-ka">It was revealed in the previous chapter that the electron transfer rate can be experimentally controlled through the electrode potential and that it typically varies by several orders of magnitude for a relatively small increment in the potential. It may therefore be anticipated that when electrolytic reactions are induced to occur rapidly, mass transport effects may become important for the successful interpretation of experimental observations.</p>
+
+<p class="indent3-ka">According to experimental conditions the following transport processes are found to be significant</p>
+<ul>
+<li>diffusion</li>
+<li>convection</li>
+<li>migration</li>
+</ul>
+<p class="indent3-ka">The significance of each of the transport properties noted above will now be considered in a little more detail.</p>
+
+<section epub:type="chapter" id="sec_2.1">
+<h2 class="h2"><b>2.1</b><span class="space">&#160;</span><b>Diffusion</b></h2>
+
+<p class="noindent">Diffusion arises from uneven concentration distributions and acts to maxi-mize entropy by smoothing out inhomogeneities of composition within any system.</p>
+
+<p class="indent3-ka">The rate of diffusion at a given point in solution is dependent upon the concentration gradient at that particular location. Fick (1855) first described diffusion mathematically by considering the simple case of linear diffusion to a planar surface (<a href="#fig_2.2">Fig. 2.2</a>). He showed experimentally that the number of moles of material diffusing through a unit area in one second, the &#x2018;diffusional flux&#x2019;, <i>j,</i> for a species B is</p>
+
+
+<p class="noindent"><a id="page_14" class="page">Page 14, Mass transport</a></p>
+<p class="fig1" id="eq_2.1" style="margin-left:5em"> 
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+
+ <mrow>
+  <mi>j</mi><mo>=</mo><mo>&#x2212;</mo><msub>
+   <mi>D</mi>
+   <mi>B</mi>
+  </msub>
+  <mfrac>
+   <mrow>
+    <mo>&#x2202;</mo><mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><mi>x</mi>
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+
+<span style="float:right;margin-right:14.5em">(2.1)</span></p>
+
+<p class="noindent">where [B] is the concentration of B. The constant of proportionality, D<sub>B</sub>, is known as a diffusion coefficient and is characteristic of the diffusing species. <a href="#eq_2.1">Equation 2.1</a> is Fick&#x2019;s first law of diffusion.</p>
+
+<p class="indent3-ka">In practice, electrochemists are more usually concerned with the change in concentration at a point (such as that adjacent to the electrode surface) as a function of time. This can be established by considering the variation in con-centration of material within the region <i>x</i> to <i>x</i> &#x002B; dx (<a href="#fig_2.3">Fig. 2.3</a>) during a time interval (d<i>t</i>). This is simply related to the difference in flux of B entering through the plane at <i>x</i> and the flux leaving through the plane at <i>x</i> &#x002B; dx during that time. This can be expressed by</p>
+
+
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+
+<figure class="fig1" id="fig_2.2">
+<img src="../images/page_14_1.jpg" alt="images"/>
+<figcaption class="aside1"><b>Fig. 2.2</b> Diffusion to a large planar surface.</figcaption></figure>
+
+<p class="noindent">&#160;</p>
+<p class="aside">The quantity called the flux was first discussed in <a href="Chapter01.xhtml">Chapter 1.</a></p></aside>
+
+
+<p class="fig1" id="eq_2.2" style="margin-left:5em"> 
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+
+ <mrow>
+  <msub>
+   <mrow>
+    <mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mo stretchy='false'>(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo>+</mo><mi>d</mi><mi>t</mi><mo stretchy='false'>)</mo>
+   </mrow>
+  </msub>
+  <mi>A</mi><mi>d</mi><mi>x</mi><mo>&#x2212;</mo><msub>
+   <mrow>
+    <mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mo stretchy='false'>(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy='false'>)</mo>
+   </mrow>
+  </msub>
+  <mi>A</mi><mi>d</mi><mi>x</mi><mo>=</mo><msub>
+   <mi>j</mi>
+   <mrow>
+    <mo stretchy='false'>(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy='false'>)</mo>
+   </mrow>
+  </msub>
+  <mi>A</mi><mi>d</mi><mi>t</mi><msub>
+   <mo>&#x2212;</mo>
+   <mrow>
+    <mo stretchy='false'>(</mo><mi>x</mi><mo>+</mo><mi>d</mi><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy='false'>)</mo>
+   </mrow>
+  </msub>
+  <mi>A</mi><mi>d</mi><mi>t</mi>
+ </mrow>
+</math>
+
+
+<span style="float:right;margin-right:2em">(2.2)</span></p>
+
+
+<p class="noindent">which is a statement of mass conservation.</p>
+
+<figure class="fig1" id="fig_2.3">
+<img src="../images/page_14_2.jpg" alt="images"/>
+<figcaption style="margin-left:0em;width:100%"><p class="noindent"><b>Fig. 2.3</b> Schematic of the flux of a species into and out of a zone bounded by two planes separated by a distance <i>dx.</i></p></figcaption></figure>
+
+<p class="noindent">Simple rearrangement of <a href="#eq_2.2">eqn 2.2</a> results in the general conservation equation</p>
+
+
+
+<p class="fig1" id="eq_2.3" style="margin-left:5em"> 
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mfrac>
+   <mo>&#x2202;</mo>
+   <mrow>
+    <mo>&#x2202;</mo><mi>t</mi>
+   </mrow>
+  </mfrac>
+  <msub>
+   <mrow>
+    <mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mo stretchy='false'>(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy='false'>)</mo>
+   </mrow>
+  </msub>
+  <mo>+</mo><mfrac>
+   <mo>&#x2202;</mo>
+   <mrow>
+    <mo>&#x2202;</mo><mi>x</mi>
+   </mrow>
+  </mfrac>
+  <msub>
+   <mi>j</mi>
+   <mrow>
+    <mo stretchy='false'>(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy='false'>)</mo>
+   </mrow>
+  </msub>
+  <mo>=</mo><mn>0</mn>
+ </mrow>
+</math>
+
+<span style="float:right;margin-right:14.5em">(2.3)</span></p>
+
+<p class="noindent">Substitution of the diffusional flux from <a href="#eq_2.1">eqn 2.1</a> into <a href="#eq_2.3">eqn 2.3</a>, gives the desired relationship</p>
+
+
+
+<p class="fig1" id="eq_2.4" style="margin-left:5em"> 
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mfrac>
+   <mrow>
+    <mo>&#x2202;</mo><mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><mi>t</mi>
+   </mrow>
+  </mfrac>
+  <mo>=</mo><msub>
+   <mi>D</mi>
+   <mi>B</mi>
+  </msub>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <msup>
+       <mo>&#x2202;</mo>
+       <mn>2</mn>
+      </msup>
+      <mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+     </mrow>
+     <mrow>
+      <mo>&#x2202;</mo><msup>
+       <mi>x</mi>
+       <mn>2</mn>
+      </msup>
+      
+     </mrow>
+    </mfrac>
+    
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+
+
+<span style="float:right;margin-right:14.5em">(2.4)</span></p>
+
+
+<figure class="fig1" id="fig_2.4" style="width:100%;margin-left:0em">
+<img src="../images/page_14_3.jpg" alt="images"/>
+<figcaption style="margin-left:0em;width:100%"><p class="noindent"><b>Fig. 2.4</b> The diffusion field around a microdisc electode after a short period of electrolysis</p></figcaption></figure>
+
+
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+<p class="aside">Equations of the form <a href="#eq_2.4">2.4</a> are readily solved using numerical computational approaches. For further details see Britz (1988)</p></aside>
+
+
+
+
+<p class="noindent"><a id="page_15" class="page">Page 15, Mass transport</a>This differential equation is Fick&#x2019;s second law of diffusion. It enables the prediction of concentration changes of electroactive material close to an electrode surface.When more than one direction needs to be considered, for example in three Cartesian directions (x,y,z), the diffusional equation must be extended to describe transport in each direction (<a href="#fig_2.4">Fig. 2.4</a>)</p>
+
+
+<p class="fig1" style="margin-left:5em"> 
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mfrac>
+   <mrow>
+    <mo>&#x2202;</mo><mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><mi>t</mi>
+   </mrow>
+  </mfrac>
+  <mo>=</mo><msub>
+   <mi>D</mi>
+   <mi>B</mi>
+  </msub>
+  <mfrac>
+   <mrow>
+    <msup>
+     <mo>&#x2202;</mo>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><msup>
+     <mi>x</mi>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+  </mfrac>
+  <mo>+</mo><msub>
+   <mi>D</mi>
+   <mi>B</mi>
+  </msub>
+  <mfrac>
+   <mrow>
+    <msup>
+     <mo>&#x2202;</mo>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><msup>
+     <mi>y</mi>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+  </mfrac>
+  <mo>+</mo><msub>
+   <mi>D</mi>
+   <mi>B</mi>
+  </msub>
+  <mfrac>
+   <mrow>
+    <msup>
+     <mo>&#x2202;</mo>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><msup>
+     <mi>z</mi>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+</p>
+
+
+<p class="noindent">This is derived in a similar manner to <a href="#eq_2.4">eqn 2.4</a>.</p>
+</section>
+<section epub:type="chapter" id="sec_2.2">
+<h2 class="h2"><b>2.2</b><span class="space">&#160;</span><b>Convection</b></h2>
+
+<p class="noindent">Movement due to convection occurs when a mechanical force acts on a solu-tion. Two types of convection may be usefully distinguished.</p>
+
+<p class="indent3-ka">The first is natural convection, which can be present in any solution and arises from thermal gradients and/or density differences within the solution. In electrolysis reactions, the former may arise simply as a result of the exo- or endo-thermicity of the process, and the latter as a result of the electrode reaction creating concentrations of products near the electrode of different density to those of the reactants in bulk solution. Natural convection typically becomes a significant perturbation in electrolysis conducted with electrodes of conventional size (approximately mm or larger) on the time-scale of 10-20 s and longer, and is generally undesirable since it is difficult to predict.
+The second type of movement is forced convection, which is achieved by external forces such as gas bubbling through solution, pumping, or stirring.</p>
+
+<p class="indent3-ka">In some electrochemical experiments an element of forced convection is sometimes deliberately introduced. This has the function of swamping any contributions from natural convection, so ensuring that reproducible experi-ments can be made over time-scales beyond the 10-20 s limit. In particular, the forced convection is usually arranged to possess well-defined hydrodynamic behaviour. This enables a quantitative description of the flow in solution to be established and the pattern of mass transport to the electrode to be rigorously predicted. Mathematically, concentration changes resulting from movement of solution with a velocity v<sub>x</sub> are given by</p>
+
+<p class="fig1" id="eq_2.5" style="margin-left:5em;text-align:center"> 
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+
+ <mrow>
+  <mfrac>
+   <mrow>
+    <mo>&#x2202;</mo><mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><mi>t</mi>
+   </mrow>
+  </mfrac>
+  <mo>=</mo><mo>&#x2212;</mo><msub>
+   <mi>v</mi>
+   <mi>x</mi>
+  </msub>
+  <mfrac>
+   <mrow>
+    <mo>&#x2202;</mo><mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><mi>x</mi>
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+
+<span style="float:right;margin-right:14.5em">(2.5)</span></p>
+
+ <p class="noindent">This equation is the convection analogue of <a href="#eq_2.4">eqn (2.4)</a>.</p>
+
+</section>
+
+<section epub:type="chapter" id="sec_2.3">
+<h2 class="h2"><b>2.3</b><span class="space">&#160;</span><b>Migration</b></h2>
+
+<p class="noindent">The external electric field (d&#981;/dx), which exists at the electrode/solution interface as a result of the drop in electrical potential between the two phases (&#916;&#981;<sub>m/s</sub>), is capable of exerting an electrostatic force on charged species present in the interfacial region and thereby of inducing the movement of ions to<a id="page_16" class="page">Page 16, Mass transport</a>or from the electrode. These &#x2018;migration&#x2019; effects contribute to transport phenomena accompanying electrochemical reactions.</p>
+<p class="indent3-ka">The migratory flux <i>(j<sub>m</sub>)</i> is proportional to the concentration of the ion, [B], the electric field, and the ionic mobility (<i>u</i>)</p>
+<p class="fig1"  style="margin-left:7em" id="eq_2.6">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>j</mi>
+   <mi>m</mi>
+  </msub>
+  <mi>&#x03B1;</mi><mo>&#x2212;</mo><mi>u</mi><mrow><mo>[</mo> <mi>B</mi> <mo>]</mo></mrow><mfrac>
+   <mrow>
+    <mo>&#x2202;</mo><mi>&#x03D5;</mi>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><mi>x</mi>
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+<span style="float:right;margin-right:15em">(2.6)</span></p>
+<aside class="abc" style="margin-top:-3.3em;" epub:type="sidebar">
+<p class="aside">The electrostatic force apparent on an ion under an external electric field &#981; is given by</p>
+<p class="fig1"  style="margin-left:1em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <mi>F</mi><mi>o</mi><mi>r</mi><mi>c</mi><mi>e</mi><mo>=</mo><mfrac>
+   <mrow>
+    <mi>z</mi><mi>F</mi>
+   </mrow>
+   <mrow>
+    <msub>
+     <mi>N</mi>
+     <mi>A</mi>
+    </msub>
+    
+   </mrow>
+  </mfrac>
+  <mfrac>
+   <mrow>
+    <mo>&#x2202;</mo><mi>&#x03D5;</mi>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><mi>x</mi>
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math></p></aside>
+
+<p class="noindent">The ionic mobility is dependent on the ionic charge and size, as well as on the solution viscosity.</p></section>
+<section epub:type="chapter" id="sec_2.4">
+<h2 class="h2"><b>2.4 Experimental elimination of migration effects</b></h2>
+<p class="noindent">The interplay of migration and electrolysis in any electrochemical reaction gives rise to a complex physical transport process which is hard to control or interpret. For example, consider a charge transfer process occurr
+ing at an electrode surface. The consequence of this will be a change in the concentra-tion of ionic species local to the electrode and the result is a change in the electrical potential in the solution. Hence, the electric field 
+(d&#981;/dx), near the electrode is also altered. This, in turn, causes a change in migratory fluxes (<a href="#eq_2.6">eqn 2.6</a>) and the rate of mass transport of electroactive material, both to and from the electrode, will change as the electrolysis proceeds. This varying rate of mass transport makes interpretation of experimental data difficult, to say the least.</p>
+<p class="indent3-ka">To simplify this problem experiments are often performed under condi-tions where migration can be neglected. This is made possible by means of a chemically and electrochemically inert &#x2018;background electrolyte&#x2019; added to the solution in high concentrations: levels around, or in excess of 0.1M may be commonly used.</p>
+<p class="indent3-ka">The way in which the background electrolyte operates can be understood by examining electrolytic ion injection or removal at the electrode/solution interface. This causes a slight redistribution of the different cations and anions comprising the background electrolyte to take place near the interface, so as to maintain near electrical neutrality in all of the interfacial region - except for a very tiny region absolutely adjacent to the electrode (see below). The availability of background ions to maintain electroneutrality ensures that electric fields, (d&#981;/dx), do not build up in the solution as electrolysis proceeds. In this way transport effects are almost completely blind to the small charge injection that arises from electrolytic reaction. This means that the migratory mass transport effects detailed in <a href="#eq_2.6">eqn 2.6</a> can be neglected.</p>
+<p class="indent3-ka">Calculations have shown that approximately 100 times the concentration of background electrolyte relative to that of the reactant is required if the measured current is not to be perturbed significantly (&#x003C;1&#x0025;) from its value where migration plays no part.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<p class="aside">For further details regarding the effects of mass transport in electrode systems the reader is directed to Brett and Brett (1986)</p></aside>
+<p class="indent3-ka">The addition of background electrolyte also provides several other highly important benefits. First, a high concentration of electrolyte increases the solution conductivity making it less resistive to the flow of current; otherwise,<a id="page_17" class="page">Page 17, Mass transport</a>the passage of current through the cell may be simply limited by the bulk solution conductivity as opposed to the nature of the interfacial reaction of interest. Secondly, the large excess of background electrolyte controls the dis-tance at the interface over which the electrical potential drops from its value in the metal electrode (&#981;<sub>m</sub>) to that in bulk solution (&#981;<sub>s</sub>). This so-called &#x2018;double layer&#x2019; (see <a href="Chapter04.xhtml">Chapter 4</a>) is compressed, by the high levels of electrolyte used into a very small region of approximate dimensions 10-20&#x00C5;, over which the full interfacial drop in potential (&#916;&#981;<sub>m/s</sub>) occurs. This has two vital consequences: (i) the absence of potential gradients outside this narrow region prevents migration effects as discussed above, and (ii) the distance is short enough to be compatible with tunnelling of electrons between the metal electrode and the reactant in solution. The latter is essential if a reagent is to get sufficiently close to the electrode <i>and</i> experience the full driving force (&#916;&#981;<sub>m/s</sub>) for the electron transfer reaction.</p>
+<aside class="abc" style="margin-top:-9.3em;" epub:type="sidebar">
+<p class="aside">Experimentally the so-called &#x2018;formal potential&#x2019; is recorded when experiments are performed under conditions of constant solution activity.</p></aside>
+<p class="indent3-ka">A third advantage is that the ionic strength of the solution stays effectively constant during electrolysis because of the relatively high concentration of background electrolyte compared to that of the reactants and products. This means that the activity coefficients of the reactants and products (which are highly sensitive to ionic strength) are kept constant. As a result (i) the electrode potentials necessary to bring about electrolysis, as predicted from the Nemst equation, and (ii) the rate of any chemical reaction of the electrode products (or reactants), are both constant throughout the experiment.</p>
+<aside class="abc" style="margin-top:-5.3em;" epub:type="sidebar">
+<p class="aside">The activity of a species X <i>(a<sub>x</sub>)</i> is defined as</p>
+<p class="fig1"  style="margin-left:5em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <msub>
+   <mi>a</mi>
+   <mi>x</mi>
+  </msub>
+  <mo>=</mo><msub>
+   <mi>&#x03B3;</mi>
+   <mi>x</mi>
+  </msub>
+  <mrow><mo>[</mo> <mi>X</mi> <mo>]</mo></mrow>
+ </mrow>
+</math></p>
+<p class="aside">where <i>&#x03B3;<sub>x</sub></i> is the activity coefficient.</p></aside>
+</section>
+<section epub:type="chapter" id="sec_2.5">
+<h2 class="h2"><b>2.5 Transport in electrolysis</b></h2>
+<p class="noindent">Transport properties are considered next, in relation to the simple electro-chemical oxidation of B to B<sup>&#x002B;</sup>:</p>
+<p class="fig1"  style="margin-left:7em" id="eq_2.7">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>B</mi><mo stretchy='false'>(</mo><mi>a</mi><mi>q</mi><mo stretchy='false'>)</mo><mo>&#x2192;</mo><msup>
+   <mi>B</mi>
+   <mo>+</mo>
+  </msup>
+  <mo stretchy='false'>(</mo><mi>a</mi><mi>q</mi><mo stretchy='false'>)</mo><mo>+</mo><msup>
+   <mi>e</mi>
+   <mo>&#x2212;</mo>
+  </msup>
+  <mo stretchy='false'>(</mo><mi>m</mi><mo stretchy='false'>)</mo>
+ </mrow>
+</math>
+<span style="float:right;margin-right:15em">(2.7)</span></p>
+<p class="indent3-ka">In the presence of excess background electrolyte, the above process can be viewed as comprising the movement of B through solution up to a point within 10-20&#x00C5; of the electrode surface, where the drop in potential between the electrode and the solution induces the transfer of the electron (by tunnelling) from B into the metal electrode. Outside this region, it has been noted that negligible gradients of electric potential exist, so that the material must be transported to this site of electron exchange by diffusion and/or convection alone, with migration playing no part.</p>
+<p class="indent3-ka">Of particular interest are the concentration distributions of B and B&#x002B; in space (concentration &#x2018;profiles&#x2019;) adjacent to the electrode surface (outside the 10-20&#x00C5; double layer) developed when <a href="#eq_2.7">reaction 2.7</a> occurs. Two cases are considered: in the first the reactant B is transported to the electrode by diffusion and in the second transport occurs via a combination of <i>diffusion</i> and <i>forced convection.</i></p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.5" style="margin-left:0em">
+<img src="../images/page_17_1.jpg" alt="images"/>
+<figcaption class="aside1"><b>Fig. 2.5</b> Schematic representation of a large planar electrode embedded in one wall of a vessel containing a reactant B</figcaption></figure></aside>
+<h3 class="h3"><b>Diff usional transport</b></h3>
+<p class="noindent">Consider a planar electrode placed in a large container of a reactant B, <a href="#fig_2.5">Fig. 2.5</a>. Before the electrode is connected to a potential source the solution</p>
+<p class="noindent"><a id="page_18" class="page">Page 18, Mass transport</a>composition is constant and a uniform bulk concentration of B pertains throughout the solution. If the electrode is then connected to a potential source, which drives reaction <a href="#eq_2.7">2.7 </a>to completion, any B at the electrode interface is converted to <b>B<sup>&#x002B;</sup></b>. As a result, a concentration gradient is induced between the electrode (where the concentration of B approaches zero) and bulk solution (where its value is unchanged from the initial value). The concentration gradient so created is perpendicular to the electrode (x-direction) and acts to force a flux of fresh B from bulk solution to flow towards the electrode surface (as described by<a href="#eq_2.1"> eqn 2.1)</a>. Gradually a &#x2018;diffusion layer&#x2019; is established close to the electrode in which the concentration of B differs from its value in bulk solution. As electrolysis proceeds the thickness of this layer becomes progressively larger. <a href="#fig_2.6">Figure 2.6</a> shows the concentration profile at certain times after electrolysis has been initiated. It can be seen that close to the electrode surface the profile is linear, but beyond this it approaches the bulk concentration value asymptotically.</p>
+
+
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<p class="aside">By assuming a very large electrode we have been able to consider material flux in the x-direction only and to ignore contributions from other directions.</p></aside>
+<p class="indent3-ka">The scale of the diffusion layer grows steadily as the electrolysis consumes more and more B. In principle, the diffusion layer thickness can grow without limit until it has exhausted all the B within the container, and this is the case if the transport effects experienced by B are purely diffusional in nature. The resulting spreading out of the diffusion layer with time is illustrated in<a href="#fig_2.6"> Fig. 2.6</a>.</p>
+
+
+
+<figure class="fig1" id="fig_2.6">
+<img src="../images/page_18_1.jpg" alt="images" style="margin-left:4em" />
+<p class="noindent">&#160;&#160;&#160;&#160;</p>
+<figcaption style="width:100%"><p class="noindent"><b>Fig. 2.6</b> The growth of the diffusion layer thickness as a function of time (f).</p></figcaption></figure>
+<p class="indent3-ka">In reality the bulk of the solution invariably experiences some mixing, maintained by natural convection, and this limits the scale to which the diffu-sion layer can expand. Obviously, the greater the natural convection in bulk, the thinner the final diffusion layer thickness and the sooner after commencement of electrolysis is a constant diffusion layer thickness established. In other words, the concentration profile evolves to a steady-state diffusion layer thickness controlled by the extent of the mixing <a href="#fig_2.7">Fig. 2.7</a> in bulk solution. Under these steady-state conditions transport <i>within</i> the diffusion layer is pictured as occurring via diffusion alone, whilst outside the layer the concentration of B is maintained at its bulk value through natural mixing.</p>
+
+
+
+
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.7">
+<img src="../images/page_18_2.jpg" alt="images" />
+<figcaption class="aside1"><b>Fig. 2.7</b> Concentration profile once steady state has been established.</figcaption></figure></aside>
+
+
+
+
+
+
+<p class="indent3-ka">Nernst estimated the size of the diffusion layer thickness (&#x03B4;) by extrapola-tion of the linear region in <a href="#fig_2.8">Fig. 2.8</a>, close to the electrode, until it reaches a<a id="page_19" class="page">Page 19, Mass transport</a>
+concentration corresponding to that in bulk solution. Under normal experi-mental conditions, for electrodes with millimetre dimensions, the Nernst diffusion layer thickness is approximately 0.05 cm.</p>
+
+<p class="noindent">Nernst&#x2019;s approach also enables an estimate of the flux of material to the electrode surface from which the current, due to linear diffusion perpendicular to the electrode, is readily found</p>
+<p class="fig1" id="eq_2.8" style="text-align:center">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mfrac>
+   <mi>i</mi>
+   <mrow>
+    <mi>F</mi><mi>A</mi>
+   </mrow>
+  </mfrac>
+  <mo>=</mo><msub>
+   <mi>j</mi>
+   <mi>d</mi>
+  </msub>
+  <mo>=</mo><msub>
+   <mi>D</mi>
+   <mi>B</mi>
+  </msub>
+  <mfrac>
+   <mrow>
+    <msub>
+     <mrow>
+      <mrow><mo>[</mo> <mi>B</mi> <mo>]</mo></mrow>
+     </mrow>
+     <mrow>
+      <mi>b</mi><mi>u</mi><mi>l</mi><mi>k</mi>
+     </mrow>
+    </msub>
+    <mo>&#x2212;</mo><msub>
+     <mrow>
+      <mrow><mo>[</mo> <mi>B</mi> <mo>]</mo></mrow>
+     </mrow>
+     <mi>o</mi>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <msub>
+     <mi>&#x03B4;</mi>
+     <mi>d</mi>
+    </msub>
+    
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(2.8)</span></p>
+
+
+
+<p class="noindent">[B]<sub>0</sub> is the concentration of B at the electrode surface. This is controlled by the electrode potential; in <a href="#fig_2.6">Figs. 2.6 </a>and<a href="#fig_2.7"> 2.7</a> a strongly oxidizing electrode potential has been assumed so that the surface concentration of B is indistin- guishably close to zero.</p>
+
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.8">
+<img src="../images/page_19_1.jpg" alt="images" />
+<figcaption class="aside1"><b>Fig. 2.8 </b>Nemst diffusion layer thickness.</figcaption></figure></aside>
+
+
+<h3 class="h3"><b>Mass transport by convection and diffusion</b></h3>
+
+<p class="noindent">In systems where there is convection in addition to diffusion extra material is brought to the electrode surface and the currents that flow are larger than those observed when diffusion alone operates. Nevertheless, it is conventional to retain the notion of a diffusion layer and the use of <a href="#eq_2.8">eqn 2.8</a>. The &#x2018;dif-fusion&#x2019; layer thickness, &#x03B4;<sub>d</sub>, is smaller than before and now depends on the rate of convection. Needless to say, transport to the electrode is by both diffusion and convection, but the effect of the latter is allowed for in the convection dependence of &#x03B4;<sub>d</sub>, as will become clear later in this chapter.</p>
+
+<h3 class="h3"><b>Transport-limited current</b></h3>
+
+<p class="noindent">Since electroactive material must be transported to the electrode surface for electrolysis to occur, it follows that the maximum observable current is limited by the rate at which reactant reaches the electrode/solution interface. From<a href="#eq_2.8"> eqn 2.8</a> it is clear that if the electrode potential is gradually increased so that the surface concentration of the reactant ([B]<sub>0</sub>) eventually becomes zero, a limiting current <i>i</i><sub>L</sub> is reached</p>
+
+<p class="fig1" id="eq_2.9" style="text-align:center">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>i</mi>
+   <mi>L</mi>
+  </msub>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <msub>
+     <mi>D</mi>
+     <mi>B</mi>
+    </msub>
+    <mi>F</mi><mi>A</mi><msub>
+     <mrow>
+      <mrow><mo>[</mo> <mi>B</mi> <mo>]</mo></mrow>
+     </mrow>
+     <mrow>
+      <mi>b</mi><mi>u</mi><mi>l</mi><mi>k</mi>
+     </mrow>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <msub>
+     <mi>&#x03B4;</mi>
+     <mi>d</mi>
+    </msub>
+    
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(2.9)</span></p>
+
+<p class="noindent">Under these conditions all the electroactive material transported to the electrode is converted to products.</p>
+
+</section>
+<section epub:type="chapter" id="sec_2.6">
+<h2 class="h2">2.6<span class="space">	&#160;</span> 
+Hydrodynamic electrodes</h2>
+
+
+<p class="noindent">A hydrodynamic electrode is one in which forced convection is deliberately introduced to dominate transport to the electrode. Convection within the electrochemical cell may be induced in several ways. The electrode may be fixed and electrolyte solution allowed to flow across the surface, or the electrode may move (for example by rotation) inducing convection in the solution.</p>
+<p class="indent3-ka">For simplification of the associated theoretical description, experiments are usually designed so that laminar flow is obtained. In laminar flow the
+<a id="page_20" class="page">Page 20, Mass transport </a>solution moves smoothly in layers (laminae) along constant directions (streamlines) as shown in <a href="#fig_2.9">Fig. 2.9. </a>This contrasts with the irregular, chaotic motion that characterizes turbulent flow. Prediction of whether flow within an electrochemical cell is turbulent or laminar in nature is readily accomplished using the Reynolds number <i>(Re)</i> concept. This is a dimensionless parameter which is related to the cell geometry and the solution velocity through</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.9">
+<img src="../images/page_20_01.jpg" alt="images"/>
+
+<figcaption class="aside1"><b>Fig. 2.9</b> Laminar flow along a thin tube.</figcaption>
+</figure></aside>
+
+<figure class="fig1" style="margin-left:5em">
+<img src="../images/eq_20_1.jpg" alt="images"/>
+</figure>
+<p class="noindent">where the length and velocity characterize the electrode size and the convective flow as illustrated later. For any particular hydrodynamic electrode there exists a critical value of <i>Re</i> above which the flow changes from laminar to turbulent.</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<p class="aside">The hydrodynamic properties may be characterized by a number of different parameters including the Schmidt and Peclet numbers. For further reading in this area the reader is directed to the article by Brett and Brett (1986) or Oldham (1986).</p>
+</aside>
+<p class="indent3-ka">Hydrodynamic electrodes permit experimental variation of the transport characteristics, for example, by changing the solution flow rate. Controlling the rate of convection fixes the time spent near the electrode surface by species brought to, or formed at, the surface. This is important when electron transfer forms chemical reaction intermediates of specific lifetimes. It is possible to adjust the convection so that the time period in which the electrode&#x2018;sees&#x2019; these intermediates is either long or short compared to the time-scale of their existence. Comparison of the electrode responses in these two limits then permits the lifetime of the intermediates to be deduced. Convective control in this way fixes the <i>time-scale</i> of the electrochemical experiment. This important concept is encountered in detail in <a href="Chapter03.xhtml">Chapter 3</a>.</p>
+<h3 class="h3"><b>The rotating disc electrode</b></h3>
+<p class="noindent">A commonly encountered hydrodynamic electrode is the rotating disc electrode (RDE) which is particularly popular because it is simple to use and easy to construct. A small, metallic disc (often Au or Pt, of radius about 0.5 cm) acts as the working electrode and is embedded centrally within a large cylinder composed of an insulating material such as Teflon. The cylinder is placed into a vessel that contains the solution of interest (<a href="#fig_2.10">Fig. 2.10</a>) and rotated at a constant speed. The rotation spins the solution out from the cylinder surface in a radial direction and this movement in turn, draws fresh material up towards the disc. This sustains a steady supply of electroactive material to the electrode.</p>
+<figure class="fig1" id="fig_2.10" style="margin-left:5em">
+<img src="../images/page_20_2.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="margin-left:-4em">
+<p class="noindent2"><b>Fig. 2.10</b> The rotating disc electrode, RDE</p>
+</figcaption></figure>
+<p class="noindent"><a id="page_21" class="page">Page 21, Mass transfort</a> The Renolds number for the RDE is given by</p>
+<p class="fig1" style="margin-left:13em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <mi>Re</mi><mo>=</mo><mfrac>
+   <mrow>
+    <mi>&#x03C9;</mi><msubsup>
+     <mi>r</mi>
+     <mi>c</mi>
+     <mn>2</mn>
+    </msubsup>
+    
+   </mrow>
+   <mi>v</mi>
+  </mfrac>
+  
+ </mrow>
+</math></p>
+
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.11">
+<img src="../images/page_21_1.jpg" alt="images"/>
+
+<figcaption class="aside1"><b>Fig. 2.11 </b>Laminar flow lines at the rotating disc.</figcaption>
+</figure></aside>
+<p class="noindent">where r<sub>c</sub> is the radius of the cylinder, &#x03C9; the rotation speed in Hz (cycles per second), and v the viscosity of solution. Provided <i>Re</i> does not exceed about 1 x 10<sup>5</sup> the flow induced in the solution is laminar and has the pattern shown in<a href="#fig_2.11"> Fig. 2.11.</a> The convective flow sketched can be quantified precisely. Of particular importance is the component of the flow normal to the electrode, which is responsible for bringing fresh material to the surface. The velocity component (v<sub>z</sub>) in this direction, close to the electrode surface (z &#x2192; 0)has been shown to be</p>
+
+
+<p class="fig1" style="margin-left:12em">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> 
+<mrow>
+  <msub>
+   <mi>v</mi>
+   <mi>c</mi>
+  </msub>
+  <mo>&#x2248;</mo><mo>&#x2212;</mo><mi>C</mi><msup>
+   <mi>z</mi>
+   <mn>2</mn>
+  </msup>
+  
+ </mrow>
+</math>
+</p>
+
+<p class="noindent">where C&#x003D; 0.510&#x03C9;<sup>3/2</sup>v<sup>l/2</sup>D<sup>-l/3</sup>and where &#x03B7; is the solution viscosity. Notice that as the rotation speed is increased the velocity close to the surface (vz) also increases, as expected.</p>
+<p class="indent3-ka">To predict the flux of electroactive material, B, to the electrode surface both diffusion and convection must be considered. Under steady-state mass transport conditions</p>
+<p class="fig1" id="eq_2.11" style="margin-left:8em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <mfrac>
+   <mrow>
+    <mo>&#x2202;</mo><mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><mi>t</mi>
+   </mrow>
+  </mfrac>
+  <mo>=</mo><msub>
+   <mi>D</mi>
+   <mi>B</mi>
+  </msub>
+  <mfrac>
+   <mrow>
+    <msup>
+     <mo>&#x2202;</mo>
+     <mn>2</mn>
+    </msup>
+    <mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><msup>
+     <mi>z</mi>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+  </mfrac>
+  <mo>&#x2212;</mo><msub>
+   <mi>v</mi>
+   <mi>z</mi>
+  </msub>
+  <mfrac>
+   <mrow>
+    <mo>&#x2202;</mo><mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><mi>z</mi>
+   </mrow>
+  </mfrac>
+  <mo>=</mo><mn>0</mn>
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(2.11)</span></p>
+
+
+
+
+
+
+
+<p class="noindent">It can be appreciated that this equation is a composite of
+<a href="#eq_2.4"> eqns 2.4</a> and <a href="#eq_2.5">2.5,</a> which separately describe diffusion and convection. Note that, in accord with standard experimental practice, sufficient background electrolyte is assumed to be; present to permit the simplification outlined in <a href="#sec_2.4">Section 2.4</a> to neglect effects due to migration.<a href="#eq_2.11"> Equation 2.11</a> can be solved assuming [B] is zero at the electrode surface, corresponding to the transport-limited current, and the [B] found as a function of <i>z</i>. The limiting current is then readily evaluated from &#x2202;[B]/ <i>&#x2202;z</i> through the use of <a href="#eq_2.9">eqn 2.9.</a> The result is</p>
+<p class="fig1" id="eq_2.12" style="margin-left:8em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>I</mi>
+   <mrow>
+    <msub>
+     <mrow></mrow>
+     <mi>L</mi>
+    </msub>
+    
+   </mrow>
+  </msub>
+  <mo>=</mo><mn>0.62</mn><mi>n</mi><mi>F</mi><mi>A</mi><msub>
+   <mrow>
+    <mo stretchy='false'>[</mo><mi>B</mi><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mi>b</mi><mi>u</mi><mi>l</mi><mi>k</mi>
+   </mrow>
+  </msub>
+  <msubsup>
+   <mi>D</mi>
+   <mi>B</mi>
+   <mrow>
+    <mn>2</mn><mo>/</mo><mn>3</mn>
+   </mrow>
+  </msubsup>
+  <mmultiscripts>
+   <mi>v</mi>
+   <mprescripts/>
+   <mi>B</mi>
+   <none/>
+  </mmultiscripts>
+  <msup>
+   <mrow></mrow>
+   <mrow>
+    <mo>&#x2212;</mo><mn>1</mn><mo>/</mo><mn>6</mn>
+   </mrow>
+  </msup>
+  <msup>
+   <mi>&#x03C9;</mi>
+   <mrow>
+    <mn>1</mn><mo>/</mo><mn>2</mn>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(2.12)</span></p>
+
+<p class="noindent">This is the Levich equation for the RDE and predicts the variation in the transport limited current <b><small>(<i>i</i><sub>L</sub>)</small> </b>as a function of the rotation speed. In particular, a plot of the transport-limited current against the square root of rotation speed should yield a straight line which passes through the origin (<a href="#fig_2.12">Fig. 2.12</a>).</p>
+<p class="indent3-ka">It is informative to consider why the limiting current increases with rotation speed. As noted above, the velocity of the solution towards the electrode is greater at higher rotation speeds. This leads to enhanced convective transport of the electroactive material and a concomitant shrinking of the diffusion layer thickness as predicted in <a href="#sec_2.5">Section 2.5.</a> Quantitatively,</p>
+ <p class="fig1" style="margin-left:8em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <msub>
+   <mi>&#x03B4;</mi>
+   <mi>d</mi>
+  </msub>
+  <mo>=</mo><mn>1.61</mn><msubsup>
+   <mi>D</mi>
+   <mi>B</mi>
+   <mrow>
+    <mn>1</mn><mo>/</mo><mn>3</mn>
+   </mrow>
+  </msubsup>
+  <msup>
+   <mi>v</mi>
+   <mrow>
+    <mn>1</mn><mo>/</mo><mn>6</mn>
+   </mrow>
+  </msup>
+  <msup>
+   <mi>&#x03C9;</mi>
+   <mrow>
+    <mo>&#x2212;</mo><mn>1</mn><mo>/</mo><mn>2</mn>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math></p>
+<p class="noindent"><a id="page_22" class="page">Page 22, Mass transport</a></p>
+<p class="noindent">where v is the kinematic viscosity of the solution (viscosity/density). The influence of the diffusion layer thickness on the transport-limited current is, following the discussion in <a href="#sec_2.5">Section 2.5</a> 
+(<a href="#page_17">p.17</a>), given by</p>
+<aside class="abc" style="margin-top:-4.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.12">
+<img src="../images/page_22_1.jpg" alt="images"/>
+<figcaption class="aside1"><b>Fig. 2.12</b> A Levich plot for an RDE experiment.</figcaption></figure></aside>
+<p class="fig1"  style="margin-left:13em" id="eq_2.13">
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>j</mi>
+   <mi>L</mi>
+  </msub>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <msub>
+     <mi>D</mi>
+     <mi>B</mi>
+    </msub>
+    <msub>
+     <mrow>
+      <mrow><mo>[</mo> <mi>B</mi> <mo>]</mo></mrow>
+     </mrow>
+     <mrow>
+      <mi>b</mi><mi>u</mi><mi>l</mi><mi>k</mi>
+     </mrow>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <msub>
+     <mi>&#x03B4;</mi>
+     <mi>d</mi>
+    </msub>
+    
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+
+<span style="float:right;margin-right:2.8em">(2.13)</span></p>
+<p class="noindent">The behaviour shown in <a href="#fig_2.12">Fig. 2.12</a> is now readily rationalized, since the diffu-sion layer thickness is seen to vary inversely as the square root of the rotation speed. As &#x03B4;<sub>d</sub> shrinks, the concentration gradient of B, which drives a flux of B to the electrode, gets steeper and enhanced currents are predicted by
+<a href="#eq_2.13">eqn 2.13</a>.</p>
+<h3 class="h3">The channel electrode</h3>
+<p class="noindent">As was noted earlier, forced convection can also arise from the movement of electrolyte solution over a stationary working electrode. One example of such a system is the channel electrode <a href="#eq_2.13">(Fig. 2.13)</a>. This employs a thin rectangular duct through which solution is mechanically pumped. The electrode is embedded smoothly in one wall of the duct. If laminar flow is established the velocity profile across the channel is parabolic with the maximum velocity occurring at the channel centre <a href="#eq_2.14">(Fig. 2.14)</a>.</p>
+<aside class="abc" style="margin-top:-6.3em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page_22_2.jpg" alt="images"/>
+<figcaption class="aside1"><b>Fig. 2.14</b> Parabolic flow profile in the channel electrode.</figcaption></figure></aside>
+<figure class="fig1">
+<img src="../images/page_22_3.jpg" alt="images"/>
+<figcaption><p class="noindent"><b>Fig.2.13</b> The channel electrode.</p></figcaption></figure>
+<p class="indent3-ka">The convective-diffusion equation for mass transport within the rectangu-lar duct under steady state conditions is given by</p>
+<p class="fig1"  style="margin-left:11em" id="eq_2.14">
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>D</mi>
+   <mi>B</mi>
+  </msub>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <msup>
+     <mo>&#x2202;</mo>
+     <mn>2</mn>
+    </msup>
+    <mrow><mo>[</mo> <mi>B</mi> <mo>]</mo></mrow>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><msup>
+     <mi>y</mi>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+  </mfrac>
+  <mo>&#x2212;</mo><msub>
+   <mi>v</mi>
+   <mi>x</mi>
+  </msub>
+  <mfrac>
+   <mrow>
+    <mo>&#x2202;</mo><mrow><mo>[</mo> <mi>B</mi> <mo>]</mo></mrow>
+   </mrow>
+   <mrow>
+    <mo>&#x2202;</mo><mi>x</mi>
+   </mrow>
+  </mfrac>
+  <mo>=</mo><mn>0</mn>
+ </mrow>
+</math>
+
+<span style="float:right;margin-right:14.8em">(2.14)</span></p>
+<p class="noindent">Solution of this equation enables the prediction of the mass transport limited current as a function of the solution volume flow rate (Vf) in an analogous fashion to the RDE:</p>
+<p class="fig1"  style="margin-left:7em" id="eq_2.15">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <msub>
+   <mi>i</mi>
+   <mi>L</mi>
+  </msub>
+  <mo>=</mo><mn>0.925</mn><mi>n</mi><mi>F</mi><msub>
+   <mrow>
+    <mrow><mo>[</mo> <mi>B</mi> <mo>]</mo></mrow>
+   </mrow>
+   <mrow>
+    <mi>b</mi><mi>u</mi><mi>l</mi><mi>k</mi>
+   </mrow>
+  </msub>
+  <msubsup>
+   <mi>D</mi>
+   <mi>B</mi>
+   <mrow>
+    <mn>2</mn><mo>/</mo><mn>3</mn>
+   </mrow>
+  </msubsup>
+  <msubsup>
+   <mi>V</mi>
+   <mi>f</mi>
+   <mrow>
+    <mn>1</mn><mo>/</mo><mn>3</mn>
+   </mrow>
+  </msubsup>
+  <msup>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <msup>
+       <mi>h</mi>
+       <mn>2</mn>
+      </msup>
+      <mi>d</mi>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mrow>
+    <mo>&#x2212;</mo><mn>1</mn><mo>/</mo><mn>3</mn>
+   </mrow>
+  </msup>
+  <mi>w</mi><msubsup>
+   <mi>x</mi>
+   <mi>e</mi>
+   <mrow>
+    <mn>2</mn><mo>/</mo><mn>3</mn>
+   </mrow>
+  </msubsup>
+  
+ </mrow>
+</math>
+<span style="float:right;margin-right:15em">(2.15)</span></p>
+
+<p class="noindent">where <i>x<sub>e</sub></i> is the electrode length, <i>h</i>, the cell half-height, <i>d</i> the width of the cell, and <i>w</i> the electrode width. This equation holds when the flow rate is sufficiently fast that the diffusion layer thickness is much smaller than the depth of the cell. It predicts that <i>i<sub>L</sub></i> varies with the cube root of the volume flow rate.</p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<p class="aside">Unlike the RDE, the channel electrode is said to b e non- uniformly accessible since the current density is greater at the leading edge of the electrode than at the trailing edge. In contrast, the current density is uniform over the surface of a RDE.</p></aside>
+
+
+
+
+<p class="noindent"><a id="page_23" class="page">Page 23, Mass transport</a></p>
+<h3 class="h3"><b>The dropping mercury electrode</b></h3>
+<p class="noindent">Historically, the most famous example of a hydrodynamic electrode is the dropping mercury electrode (DME) Heyrovsky (1922). This consists of a reservoir containing pure mercury linked to a fine capillary. The latter is posi-tioned in the electrolyte solution under investigation and mercury allowed to flow slowly from the reservoir and out of the capillary <a href="#fig_2.15">(Fig. 2.15)</a> in the form of drops. These drops act as the electrode. An important advantage is that a fresh electrode surface appears with each new drop. This is helpful when studying species that can &#x2018;poison&#x2019; the surface and prevent electrolysis from proceeding.</p>
+<figure class="fig1" id="fig_2.15" style="margin-left:5em">
+<img src="../images/page_23_1.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="margin-left:-5.5em"><p class="noindent"><b>Fig. 2.15</b> The dropping mercury electrode, D.M.E.</p></figcaption></figure>
+<p class="noindent">The key feature of hydrodynamic electrodes is that they ensure a steady supply of electroactive material. In the DME this occurs as each drop expands into solution prior to dropping off the capillary and encounters &#x2018;fresh&#x2019; solution which has not been electrolysed. When it leaves the capillary, the solution is stirred so eliminating the products of electrolysis.</p>
+<p class="indent3-ka">Needless to say, the theoretical description of mass transport to the DME is challenging. The electrode has found its major applications for analytical purposes.</p></section>
+<section epub:type="chapter" id="sec_2.7">
+<h2 class="h2"><b>2.7 Microelectrodes</b></h2>
+<p class="noindent">The electrodes discussed so far have dimensions in the range of centimetres and millimetres. Microelectrodes typically possess dimensions of around 10&#x00B5;m or below. These tiny electrodes possess some significant advantages over their macroscopic counterparts. An obvious advantage occurs when the voltammetry must be performed in a small volume. For example, microelec-trodes have been employed for analytical, <i>in vivo</i> electrochemical measurements. The advantages of microelectrodes, however, go far beyond the simple restrictions of space.<a id="page_24" class="page">Page 24, Mass transport</a> </p>
+
+
+
+<p class="indent3-ka">The current measured at an electrode is a function of its area. Con-sequently, the current measured at a microelectrode is significantly lower than that from a conventional macroelectrode (often nano-amps or below). Perhaps surprisingly this presents certain advantages.</p>
+<p class="indent3-ka">First, microelectrodes, by virtue of passing minute currents, induce only a tiny amount of electrolysis in solution. It follows that the diffusion layers of such electrodes will be very thin (of the order of &#x00B5;m in size) and the concen-tration gradients induced across them will be correspondingly high. Consequently, the rate of mass transport to microelectrodes is <i>much</i> <b></b>greater than for macroelectrodes. This becomes valuable in the study of electrolysis mechanisms when it is wished to study very fast processes, such as rapid rates of electron transfer between electrode and substrate or a fast chemical reaction forming part of the overall mechanism. If the process of interest is fast compared to the rate of mass transport then electrochemical experiments simply reflect the rate of the slowest step in the process and provide information on the rate of diffusion in solution only. With microelectrodes the substantially increased rate of mass transport means that this limitation is less likely to arise and much faster chemical steps are accessible to study by electrochemical methods.</p>
+<p class="indent3-ka">Secondly, as will be revealed in <a href="Chapter03.xhtml">Chapter 3</a>, much useful information about electrode processes can be found by sweeping the electrode potential whilst monitoring the current (linear-sweep or cyclic voltammetry). This effect of changing the electrode potential, in addition to electrolysis, also changes the ionic distribution of electrolyte (background or otherwise) near the electrode surface and this causes a &#x2018;charging current&#x2019; to flow which can mask the phenomena under study. Microelectrodes have a much reduced electrode area which significantly reduces this transient current. It follows that microelectrode systems suffer less distortion from so-called &#x2018;capacitative charging&#x2019;, or, alternatively, the rate at which the potential is swept can be made much greater in microelectrode systems. The considerable importance of the latter will be seen in the discussion of cyclic voltammetry in <a href="Chapter03.xhtml">Chapter 3</a>.</p>
+
+<aside class="abc" style="margin-top:1em;" epub:type="sidebar">
+<p class="aside">At first sight it may seem paradoxical that electrodes passing tiny currents should be possess high rates of mass transport. Note however that the latter is quantified by fluxes of electroactive material which measure the amount of material passing in unit time through <i>unit area.</i> Thus although the currents are small the current density (current per unit area) is high.</p></aside>
+<p class="indent3-ka">Thirdly, it was noted that one benefit of the presence of background elec-trolyte was the reduction of the bulk solution resistance so as to prevent the latter from masking the study of the current/voltage characteristics of the interface of interest. Physically, this occurs since the passage of current through a resistive solution implies that the electrical potential of the latter is not uniform, as is invariably assumed in the theoretical description of elec-trode processes (see <a href="Chapter01.xhtml">Chapter 1</a>). Consequently, experimental measurements of resistive solutions lead to distortions of the current/voltage responses from those expected. These are said to be due to &#x2018;ohmic drop&#x2019; and often arise to some small extent, in all macroelectrode experiments. As microelectrodes pass tiny currents this effect is minimized and it is possible to avoid the addition of background electrolyte. Since macroelectrode experiments require background electrolyte this restricts electrochemical investigations with such electrodes to solvents that are polar and therefore capable of dissolving a high concentration of electrolyte. In contrast, microelectrodes permit electrochemical experiments to be performed using non-polar solvents such as benzene or <a id="page_25" class="page">Page 25, Mass transport</a>toluene. In addition, microelectrodes have also been used in frozen solvents, supercritical fluids, and even in the gas phase.</p>
+<h3 class="h3"><b>References</b></h3>
+<p class="noindent">Brett CM.A. and Oliveira Brett A.M.C.F. (1986), <i>Comprehensive Chemical Kinetics</i>, 26, 355, Elsevier, Amsterdam.</p>
+<p class="noindent">Britz D. (1988), <i>Digital Simulation in Electrochemistry</i>, Springer-Verlag, Berlin.</p>
+<p class="noindent">Fick A. (1855), <i>Philosophical Magazine</i>, 10, 30.</p>
+<p class="noindent">Fleischmann M., Pons S., Rollison D.R. and Schmidt P.P. (1987), <i>Ultramicroelectrodes,</i> Datatech systems, Mofganton, NC.</p>
+<p class="noindent">Heyrovsky J., (1922) <i>Chem. Listy</i>, 16, 256.</p>
+<p class="noindent">Levich B. (1962), <i>Physicochemical hydrodynamics</i>, Prentice-Hall.</p>
+<p class="noindent">Oldham K.B. and Zoski C.G. (1986), <i>Comprehensive Chemical Kinetics</i>, 26, 141, Elsevier, Amsterdam.</p>
+<p class="noindent">Wrightman R.M. and Wipf D.O. (1990), <i>Acc. Chem. Res.</i> 23, 64.</p>
+
+</section></section></div></body></html>

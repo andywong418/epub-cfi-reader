@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Quantum Mechanics 2: The Toolkit</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch03">
+<a id="page_36" class="page" style="width:70%;">Page 36, Chapter 3 Perturbations</a>
+<h1 class="main">3<span class="space">&#160;</span>Perturbations</h1>
+<aside class="abc" style="margin-top:0.25em;" epub:type="sidebar">
+<p class="sidebar">Perturbation theory is a systematic method for successive refinement of an approximation in the form of a series expansion. To be useful, the series should converge rapidly.</p>
+</aside>
+<p class="noindent">Many of the quantum mechanical problems that we have considered thus far have been solved by making simple approximations. These approximations are frequently successful in giving us a framework for understanding the properties of atoms and molecules, for example the separation of electronic and nuclear coordinates (the Born&#x2013;Oppenheimer approximation, <i>Quantum mechanics 1</i>, <a href="Chapter02.xhtml#sec2.5">Section 2.5</a>) enables us to define a potential energy surface for the motion of the nuclei in a molecule. Similarly, the rigid rotor approximation enables us to treat the rotational and vibrational motions of a molecule separately. These approximations are tremendously useful; they give us insight, which we could not otherwise have gained, but they are approximations. Some important physical and chemical phenomena are not predicted by these simple approximations; for example, the optical (<i>d &#x2013; d</i>) transitions of an octahedral transition metal complex are forbidden by the electronic selection rule (they originate and terminate in electronic terms with <i>g</i> symmetry, and the electric dipole moment operator has <i>u</i> symmetry), yet we know that many transition metal complexes are coloured as a result of these &#x2018;forbidden&#x2019; transitions. Another example is the treatment of molecular vibrations, which can be described to a first approximation as harmonic. However, in a harmonic oscillator the selection rule &#x2206;<i>&#x03C5;</i> = &#x00B1;1 must be obeyed. In a real molecule, although the strongest transitions usually obey &#x2206;<i>&#x03C5; =</i> &#x00B1;1, weaker transitions with &#x2206;<i>&#x03C5; =</i> &#x00B1;2, 3,&#x2026; (overtones) are also observed, and the energy levels deviate from the equally spaced ladder expected for a harmonic oscillator.</p>
+<p class="indent">We clearly do not want to throw away the physical insight given by successful approximations, so instead we search for ways of refining them. The method discussed in this chapter is called <i>perturbation theory</i>, in which the simple theory is used as a starting point for a series of successive refinements. The difference between the true Hamiltonian and the approximate Hamiltonian is assumed to be a small perturbation of the system, and successive levels of refinement are obtained under the assumption that the effects of the perturbation are small.</p>
+<p class="indent">There are many other examples of important problems in chemistry that can be treated using perturbation theory. For example, the orbital approximation (<i>Quantum mechanics 1</i>, Section 2.7) can be corrected for electron&#x2013;electron repulsions, and the formation of a chemical bond as two atoms approach one another and perturb each other&#x2019;s electron distributions can be dealt with in this way. The same method can be used to investigate the response of a system to a small perturbation applied from outside, such as an electric or magnetic field. We shall discuss applications to external fields in the next chapter.</p>
+<section epub:type="chapter" id="sec3.1">
+<a id="page_37" class="page" style="width:70%;">Page 37, Chapter 3 Perturbations</a>
+<h2 class="h2">3.1<span class="space">&#160;</span>Perturbation theory</h2>
+<p class="noindent">We start by introducing the mathematical apparatus of perturbation theory. The basic idea is that the true Hamiltonian <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> is close to an approximate Hamiltonian <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow></m:math>, whose eigenfunctions and eigenvalues are known. The difference, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow></m:math>, is called a perturbation (higher order corrections, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow></m:math> etc. can also be included, if desired). We also introduce a parameter &#x03BB; to keep track of the <i>order of refinement</i>, so that the first-order correction <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow></m:math> is multiplied by &#x03BB;, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow></m:math> by &#x03BB;<sup>2</sup> and so on. Thus, the corrected Hamiltonian is given by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>=</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>+</m:mo><m:mi>&#x03BB;</m:mi><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>&#x03BB;</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2026;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.3em;">(3.1)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<p class="sidebar">The parameter &#x03BB; is a dummy parameter, which simply keeps track of the order of approximation. The perturbation solution is a power series in &#x03BB;.</p>
+</aside>
+<p class="noindent">The parameter &#x03BB; does not represent any real physical quantity, it is simply a mathematical technique for keeping track of the order of approximation. In the end, we will only be interested in putting &#x03BB; = 1 in the solution, but if the mathematical method works, it should be equally valid if any fraction &#x03BB; of the true perturbation is applied. Thus functional dependence of the solution on &#x03BB; can be interpreted as a dependence on the strength or weight of the perturbation, and we can therefore require that the method should work for all values of &#x03BB; sufficiently small for the solution, which is a power series in &#x03BB;, to converge.</p>
+<p class="indent">Let us denote the unknown eigenfunctions of the true Hamiltonian <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:math>, and the corresponding unknown energies <i>E<sub>i</sub></i>. If the perturbation is small then <i>E<sub>i</sub></i> will be close to some eigenvalue of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow></m:math>, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math>, and <i>&#x03C8;<sub>i</sub></i> will be close to the corresponding eigenfunction <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math>. The two states <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math> and <i>&#x03C8;<sub>i</sub></i> are correlated in the sense that, if an unperturbed system is initially in state <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math>, and the perturbation is switched on slowly and gradually, the system will end up in state <i>&#x03C8;<sub>i</sub></i> (see <a href="Chapter05.xhtml">Chapter 5</a>).</p>
+<p class="indent">Since the true system is close to the approximate system, we seek to express successive corrections in the form of a power series in &#x03BB;, in the hope that such a series will converge:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:mi>&#x03BB;</m:mi><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:msup><m:mi>&#x03BB;</m:mi><m:mn>2</m:mn></m:msup><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:mo>&#x2026;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.2)</td>
+</tr>
+</table>
+<p class="noindent">with a similar series for the energy</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>E</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:mi>&#x03BB;</m:mi><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:msup><m:mi>&#x03BB;</m:mi><m:mn>2</m:mn></m:msup><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:mo>&#x2026;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.3)</td>
+</tr>
+</table>
+<p class="noindent">The parameter &#x03BB; provides a label on the level of refinement; thus, corrections which are linear in &#x03BB; are first-order corrections and are labelled with the superscript<sup>(1)</sup>, corrections quadratic in &#x03BB; are second order, and are (hopefully) smaller than the first-order corrections, and so on.</p>
+<p class="indent">The results of perturbation theory are derived by taking the exact Schfbdinger equation <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:msub><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>E</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:math> and substituting the series for <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math><i>, &#x03C8;<sub>i</sub></i> and <i>E<sub>i</sub></i>. If we then group all terms with the same power of &#x03BB; we find</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:mi>&#x03BB;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>+</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:msup><m:mi>&#x03BB;</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>[</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>+</m:mo><m:mo>&#x2026;</m:mo><m:mo>=</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:mi>&#x03BB;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>+</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mi>&#x03BB;</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>[</m:mo> <m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>+</m:mo><m:mo>&#x2026;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:9em;">(3.4)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_38" class="page">Page 38, Chapter 3 Perturbations</a></p>
+<p class="indent">Because this solution must be true for all values of the scaling parameter &#x03BB;, we can equate the coefficients of powers of &#x03BB;, giving</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.5)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.6)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:3.5em;">(3.7)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>+</m:mo><m:mtext>&#x2009;</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:3.75em;">(3.8)</td>
+</tr>
+</table>
+<p class="noindent">The first of these equations tells us nothing new. It is simply the original &#x2018;zero-order&#x2019; approximation. The other equations permit us to obtain the corrections to this approximation.</p>
+<p class="indent">Without any loss of generality we can assume that all corrections to the wavefunction are orthogonal to <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math>. We can then make significant progress by multiplying each equation by <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>*</m:mo></m:msup></m:mrow></m:msubsup></m:mrow></m:math> and integrating. Normally we are only concerned with a single perturbation, so <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow></m:math> and higher order perturbations are zero, but for completeness we shall not drop these terms at present. We therefore obtain</p>
+<table style="width:100%; margin-top:1em; margin-left:0.5em;font-size:95%;" >
+<colgroup>
+<col style="width:63.5%;"/>
+<col style="width:36.5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></p></td>
+<td style="padding-top:0.75em;">(3.9)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em; margin-left:1em;font-size:95%;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mo>+</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:3.5em;">(3.10)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em; margin-left:0.5em;font-size:95%;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eql" id="eq3.11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mo>+</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>+</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:3.5em;">(3.11)</td>
+</tr>
+</table>
+<p class="indent">In each case the first term is zero, because <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math> is an eigenfunction of the Hermitian operator <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow></m:math>, and is orthogonal to all the corrections &#x2013; for example</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></p>
+<p class="noindent">We therefore find</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.12)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>+</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.13)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_39" class="page">Page 39, Chapter 3 Perturbations</a></p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>+</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>+</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:3em;">(3.14)</td>
+</tr>
+</table>
+<p class="noindent">The first of these tells us that the first-order energy is the expectation of the first-order Hamiltonian, calculated with the zero-order wavefunction. The second tells us that to calculate the second order energy we need to know the first-order corrected wavefunction, and the third equation seems to tell us that to calculate the third-order energy correction we need the second-order wavefunction. This final conclusion is not in fact correct; as <a href="#prb3.1.1">Problem 3.1.1</a> demonstrates, we can actually find <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math> directly from the first-order corrected wavefunction.</p>
+<p class="noindentt" id="prb3.1.1"><b>Problem 3.1.1.</b> <i>Take <a href="#eq3.6">eqn 3.6</a>, premultiply by</i> <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mo>*</m:mo></m:mrow></m:msubsup></m:mrow></m:math> <i>and integrate. Compare the result with <a href="#eq3.7">eqn 3.7</a> multiplied by</i> <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mo>*</m:mo></m:mrow></m:msubsup></m:mrow></m:math> <i>and integrated. Hence eliminate <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo></m:mrow></m:math> from <a href="#eq3.14">eqn 3.14</a>, and find</i></p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>+</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>+</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>+</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:3.25em;">(3.15)</td>
+</tr>
+</table>
+<p class="noindent"><i>If there is only a first-order perturbation only the first term is non-zero</i>.</p>
+<p class="indentt">This is an example of Wigner&#x2019;s theorem, which states that if the wavefunction is known to order <i>n</i>, then the energy can be calculated to order 2<i>n</i> &#x002B; 1. We conclude, therefore, that if we can find the first-order corrected wavefunction, then corrections to the energy up to the third order follow immediately.</p>
+<aside class="abc" style="margin-top:3.5em;" epub:type="sidebar">
+<p class="sidebar">The Rayleigh&#x2013;Ritz method constructs the perturbation series as a superposition of the eigenfunctions of the zero order Hamiltonian, which are known.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec3.2">
+<h2 class="h2">3.2<span class="space">&#160;</span>The Rayleigh-Ritz method</h2>
+<p class="noindent">The theory outlined so far has been at a general level. To use these results we need a systematic method for constructing successive corrections to the wavefunction. The usual approach is to use the method of expansion in eigenfunctions, described in <i>Quantum mechanics 1</i>, Section 1.6, and the most convenient orthogonal basis for this purpose is the set of functions &#x007B;<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math>&#x007D;. (Since <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow></m:math> is Hermitian, its eigenfunctions must be orthogonal.) We therefore denote <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math> by |<i>i</i> &#x003E;, and write <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math> as the expansion</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mo stretchy='false'>(</m:mo><m:mn>1</m:mn><m:mo stretchy='false'>)</m:mo></m:mrow></m:msubsup><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>c</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.16)</td>
+</tr>
+</table>
+<p class="noindent">Finding the first-order correction to the wavefunction is now simply a matter of finding the coefficients <i>c<sub>ij</sub></i> in the expansion. <a href="#eq3.6">Eqn 3.6</a> for the first order correction now becomes</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>C</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow></m:mstyle><m:mtext>&#x2009;</m:mtext><m:mi>j</m:mi><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>j</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mtext>&#x2009;</m:mtext><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>C</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.75em;">(3.17)</td>
+</tr>
+</table>
+<p class="noindent">We can simplify further because | <i>j</i> &#x003E; is an eigenfunction of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow></m:math> with eigenvalue <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>j</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math> which helps with the first term on the left hand side.</p>
+<p class="noindent"><a id="page_40" class="page">Page 40, Chapter 3 Perturbations</a></p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.18"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>j</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:msub><m:mi>c</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow></m:mstyle><m:mtext>&#x2009;</m:mtext><m:mi>j</m:mi><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>j</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mtext>&#x2009;</m:mtext><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>c</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.75em;">(3.18)</td>
+</tr>
+</table>
+<p class="noindent">Although this equation looks even worse than the original equation, we are actually now in a position to find the first-order corrections.</p>
+<p class="indent">The first-order energy is given by <a href="#eq3.12">eqn 3.12</a>, which in this notation is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.19"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mo>&#x003C;</m:mo><m:mi>i</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.19)</td>
+</tr>
+</table>
+<p class="noindent">To find the correction to the wavefunction we multiply <a href="#eq3.18">eqn 3.18</a> by <i>&#x003C; k</i>| (where <i>k</i> &#x2260; <i>i</i>) and integrate.</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.20"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>j</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:msub><m:mi>c</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow></m:mstyle><m:mtext>&#x2009;</m:mtext><m:mi>j</m:mi><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mtext>&#x2009;</m:mtext><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>c</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mstyle></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:4em;">(3.20)</td>
+</tr>
+</table>
+<p class="noindent">(Remember |<i>i</i> &#x003E; is the wavefunction whose corrections we are seeking.) Since the zero-order functions are orthogonal and normalized, &#x003C; <i>k</i>|<i>j &#x003E;</i> = 0 if <i>k</i> &#x2260; <i>j</i>, and 1 if <i>k</i> = <i>j</i>. Thus, the only non-zero term in each summation is the term with <i>k</i> = <i>j</i>, giving</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.21"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>k</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:msub><m:mi>c</m:mi><m:mrow><m:mi>i</m:mi><m:mi>k</m:mi></m:mrow></m:msub><m:mo>+</m:mo><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:msub><m:mi>c</m:mi><m:mrow><m:mi>i</m:mi><m:mi>k</m:mi></m:mrow></m:msub></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(3.21)</td>
+</tr>
+</table>
+<p class="noindent">and hence,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.22"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>c</m:mi><m:mrow><m:mi>i</m:mi><m:mi>k</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>k</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(3.22)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:6em;" epub:type="sidebar">
+<p class="sidebar">The rule of thumb that strong bonds require good overlap between the atomic orbitals and good energy matching has its origin in second-order perturbation theory.</p>
+</aside>
+<p class="noindent">This determines all the coefficients <i>c<sub>ik</sub></i> in the summation apart from the coefficient <i>c<sub>ii</sub></i>, which represents the component of the correction in the direction of the original approximation. Since the correction is orthogonal to <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math>, <i>c<sub>ii</sub></i> must be zero.</p>
+<p class="indent">The perturbation modifies the wavefunction by superposing other zero-order wavefunctions. Each coefficient in this superposition depends on two factors: the matrix element of the perturbation which mixes the two states, and the energy difference between the states being mixed. Both factors are important &#x2013; for example, when two atoms are brought together, their orbitals interact and mix, forming molecular orbitals. The extent of the mixing, and therefore the strength of the bond, depends on the overlap of the states and the energy difference.</p>
+<p class="indent">Using this expression we can assemble the first-order correction from <a href="#eq3.16">eqn 3.16</a>.</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.23"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msup><m:mrow></m:mrow><m:mo>&#x0027;</m:mo></m:msup></m:mrow></m:mstyle><m:mfrac><m:mrow><m:mo>&#x003C;</m:mo><m:mi>j</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>k</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.75em;">(3.23)</td>
+</tr>
+</table>
+<p class="noindent">The prime (&#x2032;) on the summation indicates that the sum does not include the term with <i>j</i> = <i>i</i>.</p>
+<p class="noindent"><a id="page_41" class="page">Page 41, Chapter 3 Perturbations</a></p>
+<p class="noindent" id="prb3.2.1"><b>Problem 3.2.1.</b> <i>Show from <a href="#eq3.13">eqns 3.13</a> and <a href="#eq3.15">eqns 3.15</a> that if the Hamiltonian only has a first-order perturbation then the second- and third-order energy corrections are given by</i></p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.24"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msup><m:mrow></m:mrow><m:mo>&#x2032;</m:mo></m:msup></m:mrow></m:mstyle><m:mfrac><m:mrow><m:mo>&#x003C;</m:mo><m:mi>i</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:mi>j</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>j</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(3.24)</td>
+</tr>
+</table>
+<p class="noindent"><i>and</i></p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.25"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>j</m:mi><m:mi>k</m:mi></m:mrow></m:munder><m:mrow><m:msup><m:mrow></m:mrow><m:mo>&#x2032;</m:mo></m:msup></m:mrow></m:mstyle><m:mfrac><m:mrow><m:mo>&#x003C;</m:mo><m:mi>i</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>j</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:mi>j</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>k</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:mi>k</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>k</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x2212;</m:mo><m:mo>&#x003C;</m:mo><m:mi>i</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>j</m:mi><m:mi>k</m:mi></m:mrow></m:munder><m:mrow><m:msup><m:mrow></m:mrow><m:mo>&#x0027;</m:mo></m:msup></m:mrow></m:mstyle><m:mfrac><m:mrow><m:mo>&#x003C;</m:mo><m:mi>i</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:mi>j</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>j</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:4.5em;">(3.25)</td>
+</tr>
+</table>
+<p class="noindent"><i>where the sums cover all values of j</i>, <i>k</i> &#x2260; <i>i</i>.</p>
+<p class="indentt">In order to apply perturbation theory to a particular problem, all we need to know are the unperturbed (zero-order) wavefunction and energy levels; the matrix elements of the perturbation are simply <i>numbers</i> that can be calculated from these zero-order eigenfunctions by integration. To illustrate typical applications of perturbation theory we now consider several detailed examples. The first of these has the virtue of being exactly soluble, so that the method can be verified.</p>
+<section epub:type="chapter">
+<h3 class="h3">Perturbed harmonic oscillator</h3>
+<p class="noindent">We illustrate the application of perturbation theory using the example of the effect of an external electric field <i>V</i> on the energy levels of a particle of charge <i>Q</i> oscillating harmonically in one dimension. This problem is a model for the interaction of a harmonic oscillator with a linear external perturbation. It is of central importance in many areas of physics (e.g. quantum electrodynamics, see Feynman and Hibbs 1965) and it has the virtue that it is elementary to solve it exactly, as well as by perturbation theory. The potential energy in the absence of the perturbation is <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>k</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, and the application of the field introduces an extra term <i>VQx</i> into the potential energy. The unperturbed and perturbed potentials are illustrated in <a href="#fig3.1">Fig. 3.1</a>. To apply perturbation theory we simply need the zero-order energy levels and the matrix elements of the perturbation, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>V</m:mi><m:mi>Q</m:mi><m:mo>&#x003C;</m:mo><m:mi>j</m:mi><m:mrow><m:mo>|</m:mo> <m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>|</m:mo></m:mrow><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math>.</p>
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<figure class="fig1" id="fig3.1">
+<img src="../images/fig3.1.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 3.1</b> The unperturbed harmonic potential (dotted line), the perturbation dashed line), and the perturbed, but still harmonic potential (full line).</figcaption></figure>
+</aside>
+<p class="indent">The first-order change in energy level <i>i</i> is given by the expectation of the perturbation operator, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>V</m:mi><m:mi>Q</m:mi><m:mo>&#x003C;</m:mo><m:mi>j</m:mi><m:mrow><m:mo>|</m:mo> <m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>|</m:mo></m:mrow><m:mi>i</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math>. This expectation must be identically zero for all values of the quantum number <i>i</i> because all eigenfunctions of the simple harmonic oscillator are either even or odd with respect to inversion through the origin, and <i>x</i> is odd. Thus, regardless of whether |<i>i</i> &#x003E; is even or odd, the integrand is always odd with respect to inversion, and the integral must be zero.</p>
+<p class="indent">To find the second-order correction to the energy we need the matrix elements which mix the eigenfunctions. These can be found by direct integration, using the properties of the Hermite polynomials. Alternatively it is <a id="page_42" class="page">Page 42, Chapter 3 Perturbations</a>much simpler to use the ladder operators introduced in <i>Quantum mechanics 1</i>, <a href="#sec3.2">Section 3.2</a>.</p>
+<p class="noindentt"><i>Ladder operator method</i>. The ladder operators <i>R</i><sup>&#x00B1;</sup> are defined by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.26"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mover accent='true'><m:mi>R</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>&#x00B1;</m:mo></m:msup><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mover accent='true'><m:mi>p</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>x</m:mi></m:msub><m:mo>&#x00B1;</m:mo><m:mtext>&#x2009;</m:mtext><m:mi>i</m:mi><m:mi>&#x03BC;</m:mi><m:mi>&#x03C9;</m:mi><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.26)</td>
+</tr>
+</table>
+<p class="noindent">where <i>&#x03BC;</i> is the reduced mass and <i>&#x03C9;</i> the (angular) frequency of the vibration. The ladder-up operator <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>R</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>+</m:mo></m:msup></m:mrow></m:math> transforms a harmonic oscillator state |<i>n</i> &#x003E; into |<i>n</i> &#x002B; 1 &#x003E; apart from a constant of proportionality, which we denote <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>c</m:mi><m:mi>n</m:mi><m:mo>+</m:mo></m:msubsup></m:mrow></m:math>. Similarly the ladder-down operator reduces the quantum number by one:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.27"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mover accent='true'><m:mi>R</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>&#x00B1;</m:mo></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>n</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:msubsup><m:mi>c</m:mi><m:mi>n</m:mi><m:mo>&#x00B1;</m:mo></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>n</m:mi><m:mo>&#x00B1;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.27)</td>
+</tr>
+</table>
+<p class="noindent">These operators are useful for finding the matrix elements of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> because the operator <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math> can be expressed in terms of them,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.28"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>i</m:mi><m:mi>&#x03C9;</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>R</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>+</m:mo></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mover accent='true'><m:mi>R</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>&#x2212;</m:mo></m:msup></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.28)</td>
+</tr>
+</table>
+<p class="noindent">Hence we can write</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.29"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>i</m:mi><m:mi>&#x03C9;</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>R</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>+</m:mo></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mover accent='true'><m:mi>R</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>&#x2212;</m:mo></m:msup></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>i</m:mi><m:mi>&#x03C9;</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo> <m:mrow><m:msubsup><m:mi>c</m:mi><m:mi>n</m:mi><m:mo>+</m:mo></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>c</m:mi><m:mi>n</m:mi><m:mo>&#x2212;</m:mo></m:msubsup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:3em;">(3.29)</td>
+</tr>
+</table>
+<p class="noindent">The only non-zero matrix elements <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>j</m:mi><m:mrow><m:mo>|</m:mo> <m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>|</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math> are those for which <i>j</i> = <i>n</i> &#x00B1; 1, which are given by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.30"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>&#x00B1;</m:mo><m:mn>1</m:mn><m:mrow><m:mo>|</m:mo> <m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>|</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>&#x00B1;</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mi>i</m:mi><m:mi>&#x03C9;</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:msubsup><m:mi>c</m:mi><m:mi>n</m:mi><m:mo>&#x00B1;</m:mo></m:msubsup></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.30)</td>
+</tr>
+</table>
+<p class="noindent">We therefore need to find the proportionality constants <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>c</m:mi><m:mi>n</m:mi><m:mo>&#x00B1;</m:mo></m:msubsup></m:mrow></m:math>. To do this, we use the fact that the two ladder operators are Hermitian conjugates, so that for example</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.31"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>R</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>&#x2212;</m:mo></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>n</m:mi><m:msup><m:mo>&#x003E;</m:mo><m:mo>*</m:mo></m:msup><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:msup><m:mover accent='true'><m:mi>R</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>+</m:mo></m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.31)</td>
+</tr>
+</table>
+<p class="noindent">which implies the relationship</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.32"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>c</m:mi><m:mi>n</m:mi><m:mo>&#x2212;</m:mo></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>*</m:mo></m:msup><m:mo>=</m:mo><m:msubsup><m:mi>c</m:mi><m:mrow><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow><m:mo>+</m:mo></m:msubsup></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.32)</td>
+</tr>
+</table>
+<p class="noindent">Next, notice that the ladder operators,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.33"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mover accent='true'><m:mi>R</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>&#x00B1;</m:mo></m:msup><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo> <m:mrow><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mi>&#x210F;</m:mi><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>&#x00B1;</m:mo><m:mi>i</m:mi><m:mi>&#x03C9;</m:mi><m:mi>x</m:mi></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.33)</td>
+</tr>
+</table>
+<p class="noindent">transform real functions into imaginary functions and vice versa. Since the harmonic oscillator eigenfunctions are real, the constants <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>c</m:mi><m:mi>n</m:mi><m:mo>&#x00B1;</m:mo></m:msubsup></m:mrow></m:math> must be pure imaginary numbers. Finally, we have already seen in <i>Quantum mechanics 1</i>, <a id="page_43" class="page">Page 43, Chapter 3 Perturbations</a><a href="#sec3.2">Section 3.2</a> (<a href="#eq3.12">eqn 3.12</a>) that <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mover accent='true'><m:mi>R</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>+</m:mo><m:msup><m:mover accent='true'><m:mi>R</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>&#x2212;</m:mo></m:msup><m:mo>=</m:mo><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mo stretchy='false'>(</m:mo><m:mn>0</m:mn><m:mo stretchy='false'>)</m:mo></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>&#x210F;</m:mi><m:mi>&#x03C9;</m:mi></m:mrow></m:math>, hence we have the matrix element</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.34"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mrow><m:mo stretchy='false'>|</m:mo> <m:mrow><m:mover accent='true'><m:mi>R</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>+</m:mo><m:msup><m:mover accent='true'><m:mi>R</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>&#x2212;</m:mo></m:msup></m:mrow> <m:mo stretchy='false'>|</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mi>n</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi><m:mi>&#x03C9;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.34)</td>
+</tr>
+</table>
+<p class="noindent">But this matrix element is also equal to <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>c</m:mi><m:mi>n</m:mi><m:mo>&#x2212;</m:mo></m:msubsup><m:msubsup><m:mi>c</m:mi><m:mrow><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow><m:mo>+</m:mo></m:msubsup></m:mrow></m:math>, and according to the discussion above these constants are complex conjugates and pure imaginary. We therefore assign</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.35"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>c</m:mi><m:mi>n</m:mi><m:mo>&#x2212;</m:mo></m:msubsup><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi><m:mi>&#x03C9;</m:mi></m:mrow></m:msqrt></m:mrow></m:math></p></td>
+<td>(3.35)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.36"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>c</m:mi><m:mi>n</m:mi><m:mo>+</m:mo></m:msubsup><m:mo>=</m:mo><m:mi>i</m:mi><m:msqrt><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi><m:mi>&#x03C9;</m:mi></m:mrow></m:msqrt></m:mrow></m:math></p></td>
+<td>(3.36)</td>
+</tr>
+</table>
+<p class="noindent">which enables us to write for the matrix elements of</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.37"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:math><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>&#x03C9;</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:msqrt><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi><m:mi>&#x03C9;</m:mi></m:mrow></m:msqrt></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.37)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.38"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>&#x03C9;</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:msqrt><m:mrow><m:mi>n</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi><m:mi>&#x03C9;</m:mi></m:mrow></m:msqrt></m:mrow></m:math></p></td>
+<td style="padding-top:0.2em;">(3.38)</td>
+</tr>
+</table>
+<p class="noindent">All other matrix elements are zero.</p>
+<p class="indent">These matrix elements are now applied in <a href="#eq3.24">eqn 3.24</a> for the calculation of the second order correction to the energy, which becomes</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.39"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>V</m:mi><m:mi>Q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mtext>&#x2009;</m:mtext><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mrow><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:mfrac></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>V</m:mi><m:mi>Q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mtext>&#x2009;</m:mtext><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:mfrac></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:3.5em;">(3.39)</td>
+</tr>
+</table>
+<p class="noindent">Using the matrix elements we have just calculated and the known energy levels of the harmonic oscillator, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>&#x210F;</m:mi><m:mi>&#x03C9;</m:mi></m:mrow></m:math> (see <i>Quantum mechanics</i> 7, <a href="#eq3.7">eqn 3.7</a>), we obtain the final result</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.40"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>V</m:mi><m:mi>Q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>n</m:mi><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:msup><m:mi>&#x03C9;</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:msup><m:mi>&#x03C9;</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>V</m:mi><m:mi>Q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:msup><m:mi>&#x03C9;</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>V</m:mi><m:mi>Q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:6em;">(3.40)</td>
+</tr>
+</table>
+<p class="noindent">Once the matrix elements are known the calculation is simple.</p>
+<p class="noindentt"><i>Exact solution.</i> In this case the second-order corrected energy can be shown to be the exact solution to the problem. This can be seen by considering the unperturbed and the perturbed potential energy functions shown in <a href="#fig3.1">Fig. 3.1</a>. Both can be seen to be parabolas with the same curvature, but the minimum of the perturbed potential is translated to a coordinate &#x2013;<i>VQ/k</i> and the value of the potential energy at the minimum is &#x2013; (<i>VQ</i>)<sup>2</sup><i>/</i>2<i>k.</i> The eigenfunctions of the perturbed potential are therefore given by the zero-order eigenfunctions expressed as functions of the variable <i>x</i> &#x002B; <i>VQ/k</i> and the corresponding eigenvalues are the zero-order eigenvalues shifted downwards by the quantity (<i>VQ</i>)<sup>2</sup><i>/</i>2<i>k.</i><a id="page_44" class="page">Page 44, Chapter 3 Perturbations</a></p>
+<p class="indent">These results can be understood simply in terms of <a href="#fig3.1">Fig. 3.1</a>. Alternatively they can be demonstrated analytically. We simply outline the demonstration here. The perturbed equation is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.41"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac><m:mfrac><m:mrow><m:msup><m:mtext>d</m:mtext><m:mn>2</m:mn></m:msup><m:mi>&#x03C8;</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>k</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>&#x03C8;</m:mi><m:mo>+</m:mo><m:mi>V</m:mi><m:mi>Q</m:mi><m:mi>x</m:mi><m:mi>&#x03C8;</m:mi><m:mo>=</m:mo><m:mi>E</m:mi><m:mi>&#x03C8;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.41)</td>
+</tr>
+</table>
+<p class="noindent">The potential energy is a quadratic function of <i>x,</i> so by completing the square we can transform the perturbed equation back into an unperturbed harmonic oscillator equation in terms of a transformed variable.</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.42"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac><m:mfrac><m:mrow><m:msup><m:mtext>d</m:mtext><m:mn>2</m:mn></m:msup><m:mi>&#x03C8;</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>k</m:mi><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mrow><m:mi>V</m:mi><m:mi>Q</m:mi></m:mrow><m:mi>k</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mi>&#x03C8;</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>V</m:mi><m:mi>Q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi></m:mrow></m:mfrac><m:mi>&#x03C8;</m:mi><m:mo>=</m:mo><m:mi>E</m:mi><m:mi>&#x03C8;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.42)</td>
+</tr>
+</table>
+<p class="noindent">We now change the variable to <i>y = x</i> &#x002B; <i>VQ/k,</i></p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.43"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac><m:mfrac><m:mrow><m:msup><m:mtext>d</m:mtext><m:mn>2</m:mn></m:msup><m:mi>&#x03C8;</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>k</m:mi><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mi>&#x03C8;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>E</m:mi><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>V</m:mi><m:mi>Q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>&#x03C8;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.43)</td>
+</tr>
+</table>
+<p class="noindent">The boundary conditions demand that <i>&#x03C8;</i> should tend to zero as <i>x</i> approaches &#x00B1;&#x221E;, and since <i>y</i> is simply <i>x</i> plus a constant, the same conditions apply to <i>y.</i> The eigenfunctions are therefore simply the eigenfunctions of the harmonic oscillator, as functions of <i>y,</i> a coordinate with a shifted origin. We therefore conclude that the eigenvalues of this equation are the eigenvalues of the simple harmonic oscillator, that is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.44"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>E</m:mi><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>V</m:mi><m:mi>Q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>&#x210F;</m:mi><m:mi>&#x03C9;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.44)</td>
+</tr>
+</table>
+<p class="noindent">so that</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.45"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>E</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>&#x210F;</m:mi><m:mi>&#x03C9;</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>V</m:mi><m:mi>Q</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.45)</td>
+</tr>
+</table>
+<p class="noindent">which is identical to the result from second-order perturbation theory. The zero order and perturbed energy levels and eigenfunctions are depicted in <a href="#fig3.2">Fig. 3.2</a>.</p>
+<aside class="abc" style="margin-top:-22em;" epub:type="sidebar">
+<figure class="fig1" id="fig3.2">
+<img src="../images/fig3.2.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 3.2</b> The eigenfunctions and eigenvalues of the unperturbed potential (dotted lines), and the perturbed potential (full lines).</figcaption></figure>
+</aside>
+<p class="indent">Physically, the first-order change in the energy when an external electric field is applied is proportional to the dipole moment, and the second-order change is equal to <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>&#x03B1;</m:mi><m:msup><m:mi>V</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, where <i>&#x03B1;</i> is the polarizability. It is clear from the results of this section that an oscillating charge in a harmonic potential has zero dipole moment, and its polarizability is equal to <i>Q</i><sup>2</sup><i>/k.</i></p>
+<p class="noindent">&#160;</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec3.3">
+<h2 class="h2">3.3<span class="space">&#160;</span>Rotation and vibration of a diatomic molecule</h2>
+<p class="noindent">The full rotation&#x2013;vibrational Hamiltonian for a diatomic molecule in the Born-Oppenheimer approximation is given in <i>Quantum mechanics 1</i>, eqn 2.39 as</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.46"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mtext>d</m:mtext><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mtext>d</m:mtext><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>2</m:mn><m:mi>r</m:mi></m:mfrac><m:mfrac><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext></m:mrow><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>r</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>V</m:mi><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.46)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_45" class="page">Page 45, Chapter 3 Perturbations</a>where <i>r</i> represents the bond length of the molecule and <i>&#x03BC;</i> the reduced mass. The first two terms represent the kinetic energy and the potential energy for the motion of the bond length, that is, the vibrational motion. The final term is the rotational kinetic energy. The problem is simplified by a simple transformation, substituting <i>S</i>(<i>r</i>)<i> = r&#x03C8;</i>(<i>r</i>)<i>,</i> which yields</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.47"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac><m:mfrac><m:mrow><m:msup><m:mtext>d</m:mtext><m:mn>2</m:mn></m:msup><m:mi>S</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>V</m:mi><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow><m:mi>S</m:mi><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mi>S</m:mi><m:mo>=</m:mo><m:msub><m:mi>E</m:mi><m:mrow><m:mi>v</m:mi><m:mi>r</m:mi></m:mrow></m:msub><m:mi>S</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.47)</td>
+</tr>
+</table>
+<p class="noindent">The zero-order approximation is the <i>rigid rotor harmonic oscillator</i> (RRHO) approximation, in which the potential energy <i>V</i>(<i>r</i>) is assumed to be <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>k</m:mi><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>r</m:mi><m:mo>&#x2212;</m:mo><m:msub><m:mi>r</m:mi><m:mtext>e</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math> and the bond length variable in the rotational energy operator is replaced by the equilibrium bond length, <i>r</i><sub>e</sub>. This leads to a separation of the vibrational and rotational motions, and the rovibrational energy is given by</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mrow><m:mi>v</m:mi><m:mi>r</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>&#x210F;</m:mi><m:mi>&#x03C9;</m:mi><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:msubsup><m:mi>r</m:mi><m:mi>e</m:mi><m:mn>2</m:mn></m:msubsup></m:mrow></m:mfrac></m:mrow></m:math></p>
+<p class="noindent">We can improve the RRHO approximation systematically by recognizing that if the degree of vibrational excitation is low, the vibrational wavefunction will be concentrated in the neighbourhood of the minimum of the potential energy curve <i>V</i>(<i>r</i>). This suggests that we can perform a power expansion of the potential energy operator and the rotational energy operator about the equilibrium bond length, that is, use the variable <i>x</i> = <i>r</i> &#x2013;<i> r<sub>e</sub></i>:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.48"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>V</m:mi><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mi>V</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>r</m:mi><m:mi>e</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msup><m:mi>V</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>r</m:mi><m:mi>e</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>V</m:mi><m:mo>&#x2033;</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>r</m:mi><m:mi>e</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac><m:msup><m:mi>V</m:mi><m:mo>&#x2034;</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>r</m:mi><m:mi>e</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mo>&#x22EF;</m:mo></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>k</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>+</m:mo><m:mo>&#x22EF;</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:2.5em;">(3.48)</td>
+</tr>
+</table>
+<p class="noindent">where <i>k, a,</i> and <i>b</i> are simply numbers have obvious interpretations in terms of the derivatives of <i>V</i> at the minimum. The first term in the expansion is zero because the minimum of the potential energy curve is taken to be the zero of the energy scale. The second term is zero because the minimum is a turning point and therefore the first derivative <i>V</i><sup>&#x2032;</sup>(<i>r<sub>e</sub></i>) is zero.</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.49"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>2</m:mn></m:msubsup></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow><m:mrow><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>3</m:mn></m:msubsup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>5</m:mn></m:msubsup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mo>&#x22EF;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.49)</td>
+</tr>
+</table>
+<p class="noindent">If we only take the first term in each power expansion, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>k</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>/</m:mo><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>2</m:mn></m:msubsup></m:mrow></m:math>, respectively we obtain the RRHO approximation. Subsequent terms in the power expansion can then be used to correct the RRHO energy levels systematically using perturbation theory.</p>
+<p class="indent">The harmonic oscillator approximation is successful because the leading term in a power expansion of the potential energy about its minimum is quadratic, thus the quadratic approximation is good in the neighbourhood of the minimum, that is, at low values of the vibrational quantum number, as illustrated in <a href="#fig3.3">Fig. 3.3</a>.</p>
+<aside class="abc" style="margin-top:-22em;" epub:type="sidebar">
+<figure class="fig1" id="fig3.3">
+<img src="../images/fig3.3.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 3.3</b> The potential energy curve for H<sub>2</sub>, and the first term in the power expansion for it (the harmonic approximation).</figcaption></figure>
+</aside>
+<p class="indent">The RRHO approximation can be refined by extending the expansions to higher powers and using perturbation theory. Taking the first two correction <a id="page_46" class="page">Page 46, Chapter 3 Perturbations</a>terms in each power expansion about <i>r</i><sub>e</sub> we obtain the perturbation Hamiltonian</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.50"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>&#x03BC;</m:mi><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>3</m:mn></m:msubsup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mtext>&#x2009;</m:mtext><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.50)</td>
+</tr>
+</table>
+<p class="noindent">Physically, these corrections arise because the vibrational potential energy curve is not harmonic and because the bond stretches as the degree of vibration or rotation increases, thus increasing the moment of inertia and decreasing the rotational constant, which is inversely proportional to the moment of inertia.</p>
+<p class="indent">The first correction terms in each expansion (the terms in <i>x</i> and <i>x</i><sup>3</sup>) are considered to be first-order corrections and the second correction terms (in <i>x</i><sup>2</sup><i><sup></sup></i> and <i>x</i><sup>4</sup>) are second-order corrections. The use of perturbation theory will only be appropriate if these corrections are small; successive terms in the power expansion then give successively higher orders of approximation to the effective potential.</p>
+<p class="indent">The matrix elements of powers of <i>x</i> required for the application of perturbation theory can be found by repeated application of the ladder operators used in the previous section. The results of such an analysis can be found in <a href="#tab3.1">Table 3.1</a> Note that <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>j</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>k</m:mi></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mtext>&#x2009;</m:mtext><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>k</m:mi></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>j</m:mi><m:mtext>&#x2009;</m:mtext><m:mo>&#x003E;</m:mo></m:mrow></m:math> because the operator<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>k</m:mi></m:msup></m:mrow></m:math> is Hermitian and all the zero-order wavefunctions are real.</p>
+<p class="indent">The first-order correction to the energy of level <i>n</i> requires the matrix elements <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math> and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>3</m:mn></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math>, which can both be seen to be zero by inspection, <i>x</i> and <i>x</i><sup>3</sup> are both odd functions of <i>x,</i> and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>n</m:mi><m:mo>&#x2217;</m:mo></m:msubsup><m:msub><m:mi>&#x03C8;</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> must be even, so that the integrand is odd and the integral vanishes identically.</p>
+<p class="indent">The second-order correction is made up of two parts: the expectation of the second order perturbation and the second-order term from the first-order perturbation (see <a href="#eq3.13">eqns 3.13</a> and <a href="#eq3.24">eqns 3.24</a>). We deal with each separately.</p>
+<p class="indent">The expectation of the second-order perturbation can be found from <a href="#tab3.1">Table 3.1</a>:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.51"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mo>&#x003C;</m:mo><m:mrow><m:mi>n</m:mi><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mtext>&#x2009;</m:mtext><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>4</m:mn></m:msup><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mi>n</m:mi><m:mtext>&#x2009;</m:mtext><m:mo>&#x003E;</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mtext>&#x2009;</m:mtext><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>&#x03B3;</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>&#x03B3;</m:mi><m:mn>4</m:mn></m:msup><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mtext>&#x2009;</m:mtext><m:msup><m:mi>&#x210F;</m:mi><m:mn>3</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:msup><m:mi>&#x03BC;</m:mi><m:mn>2</m:mn></m:msup><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>4</m:mn></m:msubsup><m:msub><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>b</m:mi><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:msup><m:mi>&#x03BC;</m:mi><m:mn>2</m:mn></m:msup><m:msubsup><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext><m:mn>2</m:mn></m:msubsup></m:mrow></m:mfrac><m:mrow><m:mo stretchy='false'>[</m:mo> <m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow> <m:mo stretchy='false'>]</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:6.5em;">(3.51)</td>
+</tr>
+</table>
+<p class="noindent">The other contribution comes from the linear and cubic corrections to the Hamiltonian. Using <a href="#eq3.24">eqn 3.24</a> we obtain</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.52"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:munder><m:msup><m:mi>&#x03A3;</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mi>j</m:mi></m:munder><m:mrow><m:mo>{</m:mo> <m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mo>&#x003C;</m:mo><m:mi>j</m:mi></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>&#x03BC;</m:mi><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>3</m:mn></m:msubsup></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>/</m:mo><m:mi>&#x210F;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mi>j</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext></m:msub></m:mrow> <m:mo>}</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(3.52)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_47" class="page">Page 47, Chapter 3 Perturbations</a></p>
+<p class="tab-cap1" id="tab3.1"><b>Table 3.1</b> Harmonic oscillator matrix elements</p>
+<table class="width100b" style="margin-bottom:1em;width:50%;margin-left:5em;">
+<tr>
+<td style="vertical-align:top;padding-top:0.5em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></td>
+<td style="vertical-align:top;padding-top:0.5em;"><p class="tab-l">=</p></td>
+<td style="vertical-align:top;padding-top:0.5em;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x03B3;</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>2</m:mn><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="vertical-align:top;"><p class="tab-l">=</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>&#x03B3;</m:mi><m:mn>2</m:mn></m:msup><m:msqrt><m:mrow><m:mi>n</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msqrt></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></td>
+<td style="vertical-align:top;"><p class="tab-l">=</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>&#x03B3;</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>3</m:mn><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>3</m:mn></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></td>
+<td style="vertical-align:top;"><p class="tab-l">=</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>&#x03B3;</m:mi><m:mn>3</m:mn></m:msup><m:msqrt><m:mrow><m:mi>n</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msqrt></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>3</m:mn></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></td>
+<td style="vertical-align:top;"><p class="tab-l">=</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>&#x03B3;</m:mi><m:mn>3</m:mn></m:msup><m:mn>3</m:mn><m:mi>n</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>4</m:mn><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>4</m:mn></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></td>
+<td style="vertical-align:top;"><p class="tab-l">=</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>&#x03B3;</m:mi><m:mn>4</m:mn></m:msup><m:msqrt><m:mrow><m:mi>n</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msqrt></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>2</m:mn><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>4</m:mn></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></td>
+<td style="vertical-align:top;"><p class="tab-l">=</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>&#x03B3;</m:mi><m:mn>4</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:msqrt></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding-bottom:0.5em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>x</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>4</m:mn></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></td>
+<td style="vertical-align:top;"><p class="tab-l">=</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>&#x03B3;</m:mi><m:mn>4</m:mn></m:msup><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+</tr>
+</table>
+<p class="tnote"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mi>&#x03B3;</m:mi><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x210F;</m:mi><m:mo>/</m:mo><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:mi>&#x03C9;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:math>. Matrix elements not related to these are zero.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">The only non-zero matrix elements in the sum are those in which <i>j = n</i> &#x00B1; 1 and those in which <i>j = n</i> &#x00B1; 3, giving</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.53"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>3</m:mn><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>3</m:mn><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>&#x03BC;</m:mi><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>3</m:mn></m:msubsup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:msup><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mi>&#x210F;</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo></m:mrow></m:math><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mfrac><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>&#x03BC;</m:mi><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>3</m:mn></m:msubsup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:msup><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mi>&#x210F;</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:msup><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>n</m:mi><m:mo>&#x003E;</m:mo></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>3</m:mn><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext></m:msub><m:mtext>&#x2009;</m:mtext></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:5em;">(3.53)</td>
+</tr>
+</table>
+<p class="noindent">Substituting from <a href="#tab3.1">Table 3.1</a> this becomes</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.54"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:msubsup><m:mi>E</m:mi><m:mrow><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>J</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mn>15</m:mn><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>4</m:mn><m:msup><m:mi>&#x03BC;</m:mi><m:mn>3</m:mn></m:msup><m:msubsup><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:mfrac><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mn>7</m:mn><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>16</m:mn><m:msup><m:mi>&#x03BC;</m:mi><m:mn>3</m:mn></m:msup><m:msubsup><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mi>a</m:mi><m:msup><m:mi>&#x210F;</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>&#x03BC;</m:mi><m:mn>3</m:mn></m:msup><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>3</m:mn></m:msubsup><m:msubsup><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext><m:mn>3</m:mn></m:msubsup></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>4</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:msup><m:mi>&#x03BC;</m:mi><m:mn>3</m:mn></m:msup><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>6</m:mn></m:msubsup><m:msubsup><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext><m:mn>2</m:mn></m:msubsup></m:mrow></m:mfrac><m:msup><m:mi>J</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:3.5em;">(3.54)</td>
+</tr>
+</table>
+<p class="noindent">The correction to the energy can be combined with the zero-order energy and rewritten in the following simplified way, which helps to identify the origin of the various terms in the correction:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.55"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:msub><m:mi>E</m:mi><m:mrow><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>J</m:mi></m:mrow></m:msub></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mi>&#x210F;</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>&#x210F;</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext></m:msub><m:msub><m:mi>x</m:mi><m:mtext>e</m:mtext></m:msub><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>+</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>B</m:mi><m:mtext>e</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>e</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>D</m:mi><m:mtext>e</m:mtext></m:msub><m:msup><m:mi>J</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:3em;">(3.55)</td>
+</tr>
+</table>
+<p class="noindent">This is the empirical expression usually employed to analyse the rotational and vibrational structure of diatomic molecular spectra (Herzberg 1950). However, the perturbation analysis enables us to interpret each of the empirical constants in the energy level expression in terms of parameters describing the potential energy curve of the molecule.</p>
+<p class="indent">The zero-order vibrational energy is that of the harmonic oscillator, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>&#x210F;</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, and the zero-order rotational energy is <i>B</i><sub>e</sub><i>J(J</i> &#x002B; 1); the rotational constant <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>B</m:mi><m:mtext>e</m:mtext></m:msub><m:mo>=</m:mo><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mo>/</m:mo><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:msubsup><m:mi>r</m:mi><m:mtext>e</m:mtext><m:mn>2</m:mn></m:msubsup></m:mrow></m:math>.The constant <i>x</i><sub>e</sub> is called the <i>anharmonicity constant,</i> and is related to the corrections in the Hamiltonian by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.56"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x210F;</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext></m:msub><m:msub><m:mi>x</m:mi><m:mtext>e</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:msup><m:mi>&#x03BC;</m:mi><m:mn>2</m:mn></m:msup><m:msubsup><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext><m:mn>2</m:mn></m:msubsup></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo> <m:mrow><m:mfrac><m:mrow><m:mn>5</m:mn><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:msubsup><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext><m:mn>2</m:mn></m:msubsup></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:mi>b</m:mi></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(3.56)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_48" class="page">Page 48, Chapter 3 Perturbations</a>This constant contains only <i>a</i> and <i>b</i> from the perturbation, and can be thought of as correcting the vibrational energy for the anharmonicity in the potential. It accounts for the observation that adjacent vibrational energy levels are not equally spaced (cf. the harmonic approximation).</p>
+<p class="indent">The constant <i>D</i><sub>e</sub> is the <i>centrifugal distortion constant,</i> given by:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.57"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>D</m:mi><m:mtext>e</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:msubsup><m:mi>B</m:mi><m:mtext>e</m:mtext><m:mn>3</m:mn></m:msubsup></m:mrow><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:msubsup><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext><m:mn>2</m:mn></m:msubsup></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(3.57)</td>
+</tr>
+</table>
+<p class="noindent">This term represents the effect of centrifugal force on the bond length. As the molecular rotation increases the bond stretches, as a result of the increased centripetal force required to hold the atoms together, thus reducing the apparent rotational constant. The effect is normally small, and is only important in accurate work and in &#x2018;pure rotational&#x2019; spectroscopy. In infrared (vibration&#x2013;rotation) spectroscopy the vibration&#x2013;rotation coupling of the remaining term is usually far more important.</p>
+<p class="indent">The constant <i>&#x03B1;</i><sub>e</sub> is known as the vibration&#x2013;rotation coupling constant, and is griven by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.58"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>e</m:mtext></m:msub><m:mo>=</m:mo><m:mn>3</m:mn><m:msubsup><m:mi>B</m:mi><m:mtext>e</m:mtext><m:mn>2</m:mn></m:msubsup><m:mrow><m:mo>[</m:mo> <m:mrow><m:mfrac><m:mrow><m:mn>12</m:mn><m:mi>a</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi></m:mrow><m:mrow><m:mi>&#x03BC;</m:mi><m:msubsup><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext><m:mn>2</m:mn></m:msubsup><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>&#x03BC;</m:mi><m:msub><m:mi>B</m:mi><m:mi>e</m:mi></m:msub></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.58)</td>
+</tr>
+</table>
+<p class="noindent">This is a cross-term, showing that the effective rotational constant depends on the vibrational energy level: <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>B</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>B</m:mi><m:mtext>e</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>e</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>. In other words the apparent moment of inertia of a molecule depends on its vibrational state. The physical interpretation of this observation is that as vibrational excitation is increased, the amplitude of the vibration increases, and the moment of inertia increases, so decreasing the rotational constant, which is inversely proportional to the moment of inertia.</p>
+<figure class="fig1" id="fig3.4" style="width:70%;text-align:center;">
+<img src="../images/fig3.4.jpg" alt="images"/>
+<figcaption class="fig-k" style="width:100%;">
+<b>Fig. 3.4</b> The infrared vibration&#x2013;rotation spectrum of HCL, illustrating the unequal spacing of the fine structure lines.</figcaption></figure>
+<p class="indent">The spectroscopie effect of vibration&#x2013;rotation coupling on the fine structure of a vibration-rotation band is important. Neglecting the centrifugal distortion, <a id="page_49" class="page">Page 49, Chapter 3 Perturbations</a>which is usually much smaller, we can use the energy level formula to find the wavenumber of lines in the infrared spectrum of a diatomic molecule. The enemy difference for the <i>R</i>(<i>J</i>) line (<i>J &#x2190; J</i> &#x002B; 1) is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.59"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>E</m:mi><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>E</m:mi><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>J</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>&#x210F;</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mn>2</m:mn><m:msub><m:mi>x</m:mi><m:mtext>e</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:msub><m:mi>B</m:mi><m:mtext>e</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>e</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(3.59)</td>
+</tr>
+</table>
+
+<p class="noindent">In the absence of vibration-rotation coupling, lines in the <i>R</i> branch would be equally spaced with a spacing <i>2B</i><sub>e</sub>. However, when vibration-rotation coupling is included, the spacing diminishes as the <i>J</i> quantum number is increased. (It is easily calculated to be 2<i>B</i><sub>e</sub> &#x2013;<i> &#x03B1;</i><sub>e</sub>(2<i>J</i> &#x002B; 5).) Similarly, the energy difference for the <i>P(J)</i> line (<i>J</i> <i>&#x2190; J</i> &#x2013; 1) is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.60"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>E</m:mi><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>J</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>E</m:mi><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>J</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>&#x210F;</m:mi><m:msub><m:mi>&#x03C9;</m:mi><m:mtext>e</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mn>2</m:mn><m:msub><m:mi>x</m:mi><m:mtext>e</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:msub><m:mi>B</m:mi><m:mtext>e</m:mtext></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>e</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>&#x2212;</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>J</m:mi></m:mrow></m:math></p></td>
+<td>(3.60)</td>
+</tr>
+</table>
+<p class="noindent">In the absence of vibration&#x2013;rotation coupling, the fines in the <i>P</i> branch would also have an equal spacing 2<i>B</i><sub>e</sub>. However, when vibration-rotation coupling is included, the spacing increases as the <i>J</i> quantum number is increased. (It is easily calculated to be 2<i>B</i><sub>e</sub> &#x002B; <i>&#x03B1;</i><sub>e</sub>(2<i>J</i> &#x002B; 1).) This unequal spacing is illustrated in <a href="#fig3.4">Fig. 3.4</a>. In spectroscopie terminology the band <i>degrades to the red.</i></p>
+<p class="indent">In writing these equations we have neglected a small constant term. Its inclusion simply shifts the origin of the energy scale slightly, affecting all energy levels to the same extent. It is physically unobservable since its magnitude is smaller than the precision to which electronic energies can be calculated. We shall therefore say no more about it.</p>
+</section>
+<section epub:type="chapter" id="sec3.4">
+<h2 class="h2">3.4<span class="space">&#160;</span>Polyatomic molecules</h2>
+<p class="noindent">The same methods can be applied to polyatomic molecules, except that the situation is more complicated because many degrees of freedom can now be coupled. The zero-order (RRHO) description has been given in <a href="Chapter02.xhtml">Chapters 2</a> and <a href="Chapter03.xhtml">3</a> of <i>Quantum mechanics 1:</i> the rotations are described assuming that the molecule is rigid (<i>Quantum mechanics 1,</i> <a href="#sec3.4">Section 3.4</a>), and the harmonic vibrations are separated by a normal coordinate analysis (<i>Quantum mechanics 1</i>, Section 2.9).</p>
+<p class="indent">The normal vibrational coordinates <i>Q<sub>j</sub></i> are such that the leading term of the Taylor expansion of the potential energy can be expressed</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.61"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>V</m:mi><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msubsup><m:mi>Q</m:mi><m:mi>j</m:mi><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x22EF;</m:mo></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.61)</td>
+</tr>
+</table>
+<p class="noindent">There are no quadratic cross-terms in the Hamiltonian because the normal coordinates are calculated by diagonafizing the quadratic potential energy matrix. However, this expression is only valid if all the vibrational motions are harmonic, and furthermore we have assumed that the molecule is a rigid rotor. In reality neither of these will be true. We must therefore expect that the Hamiltonian should be corrected by terms such as</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.62"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi><m:mi>k</m:mi></m:mrow></m:munder><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi><m:mi>k</m:mi></m:mrow></m:msub><m:msub><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>i</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>j</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>k</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.62)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.63"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi><m:mi>k</m:mi></m:mrow></m:munder><m:mrow><m:msub><m:mi>b</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi><m:mi>k</m:mi><m:mi>l</m:mi></m:mrow></m:msub><m:msub><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>i</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>j</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>k</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>l</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.63)</td>
+</tr>
+</table>
+<p class="noindent">which represent the anharmonic corrections to the vibrational potential energy.</p>
+<p class="noindent"><a id="page_50" class="page">Page 50, Chapter 3 Perturbations</a>There will also be centrifugal terms, involving combinations of vibrational coordinates and the angular momenta about the principal axes,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.64"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>i</m:mi><m:mi>r</m:mi><m:mi>s</m:mi></m:mrow></m:munder><m:mrow><m:msub><m:mi>c</m:mi><m:mrow><m:mi>i</m:mi><m:mi>r</m:mi><m:mi>s</m:mi></m:mrow></m:msub><m:msub><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>i</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>r</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>s</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(3.64)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.65"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi><m:mi>r</m:mi><m:mi>s</m:mi></m:mrow></m:munder><m:mrow><m:msub><m:mi>d</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi><m:mi>r</m:mi><m:mi>s</m:mi></m:mrow></m:msub><m:msub><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>i</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>j</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>r</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>s</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(3.65)</td>
+</tr>
+</table>
+<p class="noindent">and Coriolis terms, coupling rotational motion with vibrational momenta</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.66"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi><m:mi>r</m:mi></m:mrow></m:munder><m:mrow><m:msub><m:mi>d</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi><m:mi>r</m:mi></m:mrow></m:msub><m:msub><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>i</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>P</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>j</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>r</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(3.66)</td>
+</tr>
+</table>
+<p class="noindent">The Coriolis force is the sideways force perceived when attempting to walk outwards from the centre of a rotating merry-go-round (carousel). It arises because the angular momentum of the body is constant; as you walk outwards your tangential velocity increases and you experience a sideways force in the rotating frame of reference: the foot that steps outwards moves sideways faster than the foot left behind on the inside. Nuclei in a molecule attempting to follow their normal vibrational motion while the molecule is rotating experience the same kind of disorienting effect.</p>
+<p class="indent">There is evidently a large variety of possible terms to consider in any particular case, but many of the possible combinations of coordinates are absent from the Hamiltonian for symmetry reasons. As we have previously noted, within the Born&#x2013;Oppenheimer approximation the Hamiltonian is totally symmetric with respect to all operations of the molecular point group. Since the Hamiltonian consists of a sum of terms, each of these must itself be totally symmetric. Neither the kinetic energy operator nor the potential energy operator can be altered by any symmetry operation of the molecule. The only possible combinations of normal modes, angular momentum operators, and so on, that can appear as perturbations in the Hamiltonian are therefore those that generate the totally symmetric irrep of the molecular point group.</p>
+<p class="indent">For example in the CO2 molecule, if we denote the normal coordinates as follows (see <a href="#tab3.2">Table 3.2</a>) then the only cubic anharmonicity terms that can appear in the Hamiltonian are the terms of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>g</m:mi><m:mo>+</m:mo></m:msubsup></m:mrow></m:math> symmetry</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.67"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>a</m:mi><m:mrow><m:mn>111</m:mn></m:mrow></m:msub><m:msubsup><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn><m:mn>3</m:mn></m:msubsup><m:mo>,</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mn>122</m:mn></m:mrow></m:msub><m:msub><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:msubsup><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>,</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mn>133</m:mn></m:mrow></m:msub><m:msub><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mover accent='true'><m:mi>Q</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mn>3</m:mn><m:mi>y</m:mi></m:mrow><m:mn>2</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.67)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<p class="tab-cap" id="tab3.2" style="width:100%;"><b>Table 3.2.</b> Vibrations of CO<sub>2</sub></p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Q<sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">symmetric stretch</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>g</m:mi><m:mo>+</m:mo></m:msubsup></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Q<sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">asymmetric stretch</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>&#x03A3;</m:mi><m:mi>u</m:mi><m:mo>+</m:mo></m:msubsup></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Q<sub>3</sub><i><sub>x</sub></i><b><i>,</i></b>Q<sub>3</sub><i><sub>y</sub></i></p></td>
+<td style="vertical-align:top;"><p class="tab-l">bend</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mo>&#x220F;</m:mo><m:mi>u</m:mi></m:msub></m:mrow></m:math></p></td>
+</tr>
+</table>
+</aside>
+<p class="noindent">&#160;</p>
+<p class="ref"><b>References</b></p>
+<p class="refer">Cohen-Tannoudji, C, Diu, B. and Lalo&#x00EB;, F., (1992). <i>M&#x00E9;canique quantique II</i> Hermann, Paris.</p>
+<p class="refer">Feynman, R. P. and Hibbs, A. R. (1965). <i>Quantum mechanics and path integrals.</i> McGraw-Hill, New York.</p>
+<p class="refer">Green, N. J. B. (1997). <i>Quantum mechanics 1.</i> Oxford Chemistry Primer, Oxford.</p>
+<p class="refer">Herzberg, G.(1950). <i>Spectra of diatomic molecules.</i> Van Nostrand Reinhold, New York.</p>
+</section>
+</section>
+</body>
+</html>

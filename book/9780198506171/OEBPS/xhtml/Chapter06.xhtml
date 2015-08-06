@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Activity effects</title>
+<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div>
+<section epub:type="chapter" id="ch06">
+<a id="page_59" class="page" style="width:70%">Page 59, Activity effects</a>
+<h1 class="main"><b>6</b><span class="space">&#160;</span><b>Activity effects</b></h1>
+<p class="noindent">&#160;</p>
+<p class="noindent">So far we have treated equilibrium parameters such as <i>K<sub>a,</sub> K<sub>w,</sub> K<sub>f,</sub> K<sub>p,</sub> K<sub>s,</sub></i> and <i>E&#x00B0;</i> as true constants. They will, of course, depend on temperature and (at least in principle, though in essentially non-compressible solutions not much) on pressure. But at constant temperature and pressure, the equilibrium <i>constants</i> should be just that: constants. However, in practice, they are only <i>approximately</i> constant. This chapter explains why this is so, and what can be done to make them more constant. That remedy works well in dilute solutions, but is only partially successful in concentrated solutions, for practical as well as theoretical reasons that are beyond the scope of this primer.</p>
+<section epub:type="chapter" id="sec_6.1">
+<h2 class="h2"><b>6.1</b><span class="space">&#160;</span><b>Why activity effects?</b></h2>
+<p class="noindent">The experimental evidence from almost a century of precise measurements of equilibrium constants shows that, in dilute solutions, they are essentially constant only when compared at constant <i>ionic strength</i>, a parameter introduced empirically by Lewis and Randall (1921) and soon thereafter firmly anchored in theory by Debye and Huckel (1923).</p>
+<p class="indent3-ka">The ionic strength <i>I</i> is a measure which counts the ions in solution, with each ionic concentration c<sub><i>i</i></sub> weighed by the square of its valence <i>z<sub><i>i</i></sub></i>,</p>
+<p class="fig1" style="text-align:center;width:70%" id="eq_6.1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>I</mi><mo>=</mo><mfrac>
+   <mn>1</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mstyle displaystyle='true'>
+   <mo>&#x2211;</mo> <mrow>
+    <msubsup>
+     <mi>z</mi>
+     <mi>i</mi>
+     <mn>2</mn>
+    </msubsup>
+    <msub>
+     <mi>c</mi>
+     <mi>i</mi>
+    </msub>
+    
+   </mrow>
+  </mstyle>
+ </mrow>
+</math>
+<span style="float:right;margin-right:0.5em">(6.1)</span></p>
+<p class="indent3-ka">where the factor &#x00BD; serves to make the ionic strength equal to the concentration for the solution of a single, strong 1:1 electrolyte: a 0.37 M NaCl solution has an ionic strength of 0.37 M. By excluding the contributions from uncharged species, the ionic strength clearly reflects <i>coulombic</i> interactions. The way these affect ionic equilibria can be envisioned as follows.</p>
+<p class="indent3-ka">Electroneutrality requires that a macroscopic volume of an electrolyte solution contain equivalent amounts anions and cations. The individual ions can move relatively freely throughout the solution, but of course anions and cations attract each other, while they repel ions of the same charge type. As a result, the average anion-cation distance is smaller than the average anion- anion and cation-cation distances, so that on average the ions are coulombi- cally attracted (and therefore have a lower energy) by being in the electrolyte solution, the more so the higher its ionic strength. This lowered energy causes the (weak) dependence of the equilibrium constants on ionic strength.</p>
+<p class="noindent">The effect can be treated through a correction term, the <i>activity coefficient f</i> ,which can be introduced into the expressions for equilibrium constants as a multiplier of all concentrations <i>c.</i> The resulting product <i>f c</i> is called the <i>activity</i>, and is often denoted by the symbol <i>a.</i><a id="page_60" class="page">Page 60, Activity effects</a></p>
+<p class="indent3-ka">It is important to realize where activity corrections apply, and where they do not. Since interionic attractions can lower the energetics of ions, they can affect the numerical values of the equilibrium constants. However, activity effects have no direct influence on the mass and charge balance equations, which are purely accounting methods, or on any relations derived from these, such as the proton and electron conditions. Similarly, activity effects do not change the equivalence volume <i>V<sub>e</sub></i> in a titration, but can change the shape of the titration curve. Fortunately, as we will see below, those changes are usually relatively minor.</p>
+</section>
+<section epub:type="chapter" id="sec_6.2">
+<h2 class="h2"><b>6.2</b><span class="space">&#160;</span><b>Ionic interactions</b></h2>
+<p class="noindent">Consider one liter of a 1 M solution of NaCl. It contains <i>N<sub>A</sub></i> sodium and chloride ions, where <i>N<sub>A</sub></i> is Avogadro&#x2019;s number, about 6xl0<sup>23</sup> mole<sup>-1</sup>. Since no closed-form solution is known for three-body problems, a 10<sup>24</sup>-body problem is clearly beyond reach, and we must make simplifying assumptions to analyze the problem. On the other hand, we are not really interested in the specific solutions for all anions and cations, but only in its statistical average. Debye and Huckel reduced the problem to a manageable form by considering the effect, on an arbitrarily selected &#x2018;central&#x2019; ion, of all the other ions in solution as that of a smeared-out charge distribution with a total charge opposite to that of the central ion. The problem then becomes one of a central ion and its &#x2018;ionic cloud&#x2019;, a two-body problem. As you will see below, even such a drastic simplification already leads to rather complicated mathematics.</p>
+<p class="indent3-ka">Here we will consider a symmetrical electrolyte such as NaCl or MgS0<sub>4</sub>, i.e., with z<sub>+</sub> &#x003D; -z&#x005F; &#x003D; <i>&#x007C;z&#x007C;.</i> The concentrations <i>c<sub>&#x002B;</sub></i> and 
+c&#x005F; of the anions and cations in the ionic cloud are then determined by the Boltzmann distribution,</p>
+<p class="fig1" id="eq_6.2" style="text-align:center;width:70%">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>c</mi>
+   <mo>+</mo>
+  </msub>
+  <mo>=</mo><msup>
+   <mi>c</mi>
+   <mo>*</mo>
+  </msup>
+  <mi>exp</mi><mrow><mo>[</mo> <mrow>
+   <mfrac>
+    <mrow>
+     <mo>&#x2212;</mo><mrow><mo>|</mo> <mi>z</mi> <mo>|</mo></mrow><mi>F</mi><mi>&#x03C8;</mi>
+    </mrow>
+    <mrow>
+     <mi>R</mi><mi>T</mi>
+    </mrow>
+   </mfrac>
+   
+  </mrow> <mo>]</mo></mrow>
+ </mrow>
+</math>
+<span style="float:right;margin-right:0.5em">(6.2)</span></p>
+<p class="fig1" id="eq_6.3" style="text-align:center;width:70%">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>c</mi>
+   <mo>&#x2212;</mo>
+  </msub>
+  <mo>=</mo><msup>
+   <mi>c</mi>
+   <mo>*</mo>
+  </msup>
+  <mi>exp</mi><mrow><mo>[</mo> <mrow>
+   <mfrac>
+    <mrow>
+     <mo>+</mo><mrow><mo>|</mo> <mi>z</mi> <mo>|</mo></mrow><mi>F</mi><mi>&#x03C8;</mi>
+    </mrow>
+    <mrow>
+     <mi>R</mi><mi>T</mi>
+    </mrow>
+   </mfrac>
+   
+  </mrow> <mo>]</mo></mrow>
+ </mrow>
+</math>
+<span style="float:right;margin-right:0.5em">(6.3)</span></p>
+<p class="noindent">where <i>F</i> is the Faraday, <i>R</i> the gas constant, <i>T</i> the absolute temperature, <i>&#x03C8;</i> is the distance-dependent potential around the central ion, and <i>c*</i> is the ionic concentration sufficiently far away from the central ion, where the concentration has its &#x2018;bulk&#x2019; value, and the potential
+ <i>&#x03C8; is</i> taken to be zero.</p>
+<p class="indent3-ka">We now use the Poisson equation to link the ionic concentrations <i>c</i> to the potential <i>&#x03C8;.</i> Since we consider the ionic charges around a central ion, this requires spherical coordinates, i.e.,</p>
+<p class="" id="eq_6.4" style="text-align:center;width:70%">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mfrac>
+   <mn>1</mn>
+   <mrow>
+    <msup>
+     <mstyle mathsize='140%' displaystyle='true'><mi>r</mi></mstyle>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+  </mfrac>
+  <mfrac>
+   <mi>d</mi>
+   <mrow>
+    <mi>d</mi><mi>r</mi>
+   </mrow>
+  </mfrac>
+  <mrow><mo>(</mo>
+   <mrow>
+    <msup>
+     <mstyle mathsize='140%' displaystyle='true'><mi>r</mi></mstyle>
+     <mn>2</mn>
+    </msup>
+    <mfrac>
+     <mrow>
+      <mi>d</mi><mi>&#x03C8;</mi>
+     </mrow>
+     <mrow>
+      <mi>d</mi><mi>r</mi>
+     </mrow>
+    </mfrac>
+    
+   </mrow>
+  <mo>)</mo></mrow><mo>=</mo><mo>&#x2212;</mo><mfrac>
+   <mi>&#x03C1;</mi>
+   <mi>&#x03B5;</mi>
+  </mfrac>
+  
+ </mrow>
+</math>
+<span style="float:right;margin-right:0.5em">(6.4)</span></p>
+<p class="noindent">where <i>p&#x003D;&#x007C;z&#x007C;F (c<sub>&#x002B;</sub>-</i> c<sub>-</sub>) is the charge density, <i>r</i> is the radial distance from the center of the central ion, and <i>&#x025B;</i> is the dielectric permittivity, i.e., the product of the (dimensionless) relative permittivity <i>&#x025B;<sub>rel</sub></i> and the vacuum permittivity <i>&#x025B;<sub>0</sub></i> (of about 8.854 pF m<sup>-1</sup>).</p>
+<a id="page_61" class="page" style="width:70%">Page 61, Activity effects</a>
+<p class="indent3-ka">Substituting
+<a href="#eq_6.2">eqns (6.2)</a> and 
+<a href="#eq_6.3">(6.3)</a> into <a href="#eq_6.4">(6.4)</a> yields</p>
+<p class="fig1" id="eq_6.5">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <mfrac>
+   <mn>1</mn>
+   <mrow>
+    <msup>
+     <mi>r</mi>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+  </mfrac>
+  <mfrac>
+   <mi>d</mi>
+   <mrow>
+    <mi>d</mi><mi>r</mi>
+   </mrow>
+  </mfrac>
+  <mrow><mo>(</mo>
+   <mrow>
+    <msup>
+     <mi>r</mi>
+     <mn>2</mn>
+    </msup>
+    <mfrac>
+     <mrow>
+      <mi>d</mi><mi>&#x03C8;</mi>
+     </mrow>
+     <mrow>
+      <mi>d</mi><mi>r</mi>
+     </mrow>
+    </mfrac>
+    
+   </mrow>
+  <mo>)</mo></mrow><mo>=</mo><mfrac>
+   <mrow>
+    <mo>&#x007C;</mo><mi>z</mi><mo>&#x007C;</mo><mi>F</mi><msup>
+     <mi>c</mi>
+     <mo>*</mo>
+    </msup>
+    
+   </mrow>
+   <mi>&#x03B5;</mi>
+  </mfrac>
+  <mrow><mo>{</mo> <mrow>
+   <mi>exp</mi><mrow><mo>[</mo> <mrow>
+    <mfrac>
+     <mrow>
+      <mo>+</mo><mo>&#x007C;</mo><mi>z</mi><mo>&#x007C;</mo><msub>
+       <mi>F</mi>
+       <mi>&#x03C8;</mi>
+      </msub>
+      
+     </mrow>
+     <mrow>
+      <mi>R</mi><mi>T</mi>
+     </mrow>
+    </mfrac>
+    
+   </mrow> <mo>]</mo></mrow><mo>&#x2212;</mo><mi>exp</mi><mrow><mo>[</mo> <mrow>
+    <mfrac>
+     <mrow>
+      <mo>&#x2212;</mo><mo>&#x007C;</mo><mi>z</mi><mo>&#x007C;</mo><msub>
+       <mi>F</mi>
+       <mi>&#x03C8;</mi>
+      </msub>
+      
+     </mrow>
+     <mrow>
+      <mi>R</mi><mi>T</mi>
+     </mrow>
+    </mfrac>
+    
+   </mrow> <mo>]</mo></mrow>
+  </mrow> <mo>}</mo></mrow>
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(6.5)</span></p>
+<p class="noindent">and introduction of the dimensionless parameters <i>y</i> &#x003D; <i>&#x007C;z&#x007C;F<sub>&#x0471;</sub>/RT</i> and K<sup>2</sup>&#x003D;Z<sup>2</sup>F<sup>2</sup>c<sup>*</sup>/&#x025B;RT leads to</p>
+<p class="fig1" id="eq_6.6" style="margin-left:5em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mfrac>
+   <mn>1</mn>
+   <mrow>
+    <msup>
+     <mi>r</mi>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+  </mfrac>
+  <mfrac>
+   <mi>d</mi>
+   <mrow>
+    <mi>d</mi><mi>r</mi>
+   </mrow>
+  </mfrac>
+  <mrow><mo>(</mo>
+   <mrow>
+    <msup>
+     <mi>r</mi>
+     <mn>2</mn>
+    </msup>
+    <mfrac>
+     <mrow>
+      <mi>d</mi><mi>y</mi>
+     </mrow>
+     <mrow>
+      <mi>d</mi><mi>r</mi>
+     </mrow>
+    </mfrac>
+    
+   </mrow>
+  <mo>)</mo></mrow><mo>=</mo><msup>
+   <mi>k</mi>
+   <mn>2</mn>
+  </msup>
+  <mrow><mo>(</mo>
+   <mrow>
+    <msup>
+     <mi>e</mi>
+     <mrow>
+      <mo>+</mo><mi>y</mi>
+     </mrow>
+    </msup>
+    <mo>&#x2212;</mo><msup>
+     <mi>e</mi>
+     <mrow>
+      <mo>&#x2212;</mo><mi>y</mi>
+     </mrow>
+    </msup>
+    
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(6.6)</span></p>
+<p class="indent3-ka">Equation <a href="#eq_6.6">(6.6)</a> has the general solution</p>
+<p class="fig1" id="eq_6.7" style="margin-left:5em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <mi>&#x03C8;</mi><mo>=</mo><mfrac>
+   <mrow>
+    <msub>
+     <mi>A</mi>
+     <mo>&#x2212;</mo>
+    </msub>
+    <msup>
+     <mi>e</mi>
+     <mrow>
+      <mo>&#x2212;</mo><mi>k</mi><mi>r</mi>
+     </mrow>
+    </msup>
+    
+   </mrow>
+   <mi>r</mi>
+  </mfrac>
+  <mo>+</mo><mfrac>
+   <mrow>
+    <msub>
+     <mi>A</mi>
+     <mo>+</mo>
+    </msub>
+    <msup>
+     <mi>e</mi>
+     <mrow>
+      <mo>+</mo><mi>k</mi><mi>r</mi>
+     </mrow>
+    </msup>
+    
+   </mrow>
+   <mi>r</mi>
+  </mfrac>
+  
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(6.7)</span></p>
+<p class="noindent">which need not be pursued here. Instead we will merely consider the quantity1/k <small>&#x003D;</small> <i>&#x221A;(&#x025B;RT/z<sup>2</sup>F<sup>2</sup>C<sup>*</sup></i> which is the <i>characteristic distance</i>in <a href="#eq_6.7">eqn (6.7)</a>. Thisquantity also plays a role in, e.g., the electrical double layer around colloidparticles, and had already been studied by Gouy (1909, 1910).</p>
+<p class="indent3-ka">Equations <a href="#eq_6.6">(6.6)</a> and <a href="#eq_6.7">(6.7)</a> do not involve the chemical nature of the ions,but merely their valencies, and can therefore be extended to electrolyte mix-tures (Gouy 1910, Levine and Jones 1969), in which case we obtain</p>
+<p class="fig1" id="eq_6.8" style="margin-left:5em">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> 
+<mrow>
+  <mi>k</mi><mo>=</mo><mfrac>
+   <mi>F</mi>
+   <mrow>
+    <msqrt>
+     <mrow>
+      <mi>&#x03B5;</mi><mi>R</mi><mi>T</mi>
+     </mrow>
+    </msqrt>
+    
+   </mrow>
+  </mfrac>
+  <msqrt>
+   <mrow>
+    <mstyle displaystyle='true'>
+     <munderover>
+      <mo>&#x2211;</mo>
+      <mi>i</mi>
+      <mrow></mrow>
+     </munderover>
+     <mrow>
+      <msubsup>
+       <mi>z</mi>
+       <mi>i</mi>
+       <mn>2</mn>
+      </msubsup>
+      
+     </mrow>
+    </mstyle>
+   </mrow>
+  </msqrt>
+  <msubsup>
+   <mi>c</mi>
+   <mi>i</mi>
+   <mo>*</mo>
+  </msubsup>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <mi>F</mi><msqrt>
+     <mn>2</mn>
+    </msqrt>
+    
+   </mrow>
+   <mrow>
+    <msqrt>
+     <mrow>
+      <mi>&#x03B5;</mi><mi>R</mi><mi>T</mi>
+     </mrow>
+    </msqrt>
+    
+   </mrow>
+  </mfrac>
+  <msqrt>
+   <mi>I</mi>
+  </msqrt>
+  
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(6.8)</span></p>
+<p class="noindent">where <i>I</i> is as defined in eqn <a href="#eq_6.1">(6.1)</a>. This is how the ionic strength <i>I</i> enters the problem.</p>
+<p class="indent3-ka">The Debye-Huckel theory provides an explicit expression for the activity coefficient of an ion as a function of two parameters: the ionic strength <i>I</i>, and the distance of closest approach <i>d</i> of the central ion and its counter-ions (which parameter enters the model as an integration constant),</p>
+<p class="fig1" id="eq_6.9" style="margin-left:5em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <mi>log</mi><mi>f</mi><mi>i</mi><mo>=</mo><mo>&#x2212;</mo><mfrac>
+   <mrow>
+    <msubsup>
+     <mi>z</mi>
+     <mi>i</mi>
+     <mn>2</mn>
+    </msubsup>
+    <msup>
+     <mi>F</mi>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+   <mrow>
+    <mn>8</mn><mi>&#x03C0;</mi><mi>&#x03B5;</mi><msub>
+     <mi>N</mi>
+     <mi>A</mi>
+    </msub>
+    <mi>R</mi><mi>T</mi>
+   </mrow>
+  </mfrac>
+  <mfrac>
+   <mi>k</mi>
+   <mrow>
+    <mn>1</mn><mo>+</mo><mi>k</mi><mi>d</mi>
+   </mrow>
+  </mfrac>
+  <mo>=</mo><mo>&#x2212;</mo><mfrac>
+   <mrow>
+    <msubsup>
+     <mi>z</mi>
+     <mi>i</mi>
+     <mn>2</mn>
+    </msubsup>
+    <mi>A</mi><msqrt>
+     <mi>I</mi>
+    </msqrt>
+    
+   </mrow>
+   <mrow>
+    <mn>1</mn><mo>+</mo><mi>B</mi><mi>d</mi><msqrt>
+     <mi>I</mi>
+    </msqrt>
+    
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(6.9)</span></p>
+<p class="noindent">where the constants have the numerical values A &#x003D; 0.51M<sup>-&#x00BD;</sup> and <i>B &#x003D;</i> 3.3xl0<sup>9</sup>M<sup>-1/2</sup> m<sup>-1</sup> in water at 25&#x00B0;C. The distance of closest approach <i>d</i> depends on the radii of at least two species (and is therefore poorly defined in an electrolytemixture), and has only a relatively minor effect on the activity coefficient. Itis therefore convenient to replace it by the order-of-magnitude estimate d &#x2248;3x10<sup>-10</sup> m, in which case <a href="#eq_6.9">eqn (6.9)</a> reduces to</p><p class="fig1" id="eq_6.10" style="margin-left:5em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>log</mi><msub><mi>f</mi><mi>i</mi>
+</msub><mo>&#x2248;</mo><mo>&#x2212;</mo><mfrac>
+   <mrow>
+    <mn>0.5</mn><msubsup>
+     <mi>z</mi>
+     <mi>i</mi>
+     <mn>2</mn>
+    </msubsup>
+    <msqrt>
+     <mi>I</mi>
+    </msqrt>
+    
+   </mrow>
+   <mrow>
+    <mn>1</mn><mo>+</mo><msqrt>
+     <mi>I</mi>
+    </msqrt>
+    
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(6.10)</span></p>
+<p class="noindent">This expression is sometimes further simplified for use at very low ionic strengths, where &#x221A;<i>I</i> &#x02C2;&#x02C2; 1, in which case we obtain the so-calledDebye- Huckel limiting law</p>
+<p class="fig1" id="eq_6.11" style="margin-left:5em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <mi>log</mi><msub>
+   <mi>f</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>&#x2248;</mo><mo>&#x2212;</mo><mn>0.5</mn><msubsup>
+   <mi>z</mi>
+   <mi>i</mi>
+   <mn>2</mn>
+  </msubsup>
+  <msqrt>
+   <mi>I</mi>
+  </msqrt>
+  
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(6.11)</span></p>
+</section>
+<section epub:type="chapter" id="sec_6.3"> 
+<a id="page_62" class="page" style="width:70%">Page 62, Activity effects</a>
+<h2 class="h2">6.3<span class="space"></span><b> Non-ionic
+interactions</b></h2>
+<p class="noindent">So far we have only considered coulombic interactions, and these are indeedthe dominant effect in dilute electrolyte solutions. However, neutral speciesin solutions can also be affected by the presence of ions in solution, as evi-denced by so-called <i>salting-in</i> and <i>salting-out</i> effects of ions on the solubilityof neutral species. Such effects often work through modifying the structureof water, or by tying up water as water of hydration. Since the same effectscan be expected to work on ions, they are often included empirically through</p>
+<p class="fig1" id="eq_6.12" style="margin-left:5em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <mi>log</mi><msub>
+   <mi>f</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>&#x2248;</mo><mo>&#x2212;</mo><mn>0.5</mn><msubsup>
+   <mi>z</mi>
+   <mi>i</mi>
+   <mn>2</mn>
+  </msubsup>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <msqrt>
+       <mi>I</mi>
+      </msqrt>
+      
+     </mrow>
+     <mrow>
+      <mn>1</mn><mo>+</mo><msqrt>
+       <mi>I</mi>
+      </msqrt>
+      
+     </mrow>
+    </mfrac>
+    <mo>&#x2212;</mo><mi>C</mi><mi>I</mi>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(6.12)</span></p>
+<p class="noindent">where the constant C depends on the nature of the ion <i>i</i> and on that of the other ions present. Davies (1938, 1962) has studied a large number of electrolyte solutions, and found an average value for C of 0.3. This, then, is theform in which the <i>Davies equation</i> is most often used, because it contains noadjustable parameters, yet represents the general trend (though not the specifics)of the activity coefficients of many ions in solution:</p>
+
+<p class="fig1" id="eq_6.13" style="margin-left:5em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <mi>log</mi><msub>
+   <mi>f</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>&#x2248;</mo><mo>&#x2212;</mo><mn>0.5</mn><msubsup>
+   <mi>z</mi>
+   <mi>i</mi>
+   <mn>2</mn>
+  </msubsup>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <msqrt>
+       <mi>I</mi>
+      </msqrt>
+      
+     </mrow>
+     <mrow>
+      <mn>1</mn><mo>+</mo><msqrt>
+       <mi>I</mi>
+      </msqrt>
+      
+     </mrow>
+    </mfrac>
+    <mo>&#x2212;</mo><mn>0.3</mn><mi>I</mi>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(6.13)</span></p>
+<p class="indent3-ka">The Davies equation is a simplification of the Debye-Huckel equation (for <i>Bd&#x003D;</i> 1) with a first-order correction for salting effects. It does not address the effects of neutral species on ions, or that of ions on neutralspecies. In concentrated solutions, all such effects play a role, and relations such as eqn <a href="#eq_6.13">(6.13)</a> must be considered as first approximations only. Below we will use them as such.</p>
+</section>
+<section epub:type="chapter" id="sec_6.4"> 
+<h2 class="h2">6.4 Activitycorrections</h2> 
+<p class="noindent">In order to use eqn <a href="#eq_6.13">(6.13)</a> to make activity
+ corrections, it is convenient to
+separate the ionic valence <i>z<sub>t</sub></i> by writing</p>
+<p class="fig1" id="eq_6.14" style="margin-left:5em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>log</mi><msub>
+   <mi>f</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>&#x2248;</mo><mo>&#x2212;</mo><mn>0.5</mn><mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <msqrt>
+       <mi>I</mi>
+      </msqrt>
+      
+     </mrow>
+     <mrow>
+      <mn>1</mn><mo>+</mo><msqrt>
+       <mi>I</mi>
+      </msqrt>
+      
+     </mrow>
+    </mfrac>
+    <mo>&#x2212;</mo><mn>0.3</mn><mi>I</mi>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(6.14)</span></p>
+<p class="noindent">or</p>
+ <p class="fig1" id="eq_6.15" style="margin-left:5em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <mi>f</mi><mo>=</mo><msup>
+   <mrow>
+    <mn>10</mn>
+   </mrow>
+   <mrow>
+    <mo>&#x2212;</mo><mn>0.5</mn><mrow><mo>(</mo>
+     <mrow>
+      <msqrt>
+       <mi>I</mi>
+      </msqrt>
+      <mo>/</mo><mn>1</mn><mo>+</mo><msqrt>
+       <mi>I</mi>
+      </msqrt>
+      <mo>&#x2212;</mo><mn>0.3</mn><mi>I</mi>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(6.15)</span></p>
+<p class="noindent">and</p>
+<p class="fig1" id="eq_6.16" style="margin-left:5em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>log</mi><msub>
+   <mi>f</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>=</mo><msubsup>
+   <mi>z</mi>
+   <mi>i</mi>
+   <mn>2</mn>
+  </msubsup>
+  <mi>log</mi><msub>
+   <mi>f</mi>
+   <mrow></mrow>
+  </msub>
+  
+ </mrow><mtext>&#160;&#160;&#160;or&#160;&#160;&#160;</mtext>
+  <mrow>
+  <msub>
+   <mi>f</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>=</mo><msup>
+   <mi>f</mi>
+   <mrow>
+    <msubsup>
+     <mi>z</mi>
+     <mi>i</mi>
+     <mn>2</mn>
+    </msubsup>
+    
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+<span style="float:right;margin-right:14.5em">(6.16)</span></p>
+<p class="noindent">because this leads to rather simple expressions for the activity corrections. Note that, at this level of approximation, neutral species (with z &#x003D; 0) are as-sumed to require no activity corrections.</p>
+<p class="indent3-ka">Now consider the equilibrium constants <i>K<sub>w</sub>,K<sub>a</sub>, K<sub>al</sub></i>, and <i>K<sub>a2</sub></i> for water, for a weak monoprotic acid HA, and for a diprotic acid H<sub>2</sub>A respectively. We have</p>
+<figure class="" id="eq_6.17" style="text-align:right;width:70%">
+<img src="../images/eq_62_1.jpg" alt="images"/>
+</figure>
+<p class="noindent"><a id="page_63" class="page">Page 63, Activity effects</a></p>
+<figure class="" id="eq_6.18" style="text-align:right;width:70%">
+<img src="../images/eq_63_1.jpg" alt="images" style="margin-left:4.5em"/>
+</figure>
+<figure class="" id="eq_6.19" style="text-align:right;width:70%">
+<img src="../images/eq_63_2.jpg" alt="images"/>
+</figure>
+<figure class="" id="eq_6.20" style="text-align:right;width:70%">
+<img src="../images/eq_63_3.jpg" alt="images"/>
+</figure>
+<p class="noindent">and so on, where the superscript <i>t</i> indicates the &#x2018;<i>t</i>rue&#x2019;, <i>t</i>hermodynamic value (which of course is true only insofar as the activity correction is correct). However, one should be careful to consider the valencies of the species in the equilibrium expressionsFor example, for the ammonium/ammonia monoprotic acid-base couple, NH<sup>+</sup>&#x21CC;[H<sup>+</sup>] &#x002B; NH<sub>3</sub> we have</p>
+<figure class="fig1" id="eq_6.21" style="text-align:right;width:70%">
+<img src="../images/eq_63_4.jpg" alt="images" style="margin-left:5.2em;"/>
+</figure>
+<p class="noindent">and for a diprotic aminoacid such as glycine, NH<sub>3</sub><sup>&#x002B;</sup>-CH<sub>2</sub>-COCT (here abbreviated to HGly), we find</p>
+<figure class="" id="eq_6.22" style="text-align:right;width:70%">
+<img src="../images/eq_63_5.jpg" alt="images"/>
+</figure>
+<figure class="" id="eq_6.23" style="text-align:right;width:70%">
+<img src="../images/eq_63_6.jpg" alt="images"/>
+</figure>
+<p class="indent3-ka">We already commented on the fact that activity corrections have no place in balance equations, such as those accounting for mass and charge, or in the related proton or electron conditions. On the other hand, there are two places where activity corrections may be required. The first of these is in the values of the equilibrium constants, as illustrated in eqns<a href="#eq_6.17">(6.17)</a> through <a href="#eq_6.23">(6.23)</a>. These relations must often be used in reverse, because most values for equilibrium constants listed in compilations are <i>K</i> <sup>t</sup>-values, i.e., they have been corrected for activity effects or, equivalently, extrapolated to infinite dilution (where <i>f&#x003D;</i> 1).</p>
+<p class="indent3-ka">The second place where an activity correction is required is in <i>elec-trometric measurements</i>, such as with a pH meter or in recording a cell potential. Equilibrium electrometric measurements yield data that approximate the activities rather than the concentrations of the monitored species. In other words, the Nemst equation should be written in terms of activities rather than concentrations, and the measured pH<sub>m</sub> must be interpreted as</p>
+<figure class="fig1" id="eq_6.24" style="text-align:right;width:70%">
+<img src="../images/eq_63_7.jpg" alt="images"/>
+</figure>
+<p class="noindent">where we retain the symbol pH for -log[H<sup>+</sup>] just as we retain the notation of the equilibrium constants <i>K<sub>w</sub>, K<sub>a</sub>,</i> K<sub><i>f</i></sub> etc. for the concentration-based constants. Note that optical measurements of the pH, as in a photometric titration, should <i>not</i> be corrected for activities, because the concentrations in Beer&#x2019;s law are indeed concentrations, not activities.</p>
+</section>
+<section epub:type="chapter" id="sec_6.5"> 
+<a id="page_64" class="page" style="width:70%">Page 64, Activity effects</a>
+<h2 class="h2">6.5<span class="space"></span><b> An example</b></h2>
+<p class="noindent">The titration of citric acid with NaOH provides a clear example of the magnitude of activity corrections. We will consider the following two simple scenarios: either citric acid and sodium hydroxide are the only electrolytes present, or the titration is performed in a solution containing a large excess of non-participating (&#x2018;inert&#x2019;) ions, so that the ionic strength can be considered to be constant during the titration. We will treat the latter case first, because it is easier. The computations are readily performed with the help of a calculator or computer, and are especially easy on a spreadsheet.</p>
+<p class="indent3-ka">When the ionic strength <i>I</i> is kept constant, we first compute log <i>f</i> from<a href="#eq_6.14"> eqn (6.14)</a> given the value of <i>I</i>, and then use this to calculate the values of p<i>K<sub>w,</sub> pK<sub>a1,</sub> pK<sub>a2,</sub></i>  and <i>pK<sub>a3</sub></i> from the (supposedly infinite-dilution) literature values p<i>K<sup>t</sup><sub>w,</sub> pK<sup>t</sup><sub>a1,</sub></i> p<i>K<sup>t</sup><sub>a2,</sub>,</i> and p<i>K<sup>t</sup><sub>a3</sub></i> using p<i>K<sub>w</sub></i> &#x003D; p<i>K<sup>t</sup><sub>w</sub> &#x002B;</i> 21og<i>f,</i> <i>pK<sub>al</sub> &#x003D; pK<sup>t</sup><sub>al</sub> &#x002B;</i> 21og <i>f</i> p<i>K<sub>a2</sub> &#x003D; pK<sup>t</sup><sub>al</sub></i> &#x002B; 41og <i>f pK<sub>a3</sub> &#x003D; pK<sup>t</sup><sub>a3</sub></i> &#x002B; 61og <i>f</i> <a href="#table_6.1">Table 6.1</a> shows the values for log <i>f</i> and for these four equilibrium constants at three different ionic strengths. The value of pH<sub>w</sub> follows from <a href="#eq_6.24">eqn (6.24)</a>.</p>
+<p class="noindent">&#160;</p>
+<figure class="fig1" id="table_6.1" style="margin-left:0em">
+<figcaption>
+<p class=""><b>Table 6.1.</b> The value of log <i>f</i> as calculated from <a href="#eq_6.14">eqn (6.14)</a>, of p<i>K<sub>m</sub></i> and of the variouspK<sub>a</sub>s of citric acid,  all as a function of the ionic strength <i>I</i>.</p></figcaption>
+<p class="noindent">&#160;</p>
+<img src="../images/page_64_1.jpg" alt="images" style="margin-left:3em"/>
+</figure>
+<p class="indent3-ka">With these new constants we can now compute activity-corrected titration curves. We see that the effect of ionic strength on <i>pK<sub>w</sub></i> and <i>pK<sub>a1</sub></i> is relatively minor, but that it is considerably larger on p<i>K<sub>a3,</sub></i> which involves the trivalent ion Cit<sup>3-</sup>.<a href="#fig_6.1"> Figure 6.1</a> illustrates the titration curves for the titration of 1 mM citric acid with 1 mM NaOH at these different ionic strengths.</p>
+<p class="indent3-ka">When the titration is performed in the absence of additional electrolyte, then the ionic strength varies during the titration. In that case we must compute the activity correction <i>by iteration</i>, i.e., we first estimate <i>I</i> on the basis of uncorrected equilibrium constants through</p>
+<figure class="fig1" id="eq_6.25" style="text-align:right;width:70%">
+<img src="../images/eq_64_1.jpg" alt="images"/>
+</figure>
+<figure class="fig1" id="fig_6.1"><a id="page_65" class="page" style="width:70%">Page 65, Activity effects</a>
+<img src="../images/page_65_1.jpg" alt="images"/></figure>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<p class="aside"><b>Fig. 6.1</b> Titration curves for the titration of 1 mM citric acid with 1 mM NaOH at various values of the ionic strength, calculated for p<i>K<sub>w</sub></i> &#x003D; 14.00, <i>pK<sub>a1</sub></i> &#x003D; 3.13, p<i>K<sub>a2</sub></i> &#x003D; 4.76, p<i>Ka3</i> &#x003D; 6.40, <i>C<sub>a</sub> &#x003D; C<sub>b</sub></i> &#x003D; 0.001, and <a href="#eq_6.13">eqns (6.13)</a> and <a href="#eq_6.24">(6.24).</a> Heavy lines, from top to bottom, for <i>I</i> &#x003D; 0.025 M, 0.1 M, and 0.4 M respectively. The thin line shows the curve calculated without any activity corrections.</p>
+</aside>
+<p class="indent3-ka">With the estimated values of <i>I</i> we now correct  the equilibrium constants, then use these for an improved estimate of <i>I</i>, etc. Although this sounds rather complicated, one seldom need more than one iteration cycle to find answers within the precision of the various <i>pK</i>values, of about &#x00B1;0.01. <a href="#fig_6.2">Figure 6.2</a> displays the results of such a calculation. In this example, the ionic strength</p>
+<figure class="fig1" id="fig_6.2">
+<img src="../images/page_65_2.jpg" alt="images"/></figure>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<p class="aside"><b>Fig. 6.2</b> Titration curves for the titration of 0.1 M citric acid with 0.1 M NaOH without (thin line) and with (heavy line) activity cor-rection. All constants used are as in <a href="#fig_6.2">Fig. 6.1.</a> The ionic strength <i>I</i> varies throughout the titration, and is computed by iteration.</p>
+</aside>
+<p class="noindent"><a id="page_66" class="page">Page 66, Activity effects</a>
+varied from 0.0011 M at the beginning of the titration to 0.49 M at the third equivalence point, and to 0.52 M at the end of the titration.</p>
+<p class="indent3-ka">We have used the example of citric acid to illustrate activity effects because these effects are much more pronounced with polyvalent ions, and in the case of citric acid are illustrated rather dramatically becausethe effect increases gradually during the titration, as the dominant p<i>K</i> shifts from 
+p<i>K<sub>a1</sub></i>through 
+<i>pK<sub>al</sub></i> to p<i>K<sub>a3</sub></i>to p<i>K<sub>w</sub></i>. Still, even in this casethe effect on the titration curve is relatively minor.Although the pH at the equivalence point varies with the activitycorrection,the equivalence volume V<sub>e</sub> at any equivalence point is not affected at all.</p>
+<p class="indent3-ka">Similarly, the effect of activity corrections on linear extrapolation methods, such as Gran plots,is usually small, and does not prevent their use. And even when the ionic strength varies during the titration,analysis neglecting activity corrections yields a decent fit, although the numerical values obtained for the
+<i>pKs</i> will of course be incorrect, as illustratedin <a href="#fig_6.3">Fig. 6.3.</a></p>
+<figure class="fig1" id="fig_6.3">
+<img src="../images/page_66_1.jpg"></img></figure>
+<aside class="abc" style="margin-top:-24em;" epub:type="sidebar">
+<p class="aside"><b>Fig. 6.3</b> The activity-corrected titration curve calculated in<a href="#fig_6.2"> Fig. 6.2</a> for the titration of0.1 M citric acid with 0.1 M NaOH (shown in <a href="#fig_6.2">Fig. 6.2</a> as aheavy line, but here reproduced as <i>individual data points</i> as if experimentally measured), and the non-linear least- squares fit of these data to an equation without activity corrections but with adjustable values of p<i>K<sub>w</sub>, pK<sub>a1</sub>,</i> p<i>K<sub>a2</sub>,</i> p<i>K<sub>a3</sub>,</i> and <i>C<sub>a</sub> </i>(heavy <i>line).</i>Values so obtained using Excel Solver and an auxiliary macro to determine the corresponding standard deviations (de Levie 1999b): <i>K<sub>w</sub></i> &#x003D; 13.734&#x00B1; 0.001, pKa1 &#x003D; 3.027 &#x00B1; 0.002, p<span class="noindent"><i>K<sub>a2</sub></i> </span>&#x003D; 4.382 &#x00B1; 0.002, pKa<sub>3</sub> &#x003D; 5.648 &#x00B1; 0.002, and <span class="noindent"><i>C<sub>a</sub></i> </span>&#x003D; 0.10005 &#x00B1; 0.00002 M, with astandard deviation of &#x00B1; 0.004 for the over-all fit in<i>V<sub>b</sub>/V<sub>a</sub>.</i></p></aside>
+<p class="indent3-ka">In short, activity effects can almost always be neglected when the goal is the accurate determination of sample <i>concentrations</i>, as long as the pre-values are considered as adjustable within narrow ranges.</p>
+<p class="indent3-ka">Activity corrections need only be considered when we wish to obtain es-timates for the numerical values of equilibrium constants at infinite dilution without doing the actual extrapolations. And in the latter case one  should realize that empirical expressions such as (<a href="#eq_6.13">eqn 6.13</a>) based on the <i>average</i>behavior of a large number ofelectrolyte solutions may not fit any <i>particular</i> solution very well, so that it is best to usemeasurements at low ionic strength (say, I &#x2264; 0.1 M) where activity corrections are most reliable.</p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<p class="aside">Incidentally, this example clearly illustrates the difference between precision (as stated above interms of standard deviations) and accuracy, since we started with p<i>K<sub>w</sub></i> &#x003D; 14.00, <i>pK<sub>a1</sub> &#x003D;</i>3.13,<i>pK<sub>a2</sub></i>&#x003D; 4.76, and p<i>K<sub>a3</sub></i> &#x003D; 6.4.</p></aside>
+</section></section></div></body></html>

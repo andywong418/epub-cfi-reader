@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf:8"/>
+<title>Input transducers</title>
+<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css"/>
+</head>
+<body>
+<div>
+
+<section epub:type="chapter" id="sec_ch03"><a id="page_34" class="page" style="width:70%">Page 34, 3 Input transducers</a>
+<h1 class="main1">3<span class="space"></span>Input transducers</h1>
+
+
+<section epub:type="chapter" id="sec_3.1">	
+<h2 class="h2">3.1<span class="space"></span><b>Conversion into electrical phenomena</b></h2>
+
+
+<p class="noindent">In this chapter, we examine some of the most important ways in which non-electrical variables that are measured in experiments may be converted into electrical phenomena for processing and conditioning of the signals. Our attention here is initially focused on the measurement of the most basic physical quantities such as spatial position, temperature, or light intensity. We shall see subsequently how one non-electrical phenomenon may be converted to another non-electrical one that is ultimately interfaced to an electrical transducer. A typical example might be in the measurement of pressure; the pressure of a gas might be used to distort a capsule in a type of barometer, and the displacement in position of some portion of the capsule translated into an electrical signal that is processed. Discussion of electrochemical measurements is deferred entirely until the end of the chapter, because the electrical signal is produced directly by the chemical phenomenon of interest, and the input transducer is the electrode or similar device that probes the chemical system.</p>
+<p class="indent3-ka">As explained in the last chapter, electrical signals may be in analogue or digital form, and the type of signal may be determined from the outset by the input transducer. Some devices can produce either analogue or digital output, as we shall see in connection with the detection of charged particles (<a href="#sec_3.4">Section 3.4</a>) and light (<a href="#sec_3.6">Section 3.6</a>). Other important operations are clearly digital, such as the counting of the number of objects that pass a given point by interrupting a light beam that itself produces an electrical response. In most cases, the electrical signal treatment and output can be analogue or digital according to ease of processing and convenience of display, because it is usually easy to interconvert the different types of signal <a href="Chapter02.xhtml#page_22">(see p. 22)</a>.</p>
+
+<h3 class="h3">Transfer functions and linearity</h3>
+<p class="noindent">Regardless of the particular non-electrical (say &#x03B1;) and electrical quantities (say &#x03B2;) that are involved in the input step, it is essential to know how &#x03B2; depends on &#x03B1; if the final output is to be a quantitative measure of the phenomenon under investigation. This relation is the <i>transfer function</i> of the input transducer, and is a form of calibration of the electrical output in response to the input quantity. The same is true, of course, of the output transducer. It is most convenient if the transfer function is linear, that is if &#x03B2; is proportional to &#x03B1;, because then it is easier both to know how most effectively to calibrate, and to interpolate within the calibrated range, or extrapolate outside it. Other simple mathematical functions, such as logarithmic, exponential, or square-law dependences, are almost as convenient, <a id="page_35" class="page">Page 35, 3 Input transducers</a>especially since elements in the electrical conditioning chain can be fashioned with the inverse response and thus produce a linear output. The incorporation of computing power within the signal conditioning chain extends the range of acceptable transfer behaviour of the input transducer, and, if all else fails, the computer can be equipped with a Took-up table&#x2019; that contains calibration factors for all possible input values. The fact remains that this look-up table has to be constructed, and, unless an analytical mathematical form is available for the transfer function, it has to be obtained from a point-by-point calibration procedure in which the scope for interpolation is limited. There thus remain considerable advantages in using devices that are capable of exhibiting linear transfer behaviour, and in selecting conditions where that behaviour is followed.</p>
+
+<h3 class="h3">Types of transducer</h3>
+<p class="noindent">Before moving on to an examination of the ways in which the principal physical phenomena can be converted to electrical signals, it is useful to consider the different types of the electrical response that can be generated. In this section we examine only the general categories, with a brief mention of typical examples that are then treated in more detail in later sections.</p>
+
+<p class="indent3-ka">First, the input stress may cause an alteration in the &#x2018;passive&#x2019; electrical characteristics of a circuit element such as a resistor, capacitor, inductor, or transformer. Measurements of the appropriate electrical quantity, such as resistance or capacitance, then reveal information about the input stress. Typical examples might be the change of resistance of a wire with changing temperature, which gives access to electrical temperature measurements, and the change in capacitance between two plates as one moves relative to the other, which permits determination of position and movement.</p>
+
+<p class="indent3-ka">Secondly, the input phenomenon may generate electrical energy. Obviously, the non-electrical phenomenon must also be a source of energy such as motion, heat, light, or even chemical energy. A motion transducer might consist of a magnet inserted into a coil of wire attached to the system that moves. While the magnet and coil move relative to each other, lines of force are cut, and a voltage is induced in the coil. We shall meet examples of the conversion of heat and light into electrical energy later in this chapter, and chemical energy is clearly involved in the electrochemical generation of e.m.f. to be discussed in <a href="#sec_3.9">Section 3.9</a>. Optimum linearity of the transfer function of all these devices is often obtained if they are operated as voltage sources (without a load) or as current sources (short circuited).</p>
+
+<p class="indent3-ka">The third type of transducer to be examined here generates electrical charge (strictly speaking, negative and positive charges are separated), and the electrical charge is determined by the current flow that it permits when an appropriate electrical potential difference is applied to the system. The vacuum photocell is an example of this kind of transducer. Light of suitable wavelength ejects electrons from metals (the <i>photoelectric effect),</i> and these electrons may be detected by arranging for a positively charged anode to pick them up and thus cause a current to flow in a circuit completed by connection <a id="page_36" class="page">Page 36, 3 Input transducers</a>to the metal cathode from which the electrons were ejected (<a href="#sec_3.6">see Section 3.6</a>). Devices of this kind show rather unusual current-voltage relations, since the current is limited by the supply of charge rather than by the voltage across the circuit. These <i>constant current</i> sources thus disobey Ohm&#x2019;s law completely. <a href="#fig_3.1">Figure 3.1</a> shows a typical set of current-voltage curves for different magnitudes, <i>m,</i> of the phenomenon generating the charge: <i>m</i> would, for example, be the light intensity in the case of the photoelectric cell just mentioned. Beyond a certain voltage, which corresponds more or less to that needed to ensure that all the charge carriers are collected, the current reaches a constant limiting value, <i>i<sub>limit</sub>,</i> for a given value of <i>m.</i> <a href="#fig_3.2">Figure 3.2</a> then shows how this limiting current varies with <i>m.</i> If one is fortunate, and the number of charge carriers is directly proportional to <i>m,</i> the relationship is linear. This is the situation represented in the figure, and it does apply, in reality, to devices such as the simple photocell.</p>
+
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.1">
+<img src="../images/page_36_1.jpg" alt="images" style="margin-left:2em"/>
+<p class="aside"><b>Fig. 3.1</b> Current-voltage curves for typical transducers that generate charge. Beyond a certain voltage, all the charge is collected, and the current approaches a constant limiting value, <i>l<sub>limit</sub></i></p>
+</figure></aside>
+</section>
+
+<section epub:type="chapter" id="sec_3.2">	
+<h2 class="h2">3.2<span class="space"></span><b>Position, displacement, and strain transducers</b></h2>
+
+<p class="noindent">In most applications, it is the displacement from an initial position that is measured, the absolute position being inferred from the known starting point. In this section we consider linear displacements, but almost every technique can be adapted to measuring angular displacements.</p>
+
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.2">
+<img src="../images/page_36_2.jpg" alt="images" style="margin-left:3em"/>
+
+<p class="aside"><b>Fig. 3.2</b> The limiting currents shown in <a href="#fig_3.1">Fig. 3.1</a> depend in a linear manner on the magnitude <i>m</i> of the phenomenon generating the charge</p>
+</figure></aside>
+
+<h3 class="h3">Resistive transducers</h3>
+<p class="noindent">One of the simplest ways of measuring a displacement is by attaching the moving object to a slider that makes contact with a resistance wire, as illustrated schematically in <a href="#fig_3.3">Fig. 3.3;</a> the adaptation for measuring angular displacements with a curved wire is obvious. With a wire of uniform cross-sectional area, the change in resistance between the slider and one end of the wire varies linearly with the change in position of the slider. The resistance itself can be measured by any of the standard techniques, one of the most suitable being to incorporate <i>R<sub>1</sub></i> and <i>R<sub>2</sub></i> of <a href="#fig_3.3">Fig. 3.3</a> into the arms of a Wheatstone bridge (<a href="Chapter02.xhtml#page_31">see pp. 31</a>-<a href="Chapter02.xhtml#page_32">32</a> and <a href="Chapter02.xhtml#fig_2.22">Fig. 2.22</a>). Alternatively, a known potential can be applied to the ends, A and B, of the wire, and the voltage tapped off at X measured. The device is now a potential divider (<a href="Chapter02.xhtml#page_30">see pp. 30</a>-<a href="Chapter02.xhtml#page_31">31</a> and <a href="Chapter02.xhtml#fig_2.19">Fig. 2.19)</a>, and the voltage between A and X will be a linear function of the displacement <i>x.</i> A complete measuring instrument might then consist of this set-up connected to a digital voltmeter (<a href="Chapter02.xhtml#page_25">see p. 25</a>). Suppose the wire to be one metre long and connected to a source of one volt. The reading in volts on the digital voltmeter would then be equal to the displacement of the slider, <i>x,</i> in metres.</p>
+
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.3">
+<img src="../images/page_36_3.jpg" alt="images" style="margin-left:0.5em"/>
+<p class="aside"><b>Fig. 3.3.</b> A resistance transducer for position. The arrows indicate the directions of motion</p></figure></aside>
+
+
+<h3 class="h3">Capacitative and inductive transducers</h3>
+<p class="noindent">A drawback to the use of the resistive displacement transducer is that it is bound to impose a mechanical load on the moving system. For heavy-duty systems, where the forces involved are large, this load may be of negligible <a id="page_37" class="page">Page 37, 3 Input transducers</a>importance, but in delicate experiments it may seriously interfere with the measurement. Recourse then has to be made to methods where there are no mechanical forces imposed by the electrical system. Capacitors, inductors, and transformers can be used in various ways to achieve such measurements. <a href="#fig_3.4">Figure 3.4</a> shows how the scheme might work for a capacitance transducer in which one plate is attached to the moving system and the other is kept fixed. As the gap between the plates narrows, the capacitance increases. <a href="#fig_3.5">Figure 3.5</a> shows a similar arrangement with an inductor. Here, a &#x2018;slug&#x2019; of high permeability material that is inserted into the coil is attached to the moving system, and as its position within the coil changes, so the inductance alters (<a href="Chapter01.xhtml#page_13">see p. 13</a>). One convenient way of determining capacitances or inductances is to use an a.c. bridge (<a href="Chapter02.xhtml#page_31">see pp. 31</a>-<a href="Chapter02.xhtml#page_32">32</a>). Indeed, the variable capacitance or inductance system can form two arms of a bridge, as illustrated for the inductance case in <a href="#fig_3.6">Fig. 3.6</a> (compare with <a href="Chapter02.xhtml#fig_2.25">Fig. 2.25</a>). The slug is arranged so that, as the inductance of one coil increases, the other decreases. The arrangement is exactly equivalent to the bridge measurement of the resistances just described in connection with <a href="#fig_3.3">Fig. 3.3.</a> One great advantage of these bridge connections is that spurious changes in resistance, capacitance, or inductance resulting from outside influences, such as changes in ambient temperature, tend to be cancelled out, leaving only the effect of interest to alter the balance of the bridge. It might be noted here that, although it is usual to balance bridges in absolute measurements of resistance, inductance or capacitance, it may be more useful in the present applications to determine the offsets from balance by measuring the out-of-balance signal at the detector as a voltage.</p> 
+
+<aside class="abc" style="margin-top:-29em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.4">
+<img src="../images/page_37_1.jpg" alt="images" style="margin-left:2.5em"/>
+<p class="aside"><b>Fig. 3.4 A </b>capacitance displacement transducer</p>
+</figure>
+
+
+<p class="noindent">&#160;</p>
+<figure class="fig1" id="fig_3.5">
+<img src="../images/page_37_2.jpg" alt="images" style="margin-left:1em"/>
+<p class="aside"><b>Fig. 3.5</b> An inductance displacement transducer</p>
+</figure>
+
+
+<p class="noindent">&#160;</p>
+<figure class="fig1" id="fig_3.6">
+<img src="../images/page_37_3.jpg" alt="images" style="margin-left:1em"/>
+<p class="aside"><b>Fig. 3.6</b> A differential inductance transducer arranged in two arms of an a.c. bridge</p>
+</figure>
+
+
+<p class="noindent">&#160;</p>
+<figure class="fig1" id="fig_3.7">
+<img src="../images/page_37_4.jpg" alt="images" style="margin-left:0.5em"/>
+<p class="aside"><b>Fig. 3.7</b> The differential transformer used as a displacement transducer</p>
+</figure></aside>
+
+
+
+<p class="indent3-ka">Another method for measuring inductance or capacitance that is sometimes employed for displacement transducers involves making them part of a resonant tuned circuit (<a href="Chapter01.xhtml#page_15">see p. 15</a> and <a href="Chapter01.xhtml#fig_1.21">Fig. 1.21</a>) that determines the frequency of an oscillator (<a href="Chapter01.xhtml#page_18">see p. 18</a>). The frequency generated will thus depend on the capacitance or inductance of the transducer, and gives a measure of the displacement. One can envisage an instrument that uses a digital frequency meter (<a href="Chapter02.xhtml#page_25">see p. 25</a>), with the counters arranged so that the output is a direct display in units of length.</p>
+
+<p class="indent3-ka">Conceptually rather similar to the inductance bridge, the <i>differential transformer</i> provides another way of measuring displacement. <a href="#fig_3.7">Figure 3.7</a> shows a primary winding, energized at R and S by a source of a.c. voltage, sitting between a pair of secondary windings connected in <i>antiphase.</i> This reverse-phase connection means that, if everything about the transformer is truly symmetrical, all voltages induced in one secondary coil are exactly cancelled by those in the other, and there is zero output across the terminals A and B. If a slug of high permeability material is inserted into the core, this balance is upset, and a voltage now appears at the output terminals; the magnitude depends on the displacement from the symmetrical position (and the phase depends on which side of this position the displacement occurs).</p>
+
+<p class="noindent"><a id="page_38" class="page">Page 38, 3 Input transducers</a></p>
+
+
+<h3 class="h3">Optical methods</h3>
+<p class="noindent">All the methods of measuring displacement presented up to now produce an output that is initially analogue, although it may be converted to a digital form later on. Optical techniques provide one way of obtaining a digital result from the outset. Consider the arrangement outlined in <a href="#fig_3.8">Fig. 3.8</a>. A light beam passes through a piece of transparent material attached to the moving system, and is then incident on a photodetector (see <a href="#sec_3.6">Section 3.6</a>). On the transparent material are marked opaque stripes, so that as the system moves, the light beam is interrupted as each stripe passes in front of it. By counting electrically the number of times that the beam has been broken, and knowing the separation of the stripes, the extent of movement can be determined immediately and in digital form. It is worth noting, however, that the resolution of the device is determined by how close together the stripes are marked, and that in turn may be limited by the width of the light beam. A variant of this method overlaps two pieces of material on which close-spaced regular patterns are marked and that produce Moire fringes. These fringes shift by large amounts for small relative displacements of the patterned material, and can be counted easily by the optical-photoelectric method (<a href="#fig_3.9">Fig. 3.9</a>). Of course, the arrangement shown in <a href="#fig_3.8">Fig. 3.8</a> only provides information about the distance travelled, and not about the direction of motion. A small modification allows the additional information to be obtained. If a second beam and detector are set up so that the two beams are closer together than the stripes on the moving plate, then the order in which the interruptions occurs reveals the direction of motion, as illustrated in <a href="#fig_3.10">Fig. 3.10.</a></p>
+
+
+<aside class="abc" style="margin-top:-31em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.8">
+<img src="../images/page_38_1.jpg" alt="images" style="margin-left:1.5em"/>
+<p class="aside"><b>Fig. 3.8</b> An optical position transducer</p>
+</figure>
+
+
+<figure class="fig1" id="fig_3.9">
+<img src="../images/page_38_2.jpg" alt="images" style="margin-left:1em"/>
+<p class="aside"><b>Fig. 3.9</b> Moire fringes produced by two identical striped patterns, one of which is tilted at a small angle 0 with respect to the other</p>
+</figure>
+
+
+<figure class="fig1" id="fig_3.10">
+<img src="../images/page_38_3.jpg" alt="images" style="margin-left:1em"/>
+<p class="aside"><b>Fig. 3.10</b> Use of a pair of photodetectors to determine the direction of motion of the plate in <a href="#fig_3.8">Fig. 3.8.</a> If the interruption in beam A precedes that in beam B, the plate is moving from left to right, and vice versa</p>
+</figure></aside>
+
+
+<h3 class="h3">Strain gauges</h3>
+<p class="noindent">The devices discussed so far in this section do not, in principle, impose any significant load on the system being investigated, although there will, in practice, be frictional losses with the sliding-contact resistance transducer. Rather different in approach are <i>strain gauges,</i> which measure the distortions that follow mechanical displacement. If a piece of resistive material is distorted, the changes in length and cross-sectional area lead to changes in resistance, and the resistivity itself may alter. Determination of the resistance thus provides a measure of the strain to which the material is subjected. Practical strain gauges may be made up of fine resistance wire, or of patterns of thin metal films deposited on a flexible insulating substrate material. As usual, bridge methods are called for in order to eliminate the effects of temperature changes on resistance, and the deposited strain gauges are usually fashioned with pairs of balanced elements so that distortion in one direction increases the resistance of one element and decreases that of the other. Temperature changes alter both resistances equally, and are thus nulled out in the bridge.</p>
+
+<p class="indent3-ka">Certain crystals are <i>piezoelectric</i>: that is, they generate an electric field when they are distorted. The voltage induced can therefore be used as a <a id="page_39" class="page">Page 39, 3 Input transducers</a> measure of the strain in the crystal and of the displacement that produced it. We note in passing that a mechanical force is needed to yield the potential, and that if electrical work is to be done by the piezoelectric device, energy will be taken from the mechanical system. The piezoelectric effect is used in several types of pressure transducer, as well as in microphones and other kinds of motion and force detector.</p>
+</section>
+
+
+<section epub:type="chapter" id="sec_3.3">	
+<h2 class="h2">3.3<span class="space"></span>	Velocity transducers</h2>
+<p class="noindent">The measurement of velocity involves determining the rate of change of position with time, so that any suitable position transducers can be used in combination with a timing device to calculate the velocity. Mathematically, the velocity is the differential with respect to time of the position, and the differentiation can be achieved electronically, either as an analogue or a digital operation. Several simple electronic circuits differentiate the input signal. For example, the very simple <i>R-C</i> circuit of <a href="Chapter01.xhtml#fig_1.19">Fig. 1.19</a>(b) performs the operation. Digital signals can be handled by using a ratemeter instead of a simple counter:	that is, the number of counts accumulated in a fixed samplinginterval is displayed rather than the total number of counts. One very important application in chemical experiments is to measure the angular velocity &#x2014; the rate of rotation &#x2014; of some device or other. The optical position transducer of <a href="#fig_3.8">Fig. 3.8</a> can be harnessed for this purpose, as indicated in <a href="#fig_3.11">Fig. 3.11.</a> A disk divided into sectors with alternate portions opaque or transparent is attached to the rotating axis, and the output from the photodetector is a multiple (the number of pairs of sectors) of the frequency of rotation. We shall meet derivatives of this <i>chopper</i> disk or wheel in <a href="Chapter05.xhtml">Chapter 5 </a>(<a href="Chapter05.xhtml#page_69">see p. 69</a>).</p>
+
+
+<aside class="abc" style="margin-top:-19em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.11">
+<img src="../images/page_39_1.jpg" alt="images" style="margin-left:2em"/>
+<p class="aside"><b>Fig. 3.11</b> A chopper wheel used in the optical detection of rotation. This device is the angular analogue of the linear motion transducer shown in <a href="#fig_3.8">Fig. 3.8</a></p>
+</figure></aside>
+
+
+
+<p class="indent3-ka">With a moving, rather than a static, system, it is also possible to generate electrical energy by changing the position of a magnet inside a coil. As the magnetic field changes, a voltage is generated in the coil, a situation illustrated in <a href="#fig_3.12">Fig. 3.12.</a> Either the coil or the magnet may be moved, and the magnet may be a permanent one or an electromagnet. The voltage induced is proportional to the rate at which the magnetic field changes and is thus dependent on the velocity of motion. Similar methods, using rotating magnets, can be used to measure angular velocities: the transducer is then a kind of alternator, with the output frequency equal to the rate of rotation, and the induced voltage increasing with increasing angular velocity.</p>
+
+
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.12">
+<img src="../images/page_39_2.jpg" alt="images" style="margin-left:1em"/>
+<p class="aside"><b>Fig. 3.12</b> Inductive motion transducer. In this version, a permanent magnet is moved with respect to a fixed coil, in which a voltage is generated</p>
+</figure></aside>
+
+</section>
+
+
+<section epub:type="chapter" id="sec_3.4">	
+<h2 class="h2">3.4<span class="space"></span>Detection of charged particles in the gas phase</h2>
+
+
+<p class="noindent">The charged particles that are encountered in gas-phase chemistry are electrons, and positive and negative ions. Often, the ionic species are found in mass spectrometry, but there are a number of other ionization phenomena, including photoionization, the photoelectric effect, and ionization in flames that are of importance to the chemist, and we shall meet several of them later. Inthis section, we consider the general principles of their detection. Collision <a id="page_40" class="page">Page 40, 3 Input transducers</a>of any of the charged species with neutral gas molecules can lead to secondary ionization, so that where the number (and identity) of the species contains the information of interest, it is usual to operate at gas pressures sufficiently low that collisions are infrequent enough not to invalidate the results. Pressures of 10<sup>-4</sup> torr (roughly 10<sup>-7</sup> atmospheres) or less are usually acceptably low, although more demanding experiments may require yet lower pressures. Other experiments again, such as those with flames, are performed at atmospheric pressure.</p>
+
+
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.13">
+<img src="../images/page_40_1.jpg" alt="images" style="margin-left:1em"/>
+
+
+<p class="aside"><b>Fig. 3.13</b> Collection of charge carriers with a polarized plate. In this example, electrons from the source S are collected by a positively charged anode. For positively charged species, such as positive ions, a negative collector must be used</p>
+</figure>
+
+
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<figure class="fig1" id="fig_3.14">
+<img src="../images/page_40_2.jpg" alt="images"/>
+<p class="aside"><b>Fig. 3.14</b> One form of electron multiplier. The whole assembly of source, dynodes, and anode normally operates in a near-vacuum environment</p>
+</figure></aside>
+
+
+<h3 class="h3">Charge collectors</h3>
+<p class="noindent">It is evident that electrical methods would be the obvious candidates for the study of charged species. The very simplest way of determining the concentration of charged particles is to measure the current that flows when the charge carrier is attracted to a plate or cup of opposite polarity, as illustrated for electron detection in <a href="#fig_3.13">Fig. 3.13.</a> It should be observed that the circuit must be completed by providing a return path to the source of charge carriers. When the applied voltage is sufficient to attract virtually all the charge carriers, the current reaches a limiting value, in the way shown in <a href="#fig_3.1">Figure 3.1,</a> which is determined by the rate of supply of the charged particles. The limiting current is a function of this rate of supply (<a href="#fig_3.2">Fig. 3.2</a>).</p>
+
+
+
+<h3 class="h3">Electron multipliers</h3>
+<p class="noindent">A current of one amp is produced by a flow of 6.2 x 10<sup>18</sup> electrons per second; put another way, an electron flux of 10<sup>7</sup> electrons per second (quite a high value in many experiments) will support a current flow of about 1.6 picoamps, which is beginning to get difficult to measure by direct collection techniques. A way around this problem is to use an <i>electron multiplier.</i> <a href="#fig_3.14">Figure 3.14</a> shows the principle of the electron multiplier. The electrons to be detected are separated from the collecting anode by several (perhaps ten or more) <i>dynodes,</i> which in the structures illustrated are made up of slotted metal. Each dynode is held at a successively higher positive potential by means of a suitable chain of resistors acting as a potential divider. If an electron is accelerated sufficiently, when it hits a suitable surface it can eject several secondary electrons. The metal dynodes are usually coated with some efficient secondary emitting material. At each dynode, each electron is thus multiplied by some factor. One electron might, for example, eject six from each dynode, so that with <i>n</i> dynodes, the number of electrons leaving the last dynode for the anode would be 6<sup>&#x03C0;</sup> for each primary electron that reached the first dynode. For a multiplier with eight dynodes, the electron <i>gain</i> might thus be about 1.6 million, and much higher gains are available with multipliers possessing more dynodes. With our initial example of 10<sup>7</sup> primary electrons per second, the final anode current would now be roughly 2.6 microamps, which is relatively easy to measure. The great beauty of the electron multiplier is that secondary electrons are, at least in principle, ejected only if a primary electron is present. Thus, although the multiplier is a kind of <a id="page_41" class="page">Page 41, 3 Input transducers</a>amplifier, it is one that amplifies without introducing its own noise into the signal, a matter of some importance as we shall see in <a href="Chapter05.xhtml">Chapter 5</a>. Of course, the situation is not quite as simple as that outlined here, because not every electron is multiplied by the same factor, and some electrons may be produced from the dynodes thermally, or possibly by the arrival of cosmic rays and by radioactive decay events taking place in minor isotopes of the materials of which the multiplier is constructed. Nevertheless, the electron multiplier has very great advantages over other methods for the detections of electrons. It can even be used to measure the flux of ions. For example, if the first dynode is made highly <i>negative</i> with respect to a source of <i>positive ions,</i> they will be accelerated into that dynode and eject secondary <i>electrons.</i> If the following dynodes and the anode are successively less negative (that is, more positive), then electron multiplication and detection will occur.</p>
+
+
+<p class="indent3-ka">A modification of the electron multiplier that has found increasing application where robustness and simplicity of operation are required is the <i>channel electron multiplier</i> (often shortened to <i>channeltron,</i> a term that is properly used as the tradename of one particular manufacturer). The device consists of a small bore tube of glass or other insulator, the surface of which has been made partially conducting by incorporating some suitable material such as lead and lead oxide. A typical construction is shown in <a href="#fig_3.15">Fig. 3.15</a>. Now the tube acts as its own potential divider when the cone end (cathode) is made negative and the collector (anode) positive. Accelerated electrons make collisions with the walls in the &#x2018;channel&#x2019;, and, with the right choice of surface, secondary electrons are ejected. The process is repeated many times down the tube, with the result that high electron gains can be achieved. The curved or spiral shape of many of these multipliers is provided to reduce interference from positive ions generated by electron impact within the channel on residual gases in the system. <i>MicroChannel plates</i> consist of hundreds or thousands of parallel small multiplying channels constructed within the same plate as a kind of honeycomb structure. They find application in investigations of the two-dimensional distributions of electrons and ions, and are thus valuable in various kinds of imaging system.</p>
+
+
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.15">
+<img src="../images/page_41_1.jpg" alt="images" style="margin-left:1em"/>
+<p class="aside"><b>Fig. 3.15</b> A channel electron multiplier showing schematically the first two steps of electron multiplication (dashed lines)</p>
+</figure></aside>
+
+
+<h3 class="h3">Electron counting</h3>
+<p class="noindent">Since electrons (and ions) are individual discrete charged particles, the possibility of detecting the arrival of individual particles at a charged electrode and counting them directly suggests itself as an alternative to inferring the numbers of charged particles from the current flow. Where the rate of arrival or production of charged particles is rather small, this technique appears to have much to commend it. The drawback is the small charge on individual electrons, of about 1.6 x 10<sup>19</sup> coulombs, which is impossibly small for measurement. However, if the individual electrons are first subject to the multiplication process just described, the bursts of charge are easily detected, and <i>pulse counting</i> techniques can be used to determine absolute numbers or rates of arrival corresponding to individual electron events down to one pulse per second or less.</p>
+
+
+<p class="noindent"><a id="page_42" class="page">Page 42, 3 Input transducers</a></p>
+<h3 class="h3">The flame ionization detector</h3>
+
+
+<p class="noindent">Since ionization in flames at atmospheric pressure was alluded to earlier, this seems an appropriate place to introduce one widespread use of the phenomenon. When most organic compounds are burned in air, they generate both positive ions and electrons. Th<i>e flame ionization detector (FID)</i> employs this phenomenon to detect and quantify the presence of ionizable species in the eluent gases from a gas chromatograph. <a href="#fig_3.16">Figure 3.16 </a>shows the detector in simplified form. The gases coming off the GC column are mixed with hydrogen (if hydrogen is not the carrier gas), and burned in a small flame supported on a metal burner. Surrounding the flame is a collector electrode, and a circuit is completed by providing a return path to the burner. With the collector charged negatively with respect to the burner, any positive ions present are attracted to it and carry a current. Electrons carry negative charge in the reverse direction. A current thus flows in the circuit, and the magnitude is nearly proportional to the concentration of organic material for the tiny amounts of material present. Recording of this current as a function of time as different materials come off the column thus provides the gas chromatogram itself.</p>
+
+
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.16">
+<img src="../images/page_42_1.jpg" alt="images" style="margin-left:1.5em"/>
+<p class="aside"><b>Fig. 3.16</b> A simplified flame ionization detector</p>
+</figure></aside>
+
+</section>
+
+
+<section epub:type="chapter" id="sec_3.5">	
+<h2 class="h2">3.5<span class="space"></span><b>Measurement of temperature</b></h2>
+
+
+<p class="noindent">Resistance measurements form the basis of certain types of temperature transducer. Good conductors, such as metals, exhibit an increase in resistance with temperature. Over fairly limited temperature ranges, the resistance is often roughly a linear function of temperature. Platinum is the metal most commonly employed &#x2014; in the <i>platinum resistance thermometer</i> &#x2014; and at room temperature its resistance increases by about 0.3 per cent per degree centigrade. Bridge methods of measuring resistance are often employed in accurate work. However, for some purposes, the changes in resistance of pure metals are insufficient, and in these cases <i>thermistors</i> made from semiconductors can be used. Pure (<i>intrinsic</i>) semiconductors conduct as a result of the promotion of valence electrons to the conduction band. The excitation may occur thermally, and the population of charge carriers will follow a distribution of the Boltzmann type. As a result, the resistance of such semiconductors drops rapidly with increasing temperature. Thermistors can thus offer high sensitivity to changes in temperature. The transducing element can also be made physically very small and of low thermal capacity so that it can probe highly localized zones. The one drawback is that different samples of &#x2018;pure&#x2019; semiconductor may in reality possess differing levels of purity and thus of electrical behaviour. The reproducibility of absolute temperature measurements with different thermistors may not, therefore, be as good as with the platinum resistance thermometer. Thermistors also suffer from a relatively low upper-temperature limit (about 350&#x00B0;C).</p>
+
+
+<p class="indent3-ka">All methods of determining resistance ultimately depend on determining the voltage drop across the resistor when a known current passes through it (<a href="Chapter02.xhtml#page_23">see pp. 23</a>-<a href="Chapter02.xhtml#page_24">24</a> and <a href="Chapter02.xhtml#page_31">31</a>). With either metallic resistance thermometers or <a id="page_43" class="page">Page 43, 3 Input transducers</a>thermistors, it is essential that the heating effect of the test current produce a negligible temperature rise in the probe, or the temperature measurement will be invalidated.</p>
+
+
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.17">
+<img src="../images/page_43_1.jpg" alt="images" style="margin-left:1em"/>
+<p class="aside"><b>Fig. 3.17</b> The thermocouple</p>
+</figure></aside>
+
+
+<p class="indent3-ka">Heat energy can also be used to generate electrical energy, and the voltage or current produced used to determine the temperature. The basic device that performs the energy conversion is the <i>thermocoup</i>le. If two dissimilar metals, M<sub>x</sub> and M<sub>Y</sub>, are connected to form a pair of junctions as shown in <a href="#fig_3.17">Fig. 3.17</a>, and the temperatures of the two junctions, <i>T<sub>H</sub></i> and <i>T<sub>C</sub>,</i> are different, then a voltage will be generated across the terminals A and B. The output voltage can be expressed as a polynomial in temperature, as indicated alongside the figure. For many metal pairs, the higher order terms are swamped by the first one, so that the voltage is nearly proportional to the temperature difference 
+<i>T<sub>H</sub> - T<sub>C</sub></i> at least over a limited temperature range. Calibration tables are available for the most common pairs of metals. One of the junctions is held at a constant reference temperature, for example by maintaining it in a bath of melting ice. A typical metal pair such as iron and the alloy constantan produces an output of just over 5 millivolts for a temperature difference of 100&#x00B0;C. These relatively small voltages mean that amplification is almost always needed if the output is to be displayed or recorded.</p>
+
+
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.18">
+<img src="../images/page_43_2.jpg" alt="images" style="margin-left:1em"/>
+<p class="aside"><b>Fig. 3.18</b> The thermopile arranged for the detection of radiant energy The heavier and lighter lines within the thermopile represent the two different metals</p>
+</figure>
+</aside>
+
+
+
+<p class="noindent">In some applications, many hundreds of small thermocouple pairs physically laid out next to each other may be wired in series as illustrated in <a href="#fig_3.18">Fig. 3.18</a> to make a <i>thermopile.</i> The output voltage from the thermopile is, of course, the output of a single device multiplied by the number of junction pairs in the pile, and is much higher than that available from the simple thermocouple. Thermopiles have been used for the detection and measurement of <i>radiant energy</i> (infrared, visible, and even ultraviolet radiation) by blackening one set of junctions on which the radiation falls. These junctions become heated, and a voltage is induced that is dependent on the intensity of the incident radiation. It is said that the most sensitive thermopiles are capable of detecting the heat from the flame of a candle several kilometres distant&#x0021; Since the energy is converted to heat, the only constraint about wavelength is that the &#x2018;black&#x2019; material must absorb most of the radiation at the wavelengths of interest. <i>Absolute intensity measurements</i> (whether they are quoted in quantum or photon units on the one hand or in energy units such as joules on the other) ultimately require a measurement of the energy falling on a known area in a given time. The thermopile provides one of the few methods of performing these absolute measurements. One method of calibrating a thermopile for this purpose involves embedding a heating wire of known resistance, <i>R,</i> within the front set of junctions. The voltage, <i>V,</i> produced by the source of radiant energy is first determined, and the source then removed. A measured current, <i>I</i>, is next passed through the heating wire so that exactly the same voltage <i>V</i> is generated by the thermopile as previously. That means that the hot junctions of the thermopile are at exactly the same temperature as they were when heated by the radiant energy. The electrical power required to maintain this temperature is simply <i>I<sup>2</sup>R</i> (see the margin of <a href="Chapter01.xhtml#page_3">p. 3</a>), measured in joules per second, and this is thus also the <a id="page_44" class="page">Page 44, 3 Input transducers</a>energy that was supplied by the radiation in the same absolute units. Note that this method does away with the need to measure the temperature rise itself, and that it compensates for the heat losses suffered through convection, conduction, and radiation, by the thermopile, because they are identical in both parts of the experiment. One major disadvantage of the thermopile for use in radiation measurements is that it is sensitive to temperature fluctuations from all sources, which makes low-level light detection exceedingly difficult. That is one of the reasons why the photon detectors to be described in the next section are normally used. But the fact remains that absolute calibration of these detectors must have recourse to energy determinations of the kind just explained.</p>
+</section>
+
+<section epub:type="chapter" id="sec_3.6">	
+<h2 class="h2">3.6<span class="space"></span><b>The detection of light</b></h2>
+
+<h3 class="h3">Vacuum tube photocells and photomultipliers</h3>
+
+<p class="noindent">When radiation falls on the surface of many materials, electrons may be released as a result of the <i>photoelectric effect.</i> Sufficient energy must be carried by each quantum of radiation to overcome the <i>work function</i> of the particular surface material. As a result, the radiation that is effective in producing photoelectrons has to be of near-infrared wavelengths or shorter (the limit is normally about 900 nm). Photoelectric detectors are, in fact, usually thought of as suitable for the measurement of radiation in the visible and ultraviolet regions of the spectrum. A simple <i>photocell</i> for the detection of such radiation combines the photoemitting surface as a cathode with a second electrode, the anode, to collect any emitted electrons, as illustrated in<a href="#fig_3.19"> Fig. 3.19.</a> When connected as shown to an external voltage supply, electrons emitted from the cathode will be attracted to the anode, and a current will flow in the external current proportional to the numbers of electrons per second that are collected. The current-voltage relationship is that illustrated in <a href="#fig_3.1">Fig. 3.1,</a> because the current is limited by the supply of charge. For a fixed wavelength of illumination, the limiting current is a linear function of light intensity incident on the cathode.</p>
+
+
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.19">
+<img src="../images/page_44_1.jpg" alt="images"/>
+<p class="aside"><b>Fig. 3.19</b> The vacuum photocell</p>
+</figure></aside>
+
+
+<p class="indent3-ka">The quantum efficiency (the fraction of incident quanta, or photons, that yield electrons) depends on the cathode material, and may be a strong function of wavelength, especially near the threshold imposed by the work function of the surface. Materials typically used are pure metals (especially the alkali metals such as sodium and potassium) for the shorter wavelengths, and different kinds of alloy for longer wavelengths. Metal-metal oxide surfaces are also useful, and various kinds of semiconductor material have found increasing application as photocathodes. One point that turns out to be important in choosing a photocathode material is that its work function should be as high as possible compatible with the longest wavelength that is to be measured. <i>Thermionic emission,</i> that is thermal production of free electrons from the cathode, can contribute to a <i>dark current</i> that is a source of noise in the measurements (<a href="Chapter05.xhtml">see Chapter 5</a>). The production of thermal electrons falls off exponentially as the work function increases. Thermionic emission from <a id="page_45" class="page">Page 45, 3 Input transducers</a>materials that respond only to blue light and shorter wavelengths is normally negligible, while photoelectric devices that respond to the near infrared region often need to be cooled to well below room temperature if the dark current is to be kept at acceptable levels. Another advantage of using a short-wavelength sensitivity cathode is that stray light of longer wavelengths does not interfere with the measurements. For example, a cathode sensitive to short wavelength ultraviolet may be <i>solar blind,</i> and used without protection from ambient laboratory light.</p>
+
+<p class="indent3-ka">Photocurrents from the simple photocell are rather small for low-levels of light intensity, and suitable amplification techniques are needed. It is usual, therefore, to follow the photocathode by an electron multiplier (<a href="#page_40">see pp. 40</a>-<a href="#page_41">41</a>), all in the same evacuated housing, to form a <i>photomultiplier.</i> As described earlier, only electrons ejected from the cathode will be amplified (although both photoelectrons and thermal electrons from the cathode will be detected). Photomultipliers can detect very low intensities of radiation, and are used widely in studies of fluorescence and similar phenomena, as well as in the general measurement of light intensities in the laboratory. For the highest sensitivities, electron pulse counting (<a href="#page_41">see p. 41</a>) is used to provide <i>single photon counting</i> capabilities for photomultiplier detectors.</p>
+
+<aside class="abc" style="margin-top:3.5em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.20">
+<img src="../images/page_45_1.jpg" alt="images" style="margin-left:1.5em"/>
+<p class="aside"><b>Fig. 3.20</b> The solid-state photodiode</p>
+</figure></aside>
+
+
+
+<h3 class="h3">Solid-state photodetectors</h3>
+<p class="noindent">The insulating properties of a reverse-biassed semiconductor junction diode were discussed in Chapter 1 (<a href="Chapter01.xhtml#page_16">see pp. 16</a>-<a href="Chapter01.xhtml#page_17">17 </a>and <a href="Chapter01.xhtml#fig_1.23">Figs 1.23</a> and <a href="Chapter01.xhtml#fig_1.24">1.24</a>). If light falls on the junction region, it can generate charge carriers (electrons and &#x2018;holes&#x2019;) that will permit a current to flow in an external circuit. This device is then a semiconductor <i>photodiode.</i> For applied reverse voltages up to the breakdown value (<a href="Chapter01.xhtml#fig_1.24">see Fig. 1.24</a>), the current is virtually independent of voltage (since it is limited by the supply of charge carriers), but is proportional to the incident light intensity. Once again, the limiting-current behaviour of <a href="#fig_3.1">Figs 3.1</a> and <a href="#fig_3.2">3.2</a> is observed. It is, of course, necessary that the light photons possess enough energy to generate the charge carriers. The threshold energy is determined by the semiconductor material and the extent and nature of doping to produce the p- and n-type materials. Many photodiodes are made out of materials that are active for visible and shorter wavelengths, although it is possible to arrange for sensitivity quite far into the infrared region. Just as for red- and infrared-sensitive photocells, thermal generation of charge carriers becomes a problem with these low-energy threshold devices, and it may be necessary to operate them at reduced temperatures. Cooling by liquid helium may even be needed to obtain sufficiently small dark currents for the measurement of low intensities of long-wavelength radiation. Currents from photodiodes are generally quite small for ordinary light intensities, and one useful development has been the fabrication of photodiodes combined with amplifiers in the same integrated circuit package. Because photodiodes can be made very small, it has also proved possible to construct <i>photodiode arrays</i> consisting of hundreds or thousands of photodiode elements lined up next to each other on a single small integrated circuit chip. Two-dimensional arrays <a id="page_46" class="page">Page 46, 3 Input transducers</a>are also available. Photodiode arrays can be used in a variety of applications in instrumentation, one important use being as a multiple detector element to sit in the image plane of a spectrometer (see <a href="Chapter05.xhtml#page_78">p. 78</a>). The response time of most solid-state photodiodes is as good as, or even better than, that of the vacuum tube devices (nanoseconds or less), and they are therefore suitable for use in the investigation of fast transient phenomena. The sensitivity to low light intensities cannot, however, compete with that of the best vacuum photomultipliers in spectral regions where both may be employed.</p>
+
+
+<aside class="abc" style="margin-top:-7.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.21" style="margin-left:2em">
+<img src="../images/page_46_01.jpg" alt="images" style="margin-left:1em"/>
+<p class="aside"><b>Fig. 3.21</b> A photoconductive light detector excitation</p></figure></aside>
+
+
+<p class="indent3-ka">Cells with semiconductor junctions can also be used to convert light energy into electrical energy. <i>Photovoltaic cells</i> are constructed with an insulating barrier layer across which a potential difference appears when light is incident on the cell. Silicon photovoltaic cells illuminated by solar radiation are now widely used as power sources, and drive devices ranging in size from satellite electronics and communications systems to small calculators and watches. Formerly, photovoltaic cells based on selenium were very popular, because their spectral response could be made to match that of the human eye very closely, and the voltage output thus used as a measure of illumination as perceived subjectively. <i>Photoconductive cells</i> are also made from semiconductor materials, such as cadmium sulphide. These cells do not have a rectifying junction. Instead, the promotion of valence electrons into the conduction band when sufficiently energetic (short wavelength) light falls on them leads to a decrease in resistance. Cadmium sulphide itself responds to light of wavelength between about 500 and 600 nm, with a quite sharply defined peak at &#x3B3; &#x2248; 520 nm. Photoconductive cells show near-ohmic behaviour when connected in a simple circuit (<a href="#fig_3.21">Fig. 3.21</a>). Photovoltaic and photoconductive cells have some advantages over the diode, especially in terms of the simplicity of the external circuitry. They do not, however, in general have either the ultimate sensitivity or speed of response of either the photomultiplier or the solid-state diode.</p>
+</section>
+
+
+
+<section epub:type="chapter" id="sec_3.7">
+<h2 class="h2">3.7<b><span class="space">&#160;</span>Transducers for magnetic fields</b></h2>
+
+<p class="noindent">Conversion of magnetic fields into electrical signals is required for a variety of purposes in chemical instrumentation, most notably in magnetic resonance spectrometers. One simple transducer is provided by a small coil that is rotated within the field. For a given size of coil and rotation speed, the induced a.c. voltage is nearly proportional to the field. A more interesting example with which to conclude this chapter is provided by the solid-state <i>Hall effect</i> device. <a href="#fig_3.22">Figure 3.22</a> shows the principles of construction. A semiconductor material such as indium antimonide or n-type germanium is cut into a thin plate, and an excitation current passed in one direction through it. Pick-up electrodes are connected to the narrow faces at right angles. Normally, of course, the symmetry of the arrangements means that no potential appears across the terminals A and B. If, however, there is a magnetic field perpendicular to the plane of the plate, then a potential difference (the <i>Hall voltage)</i> appears across AB, and it is proportional to the strength of the field.</p>
+
+
+<aside class="abc" style="margin-top:-22em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.22">
+<img src="../images/page_46_2.jpg" alt="images" style="margin-left:0.5em"/>
+<p class="aside"><b>Fig. 3.22</b> Measurement of magnetic fields using a Hall effect transducer</p></figure></aside></section>
+
+
+<section epub:type="chapter" id="sec_3.8">
+<a id="page_47" class="page" style="width:70%">Page 47, 3 Input transducers</a>
+<h2 class="h2">3.8<b><span class="space">&#160;</span>Pressure and vacuum measurements</b></h2>
+
+
+<p class="noindent">Pressure measurements are important in many chemical experiments. Several methods exist to convert pressures into electrical signals. One of the most obvious is to allow the pressure in the system concerned (liquid or gas) to deform some kind of elastic container and then to measure the deformation with a displacement transducer or strain gauge (<a href="#sec_3.2">Section 3.2</a>). The familiar aneroid barometer produces displacements of the kind described: it consists of an evacuated, flexible capsule, the outer surfaces of which are exposed to the pressure of the system under test (the atmosphere for domestic purposes). The flexible parts of the capsule are usually linked in the domestic device to a series of mechanical levers that operate a pointer. For chemical measurements, it is often convenient to measure differential pressures, so that a simple modification of the barometer allows connection of both inside and outside of the capsule to the two sides of the system under test. One particularly useful way of implementing this technique in electronic instrumentation is to make the flexible part out of a conducting material (a thin metal diaphragm or a metallized plastic membrane), and arrange it to be part of a capacitance displacement transducer as described on <a href="Chapter03.xhtml#page_37">p. 37</a>. <a href="#fig_3.23">Figure 3.23</a> shows the concept schematically. The capacitor has been arranged itself as a differential device, so that, as the pressure changes, the capacitance of one side increases, while that of the other decreases. This arrangement is ideal for connection into an a.c. capacitance bridge, since the bridge becomes unbalanced only if there is a differential change in capacitance. Changes that are common to both sides, perhaps resulting from temperature fluctuations, are cancelled out in the bridge. Suitable signal conditioning can provide an output voltage from the bridge that depends in a known manner on the pressure.</p>
+
+
+<aside class="abc" style="margin-top:-26.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.23">
+<img src="../images/page_47_1.jpg" alt="images" style="margin-left:2em"/>
+<p class="aside"><b>Fig. 3.23</b> A capacitance manometer based on the displacement transducer of <a href="#fig_3.4">Fig. 3.4</a>. If <i>P<sub>1</sub> &#x003E; P<sub>2</sub>,</i> then the diaphragm A flexes towards plate B<sub>2</sub></p></figure></aside>
+
+
+
+<aside class="abc" style="margin-top:-6.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.24">
+<img src="../images/page_47_2.jpg" alt="images" style="margin-left:2.5em"/>
+<p class="aside"><b>Fig.</b> 3.24 The principle of the Pirani gauge</p></figure>
+
+
+<figure class="fig1" id="fig_3.25">
+<img src="../images/page_47_3.jpg" alt="images" style="margin-left:1em"/>
+<p class="aside"><b>Fig. 3.25</b> Bridge circuit for the Pirani gauge incorporating modifications for isothermal operation</p></figure></aside>
+
+
+
+<p class="indent3-ka">Vacuum techniques and experimentation are extremely important in many aspects of gas-phase chemistry. Once again, it is often necessary to measure the pressure, or at least to establish that it is sufficiently low. One method depends the variation of thermal conductivity of a gas with pressure. The <i>Pirani gauge</i> is of this kind. <a href="#fig_3.24">Figure 3.24</a> shows the principle of construction. A heated platinum wire is contained within a suitable chamber connected to the system under test. The higher the pressure, the greater the heat losses, so that, for a constant heating current, the temperature of the wire will decrease with increasing pressure. In turn, the resistance of the wire can be used as a measure of the temperature (see <a href="#page_42">p. 42</a>). A bridge circuit is normally used to determine the resistance. An interesting small modification to the system just described both improves its performance and makes it adapted to direct readout. The idea is that, instead of rebalancing the bridge when the gas is present by altering the resistances in the opposing arm, the current flowing in the bridge is increased until the bridge rebalances. This rebalancing comes about when the increased current flowing through the test resistance wire exactly balances the heat losses through thermal conduction in the gas, so that the original temperature is restored. <a href="#fig_3.25">Figure 3.25</a> illustrates the configuration. The current passing through the wire gives a direct measure of the pressure<a id="page_48" class="page">Page 48, 3 Input transducers</a>in the gauge. The method is well adapted to automatic balancing using the techniques to be described in <a href="Chapter04.xhtml">Chapter 4</a>, the output of the null detector being used to control the variable current source to achieve balance. One great virtue of this set-up is that the wire is at a constant temperature, so that the heat losses are always the same. Indeed, the method is used in the <i>isothermal wire calorimeter</i> to determine the thermal conductivity of gases. In this application, of course, the gas pressure must be measured in other ways. The Pirani gauge is suitable for use with pressures of about 0.1 to 0.0001 mmHg (remember that 1 atmosphere is 760 mmHg).</p>
+
+
+<p class="indent3-ka">At lower pressures again, the <i>ion gauge</i> provides a method of determining the pressure. This gauge is a special kind of vacuum tube, illustrated in <a href="#fig_3.26">Fig. 3.26</a>. The spiral wire anode is maintained at a positive potential with respect to a heated fdament that emits electrons. The electrons are therefore accelerated, and impact of these electrons with the gas molecules in the tube produces positive ions. These ions are in turn accelerated towards a collector wire which is at negative potential with respect to the anode. The anode and collector are made part of a closed current-measuring circuit, as illustrated in the diagram. For a constant electron beam current (readily stabilized electronically, using the methods outlined in the next chapter), the ion current flowing is directly proportional to the pressure of gas in the gauge. The gauge constitutes a constant current source (current limited by the rate of production of ions: see <a href="#page_36">p. 36</a>), so that the measured current is virtually independent of p.d. between the anode and collector over quite a wide range (cf. <a href="#fig_3.1">Fig. 3.1</a>). The ion gauge is useful for pressures from about 10<sup>-4</sup> to 10<sup>-10</sup> mmHg.</p>
+
+
+<aside class="abc" style="margin-top:-20.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.26">
+<img src="../images/page_48_1.jpg" alt="images" style="margin-left:1.5em"/>
+<p class="aside"><b>Fig. 3.26</b> The ion gauge. Electrons are accelerated from the filament to the spiral anode. Collisions with gas molecules generate positive ions that are collected at the central electrode</p>
+</figure></aside>
+
+</section>
+
+
+<section epub:type="chapter" id="sec_3.9">
+<h2 class="h2">3.9<b><span class="space">&#160;</span> Electrochemical measurements</b></h2>
+<p class="noindent">Perhaps the simplest electrochemical measurements are those of electrode potentials that give access to chemical information about condensed-phase ionic systems under equilibrium conditions. A number of thermodynamic and related quantities can be only be obtained readily from e.m.f. measurements of this kind. Conventional electrodes have becomd supplemented by microelectrodes with tips that are just a few tens of nanometres in diameter. With this kind of electrode, it becomes possible to conduct electrochemical experiments on the interiors of biological cells as well as on other microscopic systems. From the point of view of the instrumentation involved, greater demands than usual are placed on the requirement that no current is drawn (see, for example, <a href="Chapter02.xhtml#page_24">pp. 24</a> and <a href="Chapter02.xhtml">30</a>-<a href="Chapter02.xhtml">31</a>). Not only must the electrochemical system be maintained under reversible conditions, but the source impedance of a microelectrode may be hundreds of megohms. Feedback amplifiers of the kind described in <a href="Chapter04.xhtml">Chapter 4</a> provide the solution to this problem.</p>
+
+
+<p class="indent3-ka">Other kinds of specialized electrode include those that show a response to specific ions. An obvious example of an ion-specific electrode is the glass electrode used in <i>pH meters.</i> The thin wall of glass used in this electrode allows hydrogen ions to diffuse through, but no other species. The nature of this electrode suggests that, once again, the source impedance will be very<a id="page_49" class="page">Page 49, 3 Input transducers</a>high, and the appropriate electronic methods must be used to ensure that loading does not invalidate the measurement. Roughly twenty other kinds of ion-selective electrode have been developed.</p>
+
+
+<p class="indent3-ka">A different type of electrochemical measurement determines electrode currents that flow in response to given applied voltages across the electrodes. Simple conductivity measurements (see <a href="Chapter02.xhtml">p. 33</a>) are of this kind, but many systems respond in a non-ohmic manner that yields very sensitive analytical information. In general, because currents are being determined, the techniques probe the rates of chemical or electrode processes. A simple example is afforded by the <i>oxygen electrode,</i> which provides a useful electrochemical method of determining concentrations of oxygen dissolved in water. <a href="#fig_3.27">Figure 3.27</a> shows schematically the arrangement used. If the platinum electrode is made about 0.7 volts negative with respect to the reference electrode, oxygen molecules that reach the platinum accept electrons and are reduced. The current flowing in the external circuit is equal to the (diffusion limited) rate of arrival of the oxygen at the electrode, and is thus proportional to the concentration of oxygen in solution. This is a typical current-limited transducer, showing the general characteristics of <a href="#fig_3.1">Figs 3.1</a> and <a href="#fig_3.2">3.2</a>. In reality, the constant-current plateau region of <a href="#fig_3.1">Fig. 3.1</a> is obtained with this electrode over a range of about -0.5 to -0.9 volts.</p>
+
+
+
+<aside class="abc" style="margin-top:-21em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.27">
+<img src="../images/page_49_1.jpg" alt="images" style="margin-left:2em"/>
+<p class="aside"><b>Fig. 3.27</b> An oxygen electrode</p></figure>
+
+<p class="aside">The platinum wire (sealed in glass) forms a microelectrode in the test solution. A counter electrode (e.g. Ag-AgCL) provides a constant-potential reference</p></aside>
+
+
+<p class="indent3-ka">More sophisticated experiments make use of the measurement of electrode currents as applied voltage is varied. As the voltage is altered, and the potentials at which different electrode reactions occur are reached, quite sharp changes in the current flowing can be detected. The measurements can form the basis of extremely sensitive analytical techniques, and polarography, cyclic voltammetry and anodic stripping voltammetry (ASV) are all of this kind. For example, in ASV a hanging mercury drop is used as a renewable electrode onto which ions are deposited at a relatively large forward potential for a fixed period. The potential is then reversed to increasing values so that each ion is stripped off sequentially. <a href="#fig_3.28">Figure 3.28</a> illustrates the electrode arrangement used in many of these so-called <i>potentiostatic</i> or <i>voltage-clamp</i> experiments. In general, a small reference electrode is used to determine the potential of the solution near to the working electrode, and the current supplied through the counter electrode is varied so as to maintain the potential of the reference electrode at the desired value. For varying voltage experiments with this configuration, the (measured) current is altered in order to produce the desired voltage changes. All modern instrumentation of this kind employs electronic control of the current to generate the required voltages. Other electronic circuitry can easily alter the voltage to be attained by a ramp or any other function desired. The control of the current, using suitable feedback between the measured voltage and the current delivered to the counter electrode, is achieved by the methods to be described in the next chapter, and <i>operational amplifiers</i> described there (<a href="Chapter04.xhtml#sec_4.4">Section 4.4</a>) can also be used to provide the very high input impedances required for accurate electrochemical measurements with high-impedance sources.</p>
+
+
+<aside class="abc" style="margin-top:-26em;" epub:type="sidebar">
+<figure class="fig1" id="fig_3.28">
+<img src="../images/page_49_2.jpg" alt="images" style="margin-left:1em"/>
+<p class="aside"><b>Fig. 3.28</b>. Principle of a potentiostatic electrochemical experiment</p></figure>
+<p class="aside">The current flowing in the main circuit is varied in order to produce the desired voltage in the solution near the working electrode. The reference electrode monitors this potential</p></aside>
+
+</section></section></div></body></html>

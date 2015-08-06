@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>5 Nuclear magnetic resonance spectroscopy: further topics</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<section epub:type="chapter" id="ch5">
+<a id="page_55" class="page" style="width:70%;">Page 55, 5 Nuclear magnetic resonance spectroscopy: further topics</a>
+<h1 class="main">5<span class="space">&#160;</span>Nuclear magnetic resonance<br/>spectroscopy: further topics</h1>
+<p class="noindent">The previous chapter has introduced the essential material for applying <sup>1</sup>H NMR to problems of chemical structure. However, the power of modern pulse-Fourier transform NMR makes available to us a variety of techniques which assist us in the interpretation of spectra, in the subsequent determination of structures, and allows the routine observation of nuclei other than protons, as we now discover.</p>
+<section epub:type="chapter" id="ch5.1">
+<h2 class="h2">5.1<span class="space">&#160;</span>The pulse-Fourier transform approach</h2>
+<aside class="abc" style="margin-top:6em;" epub:type="sidebar">
+<figure id="fig5.1"><img src="../images/he_9780198557555_graphic_0095.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="width:120%;"><b>Fig. 5.1</b> An ensemble of spins gives rise to a <b><i>bulk magnetization vector, M</i></b>, which, at thermal equilibrium is parallel to the applied field.</figcaption>
+</figure>
+</aside>
+<p class="noindent">The idea of exciting a sample with an intense burst (or <b><i>pulse</i></b>) of electromagnetic radiation, followed by Fourier analysis of the emitted signals, has already been introduced in Chapter 1. This approach provides us with two major benefits over the continuous wave approach. The first, which was the original motivation for establishing the pulse-FT methodology, is one of time efficiency; many scans may be accumulated and added with a concomitant increase in signal-to-noise ratio for a given period of data collection. The second, which has been developed since the early 1980s, is the possibility of using more than one pulse prior to data acquisition, allowing one to control the behaviour of nuclear spins and hence the information presented in the resulting spectra. There now exists a spectacular array of these so-called <b><i>multi-pulse experiments</i></b>, a few of which we shall encounter in this chapter.</p>
+<h3 class="h3">The vector model of NMR</h3>
+<p class="noindent">The previous chapter introduced how a single nucleus behaves in a static magnetic field. We now consider how an ensemble of nuclei behave, and the processes that occur following pulse excitation of a sample which ultimately produce the spectrum. In this pictorial approach, we shall use the vector model of NMR.</p>
+<p class="indent">Consider the magnetization arising from a collection of equivalent spin-<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> nuclei. According to the Boltzmann distribution there will be a slight excess of spins in the a orientation, that is, parallel to the applied field, that will result in a <b><i>bulk magnetization vector, M</i></b>, along the +<i>z</i> axis (which we define as being parallel to the applied field, <a href="#fig5.1">Fig. 5.1</a>) which behaves according to the rules of classical mechanics. Magnetization that exists on the &#177;<i>z</i> axis is referred to as <b><i>longitudinal magnetization</i>.</b> We now wish to consider what happens when the sample is influenced by the application of a second magnetic field (<i>B</i><sub>1</sub>) associated with the radiofrequency (rf) radiation of the transmitter pulse. This is delivered through the coil, the geometry of which is such that the <i>B</i><sub>1</sub> field is perpendicular to the static field, <i>B</i><sub>0</sub>. It becomes difficult to visualise the interaction of the oscillating rf with precessing spins so to help us in this we imagine the nuclear co-ordinate<a id="page_56" class="page">Page 56, 5 Nuclear magnetic resonance spectroscopy: further topics</a> system to be rotating at the same frequency as the rf. This has the effect of &#8216;freezing&#8217; the rf oscillations so the new <i>B</i><sub>1</sub> field is now static in this co-ordinate system. Technically, this is referred to as changing from the <b><i>laboratory frame</i></b> of reference to the <b><i>rotating frame</i></b> of reference (<a href="#fig5.2">Fig. 5.2</a>) and a simple analogy would be you watching a child going around on a merry-go-round, which equates to observing events in the laboratory frame of reference, and then stepping onto the merry-go-round. In the latter case, the motion of the child is no longer apparent to you as he does not move toward you or away from you; you are now observing events in the rotating frame of reference which has simplified your <i>perception</i> of the motion. Furthermore, in the rotating frame we need only concern ourselves with frequency offsets from the transmitter frequency.</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure id="fig5.2"><img src="../images/he_9780198557555_graphic_0096.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.2</b> Changing from the <b><i>laboratory frame</i></b> of reference (a) to the <b><i>rotating frame</i></b> of reference (b) &#8216;freezes&#8217; the rotation of the <i>B</i><sub>1</sub> field and helps us visualize the interaction of this field with the sample magnetization.</figcaption>
+</figure>
+</aside>
+<p class="indent">We are now in a position to consider the effect of the pulse in a simple pulse-acquire experiment (<a href="#fig5.3">Fig. 5.3</a>). Under the influence of the <i>B</i><sub>1</sub> field the longitudinal magnetization is rotated toward the <i>x-y</i> plane, by an amount dependent on the strength of the field and the duration of the pulse, to produce <b><i>transverse magnetization</i></b> (<a href="#fig5.4">Fig. 5.4</a>). A pulse which places <b><i>M</i></b> exactly in the <i>x&#8211;y</i> plane is referred to as a <b>90&#176;</b> (or <math xmlns="http://www.w3.org/1998/Math/MathML"> <mfrac><mi>&#x03C0;</mi><mn>2</mn></mfrac></math>) pulse and this corresponds to <b><i>equalizing</i></b> the populations of the &#945; and &#946; states, whereas a pulse that inverts <b><i>M</i></b> is a <b>180&#176;</b> (or &#960;) pulse, corresponding to <b><i>inversion</i></b> of the &#945; and &#946; populations.</p>
+<p class="indent">Any magnetization that is in the <i>x&#8211;y</i> plane will in reality, that is, in the laboratory frame, be rotating at its Larmor frequency, and so will induce an oscillating voltage in the coil (much like the rotating magnet in a bicycle dynamo produces a voltage in the surrounding coil), which is the signal we wish to detect. Only transverse magnetization is able to induce a voltage in the coil, so that the maximum signal is achieved with a 90&#176; pulse but no signal is observed for a 180&#176; pulse.</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<figure id="fig5.3"><img src="../images/he_9780198557555_graphic_0097.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.3</b> Schematic representation of a simple NMR experiment. The procedure is repeated many times for signal averaging.</figcaption>
+</figure>
+</aside>
+<p class="indent">Now, magnetization will not continue in the <i>x&#8211;y</i> plane, or along the &#8211;<i>z</i> axis, indefinitely, as this corresponds to deviation from the equilibrium populations, but will gradually return to the +<i>z</i>-axis (<a href="#fig5.5">Fig. 5.5a</a>), by losing its excess energy, that is, by <b><i>relaxing</i>.</b> Thus, the oscillating voltage will decay away with time, producing the <b><i>free induction decay</i></b> (FID) (<a href="#fig5.5">Fig. 5.5b</a>) that may be Fourier transformed to produce the frequency spectrum. Typically, the FID is made up of a superposition of many oscillating signals arising from nuclei with different chemical shifts and coupling constants (see <a href="Chapter1.xhtml#ch1.3">Section 1.3</a> also).</p>
+</section>
+<section epub:type="chapter" id="ch5.2">
+<h2 class="h2">5.2<span class="space">&#160;</span>Relaxation</h2>
+<h3 class="h3">Longitudinal relaxation</h3>
+<p class="noindent">Longitudinal relaxation is the process which restores magnetization to the +<i>z</i> axis (<a href="#fig5.6">Fig. 5.6</a>), or, in other words, restores the equilibrium population differences between the high and low energy spin states. The fundamental requirement for the relaxation of perturbed spins is the presence of an oscillating (time dependent) magnetic field at the appropriate frequency (the Larmor frequency), as is required for excitation. Whilst there are a number of mechanisms that can produce such a field, the most important is the <b><i>dipole-dipole interaction</i></b> which is the direct magnetic (through-space) interaction between two spins (<a href="Chapter4.xhtml#ch4.4">Section 4.4</a>). As a molecule tumbles in<a id="page_57" class="page">Page 57, 5 Nuclear magnetic resonance spectroscopy: further topics</a> solution, the relative orientation of the two dipolar-coupled spins changes, so that the field experienced at one nucleus due to its neighbour fluctuates (<a href="#fig5.7">Fig. 5.7</a>). This fluctuating field then provides a suitable means of relaxation for the spin. The energy lost by the spins is given out in the form of heat, although because the energies involved are so small, temperature changes are undetectable. Because the energy is distributed into the surroundings, known as the <b><i>lattice</i></b>, this form of relaxation is also referred to as <b><i>spin-lattice relaxation</i>.</b></p>
+<figure id="fig5.4" style="width:70%;"><img src="../images/he_9780198557555_graphic_0098.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 5.4</b> (a) Magnetization is rotated through an angle <i>&#952;</i> which is dependent on the magnitude of <i>B</i><sub>1</sub>, and the duration of the pulse, (b) <i>&#952;</i> = 90&#176;, (c) 0 = 180&#176;.</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<figure id="fig5.5"><img src="../images/he_9780198557555_graphic_0099.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.5</b> Magnetization will precess in the <i>x&#8211;y</i> plane, but also return to the +<i>z</i> axis through relaxation (a) and this process will induce a decaying oscillating voltage in the coil that is the free <b><i>induction decay</i></b> (b).</figcaption>
+</figure>
+</aside>
+<p class="indent">For spin<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#x2013;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></math> nuclei, the return of z-magnetization follows a first-order (exponential) recovery characterized by the time constant <i>T</i><sub>1</sub>. Therefore, transverse magnetization produced by a 90&#176; pulse requires a period of approximately 5T<sub>1</sub> to relax back to its equilibrium state (after this period the magnetization has recovered by 99.93%). This has fundamental implications for the acquisition of pulse NMR spectra. If we apply pulses for successive scans too rapidly, the magnetization does not have time to recover, and ultimately we are left with no population difference to sample, so that further pulse-acquisitions will provide no more signal. This situation is known as <b><i>saturation</i></b> and it clearly defeats the point of signal averaging, so must be avoided. Proton <i>T</i><sub>1</sub>s for small organic molecules typically fall in the 0.5&#8211;5 s range, so acquisitions with a series of 90&#176; pulses will usually require inter-pulse delays of 20 or so seconds. This is not the most time efficient way to collect data, so in practice spectra are routinely acquired with an excitation of only 30&#8211;60&#176;, thus reducing the time needed for relaxation and allowing more acquisitions to be collected in a given time.</p>
+<p class="noindent">&#160;</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure id="fig5.6"><img src="../images/he_9780198557555_graphic_0100.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.6</b> Longitudinal relaxation restores equilibrium populations and hence +z magnetization.</figcaption>
+</figure>
+</aside>
+<h3 class="h3">Transverse relaxation</h3>
+
+<figure id="fig5.7"><img src="../images/he_9780198557555_graphic_0101.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption><b>Fig. 5.7</b> The field experienced at one nucleus due to its dipolar interaction with another fluctuates as the molecule tumbles in solution. This provides a mechanism for relaxation.</figcaption>
+</figure>
+<p class="noindent">Transverse relaxation corresponds to the loss of bulk magnetization in the <i>x&#8211;y</i> plane, as represented in <a href="#fig5.8">Fig. 5.8</a>. It does not relate to the restoration <a id="page_58" class="page">Page 58, 5 Nuclear magnetic resonance spectroscopy: further topics</a>of equilibrium populations so is distinct from longitudinal relaxation.</p>
+<aside class="abc" style="margin-top:1em;" epub:type="sidebar">
+<figure id="fig5.8"><img src="../images/he_9780198557555_graphic_0102.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.8</b> Transverse relaxation. The initial bulk magnetization vector (a) decreases as the many spins giving rise to it dephase (b-d) due to differences in local magnetic fields throughout the sample. Finally there is a random distribution of spins about the <i>x &#8211; y</i> plane (d) and no net transverse magnetization.</figcaption>
+</figure>
+</aside>
+
+<p class="indent">Following a 90&#176; pulse, bulk magnetization exists in the <i>x&#8211;y</i> plane as a single vector. Remember this is a macroscopic representation of very many aligned spins (they are said to have <b><i>phase coherence</i></b> at this point) which, for those with the same chemical shift, should precess together at the same frequency. In reality, some of these spins will experience a slightly reduced field whereas others experience a slightly greater field than the average, brought about by small variations in the local magnetic environments. This leads to small changes in their precessional frequencies, so that some fall behind the bulk vector whereas others creep ahead of it (<a href="#fig5.8">Fig. 5.8b&#8211;d</a>). This then leads to a &#8216;fanning-out&#8217; of the magnetization vector as the phase coherence is lost, until ultimately the spins are evenly distributed about the <i>x&#8211;y</i> plane and there is no resultant magnetization and hence no detectable signal. The distribution of precessional frequencies corresponds to a spread of frequencies in the final spectrum, so that individual resonances are not infinitely narrow lines, but have a defined linewidth (<a href="#fig5.9">Fig. 5.9</a>). Faster blurring of the magnetization following excitation implies greater frequency differences between individual spins, and hence broader lines in the final spectrum. This relaxation is again exponential for spin<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#x2013;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></math> nuclei and characterized by the time constant <i>T</i><sub>2</sub>, which, as expected from the above arguments, is inversely proportional to the linewidth.</p>
+<p class="indent">Mechanisms for this relaxation are essentially similar to those for longitudinal relaxation, but are beyond the scope of this book. Transverse relaxation does not involve a loss of energy to the surroundings but energy is retained by the spins and transferred amongst themselves by mutual spin-flipping (such as <math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>&#x03B1;&#x03B2;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>&#x2194;</mo><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x03B2;&#x03B1;</mtext></math>) so is also referred to as <b><i>spin-spin relaxation</i>.</b> For small molecules, <i>T</i><sub>2</sub> = <i>T</i><sub>1</sub> and in any circumstance <i>T</i><sub>2</sub> can never be greater than <i>T</i><sub>1</sub> as clearly there can be no magnetization left in the <i>x&#8211;y</i> plane if it has all returned to the +<i>z</i> axis.</p>
+<p class="indent">The dominant cause of blurring of the magnetization vector, and hence line-broadening in NMR spectra, actually arises not from genuine transverse relaxation but from non-uniformity in the magnetic field, meaning spins in different regions of the sample experience slightly different fields. The <b><i>linewidth</i></b> of a NMR resonance (&#916;<i>&#957;</i><sub>1/2</sub>, <a href="#fig5.9">Fig. 5.9</a>) is then given by</p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<p class="noindent2" style="margin-top:1em;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>T</mi><mn>2</mn><mo>*</mo></msubsup></mrow></math> includes a term for genuine transverse relaxation and broadening from magnetic field inhomogeneity.</p>
+</aside>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x0394;</mi><msub><mi>v</mi><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mtext>&#x03C0;</mtext><msubsup><mi>T</mi><mn>2</mn><mo>*</mo></msubsup></mrow></mfrac></math></p>
+<p class="noindent">&#160;</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<figure id="fig5.9"><img src="../images/he_9780198557555_graphic_0103.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="width:100%;"><b>Fig. 5.9</b> Linewidth is defined as the width of the line, in hertz, at half the resonance height.</figcaption>
+</figure>
+</aside>
+<p class="noindent">Two mechanisms for relaxation are also considered briefly now, which both result in broadening of resonances. The first is <b><i>quadrupolar relaxation</i></b> which arises because the spins of nuclei with <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>I</mi><mo>&#x003E;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></math> (quadrupolar nuclei) are efficiently relaxed by <b><i>electric field gradients</i></b> about the nucleus. Whilst, in organic chemistry, we are not often interested in observing quadrupolar nuclei themselves (although this is possible) protons that are coupled to them often appear to be unusually broadened. Commonly encountered quadrupolar nuclei include <sup>2</sup>H and <sup>14</sup>N, so that, for example, amide protons are often broad, even in the absence of dynamic exchange effects. This arises because the coupling to the quadrupolar nucleus is <i>partially</i> averaged to zero by its rapid relaxation i.e. exchange of spin-states; this may be considered to be similar to the exchange decoupling of acidic protons discussed in <a href="Chapter4.xhtml#ch4.6">Section 4.6</a>. The second mechanism is relaxation by<a id="page_59" class="page">Page 59, 5 Nuclear magnetic resonance spectroscopy: further topics</a> unpaired electrons, such as in paramagnetic species. The magnetic moment of the electron is approximately 10<sup>3</sup> times that of the proton, so it produces a strong fluctuating field and efficient relaxation. The rapid relaxation in turn causes <b><i>paramagnetic broadening</i></b> of NMR resonances.</p>
+</section>
+<section epub:type="chapter" id="ch5.3">
+<h2 class="h2">5.3<span class="space">&#160;</span>The nuclear Overhauser effect</h2>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<figure id="fig5.10"><img src="../images/he_9780198557555_graphic_0104.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.10</b> The nuclear Overhauser effect. Energy levels for dipolar coupling between two spins, I and S. Inside each transition is shown the population difference across it. (a) At equilibrium the <i>&#945;&#945;</i> state has an excess, whereas the <i>&#946;&#946;</i> state has a deficit, of spins giving rise to a population difference of &#916; for all transitions, (b) Immediately after saturating the S spins, (c and d) The systems attempts to re-establish population differences across the S transitions by relaxation <i>via</i> the <i>W</i><sub>0</sub> (c) and <i>W</i><sub>2</sub> pathways (d). The new I populations that result produce I spin signal intensities that are different from their equilibrium values. Throughout, the S spin population differences are held at zero (see text also).</figcaption>
+</figure>
+</aside>
+<p class="noindent">The nuclear Overhauser effect (NOE) holds a position of great importance in organic structure elucidation as it enables us to define the three- dimensional stereochemistry of our molecules of interest. The NOE is the change in signal intensity of a resonance when the population differences of a near-neighbour are perturbed from their thermal equilibrium values, such as by the application of a radiofrequency field, as described below. The effect is transmitted <i>through space via</i> the direct magnetic influence of one nucleus on another (the dipolar interaction) and <i>does not</i> require or depend on the presence of scalar (through-bond) coupling. Its usefulness in defining molecular geometry arises because the NOE has a dependence on, amongst other things, the distance between interacting nuclei. For these effects to be observable the internuclear distance must be less than <i>ca</i>. 0.4 nm so that the presence of the NOE places boundary limits on the distance between nuclei and a collection of such NOEs within a molecule can often be sufficient to define its stereochemistry. Thus, a combination of information arising from through bond (scalar coupling) and through space (NOE) interactions may be combined to define the structure and stereochemistry of a molecule.</p>
+<h3 class="h3">Origin of the NOE</h3>
+<p class="noindent">Consider two spins that are close in space and hence share a mutual dipolar coupling, giving rise to the energy level diagram of <a href="#fig5.10">Fig. 5.10a</a>. In many text books the spins are generally referred to as I and S for historical reasons, so we shall also adopt this terminology. The total spin population in the system is 4<i>N</i>. The lowest energy level contains an excess of spins, &#916;, the highest energy level contains a deficit of &#916; and the middle levels have, to a good approximation, equal populations, giving rise to a population difference across all transitions of &#916;. Now suppose that both the S transitions are saturated, that is, the population differences are forced to zero (<a href="#fig5.10">Fig. 5.10b</a>), such as by applying a weak radiofrequency field at the S spin Larmor frequency. The S spin population differences are now no longer those of the original Boltzmann distribution so that, just like any chemical state that is forced away from thermal equilibrium, the system will alter itself to counteract the changes imposed. The population differences across the I transitions have not been altered by the saturation of S (<a href="#fig5.10">Fig. 5.10b</a>) so transitions involving a single I spin, such as aa Pa (W<sub>1</sub> transitions, where the subscript indicates the overall change in the magnetic quantum number for the transition) will play no part in reestablishing equilibrium. Instead the processes indicated by W<sub>0</sub> and W<sub>2</sub> must be operative. These transitions are not directly observable in NMR spectra, that is they do not produce a signal in the NMR coil, as they do not obey the selection rule &#916;<i>M</i> = &#177;1, where <i>M</i> is the magnetic quantum number. However, they can operate to change spin states, as is required in<a id="page_60" class="page">Page 60, 5 Nuclear magnetic resonance spectroscopy: further topics</a> this case <i>via</i> dipole-dipole relaxation. If the W<sub>0</sub> process is operative (<a href="#fig5.10">Fig. 5.10c</a>) the spin populations are depleted at the bottom of one I transition and enhanced at the top of the other, so that the I spin population <i>differences</i> are <i>decreased</i>, leading to a net reduction in signal intensity if we record the spectrum at this point. This is referred to as a <b><i>negative NOE</i></b>. If the W<sub>2</sub> process occurs, (<a href="#fig5.10">Fig. 5.10d</a>) then one I transition is depleted at the top whilst the other is enhanced at the bottom, and the I transition population <i>differences</i> are <i>increased</i>. This enhances the I signal intensity and this is then a <b><i>positive NOE</i>.</b> Thus, by saturating the transitions of the S spins, we have altered the signal intensity of the I spins.</p>
+<p class="indent">For the changes in signal intensity to occur, spin states must alter and this occurs <i>via</i> the dipole-dipole relaxation mechanism. Thus, the NOE is intimately related to longitudinal relaxation and hence molecular motion and the sign of an observed NOE is a balance between the W<sub>0</sub> and W<sub>2</sub> pathways. W<sub>0</sub> represents a low energy transition (there is a small energy difference between the &#945;&#946; and &#946;&#945; states) so that low frequency molecular tumbling can provide a suitable oscillating field for relaxation and large molecules, such as proteins, tend to show negative NOEs. W<sub>2</sub> on the other hand is a high energy process that is strongly influenced by high frequency tumbling and most molecules of interest to organic chemists give rise to positive NOEs.</p>
+<p class="indent">The rates at which the above population changes occur depend on <i>r</i><sup>&#x2212;6</sup>, where <i>r</i> is the internuclear distance, and it is through this that the NOE itself has a distance dependence; the closer the nuclei, the faster the effect will build up and the stronger it is likely to be when we come to sample the new populations. The power of &#8211;6 ensures the effect falls rapidly with distance.</p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="noindent2" style="width:100%;"><i>I</i> is the resonance intensity in the presence of the NOE.<br/><i>I</i><sub>0</sub> is the resonance intensity in the absence of the NOE.</p>
+</aside>
+<p class="indent">The NOE enhancements, &#951;, are defined as</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>&#x03B7;</mn><mo>=</mo><mfrac><mrow><mi>I</mi><mo>&#x2212;</mo><msub><mi>I</mi><mn>0</mn></msub></mrow><mrow><msub><mi>I</mi><mn>0</mn></msub></mrow></mfrac><mo>&#x00D7;</mo><mn>100</mn><mi>&#x0025;</mi></math></p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="noindent2" style="width:110%;">&#947;<sub>s</sub> represents the magnetogyric ratio of the saturated spin and &#947;<sub>1</sub>, that of the observed spin</p>
+</aside>
+<p class="noindent">The maximum magnitude of the NOE (&#951;<sub>max</sub>) between two spin-<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> nuclei in a small, rapidly tumbling molecule is given by the simple equation</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mtext>&#x03B7;</mtext><mrow><mi>max</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mfrac><mrow><msub><mi>&#x03B3;</mi><mi>S</mi></msub></mrow><mrow><msub><mi>&#x03B3;</mi><mi>I</mi></msub></mrow></mfrac><mo>&#x00D7;</mo><mn>100</mn><mi>&#x0025;</mi></math></p>
+<p class="noindent">For proton-proton NOEs this value is therefore 50%, whereas enhancements of hundreds of percent may be obtained when irradiating protons and observing a lower frequency nucleus, such as <sup>13</sup>C (<a href="#ch5.4">Section 5.4</a>). In routine <sup>1</sup>H&#8211;<sup>1</sup>H NOE experiments enhancements of around 1&#8211;20% are most often observed. A simple example of the differentiation of <i>E</i> and <i>Z</i> alkenes by comparing their NOE data may be seen in <a href="#fig5.11">Fig. 5.11</a>.</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<figure id="fig5.12"><img src="../images/he_9780198557555_graphic_0106.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.12</b> A schematic representation of the NOE difference experiment.</figcaption>
+</figure>
+</aside>
+<figure style="width:70%;" id="fig5.11"><img src="../images/he_9780198557555_graphic_0105.jpg" alt="images"/>
+<figcaption style="width:100%"><b>Fig. 5.11</b> The NOE can be used to distinguish between <i>E</i> and <i>Z</i> alkenes.</figcaption>
+</figure>
+<h3 class="h3">The NOE difference experiment</h3>
+<p class="noindent">In this experiment (<a href="#fig5.12">Fig. 5.12</a>), a radiofrequency field is applied at the frequency of the S spins saturating them for a period that is many times<a id="page_61" class="page">Page 61, 5 Nuclear magnetic resonance spectroscopy: further topics</a> the <i>T</i><sub>1</sub> of the I spins, so that there is sufficient time for the new population differences to become established. The proton spectrum is then acquired and the data stored. A second experiment represents the control where the applied frequency is away from all resonances, say at the very edge of the spectrum, so that no NOEs are generated. The two spectra are then subtracted so that everything cancels, except where signal enhancements have been generated (<a href="#fig5.13">Fig. 5.13</a>). The reason for the subtraction lies in the fact that we are looking for very small changes in signal intensities, often only a few percent, and these are better revealed in the difference spectrum. The resulting enhancements are termed <b><i>steady-state NOEs</i></b> because they were created whilst the system was held away from the equilibrium state by the application of the saturating radiofrequency.</p>
+<figure id="fig5.13"><img src="../images/he_9780198557555_graphic_0107.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="width:100%"><b>Fig. 5.13</b> An NOE difference experiments for the molecule shown (selected data only). The partial <sup>1</sup>H spectrum (a), and the results following saturation (b) and (c). Negative-going signals indicate the position of saturation.</figcaption>
+</figure>
+</section>
+<section epub:type="chapter" id="ch5.4">
+<h2 class="h2">5.4<span class="space">&#160;</span><sup>13</sup>C NMR spectroscopy</h2>
+<p class="noindent">Despite the low natural abundance (only 1.1%) and relatively low sensitivity of the <sup>13</sup>C nucleus, its observation is now made routine by the use of efficient signal averaging, made possible by the pulse-FT approach, and by the availability of higher magnetic field strengths. However, sample quantity requirements are still approximately ten times those for proton observation.</p>
+
+<figure id="fig5.14"><img src="../images/he_9780198557555_graphic_0109.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="width:100%"><b>Fig. 5.14</b> (a) the conventional broadband proton decoupled spectrum of ethyl <i>p</i>-tolyacetate, and (b) the full proton coupled spectrum acquired with the same number of scans. Notice the poorer signal-to-noise ratio in (b) (see text).</figcaption>
+</figure>
+<p class="indent">The appearance of the conventional carbon spectrum (<a href="#fig5.14">Fig 5.14a</a>) is markedly different from that of the proton spectrum for a number of <a id="page_62" class="page">Page 62, 5 Nuclear magnetic resonance spectroscopy: further topics</a>reasons. Firstly, the low abundance of <sup>13</sup>C means that there is, effectively, a negligible chance of finding two <sup>13</sup>C nuclei in adjacent positions within a molecule so that <i>homonuclear</i> <sup>13</sup>C&#8211;<sup>13</sup>C couplings are not observed. Secondly, although there will be numerous possible <b><i>heteronuclear</i></b> couplings to other <i>protons</i> in the molecule, we choose to remove these completely by decoupling <i>all</i> protons during acquisition of the carbon spectrum. The resulting carbon spectrum then has a surprisingly simple appearance; a single line is observed for each chemically distinct carbon in the molecule, in the absence of further coupling to nuclei other than protons or coincidental resonance overlap. The removal of the proton couplings is desirable because the large one-bond couplings (125&#8211;250 Hz, <a href="#fig5.15">Fig. 5.15</a>) cause resonance overlap and spread signal intensities over many lines, so reducing sensitivity, whereas the numerous long-range couplings (2&#8211;3 bond typically &#60; 15 Hz) also serve to increase signal multiplicities and further reduce sensitivity (<a href="#fig5.14">Fig. 5.14b</a>). All these detrimental factors are removed by the <b><i>broadband decoupling</i></b> of all protons, which is similar to the decoupling discussed in <a href="Chapter4.xhtml#ch4.4">Section 4.4</a> except that the technique is modified so as to make it non-selective. In addition, a further gain in sensitivity may be obtained from the NOE that is generated on the carbons from the saturated protons, which may serve to <i>enhance</i> signals by as much as 200% (0.5<i>&#947;<sub>H</sub>/&#947;<sub>C</sub></i>, <a href="#ch5.3">Section 5.3</a> and <a href="Chapter4.xhtml#tab4.1">Table 4.1</a>). The &#8216;singlet&#8217; appearance of carbon resonances and the large chemical shift range exhibited by carbon nuclei (see below) means that resonance overlap is rarely a problem and the carbon spectrum often provides a means of counting carbon nuclei within a molecule.</p>
+<aside class="abc" style="margin-top:-25em;" epub:type="sidebar">
+<figure id="fig5.15"><img src="../images/he_9780198557555_graphic_0110.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.15</b> Some examples of 1-bond H&#8211;C coupling constants (Hz).The dominant factor in determining the magnitude of these is the degree of &#8216;s-character&#8217; (<i>f</i><sub>s</sub>) of the carbon, and the general equation <sup>1</sup><i>J</i><sub>CH</sub> &#8776; 500.<i>f</i><sub>s</sub> applies (<i>f</i><sub>s</sub> is 0.25,0.33 and 0.5 for sp<sup>3</sup>, sp<sup>2</sup> and sp respectively). In addition, electronegative substituents tend to increase the magnitude of <i>J</i>.</figcaption>
+</figure>
+
+<figure id="fig5.17" style="margin-top:9em;">
+<p class="center2">XC<sup>1</sup>H<sub>2</sub>C<sup>2</sup>H<sub>2</sub>C<sup>3</sup>H<sub>3</sub></p>
+<table>
+<tr>
+<td class="td5">X</td>
+<td style="padding-left:0.5em;" class="td1-c">C<sup>1</sup>H<sub>2</sub></td>
+<td style="padding-left:0.5em;" class="td1-c">C<sup>2</sup>H<sub>2</sub></td>
+<td style="padding-left:0.5em;" class="td1-c">C<sup>3</sup>H<sub>3</sub></td>
+</tr>
+<tr>
+<td class="td5">Et</td>
+<td class="td1-c">34</td>
+<td class="td1-c">22</td>
+<td class="td1-c">14</td>
+</tr>
+<tr>
+<td class="td3">HOOC</td>
+<td class="td3-c">36</td>
+<td class="td3-c">18</td>
+<td class="td3-c">14</td>
+</tr>
+<tr>
+<td class="td3">SH</td>
+<td class="td3-c">27</td>
+<td class="td3-c">27</td>
+<td class="td3-c">13</td>
+</tr>
+<tr>
+<td class="td3">NH<sub>2</sub></td>
+<td class="td3-c">44</td>
+<td class="td3-c">27</td>
+<td class="td3-c">11</td>
+</tr>
+<tr>
+<td class="td3">Phe</td>
+<td class="td3-c">39</td>
+<td class="td3-c">25</td>
+<td class="td3-c">15</td>
+</tr>
+<tr>
+<td class="td3">Br</td>
+<td class="td3-c">36</td>
+<td class="td3-c">26</td>
+<td class="td3-c">13</td>
+</tr>
+<tr>
+<td class="td3">Cl</td>
+<td class="td3-c">47</td>
+<td class="td3-c">26</td>
+<td class="td3-c">12</td>
+</tr>
+<tr>
+<td class="td3">OH</td>
+<td class="td3-c">64</td>
+<td class="td3-c">26</td>
+<td class="td3-c">10</td>
+</tr>
+<tr>
+<td class="td1">NO<sub>2</sub></td>
+<td class="td2-c">77</td>
+<td class="td2-c">21</td>
+<td class="td2-c">11</td>
+</tr>
+</table>
+<p class="tcaption"><b>Fig. 5.17</b> The influence of electronegative substituents on <sup>13</sup>C chemical shifts (see also <a href="Chapter4.xhtml#fig4.9">Fig. 4.9</a>).</p>
+</figure>
+
+</aside>
+
+<h3 class="h3">Chemical shifts and resonance intensities</h3>
+<p class="noindent">As mentioned above, the chemical shift range for the carbon-13 nucleus is much greater than that of the proton, covering a typical range of 0&#8211;220 ppm, again with the shift of tetramethylsilane assigned as 0.0 ppm (<a href="#fig5.16">Fig. 5.16</a>). A useful &#8216;rule-of-thumb&#8217; for estimating chemical shifts is to multiply the shift of a proton in an equivalent chemical environment by 20.</p>
+<figure style="width:70%;" id="fig5.16"><img src="../images/he_9780198557555_graphic_0111.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="width:100%"><b>Fig. 5.16</b> Typical <sup>13</sup>C shift ranges for various chemical environments.</figcaption>
+</figure>
+<p class="indent">For example, aromatic protons resonate at around 7 ppm whereas aromatic carbons are to be found around 140 ppm. Furthermore, the general arguments used in considering proton chemical shifts, such as the deshielding and hence high frequency shifts caused by electronegative substituents (<a href="#fig5.17">Fig 5.17</a>) or the shifts caused by mesomeric effects (<a href="#fig5.18">Fig. 5.18</a> and see <a href="Chapter4.xhtml#fig4.10">Fig. 4.10</a>) can also be applied to carbon chemical shifts. Hybridization also plays an important role in carbon-13 NMR, and<a id="page_63" class="page">Page 63, 5 Nuclear magnetic resonance spectroscopy: further topics</a> spectra can be conveniently divided into regions corresponding to sp<sup>3</sup>, sp<sup>2</sup> and sp types although exceptions to this do occur. Sp<sup>3</sup> carbons tend to resonate at 0&#8211;50 ppm in the absence of electronegative substituents, but may be as high as 90 ppm with such substitutions (<a href="#fig5.19">Fig. 5.19</a>). The sp<sup>2</sup> carbons in alkenes and aromatics resonate in the 100&#8211;160 ppm region, whereas those of carbonyls are found, characteristically, at higher frequencies in the 160&#8211;220 ppm region. It is possible to further differentiate between types of carbonyl carbons; ketones and aldehydes generally occur above 180 ppm whereas acids, esters and amides fall below this. In all cases, conjugation of the C = 0 bond reduces the partial positive charge on the carbon and causes shifts to lower frequency. The sp carbons of alkynes resonate around 80&#8211;100 ppm, but are less frequently encountered. Extensive tables are available which predict carbon shifts for various substitution patterns (see Appendices also), and computer programs are available that essentially automate this process.</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure id="fig5.18"><img src="../images/he_9780198557555_graphic_0113.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.18</b> The influence of mesomeric effects on <sup>13</sup>C chemical shifts (see also <a href="Chapter4.xhtml#fig4.10">Fig. 4.10</a>).</figcaption>
+</figure>
+</aside>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure id="fig5.19"><img src="../images/he_9780198557555_graphic_0114.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.19</b> Sp<sup>3</sup> carbons can resonate close to the &#8216;sp<sup>2</sup>&#8217; region if they carry a number of electronegative substituents.</figcaption>
+</figure>
+</aside>
+<p class="indent">One notable effect in carbon-13 NMR is the so-called &#947;-effect in which a resonance moves to lower frequency when substitution is made at the &#947; position relative to it (<a href="#fig5.20">Fig. 5.20</a>). This arises from van der Waals contacts with the substituent, and so has maximum effect for ring structures or alkenes where conformation is restricted, and may be useful in stereochemical analysis.</p>
+<p class="indent">Resonance intensities in <i>routine</i> carbon spectra are not as readily interpreted as those in proton NMR, and it is not usual to consider integrating spectra for even semi-quantitative analysis. This is due to three factors. The first is the unknown enhancement caused by the NOE which is unlikely to be the same for all resonances, the second is the long relaxation times of carbon nuclei (<i>T</i><sub>1</sub>s are often tens of seconds) so that populations are partially saturated to an unknown degree when the data are acquired and the third relates to the way in which the data is digitized, but lies beyond the scope of these discussions. Nevertheless, it is often possible to identify quaternary carbons as they usually have lower intensities than those bearing protons, largely due to the longer relaxation times of the non-protonated carbon.</p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure id="fig5.20"><img src="../images/he_9780198557555_graphic_0115.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.20</b> The <i>&#x03B3;</i>-effect causes low frequency shifts for <sup>13</sup>C resonances.</figcaption>
+</figure>
+</aside>
+<h3 class="h3">Determining multiplicities</h3>
+<p class="noindent">Despite the many advantages stated above for the broadband decoupling of protons, there is one major drawback,&#8212;all potentially useful information relating to heteronuclear coupling is lost. In particular, we are unable to determine whether the carbon resonance in question is that of a methyl, methylene, methine or quaternary functionality, which, in principle, could readily be obtained in a proton-coupled spectrum from the multiplicity arising from the large one-bond couplings, that is, quartet, triplet, doublet and singlet respectively (although further complicated by the significantly smaller long-range couplings). The traditional way to regain such information is termed <b><i>off-resonance decoupling</i></b> in which the proton decoupling frequency is placed to one end of the proton spectrum during data acquisition. This has the effect of removing the long-range couplings but <i>partially</i> retaining the one-bond couplings, which are scaled down by an unknown factor yet still retain their distinctive multiplicities. Clearly this still suffers from many of the disadvantages of the fully proton-coupled spectrum.</p>
+<a id="page_64" class="page" style="width:70%;">Page 64, 5 Nuclear magnetic resonance spectroscopy: further topics</a>
+<figure id="fig5.21"><img src="../images/he_9780198557555_graphic_0116.jpg" alt="images"/>
+<figcaption style="width:100%"><b>Fig. 5.21</b> DEPT and broadband decoupled spectra of menthol. Carbon multipliciltes can be readily determined by inspection of the signal phases in the three DEPTexperiments. A single DEPT-135 experiment is often sufficient in the absence of methyl groups.</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<figure id="tab5.1">
+<p class="tcaption"><b>Table. 5.1</b> <i>Relative</i> signal phases observed in DEPT experiments. Carbons that carry no protons give no response. The numbers 45&#176;, 90&#176; and 135&#176; describe the excitation angle of the final proton pulse in the pulse sequence (not shown).</p>
+<table style="width:100%;">
+<tr>
+<td class="td5">&#160;</td>
+<td class="td1-c">CH</td>
+<td style="padding-left:0.5em;" class="td1-c">CH<sub>2</sub></td>
+<td style="padding-left:0.5em;" class="td1-c">CH<sub>3</sub></td>
+</tr>
+<tr>
+<td class="td5">DEPT-45</td>
+<td class="td1-c">+</td>
+<td class="td1-c">+</td>
+<td class="td1-c">+</td>
+</tr>
+<tr>
+<td class="td3">DEPT-90</td>
+<td class="td3-c">+</td>
+<td class="td3-c">0</td>
+<td class="td3-c">0</td>
+</tr>
+<tr>
+<td class="td1">DEPT-135</td>
+<td class="td2-c">+</td>
+<td class="td2-c">&#8211;</td>
+<td class="td2-c">+</td>
+</tr>
+</table>
+</figure>
+</aside>
+<p class="indent">The modern way to determine carbon multiplicities is <i>via</i> <b><i>spectrum editing</i></b> methods. In these techniques, a multi-pulse sequence manipulates the spin systems so that spectra can be acquired with broadband decoupling but in which the resonances display signal phases, that is, positive or negative signal intensities, which are dependent on the number of directly attached protons. One technique now used routinely in organic chemistry is the <b><i>DEPT</i></b> (Distortionless Enhancement by Polarization Transfer) experiment for which the signal phases are presented in <a href="#tab5.1">Table 5.1</a>. An analysis of the three DEPT spectra, along with the broadband decoupled spectrum, is usually sufficient to determine all carbon multiplicities (<a href="#fig5.21">Fig. 5.21</a>), and is invaluable in the routine interpretation of carbon spectra. Alternatively the spectra may be combined by computer manipulation to present sub-spectra for CH, CH2 and CH3 resonances only, hence the term spectrum editing.</p>
+</section>
+<section epub:type="chapter" id="ch5.5">
+<h2 class="h2">5.5<span class="space">&#160;</span>Two-dimensional NMR spectroscopy</h2>
+<p class="noindent">The spectra that have been considered so far are all termed one- dimensional spectra because all information (chemical shifts and scalar couplings) is displayed along only one frequency axis. We now wish to consider a class of experiments, two-dimensional (2D) spectroscopy, in which information exists along a second frequency axis in addition to the first. Responses in the 2D plot enable us to correlate resonances on the first axis with those on the second, and this provides us with information on how spins are related to one another within a molecule. Generally, correlations in the 2D plot indicate the presence of scalar coupling, dipolar coupling (an NOE) or chemical exchange between spins, depending on the exact nature of the experiment. The first of these has most importance in organic chemistry, and shall be considered here, in two slightly different guises, but first we consider how a two-dimensional spectrum arises.</p>
+<h3 class="h3">Introduction to the second dimension</h3>
+<aside class="abc" style="margin-top:5em;" epub:type="sidebar">
+<figure id="fig5.22"><img src="../images/he_9780198557555_graphic_0117.jpg" alt="images"/>
+<figcaption style="width:100%"><b>Fig. 5.22</b> Schematic illustration of all two-dimensional NMR experiments. Four periods can be identified; P, preparation, E, evolution, M, mixing and D, detection.</figcaption>
+</figure>
+</aside>
+<p class="noindent">All two-dimensional experiments follow the scheme of <a href="#fig5.22">Fig. 5.22</a>. The<a id="page_65" class="page">Page 65, 5 Nuclear magnetic resonance spectroscopy: further topics</a> preparation, P, and mixing, M, segments are pulses, or clusters of pulses of some description, whilst the evolution, E, and detection, D, segments are time periods in which the magnetization simply precesses. During the detection period, the free induction decay (FID) is collected to produce one time-domain data set, as in the one-dimensional experiment (<a href="#ch5.1">Section 5.1</a>), which may be Fourier transformed to generate one frequency axis. The evolution period is incremented sequentially throughout the experiment and thus creates a second time-domain, which ultimately leads to the second frequency axis. To see how this is achieved, we consider the simple case for which P and M are both 90&#176; pulses (indeed, this was the first two- dimensional experiment proposed, <a href="#fig5.23">Fig. 5.23</a> and see below) and we shall assume our sample contains only identical, uncoupled spins.</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<figure id="fig5.23"><img src="../images/he_9780198557555_graphic_0118.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.23</b> A simple 2D NMR experiment in which preparation and mixing are carried out by single 90&#176; pulses.</figcaption>
+</figure>
+</aside>
+<p class="indent">Following the fate of our single magnetization vector (<a href="#fig5.24">Fig 5.24</a>) we see the first 90&#176; pulse places the magnetization in the <i>x&#8211;y</i> plane, after which it precesses for a time period, <i>t</i><sub>1</sub> (not to be confused with <i>T</i><sub>1</sub> for the longitudinal relaxation time, <a href="#ch5.2">Section 5.2</a>) according to its characteristic Larmor frequency. The second 90&#176; pulse rotates any component of the magnetization remaining along the y-axis onto the &#8212;<i>z</i>-axis, but leaves the <i>x</i>-magnetization component unaffected as the Bi field along <i>x</i> has no influence on <i>x</i>-magnetization. The remaining <i>x</i>-magnetization is then detected as it continues to precess, and the resulting FID stored, whereas the <i>z</i>-magnetization is unobservable (<a href="#ch5.1">Section 5.1</a>).</p>
+<figure id="fig5.24"><img src="../images/he_9780198557555_graphic_0119.jpg" alt="images"/>
+<figcaption style="width:100%"><b>Fig. 5.24</b> The fate of a single magnetization vector during our simple 2D pulse sequence. Following excitation, the vector evolves at a frequency, <i>&#957;</i>, and through an angle 2<i>&#960;&#957;t</i><sub>1</sub> radians prior to the second pulse. Only magnetization in the x&#8211;y plane is detected.</figcaption>
+</figure>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<figure id="fig5.25"><img src="../images/he_9780198557555_graphic_0120.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.25</b> The generation of a 2D data set.The experiment is repeated with the <i>t</i><sub>1</sub> time period incremented each time and the FIDs stored.</figcaption>
+</figure>
+</aside>
+<p class="indent">To generate another time-domain, the experiment is simply repeated with increasing values of <i>t</i><sub>1</sub>, starting from <i>t</i><sub>1</sub> = 0, and the FID for each experiment stored separately (<a href="#fig5.25">Fig. 5.25</a>). With zero evolution time, the two sequential 90&#176; pulses place the initial +<i>z</i>-magnetization directly onto the &#8211;<i>z</i> axis, so that the first FID contains no signal. As <i>t</i><sub>1</sub> becomes significant, <i>x</i>-magnetization has time to develop, so that later FIDs will contain signals. If each of the collected FIDs were transformed, the result would be that of <a href="#fig5.26">Fig. 5.26a</a>. As stated, the first spectrum would contain no signal, maximum peak intensity is obtained when the magnetization vector has evolved through 90&#176; (all magnetization on +<i>x</i> axis, none on <i>z</i> following the second pulse), passes through a null when the vector has evolved through 180&#176; (all magnetization on the +<i>z</i> axis following the second pulse) and so on. In later FIDs, the intensity of the detected signal will decrease as relaxation during the <i>t</i><sub>1</sub> period causes the magnetization vector to decay. Thus, if we follow the intensity of the resonance with respect to the <i>t</i><sub>1</sub> time period, we see it simply represents a decaying <a id="page_66" class="page">Page 66, 5 Nuclear magnetic resonance spectroscopy: further topics</a>oscillating signal (<a href="#fig5.26">Fig. 5.26b</a>); <i>it is a free induction decay for the t</i><sub>1</sub> <i>time period</i>. The frequency of the oscillation is the frequency of precession, &#957;, during the evolution period; we say the detected magnetization has been <b><i>frequency labelled</i></b>.</p>
+<figure style="width:70%;" id="fig5.26"><img src="../images/he_9780198557555_graphic_0121.jpg" alt="images"/>
+<figcaption style="width:100%"><b>Fig. 5.26</b> Fourier transformation of the FIDs collected during the 2D experiment yields a series of 1D spectra (a). Following the intensity of this resonance, we see it varies sinusoidally and decays with time (b).</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<figure id="fig5.27"><img src="../images/he_9780198557555_graphic_0122.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.27</b> Schematic representation of a 2D spectrum for a sample containing identical, uncoupled protons.</figcaption>
+</figure>
+</aside>
+
+<p class="indent">We may now Fourier transform the FIDs with respect to <i>t</i><sub>1</sub> to obtain another frequency dimension, so producing a two-dimensional frequency plot (<a href="#fig5.27">Fig. 5.27</a>). The basic procedure of incrementing a time period and repeating the experiment is an operation fundamental to all 2D NMR experiments.</p>
+<p class="indent">The schematic spectrum of <a href="#fig5.27">Fig 5.27</a> in itself provides us with no information we could not otherwise obtain from the one-dimensional spectrum, as the information in both dimensions is identical, simply the chemical shift of the single resonance. Two-dimensional NMR becomes useful in the presence of different spins when the information represented in one dimension correlates with <i>different</i> information in the other, as we shall see below.</p>
+<h3 class="h3">Proton-proton correlation</h3>
+<p class="noindent">As has been discussed in the previous chapter, the identification of coupling between nuclei is crucial in defining a molecular structure. Two-dimensional proton-proton chemical shift correlation spectroscopy (<b><i>COSY</i></b>) provides a map of all coupling networks between protons in a molecule in a single experiment. Because we are correlating like spins, this is one example of <b><i>homonuclear correlation spectroscopy</i>.</b> The COSY sequence is actually that described above (<a href="#fig5.23">Fig. 5.23</a>), and, although it was the first 2D experiment proposed (in 1971) it is still the most widely used. Now let us consider, briefly, the result of performing the COSY experiment on two groups of spins, A and X, that are coupled to each other. Taking the frequency labelling part described above to be implicit, the additional feature in this instance is the action of the second 90&#176; pulse on the coupled spins. This is able to transfer magnetization partially from one spin to its <i>J</i>-coupled partner, so that magnetization which evolved as A magnetization at frequency &#957;<sub>A</sub> in <i>t</i><sub>1</sub> then evolves as X magnetization at frequency &#957;<sub>X</sub> during <i>t</i><sub>2</sub>. This process is known formally as <b><i>coherence transfer</i></b> and is only possible because of the presence of scalar coupling between spins. Similarly, the reverse process can occur, that is magnetization transfer<a id="page_67" class="page">Page 67, 5 Nuclear magnetic resonance spectroscopy: further topics</a> from X to A, and in addition some part of the original magnetization will not be transferred by the pulse so will precess at the same frequency in both time periods. Thus, two types of response may be identified in the two- dimensional plot (<a href="#fig5.28">Fig. 5.28</a>). The first, known as <b><i>diagonal peaks</i></b>, represents magnetization that has evolved at the same frequency in both time periods, and provides no new information (the hypothetical line corresponding to &#957;<sub>1</sub> = &#957;<sub>2</sub> is referred to as the <b><i>diagonal</i></b>). The second, known as <b><i>cross peaks</i></b> (or off-diagonal peaks), represents magnetization that has evolved at two different frequencies in the two time periods. These provide the results of interest, as their presence is direct evidence for coupling between the protons that resonate at the two correlated chemical shifts. Because magnetization may be transferred either way (A&#8594;X and X&#8594;A) cross peaks are symmetrical about the diagonal.</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure id="fig5.28"><img src="../images/he_9780198557555_graphic_0123.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 5.28</b> Schematic representation of a 2D spectrum for a coupled, two-spin AX system. Filled circles represent diagnonal-peaks (&#957;<sub>1</sub> = &#957;<sub>2</sub>), open circles, cross-peaks (&#957;<sub>1</sub> &#8800; &#957;<sub>2</sub>). Above is a schematic representation of the 1D spectrum illustrating the doublet fine-structure of each resonance.</figcaption>
+</figure>
+</aside>
+
+<figure id="fig5.29"><img src="../images/he_9780198557555_graphic_0124.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="width:100%"><b>Fig. 5.29</b> 2D proton-proton shift correlation spectrum (COSY) of the molecule shown (excluding the phenyl groups). The spectrum is conventionally presented as a contour plot in which correlations between protons can be traced in a step-wise manner.The fine-structure within the crosspeaks is due to partially resolved spin-spin couplings.</figcaption>
+</figure>
+<p class="indent">The use of the COSY experiment allows us to rapidly determine the coupling pathways within even relatively complex molecules, by correlating the chemicals shifts of coupled spins in a stepwise manner. An example and its interpretation is presented in <a href="#fig5.29">Fig. 5.29</a>. Similar information can, in <a id="page_68" class="page">Page 68, 5 Nuclear magnetic resonance spectroscopy: further topics</a>principle, be obtained from the spin decoupling experiment presented in <a href="Chapter4.xhtml#ch4.4">Section 4.4</a>. However, decoupling requires the irradiated signal to be well resolved from others in the spectrum, which is often not the case. In the COSY experiment such selectivity is not required and the cross-peak is characterized by two frequencies, so the likelihood of peak overlap in two dimensions is considerably less. Moreover, each decoupling experiment provides information on coupling to <i>only one</i> proton (the irradiated proton) whereas the COSY experiment identifies all couplings in a single shot and is, therefore, preferred in all but the simplest cases.</p>
+<figure id="fig5.30"><img src="../images/he_9780198557555_graphic_0126.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="width:100%"><b>Fig. 5.30</b> 2D proton-carbon shift correlation spectrum of menthol. The <sup>1</sup>H&#8211;<sup>13</sup>C correlation spectrum lacks a diagonal and is not symmetrical because different frequencies are displayed in each dimension. Only cross peaks are observed and these readily correlate a carbon with its directly bonded proton(s).</figcaption>
+</figure>
+
+<h3 class="h3">Proton-carbon correlation</h3>
+<p class="noindent">The COSY experiment described above can be modified so as to provide evidence of coupling between protons and heteronuclei, so-called <b><i>hetero-nuclear chemical shift correlation spectroscopy</i></b> (often referred to as hetero-COSY or <b><i>HMQC</i></b>). In organic chemistry we are most likely to be interested in correlating carbon nuclei with their directly attached protons (<a href="#fig5.30">Fig. 5.30</a>). In this manner, assignments obtained from the analysis of proton spectra may then be transferred directly onto the carbon spectrum. Alternatively, the extra dispersion gained by spreading the proton spectrum along the <sup>13</sup> C dimension of the two-dimensional spectrum, may assist in the interpretation of the proton spectrum itself.</p>
+</section>
+<section epub:type="chapter" id="ch5.6">
+<a id="page_69" class="page" style="width:70%;">Page 69, 5 Nuclear magnetic resonance spectroscopy: further topics</a>
+<h2 class="h2">5.6<span class="space">&#160;</span>Exercises</h2>
+<p class="noindent"><a href="Exercise_answers.xhtml#exe5.1">1</a>.<span class="space">&#160;</span>Assign the <sup>13</sup> C spectrum of ethyl <i>p</i>-tolylacetate using the spectra shown in <a href="#fig5.14">Fig. 5.14</a>.</p>
+<p class="noindent">2.<span class="space">&#160;</span>An unknown compound has a molecular formular of C<sub>7</sub>H<sub>10</sub>O and gives responses in its <sup>13</sup>C spectra as summarized below. Use these data to assign the resonances as C, CH, CH<sub>2</sub> and CH<sub>3</sub> groups and, given that the molecule absorbs strongly in the infra-red region at 1670 cm<sup>&#8211;1</sup>, suggest a possible structure for this molecule.</p>
+<p class="noindent">&#160;</p>
+<table style="width:70%">
+<tr>
+<td class="td5">&#160;</td>
+<td class="td1-c">1</td>
+<td class="td1-c">2</td>
+<td class="td1-c">3</td>
+<td class="td1-c">4</td>
+<td class="td1-c">5</td>
+<td class="td1-c">6</td>
+<td class="td1-c">7</td>
+</tr>
+<tr>
+<td class="td5"><sup>13</sup>CShift/ppm</td>
+<td class="td1-c">24</td>
+<td class="td1-c">26</td>
+<td class="td1-c">32</td>
+<td class="td1-c">38</td>
+<td class="td1-c">127</td>
+<td class="td1-c">162</td>
+<td class="td1-c">205</td>
+</tr>
+<tr>
+<td class="td3">DEPT-45</td>
+<td class="td3-c">+</td>
+<td class="td3-c">+</td>
+<td class="td3-c">+</td>
+<td class="td3-c">+</td>
+<td class="td3-c">+</td>
+<td class="td3-c">0</td>
+<td class="td3-c">0</td>
+</tr>
+<tr>
+<td class="td3">DEPT-90</td>
+<td class="td3-c">0</td>
+<td class="td3-c">0</td>
+<td class="td3-c">0</td>
+<td class="td3-c">0</td>
+<td class="td3-c">+</td>
+<td class="td3-c">0</td>
+<td class="td3-c">0</td>
+</tr>
+<tr>
+<td class="td1">DEPT-135</td>
+<td class="td2-c">&#8211;</td>
+<td class="td2-c">+</td>
+<td class="td2-c">&#8211;</td>
+<td class="td2-c">&#8211;</td>
+<td class="td2-c">+</td>
+<td class="td2-c">0</td>
+<td class="td2-c">0</td>
+</tr>
+</table>
+<p class="noindent">&#160;</p>
+<p class="noindent">Chemical shifts were determined from the broadband decoupled carbon spectrum, and DEPT responses are given as: + = positive signal phase, &#8211; = negative signal phase and 0 = no signal.</p>
+<p class="noindent">3.<span class="space">&#160;</span>The table below summarizes the results of NOE difference experiments performed on the molecule shown. Using these results, and the knowledge that the C5 stereochemistry is as shown, determine the stereochemistry at the C2 and C3 positions.</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<figure><img src="../images/he_9780198557555_graphic_0127.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">&#160;</p>
+<table style="width:70%">
+<tr>
+<td class="td5">&#160;</td>
+<td class="td1-c" colspan="4">NOE enhancements (%)</td>
+</tr>
+<tr>
+<td class="td3-c">Saturated Proton</td>
+<td class="td1-c">H2</td>
+<td class="td1-c">H3</td>
+<td class="td1-c">H5</td>
+<td class="td1-c">CH<sub>3</sub></td>
+</tr>
+<tr>
+<td class="td1-c">H2</td>
+<td class="td1-c">X</td>
+<td class="td1-c">1.2</td>
+<td class="td1-c">2.6</td>
+<td class="td1-c">3.6</td>
+</tr>
+<tr>
+<td class="td3-c">H3</td>
+<td class="td3-c">2.9</td>
+<td class="td3-c">X</td>
+<td class="td3-c">&#8211;</td>
+<td class="td3-c">2.6</td>
+</tr>
+<tr>
+<td class="td3-c">H5</td>
+<td class="td3-c">3.6</td>
+<td class="td3-c">&#8211;</td>
+<td class="td3-c">X</td>
+<td class="td3-c">&#8211;</td>
+</tr>
+<tr>
+<td class="td2-c">CH<sub>3</sub></td>
+<td class="td2-c">9.4</td>
+<td class="td2-c">7.9</td>
+<td class="td2-c">&#8211;</td>
+<td class="td2-c">X</td>
+</tr>
+</table>
+<p class="noindent">&#160;</p>
+<h3 class="h3">Further reading</h3>
+<p class="noindent">1.<span class="space">&#160;</span>A. E. Derome, <i>Modern NMR Techniques for Chemistry Research</i>, Pergamon Press, Oxford, 1987.</p>
+<p class="noindent">2.<span class="space">&#160;</span>J. K. M. Sanders and B. K. Hunter, <i>Modern NMR Spectroscopy,&#8212;A Guide for Chemists</i>, 2nd Ed., Oxford University Press, Oxford, 1993.</p>
+<p class="noindent">3.<span class="space">&#160;</span>R. K. Harris, <i>Nuclear Magnetic Resonance Spectroscopy</i>, Longman, Harlow, 1986.</p>
+<p class="noindent">4.<span class="space">&#160;</span>D. Neuhaus and M. P. Williamson, <i>The Nuclear Overhauser Effect in Structural and Conformational Analysis</i>, VCH Publishers, Weinheim, 1989.</p>
+<p class="noindent">5.<span class="space">&#160;</span>H. Friebolin, <i>One and Two-Dimensional NMR Spectroscopy</i>, 2nd. Ed., VCH Publishers, Weinheim, 1993.</p>
+</section>
+</section>
+</body>
+</html>

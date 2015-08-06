@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Inorganic Spectroscopic Methods</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div>
+<section epub:type="chapter">
+<a id="page_30" class="page" style="width:60%;">Page 30, Chapter 2 Vibrational spectroscopy</a>
+<h1 class="chaptitle">3<span class="space">&#160;</span>Resonance spectroscopy</h1>
+<section  id="sec3.1" epub:type="chapter">
+<h2 class="h2">3.1 Nuclear magnetic resonance (NMR)</h2>
+<p class="noindent">There can be little doubt that nuclear magnetic resonance (NMR) spectroscopy is probably the single most widely used and important physical technique available to the modem practical chemist. This is because of its wide applicability, its relative ease of use, and the amount of chemical and structural information that can be obtained from its use. The technique is frequently associated only with proton and carbon nuclei but there are many other elements to which it can potentially be applied, as shown in <a href="Chapter03.xhtml#fig3.1">Fig. 3.1</a>. However, for a number of reasons, some of which will be mentioned later, not all of these nuclei are equally suitable for study.</p>
+<aside class="right" style="margin-top:-12em;" epub:type="sidebar">
+<figure class="figure-aside-left">
+<img src="../images/fig3.1.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig3.1"><b>Fig. 3.1</b> NMR active nuclei in the periodic table.</figcaption>
+</figure>
+</aside>
+<section id="sec3.1.1" epub:type="chapter">
+<h3 class="h3">Basic principles</h3>
+<p class="noindent">A nucleus will possess a magnetic moment when its spin quantum number, <i>I</i>, is non-zero. In the absence of a magnetic field all the magnetic states of that nucleus will be degenerate. However, this is not the case if the nucleus is placed in an external magnetic field when a number of allowed orientations, given by <a href="#eq3.1">eqn 3.1</a>, will be adopted.</p>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:10%"/>
+</colgroup>
+<tr>
+<td id="eq3.1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>m</mi>
+  <mo>=</mo>
+  <mi>I</mi>
+  <mo>, </mo>
+  <mi>I</mi>
+  <mo>&#x2212;<!-- - --></mo>
+  <mn>1</mn>
+  <mo>, </mo>
+  <mi>I</mi>
+  <mo>&#x2212;<!-- - --></mo>
+  <mn>2</mn>
+  <mo>, </mo>
+  <mo>.</mo>
+  <mo>.</mo>
+  <mo>.</mo>
+  <mo>, </mo>
+  <mn>0</mn>
+  <mo>, </mo>
+  <mo>.</mo>
+  <mo>.</mo>
+  <mo>.</mo>
+  <mo>, </mo>
+  <mo>&#x2212;<!-- - --></mo>
+  <mi>I</mi>
+  <mo>+</mo>
+  <mn>1</mn>
+  <mo>, </mo>
+  <mo>&#x2212;<!-- - --></mo>
+  <mi>I</mi>
+</math></td>
+<td style="text-align:right">(3.1)</td>
+</tr>
+</table>
+<p class="indent">This results in a total of (2<i>I</i> + 1) possible orientations, from which transitions resulting in a change of &#x0394;<i>m</i> = &#x00B1;1 are allowed. It is this splitting of the otherwise degenerate energy levels in a magnetic field that makes NMR spectroscopy possible.</p>
+<p class="indent">The most widely studied nuclei (<sup>l</sup>H, <sup>l3</sup>C, <sup>19</sup>F, <sup>31</sup>P) all possess a spin quantum number of &#x00BD;, and so when these nuclei are placed in a magnetic field two spin states arise (<i>m</i> = +&#x00BD;, <i>m</i> = &#x2013;&#x00BD;). A single transition between these two energy levels is possible, as shown in <a href="Chapter03.xhtml#fig3.2">Fig. 3.2</a>. The difference in energy between these two states is given by</p>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:10%"/>
+</colgroup>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi mathvariant="normal">&#x25B3;<!-- ? --></mi>
+  <mi>E</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mi>&#x03B3;<!-- ? --></mi>
+      <mi>h</mi>
+      <msub>
+        <mi>B</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mn>0</mn>
+        </mrow>
+      </msub>
+    </mrow>
+    <mrow>
+      <mn>2</mn>
+      <mi>&#x03C0;<!-- p --></mi>
+    </mrow>
+  </mfrac>
+</math></td>
+<td style="text-align:right">(3.2)</td>
+</tr>
+</table>
+<aside class="right" style="margin-top:-12em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig3.2.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig3.2"><b>Fig. 3.2</b> Energy levels for a spin <i>I</i> = &#x00BD; nucleus in an externally applied magnetic field.</figcaption>
+</figure>
+</aside>
+<p class="indent">where <i>B</i><sub>0</sub> is the strength of the applied magnetic field, and <i>&#x03B3;</i> the gyromagnetic ratio for the nucleus under study (see <a href="Chapter03.xhtml#tab3.1">Table 3.1</a>). The frequency of radiation that corresponds to this energy is called the <i>resonance frequency</i> and is given by <a href="#eq3.3">eqn 3.3</a></p>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:10%"/>
+</colgroup>
+<tr>
+<td id="eq3.3"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mn>2</mn>
+  <mi>&#x03C0;<!-- p --></mi>
+  <mi>v</mi>
+  <mo>=</mo>
+  <mi>&#x03B3;<!-- ? --></mi>
+  <msub>
+    <mi>B</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>0</mn>
+    </mrow>
+  </msub>
+</math></td>
+<td style="text-align:right">(3.3)</td>
+</tr>
+</table>
+<a id="page_31" class="page" style="width:60%;">Page 31, Chapter 2 Vibrational spectroscopy</a>
+<p class="noindent">For the type of magnetic field strengths usually applied (2&#x2013;14 tesla) this corresponds to radiation within the radio-frequency part of the electromagnetic spectrum.</p>
+<p class="indent">The ratio of the equilibrium populations in the upper and lower states is related to their energy difference and is given by the Boltzmann distribution. As we saw earlier, for a set of protons which resonate at 200 MHz at room temperature, the population ratio <i>n</i><sub>upper</sub>/<i>n</i><sub>lower</sub> is 0.999975, that is a difference of about 1 in 10, 000. Because of the small difference in populations the NMR technique, from a spectroscopic point of view, is a relatively weak effect.</p>
+</section>
+<section id="sec3.1.2" epub:type="chapter">
+<h3 class="h3">Chemical shift</h3>
+<p class="noindent">Even though a magnetic field of <i>B</i><sub>0</sub> is applied to a sample, the effective magnetic field (<i>B</i><sub>eff</sub>) experienced by the nucleus will not necessarily be the same, since the motion of the electrons surrounding the nucleus will result in induced magnetic fields. The nucleus is therefore said to be <i>shielded</i> from the external field by its surrounding electrons, </p>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:10%"/>
+</colgroup>
+<tr>
+<td id="eq3.4"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msub>
+    <mi>B</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>eff</mn>
+    </mrow>
+  </msub>
+  <mo>=</mo>
+  <msub>
+    <mi>B</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>0</mn>
+    </mrow>
+  </msub>
+  <mo stretchy="false">(</mo>
+  <mn>1</mn>
+  <mo>&#x2212;<!-- - --></mo>
+  <mi>&#x03C3;<!-- s --></mi>
+  <mo stretchy="false">)</mo>
+</math></td>
+<td style="text-align:right">(3.4)</td>
+</tr>
+</table>
+<p class="noindent">where <i>&#x03C3;</i> is the <i>shielding constant</i>. The shielding constant will vary as the local environment changes. This will result in the energy and hence frequency, that need to be applied to cause a transition, altering, and therefore the resonance frequency is characteristic of the environment around the nucleus.</p>
+<p class="indent">The effects of the shielding constant are small and since the absolute value of <i>&#x03C3;</i> is not usually required it is more usual for the difference between the resonance frequency of the nucleus in the unknown (<i>v</i><sub>obs</sub>) and in a standard, or reference, compound (<i>v</i><sub>ref</sub>) to be determined. This difference is very small so is multiplied by a million. The frequency will also vary depending on the strength of the magnetic field so this quantity is divided by the frequency for the <i>standard compound</i> to provide the <i>&#x03B4;</i> or ppm (parts per million) scale which is a dimensionless quantity independent of the applied magnetic field.</p>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:10%"/>
+</colgroup>
+<tr>
+<td id="eq3.5"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>&#x03B4;<!-- d --></mi>
+  <mo>=</mo>
+  <msup>
+    <mn>10</mn>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>6</mn>
+    </mrow>
+  </msup>
+  <mo>&#x00D7;</mo>
+  <mo stretchy="false">(</mo>
+  <mfrac>
+    <mrow>
+      <msub>
+        <mi>v</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>o</mi>
+          <mi>b</mi>
+          <mi>s</mi>
+        </mrow>
+      </msub>
+      <mo>&#x2212;<!-- - --></mo>
+      <msub>
+        <mi>v</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>r</mi>
+          <mi>e</mi>
+          <mi>f</mi>
+        </mrow>
+      </msub>
+    </mrow>
+    <msub>
+      <mi>v</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi>r</mi>
+        <mi>e</mi>
+        <mi>f</mi>
+      </mrow>
+    </msub>
+  </mfrac>
+  <mo stretchy="false">)</mo>
+</math></td>
+<td style="text-align:right">(3.5)</td>
+</tr>
+</table>
+<p class="indent">Since the chemical shift of the reference compound is defined as 0 ppm we can convert between the chemical shift (ppm) and frequency (Hz) scales and vice versa using the relationship</p>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:10%"/>
+</colgroup>
+<tr>
+<td id="eq3.6"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>&#x03B4;<!-- d --></mi>
+  <mo>=</mo>
+  <msup>
+    <mn>10</mn>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>6</mn>
+    </mrow>
+  </msup>
+  <mo>&#x00D7;</mo>
+  <mfrac>
+    <mrow>
+      <mi mathvariant="normal">&#x25B3;<!-- ? --></mi>
+      <mi>v</mi>
+    </mrow>
+    <mrow>
+      <mi>s</mi>
+      <mi>p</mi>
+      <mi>e</mi>
+      <mi>c</mi>
+      <mi>t</mi>
+      <mi>r</mi>
+      <mi>o</mi>
+      <mi>m</mi>
+      <mi>e</mi>
+      <mi>t</mi>
+      <mi>e</mi>
+      <mi>r</mi>
+      <mi>f</mi>
+      <mi>r</mi>
+      <mi>e</mi>
+      <mi>q</mi>
+      <mi>u</mi>
+      <mi>e</mi>
+      <mi>n</mi>
+      <mi>c</mi>
+      <mi>y</mi>
+    </mrow>
+  </mfrac>
+</math></td>
+<td style="text-align:right">(3.6)</td>
+</tr>
+</table>
+<p class="indent">For example, two peaks separated by 0.5 ppm on a spectrometer operating at 200 MHz correspond to a resonance frequency difference of:</p>
+<a id="page_32" class="page" style="width:60%">Page 32, Chapter 2 Vibrational spectroscopy</a>
+<p class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi mathvariant="normal">&#x25B3;<!-- ? --></mi>
+  <mi>v</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+  <mo stretchy="false">(</mo>
+      <mi>&#x03B4;<!-- d --></mi>
+      <mo>&#x00D7;</mo>
+
+      <mi>spectrometer frequency</mi>
+  <mo stretchy="false">)</mo>
+    </mrow>
+    <msup>
+      <mn>10</mn>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mn>6</mn>
+      </mrow>
+    </msup>
+  </mfrac>
+
+</math>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mn>0.5</mn>
+      <mi>p</mi>
+      <mi>p</mi>
+      <mi>m</mi>
+      <mo>&#x00D7;</mo>
+      <mn>200</mn>
+      <mi>M</mi>
+      <mi>H</mi>
+      <mi>z</mi>
+    </mrow>
+    <msup>
+      <mn>10</mn>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mn>6</mn>
+      </mrow>
+    </msup>
+  </mfrac>
+</math>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mo>=</mo>
+  <mn>100</mn>
+  <mi>H</mi>
+  <mi>z</mi>
+</math>
+</p>
+<p class="indent">By convention, every nucleus has an independent reference compound used to define 0 ppm. For most nuclei this is a single internationally accepted reference compound. These are usually chosen because they are chemically stable and inert and possess one, or preferably more, nuclei in well-defined chemical environments. Some of the more commonly studied spin-&#x00BD; NMR nuclei are listed in <a href="Chapter03.xhtml#tab3.1">Table 3.1</a> along with their reference compounds and other relevant data. Corresponding details for nuclei with a spin greater than &#x00BD; are given in <a href="Chapter03.xhtml#tab3.5">Table 3.5</a>.</p>
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 3.1</b> Two peaks in a proton NMR spectrum recorded at 100 MHz occur at 4.1 and 4.2 ppm. What is their separation in Hertz?</p>
+</aside>
+<p class="indent">Different nuclei have different magnetogyric values (<i>&#x03B3;</i>) so different frequencies are needed for the nuclei to resonate, as defined by <a href="#eq3.3">eqn 3.3</a>. These resonant frequencies are usually separated by many MHz whilst the differences arising from chemical shifts are in the order of Hertz so there is little chance that the NMR spectrum of one nucleus will overlap or interfere with that of a second nucleus.</p>
+<figure class="figure-center-100">
+<img class="center" src="../images/tab3.1.jpg" alt="images"/>
+</figure>
+<p class="tablecaption-center-100" id="tab3.1"><b>Table 3.1</b> NMR properties of some commonly encountered spin &#x00BD; nuclei.</p>
+<p class="indent">By considering <a href="#eq3.3">eqns 3.3</a> and <a href="#eq3.4">3.4</a> it should be clear that when the degree of shielding, <i>&#x03C3;</i>, increases then <i>B</i><sub>eff</sub> decreases and hence the resonance frequency, <i>v</i>, decreases. This in turn means that a peak is shifted to a lower chemical shift, or ppm, value. Conversely, if a peak shifts to a more positive ppm value the degree of shielding of the nucleus under study has decreased, in other words the nucleus is more <i>deshielded.</i> For example, the position of the proton NMR signals for HI, HBr, HCl, and HF increase from &#x2013;13.5 to 1.9 ppm which means that the proton in HF is more deshielded compared with the proton in HI. This is as expected since fluorine is more electronegative than iodine and will therefore result in a greater decrease in electron density around the proton in HF when compared with the proton in HI.</p>
+<p class="indent">It is possible to describe the relative position of two peaks in an NMR spectrum in a number of different ways, which are outlined in <a href="Chapter03.xhtml#fig3.3">Fig. 3.3</a>. It is, however, preferable not to use the terms <i>upfield</i> and <i>downfield</i> since these <a id="page_33" class="page">Page 33, Chapter 2 Vibrational spectroscopy</a> suggest that the magnetic field is varying, which is not the case for modem spectrometers which work at a fixed magnetic field and vary the frequency.</p>
+<aside class="right" style="margin-top:-1em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig3.3.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig3.3"><b>Fig. 3.3</b> Nomenclature used to describe the relative positions of two peaks in an NMR spectrum.</figcaption>
+</figure>
+</aside>
+<p class="indent">The <sup>13</sup>C NMR spectrum of PMe<sub>3</sub> exhibits a peak at 20.5 ppm. Should the peak for the methyl carbons in NMe<sub>3</sub> be at higher or lower frequency? Nitrogen is more electronegative than phosphorus and, therefore, will withdraw more electron density from the carbon in NMe<sub>3</sub> compared with the phosphorus in PMe<sub>3</sub>. Thus, the carbon in the nitrogen-containing compound is more deshielded and so we expect a peak at higher frequency than for trimethylphosphine. The observed <sup>13</sup>C NMR peak for NMe<sub>3</sub> is at 47.5 ppm, at higher frequency as expected.</p>
+</section>
+<section id="sec3.1.3" epub:type="chapter">
+<h3 class="h3">Chemical environment</h3>
+<p class="noindent">Because the shielding of a nucleus is influenced by the type of atoms surrounding it and the bonding arrangements, the nuclei of a particular group in one molecule will resonate at a similar frequency in another molecule. Thus it is possible to use the chemical shift of a particular nucleus to determine the type of <i>chemical environment</i> around the nucleus under study. For the compound Si(CH<sub>2</sub>CH<sub>3</sub>)<sub>4</sub> there are two different chemical environments for the proton nuclei&#x2014;the CH<sub>3</sub> and CH<sub>2</sub> protons. However, within each group the protons are equivalent. Similarly, there are two <sup>13</sup>C nuclei chemical environments (the CH3 and CH2 carbons) but obviously only one silicon chemical environment.</p>
+<aside class="right" style="margin-top:-1em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 3.2</b> How many different <sup>1</sup>H chemical environments are there in: (i) H<sub>2</sub>O; (ii) CH<sub>3</sub>CH<sub>2</sub>SCH<sub>3</sub>; (iii) (CH<sub>3</sub>)Pt(P(Ch<sub>3</sub>)<sub>3</sub>)Cl<sub>2</sub>?</p>
+</aside>
+<p class="indent">The range of chemical shift values that are observed depends on the nucleus involved. A relatively small range of +20 to &#x2013;30 ppm is common for <sup>1</sup>H nuclei whilst larger ranges covering many hundreds of ppm chemical shift exist for heavier atoms. <a href="#fig3.4">Figures 3.4</a> and <a href="#fig3.5">3.5</a> and <a href="#tab3.2">Tables 3.2</a> and <a href="#tab3.3">3.3</a> give a few examples of typical chemical shifts for some of the more commonly encountered nuclei.</p>
+<figure class="figure-left-60">
+<img src="../images/fig3.4.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60" id="fig3.4"><b>Fig. 3.4</b> <sup>1</sup>H chemical shift ranges for some proton environments.</figcaption>
+</figure>
+<p class="indent">When compounds contain paramagnetic transition metals the above discussion on typical chemical shifts breaks down. In these cases peaks may not be observed at all, for reasons that are covered later, or their chemical</p>
+<aside class="right" style="margin-top:-18em;" epub:type="sidebar">
+<figure class="figure-aside-left">
+<img class="center" src="../images/tab3.2.jpg" alt="images"/>
+</figure>
+<p class="tablecaption-aside-left" id="tab3.2"><b>Table 3.2</b> NMR properties of some commonly encountered spin &#x00BD; nuclei.</p>
+</aside>
+<a id="page_34" class="page" style="width:60%">Page 34, Chapter 2 Vibrational spectroscopy</a>
+<p class="noindent">shift values may be far from the expected values. As an extreme example the proton resonance for a &#x03C0;-bound  C<sub>6</sub>H<sub>6</sub> ligand in a compound such as V(C<sub>6</sub>H<sub>6</sub>)<sub>2</sub> should occur in the range 3&#x2013;7 ppm, according to the data in <a href="Chapter03.xhtml#fig3.4">Fig. 3.4</a>, but because this compound contains V<sup>0</sup> which is a d<sup>5</sup> ion and hence is paramagnetic, the peak is actually observed nearer 300 ppm!</p>
+<figure class="figure-left-60">
+<img src="../images/fig3.5.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60" id="fig3.5"><b>Fig. 3.5.</b> <sup>13</sup>C chemical shift ranges for some carbon environments.</figcaption>
+</figure>
+<aside class="right" style="margin-top:-10em;" epub:type="sidebar">
+<figure class="figure-aside-left">
+<img src="../images/tab3.3.jpg" alt="images"/>
+</figure>
+<p class="tablecaption-aside-left" id="tab3.3"><b>Table 3.3</b> Representative <sup>31</sup>P NMR chemical shifts.</p>
+<p class="noindent">&#160;</p>
+<figure class="figure-aside-center">
+<img src="../images/fig3.6.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig3.6"><b>Fig. 3.6</b> The highly symmetric structure of C<sub>60</sub>.</figcaption>
+</figure>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<figure class="figure-aside-center">
+<img src="../images/fig3.7.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig3.7"><b>Fig. 3.7</b> The structure of IF<sub>5</sub>.</figcaption>
+</figure>
+</aside>
+<p class="indent">In many situations it is clear when nuclei are in different chemical environments. For example, in the complex [(C<sub>5</sub>H<sub>5</sub>)<sub>2</sub>RuH]<sup>+</sup> the <sup>1</sup>H nuclei in the C<sub>5</sub>H<sub>5</sub> ligand and the metal hydride are obviously chemically different and so separate peaks are observed in the proton NMR spectrum corresponding to these different environments. Conversely, in a highly symmetric molecule such as C<sub>60</sub>, shown in <a href="Chapter03.xhtml#fig3.6">Fig. 3.6</a>, all the carbon atoms are equivalent and the <sup>13</sup>C NMR spectrum shows just a single peak. However, there are occasions when the distinctions are more subtle.</p>
+<p class="indent">For example, consider the fluoride ligands of the IF<sub>5</sub> molecule, shown diagramatically in <a href="Chapter03.xhtml#fig3.7">Fig. 3.7</a>. The five fluoride ligands of this molecule are not all equivalent, four of them are in one plane and <i>trans</i> to a second fluoride, the fifth ligand is in a different plane and is <i>trans</i> to a lone-pair of electrons. It is not possible just by twisting and turning the molecule to swap the axial fluoride with any of the equatorial ligands, or vice versa. Thus there are two chemical environments for the fluorides, and we would expect to see two peaks in the <sup>19</sup>F NMR spectrum. In fact, we see two sets of peaks</p>
+<figure class="figure-left-60">
+<img src="../images/fig3.8.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60" id="fig3.8"><b>Fig. 3.8</b> The <sup>19</sup>F NMR spectrum of IF<sub>5</sub> in CDCl<sub>3</sub> solution.</figcaption>
+</figure>
+<a id="page_35" class="page" style="width:60%">Page 35, Chapter 2 Vibrational spectroscopy</a>
+<p class="indent">The peaks around 7 ppm are due to the four fluoride ligands in the base of the pyramidal structure and the set of peaks around 55 ppm is due to the single axial fluoride. We will return to why the observed spectrum shows more peaks than we might initially expect very soon.</p>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig3.9.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig3.9"><b>Fig. 3.9</b> <i>fac</i><sup>-</sup> and <i>mer</i>-[M(PR<sub>3</sub>)<sub>3</sub>Cl<sub>3</sub>].</figcaption>
+</figure>
+</aside>
+<p class="indent">How many different phosphorus chemical environments are there in the <i>fac</i> and <i>mer</i> isotopes of a complex [M(PR<sub>3</sub>)<sub>3</sub>Cl<sub>3</sub>] shown in <a href="Chapter03.xhtml#fig3.9">Fig. 3.9</a>? For the <i>fac</i> form of the molecule all the phosphorus atoms are <i>trans</i> to a chloride ligand and therefore all are equivalent. For the <i>mer</i> form there are two phosphorus ligands <i>trans</i> to each other and the third one is <i>trans</i> to a chloride and therefore in a different chemical environment than the other two. Thus we could, in theory, determine whether a complex of the type [M(PR<sub>3</sub>)<sub>3</sub>X<sub>3</sub>] adopts the <i>fac</i> or <i>mer</i> conformers, just on the basis of the number of peaks observed in its <sup>31</sup>P NMR spectrum.</p>
+</section>
+<section id="sec3.1.4" epub:type="chapter">
+<h3 class="h3">Integration</h3>
+<p class="noindent">You will notice that in the <sup>19</sup>F spectrum of IF<sub>5</sub> shown in <a href="Chapter03.xhtml#fig3.8">Fig. 3.8</a>, the two peaks are of very different heights or, more correctly, the area under each set of peaks is different. This is due to the feet that each of the five fluoride nuclei under study will give rise to an equally intense NMR signal; however, four of these are equivalent and therefore their signals are superimposed to give a signal four times as intense as that due to the single axial fluoride.</p>
+<p class="indent">For the <i>mer</i>-[M(PR<sub>3</sub>)<sub>3</sub>Cl<sub>3</sub>] complex, shown in <a href="Chapter03.xhtml#fig3.9">Fig. 3.9</a>, there are two different chemical environments, P-<i>trans</i>-P and P-<i>trans</i>-Cl, with two equivalent phosphorus atoms in the first environment and just one in the second environment so we should expect the <sup>31</sup>P NMR spectrum of this complex to exhibit two peaks in a 2:1 ratio.</p>
+<aside class="right" style="margin-top:-1em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 3.3</b> How many different <sup>13</sup>C chemical environments are there in Mn(CO)<sub>5</sub>Br and (&#x03B7;<sup>2</sup>-C<sub>2</sub>H<sub>4</sub>)Pt(PEt<sub>3</sub>)<sub>2</sub>?</p>
+</aside>
+<p class="indent">Thus the number of distinct peaks and their position in an NMR spectrum tells us the number and type of chemical environments that exist in a molecule for the nucleus under study and the relative intensity of each peak shows how many nuclei there are in each of these environments. However, it should be noted that it is not always possible to determine the number of nuclei in a particular environment based purely on intensities. This is most commonly encountered for <sup>13</sup>C spectra due to the varying rates at which these nuclei return to the ground state. Integration values may also be inaccurate for other nuclei, especially those that cover large chemical shift ranges.</p>
+</section>
+<section id="sec3.1.5" epub:type="chapter">
+<h3 class="h3">Coupling</h3>
+<p class="indent"><b></b></p>
+<p class="noindent">So far we have seen that NMR spectra can be recorded for a number of different magnetically active nuclei and that each set of nuclei in different chemical environments gives rise to separate peaks. There is, however, another important piece of information that is available from NMR spectra which helps further in spectral assignment. This arises from the fact that <i>non-equivalent</i> magnetically active nuclei <i>couple</i> to each other. That is, the small magnetic field arising from one nucleus can influence the magnetic field experienced by the other, non-equivalent, nuclei that are nearby in the molecule.</p>
+<a id="page_36" class="page" style="width:60%">Page 36, Chapter 2 Vibrational spectroscopy</a>
+<aside class="right" style="margin-top:-1em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig3.10.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig3.10"><b>Fig. 3.10</b> Two different representations of a spin-&#x00BD; nucleus.</figcaption>
+</figure>
+<p class="noindent">&#160;</p>
+<figure class="figure-aside-center">
+<img src="../images/fig3.11.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig3.11"><b>Fig. 3.11</b> Energy diagram showing the influence of the spin of the fluorine nucleus on the proton NMR transitions.</figcaption>
+</figure>
+<p class="noindent">&#160;</p>
+<figure class="figure-aside-center">
+<img src="../images/fig3.12.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig3.12"><b>Fig. 3.12</b> Simulated (a) 200 MHz <sup>1</sup>H and (b) 188 MHz <sup>19</sup>F NMR spectra for HF plotted at 400 Hz cm<sup>&#x2013;1</sup>.</figcaption>
+</figure>
+</aside>
+<p class="indent">The fact that for <i>I</i> = &#x00BD; nuclei there are just two possible orientations results in a somewhat simplified but sometimes helpful analogy of thinking of a spin-&#x00BD; nucleus as a small magnet, as shown in <a href="Chapter03.xhtml#fig3.10">Fig. 3.10</a>, which either aligns with or against the applied external magnetic field and thus increases or decreases the effective magnetic field experienced by other nuclei.</p>
+<p class="indent">For example, the proton NMR spectrum of HF in solution consists of two equally intense peaks as does the <sup>19</sup>F NMR spectrum. There is only one proton and only one fluoride so it is unlikely that the two peaks arise from two different environments for each nucleus. Instead, because both the proton and the fluoride are magnetically active (<i>I</i> = &#x00BD;), they each act as a small magnet and influence the magnetic field experienced by the other nucleus. Imagine each proton as a small bar magnet with two possible alignments either &#x2191; or &#x2193; corresponding to a spin of +&#x00BD; or &#x2013;&#x00BD;. The alignment of this small magnet can be either with the externally applied magnetic field or in the opposite sense. This either increases or decreases the effective magnetic field experienced by the nucleus under study. As we saw earlier according to the Boltzmann distribution both orientations are almost equally as likely since the energy difference between these states is small compared with the thermal energy, <i>kT</i> which means that instead of one absorption being possible there are now two equally intense peaks.</p>
+<p class="indent"><a href="Chapter03.xhtml#fig3.11">Figure 3.11</a> shows what is happening in terms of an energy diagram. The applied magnetic field results in a relatively large splitting of the energy levels, labelled (c), onto which is superimposed the smaller splitting resulting from interaction with the other nucleus. The two possible transitions (a) and (b) between these levels result in the observation of a pair of peaks equally spaced either side of the position a single peak would h ave arisen if there had been no coupling (c).</p>
+<p class="indent">The same effect will be seen in the <sup>19</sup>F NMR spectrum of HF, that is the two possible alignments of the proton will result in two transitions occurring of almost equal probability corresponding to the case when the magnetic moment of the proton (&#x2191;) increases the overall magnetic field experienced by the fluorine nucleus, and when it (&#x2193;) decreases it. So for both the <sup>19</sup>F and <sup>1</sup>H nuclei mutual coupling occurs resulting in a pair of peaks, called a doublet, in both the fluorine and proton NMR spectra, as shown in <a href="Chapter03.xhtml#fig3.12">Fig. 3.12</a>.</p>
+<p class="indent">Because these two nuclei are coupling with each other, i.e. the coupling is mutual, the effect on the two nuclei is the same and therefore the two peaks of each set of doublets are equally separated when their positions are measured in Hertz. This separation is referred to as the <i>coupling constant</i> and can provide a number of pieces of information. Firstly, it allows us to be sure that the doublets in the <sup>1</sup>H and <sup>19</sup>F spectra arise from the same species, by virtue of both possessing the same coupling constant. Secondly, the magnitude of the coupling constant can provide some structural information as we will see later. Care needs to be exercised when measuring the coupling constant because it must to be measured in Hertz rather than ppm. If we do this for both the proton and the fluorine NMR spectra of HF and measure the frequency difference between the two peaks in each of the <a id="page_37" class="page">Page 37, Chapter 3 Resonance spectroscopy</a> spectra then we do indeed see that the coupling constants are the same at around 530 Hz.</p>
+<aside class="right" style="margin-top:-3em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.13">
+<img src="../images/fig3.13.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.13</b> Where to measure the coupling constant and chemical shift for a doublet.</figcaption>
+</figure>
+</aside>
+<p class="indent">Determining the chemical shift value for a single peak is easy, but is slightly less obvious for a doublet or more complicated pattern, since the positions of the peaks in a multiplet are evenly distributed around a central point&#x2014;the position if there was no coupling. This is taken as the chemical shift value. So for doublets the chemical shift value is the mid-point, measured on the ppm scale, and the coupling constant is the separation between the two peaks, measured in Hertz, as shown in <a href="Chapter03.xhtml#fig3.13">Fig. 3.13</a>.</p>
+<p class="indent">If there are two chemically equivalent spin-active nuclei coupling to a single proton, such as in the HF<sub>2</sub><sup>&#x2013;</sup> ion, then there are four possible arrangements for the <sup>19</sup>F nuclei, i.e. &#x2191;&#x2191;, &#x2191;&#x2193;, &#x2193;&#x2191;, or &#x2193;&#x2193;, resulting in a net increase (&#x2191;&#x2191;) or decrease (&#x2193;&#x2193;) in the magnetic field for two of the arrangements, and for the other two (&#x2193;&#x2191; or &#x2191;&#x2193;) there will be no overall change in the effective magnetic field. So in one case the nuclei will resonate at a higher energy (or frequency) due to the additional magnetic field caused by the neighbouring nuclei aligning with the external field. When both these nuclei are aligned against the applied field a peak will be seen at a lower resonant frequency. The two mixed spin arrangements which result in no overall change in the magnetic field will not result in a change in frequency. We therefore would expect to see three equally spaced lines the intensities of which will be 1:2:1 to reflect the ratio of each arrangement as shown in <a href="Chapter03.xhtml#fig3.14">Fig. 3.14</a>.</p>
+<aside class="right" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.14">
+<img src="../images/fig3.14.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.14</b> The triplet spectrum expected for the HF<sub>2</sub><sup>&#x2013;</sup> ion.</figcaption>
+</figure>
+</aside>
+<p class="indent">It is common to see stick diagrams used to illustrate these patterns such as the examples shown in <a href="Chapter03.xhtml#fig3.15">Fig. 3.15</a> for coupling to one, two, three, and four equivalent nuclei.</p>
+<figure id="fig3.15">
+<img src="../images/fig3.15.jpg" alt="images"/>
+<figcaption class="figcaption-center-100">
+<b>Fig. 3.15</b> Stick diagrams showing the coupling resulting from one, two, three, and four equivalent spin-&#x00BD; nuclei.</figcaption>
+</figure>
+<p class="indent">In general, any nucleus will couple with every other magnetically active nuclei in the molecule provided they are chemically non-equivalent to give rise to a pattern consisting of <a id="page_38" class="page">Page 38, Chapter 3 Resonance spectroscopy</a>lines, where <i>n</i> is the number of coupling nuclei possessing a magnetic quantum number of <i>I</i>. For spin-&#x00BD; nuclei this simplifies to (<i>n</i>+1). Thus for the HF<sub>2</sub><sup>&#x2013;</sup> ion the two fluorine nuclei will couple with the single proton nucleus to give rise to two lines in the <sup>19</sup>F spectrum and the proton will couple to the two fluorine nuclei to produce a three-line pattern in the <sup>1</sup>H spectrum. The separation between each of the peaks within the pattern (measured in Hertz) is the coupling constant. The relative intensities of the lines can be calculated by hand as previously or for spin-&#x00BD; nuclei are given by Pascal&#x0027;s triangle which is shown below.
+</p>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td id="eq3.7"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mo>(</mo>
+ <mn>2</mn>
+ <mi>n</mi>
+ <mi>I</mi>
+ <mo>+</mo>
+ <mn>1</mn>
+ <mo>)</mo>
+</math></td>
+<td style="text-align:right">(3.7)</td>
+</tr>
+</table>
+<aside class="right" style="margin-top:-15em;" epub:type="sidebar">
+<p class="sidebar-left">Question 3.4 The four peaks of a quartet recorded on a 200 MHz spectrometer are observed at 1.2, 1.4, 1.6, and 1.8 ppm. What is: (i) the chemical shift value; (ii) the coupling constant?</p>
+</aside>
+<p class="noindent">&#160;</p>
+<figure class="figure-center-60">
+<img src="../images/fig1_28.jpg" alt="images"/>
+</figure>
+<p class="indent">The <sup>31</sup>P and <sup>19</sup>F NMR spectra of an ion of the type [P<sub><i>x</i></sub>P<sub><i>y</i></sub>]<sup>&#x2013;</sup> are shown in <a href="Chapter03.xhtml#fig3.16">Fig. 3.16</a>. What is the simplest empirical formula for the anion?</p>
+<figure>
+<div class="figure-center-60"><img src="../images/fig3.16.jpg" alt="images" /></div>
+	 <figcaption>
+	 <aside class="right" style="margin-top:-10em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig3.16"><b>Fig. 3.16</b> <sup>31</sup>P and <sup>19</sup>F NMR spectra for an ion of the type [P<sub><i>x</i></sub>P<sub><i>y</i></sub>]<sup>&#x2013;</sup>.</p>
+	</aside>
+	</figcaption>
+</figure>
+<p class="indent">Starting with the <sup>l9</sup>F spectrum, this shows two peaks of approximately equal intensity&#x2014;a doublet. This suggests that a set of one, or more, equivalent fluorine nuclei is coupling with one phosphorus atom (spin = &#x00BD;) to yield a doublet (2<i>nI</i> + 1 = 2&#x00D7;1&#x00D7;&#x00BD; + 1 = 2) in the NMR spectrum. The <sup>31</sup>P NMR spectrum exhibits a seven-line pattern in what looks like a binomial distribution. Since fluorine possesses a spin-&#x00BD; nucleus a binomial seven-line pattern is most likely to arise from coupling to six equivalent fluorine nuclei (2<i>nI</i> + 1 = 2&#x00D7;6&#x00D7;&#x00BD; + 1 = 7). So we have one phosphorus nucleus coupling to six equivalent fluorine nuclei to give a septet in the <sup>31</sup>P NMR spectrum and the six equivalent fluorine nuclei coupling with the single phosphorus nucleus resulting in a doublet in the fluorine spectrum. The simplest ion accounting for this is [PF<sub>6</sub>]<sup>&#x2013;</sup> with the fluorides being octahedrally arranged so that they are all equivalent. We can confirm that these two nuclei are <a id="page_39" class="page">Page 39, Chapter 3 Resonance spectroscopy</a>coupling with each other by measuring the coupling constants in both spectra which should be the same&#x2014;which they are in this case, at 709 Hz.</p>
+<p class="indent">The coupling described above between two different nuclei is called <i>heteronuclear coupling</i>, but coupling can also arise from the same nuclei in different environments in which case it is referred to as <i>homonuclear coupling</i>.</p>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 3.5</b> Predict the <sup>31</sup>P and <sup>1</sup>H NMR spectra for PH<sub>3</sub>.</p>
+</aside>
+<p class="indent"><a href="Chapter03.xhtml#fig3.17">Figure 3.17</a> shows the 200 MHz <sup>1</sup>H NMR spectrum recorded for a sample of the tetrahedrally-based molecule Si(OCH<sub>2</sub>CH<sub>3</sub>)<sub>4</sub>.</p>
+<figure>
+<div class="figure-center-60"><img src="../images/fig3.17.jpg" alt="images" /></div>
+<figcaption>
+<aside class="right" style="margin-top:-10em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig3.17"><b>Fig. 3.17</b> The <sup>1</sup>H NMR spectrum of Si(OCH<sub>2</sub>CH<sub>3</sub>)<sub>4</sub> in CDCl<sub>3</sub>.</p>
+	</aside>
+	</figcaption>
+</figure>
+<p class="indent">Before attempting to assign this, or any, spectrum we need to determine the number of different chemical environments for the spin-active nuclei. The two CH<sub>2</sub> protons are chemically non-equivalent to the three CH<sub>3</sub> protons so there are two different chemical environments. We should therefore expect two sets of peaks. The spectrum does indeed show two chemical environments, a triplet signal at 1.73 ppm and a quartet centred at 4.35 ppm. Since the two sets of protons are chemically non-equivalent they will couple with each other. The CH<sub>2</sub> protons will couple with the three methyl protons resulting in a quartet and the three CH<sub>3</sub> protons will couple with the two CH<sub>2</sub> protons to yield a triplet. So the signal at 1.73 ppm must be due to the CH<sub>3</sub> protons and that at 4.35 ppm corresponds to the CH<sub>2</sub> protons. This relative ordering also fits with our idea of increasing chemical shift correlating with greater deshielding of the nucleus involved. The CH<sub>2</sub> protons are nearer the electronegative oxygen atom and therefore these protons will be more deshielded than the CH<sub>3</sub> protons.</p>
+<aside class="right" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.18">
+<img src="../images/fig3.18.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.18</b> Stick diagram showing how the couplings in Si(OCH<sub>2</sub>CH<sub>3</sub>)<sub>4</sub> arise.</figcaption>
+</figure>
+</aside>
+<p class="indent">The coupling constant, <i>J</i>, between these two nuclei can be determined by measuring the separation between any two peaks within a particular multiplet. The difference in ppm is converted to the Hertz scale by multiplying by the spectrometer operating frequency for the nucleus under investigation (in this case 200 MHz). So the coupling constant is</p>
+<p class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>J</mi><mo>=</mo><mo>(</mo><mn>4377</mn><mo>&#x2013;</mo><mn>4342</mn><mo>)</mo><mi>ppm</mi><mo>&#x00D7;</mo><mn>200</mn><mi>MHz</mi><mo>=</mo><mn>7</mn><mi>Hz</mi></math></p>
+<p class="indent"><a href="Chapter03.xhtml#fig3.18">Figure 3.18</a> shows the stick diagram for this system which illustrates how the coupling patterns arise.</p>
+<a id="page_40" class="page" style="width:60%;">Page 40, Chapter 3 Resonance spectroscopy</a>
+</section>
+<section id="sec3.1.6" epub:type="chapter">
+<h3 class="h3">More about coupling constants</h3>
+<p class="noindent">So far we have seen coupling between the nuclei of atoms that are directly bonded such as [PF<sub>6</sub>]<sup>&#x2013;</sup> and in Si(OCH<sub>2</sub>CH<sub>3</sub>)<sub>4</sub> between nuclei that are further apart. In fact coupling can extend over a considerable distance, and although it is most often propagated through areas of high electron density between atoms, i.e. bonds, it can also occur through space. It is usual when quoting coupling constants to include an indication of the number of bonds through which coupling has occurred. For example, the coupling between the fluorine and phosphorus atoms in [PF<sub>6</sub>]<sup>&#x2013;</sup> would be written as <sup>l</sup><i>J</i>(PF) = 709 Hz where the superscript one refers to the single bond separating the coupling <sup>31</sup>P and <sup>19</sup>F nuclei. For Si(OCH<sub>2</sub>CH<sub>3</sub>)<sub>4</sub> we see coupling between the two non-equivalent sets of protons; this occurs through three bonds (H&#x2013;C&#x2013;C&#x2013;H) and therefore would be written as <sup>3</sup><i>J</i>(HH) = 7 Hz.</p>
+<aside class="right" style="margin-top:-1em;" epub:type="sidebar">
+<p class="table-aside-center"><img src="../images/pg40_tab1.jpg" alt="images"/></p>
+<p class="tablecaption-aside-center" id="tab3.4"><b>Table 3.4</b> Some typical coupling constants.</p>
+</aside>
+<p class="indent">The magnitude of the coupling between any two nuclei for heteronuclear coupling depends on a variety of factors, including the nature of the nuclei and the bonding between them. The detailed mechanism that gives rise to this type of spin&#x2013;spin coupling is beyond the scope of this book. One mechanism arises from contact between the two coupling nuclei by electrons in the bond between. Since only s-orbitals have a non-zero probability of the electron being at the nucleus, the coupling constant depends on the extent of s-orbital involvement in the bonding. For many nuclei there exists a relationship for <sup>1</sup><i>J</i> coupling constants based on the percentage of <i>s</i>-orbital character of the bonding orbitals of the two nuclei of the form</p>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td id="eq3.8"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>J</mi> 
+<mo>/</mo>
+<mi>Hz</mi>
+<mo>=</mo>
+<mi>k</mi>
+<mo>&#x00D7;</mo>
+<mo>%</mo>
+<mi>s</mi>
+<mo>(</mo>
+<mi>A</mi>
+<mo>)</mo>
+<mo>&#x00D7;</mo>
+<mo>%</mo>
+<mi>s</mi>
+<mo>(</mo>
+<mi>X</mi>
+<mo>)</mo></math></td>
+<td style="text-align:right">(3.8)</td>
+</tr>
+</table>
+<p class="noindent">where %<i>s</i>(A) and %<i>s</i>(X) are the percentage of <i>s</i>-character in the bonding orbital for nuclei A and X respectively and <i>k</i> is a proportionality constant. So <sup>l</sup><i>J</i>(CH) will decrease as the hybridisation around the carbon changes from <i>sp</i> (i.e. 50% <i>s</i>-character) to <i>sp</i><sup>2</sup> (33% <i>s</i>-character) to <i>sp</i><sup>3</sup> (25% <i>s</i>-character). Similarly, as the distance between two coupling nuclei increases the coupling weakens, so <sup>1</sup><i>J</i> coupling constants are usually larger than <sup>2</sup><i>J</i>, and so on.</p>
+<p class="indent">There are many factors influencing the coupling constants between Iwo nuclei including the magnitude of the magnetogyric ratios of the two nuclei, the distance and bonding between them, and their angular arrangement. Although it is not easy to predict these values a few of the more typical ranges for some of the common nuclei are listed in <a href="Chapter03.xhtml#tab3.4">Table 3.4</a>.</p>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.19">
+<img src="../images/fig3.19.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.19</b> Observed <sup>2</sup><i>J</i>(<sup>13</sup><b>C</b><sup>19</sup>F) coupling constants in the complex <i>mer</i>-[Ir(CO<sub>3</sub>)F<sub>3</sub>].</figcaption>
+</figure>
+</aside>
+<p class="indent">One commonly observed effect which can be useful in assigning coupling constants in NMR spectroscopy is that <i>trans</i> coupling constants are often considerably larger than <i>cis</i> ones. For example, <a href="Chapter03.xhtml#fig3.19">Fig. 3.19</a> shows an example where the <i>trans</i> <sup>2</sup><i>J</i>(<sup>13</sup>C<sup>19</sup>F) coupling constant is more than ten times larger than the corresponding <i>cis</i> one. A simple view of why this might be is that the two coupling atoms, if <i>trans</i> to each other, can interact with opposite parts of the <i>same</i> orbital thus providing a more direct mechanism for the coupling interaction than in the <i>cis</i> arrangement.</p>
+<a id="page_41" class="page" style="width:60%;">Page 41, Chapter 3 Resonance spectroscopy</a>
+</section>
+<section id="sec3.1.7" epub:type="chapter">
+<h3 class="h3">Labelling spin-systems</h3>
+<p class="noindent">There is a shorthand nomenclature used to identify the type and number of spin-active nuclei in a molecule, which give rise to similar patterns. When the coupling constants are much smaller than the difference in chemical shifts between sets of peaks we observe patterns which are easy to interpret and understand, for example doublets, triplets, etc. These are called <i>first-order systems</i>. The shorthand notation uses letters that are near together in the alphabet to describe magnetically active nuclei that resonate at similar frequencies and letters that are far apart for those that resonate at very different frequencies. So for example the proton spectrum of the compound Cl<sub>3</sub>Si(OCH<sub>2</sub>CH<sub>3</sub>) will give rise to a triplet and a quartet. Both nuclei resonate at fairly similar frequencies, they are only a few ppm apart, so letters near to each other in the alphabet are used. If we ignore the other low abundance nuclei then we can describe this as an A<sub>2</sub>B<sub>3</sub> system. The same A<sub>2</sub>B<sub>3</sub> system exists in, for example, CF<sub>3</sub>CF<sub>2</sub>Cl or trigonal bipyramidal M(PR<sub>3</sub>)<sub>5</sub> complexes and so the NMR spectra of all these compounds should display a triplet and a quartet. In IF<sub>5</sub> there are two different fluoride environments in the ratio 1:4 thus we describe this as an AB<sub>4</sub> spin-system.</p>
+<p class="indent">If the nuclei are different or their resonance frequencies are very well separated then we would describe the system using letters that are far apart in the alphabet, e.g. HF is described as an AX spin-system. Likewise we could describe the compounds PF<sub>2</sub>Cl and PH<sub>2</sub>I as AX<sub>2</sub> spin-systems and their NMR spectra would show similar characteristic patterns.</p>
+</section>
+<section id="sec3.1.8" epub:type="chapter">
+<h3 class="h3">Magnetic versus chemical equivalence</h3>
+<aside class="right" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 3.6</b> What would the typical splitting pattern be for the A and X nuclei of (i) AX, (ii) AX<sub>2</sub>, and (iii) AX<sub>3</sub> systems?</p>
+</aside>
+<p class="noindent">So far we have referred to nuclei as being chemically equivalent or nonequivalent and used this as the basis of interpreting their NMR spectra. However, there is another type of equivalence that needs to be considered. For example, the dianion [H<sub>2</sub>P<sub>2</sub>O<sub>5</sub>]<sup>2&#x2013;</sup> shown in <a href="Chapter03.xhtml#fig3.20">Fig. 3.20</a> appears, at first sight, to possess just one proton and one phosphorus environment. However, although it is true that the pairs of atoms H<sub>a</sub> and H<sub>b</sub> and P<sub>a</sub> and P<sub>b</sub> are chemically equivalent, they differ in a more subtle way.</p>
+<figure>
+<div class="figure-center-60"><img src="../images/fig3.20.jpg" alt="images" /></div>
+<figcaption>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig3.20"><b>Fig. 3.20</b> The dianion [H<sub>2</sub>P<sub>2</sub>O<sub>5</sub>]<sup>2&#x2013;</sup>.</p>
+	</aside>
+	</figcaption>
+</figure>
+<p class="indent">Consider the interactions of P<sub>a</sub> with the other magnetically active nuclei in the molecule. Firstly, P<sub>a</sub> will couple to P<sub>b</sub> in the same way that P<sub>b</sub> couples to P<sub>a</sub>. But the coupling of P<sub>a</sub> to H<sub>a</sub> and H<sub>b</sub> will be different, one of them is directly bound to P<sub>a</sub> while the other is separated by three bonds. In a similar way H<sub>b</sub> will couple differently to P<sub>a</sub> and P<sub>b</sub>. The two phosphorus nuclei are chemically equivalent but because they couple differently with sets of other chemically equivalent nuclei (H<sub>a</sub> and H<sub>b</sub>) they are termed <i>magnetically nonequivalent</i>. Such a system is labelled as AA&#x2018;XX&#x2019; to distinguish between the chemically equivalent but magnetically non-equivalent sets of nuclei.</p>
+<aside class="right" style="margin-top:-12em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 3.7</b> What are the spin-system labels for (i) [PF<sub>8</sub>]<sup>&#x2013;</sup>, (ii) PCI<sub>2</sub>Et, and (iii) H<sub>2</sub>C=CF<sub>2</sub>?</p>
+</aside>
+<a id="page_42" class="page" style="width:60%;">Page 42, Chapter 3 Resonance spectroscopy</a>
+<p class="noindent">Because the nuclei are magnetically non-equivalent they may now couple with each other. So the phosphorus NMR spectrum for nucleus P<sub>a</sub> is expected to be a doublet (due to coupling with P<sub>b</sub>) of doublets (H<sub>a</sub>) of doublets (H<sub>b</sub>). The pattern of the <sup>31</sup>P NMR signal due to P<sub>b</sub> will be the same and at the same chemical shift position because the two chemical environments of P<sub>a</sub> and P<sub>b</sub> are identical. This pattern, and its derivation, is shown in <a href="Chapter03.xhtml#fig3.21">Fig. 3.21</a>. In a similar way the proton NMR spectrum is predicted to consist of a doublet of doublets of doublets.</p>
+<aside class="right" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.21">
+<img src="../images/fig3.21.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.21</b> Expected <sup>31</sup>P NMR spectrum for the AA&#x2018;XX&#x2019; system [H<sub>2</sub>P<sub>2</sub>O<sub>5</sub>]<sup>2&#x2013;</sup>.</figcaption>
+</figure>
+</aside>
+</section>
+<section id="sec3.1.9" epub:type="chapter">
+<h3 class="h3">Decoupling</h3>
+<p class="noindent">There are occasions when, because of the large number of potential coupling interactions either due to chemical or magnetic non-equivalence, the interpretation of an NMR spectrum may be very difficult. Methods of recording spectra exist such that the coupling between certain nuclei can be removed. These experiments are performed most often for systems which contain a lot of protons, such as when recording <sup>13</sup>C and <sup>31</sup>P NMR spectra. This is achieved by providing energy over a range of frequencies that cover the proton resonances to saturate any transitions that are causing the coupling. It is normally denoted using a formalism such as <sup>13</sup>C{<sup>1</sup>H} which means the carbon-13 spectrum recorded with proton decoupling, that is coupling between <sup>13</sup>C and <sup>1</sup>H nuclei has been removed. As an example consider the <i>&#x03C3;</i>-bound C<sub>6</sub>H<sub>5</sub> ligand shown in <a href="Chapter03.xhtml#fig3.22">Fig. 3.22</a>. This has a number of different carbon and proton environments, but we will concentrate on the patterns expected for the carbon labelled as C-3. In the absence of proton decoupling there would be coupling between the C-3 carbon and the proton attached to it (H-3) resulting in a doublet, but coupling can also occur to the two protons H-2 and H-4 so that each of the doublet peaks becomes a triplet. Further coupling can occur with the protons H-l and H-5 resulting in further splitting of every line in the doublet of triplets into further triplets. It should be obvious that potentially the spectrum will consist of a very large number of weak peaks arising from the carbon nuclei in the ligand. The removal of this coupling results in a single carbon environment giving rise to a single peak, as shown in the spectrum in <a href="Chapter03.xhtml#fig3.22">Fig. 3.22</a>.</p>
+<aside class="right" style="margin-top:-18em;" epub:type="sidebar">
+<p class="sidebar-left">Question 3.8 What would be the appearance of the <sup>31</sup>P NMR of the [H<sub>2</sub>P<sub>2</sub>O<sub>5</sub>]<sup>2&#x2013;</sup> ion if (i) <i>J</i>(P<sub>a</sub>H<sub>b</sub>)=0, (ii) <i>J</i>(P<sub>a</sub>P<sub>b</sub>)=<i>J</i>(P<sub>a</sub>H<sub>a</sub>)?</p>
+</aside>
+<figure>
+<div class="figure-center-60"><img src="../images/fig3.22.jpg" alt="images" /></div>
+<figcaption>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig3.22"><b>Fig. 3.22</b> A <i>&#x03C3;</i>-bound C<sub>6</sub>H<sub>5</sub> ligand and its <sup>13</sup>C{<sup>1</sup>H} NMR spectrum.</p>
+	</aside>
+	</figcaption>
+</figure>
+</section>
+<section id="sec3.1.10" epub:type="chapter">
+<h3 class="h3">Spin-dilute systems</h3>
+<p class="noindent">Most of the spin-active nuclei considered so far have beat 100% abundant. However, there are many elements which possess a number of isotopes only some of which are spin active. Such systems which possess less than 100% <a id="page_43" class="page">Page 43, Chapter 3 Resonance spectroscopy</a>abundant spin-active nuclei are often described as <i>spin dilute</i>. One such nucleus is <sup>13</sup>C which occurs at 1.1%. In the previous example no homonuclear coupling between different <sup>13</sup>C nuclei is observed; this is because of the low natural abundance of <sup>13</sup>C. There is just over a 1% chance of any carbon being carbon-13, the chance that a second atom is also carbon-13 is around 0.01% (i.e. 1.1% &#x00D7; 1.1%) which is so low as not to be practically observed.</p>
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.23">
+<img src="../images/fig3.23.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.23</b> The <sup>31</sup>P{<sup>1</sup>H} NMR spectrum <i>cis</i>-[Pt(PEt<sub>3</sub>)<sub>2</sub>Cl<sub>2</sub>].</figcaption>
+</figure>
+</aside>
+<p class="indent">The <sup>31</sup>P{<sup>1</sup>H} NMR spectrum of the complex <i>cis</i>-[Pt(PEt<sub>3</sub>)<sub>2</sub>Cl<sub>2</sub>] is shown in <a href="Chapter03.xhtml#fig3.23">Fig. 3.23</a> and the structure of the compound is shown in <a href="Chapter03.xhtml#fig3.24">Fig. 3.24</a>. The two phosphorus nuclei are chemically equivalent and should therefore give rise to just one signal. However, 33.8% of the platinum atoms are spin active (<i>I</i> = &#x00BD;) and will couple, whilst the remaining 66.2% are not. The NMR spectrum of those molecules that contain a spin-active platinum atom will result in a doublet separated by <sup>1</sup><i>J</i>(Pt&#x2013;P) while the others, which do not contain a spin-active platinum nucleus, will result in a single peak. The observed spectrum is the sum of these two superimposed parts.</p>
+<p class="indent">The relative intensities of the peaks can be explained fairly easily&#x2014;the central peak must correspond to the molecules which do not contain spin-active platinum (<i>ca</i>. 66%) and the other two peaks together will account for the remaining 34% of the molecules and will thus each be (34/2)% of the total intensity. These weaker peaks are often referred to as <i>satellites</i> to the main peak. Of course we can also record the spectrum of the spin-dilute nucleus, in which case we only observe a spectrum from molecules containing the spin-active nucleus and therefore coupling will be observed with the other spin-active nuclei. So the <sup>195</sup>Pt NMR spectrum of <i>cis</i>-[Pt(PEt<sub>3</sub>)<sub>2</sub>Cl<sub>2</sub>] will consist of a triplet due to coupling with the two equivalent phosphorus atoms, the coupling constants due to the other low-abundance spin-active nuclei being too small to be observed.</p>
+<aside class="right" style="margin-top:-10em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.24">
+<img src="../images/fig3.24.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.24</b> The structure of the complex <i>cis</i>-[Pt(PEt<sub>3</sub>)<sub>2</sub>Cl<sub>2</sub>].</figcaption>
+</figure>
+</aside>
+<p class="indent">A very common case of satellite structure is often seen in proton spectra of organic compounds. Since 1.1% of carbon is carbon-13 which is spin active (<i>I</i> = &#x00BD;), coupling to the proton nuclei will occur resulting in weak satellite peaks (0.55% the total intensity) either side of the main peak.</p>
+<figure>
+<div class="figure-center-60"><img src="../images/fig3.25.jpg" alt="images" /></div>
+<figcaption>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig3.25"><b>Fig. 3.25</b> (a) The <sup>1</sup>H NMR spectrum of Sn(CH<sub>3</sub>)<sub>4</sub> and (b) stick diagrams showing the derivation of the peaks.</p>
+	</aside>
+	</figcaption>
+</figure>
+<p class="indent">The <sup>l</sup>H NMR spectrum of Sn(CH<sub>3</sub>)<sub>4</sub> shown in <a href="Chapter03.xhtml#fig3.25">Fig. 3.25(a)</a> consists of a singlet arising from the 12 equivalent protons. However, tin has two spin-active nuclei, <sup>117</sup>Sn (7.6%, <i>I</i> = &#x00BD;) and <sup>119</sup>Sn (8.6%, <i>I</i> =&#x00BD;), so molecules which contain either of these spin-active nuclei will couple with the protons to yield two sets of doublets equally spaced about the central peak. The splitting patterns are shown in <a href="Chapter03.xhtml#fig3.25">Fig. 3.25(b)</a>.</p>
+<a id="page_44" class="page" style="width:60%;">Page 44, Chapter 3 Resonance spectroscopy</a>
+<p class="indent">What should the <sup>119</sup>Sn spectrum look like? The tin atoms can either be 117-tin or 119-tin, but never both, so there will be no <sup>117</sup>Sn satellites on the <sup>119</sup>Sn signal. However, coupling to the proton nuclei will occur resulting in a binomial pattern consisting of 13 lines (2<i>nI</i> + 1 = 2&#x00D7;12&#x00D7;&#x00BD; + 1 = 13). The spectrum is shown in <a href="Chapter03.xhtml#fig3.26">Fig. 3.26</a>. However, the very weakest peaks of the pattern (1:12:66:220:495:792:924:792:495:220:66:12:1) are not visible.</p>
+<p class="indent">Other elements with less than 100% abundant spin-active nuclei which are fairly common in inorganic chemistry include B, Si, Se, Sn, W, Pt, Cd, andHg.</p>
+<aside class="right" style="margin-top:-10em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.26">
+<img src="../images/fig3.26.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.26</b> The <sup>119</sup>Sn NMR spectrum of Sn(CH<sub>3</sub>)<sub>4</sub>.</figcaption>
+</figure>
+</aside>
+</section>
+<section id="sec3.1.11" epub:type="chapter">
+<h3 class="h3">Non-spin-&#x00BD; systems</h3>
+<p class="noindent">So far only spin <i>I</i> = &#x00BD; nuclei have been considered, but there are a number of common nuclei which have greater magnetic moments. By virtue of the larger magnetic quantum number these nuclei also possess a <i>quadrupole moment</i>. Although, in principal, the interpretation of spectra for nuclei with <i>I</i> &#x003E; &#x00BD; is no more difficult than for spin-&#x00BD; nuclei, the presence of a quadrupole can result in broad peaks, which makes their application more limited. The factors that give rise to this broadening are covered in more detail in a later section. <a href="Chapter03.xhtml#tab3.5">Table 3.5</a> lists data for some of the more commonly studied quadrupolar nuclei.</p>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<p class="sidebar-left">Question 3.9 Predict the <sup>13</sup>C{<sup>1</sup>H} NMR spectrum of SnMe<sub>4</sub></p>
+</aside>
+<p class="table-center-100"><img src="../images/pg44_tab1.jpg" alt="images"/></p>
+<p class="tablecaption-center-100" id="tab3.5"><b>Table 3.5</b> NMR properties of some of the more commonly studied quadrupolar nuclei.</p>
+<p class="indent">As outlined in <a href="#eq3.1">eqn 3.1</a>, when a spin-active nucleus is placed in a magnetic field a number of quantized energy levels will arise depending on the magnetic quantum number. So, for example, for <sup>11</sup>B which has <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow>
+  <mi>I</mi><mo>=</mo><mfrac>
+   <mn>3</mn>
+   <mn>2</mn>
+  </mfrac>
+  
+ </mrow>
+</math>
+ the following states will be generated: <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow>
+  <mi>m</mi><mo>=</mo><mfrac>
+   <mn>3</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mo>,</mo><mtext>&#x2009;</mtext><mfrac>
+   <mn>1</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mo>,</mo><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mfrac>
+   <mn>1</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mo>,</mo><mtext>&#x2009;</mtext><mtext>and</mtext><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mfrac>
+   <mn>3</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mo>.</mo>
+ </mrow>
+</math> Since the only transitions allowed are those which have &#x2206;<i>m</i> = &#x00B1;1, three transitions are possible, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mfrac>
+   <mn>3</mn>
+   <mrow>
+    <mn>20</mn>
+   </mrow>
+  </mfrac>
+  <mo>&#x2194;</mo><mfrac>
+   <mn>1</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mo>,</mo><mtext>&#x2009;</mtext><mfrac>
+   <mn>1</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mo>&#x2194;</mo><mo>&#x2212;</mo><mfrac>
+   <mn>1</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mtext>&#x2009;</mtext><mtext>and</mtext><mo>&#x2212;</mo><mfrac>
+   <mn>1</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mo>&#x2194;</mo><mo>&#x2212;</mo><mfrac>
+   <mn>3</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mo>,</mo>
+ </mrow>
+</math>
+ and since all of these occur at the same energy a single peak will be observed for a single non-coupling <sup>11</sup>B nucleus. However, the fact that there are four allowed nuclear spin orientations rather than just two does make a difference to the patterns observed when coupling to other nuclei occurs.</p>
+<p class="indent">The BH<sub>4</sub><sup>&#x2013;</sup> anion adopts a tetrahedral structure, so all the protons are chemically and magnetically equivalent. The central boron atom may be either <sup>10</sup>B or <sup>11</sup>B and both will couple with the four protons. In the case of the central atom being <sup>11</sup>B (80% probability, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>I</mi><mo>=</mo><mfrac>
+   <mn>3</mn>
+   <mn>2</mn>
+  </mfrac>
+  
+ </mrow>
+</math>) the protons will couple so that the <sup>1</sup>H NMR spectrum will consist of a pattern of four lines (2<i>nI</i> + 1 = 2&#x00D7;1&#x00D7;<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mfrac>
+   <mn>3</mn>
+   <mn>2</mn>
+  </mfrac>
+  
+ </mrow>
+</math> + 1 = 4). Since each of the four possible values of <i>m</i> are equally likely for the boron nucleus and each will affect the magnetic field <a id="page_45" class="page">Page 45, Chapter 3 Resonance spectroscopy</a>experienced by the proton, four equal intensity lines are observed in the <sup>1</sup>H NMR spectrum. So we would expect to see a 1:1:1:1 quartet in the proton NMR spectrum of [<sup>11</sup>BH<sub>4</sub>]<sup>&#x2013;</sup> as shown in <a href="Chapter03.xhtml#fig3.27">Fig. 3.27(a)</a>.</p>
+<figure>
+<div class="figure-center-60"><img src="../images/fig3.27.jpg" alt="images" />
+</div>
+<figcaption>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig3.27"><b>Fig. 3.27</b> The splitting patterns expected for the <sup>1</sup>H NMR of the (a) <sup>11</sup>BH<sub>4</sub><sup>&#x2013;</sup> and (b)<sup>10</sup>BH<sub>4</sub><sup>&#x2013;</sup> ions.</p>
+	</aside>
+	</figcaption>
+</figure>
+<p class="indent">However, this is not the end of the problem because boron has a second isotope which is also magnetically active: <sup>10</sup>B, <i>I</i> = 3, 20% abundant. By applying the (2<i>nI</i> + 1) formula we should expect the proton spectrum for the <sup>10</sup>BH<sub>4</sub><sup>&#x2013;</sup> ions to exhibit a seven-line pattern as is shown in <a href="#fig3.27">Fig 3.27(b)</a>. The actual spectrum will be a combination of these two patterns. Because there will be negligible difference between the chemical shifts of the protons in the <sup>10</sup>BH<sub>4</sub><sup>&#x2013;</sup> and <sup>11</sup>BH<sub>4</sub><sup>&#x2013;</sup> ions the two patterns will appear to be centred around the same point. However, we might expect the coupling constants to differ since the magnetogyric ratios for the two nuclei are different. The relative intensities of the lines in these overlapping multiplet patterns can be predicted based on the natural percentage abundance of the nuclei involved and the number of lines within each pattern they are responsible for. For the <sup>11</sup>B-containing species, which represent 80% of all borohydride ions, four lines are generated, so each is 20% of the total intensity. Similarly, for the <sup>10</sup>B-containing ions (20% natural abundance) seven lines are generated, so each line is a little less than 3% of the total intensity. <a href="Chapter03.xhtml#fig3.28">Figure 3.28</a> shows the observed proton NMR spectrum, and the peaks due to <sup>10</sup>B-containing species are marked with a plus sign and those for <sup>11</sup>BH<sub>4</sub><sup>&#x2013;</sup> with an asterisk.</p>
+<aside class="right" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.28">
+<img src="../images/fig3.28.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.28</b> The observed proton NMR spectrum for K<sup>+</sup>BH<sub>4</sub><sup>&#x2013;</sup> dissolved in D<sub>2</sub>O.</figcaption>
+</figure>
+</aside>
+<p class="indent">We could also record either the <sup>10</sup>B or <sup>11</sup>B NMR spectrum; however, because of the higher natural isotopic abundance and receptivity, it is more usual to study <sup>11</sup>B NMR. The <sup>11</sup>B NMR spectrum of <sup>11</sup>BH<sub>4</sub><sup>&#x2013;</sup> will consist of one boron resonance (since there is only one boron environment) coupled to four equivalent spin-&#x00BD; protons. This will result in a five-line pattern (2<i>nI</i> + 1 = 2&#x00D7;4&#x00D7;&#x00BD; + 1 = 5) and in this case because the splitting is due to spin-&#x00BD; nuclei the pattern will be binomial in appearance and the relative intensities of the lines given by Pascal&#x0027;s triangle so a 1:4:6:4:1 quintet should be seen.</p>
+<p class="indent">Of course molecules containing <sup>10</sup>B will not show in an <sup>11</sup>B NMR spectrum. However, if we were to record the <sup>10</sup>B NMR spectrum of the 20% of molecules that do contain <sup>10</sup>BH<sub>4</sub><sup>&#x2013;</sup> then again the single boron resonance would be split due to coupling to four equivalent protons resulting in a 1:4:6:4:1 quintet pattern.</p>
+</section>
+<section id="sec3.1.12" epub:type="chapter">
+<h3 class="h3">Exchange processes</h3>
+<p class="noindent">Earlier we saw how additional lines may arise in an NMR spectrum due to magnetic non-equivalence of nuclei. There is also the possibility that fewer <a id="page_46" class="page">Page 46, Chapter 3 Resonance spectroscopy</a>lines than expected may be seen. This is quite common within the field of organometallic chemistry.</p>
+<p class="indent">For example, the complex [FeI(CO)<sub>2</sub>Cp] adopts the structure shown in <a href="Chapter03.xhtml#fig3.29">Fig. 3.29</a>. It would be expected that the protons on the cyclopentadienyl ring sitting over the carbonyl ligands will be different from those sitting over the iodide ligand. However, the proton NMR spectrum, <a href="Chapter03.xhtml#fig3.30">Fig. 3.30(a)</a>, shows just a single peak with no coupling. This is because the cyclopentadienyl ring is rotating around its central axis which means that during the lifetime of the NMR experiment the protons experience all possible environments giving rise to a single peak with an average chemical shift value. This form of motion also removes the potential for coupling between the protons because they all become equivalent. Similarly, the <sup>13</sup>C NMR spectrum shown in <a href="Chapter03.xhtml#fig3.30">Fig. 3.30(b)</a> also exhibits just a single intense peak in the aromatic region.</p>
+<aside class="right" style="margin-top:-9em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.29">
+<img src="../images/fig3.29.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.29</b> The structure of the complex [FeI(CO)<sub>2</sub>Cp].</figcaption>
+</figure>
+</aside>
+<figure class="figure-center-60" id="fig3.30">
+<img src="../images/fig3.30.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60">
+<b>Fig. 3.30</b> The (a)<sup>1</sup>H and (b) <sup>13</sup>C NMR spectra of the complex [FeI(CO)<sub>2</sub>Cp].</figcaption>
+</figure>
+<aside class="right" style="margin-top:-7em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.31">
+<img src="../images/fig3.31.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.31</b> The effect of the lifetime of an excited state on the observed spectra.</figcaption>
+</figure>
+</aside>
+<p class="indent">In general, if <i>&#x03C4;</i> is the lifetime of a molecule in a particular conformation, then its energy will be uncertain according to &#x2206;<i>E</i> &#x2248; <i>h</i>2/<i>&#x03C0;&#x03C4;</i>. When this energy corresponds to the difference between resonance frequencies (2<i>&#x03C0;</i>&#x2206;<i>v</i>) of the two states a single broad peak is observed. If the lifetime is very much longer than the equivalent frequency separation the uncertainty is smaller and so two separate resonances are observed. If, on the other hand, <i>&#x03C4;</i> is very much less than 2<i>&#x03C0;</i>&#x2206;<i>v</i> then a sharp singlet will be observed corresponding to an average chemical environment. The expected spectra are shown in <a href="Chapter03.xhtml#fig3.31">Fig. 3.31</a>.</p>
+<p class="indent">These effects are observed in a number of transition-metal systems. One representative example is the <sup>1</sup>H NMR spectrum of the complex [Rh(C<sub>5</sub>H<sub>5</sub>)(C<sub>2</sub>H<sub>4</sub>)<sub>2</sub>], <a href="Chapter03.xhtml#fig3.32">Fig. 3.32</a>. At low temperatures four peaks are observed for the protons of the C<sub>2</sub>H<sub>4</sub> ligands. This is because the inner (H<sub>a</sub>) and outer (H<sub>b</sub>) protons are in slightly different environments. However, as the temperature is raised the energy required to break the <i>&#x03C0;</i>-bond between the metal and alkene is overcome and the alkene undergoes a propeller-type of rotation around the metal&#x2013;alkene <i>&#x03C3;</i>-bond. This results in an exchange of the protons from the formerly non-equivalent environments, as shown in <a href="Chapter03.xhtml#fig3.33">Fig. 3.33</a>, and results in a broadening of the NMR signals. As room temperature is reached the speed of rotation increases until eventually it is rapid enough that only a single average chemical environment is experienced by the C<sub>2</sub>H<sub>4</sub> <a id="page_47" class="page">Page 47, Chapter 3 Resonance spectroscopy</a>protons, and a single peak is observed. A single peak is also observed for protons of the cyclopentadienyl ligand because this too is rotating.</p>
+<figure class="figure-center-60" id="fig3.33">
+<img src="../images/fig3.33.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60">
+<b>Fig. 3.33</b> The metal&#x2013;alkene bonding scheme that allows propeller-like rotation of an alkene.</figcaption>
+</figure>
+<aside class="right" style="margin-top:-12em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.32">
+<img src="../images/fig3.32.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.32</b> The AA&#x2018;BB&#x2019; spin system of RhCp(C<sub>2</sub>H<sub>4</sub>)<sub>2</sub>; for clarity the Cp ligand</figcaption>
+</figure>
+</aside>
+<p class="indent">It is fairly common for proton environments on a number of &#x03C0;-bound organometallic systems to exchange near room temperature. This may arise from rotation of the ligand, as detailed above, or due to changes in the mode of bonding. For example, frequently the four protons attached to the terminal carbon atoms in the &#x03C0;-bound allyl ligand C<sub>3</sub>H<sub>5</sub> appear as a single resonance because of exchange. The mechanism believed to be responsible for this is a change in bonding mode of the allyl ligand from being &#x03C0;-bound to &#x03C3;-coordinated followed by a rotation of one end of the ligand around the central C&#x2013;C bond before the &#x03C0;-bonding mode is reattained. The effect of this is to swap protons that were on the underside of the allyl ligand with those on the top, as shown in <a href="Chapter03.xhtml#fig3.34">Fig. 3.34</a>. There is equal probability that the &#x03C3;&#x2013;bond will be formed at either terminal carbon atom and so all four of the protons H<sub>a</sub>, H<sub>b</sub>, H<sub>d</sub>, and H<sub>c</sub> will exchange.</p>
+<figure>
+<div class="figure-center-60"><img src="../images/fig3.34.jpg" alt="images" /></div>
+	 <figcaption>
+	 <aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig3.34"><b>Fig. 3.34</b> The mechanism by which terminal allyl protons become equivalent.</p>
+	</aside>
+	</figcaption>
+</figure>
+<p class="indent">Of course this mechanism does not allow the central proton to swap with the terminal ones and therefore a separate signal is observed for this, usually appearing as a quintet due to coupling with the other four protons that are equivalent due to the exchange process.</p>
+<p class="indent">Another common case when exchange occurs is for many trigonal bipyramidal compounds which frequently, at room temperature, exhibit just a single resonance for all the ligands. For example, complexes of the type [Rh(PR<sub>3</sub>)<sub>5</sub>]<sup>+</sup> formally have two different phosphorus environments arising from the axial and equatorial ligands. At low temperature the <sup>31</sup>P NMR spectrum consists of a doublet of quartets and a doublet of triplets. This is due to coupling between the two different phosphorus environments and with the spin-&#x00BD; rhodium nucleus, as shown in <a href="Chapter03.xhtml#fig3.36">Fig. 3.36(a)</a>. At room temperature rapid motion occurs, such as that proposed by Berry shown in <a id="page_48" class="page">Page 48, Chapter 3 Resonance spectroscopy</a><a href="Chapter03.xhtml#fig3.35">Fig. 3.35</a>. This allows the axial and equatorial ligands to swap and so become equivalent resulting in the rhodium atom &#x2018;seeing&#x2019; five equivalent phosphorus nuclei. The resulting <sup>31</sup>P spectrum consists of a doublet at the weighted-average chemical shift value as shown in <a href="Chapter03.xhtml#fig3.36">Fig. 3.36(b)</a>. The rhodium&#x2013;phosphorus coupling constant also becomes the weighted average of the two static coupling constants.</p>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.36">
+<img src="../images/fig3.36.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.36</b> The predicted NMR patterns for a complex of the type [Rh(PR<sub>3</sub>)<sub>5</sub>]<sup>+</sup> at (a) low temperature and (b) room temperature.</figcaption>
+</figure>
+</aside>
+<p class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>J</mi>
+<msub>
+<mrow>
+ <mo>(</mo>
+ <mi>Rh</mi>
+ <mo>-</mo>
+ <mi>P</mi>
+ <mo>)</mo>
+</mrow>
+<mi>av</mi>
+</msub>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>2</mn>
+<mo>&#x00D7;</mo>
+<mi>J</mi>
+<mo>(</mo>
+ <mi>Rh</mi>
+ <mo>-</mo>
+<msub> 
+<mi>P</mi>
+<mrow>
+<mi>ax</mi>
+</mrow>
+</msub> 
+<mo>)</mo>
+<mo>+</mo>
+<mn>3</mn>
+<mo>&#x00D7;</mo>
+<mi>J</mi>
+<mo>(</mo>
+ <mi>Rh</mi>
+ <mo>-</mo>
+<msub> 
+<mi>P</mi>
+<mrow>
+<mi>eq</mi>
+</mrow>
+</msub> 
+<mo>)</mo>
+</mrow>
+<mn>5</mn>
+</mfrac>
+</math></p>
+<p class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+<mo>&#x00A0;</mo>
+<mo>&#x00A0;</mo>
+<mo>&#x00A0;</mo>
+<mo>&#x00A0;</mo>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>2</mn>
+<mo>&#x00D7;</mo>
+<mn>140</mn>
+<mo>+</mo>
+<mn>3</mn>
+<mo>&#x00D7;</mo>
+<mn>210</mn>
+</mrow>
+<mn>5</mn>
+</mfrac>
+<mo>=</mo>
+<mn>182</mn>
+<mo>&#x00A0;</mo>
+<mi>Hz</mi>
+</math>
+</p>
+<figure class="figure-center-60" id="fig3.35">
+<img src="../images/fig3.35.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60">
+<b>Fig. 3.35</b> The Berry mechanism that swaps axial and equatorial ligands in trigonal bipyramidal complexes.</figcaption>
+</figure>
+<p class="indent">These processes are all examples of <i>intramolecular</i> exchange, that is the ligands remain coordinated, but they experience an average environment due to thermal motion. <i>Intermolecular</i> exchange processes are also possible, in this case nuclei exchange between two or more different molecules. For example, proton resonances for the &#x2013;OH and &#x2013;NH groups are often broad or even absent due to chemical intermolecular exchange with the solvent. If the chemical exchange is slow then the signal will still be well resolved; however, as the process becomes more rapid the peak will become broader. Once the exchange process becomes sufficiently fast that the nucleus experiences an average chemical environment, a peak will be observed at an average chemical shift value. The fact that exchange is occurring between different molecules means that intramolecular coupling is lost.</p>
+<aside class="right" style="margin-top:-1em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 3.10</b> At low temperature two peaks are observed in the <sup>13</sup>C NMR spectrum of Co<sub>2</sub>(CO)<sub>8</sub> at 182 and 234 ppm. Assign these peaks. If these two peaks arise from 6 and 2 carbon environments, respectively, at what position would you expect to observe a single peak due to thermal averaging?</p>
+</aside>
+</section>
+<section id="sec3.1.13" epub:type="chapter">
+<h3 class="h3">Relaxation processes</h3>
+<p class="noindent">As with all forms of spectroscopy there has to be some process or processes by which the perturbed energy states may return to their equilibrium state. If this did not happen then the two different energy states would become equally populated resulting in loss of the signal. It has already been noted that the population difference between nuclear spin-states is very small and therefore a method for reattaining the ground state is important in NMR spectroscopy. There are two main methods by which this may occur, these are known as <i>spin&#x2013;lattice</i> and <i>spin&#x2013;spin</i> relaxation. Typically for liquid-phase NMR spectroscopy both these relaxation times are of the order of a second under most circumstances.</p>
+<a id="page_49" class="page" style="width:60%;">Page 49, Chapter 3 Resonance spectroscopy</a>
+<p class="indent">Although there is not sufficient space to go into this subject in a rigorous manner here, both these relaxation mechanisms have an important bearing on the observed spectrum. Spin&#x2013;lattice relaxation processes are those in which the energy that caused the nucleus to flip spin-state is given up to its surroundings, for example by collision with other molecules in solution.</p>
+<p class="indent">If the NMR solution is very viscous then the natural Brownian motion is reduced and so the rate at which spin&#x2013;lattice relaxation occurs is reduced. For example, the <sup>19</sup>F spectrum of neat, viscous IF<sub>5</sub> is shown in <a href="Chapter03.xhtml#fig3.37">Fig. 3.37</a>. Comparison with that shown in <a href="Chapter03.xhtml#fig3.8">Fig. 3.8</a> which was recorded by dissolving the IF<sub>5</sub> in a mobile solvent (CH<sub>2</sub>Cl<sub>2</sub>) clearly demonstrates the difference. In the case of the neat liquid spectrum the individual components of the multiplet peaks in the spectrum are only just discernible.</p>
+<figure id="fig3.37">
+<div class="figure-center-60"><img src="../images/fig3.37.jpg" alt="images" /></div>
+<figcaption>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left"><b>Fig 3.37</b> The <sup>19</sup>F NMR spectrum of neat IF<sub>5</sub>.</p>
+	</aside>
+	</figcaption>
+</figure>
+<p class="indent">The second relaxation process is by spin&#x2013;spin interactions in which energy is transferred to other spin systems within the molecule. Some nuclei naturally relax more slowly than others. This is especially true for <sup>13</sup>C nuclei when there are no other spin-active nuclei, e.g. protons, attached to aid in spin&#x2013;spin relaxation. For this reason tertiary carbon atoms relax more slowly than secondary than primary. This is one of the reasons that integration of carbon-13 NMR spectra is not possible.</p>
+<p class="indent">On the other hand, the presence of paramagnetic species or quadrupolar nuclei can result in very effective relaxation of the excited spin-state and hence a very short lifetime for the excited state. This will result in the observation of broad peaks in spectra due to the Heisenberg uncertainty principal. The peaks may be so broad that they are not discernible at all, but on other occasions paramagnetic complexes such as [Cr(acac)<sub>3</sub>] are deliberately added to samples so that nuclei relax more quickly.</p>
+<aside class="right" style="margin-top:-12em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.38">
+<img src="../images/fig3.38.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.38</b> Calculated <sup>1</sup>H NMR spectra for (a) NH<sub>4</sub><sup>+</sup> and (b) CH<sub>3</sub>CN.</figcaption>
+</figure>
+</aside>
+<p class="indent">The presence of a quadrupolar nucleus does not always result in a broadening of peaks in the spectrum. If it is in a highly symmetric environment (octahedral or tetrahedral local symmetry), then the relaxation process is less efficient and sharp peaks are once again observed. For example, the half-height width of the proton NMR peak due to NMe<sub>4</sub><sup>+</sup> is about 0.1 Hz while that for CH<sub>3</sub>CN is nearer 80 Hz wide. Although both of these compounds contain <sup>14</sup>N which is a quadrupolar nucleus (<i>I</i> = 3/2), the effect of quadrupolar broadening is not obvious in the first example because that nucleus is in a tetrahedral environment.</p>
+</section>
+<section id="sec3.1.14" epub:type="chapter">
+<h3 class="h3">Other NMR experiments</h3>
+<p class="noindent">There are a very large number of special NMR experiments available, usually based on a number of different excitation pulses. Although the <a id="page_50" class="page">Page 50, Chapter 3 Resonance spectroscopy</a>theory behind these additional processes is beyond the scope of this book, two warrant a brief mention since they can greatly simplify the task of assigning peaks in complicated spectra. The first of these is called <i>distortionless enhancement by polarisation transfer</i> (abbreviated to DEPT). Such spectra are widely used in <sup>13</sup>C NMR studies to distinguish between <sup>13</sup>C nuclei in CH or CH<sub>3</sub> groups because these give rise to negative peaks while positive peaks result from <sup>13</sup>C nuclei in CH<sub>2</sub> groups.</p>
+<p class="indent">For example, the <sup>13</sup>C NMR spectrum of Cl(CH<sub>2</sub>)<sub>3</sub>Si(OCH<sub>3</sub>)<sub>3</sub> contains signals due to four different environments, one for each of the three different CH<sub>2</sub> carbon nuclei and one environment arising from the three equivalent OCH<sub>3</sub> groups. It is not immediately possible to assign the peaks in the <sup>13</sup>C spectrum, <a href="Chapter03.xhtml#fig3.39">Fig. 3.39(a)</a>, unambiguously since the carbons in both the ClCH<sub>2</sub>&#x2013; and &#x2013;OCH<sub>3</sub> environments are expected to resonate with similar chemical shift values. Assignment is also made more difficult by the fact that <sup>13</sup>C NMR spectra cannot be integrated with any degree of confidence. However, the DEPT spectrum in <a href="Chapter03.xhtml#fig3.39">Fig. 3.39(b)</a> clearly identifies the peak at <i>ca</i>. 50 ppm as that arising from the CH<sub>3</sub> environment whilst all the remaining peaks are positive and must therefore be due to CH<sub>2</sub> environments.</p>
+<figure class="figure-center-100" id="fig3.39">
+<img src="../images/fig3.39.jpg" alt="images"/>
+<figcaption class="figcaption-center-100">
+<b>Fig. 3.39</b> (a) The <sup>13</sup>C{<sup>1</sup>H} NMR and (b) DEPT spectra of Cl(CH<sub>2</sub>)<sub>3</sub>Si(OCH<sub>3</sub>)<sub>3</sub>.</figcaption>
+</figure>
+<aside class="right" style="margin-top:1em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 3.11</b> Is there any other information that allows us to be confident in the assignment of signal D in <a href="#fig3.39">Fig 3.39</a> to the CH<sub>2</sub> bound to the silicon atom?</p>
+</aside>
+<p class="indent">So far all the spectra displayed are one-dimensional, that is peak-intensity is plotted against one other dimension, which is usually the chemical shift. A COSY (or <i>correlation spectroscopy)</i> spectrum has two axes each containing a spectrum. The central contour map contains peaks along the diagonal corresponding to each peak in the one-dimensional spectrum. Off-diagonal peaks indicate sets of nuclei that are coupling to each other. Such experiments can either be recorded for two similar nuclei and thus show homonuclear coupling or for two heteronuclei and identify heteranuclear coupling. By this method it is possible to identify which signals correspond to nuclei coupling with each other.</p>
+<aside class="right" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.40">
+<img src="../images/fig3.40.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left">
+<b>Fig. 3.40</b> Part of a COSY experiment.</figcaption>
+</figure>
+</aside>
+<p class="indent"><a href="Chapter03.xhtml#fig3.40">Figure 3.40</a> displays a typical COSY spectrum (in this case from a <sup>19</sup>F&#x2013; <sup>19</sup>F COSY experiment). The plot is symmetric with the <sup>19</sup>F NMR spectrum running along each axis and the central diagonal. The off-diagonal peaks link resonances which link peaks on the diagonal indicating coupling nuclei. In this case the nuclei labelled A and B are coupling but neither A nor B couple with the resonance marked C.</p>
+<a id="page_51" class="page" style="width:60%;">Page 51,chapter 3 Resonance spectroscopy</a>
+<h3 class="h3">Magic-angle NMR</h3>
+<p class="noindent">By far the most common physical state for NMR investigation is the liquid or solution phase; however, solids can also be studied using a variation of the technique. Because in solids the atoms and molecules are locked into a certain configuration, the spin&#x2013;lattice relaxation time is very long, and this combined with the large number of potentially different couplings for anisotropic systems results in broad peaks. However, the term giving rise to this broadening has an angular dependence and by spinning the solid sample very rapidly at an angle of 54.7&#x00B0; to the magnetic field (the so-called <i>magic angle</i>) this contribution is removed resulting in narrow lines.</p>
+<p class="indent">For example, the magic-angle <sup>31</sup>P NMR spectrum of solid-phase PC1<sub>5</sub> consists of two equally intense sharp lines at 86 and &#x2013;295 ppm. This is at variance with the solution-phase spectrum of PC1<sub>5</sub> recorded in CS<sub>2</sub> which shows just a single peak at 80 ppm. The two peaks in the solid NMR spectrum are too far apart to be a doublet, and anyway coupling to chlorine (<sup>35</sup>C1, <i>I</i> = 3/2) would give rise to more lines. The two peaks must therefore be due to two different phosphorus chemical environments which suggests, since there is only one phosphorus atom in PC1<sub>5</sub>, the presence of two different species. In the solid phase PC1<sub>5</sub> forms an ion-pair [PC1<sub>4</sub>]<sup>+</sup>[PC1<sub>6</sub>]<sup>&#x2013;</sup> which results in two different phosphorus environments and therefore two peaks in the solid-phase NMR spectrum.</p>
+<aside class="right" style="margin-top:-17em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.41">
+<img src="../images/fig.3.41.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 3.41</b> The arrangement of NMR tubes with (a) internal and (b) external lock substances.</figcaption>
+</figure>
+</aside>
+</section>
+<section id="sec3.1.15" epub:type="chapter">
+<h3 class="h3">Experimental considerations</h3>
+<p class="noindent">As was pointed out earlier, compared with many other spectroscopic techniques, NMR is fairly insensitive and this arises from the very small difference in population of the upper and lower energy states. This frequently means that larger samples are required in order to record NMR spectra than, for example, IR spectroscopy. Spectra are usually recorded of solutions in thin-walled 5-mm-diameter Pyrex tubes, but larger diameter tubes (10 mm) may be used for less sensitive nuclei so that more sample is present. Typically, a solution containing 5&#x2013;10 mg of compound is required for <sup>1</sup>H and <sup>19</sup>F NMR studies, whereas 50&#x2013;100 mg, or more, may be necessary for less sensitive nuclei such as <sup>13</sup>C and <sup>31</sup>P, and for very insensitive nuclei neat samples may be needed.</p>
+<p class="indent">Deuterated solvents are most often used, partly to avoid the resonances from protons of the solvent from swamping the proton spectrum of your compound. But more importantly, the resonance of the spin-active deuterium nucleus is used as a reference to ensure that the frequencies generated throughout the experiment remain constant or &#x2018;locked&#x2019;. Because the solvent is usually in excess, weak peaks may arise from small amounts of non-deuterated solvent molecules. The <sup>1</sup>H and <sup>13</sup>C positions, and multiplicities, of some of these are given in <a href="Chapter03.xhtml#tab3.6">Table 3.6</a>.</p>
+<p class="indent">A small amount of a reference compound may also be added to act as an <i>internal standard</i> to ensure that all chemical shifts are correctly referenced. If the reference might react with your compound then an <i>external standard</i> may be used either by placing a small sealed tube of a reference material inside the sample or by adding the material into the thin gap between an inner tube and the outer glass tube. This arrangement is shown in <a href="Chapter03.xhtml#fig3.41">Fig. 3.41</a>.</p>
+<aside class="right" style="margin-top:-18em;" epub:type="sidebar">
+<table style="margin-top:1em;margin-bottom:1em">
+<tr>
+<td style="border-bottom:solid 1px;border-top:solid 2px;">Solvent</td>
+<td style="border-bottom:solid 1px;border-top:solid 2px;padding-left:0.5em;">&#x03B4;(H) (ppm)</td>
+<td style="border-bottom:solid 1px;border-top:solid 2px;padding-left:0.5em;">&#x03B4;(C) (ppm)</td>
+</tr>
+<tr>
+<td>CDCl<sub>3</sub></td>
+<td style="padding-left:0.5em;">7.26[1]</td>
+<td style="padding-left:0.5em;">77[3]</td>
+</tr>
+<tr>
+<td>CD<sub>2</sub>Cl<sub>2</sub></td>
+<td style="padding-left:0.5em;">5.32[3]</td>
+<td style="padding-left:0.5em;">54[5]</td>
+</tr>
+<tr>
+<td>CD<sub>3</sub>CN</td>
+<td style="padding-left:0.5em;">2.08[5]</td>
+<td style="padding-left:0.5em;">118[1],1[7]</td>
+</tr>
+<tr>
+<td>D<sub>2</sub>O</td>
+<td style="padding-left:0.5em;">4.8[1]</td>
+<td style="padding-left:0.5em;">&#x2013;</td>
+</tr>
+<tr>
+<td style="border-bottom:solid 2px;">DMSO</td>
+<td style="padding-left:0.5em;border-bottom:solid 2px;">2.49[5]</td>
+<td style="padding-left:0.5em;border-bottom:solid 2px;">39[7]</td>
+</tr>
+</table>
+<p class="tablecaption-aside-left" id="tab3.6"><b>Table 3.6</b> Resonances for the residual protonated species in some common deuterated solvents. The multiplicity of each absorption is given in brackets.</p>
+</aside>
+</section>
+</section>
+<section id="sec3.2" epub:type="chapter">
+<a id="page_52" class="page" style="width:60%;">Page 52, chapter 3 Resonance spectroscopy</a>
+<h2 class="h2">3.2<span class="space">&#160;</span>Nuclear quadrupole resonance (NQR)</h2>
+<p class="noindent">A nucleus with a magnetic quantum number greater than &#x00BD; will possess a quadrupolar moment in addition to a magnetic dipole moment and some examples of such nuclei have already been mentioned in the earlier section of this chapter covering NMR spectroscopy. Despite there being a relatively large number of nuclei possessing a quadrupole, the study of these systems using NQR as opposed to NMR spectroscopy is very much more limited, with probably <sup>35</sup>Cl nuclei having received the most attention.</p>
+<aside class="right" style="margin-top:-4em;" epub:type="sidebar">
+<p class="sidebar-left">A dipole exists when two different charges, etc., are separated, a quadrupole occurs when separation of four different charges, etc., occurs.</p>
+</aside>
+<p class="indent">In NMR experiments an external field is applied to cause a splitting of the normally degenerate nuclear spin states, but this is not necessary in NQR experiments because when there is an asymmetric charge distribution within the molecule, a molecular <i>electric field gradient</i> (efg) is generated. This will arise if, for example, the molecule is composed of atoms of varying electronegativity, as shown in <a href="Chapter03.xhtml#fig3.42">Fig. 3.42</a>. The efg will interact with the nuclear quadrupolar moment resulting in a splitting of the otherwise degenerate quadrupolar states, and this is the basis of NQR spectroscopy. An efg will not, in general, be present in solutions or liquids due to molecular tumbling resulting in an averaging of the efg to zero. NQR is therefore only applicable to solids in which the local environment is not highly symmetric. The energies of the levels involved in NQR spectroscopy are given by eqn</p>
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.42">
+<img src="../images/fig.3.42.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 3.42</b> The electric field arising from the different electronegativity of the elements in the compound PCl<sub>3</sub>.</figcaption>
+</figure>
+</aside>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td id="eq3.9"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>E</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <msup>
+        <mi>e</mi>
+        <mn>2</mn>
+      </msup>
+      <mi>Q</mi>
+      <mi>q</mi>
+      <mo stretchy="false">[</mo>
+      <mn>3</mn>
+      <msup>
+        <mi>m</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>&#x2212;<!-- - --></mo>
+      <mi>I</mi>
+      <mo stretchy="false">(</mo>
+      <mi>I</mi>
+      <mo>+</mo>
+      <mn>1</mn>
+      <mo stretchy="false">)</mo>
+      <mo stretchy="false">]</mo>
+    </mrow>
+    <mrow>
+      <mn>4</mn>
+      <mi>I</mi>
+      <mo stretchy="false">(</mo>
+      <mn>2</mn>
+      <mi>I</mi>
+      <mo>&#x2212;<!-- - --></mo>
+      <mn>1</mn>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mfrac>
+</math>
+</td>
+<td style="text-align:right">(3.9)</td>
+</tr>
+</table>
+<p class="noindent">where <i>e</i> is the charge of the electron, <i>Q</i> the quadrupole moment, <i>q</i> the field gradient, <i>I</i> the nuclear magnetic quantum number and <i>m</i> the particular nuclear spin quantum state. For the most commonly studied nuclei, such as <sup>35</sup>Cl, <sup>79</sup>Br, and <sup>81</sup>Br, which possess a spin quantum number <i>I</i> = 3/2, <i>m</i> will take the values <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow>
+  <mfrac>
+   <mn>3</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mo>,</mo><mtext>&#x2009;</mtext><mfrac>
+   <mn>1</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mo>,</mo><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mfrac>
+   <mn>1</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mo>,</mo><mtext>&#x2009;</mtext><mtext>and</mtext><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mfrac>
+   <mn>3</mn>
+   <mn>2</mn>
+  </mfrac>
+  <mo>.</mo>
+ </mrow>
+</math> However, since this term involving <i>m</i> is squared in <a href="#eq3.9">eqn 3.9</a> just two energy levels result, <a href="Chapter03.xhtml#fig3.43">Fig. 3.43</a>, and in this case the energy difference between them is</p>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td id="eq3.10"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi mathvariant="normal">&#x25B3;<!-- ? --></mi>
+  <mi>E</mi>
+  <mo>=</mo>
+  <mn>1</mn>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mo>/</mo>
+  </mrow>
+  <mn>2</mn>
+  <msup>
+    <mi>e</mi>
+    <mn>2</mn>
+  </msup>
+  <mi>Q</mi>
+  <mrow>
+    <mo>(</mo>
+    <mfrac>
+      <mrow>
+        <msup>
+          <mi mathvariant="normal">&#x2202;<!-- ? --></mi>
+          <mn>2</mn>
+        </msup>
+        <mi>V</mi>
+      </mrow>
+      <mrow>
+        <mi mathvariant="normal">&#x2202;<!-- ? --></mi>
+        <msup>
+          <mi>z</mi>
+          <mn>2</mn>
+        </msup>
+      </mrow>
+    </mfrac>
+    <mo>)</mo>
+  </mrow>
+</math>
+</td>
+<td style="text-align:right">(3.10)</td>
+</tr>
+</table>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.43">
+<img src="../images/fig.3.43.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 3.43</b> The energy levels involved for a quadrupolar nucleus <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>I</mi><mo>=</mo><mfrac>
+   <mn>3</mn>
+   <mn>2</mn>
+  </mfrac>
+  
+ </mrow>
+</math> in an electric field gradient.</figcaption>
+</figure>
+</aside>
+<p class="noindent">where the differential term in the bracket is a measure of the electric field gradient in the z-direction. This energy difference usually fells in the radiofrequency part of the electromagnetic spectrum.</p>
+<p class="indent">In NQR spectroscopy, like NMR, separate signals are observed for each set of chemically distinct nuclei under study, but in this case arising from their differing electric field gradients. However, unlike NMR spectroscopy there is no coupling between these different environments and so all peaks are observed as single absorptions. This results in the most straightforward application of NQR&#x2014;one peak will be produced for each chemical environment of the nucleus under study. But even here care needs to be exercised! For example, <sup>35</sup>Cl NQR studies of solid GeCl<sub>4</sub> exhibit up to four resonances, one for each chloride ligand because low site-symmetry of the <a id="page_53" class="page">Page 53, chapter 3 Resonance spectroscopy</a>molecule in the crystal results in every chloride becoming non-equivalent. In favourable cases, however, band counting alone can allow different isomers to be distinguished. The compound PFCl<sub>4</sub> can exist in two different isomeric forms as shown in <a href="Chapter03.xhtml#fig3.44">Fig. 3.44</a>. For the first isomer with the fluoride ligand in an axial position there are two different chloride environments (axial and equatorial) in the ratio 1:3. For the second isomer two signals would also be expected, reflecting the two different chloride environments, but now their relative intensities would be in the ratio 2:2 reflecting the number of equatorial and axial chloride ligands. We should therefore be able to distinguish between these two possibilities using <sup>35</sup>Cl NQR spectroscopy.</p>
+<figure>
+<img src="../images/fig.3.44.jpg" alt="images"/>
+<figcaption>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<p class="figcaption-aside-left" id="fig3.44"><b>Fig. 3.44</b> The structures of two isomers of PFCl<sub>4</sub> and their predicted NQR spectra.</p>
+</aside>
+</figcaption>
+</figure>
+<p class="indent">The observed spectrum displays two resonances in the ratio 1:3 suggesting that the first structure is adopted in the solid state.</p>
+<p class="indent">A further use of NQR spectroscopy is that the resonance frequency of a particular quadrupolar nucleus can be correlated to the ionic nature of the bonding in the molecule being studied. The data in <a href="Chapter03.xhtml#tab3.7">Table 3.7</a> show how the value of <i>e</i><sup>2</sup><i>Qq</i> vary for some halogen-chlorides and alkali-metal chlorides. As the electronegativity difference increases between the constituent elements and the bonding becomes more ionic, the values become smaller. In the free chloride ion all three p-orbitals will be equally filled with two electrons and so the electron distribution is as symmetric as possible resulting in small <i>e</i><sup>2</sup><i>Qq</i> values.</p>
+<aside class="right" style="margin-top:-10em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 3.12</b> Can NQR spectroscopy be used to distinguish between <i>cis</i>- and <i>trans</i>- PtCl<sub>2</sub>(NH<sub>3</sub>)(H<sub>2</sub>O)?</p>
+</aside>
+</section>
+<section epub:type="chapter">
+<h2 class="h2">3.3<span class="space">&#160;</span>Electron spin resonance (ESR)</h2>
+<p class="noindent">Just as a nucleus may possess a magnetic moment, so an electron, by virtue of the fact that it is a moving charge, will generate a magnetic moment. There are two possible values for this magnetic moment, <i>m<sub>s</sub></i> = <i>&#x00B1;</i>&#x00BD;. The magnetic moment is much stronger than that generated inside the nucleus and the electron is much smaller than the nucleus so the energy gap between the ground and excited state is much greater than it is for the nucleus. This larger energy gap changes the Boltzmann distribution between the ground and excited states which makes ESR spectroscopy a very much more sensitive technique than NMR spectroscopy. Since no two electrons may possess the same four quantum numbers, ESR transitions can only occur in systems with one or more unpaired electrons. The most commonly studied compounds are radical ions and transition metal complexes. Because such systems are usually paramagnetic, an alternative name for this technique is electron paramagnetic resonance or EPR.</p>
+<aside class="right" style="margin-top:-19em;" epub:type="sidebar">
+<table  style="margin-top:1em;margin-bottom:1em;">
+<tr>
+<td style="border-bottom:solid 1px;border-top:solid 2px;">&#x00A0;</td>
+<td style="border-bottom:solid 1px;border-top:solid 2px;padding-left:0.5em;">e<sup>2</sup><i>Qq</i></td>
+<td style="border-bottom:solid 1px;border-top:solid 2px;">&#x00A0;</td>
+<td style="border-bottom:solid 1px;border-top:solid 2px;padding-left:0.5em;">e<sup>2</sup><i>Qq</i></td>
+<td style="border-bottom:solid 1px;border-top:solid 2px;">&#x00A0;</td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">FCl</td>
+<td style="padding-left:0.5em;">-146</td>
+<td style="padding-left:0.5em;">KCl</td>
+<td style="padding-left:0.5em;">0.04</td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">BrCl</td>
+<td style="padding-left:0.5em;">-103</td>
+<td style="padding-left:0.5em;">RbCl</td>
+<td style="padding-left:0.5em;">0.77</td>
+</tr>
+<tr>
+<td style="border-bottom:solid 2px;padding-left:0.5em;">ICl</td>
+<td style="border-bottom:solid 2px;padding-left:0.5em;">-83	</td>
+<td style="border-bottom:solid 2px;padding-left:0.5em;">CsCl</td>
+<td style="border-bottom:solid 2px;padding-left:0.5em;">3.0</td>
+</tr>
+</table>
+<p class="tablecaption-aside-left" id="tab3.7"><b>Table 3.7</b> NQR parameters obtained for some chlorine-containing species.</p>
+</aside>
+<a id="page_54" class="page" style="width:60%;">Page 54, chapter 3 Resonance spectroscopy</a>
+<p class="indent">The basis of the experiment is that when a material containing unpaired electrons is placed in a magnetic field (B<sub>0</sub>) then splitting of the electron-spin energy levels arises (as shown in <a href="Chapter03.xhtml#fig3.45">Fig. 3.45</a>) given by</p>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td id="eq3.11"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi mathvariant="normal">&#x25B3;<!-- ? --></mi>
+  <mi>E</mi>
+  <mo>=</mo>
+  <mi>g</mi>
+  <msub>
+    <mi>&#x03BC;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>B</mi>
+    </mrow>
+  </msub>
+  <msub>
+    <mi>B</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>0</mn>
+    </mrow>
+  </msub>
+</math>
+</td>
+<td style="text-align:right">(3.11)</td>
+</tr>
+</table>
+<aside class="right" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig.3.45.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig3.45"><b>Fig. 3.45</b>  The energy levels of an unpaired electron in a magnetic field.</figcaption>
+</figure>
+</aside>
+<p class="noindent">where <i>&#x00B5;</i><sub>B</sub> is the Bohr magneton (9.274 &#x00D7; 10<sup>&#x2013;24</sup> J T<sup>&#x2013;1</sup>) and <i>g</i> is a factor of proportionality. This is equal to 2.00232 for a free electron, i.e. one that is not particularly associated with any orbital within a molecule. Most organic radicals have <i>g</i>-values between 1.99 and 2.01 while for transition metal species the range is usually much wider.</p>
+<aside class="right" style="margin-top:-4em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig.3.46.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig3.46"><b>Fig. 3.46</b> An absorption peak and its first derivative.</figcaption>
+</figure>
+</aside>
+<p class="indent">As we saw earlier, for NMR spectroscopy it is possible to record spectra at fixed magnetic field or fixed frequency. The same is true for ESR spectroscopy, with most ESR spectrometers working at a fixed frequency and varying the magnetic field. However, as a consequence of the way the ESR spectrometer works it is usual for spectra to be displayed in the form of the first derivative of the more usual absorption peak plotted against magnetic field. The derivative curve corresponds to a measure of the gradient of the original peak. As the absorption increases the derivative increases, but as the maximum absorption is approached the rate of change (or gradient) of the absorbance peak starts to fall until at the absorption maximum the rate of change is zero and the derivative passes through zero. These two waveforms are shown in <a href="Chapter03.xhtml#fig3.46">Fig. 3.46</a>.</p>
+<section id="sec3.3.1" epub:type="chapter">
+<h3 class="h3">Electron&#x2013;electron coupling</h3>
+<p class="noindent">In ESR spectroscopy coupling can arise from two different sources. Firstly, if a molecule contains more than one unpaired electron (such as transition metal complexes) then a number of possible spin-states arise. For example, if there are two unpaired electrons then the spin of the electrons may be aligned parallel or anti-parallel in three different ways (&#8593;&#8593;, &#8593;&#8595;, or &#8595;&#8595;) corresponding to <i>M</i><sub>s</sub> = 1, 0, and &#x2013;1. Where <i>M</i><sub>s</sub> is the sum of individual <i>m</i><sub>s</sub> states. These three components would be split in a magnetic field and because of the different energies of the different states a number of transitions will be observed in the ESR spectrum. This makes interpretation of the spectrum without the aid of computer simulation programs almost impossible and certainly beyond the scope of this book and so we shall confine our discussion to systems which contain a single unpaired electron.</p>
+<aside class="right" style="margin-top:-2em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 3.13</b> The ESR spectrum of CIO<sub>2</sub>. recorded at 9136 MHz shows four lines centred at 0.325 T. What is the <i>g</i>-value?</p>
+</aside>	
+</section>
+<section id="sec3.3.2" epub:type="chapter">
+<h3 class="h3">Hyperfine coupling</h3>
+<p class="noindent">Just as in NMR it is possible for one nuclear spin to interact with another nuclear spin, so it is also possible for the spin of the electron to interact with the spin of surrounding nuclei. This coupling, referred to as <i>hyperfine coupling</i>, operates in a similar way to the coupling in NMR. The ESR spectrum of a single unpaired electron would normally result in just one signal corresponding to the transition given in <a href="#eq3.11">eqn. 3.11</a>. If the electron is surrounded by <i>n</i> spin-active nuclei each with a spin quantum number of <i>I</i>, then a (2<i>nI</i> + 1) line pattern will be observed in a similar way to NMR spectroscopy. For spin-&#x00BD; nuclei the relative intensities of the lines will <a id="page_55" class="page">Page 55, chapter 3 Resonance spectroscopy</a>follow the binomial distribution just as the coupling patterns do in NMR spectroscopy. The energy separations are now given by</p>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig.3.47.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig3.47"><b>Fig. 3.47(a)</b> The ESR spectrum of the CH<sub>3</sub><sup>.</sup> radical and (b) the energy diagram for this system.</figcaption>
+</figure>
+</aside>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td id="eq3.12"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi mathvariant="normal">&#x25B3;<!-- ? --></mi>
+  <mi>E</mi>
+  <mo>=</mo>
+  <mi>g</mi>
+  <msub>
+    <mi>&#x03BC;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>B</mi>
+    </mrow>
+  </msub>
+  <msub>
+    <mi>B</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>0</mn>
+    </mrow>
+  </msub>
+  <mo>+</mo>
+  <msub>
+    <mi>m</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>i</mi>
+    </mrow>
+  </msub>
+  <msub>
+    <mi>A</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>i</mi>
+    </mrow>
+  </msub>
+</math>
+</td>
+<td style="text-align:right">(3.12)</td>
+</tr>
+</table>
+<p class="noindent">where <i>A</i><sub><i>i</i></sub> is the <i>hyperfine splitting constant</i> and <i>m</i><sub><i>i</i></sub> the electronic spin state of nucleus <i>i</i>.</p>
+<p class="indent"><a href="Chapter03.xhtml#fig3.47">Figure 3.47(a)</a> shows the ESR spectrum for the methyl radical which is a four-line pattern in the intensity ratio of 1:3:3:1. These lines arise from the interaction of the unpaired electron with the three spin-&#x00BD; protons in a similar way to that observed in NMR spectroscopy. The appropriate energy diagram is shown in <a href="Chapter03.xhtml#fig3.47">Fig. 3.47(b)</a>. The hyperfine splitting can be determined (in this case as 23 mT) by measuring the separation between two peaks.</p>
+<p class="indent">Coupling to quadrupolar nuclei will also occur. For example, the ESR spectrum of the complex [Cu(acac)<sub>2</sub>] shown in <a href="Chapter03.xhtml#fig3.48">Fig. 3.48</a> exhibits four peaks in a 1:1:1:1 ratio arising from coupling of the unpaired d-electron with the <sup>63</sup>Cu nucleus which has <i>I</i> = 3/2.</p>
+<figure>
+<img src="../images/fig.3.48.jpg" alt="images"/>
+<figcaption>
+<aside class="right" style="margin-top:-6em;" epub:type="sidebar">
+<p class="figcaption-aside-left" id="fig3.48"><b>Fig. 3.48 (a)</b> The ESR spectrum and (b) the structure of the complex [Cu(acac)<sub>2</sub>].</p>
+</aside>
+</figcaption>
+</figure>
+<p class="indent">The previous spectra are typical of those obtained from solution-phase studies. Under these circumstances the rapid tumbling of the molecules ensures that any distinction between the various cartesian directions of the molecules is averaged to zero. However, ESR studies of solids or frozen solutions are frequently recorded and under these conditions it is possible to observe two or three different sets of peaks depending on the molecular symmetry. If the compound under study possesses an axis of symmetry then the electric field in this direction is different from the remaining two and the ESR spectrum reflects this in that two separate peaks are observed corresponding to the different <i>g</i>-factors for the axis direction (labelled <b>g<sub>|</sub></b>) and the other perpendicular directions (labelled <b>g<sub>&#x2534;</sub></b>). Alternatively, all three axis directions may be unique resulting in the presence of three peaks corresponding to different <i>g</i>-factors, labelled as <i>g</i><sub><i>xx</i></sub>, <i>g</i><sub><i>yy</i></sub>, and <i>g</i><sub><i>zz</i></sub>. In this case three separate peaks are observed in the ESR spectrum as shown in Fig.</p>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 3.14</b> Would you expect to observe ESR spectra of the following species and if so what will be their appearance: (i) I<sub>2</sub>, (ii) I<sub>2</sub><sup>-</sup> , (iii) NO, and (iv) VO<sup>2+</sup>?</p>
+</aside>
+<figure>
+<img src="../images/fig.3.49.jpg" alt="images"/>
+<figcaption>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<p class="figcaption-aside-left" id="fig3.49"><b>Fig. 3.49</b> ESR spectra of solids in which (a) <b>g<sub>&#x2534;</sub></b> &#x003E; <b>g<sub>|</sub></b> and (b) <i>g</i><sub><i>xx</i></sub>&#x003E;<i>g</i><sub><i>yy</i></sub>
+&#x003E;<i>g</i><sub><i>zz</i></sub>.</p>
+</aside>
+</figcaption>
+</figure>
+</section>
+</section>
+<a id="page_56" class="page" style="width:60%;">Page 56, chapter 3 Resonance spectroscopy</a>
+<section id="sec3.4" epub:type="chapter">
+<h2 class="h2">3.4<span class="space">&#160;</span>Potential problems</h2>
+<p class="noindent">The following section identifies some of the problems encountered in NMR spectroscopy and suggests some solutions or remedial action.</p>
+<table style="width:90%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:20%"/>
+<col style="width:35%"/>
+<col style="width:35%"/>
+</colgroup>
+<tr>
+<td style="border-bottom:solid 1px;border-top:solid 2px;">Problem</td>
+<td style="border-bottom:solid 1px;border-top:solid 2px;padding-left:0.5em;">Possible cause</td>
+<td style="border-bottom:solid 1px;border-top:solid 2px;">Suggestion</td>
+</tr>
+<tr>
+<td style="padding-bottom:1em;">Too many peaks in the spectrum</td>
+<td style="padding-left:0.5em;">Mixture of compounds<br/>Chemical or magnetic non-equivalence</td>
+<td style="padding-bottom:1em;">Effect of seperation or use 2D techniques , if appropriate.</td>
+</tr>
+<tr>
+<td style="padding-bottom:1em;">Too few peaks in the spectrum</td>
+<td style="padding-left:0.5em;">Inter- or intramolecular exchange processes</td>
+<td style="padding-bottom:1em;">Record spectrum at lower temperature or in a different solvent</td>
+</tr>
+<tr>
+<td style="padding-bottom:1em;">Too few peaks in the spectrum</td>
+<td style="padding-left:0.5em;">(a)Weakest lines of a binomial distribution not visible<br/>(b) Accidental overlap of peaks</td>
+<td style="padding-bottom:1em;">(a)Accumulate more scans to increase signal- to-noise level<br/>(b) Record again at a different magnetic field</td>
+</tr>
+<tr>
+<td style="padding-bottom:1em;">Peaks very broad</td>
+<td style="padding-left:0.5em;">(a) Exchange processes occurring<br/>(b) Poor sample preparation<br/>(c) Quadrupolar nucleus present<br/>(d) Paramagnetic compound</td>
+<td style="padding-bottom:1em;">(a)Record spectrum at lower temperature or in a different solvent<br/> b)Use a mobile solvent and ensure no solids are present in the tube</td>
+</tr>
+<tr>
+<td style="border-bottom:2px solid;">Strange non-binomial patterns</td>
+<td style="padding-left:0.5em;border-bottom:2px solid;">(a) Second-order spectra<br/>(b) Accidental overlap of patterns</td>
+<td style="border-bottom:2px solid;">Record on higher field machine or simulate pattern by calculation</td>
+</tr>
+</table>
+</section>
+<section epub:type="chapter">
+<h2 class="h2">3.5<span class="space">&#160;</span>Further questions</h2>
+<p class="noindent">3.15 The ESR spectrum of the NH<sub>2</sub> radical is shown in <a href="Chapter03.xhtml#fig3.50">Fig. 3.50</a>. Explain the observed pattern and determine the <i>g</i>-value and the hyperfine splitting constants for this species.</p>
+<p class="noindent">3.16 The <sup>31</sup>P NMR spectrum of [Rh(PEt<sub>3</sub>)<sub>3</sub>Cl<sub>2</sub>Br] exhibits a doublet of doublets centred at &#x2013;4.3 ppm and a doublet of triplets at &#x2013;20 ppm. Explain whether these patterns allow the stereochemistry of the complex to be unambiguously determined, if not what experiment might?</p>
+<p class="noindent">3.17 Identify the white product from the reaction of [Pt(PPh<sub>3</sub>)<sub>2</sub>(CO<sub>3</sub>)] with NaBH<sub>4</sub> and C<sub>2</sub>H<sub>4</sub> which contains 60.8&#x0025; C and 4.65&#x0025; H. Room temperature multinuclear NMR experiments reveal a number of peaks. Of these the following show platinum satellite structure: <sup>1</sup>H, 2.2 ppm (singlet); <sup>13</sup>C{<sup>1</sup>H}, 39.6 ppm (singlet). The <sup>195</sup>Pt NMR spectrum displays a triplet.</p>
+<aside class="right" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig.3.50.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig3.50"><b>Fig. 3.50</b> The ESR spectrum of the NH<sub>2</sub> radical.</figcaption>
+</figure>
+</aside>
+<section id="sec3.5.1" epub:type="chapter">
+<h3 class="h3">Further reading</h3>
+<p class="noindent">P.J. Hore, Nuclear magnetic resonance (Oxford chemistry primers series), Oxford University Press (1995).</p>
+<p class="noindent">R.V. Parish, NMR, NQR, EPR and Mossbauer spectroscopy in inorganic chemistry, Ellis Horwood (1990).</p>
+<p class="noindent">A.E Derome, Modem NMR techniques for chemistry research, Pergamon Pres$ (1987).</p>
+<p class="noindent">R.K. Harris and B.E. Mann, NMR and the periodic table, Academic Press (1978).</p>
+
+</section>
+</section>
+</section>
+</div>
+</body>
+</html>

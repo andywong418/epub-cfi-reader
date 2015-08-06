@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Input transducers</title>
+<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>	
+<div>
+
+<section epub:type="chapter" id="ch04">
+<a id="page_50" class="page" style="width:70%">Page 50, 4 Feedback and control</a>
+<h1 class="main1"><b>4</b><span class="space">&#160;</span><b>Feedback and controls</b></h1>
+<section epub:type="chapter" id="sec_4.1">
+<h2 class="h2">4.1<b><span class="space">&#160;</span>Control systems</b></h2>
+<p class="noindent">Electrical signals can be used to <i>control</i> some other property, such as the position of a piece of equipment, the intensity of a light, or the temperature of some system. One way of making this procedure more precise is to measure the quantity being controlled, and use the measurement to make appropriate corrections if the response is not exactly as intended. The return of the measurement to the controlling device is an example of <i>feedback.</i> All control systems that incorporate a feedback <i>loop</i> can be regarded as types of <i>servo system,</i> although the term is often applied specifically to the situation where the position of an object is set electrically, by a motor or other output transducer, and a feedback signal derived from a position-sensitive input transducer (see <a href="Chapter03.xhtml#sec_3.2">Section 3.2</a>) to correct the position to that desired. It is in this way that machine tools and other robotic devices can exert forces of many tonnes, and yet move their loads to a hair&#x2019;s breadth of accuracy. In an <i>open loop</i> situation, without feedback, the accuracy of the final response relies on the complete transfer function (see <a href="Chapter03.xhtml#page_34">pp. 34</a>-<a href="Chapter03.xhtml#page_35">35</a>) between initial input and ultimate output. With a <i>closed loop</i> incorporating feedback, the accuracy may be determined almost entirely by the calibration of the sensing transducer.</p>
+<aside class="abc" style="margin-top:-19.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_4.1">
+<img src="../images/page_50_1.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig. 4.1</b> Mechanical thermostat for shower mixer tap</p></figcaption></figure></aside>
+<p class="indent3-ka">Many control arrangements do not involve electrical signals at all. Examples include simple float and valve devices for keeping liquid levels at the desired value, hydraulic positioning devices (which return information to the operator about the position of the load moved), and a variety of thermostats. It may be instructive to examine a simple non-electrical thermostat so that the principles of operation can be clarified. The shower mixer tap is familiar in everyday life. An &#x2018;open loop&#x2019; mixer requires the operator to judge how much to open the hot and cold taps to give the desired shower temperature. Most readers will know the difficulty in making the correct adjustment, especially if the water supply is subject to vagaries of temperature and flow. A mechanical thermostatic valve eliminates many of these difficulties. <a href="#fig_4.1">Figure 4.1</a> shows the idea schematically. An element sensitive to temperature is arranged so that if it expands, it tends to block off or reduce the flow of hot water, while if it contracts, it closes off the cold water. In this way, the element remains in the same state of expansion, which is to say that the mixed water must remain at the same temperature. The temperature can be chosen by adjusting the initial position of the element, but, at least within certain limits, fluctuation in temperature or flow rate of the two supplies will not cause the outflow temperature to deviate from that selected.</p>
+<aside class="abc" style="margin-top:-24.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_4.2">
+<img src="../images/page_50_02.jpg" alt="images"/>
+<p class="aside" style="text-align:center;">represents any amplifier, and will be discussed further in <a href="#sec_4.3">Section 4.3</a>. Here it amplifies the error between measured and desired temperature</p>
+<figcaption><p class="aside" style="width:130%;"><b>Fig. 4.2</b> Electrical analogue of the device shown in <a href="#fig_4.1">Fig. 4.1</a></p></figcaption></figure></aside>
+<p class="indent3-ka">The electrical analogue (<a href="Chapter04.xhtml#fig_4.2">Fig. 4.2</a>) of the thermostatic system is easy to understand. An electrical temperature transducer (see <a href="Chapter03.xhtml#sec_3.5">Section 3.5</a>) is placed in the mixed flow in the outlet, the signal is amplified, and it is then used to<a id="page_51" class="page">Page 51, 4 Feedback and control</a>move the position of the valves in the hot and cold water supplies in the correct sense to maintain the temperature constant. The valves themselves might be actuated by a reversible motor connected to a screw drive. The temperature at which the water flow is maintained is determined by the initial electrical balance point when there is no signal to close either cold or hot supply, and that balance can itself be set electrically to select the temperature.</p>
+<p class="indent3-ka">The thermostatic systems just described embody the elements essential to all closed-loop control systems. These elements are the (i) <i>measurement</i> of the quantity of interest (here temperature); (ii) <i>comparison</i> of this measurement with the desired value; (iii) the production of an <i>error response</i> if the two values are different; and (iv) the use of the error response to take <i>corrective action.</i> In electrical control systems, it is usual to amplify the (electrical) error signal so that a small deviation of the measured quantity from its desired value produces a proportionately large corrective driving force. High precision can be achieved in this way, although there may be drawbacks or difficulties as we shall explain in <a href="#sec_4.6">Section 4.6</a>.</p>
+<p class="indent3-ka">Temperature control is, of course, necessary in many scientific experiments, so that the thermostats chosen for illustration have also a very real practical importance. Often, the control of the two separate hot and cold supplies is replaced by a single heater that is driven by the error signal after amplification, with the cooling from temperatures above that chosen being achieved by simple heat losses to the surroundings. If the required temperature is below ambient, &#x025B; cooling element can be controlled by the error signal, or the apparatus can be cooled to a temperature <i>below</i> that desired, and a controlled heater used to bring the temperature up to higher values.</p>
+<p class="indent3-ka">All the devices described so far are <i>proportional</i> controllers: that is, the control increases the larger the error signal. Although the word &#x2018;proportional&#x2019; should not be interpreted too literally as meaning &#x2018;linearly proportional&#x2019;, this comment applies equally to the mechanical thermostat, hydraulic system, or ball valve as it does to the electrical equivalents. A control strategy that is sometimes simpler just involves turning the driving force on or off according to whether the controlled property is above or below some chosen threshold point. Many temperature controllers are of this type; one example is a room thermostat consisting of a temperature-sensitive switch that may turn a central heating boiler on or off. The great disadvantage of this type of control is that there is almost bound to be some overshoot beyond the desired temperature, because the heating is not cut off until the required temperature has already been reached. We return to this question briefly in <a href="#sec_4.6">Section 4.6</a>.</p>
+<p class="indent3-ka">Several other types of proportional control system are quite easy to devise. A <i>motor speed controller</i> might use the chopper disc of <a href="Chapter03.xhtml#fig_3.11">Fig. 3.11</a> (<a href="Chapter03.xhtml#page_39">see p. 39</a>) in conjunction with a ratemeter to generate a voltage proportional to the angular velocity. This voltage can then be used to control the power supply to the motor and lock the rotational speed to the desired value. A <i>light intensity stabilizer</i> might work in a similar way, with one of the light detectors described in <a href="Chapter03.xhtml#sec_3.6">Section 3.6</a> linked to a lamp power supply. Note carefully that in both cases the power must <i>decrease</i> as the transducer output <i>increases.</i></p>
+</section>
+
+<section epub:type="chapter" id="sec_4.2">
+<a id="page_52" class="page" style="width:70%">Page 52, 4 Feedback and control</a>
+<h2 class="h2">4.2<b><span class="space">&#160;</span>The potentiometric pen recorder</b></h2>
+<p class="noindent">In <a href="Chapter02.xhtml#sec_2.6">Section 2.6</a>, we described the advantages of null methods in making measurements in general, and the virtues of the potentiometer for determining voltages and e.m.f.s in particular. One major disadvantage of the manual potentiometer is the time taken to balance it; the speed and accuracy depend on the skill of the operator. An automated version of the potentiometer, on the other hand, allows electrical signals to achieve the balance point with both high speed and high accuracy. The simple electrical circuit of the potentiometer is given in <a href="Chapter02.xhtml#fig_2.20">Fig. 2.20</a> (<a href="Chapter02.xhtml#page_31">p. 31</a>). A way of implementing this arrangement automatically is shown in outline in <a href="#fig_4.3">Fig. 4.3</a>. An electric motor is used to move the sliding contact up and down the wire via a drive cord and set of pulleys. The next step is to connect up an electrical circuit such as that indicated in <a href="#fig_4.4">Fig. 4.4</a>. Points A and B are those that were connected to the null-indicating meter in <a href="Chapter02.xhtml#fig_2.20">Fig. 2.20</a>. They are now arranged to drive the motor to bring the slider down the slide wire if the voltage at A is bigger than that at B, and up the wire if it is smaller. The motor comes to rest when the potentials at A and B are identical, and the position of the slider on the wire is exactly that required to obtain balance. One could imagine such an arrangement in which a small d.c. motor (whose direction of motion depends on the polarity of voltage applied) driving a very low mass and low friction slider. In reality, the difference in voltage between A and B is always amplified in an <i>error amplifier,</i> as shown in <a href="#fig_4.5">Fig. 4.5</a> A suitable amplifier is obviously a <i>differential amplifier,</i> some kinds of which are discussed in <a href="#sec_4.4">Section 4.4</a>. Its inclusion does not alter the principle of operation, but it allows the motor to exert a large torque for small displacements of the slider from the balance point, and, in addition, it can prevent current being drawn from the test voltage source while the potentiometer is balancing itself.</p>
+<aside class="abc" style="margin-top:-29.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_4.3">
+<img src="../images/page_52_1.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig. 4.3</b> An automated potentiometer: the pen recorder (mechanical outline)</p></figcaption></figure>
+<figure class="fig1" id="fig_4.4">
+<img src="../images/page_52_2.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig. 4.4</b> Electrical outline for <a href="#fig_4.3">Fig. 4.3</a></p></figcaption></figure></aside>
+<p class="indent3-ka">It is just one simple step from this automated potentiometer to the construction of a pen recorder, and that is to attach a suitable pen to the mechanical link to the sliding contact. The pen thus moves in exact relation to the slider; the differential amplifier provides the power necessary to drag the pen along the recording paper. A <i>strip chart recorder</i> employs a constant speed motor to drive the recording paper under the pen, and thus, in its simplest form, provides a record of voltage at point B as a function of time. An <i>X-Y recorder</i> is set up with two sets of potentiometers with their sliders at right angles, and arranged so that one potentiometer is carried on the other. The pen writes on a flat-bed paper sheet to plot <i>Y</i> voltage as a function of <i>X.</i></p>
+<aside class="abc" style="margin-top:-12.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_4.5">
+<img src="../images/page_52_3.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig. 4.5</b> Use of a differential amplifier as an error amplifier</p></figcaption></figure></aside></section>
+<section epub:type="chapter" id="sec_4.3">
+<h2 class="h2">4.3<b><span class="space">&#160;</span>Feedback</b></h2>
+<h3 class="h3"><b>Negative and positive feedback</b></h3>
+<p class="noindent">At the end of <a href="#sec_4.1">Section 4.1</a>, it was emphasized that the transducer voltage and the phenomenon being controlled must be linked in such a way that an increase in the transducer output will tend to decrease the stimulus producing it. Thus an increase in temperature must be arranged to decrease the heating<a id="page_53" class="page">Page 53, 4 Feedback and control</a>process in a thermostat, an increase in angular velocity must reduce the power supplied to the motor in the speed controller, and an increase in light intensity must reduce the power applied to the lamp in the intensity stabilizer. Feedback applied in this way is <i>negative feedback.</i> Negative feedback in a control or servo system tends to stabilize it, because any change is always opposed by the sense of the control voltage or current. <i>Positive feedback</i> is also occasionally used in some applications, and it has the opposite effect, that of destabilizing the system, usually with the result that it locks to one extreme or the other of its range of response, or else goes into oscillation. We shall meet some examples in <a href="#sec_4.5">Section 4.5</a>. In all the negative feedback cases, with which most of this chapter is concerned, the concept is always that of error correction: the actual response is compared with the desired response and any deviations are employed to reduce the discrepancy.</p>
+<h3 class="h3"><b>Feedback within the electronic system</b></h3>
+<p class="noindent">So far, the discussion of this chapter has concentrated on closed feedback loops in which the loop includes both electrical or electronic devices (input transducers and amplifiers), and an output transducer producing a non-electrical response (heat, motion, light, and so on). Negative-feedback control of the purely electronic or electrical functions also conveys very substantial advantages, including the expected one of improved stability. Negative feedback operating solely within the electrical system can still be regarded as providing servo control, but now of the electrical output responses rather than of the other physical responses that we have considered.</p>
+<aside class="abc" style="margin-top:1em;" epub:type="sidebar">
+<figure class="fig1" id="fig_4.6">
+<img src="../images/page_53_1.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig. 4.6</b> Electronic servo-regulator voltage stabilizer</p></figcaption></figure></aside>
+<p class="indent3-ka">A convenient point at which to start this short survey is to consider the basic elements of a <i>voltage stabilizer.</i> Many laboratory experiments require a source of voltage that does not change either when the external power supply fluctuates, or when the load imposed by the experiment alters. The circuit of <a href="#fig_4.6">Fig. 4.6</a> shows how an electronic servo regulator might work. A differential amplifier, such as that introduced in connection with <a href="#fig_4.5">Fig. 4.5</a>, and described in more detail in <a href="#sec_4.4">Section 4.4</a>, amplifies the <i>difference</i> in voltages between points A and B. Input B is connected to a source of constant voltage (perhaps a standard cell, but more probably a source based on the zener diode described on <a href="Chapter01.xhtml#page_17">p. 17</a>). Input A is connected to, or samples, the output voltage of the complete regulator at point O. The unregulated input supply is passed through a voltage controller to the final output. This voltage controller is essentially an electronically variable resistor; it will be made up of transistors capable of carrying the required currents, but its circuitry is immaterial in the present context. The essential feature is that the effective resistance increases as the control voltage applied at the point C increases. Now the point CO is also that at which the amplified error output from the differential amplifier appears. If there were a tendency for the final output at O to increase, the voltage at C would decrease, thus preventing the change at O. The reverse sequence prevents decreases in voltage at O, which is thus stabilized to a value linked to the reference voltage, <i>V<sub>ref</sub>.</i> The stabilization is effective regardless of whether the tendency to output change results from changes in<a id="page_54" class="page">Page 54, 4 Feedback and control</a>
+the input voltage or alterations in the load. The servo system operates to compare the output voltage with <i>V<sub>ref</sub></i> and take corrective action if the relation between output and reference is not that intended. Suitably large currents can be carried by the controller, while the reference supply is not called on to supply substantial currents, and so can be chosen or designed for stability rather than current-carrying capacity.	Common use is made of <i>integrated-circuit regulators</i> in which the reference unit, amplifier and controller are fabricated on one silicon wafer.</p>
+<p class="indent3-ka">Negative feedback is very frequently used across the amplifying elements themselves. <a href="#fig_4.7">Figure 4.7</a> indicates the essentials of a voltage-feedback circuit. An amplifier is assumed to have a voltage gain of <i>A:</i> that is, a voltage <i>V<sub>i</sub> </i> applied to the input terminal produces an output voltage of <i>V<sub>0</sub> &#x003D; AV<sub>1</sub></i> . In the closed-loop circuit, a fraction &#x03B2; of the output voltage, <i>V<sub>0</sub>,</i> is fed back and <i>subtracted</i> from the input voltage, as shown in the figure. Thus, if the input voltage to the complete amplifier is <i>V<sub>i</sub></i> the voltage applied to the point X is <i>(V<sub>i</sub> - &#x03B2;V<sub>0</sub>)</i>, and it is this voltage that is multiplied by the gain <i>A</i> to produce the output, <i>V<sub>0</sub>.</i> As shown beneath the figure, the immediate conclusion is that the gain of the complete system, <i>A'</i> say, is equal to A/(l &#x002B; A&#x03B2;).</p>
+<aside class="abc" style="margin-top:-10.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_4.7">
+<img src="../images/page_54_1.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig. 4.7</b> A voltage-feedback amplifier.</p></figcaption></figure>
+<p class="aside">Voltage at X &#x003D; <i>V<sub>1</sub>-V<sub>f</sub></i></p>
+<p class="aside" style="margin-top:-1em;margin-left:5.5em"> &#x003D; <i>V<sub>1</sub>-&#x03B2;V<sub>0</sub></i></p>
+<p class="aside" style="margin-top:-1em">Voltage at Y &#x003D; A &#x00D7; voltage at X</p>
+<p class="aside" style="margin-top:-1em;margin-left:5.5em">&#x003D; A(<i>V<sub>1</sub>-&#x03B2;<i>V<sub>0</sub></i>)</i></p>
+<p class="aside" style="margin-top:-1em">But this voltage is also &#x003D; <i>V<sub>0</sub></i>, so that</p>
+<p class="aside" style="margin-top:-1em;margin-left:0.9em">A(<i>V<sub>1</sub>-&#x03B2;<i>V<sub>0</sub></i>)</i> &#x003D; <i>V<sub>0</sub></i>, or</p>
+<p class="aside" style="margin-top:-1em;margin-left:4.1em"><i>V<sub>0</sub></i> &#x003D; <i>V<sub>1</sub>A/(1&#x002B;A&#x03B2;)</i></p>
+<p class="aside" style="margin-top:-1em">The overall gain of the circuit,</p>
+<p class="aside" style="margin-top:-1em"><i>A<sup>&#x2019;</sup></i>(&#x003D;<i>V<sub>0</sub>/V<sub>1</sub></i> is thus given by</p>
+<p class="aside" style="margin-top:-1em"><i>A<sup>&#x2019;</sup></i> &#x003D; <i>A/(1&#x002B;A&#x03B2;)</i></p>
+<p class="aside" style="margin-top:-1em"><i>A&#x03B2;&#x003E;&#x003E;1,A<sup>&#x2019;</sup> &#x003D; V<sub>0</sub>/V<sub>1</sub>&#x2248;1/&#x03B2;</i></p></aside>
+<p class="indent3-ka">The point of all this is that <i>A'</i> is a less than linear function of <i>A.</i> Simple amplifiers usually exhibit open-loop gains (that is, the gains <i>without</i> feedback) that are dependent on a variety of factors, including the particular transistors used, the operating voltages, and the temperature. The gain with feedback varies less than the gain without it. Indeed, if <i>A</i> is sufficiently large that <i>A&#x03B2;</i> &#x003E;&#x003E; 1, then <i>A'</i> &#x003D; 1/&#x03B2;. That is, the overall voltage gain of the system is dependent only on the fraction of output voltage fed back to the input, and <i>independent of the open-loop gain of the amplifier.</i> The feedback fraction can be determined with simple &#x2018;passive&#x2019; components such as resistors, so that the gain can be selected reliably and reproducibly with these components alone, and extraneous factors such as supply voltage fluctuations become of minor consequence.</p>
+<p class="indent3-ka">There are several other advantages to be obtained by the use of negative feedback. One familiar example is in amplifiers intended for high-fidelity reproduction of sound, in which feedback is used to reduce <i>distortion.</i> The same principle applies to reduction of distortion in many examples of laboratory instrumentation. Such distortion might mean that a pure sine wave applied to the input is no longer a pure sine wave when it reaches the output of the amplifier, perhaps because of <i>non-linearity</i> in the amplifier transfer function. Much of the distortion is likely to be introduced in the output stages of an amplifier, especially if relatively large powers are required, because it is in these stages that there are large swings of voltage and high currents are carried. If negative feedback is applied to the amplifier, and the gain of the first (low signal) stages of the amplifier increased to compensate, then the output swings will be as large as before. The distorted component of the output would now constitute an error signal at the input in a sense such as to counteract the distortion. In other words, the feedback introduces a voltage into the output of opposite sign to the distortion which is thus almost exactly<a id="page_55" class="page">Page 55, 4 Feedback and control</a>cancelled. Another change in circuit behaviour that follows application of negative feedback and that is nearly always advantageous concerns the impedances. The <i>input impedance increases</i> and the <i>output impedance decreases.</i> As a consequence, amplifiers with feedback both load the input circuit less, and are less affected by the load attached to their outputs, than the corresponding amplifiers without feedback. The derivations of the impedances with feedback will not be given here, but they are simple, and the reasons can be seen qualitatively. At the input end, any voltage applied is partially balanced by the feedback voltage of opposite sign, so that less current flows than without the feedback. At the output, an increased load (that is, decreased load resistance) would normally reduce the output voltage. However, with feedback in the circuit, this reduced output would also mean a smaller feedback, so that the drop in output voltage will be less than without feedback.</p></section>
+<section epub:type="chapter" id="sec_4.4">
+<h2 class="h2">4.4<b><span class="space">&#160;</span>The operational amplifier</b></h2>
+<p class="noindent"><i>Differential amplifiers</i> were introduced briefly in connection with <a href="#fig_4.5">Figs 4.5</a> and <a href="#fig_4.6">4.6</a>. Used in conjunction with particular feedback configurations, amplifiers of this kind form the basis of <i>operational amplifiers.</i> The name derives from the ability of such amplifiers to perform set mathematical operations, such as addition, subtraction, integration, and differentiation, a capability that was of particular use when analogue computers had not been virtually superseded by digital ones. However, integrated-circuit operational amplifiers have become the basic building blocks of much analogue electronics, and also form the interfaces with the digital world as well, and some of their properties and uses will be explored in this section.</p>
+<p class="indent3-ka">A requirement for operational use of an amplifier is that it responds from zero frequency (that is, d.c.) upwards. When valves or discrete transistors had to be used, construction of d.c. amplifiers offered many difficulties, and <i>drift</i> (slow change of d.c. output level with time) as a result of temperature and supply voltage fluctuations, and even because of component ageing, was a particular problem. Development of integrated-circuit technology has revolutionized the construction of d.c. amplifiers, because the ability to make all the components together on a single semiconductor &#x2018;chip&#x2019; means that it is much easier to build an electrically balanced and optimized circuit in which almost all of the potential drifts are made to cancel out. Modern integrated circuits for use as operational amplifiers are not only small, but are often very cheap, yet they may contain the equivalent of from 15 to many more individual transistors. The desirable (and attainable) qualities, apart from freedom from drift, include high open-loop gain (see <a href="#page_54">p. 54</a>) and a high input impedance. The use of a differential amplifier arises in part because of the need to subtract feedback voltages from the input values as indicated in <a href="#fig_4.7">Fig. 4.7</a>. With a differential amplifier, the subtraction process is an inherent property of the amplifier. <a href="#fig_4.8">Figure 4.8</a> shows the usual symbol for a differential amplifier, in which &#x2018;&#x002B;&#x2019; and &#x2018;-&#x2019; signs have been placed at the inputs. The &#x2018;&#x002B;&#x2019; input is the <i>non-inverting input,</i> while &#x2018;-&#x2019; the input is the <i>inverting input.</i></p>
+<aside class="abc" style="margin-top:-17.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_4.8">
+<img src="../images/page_55_1.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:140%;"><b>Fig. 4.8</b> Some terms associated with the differential amplifier</p></figcaption></figure></aside>
+
+
+
+
+<p class="noindent"><a id="page_56" class="page">Page 56, 4 Feedback and control</a>Within the output voltage capabilities of the amplifier, the amplifier should produce an output voltage, <i>V<sub>0</sub>,</i> of <i>AV<sub>i</sub></i> for <i>V<sub>i</sub></i> applied to the non-inverting input, and of <i>-AV<sub>i</sub></i> when the same voltage is applied to the inverting input, where <i>A</i> is the open-loop gain of the amplifier. In general terms, <i>V<sub>0</sub></i> &#x003D; <i>A(V<sub>&#x002B;</sub> - V</i><sub>-</sub>) if V<sub>&#x002B;</sub> and <i>V</i><sub>-</sub> are the voltages at the non-inverting and inverting inputs: the output is proportional to the <i>difference</i> in input voltages. (Note that the positive and negative symbols do not indicate positive or negative voltages, but only the amplifier input to which they apply). Implicit in these remarks is the idea that if V<sub>&#x002B;</sub> &#x003D; <i>V</i><sub>-</sub> the output voltage is zero, so that if the two input terminals are connected together, no output voltage should appear regardless of the voltage that might be applied to the joined inputs. This property of rejecting common input voltages is <i>common mode rejection;</i> a numerical measure of the rejection is expressed as a <i>ratio</i> (and abbreviated CMRR). A high CMRR is another highly desirable property in a differential amplifier intended for use as operational amplifiers. One other feature of <a href="#fig_4.8">Fig. 4.8</a> needs to be explained here. All the voltages discussed and measured have to be referred to some point. It is usual for the reference to be the circuit <i>common.</i> This common line may then be considered to be at zero volts for the purposes of measurement. It may or may not be connected to physical <i>ground</i> or <i>earth</i> potential (a potential nominally the same as that of the local ground in the geographical sense).</p>
+<p class="indent3-ka">Integrated-circuit amplifiers can easily possess open-loop voltage gains of 10<sup>5</sup> or more. The maximum output voltage cannot be more than the voltage of the power supply energizing the amplifier, which is typically &#x00B1;15 volts for the types of amplifier under discussion. The amplifier is thus likely to <i>saturate</i> or <i>limit</i> under open-loop conditions with differential inputs exceeding a value of the order of tenths of a millivolt. Use is sometimes made of the limiting behaviour (see <a href="#sec_4.5">Section 4.5</a>), but, in most applications, the feedback is arranged to keep the amplifier response linear.</p>
+<aside class="abc" style="margin-top:-10.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_4.9">
+<img src="../images/page_56_1.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig.4.9</b> The voltage follower</p></figcaption></figure>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<figure class="fig1" id="fig_4.10">
+<img src="../images/page_56_2.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig.</b>4.10 high-impedance voltmeter</p></figcaption></figure></aside>
+<p class="indent3-ka">A great variety of circuits can be constructed from the simple operational amplifier; we can look only at a few of the most important types of configuration. We shall make the approximation that the amplifier behaves ideally, and that it has an input impedance and a gain each approaching infinity. The feedback provided reduces the closed-loop gain to the value required, and ensures that the amplifier output is within the linear regime. It follows that, in all the examples, the voltages at inverting and non-inverting inputs are <i>almost</i> the same, and interpretation of circuit behaviour is much simplified by assuming that the voltages are identical. The easiest circuit with which to start is the <i>voltage follower,</i> shown in <a href="#fig_4.9">Fig. 4.9</a>. In this circuit, <i>all</i> the output voltage is fed back to the inverting input: that is, the parameter P introduced on <a href="#page_54">p. 54</a> is unity. Since, as we have just said, the voltages at the two inputs are virtually identical, the output voltage, <i>V<sub>0</sub></i>, must adjust itself to be equal to the input voltage, <i>V<sub>i</sub></i>, if the output is connected to the inverting input. The voltage gain is thus unity. This qualitative analysis is confirmed by the simple formula <i>V<sub>0</sub>/V<sub>i</sub></i> &#x003D; 1/&#x03B2; (see <a href="#page_54">p. 54</a> and the legend to <a href="#fig_4.7">Fig. 4.7</a>) for &#x03B2; &#x003D; 1. The output must <i>follow</i> whatever voltage is applied to the inverting<a id="page_57" class="page">Page 57, 4 Feedback and control</a>input of the amplifier, and it is this behaviour that gives the circuit its name. An amplifier that does not alter the input voltage might be thought to be of rather limited use, but nothing could be further from the truth. The value of the amplifier is that it acts as an <i>impedance converter</i> with the very precise voltage transfer characteristic just described. Consider now the load placed across the output. The output has to stay at the input voltage regardless of the load, so the amplifier just has to supply more current to the load. In this idealized view, the output impedance is zero; a real amplifier cannot supply infinite currents of course, nor does it have infinite gain, but the principle remains the same. At the input end of the amplifier, no current can flow between the non-inverting and the inverting input because they, too, are at the same potential. Thus the input impedance is infinite; finite, but very small, currents may flow in a real amplifier. The ability to supply currents to a low-impedance load while presenting a negligible load to a source is valuable in a variety of applications in instrumentation. <a href="#fig_4.10">Figure 4.10</a> shows how a voltage follower might be coupled to the simple meter circuit of <a href="Chapter02.xhtml#fig_2.7">Fig. 2.7</a> to produce a high input impedance voltmeter. Such a meter could be used to make e.m.f. measurements on electrochemical cells, for example, without appreciably perturbing the system. The voltage follower is thus a <i>buffer</i> of the kind whose use was suggested on <a href="Chapter02.xhtml#page_23">p. 23</a>. The same circuit is also used, either as a separate circuit element, or as part of a larger integrated circuit, as the buffer preceding the ADC part of a digital voltmeter (see <a href="Chapter02.xhtml#page_24">pp. 24</a>-<a href="Chapter02.xhtml#page_25">25</a>).</p>
+<aside class="abc" style="margin-top:-20.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_4.11">
+<img src="../images/page_57_1.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig. 4.11</b> A non-inverting voltage amplifier</p></figcaption></figure>
+<p class="aside" style="margin-left:1em;"><i>V<sub>0</sub></i> &#x003D; <i>V<sub>1</sub></i>(<i>R<sub>1</sub></i>&#x002B;<i>R<sub>2</sub></i>)/<i>R<sub>1</sub></i></p>
+<p class="aside" style="margin-top:-1em;margin-left:1em;"><i>V<sub>1</sub></i> &#x003D; <i>V<sub>0</sub></i>&#x00D7;<i>R<sub>1</sub></i>/(<i>R<sub>1</sub></i>&#x002B;<i>R<sub>2</sub></i>)</p>
+<p class="aside" style="margin-top:-1em;margin-left:-0.5em;">but <i>V<sub>1</sub></i> &#x003D; <i>V<sub>f</sub></i>, so that</p>
+<p class="aside" style="margin-top:-1em;margin-left:1em;"><i>V<sub>1</sub></i> &#x003D; <i>V<sub>0</sub></i>&#x00D7;<i>R<sub>1</sub></i>/(<i>R<sub>1</sub></i>&#x002B;<i>R<sub>2</sub></i>), and</p>
+<p class="aside" style="margin-top:-1em;margin-left:1em;"><i>A<sup>&#x2019;</sup></i> &#x003D; <i>V<sub>0</sub>/V<sub>i</sub></i></p>
+<p class="aside" style="margin-top:-1em;margin-left:2em">&#x003D; <i>R<sub>1</sub></i>&#x002B;<i>R<sub>2</sub></i>)/<i>R<sub>1</sub></i></p></aside>
+
+
+
+
+<p class="indent3-ka">If voltage gain is required, then the trick is to feed back only part of the output voltage, thus making &#x03B2; &#x003C; 1, and <i>V<sub>0</sub>/V<sub>i</sub></i> &#x003D; 1/&#x03B2; &#x003E; 1. <a href="#fig_4.11">Figure 4.11</a> shows the circuit for this kind of <i>non-inverting voltage amplifier.</i> A potential divider takes off a fraction &#x03B2; &#x003D; <i>R<sub>1</sub>/(R<sub>1</sub> &#x002B; R<sub>2</sub>)</i> of the output voltage, which is thus the inverse of the gain of the unit. The same result comes, of course, without the use of the gain formula, but by noting that the voltage at the inverting input is <i>V<sub>0</sub></i> &#x00D7; <i>R<sub>1</sub>/(R<sub>1</sub> &#x002B; R<sub>2</sub>)</i> and that this must therefore also be the voltage at the non-inverting input. The gain of the amplifier with feedback is determined by the resistors alone, and can thus be set precisely. The exact gain of the differential amplifier itself is immaterial so long as it is high enough for the approximations made (see legend to <a href="#fig_4.7">Fig. 4.7</a>) to apply. As in the case of the voltage follower, the input impedance of this amplifier is very high and its output impedance low. Because it is non-inverting, the output voltage is of the same polarity, and changes in the same sense, as the input voltage; for a.c. signals, the output voltage is <i>in phase</i> with the input signal.</p>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<figure class="fig1" id="fig_4.12">
+<img src="../images/page_57_2.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig. 4.12</b> An inverting voltage amplifier</p></figcaption></figure>
+<p class="aside">In order that the summing junction S is maintained at the common potential, <i>I<sub>f</sub></i> must be equal to -<i>I<sub>i</sub></i> Thus,</p>
+<p class="aside" style="margin-top:-1em;margin-left:2.5em;"><i>I<sub>f</sub></i> &#x003D; <i>V<sub>0</sub>/R<sub>2</sub></i></p>
+<p class="aside" style="margin-top:-1em;margin-left:2.5em;"><i>I<sub>i</sub></i> &#x003D; <i>V<sub>i</sub>/R<sub>1</sub></i>, and</p>
+<p class="aside" style="margin-top:-1em;margin-left:0.1em;">(<i>V<sub>0</sub>/R<sub>2</sub></i>) &#x003D; -(<i>V<sub>i</sub>/R<sub>1</sub></i>), or</p>
+<p class="aside" style="margin-top:-1em;margin-left:2.1em;"><i>A<sup>&#x2019;</sup></i> &#x003D; <i>V<sub>0</sub>/V<sub>i</sub></i> &#x003D; -(<i>R<sub>2</sub>/R<sub>1</sub></i>)</p></aside>
+
+<p class="indent3-ka"><i>Inverting amplifiers</i> are employed, for example, if the power supplied to some experiment must decrease as some input signal increases, or if it is necessary to arrange for a phase shift of 180&#x00B0; in an a.c. signal. The process of inversion is, of course, ultimately at the heart of all negative feedback and servo control devices, and it is thus of very great importance. <a href="#fig_4.12">Figure 4.12</a> shows the basic operational amplifier circuit. Both input and feedback are connected via resistors to the inverting input. As we shall show shortly, an algebraic summation (that is, a summation with due consideration of sign) of currents occurs at this input, and the point marked S is thus the <i>summing</i><a id="page_58" class="page">Page 58, 4 Feedback and control</a><i>junction</i> of the circuit. The non-inverting input is connected to the circuit common (or ground, or earth); as stressed earlier, the inverting input and thus S must be at almost the same potential, and S is said to be at <i>virtual common</i> (or <i>virtual ground,</i> or <i>virtual earth</i>) potential. The circuit behaviour can be analysed as indicated in the legend by considering the currents flowing into the summing junction. Since the amplifier itself draws no current, the flow of current into the junction from the source must be exactly equal to the flow of current into it from the output through the feedback resistor, <i>but opposite in sign</i> so that the currents are cancelled. The overall gain of the circuit, <i>V<sub>0</sub>/V<sub>i</sub>,</i> is thus equal (see figure legend) to the ratio of the resistances<i>-R<sub>2</sub>/R<sub>1</sub>,</i> the negative sign reflecting the inverting nature of the amplification. The output impedance is again very low, because the output has to adjust itself to keep the feedback sufficient to balance the input. The input impedance does not approach infinity in the way that it does with the non-inverting circuits. Rather, it would be exactly equal to <i>R<sub>1</sub></i> with an ideal differential amplifier, because S is always kept at zero potential with respect to the circuit common. Indeed, because it is the current flow into S that determines the output voltage, the circuit can be used as a <i>current amplifier</i> or a <i>current to voltage convertor,</i> as indicated in <a href="#fig_4.13">Fig. 4.13</a>. Such an amplifier produces an inverted output voltage numerically equal to the input current multiplied by the feedback resistance. Use of a high feedback resistance thus allows the measurement of correspondingly small currents, and the configuration is extremely valuable in processing the output of the current-source transducers (see pp. <a href="Chapter03.xhtml#page_35">35</a>-<a href="Chapter03.xhtml#page_36">36</a>), such as the charged particle detectors and photocells described in <a href="Chapter03.xhtml#sec_3.4">Sections 3.4</a> and <a href="Chapter03.xhtml#sec_3.6">3.6</a>.</p>
+
+
+<aside class="abc" style="margin-top:-31.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_4.13">
+<img src="../images/page_58_1.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig. 4.13</b> Current to voltage converter</p></figcaption></figure>
+<p class="aside"><i>V<sub>0</sub></i> &#x003D; <i>I<sub>t</sub></i><i>R<sub>2</sub></i></p>
+<p class="aside" style="margin-top:-1em;margin-left:0.6em"><i>I<sub>f</sub></i> &#x003D; -<i>I<sub>i</sub></i>so that,</p>
+<p class="aside" style="margin-top:-1em;"><i>V<sub>0</sub></i> &#x003D; -<i>I<sub>i</sub></i><i>R<sub>2</sub></i></p>
+
+<figure class="fig1" id="fig_4.14">
+<img src="../images/page_58_2.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig. 4.14</b> The analogue adder</p></figcaption></figure>
+<p class="aside"><i>I<sub>1</sub></i>&#x002B;<i>I<sub>2</sub>&#x002B;</i><i>I<sub>3</sub></i> &#x003D; <i>I<sub>t</sub></i></p>
+<p class="aside" style="margin-top:-1em;">so that</p>
+<p class="aside"><i>V<sub>1</sub></i>/<i>R<sub>1</sub></i>&#x002B;<i>V<sub>2</sub></i>/<i>R<sub>2</sub></i>&#x002B;<i>V<sub>3</sub></i>/<i>R<sub>3</sub></i> &#x003D; -<i>V<sub>0</sub></i>/<i>R<sub>2</sub></i></p>
+<p class="aside" style="margin-top:-1em;">Thus</p>
+<p class="aside" style="margin-top:-1em;"><i>V<sub>0</sub></i> &#x003D; -(<i>R<sub>2</sub></i>/<i>R<sub>1</sub></i>) &#x00D7; (<i>V<sub>1</sub></i>&#x002B;<i>V<sub>2</sub>&#x002B;</i><i>V<sub>3</sub></i>)</p>
+
+
+<figure class="fig1" id="fig_4.15">
+<img src="../images/page_58_3.jpg" alt="images"/>
+<figcaption><p class="aside"><b>Fig. 4.15</b> The integrator</p></figcaption></figure>
+<p class="aside" style="margin-top:-1em;">The total charge delivered in time <i>t</i> is</p>
+<p class="fig1" style="margin-top:-1em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mstyle displaystyle='true'>
+   <mrow><munderover>
+    <mo>&#x222B;</mo>
+    <mn>0</mn>
+    <mn>t</mn>
+   </munderover>
+   <mrow>
+    <msub>
+     <mi>I</mi>
+     <mi>i</mi>
+    </msub>
+    <mo stretchy='false'>(</mo><mi>d</mi><mo stretchy='false'>)</mo><mi>t</mi><mo>=</mo><mfrac>
+     <mn>1</mn>
+     <mrow>
+      <msub>
+       <mi>R</mi>
+       <mi>i</mi>
+      </msub>
+      
+     </mrow>
+    </mfrac>
+    
+   </mrow>
+  </mrow>
+  
+ </mstyle><mstyle displaystyle='true'>
+  <mrow><munderover>
+   <mo>&#x222B;</mo>
+   <mn>0</mn>
+   <mn>t</mn>
+  </munderover>
+  <mrow>
+   <msub>
+    <mi>V</mi>
+    <mi>i</mi>
+   </msub>
+   
+  </mrow>
+ </mrow>
+ 
+</mstyle><mi>d</mi><mi>t</mi>
+</mrow>
+</math></p>
+<p class="aside" style="margin-top:-1em;">This charge must be balanced by the charge on the capacitor (q &#x003D;C<i>V<sub>0</sub></i>: see <a href="Chapter01.xhtml#fig_1.13">fig. 1.13</a>) thus</p>
+<p class="fig1" style="margin-top:-1em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>V</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>=</mo><mo>&#x2212;</mo><mfrac>
+   <mn>1</mn>
+   <mrow>
+    <msub>
+     <mi>R</mi>
+     <mi>i</mi>
+    </msub>
+    <mi>C</mi>
+   </mrow>
+  </mfrac>
+  <mstyle displaystyle='true'>
+   <mrow><munderover>
+    <mo>&#x222B;</mo>
+    <mn>0</mn>
+    <mi>t</mi>
+   </munderover>
+   <mrow>
+    <msub>
+     <mi>V</mi>
+     <mi>i</mi>
+    </msub>
+    
+   </mrow>
+  </mrow>
+  
+ </mstyle><mi>d</mi><mi>t</mi>
+</mrow>
+</math></p></aside>
+<p class="indent3-ka">It is easy to see now how the operational amplifier can be used as an <i>analogue adder.</i> <a href="#fig_4.14">Figure 4.14</a> shows the circuit of <a href="#fig_4.12">Fig. 4.12</a> modified to have three separate input voltages. The three input currents must therefore balance the feedback current to keep the summing junction at zero potential. The input resistors have been chosen for simplicity in this case to be equal; the algebra shows that the output voltage is a function of the <i>sum</i> of the three input voltages, and the device has thus added them. Indeed, if <i>R<sub>1</sub></i> is made the same as to <i>R<sub>2</sub>,</i> the output is directly equal to the sum of voltages. Although analogue computers are not in fashion, there are still many times when it is desirable to display the sum of several outputs in this way, or to add three signals precisely for further processing. Another mathematical operation that is easily performed is that of <i>integration.</i> A capacitor (see <a href="Chapter01.xhtml#page_11">pp. 11</a>-<a href="Chapter01.xhtml#page_12">12</a>) is used in the circuit (<a href="#fig_4.15">Fig. 4.15</a>) to store charge; the output voltage is related to the accumulated charge (that is, its integral). The principle indicated is used in a variety of applications not so much for mathematical integration, but to alter the frequency response and introduce phase shifts into a.c. amplifiers. Similar remarks apply to the <i>differentiator</i> (a circuit in which the capacitor and resistor of <a href="#fig_4.15">Fig. 4.15</a> are interchanged in position). The facility with which frequency responses can be chosen with these types of circuit has encouraged the use of operational amplifiers in a variety of <i>active filters</i> (compare with <a href="Chapter01.xhtml#page_14">pp. 14</a>-<a href="Chapter01.xhtml#page_15">15</a>) in which the response can be tailored to the needs of the application.</p></section>
+
+<section epub:type="chapter" id="sec_4.5">
+<a id="page_59" class="page" style="width:70%">Page 59, 4 Feedback and control</a>
+<h2 class="h2">4.5<b><span class="space">&#160;</span>Positive feedback</b></h2>
+<p class="noindent">There are some circuits in which positive feedback is employed. While negative feedback tends to stabilize the system, positive feedback <i>destabilizes</i> it so that a small displacement from an equilibrium situation is exaggerated until the system moves as far from equilibrium as possible. Consider the circuit of <a href="#fig_4.16">Fig. 4.16</a>. We have seen that with a high-gain amplifier operated in an open loop, a differential input of less than a millivolt can produce an output swing up to the saturation limit of the amplifier. With positive feedback added, this behaviour is reinforced and modified. A small signal applied to the inverting input is amplified to give a large output of opposite sign. Since all of this output is fed back to the non-inverting input, the differential input voltage is greatly increased, and a yet larger output is produced. The output very rapidly reaches its saturation value, with a polarity opposite to that which started the sequence. A small negative voltage produces a limiting positive output, and vice versa. A short duration pulse of appropriate polarity can thus be used to set one of the two stable limiting output states, so that this <i>bistable</i> circuit acts as a memory <i>latch.</i> Such devices are at the heart of digital electronics, and can be extended from memory elements to simple counters and dividers. In the simple circuit, it may not be possible ever to reverse the changes without disconnecting the circuit. A small modification is shown in <a href="#fig_4.17">Fig. 4.17</a>: not all the signal is fed back, but only a fraction &#x03B2; &#x003D; <i>R<sub>1</sub>/(R<sub>1</sub></i> &#x002B; <i>R<sub>2</sub>):</i> the circuit is the positive feedback analogue of the negative feedback circuit of <a href="#fig_4.11">Fig. 4.11</a>. The fraction &#x03B2; of the saturated output voltage, <i>V<sub>s</sub>,</i> appears at the non-inverting input. Suppose the output voltage is initially positive. An voltage <i>more positive</i> than &#x03B2;<i>V<sub>s</sub></i> applied to the inverting input will cause the output to change state (go negative); in this latter state, an input voltag <i>more negative</i> than &#x03B2;<i>V<sub>s</sub></i> (itself now negative) will reverse the output state again. There is thus a gap, or <i>hysteresis,</i> between the input voltages that effect the state changes. Devices based on this circuit (the <i>Schmitt trigger)</i> are extremely useful as <i>threshold comparators</i> or <i>discriminators.</i> For example, it may be required in an experiment to distinguish between output levels that are &#x2018;high&#x2019; or &#x2018;low&#x2019;. With the circuit of <a href="#fig_4.17">Fig. 4.17</a>, it is possible to make sure that small random fluctuations in output (noise: see <a href="Chapter05.xhtml">Chapter 5</a>) do not falsely trigger the transition. Rather, the hysteresis can be arranged so that the &#x2018;high&#x2019; is recorded only for signals that are larger than &#x2018;low plus noise&#x2019;, and that low is recorded only for signals lower than &#x2018;high minus noise&#x2019;. Connecting <i>R<sub>1</sub></i> to a reference voltage source rather than to common allows the voltage at which the discriminator acts to be set according to the needs of the experiment.</p>
+<aside class="abc" style="margin-top:-45.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_4.16">
+<img src="../images/page_59_01.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig. 4.16</b> An amplifier with positive feedback</p></figcaption>
+</figure>
+
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+
+<figure class="fig1" id="fig_4.17">
+<img src="../images/page_59_2.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig. 4.17</b> The Schmitt trigger threshold sensing circuit</p></figcaption></figure>
+<p class="aside">Assuming that <i>A</i>&#x03B2; &#x003E;&#x003E; 1 as hitherto,</p>
+<p class="aside" style="margin-top:-1em;"><i>V<sub>t</sub></i> &#x003D; <i>V<sub>s</sub></i><i>R<sub>1</sub></i>/(<i>R<sub>1</sub>&#x002B;R<sub>2</sub></i>) &#x003D; &#x03B2;<i>V<sub>s</sub></i>.</p>
+<p class="aside" style="margin-top:-1em;">A value of <i>V<sub>1</sub></i> greater than the positive magnitude or smaller than the negative magnitude of <i>V<sub>t</sub></i> will result in a change of state. There is thus a hysteresis zone of 2&#x03B2; <i>V</i><sub>s</sub> over which <i>V<sub>1</sub></i> can change without triggering a change of state</p></aside>
+<p class="indent3-ka">Yet other uses of positive feedback devices include a variety of <i>oscillators.</i> <a href="#fig_4.18">Figure 4.18</a> shows one possibility. A frequency-dependent phase-shift network connects the output to the inverting input. If an a.c. signal is shifted by 180&#x00B0;, a negative signal will appear at the inverting input as the output goes positive, and vice versa. Inversion in the amplifier reinforces the output, so that there is net positive feedback. A sustained increase in amplitude can thus build up at that frequency for which the phase shift is exactly 180&#x00B0; and oscillations occur.</p>
+<aside class="abc" style="margin-top:-10.3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_4.18">
+<img src="../images/page_59_3.jpg" alt="images"/>
+<figcaption><p class="aside" style="width:130%;"><b>Fig. 4.18</b> An oscillator circuit. N is a frequency-dependent network</p></figcaption></figure></aside>
+
+
+</section><section epub:type="chapter" id="sec_4.6">
+<a id="page_60" class="page" style="width:70%">Page 60, 4 Feedback and control</a>
+<h2 class="h2"><span class="span">&#160;</span>	<b>4.6 The stability problem</b></h2>
+<p class="noindent">Oscillations may not be deliberate, but come about accidentally because there are unexpected in&#x002D;phase feedbacks with sufficient gain to sustain the oscillation in what is meant to be a non-oscillating circuit. The effect can render an otherwise stable circuit useless. Faults in design, construction or components can lead to instabilities, and it is essential that they are eliminated in any instrumentation that is to work reliably. The cures include examination of loop gains and phases at all appropriate frequencies, and the elimination of stray impedances and feedback paths. The problem is compounded where there are non&#x002D;electrical components such as heaters, motors, or lamps in the feedback loop. In these cases, the non-electrical response may be sufficiently slow that it introduces a delay equivalent to 180&#x00B0; at some relatively low frequency. The entire system may then oscillate uncontrollably.</p>
+<aside class="abc" style="margin-top:-0em;" epub:type="sidebar">
+<figure class="fig1" id="fig_4.19"><img src="../images/page_60_1.jpg" alt="images"/>
+
+<figcaption>
+<p class="aside"><b>Fig. 4.19</b> Responses in a pen recorder</p></figcaption></figure></aside>
+
+<p class="indent3-ka">A related issue in the servo control applications is that the electrical driving force must be sufficient to push the non-electrical system to the desired end result. With a simple proportional controller, the drive becomes increasingly small as the error signal becomes smaller and the end condition might only be reached after inordinately long times. The time taken to reach the 'equilibrium' condition can be shortened by increasing the loop gain, so that the electrical drive is high for a small error signal, but that increases the likelihood of oscillation. In real devices, also, the non-electrical components show a marked inertia. This inertia might be thermal in the case of a heater or mechanical in the case of a motor driving the potentiometer of the pen-recorder. In general, provision of sufficient loop gain to bring the system rapidly towards the correct condition will cause there to be an overshoot. This overshoot is then corrected by the servo system, and a (smaller) overshoot occurs in the opposite direction. The process repeats itself, with decaying amplitude, so that the changes correspond to damped oscillations, illustrated for a motor-driven pen recorder in <a href="#fig_4.19">Fig. 4.19</a> a  the response (b) to an abrupt change in voltage (a). Sustained oscillation is an extreme form of this behaviour, sometimes referred to as the servo system hunting for its correct condition (response (c)). Time constants (and phase relationships) in the electrical and non-electrical parts of the system must be correctly matched, so that high gain (and thus precision and speed) can be combined with efficient damping that prevents the occurrence of oscillation or significant overshoot. The damping modifies the control law from that of true proportionality, because the gain is different at different frequencies. One particularly useful control law uses proportional, integral, and derivative (PID) components. The integral part provides high gain at low frequencies to maintain the long&#x002D;term accuracy; the derivative part depends on the rate of change of error signal, allowing a large control power to compensate for rapid changes. Many commercial controllers use microprocessors to provide a programmed control law. The causes of, and cures for, instability are complex, but some understanding of them can help users of instrumentation to turn a black art of adjustment into a process that has a rational basis and a chance of success.</p></section>
+
+</section></div></body></html>

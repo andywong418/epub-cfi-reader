@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Inorganic Spectroscopic Methods</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div>
+<a id="page_74" class="page" style="width:60%;">Page 74, Chapter 5 Mass spectrometry</a>
+<section epub:type="chapter" id="ch05">
+<h1 class="chaptitle">5<span class="space">&#160;</span>Mass spectrometry</h1>
+<p class="noindent">&#160;</p>
+<section id="sec5.1" epub:type="chapter">
+<h2 class="h2">5.1<span class="space">&#160;</span>Introduction</h2>
+<p class="noindent">Although mass spectrometry is not strictly a form of spectroscopy, in that it does not involve the interaction of radiation with matter, it is none the less a very useful method for identifying unknown compounds. One of the reasons it is so useful is that it can provide information about the relative molecular mass of a compound. Once we know this we can compare it with that calculated for the expected products based on the relative atomic masses of the constituent elements and the composition of the molecule (i.e. its molecular formula). In fact, mass spectroscopy will usually provide us with a lot more information than just the mass of compounds; it is frequently possible to determine which ligands or groups of atoms are bonded together from the way the compound breaks up or <i>fragments</i> during the experiment.</p>
+</section>
+<section id="sec5.2" epub:type="chapter">
+<h2 class="h2">5.2<span class="space">&#160;</span>The basics</h2>
+<p class="noindent">Mass spectroscopy requires that the molecule of interest is charged; this then provides a basis for separating the different ions due to their mass-to-charge ratio (<i>m</i>/<i>z</i> or <i>m</i>/<i>e</i>) and this can be achieved in a number of different ways. <a href="Chapter05.xhtml#fig5.1">Figure 5.1</a> shows a schematic representation of the processes involved in mass spectrometry.</p>
+<figure>
+	 <img src="../images/fig_5.1.jpg" alt="images" />
+	 <figcaption>
+	 <aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig5.1"><b>Fig. 5.1</b> A schematic of a mass spectrometer.</p>
+	</aside>
+	</figcaption>
+	</figure>
+<p class="indent">There are a number of different methods of separating charged ions; one of these relies on a magnetic field to deflect the particle. If an ion, of mass <i>m</i> and charge <i>z</i>, is accelerated by a fixed voltage, <i>V</i>, then each molecule will acquire a velocity, <i>v</i>, and kinetic energy given by</p>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td style="vertical-align:top;text-align:center;" id="eq5.1">
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>z</mi>
+  <mi>V</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mtext>1</mtext>
+    <mtext>2</mtext>
+  </mfrac>
+  <mi>m</mi>
+  <msup>
+    <mi>v</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>2</mn>
+    </mrow>
+  </msup>
+</math>
+</td>
+<td style="vertical-align:middle;text-align:right;">(5.1)</td>
+</tr>
+</table>
+<a id="page_75" class="page" style="width:60%;">Page 75, Chapter 5 Mass spectrometry</a>
+<p class="noindent">When these ions are subjected to a magnetic field, <i>B</i>, they will undergo a curved trajectory of radius <i>r</i> according to</p>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td style="vertical-align:top;text-align:center;" id="eq5.2">
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>B</mi>
+  <mi>z</mi>
+  <mi>v</mi>
+  <mo>=</mo>
+  <mi>m</mi>
+  <msup>
+    <mi>v</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>2</mn>
+    </mrow>
+  </msup>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mo>/</mo>
+  </mrow>
+  <mi>r</mi>
+</math>
+</td>
+<td style="vertical-align:middle;text-align:right;">(5.2)</td>
+</tr>
+</table>
+<p class="noindent">Combining <a href="#eq5.1">eqns 5.1</a> and <a href="#eq5.2">5.2</a> results in an expression that relates the applied magnetic field to the mass to charge ratio</p>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td style="vertical-align:top;text-align:center;" id="eq5.3">
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mfrac>
+    <mi>m</mi>
+    <mi>z</mi>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <msup>
+        <mi>B</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mn>2</mn>
+        </mrow>
+      </msup>
+      <msup>
+        <mi>r</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mn>2</mn>
+        </mrow>
+      </msup>
+    </mrow>
+    <mrow>
+      <mn>2</mn>
+      <mi>V</mi>
+    </mrow>
+  </mfrac>
+</math>
+</td>
+<td style="vertical-align:middle;text-align:right;">(5.3)</td>
+</tr>
+</table>
+<p class="noindent">Thus by varying the magnetic field it is possible to select which ions undergo sufficient curvature of their path so that they reach a detector. The spectrum produced by a mass spectrometer is, therefore, a plot of the number of ions detected versus their mass-to-charge ratio, <i>m</i>/<i>z</i>. The unit of mass most commonly used in mass spectrometry is the atomic mass unit or dalton (Da) which is defined as one-twelfth of the mass of a carbon-12 atom.</p>
+<p class="indent">There are other methods of separating ions, one of which, called time-of-flight, provides all molecules with a certain amount of momentum and then allows them to drift towards the detector; the rate at which this occurs will vary depending on the mass of the ions. Another common method of selecting ions is called quadrupole detection and is based on alternating electric fields applied across four poles (hence the name). By varying the frequency of these electric fields, ions with different mass-to-charge ratios will pass between the poles and reach the detector at the other end. Irrespective of the methods used, mass spectrometers do not directly provide mass measurements but separate ions on the basis of their mass-to-charge ratio.</p>
+</section>
+<section id="sec5.3" epub:type="chapter">
+<h2 class="h2">5.3<span class="space">&#160;</span>Ionisation methods</h2>
+<p class="noindent">As mentioned above, molecules need to be ionised before they can be selected by their mass-to-charge ratio. The method used to obtain these ions often has a significant bearing on the final spectrum obtained and is dealt with in more detail below. It is, of course, important that the ions reach the detector without combining or reacting and therefore a mass spectrometer chamber is held under high vacuum so that the mean-free path of the ions before collision is long enough that the majority reach the detector.</p>
+<section id="sec5.3.1" epub:type="chapter">
+<h3 class="h3">Electron impact</h3>
+<p class="noindent">One of the most common methods of ionisation is electron impact (EI), where a beam of accelerated electrons, usually derived from a heated tungsten filament, bombard molecules causing ionisation. The ionised molecules are then accelerated into the detection part of the mass spectrometer.</p>
+<figure class="figure-center-60">
+<i>M</i> + <i>e</i><sup>&#x2013;</sup> &#x2192; <i>M</i><sup>+</sup> + 2<i>e</i><sup>&#x2013;</sup>
+</figure>
+<p class="noindent">Ideally, molecules will just be singly ionised, but it is possible for multiple ionisations to occur.</p>
+<a id="page_76" class="page" style="width:60%;">Page 76, Chapter 5 Mass spectrometry</a>
+<figure class="figure-center-60">
+<i>M</i> + <i>e</i><sup>&#x2013;</sup> &#x2192; <i>M</i><sup><i>n</i>+</sup> + (<i>n</i> + 1)<i>e</i><sup>&#x2013;</sup>
+</figure>
+<p class="noindent">When this does arise under normal conditions it is limited to double or triple ionisation, although one method of measuring the mass of very large molecules is to deliberately ensure that molecules are highly charged so they appear at lower <i>m</i>/<i>z</i> values.</p>
+</section>
+<section id="sec5.3.2" epub:type="chapter">
+<h3 class="h3">Fast atom bombardment</h3>
+<p class="noindent">There are occasions when heating a sample and bombarding it with accelerated electrons provides too much energy and the molecules are not just ionised but also start to break up into smaller <i>fragments</i>. This is especially true for molecules containing relatively weak bonds or easily fragmented groups such as organometallic compounds; in these cases the technique of fast atom bombardment (FAB) is often preferred. In this method the compound of interest is dissolved in a suitable non-volatile &#x2018;matrix&#x2019; material such as glycerol, before being bombarded by charged atoms of argon or xenon. This method results in a higher chance of observing the <i>parent</i> or <i>molecular ion</i> with less fragmentation; however, it may also give rise to peaks due to the matrix material or even peaks arising from the products of reaction between the matrix and compound.</p>
+</section>
+<section id="sec5.3.3" epub:type="chapter">
+<h3 class="h3">Chemical ionisation</h3>
+<p class="noindent">Another common ionisation method is called chemical ionisation. In this case gas molecules and ions collide, resulting in the generation of gaseous ions with low kinetic energy (AH<sup>+</sup>) which are then used to ionise other neutral molecules. Gases such as methane and ammonia are commonly used for this technique giving rise to the ionising species CH5<sup>+</sup> and NH<sub>4</sub><sup>+</sup>.</p>
+<figure class="figure-center-60">AH<sup>+</sup> + M &#x2192; A + MH<sup>+</sup></figure>
+<p class="noindent">Under such ionisation conditions peaks are observed in the mass spectrum corresponding to the molecular ion plus H (i.e. <i>m</i>/<i>z</i> M+l) and the molecular ion plus the protonated ionising gaseous molecule [M+AH]<sup>+</sup> (i.e. <i>m</i>/<i>z</i> = M+17 for CH<sub>5</sub><sup>+</sup> or M+18 for NH<sub>4</sub><sup>+</sup>).</p>
+</section>
+</section>
+<section id="sec5.4" epub:type="chapter">
+<h2 class="h2">5.4<span class="space">&#160;</span>Interpretation of mass spectra</h2>
+<p class="noindent">Having obtained an ionised sample, a number of different mass spectrometric experiments are available to identify compounds, some of which are described below.</p>
+<section id="sec5.4.1" epub:type="chapter">
+<h3 class="h3">Accurate mass measurements</h3>
+<p class="noindent">It is possible for the mass-to-charge ratio of ions to be determined to one part in a million, or better. This may not appear at first glance to be of great use; however, consider an attempt to differentiate between CO and N<sub>2</sub> gases using mass spectrometry. Both have a mass of 28 amu based on the masses of the elements, C = 12, N = 14, and O = 16, and it would therefore appear that they cannot be distinguished using this method. However, when we use the accurate masses of the elements, given in <a href="Chapter05.xhtml#tab5.1">Table 5.1</a>, we find that the <a id="page_77" class="page">Page 77, Chapter 5 Mass spectrometry</a>relative molecular mass (rmm) of CO is 27.9994 and of N<sub>2</sub> is 28.01348 and thus these two molecules may be readily identified by a high-resolution mass spectrometry study.</p>
+</section>
+<section id="sec5.4.2" epub:type="chapter">
+<h3 class="h3">Isotope patterns</h3>
+<p class="noindent">We do not need to record extremely accurate mass-to-charge ratios to determine the identity of many inorganic compounds, since many elements naturally possess a number of different isotopes which give rise to identifiable isotope patterns. There are also a number of the common elements which are either mono-isotopic or have essentially only one naturally occurring isotope. Some of the elements that fall into this category are given in <a href="Chapter05.xhtml#tab5.2">Table 5.2</a>. Any molecule that contains isotopic elements will exhibit a number of peaks in its mass spectrum, the relative intensities of which reflect the isotopic abundances.</p>
+
+
+<aside class="right" style="margin-top:-15em;" epub:type="sidebar">
+<table style="width:100%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:50%"/>
+<col style="width:50%"/>
+</colgroup>
+<tr>
+<td style="border-bottom:solid 2px;border-top:solid 2px; padding-left:0.5em;">Element</td>
+<td style="border-bottom:solid 2px;border-top:solid 2px;">Accurate mass</td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">C</td>
+<td>12.0000</td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">N</td>
+<td>14.00674</td>
+</tr>
+<tr>
+<td style="border-bottom:solid 2px;padding-left:0.5em;">O</td>
+<td style="border-bottom:solid 2px;">15.9994</td>
+</tr>
+</table>
+<p class="sidebar-left" id="tab5.1"><b>Table 5.1</b> The accurate relative atomic masses of carbon, nitrogen, and oxygen.</p>
+</aside>
+
+
+<p class="indent">These characteristic patterns arising from the natural relative abundance of the isotopes (so called isotope patterns) are shown in <a href="Chapter05.xhtml#fig5.2">Fig. 5.2</a> for a number of the more common elements.</p>
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<table style="width:100%; margin-top:1em;margin-bottom:1em">
+<tr>
+<td>H, Be, C, N, F, Na, Al, P, Sc, Mn, Co, As, Y, Nb, Rh, I, Cs, Ta, Au, Bi</td>
+</tr>
+</table>
+<p class="sidebar-left" id="tab5.2"><b>Table 5.2</b> The dements that are monoHSotopic, or may be considered as such by virtue of possessing one very high abundance isotope.</p>
+</aside>
+<p class="noindent">&#160;</p>
+<figure class="figure-left-100">
+	 <img src="../images/fig_5.2.jpg" alt="images" />
+	 <figcaption>
+	 <p class="figcaption-center-100" id="fig5.2"><b>Fig. 5.2</b> Natural abundance of some of the more common elements.</p>
+	</figcaption>
+	</figure>
+<p class="indent">Bromine has two naturally occurring isotopes, <sup>79</sup>Br which is 50.7% abundant and <sup>81</sup>Br (49.3% abundant), as shown in <a href="Chapter05.xhtml#fig5.2">Fig. 5.2</a>. On average, slightly over half of all the molecules of a particular compound containing a single bromine atom will be composed of <sup>79</sup>Br and the remainder <sup>81</sup>Br. So the mass spectrum of the <i>molecular ion</i> of HBr would consist of two lines at <i>m</i>/<i>z</i> = 80 [1 (H) + 79 (Br)] corresponding to H<sup>79</sup>Br and <i>m</i>/<i>z</i> = 82 (due to H<sup>81</sup>Br). The intensity of these two lines will reflect their natural abundance, i.e. 50.7%:49.3%, or roughly 1:1. So the mass spectrum of the HBr ion should appear as two lines of similar intensity at <i>m</i>/<i>z</i> values of 80 and 82, as shown in <a href="Chapter05.xhtml#fig5.3">Fig. 5.3</a>. The same intensity pattern will be observed for <i>any</i> <a id="page_78" class="page">Page 78, Chapter 5 Mass spectrometry</a>molecule which contains one bromine atom and other elements which are mono-isotopic, for example PH<sub>2</sub>Br and CF<sub>3</sub>Br.</p>
+<p class="indent">What if there were two bromine atoms in a molecule, such as PFBr<sub>2</sub>? We now need to consider a larger number of possibilities; both phosphorus and fluorine are mono-isotopic but some molecules will contain two <sup>79</sup>Br atoms, some two <sup>81</sup>Br atoms, and some a mixture of one <sup>79</sup>Br atom and one <sup>8I</sup>Br atom. We would therefore expect to see peaks in the mass spectrum corresponding to <i>m</i>/<i>z</i> values of 208 (PF<sup>79</sup>Br<sup>79</sup>Br), 210 (PF<sup>79</sup>Br<sup>81</sup>Br), and 212 (PF<sup>81</sup>Br<sup>81</sup>Br). The relative intensities of these lines will be based on the natural abundance of the bromine isotopes contained in each molecule. Thus the molecules with two <sup>79</sup>Br atoms should have a relative abundance of 50.7% &#x00D7; 50.7% (i.e. 0.507<sup>2</sup> = 0.257), and the molecules containing two <sup>81</sup>Br atoms should have a relative abundance of 0.493<sup>2</sup> = 0.243. The remainder of the molecules, by definition, must contain both <sup>79</sup>Br and <sup>81</sup>Br but there is a choice of which of the bromine atoms is <sup>79</sup>Br or <sup>81</sup>Br. Once one is chosen the other must be fixed so there are two possible permutations, PF<sup>79</sup>Br<sup>81</sup>Br and PF<sup>81</sup>Br<sup>79</sup>Br. Since both of these result in the same mass, both peaks will occur in the same place in the mass spectrum and thus the total intensity of this peak will be (0.507 &#x00D7; 0.493) + (0.493 &#x00D7; 0.507) = 0.500.</p>
+
+
+<aside class="right" style="margin-top:-12em;" epub:type="sidebar">
+<figure class="figure-aside-left">
+<img src="../images/fig_5.3.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig5.3"><b>Fig. 5.3</b> Calculated mass spectrum for HBr.</figcaption>
+</figure>
+</aside>
+
+<p class="indent">A more long-winded version, especially when there are many different isotopic elements in a molecule, is to write out all the possible isotopic species and calculate their individual masses and abundances and then sum all the abundances for similar mass peaks.</p>
+<figure class="figure-center-60">
+<img src="../images/page78_01.jpg" alt="images" />
+</figure>
+<p class="noindent">Provided all possibilities have been included, and the calculations are correct, then the sum of all the abundances should add up to unity (1.0), and this may be used as a check. Therefore, we would predict that the mass spectrum for the PFBr<sub>2</sub> ion would consist of three peaks at <i>m</i>/<i>z</i> = 208, 210, and 212 in the relative ratio of 0.257:0.500:0.243 (or roughly 1:2:1). The mass spectrum of the molecular ion is shown in <a href="Chapter05.xhtml#fig5.4">Fig. 5.4</a></p>
+<aside class="right" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="figure-aside-left">
+<img src="../images/fig_5.4.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig5.4"><b>Fig. 5.4</b> Isotopic peaks for the molecular ion of PFBr<sub>2</sub>.</figcaption>
+</figure>
+</aside>
+<p class="indent">What would the isotopic distribution pattern for PCl<sub>3</sub> be? The natural abundance of chlorine is <sup>35</sup>Cl 75.8%, <sup>37</sup>Cl 24.2%, which are almost in the ratio 3:1 and this will be used since it simplifies the calculations. Isotopomers of PC1<sub>3</sub> may contain either (i) three <sup>35</sup>Cl, or (ii) two <sup>35</sup>Cl and one <sup>37</sup>Cl, or (iii) one <sup>35</sup>Cl and two <sup>37</sup>Cl, or (iv) three <sup>37</sup>C1 atoms. Such arrangements can be met in only one way for (i) and (iv), but there will be three combinations for both (ii) and (iii). The relative intensities will therefore be the relative abundance for each chlorine atom multiplied by the number of possible permutations. Taking each isotopomer in turn this gives (i) 3&#x00D7;3&#x00D7;3&#x00D7;l, (ii) 3&#x00D7;3&#x00D7;l&#x00D7;l, (iii) 3&#x00D7;l&#x00D7;l&#x00D7;l, and (iv) l&#x00D7;l&#x00D7;l&#x00D7;l. We therefore see four peaks, each separated by 2 mass units in the ratio 27:9:6:1.</p>
+<aside class="right" style="margin-top:-10em;" epub:type="sidebar">
+<p class="sidebar-left">Two isotopomers are two compounds which differ only in the isotopic mass of one or more of the elements involved.</p>
+</aside>
+<a id="page_79" class="page" style="width:60%;">Page 79, Chapter 5 Mass specrometry</a>
+<aside class="right" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 5.1</b> Calculate the isotope pattern for the ion BrCl<sup>+</sup>.</p>
+</aside>
+<p class="indent">The isotope patterns expected for a molecule containing mono-isotopic  elements and a certain number of chlorine or bromine atoms can be quite  indicative as shown by the patterns in <a href="Chapter05.xhtml#fig5.5">Fig. 5.5</a> which are for one to six of these halogen atoms.</p>
+<figure>
+	 <img src="../images/page79_1.jpg" alt="images" />
+	 <figcaption>
+	 <aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig5.5"><b>Fig. 5.5</b> Calculated isotope patterns for a number of chlorine and bromine atoms.</p>
+	</aside>
+	</figcaption>
+	</figure>
+</section>
+<section id="sec5.4.3" epub:type="chapter">
+<h3 class="h3">Fragmentation patterns</h3>
+<aside class="right" style="margin-top:1em;" epub:type="sidebar">
+<figure>
+<img src="../images/fig5.6.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption id="fig5.6"><b>Fig. 5.6</b> El spectrum of CO<sub>2</sub></figcaption>
+</figure>
+</aside>
+<p class="noindent">So far we have concentrated on the appearance of the <i>molecular</i> or <i>parent ion</i> peaks. However, it is usual under the conditions of the experiment for fragmentation of the molecule to occur and this will result in the observation of <i>fragment ions</i>. Although this might be considered an undesired side-effect it can often be very informative.</p>
+<p class="indent">The mass spectrum shown in <a href="Chapter05.xhtml#fig5.6">Fig. 5.6</a> is of carbon dioxide which has been ionised by the electron impact method. The most intense peak is due to the molecular ion, normally indicated by the notation M<sup>+</sup>, and appears at <i>m/z</i> of 44 [12 (C) + 2 x 16 (O)]. However, weaker peaks are also observed at <i>m/z</i> values of 28, 16, and 12. These arise from fragmentation of the parent molecule and correspond to CO<sup>+</sup>, O<sup>+</sup>, and C<sup>+</sup> ions, respectively.</p>
+<p class="indent">The appearance of ions due to fragmentation can allow us to distinguish . between other possible molecules with a similar mass. For example, CO and N<sub>2</sub> both have an rmm of 28 amu and it has already been shown that a high- resolution study can be used to distinguish between these two, although in a low-resolution mass spectrometric study both will exhibit a parent ion peak at <i>m/z</i> = 28. For dinitrogen the only possible fragment which would arise from breaking the N&#x2013;N bond is the N<sup>+</sup> ion with <i>m/z</i> of 14. However, for carbon monoxide we expect to observe peaks due to the fragments C<sup>+</sup> (<i>m/z</i> =12) and O<sup>+</sup> (<i>m/z</i> = 16). It should therefore be possible to distinguish between dinitrogen and carbon monoxide either using an accurate mass experiment or by studying their fragmentation patterns.</p>
+<p class="indent">For larger molecules there are frequently a number of ways a molecule may fragment</p>
+<p class="equation-center">ABC + <i>e</i><sup>-</sup> &#x2192; AB<sup>+</sup> +  C + 2<i>e</i><sup>-</sup></p>
+<p class="equation-center2">&#x2192; BC<sup>+</sup> + A + 2<i>e</i><sup>-</sup></p>
+<p class="noindent">and the fragments themselves may fragment further</p>
+<a id="page_80" class="page" style="width:60%;">Page 80, Chapter 5 Mass specrometry</a>
+<p class="equation-center">AB<sup>+</sup> &#x2192; A<sup>+</sup> + B</p>
+<p class="equation-center1">&#x2192; A + B<sup>+</sup></p>
+<p class="noindent">Such processes frequently occur for compounds containing a number of relatively weak bonds, for example in organometallic compounds.</p>
+<aside class="right" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 5.2</b> What possible fragments may arise from PMe<sub>3</sub>?</p>
+</aside>
+<p class="indent">The mass spectrum of an iron carbonyl is shown in <a href="Chapter05.xhtml#fig5.7">Fig. 5.7</a>. The spectrum exhibits a number of groups of peaks centred at <i>m/z</i> values of 196, 168, 140, 112, 84, and 56. In this case the pattern for each group of peaks appears to be similar and corresponds to that due to the natural isotopic abundance of iron, shown in <a href="#fig5.2">Fig 5.2</a>. The lowest mass set of peaks is at <i>m/z</i> of 56 and since this corresponds to the highest natural abundance isotope of iron we can assign this to the Fe<sup>+</sup> fragment. The most intense peak in each set of peaks is separated from the next by 28 amu, suggesting that a number of fragments of the same mass are being lost many times. In this case this is most likely to be carbon monoxide (28 amu). In total, the spectrum exhibits six sets of peaks each separated by 28 units and displaying the iron isotope pattern; we can therefore assign these to the ions Fe(CO)<sub><i>x</i></sub><sup>+</sup> (<i>x</i> = 0 to 5). The mass spectrum, therefore, suggests that Fe(CO)<sub>5</sub> was the compound that produced this spectrum.</p>
+<figure>
+	 <img src="../images/fig5.7.jpg" alt="images" />
+	 <figcaption>
+	 <aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig5.7"><b>Fig. 5.7</b> The mass spectrum for an iron carbonyl compound.</p>
+	</aside>
+	</figcaption>
+	</figure>
+<p class="indent">We can sketch the fragmentation pathway that gives rise to these peaks as an aid to interpreting the mass spectrum. In this case, shown in <a href="Chapter05.xhtml#fig5.8">Fig. 5.8</a>, successive fragmentation of carbonyl ligands occurs to result in the observed spectrum.</p>
+<figure>
+	 <img src="../images/fig5.8.jpg" alt="images" />
+	 <figcaption>
+	 <aside class="right" style="margin-top:-2em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig5.8"><b>Fig. 5.8</b> Fragmentation pathway for Fe(CO)<sub>5</sub>.</p>
+	</aside>
+	</figcaption>
+	</figure>
+<p class="indent">The appearance of fragmentation patterns can be used to identify unknown compounds since it allows the molecule to be &#x2018;put back together again&#x2019;. For example, <a href="Chapter05.xhtml#fig5.9">Fig. 5.9</a> shows the mass spectrum of a compound obtained by the reaction of TiCl<sub>4</sub> and Na<sup>+</sup>Cp<sup>&#x2013;</sup> (Cp<sup>&#x2013;</sup> = &#x03B7;<sup><b>5</b></sup>-C<sub>5</sub>H<sub>5</sub><sup>-</sup>).</p>
+<a id="page_81" class="page" style="width:60%;">Page 81, Chapter 5 Mass specrometry</a>
+<p class="indent">The starting point in assigning this spectrum and hence identifying the compound produced is to determine the atomic masses and isotope distributions for the elements involved. Hydrogen and carbon can be considered as effectively mono-isotopic so any hydrocarbon fragment will appear essentially as a single peak. The remaining elements all have more than one isotope, chlorine has two naturally occurring isotopes (35 and 37 amu) in the approximate ratio 3:1. Although titanium has a total of five isotopes, the distribution is dominated by a single isotope of mass 48 as shown in the isotope pattern diagram in <a href="Chapter05.xhtml#fig5.10">Fig. 5.10</a>.</p>
+<aside class="right" style="margin-top:-7em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 5.3</b> The mass spectrum of SO<sub>2</sub> shows peaks at <i>m/z</i> = 16, 32, 48 and 64; what ions may these peaks correspond to?</p>
+</aside>
+<figure class="figure-center-100">
+<img src="../images/fig5.9.jpg" alt="images"/>
+<figcaption class="figcaption-center-100" id="fig5.9"><b>Fig. 5.9</b> The El mass spectrum obtained for the product of reaction between TiCl<sub>4</sub> and Na<sup>+</sup>Cp<sup>-</sup> (Cp<sup>-</sup> = &#x03b7;<sup>5</sup>-C<sub>5</sub>H<sub>5</sub><sup>-</sup>).</figcaption>
+</figure>
+<aside class="right" style="margin-top:0em;" epub:type="sidebar">
+<figure>
+<img src="../images/fig5.10.jpg" alt="images"/>
+<figcaption id="fig5.10"><b>Fig. 5.10</b> The isotope pattem for titanium.</figcaption>
+</figure>
+</aside>
+<p class="indent">So how do we proceed in assigning the peaks? It is possible that the very small peak just below 50 amu is due to Ti<sup>+</sup> but we cannot be sure since we cannot clearly see its isotope pattern. We therefore start by looking for patterns that we do recognise, either the titanium pattern or the characteristic chlorine isotope patterns. We also need to determine the separations between sets of peaks and try and tie these in with possible ligands and fragments. Looking at the spectrum we recognise that there appear to be two repeating patterns. The sets of peaks at <i>m/z</i> values of 83, 148, and 213 are dominated by a single intense peak but accompanied by a number of weaker ones, whilst the second set of peaks at <i>m/z</i> values of 118, 183, and 248 have two more intense peaks and a number of weaker ones in each group. The separation between each of the sets of peaks of similar appearance is 65 amu (213 &#x2013; 148 = 65, 148 &#x2013; 83 = 65, and 248 &#x2013; 183 = 65, 183 &#x2013; 118 = 65). The cyclopentadienyl ligand (C<sub>5</sub>H<sub>5</sub><sup>-</sup>) has an rmm of 65 suggesting that these differences might correspond to the successive loss of this ligand. The mass difference between the two different sets of peaks is 35 amu (248 &#x2013; 213 = 35, 183 &#x2013; 148 = 35, and 118 &#x2013; 83 = 35) which corresponds to the rmm of the most abundant isotope of chlorine suggesting that at least one chloride ligand has fragmented from the compound.</p>
+<p class="indent">So putting together what we have so far, we can account for 48 (Ti) + 2 x 65 ( two Cp ligands) + 35 (Cl) = 213. This does not correspond to the highest <i>m/z</i> peak at 248; the difference between these two figures is 35, i.e. another chloride ligand. The presence of a different number of chlorine atoms would account for the different appearance of the two sets of peaks. <a href="Chapter05.xhtml#fig5.5">Figure 5.5</a> shows that the presence of two chlorine atoms in a molecule should produce a pattern with peaks in the approximate ratios of 9:6:1, like <a id="page_82" class="page">Page 82, Chapter 5 Mass specrometry</a>that seen on the peaks at 248, 183, and 118. When there is just one chlorine atom we would expect an isotope pattern that resembles more closely the 3:1 ratio of <sup>35</sup>C1:<sup>37</sup>C1 isotopic distribution. So we assume (in the absence of any indications otherwise) that the highest mass peaks correspond to the molecular ion&#x2014;Cp<sub>2</sub>TiCl<sub>2</sub>. The lower-mass peaks therefore correspond to the fragment ions Cp<sub>2</sub>TiCl<sup>+</sup> (<i>m/z</i> = 213), CpTiCl<sub>2</sub><sup>+</sup> <i>(m/z</i> = 183), CpTiCl<sup>+</sup> (<i>m/z</i> = 148), TiCl<sub>2</sub><sup>+</sup> (<i>m/z</i> =118), TiCl<sup>+</sup> (<i>m/z</i> = 83) and the peak at 65 amu is due to the C<sub>5</sub>H<sub>5</sub><sup>+</sup> fragment. This can be confirmed by calculating the isotopic masses and relative intensities for each of the fragments in turn.</p>
+<p class="indent"><a href="Chapter05.xhtml#fig5.11">Figure 5.11</a> shows the possible fragmentation pathways for this compound which would give rise to the identified fragments.</p>
+<figure>
+<div class="figure-center-60">
+<img src="../images/fig5.11.jpg" alt="images" />
+</div>
+	 <figcaption>
+	 <aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig5.11"><b>Fig. 5.11</b> Fragmentation pathways for Cp<sub>2</sub>TiCl<sub>2</sub>.</p>
+	</aside>
+	</figcaption>
+</figure>
+<aside class="right" style="margin-top:2em;" epub:type="sidebar">
+<figure id="fig5.12">
+<img src="../images/fig5.12.jpg" alt="images"/>
+<figcaption><b>Fig 5.12</b> The observed and calculated mass spectra for B<sub>2</sub>H<sub>6</sub>.</figcaption>
+</figure>
+</aside>
+<p class="indent">Problems may arise in trying to recognise isotope and fragmentation patterns if overlap occurs between two different patterns. This is especially likely to occur if hydrogen can be fragmented from a molecule, for example <a href="Chapter05.xhtml#fig5.12">Fig. 5.12</a> shows the mass spectrum of B<sub>2</sub>H<sub>6</sub>. There are two clusters of peaks just below the expected masses for the parent ion B<sub>2</sub>H<sub>6</sub><sup>+</sup>, <i>m/z</i> = 26, and the fragment BH<sub>3</sub><sup>+</sup> (<i>m/z</i> = 15). However, neither of these patterns corresponds to the natural abundance of the two boron isotopes (<sup>10</sup>B:<sup>11</sup>B 3:1, as shown in <a href="Chapter05.xhtml#fig5.2">Fig. 5.2</a>). The presence of lower-mass peaks suggests that fragmentation has occurred which results in the overlap of peaks from a number of different ions. In the case of the lower-mass peaks this can be approximated to a 2:1:1.5 mixture of the ions BH<sub>2</sub><sup>+</sup>:BH<sup>+</sup>:B<sup>+</sup> when a good match to the observed spectrum is obtained.</p>
+</section>
+<section id="sec5.4.4" epub:type="chapter">
+<h3 class="h3">Rearrangements</h3>
+<aside class="right" style="margin-top:2em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 5.4</b> Why is it unlikely that the set of peaks in the above spectrum around <i>m/z</i> =10 is due toB<sub>2</sub>H<sub>6</sub><sup>2+</sup>?</p>
+</aside>
+<p class="noindent">It is quite common for mass spectra, especially those of organometallic and organic compounds, to show peaks which cannot be assigned to fragments of the compound under investigation, but can be assigned to completely different molecules. Such species can arise from rearrangement reactions which occur within the mass spectrometer. One possible rearrangement resulting in the production of two new molecules is shown in <a href="Chapter05.xhtml#fig5.13">Fig. 5.13</a></p>
+<figure>
+<div class="figure-center-60"><img src="../images/fig5.13.jpg" alt="images" /></div>
+	 <figcaption>
+	 <aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig5.13"><b>Fig. 5.13</b> Schematic representation of a molecular arrangement which can occur in a mass spectrometer.</p>
+	</aside>
+	</figcaption>
+</figure>
+<p class="indent">There are many instances when such rearrangements occur. Metal complexes containing halogenated organic ligands frequently undergo rearrangements resulting in the formation of a metal-halogen bond by the mechanism outlined above. For example, the mass spectrum of Si(C<sub>6</sub>F<sub>5</sub>)<sub>4</sub> under electron impact conditions shows, amongst others, peaks corresponding to SiF<sup>+</sup>, SiF<sub>3</sub><sup>+</sup>, and SiF(C<sub>6</sub>H<sub>5</sub>)<sup>+</sup>.</p>
+<a id="page_83" class="page" style="width:60%;">Page 83, Chapter 5 Mass specrometry</a>
+</section>
+</section>
+<section id="sec5.5" epub:type="chapter">
+<h2 class="h2">5.5 Possible problems</h2>
+<p class="noindent">Some of the potential problems that may be associated with the analysis of compounds by mass spectrometry are listed below with suggested remedies.</p>
+<table style="width:100%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:25%"/>
+<col style="width:40%"/>
+<col style="width:35%"/>
+</colgroup>
+<tr>
+<td style="vertical-align:top;text-align:left;border-top:2px solid;padding-left:0.5em;"><b>Problem</b></td>
+<td style="vertical-align:top;text-align:left;border-top:2px solid;padding-left:0.5em;"><b>Possible cause</b></td>
+<td style="vertical-align:top;text-align:left;border-top:2px solid;"><b>Suggested remedy</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:left;border-top:1px solid;padding-left:0.5em;">No peak corresponding to the molecular ion observed</td>
+<td style="vertical-align:top;text-align:left;border-top:1px solid;padding-left:0.5em;">(a) Incorrect assignment of compound<br/>(b) Extensive fragmentation</td>
+<td style="vertical-align:top;text-align:left;border-top:1px solid;">(a) Use other spectroscopic methods to confirm, or otherwise, compound&#x2019;s identity<br/>(b) Use &#x2018;softer&#x2019; ionisation method, e.g. FAB</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:left;padding-left:0.5em;padding-top:0.5em;">Parent peak mass appears to be too high</td>
+<td style="vertical-align:top;text-align:left;padding-top:0.5em;padding-left:0.5em;">(a) Incorrect assignment of compound<br/>(b) Reactions, e.g. with FAB matrix or Cl gas<br/>(c) Peaks due to [M+AH]<sup>+</sup> for Cl</td>
+<td style="vertical-align:top;text-align:left;padding-top:0.5em;">(a) See above.<br/>(b) Try alternative ionisation methods</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:left;padding-top:0.5em;border-bottom:2px solid;padding-left:0.5em;">The mass distribution of a set of peaks is correct but the isotope pattern is not </td>
+<td style="vertical-align:top;text-align:left;padding-top:0.5em;border-bottom:2px solid;padding-left:0.5em;">The patterns from two or more fragments are overlapping</td>
+<td style="vertical-align:top;text-align:left;padding-top:0.5em;border-bottom:2px solid;">Use an alternative ionisation method to reduce fragmentation or use less energetic electrons for El method.</td>
+</tr>
+</table>
+</section>
+<section id="sec5.6" epub:type="chapter">
+<h2 class="h2">5.6 Further questions</h2>
+<p class="noindent">5.5 The El spectrum, <a href="Chapter05.xhtml#fig5.14">Fig. 5.14</a>, is of Fe(acac)<sub>3</sub> [acac = CH<sub>3</sub>COCH<sub>2</sub>COCH<sub>3</sub><sup>-</sup>]; assign the peaks where possible.</p>
+<figure>
+	 <img src="../images/fig5.14.jpg" alt="images" />
+	 <figcaption>
+	 <aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig5.14"><b>Fig. 5.14</b> The El mass spectrum of Fe(acac)<sub>3</sub>.</p>
+	</aside>
+	</figcaption>
+	</figure>
+<p class="noindent">5.6 Identify the volatile liquid product from the reaction of tin tetrachloride with triethylaluminium based on the mass spectrum in <a href="Chapter05.xhtml#fig5.15">Fig. 5.15</a>.</p>
+<figure>
+	 <img src="../images/fig5.15.jpg" alt="images" />
+	 <figcaption>
+	 <aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig5.15"><b>Fig. 5.15</b> The mass spectrum of a product from the reaction of SnCl<sub>4</sub> and AIEt<sub>3</sub>.</p>
+	</aside>
+	</figcaption>
+	</figure>
+<section id="sec5.6.1" epub:type="chapter">
+<h3 class="h3">Further reading</h3>
+<p class="noindent">R. Adams, R. Gijbels and R. vonGrieken (eds.), Inorganic mass spectrometry, Wiley (1988).</p>
+<p class="noindent">M.R. Litzow and T.R. Spalding, Mass spectrometry of inorganic and organometallic compounds, Elsevier (1973).</p>
+</section>
+</section>
+</section>
+</div> 
+</body>
+</html>

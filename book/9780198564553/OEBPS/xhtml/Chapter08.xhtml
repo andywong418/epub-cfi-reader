@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Radiation Heat Transfer</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch08">
+<a id="page_69" class="page" style="width:70%;">Page 69, Chapter 8 Measurement of temperature</a>
+<h1 class="main"><b> 8<span class="space">&#160;</span>Measurement of temperature</b></h1>
+<section epub:type="chapter" id="sec8.1">
+<h2 class="h2"><b>8.1<span class="space">&#160;</span>Introduction</b></h2>
+<p class="noindent">Techniques for the measurement of temperature may be divided into two general types. Intrusive methods, such as thermometers and thermocouples, involve the introduction into the system of a probe or detector, whose output signal gives an indication of the temperature. Very often, this temperature, which is necessarily that of the probe, is different from the temperature of the material being measured. Only a full heat transfer analysis will lead us to the required temperature. Non-intrusive methods, such as pyrometers, radiometers, and modern laser-based systems, are normally used where the temperatures are too high or the environment too hostile for a probe. The detector is placed remote from the system, but in a position where emitted radiation can be &#x201C;seen&#x201D;. The intensity of the radiation is dependent on the temperature, so data analysis can convert the radiation signal into a temperature.</p>
+<p class="indent">In this chapter we shall consider methods of temperature measurement which are based on the emission or absorption of thermal radiation. Thus spectroscopic methods based on the detection of radiation arising from molecular electronic or vibration transitions, or by simple scattering are not included here. All the methods discussed require some form of heat transfer analysis in order to extract correct temperature information. We shall see that the analyses normally involve a combination of all three heat transfer mechanisms, so it is appropriate to consider temperature measurement at this point.</p>
+</section>
+<section epub:type="chapter" id="sec8.2">
+<h2 class="h2"><b>8.2 Non-intrusive techniques</b></h2>
+<p class="noindent">Radiometry and pyrometry essentially involve an instrument which converts the incident radiant energy into an electrical output signal. There are three main parts to any system:</p>
+<p class="noindent">&#160;</p>
+<p class="nlist">(1)<span class="space">&#160;</span>A detecting element, which is sensitive to a particular wavelength or range of wavelengths, and converts the radiant energy to an electrical output.</p>
+<p class="nlist">(2)<span class="space">&#160;</span>An optical system to focus the incident radiation onto the detector; this may include a filter which transmits only the wavelength(s) of interest.</p>
+<p class="nlist">(3)<span class="space">&#160;</span>An electronics system which displays the output from the detector; this may be a straightforward voltage output, or may include processing circuitry which enables temperature to be displayed.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">A complete review of detection systems is outside the scope of this book, but we will concentrate on some basic methods of temperature measurement.</p>
+<section epub:type="chapter" id="sec8.2.1">
+<a id="page_70" class="page" style="width:70%;">Page 70, Chapter 8 Measurement of temperature</a>
+<h3 class="h3"><b>8.2.1 Radiometer</b></h3>
+<p class="noindent">Arguably the most basic non-intrusive technique is the radiometer, which is best suited for the measurement of surface temperature. It consists of a single thermocouple or a thermopile (i.e. a number of thermocouples connected in series), which is heated by incident radiation falling upon it. Radiometers are broadband detectors, in that no filters are used, and radiation of all wavelengths lands on the sensor. They are sometimes termed thermal detectors, as they rely on the heating effect of the radiation incident upon them. The thermocouple junctions are normally coated with platinum black or carbon black in order to raise their absorptivity to very close to 1. The incident radiant flux determines the temperature of the thermocouple, and hence the electrical output from the radiometer. The incident flux will depend not only on the temperature of the radiation source, but also on how close the radiometer is to the source. A radiation analysis is therefore required to relate the radiometer output to the temperature of the source.</p>
+<p class="indent"><a href="#fig8.1">Figure 8.1</a> shows schematically the arrangement for a radiometer (surface 2) measuring the surface temperature of a hot object (surface 1).</p>
+<p class="indent">If the medium between the surface and the radiometer is non-participating, then the rate of radiative heat transfer, <i>Q</i><sub>12</sub> from surface 1 to the radiometer is:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>21</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p>
+<p class="noindent">In normal operation of a radiometer, <i>T</i><sub>2</sub> &#x003C; &#x003C; <i>T</i><sub>1</sub>, in which case this equation can be simplified to give the incident flux <i>G</i><sub>2</sub>(= <i>Q</i><sub>12</sub>/<i>A</i><sub>2</sub>):</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq8.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>G</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(8.1)</td>
+</tr>
+</table>
+<p class="noindent">Radiometers are generally installed to give a simple voltage output on a voltmeter. A calibration factor (<i>K</i>) in Watts per unit radiometer surface area per Volt output is supplied by manufacturers, which gives a direct conversion of the voltage output (<i>V</i>) into the incident flux. Thus we can also write:</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq8.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>G</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mi>K</m:mi><m:mi>V</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(8.2)</td>
+</tr>
+</table>
+<p class="noindent">Combining <a href="#eq8.1">Equations 8.1</a> and <a href="#eq8.2">8.2</a> gives an expression for the temperature of surface 1:</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq8.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>K</m:mi><m:mi>V</m:mi></m:mrow><m:mrow><m:mi>&#x03C3;</m:mi><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>21</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>0.25</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(8.3)</td>
+</tr>
+</table>
+<figure class="imgc" id="fig8.1">
+<img src="../images/fig8-1.jpg" alt="images"/>
+<figcaption><b>Figure 8.1</b> Schematic arrangement of a radiometer measuring surface temperature.</figcaption></figure>
+<p class="noindent">So, in order to convert the voltage output to a surface temperature, we need to know the emissivity of surface 1, and must be able to determine the view <a id="page_71" class="page">Page 71, Chapter 8 Measurement of temperature</a>factor from the detector to surface 1. The latter requires some knowledge of the geometry of the detector; manufacturers will supply the surface area of the detector, and the cone angle of view of the sensing element. Because there is no filter arrangement on the detector, it is appropriate to use the total emissivity of the hot surface.</p>
+
+<p class="indent">If the medium between the surface and the detector is participating, then some allowance needs to made in the radiation analysis, using the methods outlined in earlier chapters. Clearly the absorptivity and emissivity of the medium must be known (or calculable) in order to determine the surface temperature.</p>
+<p class="indent">Although straightforward both in principle and in use, the radiometer suffers from the major disadvantage that it receives radiation from all surfaces within its field of view, and not just the surface of interest. The detector must therefore be positioned carefully so that it &#x201C;sees&#x201D; only the surface of interest. Another problem is that it will give only an average temperature of the surface, so should not be used where any spatial resolution of surface temperature is required.</p>
+</section>
+<section epub:type="chapter" id="sec8.2.2">
+<h3 class="h3"><b>8.2.2 Disappearing filament pyrometer</b></h3>
+<p class="noindent">The basis of the disappearing filament pyrometer is the matching of radiation from a variable, calibrated source with that from the surface of interest. <a href="#fig8.2">Figure 8.2</a> shows a typical arrangement.</p>
+<p class="indent">The instrument consists of a series of lenses, a filament, and a filter, which in most instruments allows transmission of radiation of wavelength 650 nm in the red part of the visible spectrum. The surface is viewed through the eyepiece and focussed onto the plane of the filament. The current through the filament is then adjusted, until the brightness of filament matches that of the surface. Under these circumstances, the filament merges (or disappears) into the image of the surface and the flux from the surface and from the filament at 650 nm can be assumed to be equal. Note that this does not mean that the temperatures of the surface and the filament are equal, unless their emissivities are also equal.</p>
+<figure class="imgc" id="fig8.2">
+<img src="../images/fig8-2.jpg" alt="images"/>
+<figcaption><b>Figure 8.2</b> Schematic of a disappearing filament pyrometer.</figcaption></figure>
+<p class="indent">In commercial instruments the filament is normally calibrated against the temperature of a black body source. Thus the temperature indicator on the instrument displays the black body temperature, not the real temperature of the surface. We must therefore calculate the real temperature of the surface from the measured black body temperature. Because of the narrow bandwidth filter, we use Planck&#x2019;s Law for the monochromatic emissive power, rather than <a id="page_72" class="page">Page 72, Chapter 8 Measurement of temperature</a>the Stefan&#x2013;Boltzmann Law. Further, because we are dealing with visible radiation at modest temperatures, it valid to use Wien&#x2019;s Approximation to Planck&#x2019;s Law (<a href="Chapter01.xhtml#eq1.14">Equation 1.14</a>) . The emissive flux at wavelength &#x03BB; from the surface at temperature <i>T</i> is given by</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq8.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>W</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>h</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mtext>5</m:mtext></m:msup></m:mrow></m:mfrac><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(8.4)</td>
+</tr>
+</table>
+<p class="noindent">where <i>&#x03B5;</i><sub>&#x03BB;</sub> is the monochromatic emissivity of the surface at wavelength &#x03BB;. When the filament disappears, this flux matches that from a black body at the temperature <i>T<sub>b</sub></i> displayed on the instrument. So, we also have</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq8.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>h</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mtext>5</m:mtext></m:msup></m:mrow></m:mfrac><m:mtext>exp</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:msub><m:mi>T</m:mi><m:mi>b</m:mi></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(8.5)</td>
+</tr>
+</table>
+
+<p class="noindent">Equating the fluxes in <a href="#eq8.4">Equations 8.4</a> and <a href="#eq8.5">8.5</a> and rearranging gives</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq8.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>T</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi></m:mrow><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow></m:mfrac><m:mtext>ln</m:mtext><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>T</m:mi><m:mi>b</m:mi></m:msub></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(8.6)</td>
+</tr>
+</table>
+<p class="noindent">Thus the true surface temperature can be calculated if the monochromatic emissivity of the surface is known. <a href="#eq8.6">Equation 8.6</a> shows that the displayed temperature must always be an underestimate of the real temperature. For high emissivity surfaces (&#x003E; 0.8), the difference between the indicated and real temperature is quite small (under 1%) and to a first approximation the indicated temperature can be taken to be the true temperature; for low emissivity surfaces differences can be quite large (up to 10%), so large errors can result if the correction is not made. (N.B. Modern instruments can incorporate into their electronics the analysis which converts black body temperature into true temperature, if the user enters a value for the emissivity of the surface.)</p>
+<p class="indent">If the emissivity of the surface is not known, then a pyrometer with filters of two different wavelengths &#x03BB;<sub>1</sub> and &#x03BB;<sub>2</sub> can be used. The surface is viewed with each filter separately, and the pyrometer displays different black body temperatures, <i>T<sub>b</sub></i><sub>1</sub> and <i>T<sub>b</sub></i><sub>2</sub> for each filter. We can then write</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>T</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mtext>&#x03BB;</m:mtext><m:mtext>1</m:mtext></m:msub><m:mi>k</m:mi></m:mrow><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow></m:mfrac><m:mtext>ln</m:mtext><m:msub><m:mi>&#x03B5;</m:mi><m:mrow><m:mtext>&#x03BB;1</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>T</m:mi><m:mrow><m:mi>b</m:mi><m:mn>1</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>T</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mtext>&#x03BB;</m:mtext><m:mtext>2</m:mtext></m:msub><m:mi>k</m:mi></m:mrow><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow></m:mfrac><m:mtext>ln</m:mtext><m:msub><m:mi>&#x03B5;</m:mi><m:mrow><m:mtext>&#x03BB;2</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>T</m:mi><m:mrow><m:mi>b</m:mi><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">where <i>&#x03B5;</i><sub>&#x03BB;1</sub> and <i>&#x03B5;</i><sub>&#x03BB;2</sub> are the monochromatic emissivities at wavelengths &#x03BB;<sub>1</sub> and &#x03BB;<sub>2</sub>, respectively. If we can assume that the transmission wavelengths of the two filters are sufficiently close that <i>&#x03B5;</i><sub>&#x03BB;1</sub> = <i>&#x03B5;</i><sub>&#x03BB;2</sub>, the equations can be rearranged to give expressions for the true temperature and, if required, the emissivity:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>T</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mtext>&#x03BB;</m:mtext><m:mtext>1</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mtext>&#x03BB;</m:mtext><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mtext>&#x03BB;</m:mtext><m:mtext>1</m:mtext></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mrow><m:mi>b</m:mi><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msub><m:mtext>&#x03BB;</m:mtext><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mrow><m:mi>b</m:mi><m:mn>1</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>ln</m:mtext><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mtext>&#x03BB;</m:mtext><m:mtext>2</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mtext>&#x03BB;</m:mtext><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>T</m:mi><m:mrow><m:mi>b</m:mi><m:mn>1</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>T</m:mi><m:mrow><m:mi>b</m:mi><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+</section>
+</section>
+<section epub:type="chapter" id="sec8.3">
+<a id="page_73" class="page" style="width:70%;">Page 73, Chapter 8 Measurement of temperature</a>
+<h2 class="h2"><b>8.3 Probe techniques</b></h2>
+<p class="noindent">Probe techniques are generally based on instruments such as thermometers and thermocouples. The thermometer is of little engineering use, other than for measurements around ambient temperature. The thermocouple is perhaps the most common industrial technique for measurement of above-ambient temperatures, and is available in a variety of metal combinations for different applications. The probe must be in intimate contact with the material whose temperature is being measured. Thus the probe must be fixed to the particular surface or placed in the fluid stream. After coming into contact with the material the probe will come to some equilibrium temperature, which need not be the same temperature as the material we are trying to measure. This leads to measurement errors, which are an inherent feature of the technique, and not errors in calibration. It is important that suitable correction procedures be applied in order to determine the true temperature, or that steps be taken to minimise that initial error.</p>
+<section epub:type="chapter" id="sec8.3.1">
+<h3 class="main2"><b>8.3.1 Thermocouples and thermometers</b></h3>
+<p class="noindent">Consider a thermocouple or thermometer placed in a hot gas stream which is flowing along a pipe with relatively cool walls. The sensor (i.e. the thermocouple bead or thermometer bulb) will be subject to a number of heat transfer mechanisms which will determine its final equilibrium temperature:</p>
+<p class="noindent">&#160;</p>
+<p class="nlist">(1)<span class="space">&#160;</span>Convection heat transfer between the gas stream and the surface of the sensor.</p>
+<p class="nlist">(2)<span class="space">&#160;</span>Radiation exchange between the sensor and the surrounding surfaces (there may also be radiation effects between the sensor and the gas if the gas is an absorbing/emitting medium).</p>
+<p class="nlist">(3)<span class="space">&#160;</span>Conduction of heat along the thermocouple wires or thermometer body from the sensor to the cooler surroundings.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">The conduction and radiation losses combine to ensure that the equilibrium temperature of the sensor is always less the true gas temperature. (If we have a cold fluid flow with relatively warmer surroundings, then the sensor will attain a temperature higher than the true temperature.) Conduction effects can be minimised by using thermocouple wires of very small diameter, or a thermometer body made from thermally insulating material. Radiation effects cannot usually be ignored, and must be corrected for by considering an energy balance on the surface of the sensor.</p>
+<p class="indent">Consider a fluid of temperature <i>T</i><sub>f</sub> in which is immersed a temperature sensor of emissivity <i>&#x03B5;</i><sub>c</sub>, which at equilibrium attains a temperature <i>T</i><sub>c</sub> (see <a href="#fig8.3">Figure 8.3</a>). Suppose that the fluid flows along a pipe whose walls are at temperature <i>T</i><sub>w</sub> (lower than <i>T</i><sub>f</sub>). If conduction effects are negligible, then an energy balance on the sensor gives:</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Convective Transfer (Fluid &#x2192; Sensor) = Radiative Transfer (Sensor &#x2192; Walls)</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">If we assume that all surfaces are grey, and that the fluid is non-participating, the balance may be written:<a id="page_74" class="page">Page 74, Chapter 8 Measurement of temperature</a></p>
+<figure class="imgc" id="fig8.3">
+<img src="../images/fig8-3.jpg" alt="images"/>
+<figcaption><b>Figure 8.3</b> Thermocouple probe for measurement of fluid temperature.</figcaption></figure>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>fc</m:mtext></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>c</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mtext>cw</m:mtext></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>c</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>w</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p>
+<p class="noindent">where <i>h</i><sub>fc</sub> is the convective heat transfer coefficient between the fluid and the sensor, and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mtext>cw</m:mtext></m:mrow></m:msub></m:mrow></m:math> is the grey radiation factor for radiative transfer between the sensor and the walls. Since the sensor is usually very small compared with the enclosure in which it is sited, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mtext>cw</m:mtext></m:mrow></m:msub><m:mo>&#x2248;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>c</m:mtext></m:msub></m:mrow></m:math> and the equation becomes, after rearrangement:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq8.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>T</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>+</m:mo><m:mfrac><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>c</m:mtext></m:msub><m:mi>&#x03C3;</m:mi></m:mrow><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>fc</m:mtext></m:mrow></m:msub></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>T</m:mi><m:mtext>c</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>T</m:mi><m:mtext>w</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(8.7)</td>
+</tr>
+</table>
+<p class="noindent">Thus, in order to determine the true temperature, we must know the temperature of the surrounding surfaces and the emissivity of the sensor surface. We must also be able to calculate (or estimate) a value for the convective heat transfer coefficient.</p>
+<p class="indent">Ideally we would like our sensor to register the true gas temperature, so that no correction is required. <a href="#eq8.7">Equation 8.7</a> shows that the error (<i>T</i><sub>f</sub> &#x2013; <i>T</i><sub>c</sub>) is large either if the temperatures of the sensor and its surroundings are very different (giving large radiation losses), or if the convective heat transfer coefficient is very small (e.g. where fluid velocities are low). (The latter explains why garden thermometers can give erroneously low readings on still, cold nights, and why thermometers whose bulb is placed in direct sunlight indicate a temperature which is much higher than the air temperature.) We therefore have two methods, in principle, by which the error can be reduced: either decrease the radiative exchange or improve convective heat transfer to the sensor. Both of these methods are used in practice and form the basis of the shielded thermocouple and the suction pyrometer.</p>
+</section>
+<section epub:type="chapter" id="sec8.3.2">
+<h3 class="main2"><b>8.3.2 Shielded thermocouples</b></h3>
+<p class="noindent">We have seen that high radiation errors with thermocouples are caused by the bead being able to &#x201C;see&#x201D; surroundings which are at a much lower or higher temperature than the fluid in which the couple is placed. Radiation errors can be greatly reduced if the thermocouple bead is <i>shielded</i>, i.e. surrounded by a thin shield of material placed a short distance from the bead, such that the thermocouple is still in contact with the fluid, but can see only the shield and not the surroundings. <a href="#fig8.4">Figure 8.4</a> shows a typical shield arrangement for a butt-welded thermocouple in a pipe flow.<a id="page_75" class="page">Page 75, Chapter 8 Measurement of temperature</a></p>
+<figure class="imgc" id="fig8.4">
+<img src="../images/fig8-4.jpg" alt="images"/>
+<figcaption><b>Figure 8.4</b> Shielded thermocouple probe.</figcaption></figure>
+<p class="indent">In this arrangement the thermocouple bead can see only the shield, which, being completely immersed in the fluid flow, should be much closer to the fluid temperature than the walls. Thus radiation effects should be reduced. A heat transfer analysis produces the appropriate equation to convert the bead temperature to the fluid temperature.</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq-l" id="eq8.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Radiative</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Transfer</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>Couple</m:mtext><m:mo>&#x2192;</m:mo><m:mtext>Shield</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>cs</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mtext>c</m:mtext></m:msub><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mtext>cs</m:mtext></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>c</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>s</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(8.8)</td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq-l" id="eq8.9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Radiative</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Transfer</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>Shield</m:mtext><m:mo>&#x2192;</m:mo><m:mtext>Walls</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>sw</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mtext>s</m:mtext></m:msub><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mtext>sw</m:mtext></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>s</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>w</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(8.9)</td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq-l" id="eq8.10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Convective</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Transfer</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>fluid</m:mtext><m:mo>&#x2192;</m:mo><m:mtext>Couple</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>fc</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>fc</m:mtext></m:mrow></m:msub><m:msub><m:mi>A</m:mi><m:mtext>c</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>c</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(8.10)</td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq-l" id="eq8.11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Convective</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Transfer</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>fluid</m:mtext><m:mo>&#x2192;</m:mo><m:mtext>Couple</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>fs</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>fs</m:mtext></m:mrow></m:msub><m:msub><m:mi>A</m:mi><m:mtext>s</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>s</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(8.11)</td>
+</tr>
+</table>
+<p class="noindent">Where <i>h</i><sub>fc</sub> and <i>h</i><sub>fs</sub> are convective heat transfer coefficients at the surface of the couple and the shield, respectively. (Note the factor of 2 in <a href="#eq8.11">Equation 8.11</a>, showing that convective heat transfer between the fluid and the shield occurs at both the inner and outer surfaces of the shield.) There is no radiation term for transfer between the couple and the walls, as we are assuming that the shield is sufficiently long that the couple bead cannot see the walls.</p>
+<p class="indent">When the system has reached steady state, then, assuming no conductive losses:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mtext>Convective</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Transfer</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>Fluid</m:mtext><m:mo>&#x2192;</m:mo><m:mtext>Couple</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mtext>Radiative</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Transfer</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>Couple</m:mtext><m:mo>&#x2192;</m:mo><m:mtext>Shield</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mtext>Convective</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Transfer</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>Fluid</m:mtext><m:mo>&#x2192;</m:mo><m:mtext>Shield</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mtext>Radiative</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Transfer</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>(</m:mo><m:mrow><m:mtext>shield</m:mtext><m:mo>&#x2192;</m:mo><m:mtext>Couple</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>and</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Walls</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">or, algebraically:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq8.12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>fc</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>cs</m:mtext></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>fs</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>sw</m:mtext></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>cs</m:mtext></m:mrow></m:msub></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>fc</m:mtext></m:mrow></m:msub><m:mo stretchy='false'>(</m:mo><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>c</m:mtext></m:msub><m:mo stretchy='false'>)</m:mo><m:mo>=</m:mo><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mtext>cs</m:mtext></m:mrow></m:msub><m:mo stretchy='false'>(</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>c</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>s</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo stretchy='false'>)</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;">(8.12)</td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq8.13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mn>2</m:mn><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>fs</m:mtext></m:mrow></m:msub><m:mo stretchy='false'>(</m:mo><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>s</m:mtext></m:msub><m:mo stretchy='false'>)</m:mo><m:mo>=</m:mo><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mtext>sw</m:mtext></m:mrow></m:msub><m:mo stretchy='false'>(</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>s</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>w</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo stretchy='false'>)</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mtext>c</m:mtext></m:msub><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mtext>cs</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>A</m:mi><m:mtext>s</m:mtext></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>(</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>c</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>s</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo stretchy='false'>)</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(8.13)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_76" class="page">Page 76, Chapter 8 Measurement of temperature</a>The grey radiation factors can normally be calculated from the system geometry and the heat transfer coefficients from the physical properties of the fluid. <a href="#eq8.12">Equations 8.12</a> and <a href="#eq8.13">8.13</a> then reduce to two simultaneous equations in <i>T</i><sub>s</sub><i><sub> </sub></i>and the required <i>T</i><sub>f</sub>.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Example 8.1.</p>
+<p class="noindent">A thermocouple of 2 mm bead diameter is placed in a pipe of 200 mm internal diameter, which is transporting a non-participating gas whose temperature is 800 K. The pipe wall temperature is 500 K, the emissivity of the couple is 0.8, and the convective heat transfer coefficient is 100 W/m<sup>2</sup>K. Calculate the expected error in the temperature measurement. How does this error change if the thermocouple if fitted with a shield of diameter 10 mm and emissivity 0.4?</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Solution.</p>
+<p class="noindent">The temperature displayed by the unshielded thermocouple is governed by <a href="#eq8.7">Equation 8.7</a>, given that the thermocouple bead is small compared with the diameter of the pipe. From <a href="#eq8.7">Equation 8.7</a>:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>c</m:mtext></m:msub><m:mi>&#x03C3;</m:mi></m:mrow><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>fc</m:mtext></m:mrow></m:msub></m:mrow></m:mfrac><m:msubsup><m:mi>T</m:mi><m:mtext>c</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:msub><m:mi>T</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>c</m:mtext></m:msub><m:mi>&#x03C3;</m:mi></m:mrow><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>fc</m:mtext></m:mrow></m:msub></m:mrow></m:mfrac><m:msubsup><m:mi>T</m:mi><m:mtext>w</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>4.536</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>10</m:mn></m:mrow></m:msup><m:msubsup><m:mi>T</m:mi><m:mtext>c</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:msub><m:mi>T</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:mn>828.4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">Numerical solution gives <i>T</i><sub>c</sub> = 712 K, which represents a measurement error of nearly 90 K.</p>
+<p class="indent">For the shielded thermocouple we will assume that the couple-shield geometry can be approximated by concentric cylinders, in which case the grey radiation factor is given by <a href="Chapter04.xhtml#eq4.13">Equation 4.13</a>:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x2131;</m:mi><m:mrow><m:mtext>cs</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msubsup><m:mi>&#x03B5;</m:mi><m:mtext>c</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msubsup><m:mo>+</m:mo><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mtext>c</m:mtext></m:msub></m:mrow><m:mrow><m:msub><m:mi>A</m:mi><m:mtext>s</m:mtext></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>(</m:mo><m:msubsup><m:mi>&#x03B5;</m:mi><m:mtext>s</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo stretchy='false'>)</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msubsup><m:mi>&#x03B5;</m:mi><m:mtext>c</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msubsup><m:mo>+</m:mo><m:mfrac><m:mrow><m:msub><m:mi>d</m:mi><m:mtext>c</m:mtext></m:msub></m:mrow><m:mrow><m:msub><m:mi>d</m:mi><m:mtext>s</m:mtext></m:msub></m:mrow></m:mfrac><m:mo stretchy='false'>(</m:mo><m:msubsup><m:mi>&#x03B5;</m:mi><m:mtext>s</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo stretchy='false'>)</m:mo></m:mrow></m:mfrac></m:mrow></m:math></p>
+<p class="noindent">from which <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>&#x2131;</m:mi></m:math><sub>cs</sub> = 0.645. The radiation shield is small compared with the pipe diameter, so we can take <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>&#x2131;</m:mi></m:math><sub>cw</sub> &#x2248; <i>&#x03B5;</i><sub>c</sub> = 0.4. (The more accurate equation gives 0.397, so this approximation is indeed valid.) If we assume that the heat transfer coefficients at the couple and shield surfaces are the same, then <a href="#eq8.12">equations 8.12</a> and <a href="#eq8.13">8.13</a> give:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>3.657</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>8</m:mn></m:mrow></m:msup><m:msubsup><m:mi>T</m:mi><m:mtext>c</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:mn>100</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>T</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:mn>3.657</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>8</m:mn></m:mrow></m:msup><m:msubsup><m:mi>T</m:mi><m:mtext>s</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>=</m:mo><m:mn>80</m:mn><m:mtext>&#x2009;</m:mtext><m:mn>000</m:mn></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>7.314</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>9</m:mn></m:mrow></m:msup><m:mtext>&#x2009;</m:mtext><m:msubsup><m:mi>T</m:mi><m:mtext>c</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mn>2.999</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>8</m:mn></m:mrow></m:msup><m:mtext>&#x2009;</m:mtext><m:msubsup><m:mi>T</m:mi><m:mtext>s</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mn>200</m:mn><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>T</m:mi><m:mtext>s</m:mtext></m:msub><m:mo>+</m:mo><m:mn>161418</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">Numerical solution gives a value of around <i>T</i><sub>c</sub> = 788 K and <i>T</i><sub>s</sub> = 769 K, i.e. the measurement error has decreased from nearly 90 K to just 12 K. Unless greater accuracy is required it is usually acceptable to assume that the reading from a thermocouple fitted with a radiation shield is equal to the true fluid temperature.</p>
+</section>
+<section epub:type="chapter" id="sec8.3.3">
+<h3 class="main2"><b>8.3.3 Suction pyrometer</b></h3>
+<p class="noindent">The effect of convective heat transfer on the surface of the thermocouple is clearly shown by repeating the last example with different values of <i>h</i><sub>fc</sub>. For<a id="page_77" class="page">Page 77, Chapter 8 Combined modes of heat transfer</a>instance, increasing <i>h</i><sub>fc</sub> from 100 to 1000 W/m<sup>2</sup>K, increases <i>T</i><sub>c</sub> for the unshielded thermocouple from 712 K to 785 K. If <i>h</i><sub>fc</sub> is 2000 W/m<sup>2</sup>K, then <i>T</i><sub>c</sub><i><sub> </sub></i>is 793 K, i.e. only 7 K below the true temperature. Thus, an additional method of reducing measurement error is to increase convective heat transfer from the fluid to the thermocouple bead. This forms the basis of the suction pyrometer (see <a href="#fig8.5">Figure 8.5</a>).</p>
+<figure class="imgc" id="fig8.5">
+<img src="../images/fig8-5.jpg" alt="images"/>
+<figcaption><b>Figure 8.5</b> A typical layout for a suction pyrometer.</figcaption></figure>
+<p class="indent">A normal thermocouple is placed inside a narrow-bore tube, which is connected to a suction pump. When the pump is turned on the fluid is sucked through the tube over the thermocouple bead with a much higher velocity than the flow of the fluid in the system. Thus the convective heat transfer coefficient at the surface of the thermocouple is greatly increased. Placing the bead inside the tube also provides some shielding of the thermocouple, which reduces radiation effects. The combination of increased convection and reduced radiation losses means that the suction pyrometer gives a temperature which, to engineering tolerances, can often be assumed to be the true temperature of the fluid. (Some correction might still be necessary, depending on the design used.) Suction pyrometers are used particularly in the analysis of combustion gases from furnaces, boilers, and other combustion systems, where the calculation of measurement errors is particularly complex because of emission/absorption by the combustion products. The suction pyrometer can therefore provide a simple, yet reliable, method for a more accurate determination of the gas temperature.</p>
+</section>
+</section>
+</section>
+</body>
+</html>

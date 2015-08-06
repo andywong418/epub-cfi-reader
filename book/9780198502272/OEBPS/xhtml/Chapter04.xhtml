@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Quantum Mechanics 2: The Toolkit</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch04">
+<a id="page_51" class="page" style="width:70%;">Page 51, Chapter 4 Fields and couplings</a>
+<h1 class="main">4<span class="space">&#160;</span>Fields and couplings</h1>
+<section epub:type="chapter" id="sec4.1">
+<h2 class="h2" style="margin-top:3em;">4.1<span class="space">&#160;</span>Degenerate perturbation theory</h2>
+<p class="noindent">In the perturbation theory presented in <a href="Chapter03.xhtml">Chapter 3</a> the energy levels concerned are assumed to be non-degenerate. For the examples we have considered so far this has generally been true. However, many important chemical systems have degenerate states (for example molecular rotational energy levels or atomic energy levels), and the perturbation may have the effect of altering or removing the degeneracy. Perturbations of this kind arise if the molecule is subject to an external influence with a reduced symmetry, splitting a degeneracy in the unperturbed molecule, or if we have attempted to describe a system with a higher symmetry than is appropriate (e.g. if the molecule is distorted by the Jahn&#x2013;Teller effect).</p>
+<aside class="abc" style="margin-top:0.5em;" epub:type="sidebar">
+<p class="sidebar">Wavef unctions which are degenerate (or nearly so) can be strongly mixed by a perturbation and this may have a large effect on observable quantities such as spectral intensities and selection rules. An example in the vibrational spectra of polyatomic molecules is Fermi resonance.</p>
+</aside>
+<p class="indent">In <a href="Chapter03.xhtml">Chapter 3</a> the results lor the second-order energy, or lor the first-order correction to the wavefunction, are expressed as expansions whose coefficients depend inversely on the zero-order energy differences between the basis states. These coefficients are not defined when the energy difference is zero, so the perturbation method is doomed to failure, unless it can be arranged that all coefficients linking degenerate zero-order states be identically zero. A related difficulty arises if the unperturbed states are nearly degenerate and the perturbation is larger than the energy difference between them. In this case the perturbation series does not contain undefined terms, but the perturbation causes large changes in the wavefunctions and the series solution may converge only at very high orders, or not at all.</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar" id="prb4.1.1"><b>Problem 4.1.1.</b> <i>Show that if |nl</i> &#x003E; <i>and nm &#x003E; are degenerate eigenfunctions of the Hamiltonian, then all linear combinations of them C</i><sub>1</sub><i>|nl &#x003E; &#x002B;c<sub>m</sub>|nm &#x003E; are also eigenfunctions of the Hamiltonian with the same energy.</i></p>
+</aside>
+<p class="indent">A zero-order function in a degenerate space requires at least two labels to identify it unambiguously. Here we use <i>n</i> to label the energy level and <i>m</i> to distinguish the wavefunction from the other degenerate functions, that is, a typical zero-order function with energy <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math>is represented by the ket |<i>nm</i> &#x003E;. However, there is a fundamental ambiguity in the choice of zero-order wavefunctions in a degenerate level because any linear combination of these wavefunctions is also an eigenfunction of the Hamiltonian with the same energy (see <a href="#prb4.1.1">Problem 4.1.1</a>). For example, in the hydrogen atom the three <i>2p</i> orbitals may be chosen for their <i>m<sub>l</sub></i> values, which can be 1, 0, or &#x2013;1, or alternatively can be chosen to point along the <i>x, y,</i> and <i>z</i> axes. Both choices give sets of three orthogonal, degenerate wavefunctions that span the same three-dimensional space, and there is an infinite choice of orthogonal sets of linear combinations that span the same space. However, if a perturbation is applied that lifts the degeneracy, each of the three eigenfunctions of the Hamiltonian is uniquely defined. For example, if the H atom is introduced into a magnetic field, the correct eigenfunctions are the <i>p</i> orbitals with defined <i>m<sub>l</sub></i> values. In general, the perturbed wavefunction will be close to just one of the infinite possible number of linear combinations of basis <a id="page_52" class="page">Page 52, Chapter 4 Fields and couplings</a>functions, and this should be chosen as the appropriate zero-order wavefunction.</p>
+<p class="indent">An alternative way to think about the problem is to start with the perturbed wavefunctions, then take the limit where the perturbation tends to zero. Each perturbed wavefunction will approach a characteristic linear combination of the zero-order functions. These combinations are the only suitable choices for a perturbation theory calculation, because a small perturbation will then only induce small corrections in the wavefunction. If any other combinations are chosen, the zero-order wavefunctions will be strongly mixed by the perturbation, however small it may be. In other words, zero-order functions should be chosen which recognize the symmetry of the perturbation. If this is done, all the offending coefficients are identically zero, and the problems of divergence do not arise.</p>
+<p class="indent">The first step in constructing a perturbation theory for degenerate states must therefore be to find the correct linear combinations. Consider the zero-order energy level <i>n</i> with degeneracy <i>g<sub>n</sub></i> and energy <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math>, and suppose that the correct choice for a zero-order wavefunction is given by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mrow><m:mi>n</m:mi><m:mi>m</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>c</m:mi><m:mrow><m:mi>m</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>n</m:mi><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.1)</td>
+</tr>
+</table>
+<p class="noindent">where the <i>|nj</i> &#x003E; are a complete orthogonal set of zero order functions that span the degenerate space. The first-order perturbation from <a href="Chapter03.xhtml#eq3.6">eqn 3.6</a>, now becomes</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mrow><m:mi>m</m:mi><m:mi>n</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>c</m:mi><m:mrow><m:mi>m</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>n</m:mi><m:mi>j</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(4.2)</td>
+</tr>
+</table>
+<p class="noindent">If we premultiply by a particular bra &#x003C; <i>nk|</i> and integrate we find</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>c</m:mi><m:mrow><m:mi>m</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mi>k</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mi>j</m:mi><m:mtext>&#x2009;</m:mtext><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.3)</td>
+</tr>
+</table>
+<p class="noindent">This is a linear equation linking all <i>g<sub>n</sub></i> coefficients <i>c<sub>mj</sub>.</i> If we perform this operation with each of the <i>g<sub>n</sub></i> functions <i>&#x003C; nk|,</i> we will obtain a different equation finking the coefficients in each case. We therefore obtain a set of <i>g<sub>n</sub></i> simultaneous equations for the coefficients.</p>
+<p class="indent">The perturbation matrix elements are integrals that can be evaluated to give energies, and can be combined to form a matrix <b>H</b><sup>(1)</sup> whose elements are <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:msubsup><m:mi>H</m:mi><m:mrow><m:mi>k</m:mi><m:mi>j</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:mi>n</m:mi><m:mi>k</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>n</m:mi><m:mi>j</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math>. The coefficients <i>c<sub>mj</sub></i> can be similarly combined to form a vector <b>c</b>. The set of simultaneous equations can then be written in matrix form:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi mathvariant='bold'>H</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mi mathvariant='bold'>I</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi mathvariant='bold'>c</m:mi><m:mo>=</m:mo><m:mn mathvariant='bold'>0</m:mn></m:mrow></m:math></p></td>
+<td>(4.4)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:3em;" epub:type="sidebar">
+<p class="sidebar">The correct linear combinations of degenerate zero-order functions are obtained by solving a set of secular equations.</p>
+</aside>
+<p class="noindent">where <b>I</b> is the identity matrix and <b>0</b> is the zero vector. These homogeneous simultaneous equations, or <i>secular equations,</i> are equivalent to the secular equations derived from the variational method in <a href="Chapter02.xhtml">Chapter 2</a>. The solution will therefore give the best possible combination of the zero-order functions to approximate the ground state wavefunction. As discussed in <a href="Chapter02.xhtml">Chapter 2</a>, a non-trivial solution can only be found for c if the secular determinant is zero,</p>
+<p class="noindent"><a id="page_53" class="page">Page 53, Chapter 4 Fields and couplings</a></p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mi mathvariant='bold'>H</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mi mathvariant='bold'>I</m:mi></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.5)</td>
+</tr>
+</table>
+<p class="noindent">since otherwise the inverse matrix would exist, and the only possible solution would be <b>c</b> = <b>0</b>.</p>
+<p class="indent">Evaluation of the secular determinant leads to a polynomial of degree <i>g<sub>n</sub></i> for the energy correction <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math>, which in general will have <i>g<sub>n</sub></i> solutions. Thus the first-order energy corrections are the eigenvalues of the matrix <b>H</b><sup>(1)</sup>. Each value of the first-order energy correction gives a different set of secular equations, hence a different set of coefficients c, that is, a different linear combination of the zero-order basis functions. Thus each perturbed energy level generates a zero-order wavefunction, which can be used as the basis of the perturbation expansion.</p>
+<p class="indent">The unsuspecting reader might be fooled into thinking that because the perturbation Hamiltonian has been diagonalized, the eigenvalues represent the exact energies of the perturbed system. This is indeed sometimes the case, but it is not generally so, because the perturbation can also mix zero-order wavefunctions with different energies. In other words, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mrow><m:mo stretchy='false'>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow><m:mo stretchy='false'>)</m:mo></m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mi>n</m:mi><m:mi>j</m:mi></m:mrow></m:mrow><m:mo>&#x003E;</m:mo></m:mrow></m:math>may have components within the same degenerate subspace as <i>|nj</i> &#x003E;, such as <i>c<sub>mk</sub>|nk</i> &#x003E;, but it may also have components with different energies, which are necessarily orthogonal to all the zero-order eigenfunctions with energy <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math></p>
+<p class="noindent">(see <i>Quantum mechanics 1,</i> eqn 1.26). Diagonalization of the Hamiltonian matrix within a subspace ignores all components of the wavefunction outside the subspace and does not give the true energies in general. However, because the method results in secular equations for the coefficients, the variational principle guarantees that it gives the best possible approximate wavefunction within the restricted space spanned by the basis.</p>
+<p class="indent">Solution of the secular equations gives a symmetry-adapted zero-order basis, in which the perturbation Hamiltonian is diagonal. The perturbation is not capable of mixing these symmetry-adapted degenerate zero-order states, and all the unpleasant terms in the perturbation expansion, which would otherwise have been infinite, are now identically zero. Once we have found this basis the usual perturbation expansion can be applied, with the deletion of all terms involving the mixing of degenerate states, so that the first-order correction to the wavefunction is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mi>m</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:munder><m:mrow><m:msup><m:mrow></m:mrow><m:mo>&#x0027;</m:mo></m:msup></m:mrow></m:mstyle><m:mfrac><m:mrow><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mrow><m:mi>n</m:mi><m:mi>m</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo></m:mrow><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:mfrac><m:msubsup><m:mi>&#x03C8;</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math></p></td>
+<td style="padding-top:0.75em;">(4.6)</td>
+</tr>
+</table>
+<p class="noindent">and the second-order energy correction is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:munder><m:mrow><m:msup><m:mrow></m:mrow><m:mo>&#x0027;</m:mo></m:msup></m:mrow></m:mstyle><m:mfrac><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mo>&#x003C;</m:mo><m:msubsup><m:mi>&#x03C8;</m:mi><m:mrow><m:mi>n</m:mi><m:mi>m</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:msup><m:mo stretchy='false'>&#x007C;</m:mo><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mi>i</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(4.7)</td>
+</tr>
+</table>
+<p class="noindent">In both cases the sum excludes all zero-order states with energy <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>n</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:math>.</p>
+<p class="indent">Of course, if the degeneracy is not removed in the first order, the secular equation analysis may be performed with a second-order perturbation, if there is one.</p>
+<section epub:type="chapter">
+<a id="page_54" class="page" style="width:70%;">Page 54, Chapter 4 Fields and couplings</a>
+<h3 class="h3">Doubly degenerate states</h3>
+<p class="noindent">The foregoing discussion was fairly abstract, so we illustrate how simple the method can be to apply with the example of a doubly degenerate level where the correct answer is obvious from the start.</p>
+<p class="indent">Consider a spinless particle with charge &#x2013; <i>e</i> confined to move around a ring in the <i>xy</i> plane. Each energy level of this system above zero is doubly degenerate. One choice of basis functions for energy level <i>m</i> is the pair <i>&#x039D;</i> exp(<i>&#x00B1;</i>i<i>m&#x03D5;</i>) with <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>N</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>/</m:mo><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi></m:mrow></m:msqrt></m:mrow></m:math>. Another equally valid choice could be <i>N&#x2032;</i> sin <i>m&#x03D5;</i> and <i>N&#x2032;</i> cos <i>m&#x03D5;</i> where <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>N</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:msqrt><m:mi>&#x03C0;</m:mi></m:msqrt><m:mo>.</m:mo></m:mrow></m:math></p>
+<p class="noindent">Let us start with the latter choice, which we denote <i>|s</i> &#x003E; and <i>|c</i> &#x003E;.</p>
+<p class="indent">Suppose that the system is perturbed by applying a magnetic field <i>B</i> in the <i>z</i> direction, which gives a perturbation Hamiltonian</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>=</m:mo><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>l</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mtext>B</m:mtext></m:msub><m:mi>&#x210F;</m:mi><m:mfrac><m:mo>&#x2202;</m:mo><m:mrow><m:mo>&#x2202;</m:mo><m:mi>&#x03D5;</m:mi></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.8)</td>
+</tr>
+</table>
+<p class="noindent">where <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>l</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub></m:mrow></m:math>is the operator representing the <i>z</i> component of the angular momentum, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:msub><m:mover accent='true'><m:mi>l</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi><m:mo>&#x2202;</m:mo><m:mo>/</m:mo><m:mo>&#x2202;</m:mo><m:mi>&#x03D5;</m:mi></m:mrow></m:math>, see <i>Quantum mechanics 1</i>, Problem 1.3.3. It is elementary to apply this perturbation to the two basis functions to obtain</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>s</m:mi></m:mrow><m:mo>&#x003E;</m:mo></m:mrow></m:mtd><m:mtd><m:mrow><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mtext>B</m:mtext></m:msub><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi><m:mi>m</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>c</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>c</m:mi></m:mrow><m:mo>&#x003E;</m:mo></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>i</m:mi><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mtext>B</m:mtext></m:msub><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi><m:mi>m</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>s</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">giving the matrix elements</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mo>&#x003C;</m:mo><m:mi>s</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>s</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mo>&#x003C;</m:mo><m:mi>c</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>s</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mtext>B</m:mtext></m:msub><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi><m:mi>m</m:mi></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mo>&#x003C;</m:mo><m:mi>s</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>c</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mi>i</m:mi><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mtext>B</m:mtext></m:msub><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi><m:mi>m</m:mi></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mo>&#x003C;</m:mo><m:mi>c</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>c</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">The secular equations are therefore</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mo>&#x2212;</m:mo><m:msup><m:mi>E</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:msub><m:mi>c</m:mi><m:mi>c</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub><m:mi>&#x210F;</m:mi><m:mi>m</m:mi><m:msub><m:mi>c</m:mi><m:mi>s</m:mi></m:msub></m:mrow></m:mtd><m:mtd><m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>i</m:mi><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mtext>B</m:mtext></m:msub><m:mi>&#x210F;</m:mi><m:mi>m</m:mi><m:msub><m:mi>c</m:mi><m:mi>c</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:msup><m:mi>E</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:msub><m:mi>c</m:mi><m:mi>s</m:mi></m:msub></m:mrow></m:mtd><m:mtd><m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">and the secular determinant</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo>&#x007C;</m:mo> <m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mo>&#x2212;</m:mo><m:msup><m:mi>E</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow></m:mtd><m:mtd><m:mrow><m:mo>&#x2212;</m:mo><m:mi>i</m:mi><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mtext>B</m:mtext></m:msub><m:mi>&#x210F;</m:mi><m:mi>m</m:mi></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>i</m:mi><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mtext>B</m:mtext></m:msub><m:mi>&#x210F;</m:mi><m:mi>m</m:mi></m:mrow></m:mtd><m:mtd><m:mrow><m:mo>&#x2212;</m:mo><m:msup><m:mi>E</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow> <m:mo>&#x007C;</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></p>
+<p class="noindent">Expanding the determinant and solving the resulting quadratic equation we find</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mi>E</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>=</m:mo><m:mo>&#x00B1;</m:mo><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mtext>B</m:mtext></m:msub><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi><m:mi>m</m:mi></m:mrow></m:math></p>
+<p class="noindent">Taking the positive root and substituting into the secular equations we find <i>c<sub>s</sub> =</i>i<i>c<sub>c</sub></i> so that the normalized solution is</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>&#x03C8;</m:mi><m:mo>+</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>c</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>+</m:mo><m:mi>i</m:mi></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>s</m:mi><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>i</m:mi><m:mi>m</m:mi><m:mi>&#x03D5;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p>
+<p class="noindent">Similarly for the negative root we find <i>c<sub>s</sub> =</i> &#x2013;ic<i><sub>c</sub></i> so that the solution is exp(&#x2013;i<i>m&#x03D5;).</i><a id="page_55" class="page">Page 55, Chapter 4 Fields and couplings</a></p>
+<p class="indent">Although we discovered the correct zero-order solutions the hard way, we could have gone through the following thought process instead. The zero-order states we want are those for which the perturbation matrix is diagonal, preferably states that are eigenfunctions of the perturbation, which will be the exact solutions to the problem. Since the perturbation operator is proportional to the <i>z</i> component of the angular momentum, the correct basis states have fixed values of this component. These states are exp<i>(&#x00B1;</i>i<i>m&#x03D5;)</i> (see <i>Quantum mechanics 1,</i> Problem 1.3.4). The energy corrections in the first order are then the eigenvalues of the perturbation operator for these states, that is, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mo>&#x00B1;</m:mo><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub><m:mtext>&#x2009;</m:mtext><m:mi>&#x210F;</m:mi><m:mi>m</m:mi></m:mrow></m:math>; in fact these are the exact energy corrections for this problem.</p>
+<p class="indent">Both methods give the same answer, of course, but this example illustrates two points: first the basic method required if the symmetry of the perturbation is not obvious; and second the great simplification that accrues if the symmetry of the perturbation can be recognized in advance. In the case of lifting true degeneracies this can often be done by using group theory to generate the correct linear combinations (<i>Quantum mechanics 1</i>, Section 4.7), but in the case of near degeneracies and accidental degeneracies we will always need to use the secular equations to find the correct zero-order states. The remainder of this chapter is devoted to analysing particular examples of this method that are relevant in chemistry. In most cases we use the symmetry of the problem to calculate the splittings induced by the perturbation; however, we do consider some systems where it is necessary to solve the secular equations.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec4.2">
+<h2 class="h2">4.2<span class="space">&#160;</span>External fields</h2>
+<p class="noindent">Up to now we have only considered the ways in which interactions internal to an atom or molecule can be treated using perturbation theory. In each case, although an approximate degeneracy is lifted, we used a more exact symmetry to work out the states and energy levels to first order. In this section we use the same ideas to investigate the way in which an atom or molecule interacts with an externally applied perturbation, such as a magnetic field or an electric field.</p>
+<p class="indent">Only non-zero magnetic moments can interact with magnetic fields. Atoms contain up to three sources of angular momentum &#x2013; orbital motion, electron spin, and nuclear spin. In addition to these, molecules also have rotational angular momentum. The result is that most atoms and molecules have some form of magnetic moment, which interacts with an external magnetic field, giving rise to a measurable phenomenon, usually a splitting of lines in the spectrum.</p>
+<p class="blist" style="margin-top:1em;">&#x2022;<span class="space">&#160;</span>The magnetic moment from the electronic angular momentum of an atom gives rise to the Zeeman effect, in which absorption or emission lines in the atomic spectrum are split into multiplets by the application of the field, an effect which is taken advantage of in <i>laser magnetic resonance</i> spectroscopy, where the field is used to tune absorption lines into resonance with a laser.</p>
+<p class="blist" style="margin-top:1em;">&#x2022;<span class="space">&#160;</span>In a free radical, which has an electronic spin angular momentum associated with the unpaired electron, the magnetic field interacts with the <a id="page_56" class="page">Page 56, Chapter 4 Fields and couplings</a>spin, splitting the energy levels in two. Transitions between these energy levels give rise to the phenomenon of <i>electron spin resonance</i> spectroscopy. Further splittings may arise as a result of the hyperfine interaction between the electron spin and the spins of magnetic nuclei in the molecule.</p>
+<p class="blist" style="margin-top:1em;">&#x2022;<span class="space">&#160;</span>In a closed shell molecule in the condensed phase the only source of magnetic moment is from the nuclear spins. The application of a magnetic field splits the molecular energy levels, and transitions between the resulting levels give rise to <i>nuclear magnetic resonance</i> spectroscopy.</p>
+<p class="noindentt">In this section we shall confine our attention to systems which contain only a single source of angular momentum. The case where two sources of angular momentum are present requires a more detailed analysis, in which the coupling of the angular momenta is combined with the interaction Hamiltonian for the external field.</p>
+<section epub:type="chapter">
+<h3 class="h3">Zeeman effect</h3>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar">The <i>Zeeman</i> effect is the interaction of an atom with an external magnetic field.</p>
+</aside>
+<p class="noindent">A charged particle moving with an angular momentum (orbital, spin, or both) acts as a magnet, and will interact with any magnetic field that may be present. Magnetic fields may be externally applied, or arise from the motion of other charged particles in the atom or molecule. The classical energy of interaction between a magnet, whose magnetic moment is <b>&#x03BC;</b> and a magnetic field, <b>B</b>, is given by the scalar product &#x2013;<b>&#x03BC;</b>.<b>&#x0392;</b>. For example, if <b>B</b> is an external field in the <i>z</i> direction, then the interaction is represented in the Hamiltonian by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03BC;</m:mi><m:mi>z</m:mi></m:msub><m:mi>B</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.9)</td>
+</tr>
+</table>
+<p class="noindent">where <i>&#x03BC;<sub>z</sub></i> is the <i>z</i> component or the magnetic moment.</p>
+<p class="indent">The magnetic moment resulting from a particular motion is proportional to the angular momentum and to the charge of the particle, and inversely proportional to its mass. A particle with charge <i>q</i> and mass <i>m</i> rotating with an angular momentum <b>J</b> behaves like a magnet with a magnetic moment</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03BC;</m:mi><m:mo>=</m:mo><m:mi>g</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub><m:mi>J</m:mi><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow></m:math></p></td>
+<td>(4.10)</td>
+</tr>
+</table>
+<p class="noindent">where <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub><m:mo>=</m:mo><m:mi>&#x210F;</m:mi><m:mi>q</m:mi><m:mo>/</m:mo><m:mn>2</m:mn><m:mi>m</m:mi></m:mrow></m:math>and is known as the <i>Bohr magneton</i> for an electron, or the <i>nuclear magneton</i> for a nucleus. The appearance of the mass in the denominator, and the fact that atomic and molecular angular momenta have the order of magnitude of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow></m:mrow></m:math> <i>&#x0127;,</i> means that magnetic effects will be of the order of 2000 times larger for electron motions than for nuclear motions. The <i>g</i> factor is more complex in origin: it takes the value 1 for electronic orbital motion, 2 for electron spin, and other values for nuclear spin, for example 5.585 for the proton spin. The Hamiltonian for the interaction of a magnetic moment with an external field now becomes</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>g</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub><m:mi>B</m:mi><m:msub><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow></m:math></p></td>
+<td>(4.11)</td>
+</tr>
+</table>
+<p class="noindent">In the absence of the field, each energy level has a definite total angular momentum quantum number <i>J</i> and degeneracy 2<i>J</i>&#x002B;1. Fortunately we do not have to set up the secular equations to work out the effect of the field on these degenerate states because, if the field is weak, the Zeeman Hamiltonian is <a id="page_57" class="page">Page 57, Chapter 4 Fields and couplings</a> diagonal in the basis <i>|J, M<sub>J</sub></i> &#x003E;. In other words the 2<i>J &#x002B;</i> 1 states can be represented by assigning each of them a different value of <i>M<sub>J</sub>,</i> the projection of the angular momentum in the <i>z</i> direction. Because the perturbation is proportional to the <i>&#x0134;<sub>z</sub></i> operator, each of these states will be an eigenfunction of the Zeeman Hamiltonian, with eigenvalues</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mrow><m:mi>J</m:mi><m:msub><m:mi>M</m:mi><m:mi>J</m:mi></m:msub></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>g</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub><m:mi>B</m:mi><m:msub><m:mi>M</m:mi><m:mi>J</m:mi></m:msub></m:mrow></m:math></p></td>
+<td>(4.12)</td>
+</tr>
+</table>
+<p class="noindent">We conclude, therefore, that a level with angular momentum quantum number <i>J</i> is split by a magnetic field into 2<i>J</i>&#x002B;1 constituents, each having a characteristic value of <i>M<sub>J</sub>,</i> and that the splitting is proportional to the magnetic field strength <i>B.</i></p>
+<p class="indent">For example, in a free radical with only electron spin <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mi>S</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>to worry about, the energy levels are split into two, with <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:msub><m:mi>M</m:mi><m:mi>S</m:mi></m:msub><m:mo>=</m:mo><m:mo>&#x00B1;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>. The <i>g</i> value is very close to 2 in this case, since the magnetic moment arises almost solely from the electron spin. Similarly in a borate anion, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mrow></m:mrow><m:mrow><m:mn>11</m:mn></m:mrow></m:msup><m:mi>B</m:mi><m:msubsup><m:mi>O</m:mi><m:mn>3</m:mn><m:mrow><m:mn>3</m:mn><m:mo>&#x2212;</m:mo></m:mrow></m:msubsup></m:mrow></m:math>, where the only angular momentum is the nuclear spin of the boron nucleus <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, the energy levels are split into four by the application of the field (see <a href="#fig4.1">Fig. 4.1</a>).</p>
+<aside class="abc" style="margin-top:-25em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.1">
+<img src="../images/fig4.1.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 4.1</b> The splitting of a nuclear spin state with <i>J =</i> 3/2 in an external magnetic field.</figcaption></figure>
+</aside>
+<p class="indent">We shall return to the Zeeman effect in <a href="#sec4.5">Section 4.5</a>, when we have discussed angular momentum coupling in atoms in more detail.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Stark effect</h3>
+<p class="noindent">The Zeeman effect is found when an atom or molecule interacts with an external magnetic field. The <i>Stark effect</i> is a similar effect that arises when a species interacts with an external electric field. However, whereas the Zeeman effect is essentially a first-order effect, the Stark effect is usually zero in the first order, and provides an excellent example of the application of second-order perturbation theory.</p>
+<aside class="abc" style="margin-top:-6.5em;" epub:type="sidebar">
+<p class="noindent" style="width:100%;text-align:left;">The Stark effect is the interaction of an atom or molecule with an applied electric field.</p></aside>
+<p class="indent">The simplest case of the Stark effect is the effect of an electric field on the rotational energy levels of a heteronuclear diatomic molecule. The applied electric field interacts with the electric dipole moment of the molecule, and the strength of the interaction is proportional to the component of the dipole moment vector <b>d</b> in the direction of the field. If the electric field strength is denoted <i>V</i> and is taken to He along the <i>z</i> direction, then the interaction Hamiltonian is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>=</m:mo><m:mi>V</m:mi><m:mi>d</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>cos</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x03B8;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.13)</td>
+</tr>
+</table>
+<p class="noindent">As discussed in <i>Quantum mechanics 1,</i> <a href="Chapter03.xhtml">Chapter 3</a>, the rotational wavefunctions of a diatomic molecule in the rigid rotor approximation are the spherical harmonics <i>Y<sub>jm</sub>,</i>(<i>&#x03B8;,</i>&#x03D5;). The first-order modification in the energy is therefore</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mrow><m:mi>J</m:mi><m:mi>M</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mi>V</m:mi><m:mi>d</m:mi><m:mo>&#x003C;</m:mo><m:mi>J</m:mi><m:mi>M</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>cos</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x03B8;</m:mi><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>J</m:mi><m:mi>M</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td>(4.14)</td>
+</tr>
+</table>
+<p class="noindent">The properties of the spherical harmonics have been discussed in <i>Quantum mechanics 1</i>, <a href="Chapter03.xhtml">Chapter 3</a>, but they are well known, since they are the angular part of the atomic orbital functions. Each spherical harmonic has a well-defined behaviour with respect to the inversion symmetry operation. If the angular momentum quantum number <i>J</i> is even, the function is unchanged by inversion (cf. <i>s</i> and <i>d</i> orbitals), whereas if <i>J</i> is odd the function changes sign <a id="page_58" class="page">Page 58, Chapter 4 Fields and couplings</a> on inversion (cf. <i>p</i> and &#x0192; orbitals). If we now consider the integrand of the matrix element representing the first-order energy, we can see that the product <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>Y</m:mi><m:mrow><m:mi>J</m:mi><m:mi>M</m:mi></m:mrow><m:mo>&#x2217;</m:mo></m:msubsup><m:msub><m:mi>Y</m:mi><m:mrow><m:mi>J</m:mi><m:mi>M</m:mi></m:mrow></m:msub></m:mrow></m:math>must always be even with respect to inversion, and since cos <i>&#x0398;</i> is odd with respect to inversion, the integrand changes sign on inversion so that the integral must be zero.</p>
+<p class="indent">The second-order energy is given by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mrow><m:mi>J</m:mi><m:mi>M</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:msup><m:mi>V</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>J</m:mi><m:mi>M</m:mi></m:mrow></m:munder><m:mrow><m:msup><m:mrow></m:mrow><m:mo>&#x0027;</m:mo></m:msup></m:mrow></m:mstyle><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mo>&#x003C;</m:mo><m:mi>J</m:mi><m:mi>M</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>cos</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x03B8;</m:mi></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:msup><m:mi>J</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:msup><m:mi>M</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mo>&#x003E;</m:mo></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msubsup><m:mi>E</m:mi><m:mrow><m:mi>J</m:mi><m:mi>M</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>E</m:mi><m:mrow><m:msup><m:mi>J</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:msup><m:mi>M</m:mi><m:mo>&#x2032;</m:mo></m:msup></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(4.15)</td>
+</tr>
+</table>
+<p class="noindent">To apply this formula we need to know the zero-order rotational energy levels and the matrix elements of cos <i>&#x03B8;.</i> The energy levels were shown in <i>Quantum mechanics 1,</i> <a href="Chapter03.xhtml#sec3.4">Section 3.4</a> to be</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mrow><m:mi>J</m:mi><m:mi>M</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mi>B</m:mi><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.16)</td>
+</tr>
+</table>
+<p class="noindent">where <i>B</i> is the rotational constant.</p>
+<p class="indent">To calculate the matrix elements we use the fact that the angles <i>&#x0398;</i> and <i>&#x03C6;</i> can be separated, as discussed in <i>Quantum mechanics 1,</i> <a href="Chapter02.xhtml">Chapter 2</a>.</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Y</m:mi><m:mrow><m:mi>J</m:mi><m:mi>M</m:mi></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03B8;</m:mi><m:mo>,</m:mo><m:mi>&#x03D5;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>&#x0398;</m:mi><m:mrow><m:mi>J</m:mi><m:mi>M</m:mi></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mi>&#x03B8;</m:mi><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03A6;</m:mi><m:mi>M</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>&#x03D5;</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.17)</td>
+</tr>
+</table>
+<p class="noindent">Because the perturbation does not contain the angle <i>&#x03D5;,</i> the matrix element can be separated into the product of two integrals:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.18"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>J</m:mi><m:mi>M</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>cos</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x03B8;</m:mi></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:msup><m:mi>J</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:msup><m:mi>M</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>&#x003C;</m:mo><m:msub><m:mi>&#x0398;</m:mi><m:mrow><m:mi>J</m:mi><m:mi>M</m:mi></m:mrow></m:msub><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>cos</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x03B8;</m:mi></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:msub><m:mi>&#x0398;</m:mi><m:mrow><m:msup><m:mi>J</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:msup><m:mi>M</m:mi><m:mo>&#x2032;</m:mo></m:msup></m:mrow></m:msub><m:mo>&#x003E;</m:mo><m:mo>&#x003C;</m:mo><m:msub><m:mi>&#x03A6;</m:mi><m:mi>M</m:mi></m:msub><m:mo stretchy='false'>&#x007C;</m:mo><m:msub><m:mi>&#x03A6;</m:mi><m:msup><m:mi>M</m:mi><m:mo>&#x2032;</m:mo></m:msup></m:msub><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(4.18)</td>
+</tr>
+</table>
+<p class="noindent">Since &#x03A6; functions with different quantum numbers are orthogonal we can see immediately that the matrix element is zero if <i>M &#x2260; M</i>&#x2032; so that we only need to find matrix elements with <i>M = M</i>&#x2032;.</p>
+<p class="indent">The integral over <i>&#x03B8;</i> is a standard piece of applied mathematics which follows from the nature of the &#x0398; functions (associated Legendre polynomials). The interested reader will find a discussion in Pauling and Wilson (1985). The result is that all matrix elements are zero apart from</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.19"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>J</m:mi><m:mi>M</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>cos</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x03B8;</m:mi></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>J</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>M</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>J</m:mi><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mi>M</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>J</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.19)</td>
+</tr>
+</table>
+<p class="noindent">and</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.20"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x003C;</m:mo><m:mi>J</m:mi><m:mi>M</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>cos</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x03B8;</m:mi></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>M</m:mi><m:mo>&#x003E;</m:mo><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mi>M</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.20)</td>
+</tr>
+</table>
+<p class="noindent" id="prb4.2.1"><b>Problem 4.2.1.</b> <i>Given the zero-order rotational energy level formula (<a href="#eq4.16">eqn 4.16</a>) and the two non-&#x03C5;anishing matrix elements given in <a href="#eq4.19">eqns 4.19</a> and <a href="#eq4.20">4.20</a>, show that the second-order energy modification is</i></p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.21"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mrow><m:mi>J</m:mi><m:mi>M</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:msup><m:mi>V</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup><m:mfrac><m:mrow><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mn>3</m:mn><m:msup><m:mi>M</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>B</m:mi><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>J</m:mi><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.21)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.2">
+<img src="../images/fig4.2.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 4.2</b> The Stark effect on a rotational energy level with J = 2.</figcaption></figure>
+</aside>
+<p class="indent">We see that in the Stark effect the change in energy depends on the square of the quantum number <i>M.</i> The electric field does not therefore remove the degeneracy between wavefunctions with the same value of <i>|M|</i> but with different signs. For example, <a href="#fig4.2">Fig. 4.2</a> shows the effect of applying an electric field to the <i>J =</i> 2 rotational level.<a id="page_59" class="page">Page 59, Chapter 4 Fields and couplings</a></p>
+<p class="indent">This result is extremely useful, since the Stark effect on the rotational spectrum can be used to give a very accurate measurement of the dipole moment of a molecule.</p>
+<p class="indent">There are, of course, other energy levels of the molecule with the same values of <i>J</i> and <i>M,</i> but in different vibrational or electronic states, and strictly these should also be included in the perturbation sum. However, for most ground state diatomic molecules these levels are far away in energy from the level under consideration, and their contributions are very small. If deviations from the formula derived are observed, it is usually an indication that there is a nearby energy level in another electronic state with the correct values of <i>J</i> and <i>M</i> to give a significant contribution to the second-order energy. Spectro-scopists use detailed analyses of such &#x2018;perturbations&#x2019; to gain information on the relative energies of other electronic states.</p>
+<p class="indent">A more complicated example of the second-order Stark effect is the ground state of the hydrogen atom. This has angular momentum quantum numbers &#x2113;<i> =</i> 0 and <i>m =</i> 0 (instead of <i>J</i> and <i>M</i>). The only non-vanishing matrix elements in the second-order analysis are therefore those with &#x2113;<i> =</i> 1 and <i>m =</i> 0, that is, the <i>np<sub>z</sub></i> orbitals. A full second-order analysis is given by Pauling and Wilson (1985).</p>
+<p class="indent">The hydrogen atom in excited states displays a first-order Stark effect. Although we shall not calculate this effect in detail here, it is easy to see why it arises. In the hydrogen atom in state <i>n =</i> 2 there is an additional degeneracy. Not only are the three <i>2p</i> orbitals degenerate, but the 2s orbital also has the same energy. The two <i>2p</i> orbitals with <i>m = &#x00B1;</i>1 obey the usual second-order Stark effect, but the matrix elements between the 2<i>s</i> and the 2<i>p<sub>z</sub></i> orbitals are non-zero, so we need to use degenerate perturbation theory. The secular determinant then takes the form</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.22"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo>&#x007C;</m:mo> <m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mo>&#x2212;</m:mo><m:mi>E</m:mi></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>&#x03B3;</m:mi><m:mi>V</m:mi></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>&#x03B3;</m:mi><m:mi>V</m:mi></m:mrow></m:mtd><m:mtd><m:mrow><m:mo>&#x2212;</m:mo><m:mi>E</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow> <m:mo>&#x007C;</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(4.22)</td>
+</tr>
+</table>
+<p class="noindent">where <i>&#x03B3;</i> is a constant calculated from the matrix element mixing 2<i>s</i> and 2p<sub>z</sub>. The solutions for the energy levels are &#x00B1;<i>&#x03B3;V</i>, giving an effect linear in the field strength <i>&#x03F5;,</i> and the resulting wavefunctions are <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mn>2</m:mn><m:mi>s</m:mi><m:mo>&#x003E;</m:mo><m:mo>+</m:mo></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mn>2</m:mn><m:msub><m:mi>p</m:mi><m:mi>z</m:mi></m:msub><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>with energy <i>&#x03B3;V</i> and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mn>2</m:mn><m:mi>s</m:mi><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mn>2</m:mn><m:msub><m:mi>p</m:mi><m:mi>z</m:mi></m:msub><m:mo>&#x003E;</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>with energy &#x2013;<i>&#x03B3;V.</i> These <i>sp</i> hybrid wavefunctions are sketched in <a href="#fig4.3">Fig. 4.3</a>. In each of these zero-order states the hydrogen atom has a permanent dipole moment, of magnitude <i>&#x03B3;</i>.</p>
+<p class="indent">In the hydrogen atom the 2<i>s</i> orbital is stable, since the transition from 2<i>s</i> to 1<i>s</i> is forbidden by the parity selection rule, whereas transitions are permitted from 2<i>p</i> to <i>1s.</i> However, in the presence of an electric field the stationary states are mixtures of 2<i>s</i> and 2<i>p<sub>z</sub></i> so that the 2<i>s</i> wavefunction is &#x2018;contaminated&#x2019; by 2<i>p<sub>z</sub></i> and the lifetime of an atom prepared in a 2<i>s</i> state is significantly shortened.</p>
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.3">
+<img src="../images/fig4.3.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 4.3</b> An sp hybrid orbital for the linear Stark effect in the H atom.</figcaption></figure>
+</aside>
+</section>
+</section>
+<section epub:type="chapter" id="sec4.3">
+<h2 class="h2">4.3<span class="space">&#160;</span>Coupling of angular momenta</h2>
+<p class="noindent">We shall deal with external fields in more detail in <a href="#sec4.5">Section 4.5</a>, but we must first understand the ways in which angular momenta interact magnetically with one another within an atom or a molecule, and the effects on the energy levels.</p>
+<p class="noindent"><a id="page_60" class="page">Page 60, Chapter 4 Fields and couplings</a>Many interactions in an atom or a molecule can be described as a coupling of angular momenta. They usually involve the vector addition of angular momenta, which are approximately conserved, to form a resultant angular momentum, which is more strongly conserved. For example, in Russell&#x2013;Saunders coupling, the electronic orbital and spin angular momenta in an atom are separately coupled (summed) to make resultant vectors <b>L</b> and <b>S</b>, as discussed in <a href="Chapter01.xhtml#sec1.4">Section 1.4</a>. The vector addition of L with the total spin angular momentum <b>S</b> to form a resultant total electronic angular momentum <b>J</b> (spin&#x2013;orbit coupling) is another example, discussed in detail shortly. Before we discuss the application of perturbation theory to assess the shifts in energy levels resulting from such couplings, which is the main subject of this section, we make a brief detour to discuss the rules for combining quantum mechanical angular momenta.</p>
+<section epub:type="chapter">
+<h3 class="h3">General rule for summing two angular momenta</h3>
+<p class="noindent">In classical physics angular momentum is an axial vector quantity (see <i>Quantum mechanics 1,</i> p. 81). When angular momenta are summed, the problem simply amounts to their vector addition. As shown in <a href="#fig4.4">Fig. 4.4</a>, the two component vectors and their resultant form a triangle, thus the lengths of the vectors must obey the <i>triangle inequality,</i> that is, the sum of any two sides may not be smaller than the length of the remaining side, otherwise they could not join up to form a triangle. Thus if two vectors <b>L</b> and <b>S</b> are summed to give a resultant <b>J</b> then the following three inequalities for their lengths must be obeyed:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>L</m:mi><m:mo>+</m:mo><m:mi>S</m:mi><m:mo>&#x2265;</m:mo><m:mi>J</m:mi></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>L</m:mi><m:mo>+</m:mo><m:mi>J</m:mi><m:mo>&#x2265;</m:mo><m:mi>S</m:mi></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>S</m:mi><m:mo>+</m:mo><m:mi>J</m:mi><m:mo>&#x2265;</m:mo><m:mi>L</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.4">
+<img src="../images/fig4.4.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 4.4</b> The vector addition of <b>L</b> and <b>S</b> to give the total electronic angular momentum <b>J</b>.</figcaption></figure>
+</aside>
+<p class="noindent">The last two of these can be combined to give <i>J &#x2265; |L</i> &#x2013;<i> S|.</i> Thus the resultant vector can not be shorter than <i>|L</i> &#x2013;<i> S|,</i> nor can it be longer than <i>L &#x002B; S.</i> Although this analysis is entirely classical, the same restriction on the quantum numbers holds in quantum mechanics. If two angular momenta, whose quantum numbers are <i>L</i> and <i>S</i> are summed, the quantum number of the resultant cannot be smaller than <i>|L</i> &#x2013;<i> S|</i> or larger than <i>L</i> &#x002B; <i>S</i>.</p>
+<p class="indent">This result can be proved by considering the <i>z</i> components of the three angular momenta involved. Quantum mechanics only permits us to know one component of an angular momentum at a time <i>(Quantum mechanics 1,</i> <a href="Chapter03.xhtml#sec3.4">Section 3.4</a>). The <i>z</i> component of the resultant is simply obtained by summing the <i>z</i> components of the two constituent angular momenta,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.23"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>M</m:mi><m:mi>J</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>M</m:mi><m:mi>L</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>M</m:mi><m:mi>S</m:mi></m:msub></m:mrow></m:math></p></td>
+<td>(4.23)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-12.5em;" epub:type="sidebar">
+<p class="tab-cap" style="width:100%;" id="tab4.1"><b>Table 4.1.</b> <i>M<sub>J</sub></i>Rvalues for summing angular momenta of magnitude 1 and 2</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td></td>
+<td style="vertical-align:top;" class="borb"></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>M<sub>s</sub></i></p></td>
+<td style="vertical-align:top;" class="borb"></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>M<sub>L</sub></i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">&#160;&#160;0</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;2</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;2</p></td>
+<td style="vertical-align:top;"><p class="tab-l">3</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">2</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;2</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;2</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;3</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;3</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+</tr>
+</table>
+</aside>
+<p class="noindent">We therefore consider all possible combinations of <i>M<sub>L</sub></i> and <i>M<sub>S</sub></i> and work out what value of <i>M<sub>J</sub></i> would result in each case. This gives us a set of possible values of <i>M<sub>J</sub></i> and we then simply have to work out which values of <i>J</i> could have given this set of <i>M<sub>J</sub></i> values.</p>
+<p class="indent">The method is illustrated in <a href="#tab4.1">Table 4.1</a> for the addition of <i>L</i> = 2 and <i>S</i>=1. The <i>M<sub>L</sub></i> quantum number can take values from &#x2013;2 to 2, the <i>M<sub>S</sub></i> quantum <a id="page_61" class="page">Page 61, Chapter 4 Fields and couplings</a> number from &#x2013;1 to 1. The table contains values of <i>M<sub>J</sub></i> for all possible combinations of these two quantum numbers. The largest value of <i>M<sub>J</sub></i> in the table is 3 (in general <i>L</i> &#x002B; <i>S</i>), this must therefore be the largest value of <i>J</i> possible. A state with <i>J</i> = 3 will have 7 possible values of <i>M<sub>J</sub>,</i> ranging from &#x002B;3 to &#x2013;3. If we remove one of each from the table, the largest remaining value of My is 2, there is therefore a state with <i>J</i> = 2, with <i>M<sub>J</sub></i> values from &#x002B;2 to &#x2013;2. Removing these from the table we are left with <i>M<sub>J</sub></i> values of &#x002B;1, 0, and &#x2013;1, that is, a state with <i>J</i>=1. Thus the angular momenta with quantum numbers 1 and 2 add to give three possible resultants, with <i>J</i> = 3, <i>J =</i> 2, and <i>J</i> = 1.</p>
+<aside class="abc" style="margin-top:-10.5em;" epub:type="sidebar">
+<p class="sidebar" id="prb4.3.1"><b>Problem 4.3.1.</b> <i>Use</i> a <i>similar construction to convince yourself that the addition of two angular momenta with quantum numbers L and S yields resultants whose quantum numbers lie between |L&#x2013;S| and L &#x002B; S in steps of one.</i></p>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Spin&#x2013;orbit coupling</h3>
+<p class="noindent">In <a href="Chapter01.xhtml#sec1.4">Section 1.4</a> we considered the possible electronic energy levels of an atom on the assumption that the orbital and spin motion of the electrons can be separated from one another. This is the case in the non-relativistic Schr&#x00F6;dinger equation, but in the relativistic theory of Dirac, where spin makes a natural appearance, several new factors appear, removing the degeneracy of the states in a term. The most important of these is <i>spin&#x2013;orbit coupling,</i> whose physical origin can be understood by considering the orbital motion from the point of view of the electron. If the orbital motion has non-zero angular momentum, then in the frame of reference of the electron the nucleus moves around with a non-zero angular momentum, and therefore induces a magnetic field at the electron:</p>
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+<p class="sidebar" id="prb4.3.2"><b>Problem 4.3.2.</b> <i>Show that the total degeneracy of a term, evaluated state by state, is equal to</i> (2<i>L</i> &#x002B; 1)(2<i>S</i> &#x002B; 1); <i>i.e.</i> <i>that</i><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mstyle displaystyle='true'><m:msubsup><m:mo>&#x2211;</m:mo><m:mrow><m:mi>J</m:mi><m:mo>=</m:mo><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>L</m:mi><m:mo>&#x2212;</m:mo><m:mi>S</m:mi></m:mrow><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow></m:mrow><m:mrow><m:mi>L</m:mi><m:mo>+</m:mo><m:mi>S</m:mi></m:mrow></m:msubsup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>L</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>S</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math> <i>(Hint: this is the sum of an arithmetic progression.)</i></p>
+</aside>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.24"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi mathvariant='bold'>B</m:mi><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mi mathvariant='bold'>p</m:mi><m:mrow><m:mi>m</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>&#x00D7;</m:mo><m:mi mathvariant='bold'>E</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.24)</td>
+</tr>
+</table>
+<p class="noindent">where <b>E</b> is the electric field through which the electron is travelling, which is the result of the Coulombic attraction of the nucleus and the spherically averaged repulsions of all the other electrons in the atom:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.25"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi mathvariant='bold'>E</m:mi><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>e</m:mi><m:mi>r</m:mi></m:mrow></m:mfrac><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>U</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>r</m:mi></m:mrow></m:mfrac><m:mi mathvariant='bold'>r</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.25)</td>
+</tr>
+</table>
+<p class="noindent"><i>U</i> is the potential energy of the electron as a function of its distance from the nucleus. The relativistic origin of this term manifests itself in the appearance of the speed of light <i>c.</i> Combining these formulae,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.26"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi mathvariant='bold'>B</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>e</m:mi><m:mi>m</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup><m:mi>r</m:mi></m:mrow></m:mfrac><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>U</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>r</m:mi></m:mrow></m:mfrac><m:mi mathvariant='bold'>p</m:mi><m:mo>&#x00D7;</m:mo><m:mi mathvariant='bold'>r</m:mi><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>e</m:mi><m:mi>m</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup><m:mi>r</m:mi></m:mrow></m:mfrac><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>U</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>r</m:mi></m:mrow></m:mfrac><m:mi mathvariant='bold'>1</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.26)</td>
+</tr>
+</table>
+<p class="noindent">where <b>p</b> &#x00D7; <b>r</b> = 1 is the orbital angular momentum <i>(Quantum mechanics 1</i>, <a href="Chapter03.xhtml#sec3.4">Section 3.4</a>).</p>
+<p class="indent">The electron has an intrinsic magnetic moment due to its spin, <i>&#x03BC;</i><sub>s</sub><i> = es/m</i> (note the <i>g</i> factor of 2), which interacts with this internal magnetic field,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.27"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mtext mathvariant='bold'>&#x03BC;</m:mtext><m:mi>s</m:mi></m:msub><m:mo>.</m:mo><m:mi mathvariant='bold'>B</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>m</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup><m:mi>r</m:mi></m:mrow></m:mfrac><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>U</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>r</m:mi></m:mrow></m:mfrac><m:mi mathvariant='bold'>1</m:mi><m:mo>.</m:mo><m:mi mathvariant='bold'>s</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.27)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-6.5em;" epub:type="sidebar">
+<p class="sidebar">Spin&#x2013;orbit coupling is the interaction of the spin magnetic moment of an electron with the magnetic field caused by its own orbital motion relative to the nucleus.</p>
+</aside>
+<p class="noindent">Each electron in the atom will have such an interaction, leading to a perturbation Hamiltonian:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.28"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo mathvariant='bold'>&#x005E;</m:mo></m:mover><m:mrow><m:mi>s</m:mi><m:mi>o</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>i</m:mi></m:munder><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mi>i</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow><m:msub><m:mi mathvariant='bold'>l</m:mi><m:mi>i</m:mi></m:msub><m:mo>.</m:mo><m:msub><m:mi mathvariant='bold'>s</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.75em;">(4.28)</td>
+</tr>
+</table>
+<p class="noindent">where the summation is over all electrons.<a id="page_62" class="page">Page 62, Chapter 4 Fields and couplings</a></p>
+<p class="indent">The presence of this term in the Hamiltonian means that the spin and orbital angular momenta can no longer be separated exactly, so the quantum numbers <i>L</i> and <i>S</i> are no longer exact. However, for light atoms the spin&#x2013;orbit interaction is weak and can be treated as a small perturbation. Since the degeneracy of each term may be partially removed by the perturbation, we either need to set up secular equations, or else recognize the symmetry which leads to the degeneracies that are maintained. It is generally worth the effort to try and characterize the symmetry of the perturbation.</p>
+<p class="indent">In the case of atomic states, although the two quantum numbers <i>L</i> and <i>S</i> are not conserved in the presence of spin&#x2013;orbit coupling, the isotropy of space still requires that the total electronic angular momentum, <i>J,</i> be a conserved quantity. In a light atom the symmetry and electrostatic effects that lead to the coupling of the orbital angular momenta to give the resultant <i>L</i> and the spins to give the resultant <i>S</i> are much stronger than the spin&#x2013;orbit coupling. Thus the total angular momentum <b>J</b> is given by the vector sum of the orbital and spin angular momenta:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.29"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi mathvariant='bold'>J</m:mi><m:mo>=</m:mo><m:mi mathvariant='bold'>L</m:mi><m:mo>+</m:mo><m:mi mathvariant='bold'>S</m:mi></m:mrow></m:math></p></td>
+<td>(4.29)</td>
+</tr>
+</table>
+<p class="noindent">The possible values of the total angular momentum quantum number <i>J</i> are thus given by the vector sum rule, discussed in the previous subsection:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.30"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>J</m:mi><m:mo>=</m:mo><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>L</m:mi><m:mo>&#x2212;</m:mo><m:mi>S</m:mi></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>L</m:mi><m:mo>&#x2212;</m:mo><m:mi>S</m:mi></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo>&#x2026;</m:mo><m:mo>,</m:mo><m:mi>L</m:mi><m:mo>+</m:mo><m:mi>S</m:mi></m:mrow></m:math></p></td>
+<td>(4.30)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar" id="prb4.3.3"><b>Problem 4.3.3.</b> <i>Show that the energy difference between states with quantum numbers J and J</i> &#x002B; 1 <i>arising from the same term is A(J</i> &#x002B;1). <i>(The Lande interval rule.)</i></p>
+</aside>
+<p class="noindent">Since the total angular momentum <i>J</i> is a good quantum number we attempt to find an expression for the spin&#x2013;orbit coupling Hamiltonian that will recognize this symmetry. The spin&#x2013;orbit interaction operates primarily between the total spin angular momentum <b>S</b> and the total orbital angular momentum <b>L</b>, and takes the form</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.31"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mtext>so</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mi>A</m:mi><m:mover accent='true'><m:mi mathvariant='bold'>L</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>.</m:mo><m:mover accent='true'><m:mi mathvariant='bold'>S</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.31)</td>
+</tr>
+</table>
+<p class="noindent">The constant <i>A</i> is obtained by averaging the individual <i>&#x03B1;<sub>i</sub></i> over the states with the given values of <i>L</i> and <i>S.</i> It may be positive or negative, depending on whether the partly filled subshell is less or more than half full. To calculate the first-order energy correction we must find a basis in which the Hamiltonian is diagonal, that is, a way of expressing the Hamiltonian in terms of quantities whose eigenvalues are known. Fortunately this is easily done. Since <b>J</b> is the vector sum of <b>L</b> and <b>S</b> we have</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mi mathvariant='bold'>L</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>+</m:mo><m:mover accent='true'><m:mi mathvariant='bold'>S</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mover accent='true'><m:mi>L</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mover accent='true'><m:mi>S</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mover accent='true'><m:mi mathvariant='bold'>L</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>.</m:mo><m:mover accent='true'><m:mi mathvariant='bold'>S</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow></m:math></p>
+<p class="noindent">so that</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.32"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mover accent='true'><m:mi mathvariant='bold'>L</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>.</m:mo><m:mover accent='true'><m:mi mathvariant='bold'>S</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo stretchy='false'>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mover accent='true'><m:mi>L</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mover accent='true'><m:mi>S</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup></m:mrow><m:mo stretchy='false'>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.32)</td>
+</tr>
+</table>
+<p class="noindent">In the zero-order approximation all these operators have well-defined eigenvalues, so the first-order energy correction follows immediately</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.33"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mrow><m:mi>L</m:mi><m:mi>S</m:mi><m:mi>J</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>A</m:mi><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>L</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>L</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>S</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>S</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.33)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_63" class="page">Page 63, Chapter 4 Fields and couplings</a>Note that states arising from a given term have common values of <i>L</i> and <i>S,</i> so the splitting only depends on the quantum number <i>J.</i></p>
+<p class="indent">Although this analysis is sometimes quite accurate, the spin&#x2013;orbit coupling Hamiltonian can also mix into a particular state contributions from other states with the same value of <i>J</i> but with different values of <i>L</i> and <i>S,</i> which can lead to important second-order energy corrections.</p>
+<aside class="abc" style="margin-top:-7.25em;" epub:type="sidebar">
+<p class="sidebar" id="prb4.3.4"><b>Problem 4.3.4.</b> <i>What is the ground-state term symbol for the Si atom? This</i><b></b> <i>term is split into three energy levels by spin&#x2013;orbit coupling, with energies 0 cm<sup>&#x2013;</sup></i><sup>1</sup><i> 77.14 cm<sup>&#x2013;</sup></i><sup>1</sup><i> and 223.31</i> cm<i><sup>&#x2013;1</sup></i><sup></sup> <i>respectively. Identify the J values of these three states and comment on the energy spacings.</i></p>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Hyperfine coupling</h3>
+<p class="noindent">In the preceding subsection we considered a term in the Hamiltonian which mixes the orbital motion of the electrons and their spins. There is a similar, but much smaller interaction between the electronic motion in an atom and the nuclear spin, known as the <i>hyperfine</i> interaction. Formally the hyperfine interaction comprises three separate interactions:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.34"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msub><m:mi>&#x03BC;</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mn>4</m:mn><m:mi>&#x03C0;</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>e</m:mi><m:mrow><m:mi>m</m:mi><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:mi mathvariant='bold'>l</m:mi><m:mo>.</m:mo><m:msub><m:mi mathvariant='bold'>&#x03BC;</m:mi><m:mi>s</m:mi></m:msub><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mi>r</m:mi></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>&#x03BC;</m:mi><m:mi>s</m:mi></m:msub><m:mo>.</m:mo><m:mi mathvariant='bold'>r</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi mathvariant='bold'>&#x03BC;</m:mi><m:mi>i</m:mi></m:msub><m:mo>.</m:mo><m:mi mathvariant='bold'>r</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac><m:msub><m:mi mathvariant='bold'>&#x03BC;</m:mi><m:mi>s</m:mi></m:msub><m:mo>.</m:mo><m:msub><m:mi mathvariant='bold'>&#x03BC;</m:mi><m:mi>i</m:mi></m:msub><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>8</m:mn><m:mi>&#x03C0;</m:mi></m:mrow><m:mn>3</m:mn></m:mfrac><m:msub><m:mi mathvariant='bold'>&#x03BC;</m:mi><m:mi>s</m:mi></m:msub><m:mo>.</m:mo><m:msub><m:mi mathvariant='bold'>&#x03BC;</m:mi><m:mi>i</m:mi></m:msub><m:mi>&#x03B4;</m:mi><m:mrow><m:mo>(</m:mo><m:mi mathvariant='bold'>r</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.34)</td>
+</tr>
+</table>
+<p class="noindent">where &#x03BC;<sub>0</sub> is the permeability of space (a fundamental constant), the first term represents the interaction between the magnetic moment of the spinning nucleus <b><i>&#x03BC;</i></b><b><sub>s</sub></b> and the magnetic field due to the orbital motion of the electron. The second and third terms represent an interaction between the magnetic moments of the spinning electron and nucleus. The final term, known as the <i>Fermi contact interaction,</i> arises from the possibility that the electron may have non-zero density at the nucleus, where the magnetic field is very large. In practice, the final term is only important for s electrons, which have non-zero density at the nucleus, and the spherical symmetry of the electron distribution ensures that the other terms are identically zero. Since the only conserved electronic angular momentum in the atom is <b>J</b>, the hyperfine interaction must be summed over all electrons in unfilled subshells and the electronic properties averaged for each value of <i>J.</i></p>
+<p class="indent">The procedure is rather involved, and finally yields (Landau and Lifshitz 1977, Cohen-Tannoudji <i>et al</i> 1992) an interaction Hamiltonian,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.35"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>h</m:mi><m:mi>f</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>A</m:mi><m:mover accent='true'><m:mi mathvariant='bold'>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>.</m:mo><m:mover accent='true'><m:mi mathvariant='bold'>I</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow></m:math></p></td>
+<td>(4.35)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar">The hyperfine interaction is the interaction between the nuclear spin magnetic moment and the magnetic field induced by the electronic angular momentum.</p>
+</aside>
+<p class="noindent">in which <b>&#x0134;</b> is the total electronic angular momentum operator and &#x00CE; is the nuclear spin angular momentum operator. The coupling constant <i>A</i> can be either positive or negative.</p>
+<p class="indent">The presence of a nuclear spin means that the total angular momentum is no longer <b>J</b>; instead it will be a vector sum of the electronic and nuclear spin angular momenta, and in an isotropic space, this quantity (the total angular momentum&#x2019;) must be conserved:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.36"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi mathvariant='bold'>F</m:mi><m:mo>=</m:mo><m:mi mathvariant='bold'>J</m:mi><m:mo>+</m:mo><m:mi mathvariant='bold'>I</m:mi></m:mrow></m:math></p></td>
+<td>(4.36)</td>
+</tr>
+</table>
+<p class="noindent">The possible values of the total angular momentum quantum number <i>F</i> therefore range from a minimum of |<i>J</i> &#x2013; <i>I&#x005C;</i> to a maximum of <i>J</i> &#x002B; <i>I</i>. Each value of <i>F</i> will have a slightly different energy, which can be found in the same way <a id="page_64" class="page">Page 64, Chapter 4 Fields and couplings</a> as for spin&#x2013;orbit coupling. Because the hyperfine interaction is very weak, <i>J</i> and <i>I</i> are still good quantum numbers and we can write</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.37"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mover accent='true'><m:mi mathvariant='bold'>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>.</m:mo><m:mover accent='true'><m:mi mathvariant='bold'>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>F</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.37)</td>
+</tr>
+</table>
+<p class="noindent">and therefore</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.38"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mrow><m:mi>J</m:mi><m:mi>I</m:mi><m:mi>F</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>A</m:mi><m:mtext>&#x2009;</m:mtext><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>F</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>F</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>I</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>I</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.38)</td>
+</tr>
+</table>
+<p class="noindent">Although this interaction is very small in the atomic spectrum, it is important for two reasons: first the observation of hyperfine structure in an atomic spectrum gives a useful method of measuring nuclear spin. Second, the hyperfine structure contains the major structural information about free radicals present in an electron spin resonance spectrum.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Angular momenta in diatomic molecules</h3>
+<p class="noindent">&#x005B;This section is more advanced.&#x005D; In addition to electronic angular momenta and nuclear spin, diatomic molecules have rotational angular momentum. The nuclear spin effects are often neglected, and since most ground state molecules have closed shells, the resultant electronic angular momentum is zero. However, this is not the case for excited state molecules, and a few important molecules have unpaired electrons in their lowest configuration, notably NO and O<sub>2</sub>.</p>
+<p class="indent">One major difference between a molecule and an atom is that the potential energy for the electrons in a molecule is not spherically symmetrical. As a result, in a diatomic molecule, the orbital angular momentum <i>L</i> has a fixed projection on to the internuclear axis, usually labelled with the quantum number &#x039B;. The electronic term symbol identifies the value of &#x039B;: thus a &#x03A3; state has &#x039B; = 0, &#x03A0; signifies &#x039B; = 1, &#x0394;, &#x039B; = 2, and so on.</p>
+<p class="indent">The quantum mechanics of the angular momentum coupling and, therefore, the fine structure of the molecular energy levels depends on whether the spin&#x2013;orbit coupling is greater or less than the differences between adjacent rotational energy levels. Molecules with large spin&#x2013;orbit coupling are generally referred to as case (a), and molecules with small spin&#x2013;orbit coupling as case (b). These two cases are limits and there are many examples of intermediate cases. Indeed a molecule may be well described by case (a) at low rotational energies, but undergo a transition to case (b) at higher energies, where rotational energy levels are more widely spaced. We only give a brief outline of the relevant angular momenta for these cases. The interested reader may pursue these matters in Herzberg (1950) or Landau and Lifshitz (1977). In both cases the zero-order description of the molecule has an orbital angular momentum &#x039B; projected on to the internuclear axis, but neither spin nor rotational angular momentum are coupled in.</p>
+<p class="noindentt"><i>Hund&#x2019;s case (a).</i> In case (a) we start by neglecting rotation and couple the spin to the orbital angular momentum. The angular momenta involved are illustrated in <a href="#fig4.5">Fig. 4.5</a>. Because the orbital angular momentum is strongly</p>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.5">
+<img src="../images/fig4.5.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 4.5</b> The angular momenta involved in Hund&#x2019;s case (a).</figcaption></figure>
+</aside>
+<p class="noindent"><a id="page_65" class="page">Page 65, Chapter 4 Fields and couplings</a>coupled to the internuclear axis, the spin&#x2013;orbit coupling <i>A</i>(<i>r</i>)<b>L</b>.<b>S</b> now becomes <i>&#x0391;</i>(<i>r</i>)/<i>&#x0127;</i><sup>2</sup>&#x039B;&#x03A3;, where &#x03A3; is the quantum number representing the component of the spin parallel to the bond, and the bond length is assumed constant and equal to <i>r.</i> &#x03A3; can take values from &#x2013;<i>S</i> to &#x002B;<i>S</i> in steps of 1, in accord with the general rule for the projection of an angular momentum vector <i>(Quantum mechanics 1</i> <a href="Chapter03.xhtml#sec3.4">Section 3.4</a>).</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar" id="prb4.3.5"><b>Problem 4.3.5.</b> <i>Find the magnetic moment of the NO molecule in the</i> <sup>2</sup> &#x03A0;<sub>1/2</sub> <i>and</i> <sup>2</sup> &#x03A0;<sub>3/2</sub><i> states. &#x005B;Remember the g factor for the spin. In one state the spin and orbit contributions reinforce one another, whereas in the other state they act in opposite directions.&#x005D;</i></p>
+</aside>
+<p class="indent">The component of the vector sum <b>L</b> &#x002B; <b>S</b> along the bond takes the value &#x039B; &#x002B; &#x03A3; = &#x03A9;. The quantum number &#x03A9; can take values from &#x039B; &#x002B; <i>S</i> to &#x039B; &#x2013; <i>S,</i> for example for the ground state of NO, &#x039B; = 1 and <i>S =</i> 1/2, so that &#x03A9; can take the value 1/2 or 3/2. These electronic states are separated by about 200 cm<sup>&#x2013;1</sup> and are given the term symbols <sup>2</sup>&#x03A0;<sub>1/2</sub> and <sup>2</sup>&#x03A0;<sub>3</sub>/<sub>2</sub>. Note that, unlike <i>J</i> in atoms, &#x03A9; can take negative values, for example a <sup>4</sup>&#x03A0; term can have &#x03A9; values from 5/2 to &#x2013;1/2, and each will have a different energy. The shift in energy is therefore approximated to first order as <i>&#x0391;</i>(<i>r</i>)&#x039B;&#x03A3;.</p>
+<p class="indent">We now have to consider the total angular momentum of the molecule, <i>J</i>, which is the vector sum of the orbital, the spin, and the rotational angular momenta. Since the rotational angular momentum <b>N</b> is perpendicular to the internuclear axis and the molecule has an electronic angular momentum along the bond &#x03A9;, the total angular momentum of the molecule must be at least &#x03A9; (one of its components is &#x03A9;). Hence <i>J</i> takes all values from &#x03A9; upwards in steps of 1.</p>
+<aside class="abc" style="margin-top:0.25em;" epub:type="sidebar">
+<p class="sidebar" id="prb4.3.6"><b>Problem 4.3.6.</b> <i>The rotational constant of NO is 1.70 cm<sup>&#x2013;</sup></i><sup>1</sup><i> Predict the positions of the first two lines in the P and R branches of the vibrational spectrum relative to the band origin. How would these differ for a &#x2018;normal&#x2019;closed-shell molecule with the same rotational constant?</i></p>
+</aside>
+<p class="indent">The rotational angular momentum of the molecule is <b>J</b> &#x2013; (<b>L</b> &#x002B; <b>S</b>) and so the operator for the rotational energy of the molecule is <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mi>B</m:mi><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo> <m:mrow><m:mover accent='true'><m:mi>L</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>+</m:mo><m:mover accent='true'><m:mi>S</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math>, where <i>B</i>(<i>r</i>) is the usual rotational constant. Averaging over the zero-order wavefunctions (see Landau and Lifshitz 1977) we obtain</p>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.39"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>E</m:mi><m:mrow><m:mi>r</m:mi><m:mi>o</m:mi><m:mi>t</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>B</m:mi><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mn>2</m:mn><m:msup><m:mi>&#x03A9;</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>&#x039B;</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>&#x039B;</m:mi><m:mi>&#x03A3;</m:mi><m:mo>+</m:mo><m:mi>S</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>S</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;text-align:right;padding-right:1em;">(4.39)</td>
+</tr>
+</table>
+<p class="noindent">In a given term with a particular value of &#x03A9;, the rotational energy is proportional to <i>J</i>(<i>J</i> &#x002B;1), which at first sight seems to be the same result as the normal closed shell molecule. However, it should be remembered that the values of <i>J</i> start at |&#x03A9;|. If &#x03A9; is a non-zero integer, this will lead to &#x2018;missing&#x2019; rotational lines. For example, the first line in the <i>R</i> branch of a vibrational transition within a <sup>1</sup>&#x03A0; state is <i>R</i>(1)<i>,</i> and the first line in the <i>P</i> branch is <i>P</i>(2). On the other hand, if &#x03A9; is a half integer, the <i>J</i> quantum numbers will also be half integers. For example, any attempt to analyse rotational fine structure in the spectrum of NO using integer values for the <i>J</i> quantum numbers is doomed to failure.</p>
+<p class="noindentt"><i>Hund&#x2019;s case (b).</i> In case (b) the spin&#x2013;orbit coupling is added last. The rotation of the molecule couples with the orbital angular momentum to give <b>K</b>, whose quantum number can take values starting from &#x039B; in steps of 1. The rotational energy is then <i>B</i>(<i>r</i>)&#x005B;<i>K</i>(<i>K</i> &#x002B; 1) &#x2013; &#x039B;<sup>2</sup>&#x005D;. The spin is then added to <b>K</b> to give a total molecular angular momentum <b>J</b>. The <i>J</i> quantum number can take any value from <i>|K</i> &#x2013;<i> S|</i> to <i>K</i> &#x002B; <i>S,</i> in steps of 1. The calculation of the spin&#x2013;orbit splitting is illustrated in <a href="#fig4.6">Fig. 4.6</a>. The spin&#x2013;orbit coupling operator is <i>A</i>(<i>r</i>).<b>S</b>, but the component of <b>S</b> in the direction of &#x039B; is not defined because <b>&#x039B;</b> is strongly coupled to the rotation, forming <b>K</b>, and <b>S</b> is then coupled to <b>K</b>.</p>
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.6">
+<img src="../images/fig4.6.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 4.6</b> The angular momenta involved in Hund&#x2019;s case (b).</figcaption></figure>
+</aside>
+<p class="noindent"><a id="page_66" class="page">Page 66, Chapter 4 Fields and couplings</a>Thus, the vector <b>S</b> does not have a well-defined direction, and precesses around <b>K</b>. Its component in the direction of <b>K</b> is (<b>S</b>.<b><i>K</i></b>)<b><i>K</i></b><i>/K(K</i> &#x002B;1) and the spin&#x2013;orbit coupling operator becomes</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.40"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>s</m:mi><m:mi>o</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>A</m:mi><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mi>&#x039B;</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>.</m:mo><m:mover accent='true'><m:mi>&#x039A;</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mi>S</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>.</m:mo><m:mover accent='true'><m:mi>K</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mi>K</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(4.40)</td>
+</tr>
+</table>
+<p class="noindent">Because <b>J</b> = <b>K</b> &#x002B; <b>S</b>, and <b>&#x039B;</b>.<b>&#x039A;</b> = <i>&#x0127;<sup>2</sup></i>&#x039B;<sup>2</sup><i>,</i> this can be rewritten</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.41"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>s</m:mi><m:mi>o</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>A</m:mi><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow><m:mfrac><m:mrow><m:msup><m:mi>&#x039B;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mi>K</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo stretchy='false'>[</m:mo> <m:mrow><m:msup><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mover accent='true'><m:mi>K</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mover accent='true'><m:mi>S</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup></m:mrow> <m:mo stretchy='false'>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.41)</td>
+</tr>
+</table>
+<p class="noindent">which has the eigenvalues</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.42"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>E</m:mi><m:mrow><m:mi>s</m:mi><m:mi>o</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>A</m:mi><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup><m:mfrac><m:mrow><m:msup><m:mi>&#x039B;</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>S</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>S</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>K</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>K</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>K</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.42)</td>
+</tr>
+</table>
+<p class="noindent">For further details, the reader should consult Herzberg (1950) or Landau and Lifshitz (1977).</p>
+</section>
+<section epub:type="chapter" id="sec4.4">
+<h2 class="h2">4.4<span class="space">&#160;</span>Nuclear magnetic resonance</h2>
+<p class="noindent">In NMR spectroscopy we are concerned with transitions between nuclear spin states that have different characteristic energies in the presence of a large external magnetic field. The magnetic field is partially screened by orbital motion of the electrons induced by the field (similar to eddy currents) so that nuclei in electronically distinct environments experience slightly different local fields. The nuclear spin wavefunction of the molecule is characterized by specifying for each nucleus <i>i</i> a. spin quantum number <i>I<sub>i</sub></i> and its <i>z</i> component <i>M<sub>i</sub>.</i> In the absence of a magnetic field, all of these possible zero-order wavefunctions are degenerate. When the field is applied, if all of the nuclei experience different local magnetic fields, then each wavefunction has a different energy.</p>
+<p class="indent">Electromagnetic radiation (usually radio-frequency) induces transitions between these states, with emission or absorption of photons. The only allowed transitions are those in which <i>M</i> for one nucleus changes by &#x00B1;1 and all other quantum numbers remain the same. If all the nuclei interact with the field differently, they absorb radiation with their own characteristic frequency. This frequency, expressed relative to a suitable standard, is called the <i>chemical shift.</i></p>
+<p class="indent">The situation is complicated by the interaction, or coupling, of nuclear spins, which shifts the energies of the wavefunctions further. The great utility of NMR, of course, is that the chemical shifts give information about the electronic environment of the nucleus, and the patterns induced by coupling give information about which nuclei are close to one another.</p>
+<p class="indent">Since two perturbations are present, we can identify two limiting cases: either energy differences induced by the field are much greater than those induced by coupling, or <i>&#x03C5;ice &#x03C5;ersa.</i> Both limiting cases are very important and need to be considered before looking at the more general situation where the effects are comparable in magnitude.</p>
+</section>
+<section epub:type="chapter">
+<a id="page_67" class="page" style="width:70%;">Page 67, Chapter 4 Fields and couplings</a>
+<h3 class="h3">The AX spectrum</h3>
+<p class="noindent">The first case we consider is where the dominant effect is the chemical shift difference, so that in the presence of the field the correct zero-order basis consists of the states characterized by the <i>I</i> and <i>M</i> quantum numbers for each nucleus. The Hamiltonian for the magnetic field effect is</p>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.43"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>i</m:mi></m:munder><m:mrow><m:msub><m:mi>&#x03B4;</m:mi><m:mi>i</m:mi></m:msub><m:mi>B</m:mi><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>i</m:mi><m:mi>z</m:mi></m:mrow></m:msub><m:mo>/</m:mo><m:mi>&#x210F;</m:mi></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;text-align:right;padding-right:1em;">(4.43)</td>
+</tr>
+</table>
+<p class="noindent">where &#x03B4;<i><sub>i</sub></i> = (1 &#x2013; &#x03C3;<i><sub>i</sub></i>)<i>&#x03BC;</i><sub>&#x039D;</sub><i>gi</i>&#x00B7;, <i><sup>&#x03C3;</sup>i</i> is the screening constant of the nucleus <i>i</i> and g,&#x00B7; is its <i>g<sub>i</sub></i> value (cf. <a href="#eq4.10">eqn 4.10</a>). The first-order energy level shift for a given state is then</p>
+<aside class="abc" style="margin-top:1em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.7">
+<img src="../images/fig4.7.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 4.7</b> The energy levels involved in an AX NMR spectrum. On the left are the levels without spin&#x2013;spin coupling, on the right the levels have shifted up or down by <i>J/</i>4 to illustrate the effect of coupling. Underneath is a representation of the spectrum.</figcaption></figure>
+</aside>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.44"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mi>E</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>i</m:mi></m:munder><m:mrow><m:mi>B</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03C3;</m:mi><m:mi>i</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mi>&#x03BC;</m:mi><m:mi>N</m:mi></m:msub><m:msub><m:mi>g</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>M</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;text-align:right;padding-right:1em;">(4.44)</td>
+</tr>
+</table>
+<p class="indent">The spin&#x2013;spin coupling Hamiltonian has the same form as the angular momentum couplings discussed in <a href="#sec4.3">Section 4.3</a>, and is given by</p>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.45"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>s</m:mi><m:mi>s</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mi>j</m:mi></m:mrow></m:munder><m:mrow><m:msub><m:mi>J</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>i</m:mi></m:msub><m:mo>.</m:mo><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>j</m:mi></m:msub><m:mo>/</m:mo><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;text-align:right;padding-right:1em;">(4.45)</td>
+</tr>
+</table>
+<p class="noindent">where <i>J<sub>ij</sub></i> is the coupling constant. Using the zero-order states appropriate for the field effect, the only component of the dot product which survives is the <i>z</i> component. (See later for a detailed discussion of this point.) The first-order</p>
+<p class="noindent">energy level shifts are then</p>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.46"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mi>E</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mi>j</m:mi></m:mrow></m:munder><m:mrow><m:msub><m:mi>J</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:msub><m:mi>M</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>M</m:mi><m:mi>j</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;text-align:right;padding-right:1em;">(4.46)</td>
+</tr>
+</table>
+<p class="noindent">We illustrate this analysis by considering the case of a molecule with two magnetic nuclei, both of spin <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>I</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, and with very different chemical shifts. This spectrum is called an AX-type spectrum. The four possible wavefunctions and the corresponding energy levels are</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo><m:mo>:</m:mo></m:mrow></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03B4;</m:mi><m:mi>A</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03B4;</m:mi><m:mi>X</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>B</m:mi></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mrow><m:mi>A</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo><m:mo>:</m:mo></m:mrow></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03B4;</m:mi><m:mi>A</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B4;</m:mi><m:mi>X</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>B</m:mi></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mrow><m:mi>A</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo><m:mo>:</m:mo></m:mrow></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B4;</m:mi><m:mi>A</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03B4;</m:mi><m:mi>X</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>B</m:mi></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mrow><m:mi>A</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo><m:mo>:</m:mo></m:mrow></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B4;</m:mi><m:mi>A</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B4;</m:mi><m:mi>X</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>B</m:mi></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mrow><m:mi>A</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">These energy levels, before and after application of the spin&#x2013;spin coupling, are represented in <a href="#fig4.7">Fig. 4.7</a>. The four allowed transitions are also depicted, and their frequencies are tabulated in <a href="#tab4.2">Table 4.2</a> Each transition has the same intensity, since the dipole moment matrix elements governing the allowed transitions (i.e. <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mo>&#x003C;</m:mo><m:mi>&#x03B1;</m:mi><m:mi>&#x03B1;</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>&#x03BC;</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math>, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow></m:mrow></m:math><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mo>&#x003C;</m:mo><m:mi>&#x03B1;</m:mi><m:mi>&#x03B1;</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>&#x03BC;</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math>, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow></m:mrow></m:math><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mo>&#x003C;</m:mo><m:mi>&#x03B1;</m:mi><m:mi>&#x03B1;</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>&#x03BC;</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math>, and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mo>&#x003C;</m:mo><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>&#x03BC;</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math>) are all equal. Both the other possible matrix elements (<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mo>&#x003C;</m:mo><m:mi>&#x03B1;</m:mi><m:mi>&#x03B1;</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>&#x03BC;</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math> and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:mo>&#x003C;</m:mo><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mover accent='true'><m:mi>&#x03BC;</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math>) are zero, because they involve simultaneous flipping of two spins. The resulting spectrum is depicted at the bottom of the figure. Each line with a characteristic chemical shift is split into two by</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="sidebar" id="prb4.4.1"><b>Problem 4.4.1.</b> <i>The HCCD spectrum. Find expressions for the energy levels and the frequencies in the H NMR spectrum and the D NMR spectrum of the deuteroacetylene molecule. (</i><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:msup><m:mrow></m:mrow><m:mi>l</m:mi></m:msup><m:mi>H</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> <i>and <sup>I</sup>d</i> = 1<i>)</i>.</p>
+</aside>
+<p class="noindent"><a id="page_68" class="page">Page 68, Chapter 4 Fields and couplings</a></p>
+<p class="tab-cap" style="width:100%;" id="tab4.2"><b>Table 4.2.</b> NMR AX spectrum frequencies</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03B1;&#x03B1;</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03B1;&#x03B2;</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03B2;&#x03B1;</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03B2;&#x03B2;</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03B1;&#x03B1;</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>B</m:mi><m:msub><m:mi>&#x03B4;</m:mi><m:mi>x</m:mi></m:msub><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mrow><m:mi>A</m:mi><m:mi>x</m:mi></m:mrow></m:msub></m:mrow></m:math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>B</m:mi><m:msub><m:mi>&#x03B4;</m:mi><m:mi>A</m:mi></m:msub><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mrow><m:mi>A</m:mi><m:mi>x</m:mi></m:mrow></m:msub></m:mrow></m:math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03B1;&#x03B2;</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>B</m:mi><m:msub><m:mi>&#x03B4;</m:mi><m:mi>A</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mrow><m:mi>A</m:mi><m:mi>x</m:mi></m:mrow></m:msub></m:mrow></m:math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>B</m:mi><m:msub><m:mi>&#x03B4;</m:mi><m:mi>A</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mrow><m:mi>A</m:mi><m:mi>x</m:mi></m:mrow></m:msub></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03B2;&#x03B1;</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>B</m:mi><m:msub><m:mi>&#x03B4;</m:mi><m:mi>A</m:mi></m:msub><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mrow><m:mi>A</m:mi><m:mi>x</m:mi></m:mrow></m:msub></m:mrow></m:math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>B</m:mi><m:msub><m:mi>&#x03B4;</m:mi><m:mi>x</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mrow><m:mi>A</m:mi><m:mi>x</m:mi></m:mrow></m:msub></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03B2;&#x03B2;</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>B</m:mi><m:msub><m:mi>&#x03B4;</m:mi><m:mi>A</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mrow><m:mi>A</m:mi><m:mi>x</m:mi></m:mrow></m:msub></m:mrow></m:math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>B</m:mi><m:msub><m:mi>&#x03B4;</m:mi><m:mi>x</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mrow><m:mi>A</m:mi><m:mi>x</m:mi></m:mrow></m:msub></m:mrow></m:math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+</table>
+<p class="tnote1">A blank entry denotes that the transition is forbidden.</p>
+<p class="noindent">&#160;</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar" id="prb4.4.2"><b>Problem 4.4.2.</b> <i>The AMX spectrum. Repeat the analysis of this section for a molecule with three spin <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>nuclei, each of which has a different chemical shift. If the three coupling constants are</i> Jam = 10 <i>Hz,</i> J<sub>Ax</sub> = 6 <i>Hz, andJ<sub>MX</sub> =</i> 2 <i>Hz, find the energy levels and sketch the resulting spectrum. What differences would there be if the coupling constants were all negative?</i></p>
+</aside>
+<p class="noindent">coupling with the other nucleus. The splitting in the fine structure of each line is equal to the coupling constant <i>J</i><sub>ax&#x00B7;</sub></p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Equivalent nuclei</h3>
+<p class="noindent">Many molecules contain several nuclei in identical environments, having identical chemical shifts and all coupling constants equal. In such a case the magnetic field fails to remove the degeneracy completely. For example in a system with two equivalent nuclei the two zero-order states <i>&#x03B1;&#x03B2;</i> and <i>&#x03B2;&#x03B1;</i> have exactly the same energy in the presence of the field. The effect of the spin&#x2013;spin coupling then has to be included using degenerate perturbation theory. However, it is possible to solve this problem by symmetry, using methods similar to those of <a href="#sec4.3">Section 4.3</a>.</p>
+<p class="indent">The Zeeman Hamiltonian is now</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.47"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>B</m:mi><m:mi>&#x03B4;</m:mi><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>i</m:mi></m:munder><m:mrow><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>i</m:mi><m:mi>z</m:mi></m:mrow></m:msub></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.47)</td>
+</tr>
+</table>
+<p class="noindent">Each of the component <i>&#x00CE;<sub>z</sub></i> operators has the same weight in the sum, suggesting that the resultant total nuclear spin angular momentum,</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.48"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>F</m:mi><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>i</m:mi></m:munder><m:mrow><m:msub><m:mi>I</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.48)</td>
+</tr>
+</table>
+<p class="noindent">and its <i>z</i> component <i>F<sub>z</sub></i> are conserved.</p>
+<p class="indent">This suggestion is supported by the observation that in the absence of the field the total nuclear spin angular momentum is conserved regardless of any coupling between the spins. It is therefore possible to express the spin&#x2013;spin coupling Hamiltonian in terms of the <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>F</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup></m:mrow></m:math>and the <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>F</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub></m:mrow></m:math> operators.</p>
+<p class="indent">The coupling between equivalent nuclear spins has the Hamiltonian</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.49"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>s</m:mi><m:mi>s</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>J</m:mi><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mi>j</m:mi></m:mrow></m:munder><m:mrow><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>i</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>j</m:mi></m:msub><m:mo>/</m:mo><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.49)</td>
+</tr>
+</table>
+<p class="noindent">because all the coupling constants are equal. This can be related to the operator for the total nuclear spin by considering the operator <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>F</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup></m:mrow></m:math>:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.50"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:msup><m:mover accent='true'><m:mi>F</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>i</m:mi><m:mo>,</m:mo><m:mi>j</m:mi></m:mrow></m:munder><m:mrow><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>i</m:mi></m:msub></m:mrow></m:mstyle><m:mo>.</m:mo><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>j</m:mi></m:msub></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>i</m:mi></m:munder><m:mrow><m:msubsup><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>i</m:mi><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:mn>2</m:mn><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mrow><m:mi>i</m:mi><m:mo>&#x003E;</m:mo><m:mi>j</m:mi></m:mrow></m:munder><m:mrow><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>i</m:mi></m:msub></m:mrow></m:mstyle><m:mo>.</m:mo><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>j</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:4em;">(4.50)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_69" class="page">Page 69, Chapter 4 Fields and couplings</a>Hence the spin&#x2013;spin coupling Hamiltonian becomes</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.51"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>s</m:mi><m:mi>s</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mi>J</m:mi><m:mrow><m:mn>2</m:mn><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mrow><m:mo stretchy='false'>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>F</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>i</m:mi></m:munder><m:mrow><m:msubsup><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>i</m:mi><m:mn>2</m:mn></m:msubsup></m:mrow></m:mstyle></m:mrow><m:mo stretchy='false'>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.51)</td>
+</tr>
+</table>
+<p class="noindent">If the system contains <i>n</i> equivalent nuclei, each of which has spin <i>I</i>, any wavefunction with total nuclear spin angular momentum quantum number <i>F</i> and <i>z</i> component <i>M</i> will simultaneously be an eigenfunction of both the Zeeman perturbation and the spin&#x2013;spin coupling Hamiltonian. The energy shift will be</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.52"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mi>E</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>=</m:mo><m:mi>B</m:mi><m:mi>&#x03B4;</m:mi><m:mi>M</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>F</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>F</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>n</m:mi><m:mi>I</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>I</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.52)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+<p class="tab-cap" style="width:100%;" id="tab4.3"><b>Table 4.3.</b> Wavefunctions for two equivalent spin <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>nuclei.</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>F</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>M</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03A8;</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03B1;&#x03B1;</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03B1;&#x03B1;</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>+</m:mo><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03B2;&#x03B2;</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#160;&#160;0</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x2212;</m:mo><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+</tr>
+</table>
+<figure class="fig1" id="fig4.8">
+<img src="../images/fig4.8.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 4.8</b> The energy levels involved in an A<sub>2</sub> NMR spectrum. On the left are the levels without spin&#x2013;spin coupling, on the right the levels have shifted to illustrate the effect of coupling.</figcaption></figure>
+<p class="sidebar" id="prb4.4.4"><b>Problem 4.4.4.</b> <i>Calculate the energy levels and spectrum for an A<sub>2</sub></i>X molecule, which contains two identical spin <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> A nuclei and a spin<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> X nucleus with a very different chemical shift.</p>
+<p class="noindent">&#160;</p>
+<p class="sidebar" id="prb4.4.5"><b>Problem 4.4.5.</b> <i>Use the same method to calculate the NMR spectrum of an A<sub>3</sub>X molecule, such as the proton spectrum ofethanal, CH<sub>3</sub>CHO. (The coupling of three equivalent spin<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>nuclei gives one state with <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>F</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>and two states with <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>F</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>)</i></p>
+</aside>
+<p class="noindent">As a simple example we consider the spectrum of a system of two identical spin i nuclei, such as the formaldehyde molecule, H<sub>2</sub>CO. Two spins of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>can couple to give total spin quantum numbers of 0 or 1, as discussed in <a href="#sec4.2">Section 4.2</a>. The wavefunctions and their quantum numbers are tabulated in <a href="#tab4.3">Table 4.3</a></p>
+<p class="noindentt"><b>Problem 4.4.3.</b> <i>Use the equality of the matrix elements discussed in the last subsection to show that the only allowed transitions between |F,M</i> &#x003E; <i>states in the A2 spectrum are the transitions</i> |1, 1 &#x003E; &#x2194; |1, 0 &#x003E; <i>and</i> |1,0 &#x003E;&#x2194; |1, &#x2013;1 &#x003E;. <i>Further, show that each of these transitions has the same frequency and that the total intensity at this frequency is four times that of one of the lines in the AX spectrum. The energy levels and transitions are depicted in <a href="#fig4.8">Fig. 4.8</a>.</i></p>
+<p class="noindentt">The result derived in this problem is an example of a more general rule for equivalent nuclei, that the absorption or emission of electromagnetic radiation cannot alter the total nuclear spin angular momentum, but can alter its <i>z</i> component by only one unit.</p>
+<p class="indent">This analysis enables us to explain a common misconception in the analysis of NMR spectra. It is often said that equivalent nuclei do not couple with one another. This claim is clearly not true, as the analysis leading to <a href="#eq4.52">eqn 4.52</a> shows. However, the only allowed transitions take place between levels with the same value of <i>F</i> and adjacent values of M, and we can see from the equation that the effect of spin&#x2013;spin coupling on the energy of each of these states is identical, so that the spacing is simply <i>B&#x03B4;,</i> and all the transitions occur with the same frequency. Although spin&#x2013;spin coupling does affect the energy levels, it does not result in any splitting of the Une in the NMR spectrum.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">The AB spectrum</h3>
+<p class="noindent">We now turn to the case where the energy difference between the <i>&#x03B1;&#x03B2;</i> and the <i>&#x03B2;&#x03B1;</i> basis states of two spin <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>nuclei induced by the external field is of the same order of magnitude as the effects of spin&#x2013;spin coupling. It is no longer possible to appeal to symmetry to find combinations of these basis states which are exact eigenfunctions of the Hamiltonian, the only way to find the correct spin wavefunctions and the corresponding energy levels is to apply both perturbations at once and diagonalize the matrix representing the effect of the Hamiltonian on the basis states, as discussed in <a href="#sec4.1">Section 4.1</a>.<a id="page_70" class="page">Page 70, Chapter 4 Fields and couplings</a></p>
+<p class="indent">The first step is to construct the Hamiltonian matrix. To do this we consider the effect of the Hamiltonian on each of the four basis states, <i>|&#x03B1;&#x03B1;</i> &#x003E;, <i>|&#x03B2;&#x03B1;</i> &#x003E;, <i>|&#x03B1;&#x03B2;</i> &#x003E;, and <i>|&#x03B2;&#x03B2;</i> &#x003E;. The effects of the magnetic field are straightforward:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>B</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03B4;</m:mi><m:mi>A</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03B4;</m:mi><m:mi>B</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>B</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03B4;</m:mi><m:mi>A</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03B4;</m:mi><m:mi>B</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>B</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03B4;</m:mi><m:mi>A</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03B4;</m:mi><m:mi>B</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>B</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03B4;</m:mi><m:mi>A</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03B4;</m:mi><m:mi>B</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr></m:mtable></m:math></p>
+<p class="noindent">since the basis functions are eigenfunctions of the Zeeman Hamiltonian.</p>
+<p class="indent">The effect of spin&#x2013;spin coupling requires a little more care, however. The Hamiltonian is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.53"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>s</m:mi><m:mi>s</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>J</m:mi><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>A</m:mi></m:msub><m:mo>.</m:mo><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>B</m:mi></m:msub><m:mo>=</m:mo><m:mi>I</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>A</m:mi><m:mi>x</m:mi></m:mrow></m:msub><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>B</m:mi><m:mi>x</m:mi></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>A</m:mi><m:mi>y</m:mi></m:mrow></m:msub><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>B</m:mi><m:mi>y</m:mi></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>A</m:mi><m:mi>z</m:mi></m:mrow></m:msub><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>B</m:mi><m:mi>z</m:mi></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.53)</td>
+</tr>
+</table>
+<p class="noindent">The <i>z</i> component of this operator is straightforward, but to work out the effects of the <i>x</i> and <i>y</i> components we need to use the ladder operators <i>I&#x00B1;</i> introduced in <i>Quantum mechanics 1,</i> <a href="Chapter03.xhtml#sec3.4">Section 3.4</a>, and defined in <a href="Chapter03.xhtml#eq3.26">eqn 3.26</a>.</p>
+<p class="noindentt"><b>Problem 4.4.6.</b> <i>Given the definitions of &#x00CE;<sub>&#x002B;</sub> and &#x00CE;<sub>&#x2013;</sub></i>, <i>prove that</i></p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>A</m:mi></m:msub><m:mo>.</m:mo><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>B</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>A</m:mi><m:mo>+</m:mo></m:mrow></m:msub><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>B</m:mi><m:mo>&#x2212;</m:mo></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>A</m:mi><m:mo>&#x2212;</m:mo></m:mrow></m:msub><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>B</m:mi><m:mo>+</m:mo></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>A</m:mi><m:mi>z</m:mi></m:mrow></m:msub><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>B</m:mi><m:mi>z</m:mi></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p>
+<p class="noindent">The effect of the ladder operators on a single spin can be summarized as follows:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>+</m:mo></m:msub><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>&#x03B1;</m:mi></m:mrow><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>&#x2212;</m:mo></m:msub><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>+</m:mo></m:msub><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mover accent='true'><m:mi>I</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>&#x2212;</m:mo></m:msub><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mi>&#x03B2;</m:mi></m:mrow><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr></m:mtable></m:math></p>
+<p class="noindent"><i>&#x00CE;<sub>&#x00B1;</sub></i> converts a spin function with <i>z</i> component <i>M</i> to one with <i>z</i> component <i>M</i> &#x00B1; 1. Since there is no spin function with a spin <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> and with <i>z</i> components larger than <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, <i>&#x00CE;</i><sub>&#x002B;</sub>|<i>&#x03B1; &#x003E;=</i>0 and <i>&#x00CE;</i><sub>&#x2013;</sub>|<i>&#x03B2; &#x003E;=</i>0. The ladder operators <i>&#x00CE;</i><sub>A</sub><i><sub>&#x00B1;</sub></i> should be understood to operate only on the spin of nucleus A, and similarly for <i>&#x00CE;</i><sub>B</sub><i><sub>&#x00B1;</sub></i>and nucleus B.</p>
+<p class="indent">The operation of <i>H<sub>ss</sub></i> on the basis functions can therefore be summarized as follows:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>s</m:mi><m:mi>s</m:mi></m:mrow></m:msub><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>J</m:mi></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>s</m:mi><m:mi>s</m:mi></m:mrow></m:msub><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>J</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>J</m:mi></m:mrow></m:mrow></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mrow><m:mi>s</m:mi><m:mi>s</m:mi></m:mrow></m:msub><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>J</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo><m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>J</m:mi></m:mrow></m:mrow></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>J</m:mi></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo></m:mtd></m:mtr></m:mtable></m:math></p>
+<p class="noindent"><a id="page_71" class="page">Page 71, Chapter 4 Fields and couplings</a>The two basis states <i>|&#x03B1;&#x03B1; &#x003E;</i> and <i>&#x03B2;&#x03B2;</i> &#x003E; are clearly eigenfunctions of both the Zeeman and the spin&#x2013;spin coupling Hamiltonians, but the states <i>|&#x03B1;&#x03B2; &#x003E;</i> and <i>|&#x03B2;&#x03B1; &#x003E;</i> are mixed by the spin&#x2013;spin coupling perturbation.</p>
+<p class="indent">The correct choices for the wavefunctions are superpositions of the form <i>c</i><sub>1</sub><i>|&#x03B1;&#x03B2; &#x003E; &#x002B;c</i><sub>2</sub><i>|&#x03B2;&#x03B1;</i> &#x003E;, and the coefficients <i>c</i><sub>1</sub> and <i>c</i><sub>2</sub> must be found by solving the secular equations:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.54"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo stretchy='false'>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>B</m:mi><m:mi>&#x03B4;</m:mi><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>J</m:mi><m:mo>&#x2212;</m:mo><m:mi>E</m:mi></m:mrow><m:mo stretchy='false'>)</m:mo></m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>J</m:mi><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.54)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.55"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>J</m:mi><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:mrow><m:mo stretchy='false'>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>B</m:mi><m:mi>&#x03B4;</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>J</m:mi><m:mo>+</m:mo><m:mi>E</m:mi></m:mrow><m:mo stretchy='false'>)</m:mo></m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(4.55)</td>
+</tr>
+</table>
+<p class="noindent">where <i>&#x03B4;</i> = <i>&#x03B4;</i><sub>b</sub> &#x2013; <i>&#x03B4;</i><sub>b</sub>.</p>
+<p class="indent">These simultaneous equations only have non-zero solutions for <i>c</i><sub>1</sub> and <i>C</i><sub>2</sub> if the secular determinant is zero.</p>
+<p class="indent">Substituting <i>E<sub>&#x002B;</sub></i> into the secular equations we obtain</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>&#x0394;</m:mi><m:mo>&#x2212;</m:mo><m:mi>B</m:mi><m:mi>&#x03B4;</m:mi></m:mrow><m:mi>J</m:mi></m:mfrac></m:mrow></m:math></p>
+<aside class="abc" style="margin-top:-7.5em;" epub:type="sidebar">
+<p class="sidebar" id="prb4.4.7"><b>Problem 4.4.7.</b> <i>Prove that the secular determinant is only zero for the two values of E</i></p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.56"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>E</m:mi><m:mo>&#x00B1;</m:mo></m:msub><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>J</m:mi><m:mo>&#x00B1;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>&#x0394;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;padding-left:1em;">(4.56)</td>
+</tr>
+</table>
+<p class="sidebar">where <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>B</m:mi><m:mn>2</m:mn></m:msup><m:msup><m:mi>&#x03B4;</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>J</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></p>
+</aside>
+<p class="noindent">Since the final wavefunction must be normalized we must also have</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.57"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>c</m:mi><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>c</m:mi><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.57)</td>
+</tr>
+</table>
+<p class="noindent">We are therefore justified in expressing <i>c</i><sub>1</sub> and <i>c</i><sub>2</sub> in terms of a parameter <i>&#x03B8;</i> such that</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:msub><m:mi>c</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mi>cos</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x03B8;</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>c</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mi>sin</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x03B8;</m:mi></m:mtd></m:mtr></m:mtable></m:math></p>
+<p class="noindent"><i>&#x03B8; =</i> tan<sup>&#x2013;1</sup>&#x005B;(&#x0394; &#x2013; <i>B&#x03B4;</i>)<i>/J</i>&#x005D;<i>,</i> and if <i>J</i> is positive, <i>&#x03B8;</i> lies between 0 and <i>&#x03C0;/</i>4. Note that <i>&#x03B8;</i> depends only on the ratio between <i>&#x03B4;B</i> and <i>J</i>; the effect of increasing the magnetic field is therefore to reduce the value of <i>&#x03B8;.</i></p>
+<p class="indent">Substituting <i>E</i>_ into the secular equation we find <i>c</i><sub>1</sub><i>/c</i><sub>2</sub><i> =</i> &#x2013; tan <i>&#x03B8;</i>, so that</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.58"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03C8;</m:mi><m:mo>&#x2212;</m:mo></m:msub><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>sin</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x03B8;</m:mi><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mi>&#x03B1;</m:mi><m:mi>&#x03B2;</m:mi><m:mo>&#x003E;</m:mo><m:mo>+</m:mo><m:mi>cos</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>&#x03B8;</m:mi></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03B1;</m:mi><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td>(4.58)</td>
+</tr>
+</table>
+<p class="indent">The transition frequencies are tabulated in <a href="#tab4.4">Table 4.4</a> The line intensities are easily found from the constituent matrix elements discussed in connection with the AX spectrum.</p>
+<p class="tab-cap1" id="tab4.4"><b>Table 4.4.</b> NMR AB spectrum frequencies measured from the mean chemical shift of the pair.</p>
+<table class="width100b" style="margin-bottom:1em;width:50%;margin-left:5em;">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03B1;&#x03B1;</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03A8;&#x002B;</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03A8;&#x2013;</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03B2;&#x03B2;</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03B1;&#x03B1;</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x2013;d &#x002B; j</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>d &#x002B; j</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03A8;&#x002B;</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x2013; d&#x002B;j</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>d &#x2013; j</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x03A8;<sub>&#x2013;</sub></i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>d &#x002B; j</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x2013; d &#x2013; j</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding-bottom:0.5em;"><p class="tab-l"><i>&#x03B2;&#x03B2;</i></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p><i>d &#x2013; j</i></td>
+<td style="vertical-align:top;"><p class="tab-l"></p><i>&#x2013; d&#x2013; j</i></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+</tr>
+</table>
+<p class="tnote">A blank entry denotes that the transition is forbidden.</p>
+<p class="tnote">s = <i>&#x03B4;B/</i>2<i>, d =</i> &#x0394;/2, <i>j = J</i>/2.</p>
+<p class="noindent" id="prb4.4.8"><a id="page_72" class="page">Page 72, Chapter 4 Fields and couplings</a><b>Problem 4.4.8.</b> <i>Show that if all the non-zero matrix elements between the basis functions are equal to &#x03BC;, the two matrix elements between &#x03C8;<sub>&#x002B;</sub> and |&#x03B1;&#x03B1; &#x003E; and |&#x03B2;&#x03B2; &#x003E; are equal to</i> (cos <i>&#x03B8;</i> &#x002B; sin <i>&#x03B8;)&#x03BC;. Similarly show that the non-zero matrix elements involving &#x03C8;<sub>&#x2013;</sub> are</i> (cos <i>&#x03B8;</i> &#x2013; sin <i>&#x03B8;)&#x03BC;. The transition intensities are therefore proportional to</i> 1 &#x002B; sin 2<i>&#x03B8; and</i> 1 &#x2013; sin 2<i>&#x03B8; respectively.</i></p>
+<aside class="abc" style="margin-top:1em;" epub:type="sidebar">
+<p class="sidebar" id="prb4.4.9"><b>Problem 4.4.9.</b> <i>In the case of two equivalent nuclei &#x03B4;</i> = 0 <i>show that &#x03B8; = &#x03C0;/</i>4<i> and that the frequencies and intensities of the NMR spectrum reduce to those derived in the last subsection.</i></p>
+<p class="noindent">&#160;</p>
+<p class="sidebar" id="prb4.4.10"><b>Problem 4.4.10.</b> <i>In the other limiting case &#x03B4;B &#x003E;&#x003E; J show that &#x0398; approaches zero and the normal first-order AX spectrum is obtained.</i></p>
+</aside>
+<p class="noindentt">Typical spectra are shown for different values of <i>&#x0398;</i> in <a href="#fig4.9">Fig. 4.9</a>. In each case a pattern symmetrical about the mean unperturbed chemical shift is found. The two central Unes are separated by &#x0394; &#x2013; <i>J</i> and have intensities proportional to 1 &#x002B; sin 2<i>&#x03B8;.</i> Each outer line is separated from the nearest central Une by <i>J</i> and has an intensity proportional to 1 &#x2013; sin 2<i>&#x03B8;.</i></p>
+</section>
+<section epub:type="chapter" id="sec4.5">
+<h2 class="h2">4.5<span class="space">&#160;</span>Atoms in magnetic fields</h2>
+<figure class="fig1" id="fig4.9">
+<img src="../images/fig4.9.jpg" style="width:70%;" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 4.9</b> The AB NMR spectrum for four different values of the chemical shift difference. <i>B&#x03B4; = J, 2J, 4J,</i> and 8J.</figcaption></figure>
+<p class="noindent">When an atom is placed in an external magnetic field, the electronic wavefunction is perturbed by the field. As we have seen in <a href="Chapter01.xhtml">Chapter 1</a> and <a href="#sec4.3">Section 4.3</a>, in the absence of a magnetic field the state of an atom can be <a id="page_73" class="page">Page 73, Chapter 4 Fields and couplings</a>characterized in the first instance by specifying the electron configuration together with the total orbital angular momentum <i>L</i> and the total spin angular momentum <i>S.</i> There is a weak interaction between the spin and orbital angular momenta, spin&#x2013;orbit coupling, which results in small energy differences between states with the same configuration, <i>L</i> and <i>S,</i> but different values of the overall total electronic angular momentum <i>J.</i> Spin&#x2013;orbit coupling is conveniently treated as a perturbation; however, in the presence of an external magnetic field the spin and the orbital angular momentum respond differently: the Hamiltonian for the interaction is</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.59"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub></m:mrow><m:mi>&#x210F;</m:mi></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>i</m:mi></m:munder><m:mrow><m:msub><m:mover accent='true'><m:mi>l</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mo>+</m:mo><m:mn>2</m:mn><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>i</m:mi></m:munder><m:mrow><m:msub><m:mover accent='true'><m:mi>s</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub></m:mrow></m:mstyle></m:mrow></m:mstyle></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:0.5em;">(4.59)</td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.60"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub></m:mrow><m:mi>&#x210F;</m:mi></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mover accent='true'><m:mi>L</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mo>+</m:mo><m:mn>2</m:mn><m:msub><m:mover accent='true'><m:mi>S</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:0.5em;">(4.60)</td>
+</tr>
+</table>
+
+<p class="noindent">The factor of 2 multiplying the second term is the <i>g</i> factor for electron spin. Because of this factor, the perturbation cannot be expressed solely in terms of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow><m:msub><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub></m:mrow></m:math>and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup></m:mrow></m:math>, the most appropriate description depends on which of the two perturbations is the strongest. As in the case of the two-proton spectrum in NMR we identify two Hmiting cases.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3" style="margin-top:2em;">Strong fields &#x2013; the Paschen&#x2013;Back effect</h3>
+<p class="noindent">If the field effect is greater than the spin&#x2013;orbit coupling, it is appropriate to choose a basis where the interaction Hamiltonian is diagonal, that is, the basis whose states are defined by the quantum numbers L, <i>M<sub>l</sub>,</i> S, and <i>M<sub>s</sub>.</i> The first-order energy shift is then simply given by</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.61"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mi>z</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>M</m:mi><m:mi>L</m:mi></m:msub><m:mo>+</m:mo><m:mn>2</m:mn><m:msub><m:mi>M</m:mi><m:mi>s</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.61)</td>
+</tr>
+</table>
+<p class="noindent">The small correction for the spin&#x2013;orbit coupling can be calculated as the expectation:</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.62"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mrow><m:mi>s</m:mi><m:mi>o</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mi>A</m:mi><m:mo>&#x003C;</m:mo><m:mi>L</m:mi><m:msub><m:mi>M</m:mi><m:mi>L</m:mi></m:msub><m:mi>S</m:mi><m:msub><m:mi>M</m:mi><m:mi>S</m:mi></m:msub><m:mrow><m:mo stretchy='false'>&#x007C;</m:mo> <m:mrow><m:mover accent='true'><m:mi>L</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>.</m:mo><m:mover accent='true'><m:mi>S</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow> <m:mo stretchy='false'>&#x007C;</m:mo></m:mrow><m:mi>L</m:mi><m:msub><m:mi>M</m:mi><m:mi>L</m:mi></m:msub><m:mi>S</m:mi><m:msub><m:mi>M</m:mi><m:mi>S</m:mi></m:msub><m:mo>&#x003E;</m:mo></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.62)</td>
+</tr>
+</table>
+<p class="noindent" id="prb4.5.1"><b>Problem 4.5.1.</b> <i>Show that the energy level formula just derived, in conjunction with the selection rules</i> &#x0394;<i>M<sub>S</sub> =</i> 0 <i>and</i> &#x0394;<i>M<sub>L</sub></i> = 0, &#x00B1;1 <i>predicts that in high field any atomic transition should be split into a multiplet of three lines with a splitting of B&#x03BC;<sub>B</sub>. This effect is known as the Paschen-Back effect.</i></p>
+<p class="indentt">As before, the dot product could be expressed in terms of ladder operators, but in first order only the diagonal term <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>L</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:msub><m:mover accent='true'><m:mi>S</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub></m:mrow></m:math>contributes to the expectation. The off-diagonal terms result in first-order corrections to the wavefunction, and therefore, only higher order corrections to the energy. The classical interpretation of this effect is that the two angular momenta <b>L</b> and <b>S</b> <i>precess</i> rapidly about the magnetic field, so that the vectors average out to <i>L<sub>z</sub></i> and <i>S<sub>z</sub>.</i> On the slower timescale of the spin&#x2013;orbit coupling only these average components are meaningful, so in the first order <b>L</b>.<b>S</b> is given by <i>L<sub>Z</sub>S<sub>Z</sub>.</i> This <a id="page_74" class="page">Page 74, Chapter 4 Fields and couplings</a> discussion is very similar to the analysis of the AX-type NMR spectrum. The final result for high fields is therefore</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.63"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mi>E</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msup><m:mo>=</m:mo><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>M</m:mi><m:mi>L</m:mi></m:msub><m:mo>+</m:mo><m:mn>2</m:mn><m:msub><m:mi>M</m:mi><m:mi>S</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>A</m:mi><m:msub><m:mi>M</m:mi><m:mi>L</m:mi></m:msub><m:msub><m:mi>M</m:mi><m:mi>S</m:mi></m:msub></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(4.63)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.10">
+<img src="../images/fig4.10.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<b>Fig. 4.10</b> The vector addition in spin&#x2013;orbit coupling, illustrating the component of <b>S</b> in the direction of <b>J</b></figcaption></figure>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Weak fields &#x2013; the Lande <b><i>g</i></b> <b>factor</b></h3>
+<p class="noindent">In the absence of a field we have seen that the appropriate description of an atomic state is in terms of the quantum numbers <i>L, S,</i> and <i>J.</i> If a weak field is applied the additional quantum number <i>M<sub>J</sub></i> comes into play, as discussed in <a href="#sec4.2">Section 4.2</a>, but the quantum numbers <i>M<sub>L</sub></i> and <i>M<sub>S</sub></i> are no longer well defined. This is because the coupling of <b>L</b> and <b>S</b> to form <b>J</b> is much stronger than the interaction with the field. In the classical vector model the vectors <b>L</b> and <b>S</b> precess about their resultant, <b>J</b>, so that the only components that survive to interact with the external field are the components parallel to <b>J</b>.</p>
+<p class="indent">The component of <b>S</b> parallel to <b>J</b> is found to be (<b>S</b>.<b>J</b>)<i>J</i><sup>2</sup>, using a simple vector calculation illustrated in <a href="#fig4.10">Fig. 4.10</a>. A similar equation holds for the component of <b>L</b> in the direction of <b>J</b>. The magnetic field interaction can therefore be represented by the Hamiltonian</p>
+<table style="width:100%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.64"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub></m:mrow><m:mi>&#x210F;</m:mi></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mover accent='true'><m:mi>L</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>.</m:mo><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>+</m:mo><m:mn>2</m:mn><m:mover accent='true'><m:mi>S</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>.</m:mo><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow><m:mrow><m:msup><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub></m:mrow><m:mi>&#x210F;</m:mi></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mrow><m:mover accent='true'><m:mi>S</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>.</m:mo><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover></m:mrow><m:mrow><m:msup><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:msub><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>z</m:mi></m:msub></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(4.64)</td>
+</tr>
+</table>
+<p class="indent">We can use the same trick as we discussed in <a href="#sec4.3">Section 4.3</a> to represent the dot product in terms of operators we know about</p>
+<aside class="abc" style="margin-top:-2.5em;" epub:type="sidebar">
+<p class="sidebar" id="prb4.5.2"><b>Problem 4.5.2.</b> <i>The strongest lines in the spectrum of the sodium atom have been assigned to transitions from the ground state</i> <sup>2</sup><i>S</i><sub>1/2</sub> <i>to the first excited configuration, which has energy levels with term symbols</i> <sup>2</sup><i>P</i><sub>1/2</sub><i> and</i> <sup>2</sup><i>P</i><sub>3/2.</sub><i> Use the Lande g-factor to predict how the two lines will be split in a weak magnetic field. This splitting is known as the anomalous Zeeman effect.</i></p>
+<p class="noindent">&#160;</p>
+<p class="sidebar" id="prb4.5.3"><b>Problem 4.5.3.</b> <i>Show that in a singlet to singlet transition in an atomic spectrum the normal Zeeman effect is observed, i.e. that the transitions split into three with splitting &#x0392;&#x03BC;<sub>&#x0392;</sub>, as in the Paschen-Back effect.</i></p>
+</aside>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.65"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mover accent='true'><m:mi>S</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>.</m:mo><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mover accent='true'><m:mi>J</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mover accent='true'><m:mi>L</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mover accent='true'><m:mi>S</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;text-align:right;padding-right:1em;">(4.65)</td>
+</tr>
+</table>
+<p class="noindent">Substituting these expressions into the Hamiltonian we see that the first-order energy shifts are</p>
+<table style="width:70%; margin-top:1em;" >
+<colgroup>
+<col style="width:63%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.66"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>E</m:mi><m:mn>2</m:mn><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:msubsup><m:mo>=</m:mo><m:mi>B</m:mi><m:msub><m:mi>&#x03BC;</m:mi><m:mi>B</m:mi></m:msub><m:msub><m:mi>M</m:mi><m:mi>J</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mrow><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>L</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>L</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>S</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>S</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>J</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;text-align:right;padding-right:1em;">(4.66)</td>
+</tr>
+</table>
+<p class="noindent">The factor in brackets is known as the <i>Lande g factor.</i></p>
+<p class="indent">In the magnetic field each energy level <i>|LSJ</i> &#x003E; is therefore split into its constituents according to the value of the magnetic quantum number <i>M<sub>J</sub>.</i> In an atomic spectrum these splittings in the energy levels give rise to splittings in the absorption and emission fines, which are subject to the selection rule &#x0394;<i>M<sub>J</sub> = 0</i>,<i> &#x00B1;</i>1.</p>
+<p class="ref"><b>References</b></p>
+<p class="refer">Cohen-Tannoudji, C, Diu, B. and Lalo&#x00EB;, F. (1992). <i>M&#x00E9;canique quantique II,</i> Chapter 12. Hermann, Paris.</p>
+<p class="refer">Green, N. J. B. (1997). <i>Quantum mechanics 1.</i> Oxford Chemistry Primer, Oxford.</p>
+<p class="refer">Herzberg, G. (1950). <i>Spectra of diatomic molecules.</i> Van Nostrand Reinhold, New York.</p>
+<p class="noindent"><a id="page_75" class="page">Page 75, Chapter 4 Fields and couplings</a></p>
+<p class="refer">Landau, L. D. and Lifschitz, E. M. (1977). <i>Quantum mechanics,</i> 3rd edn. Pergamon, Oxford.</p>
+<p class="refer">Pauling, L. and Wilson, E. B. (1985). <i>Introduction to quantum mechanics.</i> Dover, New York.</p>
+</section>
+</section>
+</section>
+</body>
+</html>

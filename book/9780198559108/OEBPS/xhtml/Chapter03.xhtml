@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Introduction to molecular symmetry</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<div>
+<a class="page" id="page_28">Page 28, More on representations&#x2014;the reduction formula</a>
+<section epub:type="chapter" id="ch03">
+<h1 class="main" style="width:68%;"><b>3<span class="space">&#160;</span>More on representations&#x2014;the reduction formula</b></h1>
+<p class="noindent">&#160;</p>
+<p class="noindent">In <a href="Chapter02.xhtml#ch02">Chapter 2</a>, we explored the effect of symmetry operations such as a C<sub>2</sub>(<i>z</i>) rotation or a reflection <i>&#x03C3;</i>(<i>xz</i>) on simple vectors, and saw how this could lead to the concept of bases and irreducible representations in the C<sub>2v</sub> and D<sub>2</sub> point groups.</p>
+<p class="indent3-ka1">Irreducible representations were defined as the simplest representations which obeyed the group multiplication table, and for these point groups, these representations turned out to be rows of 1 &#x00D7; 1 matrices&#x2014;effectively numbers&#x2014;which could be identified by labels such as A<sub>1</sub>, B<sub>2</sub>, etc. The C<sub>2v</sub> multiplication table is reproduced below:</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page28-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">In this table, substitution of the symmetry operations E, C<sub>2</sub>(<i>z</i>), <i>&#x03C3;</i>(<i>xz</i>) and <i>&#x03C3;</i>(<i>yz</i>) by the 1 &#x00D7; 1 matrices, 1, 1, 1, and 1 respectively, retains the truth of the table, and these four matrices are labelled as the A<sub>1</sub> irreducible representation. Three other irreducible representations exist in this point group, and these have been labelled as A<sub>2</sub>, B<sub>1</sub> and B<sub>2</sub>.</p>
+<aside class="abc" style="margin-top:2em;" epub:type="sidebar">
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+</p>
+<p class="center" id="fig_3.1"><b>Fig. 3.1</b></p>
+</aside>
+<section epub:type="chapter" id="sec_3.1">
+<h2 class="h2"><b>3.1<span class="space">&#160;</span>Reducible representations</b></h2>
+<p class="noindent">The sets of &#x2018;numbers&#x2019; which define these four representations are the only such numbers which obey this multiplication table apart from a set of zeros, but it is not difficult to find <i>sets of matrices</i> which will do so. If we consider the 2 &#x00D7; 2 matrix shown in <a href="#fig_3.1">Fig. 3.1</a>, then from the rules of matrix multiplication described earlier, we can show that</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>&#x00D7;</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<p class="noindent">and, as a result, this matrix can take the place of each of the symmetry operations E, C<sub>2</sub>(<i>z</i>), <i>&#x03C3;</i><sub>v</sub>(<i> xz</i>) and <math xmlns="http://www.w3.org/1998/Math/MathML">
+ 
+ 
+ <mrow>
+  <msubsup>
+   <mi>&#x03C3;</mi>
+   <mi>&#x03BD;</mi>
+   <mo>&#x2032;</mo>
+  </msubsup>
+  
+ </mrow>
+</math> (<i>yz</i>) in the C<sub>2v</sub> multiplication table. Four such matrices can therefore constitute a representation, in exactly the same way as did the &#x2018;numbers&#x2019; 1, 1, 1 and 1.</p>
+<a class="page" id="page_29">Page 29, More on representations&#x2014;the reduction formula</a>
+<aside class="abc" style="margin-top:2em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_3.2">
+ <img src="../images/page29-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 3.2</b></figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1">However, the representation formed by these matrices is now <i>reducible</i>, rather than irreducible, as it can be broken down into two simpler representations.</p>
+<p class="indent3-ka1"><a href="#fig_3.2">Figure 3.2</a> shows how the four 2 &#x00D7; 2 matrices indicated above arise as a representation if we decide to carry out the symmetry operations of the C<sub>2v</sub> point group on the vectors <i>z</i><sub>1</sub> and <i>v</i><sub>1</sub>. We have already seen (<a href="Chapter02.xhtml#fig_2.9">Fig. 2.9</a>) that <i>z</i><sub>1</sub> by <i>itself</i> can be used to illustrate the A<sub>1</sub> representation, and the same is clearly true for <i>v</i><sub>1</sub>, since it is also unaffected by any of the symmetry operations in the group. When <i>z</i><sub>1</sub> and <i>v</i><sub>1</sub> are considered <i>together</i>, the effect can be expressed, for example, as</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>E</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><msub><mtext>Z</mtext><mn>1</mn></msub></mrow></mtd></mtr><mtr><mtd><mrow><msub><mtext>V</mtext><mn>1</mn></msub></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><msub><mtext>Z</mtext><mn>1</mn></msub></mrow></mtd></mtr><mtr><mtd><mrow><msub><mtext>V</mtext><mn>1</mn></msub></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext></mrow></semantics></math></p>
+<p class="indent3-ka1">The resulting representation, which can be labelled as &#x2018;&#x0393;<sub><i>zv</i></sub>&#x2019;, now looks like this:</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ 
+ <mrow>
+  <mover>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtable>
+       <mtr>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+       </mtr>
+       
+      </mtable>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mstyle mathvariant='bold' mathsize='normal'><mi>E</mi></mstyle>
+  </mover>
+  <mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mover>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtable>
+       <mtr>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+       </mtr>
+       
+      </mtable>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mrow>
+    <msub>
+     <mstyle mathvariant='bold' mathsize='normal'><mi>C</mi></mstyle>
+     <mn>2</mn>
+    </msub>
+    <mrow><mo>(</mo>
+     <mi>z</mi>
+    <mo>)</mo></mrow>
+   </mrow>
+  </mover>
+  <mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mover>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtable>
+       <mtr>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+       </mtr>
+       
+      </mtable>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mrow>
+    <msub>
+     <mi>&#x03C3;</mi>
+     <mtext>v</mtext>
+    </msub>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mi>x</mi><mi>z</mi>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </mover>
+  <mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mover>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtable>
+       <mtr>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+       </mtr>
+       
+      </mtable>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mrow>
+    <msub>
+     <msup>
+      <mi>&#x03C3;</mi>
+      <mo>&#x2032;</mo>
+     </msup>
+     
+     <mtext>v</mtext>
+    </msub>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mi>y</mi><mi>z</mi>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </mover>
+  
+ </mrow>
+</math>
+</p>
+<p class="noindent">This representation is clearly made up of the A<sub>1</sub> representation for <i>z</i><sub>1</sub> and the A<sub>1</sub> representation for <i>v</i><sub>1</sub>, and the presence of these two components is illustrated below:</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page29-4.jpg" alt="images"/>
+</figure>
+<p class="indent3-ka1">with the reduction step being summarised as &#x0393;<sub><i>zv</i></sub> = 2A<sub>1</sub>.</p>
+<p class="indent3-ka1"><a href="#fig_3.3">Figure 3.3</a> sets up the procedure for identifying the reducible representation &#x0393;<sub><i>xyz</i></sub> which describes the result of using the three vectors <i>x</i><sub>1</sub>, <i>y</i><sub>1</sub> and <i>z</i><sub>1</sub> as bases. These matrices constitute the representation &#x0393;<sub><i>xyz</i></sub>.</p>
+<p class="indent3-ka1">The 3 &#x00D7; 3 matrices which now arise are identical to those derived previously in <a href="Chapter02.xhtml#ch02">Chapter 2</a> when considering the effect of the various symmetry operations on the point P(<i>X</i>, <i>Y</i>, <i>Z</i>), and are</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_3.3">
+ <img src="../images/page29-6.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 3.3</b></figcaption>
+</figure>
+</aside>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mtable>
+   <mtr>
+    <mtd>
+     <mrow>
+      <munder>
+       <mrow>
+        <mrow><mo>(</mo>
+         <mrow>
+          <mtable>
+           <mtr>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+           </mtr>
+           
+          </mtable>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+       <mstyle mathvariant='bold' mathsize='normal'><mi>E</mi></mstyle>
+      </munder>
+      
+     </mrow>
+    </mtd>
+    <mtd>
+     <mrow>
+      <munder>
+       <mrow>
+        <mrow><mo>(</mo>
+         <mrow>
+          <mtable>
+           <mtr>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mn>1</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mn>1</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+           </mtr>
+           
+          </mtable>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+       <mrow>
+        <msub>
+         <mtext>C</mtext>
+         <mn>2</mn>
+        </msub>
+        <mrow><mo>(</mo>
+         <mi>z</mi>
+        <mo>)</mo></mrow>
+       </mrow>
+      </munder>
+      
+     </mrow>
+    </mtd>
+    <mtd>
+     <mrow>
+      <munder>
+       <mrow>
+        <mrow><mo>(</mo>
+         <mrow>
+          <mtable>
+           <mtr>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mn>1</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+           </mtr>
+           
+          </mtable>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+       <mrow>
+        <mi>&#x03C3;</mi><mrow><mo>(</mo>
+         <mrow>
+          <mi>x</mi><mi>z</mi>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+      </munder>
+      
+     </mrow>
+    </mtd>
+    <mtd>
+     <mrow>
+      <munder>
+       <mrow>
+        <mrow><mo>(</mo>
+         <mrow>
+          <mtable>
+           <mtr>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mn>1</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+           </mtr>
+           
+          </mtable>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+       <mrow>
+        <mi>&#x03C3;</mi><mrow><mo>(</mo>
+         <mrow>
+          <mi>y</mi><mi>z</mi>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+      </munder>
+      
+     </mrow>
+    </mtd>
+   </mtr>
+   
+  </mtable>
+ </mrow>
+</math>
+</p>
+<p class="noindent">Here, similar tie-lines reveal the irreducible representations to be</p>
+<p class="center">&#x0393;<sub><i>xyz</i></sub> = B<sub>1</sub> + B<sub>2</sub> + A<sub>1</sub></p>
+<a class="page" id="page_30">Page 30, More on representations&#x2014;the reduction formula</a>
+<p class="noindent">This is an important representation which relates both to atomic motion and to the symmetry of atomic orbitals.</p>
+<p class="indent3-ka1">In these two examples, it is clear that the results are unique, and that there are no other possible solutions for the reduction process. This turns out to be a general feature of reducible representations:</p>
+<p class="noindent1"><i>A reducible representation gives rise to only one set of irreducible representations</i>.</p>
+</section>
+<section epub:type="chapter" id="sec_3.2">
+<h2 class="h2"><b>3.2 Use of matrix characters in reduction by inspection</b></h2>
+<p class="noindent">For the simple 2 &#x00D7; 2 and 3 &#x00D7; 3 matrices shown above, it is evident that the character of each matrix is the <i>sum</i> of the characters of the corresponding irreducible matrices, i.e.</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x03C7;</mi><mtext>R</mtext><mtext>&#x2009;</mtext><mtext>=</mtext><mtext>&#x2009;</mtext><mo>&#x2211;</mo><mi>&#x03C7;</mi><mtext>I</mtext></mrow></semantics></math></p>
+<p class="noindent">where <i>&#x03C7;</i>R and <i>&#x03C7;</i>I refer to the characters of the reducible and irreducible matrices respectively. This is a <i>quite general result</i>, and can sometimes be used to obtain irreducible representations by inspection.</p>
+<p class="indent3-ka1">For example, the representation &#x0393;<sub><i>zv</i></sub> above has the characters: <i>&#x03C7;</i>R = 2 2 2 2 for the four matrices, and in the C<sub>2v</sub> point group this can only correspond to</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page30-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">i.e. 2A<sub>1</sub>.</p>
+<p class="indent3-ka1">When the matrices which form the reducible representation are small&#x2014;e.g. for 2 &#x00D7; 2 matrices, and perhaps also for 3 &#x00D7; 3 matrices&#x2014;this method of <i>reduction by inspection</i> is one of the quickest ways of obtaining the irreducible representations, and it can always be used to <i>check</i> that the correct irreducible representations have been derived from a given set of characters.</p>
+<p class="noindent1"><i>Example</i>. In the point group C<sub>2v</sub> show that a representation &#x0393;<sub>1</sub> which consists of matrices with the characters 5 3 1 &#x2212;1 can be reduced to 2A<sub>1</sub> + 2A<sub>2</sub> + B<sub>1</sub>.</p>
+<p class="indent3-ka1">Here, the appropriate check can be made by summing the columns for each operation in the C<sub>2v</sub> character table</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page30-1.jpg" alt="images"/>
+</figure>
+<a class="page" id="page_31">Page 31, More on representations&#x2014;the reduction formula</a>
+</section>
+<section epub:type="chapter" id="sec_3.3">
+<h2 class="h2"><b>3.3<span class="space">&#160;</span>Reduction of representations using the &#x2018;reduction formula&#x2019;</b></h2>
+<p class="noindent">In the example above, it is straightforward to <i>confirm</i> that a particular set of irreducible representations arise from the given characters of &#x0393;<sub>1</sub>, but to <i>derive</i> the five irreducible representations would initially seem to involve an almost hit-or-miss approach involving the arbitrary selection of rows of numbers until agreement is reached. Fortunately, there exists a general procedure for obtaining the irreducible representations which constitute <i>any</i> reducible representation. This procedure is contained in the <i>reduction formula</i>, and involves only the characters of the matrices of the reducible representation together with information contained in the relevant character table.</p>
+<p class="indent3-ka1">This formula sets out to identify the <i>number of each type of irreducible representation</i> contained in a <i>given reducible representation</i>, and is most conveniently defined and illustrated by reference to a specific example. The formula is generally given as</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mfrac><mn>1</mn><mi>h</mi></mfrac><mo>&#x2211;</mo><mi>N</mi><mi>&#x03C7;</mi><mtext>R</mtext><mi>&#x03C7;</mi><mtext>I</mtext></mrow></semantics></math></p>
+<p class="noindent">Here, &#x2018;<i>n</i>&#x2019; is the number of times a particular irreducible representation occurs. <i>&#x03C7;</i>R and <i>&#x03C7;</i>I are the characters of the reducible and irreducible representations. <i>N</i> is the coefficient in front of each of the symmetry element symbols listed on the top row of the character table. &#x2018;<i>h</i>&#x2019; is the <i>order</i> of the group, and is the sum of the coefficients of the symmetry element symbols, i.e. <i>h</i> = &#x2211; <i>N</i>. It is also, as mentioned in <a href="Chapter01.xhtml#ch01">Chapter 1</a>, the maximum number of equivalent points generated from a single point by all the symmetry operations in the group.</p>
+<p class="indent3-ka1">The summation in the reduction formula is carried out over each of the columns in the character table for the irreducible representation under consideration. We shall apply the reduction formula first to the representation &#x0393;<sub>1</sub> in the C<sub>2v</sub> point group:</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page31-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">In the C<sub>2v</sub> point group, the coefficients <i>N</i> of E, C<sub>2</sub>(<i>z</i>), <i>&#x03C3;</i><sub>v</sub>(<i>xz</i>) and <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>&#x03C3;</mi><mtext>v</mtext><mrow><mo>&#x2032;</mo></mrow></msubsup></mrow></semantics></math>(<i>yz</i>) are all 1, and the order of the group is 4.</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page31-1.jpg" alt="images"/>
+</figure>
+<a class="page" id="page_32">Page 32, More on representations&#x2014;the reduction formula</a>
+<p class="indent3-ka1">The number of times a particular representation occurs is obtained by focusing on the appropriate row of characters for the representation, and first calculating the product <i>N&#x03C7;</i>R<i>&#x03C7;</i>I for each of the symmetry elements in turn. Thus, in order to calculate the number of A<sub>1</sub> representations <i>n</i>(A<sub>1</sub>), we focus on the values of <i>&#x03C7;</i>I for this representation, which are +1 for each operation. We can then set up the listing as follows:</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page32-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">The summation of these terms, &#x03A3; <i>N&#x03C7;</i>R<i>&#x03C7;</i>I is 8, and as the order of the group is 4, the number of A<sub>1</sub> representations is <i>n</i>(A<sub>1</sub>) = 2.</p>
+<p class="indent3-ka1">The number of A<sub>2</sub> representations is similarly obtained by focusing on the <i>&#x03C7;</i>I values 1 1 &#x2212;1 &#x2212;1 which relate to the A<sub>2</sub> representation in C<sub>2v</sub>. Here, we may evaluate <i>n</i>(A<sub>2</sub>) as</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page32-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">In a similar way,</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page32-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">This result is identical to that obtained previously, and to confirm that there are no B<sub>2</sub> representations contained within &#x0393;<sub>1</sub>, we can evaluate</p>
+<p class="center"><i>n</i>(B<sub>2</sub>) = (1/4){5 &#x2212; 3 &#x2212; 1 &#x2212; 1} = 0</p>
+<p class="noindent">If the value of &#x2018;<i>n</i>&#x2019; obtained from the reduction formula is negative or fractional, then either a mistake has been made in the above arithmetic process, or one or more of the characters <i>&#x03C7;</i>R of the reducible representation is incorrect.</p>
+</section>
+<section epub:type="chapter" id="sec_3.4">
+<h2 class="h2"><b>3.4<span class="space">&#160;</span>Widening the bases for representations</b></h2>
+<p class="noindent">The representations we have considered so far have arisen by considering the effect of symmetry operations on specific points in space&#x2014;e.g. on the point P(<i>X</i>, <i>Y</i>, <i>Z</i>)&#x2014;or on vectors such as <i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>, etc. However, the most obvious manifestation of symmetry in chemistry is the equivalence of <a class="page" id="page_33" style="width:100%;">Page 33, More on representations&#x2014;the reduction formula</a>atoms, orbitals, bonds and angles, and it is now appropriate to consider these objects also as bases for representations.</p>
+<h3 class="h3"><b>Atoms, bonds and orbitals in the H<sub>2</sub>O molecule</b></h3>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_3.4">
+ <img src="../images/page33-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 3.4</b></figcaption>
+</figure>
+</aside>
+<p class="noindent"><a href="#fig_3.4">Figure 3.4</a> shows the H<sub>2</sub>O molecule in relation to the symmetry elements of the C<sub>2v</sub> point group to which it belongs. The hydrogen atoms may be identified as H<sub>1</sub> and H<sub>2</sub>, and the bonds which connect these atoms to oxygen are labelled r<sub>1</sub> and r<sub>2</sub>. The effect of carrying out the C<sub>2v</sub> symmetry operations on the two hydrogen atoms is easy to visualise. The identity E, and reflection in the plane <i>&#x03C3;<sub>v</sub></i>(<i> xz</i>) leave both H atoms unshifted, but rotation by C<sub>2</sub>(<i>z</i>) and reflection in <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>&#x03C3;</mi><mtext>v</mtext><mrow><mo>&#x2032;</mo></mrow></msubsup></mrow></semantics></math>(<i>yz</i>) both cause H<sub>1</sub> and H<sub>2</sub> to change places. The matrices which express this result are then</p>
+<p class="center">
+ <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mover>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtable>
+       <mtr>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+       </mtr>
+       
+      </mtable>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mstyle mathvariant='bold' mathsize='normal'><mi>E</mi></mstyle>
+  </mover>
+  <mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mover>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtable>
+       <mtr>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+       </mtr>
+       
+      </mtable>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mrow>
+    <msub>
+     <mstyle mathvariant='bold' mathsize='normal'><mi>C</mi></mstyle>
+     <mn>2</mn>
+    </msub>
+    <mrow><mo>(</mo>
+     <mi>z</mi>
+    <mo>)</mo></mrow>
+   </mrow>
+  </mover>
+  <mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mover>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtable>
+       <mtr>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+       </mtr>
+       
+      </mtable>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mrow>
+    <msub>
+     <mi>&#x03C3;</mi>
+     <mtext>v</mtext>
+    </msub>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mi>y</mi><mi>z</mi>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </mover>
+  <mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mover>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtable>
+       <mtr>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+       </mtr>
+       
+      </mtable>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mrow>
+    <msubsup>
+     <mi>&#x03C3;</mi>
+     <mtext>v</mtext>
+     <msup>
+      <mo>&#160;</mo>
+      <mo>&#x2032;</mo>
+     </msup>
+     
+    </msubsup>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mi>y</mi><mi>z</mi>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </mover>
+  
+ </mrow>
+</math>
+</p>
+<p class="noindent">These matrices form a representation which we can label &#x0393; <sub>H</sub>. The characters of the matrices are 2 0 2 0, and this representation reduces to</p>
+<p class="center">&#x0393;<sub>H</sub> = A<sub>1</sub> + B<sub>1</sub></p>
+<p class="noindent">If we now consider the effect of the symmetry operations on the pair of bonds <i>r</i><sub>1</sub> and <i>r</i><sub>2</sub>, <i>exactly the same matrices emerge as for the two hydrogen atoms</i>. The operations E and <i>&#x03C3;<sub>v</sub></i>(<i> xz</i>) leave the bonds unshifted, resulting in matrices with characters of 2, whilst C<sub>2</sub>(<i>z</i>) and <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>&#x03C3;</mi><mtext>v</mtext><mrow><mo>&#x2032;</mo></mrow></msubsup></mrow></semantics></math>(<i>yz</i>) interchange the bonds, and give matrices with characters of 0. We can therefore write</p>
+<p class="center">&#x0393;<sub>r</sub> = A<sub>1</sub> + B<sub>1</sub></p>
+<p class="noindent">In a similar way, we can obtain the representation for the 1<i>s atomic orbitals</i> on the two hydrogen atoms. If the orbitals on H<sub>1</sub> and H<sub>2</sub> are identified as <i>&#x03D5;</i><sub>1</sub> and <i>&#x03D5;</i><sub>2</sub>, then it can be seen that these orbitals transform in exactly the same way as the parent atoms:</p>
+<p class="center">&#x0393;<sub><i>&#x03D5;</i></sub> = A<sub>1</sub> + B<sub>1</sub></p>
+<p class="noindent">Finally, we should consider the effect of the symmetry operations on the oxygen atom and its orbitals.</p>
+<p class="indent3-ka1">The oxygen atom in H<sub>2</sub>O lies on all the symmetry elements, and remains unshifted for all the symmetry operations. We may therefore write</p>
+<p class="center">&#x0393;<sub>0</sub> = A<sub>1</sub></p>
+<p class="noindent">The effect of the symmetry operations on the oxygen 1<i>s</i>, 2<i>s</i> and 2<i>p</i> orbitals is most conveniently explored by direct reference to the C<sub>2v</sub> character table, and to the functions which have the same symmetry properties as the <i>s</i>, <i>p<sub>x</sub></i>, p<i><sub>y</sub></i>, and <i>p<sub>z</sub></i> orbitals, using the procedure discussed previously in <a href="Chapter02.xhtml#ch02">Chapter 2</a>. The 1<i>s</i> and 2<i>s</i> orbitals on the oxygen atom have spherical symmetry, and so transform as A<sub>1</sub>, whilst the <i>p<sub>x</sub></i>, <i>p<sub>y</sub></i> and <i>p<sub>z</sub></i> orbitals have the same symmetry as the functions <i>x</i>, <i>y</i> and <i>z</i> respectively.</p>
+<a class="page" id="page_34">Page 34, More on representations&#x2014;the reduction formula</a>
+<p class="indent3-ka1">The C<sub>2<i>v</i></sub> character table identifies the representations for <i>x</i>, <i>y</i> and <i>z</i> as B<sub>1</sub>, B<sub>2</sub> and A<sub>1</sub> respectively, and we may therefore summarise the symmetry properties of the oxygen orbitals by writing</p>
+<p class="center">&#x0393;<sub>1<i>s</i></sub> = A<sub>1</sub>,&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#x0393;<sub>2<i>s</i></sub> = A<sub>1</sub>,&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#x0393;<sub>2<i>p</i></sub> = A<sub>1</sub> + B<sub>1</sub> + B<sub>2</sub></p>
+<p class="noindent">This last procedure&#x2014;identifying the irreducible representations for sets of atomic orbitals&#x2014;is of fundamental importance in molecular orbital theory, and the previous exercise involving the derivation of the representations for the two O&#x2013;H bonds would be a typical prerequisite to establishing the number and activity of molecular stretching vibrations in H<sub>2</sub>O or to describing the <i>&#x03C3;</i>-bonding scheme.</p>
+<h3 class="h3"><b>Bonds in the C<sub>2</sub>H<sub>4</sub> molecule</b></h3>
+<p class="noindent">As a final worked example of the use of the reduction formula, we shall work out the representations for the five <i>&#x03C3;</i>-bonds in C<sub>2</sub>H<sub>4</sub>. Ethylene has a planar structure and belongs to the D<sub>2h</sub> point group, and the D<sub>2h</sub> character table is reproduced below:</p>
+<figure>
+ <img src="../images/page34-1.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_3.5">
+ <img src="../images/page34-2.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 3.5</b></figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1">As noted earlier, this point group has three mutually perpendicular C<sub>2</sub> axes, and the orientation of a molecule with respect to these axes is to some extent arbitrary. In the case of C<sub>2</sub>H<sub>4</sub>, it is convenient to choose the direction of the C&#x2013;C bond as <i>z</i>, and <i>x</i> to be perpendicular to the plane of the molecule. <a href="#fig_3.5">Figure 3.5</a> shows the C<sub>2</sub>H<sub>4</sub> molecule within this coordinate system.</p>
+<p class="indent3-ka1">The four C&#x2013;H bonds are equivalent, and may be labelled r<sub>1</sub>, &#x2026;, r<sub>4</sub>, and there is one C&#x2013;C bond labelled &#x2018;d&#x2019;. The four hydrogen atoms are similarly equivalent, and are labelled H<sub>1</sub> to H<sub>4</sub> as shown.</p>
+</section>
+<section epub:type="chapter" id="sec_3.5">
+<h2 class="h2"><b>3.5<span class="space">&#160;</span>The representations &#x0393;<sub>r</sub> and &#x0393;<sub>d</sub></b></h2>
+<p class="noindent">In order to derive the irreducible representations for &#x0393;<sub>r</sub>, we need first to establish the characters &#x03C7;R of the reducible representation. This could be done by working out the complete matrices which describe the effect of the various symmetry operations on the four bonds r<sub>1</sub>, &#x2026;, r<sub>4</sub>, and then summing the terms on each diagonal. This would be a lengthy process and, <a class="page" id="page_35" style="width:100%;">Page 35, More on representations&#x2014;the reduction formula</a>fortunately, there is a much more rapid method of obtaining these characters.</p>
+<p class="indent3-ka1">In the H<sub>2</sub>O example above, we saw that the operations E and <i>&#x03C3;</i>(<i>xz</i>) left the two O&#x2013;H bonds unshifted and that, as a result, each bond was found to contribute +1 to the character. In contrast, the operations C<sub>2</sub> and <i>&#x03C3;</i>(<i>yz</i>) moved both bonds, leaving zeros on the diagonal. In order to establish the values of &#x03C7;R for the various matrices, it was therefore necessary only to consider the (+1) contribution from any <i>unshifted bonds</i>.</p>
+<p class="indent3-ka1">In the case of C<sub>2</sub>H<sub>4</sub>, the identity E leaves all four bonds in their <i>original positions</i>, and so the character for the matrix describing the effect of E has the value &#x03C7;R = 4. In a similar way, the character for reflection in the plane of the molecule <i>&#x03C3;</i>(<i>yz</i>) is also 4, since no bond is shifted.</p>
+<p class="indent3-ka1">For each of the other operations <i>every bond is moved</i>, and so the characters for all these matrices are zero.</p>
+<p class="indent3-ka1">Using this simplification, the characters &#x03C7;R for &#x0393;<sub>r</sub> are</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page35-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">If we now apply the reduction formula</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mfrac><mn>1</mn><mi>h</mi></mfrac><mo>&#x2211;</mo><mi>N</mi><mi>&#x03C7;</mi><mtext>R</mtext><mi>&#x03C7;</mi><mtext>I</mtext></mrow></semantics></math></p>
+<p class="noindent">we can see that the presence of the zeros in &#x03C7;R means that in the summation we need only consider <i>two</i> terms: those for the identity E and for <i>&#x03C3;</i>(<i>yz</i>). All the other terms will be zero.</p>
+<p class="indent3-ka1">The coefficients <i>N</i> are all +1, and the order of the D<sub>2h</sub> point group is 8. Values of <i>&#x2018;n&#x2019;</i> may then be obtained as follows:</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page35-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">The representation &#x0393;<sub>r</sub> therefore reduces to</p>
+<p class="center">&#x0393;<sub>r</sub> = A<sub>g</sub> + B<sub>3g</sub> + B<sub>1u</sub> + B<sub>2u</sub></p>
+<a class="page" id="page_36">Page 36, More on representations&#x2014;the reduction formula</a>
+<p class="noindent">The representation &#x0393;<sub>d</sub> is obtained very easily. There is only one bond &#x2018;d&#x2019;, and it is left unchanged by all the symmetry operations. Each operation is therefore represented by the 1 &#x00D7; 1 matrix (+ 1), which corresponds to the totally symmetric representation A<sub>g</sub>:</p>
+<p class="center">&#x0393;<sub>d</sub> = A<sub>g</sub></p>
+<p class="noindent">The representations obtained above for &#x0393;<sub>r</sub> and &#x0393;<sub>d</sub> illustrate a general result which arises in connection with representations based on bonds.</p>
+<p class="indent3-ka1">For any set of equivalent bonds, it can be shown that the <i>irreducible representation for these bonds <b>must contain</b> the totally symmetric representation</i>.</p>
+<p class="indent3-ka1">The corollary to this rule is that <i>if there is only one bond of a particular type in a molecule, this bond must transform according to the totally symmetric representation</i>.</p>
+</section>
+<section epub:type="chapter" id="sec_3.6">
+<h2 class="h2"><b>3.6<span class="space">&#160;</span>Summary</b></h2>
+<p class="noindent">The main purpose of this chapter has been to explore the use of matrices as <i>reducible</i> representations, and to show how these lead to <i>irreducible</i> representations by use of the reduction formula. At the same time, the concept of using other bases for representations, such as atoms, bonds and orbitals, is introduced.</p>
+</section>
+<section epub:type="chapter" id="sec_3.7">
+<h2 class="h2"><b>3.7<span class="space">&#160;</span>Exercises</b></h2>
+<p class="noindent"><a href="AppendixI.xhtml#ch03_app1">1</a>. Reduce the representations &#x0393;<sub>1</sub> and &#x0393;<sub>2</sub> below in the C<sub>2v</sub> point group:</p>
+<figure style="margin-left:-9em;">
+ <img src="../images/page36-1.jpg" alt="images"/>
+</figure>
+<p class="noindent"><a href="AppendixI.xhtml#ch03_app2">2</a>. Derive the representation &#x0393;<sub>C&#x2013;H</sub> for the following molecules:</p>
+<p class="noindent">(i) <i>trans</i> CHCl=CHCl, (ii) C<sub>6</sub>H<sub>5</sub>Cl: assume the molecule lies in the <i>xz</i> plane; (iii) 1, 4-C<sub>6</sub>H<sub>4</sub>Cl<sub>2</sub>: assume the molecule lies in the <i>yz</i> plane.</p>
+</section>
+</section>
+</div>
+</body>
+</html>

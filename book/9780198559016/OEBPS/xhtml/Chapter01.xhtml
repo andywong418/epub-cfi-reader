@@ -1,0 +1,1415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Crystal Structure Determination</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<section epub:type="chapter" id="ch01">
+<a id="page_1" class="page" style="width:60%">Page 1, Chapter 1 The basis of the method</a>
+<h1 class="chaptitle">1<span class="space">&#160;</span>The basis of the method</h1>
+<p class="noindent">&#160;</p>
+<section id="sec1.1" epub:type="chapter">
+<h2 class="h2">1.1<span class="space">&#160;</span>Introduction</h2>
+<figure class="figure-center-100">
+<img src="../images/fig1_1.jpg" alt="images"/>
+<figcaption id="fig1.1"><b>Fig. 1.1</b> An illustration of the range of structures which can be investigated by X-ray crystallography: top left, the salt K<sub>2</sub>[PdCl<sub>4</sub>]; top right, a relatively small organic molecule; bottom right, an organometallic complex; bottom left, a polynuclear metal cluster complex.</figcaption>
+</figure>
+<p class="noindent">A knowledge of the structure of both molecular and non-molecular materials is one of the fundamental aims of chemistry and is essential for a proper understanding of the physical and chemical properties of the materials. The term &#x2018;structure&#x2019; has many meanings; here we take it to be the relative positions of the atoms or ions which make up the substance under study and hence a geometrical description in terms of bond lengths and angles, torsion angles, non-bonded distances and other quantities of interest. This knowledge makes possible the pictorial representation of chemical structures which are to be found throughout the literature of teaching and research in chemistry; typical examples are shown in <a href="Chapter01.xhtml#fig1.1">Fig. 1.1</a>. Knowledge of the structure may be sought</p>
+<a id="page_2" class="page" style="width:60%">Page 2, Chapter 1 The basis of the method</a>
+<p class="noindent">simply as a means of identifying a newly synthesized compound and understanding how it was formed, or the detailed geometry may be important for further investigations of reactivity, bonding, structure&#x2013;energy relationships, etc.</p>
+<p class="indent">Many experimental methods of probing the structure of a material are based on its absorption or emission of radiation; these are various forms of spectroscopy. Absorption takes place when the frequency <i>v</i> of the radiation, and hence its quantum energy <i>hv</i>, matches a difference in certain energy levels in the sample. The observed frequencies of absorption thus provide information about energy levels and, from this, something can be deduced about the structure of the material, based on a substantial body of accumulated experience. For example, chemical shifts and coupling constants in proton NMR spectroscopy, obtained from the measured absorption spectrum, may indicate the number, chemical type, and relative proximity of the hydrogen atoms in a molecule and thus provide information on the connectivity (which atoms are bonded together); by more detailed NMR experiments some interatomic distances can be calculated.</p>
+<p class="indent">In most spectroscopic techniques, what is measured is the variation of intensity of radiation passing through the sample as its frequency (or wavelength) is varied, in a particular direction; the intensity variation is produced by absorption of particular frequencies, leading to energy changes in the sample. This Primer is concerned with some diffraction methods, which are based on a different interaction of radiation with matter, usually in the solid state. Here we usually keep the wavelength fixed and measure the variation of intensity with direction, i.e. the scattering of <i>monochromatic</i> radiation is measured. From these measurements it is possible to work out the positions of the atoms in the sample and hence obtain a complete geometrical description of the structure. The intensity variation is caused by interference effects, also known as <i>diffraction</i>.</p>
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<p class="sidebar"><i>Monochromatic</i>, literally &#x2018;single coloured&#x2019;, means having a single wavelength.</p>
+</aside>
+<p class="indent">These methods are, therefore, capable of providing much more detailed structural information than spectroscopic methods. There are, however, limitations on the types of materials which can be studied, as we shall see.</p>
+<aside class="right" style="margin-top:-3.5em;" epub:type="sidebar">
+<p class="sidebar"><i>Diffraction</i> effects are a characteristic behaviour of waves, including X-rays, light and other forms of electromagnetic radiation. An example can easily be seen by looking at a yellow street lamp (monochromatic light) through a finely woven fabric such as an umbrella.</p>
+</aside>
+<p class="indent">A substantial body of rather complex mathematics forms the theory of diffraction methods for crystal structure determination. Fortunately it is not necessary to master this in order to understand the principles and application of the subject. This is, to a large extent, true even for those who carry out research in crystallography, because almost all the calculations are usually performed by computers. Advances in the subject since its birth near the beginning of the twentieth century have very much been in parallel with developments in computing, and modem personal computers are of sufficient power to make many crystal structure determinations very much faster than the days or weeks suggested by even quite recent textbooks. Some of the other modem technological developments which have contributed to this dramatic increase in speed are described later in this book. The level of mathematics has deliberately been kept relatively low in this treatment of the subject. The fundamental equations for the diffraction process are given, but they are also illustrated with analogies in words and diagrams in order to clarify their meaning.</p>
+<p class="indent">Crystal structure determination can be applied to a wide range of size of structures, from very small molecules and simple salts to synthetic and natural <a id="page_3" class="page">Page 3, Chapter 1 The basis of the method</a> polymers and to biological macromolecules such as proteins (<a href="Chapter01.xhtml#fig1.2">Fig. 1.2</a>) and even viruses. This Primer is concerned mainly with chemical applications, but some indication is given of the differences encountered when working with larger scale biological systems.</p>
+<figure>
+<img src="../images/fig1_2.jpg" alt="images"/>
+<figcaption class="figcaption-left-60" id="fig1.2"><b>Fig. 1.2</b> The structure of lysozyme, a relatively small protein; hydrogen atoms are omitted.The molecule contains C, N, O and S atoms.</figcaption>
+</figure>
+</section>
+<section id="sec1.2" epub:type="chapter">
+<h2 class="h2">1.2<span class="space">&#160;</span>The eye and microscope analogy</h2>
+<p class="noindent">Objects of macroscopic size are visible to us because they scatter light falling on them. Our eyes intercept some of the scattered light and the function of the eye lens is to bring together the bundle of light rays, recombining the individual rays into an image on the retina (<a href="Chapter01.xhtml#fig1.4">Fig. 1.4</a>). Light consists of waves, and each scattered light ray has a particular intensity and a particular phase relative to other scattered rays, resulting from the scattering which produced it (<a href="Chapter01.xhtml#fig1.3">Fig. 1.3</a>). These relative intensities and phases, in turn, determine the nature of the image formed in the eye, which is understood by the brain as a representation of the object being viewed. Thus information on the shape (structure) of the object is carried in the intensities and phases of the light waves scattered by it.</p>
+<aside class="right" style="margin-top:-18em;" epub:type="sidebar">
+<figure class="figure-aside-left">
+<img src="../images/fig1_3.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig1.3"><b>Fig. 1.3</b> Amplitude and phase of a wave.</figcaption>
+</figure>
+</aside>
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<p class="sidebar">Visible light also has a range of wavelengths <i>&#x03BB;</i> and frequencies <i>v</i>, such that <i>&#x03BB;</i><i>v</i> = <i>c</i>, the velocity of light; for simplicity here and for comparison with the X-ray diffraction experiment, we consider light of just one wavelength, i.e. monochromatic light.</p>
+</aside>
+<p class="indent">Since objects with different shapes can be distinguished by looking at them, it follows that they must have different, individual scattering patterns.</p>
+<p class="indent">For smaller objects the eye needs help from more powerful lenses which can produce a larger image. The principle of operation is just the same: a proportion of the scattered light is collected by the microscope lens system and is <i>refracted</i> (the directions of the light rays are changed) to bring it all back together (the individual rays are combined by addition, with the correct relative amplitudes and phases) in the observer&#x2019;s eye (<a href="Chapter01.xhtml#fig1.4">Fig. 1.4</a>). Note that it is not necessary to capture all the scattered light, but the observed image becomes less clear as the proportion of light collected is reduced: a good quality image is produced by a wide objective lens close to the object.</p>
+<aside class="right" style="margin-top:-12em;" epub:type="sidebar">
+<p class="sidebar"><i>Refraction</i> is the alteration in the direction of travel of light as it passes from one medium into another with a different <i>refractive index</i>. It is responsible, for example, for the apparent bending of a drinking straw in a glass of water, because water and air have quite different refractive indices. Refraction should not be confused with diffraction, a quite different phenomenon despite the similar name.</p>
+</aside>
+<a id="page_4" class="page" style="width:60%">Page 4, Chapter 1 The basis of the method</a>
+<figure class="figure-center-60">
+<img src="../images/fig1_4.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60" id="fig1.4"><b>Fig. 1.4</b> Left and centre, the function of the eye and microscope lenses for the recombination of scattered light; right, the equivalent two-stage process in X-ray diffraction.</figcaption>
+</figure>
+<p class="indent">The lower limit on the size of objects which can be clearly seen with a microscope of sufficient magnifying power is set, not by optical engineering capabilities, but by the wavelength of light itself (in the range 400&#x2013;700 nm). Objects which are much smaller than this, such as individual molecules (which are 100&#x2013;1000 times smaller), do not give any significant scattering of the light. In order to &#x2018;see&#x2019; the structure of molecules, it is necessary to resolve the component atoms, which are of the order of one or a few <i>angstroms</i> in size. Instead of visible light, this means using X-rays. So, in principle, what we need is an X-ray microscope in order to observe molecular structure.</p>
+<aside class="right" style="margin-top:-11em;" epub:type="sidebar">
+<p class="sidebar">The <i>angstrom unit</i>, &#x00C5; is not strictly permitted by the SI rules, but is widely used in structural chemistry because of its convenient size.1 &#x00C5; = 100 pm = 0.1 nm.</p>
+</aside>
+<p class="indent">Quite apart from safety issues and the need to provide suitably sensitive detectors to record the X-rays, such an instrument does not exist, because conventional lenses cannot be used to focus X-rays. The scattering of X-rays by molecules does, indeed, occur, but the scattered X-rays cannot be physically recombined to form an image.</p>
+<aside class="right" style="margin-top:-6em;" epub:type="sidebar">
+<p class="sidebar">Focusing of extremely high intensity X-rays has recently been achieved using special methods, but they are not of general application.</p>
+</aside>
+<p class="indent">The situation is, however, not hopeless, because the pattern of scattered X-rays can be directly recorded, either on photographic film or on a variety of other X-ray sensitive detectors, then the recombination which is impossible physically can be performed mathematically, with the aid of computers: the mathematics involved is well established, but it requires a considerable amount of calculation. Thus the experiment to determine a molecular structure falls into two parts, recording the X-ray scattering pattern and carrying out the recombination subsequently by mathematics (<a href="Chapter01.xhtml#fig1.4">Fig. 1.4</a>), and is no longer instantaneous like viewing an object through a microscope.</p>
+<aside class="right" style="margin-top:-11em;" epub:type="sidebar">
+<p class="sidebar">Note that it is perfectly possible to record the pattern of light scattered by an object in an analogous way; some examples will be used in <a href="Chapter01.xhtml#sec1.4">section 1.4</a>. Although this is not commonly done, a variant of it is a valuable procedure used by mineralogists, in identifying and characterizing mineral specimens.</p>
+</aside>
+<p class="indent">The technique is known as crystal structure determination because the object studied is actually a small crystalline sample rather than a single molecule, which it would be impossible to hold in the X-ray beam for the duration of the experiment and which would give an immeasurably weak scattering pattern. In a crystal, there are large numbers of identical molecules, locked in position in a regular arrangement, which together give significant scattering. The method can only be used for samples which can be obtained in a suitable crystalline form.</p>
+<p class="indent">When the method is successful, it provides an image of the molecular structure. More precisely, it locates the components of the material which interact with the incident X-rays and scatter them. These are the electrons in the atoms. Although each individual electron/X-ray interaction is instantaneous, <a id="page_5" class="page">Page 5, Chapter 1 The basis of the method</a> the total time taken to record the scattering pattern is usually hours or days, and even the most rapid methods available are very slow compared with the movement of electrons, so the picture that results is of a time-averaged electron density (<a href="Chapter01.xhtml#fig1.5">Fig. 1.5</a>). Concentrations of electron density in the image correspond to atoms, somewhat spread out by time-averaged vibration, and the results are usually interpreted and presented as atomic positions, but there are some important consequences of the fact that the primary result is the location of electron density, which will be discussed later.</p>
+<figure class="figure-center-60">
+<img src="../images/fig1_5.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60" id="fig1.5"><b>Fig. 1.5</b> An electron density map, with the positions of atoms and bonds marked. Note that the rather wiggly contours here and in other figures are an artefact of the computer program used.</figcaption>
+</figure>
+
+<p class="indent">One very important consequence of the need to divide the overall experiment into two parts instead of directly recombining the scattered X-rays to generate an image is that some of the information in the scattered X-rays is lost. When the X-ray scattering pattern is recorded, the individual wave amplitudes are retained as relative intensities (intensity is proportional to the square of amplitude), but the relative phases are lost. This makes the mathematical reconstruction stage much less straightforward. It is one of the fundamental challenges of crystallography and methods of dealing with &#x2018;the phase problem&#x2019; have been major research projects throughout the history of the subject.</p>
+<aside class="right" style="margin-top:-7em;" epub:type="sidebar">
+<p class="eq"  style="margin-left:-14em;"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>l</mi>
+ <mo>&#x221D;<!-- ? --></mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo stretchy="false">|</mo>
+ </mrow>
+ <mi>F</mi>
+ <msup>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo stretchy="false">|</mo>
+ </mrow>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msup>
+</math></p>
+</aside>
+</section>
+<section id="sec1.3" epub:type="chapter">
+<h2 class="h2">1.3<span class="space">&#160;</span>Fundamentals of the crystalline state</h2>
+<p class="noindent">A perfect crystalline solid material is made up of a large number of identical molecules which are arranged in a precisely regular way repeated in all directions, to give a highly ordered structure. Even for a microscopic crystal, the repetition is effectively infinite on an atomic scale. This repetition of a structural unit by translation, to form a space-filling, three-dimensional crystal, is a type of symmetry, which occurs in all crystalline solids, whether or not they also show other forms of symmetry such as rotation or reflection.</p>
+<aside class="right" style="margin-top:-9.8em;" epub:type="sidebar">
+<p class="sidebar">The basic unit of a crystal structure may not be a single molecule, but a number of ions, an assembly of a few molecules, or other unit, which is then repeated. Real structures also show various kinds of defects and irregularities.</p>
+</aside>
+<p class="indent">In two dimensions, such <i>translation</i> symmetry is familiar in the form of patterns on wallpapers, flooring and other manufactured materials. A two-dimensional projection of part of a real crystal structure is shown in <a href="Chapter01.xhtml#fig1.6">Fig. 1.6</a>(a). The basic structural unit is a single molecule. All the molecules are identical and repetition by translation gives the complete two-dimensional pattern.</p>
+<a id="page_6" class="page" style="width:60%">Page 6, Chapter 1 The basis of the method</a>
+<figure class="figure-left-60">
+<img src="../images/fig1_6.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60" id="fig1.6"><b>Fig. 1.6</b> (a) A two-dimensional projection of an organic crystal structure, showing 16 identical molecules; (b) the two-dimensional <i>lattice</i> for this pattern; (c) a <i>unit cell</i> for the pattern; (d) other possible choices of unit cell for the same pattern.</figcaption>
+</figure>
+<p class="indent">If each molecule is represented by just a single point (placed, for example, on the same atom in each molecule), the result is a regular array of points, which shows the repeating nature of the structure but not the actual form of the basic structural unit (<a href="Chapter01.xhtml#fig1.6">Fig. 1.6</a>(b)). This array of identical points, equivalent to each other by translation symmetry, is called the <i>lattice</i> of the structure.</p>
+<aside class="right" style="margin-top:-9em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig1_7.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig1.7"><b>Fig. 1.7</b> The geometry of the unit cell for <a href="Chapter01.xhtml#fig1.6">Fig. 1.6</a>.</figcaption>
+</figure>
+</aside>
+<p class="indent">To define the repeat geometry of the structure, a parallelogram of four lattice points is chosen, and is called the <i>unit cell</i> of the structure; it has two different sides and one included angle (<a href="Chapter01.xhtml#fig1.6">Figs 1.6</a>(c) and <a href="Chapter01.xhtml#fig1.7">1.7</a>). Obviously, many different choices of unit cell are possible for any one lattice (<a href="Chapter01.xhtml#fig1.6">Fig. 1.6</a>(d)); there <a id="page_7" class="page">Page 7, Chapter 1 The basis of the method</a> are conventions to guide this choice. In the absence of any rotation or reflection symmetry in the structure, the conventional unit cell has sides as short as possible, <i>a</i> &#x2264; <i>b</i>, and an angle as close as possible to 90&#x00B0;. Inspection shows that each unit cell in <a href="Chapter01.xhtml#fig1.6">Fig. 1.6</a>(c) contains parts of several molecules, and the total contents are just one molecule. Each unit cell contains the equivalent of one <i>lattice point</i> (one repeat unit).</p>
+<figure class="figure-center-60">
+<img src="../images/fig1_8.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60" id="fig1.8"><b>Fig. 1.8</b> A structure with reflection symmetry.The reflection lines run vertically along the unit cell edges and through the cell centre, bisecting each molecule. There are also glide reflection lines half-way between these (see later). The conventional centred rectangular unit cell is outlined, together with two possible primitive cells, each of half the area.</figcaption>
+</figure>
+
+<p class="indent">The presence of rotation or reflection symmetry in a crystal structure, relating molecules or parts of molecules to each other, imposes restrictions on the geometry of the lattice and unit cell. For example, four-fold rotation symmetry in a two-dimensional lattice requires a square unit cell with two equal sides and a 90&#x00B0; angle, while reflection symmetry gives a 90&#x00B0; angle but still allows the two unit cell sides to be of different length (<a href="Chapter01.xhtml#fig1.8">Fig. 1.8</a>).</p>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<p class="sidebar">For an introduction to symmetry in chemistry, reference should be made to standard chemistry text books.</p>
+</aside>
+<p class="indent">In three dimensions, a unit cell has three sides and three angles (<a href="Chapter01.xhtml#fig1.9">Fig. 1.9</a>). Conventionally, the three lengths are called <i>a</i>, <i>b</i>, <i>c</i>, and the angles <i>&#x03B1;</i>, <i>&#x03B2;</i>, <i>&#x03B3;</i>, such that <i>&#x03B1;</i> lies between the <i>b</i> and <i>c</i> axes, i.e. opposite <i>a</i>. In the absence of any rotation or reflection symmetry, the three axes have different lengths and the three angles are different from each other and from 90&#x00B0;. Rotation and reflection symmetry impose restrictions and special values on the unit cell parameters. On the basis of these restrictions, crystal symmetry is broadly divided into seven types, called the seven <i>crystal systems</i>. <a href="Chapter01.xhtml#tab1.1">Table 1.1</a> shows their names, minimum symmetry characteristics and unit cell geometries. Note that inversion symmetry does not impose any lattice geometry restrictions, since every three-dimensional lattice has inversion symmetry anyway, whether the complete structure represented by the lattice is centrosymmetric or not. As we shall see later, this has important consequences in X-ray diffraction.</p>
+<aside class="right" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig1_9.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig1.9"><b>Fig. 1.9</b> A three-dimensional unit cell.</figcaption>
+</figure>
+</aside>
+<p class="indent">Individual objects, such as molecules, can display rotation symmetry of any order <i>C</i><sub>2</sub>, <i>C</i><sub>3</sub>, &#x2026; up to <i>C</i><sub>&#x221E;</sub> rotation axes, but only <i>C</i><sub>2</sub>, <i>C</i><sub>3</sub>, <i>C</i><sub>4</sub> and <i>C</i><sub>6</sub> axes can <a id="page_8" class="page">Page 8, Chapter 1 The basis of the method</a> be found in crystals. This does not mean that molecules with <i>C</i><sub>5</sub> symmetry, for example [such as ferrocene (C<sub>5</sub>H<sub>5</sub>)<sub>2</sub>Fe, or buckminsterfullerene C<sub>60</sub>] cannot form crystalline solids, but the rotation symmetry does not apply to the surroundings of the molecule and to the structure as a whole (<a href="Chapter01.xhtml#fig1.10">Fig. 1.10</a>).</p>
+<p class="tablecaptions" id="tab1.1"><b>Table 1.1</b> Crystal systems</p>
+<table style="width:60%">
+<tr>
+<td style="vertical-align:top;text-align:left; border-top:solid 1px; border-bottom:solid 1px; padding-top:0.3em; padding-bottom:0.3em;">Crystal system</td>
+<td style="vertical-align:top;text-align:left; border-top:solid 1px; border-bottom:solid 1px; padding-top:0.3em; padding-bottom:0.3em;padding-left:2em;">Essential symmetry</td>
+<td style="vertical-align:top;text-align:center; border-top:solid 1px; border-bottom:solid 1px; padding-top:0.3em; padding-bottom:0.3em;">Restrictions on unit cell</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:left;padding-top:0.5em;">Triclinic</td>
+<td style="vertical-align:top;text-align:left;padding-top:0.5em;padding-left:2em;">none</td>
+<td style="vertical-align:top;text-align:center;padding-top:0.5em;">none</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:left;">Monoclinic</td>
+<td style="vertical-align:top;text-align:left;padding-left:2em;">one two-fold rotation and/or mirror</td>
+<td style="vertical-align:top;text-align:center;"><i>&#x03B1;</i> = <i>&#x03B3;</i> = 90&#x00B0;</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:left;">Orthorhombic</td>
+<td style="vertical-align:top;text-align:left;padding-left:2em;">three two-fold rotations and/or mirrors</td>
+<td style="vertical-align:top;text-align:center;"><i>&#x03B1;</i> = <i>&#x03B2;</i> = <i>&#x03B3;</i> = 90&#x00B0;</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:left;">Tetragonal</td>
+<td style="vertical-align:top;text-align:left;padding-left:2em;">one four-fold rotation</td>
+<td style="vertical-align:top;text-align:center;"><i>a</i> = <i>b</i>; <i>&#x03B1;</i> = <i>&#x03B2;</i> = <i>&#x03B3;</i> = 90&#x00B0;</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:left;">Rhombohedral</td>
+<td style="vertical-align:top;text-align:left;padding-left:2em;">one three-fold rotation</td>
+<td style="vertical-align:top;text-align:center;"><i>a</i> = <i>b</i> = <i>c</i>; <i>&#x03B1;</i> = <i>&#x03B2;</i> = <i>&#x03B3;</i> (&#x2260;90&#x00B0;)</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:left;">Hexagonal</td>
+<td style="vertical-align:top;text-align:left;padding-left:2em;">one six-fold rotation</td>
+<td style="vertical-align:top;text-align:center;"><i>a</i> = <i>b</i>; <i>&#x03B1;</i> = <i>&#x03B2;</i> = 90&#x00B0;; <i>&#x03B3;</i> = 120&#x00B0;</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:left;border-bottom:solid 1px;padding-bottom:0.3em;">Cubic</td>
+<td style="vertical-align:top;text-align:left;border-bottom:solid 1px;padding-bottom:0.3em;padding-left:2em;">four three-fold rotation axes</td>
+<td style="vertical-align:top;text-align:center;border-bottom:solid 1px;padding-bottom:0.3em;"><i>a</i> = <i>b</i> = <i>c</i>; <i>&#x03B1;</i> = <i>&#x03B2;</i> = <i>&#x03B3;</i> = 90&#x00B0;</td>
+</tr>
+</table>
+<figure class="figure-left-60">
+<img src="../images/fig1_10.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60" id="fig1.10"><b>Fig. 1.10</b> The structure of one crystalline form of ferrocene, showing that the surroundings of each molecule do not have five-fold rotation symmetry.</figcaption>
+</figure>
+
+<p class="indent">On the other hand, crystals can have other types of symmetry element not possible in single finite molecules, in which rotation or reflection is combined with translation to give, respectively, <i>screw axes</i> and <i>glide planes</i>. <a href="Chapter01.xhtml#fig1.11">Figure 1.11</a> illustrates the difference between simple reflection and glide reflection in a two-dimensional pattern. Reflection symmetry is familiar in everyday life; the two mirror-related objects lie directly opposite each other, reflected from each other across the mirror line (in two dimensions) or mirror plane (in three dimensions). Glide reflection involves displacement of the two mirror images relative to each other by exactly half of a repeat unit of the pattern. In a two-dimensional pattern such as in <a href="Chapter01.xhtml#fig1.11">Fig. 1.11</a>, there is only one possibility for the direction of glide, parallel to the glide line. In a three-dimensional crystal structure, the direction of glide can, in most cases, be parallel to either of two different axes or along the diagonal between them. Similarly, screw axes combine a simple rotation with a translation along the direction of the axis.</p>
+<a id="page_9" class="page" style="width:60%">Page 9, Chapter 1 The basis of the method</a>
+<figure class="figure-left-60">
+<img src="../images/fig1_11.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60" id="fig1.11"><b>Fig. 1.11</b> A two-dimensional illustration of simple reflection (left) and glide reflection (right) for a regularly spaced repeated motif. Because glide reflection provides more efficient packing of molecules than does simple reflection, space groups with glide planes tend to be observed more often than those with mirror planes. A similar argument applies to screw axes versus simple rotation axes.</figcaption>
+</figure>
+<p class="indent">An example of glide reflection symmetry occurring in the same structure as simple reflection symmetry can be seen in <a href="Chapter01.xhtml#fig1.8">Fig. 1.8</a>.</p>
+<p class="indent">For some structures with more than purely translation symmetry, it is convenient and conventional to choose a unit cell which contains more than one lattice point, because the resultant unit cell geometry displays the symmetry more clearly. The unit cell in <a href="Chapter01.xhtml#fig1.8">Fig. 1.8</a> has a lattice point at each comer, but also an entirely equivalent lattice point at its centre; this <i>centred</i> unit cell is a rectangle, with a 90&#x00B0; angle, whereas a <i>primitive</i> unit cell with lattice points only at its comers and with half the area, would not be. A three-dimensional example is the <i>face-centred</i> cubic structure of many metals, in which the centre of each face of the unit cell is equivalent to all the cell comers (<a href="Chapter01.xhtml#fig1.12">Fig. 1.12</a>). This unit cell has four times the volume of the smallest possible primitive unit cell, but has the advantage of displaying the cubic symmetry clearly.</p>
+<aside class="right" style="margin-top:-14.5em;" epub:type="sidebar">
+<p class="sidebar">A <i>primitive</i> unit cell has lattice points only at its eight corners; all of these, by definition of a lattice, are entirely equivalent. A <i>centred</i> unit cell has other, also entirely equivalent, lattice points. For a two-dimensional lattice there is only one form of centring, with an equivalent lattice point exactly at the centre of each unit cell. For a three-dimensional lattice, various different types of centring are possible, with lattice points at the centres of pairs of opposite faces, at the centres of all faces, or at the very centre (the body centre) of each unit cell.</p>
+</aside>
+<figure class="figure-center-60">
+<img src="../images/fig1_12.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60" id="fig1.12"><b>Fig. 1.12</b> The face-centred cubic structure of many metals; left, the conventional cubic unit cell; right, a primitive unit cell with one-quarter the volume, having lattice points only at its corners.</figcaption>
+</figure>
+<p class="indent">Symmetry elements in a single molecule all pass through one point, and the various possible combinations of symmetry elements are known as</p>
+<a id="page_10" class="page" style="width:60%">Page 10, Chapter 1 The basis of the method</a>
+<p class="noindent"><i>point groups</i>. In a crystal, symmetry elements do not all pass through one point, but they are regularly arranged in space in accordance with the lattice translation symmetry. There are exactly 230 possible arrangements of symmetry elements in the solid state; these are called the 230 <i>space groups</i>, and their symmetry properties are well established and available in standard reference books and tables, the most comprehensive and widely used being the <i>International Tables for Crystallography</i>, Volume A.</p>
+<aside class="right" style="margin-top:-7em;" epub:type="sidebar">
+<p class="sidebar">A <i>point group</i> is the complete collection of all symmetry elements passing through a central point, describing the symmetry of an individual object. A <i>space group</i> is the complete collection of all symmetry elements for an infinitely repeating pattern. Both can be elegantly treated by mathematical group theory.</p>
+</aside>
+<p class="indent">Some popular misconceptions about lattices and unit cells should be dispelled. The term &#x2018;lattice&#x2019; is often used as a synonym for &#x2018;structure&#x2019;, but this is incorrect, because the lattice shows only the repeating nature of the structure, not the detailed contents. <i>Any</i> point in a crystal structure can be chosen as a lattice point and the lattice constructed from all the equivalent points (with identical environments in identical orientation); conventions apply to the choice of lattice points relative to the positions of symmetry elements in the structure (in particular, it is conventional to place lattice points on inversion centres when they are present), and it is the exception rather than the rule for an atom to lie on a lattice point in any other than simple high-symmetry structures. The unit cell is the repeat unit (building block) of any crystal structure and so contains a small whole number of molecules, but in most structures the molecules lie across unit cell edges and faces rather than being neatly contained within these purely mathematical constructions (see, for example, <a href="Chapter01.xhtml#fig1.6">Figs 1.6</a> and <a href="Chapter01.xhtml#fig1.8">1.8</a>).</p>
+<aside class="right" style="margin-top:-12em;" epub:type="sidebar">
+<p class="sidebar">The <i>International Tables for Crystallography</i> are published for the International Union of Crystallography by Kluwer Academic Publishers, Dordrecht.The Netherlands.</p>
+</aside>
+<p class="indent">Pure lattice translation symmetry relates individual unit cells to each other. If a structure has any other symmetry as well, then this symmetry relates atoms and molecules within one unit cell to each other. Thus the unique, independent part of the structure is usually only a fraction of the unit cell, the fraction depending on the amount of symmetry present. This unique portion is called the <i>asymmetric unit</i> of the structure. Operation of all the rotation, reflection, inversion and translation symmetry elements of the space group on this asymmetric unit generates the complete crystal structure. The asymmetric unit may consist of one molecule, more than one molecule, or a fraction of a molecule, which itself possesses symmetry.</p>
+<p class="indent">One further point should be made about symmetry. Different symbols are used for symmetry elements, and for combinations of them (point groups and space groups) in different fields of science. For rotation, reflection and inversion symmetry elements, which can occur both in individual molecules and in solid-state structures, the correspondence of the two sets of symbols is shown in <a href="Chapter01.xhtml#tab1.2">Table 1.2</a>. There are good reasons for the differences in the symbols, and also for the different definitions of the so-called &#x2018;<i>improper rotations</i>&#x2019;, but they do lead to confusion. The Schoenflies notation, used in molecular spectroscopy, produces convenient and compact symbols for point groups, while the Hermann&#x2013;Maugin notation, used in crystallography, is much better suited to space group representation, some of which will be seen later in examples. The details of symbols for glide planes and screw axes are beyond the scope of this short text.</p>
+<aside class="right" style="margin-top:-15em;" epub:type="sidebar">
+<p class="sidebar">A <i>proper rotation</i> is a simple rotation axis. An <i>improper rotation</i> combines the operation of rotation with either inversion (crystallography) <i>or</i> reflection in a perpendicular plane (spectroscopy).</p>
+</aside>
+</section>
+<section id="sec1.4" epub:type="chapter">
+<h2 class="h2">1.4<span class="space">&#160;</span>Diffraction of X-rays by molecules and crystals</h2>
+<p class="noindent"><a href="Chapter01.xhtml#fig1.13">Figure 1.13</a> shows part of the pattern of scattered X-rays produced by a single crystal. The complete pattern can only be recorded by rotating the crystal in <a id="page_11" class="page">Page 11, Chapter 1 The basis of the method</a> the X-ray beam, for reasons we shall see later. There are many different kinds of instrument for recording X-rays scattered by crystals, and they produce a variety of appearances, but in each case a good quality crystal always gives a pattern of spots of varied intensity. In <a href="Chapter01.xhtml#fig1.13">Fig. 1.13</a>, different intensities are represented by different sizes of spot; on a photographic film, they would vary in their degree of blackness.</p>
+
+<figure class="figure-center-60">
+<img src="../images/fig1_13.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60" id="fig1.13"><b>Fig. 1.13</b> A computer-generated reproduction of an X-ray diffraction pattern of a type obtained by one form of X-ray camera.</figcaption>
+</figure> 
+<aside class="right" style="margin-top:-30em;" epub:type="sidebar">
+<p class="tablecaption-aside-left" id="tab1.2"><b>Table 1.2</b> correspondence of symbols for symmetry elements in the Hermann-Maugin (Crystallography) and Schoenflies (spectroscopy) system of notation</p>
+<table style="margin-top:1em; width:100%">
+<tr>
+<td class="border-s">Crystallography</td>
+<td class="border-s">Spectroscopy</td>
+</tr>
+<tr>
+<td colspan="2"><i>Proper rotations</i></td>
+</tr>
+<tr>
+<td>2</td>
+<td><i>C</i><sub>2</sub></td>
+</tr>
+<tr>
+<td>3</td>
+<td><i>C</i><sub>3</sub></td>
+</tr>
+<tr>
+<td>4</td>
+<td><i>C</i><sub>4</sub></td>
+</tr>
+<tr>
+<td>6</td>
+<td><i>C</i><sub>6</sub></td>
+</tr>
+<tr>
+<td colspan="2"><i>Improper rotations</i></td>
+</tr>
+<tr>
+<td><span class="over">3</span></td>
+<td><i>S</i><sub>6</sub></td>
+</tr>
+<tr>
+<td><span class="over">4</span></td>
+<td><i>S</i><sub>4</sub></td>
+</tr>
+<tr>
+<td><span class="over">6</span></td>
+<td><i>S</i><sub>3</sub></td>
+</tr>
+<tr>
+<td colspan="2"><i>Reflection</i></td>
+</tr>
+<tr>
+<td><i>m</i></td>
+<td>&#x03C3;</td>
+</tr>
+<tr>
+<td colspan="2"><i>Inversion</i></td>
+</tr>
+<tr>
+<td class="border-12s"><span class="over">1</span></td>
+<td class="border-12s"><i>i</i></td>
+</tr>
+</table>
+</aside>
+<p class="indent">The pattern of spots has three properties of interest, which correspond to three properties of the crystal structure.</p>
+<p class="indent">First, the pattern has a particular <i>geometry.</i> The spots lie in certain positions which are clearly not random. Each spot is generated at the detector by an individual scattered X-ray beam travelling in a definite direction from the crystal. This pattern geometry is related to the lattice and unit cell geometry of the crystal structure and so can tell us the repeat distances between molecules.</p>
+<p class="indent">Second, the pattern has <i>symmetry</i>, not only in the regular arrangement of the spots but also in having equal intensities of spots which lie in symmetry-related positions relative to the centre of the pattern. The pattern symmetry is closely related to the symmetry of the unit cell of the crystal structure, i.e. to the crystal system and space group. The pattern in <a href="Chapter01.xhtml#fig1.13">Fig. 1.13</a> has both vertical and horizontal reflection symmetry, and an inversion point at the centre.</p>
+<p class="indent">Third, apart from this symmetry, there is no apparent relationship among the <i>intensities</i> of the individual spots, which vary widely; some are very intense, while others are too weak to be seen (their positions are deduced from the regular array). These intensities hold all the available information about the positions of the atoms in the unit cell of the crystal structure, because it is the relative atomic positions which, through the combination of their individual interactions with the X-rays, generate different amplitudes for different directions of scattering.</p>
+<p class="indent">Thus, measurement of the geometry and symmetry of an X-ray scattering pattern provides information on the unit cell geometry and symmetry, while <a id="page_12" class="page">Page 12, Chapter 1 The basis of the method</a>determination of the full molecular structure involves the measurement of all the many individual intensities, a considerably longer task.</p>
+<p class="indent">An understanding of these relationships is valuable in grasping the fundamentals of X-ray diffraction in crystal structure determination. They can be summarized elegantly in mathematical terms, and the main equations will be presented shortly, but a pictorial approach may be more informative to many readers and will be given first. To illustrate the relationships between objects and their scattering patterns simply, we restrict the treatment to two-dimensional objects and scale up the process by a factor of about 10<sup>4</sup>, so that atoms in planar molecules are represented by small holes punched in opaque card and monochromatic X-rays are replaced by monochromatic light with a wavelength comparable to the hole size and spacing. By doing this, it is possible to obtain from a modified type of microscope both an image (a picture) of each object and its light scattering pattern (also known as its optical transform) for comparison. Twelve pairs of objects and corresponding optical transforms are shown in <a href="Chapter01.xhtml#fig1.14">Fig. 1.14</a>.</p>
+<p class="indent">Note first that every object produces a different pattern. These patterns of light and dark are generated by interference effects, i.e. by the combination of light waves coming from different parts of the object as the incident light passes through it.</p>
+<p class="indent">Even for a single circular hole (think of this as a single atom in an X-ray beam) there are interference effects for the light waves scattered by the edges of the hole (objects <b>A</b> and <b>B</b>). In some directions these waves are in phase and the scattering pattern is bright; in other directions, scattered waves are out of phase and cancel each other, so little or no net intensity is seen. Thus the transmitted light does not give a sharp pattern matching the shape and size of the hole, but a diffuse pattern with a central circular bright region surrounded by rings of lower intensity. A larger hole (<b>B</b>) gives a smaller pattern. A rectangular hole (<b>C</b>) gives a diffuse pattern of rectangular symmetry, also with light and dark fringes. Note that the relative dimensions of the rectangle (tall and narrow) are reversed in the scattering pattern (short and wide). A series of experiments with different rectangles shows that there is an exact inverse relationship.</p>
+<p class="indent">Several holes together represent a single molecule (<b>D</b> to <b>F</b>). These give more complicated scattering patterns, each with diffuse areas of varied intensity. There are now additional scattered wave interference effects, which depend on the relative positions of the holes. The rectangular object (<b>D</b>) gives a pattern with rectangular symmetry. The regular hexagon of holes (<b>F</b>) gives a pattern with the same six-fold symmetry. The object with only one vertical reflection line of symmetry (<b>E</b>), however, generates a pattern with extra symmetry: two mutually perpendicular lines of reflection, horizontal and vertical, intersecting in an inversion point. In general, each optical transform has the same symmetry as the corresponding object, with the addition of inversion symmetry if it is not already present (and this may imply further symmetry elements as in this case); the scattering pattern never has less symmetry than the object. In three dimensions, an equivalent rule applies, with the addition of an inversion centre to all scattering patterns.</p>
+<p class="indent">Parts <b>G</b> to <b>I</b> show the effect of pure translation symmetry on the scattering of radiation by an object. Again, extra interference effects take place for the light rays scattered from individual holes. Because the holes are regularly <a id="page_13" class="page">Page 13, Chapter 1 The basis of the method</a>spaced, these interference effects strongly reinforce each other, and the most obvious result is that the scattering patterns contain sharp maxima of intensity instead of broad diffuse regions. A single row of holes gives a pattern of narrow bright stripes running perpendicular to the row (<b>G</b> and <b>H</b>). A two-dimensional regular array of holes (<b>I</b>) imposes a restriction on the intensity maxima in both dimensions simultaneously, so that only sharp points of light are now seen (where two perpendicular sets of stripes cross), and these are also regularly spaced. The rows of spots in the optical transform always lie perpendicular to the rows of holes in the object, and there is an inverse relationship in the spacings: the array of holes in the object <b>I</b> are spaced wider horizontally than vertically, and the bright spots in the scattering pattern are spaced wider vertically than horizontally, with the inverse ratio.</p>
+<aside class="right" style="margin-top:-15.8em;" epub:type="sidebar">
+<p class="sidebar">The extra bright fringes and spots near the centre of these patterns are a result of the small number of holes in the objects. With more holes, these subsidiary maxima decrease in intensity and eventually disappear, and the main maxima become sharper. A real crystal may contain millions of unit cells in each direction, so the maxima for scattered X- rays are sharp.</p>
+</aside> 
+<p class="indent">This effect is well-known and exploited in many branches of science, and is called <i>diffraction.</i> Here we see that a regular lattice arrangement of objects scattering radiation produces severe diffraction restrictions, so that the scattered radiation has significant intensity only in certain well-defined directions and not in a diffuse pattern such as occurs with a single object.</p>
+<p class="indent">Finally, we place more complicated objects (hexagons, representing molecules, instead of single holes) on lattices. The three lattices <b>J</b> to <b>L</b> have different geometries (different unit cells) but each has as its basic repeat unit the same single hexagon in the same orientation (which is the same as <b>F</b>, but turned through 90&#x00B0;). Each produces a diffraction pattern consisting of a regularly spaced array of more or less bright points. The positions of these points are dictated by the diffraction conditions, generated by the parent lattice: in each case, the rows of points run perpendicular to the rows of hexagons on the object lattice, and the spacing of the points in each direction is inversely proportional to the spacing of the hexagons. The intensities of the individual spots are produced by the form of the single object (the hexagon): comparison of <b>J</b>, <b>K</b> and <b>L</b> with <b>F</b> (especially with half-closed eyes to blur the lattice diffraction effects!) shows that the underlying pattern of light and dark is the same for all of them, and this is the optical transform of the single hexagon.</p>
+<p class="indent">The net effect is like looking at the optical transform of the hexagon through a sieve. The transform itself (the variation of intensity) is determined by the form of the single object, while the mesh of the sieve, which dictates the points at which the transform intensities can actually be seen, is determined by the lattice geometry.</p>
+<aside class="right" style="margin-top:0.5em;" epub:type="sidebar">
+<p class="sidebar"><i>Fourier transformation</i> is a well-known and well established mathematical operation used in a wide variety of science and technology applications, including spectroscopy and image processing.</p>
+</aside>
+<p class="indent">Extending this to three dimensions, translating it to the case of a single crystal in a monochromatic X-ray beam, and introducing some formal terminology, these relationships illustrated pictorially are summarized as follows. An object scatters radiation of wavelength comparable to its own size; the mathematical relationship between the object and the scattering pattern is <i>Fourier transformation</i>, such that the scattering pattern is the <i>Fourier transform</i> of the object, and the image of the object (provided by an optical microscope or by X-ray crystallography) is in turn the Fourier transform of the scattering pattern. If identical objects are arranged on a lattice, diffraction effects of the lattice are also imposed, so that the diffraction pattern can have non-zero intensity only where the direction of scattering satisfies the equations for diffraction geometry. The overall effect is a combination of the two effects &#x2013; scattering by the object further restricted by diffraction by the lattice &#x2013; so the</p>
+<a id="page_14" class="page" style="width:60%">Page 14, Chapter 1 The basis of the method</a>
+<figure class="fig1" style="margin-left:-3em;">
+<img class="center" src="../images/fig1_14.jpg" alt="images"/>
+<figcaption id="fig1.14">
+<p class="noindent" style="width:100%;text-align:left;margin-left:3.5em;"><b>Fig. 1.14</b> A selection of objects and their optical scattering patterns. Each of the 12 objects on the left page has its scattering pattern in the corresponding position on the right page. The bottom row of objects is on a different scale; in the objects themselves, each hexagon has the same size as the individual hexagon in the second row. In the description in the text, the objects and their patterns are labelled from (<b>A</b>) to (<b>C</b>) in the top row, continuing to (<b>L</b>) at the end of the bottom row. These illustrations are taken from a very comprehensive compilation in <i>Atlas of Optical Transforms</i> by G. Harburn, C. A. Taylor and T. R. Welberry (G. Bell and Sons Ltd, London, 1975), with the permission of the authors.</p></figcaption>
+</figure>
+<a id="page_15" class="page" style="width:60%">Page 15, Chapter 1 The basis of the method</a>
+<figure>
+<img class="center" src="../images/fig14_1.jpg" alt="images"/>
+</figure>
+
+<a id="page_16" class="page" style="width:60%">Page 16, Chapter 1 The basis of the method</a>
+ <p class="noindent">observed diffraction pattern is the Fourier transform of the single object sampled at certain geometrically determined points.</p>
+<p class="indent">The previous paragraph is the essential basis of the technique of X-ray crystallography.</p>
+<p class="indent">In principle, then, the process of crystal structure determination is simple. We record the diffraction pattern from a crystal. Measurement of the diffraction pattern geometry and symmetry tells us the unit cell geometry and gives some information about the symmetry of arrangement of the molecules in the unit cell. Then from the individual intensities of the diffraction pattern we work out the positions of the atoms in the unit cell, by pretending to be a microscope lens system, adding together the individual waves with their correct relative amplitudes and phases. And here we see the <i>phase problem</i>, the fact that the measured diffraction pattern provides directly only the amplitudes and not the required phases, without which the Fourier transformation cannot be made.</p>
+</section>
+<section id="sec1.5" epub:type="chapter">
+<h2 class="h2">1.5<span class="space">&#x00A0;</span>The geometry and symmetry of X-ray diffraction</h2>
+<section id="sec1.5.1" epub:type="chapter">
+<h3 class="h3"><b>Geometry</b></h3>
+<p class="noindent">Having seen the fundamental basis of X-ray diffraction in both pictorial and verbal form, we will now present the relationships mathematically.</p>
+<p class="indent">For the geometry, consider first diffraction by a single row of regularly spaced points (one-dimensional diffraction; <a href="Chapter01.xhtml#fig1.15">Fig. 1.15</a>).</p>
+<p class="indent">In any particular direction, the radiation scattered by the row of points will have zero intensity by destructive interference of the individual scattered rays unless they are all in phase. Since, except in the straight-through direction, individual rays have different path lengths, these path differences must be equal to whole numbers of wavelengths to keep the rays in phase. So, for rays scattered by two adjacent points in the row</p>
+
+<aside class="right" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="figure-aside-left">
+<img src="../images/fig1_15.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig1.15"><b>Fig. 1.15</b> Diffraction by a single row of regularly spaced objects.</figcaption>
+</figure>
+</aside>
+<table style="margin-top:1em; margin-bottom:1em;width:60%">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mi>Path difference</mi> <mo>=</mo> <mi>a</mi> <mi>s</mi> <mi>i</mi> <mi>n</mi> <msub> <mi>&#x03A8;<!-- ? --></mi> <mrow class="MJX-TeXAtom-ORD"> <mi>i</mi> </mrow> </msub> <mo>+</mo> <mi>a</mi> <mi>s</mi> <mi>i</mi> <mi>n</mi> <msub> <mi>&#x03A8;<!-- ? --></mi> <mrow class="MJX-TeXAtom-ORD"> <mi>d</mi> </mrow> </msub> <mo>=</mo> <mi>h</mi> <mi>&#x03BB;<!-- ? --></mi> </math></p></td>
+<td style="text-align:right;" id="eq1.1">(1.1)</td>
+</tr>
+</table>
+<p class="noindent">where &#x03A8;<sub>i</sub> and &#x03A8;<sub>d</sub> are the angles of the incident and diffracted beams as shown, <i>&#x03BB;</i> is the wavelength, <i>a</i> is the one-dimensional lattice spacing, and <i>h</i> is an integer (positive, zero, or negative). For a given value of &#x03A8;<sub>i</sub> (a fixed incident beam), each value of <i>h</i> corresponds to an observed diffraction maximum and the equation can be used to calculate the permitted values of &#x03A8;<sub>d</sub>, the directions in which intensity is observed. The result, as we have seen in <a href="Chapter01.xhtml#fig1.14">Fig. 1.14</a>, is a set of bright fringes.</p>
+<p class="indent">For diffraction by a three-dimensional lattice there are three such equations and all have to be satisfied simultaneously. The first equation contains the lattice <i>a</i> spacing, angles relative to this <i>a</i> axis of the unit cell, and an integer <i>h</i>. The other two equations, correspondingly, contain the unit cell axes <i>b</i> and c, and integers <i>k</i> and <i>l</i> respectively.</p>
+<p class="indent">Thus each allowed diffracted beam (each spot seen in an X-ray diffraction pattern) can be labelled by three integers, or indices, <i>hkl</i>, which uniquely specify it if the unit cell geometry is known.</p>
+<aside class="right" style="margin-top:-4em;" epub:type="sidebar">
+<p class="sidebar">The letters <i>h</i>, <i>k</i>, and / are used conventionally by all crystallographers although, unlike other conventional triplets of letters used in the subject (such as <i>a</i>, <i>b</i>, <i>c</i>; <i>x</i>, <i>y</i>, <i>z</i>), they are not consecutive in the alphabet.</p>
+</aside>
+<p class="indent">These three equations for diffraction geometry, the <i>Laue conditions</i>, are cumbersome to use in this form. An alternative but equivalent description was <a id="page_17" class="page">Page 17, Chapter 1 The basis of the method</a> derived by W. L. Bragg soon after the experimental demonstration that X-rays could be diffracted by crystals, and is expressed in the single <i>Bragg equation</i>, which is universally used as the basis for X-ray diffraction geometry (<a href="Chapter01.xhtml#fig1.16">Fig. 1.16</a>). Bragg showed that every diffracted beam that can be produced by an appropriate orientation of a crystal in an X-ray beam can be regarded geometrically as if it were a reflection from sets of parallel planes passing through lattice points, analogous to the reflection of light by a mirror, in that the angles of incidence and reflection must be equal and that the incoming and outgoing beams and the normal to the reflecting planes must themselves all lie in one plane. The reflection by adjacent planes in the set gives interference effects equivalent to those of the Laue equations; to define a plane we need three integers to specify its orientation with respect to the three unit cell edges, and these are the indices <i>hkl;</i> the spacing between successive planes is determined by the lattice geometry, so is a function of the unit cell parameters.</p>
+<figure class="figure-center-60">
+<img src="../images/fig1_16.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60" id="fig1.16"><b>Fig. 1.16</b> The Bragg construction for diffraction by a three-dimensional crystal structure; one set of parallel lattice planes is seen edge-on.</figcaption>
+</figure>
+
+<aside class="right" style="margin-top:-40.5em;" epub:type="sidebar">
+<p class="sidebar">At the age of 24 W. L. Bragg, together with his father W. H. Bragg, was awarded the Nobel Prize for Physics for this work and its application in the first crystal structure determinations. Max von Laue received the Prize previously for his part in the discovery of the diffraction of X-rays by crystals.</p>
+</aside>
+<p class="indent">For rays reflected by two adjacent planes</p>
+<table style="margin-top:1em; margin-bottom:1em;margin-bottom:1em;width:60%">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mi>Path difference</mi> <mo>=</mo> <mn>2</mn> <msub> <mi>d</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>h</mi> <mi>k</mi> <mi>l</mi> </mrow> </msub> <mi>s</mi> <mi>i</mi> <mi>n</mi> <mi>&#x03B8;<!-- ? --></mi> <mo>=</mo> <mi>n</mi> <mi>&#x03BB;<!-- ? --></mi> </math></p></td>
+<td style="text-align:right;" id="eq1.2">(1.2)</td>
+</tr>
+</table>
+<p class="noindent">In practice, the value of <i>n</i> can always be set to 1 by considering planes with smaller spacing (<i>n</i> = 2 for planes <i>hkl</i> is equivalent to <i>n</i> = 1 for planes 2<i>h</i>, 2<i>k</i>, 2<i>l</i> which have exactly half the spacing) and it is in the form</p>
+<table style="margin-top:1em; margin-bottom:1em;width:60%">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>&#x03BB;<!-- ? --></mi>
+ <mo>=</mo>
+ <mn>2</mn>
+ <msub>
+ <mi>d</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>h</mi>
+ <mi>k</mi>
+ <mi>l</mi>
+ </mrow>
+ </msub>
+ <mi>s</mi>
+ <mi>i</mi>
+ <mi>n</mi>
+ <mi>&#x03B8;<!-- ? --></mi>
+</math>
+</p></td>
+<td style="text-align:right;" id="eq1.3">(1.3)</td>
+</tr>
+</table>
+
+<p class="noindent">that the Bragg equation is always used. It allows each observed diffracted beam (commonly known as a &#x2018;reflection&#x2019;) to be uniquely labelled with its three indices and for its net scattering angle (2<i>&#x03B8;</i> from the direct beam direction) to be calculated from the unit cell geometry, of which each <i>d<sub>hkl</sub></i> spacing is a function.</p>
+<p class="indent">Rearrangement of the Bragg equation gives</p>
+
+<table style="margin-top:1em; margin-bottom:1em;width:60%">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mi>s</mi> <mi>i</mi> <mi>n</mi> <mi>&#x03B8;<!-- ? --></mi> <mo>=</mo> <mrow> <mo>(</mo> <mfrac> <mi>&#x03BB;<!-- ? --></mi> <mn>2</mn> </mfrac> <mo>)</mo> </mrow> <mo>&#x00D7;</mo> <mrow> <mo>(</mo> <mfrac> <mn>1</mn> <msub> <mi>d</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>h</mi> <mi>k</mi> <mi>l</mi> </mrow> </msub> </mfrac> <mo>)</mo> </mrow> </math></p></td>
+<td style="text-align:right;" id="eq1.4">(1.4)</td>
+</tr>
+</table>
+<p class="indent">The distance of each spot from the centre of an X-ray diffraction pattern such as <a href="Chapter01.xhtml#fig1.13">Fig. 1.13</a> is proportional to sin<i>&#x03B8;</i> and hence to 1/<i>d</i><sub><i>hkl</i></sub> for some set of lattice <a id="page_18" class="page">Page 18, Chapter 1 The basis of the method</a>planes. This demonstrates mathematically the reciprocal (inverse) nature of the geometrical relationship between a crystal lattice and its diffraction pattern, already seen pictorially.</p>
+<p class="indent">The Bragg equation is the basis of all methods for obtaining unit cell (lattice) geometry from the measured geometry of the diffraction pattern. The exact application depends on the experimental setup used to obtain the diffraction pattern.</p>
+</section>
+<section id="sec1.5.2" epub:type="chapter">
+<h3 class="h3"><b>Symmetry</b></h3>
+<p class="noindent">The unit cell dimensions provide some information about the distances between molecules, which are regularly spaced in the crystal structure. In most structures, however, each unit cell contains not one but several molecules which are related to each other by the space group symmetry. This symmetry is revealed in various aspects of the appearance of the diffraction pattern, from which it is usually possible to choose the correct space group from the complete list of 230 or, at least, to narrow down the choice to a few possibilities; ambiguities arise, for example, because a diffraction pattern may have more symmetry than the structure itself, but it cannot have less, and in such cases the correct answer is known only when the structure is successfully solved and refined.</p>
+<aside class="right" style="margin-top:-13.4em;" epub:type="sidebar">
+<p class="sidebar">Simple rotation and reflection symmetry is seen directly in the diffraction pattern, always with the addition of an inversion centre if it is not already there. Glide planes and screw axes cause particular subsets of reflections to have exactly zero intensity, according to well- established rules for these &#x2018;systematic absences&#x2019;. The effect can be seen in the central rows, both horizontal and vertical, in <a href="Chapter01.xhtml#fig1.13">Fig. 1.13</a>, where alternate reflections have zero intensity.</p>
+</aside>
+<p class="indent">For a compound of known chemical formula, the number of molecules per unit cell can be calculated (if the density of the crystals is measured or estimated, as illustrated below). This number can be compared with the number of <i>&#x2018;asymmetric units&#x2019;</i> required by the symmetry elements present in the space group (see <a href="Chapter01.xhtml#sec1.3">section 1.3</a>). If the two are equal, then there is one molecule per asymmetric unit and this tells us nothing about the molecular shape. If, however, the asymmetric unit is only a fraction of a molecule, then the molecule itself must have one or more symmetry elements of the space group, and this provides some information on the molecular shape, even before the full structure determination is carried out.</p>
+<p class="indent">This is best illustrated with examples. The first is rather unusual, with a very high symmetry. Crystals of [Cr(NH<sub>3</sub>)<sub>6</sub>][H<sub>g</sub>Cl<sub>5</sub>], obtained from aqueous solution, belong to the cubic crystal system, with <i>a</i> = 22.653 &#x00C5;. The unit cell volume is <i>V</i> = <i>abc</i> = <i>a</i><sup>3</sup> = 11 625 &#x00C5;<sup>3</sup>. Crystal densities can be measured by various methods; for this compound, a value of <i>D</i> = 2.44 g cm<sup>-3</sup> is obtained.</p>
+<p class="indent">Since the density and unit cell volume are known experimentally, the mass of the contents of one unit cell can be calculated.</p>
+<table style="margin-top:1em; margin-bottom:1em;width:60%">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mi>mass</mi> <mo>=</mo> <mi>density</mi> <mo>&#x00D7;</mo> <mi>volume</mi> </math><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mi>so, unit cell mass</mi><mo>=</mo> <mn>2.44</mn> <mi>g</mi> <mi>c</mi> <msup> <mi>m</mi> <mrow class="MJX-TeXAtom-ORD"> <mo>&#x2212;<!-- - --></mo> <mn>3</mn> </mrow> </msup> <mo>&#x00D7;</mo> <mn>11625</mn> <msup> <mo>&#x00C5;</mo> <mrow class="MJX-TeXAtom-ORD"> <mn>3</mn> </mrow> </msup> </math><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mo>=</mo> <mn>2.44</mn> <mi>g</mi> <mi>c</mi> <msup> <mi>m</mi> <mrow class="MJX-TeXAtom-ORD"> <mo>&#x2212;<!-- - --></mo> <mn>3</mn> </mrow> </msup> <mo>&#x00D7;</mo> <mn>11625</mn> <msup> <mo>&#x00C5;</mo> <mrow class="MJX-TeXAtom-ORD"> <mn>3</mn> </mrow> </msup> <mo>&#x00D7;</mo> <mo stretchy="false">(</mo> <msup> <mn>10</mn> <mrow class="MJX-TeXAtom-ORD"> <mo>&#x2212;<!-- - --></mo> <mn>8</mn> </mrow> </msup> <msup> <mo stretchy="false">)</mo> <mrow class="MJX-TeXAtom-ORD"> <mn>3</mn> </mrow> </msup> <mi>c</mi> <msup> <mi>m</mi> <mrow class="MJX-TeXAtom-ORD"> <mn>3</mn> </mrow> </msup> </math><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mo>=</mo> <mn>2.837</mn> <mo>&#x00D7;</mo> <msup> <mn>10</mn> <mrow class="MJX-TeXAtom-ORD"> <mo>&#x2212;<!-- - --></mo> <mn>20</mn> </mrow> </msup> <mi>g</mi> <mi>Per unit cell</mi></math></p></td>
+<td style="text-align:right; padding-top:1.8em;" id="eq1.5">(1.5)</td>
+</tr>
+</table>
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<p class="sidebar">Be careful of the units in these calculations; they need to be consistent, and initial data usually have to be multiplied or divided by some powers of 10 to achieve this. For simplicity, uncertainties in the experimental measurements are ignored here; this topic is discussed later.</p>
+</aside>
+<p class="noindent">To convert between grams for one unit cell (or for one molecule) and atomic mass units (officially called daltons in SI; these are masses in grams for one mole), the scale factor is Avogadro&#x0027;s number.</p>
+<table style="margin-top:1em; margin-bottom:1em;width:60%">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>unit cell mass</mi> <mo>=</mo> <mn>2.837</mn> <mo>&#x00D7;</mo> <msup> <mn>10</mn> <mrow class="MJX-TeXAtom-ORD"> <mo>&#x2212;<!-- - --></mo> <mn>20</mn> </mrow> </msup> <mo>&#x00D7;</mo> <mn>6.023</mn> <mo>&#x00D7;</mo> <msup> <mn>10</mn> <mrow class="MJX-TeXAtom-ORD"> <mn>23</mn> </mrow> </msup> </math><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mo>=</mo> <mn>17090</mn> <mi>daltons</mi></math></p></td>
+<td style="text-align:right;padding-top:1em;" id="eq1.6">(1.6)</td>
+</tr>
+</table>
+<a id="page_19" class="page" style="width:60%">Page 19, Chapter 1 The basis of the method</a>
+<p class="noindent">The mass of one formula unit is just the sum of all the atomic masses, in this case 532.0 daltons. From the known (or assumed!) formula mass and the experimentally determined total unit cell mass, the ratio gives the number of formula units (&#x2018;molecules&#x2019;) per unit cell, conventionally given the symbol Z.</p>
+<aside class="right" style="margin-top:-5.8em;" epub:type="sidebar">
+<p class="sidebar">The term &#x2018;molecular mass&#x2019; is generally used, though this particular compound is ionic rather than molecular ; &#x2018;mole mass&#x2019; is more appropriate.</p>
+</aside>
+
+<table>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display='block' style="margin-left:10.2em;">
+ <mi>Z</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mtext>unit</mtext><mtext>&#x2009;</mtext><mtext>cell</mtext><mtext>&#x2009;</mtext><mtext>mass/formula</mtext><mtext>&#x2009;</mtext><mtext>mass</mtext><mtext>&#x2009;</mtext>
+</math></td>
+</tr>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML" style="margin-left:11em;">
+ <mo>=</mo><mtext>&#x2009;</mtext><mn>17090</mn><mo>/</mo><mn>532.0</mn>
+</math>
+</td>
+</tr>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML" style="margin-left:11em;">
+ <mo>=</mo><mtext>&#x2009;</mtext><mn>32.1</mn>
+</math>
+</td>
+</tr>
+</table>
+
+<p class="noindent" style="text-align:right;margin-top:-2.6em;margin-bottom:1.6em;" id="eq1.7">(1.7)</p>
+
+<p class="noindent">This must be a whole number and appropriate to the symmetry of the space group, in this case <i>Fd</i><span class="over">3</span><i>c</i> (number 228 of the 230). There must, therefore, be 32 complex cations and 32 complex anions in each unit cell. Reference to the space group tables shows that the asymmetric unit for space group <i>Fd</i><span class="over">3</span><i>c</i> is 1/192 of the unit cell, so a molecule or ion with no symmetry of its own would have Z = 192. The cation and anion here have considerable symmetry themselves. According to the tables, for Z = 32, the allowed point group symmetries of the ions are <i>S</i><sub>6</sub> and <i>D</i><sub>3</sub>. Of these, the cation must have <i>S</i><sub>6</sub> symmetry, which is consistent with essentially octahedral coordination of the Cr by six NH<sub>3</sub> ligands, and the anion has <i>D</i><sub>3</sub> symmetry, which means it is a regular trigonal bipyramid with two axial and three equatorial ligands attached to Hg.</p>
+
+<aside class="right" style="margin-top:-15.3em;" epub:type="sidebar">
+<p class="sidebar">The subject of space groups is beyond the scope of this book. The space group symbol shows the type of unit cell centring (<i>F</i> means all-face-centred) and the combination of symmetry elements given as lower-case letters (mirror planes and glide planes) and numbers (rotation axes and screw axes). Some of the simpler space group symbols are explained more fully in later examples.</p>
+</aside>
+<p class="indent">This rather extreme case shows that sometimes a great deal can be deduced about the molecular shape, even before the full structure determination is carried out.</p>
+<figure class="figure-center-100">
+<img class="center" src="../images/fig1_17.jpg" alt="images"/>
+<figcaption class="figcaption-left-60"><b>Figs. 1.17</b> (margin) and <b>1.18</b> (left). The structures of the component ions of [Cr(NH<sub>3</sub>)<sub>6</sub>][HgCI<sub>5</sub>].</figcaption>
+</figure> 
+<p class="indent">&#x00A0;</p>
+<p class="indent">As a second example, the complex [(C<sub>4</sub>H<sub>9</sub>)<sub>4</sub>N]<sub>2</sub>[WO<sub>2</sub>Cl<sub>4</sub>] (formula mass 842.6) crystallizes from solution in 1,2-dichloroethane (CICH<sub>2</sub>CH<sub>2</sub>CI) to give monoclinic crystals, space group <i>P</i>2<sub>1</sub>/<i>n</i>, with <i>a</i> = 15.821, <i>b</i> = 17.117, <i>c</i> = 18.475 &#x00C5;, <i>&#x03B2;</i> = 101.14&#x00B0;. If all cell angles were 90&#x00B0;, as in the cubic example above, the cell volume would be <i>V</i> = <i>abc</i>; with just one non-90&#x00B0; angle, the volume is <i>V</i> = <i>abc</i>.sin(angle), here <i>abc</i>.sin<i>&#x03B2;</i>, which amounts to 4908.9 &#x00C5;<sup>3</sup>. The density <i>D</i> = 1.40 g cm<sup>-3</sup>. Following the same procedure as for the first example,</p>
+
+<table>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML" style="padding-left:3em;"> <mi>unit cell mass</mi> <mo>=</mo> <mi>density</mi> <mo>&#x00D7;</mo> <mi>cell volume</mi></math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML" style="padding-left:8.5em;">
+<mtext>&#x2009;</mtext>
+<mtext>&#x2009;</mtext> 
+<mo>=</mo>
+ <mn>1.40</mn>
+ <mo>&#x00D7;</mo>
+ <mn>4908.9</mn>
+ <mo>&#x00D7;</mo>
+ <msup>
+ <mn>10</mn>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>&#x2212;<!-- - --></mo>
+ <mn>24</mn>
+ </mrow>
+ </msup>
+ <mo>&#x00D7;</mo>
+ <mn>6.023</mn>
+ <mo>&#x00D7;</mo>
+ <msup>
+ <mn>10</mn>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>23</mn>
+ </mrow>
+ </msup>
+</math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML" style="padding-left:8.9em;"><mo>=</mo> <mn>4139</mn> <mi>daltons</mi></math>
+</td>
+</tr>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML" style="padding-left:8.3em;"><mi>Z</mi> <mo>=</mo> <mi>unit cell mass/formula mass</mi></math></td>
+</tr>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML" style="padding-left:8.9em;"> <mo>=</mo> <mn>4139</mn> <mrow class="MJX-TeXAtom-ORD"> <mo>/</mo> </mrow> <mn>842.6</mn> </math></td>
+</tr>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML" style="padding-left:8.9em;">
+ <mo>=</mo>
+ <mn>4.91</mn>
+</math>
+</td>
+</tr>
+</table>
+<p class="noindent" style="text-align:right; margin-top:-5.5em;margin-bottom:5.5em;" id="eq1.8">(1.8)</p>
+<a id="page_20" class="page" style="width:60%">Page 20, Chapter 1 The basis of the method</a>
+<p class="noindent">This presents a problem, since <i>Z</i> is not a whole number. The closest integer is 5, but <i>Z</i> = 5 is extremely unlikely for the monoclinic system, in which symmetry elements relate molecules in pairs, and in any case the experimental errors are not so large.</p>
+<aside class="right" style="margin-top:-4.8em;" epub:type="sidebar">
+<p class="sidebar">The space group <i>P</i>2<sub>1</sub>/<i>n</i> (an alternative setting for the conventional <i>P</i>2<sub>1</sub>/<i>c</i>, with a different choice of unit cell axes) is, in fact, the most common of all 230, accounting for roughly one-third of all known molecular crystal structures; its arrangement of symmetry elements provides a particularly effective packing of molecules of general shape. Fortunately, it is one of the space groups which gives a unique set of systematic absences in the diffraction pattern. The screw axis, parallel to the <i>b</i> axis, causes reflections 0<i>k</i>0 to be absent when <i>k</i> is odd; the glide plane, perpendicular to the <i>b</i> axis and with its glide direction along the <i>ac</i> face diagonal, causes reflections <i>h</i>0<i>l</i> to be absent when <i>h</i> + <i>l</i> is odd. The presence of the screw axis and the perpendicular <i>n</i>-glide plane are indicated in the space group symbol <i>P</i>2<sub>1</sub>/<i>n</i>, the capital letter <i>P</i> indicating a primitive (not centred) unit cell.</p>
+</aside>
+
+<p class="indent">If the experimental measurements (unit cell geometry and density) are correct, the answer to the problem must lie in the chemical formula, which has been assumed, not proved. To find the true formula mass instead of the assumed one, we must choose an appropriate integral value for <i>Z</i>, in this case 4, and work backwards, from what we know to what we do not.</p>
+<table>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" style="padding-left:8.5em;">
+ <mn>formula</mn>
+<mtext>&#x2009;</mtext>
+ <mn>mass</mn>
+ <mo>=</mo>
+ <mn>unit</mn>
+<mtext>&#x2009;</mtext>
+ <mn>cell</mn>
+<mtext>&#x2009;</mtext>
+ <mn>mass</mn>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>/</mo>
+ </mrow>
+ <mi>Z</mi>
+</math>
+</td>
+</tr>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML" style="padding-left:14.2em;">
+ <mo>=</mo>
+ <mn>4139</mn>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>/</mo>
+ </mrow>
+ <mn>4</mn>
+</math>
+</td>
+</tr>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML" style="padding-left:14.2em;">
+ <mo>=</mo>
+ <mn>1035</mn>
+<mtext>&#x2009;</mtext>
+ <mn>daltons</mn>
+</math>
+</td>
+</tr>
+</table>
+
+<p class="noindent" style="text-align:right; margin-top:-2.5em;margin-bottom:2.5em;" id="eq1.9">(1.9)</p>
+
+
+
+<p class="noindent">This is 192.4 greater than the previously assumed formula mass and the difference is, within reasonable experimental error, equal to the molecular mass for 2CICH<sub>2</sub>CH<sub>2</sub>CI (197.9). The true complete formula of the compound is, therefore, probably [(C<sub>4</sub>H<sub>9</sub>)<sub>4</sub>N]<sub>2</sub>[WO<sub>2</sub>CI<sub>4</sub>]-2CICH<sub>2</sub>CH<sub>2</sub>CI; for every two cations and one anion in the crystal structure, there are also two molecules of 1,2-dichloroethane solvent, incorporated during the crystallization. This gives a calculated density of 1.408 g cm<sup>&#x2013;3</sup>, in good agreement with the measured value.</p>
+
+<p class="indent">Such solvent of crystallization is by no means uncommon, and is certainly not restricted to the familiar case of water of crystallization in many salts obtained from aqueous solution (hydrates).</p>
+
+<aside class="right" style="margin-top:-2em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig1_19.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig1.19"><b>Fig. 1.19</b> The component ions and solvent molecules in the crystal structure of [(C<sub>4</sub>H<sub>9</sub>)<sub>4</sub>N]<sub>2</sub>[WO<sub>2</sub>Cl<sub>4</sub>]&#x00B7;2CICH<sub>2</sub>CH<sub>2</sub>CI<sub>2</sub>.</figcaption>
+</figure>
+</aside>
+
+
+<p class="indent">The expected value of <i>Z</i> for space group <i>P</i>2<sub>1</sub>/<i>n</i> is 4, and here we have eight cations, four anions and eight solvent molecules in each unit cell, so there are no requirements for any of these constituents to have imposed symmetry. At this stage we can deduce nothing about the shapes of the ions from symmetry arguments; this is more often the case than not.</p>
+
+<p class="indent">As a final example, which we shall consider further in Chapter 3, a compound [(18-crown-6)K][In(SCN)<sub>4</sub>(py)<sub>2</sub>] (where py is pyridine) can be obtained from solution in pyridine (which serves not only as a solvent, but also as a ligand to the indium atom). It crystallizes in the triclinic system with <i>a</i> = 8.941, <i>b</i> = 9.682, <i>c</i> = 13.113 &#x00C5;, <i>&#x03B1;</i> = 87.25, <i>&#x03B2;</i> = 72.33, <i>&#x03B3;</i> = 89.05&#x00B0;, giving <i>V</i> = 1080.3 &#x00C5;<sup>3</sup>. The compound is air-sensitive and there are other experimental difficulties in measuring the density. In fact, crystal densities are often not measured at all. Experience shows that, for a wide range of organic compounds and metal complexes with organic ligands, the average volume required for a molecule in a crystal structure is about 18 &#x00C5;<sup>3</sup> per non-hydrogen atom (hydrogen atoms are not counted). The proposed formula for this compound has 44 non-hydrogen atoms, so a volume of about 792 &#x00C5;<sup>3</sup> is expected for each cation-anion pair. This is rather less than the measured unit cell volume, but more than half of it, so the unit cell cannot contain more than one formula unit, and the proposed formula is incomplete (or incorrect): the cell volume is sufficient for one cation, one anion, and two or three molecules of pyridine. There are two possible triclinic space groups: <i>P</i>1, which has no symmetry other than pure translation, and <i>P</i><span class="over">1</span>, which has inversion symmetry. Of these, the centrosymmetric space group <i>P</i><span class="over">1</span> is far more common, except for structures of chiral molecules. In this space group, the asymmetric unit is half <a id="page_21" class="page">Page 21, Chapter 1 The basis of the method</a>the unit cell, the other half being related to it by inversion symmetry, so the expected value of <i>Z</i> is 2. Since this structure has <i>Z</i> = 1 (so there is only one cation and one anion in each unit cell), both the cation and the anion must themselves have symmetry, and must lie on inversion centres. Therefore, the [(18-crown-6)K]<sup>+</sup> cations and the [In(SCN)<sub>4</sub>(py)<sub>2</sub>]<sup>&#x2013;</sup> anions are both centrosymmetric. In the case of the anion, this means that identical ligands must occur in pairs <i>trans</i> to each other, with the indium atom sitting on the inversion centre. Hence we already know (assuming the proposed chemical formula is correct apart from additional solvent molecules, and that the much more common triclinic space group applies) that the pyridine ligands are <i>trans</i> to each other, not <i>cis</i>, one of the questions to be answered by carrying out the structure determination.</p>
+<aside class="right" style="margin-top:-28em;" epub:type="sidebar">
+<p class="sidebar">The equation for a triclinic unit cell volume, involving all six cell parameters, is much more complicated than those given for the first two examples.</p>
+</aside>
+<p class="indent">There are, of course, numerous instances in which the proposed chemical formula and the experimentally measured unit cell volume are just not compatible, with no possible integer value of <i>Z</i>, even when possible solvent of crystallization is included. In such cases, these preliminary measurements and calculations show that the material being studied is simply not what was thought. Sometimes it is starting material or a decomposition product, but sometimes it is a totally unexpected and unknown material of considerable interest. Without any other non-crystallographic information, only a full structure determination based on the measured intensities will show the answer, unless the unit cell can be recognized as that of an already known crystal structure (perhaps with the help of a computer database, as described in <a href="Chapter04.xhtml">Chapter 4</a>).</p>
+
+<aside class="right" style="margin-top:-32em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig1_20.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig1.20"><b>Fig. 1.20</b> The cation and anion of [(18-crown-6)K][In(SCN)<sub>4</sub>(py)<sub>2</sub>].</figcaption>
+</figure>
+</aside>
+
+<p class="indent">Further examples of these calculations, in the form of problems for solution by the reader, can be found at the end of this chapter (<a href="Chapter01.xhtml#sec1.8">section 1.8</a>).</p>
+</section>
+</section>
+<section id="sec1.6" epub:type="chapter">
+<h2 class="h2">1.6<span class="space">&#160;</span>The intensities of diffracted X-rays</h2>
+<section id="sec1.6.1" epub:type="chapter">
+<h3 class="h3"><b>Background and notation</b></h3>
+
+
+<p class="noindent">The intensities of the diffraction pattern and the arrangement of atoms in the unit cell of the crystal structure are related to each other by Fourier transformation: the diffraction pattern is the Fourier transform of the electron density, and the electron density is itself the Fourier transform of the diffraction pattern.</p>
+
+<aside class="right" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig1_21.jpg" alt="images"/>
+<figcaption class="figure-aside-center" id="fig1.21"><b>Fig. 1.21</b> Amplitudes and phases of two waves.</figcaption>
+</figure>
+</aside>
+<p class="indent">The mathematical equations for crystallographic Fourier transformations have a fearsome appearance, but they can be understood in terms of the physical processes which they represent, with the help of the optical analogues presented earlier. Much of the difficulty presented by the Fourier transform equations comes from their use of complex number notation. This can be regarded as just a convenient way of manipulating two numbers with only one symbol. The two numerical values associated with each reflection in a crystal diffraction pattern are the <i>amplitude</i> |<i>F</i>| and the phase <i>&#x03D5;</i> of the diffracted wave. <a href="Chapter01.xhtml#fig1.21">Figure 1.21</a> shows two such waves; the amplitude |<i>F</i>| is represented by the height of the wave, and the phase <i>&#x03D5;</i> by the horizontal shift relative to some chosen origin.</p>
+
+<aside class="right" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig1_22.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig1.22"><b>Fig. 1.22</b> The same two waves as in <a href="Chapter01.xhtml#fig1.21">Fig. 1.21</a>, represented as vectors.</figcaption>
+</figure>
+</aside>
+
+<p class="indent">Another, more compact, way of representing the same waves is shown in <a href="Chapter01.xhtml#fig1.22">Fig. 1.22</a>. Each wave is represented by an arrow with its tail at the centre of the diagram (the origin); the length of the arrow is proportional to the wave <a id="page_22" class="page">Page 22, Chapter 1 The basis of the method</a>amplitude |<i>F</i>|, and the direction shows the phase <i>&#x03D5;</i>, with a zero phase angle on the horizontal axis to the right and other angles (0-360&#x00B0; or 0-2<i>&#x03C0;</i> radians) measured anti-clockwise from there. This is a vector representation: a vector <b>F</b> has both magnitude |<i>F</i>| and direction <i>&#x03D5;</i>, like the arrows in the diagram.</p>
+
+<p class="indent">Instead of the two values of length and direction from the origin, each of the arrowhead positions could be specified by two coordinates on the horizontal (<i>A</i>) and vertical (<i>B</i>) axes. The mathematical relationship between the vector and coordinate representations is in terms of the Pythagoras theorem and simple trigonometry (<a href="Chapter01.xhtml#fig1.23">Fig. 1.23</a>).</p>
+
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig1_23.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig1.23"><b>Fig. 1.23</b> The relationship between vector and coordinate representations.</figcaption>
+</figure>
+</aside>
+<table style="margin-top:1em; margin-bottom:1em;width:60%">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mo stretchy="false">&#x2223;<!-- | --></mo>
+ <mi>F</mi>
+ <msup>
+ <mo>&#x2223;<!-- | --></mo>
+ <mn>2</mn>
+ </msup>
+ <mo>=</mo>
+ <msup>
+ <mi>A</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msup>
+ <mo>+</mo>
+ <msup>
+ <mi>B</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msup>
+ <mo>;</mo>
+<mtext>&#x2009;</mtext>
+<mtext>&#x2009;</mtext>
+<mtext>&#x2009;</mtext>
+<mtext>&#x2009;</mtext>
+<mtext>&#x2009;</mtext>
+ <mi>tan</mi>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mi>&#x03D5;<!-- ? --></mi>
+ <mo>=</mo>
+ <mi>B</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>/</mo>
+ </mrow>
+ <mi>A</mi>
+</math>
+
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"  style="margin-left:-0.1em;">
+ <mi>A</mi>
+ <mo>=&#x2223;<!-- | --></mo>
+ <mi>F</mi>
+ <mo>&#x2223;<!-- | --></mo>
+ <mi>cos</mi>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mi>&#x03D5;<!-- ? --></mi>
+ <mo>;</mo>
+<mtext>&#x2009;</mtext>
+<mtext>&#x2009;</mtext>
+<mtext>&#x2009;</mtext>
+<mtext>&#x2009;</mtext>
+<mtext>&#x2009;</mtext>
+<mtext>&#x2009;</mtext>
+<mtext>&#x2009;</mtext>
+<mtext>&#x2009;</mtext>
+<mtext>&#x2009;</mtext>
+<mtext>&#x2009;</mtext>
+ <mi>B</mi>
+ <mo>=&#x2223;<!-- | --></mo>
+ <mi>F</mi>
+ <mo>&#x2223;<!-- | --></mo>
+ <mi>sin</mi>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mi>&#x03D5;<!-- ? --></mi>
+</math>
+</p></td>
+<td style="text-align:right; padding-top:1em;" id="eq1.10">(1.10)</td>
+</tr>
+</table>
+<p class="noindent">Forming an image of electron density from a diffraction pattern is the equivalent of the operation of a microscope lens system and involves adding together waves with their correct relative amplitudes and phases. This is shown in wave terms for just two waves in <a href="Chapter01.xhtml#fig1.24">Fig. 1.24</a> and in vector terms in</p>
+
+
+<figure class="figure-center-60">
+<img src="../images/fig1_24.jpg" alt="images"/>
+<figcaption class="figcaption"  style="text-align:center;" id="fig1.24"><b>Fig. 1.24</b> Addition of two waves to give a resultant wave.</figcaption>
+</figure>
+
+
+<aside class="right" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig1_25.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig1.25"><b>Fig. 1.25</b> The same wave addition as in <a href="Chapter01.xhtml#fig1.24">Fig. 1.24</a>, as a vector representation.</figcaption>
+</figure>
+</aside>
+
+<p class="noindent">Fig. 1.25. The <i>A</i> component of the resultant combined vector is simply the sum of the <i>A</i> components of the individual vectors, and similarly for the <i>B</i> components. Then the final amplitude |<i>F</i>| and phase <i>&#x03D5;</i> can be calculated from the final <i>A</i> and <i>B</i> by <a href="Chapter01.xhtml#eq1.10">equations 1.10</a>. This is true for the combination of any number of waves.</p>
+<table style="margin-top:1em;margin-bottom:1em;width:60%">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>combined</mi>
+<mo>&#x00A0;</mo>
+ <mi>A</mi>
+ <mo>=</mo>
+ <msub>
+ <mi>A</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>1</mn>
+ </mrow>
+ </msub>
+ <mo>+</mo>
+ <msub>
+ <mi>A</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msub>
+ <mo>+</mo>
+ <mo>.</mo>
+ <mo>.</mo>
+ <mo>.</mo>
+ <mo>+</mo>
+ <msub>
+ <mi>A</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>n</mi>
+ </mrow>
+ </msub>
+ <mo>=</mo>
+ <munderover>
+ <mo>&#x2211;<!-- ? --></mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>i</mi>
+ <mo>=</mo>
+ <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+ </munderover>
+ <msub>
+ <mi>A</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>i</mi>
+ </mrow>
+ </msub>
+</math>
+
+
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>combined</mi>
+ <mo>&#x00A0;</mo>
+<mi>B</mi>
+ <mo>=</mo>
+ <msub>
+ <mi>B</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>1</mn>
+ </mrow>
+ </msub>
+ <mo>+</mo>
+ <msub>
+ <mi>B</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msub>
+ <mo>+</mo>
+ <mo>.</mo>
+ <mo>.</mo>
+ <mo>.</mo>
+ <mo>+</mo>
+ <msub>
+ <mi>B</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>n</mi>
+ </mrow>
+ </msub>
+ <mo>=</mo>
+ <munderover>
+ <mo>&#x2211;<!-- ? --></mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>i</mi>
+ <mo>=</mo>
+ <mn>1</mn>
+ </mrow>
+ <mi>n</mi>
+ </munderover>
+ <msub>
+ <mi>B</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>i</mi>
+ </mrow>
+ </msub>
+</math>
+
+</p></td>
+<td style="text-align:right; padding-top:2.5em;" id="eq1.11">(1.11)</td>
+</tr>
+</table>
+<p class="noindent">Clearly, the <i>A</i> and <i>B</i> components must be summed separately and not mixed up together during the process until the sums are complete. The <i>A</i> components are terms involving cosines of phase angles, and the <i>B</i> components are analogous terms involving sines of phase angles (<a href="Chapter01.xhtml#eq1.10">equation 1.10</a>).</p>
+<p class="indent">In practice, computer programs to calculate crystallographic Fourier transforms do treat the <i>A</i> and <i>B</i> components of the individual reflections separately in this way. For convenience in showing the mathematical relationships, however, avoiding the need for two versions of every equation, the two components can be represented by a single symbol using complex number notation. A complex number has two parts, which are kept separate by multiplying one of them by the symbol <i>i</i>. A full treatment of complex number theory is beyond the scope or requirement of our subject. Here we need only a <a id="page_23" class="page">Page 23, Chapter 1 The basis of the method</a>few of its most important features. The &#x2018;non-<i>i</i>-terms&#x2019; and the &#x2018;<i>i</i>-terms&#x2019; are equivalent to two orthogonal coordinates, the components of two-dimensional vectors (the horizontal and vertical axes in <a href="Chapter01.xhtml#fig1.22">Figs 1.22</a> and <a href="Chapter01.xhtml#fig1.25">1.25</a>). Multiplication by <i>i</i> is equivalent to rotating a vector by 90&#x00B0; anticlockwise, so multiplying by <i>i</i><sup>2</sup> is a 180&#x00B0; rotation which turns a vector <b>F</b> into its opposite vector &#x2013;<b>F</b>. So we can write one symbol <i>F</i> for a wave, where</p>
+<table style="margin-top:1em; margin-bottom:1em;width:60%">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mi>F</mi> <mo>=</mo> <mi>A</mi> <mo>+</mo> <mi>i</mi> <mi>B</mi> </math></p></td>
+<td style="text-align:right;" id="eq1.12">(1.12)</td>
+</tr>
+</table>
+<aside class="right" style="margin-top:-5.5em;" epub:type="sidebar">
+<p class="sidebar">This means, logically, that <i>i</i> is the square root of &#x2013;1, a difficult concept which leads to the unhelpful and misleading description (as far as our subject is concerned) of the two components as &#x2018;real&#x2019;and &#x2018;imaginary&#x2019;: they are, in fact, both equally real!</p>
+</aside>
+<p class="noindent">From the previous relationship between the vector and coordinate representations, and using a property of complex numbers whereby <i>e<sup>i&#x03D5;</sup></i> = cos<i>&#x03D5;</i> + <i>i</i>sin<i>&#x03D5;</i>, the above equation becomes</p>
+<table>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML" style="padding-left:9.5em;">
+ <mi>F</mi>
+ <mo>=&#x2223;<!-- | --></mo>
+ <mi>F</mi>
+ <mo>&#x2223;<!-- | --></mo>
+ <mi>cos</mi>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mi>&#x03D5;<!-- ? --></mi>
+ <mo>+</mo>
+ <mi>i</mi>
+ <mo>&#x2223;<!-- | --></mo>
+ <mi>F</mi>
+ <mo>&#x2223;<!-- | --></mo>
+ <mi>sin</mi>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mi>&#x03D5;<!-- ? --></mi>
+</math></td>
+</tr>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML" style="padding-left:10.1em;">
+ <mo>=&#x2223;<!-- | --></mo>
+ <mi>F</mi>
+ <mo>&#x2223;<!-- | --></mo>
+ <mo stretchy="false">(</mo>
+ <mi>cos</mi>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mi>&#x03D5;<!-- ? --></mi>
+ <mo>+</mo>
+ <mi>i</mi>
+ <mi>sin</mi>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mi>&#x03D5;<!-- ? --></mi>
+ <mo stretchy="false">)</mo>
+</math></td>
+</tr>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML" style="padding-left:8.3em;">
+ <mi>so</mi>
+<mtext>&#x2009;</mtext>
+ <mi>F</mi>
+ <mo>=&#x2223;<!-- | --></mo>
+ <mi>F</mi>
+ <mo>&#x2223;<!-- | --></mo>
+ <mo>.</mo>
+ <msup>
+ <mi>e</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>i</mi>
+ <mi>&#x03D5;<!-- ? --></mi>
+ </mrow>
+ </msup>
+</math>
+</td>
+</tr>
+</table>
+
+<p class="noindent" style="text-align:right; margin-top:-2.5em;margin-bottom:2.1em;" id="eq1.13">(1.13)</p>
+
+<p class="noindent">and we have the amplitude |<i>F</i>| and phase <i>&#x03D5;</i> represented by the one symbol <i>F</i>, a complex number. Remember that each reflection, or diffracted wave, is labelled by its three indices <i>hkl</i>, so for each reflection</p>
+<table style="margin-top:1em; margin-bottom:1em;width:60%">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>F</mi>
+ <mo stretchy="false">(</mo>
+ <mi>h</mi>
+ <mi>k</mi>
+ <mi>l</mi>
+ <mo stretchy="false">)</mo>
+ <mo>=&#x2223;<!-- | --></mo>
+ <mi>F</mi>
+ <mo stretchy="false">(</mo>
+ <mi>h</mi>
+ <mi>k</mi>
+ <mi>l</mi>
+ <mo stretchy="false">)</mo>
+ <mo>&#x2223;<!-- | --></mo>
+ <mo>.</mo>
+ <mi>exp</mi>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mo stretchy="false">[</mo>
+ <mi>i</mi>
+ <mi>&#x03D5;<!-- ? --></mi>
+ <mo stretchy="false">(</mo>
+ <mi>h</mi>
+ <mi>k</mi>
+ <mi>l</mi>
+ <mo stretchy="false">)</mo>
+ <mo stretchy="false">]</mo>
+</math>
+</p></td>
+<td style="text-align:right; padding-top:0em;" id="eq1.14">(1.14)</td>
+</tr>
+</table>
+<aside class="right" style="margin-top:-7em;" epub:type="sidebar">
+<p class="sidebar">To avoid cramped superscripts, e<sup>i&#x03D5;</sup>can also be written as exp(<i>i&#x03D5;</i>). We adopt this notation from here on.</p>
+</aside>
+<p class="noindent"><i>F</i>(<i>hkl</i>) is called the <i>structure factor</i> of the reflection with indices <i>h</i>, <i>k</i>, and <i>l</i>.</p>
+</section>
+<section id="sec1.6.2" epub:type="chapter">
+<h3 class="h3"><b>The forward Fourier transform (the diffraction experiment)</b></h3>
+<p class="noindent">The diffraction pattern is the <i>Fourier transform</i> (FT) of the electron density. In mathematics:</p>
+<table style="margin-top:1em; margin-bottom:1em;width:60%">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>F</mi>
+ <mo stretchy="false">(</mo>
+ <mi>h</mi>
+ <mi>k</mi>
+ <mi>l</mi>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <msub>
+ <mo>&#x222B;<!-- ? --></mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>c</mi>
+ <mi>e</mi>
+ <mi>l</mi>
+ <mi>l</mi>
+ </mrow>
+ </msub>
+ <mi>&#x03C1;<!-- ? --></mi>
+ <mo stretchy="false">(</mo>
+ <mi>x</mi>
+ <mi>y</mi>
+ <mi>z</mi>
+ <mo stretchy="false">)</mo>
+ <mo>.</mo>
+ <mi>exp</mi>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mo stretchy="false">[</mo>
+ <mn>2</mn>
+ <mi>&#x03C0;<!-- p --></mi>
+ <mi>i</mi>
+ <mo stretchy="false">(</mo>
+ <mi>h</mi>
+ <mi>x</mi>
+ <mo>+</mo>
+ <mi>k</mi>
+ <mi>y</mi>
+ <mo>+</mo>
+ <mi>l</mi>
+ <mi>z</mi>
+ <mo stretchy="false">)</mo>
+ <mo stretchy="false">]</mo>
+ <mi>d</mi>
+ <mi>V</mi>
+</math></p></td>
+<td style="text-align:right; padding-top:1em;" id="eq1.15">(1.15)</td>
+</tr>
+</table>
+
+<p class="noindent">The structure factor (amplitude and phase) for reflection <i>hkl</i> is given by taking the value of the electron density at each point in the unit cell, <i>&#x03C1;</i>(<i>xyz</i>) multiplying it by the complex number exp[2<i>&#x03C0;i</i>(<i>hx</i> + <i>ky</i> + <i>lz</i>], and adding up (integrating over the whole cell volume, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+ <msub>
+ <mo>&#x222B;<!-- ? --></mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>c</mi>
+ <mi>e</mi>
+ <mi>l</mi>
+ <mi>l</mi>
+ </mrow>
+ </msub>
+ <mo>.</mo>
+ <mo>.</mo>
+ <mo>.</mo>
+ <mi>d</mi>
+ <mi>v</mi>
+</math>) these values. Positions in cell the unit cell are measured from one comer (the origin) and the coordinates <i>x</i>, <i>y, z</i> are in fractions of the corresponding cell edges <i>a</i>, <i>b</i>, <i>c</i>: for example, the very centre of the unit cell has coordinates <i>x</i> = <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"> <mfrac> <mn>1</mn> <mn>2</mn> </mfrac> </math>, <i>y</i> = <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"> <mfrac> <mn>1</mn> <mn>2</mn> </mfrac> </math>, <i>z</i> = <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"> <mfrac> <mn>1</mn> <mn>2</mn> </mfrac> </math>. This calculation can be carried out mathematically to mimic the observed experimental diffraction of X-rays by a crystal. It needs to be done for each reflection and it produces a set of calculated structure factors, each with an amplitude |<i>F</i>(<i>hkl</i>)| and a phase <i>&#x03D5;</i>(<i>hkl</i>). In the experiment itself, of course, only the amplitudes are obtained.</p>
+<p class="indent">This equation shows how each bit of the structure contributes to every reflection. Since all the unit cells are identical, the total diffraction pattern of the crystal is just the Fourier transform of the contents of one unit cell multiplied by the number of unit cells in the crystal, so there should be just a simple scale factor between the observed and calculated sets of amplitudes.</p>
+<p class="indent">The equation in this form is not convenient for calculation, because it contains integration and a continuous function <i>&#x03C1;</i>(<i>xyz</i>). Summation of a finite number of terms is easier. This can be achieved by expressing the electron density instead in terms of individual atoms.</p>
+<p class="indent">One atom scatters X-rays rather like a single circular hole scatters light passing through it (<a href="Chapter01.xhtml#fig1.14">Fig. 1.14</a>), except that the scattering is by electrons <a id="page_24" class="page">Page 24, Chapter 1 The basis of the method</a>throughout the atom and not just on its edges; this means no outer rings of brightness are formed. In the forward direction (2<i>&#x03B8;</i> = 0&#x00B0;) all the electrons scatter X-rays exactly in phase, but at all other angles there are partial destructive interference effects, so the intensity falls off as <i>&#x03B8;</i> increases. The variation of intensity with angle (usually shown as a function of (sin<i>&#x03B8;</i>)/<i>&#x03BB;</i>, so that it is the same for X-rays of different wavelengths) is called the atomic scattering factor <i>f</i>(<i>&#x03B8;</i>) and has the general form shown in <a href="Chapter01.xhtml#fig1.26">Fig. 1.26</a>. It is measured in units of electrons; <i>f</i>(0), the scattering factor for zero deflection, is equal to the atomic number. These functions are known for atoms and ions of all elements and are obtained from quantum mechanical calculations; they are available in standard reference tables and incorporated into many crystal-lographic computer programs.</p>
+<aside class="right" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="figure-aside-left">
+<img src="../images/fig1_26.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig1.26"><b>Fig. 1.26</b> X-ray atomic scattering factors for carbon and oxygen.</figcaption>
+</figure> 
+</aside>
+<p class="indent">Atoms in crystalline solids, however, are not stationary; they vibrate, to an extent which depends on the temperature, and this effectively spreads out the atomic electron density and increases the interference effects. The atomic scattering factor falls off more rapidly with increasing angle, and is not the same for all atoms of the same element, because they generally have different amounts of vibration unless they are symmetry-equivalent. For an atom which vibrates equally in all directions (isotropic vibration), the effect is to multiply the atomic scattering factor by a term containing an <i>isotropic displacement parameter U</i> (see <a href="Chapter01.xhtml#fig1.27">Fig. 1.27</a>), which represents a mean-square amplitude of vibration for the atom, a measure of how much it is vibrating.</p>
+<aside class="right" style="margin-top:-2em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig1_27.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig1.27"><b>Fig. 1.27</b> The effect of atomic vibration on X-ray scattering factors; in this example, 8<i>&#x03C0;</i><sup>2</sup><i>U</i> = 4 &#x00C5;<sup>2</sup>.</figcaption>
+</figure> 
+</aside>
+
+<table style="margin-top:1em; margin-bottom:1em;width:60%">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msup>
+ <mi>f</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <msup>
+ <mi></mi>
+ <mo>&#x2032;</mo>
+ </msup>
+ </mrow>
+ </msup>
+ <mo stretchy="false">(</mo>
+ <mi>&#x03B8;<!-- ? --></mi>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <mi>f</mi>
+ <mo stretchy="false">(</mo>
+ <mi>&#x03B8;<!-- ? --></mi>
+ <mo stretchy="false">)</mo>
+ <mo>.</mo>
+ <mi>exp</mi>
+ <mrow>
+ <mo>(</mo>
+ <mfrac>
+ <mrow>
+ <mo>&#x2212;<!-- - --></mo>
+ <mn>8</mn>
+ <msup>
+ <mi>&#x03C0;<!-- p --></mi>
+ <mn>2</mn>
+ </msup>
+ <mi>U</mi>
+ <msup>
+ <mi>sin</mi>
+ <mn>2</mn>
+ </msup>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mi>&#x03B8;<!-- ? --></mi>
+ </mrow>
+ <msup>
+ <mi>&#x03BB;<!-- ? --></mi>
+ <mn>2</mn>
+ </msup>
+ </mfrac>
+ <mo>)</mo>
+ </mrow>
+</math>
+</p></td>
+<td style="text-align:right; padding-top:1em;" id="eq1.16">(1.16)</td>
+</tr>
+</table>
+<p class="noindent">Note that <i>U</i> has units &#x00C5;<sup>2</sup> and the extra term has a value &#x003C; l.The larger the value of <i>U</i>, the more the curve falls off at higher Bragg angles.</p>
+<p class="indent">With discrete atoms instead of a continuous electron density function, the forward Fourier transform takes the form</p>
+<table style="margin-top:1em; margin-bottom:1em;width:60%">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:5%"/>
+</colgroup>
+<tr>
+<td><p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>f</mi>
+ <mo stretchy="false">(</mo>
+ <mi>h</mi>
+ <mi>k</mi>
+ <mi>l</mi>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <munder>
+ <mo>&#x03A3;<!-- ? --></mo>
+ <mi>j</mi>
+ </munder>
+ <msub>
+ <mi>f</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>j</mi>
+ </mrow>
+ </msub>
+ <mo stretchy="false">(</mo>
+ <mi>&#x03B8;<!-- ? --></mi>
+ <mo stretchy="false">)</mo>
+ <mo>.</mo>
+ <mi>exp</mi>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mo stretchy="false">(</mo>
+ <mo>&#x2212;<!-- - --></mo>
+ <mn>8</mn>
+ <msup>
+ <mi>&#x03C0;<!-- p --></mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msup>
+ <msub>
+ <mi>U</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>j</mi>
+ </mrow>
+ </msub>
+ <msup>
+ <mi>sin</mi>
+ <mn>2</mn>
+ </msup>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mi>&#x03B8;<!-- ? --></mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>/</mo>
+ </mrow>
+ <msup>
+ <mi>&#x03BB;<!-- ? --></mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msup>
+ <mo stretchy="false">)</mo>
+ <mo>.</mo>
+ <mi>exp</mi>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mo stretchy="false">[</mo>
+ <mn>2</mn>
+ <mi>&#x03C0;<!-- p --></mi>
+ <mi>i</mi>
+ <mo stretchy="false">(</mo>
+ <mi>h</mi>
+ <msub>
+ <mi>x</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>j</mi>
+ </mrow>
+ </msub>
+ <mo>+</mo>
+ <mi>k</mi>
+ <msub>
+ <mi>y</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>j</mi>
+ </mrow>
+ </msub>
+ <mo>+</mo>
+ <mi>l</mi>
+ <msub>
+ <mi>z</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>j</mi>
+ </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <mo stretchy="false">]</mo>
+</math>
+</p></td>
+<td style="text-align:right; padding-top:0em;" id="eq1.17">(1.17)</td>
+</tr>
+</table>
+<p class="indent"><span class="space"><b>1</b></span>&#x00A0;&#x00A0;&#160;&#160;&#160;&#160;<b>2</b>&#x00A0;&#x00A0;&#160;&#160;&#160;<b>3</b>&#x00A0;&#x00A0;&#x00A0;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span class="space"><b>4</b></span> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span class="space"><b>5</b></span></p>
+<p class="noindent">The summation is made over all the atoms in the unit cell, each of which has its appropriate atomic scattering factor <i>f<sub>i</sub></i> (a function of the Bragg angle <i>&#x03B8;</i>, a displacement parameter <i>U<sub>j</sub></i>, and coordinates (<i>x</i><sub>j</sub>, <i>y</i><sub>j</sub>, <i>z</i><sub>j</sub>) relative to the unit cell origin. This summation must be carried out for every diffracted wave <i>F</i>(<i>hkl</i>).</p>
+<p class="indent">Although <a href="Chapter01.xhtml#eq1.17">equation 1.17</a> looks complicated, it can be readily understood in terms of the physical process it represents. Every atom scatters X-rays falling on it (terms <b>3</b> and <b>4</b> in the equation). In any particular direction (<i>hkl</i>), these separate scattered waves from each atom have different relative phases which depend on the relative positions of the atoms (term <b>5</b>), and the total diffracted wave in that direction (term <b>1</b>) is just the resultant sum (term <b>2</b>) of the X-rays scattered by the individual atoms. The equation just represents the combination or addition of many waves to give one resultant wave in each direction; the graphical equivalent for two waves was given in <a href="Chapter01.xhtml#fig1.24">Fig. 1.24</a>.</p>
+<aside class="right" style="margin-top:-12em;" epub:type="sidebar">
+<p class="sidebar">Note that there is a diffracted wave <i>F</i>(000), for which <i>&#x03B8;</i> = 0 and so |<i>F</i>(000)| is the sum of all the zero-angle atomic scattering factors; this is just the total number of electrons in one unit cell. The intensity of this wave cannot be measured experimentally, because it coincides with the majority of the incident X-ray beam, which passes undeflected through the crystal. All other |<i>F</i>(<i>hkl</i>)| values are smaller than |<i>F</i>(000)|, which represents all the atoms scattering together cooperatively.</p>
+</aside>
+</section>
+<section id="sec1.6.3" epub:type="chapter">
+<h3 class="h3"><b>The reverse Fourier transform (the recombination calculation)</b></h3>
+<p class="noindent">The electron density is the <i>reverse Fourier transform</i> (<b>FT</b><sup>-1</sup>) of the diffraction pattern. Because the diffraction pattern of a crystal consists of discrete <a id="page_25" class="page">Page 25, Chapter 1 The basis of the method</a>reflections rather than a diffuse pattern, this Fourier transform is a summation, not an integral.</p>
+<table>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML" style="padding-left:-3em;width:60%">
+ <mi>&#x03C1;<!-- ? --></mi>
+ <mo stretchy="false">(</mo>
+ <mi>xyz</mi>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <mfrac>
+ <mn>1</mn>
+ <mi>V</mi>
+ </mfrac>
+ <munder>
+ <mo>&#x2211;<!-- ? --></mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>h</mi>
+ <mo>,</mo>
+ <mi>k</mi>
+ <mo>,</mo>
+ <mi>l</mi>
+ </mrow>
+ </munder>
+ <mi>F</mi>
+ <mo stretchy="false">(</mo>
+ <mi>hkl</mi>
+ <mo stretchy="false">)</mo>
+ <mo>.</mo>
+ <mi>exp</mi>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mo stretchy="false">[</mo>
+ <mo>&#x2212;<!-- - --></mo>
+ <mn>2</mn>
+ <mi>&#x03C0;<!-- p --></mi>
+ <mi>i</mi>
+ <mo stretchy="false">(</mo>
+ <mi>h</mi>
+ <mi>x</mi>
+ <mo>+</mo>
+ <mi>k</mi>
+ <mi>y</mi>
+ <mo>+</mo>
+ <mi>l</mi>
+ <mi>z</mi>
+ <mo stretchy="false">)</mo>
+ <mo stretchy="false">]</mo>
+</math>
+</td>
+</tr>
+<tr>
+<td>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>or</mi>
+ <mo>&#x00A0;</mo>
+ <mi>&#x03C1;<!-- ? --></mi>
+ <mo stretchy="false">(</mo>
+ <mi>xyz</mi>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <mfrac>
+ <mn>1</mn>
+ <mi>V</mi>
+ </mfrac>
+ <munder>
+ <mo>&#x2211;<!-- ? --></mo>
+ <mrow class="MJX-TeXAtom-ORD">
+  <mi>h</mi>
+ <mo>,</mo>
+ <mi>k</mi>
+ <mo>,</mo>
+ <mi>l</mi>
+ </mrow>
+ </munder>
+ <mo>&#x2223;<!-- | --></mo>
+ <mi>F</mi>
+ <mo stretchy="false">(</mo>
+ <mi>hkl</mi>
+ <mo stretchy="false">)</mo>
+ <mo>&#x2223;<!-- | --></mo>
+ <mo>.</mo>
+ <mi>exp</mi>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mo stretchy="false">[</mo>
+ <mi>i</mi>
+ <mi>&#x03D5;<!-- ? --></mi>
+ <mo stretchy="false">(</mo>
+ <mi>hkl</mi>
+ 
+ <mo stretchy="false">)</mo>
+ <mo stretchy="false">]</mo>
+ <mo>.</mo>
+ <mi>exp</mi>
+ <mo>&#x2061;<!-- ? --></mo>
+ <mo stretchy="false">[</mo>
+ <mo>&#x2212;<!-- - --></mo>
+ <mn>2</mn>
+ <mi>&#x03C0;<!-- p --></mi>
+ <mi>i</mi>
+ <mo stretchy="false">(</mo>
+ <mi>h</mi>
+ <mi>x</mi>
+ <mo>+</mo>
+ <mi>k</mi>
+ <mi>y</mi>
+ <mo>+</mo>
+ <mi>l</mi>
+ <mi>z</mi>
+ <mo stretchy="false">)</mo>
+ <mo stretchy="false">]</mo>
+</math>
+</td>
+</tr>
+</table>
+
+
+<p class="noindent" style="text-align:right; margin-top:-4.1em;margin-bottom:2.8em;" id="eq1.18">(1.18)</p>
+
+<p class="indent" style="margin-bottom:0.8em;">&#160;&#160;&#160;&#160;&#160;&#160;<span class="space"><b>1</b></span>&#x00A0;&#x00A0;&#160;&#160;&#160;&#160;<b>2</b>&#x00A0;&#x00A0;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<b>3</b>&#x00A0;&#x00A0;&#x00A0;<span class="space">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<b>4</b></span> &#x00A0;&#x00A0;&#x00A0;&#x00A0;<span class="space">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<b>5</b></span></p>
+<p class="noindent">Remember that <i>F</i>(<i>hkl</i>) is a complex number, containing both amplitude and phase information, as is shown explicitly in the second version. The term 1/<i>V</i> is necessary in order to give the correct units (structure factors, like atomic scattering factors, have units of electrons, but electron density is electrons per &#x00C5;<sup>3</sup>.</p>
+<aside class="right" style="margin-top:-5.9em;" epub:type="sidebar">
+<p class="sidebar">The forward and reverse Fourier transforms differ in that one has a negative sign inside the exponential term.</p>
+</aside>
+
+<p class="indent">The summation is performed over all values of <i>h</i>, <i>k</i>, and <i>l</i>, i.e. all the reflections in the diffraction pattern contribute to it. In practice, reflections are measured only to a certain maximum Bragg angle, but this is usually unimportant because the higher angle reflections are weaker and so contribute relatively little to the sums. The summation must be carried out for many different coordinates <i>x</i>, <i>y</i>, <i>z</i> in order to show the variation of electron density in the unit cell and hence locate the atoms where the electron density is concentrated in peaks.</p>
+<aside class="right" style="margin-top:-9.6em;" epub:type="sidebar">
+<p class="sidebar">The unmeasured term <i>F</i>(000) must also be included; it is equal to the total number of electrons in one unit cell.</p>
+</aside>
+<p class="indent">As for the forward Fourier transform, this equation is readily understood in terms of the (unachievable!) physical process it represents. The image of the electron density (<b>1</b>), which originally generated the diffraction pattern, is obtained by adding together (<b>2</b>) all the diffracted beams, with their correct amplitudes (<b>3</b>) and phases (<b>4,5</b>); the correct relative phases here include the intrinsic phases of the waves themselves, relative to the original incident beam (<b>4</b>), and an extra phase shift appropriate to each geometrical position in the image relative to the unit cell origin (<b>5</b>).</p>
+<p class="indent">The relative phase shifts (<b>5</b>) can be calculated as required, but the intrinsic phases <i>&#x03D5;</i>(<i>hkl</i>) of the different reflections are unknown from the diffraction experiment. This means that it is not possible simply to calculate the reverse Fourier transform once the diffraction pattern has been measured. Here, once again, in the mathematical basis of the method we see the nature of the &#x2018;phase problem&#x2019;.</p>
+</section>
+</section>
+<section id="sec1.7" epub:type="chapter">
+<h2 class="h2"><b>1.7<span class="space">&#x00A0;</span>Sources of X-rays</b></h2>
+<p class="noindent">So far, uses of X-rays have been discussed, but nothing about how they are produced. Details are not important for our purposes, and only a brief outline is given here for completeness.</p>
+<p class="indent">In most laboratories the standard source of X-rays is an &#x2018;<i>X-ray tube</i>&#x2019; (<a href="Chapter01.xhtml#fig1.28">Fig. 1.28</a>). This is an evacuated enclosure of glass and metal construction which produces electrons by passing an electrical current through a wire filament, accelerates them to a high velocity by an electrical potential of typically 40 000&#x2013;60 000 volts across a few millimetres, then stops them dead with a water-cooled metal block. Most of the electron kinetic energy is converted to heat and wasted, but a small proportion generates X-rays by interaction with the target metal atoms. Among other effects occurring, if an electron in a core atomic orbital is ejected (ionized), an electron from a higher orbital can take its <a id="page_26" class="page">Page 26, Chapter 1 The basis of the method</a>place and the drop in energy produces emission of radiation of a definite frequency and wavelength (&#x2206;<i>E</i> = <i>hv</i> = <i>hc</i>/<i>&#x03BB;</i>). Several such transitions are possible, so the output of radiation from the target consists of a series of intense sharp maxima, superimposed on a broad-spectrum background of radiation from non-quantum processes (<a href="Chapter01.xhtml#fig1.29">Fig. 1.29</a>). One particular peak, usually the most intense, can be selected and the rest of the output suppressed by exploiting the Bragg equation: the beam of radiation falls on a single crystal of known structure (often graphite) suitably oriented so that the desired wavelength satisfies the equation; only this wavelength is diffracted at the appropriate angle, the others pass straight through the monochromator crystal.</p>
+<p class="indent">The most commonly used X-ray tube target materials are copper and molybdenum, which give characteristic X-rays of wavelengths 1.54184 and 0.71073 &#x00C5; respectively.</p>
+
+<aside class="right" style="margin-top:-46em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig1_28.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig1.28"><b>Fig. 1.28</b> A schematic representation of a laboratory X-ray tube.</figcaption>
+</figure> 
+</aside>
+<aside class="right" style="margin-top:-15em;" epub:type="sidebar">
+<p class="sidebar">Here, <i>h</i> is Planck&#x0027;s constant, not to be confused with <i>hkl</i> indices of X-ray reflections!</p>
+</aside>
+<aside class="right" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig1_29.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig1.29"><b>Fig. 1.29</b> The spectrum of X-rays emitted by an X-ray tube.</figcaption>
+</figure> 
+</aside>
+<p class="indent">Various developments of the basic X-ray tube produce higher intensities. The main limitation is the amount of heat produced. For a more powerful electron beam, the target must be constantly moved in its own plane to spread the heat load, producing &#x2018;rotating anode&#x2019; X-ray tubes, which can provide about one order of magnitude more intensity.</p>
+<aside class="right" style="margin-top:-3.7em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig1_30.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig1.30"><b>Fig. 1.30</b> The production of synchrotron radiation from relativistic electrons in a special type of particle accelerator.</figcaption>
+</figure> 
+</aside>
+<p class="indent">Much more intense X-rays, as well as other parts of the electromagnetic spectrum, are produced in a <i>synchrotron storage ring</i> (<a href="Chapter01.xhtml#fig1.30">Fig. 1.30</a>), in which electrons moving at almost the speed of light are constrained by magnetic fields to move in a circle many metres in diameter. The radiation, emitted tangentially from the ring, has a continuous spectrum, ranging from infra-red to X-rays, from which a single wavelength of any value can be selected by a monochromator (the X-rays are &#x2018;tuneable&#x2019;) and is many orders of magnitude more intense than the output of an X-ray tube. Such sources, of course, are vastly more expensive and are national or international facilities with a wide variety of other scientific applications in addition to X-ray diffraction.</p>
+</section>
+<section id="sec1.8" epub:type="chapter">
+<h2 class="h2"><b>1.8<span class="space">&#x00A0;</span>Problems</b></h2>
+<p class="noindent">The following calculations of unit cell contents provide practice problems similar to the examples in <a href="Chapter01.xhtml#sec1.5">section 1.5</a>. Worked answers are given in the Appendix.</p>
+<section id="sec1.8.1" epub:type="chapter">
+<h3 class="h3" id="pro1.1"><b>Problem 1.1</b></h3>
+<p class="noindent">The complex [(C<sub>18</sub>H<sub>18</sub>N<sub>4</sub>S)H<sub>g</sub>Br<sub>2</sub>] (relative molecular mass 682.8) crystallizes from solution in acetonitrile (CH<sub>3</sub>CN) to give triclinic crystals with a unit cell volume of 1113.5 &#x00C5;<sup>3</sup> and with a density of 2.16 g cm<sup>-3</sup>. Calculate the number of molecules of complex per unit cell and the number of molecules of solvent per unit cell.</p>
+<section id="pro1.2" epub:type="chapter">
+<h3 class="h3"><b>Problem 1.2</b></h3>
+<p class="noindent">A compound of supposed formula K<sup>+</sup>[In(NCS)<sub>4</sub>(bipy)]<sup>&#x2013;</sup>, where bipy is the chelating ligand 2,2&#x0027;-bipyridyl, is obtained from solution in thf (C<sub>4</sub>H<sub>8</sub>O) as monoclinic crystals with <i>a</i> = 14.985 &#x00C5;, <i>b</i> = 17.375 &#x00C5;, <i>c</i> = 16.437 &#x00C5;,<i>&#x03B1;</i> = 92.23 &#x00C5;. The density of the crystals is 1.40 g cm<sup>-3</sup>, and the relative molecular mass for the above formula is 542.4. Calculate the unit cell volume and deduce the number of cations and anions per unit cell (expected values are 2, 4 or 8) and the number of molecules of thf per cation (which are likely to be coordinated to it).</p>
+</section>
+</section>
+</section>
+</section>
+</body>
+</html>

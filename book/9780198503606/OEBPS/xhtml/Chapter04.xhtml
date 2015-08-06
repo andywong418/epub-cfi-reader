@@ -1,0 +1,1905 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Kinetic theory of gases</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<div>
+<a class="page" id="page_42" style="width:70%;">Page 42, Kinetic theory of gases</a>
+<section epub:type="chapter" id="ch04">
+<h1 class="main">4<span class="space">&#160;</span>Kinetic theory of gases</h1>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_4.1">
+<h2 class="h2">4.1<span class="space">&#160;</span>Introduction</h2>
+<p class="noindent">In this chapter, we&#x2019;ll see how classical mechanics can be used to derive expressions for the pressure and temperature of a gas in terms of the mass and velocity of its constituents. We will assume that the gas is composed of particles that behave as rigid spheres, have negligible volume and are in a state of random motion; furthermore, the forces between the particles are considered negligible so that the only interaction between the particles is through elastic collisions. Such a hypothetical gas is called a <i>perfect gas</i> and obeys the law</p>
+<aside class="abc" style="margin-top:-8.5em;" epub:type="sidebar">
+<p class="noindent2"><b>Table 4.1</b> Useful physical constants.</p>
+<table class="tablec1">
+<tr>
+<td class="tablec">
+<p class="noindentc"><b>Quantity</b></p>
+</td>
+<td class="tablec">
+<p class="noindentc"><b>Value</b></p>
+</td>
+</tr>
+<tr>
+<td class="tablec">
+<p class="noindentc">Universal gas</p>
+<p class="noindentc">constant, <i>R</i></p>
+<p class="noindentc">Boltzmann</p>
+<p class="noindentc">constant, k</p>
+<p class="noindentc">Avogadro</p>
+<p class="noindentc">constant, <i>N<sub>A</sub></i></p>
+</td>
+<td class="tablec">
+<p class="noindentc">8.314</p>
+<p class="noindentc">J K<sup>&#x2212;1</sup> mol<sup>&#x2212;1</sup></p>
+<p class="noindentc">1.381&#x00D7;10<sup>23</sup></p>
+<p class="noindentc">J K<sup>&#x2212;1</sup></p>
+<p class="noindentc">6.022&#x00D7;10<sup>23</sup></p>
+<p class="noindentc">mol<sup>&#x2212;1</sup></p>
+</td>
+</tr>
+</table>
+</aside>
+<p class="fig1a" id="eq4.1"><i>PV</i> = <i>nRT</i> = <i>nN<sub>A</sub></i>k<i>T</i>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(4.1)</p>
+<p class="noindent">where <i>P</i> is the pressure of the gas, <i>V</i> is the volume of its container, <i>T</i> is the absolute temperature of the gas, <i>n</i> is the number of moles of gas and <i>R</i>, k and <i>N<sub>A</sub></i> are the universal gas constant, the Boltzmann constant and the Avogadro constant respectively. We begin by considering the microscopic basis of pressure.</p>
+</section>
+<section epub:type="chapter" id="sec_4.2">
+<h2 class="h2">4.2<span class="space">&#160;</span>The pressure of a gas</h2>
+<p class="noindent">The pressure of a gas is a consequence of the force which the gas particles exert on the walls of its container. Pressure is defined as the force per unit area, and has units of Nm<sup>&#x2212;2</sup>. Since force is the rate of change of momentum, when we calculate the pressure, we must consider the momentum change for each particle on collision with the wall, and the number of collisions per unit area in unit time.</p>
+<aside class="abc" style="margin-top:-8.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page42-2.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">Consider a particle of mass <i>m</i> moving in the <i>x</i>-direction with velocity <i>v<sub>x</sub></i> that undergoes an elastic collision with a wall of area <i>A</i>. Let the probability of the particle having a particular velocity between <i>v<sub>x</sub></i> and <i>v<sub>x</sub></i> + <i>dv<sub>x</sub></i> be given by a normalised probability distribution <i>f</i> (<i>v<sub>x</sub></i>); the functional form of this distribution will be discussed in <a href="#sec_4.3">section 4.3</a>. The momentum change on collision is <i>mv<sub>x</sub></i>&#x2212;(&#x2013;<i>mv<sub>x</sub></i>) = 2<i>mv<sub>x</sub></i>. Every particle in a volume <i>v<sub>x</sub>A</i> adjacent to the wall that has velocity component <i>v<sub>x</sub></i> directed towards it will hit the wall within one second. As there are, by definition, <i>v<sub>x</sub>A</i> (<i>N</i>/<i>V</i>) <i>f</i> (<i>v<sub>x</sub></i>)d<i>v<sub>x</sub></i> such molecules in this volume, the number of molecules that hit a unit area of the wall in unit time is <i>v<sub>x</sub>N</i> <i>f</i> (<i>v<sub>x</sub></i>) d<i>v<sub>x</sub></i>/<i>V</i>. Thus the total pressure is given by</p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<p class="noindent">A normalised probability distribution <i>f</i> (<i>x</i>) has the following property</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> 
+ <semantics>
+  <mrow>
+   <mstyle displaystyle='true'>
+    <mrow><mo>&#x222B;</mo>
+     <mrow>
+      <mi>f</mi><mo stretchy='false'>(</mo><mi>x</mi><mo stretchy='false'>)</mo><mtext>d</mtext><mi>x</mi><mtext>&#x00A0;=&#x00A0;1</mtext>
+     </mrow>
+    </mrow>
+    
+   </mstyle>
+  </mrow>
+ </semantics>
+</math>
+
+</figure>
+<p class="noindent">where the integral extends over all possible values of <i>x</i></p>
+</aside>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>P</mi><mo>=</mo><mstyle displaystyle='true'>
+<mrow><munderover>
+<mo>&#x222B;</mo>
+<mn>0</mn>
+<mi>&#x221E;</mi>
+</munderover>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mn>2</mn><mi>m</mi><msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mrow>
+</mstyle><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<mi>N</mi><mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mi>V</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mtext>d</mtext><msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<mo>=</mo><mstyle displaystyle='true'>
+<mrow><munderover>
+<mo>&#x222B;</mo>
+<mn>0</mn>
+<mi>&#x221E;</mi>
+</munderover>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>m</mi><msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mrow>
+ 
+</mstyle><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<mi>N</mi><mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mi>V</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mtext>d</mtext><msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<mo>=</mo><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>N</mi>
+<mi>V</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mi>m</mi><mrow><mo>&#x2329;</mo> <mrow>
+<msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<msup>
+<mrow></mrow>
+<mn>2</mn>
+</msup>
+</mrow> <mo>&#x232A;</mo></mrow></mrow>
+</semantics>
+</math>
+</figure>
+<a class="page" id="page_43" style="width:70%;">Page 43, Kinetic theory of gases</a>
+<p class="noindent">&#160;</p>
+<p class="noindent">The motion of the particles is random and so the average of <i>v<sub>x</sub><sup>2</sup></i> is the same as the average of the corresponding quantities in the <i>y</i> and <i>z</i> directions:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mrow><mo>&#x2329;</mo> <mrow>
+<msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<msup>
+<mrow></mrow>
+<mn>2</mn>
+</msup>
+</mrow> <mo>&#x232A;</mo></mrow><mo>=</mo><mrow><mo>&#x2329;</mo> <mrow>
+<msub>
+<mi>v</mi>
+<mi>y</mi>
+</msub>
+<msup>
+<mrow></mrow>
+<mn>2</mn>
+</msup>
+</mrow> <mo>&#x232A;</mo></mrow><mo>=</mo><mrow><mo>&#x2329;</mo> <mrow>
+<msub>
+<mi>v</mi>
+<mi>z</mi>
+</msub>
+<msup>
+<mrow></mrow>
+<mn>2</mn>
+</msup>
+</mrow> <mo>&#x232A;</mo></mrow></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-7.5em;" epub:type="sidebar">
+<p class="noindent2">For a continuous and normalised probability distribution <i>f</i> (<i>x</i>), the mean value of <i>x</i> is defined as</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mrow><mo>&#x2329;</mo> <mi>x</mi> <mo>&#x232A;</mo></mrow><mo>=</mo><mi>x</mi><mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mtext>d</mtext><mi>x</mi></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent2">and the mean square value by</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mrow><mo>&#x2329;</mo> <mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow> <mo>&#x232A;</mo></mrow><mo>=</mo><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>x</mi>
+<mo>)</mo></mrow><mtext>d</mtext><mi>x</mi></mrow>
+</semantics>
+</math>
+</figure>
+</aside>
+<p class="noindent">The square magnitude of the velocity of a particle is given by <i>v</i><sup>2</sup> = <i>v<sub>x</sub></i><sup>2</sup> + <i>v<sub>y</sub></i><sup>2</sup> + <i>v<sub>z</sub></i><sup>2</sup>, and so <math xmlns="http://www.w3.org/1998/Math/MathML">
+
+ <semantics>
+  <mrow>
+   <mo>&#x2329;</mo><msup>
+    <mi>v</mi>
+    <mn>2</mn>
+   </msup>
+   <mo>&#x232A;</mo><mo>=</mo><mo>&#x2329;</mo><msubsup>
+    <mi>v</mi>
+    <mi>x</mi>
+    <mn>2</mn>
+   </msubsup>
+   <mo>&#x232A;</mo><mo>+</mo><mo>&#x2329;</mo><msubsup>
+    <mi>v</mi>
+    <mi>y</mi>
+    <mn>2</mn>
+   </msubsup>
+   <mo>&#x232A;</mo><mo>+</mo><mo>&#x2329;</mo><msubsup>
+    <mi>v</mi>
+    <mi>z</mi>
+    <mn>2</mn>
+   </msubsup>
+   <mo>&#x232A;</mo><mo>=</mo><mn>3</mn><mo>&#x2329;</mo><msubsup>
+    <mi>v</mi>
+    <mi>x</mi>
+    <mn>2</mn>
+   </msubsup>
+   <mo>&#x232A;</mo>
+  </mrow>
+ </semantics>
+</math>
+. Hence</p>
+<figure class="fig1a" id="eq4.2">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>P</mi><mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>N</mi>
+<mi>V</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mi>m</mi><mrow><mo>&#x2329;</mo> <mrow>
+<msup>
+<mi>v</mi>
+<mn>2</mn>
+</msup>
+</mrow> <mo>&#x232A;</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.2</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">which relates the macroscopic quantity pressure to the microscopic property of the mean square speed of the particles. By combining the previous equation with the perfect gas law we can relate the temperature of a gas to the root mean square speed, <i>v<sub>rms</sub></i>, of its constituent particles</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="noindent2"><b>Table 4.2</b> A selection of root mean square speeds at 298K.</p>
+<table class="tablec1">
+<tr>
+<td class="tablec">
+<p class="noindentc"><b>Atom/Molecule</b></p>
+</td>
+<td class="tablec">
+<p class="noindentc"><i>V<sub>rms</sub></i> (ms<sup>&#x2212;1</sup>)</p>
+</td>
+</tr>
+<tr>
+<td class="tablec">
+<p class="noindentc">He</p>
+<p class="noindentc">Ar</p>
+<p class="noindentc">N<sub>2</sub></p>
+<p class="noindentc">CO<sub>2</sub></p>
+</td>
+<td class="tablec">
+<p class="noindentc">1360</p>
+<p class="noindentc">430</p>
+<p class="noindentc">515</p>
+<p class="noindentc">410</p>
+</td>
+</tr>
+</table>
+</aside>
+<figure class="fig1a" id="eq4.3">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msub>
+<mi>v</mi>
+<mrow>
+<mi>r</mi><mi>m</mi><mi>s</mi></mrow>
+</msub>
+<mo>=</mo><msqrt>
+<mrow>
+<mrow><mo>&#x2329;</mo> <mrow>
+<msup>
+<mi>v</mi>
+<mn>2</mn>
+</msup>
+</mrow> <mo>&#x232A;</mo></mrow></mrow>
+</msqrt>
+<mo>=</mo><msqrt>
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mtext>k</mtext><mi>T</mi></mrow>
+<mi>m</mi>
+</mfrac>
+</mrow>
+</msqrt>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.3</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">The mean kinetic energy of the particles in the gas is</p>
+<figure class="fig1a" id="eq4.4">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mrow><mo>&#x2329;</mo> <mrow>
+<mi>K</mi><mi>E</mi></mrow> <mo>&#x232A;</mo></mrow><mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>m</mi><mrow><mo>&#x2329;</mo> <mrow>
+<msup>
+<mi>v</mi>
+<mn>2</mn>
+</msup>
+</mrow> <mo>&#x232A;</mo></mrow><mo>=</mo><mfrac>
+<mn>3</mn>
+<mn>2</mn>
+</mfrac>
+<mtext>k</mtext><mi>T</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.4</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">Thus the temperature of a gas is a measure of the average translational kinetic energy of its particles. This result is an example of the <i>equipartition of energy</i>, a classical theorem which states that the average energy of each degree of freedom is <i>kT</i>/2 per particle considered. For the case of a monatomic gas there are three translational degrees of freedom that correspond to motion along the three perpendicular axes <i>x</i>, <i>y</i>, and <i>z</i>, and so the total average kinetic energy is expected to be 3k<i>T</i>/2 as derived above. Similarly, we expect that the average rotational energy of a rotating molecule to also be 3k<i>T</i>/2 since the molecule will have three axes of rotation. The mean vibrational energy of a bond however should be k<i>T</i> because although there is only one degree of freedom, a vibration has both kinetic and potential energy.</p>
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<p class="noindent2">A diatomic molecule only has two rotational degrees of freedom because rotation about the bond axis has a moment of inertia that is zero. The average rotational kinetic energy of a diatomic molecule is thus k<i>T</i>.</p>
+<p class="noindent2" style="margin-top:0.5em;">The equipartition theorem fails badly in predicting the vibrational heat capacities of light diatomic molecules that have high vibrational frequencies. For example the vibrational contribution to the heat capacity of H<sub>2</sub> is effectively zero at 298 K whilst equipartition predicts a contribution of <i>R</i> J K<sup>&#x2212;1</sup>mol<sup>&#x2212;1</sup>.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_4.3">
+<h2 class="h2">4.3<span class="space">&#160;</span>The Maxwell-Boltzmaen velocity and speed distributions</h2>
+<p class="noindent">So far we have derived an expression for the pressure in terms of the mean square speed of the gas particles without considering the precise functional form of their velocity distribution. According to the Boltzmann prescription of <a href="Chapter03.xhtml#eq3.6">eqn (3.6)</a>, the one-dimensional velocity distribution <i>f</i> (<i>v<sub>x</sub></i>) is</p>
+<figure class="fig1a" id="eq4.5">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+</mrow>
+<mo>)</mo></mrow><mtext>d</mtext><msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>m</mi>
+<mrow>
+<mn>2</mn><mi>&#x03C0;</mi><mtext>k</mtext><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+<mtext>&#x2009;</mtext><mi>exp</mi><mrow><mo>(</mo>
+<mrow>
+<mo>&#x2212;</mo><mfrac>
+<mrow>
+<mi>m</mi><msup>
+<mi>v</mi>
+<mn>2</mn>
+</msup>
+<msub>
+<mrow></mrow>
+<mi>x</mi>
+</msub>
+</mrow>
+<mrow>
+<mn>2</mn><mtext>k</mtext><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mi>d</mi><msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.5</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page43-8.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">where the term before the exponential is a normalisation constant. This velocity distribution function is symmetrical and peaks around <i>v<sub>x</sub></i> = 0, as the velocity components can be positive or negative. The distribution is dependent on both the temperature of the gas and its molecular mass.</p>
+<a class="page" id="page_44" style="width:70%;">Page 44, Kinetic theory of gases</a>
+<p class="indent">The three velocity components, <i>v<sub>x</sub></i>, <i>v<sub>y</sub></i> and <i>v<sub>z</sub></i>, are independent of each other, and so the joint probability <i>f</i> (<i>v<sub>x</sub></i>, <i>v<sub>y</sub></i>, <i>v<sub>z</sub></i>,)d<i>v<sub>x</sub></i>d<i>v<sub>y</sub></i>d<i>v<sub>z</sub></i>, that a particle has a velocity with components in the range <i>v<sub>x</sub></i> to <i>v<sub>x</sub></i> + d<i>v<sub>x</sub></i>, <i>v<sub>y</sub></i> to <i>v<sub>y</sub></i> + d<i>v<sub>y</sub></i> and <i>v<sub>z</sub></i> to <i>v<sub>z</sub></i> + d<i>v<sub>z</sub></i> is just the product of the individual probabilities of each component being in that range</p>
+<aside class="abc" style="margin-top:-6.5em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page44-5.jpg" alt="images"/>
+</figure>
+<p class="noindent2">The Maxwell-Boltzmann speed distribution</p>
+</aside>
+<p class="fig1"><i>f</i> (<i>v<sub>x</sub></i>, <i>v<sub>y</sub></i>, <i>v<sub>z</sub></i>) d<i>v<sub>x</sub></i> d<i>v<sub>y</sub></i> d<i>v<sub>z</sub></i> = <i>f</i> (<i>v<sub>x</sub></i>) <i>f</i> (<i>v<sub>y</sub></i>) <i>f</i> (<i>v<sub>z</sub></i>) d<i>v<sub>x</sub></i> d<i>v<sub>y</sub></i> d<i>v<sub>z</sub></i></p>
+<p class="noindent">Hence, using <i>v<sub>x</sub></i><sup>2</sup>+<i>v<sub>y</sub></i><sup>2</sup>+<i>v<sub>z</sub></i><sup>2</sup>=<i>v</i><sup>2</sup>, we have</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>f</mi><mo stretchy='false'>(</mo><msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<mo>,</mo><msub>
+<mi>v</mi>
+<mi>y</mi>
+</msub>
+<mo>,</mo><msub>
+<mi>v</mi>
+<mi>z</mi>
+</msub>
+<mo stretchy='false'>)</mo><mtext>d</mtext><msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<mtext>d</mtext><msub>
+<mi>v</mi>
+<mi>y</mi>
+</msub>
+<mtext>d</mtext><msub>
+<mi>v</mi>
+<mi>z</mi>
+</msub>
+<mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>m</mi>
+<mrow>
+<mn>2</mn><mi>&#x03C0;</mi><mtext>k</mtext><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+<mi>exp</mi><mrow><mo>(</mo>
+<mrow>
+<mo>&#x2212;</mo><mfrac>
+<mrow>
+<mi>m</mi><msup>
+<mi>v</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mrow>
+<mn>2</mn><mtext>k</mtext><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mtext>d</mtext><msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<mtext>d</mtext><msub>
+<mi>v</mi>
+<mi>y</mi>
+</msub>
+<mtext>d</mtext><msub>
+<mi>v</mi>
+<mi>z</mi>
+</msub>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="indent">If we are interested only in the speed of the particles and not their directions of motion, then we have to integrate the above three dimensional velocity distribution over all orientations of the velocity. In spherical polar coordinates, the orientation of the velocity vector is defined by the polar angles (<i>&#x03B8;</i> <i>&#x00F8;</i>) and the differential volume element d<i>v<sub>x</sub></i>d<i>v<sub>y</sub></i>d<i>v<sub>z</sub></i> = <i>v</i><sup>2</sup>sin<i>&#x03B8;</i> d<i>v</i> d<i>&#x03B8;</i>d<i>&#x00F8;</i> is equal to 4&#x03C0; <i>v</i><sup>2</sup> d<i>v</i> when integrated over all angles. Thus</p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page44-6.jpg" alt="images"/>
+</figure>
+</aside>
+<figure class="fig1a" id="eq4.6">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>f</mi><mo stretchy='false'>(</mo><mi>v</mi><mo stretchy='false'>)</mo><mtext>d</mtext><mi>v</mi><mo>=</mo><mn>4</mn><mi>&#x03C0;</mi><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>m</mi>
+<mrow>
+<mn>2</mn><mi>&#x03C0;</mi><mtext>k</mtext><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mrow>
+<mfrac>
+<mn>3</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+<msup>
+<mi>v</mi>
+<mn>2</mn>
+</msup>
+<mi>exp</mi><mrow><mo>(</mo>
+<mrow>
+<mo>&#x2212;</mo><mfrac>
+<mrow>
+<mi>m</mi><msup>
+<mi>v</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mrow>
+<mn>2</mn><mtext>k</mtext><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mtext>d</mtext><mi>v</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.6</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">This is the <i>Maxwell</i>-<i>Boltzmann speed distribution</i>, where <i>f</i> (<i>v</i>) is the fractional number of particles with speeds between <i>v</i> and <i>v</i> + d<i>v</i>. The main feature of the speed distribution is that its peak shifts to higher speeds and it broadens as the temperature of the gas is increased or the particles become lighter (since they move more quickly on average than heavier ones). The distribution can be characterised by several speeds such as the most probable, <i>v<sub>p</sub></i>, the mean, , and the root mean square, <i>v<sub>rms</sub></i>.</p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<p class="noindent2"><b>Table 4.3</b> Speeds that characterise the Maxwell-Boltzmann distribution.</p>
+<table class="tablec1">
+<tr>
+<td class="tablec">
+<p class="noindentc"><b>Speed</b></p>
+</td>
+<td class="tablec">
+<p class="noindentc"><b>Functional from</b></p>
+</td>
+</tr>
+<tr>
+<td class="tablec">
+<p class="noindent">Most probable speed, <i>v<sub>p</sub></i></p>
+<p class="noindent">Mean speed, &#x3008;v&#x3009;</p>
+<p class="noindent">Root mean square speed, <i>v<sub>rms</sub></i></p>
+</td>
+<td class="tablec">
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msub>
+<mi>v</mi>
+<mi>p</mi>
+</msub>
+<mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>2</mn><mtext>k</mtext><mi>T</mi></mrow>
+<mi>m</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</semantics>
+</math>
+</figure>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mrow><mo>&#x2329;</mo> <mi>v</mi> <mo>&#x232A;</mo></mrow><mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>8</mn><mtext>k</mtext><mi>T</mi></mrow>
+<mrow>
+<mi>&#x03C0;</mi><mi>m</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</semantics>
+</math>
+</figure>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msub>
+<mi>v</mi>
+<mrow>
+<mi>r</mi><mi>m</mi><mi>s</mi></mrow>
+</msub>
+<mo>=</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mn>3</mn><mtext>k</mtext><mi>T</mi></mrow>
+<mi>m</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</semantics>
+</math>
+</figure>
+</td>
+</tr>
+</table>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_4.4">
+<h2 class="h2">4.4<span class="space">&#160;</span>Collisions</h2>
+<p class="noindent">Now that we have an expression for the mean speed of the gas particles, , we can calculate the number of collisions per unit area per unit time, Z, that the gas particles make with the wall of <a href="#sec_4.2">section 4.2</a>. All we need to do is to average <i>v<sub>x</sub>N f</i> (<i>v<sub>x</sub></i>)/<i>V</i> over <i>v<sub>x</sub></i></p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>Z</mi><mo>=</mo><mfrac>
+<mi>N</mi>
+<mi>V</mi>
+</mfrac>
+<mstyle displaystyle='true'>
+<mrow><munderover>
+<mo>&#x222B;</mo>
+<mn>0</mn>
+<mi>&#x221E;</mi>
+</munderover>
+<mrow>
+<msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<mi>f</mi><mrow><mo>(</mo>
+<mrow>
+<msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</mrow>
+</mstyle><mi>d</mi><msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<mo>=</mo><mfrac>
+<mi>N</mi>
+<mi>V</mi>
+</mfrac>
+<msqrt>
+<mrow>
+<mfrac>
+<mi>m</mi>
+<mrow>
+<mn>2</mn><mi>&#x03C0;</mi><mi>k</mi><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+</msqrt>
+<msup>
+<mrow>
+<mstyle displaystyle='true'>
+<mrow><munderover>
+<mo>&#x222B;</mo>
+<mn>0</mn>
+<mi>&#x221E;</mi>
+</munderover>
+<mrow>
+<msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<mi>e</mi></mrow>
+</mrow>
+</mstyle></mrow>
+<mrow>
+<mo>&#x2212;</mo><mfrac>
+<mrow>
+<mi>m</mi><msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<msup>
+<mrow></mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+<mrow>
+<mn>2</mn><mtext>k</mtext><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+</msup>
+<mtext>d</mtext><msub>
+<mi>v</mi>
+<mi>x</mi>
+</msub>
+<mo>=</mo><mfrac>
+<mi>N</mi>
+<mi>V</mi>
+</mfrac>
+<msqrt>
+<mrow>
+<mfrac>
+<mrow>
+<mi>k</mi><mi>T</mi></mrow>
+<mrow>
+<mn>2</mn><mi>&#x03C0;</mi><mi>m</mi></mrow>
+</mfrac>
+</mrow>
+</msqrt>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">In section 4.3 we saw that= (8k<i>T</i>/&#x03C0;<i>m</i>)<sup>1/2</sup> so</p>
+<figure class="fig1a" id="eq4.7">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>Z</mi><mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>N</mi>
+<mi>V</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>&#x2329;</mo> <mi>v</mi> <mo>&#x232A;</mo></mrow><mo>=</mo><mfrac>
+<mi>P</mi>
+<mrow>
+<msqrt>
+<mrow>
+<mn>2</mn><mi>&#x03C0;</mi><mi>m</mi><mi>k</mi><mi>T</mi></mrow>
+</msqrt>
+</mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.7</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 4.1</b> Show that the most probable speed of a gas molecule at a temperature <i>T</i> is (2k<i>T</i> / <i>m</i>)<sup>1/2</sup>.</p>
+</aside>
+<p class="indent">The above equation is extremely useful, and is important for a number of applications such as surface catalysis and the calculation of transport properties. For example, in order to study the chemistry at solid surfaces, it is <a class="page" id="page_45">Page 45, Kinetic theory of gases</a>necessary to keep the surfaces clean by using high vacuum apparatus. A major impurity in stainless steel is CO, and so a surface placed within a stainless steel vacuum chamber is contaminated by CO molecules that constantly bombard the surface. The rate of bombardment is easily calculated using <a href="#eq4.7">eqn (4.7)</a> for Z. If we assume that all molecules that hit the surface stick, then the number of molecules adsorbed onto the surface at room temperature (300 K) is &#x2248; 3.8&#x00D7;10<sup>18</sup> m<sup>&#x2212;2</sup> s<sup>&#x2212;1</sup> if the pressure is 10<sup>&#x2212;6</sup> Torr (760 Torr = 1 atm. &#x2248; 10<sup>5</sup> Nm<sup>&#x2212;2</sup>). Typically a surface that has an area of 1 cm<sup>2</sup> contains about 10<sup>15</sup> atoms and so at 10<sup>&#x2212;6</sup> Torr pressure, the whole surface will be covered in about 2.6 s! An obvious way of lengthening the timescale is to reduce the pressure in the system further, and pressures around 10<sup>&#x2212;10</sup> Torr and lower are possible in an ultra high vacuum apparatus. At these reduced pressures the whole surface is covered in about 7.3 hours. Note that this calculation is related to the specific contaminant CO, and other contaminants will give rise to varying surface coverage times.</p>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 4.2</b> The speed distribution can be converted to a kinetic energy distribution by using the substitutions <i>E</i>= 1/2<i>mv</i><sup>2</sup> and d<i>E</i> = <i>mv</i>d<i>v</i>. The resulting energy distribution is</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>f</mi><mrow><mo>(</mo>
+<mi>E</mi>
+<mo>)</mo></mrow><mo>=</mo><mn>2</mn><mi>&#x03C0;</mi><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<mi>&#x03C0;</mi><mi>k</mi><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mrow>
+<mfrac bevelled='true'>
+<mn>3</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+<msqrt>
+<mi>E</mi>
+</msqrt>
+<msup>
+<mi>e</mi>
+<mrow>
+<mo>&#x2212;</mo><mfrac>
+<mi>E</mi>
+<mrow>
+<mtext>k</mtext><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent2">Show that this kinetic energy distribution reproduces the equipartition average energy,= 3/2k<i>T</i>. You will require the standard integral</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mstyle displaystyle='true'>
+<mrow><munderover>
+<mo>&#x222B;</mo>
+<mn>0</mn>
+<mi>&#x221E;</mi>
+</munderover>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>4</mn>
+</msup>
+<msup>
+<mi>e</mi>
+<mrow>
+<mo>&#x2212;</mo><mi>a</mi><msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</msup>
+</mrow>
+</mrow>
+</mstyle><mi>d</mi><mi>x</mi><mo>=</mo><mfrac>
+<mn>3</mn>
+<mn>8</mn>
+</mfrac>
+<msqrt>
+<mi>&#x03C0;</mi>
+</msqrt>
+<msup>
+<mi>&#x03B1;</mi>
+<mrow>
+<mo>&#x2212;</mo><mfrac bevelled='true'>
+<mn>5</mn>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</semantics>
+</math>
+</figure>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_4.5">
+<h2 class="h2">4.5<span class="space">&#160;</span>Collision theory</h2>
+<p class="noindent">Chemical reaction rates are intrinsically dependent on the rate of molecular collisions. In this section we derive expressions for the number of collisions a molecule undergoes per unit time in the gas phase and relate it to the reaction rate. We begin by assuming that molecules are hard structureless spheres that don&#x2019;t interact except when they are at a distance <i>d</i> apart, known as the collision diameter. In order to simplify the calculation of the collision frequency, we will consider all the molecules to be stationary apart from one which travels with relative velocity <i>v<sub>rel</sub></i> = <i>v<sub>a</sub></i>&#x2212;<i>v<sub>b</sub></i>. Defining a collision to have occurred if molecule A comes within a distance <i>d</i>= <i>r<sub>a</sub></i> + <i>r<sub>b</sub></i> of B, the <i>collision cross-section</i> is &#x03C3;=&#x03C0;d<sup>2</sup>.</p>
+<aside class="abc" style="margin-top:-9.7em;" epub:type="sidebar">
+<p class="noindent2">Further discussion on surfaces can be found in Attard &#x0026; Barnes: <i>Surfaces</i> OCP 59.</p>
+<figure class="fig1">
+<img src="../images/page45-5.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">In one second molecule A sweeps out a collision volume of <i>v<sub>rel</sub></i>&#x03C0;d<sup>2</sup> and undergoes (<i>N<sub>B</sub></i>/<i>V</i>)<i>v<sub>rel</sub></i>&#x03C0;<i>d</i><sup>2</sup> collisions, where <i>N<sub>B</sub></i> is the number of B molecules present in volume <i>V</i>. As there are also <i>N</i><sub>A</sub> A molecules in this volume, the total number of collisions per unit time per unit volume, <i>Z<sub>v</sub></i>, is</p>
+<figure class="fig1a" id="eq4.8">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msub>
+<mi>Z</mi>
+<mi>v</mi>
+</msub>
+<mo>=</mo><mi>&#x03C3;</mi><msub>
+<mi>v</mi>
+<mrow>
+<mi>r</mi><mi>e</mi><mi>l</mi></mrow>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msub>
+<mi>N</mi>
+<mi>A</mi>
+</msub>
+</mrow>
+<mi>V</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msub>
+<mi>N</mi>
+<mi>B</mi>
+</msub>
+</mrow>
+<mi>V</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.8</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">From the Maxwell-Boltzmann speed distribution, <i>v<sub>rel</sub></i> can be found to be</p>
+<aside class="abc" style="margin-top:-12.7em;" epub:type="sidebar">
+<p class="noindent2"><b>Table 4.4</b> A selection of collision cross-sections.</p>
+<table class="tablec1">
+<tr>
+<td class="tablec">
+<p class="noindent"><b>Atom/Molecule</b></p>
+</td>
+<td class="tablec">
+<p class="noindent"><b>&#x03C3;(nm<sup>2</sup>)</b></p>
+</td>
+</tr>
+<tr>
+<td class="tablec">
+<p class="noindentc">He</p>
+<p class="noindentc">Ar</p>
+<p class="noindentc">H<sub>2</sub></p>
+<p class="noindentc">N<sub>2</sub></p>
+<p class="noindentc">CO<sub>2</sub></p>
+</td>
+<td class="tablec">
+<p class="noindentc">0.21</p>
+<p class="noindentc">0.36</p>
+<p class="noindentc">0.27</p>
+<p class="noindentc">0.43</p>
+<p class="noindentc">0.52</p>
+</td>
+</tr>
+</table>
+</aside>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msub>
+<mi>v</mi>
+<mrow>
+<mi>r</mi><mi>e</mi><mi>l</mi></mrow>
+</msub>
+<mo>=</mo><msqrt>
+<mrow>
+<mfrac>
+<mrow>
+<mn>8</mn><mtext>k</mtext><mi>T</mi></mrow>
+<mrow>
+<mi>&#x03C0;</mi><mi>&#x03BC;</mi></mrow>
+</mfrac>
+</mrow>
+</msqrt>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where <i>&#x03BC;</i> is the <i>reduced mass</i> of the collision partners.</p>
+
+<aside class="abc" style="margin-top:-1.5em;" epub:type="sidebar">
+<p class="noindent2">For collisions between like molecules the expression for the collision frequency is modified to</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msub>
+<mi>Z</mi>
+<mi>v</mi>
+</msub>
+<mo>=</mo><mfrac>
+<mrow>
+<mi>&#x03C3;</mi><msub>
+<mi>v</mi>
+<mrow>
+<mi>r</mi><mi>e</mi><mi>l</mi></mrow>
+</msub>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msub>
+<mi>N</mi>
+<mi>A</mi>
+</msub>
+</mrow>
+<mi>V</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent2">to ensure that we don&#x2019;t count each collision twice.</p>
+</aside>
+<p class="noindent">Reaction rates are generally much lower than our predictions based solely on collision frequency, and the existence of possible energy barriers to the reaction must be considered. When molecules react, their valence electrons undergo rearrangement, and this requires the expenditure of energy; only those molecules that have sufficient kinetic energy (along the line of approach) to get over the barrier will react. For a thermal sample the number of such molecules is related to the barrier height <i>E<sub>a</sub></i> by the term exp(&#x2013;<i>E<sub>a</sub></i>/k<i>T</i>), which follows directly from the Boltzmann distribution. <i>E<sub>a</sub></i> is known as the</p>
+<a class="page" id="page_46" style="width:70%;">Page 46, Kinetic theory of gases</a>
+<p class="noindent">&#160;</p>
+<p class="noindent"><i>activation energy</i>. If we now consider that only those collisions with energy greater than <i>E<sub>a</sub></i> lead to reaction, we have the following expression for the rate of reaction, <i>k&#x2032;</i></p>
+<aside class="abc" style="margin-top:-2.5em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 4.3</b> Calculate the total number of collisions occurring per second in 1 mole of AT at 1000 K and 1 atm. pressure.</p>
+</aside>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msup>
+<mi>k</mi>
+<mo>&#x2032;</mo>
+</msup>
+<mo>=</mo><mi>&#x03C3;</mi><msub>
+<mi>v</mi>
+<mrow>
+<mi>r</mi><mi>e</mi><mi>l</mi></mrow>
+</msub>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msub>
+<mi>N</mi>
+<mi>A</mi>
+</msub>
+</mrow>
+<mi>V</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<msub>
+<mi>N</mi>
+<mi>B</mi>
+</msub>
+</mrow>
+<mi>V</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mi>exp</mi><mrow><mo>(</mo>
+<mrow>
+<mo>&#x2212;</mo><mfrac>
+<mrow>
+<msub>
+<mi>E</mi>
+<mi>&#x03B1;</mi>
+</msub>
+</mrow>
+<mrow>
+<mtext>k</mtext><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where <i>N<sub>A</sub></i>/<i>V</i> and <i>N<sub>B</sub></i>/<i>V</i> are concentrations, so that the rate of a bimolecular reaction has the form</p>
+<figure class="fig1a" id="eq4.9">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msup>
+<mi>k</mi>
+<mo>&#x2032;</mo>
+</msup>
+<mo>=</mo><msub>
+<mi>k</mi>
+<mi>r</mi>
+</msub>
+<mrow><mo>[</mo> <mi>A</mi> <mo>]</mo></mrow><mrow><mo>[</mo> <mi>B</mi> <mo>]</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>where</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><msub>
+<mi>k</mi>
+<mi>r</mi>
+</msub>
+<mo>=</mo><mi>&#x03C3;</mi><msub>
+<mi>v</mi>
+<mrow>
+<mi>r</mi><mi>e</mi><mi>l</mi></mrow>
+</msub>
+<mi>exp</mi><mrow><mo>(</mo>
+<mrow>
+<mo>&#x2212;</mo><mfrac>
+<mrow>
+<msub>
+<mi>E</mi>
+<mi>&#x03B1;</mi>
+</msub>
+</mrow>
+<mrow>
+<mtext>k</mtext><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.9</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent"><a href="#eq4.9">eqn (4.9)</a> has the same form as the <i>Arrhenius equation</i> and incorporates a term that accounts for the collision rate of the reactants, and a term that determines the number of molecules that can successfully surmount any energy barrier that may be present. At normal temperatures the proportion of sufficiently energetic collisions is generally very small, and so the Arrhenius equation predicts a rate which is very much smaller than <i>Z<sub>v</sub></i>. The temperature dependence of the reaction rate <i>k<sub>r</sub></i> is dominated by the exponential term. For example, for a typical activation energy of 60 kJ mol<sup>&#x2212;1</sup>, the reaction rate will double for a rise in temperature of 10K at room temperature even though the collision frequency only changes by a factor of (310/300)<sup>1/2</sup> &#x2248; 1.02.</p>
+<aside class="abc" style="margin-top:-16.5em;" epub:type="sidebar">
+<p class="noindent2">Arrhenius originally proposed the rate expression <i>k<sub>r</sub></i> = <i>A</i> exp(&#x2013;<i>E<sub>a</sub></i> / k<i>T</i>) where the pre-exponential factor <i>A</i> was assumed to be independent of temperature. Kinetic theory shows that the pre-exponential term &#x03C3;<i>v<sub>rel</sub></i> is in fact dependent on <i>T<sup>1/2</sup></i> for collisions between hard spheres.</p>
+</aside>
+<p class="noindent2"><b>Table 4.5</b> Some typical bimolecular reaction rates.</p>
+<table style="border-top:1px solid #000000;border-bottom:1px solid #000000;width:70%;">
+<colgroup>
+<col style="width:10%"/>
+<col style="width:15%"/>
+<col style="width:15%"/>
+<col style="width:15%"/>
+<col style="width:10%"/>
+</colgroup>
+<tr>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;width:70%;">
+<i>Reaction</i>
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;width:70%;">
+<i>E<sub>a</sub></i>/kJ mo1<sup>&#x2212;1</sup>
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;width:70%;">
+10 <sup>&#x2212;11</sup><i>A<sub>expt</sub></i>dm<sup>3</sup> mol<sup>&#x2212;1</sup>s<sup>&#x2212;1</sup>
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;width:70%;">
+10<sup>&#x2212;11</sup>A<sub>calc</sub>/dm<sup>3</sup> mol<sup>&#x2212;1</sup>s<sup>&#x2212;1</sup>
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;width:70%;">
+<i>P</i>
+</td>
+</tr>
+<tr><td>CH<sub>3</sub>+CH<sub>3</sub>&#x2192;C<sub>2</sub>H<sub>6</sub></td><td>0</td><td>0.24</td><td>1.1</td><td>0.22</td></tr>
+<tr><td>2NOCl &#x2192; 2NO+Cl<sub>2</sub></td><td>102</td><td>0.094</td><td>0.59</td><td>0.19</td></tr>
+<tr><td>F<sub>2</sub>+ClO<sub>2</sub>&#x2192;FClO<sub>2</sub> + F</td><td>35.6</td><td>3.2&#x00D7;10<sup>&#x2212;4</sup></td><td>0.50</td><td>6.4&#x00D7;10<sup>&#x2212;4</sup></td></tr>
+</table>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<p class="noindent2">Further discussion on reaction rate theories can be found in Brouard: <i>Reaction Dynamics</i> OCP 61.</p>
+</aside>
+<p class="indent">In many cases collision theory is too simplistic and the experimentally derived <i>A</i> factors are vastly different from the calculated values that use collision cross-section data derived from viscosity measurements. The discrepancy between theory and experiment is characterised by the <i>steric factor</i>, <i>P</i>, which is the ratio of the experimentally measured <i>A</i> value, <i>A<sub>expt</sub></i>, to its theoretical value, <i>A<sub>calc</sub></i>. Collision theory does not take account of the fact that many reactions require the molecules to approach in preferred orientations to enable electrons to rearrange and allow bonds to break and form. As the complexity of the reaction increases the probability that the molecules have the correct geometry to react decreases, and the steric factor decreases. The modified rate expression is</p>
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 4.4</b> The rate constant for the reaction 2HI &#x2192; H<sub>2</sub> + I<sub>2</sub> is 1.2&#x00D7;10<sup>&#x2212;6</sup> dm<sup>3</sup>mol<sup>&#x2212;1</sup> s<sup>&#x2212;1</sup> at 580 K. At 700 K the rate constant is 2.5&#x00D7;10<sup>&#x2212;3</sup>dm<sup>3</sup> mol<sup>&#x2212;1</sup> s<sup>&#x2212;1</sup>. Use the Arrhenius equation to estimate a value for the activation energy.</p>
+</aside>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msub>
+<mi>k</mi>
+<mi>r</mi>
+</msub>
+<mo>=</mo><msub>
+<mi>&#x03C3;</mi>
+<mi>r</mi>
+</msub>
+<msub>
+<mi>v</mi>
+<mrow>
+<mi>r</mi><mi>e</mi><mi>l</mi></mrow>
+</msub>
+<mi>exp</mi><mrow><mo>(</mo>
+<mrow>
+<mo>&#x2212;</mo><mfrac>
+<mrow>
+<msub>
+<mi>E</mi>
+<mi>&#x03B1;</mi>
+</msub>
+</mrow>
+<mrow>
+<mtext>k</mtext><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 4.5</b> The experimentally measured <i>A</i> factor for the reaction NO + Cl<sub>2</sub> &#x2192; NOCl + Cl at 300K is 4.0&#x00D7;10<sup>9</sup> dm<sup>3</sup> mol<sup>&#x2212;1</sup> s<sup>&#x2212;1</sup>. Calculate the steric factor for this reaction given that the collision diameter of NO and Cl<sub>2</sub> are 370 pm and 540 pm respectively.</p>
+</aside>
+<p class="noindent">where &#x03C3;<i><sub>r</sub></i> is the <i>reaction cross-section</i>, and is related to the collision cross-section by <i>&#x03C3;<sub>r</sub></i>=<i>P&#x03C3;</i>.</p>
+<a class="page" id="page_47" style="width:70%;">Page 47, Kinetic theory of gases</a>
+<p class="indent">Now that we have calculated the collision frequency, we can determine how far the molecules travel on average between collisions. This is known as the <i>mean free path</i> of the molecule, &#x03BB;, and is given by</p>
+<figure class="fig1a" id="eq4.10">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> 
+ <semantics>
+  <mrow>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>&#x03BB;</mi><mo>=</mo><mfrac>
+        <mrow>
+         <mo>&#x003C;</mo><mi>v</mi><mo>&#x003E;</mo>
+        </mrow>
+        <mi>z</mi>
+       </mfrac>
+       
+      </mrow>
+     </mtd>
+     <mtd>
+      <mrow>
+       <mo stretchy='false'>(</mo><mn>4.10</mn><mo stretchy='false'>)</mo>
+      </mrow>
+     </mtd>
+    </mtr>
+    
+   </mtable>
+  </mrow>
+ 
+ </semantics>
+</math>
+
+</figure>
+<p class="noindent">where <i>z</i> is the number of collisions a single molecule makes per second. At standard temperature and pressure, the mean free path is of the order of 100 nm. This value of the mean free path of the molecules is the reason that gaseous diffusion is slow. If a bottle of perfume is opened in one corner of a room, for example, the scent does not reach the other corner immediately in spite of the high mean velocity of gas molecules. The reason for this is that the molecules undergo many collisions that make the motion of the perfume molecules chaotic, and lead to a rate of diffusion that is much smaller than typical molecular velocities. Using= (8k<i>T</i>/&#x03C0;<i>m</i>)<sup>1/2</sup> and <a href="#eq4.8">eqn (4.8)</a> (for the case of the number of collisions a single molecule undergoes per unit time per unit volume) leads to</p>
+<aside class="abc" style="margin-top:-17.5em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 4.6</b> On the surface of Saturn&#x2019;s largest moon, Titan, the predominantly N<sub>2</sub> atmosphere is at 95 K and 1.5 bar pressure. What is the mean free path of N<sub>2</sub> under these conditions?</p>
+</aside>
+<figure class="fig1a" id="eq4.11">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>&#x03BB;</mi><mo>=</mo><mfrac>
+<mn>1</mn>
+<mrow>
+<msqrt>
+<mrow>
+<mn>2</mn><mi>&#x03C3;</mi></mrow>
+</msqrt>
+</mrow>
+</mfrac>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>V</mi>
+<mi>N</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mfrac>
+<mn>1</mn>
+<mrow>
+<msqrt>
+<mrow>
+<mn>2</mn><mi>&#x03C3;</mi></mrow>
+</msqrt>
+</mrow>
+</mfrac>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mtext>k</mtext><mi>T</mi></mrow>
+<mi>p</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.11</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">and we see that the mean free path is inversely proportional to the pressure.</p>
+</section>
+<section epub:type="chapter" id="sec_4.6">
+<h2 class="h2">4.6<span class="space">&#160;</span>Real gases</h2>
+<aside class="abc" style="margin-top:-15.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page47-4.jpg" alt="images"/>
+</figure>
+<p class="noindent2">The potential energy can often be described by the function</p>
+</aside>
+<p class="noindent">Throughout our discussions so far we have assumed that the gas particles only have kinetic energy, and there are no interactions between the molecules except when they are separated by the collision diameter. In reality gas particles interact and they have an associated potential energy. Therefore we should only expect the gas to show ideal behaviour at low pressures or high temperatures. Intermolecular forces are present and can be attractive or repulsive. Van der Waals produced a modified version of the ideal gas law to account for these interactions</p>
+<figure class="fig1a" id="eq4.12">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mi>P</mi><mo>+</mo><mfrac>
+<mrow>
+<mi>a</mi><msup>
+<mi>n</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mrow>
+<msup>
+<mi>V</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mo stretchy='false'>(</mo><mi>V</mi><mo>&#x2212;</mo><mi>n</mi><mi>b</mi><mo stretchy='false'>)</mo><mo>=</mo><mi>R</mi><mi>T</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.12</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-14.7em;" epub:type="sidebar">
+<figure class="fig2">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>V</mi><mo stretchy='false'>(</mo><mi>r</mi><mo stretchy='false'>)</mo><mo>=</mo><mn>4</mn><mi>&#x03B5;</mi><mrow><mo>[</mo> <mrow>
+<msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>&#x03C3;</mi>
+<mi>r</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mrow>
+<mn>12</mn></mrow>
+</msup>
+<mo>&#x2212;</mo><msup>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>&#x03C3;</mi>
+<mi>r</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mn>6</mn>
+</msup>
+</mrow> <mo>]</mo></mrow></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent2">where <i>&#x03B5;</i> is the well depth and <i>&#x03C3;</i> is the internuctear separation at which the potential is zero. This potential energy function is known as a <i>Lennard</i>-<i>Jones</i> potential or a (12,6) potential. Overlap of electron clouds are responsible for the repulsive interaction and an alternative representation of the repulsive part of the intermolecular potential (<i>r</i><sup>&#x2212;12</sup>) is the function e<sup>&#x2212;<i>r</i>/&#x03C3;</sup> which mirrors the decay of atomic wavefunctions at large distances.</p>
+</aside>
+<p class="noindent">where <i>n</i> is the number of moles of gas. The parameter <i>a</i> represents all attractive forces whilst <i>b</i> takes account of repulsion. The physical basis for the modification is that attractive forces will lower the pressure of the gas by causing a reduction in the number of collisions per unit time with the walls of the container. This reduction will depend on the number of molecules at the walls of the container and the number of nearest neighbours, and so this effect is proportional to <i>n</i><sup>2</sup>/<i>V</i><sup>2</sup>. Gas molecules have a finite size and so the volume available to the molecules is less than that of the container. The volume of the molecules is dependent on the repulsive forces present. Generally <i>b</i> increases with molecular complexity. At long range there is a weak attractive force between the molecules which obeys an inverse power law: <i>F</i>&#x221D;<i>r</i><sup>&#x2212;6</sup> (see <a href="Chapter05.xhtml#ch05">Chapter 5</a>).<a class="page" id="page_48">Page 48, Kinetic theory of gases</a>At short range, when the electron distribution of the molecules begin to overlap, the force becomes very strongly repulsive.</p>
+<aside class="abc" style="margin-top:-2.5em;" epub:type="sidebar">
+<p class="noindent2">Typical values for <i>&#x03C3;</i> and <i>&#x03B5;</i> for He, are &#x03C3; = 0.26 nm and <i>&#x03B5;</i> = 0.085 kJ mol<sup>&#x2212;1</sup>. At room temperature <i>RT</i> = 2.5 kJ mol<sup>&#x2212;1</sup> the thermal energy is much larger than the potential well for formation of He<sub>2</sub> and so the dimer does not exist at room temperature.</p>
+</aside>
+<p class="noindent">The deviation from ideal behaviour can be defined by the <i>compression factor</i>, <i>Z</i> = <i>PV</i>/<i>RT</i>, for a gas. <i>Z</i> is measured by keeping the sample of gas at constant temperature and then measuring the volume as a function of pressure. The ideal compression factor should be unity under all conditions. At high pressures the compression factors for all gases are greater than unity, as repulsive interactions dominate. At moderate pressures <i>Z</i> can be less than unity, as attractive interactions become progressively more dominant. At low pressures molecules are rarely in contact and so behave perfectly. Under some conditions the attractive and repulsive forces balance and the real gas acts ideally - the temperature at which this behaviour occurs is called the <i>Boyle temperature</i>, <i>T<sub>b</sub></i>. An expression for the Boyle temperature can be derived by expanding Van der Waals&#x2019; equation:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>P</mi><mi>V</mi><mo>&#x2212;</mo><mi>b</mi><mi>P</mi><mo>+</mo><mfrac>
+<mi>a</mi>
+<mi>V</mi>
+</mfrac>
+<mo>&#x2212;</mo><mfrac>
+<mrow>
+<mi>a</mi><mi>b</mi></mrow>
+<mrow>
+<msup>
+<mi>V</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+<mo>=</mo><mi>R</mi><mi>T</mi></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-9.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page48-3.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">Neglecting the very small <i>ab</i> term, we have</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>P</mi><mi>V</mi><mo>&#x2212;</mo><mrow><mo>(</mo>
+<mrow>
+<mi>b</mi><mo>&#x2212;</mo><mfrac>
+<mi>a</mi>
+<mrow>
+<mi>R</mi><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mi>P</mi><mo>=</mo><mi>R</mi><mi>T</mi></mrow>
+</semantics>
+</math>
+</figure>
+<p class="indent">Non-ideal behaviour is represented by the term <i>b</i> &#x2212; <i>a</i>/<i>RT</i>, which is zero when <i>T</i> = <i>T<sub>b</sub></i> = <i>a</i>/<i>Rb</i>. At high temperatures, where <i>b</i> &#x226B; <i>a</i>/<i>RT</i>, non-ideality arises almost solely from repulsive forces as the molecules progressively gain sufficient kinetic energy to penetrate further into the electronic structure of their collision partners. The value of <i>b</i> can easily be related to the size of the molecules by considering them to be spheres of diameter <i>d</i>. When two molecules collide, the excluded volume due to each other&#x2019;s presence is 4/3<i>&#x03C0;d</i><sup>3</sup>; this is the value per pair, giving 2/3<i>&#x03C0;d</i><sup>3</sup> per molecule. Thus the excluded volume per molecule is 4 times the actual volume of the molecules (4/3<i>&#x03C0;</i>(<i>d</i>/2)<sup>3</sup>). Measured values of <i>b</i> for monatomic gases such as He are in good agreement with the collision cross-sections obtained from viscosity studies, but the approximation is less successful for diatomic molecules.</p>
+<aside class="abc" style="margin-top:-14em;" epub:type="sidebar">
+<p class="noindent2"><b>Table 4.6</b> Van der Waals constants for selected gases.</p>
+<table class="tablec1">
+<tr>
+<td class="tablec">
+<p class="noindent"><b>Atom / Molecule</b></p>
+</td>
+<td class="tablec">
+<p class="noindentc"><b><i>a</i>/dm<sup>6</sup> atm mol <sup>&#x2212;2</sup></b></p>
+</td>
+<td class="tablec">
+<p class="noindentc"><b>100<i>b</i>/dm<sup>3</sup> mol<sup>&#x2212;1</sup></b></p>
+</td>
+</tr>
+<tr>
+<td class="tablec">
+<p class="noindentc">He</p>
+<p class="noindentc">H<sub>2</sub></p>
+<p class="noindentc">O<sub>2</sub></p>
+<p class="noindentc">N<sub>2</sub></p>
+<p class="noindentc">CO<sub>2</sub></p>
+</td>
+<td class="tablec">
+<p class="noindentc">0.03412</p>
+<p class="noindentc">0.2444</p>
+<p class="noindentc">1.360</p>
+<p class="noindentc">1.390</p>
+<p class="noindentc">3.592</p>
+</td>
+<td class="tablec">
+<p class="noindentc">2.370</p>
+<p class="noindentc">2.661</p>
+<p class="noindentc">3.183</p>
+<p class="noindentc">3.913</p>
+<p class="noindentc">4.267</p>
+</td>
+</tr>
+</table>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_4.7">
+<h2 class="h2">4.7<span class="space">&#160;</span>Transport properties</h2>
+<p class="noindent">So far we have considered a gas under equilibrium conditions. If some property of a gas, such as temperature or concentration, is not uniform, then there will be a flow or transport of that property in a direction that will lead to uniformity (given sufficient time). Calculation of transport properties is readily achieved by using collision theory.</p>
+<section epub:type="chapter" id="sec_4.7.1">
+<h3 class="h2">4.7.1<span class="space">&#160;</span>Effusion</h3>
+<p class="noindent">If a gas confined to a container at pressure <i>p</i> and temperature <i>T</i> is separated from a vacuum by a small hole of area <i>A</i>, then the rate at which the molecules escape from the container is equal to the rate at which they strike the hole. Such a process is known as effusion. Every time a molecule hits the hole of <a class="page" id="page_49">Page 49, Kinetic theory of gases</a>area <i>A</i> it escapes, and so the number of particles in the container decreases with time in the following manner:</p>
+<figure class="fig1a" id="eq4.13">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mfrac>
+<mrow>
+<mtext>d</mtext><mi>N</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+<mo>=</mo><mo>&#x2212;</mo><mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mi>N</mi>
+<mi>V</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mrow><mo>&#x2329;</mo> <mi>v</mi> <mo>&#x232A;</mo></mrow><mi>A</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.13</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-5.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page49-4.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">This is a first order differential equation with the solution</p>
+<p class="fig1"><i>N</i> (<i>t</i>) = N<sub>0</sub><i>e</i><sup>&#x2212;<i>kt</i></sup></p>
+<p class="noindent">where</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>k</mi><mo>=</mo><mfrac>
+<mrow>
+<mrow><mo>&#x2329;</mo> <mi>v</mi> <mo>&#x232A;</mo></mrow><mi>A</mi></mrow>
+<mrow>
+<mn>4</mn><mi>V</mi></mrow>
+</mfrac>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">and <i>N</i><sub>0</sub> is the number of particles in the box at <i>t</i> = 0. Hence the rate constant for effusion, <i>k</i>, is proportional to <i>m</i><sup>&#x2212;1/2</sup>. This is known as <i>Graham&#x2019;s Law of Effusion</i>. Heavier gases effuse more slowly than lighter gases. This is intuitively obvious as, at a given temperature, all gases have the same average translational energy (from equipartition), and so light molecules travel faster and have a higher collision rate with the hole. This is the reason why effusion is used for enriching rare isotopes found in gases containing a mixture of isotopes.</p>
+<aside class="abc" style="margin-top:-9.7em;" epub:type="sidebar">
+<p class="noindent"><b>Exercise 4.7</b> Consider O<sub>2</sub> in a 200 cm<sup>3</sup> cell effusing through a 100 &#x03BC;m diameter hole at 300 K. Calculate the time taken for the pressure of the O<sub>2</sub> to fall to half of its initial value.</p>
+</aside>
+<p class="indent">We should note that the size of the hole must be much smaller than the mean free path of the gas sample for the above analysis to hold. If it is much bigger than &#x03BB;, then the molecules undergo many collisions while passing through the hole, and a hydrodynamic flow towards the hole is established within the container, leading to the formation of a jet of escaping gas. Since the escape rate in this case is a problem of hydrodynamics, kinetic theory cannot be used to calculate it.</p>
+</section>
+<section epub:type="chapter" id="sec_4.7.2">
+<h2 class="h2">4.7.2<span class="space">&#160;</span>Viscosity</h2>
+<p class="noindent">Viscosity is the transport of momentum. Consider two layers of a gas moving at different velocities; the molecules within the layers move randomly (in thermal motion) about their bulk motion, and some diffuse from one layer to the other. This exchange of particles transfers momentum across the boundary between the layers, and eventually makes the speeds of both layers equal. Viscous forces are frictional forces that endeavour to make all parts of the gas/fluid move at the same velocity.</p>
+<p class="indent">Consider two layers of molecules, at positions <i>x</i> and <i>x</i> + d<i>x</i>, moving with velocities <i>v</i> and <i>v</i> + d<i>v</i> respectively, thus defining a <i>velocity gradient</i>, d<i>v</i>/d<i>x</i>. Newton showed that the frictional force between the layers is proportional to d<i>v</i>/d<i>x</i> and the area of contact between them:</p>
+<figure class="fig1a" id="eq4.14">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>F</mi><mo>=</mo><mi>&#x03B7;</mi><mi>A</mi><mfrac>
+<mrow>
+<mtext>d</mtext><mi>v</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>x</mi></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.14</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-14em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page49-5.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">where <i>n</i> is known as the <i>viscosity coefficient</i>. If the layers are separated by the mean free path, &#x03BB;, and we assume that all molecules that transfer between them make a move of length &#x03BB;, then the difference in velocities and momenta between the two layers (per move) is</p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page49-6.jpg" alt="images"/>
+</figure>
+</aside>
+<a class="page" id="page_50" style="width:70%;">Page 50, Kinetic theory of gases</a>
+<p class="noindent">&#160;</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>&#x0394;</mi><mi>v</mi><mo>=</mo><mi>&#x03BB;</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mtext>d</mtext><mi>v</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>x</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>and</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>&#x0394;</mi><mi>p</mi><mo>=</mo><mi>m</mi><mi>&#x03BB;</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mtext>d</mtext><mi>v</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>x</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 4.8</b> The viscosity coefficient for Ar at 300K is 2.29&#x00D7;10<sup>&#x2212;5</sup> Pa s. Estimate the collision cross-section for Ar.</p>
+</aside>
+<p class="noindent">The number of moves in a time interval &#x0394; <i>t</i> in both directions is 2<i>ZA</i>&#x0394;<i>t</i> where <i>Z</i> is the number of collisions per second per unit area as introduced in <a href="#sec_4.4">section 4.4</a>. Hence, the total momentum transfer per unit time is</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mfrac>
+<mrow>
+<mi>&#x0394;</mi><mi>p</mi></mrow>
+<mrow>
+<mi>&#x0394;</mi><mi>t</mi></mrow>
+</mfrac>
+<mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mfrac>
+<mi>N</mi>
+<mi>V</mi>
+</mfrac>
+<mrow><mo>&#x2329;</mo> <mi>v</mi> <mo>&#x232A;</mo></mrow><mi>A</mi><mi>m</mi><mi>&#x03BB;</mi><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mtext>d</mtext><mi>v</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>x</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">A comparison with <a href="#eq4.14">eqn (4.14)</a> leads to</p>
+<figure class="fig1a" id="eq4.15">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>&#x03B7;</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>N</mi><mrow><mo>&#x2329;</mo> <mi>v</mi> <mo>&#x232A;</mo></mrow><mi>m</mi><mi>&#x03BB;</mi></mrow>
+<mrow>
+<mn>2</mn><mi>V</mi></mrow>
+</mfrac>
+<mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>&#x03C1;</mi><mrow><mo>&#x2329;</mo> <mi>v</mi> <mo>&#x232A;</mo></mrow><mi>&#x03BB;</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.15</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where <i>&#x03C1;</i> is the density of the gas. The viscosity of a gas at a given temperature is independent of pressure &#x2013; although the number of molecules per unit volume that are available to transfer the momentum increases with pressure, this is compensated for by a corresponding shortening of the mean free path. Also, the viscosity of the gas increases with temperature because the speed of the molecules increases. This observation is contrary to our experience with liquids, because attractive forces dominate viscosity in that environment. In liquids the molecules need energy to escape from their neighbours in order to flow, and this energy is more readily available at higher temperatures. Incidentally, since <i>n</i> depends upon <i>&#x03BB;</i> it must also depend on <i>&#x03C3;</i>, and so viscosity measurements can be used to estimate molecular sizes.</p>
+<aside class="abc" style="margin-top:-9.7em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 4.9</b> The viscosity coefficient of D<sub>2</sub> measured at 293 K and atmospheric pressure is 54% of that of He measured at 500 K. Calculate the ratio of the diameter of D<sub>2</sub> to that of He.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_4.7.3">
+<h2 class="h2">4.7.3<span class="space">&#160;</span>Diffusion</h2>
+<p class="noindent">Diffusion is the transport of matter, and occurs down a concentration gradient until the composition of the system is uniform. The rate of transport is known as the mass flux <i>J</i> and, as expected from our previous discussion on viscosity, is dependent upon the concentration gradient</p>
+<figure class="fig1a" id="eq4.16">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>J</mi><mo>=</mo><mo>&#x2212;</mo><mi>D</mi><mfrac>
+<mrow>
+<mtext>d</mtext><mi>c</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>x</mi></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.16</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">This is known as <i>Fick&#x2019;s first law of diffusion</i>. <i>D</i> is the diffusion coefficient, with the negative sign ensuring that it is positive.</p>
+<p class="indent">Let us consider a concentration gradient between three areas that are each separated by a distance <i>&#x03BB;</i>; they are situated at <i>x</i> = &#x2212;<i>&#x03BB;</i>, 0 and <i>&#x03BB;</i> respectively. Molecules diffuse from <i>A<sub>&#x2212; &#x03BB;</sub></i> a to <i>A</i><sub>0</sub>, with the number at <i>A<sub>&#x2212;&#x03BB;</sub></i>, <i>N<sub>&#x2212;&#x03BB;</sub></i>, being given by</p>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page50-6.jpg" alt="images"/>
+</figure>
+</aside>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msub>
+<mi>N</mi>
+<mrow>
+<mo>&#x2212;</mo><mi>&#x03BB;</mi></mrow>
+</msub>
+<mo>=</mo><msub>
+<mi>N</mi>
+<mn>0</mn>
+</msub>
+<mo>&#x2212;</mo><mi>&#x03BB;</mi><msub>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mtext>d</mtext><mi>N</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>x</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mn>0</mn>
+</msub>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where the derivative is evaluated at <i>x</i> = 0. The number of molecules travelling from <i>x</i> = <i>&#x2212;&#x03BB;</i> to <i>x</i> = 0 is 1/4(<i><sub>N&#x2212;&#x03BB;</sub></i>/<i>V</i>) <i>A t</i>, and so the flux from left to right, <i>J<sub>LR</sub></i>, is</p>
+<a class="page" id="page_51" style="width:70%;">Page 51, Kinetic theory of gases</a>
+<p class="noindent">&#160;</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msub>
+<mi>J</mi>
+<mrow>
+<mi>L</mi><mi>R</mi></mrow>
+</msub>
+<mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mfrac>
+<mrow>
+<msub>
+<mi>N</mi>
+<mrow>
+<mo>&#x2212;</mo><mi>&#x03BB;</mi></mrow>
+</msub>
+</mrow>
+<mi>V</mi>
+</mfrac>
+<mrow><mo>&#x2329;</mo> <mi>v</mi> <mo>&#x232A;</mo></mrow></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">Similarly, the flux from right to left, <i>J<sub>RL</sub></i>, must be</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msub>
+<mi>J</mi>
+<mrow>
+<mi>R</mi><mi>L</mi></mrow>
+</msub>
+<mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mfrac>
+<mrow>
+<msub>
+<mi>N</mi>
+<mi>&#x03BB;</mi>
+</msub>
+</mrow>
+<mi>V</mi>
+</mfrac>
+<mrow><mo>&#x2329;</mo> <mi>v</mi> <mo>&#x232A;</mo></mrow></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">Hence, the overall flux, <i>J</i>, is</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>J</mi><mo>=</mo><msub>
+<mi>J</mi>
+<mrow>
+<mi>L</mi><mi>R</mi></mrow>
+</msub>
+<mo>&#x2212;</mo><msub>
+<mi>J</mi>
+<mrow>
+<mi>R</mi><mi>L</mi></mrow>
+</msub>
+<mo>=</mo><mo>&#x2212;</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>&#x03BB;</mi><mrow><mo>&#x2329;</mo> <mi>v</mi> <mo>&#x232A;</mo></mrow><msub>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mtext>d</mtext><mi>N</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>x</mi></mrow>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow></mrow>
+<mn>0</mn>
+</msub>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">Comparing this with <a href="#eq4.16">eqn (4.16)</a> leads to</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>D</mi><mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>&#x03BB;</mi><mrow><mo>&#x2329;</mo> <mi>v</mi> <mo>&#x232A;</mo></mrow></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">This calculation doesn&#x2019;t take into account the fact that the molecules can start close to area <i>A</i><sub>0</sub> but may undergo many collisions before reaching <i>A</i><sub>0</sub>. Taking this random walk process into consideration yields</p>
+<figure class="fig1a" id="eq4.17">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>D</mi><mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>3</mn>
+</mfrac>
+<mi>&#x03BB;</mi><mrow><mo>&#x2329;</mo> <mi>v</mi> <mo>&#x232A;</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.17</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">The diffusion coefficient will decrease as pressure increases, because the mean free path of the molecules becomes shorter, and increases as the temperature rises because the molecules then move more quickly on average.</p>
+<p class="indent">Diffusion is also very important in solution as many reaction rates are controlled by the rate at which the reactants come together. The diffusion rate constant is dependent upon the diffusion coefficients for each reagent, which are functions of temperature, molecular, size and the viscosity of the solvent in which the reaction is taking place. The Stokes-Einstein equation relates the diffusion coefficient, <i>D</i>, to the solvent viscosity, <i> &#x03B7;</i>, and the hydrodynamic radius of the reagent, <i>R</i>:</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<p class="noindent2">These expressions for the diffusion controlled rate constant only hold for the reactions of neutral species.</p>
+</aside>
+<figure class="fig1a" id="eq4.18">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>D</mi><mo>=</mo><mfrac>
+<mrow>
+<mtext>k</mtext><mi>T</mi></mrow>
+<mrow>
+<mn>6</mn><mi>&#x03C0;</mi><mi>&#x03B7;</mi><mi>R</mi></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.18</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">Considering Fick&#x2019;s first law leads to the following expression for the diffusion-controlled rate constant, <i>k<sub>d</sub></i>,</p>
+<p class="fig1a" id="eq4.19"><i>k<sub>d</sub></i> = 4&#x03C0; <i>R* D N<sub>A</sub></i>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(4.19)</p>
+<p class="noindent">where <i>D</i> = <i>D<sub>A</sub></i> +<i>D<sub>B</sub></i> is the sum of diffusion coefficients for the reactants, and <i>R*</i> is a critical distance at which all the molecules of reagent B surrounding A react so that the concentration of B at this distance is zero. Making the approximation <i>R<sub>A</sub></i> = <i>R<sub>B</sub></i> = <i>R</i>*/ 2, and using <a href="#eq4.18">eqn (4.18)</a>, gives</p>
+<figure class="fig1a" id="eq4.20">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msub>
+<mi>k</mi>
+<mi>d</mi>
+</msub>
+<mo>=</mo><mfrac>
+<mrow>
+<mn>8</mn><mi>R</mi><mi>T</mi></mrow>
+<mrow>
+<mn>3</mn><mi>&#x03B7;</mi></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>4.20</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-19em;" epub:type="sidebar">
+<p class="noindent2"><b>Table 4.7</b> Some diffusion coefficients at 298 K.</p>
+<table class="tablec1">
+<tr>
+<td class="tablec">
+<p class="noindentc"><b>Molecules/Ions in liquids</b></p>
+</td>
+<td class="tablec">
+<p class="noindentc"><b><i>D</i> /(cm<sup>2</sup> s<sup>&#x2212;1</sup>)</b></p>
+</td>
+</tr>
+<tr>
+<td class="tablec">
+<p class="noindentc">I<sub>2</sub> in hexane</p>
+<p class="noindentc">H<sub>2</sub> in CCl<sub>4(1)</sub></p>
+<p class="noindentc">O<sub>2</sub> in CCl<sub>4(1)</sub></p>
+<p class="noindentc">CH<sub>4</sub> in CCl<sub>4(1)</sub></p>
+<p class="noindentc">H<sup>+</sup> in H<sub>2</sub>O</p>
+<p class="noindentc">Li<sup>+</sup> in H<sub>2</sub>O</p>
+<p class="noindentc">Na<sup>+</sup> in H<sub>2</sub>O</p>
+</td>
+<td class="tablec">
+<p class="noindentc">4.05&#x00D7;10<sup>&#x2212;5</sup></p>
+<p class="noindentc">9.75&#x00D7;10<sup>&#x2212;5</sup></p>
+<p class="noindentc">3.82&#x00D7;10<sup>&#x2212;5</sup></p>
+<p class="noindentc">2.89&#x00D7;10<sup>&#x2212;5</sup></p>
+<p class="noindentc">9.31&#x00D7;10<sup>&#x2212;5</sup></p>
+<p class="noindentc">1.03&#x00D7;10<sup>&#x2212;5</sup></p>
+<p class="noindentc">1.33&#x00D7;10<sup>&#x2212;5</sup></p>
+</td>
+</tr>
+</table>
+</aside>
+<p class="noindent">showing that, to a first approximation, the diffusion-controlled rate constant <a class="page" id="page_52">Page 52, Kinetic theory of gases</a>is dependent only on the temperature and the viscosity of the solvent and not on the identity of the reagents. While large reagents diffuse more slowly than smaller species, they have bigger hydrodynamic radii and collision cross-sections; hence, the size of the reagents does not enter <a href="#eq4.20">eqn (4.20)</a>. Taking a typical critical distance of 0.5 nm and a diffusion constant of 10<sup>&#x2212;9</sup>m<sup>2</sup>s<sup>&#x2212;1</sup>, the calculated rate constant, <i>k<sub>d</sub></i> &#x2248; 3.8 &#x00D7; 10<sup>9</sup>mol <sup>&#x2212;1</sup> dm<sup>3</sup>s<sup>&#x2212;1</sup>.</p>
+<p class="indent">Whether in the gas phase or in solution, molecules always diffuse down a concentration gradient. For example, consider the situation where two bulbs are connected by a closed tap. If one bulb initially contains some gas but the other one is evacuated then when the tap is opened, the gas from one bulb will diffuse into the other and the pressures are equalised. In this situation the gas molecules are randomly distributed over a greater volume than before and have increased their entropy (which is a measure of the disorder of the gas). This is an example of the <i>Second Law of Thermodynamics</i>, which states that: <i>Spontaneous processes are those which increase the entropy of the universe</i>. Experience tells us that the reverse process does not occur; this would be a non-spontaneous process with a negative entropy change.</p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page52-1.jpg" alt="images"/>
+</figure>
+<p class="noindent2">For further discussion on entropy and thermodynamics in general see Price: <i>Thermodynamics of chemical processes</i> OCP 56.</p>
+</aside>
+</section>
+</section>
+</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/><title>Computers in Chemistry</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+</head>
+<body>
+<section epub:type="chapter" id="ch03">
+<a id="page_25" class="page" style="width:70%;">Page 25, Chapter 3 Interfacing computers to experiments</a>
+<h1 class="main">3<span class="space">&#160;</span>Interfacing computers to experiments</h1>
+<p class="banoindent">In order for computers to be able to process data, the data must be first entered into the machine. Where the primary purpose of the computer is analysis of end results, then the data is often entered by hand &#x2013; the experimenter <i>is</i> the interface. But when the purpose of the computer is analysis of primary data, such as counting events, measuring voltages, and so on, the human interface looses its attraction &#x2013; it is slow, error prone, and lacks concentration. This chapter provides an introduction to the techniques of both getting experimental information into a computer and causing a computer to control the experiment.</p>
+<p class="baindent">Because of limitations of space (and knowledge), it will be necessary to restrict the examples to those involving the PC. The techniques described will be applicable to other computers; it will only be the interface between the computer hardware and the circuits described here which would change.</p>
+<section epub:type="chapter" id="ch3.1">
+<h2 class="h2"> 3.1 <b>Introduction to interfacing techniques</b></h2>
+<p class="banoindent">In reality there are only a limited number of things that need to be measured or controlled in an experimental situation: voltages need to be measured or generated, events need to be counted or generated, and times need measuring. Any other experimental parameter can be converted into one of these basic functions. For instance, temperature or pressure is very easily converted into a voltage, indeed most temperature or pressure sensors work by generating voltages, or their control unit has an output which can be used. Any output that is displayed on, say, a chart recorder is already a voltage. Devices such as Geiger counters, whose output is a series of pulses, can be interfaced either by taking the output of their rate meter as a voltage or by counting the pulses directly.</p>
+<p class="baindent"> Perhaps the most difficult quantity to measure electronically is distance. Small distances (&#x003C; &#x223C;2 cm) can be measured accurately using differential transformers (see Wayne), moderate distances (up to ~1 m) are measured using optical linear position sensors, longer distances (up to 10 m) can be achieved with ultra-sound ranging, and for the longest distances laser ranging is used. But they all have one thing in common, the output is finally delivered as a voltage that is proportional to the distance being measured.</p>
+<p class="baindent">The device used to &#x2018;measure&#x2019; a voltage is called an <i>analogue to digital converter</i> or ADC; similarly, the complimentary device used to generate a specific voltage is called a <i>digital to analogue converter</i> or DAC. The detailed operation of both ADCs and DACs is described below; here it is sufficient to say that an ADC takes a voltage and converts it into binary data proportional to that voltage (and <i>vice versa</i> for DACs). In a computer system, the output of the ADC (or input of the DAC) is designed so that it looks like <a id="page_26" class="page">Page 26, Chapter 3 Interfacing computers to experiments</a>one or more memory locations on the microprocessor bus. Thus, in order to read the voltage present on the input of an ADC, all that is needed is to perform a read on the corresponding memory location.</p>
+<aside class="abc" style="margin-top:6em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">Measuring time using an external counter and frequency source is much more accurate than using the CPU clock &#x2013; the CPU clock is often slowed down or stretched when peripherals are accessed. In addition, if an interrupt occurs, the timing will be inaccurate.</p></aside>
+<p class="baindent"> Counters are also arranged so that they appear as one or more memory locations on the bus. Generally though, counters are both readable and writeable &#x2013; they are readable, obviously, so that the current count can be read, but they are also writeable so that a preset value (usually zero) can be loaded into the counter before it starts counting. Often the ability to start and stop the counter is provided, either through programming or by an external signal. This start/stop function is important when the counter is used as a rate meter, since it is necessary to count the number of events over a fixed period of time. As an extension of this, using an external signal to start and stop the counter, and providing the counter with an accurately known frequency source as its input, allows the time between the start and stop events to be measured. For instance, if a counter is provided with a 1 MHz input frequency, every increment to the count corresponds to a time increment of 1 &#x03BC;s; hence if there is an interval of 34 &#x03BC;s between the two events, the counter will count to 34 or 00010010 in binary.</p>
+<p class="baindent">The final class of device that will be looked at here is the <i>parallel I/O</i> or PIO device. The PIO allows a single bit (or groups of bits) to be output or input. The importance of such functionality is in being able to sense whether a signal is on or off, and in being able to control on/off devices such as relays, valves, motors, lamps, <i>etc</i>. A Schmitt trigger device usually buffers the input signals before connecting to the PIO; similarly the output signals are buffered before being used to drive the external device.</p>
+<h3 class="h3">Digital to analogue converters</h3>
+<p class="banoindent">The principle of a digital to analogue converter (DAC) is simple: the idea is that the device produces at its output a voltage proportional to the binary data at its input. One way of achieving this is to arrange for a specific point on a voltage divider chain to be selected for each combination of inputs. This is feasible for small word lengths &#x2013; a 3-bit word would only require 8 tap points on the divider chain (see <a href="#fig3.1">Fig. 3.1</a>) &#x2013; but with the more common word lengths of 10 or 12 bits, the number of tap points becomes unreasonably large. A further problem with such voltage divider chains is that as soon as any current is drawn from the output, the progression of voltages is unbalanced and the output becomes non-linear.</p>
+<figure class="image" id="fig3.1">
+<img src="../images/page26-1.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-12em;" epub:type="sidebar">
+Fig. 3.1 A voltage divider chain as a 3-bit digital to analogue converter. The output voltage, <i>V</i><sub>out</sub>, is <i>V</i><sub>ref</sub> <i>N</i>/8, where <i>N</i> is the decimal equivalent of the binary input.</aside>
+</figcaption>
+</figure>
+<p class="banoindent"><a id="page_27" class="page">Page 27, Chapter 3 Interfacing computers to experiments</a></p>
+<p class="baindent">The solution is to perform some sort of summation. Voltage addition is not straightforward, so usually current summation is used and is illustrated in <a href="#fig3.2">Fig. 3.2</a> for a 4-bit word. Here, each constant current source is arranged to produce twice the current of its neighbour in a binary progression; the total output current is thus proportional to the input binary data. The output voltage is then developed by passing this current through a resistor.</p>
+<figure class="image" id="fig3.2">
+<img src="../images/page27-1.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-15em;" epub:type="sidebar">
+Fig. 3.2 A 4-bit current summation DAC. The voltage developed across the resistor is dependant on the state of the four switches.</aside>
+</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-0.5em;" epub:type="sidebar">
+<figure class="image" id="fig3.3" style="margin-left:1em;">
+<img src="../images/page27-2.jpg" alt="images"/>
+<figcaption>Fig. 3.3 Two parallel, equal value, registor have same current flowing through them</figcaption>
+</figure>
+</aside>
+<p class="baindent">The use of constant current sources is useful in illustrating the principle of how a current summation DAC works. However, in practice, accurate, stable constant current sources are difficult to fabricate. The most common form of current summation DAC are those which use a current switching <i>R</i>-2<i>R</i> resistance ladder. The basic idea of these devices is that when two resistors of equal value are placed in parallel, the same current flows through each (<a href="#fig3.3">Fig. 3.3</a>); further, if each resistor has a value of 2<i>R</i>, the total resistance is <i>R</i>. If then this pair of resistors is used, along with another resistor of value <i>R</i>, in one arm of another parallel pair, then the same equal current division will be achieved, but the current in each of the original pair of resistors will be &#x00BC; the total current in the circuit (<a href="#fig3.4">Fig. 3.4</a>). It is now obvious that cascading the parallel resistance circuits in this way causes the current in each arm to be halved each time. Thus we have our binary progression of currents.</p>
+<p class="indent">A big advantage of the <i>R</i>-2<i>R</i> network is that only resistive components are present. Consequently it easy to adjust, or <i>trim</i>, the network, if necessary, at the fabrication stage in order to ensure a linear response.</p>
+<figure class="image" id="fig3.4">
+<img src="../images/page27-3.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-9em;" epub:type="sidebar">
+Fig. 3.4 <i>R</i>-2<i>R</i> resistor network used to create a binary progression of currents</aside>
+</figcaption>
+</figure>
+<p class="banoindent"><a id="page_28" class="page">Page 28, Chapter 3 Interfacing computers to experiments</a></p>
+<figure class="image" id="fig3.5">
+<img src="../images/page28-1.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-15em;" epub:type="sidebar">
+Fig. 3.5 A current switching network. The output current is given by the same formula as in <a href="#fig3.2">Fig. 3.2</a>. <i>I</i>&#x2032;<sub>out</sub> is the inverse of <i>I</i><sub>out</sub>, such that <i>I</i><sub>out</sub> + <i>I</i>&#x2032;<sub>out</sub> &#x003D; 15<i>I</i>. The current, <i>I</i>, is given by <i>V</i><sub>ref</sub>/16<i>R</i>.</aside>
+</figcaption>
+</figure>
+<p class="baindent">In a real circuit, each current flow is switched to one of two places depending on the binary input data (<a href="#fig3.5">Fig. 3.5</a>); the current flows in each output are thus either proportional to, or inversely proportional to, the input binary data. However, it is important that each of the outputs is maintained as close to zero potential as possible, otherwise the current flow in the circuit will become unbalanced and will no longer be linear, consequently it is not possible to just pass the current through a resistor in order to develop the required output voltage. In most applications, the output current is converted to a voltage using an operational amplifier (<a href="#fig3.6">Fig. 3.6</a>)</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">The details of operational amplifiers can be found in either Wayne or Horowitz and Hill.</p>
+</aside>
+<figure class="image" id="fig3.6">
+<img src="../images/100.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-8em;" epub:type="sidebar">
+Fig. 3.6 An operational amplifier used to convert the output current of the <i>R</i>-2<i>R</i> network into a voltage</aside>
+</figcaption>
+</figure>
+<p class="baindent">The inverting input of the operational amplifier is a &#x201C;virtual ground&#x201D; created by the feedback current from the output through <i>R</i><sub>f</sub>. This feedback current is equal in magnitude, but opposite in sign, to <i>I</i><sub>out</sub>. Thus the voltage at the output of the operational amplifier (<i>V</i><sub>out</sub>) must be <i>&#x2013;I</i><sub>out</sub>/<i>R</i><sub>f</sub>. If <i>R</i><sub>f</sub> is chosen to be the same as the value of <i>R</i> in the <i>R</i>-2<i>R</i> ladder, then it can be shown that <i>V</i><sub>out</sub> is <i>NV</i><sub>ref</sub>/2<sup><i>n</i></sup>, where <i>N</i> is the decimal equivalent of the binary input data and <i>n</i> is the number of bits in the DAC.</p>
+<p class="baindent"> In all these circuits the stability of the output voltage depends on the stability of the current, <i>I</i>. This current, in turn, depends solely on the voltage across the resistor network. Consequently, the excitation or <i>reference</i> voltage is usually provided by an extremely stable source. The reference voltage is also often chosen to be a convenient value; for instance, a 10-bit converter might have a reference voltage of 1.024V, resulting in a resolution of 0.00 IV and an output voltage which is one thousandth of the decimal value of the input.</p>
+<p class="banoindent"><a id="page_29" class="page">Page 29, Chapter 3 Interfacing computers to experiments</a></p>
+<aside class="abc" style="margin-top:5em;" epub:type="sidebar">
+<figure class="image" style="margin-left:1em;" id="fig3.7">
+<img src="../images/page29-1.jpg" alt="images"/>
+<figcaption>Fig. 3.7 A flash analog to digital converter</figcaption>
+</figure>
+</aside>
+<h3 class="h3">Analogue to digital converters</h3>
+<p class="banoindent">There are two main types of ADCs: flash converters and successive approximation converters. The simplest in concept is the flash converter. In these devices the input signal (<i>V</i><sub>in</sub>) is fed to a series of comparators, each comparator&#x2019;s reference voltage (<i>V</i><sub>r</sub>) is derived from a resistance divider chain, the top of the chain being provided with a stable reference voltage (<i>V</i><sub>ref</sub>). If all the resistors in the divider chain are of equal value, then the first comparator from the top of the chain whose output is high (i.e. <i>V</i><sub>r</sub> &#x003E;<i> V</i><sub>in</sub>) is proportional to the input voltage. In the ADC, the output of all the comparators are passed to an encoder, the binary output of which depends on the highest numbered input that is high. Thus, the output of the ADC is a binary number representing the input voltage. <a href="#fig3.7">Fig. 3.7</a> shows a simplified flash ADC. The advantage of this type of ADC is that its operation is very simple and rapid. However, if high accuracy is required, then the number of comparators increases exponentially with resolution: for 4-bit accuracy 16 comparators are required, 8-bit needs 256 comparators, 10-bit needs 1024 and so on. As the number of comparators increases it become more difficult to fabricate all parts of the circuit with identical characteristics and so it becomes more difficult to attain the required accuracy and linearity.</p>
+<figure class="image" id="fig3.8">
+<img src="../images/page29-2.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-15em;" epub:type="sidebar">
+Fig. 3.8. A simplified diagram of the successive approximation analogue to digital conversion</aside>
+</figcaption>
+</figure>
+<p class="baindent">The second type of ADC is the successive approximation converter. In this device, the input voltage is first compared to half the reference voltage, if <i>V</i><sub>in</sub> is less than &#x00BD;<i>V</i><sub>ref</sub>, it is then compared to &#x00BC;<i>V</i><sub>ref</sub> if it is higher, it is next compared to &#x00BE;<i>V</i><sub>ref</sub>, and so on. The true value of <i>V</i><sub>in</sub> is thus &#x2018;zeroed-in&#x2019; on. A simplified diagram of such an ADC is shown in <a href="#fig3.8">Fig. 3.8.</a> The circuit is complex, but can easily be divided into three sections: the successive approximation register (SAR), the DAC and the comparator. The detailed circuitry of the SAR is beyond the scope of this book, but essentially it is a combination of shift register and latches. The operation is as follows: on the rising edge of each clock pulse, after the application of a start signal, an output, starting at the MSB, goes high, on the falling edge of the clock, that output takes on the same state as that present at the D input, on the next clock rising edge, the next output goes high and so on. The sequence repeats until <a id="page_30" class="page">Page 30, Chapter 3 Interfacing computers to experiments</a>the last bit has been determined and on the next clock pulse the <i>end of conversion</i> (EOC) signal goes high. The sequence of events in the ADC as a whole is as follows:</p>
+<p class="li">1. &#160;When the start signal goes high, the SAR is cleared and Q2 is taken high. The 3-bit DAC thus gives at its output a voltage equivalent to half the reference voltage.</p>
+<p class="li">2. &#160;The output of the comparator gives a logic zero if <i>V</i><sub>in</sub> is lower than <i>V</i><sub>r</sub> (=&#x00BD; <i>V</i><sub>ref</sub>), and a logic one if it is higher, and, since the output of the comparator is connected to the D input of the SAR, on the next clock edge, Q2 will take on the same state as the comparator output. Thus the first <i>approximation</i> is complete.</p>
+<p class="li">3. &#160;On the next clock edge, Q1 is taken high and the cycle is repeated: each output of the SAR takes on the value of the comparator at the time.</p>
+<aside class="abc" style="margin-top:-23em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">MSB = Most Significant Bit</p>
+<p class="noindent2" style="margin-left:1em;">LSB = Least Significant Bit</p>
+</aside>
+
+<aside class="abc" style="margin-top:0.75em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">The resolution of an ADC is determined by the number of output bits. A 4-bit converter will only have 16 discrete output states, so if the reference voltage is 1.6V, the resolution will be 0.1V.</p>
+</aside>
+<p class="baindent">A typical sequence of events for a 4-bit ADC is shown in <a href="#fig3.9">Fig. 3.9.</a> In this diagram the state of each output on each clock edge is shown, along with the output voltage of the DAC. The shaded areas represent the range of voltages eliminated by the ADC on each approximation, showing how the true value of the voltage is zeroed-in on. Note also that the final converted voltage is not exactly the same as the input voltage. This inaccuracy is because the resolution of the ADC is not high enough to accurately represent the true voltage.</p>
+<figure class="image" id="fig3.9">
+<img src="../images/page30-1.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-23em;" epub:type="sidebar">
+Fig. 3.9 The operation of a successive approximation ADC. The open triangles show the point at which an approximation is made, the filled triangles show when a &#x2018;decision&#x2019; is taken. The final output of the ADC is 1010, indicating that the input voltage is approximately 10/16 <i>V</i><sub>ref</sub>.</aside>
+</figcaption>
+</figure>
+<p class="baindent">From this description of the successive approximation ADC, it is obvious that the conversion is not instantaneous like the flash ADC described previously. The conversion time for an <i>n</i>-bit ADC is usually around <i>n</i>&#x002B;1 <a id="page_31" class="page">Page 31, Chapter 3 Interfacing computers to experiments</a>clock cycles: typically this means around 100&#x03BC;s for an 8-bit conversion compared to &#x003C;1&#x03BC;s for a flash ADC. Nevertheless, the advantages of the successive approximation ADC often outweigh their slowness. For instance, they are usually more accurate than flash converters &#x2013; accuracy in this case usually means linearity, <i>i.e</i>. a change in 1 bit represents the same voltage no matter where on the scale that bit change occurs: in flash converters, this linearity is a function of both the resistor divider chain and how identical each comparator is, and so may depend on many components; whereas in the successive approximation converter, the linearity is entirely dependent on the DAC and the resistor divider chain therein.</p>
+<h3 class="h3">Sample and hold</h3>
+<p class="banoindent">One big disadvantage of a successive approximation ADC is that in order to obtain an accurate conversion, the input voltage must be held constant throughout the whole of the conversion period. In an experimental situation, this is not often, if ever, possible. The solution is to use a <i>sample and hold</i> (S/H) device. These devices use the ability of a capacitor to store charge in order to keep the voltage at the input to the ADC constant. A simplified circuit of a S/H device is shown in <a href="#fig3.10">Fig. 3.10</a> and consists of an input buffer, an electronic switch, a storage capacitor and an output buffer. The storage capacitor is charged to the same voltage as <i>V</i><sub>in</sub> when the switch is closed; when the switch is opened, since the input impedance of the output buffer is high, the voltage on the capacitor remains constant, and hence the output voltage, <i>V</i><sub>out</sub>, remains constant. Thus, <i>V</i><sub>out</sub> takes on the same voltage as <i>V</i><sub>in</sub> every time the switch is closed, and holds that voltage until the next time the switch is operated. The length of time that the S/H will hold a voltage for is dependent on the value of the storage capacitor &#x2013; the higher the value, the longer it will hold the charge for &#x2013; but also, the higher the value, the longer it will take to attain a stable charge, and so fast changes will not be able to be followed accurately. Typically, storage capacitors of about 0.01 &#x03BC;F are used, enabling acquisition times of about 50 &#x03BC;s to be achieved with drift rates of about 0.5 mV s<sup>&#x2212;1</sup></p>
+<aside class="abc" style="margin-top:-19em;" epub:type="sidebar">
+<figure class="image" style="margin-left:0em;width:100%;" id="fig3.10">
+<img src="../images/page31-1.jpg" alt="images"/>
+<figcaption>Fig. 3.10 Simplied samle and hold. The output (dashed line) takes the same voltage as the input (solid line) on each gate pulse</figcaption>
+</figure>
+</aside>
+<h3 class="h3">PIO devices</h3>
+<p class="banoindent">The ability to detect if an external device is on or off, or indeed to switch an external device on or off, is of paramount importance in an experimental situation. Although it is possible to construct individual on/off circuits, it is usually the case that a number of such elements are grouped together in one device; these devices are called parallel input/output (PIO) devices. These devices are found in just about every computer: it is the basic element that forms the parallel printer port. Indeed the parallel printer port can often be subverted into acting as an external experimental controller in some circumstances, but for simplicity, we will not be taking that approach here.</p>
+<p class="baindent">The individual I/O lines of a PIO device are often grouped into convenient sets. Most often these sets, or ports, are 8 bits wide. There are numerous PIO devices available, and each has their own individual features. For instance, with some, it may be possible to program each individual bit to be either an input or an output, some it may only be possible to program <i>ports</i> to be input or output, some may be able to act as both input and output simultaneously; some may have Schmitt trigger inputs, whereas others may have high current <a id="page_32" class="page">Page 32, Chapter 3 Interfacing computers to experiments</a>outputs. The device we will concentrate on here is the Intel 8255; this may not be the most powerful PIO available, but it is very versatile, and is easy to understand and program.</p>
+<p class="baindent"> The 8255 is a general purpose I/O device designed for use with microprocessors. It has 24 I/O lines that may be used in a number of different ways. These 24 lines are divided into three basic 8-bit ports: A, B, and C. Ports A and B can be programmed as either input or output whereas port C can be programmed in groups of 4 bits to be either input or output, or act as control and status signal lines for ports A and B. A block diagram of the device is shown in <a href="#fig3.11">Fig. 3.11.</a> The two address lines A<sub>0</sub> and A<sub>1</sub> are used in conjunction with the chip select ( <img src="../images/page32-3.jpg" alt="images"/> ) and the read and write (<img src="../images/page32-4.jpg" alt="images"/> and <img src="../images/page32-5.jpg" alt="images"/> ) lines to access a number of registers in the chip. These registers and their operation are shown in <a href="#tab3.1">Table 3.1.</a></p>
+<figure class="image" id="fig3.11">
+<img src="../images/ab.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-23em;" epub:type="sidebar">
+Fig. 3.11 Block diagram of the 8255</aside>
+</figcaption>
+</figure>
+<aside class="abc" style="margin-top:3em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em" id="tab3.1"><b>Table 3.1</b> The basic operation of the 8255. &#x00D7; = &#x201C;don&#x2019;t care&#x201D;</p></aside>
+<table class="width100b-n" style="margin-left:2em;width:60%;">
+<tr>
+<td class="borb" style="padding-top:0.5em;"><p class="tleft">A<sub>1</sub></p></td>
+<td class="borb" style="padding-top:0.5em;"><p class="tleft">A<sub>0</sub></p></td>
+<td class="borb" style="padding-top:0.5em;"><p class="tleft"><span class="tb">RD</span></p></td>
+<td class="borb" style="padding-top:0.5em;"><p class="tleft"><span class="tb">WR</span></p></td>
+<td class="borb" style="padding-top:0.5em;"><p class="tleft"><span class="tb">CS</span></p></td>
+<td class="borb" style="padding-top:0.5em;"><p class="tleft">Operation</p></td>
+</tr>
+<tr>
+<td><p class="tcenter">0</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tcenter">1</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tleft">Port A &#x21D2; Data Bus</p></td></tr>
+<tr>
+<td><p class="tcenter">0</p></td>
+<td><p class="tcenter">1</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tcenter">1</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tleft">Port B &#x21D2; Data Bus</p></td></tr>
+<tr>
+<td><p class="tcenter">1</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tcenter">1</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tleft">Port C &#x21D2; Data Bus</p></td></tr>
+<tr>
+<td class="borb"><p class="tcenter">1</p></td>
+<td class="borb"><p class="tcenter">1</p></td>
+<td class="borb"><p class="tcenter">0</p></td>
+<td class="borb"><p class="tcenter">1</p></td>
+<td class="borb"><p class="tcenter">0</p></td>
+<td class="borb"><p class="tleft">Illegal</p></td></tr>
+<tr>
+<td><p class="tcenter">0</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tcenter">1</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tleft">Data Bus <i>&#x21D2;</i> Port A</p></td></tr>
+<tr>
+<td><p class="tcenter">0</p></td>
+<td><p class="tcenter">1</p></td>
+<td><p class="tcenter">1</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tleft">Data Bus &#x21D2; Port B</p></td></tr>
+<tr>
+<td><p class="tcenter">1</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tcenter">1</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tleft">Data Bus &#x21D2; Port C</p></td></tr>
+<tr>
+<td class="borb"><p class="tcenter">1</p></td>
+<td class="borb"><p class="tcenter">1</p></td>
+<td class="borb"><p class="tcenter">1</p></td>
+<td class="borb"><p class="tcenter">0</p></td>
+<td class="borb"><p class="tcenter">0</p></td>
+<td class="borb"><p class="tleft">Data Bus &#x21D2; Control</p></td></tr>
+<tr>
+<td><p class="tcenter">&#x00D7;</p></td>
+<td><p class="tcenter">&#x00D7;</p></td>
+<td><p class="tcenter">&#x00D7;</p></td>
+<td><p class="tcenter">&#x00D7;</p></td>
+<td><p class="tcenter">1</p></td>
+<td><p class="tleft">Data Bus disabled</p></td></tr>
+<tr>
+<td><p class="tcenter">&#x00D7;</p></td>
+<td><p class="tcenter">&#x00D7;</p></td>
+<td><p class="tcenter">1</p></td>
+<td><p class="tcenter">1</p></td>
+<td><p class="tcenter">0</p></td>
+<td><p class="tleft">Data Bus disabled</p></td></tr>
+</table>
+<p class="banoindent"><a id="page_33" class="page">Page 33, Chapter 3 Interfacing computers to experiments</a></p>
+<figure class="image" id="fig3.12">
+<img src="../images/page33-1.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-17em;" epub:type="sidebar">
+Fig. 3.12 The control register of the 8255
+<p class="noindent2" style="margin-left:0em;margin-top:0.75em;width:100%;">(a) Setting the mode and data flow direction. A &#x2018;1&#x2019; in the bit representing each port sets that port to be an input, whilst a &#x2018;0&#x2019; sets it to be an output.</p>
+<p class="noindent2" style="margin-left:0em;margin-top:0.75em;width:100%;">(b) Single bit set/reset of Port C. The bit is selected using D<sub>3</sub>&#x2013;D<sub>1</sub> and is set (&#x2018;1&#x2019;) or reset (&#x2018;0&#x2019;) according to D<sub>0</sub>.</p></aside>
+</figcaption>
+</figure>
+<p class="baindentt">The control register is an 8-bit write only register that both determines how each port behaves and allows individual bits of port C to be modified. When bit 7 of this register is 1, the other bits determine the operational mode as shown in <a href="#fig3.12">Fig. 3.12a</a>. There are three basic modes of operation: Mode 0 is simple I/O giving 24 programmable I/O lines; Mode 1 is used for <i>strobed</i> I/O in which port C is used to provide <i>handshaking</i> and <i>status</i> signals for ports A and B; Mode 2 implements a bi-directional bus I/O system on port A along with five of the lines of port C. These modes are shown in <a href="#fig3.13">Fig. 3.13.</a></p>
+<p class="baindent">When bit 7 of the control register is 0, the rest of the bits are used to set or reset individual lines of port C (<a href="#fig3.12">Fig. 3.12b</a>). This functionality enables individual bits to be set or reset using a single processor function, thus simplifying program design.</p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="image" style="margin-left:0em;width:100%;" id="fig3.13">
+<img src="../images/page33-2.jpg" alt="images"/>
+<figcaption style="margin-left:1em;">Fig. 3.13 Basic mode definitions in 8255</figcaption>
+</figure>
+</aside>
+<p class="baindent">The details of all the modes and combinations of modes and their applications are far too complicated to go into in full here. However, if it is ever necessary to program this, or indeed any other, device, then a very careful read of the manufacturers data sheet will provide you with all the necessary programming information.</p>
+<h3 class="h3">Pulse generation</h3>
+<p class="banoindent">It is often necessary to generate pulses, either individually or in sequences, when interfacing to experiments. Obviously, it is simple to generate a single pulse using a PIO: it is only necessary to arrange for an output to be turned on, then a short time later turned off. However, because of the nature of a computer, it is not possible to ensure that the &#x2018;short time later&#x2019; is always the same; in some cases it may not be important, but in many, the length of the pulse, or the time between two pulses, is of paramount importance. The easiest way to overcome this is to use some form of external timing device.</p>
+<p class="baindent">If a pulse needs to be of constant, unvarying, width, then it is only necessary to have the leading edge of an output of the PIO trigger a monostable; the length of the pulse from the PIO is then of no consequence. However, this does mean that the length of the pulse can not be under program control. As alluded to earlier though, it is possible to use counters as timing devices. In order to do this, it is necessary to connect a stable, known frequency source to the clock input of the counter: each count of the counter, <a id="page_34" class="page">Page 34, Chapter 3 Interfacing computers to experiments</a></p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<figure class="image" style="margin-left:0.5em;width:100%;" id="fig3.14">
+<img src="../images/page34-1.jpg" alt="images"/>
+<figcaption>Fig. 3.14 A count-down timer. A <i>start</i> pulse loads a value <i>N</i> into the counter. The counter then takes <i>N</i> clock pulses to reach zero again, at which point the clock pulses are inhibited. The <i>zero</i> output thus give a pulse whose output is exactly <i>N</i> clock pulses long.</figcaption>
+</figure>
+</aside>
+<p class="banoindent">then corresponds to time interval of 1/<i>f</i><sub>clk</sub> (for instance, a clock frequency of 1 MHz will correspond to a time interval of 1 &#x03BC;s). It is important that this frequency source is independent of the computer clock signals: the computer clock is often stretched or stopped according to which peripherals are being accessed and so it is neither stable nor known&#x0021;</p>
+<p class="baindent">The counter in this case acts as a &#x2018;count-down timer&#x2019;: a number is loaded into the counter, and the counter counts down to zero from this number; the time it takes to reach zero is determined by the number loaded. The pulse output is taken from a &#x2018;zero&#x2019; output of the counter, i.e. the output is high when all the outputs are zero and goes low when a value is loaded into the counter, the output then goes high again when zero is reached. It is also important to ensure that the counter is stopped when the count down has finished, this is usually achieved by using the zero output to inhibit the clock pulses. A typical arrangement is shown in <a href="#fig3.14">Fig. 3.14</a>.</p>
+<p class="baindent">A similar arrangement can be used to provide a time delay between two pulses: the zero count output is used to negative edge trigger a monostable pulse generator, with the positive edge being used to trigger another monostable (<a href="#fig3.15">Fig. 3.15</a>).</p>
+<p class="baindent">There are two main factors to consider when using this sort of circuit: the accuracy of the timing, and the period required. In turn, these two factors are dependent on the frequency of clock used and the number of bits in the counter. For instance, an 8-bit counter clocked at 100 kHz will have a resolution of 10 &#x03BC;s but a maximum period of only 2.55 ms. If a longer period is required, either the clock rate can be decreased (a clock of 1 kHz will give a 255 ms maximum period, but with a resolution of only 1 ms), or the size of the counter can be increased (a 16-bit counter clocked at the same rate will have the same resolution, but a maximum period of 655.35 ms). Thus there is a trade off between resolution and maximum period for a given size of counter, the values used depend on the needs of the experiment.</p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<figure class="image" style="margin-left:0.5em;width:100%;" id="fig3.15">
+<img src="../images/page34-2.jpg" alt="images"/>
+<figcaption>Fig. 3.15 A timer used to create a delay between two pulses.</figcaption>
+</figure>
+</aside>
+<p class="baindent">More complex counter/timers are, of course, available, and using these it is possible to build up complicated pulse sequences such as those used in NMR.</p>
+</section>
+<section epub:type="chapter" id="ch3.2">
+<h2 class="h2"> 3.2 Signal handling techniques</h2>
+<p class="banoindent">The characteristics of the external signals output from and input to an interface device are often restricted to a small range of values. For instance the outputs of a PIO device are usually TTL level (i.e. low is &#x003C; 0.8V, high > 3.4V) whereas it may be necessary to provide an output voltage of, say, 12V; similarly, the output current range of a TTL device is very limited, with standard devices only being capable of providing a maximum of 16 mA. Consequently it is often necessary to provide extra circuitry between the interface device and the &#x2018;real world&#x2019;.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="image" id="fig3.16" style="margin-left:0.7em;width:100%;">
+<img src="../images/page34-3.jpg" alt="images"/>
+<figcaption>Fig. 3.16 Diodes used to limit, or <i>clamp</i>, the input voltage to the supply voltage.</figcaption>
+</figure>
+</aside>
+<h3 class="h3">Protecting the chips</h3>
+<p class="banoindent">Although most common interface chips are sensitive to static charge, once they are placed in a circuit, they are very robust. However, one sure way of damaging any sort of chip is to put too high a voltage on one of its inputs. There are various techniques used for protecting a chip from accidental damage in such a way, the simplest of which is <i>diode clamping</i> (<a href="#fig3.16">Fig. 3.16</a>).</p>
+<aside class="abc" style="margin-top:8.5em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em">For a description of the operation of a zener diode, see Wayen&#x2019;s book
+</p></aside>
+<p class="banoindent"><a id="page_35" class="page">Page 35, Chapter 3 Interfacing computers to experiments</a>Here two diodes are placed such that if the value of the input voltage remains between the supply voltage and ground, both diodes will be reverse biased and will not conduct; however if the voltage goes beyond either of these two limits, one of the diodes will start to conduct, and the input will be clamped to the supply voltage. If the input can not tolerate voltages as high as the supply voltage, such as in some ADCs, then the input can be protected using a zener diode; in this case, the input is, obviously, clamped to the zener voltage (<a href="#fig3.17">Fig. 3.17</a>).</p>
+<aside class="abc" style="margin-top:-0.5em;" epub:type="sidebar">
+<figure class="image" id="fig3.17" style="margin-left:1em;width:100%;">
+<img src="../images/page35-1.jpg" alt="images"/>
+<figcaption>Fig. 3.17 Clamping the input of a senstive device using a zener diode.</figcaption>
+</figure>
+</aside>
+<p class="baindent">Sometimes, just clamping the input voltage will not be possible. For instance, voltages much higher than the supply voltage will cause excessive current to flow in the clamping diodes, and, possibly more seriously, the clamping action of the diodes may affect the quantity being measured&#x0021; Often the addition of a voltage divider on the input, or even just a current limiting resistor, in combination with diode clamping will allow voltages as high a few kV to be measured or sensed. However, there are times when none of these approaches are satisfactory. For instance, if the ground voltages between the measuring and measured circuits are incompatible (<i>i.e</i>. it may be necessary to measure a voltage referenced to a voltage other than zero), then some form of isolation between the two circuits is necessary.</p>
+<h3 class="h3">Optical isolators</h3>
+<p class="banoindent">The most common form of isolation in digital circuits is an optical one. Special devices, called <i>opto-isolators</i>, containing a light emitting diode (LED) optically coupled to a photo transistor are the most commonly used. These devices provide electrical insulation between two circuits up to about 3 kV, although the actual degree of isolation is usually determined by the circuit board on which the devices are mounted&#x0021; A typical arrangement is shown in <a href="#fig3.18">Fig. 3.18</a>. Here an opto-isolator is used to convert between the &#x2013;12 V signal level in one part of the circuit and the TTL levels in the next. It should also be remembered that opto-isolators can be used as output devices: <a href="#fig3.18">Fig. 3.18</a> could equally well have shown the TTL level device driving the LED and the photo transistor controlling the &#x2212;12 V signal.</p>
+<aside class="abc" style="margin-top:-7.5em;" epub:type="sidebar">
+<figure class="image" id="fig3.18" style="margin-left:1em;width:100%;">
+<img src="../images/310.jpg" alt="images"/>
+<figcaption>Fig. 3.18 An opto-isolator used as an interface between two incompatable voltage levels.</figcaption>
+</figure>
+</aside>
+<p class="baindent">Opto-isolators are not just digital devices: within defined ranges the coupling between the emitter and receiver is linear. Indeed, these devices are often used in high voltage control circuits to isolate the sensing (high voltage) circuits from the controlling (low voltage) ones.</p>
+<p class="baindent">Optical isolation has many other uses. For instance, it may be necessary to control a device in an electrically noisy environment such as near a pulsed laser. Long lengths of cable, even screened cable, inevitably pick up the large current surges in these pulsed devices; this electrical noise often causes many problems in sensitive digital circuits, causing spurious pulses to be detected. The solution is to use optical fibre, instead of ordinary cable, between the laser and the digital circuit. Such an arrangement is shown in <a href="#fig3.19">Fig. 3.19</a>. In this particular example, two lasers are being triggered from one pulse source with a delay between the pulses &#x2013; if optical isolation were not used, then there would be a risk that the noise pickup from the first laser firing would cause the second laser to fire prematurely.<a id="page_36" class="page">Page 36, Chapter 3 Interfacing computers to experiments</a></p>
+<figure class="image" id="fig3.19">
+<img src="../images/page36-1.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-13em;margin-right: -12.5em;" epub:type="sidebar">
+Fig. 3.19 Fibre optics used to trigger lasers. The electrical isolation gained by using optical coupling reduces the risk of erroneous firing of the lasers.</aside>
+</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-0em;" epub:type="sidebar">
+<figure class="image" id="fig3.20" style="margin-left:0.4em;width:100%;">
+<img src="../images/page36-2.jpg" alt="images"/>
+<figcaption>
+Fig. 3.20 Driving a high current device such as a relay using a transistor buffer. The relay can then be used to switch other devices such as mains powered heaters, motors or lamps.
+</figcaption>
+</figure>
+</aside>
+<h3 class="h3">Current drive</h3>
+<p class="banoindent">Although most digital circuits are protected against short circuits (<i>i.e</i>. connecting an output directly to one of the supply rails), it is generally not a good idea to try and draw too much current from a digital output for an extended period of time. If a high current device needs to be driven, then a buffer of some form should be placed between the output and the device. The simplest form of such a buffer is a single transistor. <a href="#fig3.20">Fig. 3.20</a> shows how a transistor can be used to increase the current drive capabilities of a digital output. In this case, the driven device is a relay. A relay is useful in digital circuits because it allows a digital output to switch mains voltage circuits such as high power heaters or motors.</p>
+<h3 class="h3">Filtering and noise</h3>
+<p class="banoindent">There is much written on electrical noise, both on its source and its elimination. As a reader of this book, probably the best place to start is the treatment given by Wayne in <i>Chemical Instrumentation</i>. This is an excellent introduction to the sources of noise in chemical experiments, and the methods by which its impacts can be reduced. There is little point in repeating here what is treated in greater depth by Wayne.</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<p class="noindent2">When driving inductive loads (such as relays or solenoids) with transistors, it is necessary to place a reverse biased diode in parallel with the inductance to stop reverse emf damaging the transistor when the current is turned off.</p>
+</aside>
+<p class="baindent">From the point of view of computers in chemistry, noise has a number of implications. These range from spurious pulses in counting circuits to incorrect values from ADCs. Being aware of the presence of noise is, of course, half the battle, and making sure that the circuit elements are suitable for the task being undertaken will help a great deal. In general, any signal should be filtered so that frequencies that are not of interest should be removed. This does not mean that there should be a vast array of filters to remove everything but the one frequency, more that if the signal of interest is around 1 kHz, then there is little point in having frequencies higher than, say, 10 kHz present. More importantly perhaps, the presence of interference from ac mains should be considered; if at all possible an experiment should be designed so that any oscillations are not close to the mains frequency (<i>i.e</i>. 50 Hz in Europe or 60 Hz in the U.S.) or a multiple of it (room lights actually flicker at 100 Hz, not 50 Hz).</p>
+<p class="baindent">A further consideration is the affect that noise on signals generated <i>by</i> the computer may have on other parts of the experiment. Within computers there are a wide range of frequencies present &#x2013; from the 50 Hz mains to the 400 <a id="page_37" class="page">Page 37, Chapter 3 Interfacing computers to experiments</a>MHz CPU frequency. All modern computers are well shielded so that none of this radiation normally leaks out of the case, but when voltages and so on are generated within the computer there is always the possibility that they may have <i>digital noise</i> superimposed on them. This digital noise comes about because of the different current drawn by a logic circuit depending on the state of its inputs and outputs; since the power supplied to each chip has a finite source impedance, as the current drawn by the chip changes, so the supply voltage changes. Some of the chips, especially CPUs and the highly integrated peripheral chips found in modern PCs, can draw large currents, and with millions of logic elements all changing state at once, the changes in current drawn can be quite significant. Digital noise manifests itself in the same way as &#x2018;normal&#x2019; noise, but with the difference that it has a large component at the same frequency as the CPU clock. This frequency dependence is because there are many logic gates all changing state in synchronism with the clock and so much of the interference arises at that frequency. Of course, this frequency is normally at 33, 66 or 100 MHz (in PCs), so unless the experiment is conducted at radio frequencies, it is relatively simple to filter out the noise, but it is well to be aware that these frequencies, or harmonics and sub-harmonics of it, may exist on signals derived from a computer.</p>
+<p class="baindent">Noise in general in digital circuits can be reduced by <i>decoupling</i> the supply near each chip. This decoupling consists of placing small value capacitors (~0.01 &#x03BC;F) across the supply voltages adjacent to every chip on the circuit board. These capacitors effectively filter out the high frequency noise on the supply voltages. This decoupling is very important near any analogue circuitry within the computer case; indeed it is often necessary to provide analogue circuits with a power supply that is isolated from that used by the digital circuits.</p>
+<p class="baindent">Within the computer case there may also be quite large high frequency fields from the CPU clock. Sensitive analogue components may pick up these fields causing problems. If it is absolutely necessary to place such components within the case, then it will be necessary to provide some form of shielding around those components. Similarly, if there are components that generate fields that may affect the operation of the computer, then they must either be taken out of the case or be shielded.</p>
+</section>
+<section epub:type="chapter" id="ch3.3">
+<h2 class="h2">3.3 Interfacing to the PC</h2>
+<p class="banoindent"><a href="Chapter02.xhtml">Chapter 2</a> showed in some detail the architecture of the PC. Here, details of interfacing circuitry to the PC will be presented. More specifically, details of interfacing to the ISA bus will be given. The ISA bus is usually chosen because it is the easiest to interface with, and the rate at which experimental data is collected is most often slow enough for the ISA bus to cope with. Interfacing to other buses, such as the PCI bus, for high speed applications is similar in concept, but is beyond the scope of this book; if high speed data acquisition is required, then it is probably much more satisfactory, in both quality and time consumption, to purchase a commercial interface.</p>
+<p class="baindent">The circuitry for interfacing to the ISA bus is well known and a typical example is shown in <a href="#fig3.21">Fig. 3.21</a>. All the connections to the computer busses are buffered so that the rest of the interface circuitry can not interfere with <a id="page_38" class="page">Page 38, Chapter 3 Interfacing computers to experiments</a>the operation of the computer itself; these buffers are either uni-directional, for the address and control lines, or bi-directional for the data bus. The main feature of this circuit is the address decoder circuit at the upper right. This decoder effectively compares the address bus lines A8&#x2013;A5 with a value set by switch SW1: when the pattern on those lines matches that set in the switches, all the outputs of the XOR gates will be high, and so the output of the AND gate to which they are all connected will also be high. This output is then ANDed with the A9 and AEN (address enable) lines to give a signal which will be high only when the correct address range is accessed. Since A9 has to be high, and only lines A8&#x2013;A5 are compared, this circuitry will allow address in the range 200H&#x2013;3E0H to be decoded in groups of 20H; <i>i.e</i>. the possible decoded base addresses are 200H, 220H, 240H&#8230; 3C0H, 3E0H. This decoded base address signal is further gated by the <img src="../images/page38-2.jpg" alt="images"/> and <img src="../images/page38-30.jpg" alt="images"/> (the I/O read and write) signals to produce the final <img src="../images/page39-2.jpg" alt="images"/> (enable) signal for the rest of the circuitry.</p>
+<figure class="image" id="fig3.21">
+<img src="../images/page38-1.jpg" alt="images"/>
+<figcaption class="fig1">Fig. 3.21 A typical example of a circuit used to interface to the ISA bus in a PC.</figcaption>
+</figure>
+<p class="baindent">Although in essence any address on the I/O bus may be chosen for your device(s), there are a number of address ranges set aside for &#x2018;end user&#x2019; use. In this way it is less likely that you will choose an address already occupied by another device, such as the video or hard disk controller. Nevertheless, before <a id="page_39" class="page">Page 39, Chapter 3 Interfacing computers to experiments</a>choosing exactly which addresses you are going to use, it is wise to check that there is nothing else residing there&#x0021; The address ranges reserved for your use is 300H&#x2013;380H.</p>
+<p class="baindent">The bi-directional buffer on the data bus needs some explanation. This device allows signals to flow in either direction depending on the state of the &#x2018;DIR&#x2019; pin, or isolates the two sides depending on the gate (&#x2018;<img src="../images/page39-1.jpg" alt="images"/>&#x2019;) pin. Consequently, the gate signal is derived from the <img src="../images/page39-2.jpg" alt="images"/> signal (<i>i.e</i>. the data bus is isolated unless the address range is selected) and the direction is controlled by the <img src="../images/page39-3.jpg" alt="images"/> signal.</p>
+<p class="baindent"> At this point, it may be worth mentioning the actual board used inside the computer. Although the physical dimensions of such a board are well defined by the PC standards, it may not always be convenient for such a board to be fabricated in a laboratory. However, there are a number of alternatives. First it is possible to buy &#x2018;PC Breadboard&#x2019; cards; these are cards which are of the correct dimensions and have an edge connector for connecting to the 10 slot; they also often have address decoding circuitry built on to them, but the rest of the card is blank and can be used to build your own circuits. Secondly, it is possible to buy (or fabricate) interface cards; here only a small card containing address decoding circuits is actually placed in the computer, the resulting signals are presented on a connector on the back of the computer where they can be taken to another box that contains the actual experiment interface circuits. In general there is little to choose between these two approaches, the former produces a neater end result but may present problems during prototyping and if there are many connections to the external equipment, whereas the latter is easier to construct but will result in (yet) another box&#x0021; There may be overriding concerns when choosing the method of construction: there is only a limited amount of power that may be drawn from the computer&#x2019;s supply, hence any high power circuitry will have to be built in a box with its own power supply; similarly circuits that may be sensitive to the high frequencies present in a modern computer may be better built in an external enclosure.</p>
+<aside class="abc" style="margin-top:8em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em">Read/write signals come in two different types: the combined <img src="../images/page39-4.jpg" alt="images"/> and the separate <img src="../images/page39-5.jpg" alt="images"/> and <img src="../images/page39-6.jpg" alt="images"/>. The signals used by a particular chip depend on its manufacturer and the application for which it was developed. Translating between the two is usually a simple matter.</p>
+</aside>
+<p class="baindent">As we have just seen, this particular interface board provides decoded address in 32 byte groups, others may provide 16 or 8 byte groups depending on how many address lines are decoded. The advantage of using larger groups of addresses is that if the signals are taken to an external enclosure, then it is a relatively easy job to further decode the address lines to provide smaller groups (as described later in <a href="#ch3.4">Section 3.4</a>). Conversely, if only small groups of address are used, then there may be insufficient addressing capacity in the external box. The decoded address ranges are then used to &#x2018;select&#x2019; each interface chip as needed (<i>via</i> the &#x2018;chip select&#x2019; pin), and so each chip will have a unique address range. The individual addresses, or registers, within that chip are then selected by applying the requisite number of low address lines to the chip. Take for example the 8255 PIO chip described in the previous section. The chip select pin would be connected to the output of the address decoding circuitry corresponding to the required address range (say 310H), and address lines A0 and A1 would be connected to the register select inputs; the individual registers would then appear at sequential addresses. The final signal that needs to be connected is <img src="../images/page39-4.jpg" alt="images"/>: this line will enable the chip to respond correctly depending on whether you want to write information to the chip or read from it.<a id="page_40" class="page">Page 40, Chapter 3 Interfacing computers to experiments</a></p>
+<p class="baindent">If there are more devices in the circuit, each would be connected to its own decoded address range, and the address lines would be connected as required. Other signals are also connected if needed: the data bus is usually required (although not if just the action of accessing an address is all that is needed), the and <img src="../images/page39-5.jpg" alt="images"/> and <img src="../images/page39-6.jpg" alt="images"/> (or <img src="../images/page39-4.jpg" alt="images"/>) lines, the RESET line (so that the chip will be in a defined state when the computer is reset), and, sometimes, the computer clock. And that is all there is to it, the rest is programming&#x0021;</p>
+</section>
+<section epub:type="chapter" id="ch3.4">
+<h2 class="h2"> 3.4 A worked example</h2>
+<p class="banoindent">The final section of this chapter will be spent examining the hardware of a real laboratory interface. The example chosen is one that encompasses many of the devices introduced so far. The actual device is used to interface a PC to an experiment in which a mass spectrometer detects radicals in a gas flow system. The details of the actual experiment are unimportant, all that it is necessary to know is that the output of the mass spectrometer consists of a series of pulses (each pulse is an ion that reaches the detector), the mass that is selected is controlled by a voltage, and the gas flows are sensed using devices whose output is a voltage linear with flow. Various other on/off functions are also required, such as switching photolysis lamps on and off, sensing the presence of cooling water flows and so on. There are thus at least four distinct functions required: counter, ADC, DAC and PIO.</p>
+<p class="baindent">The counter chosen for this device is actually a very complex chip: the Am9513 counter/timer chip. The advantage of using this particular chip is that it not only includes a number of large counters, but it also contains a number of programmable timers. The timers are important in accurately measuring the <i>rate</i> at which pulses arrive at the input, and the chip contains within it the necessary functionality to automatically count for a predetermined length of time.</p>
+<p class="baindent">The analogue input voltages are measured using four 12-bit ADCs (AD7578), whilst the output voltages are generated by four 12-bit DACs (AD7548). Finally, the PIO device is the same as the one described earlier, <i>i.e</i>. the 8255.</p>
+<p class="baindent">The simplified circuit diagram of the interface is shown in <a href="#fig3.22">Fig. 3.22</a>. The individual parts of the circuit have been grouped together, with each section being built on a separate card within an external interface box. The cards are connected together by a &#x2018;backplane&#x2019; that carries the data, address and control busses. These busses are shown to the far right of the circuit diagram and are connected directly to the interface card in the host PC <i>via</i> a multiway cable. This arrangement means that circuits can be altered and replaced in the interface box easily without disturbing unrelated functions.</p>
+<p class="baindent">The method of fabricating the circuit boards is unimportant and depends mainly on the materials and facilities available, to say nothing of the abilities of the fabricator&#x0021; The boards in this case were actually custom designed printed circuit boards, but there is no reason why they could not have been made using wire-wrap techniques or prototyping boards such as &#x2018;Veroboard&#x2019;.</p>
+<p class="baindent">It is probably useful to point out some important features of the circuit. On the counter board, the first circuit that the input encounters is a <i>discriminator</i>. The effect of the discriminator is to pass through only pulses whose voltage is above a certain value, so rejecting, or discriminating, low level pulses <a id="page_41" class="page">Page 41, Chapter 3 Interfacing computers to experiments</a>which are usually just noise. The level at which the discriminator rejects pulses is set by the variable resistor. The counter chip has only two addresses (or ports) and so only the AO line is connected to it, the A3 and A4 address lines are combined, along with the <img src="../images/41-2.jpg" alt="images"/> signal, to provide a chip select (CS) line. The crystal is part of the circuitry of the chip that provides a stable reference frequency for its timing functions.</p>
+<figure class="image" id="fig3.22">
+<img src="../images/41-1.jpg" alt="images"/>
+<figcaption class="fig1-cn">Fig 3.22 A Simplified circuit diagram of the complete interface.This circuit is adapted from one designed by the Electronics Workshop of the Physical &#x0026; Theoretical Chemistry Lab.,Oxford University.</figcaption></figure>
+<p class="baindent">The PIO card appears very simple. The only thing of note is the use of multiple-input gates with all the inputs tied together. In this case, the triple input NOR gates are acting as inverters, and this arrangement is purely to reduce the package count on the circuit board. If this &#x2018;trick&#x2019; weren&#x2019;t used, it <a id="page_42" class="page">Page 42, Chapter 3 Interfacing computers to experiments</a>would be necessary to have another chip present which provided the inverters. The &#x2018;real&#x2019; card is actually much more complicated, but only because there are LEDs on the front panel to show the state of all 24 outputs, and the circuit to drive these LEDs takes up much of the card&#x0021;</p>
+<p class="baindent">For clarity, only one section of the DAC card is shown; there are actually four identical circuits providing four independent output voltages. The reference voltage circuit, shown to the left, is shared between the four DACs. This particular circuit provides an adjustable reference voltage. The two operational amplifiers convert the output current of the DAC into a voltage (<i>c.f</i>. <a href="#fig3.6">Fig 3.6</a>) and then buffer it. This buffering is so that any current drawn by the external device to which the circuit is connected does not affect the actual voltage generated.</p>
+<p class="baindent">Again, for clarity, only one section of the final card, the ADC card, is shown. The input voltage is first buffered before being fed to the ADC. The feedback circuitry around this buffer determines the input voltage range. The zener diode on the output of the op-amp protects the input of the ADC from excessive voltages. The reference voltage for the ADC is derived from another zener diode, and, since this is a successive approximation converter, the required clock signal is derived from a simple oscillator circuit at the bottom of the ADC.</p>
+<p class="baindent">Obviously, each of the individual sections is located at different addresses in the memory map, as determined by the decoding of the A3 and A4 address lines. This means that each card has allocated to it eight sequential addresses. The memory map for the whole interface is shown in <a href="#tab3.2">Table 3.2</a>. It is assumed in this diagram that the address of the interface in the PC is set to 300H.</p>
+<p class="tabcap" id="tab3.2">Table 3.2 Addresses used by interface</p>
+<table class="width100b-n" style="margin-left:0em;width:70%; margin-top:0em;">
+<colgroup>
+<col style="width:25%;"/>
+<col style="width:25%;"/>
+<col style="width:15%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td class="borb" colspan="2" style="padding-left:2em;"><p class="tcenter">Address</p></td>
+<td class="borb"><p class="tcenter"></p></td>
+<td class="borb"><p class="tcenter">Function</p></td></tr>
+<tr>
+<td><p class="tcenter">300H</p></td>
+<td><p class="tcenter">768D</p></td>
+<td><p class="tcenter"></p></td>
+<td><p class="tleft">Data register</p></td></tr>
+<tr>
+<td><p class="tcenter">301H</p></td>
+<td><p class="tcenter">769D</p></td>
+<td><p class="tcenter">Am9513</p></td>
+<td><p class="tleft">Control register</p></td></tr>
+<tr>
+<td class="borb"><p class="tcenter">302H&#x2013;307H</p></td>
+<td class="borb"><p class="tcenter">770D&#x2013;775D</p></td>
+<td class="borb"><p class="tcenter"></p></td>
+<td class="borb"><p class="tleft">3 Repeats of 300H&#x2013;301H</p></td></tr>
+<tr>
+<td><p class="tcenter">308H</p></td>
+<td><p class="tcenter">776D</p></td>
+<td><p class="tcenter"></p></td>
+<td><p class="tleft">Port A</p></td></tr>
+<tr>
+<td><p class="tcenter">309H</p></td>
+<td><p class="tcenter">777D</p></td>
+<td><p class="tcenter"></p></td>
+<td><p class="tleft">Port B</p></td></tr>
+<tr>
+<td><p class="tcenter">30AH</p></td>
+<td><p class="tcenter">778D</p></td>
+<td><p class="tcenter">8255A</p></td>
+<td><p class="tleft">Port C</p></td></tr>
+<tr>
+<td><p class="tcenter">30BH</p></td>
+<td><p class="tcenter">779D</p></td>
+<td><p class="tcenter"></p></td>
+<td><p class="tleft">Control</p></td></tr>
+<tr>
+<td class="borb"><p class="tcenter">30CH&#x2013;30FH</p></td>
+<td class="borb"><p class="tcenter">780D&#x2013;784D</p></td>
+<td class="borb"><p class="tcenter"></p></td>
+<td class="borb"><p class="tleft">Repeat of 308H&#x2013;30BH</p></td></tr>
+<tr>
+<td><p class="tcenter">310H</p></td>
+<td><p class="tcenter">785D</p></td>
+<td><p class="tcenter"></p></td>
+<td><p class="tleft">DAC1 LSB</p></td></tr>
+<tr>
+<td><p class="tcenter">311H</p></td>
+<td><p class="tcenter">786D</p></td>
+<td><p class="tcenter">4 &#x00D7; AD7548</p></td>
+<td><p class="tleft">DAC1 MSB</p></td></tr>
+<tr>
+<td class="borb"><p class="tcenter">312H&#x2013;317H</p></td>
+<td class="borb"><p class="tcenter">787D&#x2013;791D</p></td>
+<td class="borb"><p class="tcenter"></p></td>
+<td class="borb"><p class="tleft">310H&#x2013;311H repeated for each DAC</p></td></tr>
+<tr>
+<td><p class="tcenter">318H</p></td>
+<td><p class="tcenter">792D</p></td>
+<td><p class="tcenter"></p></td>
+<td><p class="tleft">ADC1LSB</p></td></tr>
+<tr>
+<td><p class="tcenter">319H</p></td>
+<td><p class="tcenter">793D</p></td>
+<td><p class="tcenter">4 &#x00D7; AD7578</p></td>
+<td><p class="tleft">ADC1 MSB</p></td></tr>
+<tr>
+<td class="borb"><p class="tcenter">31AH&#x2013;31FH</p></td>
+<td class="borb"><p class="tcenter">794D&#x2013;799D</p></td>
+<td class="borb"><p class="tcenter"></p></td>
+<td class="borb"><p class="tleft">318H&#x2013;319H repeated for each ADC</p></td></tr>
+</table>
+<p class="baindentt">As can be seen, some of the ports appear multiple times.This is a consequence of not decoding fully all the address lines on some of the boards.This repetition is not a problem,and usually only the first instance of each address range is used, although using the other ranges is possible.</p>
+<p class="baindent">The details of programming this interface are dealt with in the next chapter.</p>
+</section></section>
+</body>
+</html>

@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Introduction to molecular symmetry</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<div>
+<a class="page" id="page_37">Page 37, Matrices and representations in higher order point groups&#x2014;degenerate representations</a>
+<section epub:type="chapter" id="ch04">
+<h1 class="main" style="width:58%;"><b>4<span class="space">&#160;</span>Matrices and representations in higher order point groups&#x2014; degenerate representations</b></h1>
+<p class="noindent">&#160;</p>
+<p class="noindent">In the previous two chapters, we have encountered matrices which describe the operations E, i, <i>&#x03C3;</i> and C<sub>2</sub>, and although some of these matrices have been of relatively high order, up to 3 &#x00D7; 3, it has always been possible to simplify the corresponding reducible representations so that the final irreducible representations have been 1 &#x00D7;1 matrices&#x2014;effectively &#x2019;numbers&#x2019;.</p>
+<p class="indent3-ka1">This situation no longer applies when we consider higher order rotation axes, and the higher order point groups which contain them.</p>
+<section epub:type="chapter" id="sec_4.1">
+<h2 class="h2"><b>4.1<span class="space">&#160;</span>Matrices for C<sub>4</sub> rotations</b></h2>
+<aside class="abc" style="margin-top:2em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_4.1">
+<img src="../images/page37-3.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 4.1</b></figcaption>
+</figure>
+</aside>
+<p class="noindent"><a href="#fig_4.1">Figure 4.1</a> provides a framework for <i>contrasting</i> the effect of a C<sub>2</sub> (<i>z</i>) rotation on a typical point P(<i>X</i>,<i>Y</i>) in the <i>xy</i> plane, with a C<sub>4</sub> rotation about <i>z</i>. Rotation through 180&#x00B0; in an anticlockwise direction takes P to a new position P&#x2032; with coordinates <i>X&#x2032;</i>, <i>Y&#x2032;</i> such that</p>
+<p class="center"><i>X&#x2032;</i> = &#x2212;<i>X</i>&#160;&#160;&#160;and&#160;&#160;&#160;<i>Y&#x2032;</i> = &#x2212;<i>Y</i></p>
+<p class="noindent">The single matrix equation which describes these operations is</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>C</mtext><mn>2</mn></msub><mo stretchy='false'>(</mo><mi>z</mi><mo stretchy='false'>)</mo><mrow><mn>&#160;</mn><mo>(</mo><mrow><mtable><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mn>&#160;</mn><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<p class="noindent">but it can clearly be simplified to give two equations involving only 1 &#x00D7; 1 matrices.</p>
+<p class="center">C<sub>2</sub>(<i>z</i>) (<i>X</i>) = (&#x2212;1) (<i>X</i>)&#160;&#160;&#160;and&#160;&#160;&#160;C<sub>2</sub>(<i>z</i>) (<i>Y</i>) = (&#x2212;1) (<i>Y</i>)</p>
+<p class="noindent">In contrast, rotation through 90&#x00B0; in an anticlockwise direction takes P to the position P<i>&#x2032;&#x2032;</i> with coordinates <i>X&#x2032;&#x2032;</i>, <i>Y&#x2032;&#x2032;</i> such that</p>
+<p class="center"><i>X&#x2032;&#x2032;</i> = &#x2212;<i>Y</i>&#160;&#160;&#160;and&#160;&#160;&#160;<i>Y&#x2032;&#x2032;</i> = <i>X</i></p>
+<p class="noindent">with a corresponding matrix equation</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mn>4</mn><mn>1</mn></msubsup><mo stretchy='false'>(</mo><mi>z</mi><mo stretchy='false'>)&#160;</mo><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mn>&#160;</mn><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow></semantics></math></p>
+<p class="noindent">However, this matrix for <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mtext>4</mtext><mtext>1</mtext></msubsup><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mi>z</mi><mo stretchy='false'>)</mo></mrow></semantics></math> <i>cannot be further simplified</i>. The values of <i>X</i> and <i>Y</i> are inextricably scrambled by the C<sub>4</sub> operation. Rotation through <a class="page" id="page_38" style="width:100%;">Page 38, Matrices and representations in higher order point groups&#x2014;degenerate representations</a>270&#x00B0;, which corresponds to <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mtext>4</mtext><mn>3</mn></msubsup></mrow></semantics></math>, takes the point P(<i>X, Y</i>) to the position <i>P&#x2032;&#x2032;&#x2032;</i> with coordinate values (<i>Y</i>,&#x2212;<i>X</i>), and the matrix which describes this is</p>
+<p class="indent" style="text-align:center;margin-bottom:0.8em;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msubsup>
+   <mtext>C</mtext>
+   <mn>4</mn>
+   <mn>3</mn>
+  </msubsup>
+  <mrow><mo>(</mo>
+   <mi>z</mi>
+  <mo>)</mo></mrow><mtext>&#x2009;</mtext><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mi>X</mi>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mi>Y</mi>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo>
+   <mtable columnalign='left'>
+    <mtr>
+     <mtd>
+      <mi>X</mi>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mi>Y</mi>
+     </mtd>
+    </mtr>
+   </mtable>
+   
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+</p>
+<p class="noindent">This matrix similarly scrambles <i>X</i> and <i>Y</i> and although it is different from the matrix for <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mn>4</mn><mn>1</mn></msubsup></mrow></semantics></math>, it is significant that the <i>characters</i> of the <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>C</mi><mn>4</mn><mn>1</mn></msubsup></mrow></semantics></math> <i>and</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>C</mi><mn>4</mn><mn>3</mn></msubsup></mrow></semantics></math> <i>matrices are the same</i>.</p>
+</section>
+<section epub:type="chapter" id="sec_4.2">
+<h2 class="h2"><b>4.2<span class="space">&#160;</span>Matrices for rotation through an angle <i>&#x03B8;</i>: a general expression for the character of the <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mtext>n</mtext><mtext>1</mtext></msubsup></mrow></semantics></math>operation</b></h2>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_4.2">
+<img src="../images/page38-5.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 4.2</b></figcaption>
+</figure>
+</aside>
+<p class="noindent">The effect of an anticlockwise rotation about the <i>z</i> axis through a general angle <i>&#x03B8;</i> is illustrated in <a href="#fig_4.2">Fig. 4.2</a>, where a point Q(<i>X</i>, <i>Y</i>) lying in the <i>xy</i> plane moves to a position Q&#x2032;(<i>X&#x2032;</i>, <i>Y&#x2032;</i>). If we identify the distance of Q and Q&#x2032; from the coordinate origin as <i>&#x2018;d&#x2019;</i>, then the initial coordinates of Q(<i>X</i>, <i>Y</i>) may be alternatively expressed as</p>
+<p class="center"><i>X</i> = <i>d</i> cos &#x03B1;,&#160;&#160;&#160;<i>Y</i> = <i>d</i> sin &#x03B1;</p>
+<p class="noindent">After rotation, the new coordinates (<i>X&#x2032;</i>, <i>Y&#x2032;</i>) are given by</p>
+<p class="center"><i>X&#x2032;</i> = <i>d</i> cos (&#x03B1; + <i>&#x03B8;</i>),&#160;&#160;&#160;<i>Y&#x2032;</i> = <i>d</i> sin (&#x03B1; + <i>&#x03B8;</i>)</p>
+<p class="noindent" style="margin-bottom:0.8em;">Expansion of these standard trigonometric expressions gives</p>
+<p class="indent" style="text-align:center;margin-bottom:0.8em;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable columnalign='left'>
+<mtr>
+<mtd>
+<msup>
+<mi>X</mi>
+<mo>&#x2032;</mo>
+</msup>
+<mo>=</mo><mi>d</mi><mrow><mo>{</mo> <mrow>
+<mi>cos</mi><mn>&#160;</mn><mi>&#x03B1;</mi><mn>&#160;</mn><mi>cos</mi><mn>&#160;</mn><mi>&#x03B8;</mi><mo>&#x2212;</mo><mi>sin</mi><mn>&#160;</mn><mi>&#x03B1;</mi><mn>&#160;</mn><mi>sin</mi><mn>&#160;</mn><mi>&#x03B8;</mi>
+</mrow> <mo>}</mo></mrow><mo>=</mo><mi>X</mi><mn>&#160;</mn><mi>cos</mi><mn>&#160;</mn><mi>&#x03B8;</mi><mo>&#x2212;</mo><mi>Y</mi><mn>&#160;</mn><mi>sin</mi><mn>&#160;</mn><mi>&#x03B8;</mi>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<msup>
+<mi>Y</mi>
+<mo>&#x2032;</mo>
+</msup>
+<mo>=</mo><mi>d</mi><mrow><mo>{</mo> <mrow>
+<mi>sin</mi><mn>&#160;</mn><mi>&#x03B1;</mi><mn>&#160;</mn><mi>cos</mi><mn>&#160;</mn><mi>&#x03B8;</mi><mo>+</mo><mi>cos</mi><mn>&#160;</mn><mi>&#x03B1;</mi><mn>&#160;</mn><mi>sin</mi><mn>&#160;</mn><mi>&#x03B8;</mi>
+</mrow> <mo>}</mo></mrow><mo>=</mo><mi>Y</mi><mn>&#160;</mn><mi>cos</mi><mn>&#160;</mn><mi>&#x03B8;</mi><mo>+</mo><mi>X</mi><mn>&#160;</mn><mi>sin</mi><mn>&#160;</mn><mi>&#x03B8;</mi>
+</mtd>
+</mtr>
+</mtable>
+</math>
+</p>
+<p class="noindent" style="margin-bottom:0.8em;">Rotation about <i>z</i> through the angle <i>&#x03B8;</i> (<i>n</i> = 360/<i>&#x03B8;</i>) in an anticlockwise direction can therefore be summarised by the matrix equation</p>
+<p class="indent" style="text-align:center;margin-bottom:0.8em;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<msubsup>
+<mi>C</mi>
+<mi>n</mi>
+<mn>1</mn>
+</msubsup>
+<mtext>&#x2009;</mtext><mrow><mo>(</mo>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mi>X</mi>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mi>Y</mi>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+<mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo>
+<mrow>
+<mtable>
+<mtr>
+<mtd>
+<mrow>
+<mi>cos</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>&#x03B8;</mi>
+</mrow>
+</mtd>
+<mtd>
+<mrow>
+<mo>&#x2212;</mo><mi>sin</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>&#x03B8;</mi>
+</mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow>
+<mi>sin</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>&#x03B8;</mi>
+</mrow>
+</mtd>
+<mtd>
+<mrow>
+<mi>cos</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>&#x03B8;</mi>
+</mrow>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+<mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo>
+<mtable columnalign='left'>
+<mtr>
+<mtd>
+<mi>X</mi>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mi>Y</mi>
+</mtd>
+</mtr>
+</mtable>
+<mo>)</mo></mrow>
+</mrow>
+</math>
+</p>
+<p class="noindent">The character of this matrix is therefore 2 cos <i>&#x03B8;</i>.</p>
+<p class="indent3-ka1">In general, point Q will also have a <i>z</i> coordinate <i>Z</i>, and the action of <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mi>n</mi><mn>1</mn></msubsup></mrow></semantics></math> will move Q(<i>X</i>, <i>Y</i>,<i>Z</i>) to Q&#x2032; (<i>X&#x2032;</i>, <i>Y&#x2032;</i>,<i>Z&#x2032;</i>). However, as the C<sub><i>n</i></sub> axis lies along the <i>z</i> axis, the effect of this rotation on the coordinate <i>Z</i> is to leave it unchanged:</p>
+<p class="center"><i>Z&#x2032;</i> = <i>Z</i>, i.e. <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mi>n</mi><mn>1</mn></msubsup></mrow></semantics></math> (<i>Z</i>) = (+1)(<i>Z</i>)</p>
+<p class="noindent" style="margin-bottom:0.8em;">If we <i>incorporate</i> this addition into our description of this operation, the matrix which describes the effect of <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mi>n</mi><mn>1</mn></msubsup></mrow></semantics></math> on a <i>general point</i> (<i>X</i>, <i>Y</i>,<i>Z</i>) can be seen to be</p>
+<p class="indent" style="text-align:center;margin-bottom:0.8em;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mtext>C</mtext><mi>n</mi><mn>1</mn></msubsup><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo><mtable columnalign='left'><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr><mtr><mtd><mi>Z</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mtable><mtr><mtd><mrow><mi>cos</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>&#x03B8;</mi></mrow></mtd><mtd><mrow><mo>&#x2212;</mo><mi>sin</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>&#x03B8;</mi></mrow></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mrow><mi>sin</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>&#x03B8;</mi></mrow></mtd><mtd><mrow><mi>cos</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>&#x03B8;</mi></mrow></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo><mtable columnalign='left'><mtr><mtd><mi>X</mi></mtd></mtr><mtr><mtd><mi>Y</mi></mtd></mtr><mtr><mtd><mi>Z</mi></mtd></mtr></mtable><mo>)</mo></mrow></mrow></math></p>
+<a class="page" id="page_39">Page 39, Matrices and representations in higher order point groups&#x2014; degenerate representations</a>
+<p class="noindent">and this has the character</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mmultiscripts><mtext>C</mtext><mprescripts/><mtext>&#x03C7;</mtext><none/></mmultiscripts><msub><mrow></mrow><mi>n</mi></msub></mrow></semantics></math> = 2 cos <i>&#x03B8;</i> + 1</p>
+<p class="noindent">This is an important general result, as it leads directly to the character of the matrix for rotation about an axis of any order.</p>
+<p class="indent3-ka1">This equation also yields a further general result concerning the characters of <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mi>n</mi><mi>m</mi></msubsup></mrow></semantics></math> matrices:</p>
+<p class="noindent1"><i>The character of the matrix for the <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mi>n</mi><mn>1</mn></msubsup></mrow></semantics></math></i> <i>operation will be identical to the character of the matrix for</i> <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msubsup>
+   <mtext>C</mtext>
+   <mtext>n</mtext>
+   <mrow>
+    <mo>&#x2212;</mo><mn>1</mn>
+   </mrow>
+  </msubsup>
+  
+ </mrow>
+</math> (i.e. <math xmlns="http://www.w3.org/1998/Math/MathML">
+ 
+ <mrow>
+  <msubsup>
+   <mtext>C</mtext>
+   <mtext>n</mtext>
+   <mrow>
+    <mi>n</mi><mo>&#x2212;</mo><mn>1</mn>
+   </mrow>
+  </msubsup>
+  
+ </mrow>
+</math>).</p>
+<p class="indent3-ka1t">This equivalence arises because cos <i>&#x03B8;</i> = cos(&#x2212;<i>&#x03B8;</i>), and it has the effect that the character is <i>independent</i> both of the <i>&#x2018;direction&#x2019;</i> of the axis and of the <i>sense of rotation</i>.</p>
+<p class="indent3-ka1">It therefore sidesteps any ambiguity regarding both the &#x2018;direction&#x2019; of an axis (relative to atomic positions in a molecule) and the subsequent direction of rotation (clockwise or anticlockwise) when higher order axes are involved. Both these directions are sometimes treated in a somewhat arbitrary way without prior qualification.</p>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_4.3">
+<h2 class="h2"><b>4.3<span class="space">&#160;</span>Representations in higher order point groups</b></h2>
+<p class="noindent">We are now in a position to derive representations in the majority of point groups, using vectors, atoms, bonds or orbitals as bases, and this chapter is mainly devoted to illustrating these procedures.</p>
+<p class="indent3-ka1">Before reaching this stage, however, it is useful to become better acquainted with the symmetry properties and character tables for two of the most commonly encountered point groups, C<sub>3v</sub> and T<sub>d</sub>.</p>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_4.4">
+<h2 class="h2"><b>4.4<span class="space">&#160;</span>Representations in the C<sub>3v</sub> point group</b></h2>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_4.3">
+<img src="../images/page39-2.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 4.3</b></figcaption>
+</figure>
+</aside>
+<p class="noindent">The C<sub>3v</sub> point group contains three kinds of symmetry elements: E, C<sub>3</sub> and <i>&#x03C3;</i><sub>v</sub>. The top row of the character table acknowledges the two operations associated with the C<sub>3</sub> axis, <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mn>3</mn><mn>1</mn></msubsup></mrow></semantics></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mn>3</mn><mn>2</mn></msubsup></mrow></semantics></math>, by the coefficient <i>N</i> = 2, and the three vertical planes appear as a single entry 3<i>&#x03C3;</i><sub>v</sub>:</p>
+<figure style="margin-left:-9em;">
+<img src="../images/page39-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">The order of the group, <i>h</i>, is 6, and <a href="#fig_4.3">Fig. 4.3</a> shows a view down the C<sub>3</sub> axis depicting the six points P<sub>1</sub> to P<sub>6</sub> which can be generated from an original point P<sub>1</sub> by the axis and planes present.</p>
+<a class="page" id="page_40">Page 40, Matrices and representations in higher order point groups&#x2014;degenerate representations</a>
+<p class="indent3-ka1">The effect of the symmetry operations on P<sub>1</sub> may be summarised as</p>
+<figure style="margin-left:-9em;">
+<img src="../images/page40-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">and the group multiplication table takes the form.</p>
+<figure style="margin-left:-9em;">
+<img src="../images/page40-2.jpg" alt="images"/>
+</figure>
+<p class="indent3-ka1">In this multiplication table, it may be noted that some sequential symmetry operations are not commutative, e.g.</p>
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03C3;</mi>
+   <mn>1</mn>
+  </msub>
+  <mtext>&#x2009;</mtext><mo>&#x00D7;</mo><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><msubsup>
+   <mtext>C</mtext>
+   <mn>3</mn>
+   <mn>1</mn>
+  </msubsup>
+  <mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msub>
+   <mi>&#x03C3;</mi>
+   <mrow>
+    <mn>3</mn><mo>,</mo>
+   </mrow>
+  </msub>
+  
+ </mrow>
+</math>
+ but <math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<msubsup>
+<mtext>C</mtext>
+<mn>3</mn>
+<mn>1</mn>
+</msubsup>
+<mtext>&#x2009;</mtext><mo>&#x00D7;</mo><mtext>&#x2009;</mtext><msub>
+<mi>&#x03C3;</mi>
+<mn>1</mn>
+</msub>
+<mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msub>
+<mi>&#x03C3;</mi>
+<mn>2</mn>
+</msub>
+</mrow>
+</math>
+</p>
+<p class="noindent">The left-hand column of the character table shows three irreducible representations, A<sub>1</sub>, A<sub>2</sub> and E, and the final columns indicate functions that could be used as appropriate bases.</p>
+<p class="indent3-ka1">The first two representations look similar to those previously encountered in the point groups C<sub>2v</sub>. They have labels which are familiar, and one can imagine that the rows of numbers might similarly correspond to 1 &#x00D7; 1 matrices. The character table identifies <i>z</i> as a function with A<sub>1</sub> symmetry, and this may be confirmed by noting that a vector <i>z</i><sub>1</sub> located at the coordinate origin (<a href="#fig_4.3">Fig. 4.3</a>) would be unshifted by any of the symmetry operations, as it lies on the C<sub>3</sub> axis and in all three planes.</p>
+<p class="indent3-ka1">The representation labelled &#x2018;E&#x2019;, however, looks different. Firstly, the use of this symbol for a representation is new, and the row of numbers contains a 2 and a 0, both of which are unfamiliar. In addition, the functions which might be used to illustrate this representation now appear as <i>pairs</i> within a bracket, e.g. (<i>x</i>, <i>y</i>) or (<i>xz</i>, <i>yz</i>), rather than singly.</p>
+</section>
+<section epub:type="chapter" id="sec_4.5">
+<h2 class="h2"><b>4.5<span class="space">&#160;</span>Representations based on <i>X</i>, <i>Y</i> and <i>Z</i> in the C<sub>3v</sub> point group</b></h2>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<p class="noindent2"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mover>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtable>
+       <mtr>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+       </mtr>
+       
+      </mtable>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mtext>E</mtext>
+  </mover>
+  
+ </mrow>
+</math>
+</p>
+</aside>
+<p class="noindent">In order to understand these entries in the C<sub>3v</sub> character table, it is useful to derive the matrices for the various symmetry operations using the coordinates of point P<sub>1</sub> in <a href="#fig_4.3">Fig. 4.3</a>. If these are taken to be (<i>X</i>, <i>Y</i>,<i>Z</i>), then the matrices for four of the six operations can be readily obtained. For the identity E, P<sub>1</sub> remains unshifted, and the matrix is shown alongside.</p>
+<a class="page" id="page_41">Page 41, Matrices and representations in higher order point groups&#x2014; degenerate representations</a>
+<p class="indent3-ka1"  style="margin-bottom:0.8em;">The matrices for the operations <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mn>3</mn><mn>1</mn></msubsup></mrow></semantics></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mn>3</mn><mn>2</mn></msubsup></mrow></semantics></math> follow directly from the general expression</p>
+<p class="indent" style="text-align:center;margin-bottom:0.8em;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msubsup>
+   <mtext>C</mtext>
+   <mi>n</mi>
+   <mn>1</mn>
+  </msubsup>
+  <mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo>
+   <mtable columnalign='left'>
+    <mtr>
+     <mtd>
+      <mi>X</mi>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mi>Y</mi>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mi>Z</mi>
+     </mtd>
+    </mtr>
+   </mtable>
+   
+  <mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mi>cos</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>&#x03B8;</mi>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mi>sin</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>&#x03B8;</mi>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mi>sin</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>&#x03B8;</mi>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mrow>
+        <mi>cos</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>&#x03B8;</mi>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo>
+   <mtable columnalign='left'>
+    <mtr>
+     <mtd>
+      <mi>X</mi>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mi>Y</mi>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mi>Z</mi>
+     </mtd>
+    </mtr>
+   </mtable>
+   
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+</p>
+<p class="noindent" style="margin-bottom:0.8em;">Substituting <i>&#x03B8;</i> values of 120&#x00B0; and 240&#x00B0; respectively, we have</p>
+<p class="indent" style="text-align:center;margin-bottom:0.8em;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mtable>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mover>
+       <mrow>
+        <mrow><mo>(</mo>
+         <mrow>
+          <mtable>
+           <mtr>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mn>1</mn><mo>/</mo><mn>2</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mo stretchy='false'>(</mo><msqrt>
+               <mn>3</mn>
+              </msqrt>
+              <mo stretchy='false'>)</mo><mo>/</mo><mn>2</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mrow>
+              <mo stretchy='false'>(</mo><msqrt>
+               <mn>3</mn>
+              </msqrt>
+              <mo stretchy='false'>)</mo><mo>/</mo><mn>2</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mn>1</mn><mo>/</mo><mn>2</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+           </mtr>
+           
+          </mtable>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+       <mrow>
+        <msubsup>
+         <mtext>C</mtext>
+         <mn>3</mn>
+         <mn>1</mn>
+        </msubsup>
+        
+       </mrow>
+      </mover>
+      
+     </mrow>
+    </mtd>
+    <mtd>
+     <mrow>
+      <mover>
+       <mrow>
+        <mrow><mo>(</mo>
+         <mrow>
+          <mtable>
+           <mtr>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mn>1</mn><mo>/</mo><mn>2</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mo stretchy='false'>(</mo><msqrt>
+               <mn>3</mn>
+              </msqrt>
+              <mo stretchy='false'>)</mo><mo>/</mo><mn>2</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mo stretchy='false'>(</mo><msqrt>
+               <mn>3</mn>
+              </msqrt>
+              <mo stretchy='false'>)</mo><mo>/</mo><mn>2</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mn>1</mn><mo>/</mo><mn>2</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+           </mtr>
+           
+          </mtable>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+       <mrow>
+        <msubsup>
+         <mtext>C</mtext>
+         <mn>3</mn>
+         <mn>2</mn>
+        </msubsup>
+        
+       </mrow>
+      </mover>
+      
+     </mrow>
+    </mtd>
+   </mtr>
+   
+  </mtable>
+ </mrow>
+</math>
+</p>
+<p class="noindent" style="margin-bottom:0.8em;">These two matrices are therefore <i>different</i>, but they have <i>the same character</i>, in this case, zero. Reflection in <i>&#x03C3;</i><sub>1</sub> takes P<sub>1</sub>(<i>X</i>, <i>Y</i>, <i>Z</i>) to P<sub>6</sub>(<i>X</i>, &#x2212;<i>Y</i>, <i>Z</i>), and this matrix is therefore</p>
+<p class="indent" style="text-align:center;margin-bottom:0.8em;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>&#x03C3;</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>=</mo><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+</p>
+<p class="noindent">with a character &#x03C7; = 1.</p>
+<p class="indent3-ka1" style="margin-bottom:0.8em;">The matrices for reflection in the planes <i>&#x03C3;</i><sub>2</sub> and <i>&#x03C3;</i><sub>3</sub> are more complicated, but it can be shown that for <i>any vertical plane</i> oriented at an angle <i>&#x00F8;</i> to the <i>x</i> axis, the general matrix for reflection of the point P(<i>X</i>, <i>Y</i>,<i>Z</i>) in the plane takes the form</p>
+<p class="indent" style="text-align:center;margin-bottom:0.8em;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>&#x03C3;</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mi>X</mi>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mi>Y</mi>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mi>Z</mi>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo>
+   <mrow>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mi>cos</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mn>2</mn><mi>&#x03D5;</mi>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mrow>
+        <mi>sin</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mn>2</mn><mi>&#x03D5;</mi>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mrow>
+        <mi>sin</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mn>2</mn><mi>&#x03D5;</mi>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mrow>
+        <mo>&#x2212;</mo><mi>cos</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mn>2</mn><mi>&#x03D5;</mi>
+       </mrow>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+     </mtr>
+     <mtr>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>0</mn>
+      </mtd>
+      <mtd>
+       <mn>1</mn>
+      </mtd>
+     </mtr>
+     
+    </mtable>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+</p>
+<p class="noindent" style="margin-bottom:0.8em;">The character of this matrix is <i>independent</i> of the value of <i>&#x00F8;</i>, as the cos 2<i>&#x00F8;</i> terms on the diagonal cancel, giving a net &#x03C7; = 1. For <i>&#x03C3;</i><sub>2</sub> and <i>&#x03C3;</i><sub>3</sub> in C<sub>3v</sub> symmetry, <i>&#x00F8;</i> takes the values 120&#x00B0; and 240&#x00B0; respectively, and the six 3 &#x00D7; 3 matrices may therefore be identified as follows:</p>
+<p class="indent" style="text-align:left;margin-bottom:0.8em;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mtable>
+   <mtr>
+    <mtd>
+     <mtext>E</mtext>
+    </mtd>
+    <mtd>
+     <mrow>
+      <msubsup>
+       <mtext>C</mtext>
+       <mn>3</mn>
+       <mn>1</mn>
+      </msubsup>
+      
+     </mrow>
+    </mtd>
+    <mtd>
+     <mrow>
+      <msubsup>
+       <mtext>C</mtext>
+       <mn>3</mn>
+       <mn>2</mn>
+      </msubsup>
+      
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mtable>
+         <mtr>
+          <mtd>
+           <mn>1</mn>
+          </mtd>
+          <mtd>
+           <mn>0</mn>
+          </mtd>
+          <mtd>
+           <mn>0</mn>
+          </mtd>
+         </mtr>
+         <mtr>
+          <mtd>
+           <mn>0</mn>
+          </mtd>
+          <mtd>
+           <mn>1</mn>
+          </mtd>
+          <mtd>
+           <mn>0</mn>
+          </mtd>
+         </mtr>
+         <mtr>
+          <mtd>
+           <mn>0</mn>
+          </mtd>
+          <mtd>
+           <mn>0</mn>
+          </mtd>
+          <mtd>
+           <mn>1</mn>
+          </mtd>
+         </mtr>
+         
+        </mtable>
+       </mrow>
+      <mo>)</mo></mrow>
+     </mrow>
+    </mtd>
+    <mtd>
+     <mrow>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mtable>
+         <mtr>
+          <mtd>
+           <mrow>
+            <mo>&#x2212;</mo><mn>1</mn><mo>/</mo><mn>2</mn>
+           </mrow>
+          </mtd>
+          <mtd>
+           <mrow>
+            <mrow><mrow>
+             <mo>&#x2212;</mo><mo stretchy='false'>(</mo><msqrt>
+              <mn>3</mn>
+             </msqrt>
+             <mo stretchy='false'>)</mo>
+            </mrow><mo>/</mo><mn>2</mn></mrow>
+            
+           </mrow>
+          </mtd>
+          <mtd>
+           <mn>0</mn>
+          </mtd>
+         </mtr>
+         <mtr>
+          <mtd>
+           <mrow>
+            <mrow><mrow>
+             <mo stretchy='false'>(</mo><msqrt>
+              <mn>3</mn>
+             </msqrt>
+             <mo stretchy='false'>)</mo>
+            </mrow><mo>/</mo><mn>2</mn></mrow>
+            
+           </mrow>
+          </mtd>
+          <mtd>
+           <mrow>
+            <mo>&#x2212;</mo><mn>1</mn><mo>/</mo><mn>2</mn>
+           </mrow>
+          </mtd>
+          <mtd>
+           <mn>0</mn>
+          </mtd>
+         </mtr>
+         <mtr>
+          <mtd>
+           <mn>0</mn>
+          </mtd>
+          <mtd>
+           <mn>0</mn>
+          </mtd>
+          <mtd>
+           <mn>1</mn>
+          </mtd>
+         </mtr>
+         
+        </mtable>
+       </mrow>
+      <mo>)</mo></mrow>
+     </mrow>
+    </mtd>
+    <mtd>
+     <mrow>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mtable>
+         <mtr>
+          <mtd>
+           <mrow>
+            <mo>&#x2212;</mo><mn>1</mn><mo>/</mo><mn>2</mn>
+           </mrow>
+          </mtd>
+          <mtd>
+           <mrow>
+            <mrow><mrow>
+             <mo stretchy='false'>(</mo><msqrt>
+              <mn>3</mn>
+             </msqrt>
+             <mo stretchy='false'>)</mo>
+            </mrow><mo>/</mo><mn>2</mn></mrow>
+            
+           </mrow>
+          </mtd>
+          <mtd>
+           <mn>0</mn>
+          </mtd>
+         </mtr>
+         <mtr>
+          <mtd>
+           <mrow>
+            <mrow><mrow>
+             <mo>&#x2212;</mo><mo stretchy='false'>(</mo><msqrt>
+              <mn>3</mn>
+             </msqrt>
+             <mo stretchy='false'>)</mo>
+            </mrow><mo>/</mo><mn>2</mn></mrow>
+            
+           </mrow>
+          </mtd>
+          <mtd>
+           <mrow>
+            <mo>&#x2212;</mo><mn>1</mn><mo>/</mo><mn>2</mn>
+           </mrow>
+          </mtd>
+          <mtd>
+           <mn>0</mn>
+          </mtd>
+         </mtr>
+         <mtr>
+          <mtd>
+           <mn>0</mn>
+          </mtd>
+          <mtd>
+           <mn>0</mn>
+          </mtd>
+          <mtd>
+           <mn>1</mn>
+          </mtd>
+         </mtr>
+         
+        </mtable>
+       </mrow>
+      <mo>)</mo></mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mover>
+       <mrow>
+        <mrow><mo>(</mo>
+         <mrow>
+          <mtable>
+           <mtr>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mn>1</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+           </mtr>
+           
+          </mtable>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+       <mrow>
+        <msub>
+         <mi>&#x03C3;</mi>
+         <mn>1</mn>
+        </msub>
+        
+       </mrow>
+      </mover>
+      
+     </mrow>
+    </mtd>
+    <mtd>
+     <mrow>
+      <mover>
+       <mrow>
+        <mrow><mo>(</mo>
+         <mrow>
+          <mtable>
+           <mtr>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow>
+              
+             </mrow>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mrow><mrow>
+               <mo>&#x2212;</mo><mo stretchy='false'>(</mo><msqrt>
+                <mn>3</mn>
+               </msqrt>
+               <mo stretchy='false'>)</mo>
+              </mrow><mo>/</mo><mn>2</mn></mrow>
+              
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mrow>
+              <mrow><mrow>
+               <mo>&#x2212;</mo><mo stretchy='false'>(</mo><msqrt>
+                <mn>3</mn>
+               </msqrt>
+               <mo stretchy='false'>)</mo>
+              </mrow><mo>/</mo><mn>2</mn></mrow>
+              
+             </mrow>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow>
+              
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+           </mtr>
+           
+          </mtable>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+       <mrow>
+        <msub>
+         <mi>&#x03C3;</mi>
+         <mn>2</mn>
+        </msub>
+        
+       </mrow>
+      </mover>
+      
+     </mrow>
+    </mtd>
+    <mtd>
+     <mrow>
+      <mover>
+       <mrow>
+        <mrow><mo>(</mo>
+         <mrow>
+          <mtable>
+           <mtr>
+            <mtd>
+             <mrow>
+              <mo>&#x2212;</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow>
+              
+             </mrow>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mo stretchy='false'>(</mo><msqrt>
+               <mn>3</mn>
+              </msqrt>
+              <mo stretchy='false'>)</mo><mo>/</mo><mn>2</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mrow>
+              <mo stretchy='false'>(</mo><msqrt>
+               <mn>3</mn>
+              </msqrt>
+              <mo stretchy='false'>)</mo><mo>/</mo><mn>2</mn>
+             </mrow>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow>
+              
+             </mrow>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>0</mn>
+            </mtd>
+            <mtd>
+             <mn>1</mn>
+            </mtd>
+           </mtr>
+           
+          </mtable>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+       <mrow>
+        <msub>
+         <mi>&#x03C3;</mi>
+         <mn>3</mn>
+        </msub>
+        
+       </mrow>
+      </mover>
+      
+     </mrow>
+    </mtd>
+   </mtr>
+   
+  </mtable>
+ </mrow>
+</math>
+</p>
+<a class="page" id="page_42">Page 42, Matrices and representations in higher order point groups&#x2014;degenerate representations</a>
+<p class="noindent">It can be seen that these can be simplified into a <i>set of 2 &#x00D7; 2 matrices linked to X and Y</i>, and a 1 &#x00D7; 1 matrix linked to <i>Z</i>. These 2 &#x00D7; 2 matrices arise in a very similar way to the 2 &#x00D7; 2 matrices found earlier for the <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mn>4</mn><mn>1</mn></msubsup></mrow></semantics></math> operation. Here in the C<sub>3v</sub> point group, the C<sub>3</sub> operations again scramble <i>X</i> and <i>Y</i>, with the result that they cannot be separated, and when taken <i>together</i>, they form the basis for a <i>doubly degenerate irreducible representation</i>.</p>
+</section>
+<section epub:type="chapter" id="sec_4.6">
+<h2 class="h2"><b>4.6<span class="space">&#160;</span>Irreducible representations from the matrices based on <i>X</i>, <i>Y</i> and <i>Z</i> in the C<sub>3v</sub> point group</b></h2>
+<p class="noindent">At this stage, we can identify the characters &#x03C7;R of the six matrices describing <i>all the operations</i> as follows:</p>
+<figure style="margin-left:-9em;">
+<img src="../images/page42-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">which may be written more concisely as</p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mfrac><mn>1</mn><mi>h</mi></mfrac><mo>&#x2211;</mo><mi>N</mi><mi>&#x03C7;</mi><mtext>R</mtext><mi>&#x03C7;</mi><mtext>I</mtext></mrow></semantics></math></p>
+</aside>
+<figure style="margin-left:-9em;">
+<img src="../images/page42-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">by the introduction of the coefficients <i>&#x2018;N&#x2019;</i>. As mentioned above, this simplification arises because the three reflection operations, for example, give matrices with identical characters. The representation &#x0393;<sub><i>XYZ</i></sub> can be reduced by using the formula, or by inspection, to give the irreducible representations A<sub>1</sub> + E:</p>
+<figure style="margin-left:-9em;">
+<img src="../images/page42-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">and we can identify two distinct components of this representation: &#x0393;<i>z</i> = A<sub>1</sub> and &#x0393;<sub><i>XY</i></sub> = E.</p>
+<p class="indent3-ka1">We are now also in a position to understand some of the new nomenclature in the C<sub>3v</sub> character table. The symbol E down the left-hand column is the symbol for a <i>doubly degenerate representation</i>. This is a representation made up of 2 &#x00D7; 2 matrices, which <i>cannot be simplified further</i>. The row of numbers alongside this symbol contains the characters of these matrices, and the presence of &#x2018;(<i>x</i>, <i>y</i>)&#x2019; indicates that the functions <i>x</i> and <i>y together</i> transform as the E representation.</p>
+<a class="page" id="page_43">Page 43, Matrices and representations in higher order point groups&#x2014; degenerate representations</a>
+<figure style="margin-left:-9em;">
+<img src="../images/page43-1.jpg" alt="images"/>
+</figure>
+<p class="indent3-ka1">Degenerate representations are encountered in point groups where there are C<sub><i>n</i></sub> or S<sub><i>n</i></sub> axes with <i>n</i> = 3 or higher. In general, for non-linear point groups, doubly degenerate representations have E as their basic symbol, to which may be added subscripts or superscripts depending on the point group. The variables (<i>x</i>, <i>y</i>) are perhaps the most commonly encountered bases for E-type representations, but functions such as (<i>xz</i>, <i>yz</i>) or (<i>x</i><sup>2</sup> &#x2212; <i>y</i><sup>2</sup>, <i>xy</i>) are also important.</p>
+<p class="indent3-ka1">In linear molecules (point groups C<sub>&#x221E;v</sub> or D<sub>&#x221E;h</sub>), doubly degenerate representations frequently have II (greek pi) as their principal symbol.</p>
+</section>
+<section epub:type="chapter" id="sec_4.7">
+<h2 class="h2"><b>4.7<span class="space">&#160;</span>Triply degenerate representations: the point group T<sub>d</sub></b></h2>
+<p class="noindent">Triply degenerate representations are irreducible representations composed of 3 &#x00D7; 3 matrices, and have a basic symbol T. From a chemical viewpoint, they are most frequently found in the cubic point groups T<sub>d</sub> and O<sub>h</sub>, and their occurrence is best illustrated by example.</p>
+<aside class="abc" style="margin-top:3em;" epub:type="sidebar">
+<figure style="margin-left:-2em;">
+<img src="../images/page43-3.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 4.4</b></figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1"><a href="#fig_4.4">Figure 4.4</a> shows three vectors <i>x</i><sub>1</sub>, <i>y</i><sub>1</sub> and <i>z</i><sub>1</sub> on the central atom of a tetrahedral molecule such as CH<sub>4</sub>. These vectors lie along the C<sub>2</sub> (and S<sub>4</sub>) symmetry axes. The four C<sub>3</sub> axes are perpendicular to the faces of the regular tetrahedron, passing through the central atom and <i>one</i> of the hydrogen atoms (e.g. H<sub>1</sub>). The planes <i>&#x03C3;</i><sub>d</sub> each contain the central carbon atom and <i>two</i> of the four hydrogen atoms. The plane shown in <a href="#fig_4.4">Fig. 4.4</a> bisects the angle between the <i>x</i> and <i>y</i> axes, and contains the atoms H<sub>1</sub> and H<sub>3</sub>.</p>
+<p class="indent3-ka1">The character table for the T<sub>d</sub> point group is reproduced below:</p>
+<figure>
+<img src="../images/page43-2.jpg" alt="images" style="margin-left:-5em;"/>
+</figure>
+<p class="noindent">It can be seen that there are two triply degenerate irreducible representations, T<sub>1</sub> and T<sub>2</sub>, listed in the left hand column.</p>
+<p class="indent3-ka1">Alongside these symbols are the rows of numbers which correspond to characters of matrices, and in the final columns are to be found sets of functions bracketed together. The character table indicates that both <a class="page" id="page_44" style="width:100%;">Page 44, Matrices and representations in higher order point groups&#x2014;degenerate representations</a>(<i>x</i>, <i>y</i>, <i>z</i>) and (<i>xy</i>, <i>xz</i>, <i>yz</i>) transform as T<sub>2</sub>, and we shall confirm this for the (<i>x</i>, <i>y</i>, <i>z</i>) set by working out the characters of the matrices for selected symmetry operations of the group on <i>x</i><sub>1</sub>, <i>y</i><sub>1</sub> and <i>z</i><sub>1</sub>.</p>
+</section>
+<section epub:type="chapter" id="sec_4.8">
+<h2 class="h2"><b>4.8<span class="space">&#160;</span>Characters for the representation &#x0393;<sub><i>xyz</i></sub> for the central atom</b></h2>
+<p class="noindent">We have seen previously that in order to obtain the irreducible representations for any representation &#x0393;, it is necessary only to know the characters of the matrices which make up &#x0393;, together with data from the character table. In this problem we will try to go directly to the characters of the various matrices, by focusing only on the diagonal terms in each 3 &#x00D7; 3 matrix, as it is only these which contribute to the character.</p>
+<p class="indent3-ka1">The identity operation leaves <i>x</i><sub>1</sub>, <i>y</i><sub>1</sub> and <i>z</i><sub>1</sub> all unshifted, and each vector therefore generates a term +1 on the diagonal. The character of the matrix is therefore +3. There are <i>eight</i> distinct C<sub>3</sub> operations to be considered in this point group: two for each of the four C<sub>3</sub> axes, but as discussed above, <i>any one of these</i> may be used to generate a matrix which will give the appropriate &#x03C7;R. If we select the C<sub>3</sub> axis which lies along the C&#x2013;H<sub>1</sub> bond (<a href="#fig_4.4">Fig. 4.4</a>), the transformations produced by the operation <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mtext>C</mtext><mn>3</mn><mn>1</mn></msubsup></mrow></semantics></math> are <i>x</i><sub>1</sub> to <i>y</i><sub>1</sub>, <i>y</i><sub>1</sub> to <i>z</i><sub>1</sub>, and <i>z</i><sub>1</sub> to <i>x</i><sub>1</sub>. The matrix for this operation is shown alongside, and has a character zero. As indicated above, the C<sub>2</sub> and S<sub>4</sub> axes lie along the Cartesian coordinates, and if we choose the C<sub>2</sub> and S<sub>4</sub> axes lying along <i>z</i>, to be typical, we have</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<p class="noindent"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mover>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtable>
+       <mtr>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd>
+         <mn>1</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+        <mtd>
+         <mn>0</mn>
+        </mtd>
+       </mtr>
+       
+      </mtable>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mrow>
+    <msubsup>
+     <mtext>C</mtext>
+     <mn>3</mn>
+     <mn>1</mn>
+    </msubsup>
+    
+   </mrow>
+  </mover>
+  
+ </mrow>
+</math>
+</p>
+</aside>
+<p class="indent3-ka1t">for C<sub>2</sub>(<i>z</i>): <i>x</i><sub>1</sub> to &#x2212;<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub> to &#x2212;<i>y</i><sub>1</sub>, <i>z</i> to <i>z</i><sub>1</sub>, leading to a character &#x2212;1</p>
+<p class="indent3-ka1">for <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mtext>S</mtext><mn>4</mn><mn>1</mn></msubsup></semantics></math>(<i>z</i>): <i>x</i><sub>1</sub> to <i>y</i><sub>1</sub>, <i>y</i><sub>1</sub> to &#x2212;<i>x</i><sub>1</sub>, <i>z</i><sub>1</sub> to &#x2212;<i>z</i><sub>1</sub>, which also gives &#x2212;1</p>
+<p class="indent3-ka1t">Finally, as indicated previously, reflection in <i>any</i> vertical plane will result in a matrix with a character of +l. Here, reflection in <i>&#x03C3;</i><sub>d</sub> interchanges <i>x</i><sub>1</sub> and <i>y</i><sub>1</sub>. but leaves <i>z</i><sub>1</sub> unchanged. The matrices which form the representation &#x0393;<sub><i>xyz</i></sub> therefore have the characters</p>
+<figure style="margin-left:-9em;">
+<img src="../images/page44-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">and so correspond to T<sub>2</sub>.</p>
+</section>
+<section epub:type="chapter" id="sec_4.9">
+<h2 class="h2"><b>4.9<span class="space">&#160;</span>The representation &#x0393;<sub><i>&#x00F8;</i></sub> in CH<sub>4</sub></b></h2>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure style="margin-left:2em;" id="fig_4.4">
+<img src="../images/page44-4.jpg" alt="images"/>
+<figcaption style="margin-top:1em;">
+<b>Fig. 4.4&#x2032;</b></figcaption>
+</figure>
+</aside>
+<p class="noindent">As a final example of the use of the reduction formula in a high symmetry point group, we shall derive the irreducible representations for the four 1<i>s</i> orbitals on the hydrogen atoms in methane. These are identified in <a href="#fig_4.4">Fig. 4.4</a>&#x2032; as <i>&#x00F8;</i><sub>1</sub> to <i>&#x00F8;</i><sub>4</sub> located on the atoms H<sub>1</sub> to H<sub>4</sub>. As in the example above, it is necessary only to focus on the orbitals which remain <i>unshifted</i> in order to obtain the characters of the reducible representation &#x0393;<i>&#x00F8;</i>.</p>
+<a class="page" id="page_45">Page 45, Matrices and representations in higher order point groups&#x2014; degenerate representations</a>
+<p class="indent3-ka1">The identity leaves all orbitals unshifted, resulting in a character +4, and a C<sub>3</sub> rotation leaves just one orbital unshifted, leading to a character +l. The C<sub>2</sub> and S<sub>4</sub> operations shift all the orbitals, but a typical <i>&#x03C3;</i><sub>d</sub> plane leaves two orbitals unshifted. The characters of the reducible representation &#x0393;<sub><i>&#x00F8;</i></sub> are therefore</p>
+<figure style="margin-left:-9em;">
+<img src="../images/page45-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">This representation can be reduced using the formula, and shown to be &#x0393;<sub><i>&#x00F8;</i></sub> = A<sub>1</sub> + T<sub>2</sub>, with confirmation coming from the addition of the appropriate rows in the character table.</p>
+<aside class="abc" style="margin-top:2em;" epub:type="sidebar">
+<p class="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mfrac><mn>1</mn><mi>h</mi></mfrac><mo>&#x2211;</mo><mi>N</mi><mi>&#x03C7;</mi><mtext>R</mtext><mi>&#x03C7;</mi><mtext>I</mtext></mrow></semantics></math></p>
+</aside>
+<figure style="margin-left:-9em;">
+<img src="../images/page45-2.jpg" alt="images"/>
+</figure>
+</section>
+<section epub:type="chapter" id="sec_4.10">
+<h2 class="h2"><b>4.10<span class="space">&#160;</span>Summary</b></h2>
+<p class="noindent">In this chapter, it has been shown that the presence of high order axes leads to <i>degenerate</i> representations, for which the smallest matrices are either 2 &#x00D7; 2 (doubly degenerate) or 3 &#x00D7; 3 (triply degenerate). Examples of the occurrence of these representations are presented and discussed.</p>
+</section>
+<section epub:type="chapter" id="sec_4.11">
+<h2 class="h2"><b>4.11<span class="space">&#160;</span>Exercises</b></h2>
+<p class="noindent"><a href="AppendixI.xhtml#ch04_app1">1</a>. The molecules NH<sub>3</sub>, BF<sub>3</sub> and ClF<sub>3</sub> have symmetries C<sub>3v</sub>, D<sub>3h</sub> and C<sub>2v</sub> (T-shaped) respectively. Derive the irreducible representations &#x0393;<sub>N&#x2013;H</sub>, &#x0393;<sub>B&#x2013;F</sub> and &#x0393;<sub>Cl&#x2013;F</sub> in these molecules.</p>
+<p class="noindent"><a href="AppendixI.xhtml#ch04_app2">2</a>. Derive the irreducible representations &#x0393;<sub>Xe&#x2013;O</sub> and &#x0393;<sub>Xe&#x2013;F</sub> in the molecule XeOF<sub>4</sub> (see <a href="Chapter01.xhtml#fig_1.24">Fig. 1.24</a>).</p>
+<p class="noindent"><a href="AppendixI.xhtml#ch04_app3">3</a>. Derive the irreducible representations &#x0393;<sub>B&#x2013;C1</sub> and &#x0393;<sub>B&#x2013;B</sub> in B<sub>2</sub>Cl<sub>4</sub> (see <a href="Chapter01.xhtml#fig_1.16">Fig. 1.16</a>).</p>
+<p class="noindent">4. Show that the irreducible representation &#x0393;<sub>s&#x2013;F</sub> in the molecule SF<sub>6</sub> is &#x0393;<sub>s&#x2013;F</sub> = A<sub>1g</sub> + E<sub>g</sub> + T<sub>1u</sub>.</p>
+</section>
+</section>
+</div>
+</body>
+</html>

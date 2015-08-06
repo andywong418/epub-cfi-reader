@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en-US">
+<head>
+<meta charset="utf-8" />
+<title>Radiation Heat Transfer</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch02">
+<a id="page_13" class="page" style="width:70%;">Page 13, Chapter 2 View factors</a>
+<h1 class="main"><b>2<span class="space">&#160;</span>View factors</b></h1>
+<section epub:type="chapter" id="sec2.1">
+<h2 class="h2"><b>2.1<span class="space">&#160;</span>Introduction</b></h2>
+<p class="noindent">The previous chapter dealt with the emission and absorption characteristics of surfaces. We will now turn our attention to radiative transfer from one surface to another. A surface generally emits radiation in all directions simultaneously. If the receiving surface is located some distance away from the radiation source, then not all the radiation leaving the source will impinge on the receiving surface. As the surface moves towards the source, increasingly more radiation will be received. This is obvious in everyday life: the closer we are to a heat source, the hotter we feel. Clearly the source is not emitting more radiation as we get closer, but a larger proportion is landing on us. This leads to the concept of the <i>view factor</i> (also known as the <i>configuration factor</i> or <i>shape factor</i>) which takes the geometry of the system into account. At this stage we shall assume that the medium between surfaces does not absorb or emit radiation.</p>
+</section>
+<section epub:type="chapter" id="sec2.2">
+<h2 class="h2"><b>2.2<span class="space">&#160;</span>Definition and properties of view factors</b></h2>
+<p class="noindent">Consider two black surfaces 1 and 2, both of which radiate in all directions. We can define the view factor <i>F</i><sub>12</sub> as the fraction of the radiation emitted by surface 1 which is directly intercepted by surface 2. Similarly, the view factor <i>F</i><sub>21</sub> is the fraction of the radiation emitted by surface 2 which is intercepted by surface 1. The rate of emission (in Watts) from surface 1 is <i>Wb</i><sub>1</sub><i>A</i><sub>1</sub>, so the rate at which radiation arrives at surface 2 is <i>Q</i><sub>12</sub> = <i>W<sub>b</sub></i><sub>1</sub><i>A</i><sub>1</sub><i>F</i><sub>12</sub>. Similarly the rate at which emission from surface 2 arrives at surface 1 is <i>Q</i><sub>21</sub> = <i>W<sub>b</sub></i><sub>2</sub><i>A</i><sub>2</sub><i>F</i><sub>21</sub>. At thermal equilibrium, the temperature of the two surfaces will be equal, the emissive fluxes <i>W<sub>b</sub></i><sub>1</sub><small> </small>and <i>W<sub>b</sub></i><sub>2</sub> will be equal and there will be no net heat flow between the two surfaces. Therefore</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>21</m:mn></m:mrow></m:msub></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x21D2;</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>21</m:mn></m:mrow></m:msub></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:1.5em;">(2.1)</td>
+</tr>
+</table>
+<p class="noindent"><a href="#eq2.1">Equation 2.1</a> is known as the Reciprocity Relation. Note that it is dependent only on the geometry of the system, so it holds for all systems, even though it has been derived for black surfaces at thermal equilibrium.</p>
+<p class="indent">There is one important property of view factors, known as the Summation Relation. Consider an enclosure containing <i>N</i> surfaces. Since all the radiation emitted from surface 1 must land somewhere in the enclosure, we can write:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td><p class="timgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>11</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mn>13</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:mn>........</m:mn><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mn>1</m:mn><m:mi>N</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></p></td>
+</tr>
+</table>
+<p class="noindent">or, more generally for any surface <i>i</i>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq" id="eq2.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:munderover><m:mo>&#x2211;</m:mo><m:mrow><m:mi>j</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mi>j</m:mi><m:mo>=</m:mo><m:mi>N</m:mi></m:mrow></m:munderover><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;">(2.2)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_14" class="page">Page 14, Chapter 2 View factors</a>Note that this expression introduces the notion of a &#x201C;self-view factor&#x201D; such as <i>F</i><sub>11</sub>. For a concave surface, some of the radiation emitted from that surface may be intercepted by another part of the same surface. For instance in <a href="Chapter01.xhtml#fig1.5">Figure 1.5</a>, all radiation emitted by surface 1 is received by surface 2, so <i>F</i><sub>11</sub> <i>=</i> 0 and <i>F</i><sub>12</sub> = 1; however, some of the radiation from surface 2 misses surface 1 and lands elsewhere on surface 2, so <i>F</i><sub>22</sub> &#x2260; 0.</p>
+<p class="indent">Clearly in order to carry out a heat transfer analysis, the numerical values of the various view factors are required. The remainder of this chapter is concerned with some of the methods available for their determination.</p>
+</section>
+<section epub:type="chapter" id="sec2.3">
+<p class="noindent">&#160;</p>
+<h2 class="h2"><b>2.3<span class="space">&#160;</span>Tables and charts</b></h2>
+<p class="noindent">The view factors for many geometries have been evaluated over the years and are given in a range of reference books, either in the form of an algebraic equation or a chart, from which the view factor may be determined. <a href="#fig2.1">Figure 2.1</a> gives two examples of a view factor chart, where the view factor is plotted as a function of the geometry for two parallel plates (<a href="#fig2.1">Figure 2.1a</a>) and two perpendicular plates (<a href="#fig2.1">Figure 2.1b</a>). Major compilations of view factor algebra and charts are given by Siegel and Howell (<i>Thermal radiation heat transfer</i>) by Modest (<i>Radiative heat transfer</i>) and by Howell (<i>A catalog of radiation configuration factors</i>). If literature values are not available, then view factors must be calculated by the user. A numerical example using charts is given in <a href="#sec2.8">Section 2.8</a>.</p>
+<figure class="imgc" id="fig2.1">
+<img src="../images/fig2.1.jpg" alt="images"/>
+<figcaption><b>Figure 2.1</b> View Factor charts for (a) two parallel, rectangular plates of equal size, (b) two perpendicular plates with a common edge.</figcaption>
+</figure>
+</section>
+<section epub:type="chapter" id="sec2.4">
+<a id="page_15" class="page" style="width:70%;">Page 15, Chapter 2 View factors</a>
+<h2 class="h2"><b>2.4<span class="space">&#160;</span>Cosine Law</b></h2>
+<p class="noindent">Consider two area elements d<i>A</i><sub>1</sub> and d<i>A</i><sub>2</sub> (<a href="#fig2.2">Figure 2.2</a>), which may be part of two larger, finite areas <i>A</i><sub>1</sub> and <i>A</i><sub>2</sub>. Let the line connecting the elements be of length <i>r</i>, and the angles between that line and the normals to the elements be <i>&#x03B8;</i><sub>1</sub> and <i>&#x03B8;</i><sub>2</sub> respectively. Assuming that the emitted radiation is isotropic, the rate of heat transfer (d<i>Q</i><sub>12</sub>) between the two elements can be derived purely from the geometry. It will be proportional to:</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure class="imgc" id="fig2.2">
+<img src="../images/fig2.2.jpg" alt="images"/>
+<figcaption><b>Figure 2.2</b> Radiative transfer between two area elements. </figcaption>
+</figure>
+</aside>
+<p class="blist" style="margin-top:1em;">(i)<span class="space">&#160;</span>the apparent area of d<i>A</i><sub>2</sub> as seen from d<i>A</i><sub>1</sub> (<i>=</i> d<i>A</i><sub>2</sub> cos <i>&#x03B8;</i><sub>2</sub>);</p>
+<p class="blistk">(ii)<span class="space-n">&#160;</span>the apparent area of d<i>A</i><sub>1</sub> as seen from d<i>A</i><sub>2</sub> (<i>=</i> d<i>A</i><sub>1</sub> cos <i>&#x03B8;</i><sub>1</sub>);</p>
+<p class="blistk1">(iii)<span class="space-n1">&#160;</span>the inverse square of the distance between the elements (= 1/<i>r</i><sup>2</sup>)</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">We can therefore write</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq" id="eq2.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>d</m:mtext><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>I</m:mi><m:mo stretchy='false'>(</m:mo><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy='false'>)</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(2.3)</td>
+</tr>
+</table>
+<p class="noindent">where <i>I</i> is a constant of proportionality. For finite areas this can be integrated over each surface to give</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq" id="eq2.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munder><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:munder><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munder><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:munder><m:mrow><m:mfrac><m:mrow><m:mi>I</m:mi><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>2</m:mn></m:msub><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mtext>&#x00A0;d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1.2em;">(2.4)</td>
+</tr>
+</table>
+<p class="noindent">We can determine <i>I</i> by evaluating this integral for a system in which <i>Q</i><sub>12</sub> can be found using an alternative method. Consider a hemisphere of radius <i>r</i>, whose base is centred at d<i>A</i><sub>1</sub> (<a href="#fig2.3">Figure 2.3</a>). All radiation from d<i>A</i><sub>1</sub> will land on the curved surface of the hemisphere. A thin circular strip element (d<i>A</i><sub>2</sub>) on the surface subtends an angle d<i>&#x03B8;</i><sub>1</sub> at d<i>A</i><sub>1</sub> and will have thickness <i>r</i>d<i>&#x03B8;</i><sub>1</sub> and radius <i>r</i>sin<i>&#x03B8;</i><sub>1</sub>. Thus:</p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>r</m:mi><m:mi>sin</m:mi><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x00D7;</m:mo><m:mi>r</m:mi><m:mi>d</m:mi><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">Substituting into <a href="#eq2.3">Equation 2.3</a>, noting that <i>&#x03B8;<sub>2</sub></i> = 0, since the hemisphere radius is normal to d<i>A</i><sub>2</sub>, gives:</p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>d</m:mtext><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>I</m:mi><m:mtext>&#x00A0;d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mtext>s</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mtext>&#x00A0;d</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math></td>
+</tr>
+</table>
+<figure class="imgc" id="fig2.3">
+<img src="../images/fig2.3.jpg" alt="images"/>
+<figcaption><b>Figure 2.3</b> Radiative transfer between differential plane and ring elements. </figcaption>
+</figure>
+<p class="noindent"><a id="page_16" class="page">Page 16, Chapter 2 View factors</a>This can be integrated over the curved surface of the hemisphere with respect to <i>&#x03B8;</i><sub>1</sub> to give the heat flow from d<i>A</i><sub>1</sub> to the hemisphere:</p>
+<table style="width:66%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>I</m:mi><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msubsup><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mrow><m:mfrac><m:mi>&#x03C0;</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:munderover><m:mrow><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mi>sin</m:mi><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mi>d</m:mi><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>I</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>[</m:mo> <m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mrow><m:mi>sin</m:mi></m:mrow><m:mn>2</m:mn></m:msup><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle><m:mn>0</m:mn><m:mrow><m:mfrac><m:mi>&#x03C0;</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:msubsup></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x21D2;</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mi>&#x03C0;</m:mi><m:mi>I</m:mi><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<p class="noindent">Since <i>all</i> radiation from d<i>A</i><sub>1</sub> must pass through the curved surface of the hemisphere, this equation gives us the total rate of heat flow from d<i>A</i><sub>1</sub>. This total rate of heat flow is also given by</p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mrow></m:mrow><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">where <i>J</i><sub>1</sub> is the radiosity of d<i>A</i><sub>1</sub>. So <i>I</i> is simply <i>J</i><sub>1</sub>/<i>&#x03C0;</i> and <a href="#eq2.4">Equation 2.4</a> may be rewritten</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq" id="eq2.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munder><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:munder><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munder><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:munder><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>2</m:mn></m:msub><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:mi>&#x03C0;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1.2em;">(2.5)</td>
+</tr>
+</table>
+<p class="noindent">Recalling that <i>Q</i><sub>12</sub> = <i>J</i><sub>1</sub><i>A</i><sub>1</sub><i>F</i><sub>12</sub> for exchange between any two finite areas, we have the following general expression for the view factor:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq" id="eq2.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munder><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:munder><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munder><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:munder><m:mrow><m:mfrac><m:mrow><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>2</m:mn></m:msub><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:mi>&#x03C0;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1.2em;">(2.6)</td>
+</tr>
+</table>
+<p class="noindent">This is known as the Cosine Law and gives us a method for calculating any view factor where the geometry is defined. Note that the symmetry of the integrand demonstrates the validity of the Reciprocity Relation for all systems (no restrictions to equilibrium or black surfaces have been used here): subscripts 1 and 2 are wholly interchangeable, such that <i>A</i><sub>1</sub><i>F</i><sub>12</sub> = <i>A</i><sub>2</sub><i>F</i><sub>21</sub>. Unfortunately the integral is rarely straightforward to evaluate. The double area integral required for exchange between finite areas requires a four-fold integration for many geometries. Although the development of computational techniques in recent years has helped greatly, analytical methods are often not practicable. Consequently other methods for determining view factors are frequently used.</p>
+<section epub:type="chapter">
+<h4 class="main4" id="ex2.1">Example 2.1.</h4>
+<p class="noindent">Determine the view factor to a disc <i>A<sub>2</sub></i> of diameter <i>D</i> from an elemental area d<i>A</i><sub>1</sub> situated a perpendicular distance <i>R</i> below the centre of the disc.</p>
+</section>
+<section epub:type="chapter">
+<h4 class="main4">Solution.</h4>
+<p class="noindent">Consider an annular element thickness d<i>x</i> and area d<i>A</i><sub>2</sub> a distance <i>x</i> from the centre of the disc (<a href="#fig2.4">Figure 2.4</a>).</p>
+<p class="noindent">From the geometry:</p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>x</m:mi><m:mtext>&#x00A0;d</m:mtext><m:mi>x</m:mi></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mfrac><m:mi>R</m:mi><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="imgc" id="fig2.4">
+<img src="../images/fig2.4.jpg" alt="images"/>
+<figcaption><b>Figure 2.4</b> Geometry for <a href="#ex2.1">Example 2.1.</a></figcaption>
+</figure></aside>
+<p class="noindent"><a id="page_17" class="page">Page 17, Chapter 2 View factors</a>Substituting these in <a href="#eq2.6">Equation 2.6</a>, noting that we require only a single integral because surface 1 is differential:</p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mrow><m:mfrac><m:mi>D</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mi>x</m:mi><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>D</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mtext>d</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x21D2;</m:mo><m:munder accentunder='true'><m:munder accentunder='true'><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>D</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>4</m:mn><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>D</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo stretchy='true'>_</m:mo></m:munder><m:mo stretchy='true'>_</m:mo></m:munder></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+</section>
+</section>
+<section epub:type="chapter" id="sec2.5">
+<h2 class="h2"><b>2.5<span class="space">&#160;</span>Unit Hemisphere Method</b></h2>
+<p class="noindent">The Unit Hemisphere Method provides a way of using a geometric construction to determine one of the area integrals in <a href="#eq2.6">Equation 2.6</a>. Consider the two elemental areas d<i>A</i><sub>1</sub> and d<i>A</i><sub>2</sub> a distance <i>r</i> apart, and imagine a hemisphere of unit radius centred on d<i>A</i><sub>1</sub> (<a href="#fig2.5">Figure 2.5</a>).</p>
+<p class="indent">We now carry out a double projection of d<i>A</i><sub>2</sub>. First we project d<i>A</i><sub>2</sub> onto the curved surface of the hemisphere, to give a shape of area <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display='inline'><m:mrow><m:msub><m:msup><m:mi>A</m:mi><m:mo>&#x2032;</m:mo></m:msup> <m:mn>2</m:mn></m:msub></m:mrow></m:math>; then we project <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display='inline'><m:mrow><m:msub><m:msup><m:mi>A</m:mi><m:mo>&#x2032;</m:mo></m:msup> <m:mn>2</m:mn></m:msub></m:mrow></m:math> onto the base of the hemisphere to give area <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display='inline'><m:mrow><m:msub><m:msup><m:mi>A</m:mi><m:mo>&#x2033;</m:mo></m:msup> <m:mn>2</m:mn></m:msub></m:mrow></m:math> Now consider the areas of each projection:</p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:mtext>d</m:mtext><m:msub><m:msup><m:mi>A</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>2</m:mn></m:msub><m:mo>&#x00D7;</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>d</m:mtext><m:msub><m:msup><m:mi>A</m:mi><m:mo>&#x2033;</m:mo></m:msup><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mtext>d</m:mtext><m:msub><m:msup><m:mi>A</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mn>2</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<p class="noindent">The area of the base of a unit hemisphere is <i>&#x03C0;</i>, so</p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Fraction&#x00A0;of&#x00A0;base&#x00A0;occupied&#x00A0;by&#x00A0;</m:mtext><m:mi>d</m:mi><m:msub><m:msup><m:mi>A</m:mi><m:mo>&#x2033;</m:mo></m:msup><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:msub><m:msup><m:mi>A</m:mi><m:mo>&#x2033;</m:mo></m:msup><m:mn>2</m:mn></m:msub></m:mrow><m:mi>&#x03C0;</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:mi>&#x03C0;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">If d<i>A</i><sub>2</sub> is part of a finite area <i>A</i><sub>2</sub> which forms a double projection of area <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display='inline'><m:mrow><m:msub><m:msup><m:mi>A</m:mi><m:mo>&#x2033;</m:mo></m:msup> <m:mn>2</m:mn></m:msub></m:mrow></m:math> on the base of the hemisphere, then</p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Fraction&#x00A0;of&#x00A0;base&#x00A0;occupied&#x00A0;by&#x00A0;</m:mtext><m:msub><m:msup><m:mi>A</m:mi><m:mo>&#x2033;</m:mo></m:msup><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:msup><m:mi>A</m:mi><m:mo>&#x2033;</m:mo></m:msup><m:mn>2</m:mn></m:msub></m:mrow><m:mi>&#x03C0;</m:mi></m:mfrac><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munder><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:munder><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>1</m:mn></m:msub><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:msub><m:mi>&#x03B8;</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:mi>&#x03C0;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1em;text-align:right;">(2.7)</td></tr>
+</table>
+<figure class="imgc" id="fig2.5">
+<img src="../images/fig2.5.jpg" alt="images"/>
+<figcaption><b>Figure 2.5</b> The Unit Hemisphere Method for evaluating the View Factor integral. </figcaption>
+</figure>
+<p class="noindent"><a id="page_18" class="page">Page 18, Chapter 2 View factors</a>If we define &#x03BE; to be this fraction, then substitution into the Cosine Law (<a href="#eq2.6">Equation 2.6</a>) leads to</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:mo>&#x222B;</m:mo><m:mrow><m:mi>&#x03BE;</m:mi><m:mtext>&#x00A0;d</m:mtext><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.75em;">(2.8)</td>
+</tr>
+</table>
+<p class="noindent">If this integral can be evaluated, then we can determine <i>F</i><sub>12</sub>. Note that if <i>A</i><sub>1</sub> is elemental, then no integration is required, and <i>F</i><sub>12</sub> = <i>&#x03BE;</i></p>
+<section epub:type="chapter">
+<h4 class="main4" id="ex2.2">Example 2.2.</h4>
+<p class="noindent">Determine the view factor from a disc of radius <i>&#x03C1;</i> to a sphere of radius <i>r</i> whose centre is located a perpendicular distance <i>h</i> above the centre of the disc.</p>
+</section>
+<section epub:type="chapter">
+<h4 class="main4">Solution.</h4>
+<p class="noindent">Consider an area element d<i>A</i><sub>1</sub> on the disc a distance <i>x</i> from the centre of the disc (<a href="#fig2.6">Figure 2.6</a>), and imagine that d<i>A</i><sub>1</sub> is located at centre of the base of a unit hemisphere. Let <i>R</i> be the beam length from d<i>A</i><sub>1</sub> to the centre of the sphere (<i>A</i><sub>2</sub>), and let <i>&#x03B8;</i> be the angle between the beam and the disc. From the geometry:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:40%;"/>
+<col style="width:26%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mtd><m:mtd></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>sin</m:mi><m:mi>&#x03B8;</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>h</m:mi><m:mi>R</m:mi></m:mfrac></m:mrow></m:math></td>
+<td style="padding-top:0em;">(2.9)</td>
+</tr>
+</table>
+<p class="noindent">The sphere <i>A</i><sub>2</sub> will project onto the surface of the hemisphere as a circle of radius <i>r</i>/<i>R</i> (using the properties of similar triangles). This circle will project onto the base of the hemisphere as an ellipse with axes <i>r</i>/<i>R</i> and <i>r</i> sin<i>&#x03B8;</i>/<i>R</i>. Therefore:</p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Area</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>ellipse</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:msup><m:mi>A</m:mi><m:mo>&#x2033;</m:mo></m:msup><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>&#x03C0;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mi>sin</m:mi><m:mi>&#x03B8;</m:mi></m:mrow><m:mrow><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></td>
+</tr>
+</table>
+<figure class="imgc" id="fig2.6">
+<img src="../images/fig2.6.jpg" alt="images"/>
+<figcaption><b>Figure 2.6</b> Geometry for <a href="#ex2.2">Example 2.2</a>.</figcaption>
+</figure>
+<p class="noindent"><a id="page_19" class="page">Page 19, Chapter 2 View factors</a>Using <a href="#eq2.7">Equations 2.7</a> and <a href="#eq2.9">2.9</a>:</p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03BE;</m:mi><m:mo>=</m:mo><m:mtext>Fraction</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>base</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>occupied</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:msup><m:mi>A</m:mi><m:mo>&#x2033;</m:mo></m:msup><m:mn>2</m:mn></m:msub></m:mrow><m:mi>&#x03C0;</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mi>h</m:mi></m:mrow><m:mrow><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mi>h</m:mi></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">Suppose that element d<i>A</i><sub>1</sub>on the disc has dimensions d<i>x</i> &#x00D7; <i>x</i>d<i>&#x03D5;</i>, where d<i>&#x03D5;</i> is the angle subtended by the element at the centre of the disc (<a href="#fig2.7">Figure 2.7</a>). Substituting for &#x03BE; and d<i>A</i><sub>1</sub> into <a href="#eq2.8">Equation 2.8</a> gives:</p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mi>&#x03C0;</m:mi><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:mi>&#x03D5;</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mrow><m:mi>&#x03D5;</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi></m:mrow></m:munderover><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>&#x03C1;</m:mi></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mi>h</m:mi><m:mi>x</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mtext>&#x00A0;d</m:mtext><m:mi>&#x03D5;</m:mi></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">which may be evaluated to give:</p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:munder accentunder='true'><m:munder accentunder='true'><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mfrac><m:mi>h</m:mi><m:mrow><m:msqrt><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>h</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo stretchy='true'>_</m:mo></m:munder><m:mo stretchy='true'>_</m:mo></m:munder></m:mrow></m:math></td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-25em;" epub:type="sidebar">
+<figure class="imgc" id="fig2.7">
+<img src="../images/fig2.7.jpg" alt="images"/>
+<figcaption><b>Figure 2.7</b> Relation between area element d<i>A</i><sub>1</sub> and the whole disc. </figcaption>
+</figure></aside>
+</section>
+</section>
+<section epub:type="chapter" id="sec2.6">
+<h2 class="h2"><b>2.6<span class="space">&#160;</span>Hottel&#x2019;s crossed-strings method</b></h2>
+<p class="noindent">Hottel&#x2019;s method can be used in systems which are essentially two-dimensional, i.e. where the surfaces are of constant cross-section, constant separation, and their length is much greater than their separation. Although this would appear to limit its applicability severely, it can be used in many engineering situations, such as long furnaces.</p>
+<p class="indent">Consider two parallel objects of infinite length, and imagine two strings wrapped round a cross-section (<a href="#fig2.8">Figure 2.8</a>): let the first be a single loop, which will be tangential to the surfaces at A, D, E, and H; let the second be a figure-of-eight, which will be tangential at B, C, F, and G. Hottel&#x2019;s Method says that the view factor from surface 1 to surface 2 is given by:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:msub><m:mi>P</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo> <m:mrow><m:mover accent='true'><m:mrow><m:mo stretchy='false'>(</m:mo><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>G</m:mi><m:mi>H</m:mi><m:mtext>&#x200B;</m:mtext></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>+</m:mo><m:mover accent='true'><m:mrow><m:mi>D</m:mi><m:mi>C</m:mi><m:mi>F</m:mi><m:mi>E</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo stretchy='false'>)</m:mo><m:mo>&#x2212;</m:mo><m:mo stretchy='false'>(</m:mo><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>E</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>+</m:mo><m:mover accent='true'><m:mrow><m:mi>D</m:mi><m:mi>H</m:mi><m:mo stretchy='false'>)</m:mo></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(2.10)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="imgc" id="fig2.8">
+<img src="../images/fig2.8.jpg" alt="images"/>
+<figcaption><b>Figure 2.8</b> Hottel&#x2019;s Crossed-Strings Method for two general surfaces. </figcaption>
+</figure></aside>
+<p class="noindent">where <i>P</i><sub>1</sub> is the perimeter of surface 1 and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>G</m:mi><m:mi>H</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow></m:math> represents the length of string ABGH. In words, we have</p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:msub><m:mi>P</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mrow> <m:mo>[</m:mo> <m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>sum</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x200B;</m:mtext><m:mtext>the</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>crossed</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>strong</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>lengths</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo></m:mrow> </m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>sum</m:mtext><m:mtext>&#x200B;</m:mtext><m:mtext>&#x200B;</m:mtext><m:mtext>&#x200B;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x200B;</m:mtext><m:mtext>the</m:mtext><m:mtext>&#x200B;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>uncrossed</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>string</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>lengths</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<p class="indent">This equation may be derived by considering the geometry of the system. First, note that radiation from only the portion ABCD on surface 1 can be intercepted by surface 2, and only the portion EFGH on surface 2 can receive that radiation. Now consider the &#x201C;triangle&#x201D; BDH, and suppose that it forms an imaginary enclosure where the side lengths BD, BH, and DH are <i>a, b</i>, and <i>c</i>, respectively. We can further imagine view factors between the three sides of the triangle. From the properties of view factors:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:52.5%;"/>
+<col style="width:48.5%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>a</m:mtext><m:mtext>a</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>b</m:mtext><m:mtext>b</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>c</m:mtext><m:mtext>c</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></td>
+<td>(all sides are convex)</td>
+</tr>
+</table>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>ab</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>ac</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>ba</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>bc</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>ca</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>cb</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></td>
+<td style="padding-left:0em;text-align:right;">(Summation)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_20" class="page">Page 20, Chapter 2 View factors</a></p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:87%;"/>
+<col style="width:13%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>a</m:mi><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>ab</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mi>b</m:mi><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>ba</m:mtext></m:mrow></m:msub><m:mo>;</m:mo></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>a</m:mi><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>ac</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mi>c</m:mi><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>ca</m:mtext></m:mrow></m:msub><m:mo>;</m:mo></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>b</m:mi><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>bc</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mi>c</m:mi><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>cb</m:mtext></m:mrow></m:msub></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></td>
+<td>(Reciprocity)</td>
+</tr>
+</table>
+<p class="noindent">These can be rearranged to give an equation for each view factor in terms only of the side lengths:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:7.5em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>ab</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>&#x2212;</m:mo><m:mi>c</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>a</m:mi></m:mrow></m:mfrac></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>ba</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>&#x2212;</m:mo><m:mi>c</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>b</m:mi></m:mrow></m:mfrac></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>ca</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>&#x2212;</m:mo><m:mi>b</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>c</m:mi></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>ac</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>&#x2212;</m:mo><m:mi>b</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>a</m:mi></m:mrow></m:mfrac></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>bc</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>c</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>&#x2212;</m:mo><m:mi>a</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>b</m:mi></m:mrow></m:mfrac></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>cb</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>c</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>&#x2212;</m:mo><m:mi>a</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>c</m:mi></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td>(2.11)</td>
+</tr>
+</table>
+<p class="noindent">Now, the radiation leaving surface 1 from the section <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>B</m:mi><m:mi>D</m:mi><m:mo>=</m:mo><m:mover accent='true'><m:mrow><m:mi>B</m:mi><m:mi>D</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math>. So, the radiation leaving BD which crosses DH, and hence misses surface <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>2</m:mn><m:mo>=</m:mo><m:mover accent='true'><m:mrow><m:mi>B</m:mi><m:mi>D</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>a</m:mtext><m:mtext>c</m:mtext></m:mrow></m:msub></m:mrow></m:math>. Since no radiation leaving AB crosses DH (as it is out of line-of-sight), this also represents the radiation leaving ABCD which crosses DH. Substituting for <i>F</i><sub>ac</sub> from <a href="#eq2.11">Equations 2.11</a> gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Radiation&#x00A0;from&#x00A0;ABCD&#x00A0;which&#x00A0;crosses&#x00A0;DH</m:mtext><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi><m:mi>D</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>+</m:mo><m:mover accent='true'><m:mrow><m:mi>D</m:mi><m:mi>H</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>&#x2212;</m:mo><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>G</m:mi><m:mi>H</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(2.12)</td>
+</tr>
+</table>
+<p class="noindent">A similar analysis can be carried out on the &#x201C;triangle&#x201D; ACE, from which we find:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq2.13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Radiation&#x00A0;from&#x00A0;ABCD&#x00A0;which&#x00A0;crosses&#x00A0;AE</m:mtext><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi><m:mi>D</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>+</m:mo><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>E</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>&#x2212;</m:mo><m:mover accent='true'><m:mrow><m:mi>D</m:mi><m:mi>C</m:mi><m:mi>F</m:mi><m:mi>E</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(2.13)</td>
+</tr>
+</table>
+<p class="noindent">Note also that</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Radiation&#x00A0;from&#x00A0;ABCD&#x00A0;in&#x00A0;all&#x00A0;directions</m:mtext><m:mo>=</m:mo><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi><m:mi>D</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(2.14)</td>
+</tr>
+</table>
+<p class="noindent">All radiation from ABCD must <i>either</i> cross DH, <i>or</i> cross AE, <i>or</i> impinge on surface 2. So combining <a href="#eq2.12">Equations 2.12</a> to <a href="#eq2.14">2.14</a> gives:</p>
+<p class="indent">Radiation from ABCD impinging on surface 2 = <i>Q</i><sub>12</sub></p>
+<table style="margin-left:0em;margin-top:1em;font-size:96%;">
+<colgroup>
+<col style="width:45%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mo>=</m:mo><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi><m:mi>D</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi><m:mi>D</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>+</m:mo><m:mover accent='true'><m:mrow><m:mi>D</m:mi><m:mi>H</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>&#x2212;</m:mo><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>G</m:mi><m:mi>H</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi><m:mi>D</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>+</m:mo><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>E</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>&#x2212;</m:mo><m:mover accent='true'><m:mrow><m:mi>D</m:mi><m:mi>C</m:mi><m:mi>F</m:mi><m:mi>E</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>[</m:mo> <m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>G</m:mi><m:mi>H</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>+</m:mo><m:mover accent='true'><m:mrow><m:mi>D</m:mi><m:mi>C</m:mi><m:mi>F</m:mi><m:mi>E</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>E</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>&#x2212;</m:mo><m:mover accent='true'><m:mrow><m:mi>D</m:mi><m:mi>H</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:2.5em;">(2.15)</td>
+</tr>
+</table>
+<p class="noindent">Using the definition of a view factor, we have an alternative expression for <i>Q</i><sub>12 </sub>viz.:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>P</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:math></p></td>
+<td>(2.16)</td>
+</tr>
+</table>
+<p class="noindent">Combining <a href="#eq2.15">Equations 2.15</a> and <a href="#eq2.16">2.16</a> gives <a href="#eq2.10">Equation 2.10</a>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.10a"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:msub><m:mi>P</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo> <m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>G</m:mi><m:mi>H</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>+</m:mo><m:mover accent='true'><m:mrow><m:mi>D</m:mi><m:mi>C</m:mi><m:mi>F</m:mi><m:mi>E</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>E</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>+</m:mo><m:mover accent='true'><m:mrow><m:mi>D</m:mi><m:mi>H</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(2.10)</td>
+</tr>
+</table>
+<section epub:type="chapter">
+<h4 class="main4" id="ex2.3">Example 2.3.</h4>
+<p class="noindent">Determine the view factor between two long, parallel tubes of diameter <i>D</i> and centre-to-centre spacing <i>L</i>.</p>
+</section>
+<section epub:type="chapter">
+<h4 class="main4">Solution.</h4>
+<p class="noindent">Crossed and uncrossed strings are drawn and labelled in <a href="#fig2.9">Figure 2.9</a>, where <i>&#x03B8;</i> is defined as the angle &#x2220;AOE, which, using simple geometry, also equals &#x2220;OFE.<a id="page_21" class="page">Page 21, Chapter 2 View factors</a></p>
+<figure class="imgc" id="fig2.9">
+<img src="../images/fig2.9.jpg" alt="images"/>
+<figcaption><b>Figure 2.9</b> Geometry for <a href="#ex2.3">Example 2.3</a>. </figcaption>
+</figure>
+<p class="noindent">&#160;</p>
+<p class="indent">Hottel&#x2019;s Method tells us:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:7.6em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:msub><m:mi>P</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mrow> <m:mo>[</m:mo> <m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>sum</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>the</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>crossed</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>string</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>lengths</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> </m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x2212;</m:mo><m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>sum</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>the</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>uncrossed</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>string</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>lengths</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2</m:mn><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo> <m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>D</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>+</m:mo><m:mover accent='true'><m:mrow><m:mi>B</m:mi><m:mi>C</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>+</m:mo><m:mover accent='true'><m:mrow><m:mi>C</m:mi><m:mi>D</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(2.17)</td>
+</tr>
+</table>
+<p class="noindent">From <a href="#fig2.9">Figure 2.9</a>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.18"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>P</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mi>&#x03C0;</m:mi><m:mi>D</m:mi></m:mrow></m:mtd><m:mtd><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>=</m:mo><m:mover accent='true'><m:mrow><m:mi>C</m:mi><m:mi>D</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>=</m:mo><m:mi>L</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td>(2.18)</td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.19"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>D</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>=</m:mo><m:mover accent='true'><m:mrow><m:mi>B</m:mi><m:mi>C</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>E</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>+</m:mo><m:mover accent='true'><m:mrow><m:mi>E</m:mi><m:mi>F</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>D</m:mi><m:mn>2</m:mn></m:mfrac><m:mi>&#x03B8;</m:mi><m:mo>+</m:mo><m:msqrt><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>L</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>D</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(2.19)</td>
+</tr>
+</table>
+<p class="noindent">From the triangle OEF, sin <i>&#x03B8;</i> = (<i>L</i>/<i>D</i>), so <i>&#x03B8;</i> = sin<sup>&#x2013;1</sup>(<i>L</i>/<i>D</i>). Substituting into <a href="#eq2.19">Equation 2.19</a> gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:8em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mover accent='true'><m:mrow><m:mi>A</m:mi><m:mi>D</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>=</m:mo><m:mover accent='true'><m:mrow><m:mi>B</m:mi><m:mi>C</m:mi></m:mrow><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover><m:mo>=</m:mo><m:mi>D</m:mi><m:mtext>&#x2009;</m:mtext><m:msup><m:mrow><m:mi>sin</m:mi></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>D</m:mi><m:mi>L</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msqrt><m:mrow><m:msup><m:mi>L</m:mi><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mi>D</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">This together with <a href="#eq2.18">Equation 2.18</a> can be substituted into <a href="#eq2.17">Equation 2.17</a> to give (after rearrangement):</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:8em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>&#x03C0;</m:mi></m:mfrac><m:mrow><m:mo>[</m:mo> <m:mrow><m:msup><m:mrow><m:mi>sin</m:mi></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mtext>X</m:mtext></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msqrt><m:mrow><m:msup><m:mtext>X</m:mtext><m:mn>2</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msqrt><m:mo>&#x2212;</m:mo><m:mtext>X</m:mtext></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">where <i>X</i> = <i>L</i>/<i>D</i>.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec2.7">
+<h2 class="h2"><b>2.7<span class="space">&#160;</span>Monte Carlo methods</b></h2>
+<p class="noindent">For complicated geometries where there are no published data and direct calculation is not possible, numerical techniques are required. Numerical integration of the view factor integrals is possible using computers, but perhaps the most common method is the Monte Carlo Method. The basis of the method for view factor determination is to select at random a series of <a id="page_22" class="page">Page 22, Chapter 2 View factors</a>beams of radiation from surface 1, and to determine the proportion which impinge on surface 2. The procedure may be summarised as follows:</p>
+<p class="nlist" style="margin-top:1em;">(1)<span class="space">&#160;</span>Define the geometry for the two surfaces of interest.</p>
+<p class="nlist">(2)<span class="space">&#160;</span>Select at random a point on surface 1.</p>
+<p class="nlist">(3)<span class="space">&#160;</span>Select at random a direction for a beam of radiation leaving surface 1 at that point.</p>
+<p class="nlist">(4)<span class="space">&#160;</span>Determine whether that beam impinges on surface 2.</p>
+<p class="nlist">(5)<span class="space">&#160;</span>Repeat steps (2) to (4) for a large number of beams.</p>
+<p class="nlist">(6)<span class="space">&#160;</span>The view factor is the ratio of the number of beams impinging on surface 2 to the total number.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">The greater the number of beams used, the greater the accuracy, i.e. the closer the value obtained is to the real value. Depending on the size and complexity of the surfaces, it can require several hundred or thousand beams to give a view factor close to the real value, which means that this method is practicable only using computer techniques. Each step therefore has to be put into a suitable algebraic form. The technique will be illustrated here for a simple system in two dimensions, viz. two parallel plates, whose length is much greater than the width. A much more comprehensive treatment of Monte Carlo methods in two and three dimensions is given in the major textbooks.</p>
+<p class="indent">Define two parallel plates (see <a href="#fig2.10">Figure 2.10</a>), with surface 1 having ends at coordinates (<i>x</i><sub>1</sub><i>,y</i><sub>1</sub>) and (<i>x</i><sub>2</sub><i>,y</i><sub>2</sub>) and surface 2 having ends at (<i>x</i><sub>3</sub><i>,y</i><sub>3</sub>) and (<i>x</i><sub>4</sub><i>,y</i><sub>4</sub>) Choice of origin and coordinate system is entirely arbitrary, so we let surface 1 lie along the Jt-axis (<i>y</i><sub>1</sub> = <i>y</i><sub>2</sub> =0) with its left-hand end at the origin (<i>x</i><sub>1</sub> = 0). Consequently surface 2 lies parallel to the x-axis (<i>y</i><sub>3</sub> = <i>y</i><sub>4</sub> ). We can pick any point on surface 1 at random by using a random number generator to give a number <i>R</i><sub>1</sub> between 0 and 1, which represents the fractional distance along the surface from <i>x</i><sub>1</sub>. The selected point <i>x</i>&#x2032; is related algebraically to <i>R</i><sub>1</sub>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:9em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:msub><m:mi>R</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mo>&#x2212;</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x21D2;</m:mo><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mi>x</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mo>=</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>R</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<figure class="imgc" id="fig2.10">
+<img src="../images/fig2.10.jpg" alt="images"/>
+<figcaption><b>Figure 2.10</b> Arrangement for two parallel plates, showing a beam of radiation from a random point on surface 1 in a random direction. </figcaption>
+</figure>
+<p class="noindent">We must now choose a direction in which the beam leaves the surface. Let us define <i>&#x03B8;</i> as the angle between the normal to surface 1 at <i>x&#x2032;</i> and any beam of radiation from that point, which means that <i>&#x03B8;</i> can vary between &#x2013;&#x03C0;/2 and &#x002B;&#x03C0;/2. We can pick any angle from surface 1 by using the random number <a id="page_23" class="page">Page 23, Chapter 2 View factors</a>generator to give a number <i>R</i><sub>2</sub>, which represents where the beam is between &#x2013;&#x03C0;/2and &#x002B;&#x03C0;/2. <small>Now, </small>if the intensity of radiation normal to surface 1 is <i>I</i>, then the energy emitted in direction <i>&#x03B8;</i> will be <i>I</i> cos<i>&#x03B8;</i>. The selected angle <i>&#x03B8;</i>&#x2032; is related to <i>R</i><sub>2</sub> by:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:9em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:msub><m:mi>R</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mi>&#x03C0;</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:msup><m:mi>&#x03B8;</m:mi><m:mo>&#x2032;</m:mo></m:msup></m:munderover><m:mrow><m:mi>I</m:mi><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:mi>&#x03B8;</m:mi><m:mi>d</m:mi><m:mi>&#x03B8;</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mi>&#x03C0;</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow><m:mrow><m:msup><m:mrow></m:mrow><m:mrow><m:mo>+</m:mo><m:mfrac><m:mi>&#x03C0;</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:msup></m:mrow></m:munderover><m:mrow><m:mi>I</m:mi><m:mtext>cos</m:mtext><m:mtext>&#x00A0;</m:mtext><m:mi>&#x03B8;</m:mi><m:mi>d</m:mi><m:mi>&#x03B8;</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>sin</m:mi><m:msup><m:mi>&#x03B8;</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x21D2;</m:mo><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mi>&#x03B8;</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mo>=</m:mo><m:msup><m:mi>sin</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:msub><m:mi>R</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+
+<p class="noindent">We now have a position <i>x</i>&#x2032; on surface 1 and a beam direction <i>&#x03B8;</i>&#x2032;,and must now determine whether the beam hits surface 2. To do this we construct algebraic equations for the beam and for surface 2, and then test where the two lines intercept. We have:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.20"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Equation</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Bean</m:mtext><m:mo>:</m:mo><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>&#x2212;</m:mo><m:msup><m:mi>x</m:mi><m:mo>&#x2032;</m:mo></m:msup></m:mrow><m:mrow><m:mi>tan</m:mi><m:msup><m:mi>&#x03B8;</m:mi><m:mo>&#x2032;</m:mo></m:msup></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(2.20)</td>
+</tr>
+</table>
+<p class="noindent">Surface 2 is the part of the line <i>y</i> = <i>y</i><sub>3</sub> between <i>x</i> = <i>x</i><sub>3</sub> and <i>x</i> = <i>x</i><sub>4</sub>. Substituting <i>y</i> = <i>y</i><sub>3</sub> into <a href="#eq2.20">Equation 2.20</a> gives us a point <i>x</i> where the two lines intersect. If <i>x</i><sub>3</sub> &#x2264; <i>x</i> &#x2264; <i>x</i><sub>4</sub> , then the beam does impinge on surface 2 and we record a hit; if <i>x</i> &#x003C; <i>x</i><sub>3</sub> or <i>x</i> &#x003C; <i>x</i><sub>4</sub>, then the beam does not impinge on surface 2 and we record a miss. We then repeat this procedure for a very large number of randomly selected beams. Use of computers allows us to compute several thousand beams very quickly, and hence determine the view factor to a high degree of accuracy.</p>
+<p class="indent">The method can be extended to three dimensions, but requires additional random numbers. For example, a finite plate in the <i>xy</i> plane requires two numbers to define a point (<i>x</i>&#x2032;,<i>y</i>&#x2032;), one for each of the <i>x</i> and <i>y</i> coordinates. The beam direction requires two angles to define it, e.g. a circumferential angle and an angle of inclination, each of which requires a random number. Further details are given in the major textbooks.</p>
+</section>
+<section epub:type="chapter" id="sec2.8">
+<h2 class="h2"><b>2.8<span class="space">&#160;</span>View factor algebra</b></h2>
+<p class="noindent">When embarking on view factor calculations, it is normally necessary to calculate every view factor from first principles or from charts. Depending on the geometry and the number of surfaces involved, we usually need to calculate only one or two view factors at most, and then determine the rest using the Reciprocity and Summation Relations (<a href="#eq2.1">Equations 2.1</a> and <a href="#eq2.2">2.2</a>). Consider a system of three surfaces, which will have nine view factors (<i>F</i><sub>11</sub>, <i>F</i><sub>12</sub>, <i>F</i><sub>13</sub>, <i>F</i><sub>21</sub>, <i>F</i><sub>22</sub>, <i>F</i><sub>23</sub>, <i>F</i><sub>31</sub>, <i>F</i><sub>32</sub>, <i>F</i><sub>33</sub>). These may be linked using reciprocity and summation:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:13em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:msub><m:mi>F</m:mi><m:mrow><m:mn>11</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mn>13</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>F</m:mi><m:mrow><m:mn>21</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mn>22</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mn>23</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1</m:mn></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<p class="noindent"><a id="page_24" class="page">Page 24, Chapter 2 View factors</a></p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:7em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:msub><m:mi>F</m:mi><m:mrow><m:mn>31</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mn>32</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mn>33</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>21</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>13</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>3</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>31</m:mn></m:mrow></m:msub></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>23</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>3</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>32</m:mn></m:mrow></m:msub></m:mrow></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<p class="noindent">Assuming that the geometry is defined, i.e. all areas are known, then we have nine unknown view factors and six equations. So we need to determine only three view factors in order to solve for all the rest. In many systems there will be plane or convex surfaces where the self-view factor will be zero, so the problem quickly reduces itself to the determination from first principles of, perhaps, just one view factor.</p>
+<aside class="abc" style="margin-top:1em;" epub:type="sidebar">
+<figure class="imgc" id="fig2.11">
+<img src="../images/fig2.11.jpg" alt="images"/>
+<figcaption><b>Figure 2.11</b> Geometry for <a href="#ex2.4">Example 2.4</a>. </figcaption>
+</figure>
+</aside>
+<section epub:type="chapter">
+<h4 class="main4" id="ex2.4">Example 2.4.</h4>
+<p class="noindent">Consider a rectangular box furnace with side length 5m &#x00D7; 4m &#x00D7; 3m (<a href="#fig2.11">Figure 2.11</a>). The roof of the furnace can be taken to be surface 1, the floor surface 2, and the four walls can be treated as a <i>single</i> surface or area A<sub>3</sub>. Determine all the view factors.</p>
+</section>
+<section epub:type="chapter">
+<h4 class="main4">Solution.</h4>
+<p class="noindent">This is an example of the three-surface problem described above, so we need to determine three view factors and then use reciprocity and summation to solve for the rest. By inspection, <i>F</i><sub>11</sub> and <i>F</i><sub>22</sub> are both zero, because surfaces 1 and 2 are both planar. (<i>F</i><sub>33</sub> is not zero, as radiation can be transmitted from one wall to another.) We therefore need to determine just one view factor from first principles. Surfaces 1 and 2 are parallel plates of the same geometry as <a href="#fig2.1">Figure 2.1a</a>. Using the nomenclature of <a href="#fig2.1">Figure 2.1</a>, we have <i>X</i>/<i>Z</i> = 1.67, <i>Y</i>/<i>Z</i> = 1.33, leading to <i>F</i><sub>12</sub> = 0.32. The Summation Relation for surface 1 then gives <i>F</i><sub>13</sub> = 0.68. The symmetry of the system requires that <i>F</i><sub>21</sub> and <i>F</i><sub>23</sub> are also 0.32 and 0.68, respectively. Nothing that A<sub>1</sub> = 20 m<sup>2</sup> and A<sub>3</sub> = 54 m<sup>2</sup>, we can use the Reciprocity Relation between surfaces 1 and 3 to give <i>F</i><sub>31</sub> = 0.25. Symmetry requires that <i>F</i><sub>32</sub> is also 0.25, and the Summation Relation gives <i>F</i><sub>33</sub> = 0.50.</p>
+<p class="indent">View factors for some more complex arrangements can be found using the properties of reciprocity and summation. For example, suppose that we wish to determine the view factor <i>F</i><sub>12</sub> in <a href="#fig2.12">Figure 2.12</a>. Surfaces 1 and 2 are part of perpendicular planes, but they do not share a common edge, so <a href="#fig2.1">Figure 2.1b</a> cannot be applied directly. However, we can make use of the chart by noting that surfaces 1 and 2 are part of two planes which <i>are</i> perpendicular with a common edge (as shown with dashed lines in <a href="#fig2.12">Figure 2.12</a>). The chart will give view factors for <i>F</i><sub>(1&#x002B;3)(2&#x002B;4)</sub>,<i>F</i><sub>(1&#x002B;3)4</sub>, <i>F</i><sub>3(2&#x002B;4)</sub>and <i>F</i><sub>34</sub>. The properties of view factors then give:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:12em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:msub><m:mi>F</m:mi><m:mrow><m:mo stretchy='false'>(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy='false'>)</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mo stretchy='false'>(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy='false'>)</m:mo><m:mo stretchy='false'>(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy='false'>)</m:mo></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mo stretchy='false'>(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy='false'>)</m:mo><m:mn>4</m:mn></m:mrow></m:msub></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>F</m:mi><m:mrow><m:mn>32</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mn>3</m:mn><m:mo stretchy='false'>(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy='false'>)</m:mo></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mn>34</m:mn></m:mrow></m:msub></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mo stretchy='false'>(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy='false'>)</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mn>32</m:mn></m:mrow></m:msub></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<figure class="imgc" id="fig2.12">
+<img src="../images/fig2.12.jpg" alt="images"/>
+<figcaption><b>Figure 2.12</b> Determination of view factor for non-touching perpendicular planes. </figcaption>
+</figure></aside>
+</section>
+</section>
+</section>
+</body>
+</html>

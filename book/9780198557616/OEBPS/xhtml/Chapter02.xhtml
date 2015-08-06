@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Foundations of Organic Chemistry: Worked Examples</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<p class="noindent">&#160;</p>
+<a id="page_22" class="page" style="width:70%;">Page 22, Chapter2 Separations</a>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="ch02"> 
+<h1 class="ch-title">2<span class="space">&#160;</span>Separations</h1>
+<section epub:type="chapter" id="sec2.1"> 
+<h2 class="main">2.1<span class="space">&#160;</span> Multi-dimensional problems in chemistry</h2>
+<p class="noindent">In <a href="Chapter01.xhtml">Chapter 1</a> we discussed the way in which observable quantities are represented in quantum mechanics by operators. The most important of these operators is the Hamiltonian operator, which represents the total energy of the system. In some simple systems the Hamiltonian can be expressed in terms of a single variable, and the resulting eigenfunctions are functions of that variable alone. For example the Schr&#x00F6;dinger equation for a simple harmonic oscillator can be written in terms of the single variable <i>x</i>:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.1"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>k</mi><msup><mi>x</mi><mn>2</mn></msup><mi>&#x03C8;</mi><mo>=</mo><mi>E</mi><mi>&#x03C8;</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.1)</td>
+</tr>
+</table>
+<p class="noindent">As another example, the Schr&#x00F6;dinger equation for a particle confined to a ring of radius <i>a</i> can be transformed into polar coordinates (see <a href="Chapter01.xhtml#pro1.3.3">Problem 1.3.3</a>); the wavefunction depends only on the angle <i>&#x03B8;</i></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.2"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>&#x03B8;</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mi>E</mi><mi>&#x03C8;</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.2)</td>
+</tr>
+</table>
+<p class="noindent">However, these single-variable problems are the exception rather than the rule. Even in the hydrogen atom three coordinates are required to specify the position of the electron relative to the nucleus, and so the electronic wavefunctions depend on three coordinates. The Schr&#x00F6;dinger equation becomes a three-dimensional partial differential equation (see <a href="Chapter01.xhtml#pro1.3.2">Problem 1.3.2</a>). In larger atoms the electronic wavefunctions depend on three coordinates for each electron in the atom, and the dimensionality of the Schr&#x00F6;dinger equation consequently becomes much larger.</p>
+<p class="indent">Although many mathematical methods are available for one-dimensional eigenvalue problems, multi-dimensional partial differential equations are much more difficult to solve, often requiring computational methods. The first step in the strategy for dealing with multi-dimensional Schr&#x00F6;dinger equations is therefore to search for some means of reducing the problem to a collection of one-dimensional equations, which can be solved separately. The procedure involved is called the <i>separation of vanables</i>. Sometimes (as for the hydrogen atom) this can be done exactly, but sometimes the separation is only approximate, and the resulting solutions are therefore also only approximate. In this chapter we first outline the method of separation of variables, and we then consider how it is applied to problems in chemistry, both where it is exact, and where it is not. <a id="page_23" class="page">Page 23, Chapter2 Separations</a></p>
+</section>
+<section epub:type="chapter" id="sec2.2"> 
+<h2 class="main">2.2<span class="space">&#160;</span> The separation of variables</h2>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar">Separation of variables is a mathematical method for reducing a problem with many variables to a set of uncoupled equations, each of one variable</p></aside>
+<p class="noindent">In the development of the method of separation of variables we shall initially concentrate on wavefunctions which depend only on two variables, <i>x</i> and <i>y</i>. We wish to find the eigenfunctions of the Hamiltonian operator, subject to suitable boundary conditions, and the corresponding eigenvalues are the allowed energy levels. The method consists in searching for a solution of the form <i>&#x03C8;</i> = <i>X</i>(<i>x</i>)<i>Y</i>(<i>y</i>), i.e. a product of a function of variable <i>x</i> alone (<i>X</i>) and a function of <i>y</i> alone (<i>Y</i>). If solutions of this form, obeying the boundary conditions, can be found then the problem is solved.</p>
+<p class="indent">As an illustration of the method we consider the example of a particle confined inside a two-dimensional square box of side <i>a</i>. The potential energy of the particle in the box is zero. In classical mechanics the energy of the particle is (<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>p</mi><mi>x</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>p</mi><mi>y</mi><mn>2</mn></msubsup></mrow></math>)/2<i>m</i>, and so the Schr&#x00F6;dinger equation is given by</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.3"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mrow><mo>(</mo><mrow><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mi>E</mi><mi>&#x03C8;</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.3)</td>
+</tr>
+</table>
+<p class="noindent">with the boundary conditions that <i>&#x03C8;</i> must vanish at the edges of the box: i.e. at <i>x</i> = 0, <i>y</i> = 0, <i>x</i> = <i>a</i> and <i>y</i> = <i>a</i>. (<i>&#x03C8;</i> is zero outside the box and because <i>&#x03C8;</i> must be continuous, it must therefore also be zero at the edges of the box.)</p>
+<p class="indent">We now assume that the solution is of the form <i>&#x03C8;</i>(<i>x</i>, <i>y</i>) = <i>X</i>(<i>x</i>)<i>Y</i>(<i>y</i>). Substituting this form into the Schr&#x00F6;dinger equation we obtain:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.4"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mrow><mo>(</mo><mrow><mi>Y</mi><mfrac><mrow><msup><mtext>d</mtext><mn>2</mn></msup><mi>X</mi></mrow><mrow><mtext>d</mtext><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mi>X</mi><mfrac><mrow><msup><mtext>d</mtext><mn>2</mn></msup><mi>Y</mi></mrow><mrow><msup><mrow><mtext>dy</mtext></mrow><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mi>E</mi><mi>X</mi><mi>Y</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.4)</td>
+</tr>
+</table>
+<p class="noindent">Dividing both sides by <i>XY</i> this becomes</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.5"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mi>X</mi></mfrac><mfrac><mrow><msup><mtext>d</mtext><mn>2</mn></msup><mi>X</mi></mrow><mrow><mtext>d</mtext><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>Y</mi></mfrac><mfrac><mrow><msup><mtext>d</mtext><mn>2</mn></msup><mi>Y</mi></mrow><mrow><msup><mrow><mtext>dy</mtext></mrow><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mi>E</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.5)</td>
+</tr>
+</table>
+<p class="noindent">The first term depends only on the variable <i>x</i>, and the second term depends only on <i>y</i>, but <i>E</i> is a constant, independent of both <i>x</i> and <i>y</i>, implying that the first and second terms must separately be constant. We can understand this conclusion by considering what happens to the equation when <i>x</i> and <i>y</i> vary. Since <i>x</i> and <i>y</i> are independent variables they can be varied at will. First consider what happens if <i>x</i> is changed but <i>y</i> is held constant. The second term must be constant since it depends only on <i>y</i>, and <i>y</i> is being held constant. If both <i>E</i> and the second term are constant then the first term itself must also be constant even though <i>x</i> is being varied; let us call it <i>E</i><sub>1</sub>. An exactly reciprocal argument in which <i>x</i> is held constant but <i>y</i> is varied permits us to conclude that the second term is also constant, independent of <i>y</i>, which we denote <i>E</i><sub>2</sub>. The two <i>separation constants</i>, <i>E</i><sub>1</sub> and <i>E</i><sub>2</sub>, must add up to <i>E</i> for the equation to hold. The second-order equation is thus separated to the pair of equations <a id="page_24" class="page">Page 24, Chapter2 Separations</a>These equations are separate one-dimensional differential equations for the two functions <i>X</i> and <i>Y</i>. With the boundary conditions given, each of these equations can be recognized as the Schr&#x00F6;dinger equation for a particle in a one-dimensional box, whose solutions are already known from <a href="Chapter01.xhtml#pro1.3.1">Problem 1.3.1</a>. Of course, the final energy is <i>E</i> = <i>E</i><sub>1</sub> &#x002B; <i>E</i><sub>2</sub>.</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.6"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mfrac><mrow><msup><mtext>d</mtext><mn>2</mn></msup><mi>X</mi></mrow><mrow><mtext>d</mtext><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><msub><mi>E</mi><mn>1</mn></msub><mi>X</mi><mtext>&#x00A0;and&#x00A0;</mtext><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mfrac><mrow><msup><mtext>d</mtext><mn>2</mn></msup><mi>Y</mi></mrow><mrow><mtext>d</mtext><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><msub><mi>E</mi><mn>2</mn></msub><mi>Y</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.6)</td>
+</tr>
+</table>
+</section>
+<section epub:type="chapter" id="sec2.3"> 
+<h2 class="main">2.3<span class="space">&#160;</span> Spherical symmetry</h2>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar">Many real systems have spherical symmetry. The strategy is to transform to spherical polar coordinates and then separate the three variables <i>r</i>, <i>&#x03B8;</i> and <i>&#x03D5;</i>.</p></aside>
+<p class="noindent">Many important problems of chemical significance can be expressed in terms of a simple spherically symmetrical potential energy. For example the potential energy of electrostatic attraction between the electron and the nucleus in a hydrogen atom depends only on the distance between the electron and the nucleus. Another example is the energy of a diatomic molecule, which does not depend on the orientation of the molecule in space. We therefore need to consider the motion of a particle in a spherical potential. The separation of variables is more difficult in this case than the simple separation described in <a href="#sec2.2">Section 2.2</a>, but because of the importance of spherical symmetry in chemistry we shall work through the separation in detail.</p>
+<p class="indent">The Schr&#x00F6;dinger equation for a spherical system is</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.7"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><msup><mo>&#x2207;</mo><mn>2</mn></msup><mi>&#x03C8;</mi><mo>+</mo><mi>V</mi><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mi>&#x03C8;</mi><mo>=</mo><mi>E</mi><mi>&#x03C8;</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.7)</td>
+</tr>
+</table>
+<p class="noindent">where the spherical symmetry means that the potential energy function <i>V</i>(<i>r</i>) depends only on the variable <i>r</i>, representing the distance to the origin. Using the standard expansion of the operator &#x2207;<sup>2</sup> in spherical polar coordinates<sup>1</sup> this can be written in the rather fearsome form</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.8"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mrow><mo>{</mo><mrow><mfrac><mn>1</mn><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mfrac><mo>&#x2202;</mo><mrow><mo>&#x2202;</mo><mi>r</mi></mrow></mfrac><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mfrac><mrow><mo>&#x2202;</mo><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mrow><mo>[</mo><mrow><mfrac><mn>1</mn><mrow><mi>sin</mi><mi>&#x03B8;</mi></mrow></mfrac><mfrac><mo>&#x2202;</mo><mrow><mo>&#x2202;</mo><mi>&#x03B8;</mi></mrow></mfrac><mrow><mo>(</mo><mrow><mi>sin</mi><mi>&#x03B8;</mi><mfrac><mrow><mo>&#x2202;</mo><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><mi>&#x03B8;</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><msup><mrow><mi>sin</mi></mrow><mn>2</mn></msup><mi>&#x03B8;</mi></mrow></mfrac><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>&#x03D5;</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>]</mo></mrow></mrow><mo>}</mo></mrow></mtd></mtr><mtr><mtd><mo>+</mo><mtext>&#x00A0;</mtext><mi>V</mi><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mi>&#x03C8;</mi><mo>=</mo><mi>E</mi><mi>&#x03C8;</mi></mtd></mtr></mtable></math></p></td>
+<td style="padding-top:2.5em;">(2.8)</td>
+</tr>
+</table>
+<p class="noindent">The part of this expression in square brackets, containing the angular derivatives (with respect to <i>&#x03B8;</i> and <i>&#x03D5;</i>) is the operator for the square of the angular momentum, which was introduced in <a href="Chapter01.xhtml#eq1.20">eqn 1.20</a>. Thus we have the more economical form</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.9"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mfrac><mn>1</mn><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mfrac><mo>&#x2202;</mo><mrow><mo>&#x2202;</mo><mi>r</mi></mrow></mfrac><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mfrac><mrow><mo>&#x2202;</mo><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup><mi>&#x03C8;</mi><mo>+</mo><mi>V</mi><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mi>&#x03C8;</mi><mo>=</mo><mi>E</mi><mi>&#x03C8;</mi></mrow></math></p></td>
+<td>(2.9)</td>
+</tr>
+</table>
+<p class="noindent">This equation is a partial differential equation in three variables, and to make any headway we need to try to separate the three variables. Since we have recognized the presence of the angular momentum operator <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup></mrow></math> it makes sense to try to separate the variable <i>r</i> from the angular variables first, and then to solve the angular equation for the eigenfunctions of the angular momentum. We therefore search for a solution of the form <a id="page_25" class="page">Page 25, Chapter2 Separations</a><i>R</i>(<i>r</i>)<i>Y</i>(<i>&#x03B8;</i>, <i>&#x03D5;</i>). Multiplying both sides of the Schr&#x00F6;dinger equation by <i>r</i><sup>2</sup>, applying the assumed form <i>&#x03C8;</i> = <i>RY</i>, dividing through by <i>RY</i> and rearranging, we obtain</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.10"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mfrac><mn>1</mn><mi>R</mi></mfrac><mfrac><mtext>d</mtext><mrow><mtext>dr</mtext></mrow></mfrac><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mfrac><mrow><mtext>d</mtext><mi>R</mi></mrow><mrow><mtext>d</mtext><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mi>V</mi><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>&#x2212;</mo><mi>E</mi></mrow><mo>)</mo></mrow><msup><mi>r</mi><mn>2</mn></msup><mo>=</mo><mo>&#x2212;</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>m</mi><mi>Y</mi></mrow></mfrac><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup><mi>Y</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.10)</td>
+</tr>
+</table>
+<p class="noindent">The left-hand side clearly depends only on the variable r, whilst the right-hand side depends only on the angles <i>&#x03B8;</i> and <i>&#x03D5;</i>. Since <i>r</i>, <i>&#x03B8;</i> and <i>&#x03D5;</i> are independent variables, the RHS and the LHS must independently be equal to the same constant, which we denote &#x2013;<i>W</i>. Hence we arrive at the separated equations:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.11"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mfrac><mn>1</mn><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mfrac><mtext>d</mtext><mrow><mtext>dr</mtext></mrow></mfrac><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mfrac><mrow><mtext>d</mtext><mi>R</mi></mrow><mrow><mtext>d</mtext><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mi>V</mi><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>+</mo><mfrac><mi>W</mi><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mi>R</mi><mo>=</mo><mi>E</mi><mi>R</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.11)</td>
+</tr>
+</table>
+<p class="noindent">and</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.12"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup><mi>Y</mi><mo>=</mo><mn>2</mn><mi>m</mi><mi>W</mi><mi>Y</mi></mrow></math></p></td>
+<td>(2.12)</td>
+</tr>
+</table>
+<p class="indent">Initially we concentrate on the second of these equations, which can be written explicitly</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.13"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup><mrow><mo>[</mo><mrow><mfrac><mn>1</mn><mrow><mi>sin</mi><mi>&#x03B8;</mi></mrow></mfrac><mfrac><mo>&#x2202;</mo><mrow><mo>&#x2202;</mo><mi>&#x03B8;</mi></mrow></mfrac><mrow><mo>(</mo><mrow><mi>sin</mi><mi>&#x03B8;</mi><mfrac><mrow><mo>&#x2202;</mo><mi>Y</mi></mrow><mrow><mo>&#x2202;</mo><mi>&#x03B8;</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><msup><mrow><mi>sin</mi></mrow><mn>2</mn></msup><mi>&#x03B8;</mi></mrow></mfrac><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>Y</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>&#x03D5;</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>]</mo></mrow><mo>=</mo><mo>&#x2212;</mo><mn>2</mn><mi>m</mi><mi>W</mi><mi>Y</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.13)</td>
+</tr>
+</table>
+<p class="noindent">The solutions are the eigenfunctions of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup></mrow></math> operator, whose eigenvalues are the possible values of 2<i>mW</i>. Once again, we search for solutions in which the two variables <i>&#x03B8;</i> and <i>&#x03D5;</i> are separated, i.e. solutions of the form &#x0398;(<i>&#x03B8;</i>)&#x03A6;(<i>&#x03D5;</i>), leading to the separation</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.14"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><mi>sin</mi><mi>&#x03B8;</mi></mrow><mi>&#x0398;</mi></mfrac><mfrac><mtext>d</mtext><mrow><mtext>d</mtext><mi>&#x03B8;</mi></mrow></mfrac><mrow><mo>(</mo><mrow><mi>sin</mi><mi>&#x03B8;</mi><mfrac><mrow><mtext>d</mtext><mi>&#x0398;</mi></mrow><mrow><mtext>d</mtext><mi>&#x03B8;</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>&#x2212;</mo><mfrac><mrow><mn>2</mn><mi>m</mi><mi>W</mi></mrow><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow></mfrac><msup><mrow><mi>sin</mi></mrow><mn>2</mn></msup><mi>&#x03B8;</mi><mo>=</mo><mfrac><mn>1</mn><mi>&#x03A6;</mi></mfrac><mfrac><mrow><msup><mtext>d</mtext><mn>2</mn></msup><mi>&#x03A6;</mi></mrow><mrow><mtext>d</mtext><msup><mi>&#x03D5;</mi><mn>2</mn></msup></mrow></mfrac></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.14)</td>
+</tr>
+</table>
+<p class="noindent">The left-hand side of the equation depends only on <i>&#x03B8;</i> and the right-hand side only on <i>&#x03D5;</i>. Each side of the equation must therefore be equal to the same constant, which we denote <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><msubsup><mi>m</mi><mi>l</mi><mn>2</mn></msubsup></mrow></math>. The equation for &#x03A6; therefore becomes</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.15"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><msup><mtext>d</mtext><mn>2</mn></msup><mi>&#x03A6;</mi></mrow><mrow><mtext>d</mtext><msup><mi>&#x03D5;</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mo>&#x2212;</mo><msubsup><mi>m</mi><mi>l</mi><mn>2</mn></msubsup><mi>&#x03A6;</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.15)</td>
+</tr>
+</table>
+<p class="noindent">which is the same as <a href="#eq2.2">eqn 2.2</a> for the motion of a particle round a ring. This equation can be solved by elementary methods, giving &#x03A6; = <i>N</i> exp&#x005B;<i>&#x00B1;</i>i<i>m<sub>l</sub>&#x03D5;</i>&#x005D;. However, there are restrictions on the possible values of the constant <i>m<sub>l</sub></i>, because &#x03A6; must be a single-valued function. Since passing round one complete cycle from <i>&#x03D5;</i> to <i>&#x03D5;</i> &#x002B; 2<i>&#x03C0;</i> brings us back to the same point on the ring again, &#x03A6;(<i>&#x03D5;</i>) must be equal to &#x03A6;(<i>&#x03D5;</i> &#x002B; 2&#x03C0;). The only possible values of <i>m<sub>l</sub></i> are therefore positive and negative integers and zero, so that exp(2&#x03C0;i<i>m<sub>l</sub></i>) = 1. The function exp(i<i>m<sub>l</sub>&#x03D5;</i>) is also an eigenfunction of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub></mrow></math> operator, with eigenvalue <i>&#x0127;m<sub>l</sub></i>. <a id="page_26" class="page">Page 26, Chapter2 Separations</a></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.16"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub><msup><mtext>e</mtext><mrow><mo>&#x00B1;</mo><mtext>i</mtext><msub><mi>m</mi><mi>l</mi></msub><mi>&#x03D5;</mi></mrow></msup><mo>=</mo><mo>&#x2212;</mo><mtext>i</mtext><mi>&#x210F;</mi><mfrac><mo>&#x2202;</mo><mrow><mo>&#x2202;</mo><mi>&#x03D5;</mi></mrow></mfrac><msup><mtext>e</mtext><mrow><mo>&#x00B1;</mo><mtext>i</mtext><msub><mi>m</mi><mi>l</mi></msub><mi>&#x03D5;</mi></mrow></msup><mo>=</mo><mo>&#x00B1;</mo><mi>&#x210F;</mi><msub><mi>m</mi><mi>l</mi></msub><msup><mtext>e</mtext><mrow><mo>&#x00B1;</mo><mtext>i</mtext><msub><mi>m</mi><mi>l</mi></msub><mi>&#x03D5;</mi></mrow></msup></mrow></math></p></td>
+<td>(2.16)</td>
+</tr>
+</table>
+<p class="noindent"><i>&#x00B1;&#x0127;m<sub>l</sub></i> is therefore the <i>z</i>-component of the angular momentum.</p>
+<p class="indent">The separated equation for the function &#x0398;</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.17"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>sin</mi><mi>&#x03B8;</mi><mfrac><mtext>d</mtext><mrow><mtext>d</mtext><mi>&#x03B8;</mi></mrow></mfrac><mrow><mo>(</mo><mrow><mi>sin</mi><mi>&#x03B8;</mi><mfrac><mrow><mtext>d</mtext><mi>&#x0398;</mi></mrow><mrow><mtext>d</mtext><mi>&#x03B8;</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><mfrac><mrow><mn>2</mn><mi>m</mi><mi>W</mi></mrow><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow></mfrac><msup><mrow><mi>sin</mi></mrow><mn>2</mn></msup><mi>&#x03B8;</mi><mo>+</mo><msubsup><mi>m</mi><mi>l</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mi>&#x0398;</mi></mrow></math></p></td>
+<td>(2.17)</td>
+</tr>
+</table>
+<p class="noindent">is more difficult to solve. We present its solution in <a href="Chapter03.xhtml#sec3.4">Section 3.4</a>. The most important feature of the solution is the identification of <i>W</i> with the eigenvalue for the square of the angular momentum, 2<i>mW</i> = <i>&#x0127;</i><sup>2</sup><i>l</i>(<i>l</i> &#x002B; 1), where <i>l</i> is an integer constrained to be greater than or equal to |<i>m<sub>l</sub></i>|. We shall return to this in more detail in the next chapter.</p>
+<p class="indent">The radial function therefore obeys the equation</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.18"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mfrac><mtext>d</mtext><mrow><mtext>dr</mtext></mrow></mfrac><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mfrac><mrow><mtext>d</mtext><mi>R</mi></mrow><mrow><mtext>d</mtext><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mi>V</mi><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>+</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup><mi>l</mi><mrow><mo>(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mi>R</mi><mo>=</mo><mi>E</mi><mi>R</mi></mrow></math></p></td>
+<td>(2.18)</td>
+</tr>
+</table>
+<p class="noindent">The detailed solution to the equation will depend on the form of the potential energy <i>V</i>(<i>r</i>) for the particular case under investigation. However, the equation can be reduced to a slightly simpler form by the substitution <i>S</i>(<i>r</i>) = <i>rR</i>(<i>r</i>), in which case we find</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.19"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mfrac><mrow><msup><mtext>d</mtext><mn>2</mn></msup><mi>S</mi></mrow><mrow><mtext>d</mtext><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mrow><mo>(</mo><mrow><mi>V</mi><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>+</mo><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup><mi>l</mi><mrow><mo>(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mi>S</mi><mo>=</mo><mi>E</mi><mi>S</mi></mrow></math></p></td>
+<td>(2.19)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="fig1" id="fig2.1">
+<img src="../images/Fig2.1.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 1.2</b> Potential energy curve for H<sub>2</sub> at long bond extensions, showing the development of a centrifugal barrier as angular momentum increases, <i>J</i> = 0, 1, 2, 3, 4.</p></figcaption></figure>
+</aside>
+<p class="noindent">which is the Schr&#x00F6;dinger equation for a one-dimensional system with a potential energy (<i>V</i>(<i>r</i>) &#x002B; <i>&#x0127;</i><sup>2</sup><i>l</i>(<i>l</i> &#x002B; 1)/2<i>mr</i><sup>2</sup>). The second term is a repulsive potential pushing the particle out from the origin, resulting from the fact that the radial equation is solved in a rotating frame of reference and is often known as the <i>centrifugal energy</i>. It has important consequences for the detailed understanding of chemical reactions and of the energy levels of molecules near to dissociation.<sup>2</sup> <a href="#fig2.1">Figure 2.1</a> shows a schematic potential energy curve for a diatomic molecule close to its dissociation limit, showing the development of a centrifugal barrier to atom recombination as the angular momentum of the system increases.</p>
+</section>
+<section epub:type="chapter" id="sec2.4"> 
+<h2 class="main">2.4<span class="space">&#160;</span> Two interacting particles</h2>
+<p class="noindent">Another important exact separation of variables is illustrated by the hydrogen atom. The energy can be expressed as the sum of three terms, the kinetic energy of the nucleus, the kinetic energy of the electron and the potential energy of the electrostatic electron&#x2013;nucleus interaction. The Schr&#x00F6;dinger equation is therefore (see <a href="Chapter01.xhtml#pro1.3.2">Problem 1.3.2</a>)</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.20"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><msubsup><mo>&#x2207;</mo><mi>n</mi><mn>2</mn></msubsup><mi>&#x03C8;</mi><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><msubsup><mo>&#x2207;</mo><mi>e</mi><mn>2</mn></msubsup><mi>&#x03C8;</mi><mo>&#x2212;</mo><mfrac><mrow><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03F5;</mi><mi>o</mi></msub><mi>r</mi></mrow></mfrac><mi>&#x03C8;</mi><mo>=</mo><mi>E</mi><mi>&#x03C8;</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.20)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-12.5em;" epub:type="sidebar">
+<p class="sidebar">Six coordinates are required to specify the positions of two particles in space. The strategy for dealing with a system of two interacting particles is to transform to centre of mass coordinates and relative coordinates. The motion can then be separated into a translational motion of the centre of mass and an internal motion of the relative coordinate.</p>
+</aside>
+<p class="noindent">where <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mo>&#x2207;</mo><mi>n</mi><mn>2</mn></msubsup></mrow></math> denotes differentiation with respect to the nucleus coordinates and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mo>&#x2207;</mo><mi>e</mi><mn>2</mn></msubsup></mrow></math> with respect to the electron coordinates. In the corresponding <a id="page_27" class="page">Page 27, Chapter2 Separations</a>classical system the relative motion of the electron with respect to the nucleus is independent of the motion of the centre of mass. If we introduce new coordinates in which the subscript <i>r</i> denotes the coordinates of the electron relative to the position of the nucleus, and the subscript <i>c</i> denotes the centre of mass coordinates, i.e.</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.21"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi mathvariant="bold">r</mi><mi>r</mi></msub><mo>=</mo><msub><mi mathvariant="bold">r</mi><mi>e</mi></msub><mo>&#x2212;</mo><msub><mi mathvariant="bold">r</mi><mi>n</mi></msub><mtext>&#x00A0;and&#x00A0;</mtext><msub><mi mathvariant="bold">r</mi><mi>c</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>m</mi><mi>n</mi></msub><msub><mi mathvariant="bold">r</mi><mi>n</mi></msub><mo>+</mo><msub><mi>m</mi><mi>e</mi></msub><msub><mi mathvariant="bold">r</mi><mi>e</mi></msub></mrow><mrow><msub><mi>m</mi><mi>e</mi></msub><mo>+</mo><msub><mi>m</mi><mi>n</mi></msub></mrow></mfrac></mrow></math></p></td>
+<td>(2.21)</td>
+</tr>
+</table>
+<p class="noindent">then the Schr&#x00F6;dinger equation becomes</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.22"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mrow><mo>(</mo><mrow><msub><mi>m</mi><mi>n</mi></msub><mo>+</mo><msub><mi>m</mi><mi>e</mi></msub></mrow><mo>)</mo></mrow></mrow></mfrac><msubsup><mo>&#x2207;</mo><mi>c</mi><mn>2</mn></msubsup><mi>&#x03C8;</mi><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi></mrow></mfrac><msubsup><mo>&#x2207;</mo><mi>r</mi><mn>2</mn></msubsup><mi>&#x03C8;</mi><mo>&#x2212;</mo><mfrac><mrow><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mo>&#x2208;</mo><mn>0</mn></msub><mi>r</mi></mrow></mfrac><mi>&#x03C8;</mi><mo>=</mo><mi>E</mi><mi>&#x03C8;</mi></mrow></math></p></td>
+<td>(2.22)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-12.5em;" epub:type="sidebar">
+<p class="sidebar"><b>Atomic units</b></p>
+<p class="sidebar" style="margin-top:0.5em;">It is usual in quantum chemistry to express all quantities in so-called <i>atomic units</i>. The unit of length is taken to be the Bohr radius, <i>a</i><sub>0</sub> = 4<i>&#x03C0;&#x03F5;</i><sub>0</sub><i>&#x0127;<sup>2</sup></i>/<i>me<sup>2</sup></i> in which <i>m</i> and <i>e</i> are the mass and charge on an electron. The unit of energy (the <i>Hartree</i>) is taken to be <i>me</i><sup>4</sup>/(4<i>&#x03C0;&#x03F5;</i><sub>0</sub>)<i><sup>2</sup>&#x0127;</i><sup>2</sup>.</p>
+</aside>
+<p class="noindent">where <i>&#x03BC;</i> = <i>m<sub>e</sub>m<sub>n</sub></i>/(<i>m<sub>e</sub></i> &#x002B; <i>m<sub>n</sub></i>) and is known as the reduced mass. The wavefunction can be separated in the form <i>&#x03C7;</i>(<b>r</b><i><sub>c</sub></i>)<i>R</i>(<b>r</b><i><sub>r</sub></i>), giving</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.23"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mrow><mo>(</mo><mrow><msub><mi>m</mi><mi>n</mi></msub><mo>+</mo><msub><mi>m</mi><mi>e</mi></msub></mrow><mo>)</mo></mrow></mrow></mfrac><msubsup><mo>&#x2207;</mo><mi>c</mi><mn>2</mn></msubsup><mi>&#x03C7;</mi><mo>=</mo><msub><mi>E</mi><mi>c</mi></msub><mi>&#x03C7;</mi><mtext>&#x00A0;and&#x00A0;</mtext><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi></mrow></mfrac><msubsup><mo>&#x2207;</mo><mi>r</mi><mn>2</mn></msubsup><mi>R</mi><mo>&#x2212;</mo><mfrac><mrow><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03F5;</mi><mi>o</mi></msub><mi>r</mi></mrow></mfrac><mi>R</mi><mo>=</mo><msub><mi>E</mi><mi>r</mi></msub><mi>R</mi></mrow></math></p></td>
+<td>(2.23)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="sidebar" id="pro2.4.1"><b>Problem 2.4.1.</b> <i>Verify that a</i><sub>0</sub><i> has the dimensions of length</i>, <i>and that the Hartree has the dimensions of energy.</i></p>
+</aside>
+<p class="noindent">The former equation describes a particle freely moving in space, which we shall solve in <a href="Chapter03.xhtml#sec3.1">Section 3.1</a>. The latter equation is spherically symmetrical, and can be further simplified using the separation of variables described in <a href="#sec2.3">Section 2.3</a>.</p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="sidebar" id="pro2.4.2"><b>Problem 2.4.2.</b> <i>Transform <a href="#eq2.23">eqn 2.23</a> into atomic units to obtain</i></p>
+<table style="width:100%; margin-top:0em; margin-bottom:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.24"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mi>m</mi><mrow><mn>2</mn><mi>&#x03BC;</mi></mrow></mfrac><msup><mo>&#x2207;</mo><mn>2</mn></msup><mi>&#x03C8;</mi><mo>&#x2212;</mo><mfrac><mn>1</mn><mi>r</mi></mfrac><mi>&#x03C8;</mi><mo>=</mo><mi>E</mi><mi>&#x03C8;</mi></mrow></math></p></td>
+<td>(2.24)</td>
+</tr>
+</table>
+</aside>
+<p class="indent">The total energy <i>E</i> is equal to <i>E<sub>c</sub></i> &#x002B; <i>E<sub>r</sub></i>. <i>E<sub>r</sub></i> is often described as the electronic energy of the atom, but the relative coordinate is partly composed of the motion of the nucleus about the mutual centre of mass. If the nucleus is treated as stationary, the same equation is found for the electronic motion, except that the reduced mass <i>&#x03BC;</i> is replaced by the electron mass <i>m<sub>e</sub></i>. The resulting energy levels will have a relative error of <i>m<sub>e</sub></i>/(<i>m<sub>e</sub></i> &#x002B; <i>m<sub>n</sub></i>), or about one part in 2000. This degree of accuracy is acceptable for all but the most precise work, and so in analysing electronic motions it is usually acceptable to treat the nuclei as stationary. This approximation is the subject of the next section.</p>
+<aside class="abc" style="margin-top:-6.5em;" epub:type="sidebar">
+<p class="sidebar">If the difference between m and <i>&#x03BC;</i> is neglected, the factor multiplying the &#x2207;<sup>2</sup> operator becomes <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec2.5"> 
+<h2 class="main">2.5<span class="space">&#160;</span> The Born&#x2013;Oppenheimer separation</h2>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar">Nearly all chemical problems are analysed using the Born&#x2013;Oppenheimer approximation, in which electronic and nuclear motions are separated because electrons move much faster than nuclei.</p>
+</aside>
+<p class="noindent">The physical reason behind the very small error incurred by neglecting the contribution of the nuclear motion to the internal energy of the hydrogen atom is that the mass of the nucleus is very large compared to the mass of the electron. The atomic centre of mass is therefore very close to the nucleus and the internal motion is composed almost entirely of the electronic motion. In addition the electron moves much faster than the nucleus relative to the centre of mass. A similar observation holds for molecules, and to a good approximation, originally due to Born and Oppenheimer, the total wavefunction of a molecule, which properly depends on the coordinates of the nuclei and the electrons, but can be separated approximately into a product of an electronic wavefunction and a nuclear wavefunction. The details are complicated, and we con- <a id="page_28" class="page">Page 28, Chapter2 Separations</a>centrate on the results, making no attempt to present derivations. The interested and brave reader is referred to the treatment by Bunker.<sup>3</sup></p>
+<p class="indent">The full Schr&#x00F6;dinger equation for a molecule is given by</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.25"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable columnalign='left'><mtr><mtd><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>n</mi></munder><mrow><mfrac><mn>1</mn><mrow><msub><mi>M</mi><mi>n</mi></msub></mrow></mfrac></mrow></mstyle><msubsup><mo>&#x2207;</mo><mi>n</mi><mn>2</mn></msubsup><mi>&#x03C8;</mi><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msub><mi>m</mi><mi>e</mi></msub></mrow></mfrac><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msubsup><mo>&#x2207;</mo><mi>i</mi><mn>2</mn></msubsup><mi>&#x03C8;</mi><mo>&#x2212;</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>i</mi><mo>,</mo><mi>n</mi></mrow></munder><mrow><mfrac><mrow><msub><mi>Z</mi><mi>n</mi></msub><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03F5;</mi><mi>o</mi></msub><msub><mi>r</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub></mrow></mfrac></mrow></mstyle></mrow></mstyle></mtd></mtr><mtr><mtd><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>+</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>i</mi><mo>&#x003E;</mo><mi>j</mi></mrow></munder><mrow><mfrac><mrow><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03F5;</mi><mi>o</mi></msub><msub><mi>r</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mfrac><mi>&#x03C8;</mi></mrow></mstyle><mo>+</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow></mrow></munder><mrow><mfrac><mrow><msub><mi>Z</mi><mi>m</mi></msub><msub><mi>Z</mi><mi>n</mi></msub><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03F5;</mi><mi>o</mi></msub><msub><mi>r</mi><mrow><mi>m</mi><mi>n</mi></mrow></msub></mrow></mfrac><mi>&#x03C8;</mi><mo>=</mo><mi>E</mi><mi>&#x03C8;</mi></mrow></mstyle></mtd></mtr></mtable></math></p></td>
+<td style="padding-top:4em;">(2.25)</td>
+</tr>
+</table>
+<p class="noindent">where the subscripts e, <i>i</i> and <i>j</i> refer to the electrons and the subscripts <i>m</i> and n refer to the nuclei. Although this equation looks rather fearsome it is simple to see the origin of each term. The first term represents the kinetic energy of the nuclei (cf. <a href="Chapter01.xhtml#eq1.17">eqn 1.17</a>), and the second term that of the electrons; the remaining three terms comprise the potential energy of electrostatic attraction between electrons and nuclei, the electron&#x2013;electron repulsion and the nucleus&#x2013;nucleus repulsion. This equation may be simple to set up, but solving it is a different matter.</p>
+<p class="indent">As with the H atom the first stage is to refer all coordinates to the molecular centre of mass, separating out the motion of the centre of mass of the molecule, which behaves like a free particle. However, this transformation also has the unfortunate side effect of introducing an extra term into the Schr&#x00F6;dinger equation<sup>3</sup>, which represents an interaction of the momentum of each particle in the molecule with all the other particles; in particular it introduces a coupling of nuclear and electronic motions, which means that they cannot strictly be separated. Although the three centre of mass coordinates have been separated out, reducing the dimensionality of the Schr&#x00F6;dinger equation by three, the remaining equation is still far too complicated, and at this point we make the Born&#x2013;Oppenheimer approximation.</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar">In the Born&#x2013;Oppenheimer approximation the electronic motion is analysed assuming the nuclei to be stationary. This gives an electronic energy <i>V<sub>e</sub></i>(<i>r<sub>n</sub></i>) which depends on the positions of the stationary nuclei.</p>
+</aside>
+<p class="indent">Since the nuclei move much more slowly than the electrons relative to the molecular centre of mass it is assumed that we can find a wavefunction for the electrons alone (<i>&#x03C8;</i><sub>e</sub>) under the approximation that the nuclei are stationary. All terms in the Hamiltonian describing the motion of the nuclear framework are therefore neglected, leading to separation of the electronic and nuclear coordinates. The terms in the summation discussed above which couple the electron momenta are of the same order of magnitude, and are also neglected. The resulting Schr&#x00F6;dinger equation for the electronic wavefunction with a fixed set of nuclear coordinates is</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.26"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msub><mi>m</mi><mi>e</mi></msub></mrow></mfrac><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msubsup><mo>&#x2207;</mo><mi>e</mi><mn>2</mn></msubsup><msub><mi>&#x03C8;</mi><mi>e</mi></msub><mo>&#x2212;</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>i</mi><mo>,</mo><mi>n</mi></mrow></munder><mrow><mfrac><mrow><msub><mi>Z</mi><mi>n</mi></msub><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03F5;</mi><mi>o</mi></msub><msub><mi>r</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub></mrow></mfrac><msub><mi>&#x03C8;</mi><mi>e</mi></msub><mo>+</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>i</mi><mo>&#x003E;</mo><mi>j</mi></mrow></munder><mrow><mfrac><mrow><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03F5;</mi><mi>o</mi></msub><msub><mi>r</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mfrac><msub><mi>&#x03C8;</mi><mi>e</mi></msub></mrow></mstyle><mo>=</mo><msub><mi>V</mi><mi>e</mi></msub><msub><mi>&#x03C8;</mi><mi>e</mi></msub></mrow></mstyle></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:1em;">(2.26)</td>
+</tr>
+</table>
+<p class="noindent">with a separation constant <i>V<sub>e</sub></i> which represents the electronic energy of the molecule with the nuclei in their fixed positions. The equation is solved by computational methods, to give a set of electronic wavefunctions which are functions of the electron coordinates and a corresponding set of eigenvalues for the electronic energy of the molecule. Each <a id="page_29" class="page">Page 29, Chapter2 Separations</a>of these energy levels corresponds to a different electronic state of the molecule. In an atom there is no internal nuclear motion to consider, and the spectrum of the atom may be interpreted in terms of these quantum states. However, for a molecule a different set of energy levels will be obtained for every possible set of nuclear coordinates. Thus, in the Born-Oppenheimer approximation, the electronic energy of each state of the molecule is a function of the nuclear coordinates <b>r</b><i><sub>n</sub></i>; it therefore acts as a potential energy for the nuclear motions, <i>V<sub>e</sub></i>(<b>r</b><i><sub>n</sub></i>). The energy required to move the nuclei from one configuration to another is the sum of the change in electronic energy, <i>V<sub>e</sub></i> and the nucleus-nucleus repulsion energy, <i>V<sub>n</sub></i>(<b>r</b><i><sub>n</sub></i>).</p>
+<p class="indent">The idea of a potential energy curve or surface is central to many aspects of chemistry, for example in the unravelling of molecular spectra, in analysing the forces between molecules or in interpreting the dynamics of a chemical reaction. The potential energy curves for the first few electronic states of the O<sub>2</sub> molecule are shown in <a href="#fig2.2">Fig. 2.2</a>. Crudely speaking, each state differs in the way its electrons are distributed in the available orbitals.</p>
+<p class="indent">The next stage of the problem is to solve the Schr&#x00F6;dinger equation for the nuclear wavefunction. To do this we need to fix our attention on a particular electronic state since the potential energy function will be different for every electronic state. Having chosen a particular state and its corresponding potential energy function <i>V<sub>e</sub></i> &#x002B; <i>V<sub>n</sub></i> we obtain the equation</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.27"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><mfrac><mn>1</mn><mrow><msub><mi>M</mi><mi>i</mi></msub></mrow></mfrac></mrow></mstyle><msubsup><mo>&#x2207;</mo><mi>i</mi><mn>2</mn></msubsup><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>+</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>M</mi></mrow></mfrac><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></munder><mrow><msub><mo>&#x2207;</mo><mi>i</mi></msub></mrow></mstyle><mo>&#x22C5;</mo><msub><mo>&#x2207;</mo><mi>j</mi></msub><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>+</mo><mrow><mo>(</mo><mrow><msub><mi>V</mi><mi>e</mi></msub><mo>+</mo><msub><mi>V</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>=</mo><mi>E</mi><msub><mi>&#x03C8;</mi><mi>n</mi></msub></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.27)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-22.7em;" epub:type="sidebar">
+<figure class="fig2" id="fig2.2">
+<img src="../images/Fig2.2.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;margin-left:-3.7em;"><b>Fig. 2.2</b> Potential energy curves for the lowest four states of the O<sub>2</sub> molecule. The four states are designated <i>X<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow></mrow><mn>3</mn></msup><msubsup><mi>&#x03A3;</mi><mi>g</mi><mo>&#x2212;</mo></msubsup></mrow></math></i>, <i>a</i> <sup>l</sup>&#x0394;<i><sub>g</sub></i>, <i>b</i><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow></mrow><mn>3</mn></msup><msubsup><mi>&#x03A3;</mi><mi>g</mi><mo>+</mo></msubsup></mrow></math> and <i>A</i><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow></mrow><mn>3</mn></msup><msubsup><mi>&#x03A3;</mi><mi>u</mi><mo>+</mo></msubsup></mrow></math></p></figcaption></figure>
+</aside>
+<p class="noindent">where the summations run over the nuclei only. The eigenfunctions <i>&#x03C8;<sub>n</sub></i> describe the motion of the nuclei over the potential energy surface, and the eigenvalues <i>E</i> represent the total energy of the molecule (electronic and nuclear).</p>
+<p class="indent">In summary, the Born&#x2013;Oppenheimer approximation simplifies the molecular Schr&#x00F6;dinger equation by separating the electronic motion from the nuclear motion. The justification for this separation is that the electrons move much faster than the nuclei with respect to the centre of mass and hence the nuclei can be thought of as seeing only an average electron distribution, whereas the electrons can react essentially instantaneously to any change in the nuclear configuration. The electronic equation is separated out under the approximation that the nuclei are stationary, and gives an electronic wavefunction <i>&#x03C8;<sub>e</sub></i>(<b>r</b><i><sub>e</sub></i>, <b>r</b><i><sub>n</sub></i>), which depends both on the electron coordinates <b>r</b><i><sub>e</sub></i> and on the fixed nuclear coordinates <b>r</b><i><sub>n</sub></i>. The corresponding electronic energy levels <i>V<sub>e</sub></i> also depend on <b>r</b><i><sub>n</sub></i>. The combination of <i>V<sub>e</sub></i> with the nuclear repulsion energy <i>V<sub>n</sub></i> gives a potential energy surface, which is used for solving the nuclear Schr&#x00F6;dinger equation. The solutions of this equation <i>&#x03C8;<sub>n</sub></i>(<b>r</b><i><sub>n</sub></i>) describe the nuclear motions of the molecule (rotation and vibration) and the eigenvalues <i>E</i> are the permitted energy levels of the molecule (including electronic and nuclear <a id="page_30" class="page">Page 30, Chapter2 Separations</a>contributions). Finally, the overall molecular wavefunction is assembled by combining the electronic and nuclear wavefunctions:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.28"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C8;</mi><mrow><mo>(</mo><mrow><msub><mi mathvariant="bold">r</mi><mi>e</mi></msub><mo>,</mo><msub><mi mathvariant="bold">r</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>&#x03C8;</mi><mi>e</mi></msub><mrow><mo>(</mo><mrow><msub><mi mathvariant="bold">r</mi><mi>e</mi></msub><mo>,</mo><msub><mi mathvariant="bold">r</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mrow><mo>(</mo><mrow><msub><mi mathvariant="bold">r</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow></math></p></td>
+<td>(2.28)</td>
+</tr>
+</table>
+<section epub:type="chapter">
+<h3 class="sub"><b>The Franck&#x2013;Condon principle</b></h3>
+<aside class="abc" style="margin-top:0.9em;" epub:type="sidebar">
+<p class="sidebar">An electronic transition is assumed to occur so rapidly that the nuclei do not have time to respond. Effectively the potential energy curve for the molecule changes instantaneously. The nuclei find themselves with the wrong vibrational wavefunction and vibrations are excited.</p>
+</aside>
+<p class="noindent">One important consequence of the Born&#x2013;Oppenheimer separation in spectroscopy is the Franck&#x2013;Condon principle, which governs the intensities of the vibrational fine structure of an electronic transition in a molecular spectrum. As we have already seen in <a href="Chapter01.xhtml#sec1.7">Section 1.7</a> the intensity of a transition is proportional to the square of the dipole moment matrix element. Thus the rate of transition from an initial state |<i>i</i> &#x003E; to a final state |<i>f</i> &#x003E; is proportional to <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x007C;</mi><mo>&#x003C;</mo><mi>f</mi><mi>&#x007C;</mi><mover accent='true'><mi>&#x03BC;</mi><mo>&#x005E;</mo></mover><mi>&#x007C;</mi><mi>i</mi><mo>&#x003E;</mo><msup><mi>&#x007C;</mi><mn>2</mn></msup></mrow></math>.</p>
+<p class="indent">The dipole moment of a molecule is a measure of its charge distribution, and the dipole moment operator is equal to the vector sum of the position vectors of all the particles in the molecule, weighted by their charges:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.29"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>&#x03BC;</mi><mo>&#x005E;</mo></mover><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>j</mi></munder><mrow><msub><mi>z</mi><mi>j</mi></msub><msub><mi>r</mi><mi>j</mi></msub></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.29)</td>
+</tr>
+</table>
+<p class="noindent">This operator can be split into two parts, one of which contains the coordinates of the nuclei, and the other the coordinates of the electrons. The dipole moment matrix element which controls the intensity of a transition from state |<i>e</i>&#x2033;<i>n</i>&#x2033; &#x003E; to state |<i>e</i>&#x2032;<i>n</i>&#x2032; &#x003E; is now of the form</p>
+<p class="imgc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>&#x03BC;</mi><mrow><msup><mi>e</mi><mo>&#x2033;</mo></msup><msup><mi>n</mi><mo>&#x2033;</mo></msup><mo>,</mo><msup><mi>e</mi><mo>&#x2032;</mo></msup><msup><mi>n</mi><mo>&#x2032;</mo></msup></mrow></msub><mo>=</mo><mo>&#x003C;</mo><msup><mi>e</mi><mo>&#x2032;</mo></msup><msup><mi>n</mi><mo>&#x2032;</mo></msup><mo stretchy='false'>&#x007C;</mo><msub><mover accent='true'><mi>&#x03BC;</mi><mo>&#x005E;</mo></mover><mi>e</mi></msub><mo>+</mo><msub><mover accent='true'><mi>&#x03BC;</mi><mo>&#x005E;</mo></mover><mi>n</mi></msub><mo stretchy='false'>&#x007C;</mo><msup><mi>e</mi><mo>&#x2033;</mo></msup><msup><mi>n</mi><mo>&#x2033;</mo></msup><mo>&#x003E;</mo></mrow></math></p>
+<p class="indent">When we make the Born-Oppenheimer separation |<i>en</i> &#x003E; = |<i>e</i> &#x003E; |<i>n</i> &#x003E; and assume that the electronic wavefunctions depend only weakly on the nuclear coordinates, this matrix element separates into two parts:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.30"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>&#x03BC;</mi><mrow><msup><mi>e</mi><mo>&#x2033;</mo></msup><msup><mi>n</mi><mo>&#x2033;</mo></msup><mo>,</mo><msup><mi>e</mi><mo>&#x2032;</mo></msup><msup><mi>n</mi><mo>&#x2032;</mo></msup></mrow></msub><mo>=</mo><mo>&#x003C;</mo><msup><mi>e</mi><mo>&#x2032;</mo></msup><mo stretchy='false'>&#x007C;</mo><msub><mover accent='true'><mi>&#x03BC;</mi><mo>&#x005E;</mo></mover><mi>e</mi></msub><mo stretchy='false'>&#x007C;</mo><msup><mi>e</mi><mo>&#x2033;</mo></msup><mo>&#x003E;</mo><mo>&#x003C;</mo><msup><mi>n</mi><mo>&#x2032;</mo></msup><mo stretchy='false'>&#x007C;</mo><msup><mi>n</mi><mo>&#x2033;</mo></msup><mo>&#x003E;</mo><mo>+</mo><mo>&#x003C;</mo><msup><mi>e</mi><mo>&#x2032;</mo></msup><mo stretchy='false'>&#x007C;</mo><msup><mi>e</mi><mo>&#x2033;</mo></msup><mo>&#x003E;</mo><mo>&#x003C;</mo><msup><mi>n</mi><mo>&#x2032;</mo></msup><mo stretchy='false'>&#x007C;</mo><msub><mover accent='true'><mi>&#x03BC;</mi><mo>&#x005E;</mo></mover><mi>n</mi></msub><mo stretchy='false'>&#x007C;</mo><msup><mi>n</mi><mo>&#x2033;</mo></msup><mo>&#x003E;</mo></mrow></math></p></td>
+<td>(2.30)</td>
+</tr>
+</table>
+<p class="noindent">The second term is zero in an electronic transition because the electronic wavefunction changes from a state with one energy to a state with a different energy for almost all nuclear configurations. The two electronic wavefunctions are therefore orthogonal (see <a href="Chapter01.xhtml#eq1.26">eqn 1.26</a>). The first term, however, is not zero because although the vibrational quantum numbers for states |<i>n</i>&#x2033; &#x003E; and |<i>n</i>&#x2032; &#x003E; may be different, the two vibrational wavefunctions are from different electronic states, with different potential energy functions, and so they are solutions to different Schr&#x00F6;dinger equations. There is therefore no reason for them to be orthogonal, except perhaps by accident. The matrix element is therefore the product of two parts: an electronic part <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x003C;</mo><msup><mi>e</mi><mo>&#x2032;</mo></msup><mi>&#x007C;</mi><mover accent='true'><mi>&#x03BC;</mi><mo>&#x005E;</mo></mover><mi>&#x007C;</mi><msup><mi>e</mi><mo>&#x2033;</mo></msup><mo>&#x003E;</mo></mrow></math>, which contains the electronic dipole moment operator and is constant for a given electronic transition, and a nuclear part &#x003C; <i>n</i>&#x2032;|<i>n</i>&#x2033; &#x003E;, which is the overlap integral between the initial and final vibrational wavefunctions. The first term determines whether the transition is electronically allowed; if it is identically zero the transi- <a id="page_31" class="page">Page 31, Chapter2 Separations</a>tion has zero intensity and is called a <i>forbidden transition</i> (see <a href="Chapter05.xhtml">Chapter 5</a>). The second term shows that the intensity of the vibrational structure within an electronic transition will be proportional to the square of the overlap integral, | &#x003C; <i>n</i>&#x2032;|<i>n</i>&#x2033; &#x003E; |<sup>2</sup>. This term is called the <i>Franck</i>&#x2013;<i>Condon factor</i>.</p>
+<p class="indent">An alternative approach to the Franck&#x2013;Condon principle will be described in II.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec2.6"> 
+<h2 class="main">2.6<span class="space">&#160;</span> Spin</h2>
+<p class="noindent">The reader may have noticed that we have not yet mentioned the idea of spin. The reason for this is that spin has no natural place in the development of Schr&#x00F6;dinger&#x2019;s theory. It arises from a more detailed theory due to Dirac, which incorporates time in a relativistically consistent manner, but is beyond the scope of this book. If we are dealing only with light atoms and molecules made up of them, relativistic corrections are small and to a first approximation spin does not contribute to the energy. However, spin plays an extremely important role in chemistry&#x2014;the structure of the periodic table arises because of the Pauli exclusion principle, which is a spin effect, and there are other important symmetry consequences of spin, which we discuss in II.</p>
+<p class="indent">Rather than adopting the full relativistic theory of Dirac, spin is <i>patched into</i> the Schr&#x00F6;dinger theory; the full wavefunction for a single particle is assumed to be of the form <i>&#x03C8;</i>(<b>r</b>) &#x00D7; &#x03C7;<i><sub>s</sub></i>(<i>&#x03C9;</i>). The first term is the <i>orbital</i> wavefunction, which depends on the spatial coordinates of the particle. The second term is the spin wavefunction, which depends on a &#x2018;spin coordinate&#x2019; <i>&#x03C9;</i>. The two parts multiplied together in this way are frequently referred to as a <i>spin orbital</i>, particularly if the particle described is an electron. We can write the full wavefunction in this separated form because in a nonrelativistic theory there is no interaction between the spin and the spatial motion of the particle. One consequence of this separation arises in electronic spectroscopy. We have already seen in the previous section that the intensity of an electronic transition depends on the matrix element <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x003C;</mo><msup><mi>e</mi><mo>&#x2032;</mo></msup><mi>&#x007C;</mi><mover accent='true'><mi>&#x03BC;</mi><mo>&#x005E;</mo></mover><mi>&#x007C;</mi><msup><mi>e</mi><mo>&#x2033;</mo></msup><mo>&#x003E;</mo></mrow></math>. If the spin is now included we can separate this matrix element into the product <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x003C;</mo><msup><mi>e</mi><mo>&#x2032;</mo></msup><mi>&#x007C;</mi><mover accent='true'><mi>&#x03BC;</mi><mo>&#x005E;</mo></mover><mi>&#x007C;</mi><msup><mi>e</mi><mo>&#x2033;</mo></msup><mo>&#x003E;</mo><mo>&#x003C;</mo><msup><mi>s</mi><mo>&#x2032;</mo></msup><mi>&#x007C;</mi><msup><mi>s</mi><mo>&#x2033;</mo></msup><mo>&#x003E;</mo></mrow></math>, in which |<i>e</i> &#x003E; now refers to the orbital function and |<i>s</i> &#x003E; to the spin function. The matrix element &#x003C; <i>s</i>&#x2032;|<i>s</i>&#x2033; &#x003E; is zero unless <i>s</i>&#x2032; = <i>s</i>&#x2033; because spin functions with different spin quantum numbers are orthogonal. We conclude therefore that electronic transitions in which the spin wavefunction changes are forbidden.</p>
+<p class="indent">In the remainder of this chapter we describe other approximate separations which are often applied in solving the two separated parts of the molecular Schr&#x00F6;dinger equation.</p>
+</section>
+<section epub:type="chapter" id="sec2.7"> 
+<h2 class="main">2.7<span class="space">&#160;</span> The orbital approximation</h2>
+<p class="noindent">Once the electronic and nuclear coordinates have been separated, as described in <a href="#sec2.5">Section 2.5</a> the next stage is to solve the electronic <a href="#eq2.26">eqn 2.26</a>.</p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<p class="sidebar">In the orbital approximation each electron is assigned to</p>
+</aside>
+
+<p class="noindent"><a id="page_32" class="page">Page 32, Chapter2 Separations</a>&#160;&#160; This must be done first because it provides the potential energy function for the solution of the nuclear <a href="#eq2.27">eqn 2.27</a>. The electrons interact through the electron-electron repulsion term:</p>
+<p class="imgc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>i</mi><mo>&#x003E;</mo><mi>j</mi></mrow></munder><mrow><mfrac><mrow><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03F5;</mi><mi>o</mi></msub><msub><mi>r</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mfrac><msub><mi>&#x03C8;</mi><mi>e</mi></msub></mrow></mstyle></mrow></math></p>
+<aside class="abc" style="margin-top:-6.3em;" epub:type="sidebar">
+<p class="sidebar">an orbital, these one-electron wavefunctions are multiplied together to form the overall electronic wavefunction. This procedure effectively assumes that the electrons are independent of one another, by averaging out the electron repulsions.</p>
+</aside>
+<p class="noindent">If this term is neglected then the remainder of the Hamiltonian <i>&#x0124;<sub>o</sub></i> can be written in the form</p>
+<p class="imgc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>H</mi><mo>&#x005E;</mo></mover><mi>o</mi></msub><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msub><mover accent='true'><mi>h</mi><mo>&#x005E;</mo></mover><mi>i</mi></msub></mrow></mstyle></mrow></math></p>
+<p class="noindent">where each <i>&#x0125;<sub>i</sub></i> is a mini-Hamiltonian depending on the coordinates of one electron alone,</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.31"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>h</mi><mo>&#x005E;</mo></mover><mi>i</mi></msub><mo>=</mo><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msub><mi>m</mi><mi>e</mi></msub></mrow></mfrac><msubsup><mo>&#x2207;</mo><mi>i</mi><mn>2</mn></msubsup><mo>&#x2212;</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>n</mi></munder><mrow><mfrac><mrow><msub><mi>Z</mi><mi>n</mi></msub><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03F5;</mi><mi>o</mi></msub><msub><mi>r</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub></mrow></mfrac></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.31)</td>
+</tr>
+</table>
+<p class="noindent">and containing the kinetic energy operator for the electron and the potential energy of attraction with the static nuclear framework. Thus if the electron repulsions are neglected, the coordinates of each electron can be separated out in turn and a solution of the modified equation can be found as a product of single-electron wavefunctions:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.32"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>&#x03C8;</mi><mi>e</mi></msub><mo>=</mo><msub><mi>&#x03D5;</mi><mn>1</mn></msub><mrow><mo>(</mo><mrow><msub><mi mathvariant="bold">r</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><msub><mi>&#x03D5;</mi><mn>2</mn></msub><mrow><mo>(</mo><mrow><msub><mi mathvariant="bold">r</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow><mo>&#x2026;</mo><msub><mi>&#x03D5;</mi><mi>n</mi></msub><mrow><mo>(</mo><mrow><msub><mi mathvariant="bold">r</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow></math></p></td>
+<td>(2.32)</td>
+</tr>
+</table>
+<p class="indent">Neglecting the electron&#x2013;electron repulsion is a serious approximation, and introduces gross errors, however, the picture implied by a solution of this form is far too useful to be easily discarded. In this approximation each electron is described independently by its own wavefunction, and the overall electronic wavefunction of the atom or molecule can be built up from the set of one-electron wavefunctions. This approximation is actually the way that chemists usually think of the electronic wave-function: each one-electron wavefunction is an <i>orbital</i> and each electron is assigned to an orbital. The approximation that the electronic wavefunction can be expressed as a product of orbitals, and that therefore the electronic energy is the sum of the individual orbital energies, is known as the <i>orbital approximation</i>. It is important to realize that the idea of an orbital, and of an electron configuration in which each electron is assigned to an orbital, which is so vital in many areas of chemistry, is in fact an approximation which neglects any coupling between the electrons. Neither orbitals, nor electron configurations actually exist, except in truly one-electron systems.</p>
+<section epub:type="chapter">
+<h3 class="sub"><b>Self-consistent field theory</b></h3>
+<aside class="abc" style="margin-top:-1.5em;" epub:type="sidebar">
+<p class="sidebar">Self-consistent field theory is an iterative method used to calculate the orbitals one by one. Each one-electron wavefunction is solved with a repulsion energy averaged over all the other electrons.</p>
+</aside>
+<p class="noindent">The quantitative picture is not as bad as it may seem from the previous discussion. The wavefunctions predicted by the orbital approximation have the correct symmetry, and so they are very useful for classifying the symmetries of the true electronic wavefunctions, or states of the molecule. Furthermore the orbital approximation can be improved sig- <a id="page_33" class="page">Page 33, Chapter2 Separations</a>nificantly by using the <i>self-consistent field</i> method, which includes an average repulsive potential energy for each electron, while retaining the product form of the wavefunction.</p>
+<p class="indent">The method can be illustrated by considering the contribution to the Schr&#x00F6;dinger equation for electron 1 from interaction with electron 2. In the SCF method this quantity is averaged over the coordinates of electron 2 to give a contribution to the effective potential energy &#x03C5;<sub>12</sub>(<b>r</b><sub>1</sub>).</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.33"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>&#x03C5;</mi><mn>1</mn></msub><msub><mrow></mrow><mn>2</mn></msub><mrow><mo>(</mo><mrow><msub><mi>r</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03F5;</mi><mi>o</mi></msub></mrow></mfrac><mstyle displaystyle='true'><mrow><mo>&#x222B;</mo><mrow><mfrac><mrow><msubsup><mi>&#x03D5;</mi><mn>2</mn><mo>&#x2217;</mo></msubsup><msub><mi>&#x03D5;</mi><mn>2</mn></msub></mrow><mrow><msub><mi>r</mi><mrow><mn>12</mn></mrow></msub></mrow></mfrac><mi>d</mi><msub><mi>&#x03C4;</mi><mn>2</mn></msub></mrow></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:1em;">(2.33)</td>
+</tr>
+</table>
+<p class="noindent">All dependence on <b>r</b><sub>2</sub> has been integrated out to give an average potential energy of repulsion. Thus the one-electron Schr&#x00F6;dinger equation for electron 1 becomes</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.34"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>h</mi><mo>&#x005E;</mo></mover><mn>1</mn></msub><msub><mi>&#x03D5;</mi><mn>1</mn></msub><mo>+</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>j</mi></munder><mrow><msub><mi>&#x03C5;</mi><mn>1</mn></msub><msub><mrow></mrow><mi>j</mi></msub><mrow><mo>(</mo><mrow><msub><mi mathvariant="bold">r</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><msub><mi>&#x03D5;</mi><mn>1</mn></msub><mo>=</mo><msub><mi>E</mi><mn>1</mn></msub><msub><mi>&#x03D5;</mi><mn>1</mn></msub></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.34)</td>
+</tr>
+</table>
+<p class="noindent">where <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>h</mi><mo>&#x005E;</mo></mover><mn>1</mn></msub></mrow></math> has been defined in <a href="#eq2.31">eqn 2.31</a> and the sum extends over all electrons apart from 1. Note that in order to obtain the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>&#x03C5;</mi><mrow><mn>1</mn><mi>j</mi></mrow></msub></mrow></math> all the other orbitale must be known in advance. This poses a circular problem since <i>&#x03D5;</i><sub>1</sub> must be known in order to calculate any of the other orbitale. The solution to this problem is to make an initial guess for all of the other orbitals and to use these &#x2018;zero-order&#x2019; orbitals to calculate the expectation potential energy function for electron 1. The one-electron equation is then solved for <i>&#x03D5;</i><sub>1</sub>, giving a first-order approximation. The new <i>&#x03D5;</i><sub>1</sub> is included in the calculation of the first-order approximation to <i>&#x03D5;</i><sub>2</sub> and all the electrons are cycled through. When this process is complete the first-order approximations are used to calculate a second-order approximation to <i>&#x03D5;</i><sub>1</sub>, and the iteration is continued until the computed energy reaches a stable value. The number of iterations required depends on how good the initial guess was.</p>
+<p class="indent">When the electron&#x2013;electron repulsion is included in this way we have to be careful in calculating the total energy of the molecule. Each one-electron energy <i>E<sub>i</sub></i> includes a contribution from the electrostatic interaction with every other electron, including for example the repulsion <i>ij.</i> But the energy of electron <i>j</i> also includes the same electrostatic repulsion so that simply adding up the one-electron energies counts the repulsions twice over. The total expectation repulsion energy therefore has to be subtracted from the final summation:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.35"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msub><mi>E</mi><mi>i</mi></msub><mo>&#x2212;</mo><mfrac><mrow><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03F5;</mi><mi>o</mi></msub></mrow></mfrac><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>i</mi><mo>&#x003C;</mo><mi>j</mi></mrow></munder><mrow><mstyle displaystyle='true'><mrow><mo>&#x222B;</mo><mrow><mfrac><mrow><msubsup><mi>&#x03D5;</mi><mi>i</mi><mo>&#x2217;</mo></msubsup><msub><mi>&#x03D5;</mi><mi>i</mi></msub><mo>&#x22C5;</mo><msubsup><mi>&#x03D5;</mi><mi>j</mi><mo>&#x2217;</mo></msubsup><msub><mi>&#x03D5;</mi><mi>j</mi></msub></mrow><mrow><msub><mi>r</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mfrac></mrow></mrow></mstyle><mi>d</mi><msub><mi>&#x03C4;</mi><mi>i</mi></msub><mi>d</mi><msub><mi>&#x03C4;</mi><mi>j</mi></msub></mrow></mstyle></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.35)</td>
+</tr>
+</table>
+<p class="indent">Finally we point in the direction in which this subject develops. The product wavefunction written in <a href="#eq2.32">eqn 2.32</a> has assigned electron 1 (coordinates <b>r</b><sub>1</sub>)<sup>&#x2219;</sup> to orbital 1 (<i>&#x03D5;</i><sub>1</sub>), electron 2 to orbital 2 and so forth. However, since the electrons are indistinguishable this assignment is arbitrary. It would be equally valid to permute electrons 1 and 2, putting electron 2 <a id="page_34" class="page">Page 34, Chapter2 Separations</a>in orbital 1, and electron 1 in orbital 2, giving the wavefunction</p>
+<p class="imgc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>&#x03D5;</mi><mn>1</mn></msub><mrow><mo>(</mo><mrow><msub><mi mathvariant="bold">r</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow><msub><mi>&#x03D5;</mi><mn>2</mn></msub><mrow><mo>(</mo><mrow><msub><mi mathvariant="bold">r</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mo>&#x22EF;</mo><msub><mi>&#x03D5;</mi><mi>n</mi></msub><mrow><mo>(</mo><mrow><msub><mi mathvariant="bold">r</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow></math></p>
+<p class="noindent">Obviously every possible permutation or the electron labels leads to an equally valid solution with the same energy. Furthermore any linear combination of these permutations will also be a solution, but will have a different energy because of the way in which the electron repulsion energy has been patched into the approximation. For a solution to be physically meaningful no permutation of the electrons should change any physical property. In addition there is a fundamental symmetry rule, known as the Pauli principle, that the total electronic wavefunction (including spin) must change sign whenever two electrons are permuted. This leads to a more complicated formulation in which the electron wavefunction is represented by a linear combination of spin-orbital products with this property. The self-consistent field theory applied to such antisymmetric product functions is known as the <i>Hartree-Fock</i> theory, and will be discussed further in II.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec2.8"> 
+<h2 class="main">2.8<span class="space">&#160;</span> The diatomic molecule</h2>
+<p class="noindent">We now turn our attention to the separated Schr&#x00F6;dinger <a href="#eq2.27">eqn 2.27</a> for the nuclear wavefunction. The case of a diatomic molecule is considerably simpler than that of a polyatomic molecule, and so we discuss diatomic molecules first.</p>
+<p class="indent">Suppose that the two nuclei in the diatomic molecule have masses <i>m</i><sub>1</sub> and <i>m</i><sub>2</sub> and their coordinates are <b>r</b><sub>1</sub> and <b>r</b><sub>2</sub>. The nuclear Schr&#x00F6;dinger equation will contain terms for the kinetic energies of both nuclei, and the potential energy <i>V</i>(<b>r</b><sub>1</sub>, <b>r</b><sub>2</sub>), which includes the nucleus&#x2013;nucleus repulsion energy and the averaged electronic energy discussed in <a href="#sec2.7">Section 2.7</a>.</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.36"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msub><mi>&#x210F;</mi><mn>2</mn></msub></mrow><mrow><mn>2</mn><msub><mi>m</mi><mn>1</mn></msub></mrow></mfrac><msubsup><mo>&#x2207;</mo><mn>1</mn><mn>2</mn></msubsup><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>&#x2212;</mo><mfrac><mrow><msub><mi>&#x210F;</mi><mn>2</mn></msub></mrow><mrow><mn>2</mn><msub><mi>m</mi><mn>2</mn></msub></mrow></mfrac><msubsup><mo>&#x2207;</mo><mn>2</mn><mn>2</mn></msubsup><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>+</mo><mi>V</mi><mrow><mo>(</mo><mrow><msub><mi mathvariant="bold">r</mi><mn>1</mn></msub><mo>,</mo><msub><mi mathvariant="bold">r</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>=</mo><mi>E</mi><msub><mi>&#x03C8;</mi><mi>n</mi></msub></mrow></math></p></td>
+<td>(2.36)</td>
+</tr>
+</table>
+<p class="indent">The diatomic molecule is effectively a problem involving two interacting particles, which suggests the approach discussed in <a href="#sec2.4">Section 2.4</a>, separating centre of mass coordinates and relative coordinates. This transformation will lead to a separation of variables if the potential energy only depends on the the interparticle vector, <b>r</b><i><sub>r</sub></i> = <b>r</b><sub>2</sub> &#x2013; <b>r</b><sub>1</sub>, which will normally be the case in the absence of an external field, since the potential energy of a molecule does not then depend on the position of the molecule in space. We therefore find a transformed equation of the form</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.37"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msub><mi>&#x210F;</mi><mn>2</mn></msub></mrow><mrow><mn>2</mn><mi>M</mi></mrow></mfrac><msubsup><mo>&#x2207;</mo><mi>c</mi><mn>2</mn></msubsup><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>&#x2212;</mo><mfrac><mrow><msub><mi>&#x210F;</mi><mn>2</mn></msub></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi></mrow></mfrac><msubsup><mo>&#x2207;</mo><mi mathvariant="bold">r</mi><mn>2</mn></msubsup><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>+</mo><mi>V</mi><mrow><mo>(</mo><mrow><msub><mi mathvariant="bold">r</mi><mi>r</mi></msub></mrow><mo>)</mo></mrow><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>=</mo><mi>E</mi><msub><mi>&#x03C8;</mi><mi>n</mi></msub></mrow></math></p></td>
+<td style="padding-top:0.25em;">(2.37)</td>
+</tr>
+</table>
+<p class="noindent">where <i>M</i> is the total mass, <i>m</i><sub>1</sub> &#x002B; <i>m</i><sub>2</sub><i>,</i> and <i>&#x03BC;</i> is the reduced mass, <i>m</i><sub>1</sub><i>m</i><sub>2</sub>/<i>M.</i> Separating the centre of mass coordinates from the relative coordinates we find a Schr&#x00F6;dinger equation for the translational motion of the centre of mass and an equation analogous to <a href="#eq2.23">eqn 2.23</a> for the <a id="page_35" class="page">Page 35, Chapter2 Separations</a>internal nuclear wavefunction:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.38"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mrow><msub><mrow></mrow><mn>2</mn></msub></mrow></msup></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi></mrow></mfrac><msubsup><mo>&#x2207;</mo><mi>r</mi><mn>2</mn></msubsup><mi>R</mi><mo>+</mo><mi>V</mi><mrow><mo>(</mo><mi mathvariant="bold">r</mi><mo>)</mo></mrow><mi>R</mi><mo>=</mo><msub><mi>E</mi><mrow><mi>i</mi><mi>n</mi><mi>t</mi></mrow></msub><mi>R</mi></mrow></math></p></td>
+<td>(2.38)</td>
+</tr>
+</table>
+<p class="noindent">The eigenvalue <i>E<sub>int</sub></i> represents the internal energy of the molecule, excluding the translational energy of the molecular centre of mass.</p>
+<p class="indent">The second stage is to recognize that the potential energy of the molecule is also independent of its orientation in space, since space has the same properties in all directions. Thus the potential energy depends only on the distance between the two nuclei, <i>r</i>, and the system can be recognized as spherically symmetrical, thus permitting the simplification discussed in <a href="#sec2.3">Section 2.3</a>. The angular and radial variables can therefore be separated giving the solutions to the angular part of the wavefunction given in <a href="Chapter03.xhtml">Chapter 3</a> and the radial Schr&#x00F6;dinger equation from <a href="#eq2.18">eqn 2.18</a></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.39"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mrow><msub><mrow></mrow><mn>2</mn></msub></mrow></msup></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mfrac><mi>d</mi><mrow><mi>d</mi><mi>r</mi></mrow></mfrac><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mfrac><mrow><mi>d</mi><mi>R</mi></mrow><mrow><mi>d</mi><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mi>V</mi><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>+</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup><mi>J</mi><mrow><mo>(</mo><mrow><mi>J</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mi>R</mi><mo>=</mo><msub><mi>E</mi><mrow><mi>i</mi><mi>n</mi><mi>t</mi></mrow></msub><mi>R</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.39)</td>
+</tr>
+</table>
+<p class="noindent">Motion in the angular variables <i>&#x03B8;</i> and <i>&#x03D5;</i> corresponds to rotation of the molecule, and this contributes the small rotational energy term <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup><mi>J</mi><mrow><mo>(</mo><mrow><mi>J</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>/</mo><mn>2</mn><mi>&#x03BC;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></math> to the potential energy for the radial equation. Motion in the radial coordinate describes variation of the distance between the two nuclei, i.e. vibration of the molecule. Notice that although the Schr&#x00F6;dinger equation for the rotations and vibrations can be separated rigorously into equations in the angular variables and the radius, the energy of the molecule does not split up neatly into the sum of a rotational energy and a vibrational energy. This is because the angular momentum is a constant of the motion, and hence the rotational energy <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup><mi>J</mi><mrow><mo>(</mo><mrow><mi>J</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>/</mo><mn>2</mn><mi>&#x03BC;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></math> depends on the bond length <i>r</i>, and so has to be included in the potential energy part of the vibrational equation, although it is a relatively small correction.</p>
+<p class="indent">Finally we make the substitution <i>S</i>(<i>r</i>)<i> = rR</i>(<i>r</i>), as in <a href="#eq2.19">eqn 2.19</a>, and the vibrational equation becomes</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.40"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi></mrow></mfrac><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>S</mi></mrow><mrow><mi>d</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mrow><mo>(</mo><mrow><mi>V</mi><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>+</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup><mi>J</mi><mrow><mo>(</mo><mrow><mi>J</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mi>S</mi><mo>=</mo><msub><mi>E</mi><mrow><mi>i</mi><mi>n</mi><mi>t</mi></mrow></msub><mi>S</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.40)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="sidebar" id="pro2.8.1"><b>Problem 2.8.1.</b> <i>Show how the normalization integrals of the radial function R and the transformed function S are related.</i></p>
+</aside>
+<p class="noindent">which is a one-dimensional Schr&#x00F6;dinger equation with a potential energy <i>V</i>(<i>r</i>)<i> &#x002B; &#x0127;</i><sup>2</sup><i>J(J</i> &#x002B; 1)/2<i>&#x03BC;r</i><sup>2</sup>. No further analytical progress can be made at this stage because the function <i>V</i>(<i>r</i>) does not in general have any simple functional form, being the sum of the nucleus&#x2013;nucleus repulsion energy and the electronic energy, as discussed in <a href="#sec2.7">Section 2.7</a>. Of course for a known potential energy curve <i>V</i>(<i>r</i>) numerical solutions can be found by standard computational methods. For each value of the angular momentum quantum number <i>J</i> such a solution will give a stack of eigenvalues, labelled by a vibrational quantum number <i>&#x03C5;</i> and their corresponding eigenfunctions. <a id="page_36" class="page">Page 36, Chapter2 Separations</a></p>
+<section epub:type="chapter">
+<h3 class="sub"><b>The harmonic oscillator-rigid rotor approximation</b></h3>
+<p class="noindent">Although <i>V</i>(<i>r</i>) does not have a simple functional form, very good representations of the experimentally observed energy levels can be obtained by taking approximate forms with sensible properties. <a href="#fig2.3">Figure 2.3</a> represents the typical form of <i>V</i>(<i>r</i>) for the ground state of a diatomic molecule. The minimum of the curve is the most stable configuration of the nuclei and corresponds to the equilibrium bond length <i>r<sub>e</sub>.</i> At normal temperatures the molecule only has sufficient energy to sample the region around the bottom of the well, where the bond is only stretched by a small amount. Thus the molecule can be thought of as executing small amplitude vibrations about <i>r<sub>e</sub></i>. As a first approximation we can take a Taylor expansion of <i>V</i>(<i>r</i>) about the point <i>r = r<sub>e</sub>.</i></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.41"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtable columnalign='left'><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>V</mi><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow></mrow></mtd><mtd columnalign='left'><mo>=</mo></mtd><mtd columnalign='left'><mrow><mi>V</mi><mrow><mo>(</mo><mrow><msub><mi>r</mi><mi>e</mi></msub></mrow><mo>)</mo></mrow><mo>+</mo><msup><mi>V</mi><mo>&#x2032;</mo></msup><mrow><mo>(</mo><mrow><msub><mi>r</mi><mi>e</mi></msub></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>r</mi><mo>&#x2212;</mo><msub><mi>r</mi><mi>e</mi></msub></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mi>V</mi><mo>&#x2033;</mo></msup><mrow><mo>(</mo><mrow><msub><mi>r</mi><mi>e</mi></msub></mrow><mo>)</mo></mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>r</mi><mo>&#x2212;</mo><msub><mi>r</mi><mi>e</mi></msub></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>+</mo><mo>&#x22EF;</mo></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow></mrow></mtd><mtd columnalign='left'><mo>=</mo></mtd><mtd columnalign='left'><mrow><msub><mi>V</mi><mi>e</mi></msub><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>k</mi><msup><mrow><mrow><mo>(</mo><mrow><mi>r</mi><mo>&#x2212;</mo><msub><mi>r</mi><mi>e</mi></msub></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>+</mo><mo>&#x22EF;</mo></mrow></mtd></mtr></mtable></mrow></math></p></td>
+<td>(2.41)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-18.4em;" epub:type="sidebar">
+<figure class="fig1" id="fig2.3">
+<img src="../images/Fig2.3.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 2.3</b> Potential energy curve for the H<sub>2</sub> molecule compared with the harmonic approximation.</p></figcaption></figure>
+</aside>
+<p class="noindent">The first derivative is equal to zero because <i>r<sub>e</sub></i> is a minimum of the potential energy curve, and the second derivative (or curvature) of the potential energy is a positive constant, denoted <i>k</i> and called the <i>force constant.</i> The use of a quadratic potential energy function is called the <i>harmonic approximation.</i> The quality of the fit is illustrated in <a href="#fig2.3">Fig. 2.3</a> demonstrating that it is only really applicable for low energy states.</p>
+<p class="indent">The rotational energy is also a function of <i>r</i>, but since the vibrations are of small amplitude and the rotational energy is only a small correction to the potential energy curve, it is usual to approximate the rotational energy to <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup><mi>J</mi><mrow><mo>(</mo><mrow><mi>J</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>/</mo><mn>2</mn><mi>&#x03BC;</mi><msubsup><mi>r</mi><mi>e</mi><mn>2</mn></msubsup></mrow></math>, neglecting its dependence on the bond length. In this <i>rigid rotor</i> approximation the internal energy of the molecule separates into the sum of the rigid rotor rotational energy and the vibrational energy.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec2.9"> 
+<h2 class="main">2.9<span class="space">&#160;</span>Vibrations of a polyatomic molecule</h2>
+<p class="noindent">&#x005B;This section is more advanced.&#x005D; To specify the exact positions of both nuclei in a diatomic molecule it is necessary to specify three coordinates for each nucleus. The number of independent variables required, or <i>degrees</i> <i>of freedom</i> cannot be altered by any coordinate transformation. Three degrees of freedom can be assigned to specify the position of the centre of mass of the molecule, and two more (<i>&#x03B8;</i> and <i>&#x03D5;</i>) are needed to specify the orientation of the molecule, leaving one vibrational degree of freedom (<i>r</i>) to specify the internal configuration of the molecule. The case of a nonlinear polyatomic molecule of <i>N</i> atoms is similar&#x2014;of the 3<i>N</i> coordinates needed to specify the exact positions of all <i>N</i> nuclei, three degrees of freedom are taken up by specifying the centre of mass, but three angles are required to specify the orientation, leaving 3<i>N &#x2013;</i> 6 vibrational degrees of freedom. In this section we consider these vibrational degrees of freedom. Since polyatomic molecules are significantly more complex than diatomic molecules we restrict ourselves to the rigid rotor <a id="page_37" class="page">Page 37, Chapter2 Separations</a>harmonic oscillator approximation so that we can consider the rotational energy and the vibrational energy separately in the first instance. Here we concentrate solely on vibrations; rotational energies are dealt with in <a href="Chapter03.xhtml">Chapter 3</a>.</p>
+<p class="indent">The Schr&#x00F6;dinger equation for the vibrational wavefunction relies on a knowledge of the potential energy <i>V</i> as a function of the nuclear coordinates. The equilibrium nuclear configuration will be found at a minimum of this potential energy function and the vibrations will be treated as small amplitude perturbations of this configuration. It is the existence of such a minimum that permits us to talk about the shape or geometry of a molecule.</p>
+<p class="indent">The potential energy can be expanded in a Taylor series about the equilibrium configuration. Denoting the deviation of coordinate <i>i</i> from equilibrium by <i>x<sub>i</sub></i> the potential energv function becomes</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.42"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mo>=</mo><msub><mi>V</mi><mi>o</mi></msub><mo>+</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></munder><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>V</mi></mrow><mrow><mo>&#x2202;</mo><msub><mi>x</mi><mi>i</mi></msub><mo>&#x2202;</mo><msub><mi>x</mi><mi>j</mi></msub></mrow></mfrac><msub><mi>x</mi><mi>i</mi></msub><msub><mi>x</mi><mi>j</mi></msub><mo>+</mo><mo>&#x22EF;</mo><mo>=</mo><msub><mi>V</mi><mi>o</mi></msub><mo>+</mo></mrow></mstyle><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></munder><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>k</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>x</mi><mi>i</mi></msub><msub><mi>x</mi><mi>j</mi></msub><mo>+</mo><mo>&#x22EF;</mo></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:1em;">(2.42)</td>
+</tr>
+</table>
+<p class="noindent">Notice all the first derivatives of <i>V</i> are zero because the equilibrium configuration is the minimum potential energy, and that <i>k<sub>ij</sub> = k<sub>ji</sub>.</i></p>
+<p class="indent">Before considering the Schr&#x00F6;dinger equation for this system we consider the classical equations of motion for the same potential energy. Application of Newton&#x2019;s second law gives</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.43"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>m</mi><mi>i</mi></msub><msub><mover accent='true'><mi>x</mi><mo>&#x00A8;</mo></mover><mi>i</mi></msub><mo>=</mo><mo>&#x2212;</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>j</mi></munder><mrow><msub><mi>k</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>x</mi><mi>j</mi></msub></mrow></mstyle></mrow></math></p></td>
+<td>(2.43)</td>
+</tr>
+</table>
+<p class="noindent">This is a set of coupled differential equations, each double derivative being weighted by the mass of its respective nucleus. Firstly we get rid of the mass weightings by transforming to mass-weighted coordinates <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>q</mi><mi>i</mi></msub><mo>=</mo><msqrt><mrow><msub><mi>m</mi><mi>i</mi></msub><msub><mi>x</mi><mi>i</mi></msub></mrow></msqrt></mrow></math>, which brings the equation into the form</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.44"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>q</mi><mo>&#x00A8;</mo></mover><mi>i</mi></msub><mo>=</mo><mo>&#x2212;</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>j</mi></munder><mrow><mfrac><mrow><msub><mi>k</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mrow><msqrt><mrow><msub><mi>m</mi><mi>i</mi></msub><msub><mi>m</mi><mi>j</mi></msub></mrow></msqrt></mrow></mfrac><msub><mi>q</mi><mi>j</mi></msub><mo>=</mo><mo>&#x2212;</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>j</mi></munder><mrow><msub><mi>F</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>q</mi><mi>j</mi></msub></mrow></mstyle></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:1em;">(2.44)</td>
+</tr>
+</table>
+<p class="noindent">The matrix <b>F</b>, whose elements <i>F<sub>ij</sub></i> are defined by this equation, is symmetric, and can therefore be transfomed to a diagonal matrix <b>&#x039B;</b> by an orthogonal transformation <b>U</b>, so that <b>U</b><i><sup>T</sup></i><b>FU</b> = <b>&#x039B;</b>. Thus</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.45"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>q</mi><mo>&#x00A8;</mo></mover><mi>i</mi></msub><mo>=</mo><mo>&#x2212;</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>j</mi></munder><mrow><msub><mrow><mrow><mo>(</mo><mrow><mi>U</mi><mtext>&#x039B;</mtext><msup><mi>U</mi><mi>T</mi></msup></mrow><mo>)</mo></mrow></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mrow><msub><mrow></mrow><mi>q</mi></msub></mrow><mrow><msub><mrow></mrow><mi>j</mi></msub></mrow></msub></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.45)</td>
+</tr>
+</table>
+<p class="noindent">or introducing the coordinates defined by <i>Q<sub>i</sub> = &#x03A3;<sub>j</sub></i>,<i> U<sub>ji</sub>q<sub>j</sub></i></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.46"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>Q</mi><mo>&#x00A8;</mo></mover><mi>i</mi></msub><mo>=</mo><mo>&#x2212;</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>j</mi></munder><mrow><msub><mtext>&#x039B;</mtext><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>Q</mi><mi>j</mi></msub><mo>=</mo><mo>&#x2212;</mo><msub><mtext>&#x039B;</mtext><mi>i</mi></msub><msub><mi>Q</mi><mi>i</mi></msub></mrow></mstyle></mrow></math></p></td>
+<td>(2.46)</td>
+</tr>
+</table>
+<p class="noindent">This is the classical equation of motion for a simple harmonic oscillator with angular frequency <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msqrt><mrow><msub><mi>&#x039B;</mi><mi>i</mi></msub></mrow></msqrt></mrow></math>. We can see that by first mass-weighting the coordinates and then diagonalizing the matrix <b>F</b> the classical problem is reduced to a set of uncoupled harmonic oscillators. The coordinates which effect this uncoupling are called <i>normal coordinates.</i> <a id="page_38" class="page">Page 38, Chapter2 Separations</a></p>
+<p class="indent">The same is true of the quantum mechanical problem. The nuclear Schr&#x00F6;dinger equation is of the form</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.47"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msub><mi>m</mi><mi>i</mi></msub></mrow></mfrac><msubsup><mo>&#x2207;</mo><mi>i</mi><mn>2</mn></msubsup><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>+</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></munder><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>k</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mstyle><msub><mi>x</mi><mi>i</mi></msub><msub><mi>x</mi><mi>j</mi></msub><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>=</mo><msub><mi>E</mi><mi>n</mi></msub><msub><mi>&#x03C8;</mi><mi>n</mi></msub></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:1em;">(2.47)</td>
+</tr>
+</table>
+<p class="noindent">after mass weighting this becomes</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.48"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><msubsup><mo>&#x2207;</mo><mi>i</mi><mn>2</mn></msubsup><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>+</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></munder><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>F</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mstyle><msub><mi>q</mi><mi>i</mi></msub><msub><mi>q</mi><mi>j</mi></msub><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>=</mo><msub><mi>E</mi><mi>n</mi></msub><msub><mi>&#x03C8;</mi><mi>n</mi></msub></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:1em;">(2.48)</td>
+</tr>
+</table>
+<p class="noindent">removing the mass from the kinetic energy terms, and following diago-nalization we get</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.49"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><msubsup><mo>&#x2207;</mo><mi>i</mi><mn>2</mn></msubsup><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>+</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mtext>&#x039B;</mtext><mi>i</mi></msub></mrow></mstyle><msubsup><mi>Q</mi><mi>i</mi><mn>2</mn></msubsup><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mo>=</mo><msub><mi>E</mi><mi>n</mi></msub><msub><mi>&#x03C8;</mi><mi>n</mi></msub></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:1em;">(2.49)</td>
+</tr>
+</table>
+<p class="noindent">where the differentiation is now with respect to the normal coordinates <i>Q<sub>i</sub>.</i> Separation of variables now gives a single equation in each of the normal coordinates. The vibrational wavefunction can therefore be factorized in the form</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.50"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>&#x03C8;</mi><mi>n</mi></msub><mrow><mo>(</mo><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>,</mo><msub><mi>Q</mi><mn>2</mn></msub><mo>,</mo><mo>&#x22EF;</mo></mrow><mo>)</mo></mrow><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x220F;</mo><mi>i</mi></munder><mrow><msub><mi>&#x03D5;</mi><mi>i</mi></msub><mrow><mo>(</mo><mrow><msub><mi>Q</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.5em;">(2.50)</td>
+</tr>
+</table>
+<p class="noindent">with a separated equation for each of the constituent oscillators:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq2.51"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><msubsup><mo>&#x2207;</mo><mi>i</mi><mn>2</mn></msubsup><msub><mi>&#x03D5;</mi><mi>i</mi></msub><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mtext>&#x039B;</mtext><mi>i</mi></msub><msubsup><mi>Q</mi><mi>i</mi><mn>2</mn></msubsup><msub><mi>&#x03D5;</mi><mi>i</mi></msub><mo>=</mo><msub><mi>E</mi><mi>i</mi></msub><msub><mi>&#x03D5;</mi><mi>i</mi></msub></mrow></math></p></td>
+<td>(2.51)</td>
+</tr>
+</table>
+<p class="noindent">which is a Schr&#x00F6;dinger equation for a simple harmonic oscillator of frequency <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msqrt><mrow><msub><mi>&#x039B;</mi><mi>i</mi></msub></mrow></msqrt></mrow></math>(see <a href="Chapter03.xhtml#sec3.3">Section 3.3</a>). We conclude therefore that the vibrational wavefunction of a polyatomic molecule can be decomposed into a product of wavefunctions for simple harmonic oscillators, one in each mode. This simplification is of great importance in understanding the vibrational spectra of molecules.</p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<p class="sidebar" id="pro2.9.1"><b>Problem 2.9.1.</b> <i>Consider the motions of the CO</i><sub>2</sub><i> molecule in the z-direction. These should comprise motion of the centre of mass in the z-direction, the symmetric stretch and the asymmetric stretch. Assuming the two bonds to be harmonic with a force constant k find expressions for the two vibrational frequencies and their associated motions.</i></p>
+</aside>
+<p class="ref"><b>References</b></p>
+<p class="refl">1.<span class="space">&#160;</span>Stephenson, G. (1973). <i>Mathematical methods for science students.</i> Section 24.4, p. 469. Longman, London.</p>
+<p class="refl">2.<span class="space">&#160;</span>Levine, R. B. and Bernstein, R. B. (1987). <i>Molecular reaction dynamics and chemical reactivity.</i> Oxford University Press, Oxford.</p>
+<p class="refl">3.<span class="space">&#160;</span>Bunker, P. R. (1979). <i>Molecular symmetry and spectroscopy.</i> Academic Press, San Diego.</p>
+</section>
+</section>
+</body>
+</html>

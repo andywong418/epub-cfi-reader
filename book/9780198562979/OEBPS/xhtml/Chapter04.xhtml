@@ -1,0 +1,1150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en-US">
+<head>
+<meta charset="utf-8" />
+<title>Lesbian, Gay, and Bisexual Identities Over the Lifespan</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch04"> 
+<a id="page_44" class="page" style="width:70%;">Page 44, Chapter 4 Natural convection</a>
+<h1 class="ch-title"><b>4<span class="space">&#160;</span>Natural convection</b></h1>
+<section epub:type="chapter" id="sec4.1">
+<h2 class="main"><b>4.1 Introduction</b></h2>
+<p class="noindent">In natural convection the fluid velocity arises purely from the heating or cooling of the heat transfer surface itself. Heating creates less dense fluid next to the surface which tends to rise under buoyancy. The low velocities (compared to forced convection) give low heat transfer coefficients.</p>
+<p class="indent">Everyday applications of natural convection include space heating from a radiator, the coil dissipating heat to the room from a refrigerator and the cooling of many electronic components.</p>
+<p class="indent">The hot fluid next to the heated surface experiences a net upward force due to the difference in density between the hot fluid and the surrounding cold fluid. The flow pattern in a typical heated layer is shown in <a href="#fig4.1">Fig. 4.1</a>. The horizontal scale has been exaggerated by about 5 times. Although it is conventional to show turbulent eddies in this sort of way it should be appreciated that they are superimposed upon a basically upward flow.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.1">
+<img src="../images/fig4.1.jpg" alt="images"/>
+<figcaption><b>Fig. 4.1</b> Air velocity next to a 1 m high heated vertical surface</figcaption>
+</figure>
+</aside>
+<p class="indent">Analysis when the flow is turbulent is difficult. There has been some success with simple analysis when the flow is laminar. We will devote some time to analysing laminar flow next to a vertical heated plate. Not only is this interesting in its own right, as one of the relatively few simple examples of producing a usable convective heat transfer relation from first principles, but it gives insight into quantities that are not mentioned in the empirical heat transfer correlations. For example, the thickness of the boundary layer next to the plate is relevant when we are estimating how close fins can be placed on a heat transfer surface. The recommended equations for the vertical plate are given at the end of the analysis.</p>
+<p class="indent">A confusing factor in the literature is the large number of correlations that have been proposed. In this chapter we have tried to keep to just one correlation for each situation but it should be recognized that other correlations exist in the literature that could well yield heat transfer coefficients 5 or 10% different (as mentioned in the first chapter). Also the correlations tend to apply to idealized geometries. For example, the equations might strictly apply to an infinitely long cylinder surrounded by an indefinite body of stationary fluid at a uniform temperature. If the equation is being used to make a prediction for a cylinder of finite length, with other objects close by, there is little point in worrying about which of two or three different correlations might be the best to use.</p>
+<p class="indent">In the heat transfer correlations that are presented later in this chapter it is assumed that the physical properties that are required are calculated at the film temperature.</p>
+</section>
+<section epub:type="chapter" id="sec4.2">
+<h2 class="main-s2"><b>4.2<span class="space">&#160;</span>Laminar natural convection on a vertical, isothermal plate</b></h2>
+<p class="noindent">For this case a reasonably accurate analytical solution is possible. We assume that the region of disturbed velocity and temperature is confined to a well <a id="page_45" class="page">Page 45, Chapter 4 Natural convection</a>defined boundary layer and that the thickness of the boundary layer is the same for both thermal and velocity effects. For simplicity we will talk about a heated plate with buoyant fluid rising up next to it, but the final equations are equally valid for a cooled plate.</p>
+<p class="indent">The main approximation is that we do not attempt to find the detailed distribution of velocity and temperature within the boundary layer; instead we fit simple polynomials to the boundary conditions. Since the polynomials give a smooth variation, without rapid changes near the wall, the solution is appropriate for laminar flow.</p>
+<p class="indent">As shown in <a href="#fig4.2">Fig. 4.2</a> the distance <i>x</i> is measured from the bottom edge of the plate. Consider the balance of forces on a element d<i>x</i> of the boundary layer, between the plate and the edge of the boundary layer, and of width unity.</p>
+<aside class="abc" style="margin-top:-15.5em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.2">
+<img src="../images/fig4.2.jpg" alt="images"/>
+<figcaption><b>Fig. 4.2</b> Parameters used in analysis of boundary layer</figcaption>
+</figure>
+</aside>
+<p class="indent">The edge of the boundary layer merges smoothly with the undisturbed fluid so the velocity at the edge of the boundary layer, at <i>y</i> = <i>&#x03B4;</i>, is given by <i>u</i> = d<i>u</i>/d<i>y</i> = 0. On the surface of the plate, as shown in <a href="#fig4.3">Fig. 4.3</a>, the viscous force opposing the upward flow is, from Newton&#x2019;s law of viscosity</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03BC;</m:mi><m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>u</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:msub><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:2.3em;">(4.1)</td>
+</tr>
+</table>
+<p class="noindent">and at the edge of the boundary layer there is no viscous force since d<i>u</i>/d<i>y</i> = 0.</p>
+<p class="indent">The volume of the element is <i>&#x03B4;</i> d<i>x</i> (times unity) where <i>&#x03B4;</i> is the thickness of the boundary layer at this position. The weight of the fluid in it is <i>&#x03C1;<sub>av</sub>g&#x03B4;</i> d<i>x</i> where <i>&#x03C1;<sub>av</sub></i> is the average density of the hot fluid in the boundary layer. The buoyancy force created by the weight of the displaced fluid is <i>&#x03C1;<sub>c</sub>g&#x03B4;</i> d<i>x</i>, where <i>&#x03C1;<sub>c</sub></i> is the density of the undisturbed bulk fluid, so the net force is</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>g</m:mi><m:mi>&#x03B4;</m:mi><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03C1;</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mrow><m:mtext>av</m:mtext></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>&#x03BC;</m:mi><m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>u</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:msub><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">The density of hot fluid is related to that of the cold fluid by</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03C1;</m:mi><m:mo>=</m:mo><m:mi>&#x03C1;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mi>&#x03B2;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>T</m:mi><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">where <i>&#x03B2;</i> is the volume coefficient of expansion. The average density difference is</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03C1;</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mrow><m:mtext>av</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>&#x03B4;</m:mi></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x03B4;</m:mi></m:msubsup><m:mrow><m:msub><m:mi>&#x03C1;</m:mi><m:mtext>c</m:mtext></m:msub><m:mi>&#x03B2;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>T</m:mi><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:mtext>d</m:mtext><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03C1;</m:mi></m:mrow><m:mi>&#x03B4;</m:mi></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x03B4;</m:mi></m:msubsup><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>T</m:mi><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:mtext>d</m:mtext><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:2.3em;">(4.2)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-26em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.3">
+<img src="../images/fig4.3.jpg" alt="images"/>
+<figcaption><b>Fig. 4.3</b> Force balance on a slice dx of boundary layer</figcaption>
+</figure>
+</aside>
+<p class="noindent">where, in the last term, by assuming that the differences of temperature are small compared to the absolute level, <i>&#x03B2;</i> and <i>&#x03C1;<sub>c</sub></i> can be approximated by the mean values (to be evaluated in due course at the film temperature) and taken outside the integral.</p>
+<p class="indent">To complete the momentum equation, in the form net force equals rate of change of momentum, we note that the standard expression linking mass flow rate m and velocity <i>u</i> is <i>m</i> = <i>&#x03C1;u</i>&#x00D7; flow cross-sectional area. So the mass flow rate in a strip dy is <i>&#x03C1;u</i> d<i>y</i> and the rate at which momentum is being carried is <i>&#x03C1;u</i><sup>2</sup>d<i>y</i>, giving a total momentum of <i>&#x222B;&#x03C1;u</i><sup>2</sup>d<i>y</i> and the change in this over d<i>x</i> is d&#x005B;<i>&#x222B;&#x03C1;u</i><sup>2</sup>d<i>y</i>&#x005D;. So the momentum equation is</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>g</m:mi><m:mi>&#x03B4;</m:mi><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mfrac><m:mrow><m:mi>&#x03B2;</m:mi><m:mi>&#x03C1;</m:mi></m:mrow><m:mi>&#x03B4;</m:mi></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x03B4;</m:mi></m:msubsup><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>T</m:mi><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:mtext>d</m:mtext><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>&#x2212;</m:mo><m:mi>&#x03BC;</m:mi><m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>u</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:msub><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>d</m:mtext><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x03B4;</m:mi></m:msubsup><m:mrow><m:mi>&#x03C1;</m:mi><m:msup><m:mi>u</m:mi><m:mn>2</m:mn></m:msup><m:mtext>d</m:mtext><m:mi>y</m:mi><m:mo>=</m:mo></m:mrow></m:mrow></m:mstyle><m:mi>&#x03C1;</m:mi><m:mtext>d</m:mtext><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x03B4;</m:mi></m:msubsup><m:mrow><m:msup><m:mi>u</m:mi><m:mn>2</m:mn></m:msup><m:mtext>d</m:mtext><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:2.3em;">(4.3)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_46" class="page">Page 46, Chapter 4 Natural convection</a></p>
+<figure class="imgc" id="fig4.4">
+<img src="../images/fig4.4.jpg" alt="images"/>
+<figcaption><b>Fig. 4.4</b> Shape of the temperature and velocity profiles is essentially determined by fit to boundary conditions</figcaption>
+</figure>
+<p class="noindent">The energy equation comes from equating the heat being conducted into the boundary layer at the plate surface to that required to warm up the expanding boundary layer flow. Again we note that the mass flow rate in the strip d<i>y</i> is <i>&#x03C1;u</i> d<i>y</i> and so the rate at which heat is being carried above the undisturbed temperature is <i>&#x03C1;uc</i>&#x005B;<i>T</i> &#x2013; T<sub>&#x221E;</sub>&#x005D;d<i>y</i>, <i>c</i> being the specific heat capacity.</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mi>k</m:mi><m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:msub><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>d</m:mtext><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x03B4;</m:mi></m:msubsup><m:mrow><m:mi>&#x03C1;</m:mi><m:mi>u</m:mi><m:mi>c</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>T</m:mi><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:mtext>d</m:mtext><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mi>&#x03C1;</m:mi><m:mi>c</m:mi><m:mi>d</m:mi><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x03B4;</m:mi></m:msubsup><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>T</m:mi><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:mtext>d</m:mtext><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:2.3em;">(4.4)</td>
+</tr>
+</table>
+<p class="noindent">The fluid beyond <i>y</i> = <i>&#x03B4;</i> is unaffected by the heated plate, so there is no heat flow at the edge of the boundary layer, i.e. at <i>y</i> = <i>&#x03B4;</i>, <i>T</i> = <i>&#x03A4;</i><sub>&#x221E;</sub> and d<i>&#x03A4;</i>/d<i>y</i> = 0.</p>
+<p class="indent">These equations seem complicated but if the equations for the velocity and temperature profiles are known then all the required gradients and integrals can be calculated in terms of <i>T</i><sub>w</sub>, <i>T</i>&#x221E;, <i>u</i><sub>av</sub> and <i>&#x03B4;</i></p>
+<p class="indent">Looking at <a href="#fig4.4">Fig. 4.4</a> it seems reasonable that any equations for the profiles that are forced to meet the boundary conditions will give reasonable representations of the required gradients at <i>y</i> = 0 and of the required integrals. The boundary conditions on <i>u</i> and <i>T</i> at the edge of the boundary layer have already been mentioned. In addition, at <i>y</i> = 0, <i>T</i> = <i>T</i><sub>w</sub> and <i>u</i> = 0.</p>
+<p class="indent">We represent <i>T</i> by the simplest polynomial that can be expected to fit the variation in the <a href="#fig4.4">Fig. 4.4</a></p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>T</m:mi><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mi>y</m:mi><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(4.5)</td>
+</tr>
+</table>
+<table style="margin-bottom:1em;width:45%; margin-left:7em;">
+<tr>
+<td><i>T</i> &#x2013; <i>T</i><sub>w</sub> at <i>y</i> = 0 gives</td>
+<td><i>T</i><sub>w</sub> = <i>a<sub>0</sub></i></td>
+</tr>
+<tr>
+<td>d<i>T</i>/d<i>y</i> = 0 at <i>y</i> = &#x03B4; gives</td>
+<td>0 = <i>a</i><sub>1</sub> &#x002B; 2<i>a</i><sub>2</sub><i>&#x03B4;</i></td>
+</tr>
+<tr>
+<td><i>T</i> = <i>T</i><sub>&#x221E;</sub><i></i> at <i>y</i> = <i>&#x03B4;</i> gives</td>
+<td><i>T</i><sub>&#x221E;</sub> = <i>T</i><sub>w</sub> &#x002B; <i>a</i><sub>1</sub><i>&#x03B4;</i> &#x002B; <i>a</i><sub>2</sub><i>&#x03B4;</i><sup>2</sup></td>
+</tr>
+</table>
+<p class="noindent"><i>a</i><sub>0</sub><i></i> is known and there are two equations for <i>a</i><sub>1</sub> and <i>a</i><sub>2</sub>. The temperature profile can finally be expressed as</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>T</m:mi><m:mo>=</m:mo><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>2</m:mn><m:mfrac><m:mi>y</m:mi><m:mrow><m:msup><m:mrow></m:mrow><m:mi>&#x03B4;</m:mi></m:msup></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>y</m:mi><m:mi>&#x03B4;</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;">(4.6)</td>
+</tr>
+</table>
+<p class="noindent">For the velocity profile, trying the same approach as <a href="#eq4.5">equation 4.5</a> does not work; all the coefficients turn out to be zero. One further term in the polynomial is needed:</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>u</m:mi><m:mo>=</m:mo><m:msub><m:msup><m:mi>a</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:msup><m:mi>a</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mn>1</m:mn></m:msub><m:mi>y</m:mi><m:mo>+</m:mo><m:msub><m:msup><m:mi>a</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mn>2</m:mn></m:msub><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msub><m:msup><m:mi>a</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mn>3</m:mn></m:msub><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(4.7)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_47" class="page">Page 47, Chapter 4 Natural convection</a></p>
+<p class="indent">Obviously <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:msup><m:mi>a</m:mi><m:mo>&#x2032;</m:mo></m:msup><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>since <i>u</i> = 0 at <i>y</i> = 0. The remaining two boundary conditions are not sufficient to find the remaining three coefficients. Applying the boundary conditions and rearranging the resulting equations gives</p>
+<table style="width:100%; margin-left:0em;margin-top:0em;margin-bottom:0em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mi>u</m:mi><m:mrow><m:msub><m:mi>u</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>y</m:mi><m:mi>&#x03B4;</m:mi></m:mfrac><m:msup><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mfrac><m:mi>y</m:mi><m:mi>&#x03B4;</m:mi></m:mfrac></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;">(4.8)</td>
+</tr>
+</table>
+<p class="noindent">where <i>u</i><sub>0</sub> is related to the remaining coefficient and is a measure of the amplitude of the velocity distribution.</p>
+<p class="indent">It is now possible to work out all the gradients and integrals required in <a href="#eq4.3">equations 4.3</a> and <a href="#eq4.4">4.4</a>. The following results are fairly straightforward:</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>u</m:mi><m:mrow><m:mtext>av</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>&#x03B4;</m:mi></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x03B4;</m:mi></m:msubsup><m:mrow><m:mi>u</m:mi><m:mtext>d</m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac><m:msub><m:mi>u</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mrow></m:mstyle></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>u</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>u</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mi>&#x03B4;</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>12</m:mn><m:mfrac><m:mrow><m:msub><m:mi>u</m:mi><m:mrow><m:mi>a</m:mi><m:mi>v</m:mi></m:mrow></m:msub></m:mrow><m:mi>&#x03B4;</m:mi></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr><m:mtd><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>dy</m:mtext></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mfrac><m:mn>2</m:mn><m:mi>&#x03B4;</m:mi></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>&#x03B4;</m:mi></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x03B4;</m:mi></m:msubsup><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>T</m:mi><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle><m:mtext>d</m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<p class="noindent">and the following quite tedious to work out:</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x03B4;</m:mi></m:msubsup><m:mrow><m:msup><m:mi>u</m:mi><m:mn>2</m:mn></m:msup><m:mtext>d</m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msubsup><m:mi>u</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mi>&#x03B4;</m:mi></m:mrow><m:mrow><m:mn>105</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>144</m:mn></m:mrow><m:mrow><m:mn>105</m:mn></m:mrow></m:mfrac><m:msubsup><m:mi>u</m:mi><m:mrow><m:mtext>av</m:mtext></m:mrow><m:mn>2</m:mn></m:msubsup><m:mi>&#x03B4;</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mtd><m:mtd><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x03B4;</m:mi></m:msubsup><m:mrow><m:mi>u</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:mi>T</m:mi><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:mtext>d</m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac><m:msub><m:mi>u</m:mi><m:mrow><m:mtext>av</m:mtext></m:mrow></m:msub><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:mi>&#x03B4;</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">So <a href="#eq4.3">equations 4.3</a> and <a href="#eq4.4">4.4</a> can be simplified to:</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>g</m:mi><m:mi>&#x03B4;</m:mi><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mi>&#x03B2;</m:mi><m:mi>&#x03C1;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>&#x03BC;</m:mi><m:mfrac><m:mrow><m:mn>36</m:mn><m:msub><m:mi>u</m:mi><m:mrow><m:mtext>av</m:mtext></m:mrow></m:msub></m:mrow><m:mi>&#x03B4;</m:mi></m:mfrac><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>&#x03C1;</m:mi><m:mtext>d</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>432</m:mn></m:mrow><m:mrow><m:mn>105</m:mn></m:mrow></m:mfrac><m:msubsup><m:mi>u</m:mi><m:mrow><m:mtext>av</m:mtext></m:mrow><m:mn>2</m:mn></m:msubsup><m:mi>&#x03B4;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;">(4.9)</td>
+</tr>
+</table>
+<p class="noindent">and</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mi>&#x03B4;</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>&#x03C1;</m:mi><m:mi>c</m:mi><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac><m:mtext>d</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>u</m:mi><m:mrow><m:mtext>av</m:mtext></m:mrow></m:msub><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:mi>&#x03B4;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right;">(4.10)</td>
+</tr>
+</table>
+<p class="indent">Up to this point the method of solution is the same as that described in many heat transfer textbooks (and due originally to Squire<sup>1</sup>). The next step in the standard solution is to assume that both <i>u</i> and <i>&#x03B4;</i> are proportional to powers of <i>x</i>. Even with this assumption further analysis is required to establish what the two powers are and what the constants of proportionality are. In what follows a slightly more straightforward approach is adopted that does not require any advance assumptions about the form of the solution.</p>
+<section epub:type="chapter">
+<h3 class="main2"><b>Solution for large Prandtl number</b></h3>
+<p class="noindent">It is reasonable to suppose that with a sufficiently viscous liquid (large Prandtl number) the acceleration term on the right hand side in the momentum equation (<a href="#eq4.9">equation 4.9</a>) will be negligible, so the equation can be rearranged to find</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>u</m:mi><m:mrow><m:mtext>av</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msup><m:mi>&#x03B4;</m:mi><m:mn>2</m:mn></m:msup><m:mfrac><m:mrow><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mi>&#x03C1;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mrow><m:mn>36</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right;">(4.11)</td>
+</tr>
+</table>
+<p class="noindent">and substituting this into the energy <a href="#eq4.10">equation (4.10)</a> gives</p>
+<table style="width:100%; margin-left:-2em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mrow></m:mrow><m:mi>&#x03B4;</m:mi></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>&#x03C1;</m:mi><m:mi>c</m:mi><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac><m:mtext>d</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>&#x03B4;</m:mi><m:mn>3</m:mn></m:msup><m:mfrac><m:mrow><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mi>&#x03C1;</m:mi><m:msup><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>36</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>&#x03C1;</m:mi><m:mi>c</m:mi><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac><m:mfrac><m:mrow><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mi>&#x03C1;</m:mi><m:msup><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>&#x03BC;</m:mi></m:mfrac><m:msup><m:mi>&#x03B4;</m:mi><m:mn>2</m:mn></m:msup><m:mtext>d</m:mtext><m:mi>&#x03B4;</m:mi></m:mrow></m:math></td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:10%;"/>
+<col style="width:56%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td>or</td>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mi>&#x03B4;</m:mi><m:mn>3</m:mn></m:msup><m:mtext>d</m:mtext><m:mi>&#x03B4;</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>60</m:mn><m:mi>&#x03BC;</m:mi><m:mi>k</m:mi></m:mrow><m:mrow><m:mi>&#x03C1;</m:mi><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mi>&#x03C1;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mfrac><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent"><a id="page_48" class="page">Page 48, Chapter 4 Natural convection</a>Integrating this from the bottom of the plate, <i>x</i> = 0, up to some position <i>x</i> gives</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x03B4;</m:mi></m:msubsup><m:mrow><m:msup><m:mi>&#x03B4;</m:mi><m:mn>3</m:mn></m:msup><m:mtext>d</m:mtext><m:mi>&#x03B4;</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>60</m:mn><m:mi>&#x03BC;</m:mi><m:mi>k</m:mi></m:mrow><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>x</m:mi></m:msubsup><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></td>
+</tr>
+</table>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:10%;"/>
+<col style="width:50%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="padding-top:1.2em;">hence</td>
+<td style="text-align:center;"><p class="equ" id="eq4.12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mi>&#x03B4;</m:mi><m:mn>4</m:mn></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>240</m:mn><m:mi>&#x03BC;</m:mi><m:mi>k</m:mi></m:mrow><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mfrac><m:mi>x</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:1.3em;text-align:right;">(4.12)</td>
+</tr>
+</table>
+<p class="noindent">The local heat flux at position <i>x</i> is given by</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>q</m:mi><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>k</m:mi><m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi></m:mrow><m:mi>&#x03B4;</m:mi></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">and since the heat transfer coefficient is defined as <i>q</i>/&#x0394;<i>T</i> then</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>k</m:mi></m:mrow><m:mi>&#x03B4;</m:mi></m:mfrac></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">The local Nusselt number is</p>
+<table style="width:70%; margin-left:0em;margin-top:0em;margin-bottom:0em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:msub><m:mi>u</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>x</m:mi></m:mrow><m:mi>k</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mn>240</m:mn><m:mi>&#x03BC;</m:mi><m:mi>k</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right;">(4.13)</td>
+</tr>
+</table>
+<table style="width:70%; margin-left:0em;margin-top:-1.2em;margin-bottom:0em;">
+<colgroup>
+<col style="width:10%;"/>
+<col style="width:50%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="padding-top:1.2em;">or</td>
+<td style="padding-left:3em;"><p class="equ" id="eq4.14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:msub><m:mi>u</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mn>0.508</m:mn><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>G</m:mi><m:msub><m:mi>r</m:mi><m:mi>x</m:mi></m:msub><m:mi>P</m:mi><m:mi>r</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right;">(4.14)</td>
+</tr>
+</table>
+<p class="noindent">where two dimensionless groups have been introduced. <i>Pr</i> = <i>&#x03BC;c</i>/<i>k</i>, the Prandtl number, appeared in the previous chapter. <i>Gr</i>, the Grashof number, is a new group</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>G</m:mi><m:msub><m:mi>r</m:mi><m:mi>x</m:mi></m:msub><m:mfrac><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>&#x03BC;</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right;">(4.15)</td>
+</tr>
+</table>
+<p class="noindent">Since the two groups appear as the product in this equation, and in many empirical equations for natural convection heat transfer, we replace them by the Rayleigh number (<i>Ra</i> = <i>GrPr</i>).</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>R</m:mi><m:msub><m:mi>a</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mi>k</m:mi><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right">(4.16)</td>
+</tr>
+</table>
+<p class="noindent">So we can write <a href="#eq4.14">equation 4.14</a> as</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:msub><m:mi>u</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mn>0.508</m:mn><m:mi>R</m:mi><m:msubsup><m:mi>a</m:mi><m:mi>x</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msubsup></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right">(4.17)</td>
+</tr>
+</table>
+<p class="noindent">which is in very good agreement with more accurate, numerical, calculations for <i>Pr</i> &#x003E; 100. This agreement is to some extent fortuitous: the more accurate calculations disagree slightly with the assumed temperature and velocity profiles, also with the assumption that the velocity and temperature boundary layers are of equal thickness.</p>
+<p class="indent">More generally we might hope to write</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.18"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>C</m:mi><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mi>n</m:mi></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:1.2em;text-align:right">(4.18)</td>
+</tr>
+</table>
+<p class="noindent">as an equation that will cover any natural convection situation. Indeed this is frequently done, with the constant <i>C</i> varying slightly with the geometry and the power <i>n</i> being <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> for laminar flow. The equation is extended to turbulent flow with different values of <i>C</i> and <i>n</i>. There is a variation with Prandtl number but, as the next sections will show, it is fairly small for ordinary fluids.<a id="page_49" class="page">Page 49, Chapter 4 Natural convection</a></p>
+<p class="indent">To find the Prandtl number dependence for laminar flow, and to justify our assumption of negligible acceleration of the fluid for large values of the Prandtl number, we next consider the general solution.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="main2"><b>General solution</b></h3>
+<p class="noindent">Now that we have a solution for the simplified case of negligible acceleration of the boundary layer, i.e. the right-hand side of <a href="#eq4.9">equation 4.9</a> set equal to zero, we could assume that the solution is still valid as a first approximation to the full equations, and use the equations (<a href="#eq4.11">4.11</a> and <a href="#eq4.12">4.12</a>) for <i>u<sub>av</sub></i> and <i>&#x03B4;</i> to give a first estimate of the acceleration, i.e. the <i>u<sub>av</sub></i><sup>2</sup> <i>&#x03B4;</i> term in <a href="#eq4.9">equation 4.9</a>. If we do this we find a rather surprising result: the last term in <a href="#eq4.9">equation 4.9</a> is simply a constant times the first term. Further iteration does not change this conclusion.</p>
+<p class="indent">To short circuit this process we simply accept the result that the last term is a constant factor, say <i>F</i> , times the first term and rewrite the equation</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.19"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>g</m:mi><m:mi>&#x03B4;</m:mi><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mi>&#x03B2;</m:mi><m:mi>&#x03C1;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mi>w</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>&#x03BC;</m:mi><m:mfrac><m:mrow><m:mn>36</m:mn><m:msub><m:mi>u</m:mi><m:mrow><m:mtext>av</m:mtext></m:mrow></m:msub></m:mrow><m:mi>&#x03B4;</m:mi></m:mfrac><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>F</m:mi><m:mi>g</m:mi><m:mi>&#x03B4;</m:mi><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mi>&#x03B2;</m:mi><m:mi>&#x03C1;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right">(4.19)</td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:7%;"/>
+<col style="width:93%;"/>
+</colgroup>
+<tr>
+<td style="padding-top:0.50em;">or</td>
+<td style="padding-left:1em"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mi>F</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>g</m:mi><m:mi>&#x03B4;</m:mi><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mi>&#x03B2;</m:mi><m:mi>&#x03C1;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>&#x03BC;</m:mi><m:mfrac><m:mrow><m:mn>36</m:mn><m:msub><m:mi>u</m:mi><m:mrow><m:mtext>av</m:mtext></m:mrow></m:msub></m:mrow><m:mi>&#x03B4;</m:mi></m:mfrac><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">There is no need to go through all the analysis again. We can use the previous results, simply noting that a (1-<i>F</i>) factor has now to be associated with the term containing <i>&#x03B2;</i>. So the average velocity is now</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.20"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>u</m:mi><m:mrow><m:mtext>av</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msup><m:mi>&#x03B4;</m:mi><m:mn>2</m:mn></m:msup><m:mfrac><m:mrow><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mi>&#x03C1;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mrow><m:mn>36</m:mn><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mi>F</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right">(4.20)</td>
+</tr>
+</table>
+<p class="noindent">and the boundary layer thickness is given by</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.21"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mi>&#x03B4;</m:mi><m:mn>4</m:mn></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>240</m:mn><m:mi>&#x03BC;</m:mi><m:mi>k</m:mi></m:mrow><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mi>F</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mi>x</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right">(4.21)</td>
+</tr>
+</table>
+<p class="noindent">The Nusselt number is</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.22"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:msub><m:mi>u</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>x</m:mi></m:mrow><m:mi>k</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mi>F</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mn>240</m:mn><m:mi>&#x03BC;</m:mi><m:mi>k</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:2em;text-align:right">(4.22)</td>
+</tr>
+</table>
+<p class="noindent">or in terms of the Rayleigh number</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:msub><m:mi>u</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mn>0.508</m:mn><m:mi>R</m:mi><m:msubsup><m:mi>a</m:mi><m:mi>x</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msubsup><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mi>F</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="indent">To check that the solution is self-consistent, and find the value of <i>F</i>, the two versions of the acceleration term in <a href="#eq4.9">equations 4.9</a> and <a href="#eq4.19">4.19</a> are equated, i.e.</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>F</m:mi><m:mi>g</m:mi><m:mi>&#x03B4;</m:mi><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mi>&#x03B2;</m:mi><m:mi>&#x03C1;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>432</m:mn></m:mrow><m:mrow><m:mn>105</m:mn></m:mrow></m:mfrac><m:mi>&#x03C1;</m:mi><m:mtext>d</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>u</m:mi><m:mrow><m:mtext>av</m:mtext></m:mrow><m:mn>2</m:mn></m:msubsup><m:mi>&#x03B4;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">Using the equations above to substitute first for <i>u</i><sub>av</sub> and then, after the differentiation, for <i>&#x03B4;</i> gives, after some tidying up.</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.23"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mi>F</m:mi><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>0.952</m:mn></m:mrow><m:mrow><m:mi>Pr</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right">(4.23)</td>
+</tr>
+</table>
+<p class="noindent">So the Nusselt number expression becomes</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.24"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:msub><m:mi>u</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mn>0.508</m:mn><m:mi>R</m:mi><m:msubsup><m:mi>a</m:mi><m:mi>x</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msubsup><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>0.952</m:mn></m:mrow><m:mrow><m:mi>Pr</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right">(4.24)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_50" class="page">Page 50, Chapter 4 Natural convection</a>and the equations above for velocity and boundary layer thickness can be used with the result for 1-<i>F</i>.</p>
+<p class="indent">Often there is no requirement to find the local heat transfer coefficient. Just the total heat transfer given by the average heat transfer coefficient is needed. The heat transfer coefficient at distance <i>x</i> from the bottom of the plate is given by <a href="#eq4.22">equation 4.22</a>, i.e.</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>k</m:mi><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mi>F</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mrow><m:mn>240</m:mn><m:mi>&#x03BC;</m:mi><m:mi>k</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup><m:msup><m:mi>x</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mi>C</m:mi><m:msup><m:mi>x</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">The average heat transfer coefficient, because of the <i>x</i><sup>1/4</sup> dependence, turns out to be 4/3 times the value at <i>x</i> = <i>L</i>,</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.25"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>av</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>L</m:mi></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:msubsup><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>L</m:mi></m:msubsup><m:mrow><m:mi>C</m:mi><m:msup><m:mi>x</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac><m:mi>C</m:mi><m:msup><m:mi>L</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:2.2em;text-align:right">(4.25)</td>
+</tr>
+</table>
+<p class="noindent">and the average Nusselt number is</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac><m:mn>0.508</m:mn><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>0.952</m:mn></m:mrow><m:mrow><m:mi>P</m:mi><m:mi>r</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">where <i>Nu</i> and <i>Ra</i> are both based on the plate height <i>L</i>. This equation is in agreement with accurate, numerical, solutions of the problem, where the correct velocity and temperature profiles are calculated as part of the solution, to within 10% over a very wide range of Prandtl number. For air it reduces to <i>Nu</i> = 0.546<i>Ra</i><sup>1/4</sup> which is about 6% high compared to the accurate solutions.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="main2"><b>Recommended equations for vertical plate</b></h3>
+<p class="noindent">Bringing our equation into line with the accurate solution for air (<i>Pr</i> = 0.70) the recommended equation for the average heat transfer for air becomes</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.26"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0.51</m:mn><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>for&#x00A0;</m:mtext><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>4</m:mn></m:msup><m:mo>&#x003C;</m:mo><m:mi>R</m:mi><m:mi>a</m:mi><m:mo>&#x003C;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>9</m:mn></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right">(4.26)</td>
+</tr>
+</table>
+<table style="width:70%; margin-left:0em;margin-top:-1.4em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:10%;"/>
+<col style="width:50%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="padding-left:3em;padding-top:1.5em;">with</td>
+<td style="padding-left:2em;"><p class="equ" id="eq4.27"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>L</m:mi></m:mrow><m:mi>k</m:mi></m:mfrac></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>and</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>R</m:mi><m:mi>a</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:msup><m:mi>L</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mi>k</m:mi><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right">(4.27)</td>
+</tr>
+</table>
+<p class="noindent">For other fluids the results can be corrected using</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.28"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:msub><m:mi>u</m:mi><m:mrow><m:mtext>air</m:mtext></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1.24</m:mn><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>0.952</m:mn></m:mrow><m:mrow><m:mi>P</m:mi><m:mi>r</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right">(4.28)</td>
+</tr>
+</table>
+<p class="indent">These two equations (<a href="#eq4.26">4.26</a> and <a href="#eq4.28">4.28</a>) give good results over a very wide <i>Pr</i> range, as shown in <a href="#fig4.5">Fig. 4.5</a>. There are a number of interesting features in the figure. It contains examples of all the different types of natural convection information: predictions based on approximate analysis (the equations we have just derived); results of accurate, numerical, calculations (a separate calculation for each <i>Pr</i> value); experimental data; and a correlation shown to agree with a large body of data. The correlation is more complex than <a href="#eq4.26">equation 4.26</a> so we have shown the case of <i>Ra</i> = 10<sup>4</sup>. At high <i>Ra</i> the correlation essentially coincides with the accurate theory. At low <i>Ra</i> loss of heat by conduction (ignored in the theoretical treatments) has a small influence. Our equations, for fluids such as gases or water, lie in between.</p>
+<p class="indent">In general the value of the volume expansion coefficient <i>&#x03B2;</i> has to be looked up in tables. However a useful result for gases is that <i>&#x03B2;</i> = 1<i>/T</i> where <i>T</i> is the absolute temperature in K.<a id="page_51" class="page">Page 51, Chapter 4 Natural convection</a></p>
+<figure class="imgc" id="fig4.5">
+<img src="../images/fig4.5.jpg" alt="images"/>
+<figcaption><b>Fig. 4.5</b> <a href="#eq4.26">Equations 4.26</a> and <a href="#eq4.28">4.28</a> compared with numerical results,<sup>3</sup> a correlation (dashed) and experiment<sup>2</sup> (triangles)</figcaption>
+</figure>
+<p class="indent">The <i>Ra</i> &#x003C; 10<sup>9</sup>condition in <a href="#eq4.26">equation 4.26</a> is the condition for laminar flow in the boundary layer. There has been some uncertainty in whether the condition should be on <i>Gr</i> or on <i>Ra</i>, caused by the fact that only a limited range of <i>Pr</i> is normally studied. Recent results, for air<sup>4</sup> and liquid metals<sup>5</sup> on a vertical plate, suggest that the Grashof number is the key parameter for transition from laminar to turbulent conditions. Until this thinking has been extended to other geometries though we have little choice but to take the limits given in the literature, i.e. use the Rayleigh number. At least this has the advantage that we do not need to mention the Grashof number again.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec4.3">
+<h2 class="main"><b>4.3<span class="space">&#160;</span>Turbulent boundary layer</b></h2>
+<p class="noindent">The starting differential equations of the previous section, <a href="#eq4.3">equations 4.3</a> and <a href="#eq4.4">4.4</a>, still apply so it is reasonable to suppose that the same dimensionless groups will control the heat transfer. Attempts at analysis are made more difficult by the fact that new velocity and temperatures profiles, appropriate to a turbulent flow, must be found.</p>
+<p class="indent">A simple equation for the overall heat transfer, based on analysis and shown to agree with experimental results for air, was proposed by Bayley<sup>6</sup>:</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.29"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0.1</m:mn><m:mtext>&#x2009;</m:mtext><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>3</m:mn></m:mrow></m:msup></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>for&#x00A0;</m:mtext><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>9</m:mn></m:msup><m:mo>&#x003C;</m:mo><m:mi>R</m:mi><m:mi>a</m:mi><m:mo>&#x003C;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>13</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right">(4.29)</td>
+</tr>
+</table>
+<p class="noindent">A recent paper<sup>7</sup> states that other correlations converge around this equation. It appears to give reasonable results for a wide range of fluids (excluding liquid metals). As a result of the role of turbulent mixing in transporting heat and momentum the significance of the Prandtl number is reduced and, for the usual range of fluids at least, no Prandtl number correction is made.</p>
+<section epub:type="chapter">
+<h4 class="main3" id="ex4.1"><b><i>Example 4</i></b><b>.</b><b><i>1</i></b></h4>
+<p class="noindent">One side of a lm high by 2m wide vertical surface at 20 &#x00B0;C is exposed to still air at 10 &#x00B0;C and 1 atm. What is the rate of heat loss due to natural convection?</p>
+<p class="indent">Firstly we need to find whether conditions are laminar or turbulent, i.e. the value of</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:38%;"/>
+<col style="width:62%;"/>
+</colgroup>
+<tr>
+<td style="padding-left:5em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>R</m:mi><m:mi>a</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow> <m:mo>]</m:mo></m:mrow><m:msup><m:mi>L</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mi>k</m:mi><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac></m:mrow></m:math></td>
+<td style="padding-top:0.75em;">from <a href="#eq4.27">equation 4.27</a></td>
+</tr>
+</table>
+<p class="noindent"><a id="page_52" class="page">Page 52, Chapter 4 Natural convection</a>In this geometry the length <i>L</i> is the plate height, 1 m. <i>T</i><sub>w</sub> = 20 &#x00B0;C and <i>T</i><sub>&#x221E;</sub> = 10 &#x00B0;C.</p>
+<p class="indent">From the Appendix, interpolating for air at <i>T</i><sub>f</sub> = 15 &#x00B0;C, <i>&#x03C1;</i> = 1.226 kg m<sup>&#x2013;3</sup>, <i>c</i> = 1003 J kg<sup>&#x2013;1</sup> K<sup>&#x2013;1</sup>, <i>k</i> = 0.0252 W m<sup>&#x2013;1</sup> K<sup>&#x2013;1</sup>, <i>&#x03BC;</i> = 1.798 &#x00D7; 10<sup>&#x2013;5</sup> kg m<sup>&#x2013;1</sup> s<sup>&#x2013;1</sup>.</p>
+<p class="indent">In addition we have <i>g</i> = 9.81 m s<sup>&#x2013;2</sup> and <i>&#x03B2;</i> = 1/(273 &#x002B; 15) = 0.003 472. Substituting in the <i>Ra</i> expression gives</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>R</m:mi><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1.133</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>9</m:mn></m:msup></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">i.e. (just) in the turbulent region so we use <a href="#eq4.29">equation 4.29</a> to give</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0.1</m:mn><m:mtext>&#x2009;</m:mtext><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>3</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mn>104.3</m:mn></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">and <i>h</i> = <i>Nuk</i>/<i>L</i> = 2.627 W m<sup>&#x2013;2</sup> K<sup>&#x2013;1</sup></p>
+<p class="noindent" style="margin-top:0.50em;">the <i>rate of heat loss</i> is heat flux times area or <i>h</i>(<i>T</i><sub>w</sub> &#x2013; <i>T</i><sub>&#x221E;</sub>) &#x00D7; 2 &#x00D7; 1 = <i>53</i> <i>W</i></p>
+<p class="noindent" style="margin-top:0.50em;">(note that this last line is the only place that the width of the surface, 2 m, appears; also there will be heat loss due to radiation. In the next chapter we show that this can be calculated independently and added on.)</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec4.4">
+<h2 class="main"><b>4.4<span class="space">&#160;</span>Other simple geometries</b></h2>
+<p class="noindent">For the rest of this chapter a couple of simplifications can be made. We will ignore the Prandtl number dependence, i.e. the equations that are quoted are either for air or are based on data that are predominately for air. All the Nusselt number values are averages for the whole surface. As stated at the beginning of the chapter property values are calculated at the film temperature, <i>T</i><sub>f</sub> = (<i>T</i><sub>w</sub> &#x002B; <i>T</i><sub>&#x221E;</sub>)/2. A point to watch is that the definition of the characteristic length in the <i>Nu</i> and <i>Ra</i> numbers (<a href="#eq4.27">equation 4.27</a>) varies with the geometry.</p>
+<p class="indent">In laminar flow a correction for different Prandtl numbers can be made using <a href="#eq4.28">equation 4.28</a> (there are reasons for thinking that the correction does not depend on geometry: the Prandtl number correction came in right at the beginning of the problem with the original differential equation, <a href="#eq4.3">4.3</a> and <a href="#eq4.9">4.9</a>). In turbulent flow any Prandtl number effect appears to be small.</p>
+<p class="indent">Vertical cylinders of height <i>L</i> give the same results (for their vertical sides) as vertical plates, i.e. <a href="#eq4.26">equations 4.26</a> and <a href="#eq4.29">4.29</a> can be used, provided the thickness of the boundary layer is appreciably less than the diameter of the cylinder, <i>D</i>, i.e. using <a href="#eq4.21">equation 4.21</a> (with <i>Pr</i> = 0.7) the requirement is</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.30"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mn>5</m:mn><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup><m:mo>&#x226A;</m:mo><m:mi>D</m:mi><m:mo>/</m:mo><m:mi>L</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:1em;text-align:right">(4.30)</td>
+</tr>
+</table>
+<p class="noindent">For inclined plates one might hope to be able to repeat the analysis of the previous sections with a reduced buoyancy force, replacing <i>g</i> by the component of the acceleration due to gravity parallel to the surface, <i>g</i> cos <i>&#x03B8;</i>. <i>&#x03B8;</i> is the angle between the plate and the vertical, <a href="#fig4.6">Fig. 4.6</a>. In other words the laminar vertical plate equation is used, with <i>L</i> = the length of the plate (measured in the vertical plane) as before, but with <i>Ra</i> replaced by <i>Ra</i> cos<i>&#x03B8;</i> or</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.31"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0.51</m:mn><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>R</m:mi><m:mi>a</m:mi><m:mi>cos</m:mi><m:mi>&#x03B8;</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;text-align:right">(4.31)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.6">
+<img src="../images/fig4.6.jpg" alt="images"/>
+<figcaption><b>Fig. 4.6</b> Downward facing inclined plate</figcaption>
+</figure>
+</aside>
+<p class="indent">This works well for downward facing heated plates (where the boundary layer is forced to remain in contact with the plate). The procedure was shown to be valid for laminar flow for <i>&#x03B8;</i> to within a couple of degrees of the horizontal.<sup>9</sup></p>
+<p class="indent">For upward facing heated plates there is a possibility of the boundary layer separating from the plate, the likelihood of which increases as the angle and <a id="page_53" class="page">Page 53, Chapter 4 Natural convection</a><i>Ra</i> number increase. It has been shown<sup>10</sup> that the simple procedure of using the vertical plate laminar equation with <i>Ra</i> replaced by <i>Ra</i> cos<i>&#x03B8;</i> works for <i>&#x03B8;</i> less than 80&#x00B0; and</p>
+<table style="width:100%; margin-left:0em;margin-top:0em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>R</m:mi><m:mi>a</m:mi><m:mo>&#x003C;</m:mo><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>9</m:mn></m:msup><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>e</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>0.0513</m:mn><m:mtext>&#x2009;</m:mtext><m:mi>&#x03B8;</m:mi></m:mrow></m:msup></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">with <i>&#x03B8;</i> in degrees. For larger <i>Ra</i> the following turbulent equation is recommended (<i>&#x03B8;</i> &#x003C; 80&#x00B0;):</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.32"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0.1</m:mn><m:mo>+</m:mo><m:mi>&#x03B8;</m:mi><m:mo>/</m:mo><m:mn>3600</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>3</m:mn></m:mrow></m:msup></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>9</m:mn></m:msup><m:msup><m:mtext>e</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>0.0513</m:mn><m:mtext>&#x2009;</m:mtext><m:mi>&#x03B8;</m:mi></m:mrow></m:msup><m:mo>&#x003C;</m:mo><m:mi>R</m:mi><m:mi>a</m:mi><m:mo>&#x003C;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>10</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:1em;text-align:right">(4.32)</td>
+</tr>
+</table>
+<p class="noindent">in which we recognize the Bayley equation (<a href="#eq4.29">4.29</a>) plus a term giving an increase in heat transfer with angle of inclination. This is the opposite of the laminar equation (<a href="#eq4.31">4.31</a>) where heat transfer deteriorates with inclination.</p>
+<p class="indent">For heated horizontal plates facing down (or a cooled plate facing up) a suggested equation<sup>9</sup> is</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.33"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0.58</m:mn><m:mtext>&#x2009;</m:mtext><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>5</m:mn></m:mrow></m:msup></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>for</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>6</m:mn></m:msup><m:mo>&#x003C;</m:mo><m:mi>R</m:mi><m:mi>a</m:mi><m:mo>&#x003C;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>11</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:1.2em;text-align:right">(4.33)</td>
+</tr>
+</table>
+<p class="noindent">and for heated horizontal plates facing up (or a cooled plate facing down), averaging and slightly approximating two equations from <a href="#ref9">Reference 9</a></p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.34"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0.145</m:mn><m:mtext>&#x2009;</m:mtext><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>3</m:mn></m:mrow></m:msup></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>for</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>7</m:mn></m:msup><m:mo>&#x003C;</m:mo><m:mi>R</m:mi><m:mi>a</m:mi><m:mo>&#x003C;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>11</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:1.2em;text-align:right">(4.34)</td>
+</tr>
+</table>
+<p class="indent">Various suggestions have been made for the correct length scale in <a href="#eq4.33">equations 4.33</a> and <a href="#eq4.34">4.34</a>. The simplest seems to be the side of a square or, equivalently, the shorter side of a rectangle.</p>
+<p class="indent">An important geometry in practice is the horizontal cylinder. Morgan<sup>11 </sup>surveyed the literature and recommended the following equations for long cylinders:</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.35"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0.48</m:mn><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>R</m:mi><m:mi>a</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>for</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>4</m:mn></m:msup><m:mo>&#x003C;</m:mo><m:mi>R</m:mi><m:mi>a</m:mi><m:mo>&#x003C;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>7</m:mn></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:1.2em;text-align:right">(4.35)</td>
+</tr>
+</table>
+<table style="width:70%; margin-left:0em;margin-top:-1.4em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:10%;"/>
+<col style="width:50%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="padding-top:1.2em;">and</td>
+<td style="padding-left:2em;"><p class="equ" id="eq4.36"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0.125</m:mn><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>R</m:mi><m:mi>a</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>3</m:mn></m:mrow></m:msup></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>for&#x00A0;</m:mtext><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>7</m:mn></m:msup><m:mo>&#x003C;</m:mo><m:mi>R</m:mi><m:mi>a</m:mi><m:mo>&#x003C;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:1.2em;text-align:right">(4.36)</td>
+</tr>
+</table>
+<p class="noindent">with both <i>Nu</i> and <i>Ra</i> based on cylinder diameter. The data examined by Morgan included other fluids in addition to air. A comparison with more recent data is shown in <a href="#fig4.7">Fig. 4.7</a>.</p>
+<p class="indent">Results for a sphere<sup>13</sup>, with the diameter as characteristic length, can be expressed as</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.37"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>0.43</m:mn><m:mtext>&#x2009;</m:mtext><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mo>&#x003C;</m:mo><m:mi>R</m:mi><m:mi>a</m:mi><m:mo>&#x003C;</m:mo><m:mn>8</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>8</m:mn></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:1.1em;text-align:right">(4.37)</td>
+</tr>
+</table>
+<p class="noindent">&#160;</p>
+<figure class="imgc" id="fig4.7">
+<img src="../images/fig4.7.jpg" alt="images"/>
+<figcaption><b>Fig. 4.7</b> Heat transfer from a horizontal cylinder. <a href="#eq4.35">Equation 4.35</a> compared with data from <a href="#ref12">Reference 12</a></figcaption>
+</figure>
+<p class="noindent"><a id="page_54" class="page">Page 54, Chapter 4 Natural convection</a>As elsewhere in this section the equation is for air. The water results of <a href="#ref14">Reference 14</a> are given accurately by this same equation if the recommended Prandtl number correction, <a href="#eq4.28">equation 4.28</a>, is used (on the second term in <a href="#eq4.37">4.37</a>). The upper limit of validity on Ra is based on the water results. The reason for the constant term, 2, in the equation, is discussed later in the section on correlations for lower <i>Ra</i> values.</p>
+<p class="indent">Nearly all the different correlations that have been described for calculating <i>Nu</i> show a certain similarity, not to say monotony. Lienhard<sup>15</sup> suggested that, in the laminar ranee.</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.38"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0.52</m:mn><m:mtext>&#x2009;</m:mtext><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:1.1em;text-align:right">(4.38)</td>
+</tr>
+</table>
+<p class="noindent">could be used to estimate the heat transfer for other shapes of bodies for which more specific information was not available. The length scale to be used in calculating <i>Nu</i> and <i>Ra</i> is the distance a particle travels in the boundary layer, e.g. <i>L</i> for a plate, <i>&#x03C0;D</i>/<i>2</i> for a cylinder or sphere, <i>L</i><sub>1</sub> &#x002B; <i>L</i><sub>2</sub> for the rectangular box shown in <a href="#fig4.8">Fig. 4.8</a>.</p>
+<p class="indent">Applied to our previous equations for the vertical plate, cylinder and sphere, <a href="#eq4.38">equation 4.38</a> has a maximum error on <i>Nu</i> of only 8% (though rather higher on <i>h</i>). It does not work very well for inclined or horizontal plates. Work on cubes and squat cylinders suggests that <a href="#eq4.38">equation 4.38</a> tends to underestimate the heat transfer<sup>16</sup>.</p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.8">
+<img src="../images/fig4.8.jpg" alt="images" style="margin-left:3em;"/>
+<figcaption><b>Fig. 4.8</b> Characteristic length is distance travelled in boundary layer</figcaption>
+</figure>
+</aside>
+<section epub:type="chapter">
+<h4 class="main4"><i>Correlations for lower Ra values</i></h4>
+<p class="noindent">Nearly all of the equations for <i>Nu</i> given so far would predict <i>Nu</i> = 0 if extrapolated to <i>Ra</i> = 0; this is not always correct. The reason is that, provided the body has finite dimensions in all directions, some heat will be lost by conduction to the surroundings even if the natural convection contribution becomes negligible. In the case of conduction from an isothermal sphere into uniform, infinite surroundings, the heat transfer can be expressed as <i>Nu</i> = 2 (<a href="Chapter02.xhtml#eq2.22">equation 2.22</a>). This result has already been incorporated in <a href="#eq4.37">equation 4.37</a> and explains why it has a much lower limit of validity than all the other equations presented so far.</p>
+<p class="indent">Probably the most important case where a prediction may be needed is, in practice, for fine wires, i.e. for horizontal cylinders. In reference<sup>17</sup> the following expression is recommended:</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="equ" id="eq4.39"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0.36</m:mn><m:mo>+</m:mo><m:mn>0.518</m:mn><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>R</m:mi><m:mi>a</m:mi></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0.559</m:mn><m:mo>/</m:mo><m:mi>P</m:mi><m:mi>r</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>9</m:mn><m:mo>/</m:mo><m:mn>16</m:mn></m:mrow></m:msup></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mrow><m:mn>16</m:mn><m:mo>/</m:mo><m:mn>9</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:2.3em;text-align:right">(4.39)</td>
+</tr>
+</table>
+<p class="noindent">for 10<sup>&#x2013;6</sup>&#x003C; <i>Ra</i> &#x003C; 10<sup>9</sup></p>
+<p class="indent">A slightly unsatisfactory feature of this correlation, recognised in &#x005B;17&#x005D;, is that the theoretical solution for an infinitely long cyUnder has <i>Nu</i> = 0 at <i>Ra</i> = 0. In practice this is not found, even when end effects are allowed for. A possible explanation is that the apparatus in which the measurements are made is only of finite size.</p>
+<aside class="abc" style="margin-top:-23.2em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.9">
+<img src="../images/fig4.9.jpg" alt="images" style="margin-left:3em;"/>
+<figcaption><b>Fig. 4.9</b> Laminar circulation in cavity</figcaption>
+</figure>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="main2"><b>Enclosed spaces</b></h3>
+<p class="noindent">Another geometry of interest is the enclosed space between two tall vertical plates, e.g. a double-glazed window. A complication here is that although a laminar natural convection circulation may develop (<a href="#fig4.9">Fig. 4.9</a>), flowing up by the warm surface and down by the cold surface, it does not contribute much to <a id="page_55" class="page">Page 55, Chapter4 Natural convection</a>the heat transfer because of the distance the fluid has to travel before it changes direction. Effectively heat transfer is by conduction across the gap over a wide range of conditions. Using the Fourier heat conduction law the heat flux is given by</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>q</m:mi><m:mo>=</m:mo><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>&#x03B4;</m:mi></m:mrow></m:math></p>
+<p class="noindent">where <i>T</i><sub>1</sub> and <i>T</i><sub>2</sub> are the temperatures of the two interior surfaces and <i>&#x03B4;</i> the gap width. In terms of Nusselt number based on gap width this becomes</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>h</m:mi><m:mi>&#x03B4;</m:mi><m:mo>/</m:mo><m:mi>k</m:mi><m:mo>=</m:mo><m:mi>q</m:mi><m:mi>&#x03B4;</m:mi><m:mo>/</m:mo><m:mrow><m:mo>[</m:mo><m:mrow><m:mi>k</m:mi><m:mo stretchy='false'>(</m:mo><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:33%;"/>
+<col style="width:31%;"/>
+<col style="width:37%;"/>
+</colgroup>
+<tr>
+<td>so</td>
+<td style="padding-right:13em;"><p class="eq" id="eq4.40"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></p></td>
+<td style="padding-top:-12em;">(4.40)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-15.5em;" epub:type="sidebar">
+<figure class="fig1" id="fig4.10">
+<img src="../images/fig4.10.jpg" alt="images"/>
+<figcaption>
+<b>Fig. 4.10</b> Turbulent circulation in cavity</figcaption></figure>
+</aside>
+<p class="indent">The simplicity of this result is sufficient justification for basing the Nusselt number on the gap width rather than the plate height. <a href="#eq4.40">Equation 4.40</a> is valid in the limit of low Rayleigh numbers. The <i>Ra</i> number is based upon <i>&#x03B4;</i> and (<i>T</i><sub>1</sub> &#x2013; <i>T</i><sub>2</sub>) as the temperature difference.</p>
+<p class="indent">At high Rayleigh numbers a particular type of turbulence sets in (see <a href="#fig4.10">Fig. 4.10</a>). We could attempt to model this as two separate turbulent boundary layers, one associated with each surface, i.e. <a href="#eq4.29">equation 4.29</a> would apply to each layer. Bearing in mind that <a href="#eq4.29">equation 4.29</a> was based on <i>T</i><sub>W</sub> &#x2013; T<sub>bulk</sub>, and assumed a bulk temperature midway between the two interior wall temperatures, the heat transfer equation becomes</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.41"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>3</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:-1em;text-align:right">(4.41)</td>
+</tr>
+</table>
+<p class="noindent">if we base it on <i>T</i><sub>1</sub> &#x2013; <i>T</i><sub>2</sub>. We could also argue that the characteristic length in the Ra number should be <i>&#x03B4;</i>, not the plate height, since this is more in keeping with the linear dimensions of the eddies (<a href="#fig4.10">figure 4.10</a>). In fact, in turbulent flow, since the heat transfer coefficient is independent of the value of the linear dimension, all that matters is that the same linear quantity is used in the <i>Nu</i> and <i>Ra</i> definitions.</p>
+<p class="indent">An experimental study of heat transfer in this geometry, by ElSherbiny <i>et</i> <i>al</i><sup>18</sup>, did not quite agree with <a href="#eq4.41">equation 4.41</a>. In the limit of high Rayleigh numbers they found</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.42"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0.0605</m:mn><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>3</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:-12em;">(4.42)</td>
+</tr>
+</table>
+<p class="indent">The range of aspect ratios <i>AR</i> (i.e. height / gap width) covered was from 5 to 110. The enclosure was sealed at top and bottom with a conducting boundary (the horizontal dimension was considered large enough not to affect the results). At the highest aspect ratio the results are quite well represented just by <a href="#eq4.40">equations 4.40</a> and <a href="#eq4.42">4.42</a>. At lower aspect ratios there is a more gradual transition from one to the other. A standard method of combining two asymptotic tendencies is to write</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.43"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:msup><m:mi>u</m:mi><m:mi>n</m:mi></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0.0605</m:mn><m:mtext>&#x2009;</m:mtext><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>3</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:-11em;">(4.43)</td>
+</tr>
+</table>
+<p class="noindent">for (in this case) 10<sup>2</sup> &#x003C; <i>Ra</i> &#x003C; <i>Ra</i><sub>max</sub></p>
+<p class="indent">Regardless of the value of <i>n</i> this gives <a href="#eq4.40">equation 4.40</a> in the low <i>Ra</i> limit and <a href="#eq4.42">equation 4.42</a> in the high <i>Ra</i> limit. The value of <i>n</i> only affects the abruptness of the transition from one equation to the other.</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:33%;"/>
+<col style="width:28%;"/>
+<col style="width:40%;"/>
+</colgroup>
+<tr>
+<td>Putting</td>
+<td style="padding-right:13em;"><p class="eq" id="eq4.44"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:msup><m:mi>R</m:mi><m:mrow><m:mn>0.45</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:-12em;">(4.44)</td>
+</tr>
+</table>
+<p class="noindent">reproduces the results given by the more accurate equations<sup>18</sup> (a separate equation for each <i>AR</i> value) reasonably well. Apart from <i>AR</i> = 5 all the results <a id="page_56" class="page">Page 56, Chapter 4 Natural convection</a>are filted, to within 13%. The highest <i>Ra</i> value tested, <i>Ra</i><sub>max</sub>, varied from 10<sup>7 </sup>at <i>AR</i> = 10 to 1.2 &#x00D7; 10<sup>4</sup> at <i>AR</i> = 10.</p>
+</section>
+<section epub:type="chapter">
+<h4 class="main3" id="ex4.2"><b><i>Example 4.2</i></b></h4>
+<p class="noindent">A 1.2 m high by 2 m wide double glazed window separates a room at 22 &#x00B0;C from the outside of the building at &#x2013;2&#x00B0; C. The gap between the glass panes is 12 mm. Estimate the rate of heat loss through the window. Ignore the resistance to heat transfer by conduction through the glass. Take all properties at 10 &#x00B0;C.</p>
+<p class="indent">As a check find the temperature drop through each pane given a thickness of 5 mm and a thermal conductivity of 0.8 W m<sup>&#x2013;1</sup> K<sup>&#x2013;1</sup>.</p>
+<p class="indent">The problem is simple enough to state but we need to reflect before we start on the solution. Since temperatures are given we can assume that the glass surfaces are constant temperature surfaces (certainly this is better than a constant heat flux assumption). We have equations for natural convection heat transfer for the two geometries involved&#x2014;vertical plate and vertical enclosure&#x2014;but they require known surface temperatures, so we will have to assume temperature values and iterate.</p>
+<p class="indent">In simple physical terms each of the four glass surfaces has a boundary layer of slow moving fluid attached to it, i.e. there are four barriers to the heat flow. If all the barriers were equal then the temperature drop across one layer would be (22 &#x2013; &#x005B;&#x2013;2&#x005D;)/4 = 6 K. So to start the iteration we assume that the temperature of the first glass pane, <i>T</i><sub>1</sub>, is 16 &#x00B0;C and that of the second, <i>T</i><sub>2</sub>, is 4 &#x00B0;C. With these guessed values of the temperatures we can calculate all the heat transfer coefficients, and combine them in series to find the heat flux.</p>
+<p class="indent">To find the <i>h</i> values for the vertical surfaces on the inside and outside of the window the calculation is much as in <a href="#ex4.1">example 4.1</a>, so it is only outlined here. At this stage the symmetry of the problem means that <i>h</i><sub>in</sub> and <i>h</i><sub>out</sub> are the same.</p>
+<p class="indent"><i>L</i> is 1.2 m. T<sub>w</sub> = 4 &#x00B0;C and <i>T<sub>&#x221E;</sub></i> = &#x2013;2 &#x00B0;C. For air at <i>T</i><sub>f</sub> = 10 &#x00B0;C, <i>&#x03C1;</i> = 1.248 kgm<sup>&#x2013;3</sup>, <i>c</i> = 1003 J kg<sup>&#x2013;1</sup> K<sup>&#x2013;1</sup>, <i>k</i> = 0.02486 W m<sup>&#x2013;1</sup> K<sup>&#x2013;1</sup> and <i>&#x03BC;</i> = 1.773 10<sup>&#x2013;5</sup> kg m<sup>&#x2013;1</sup> s<sup>&#x2013;1</sup>, <i>g</i> = 9.8 m s<sup>&#x2013;2</sup>, and <i>&#x03B2;</i> = 1/(273 &#x002B; 10) = 0.003534 K<sup>&#x2013;1</sup>.</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>R</m:mi><m:mi>a</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mrow><m:mo>[</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mi>w</m:mi></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow><m:mo>]</m:mo></m:mrow><m:msup><m:mi>L</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mi>k</m:mi><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1.274</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>9</m:mn></m:msup></m:mrow></m:math></p>
+<p class="noindent"><a href="#eq4.29">equation 4.29</a> gives <i>Nu</i> = 0.1 <i>Ra</i><sup>1/3</sup> = 108.4</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:20%;"/>
+<col style="width:80%;"/>
+</colgroup>
+<tr>
+<td>so</td>
+<td class="eq" style="padding-right:22em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>o</m:mtext><m:mtext>u</m:mtext><m:mtext>t</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mi>N</m:mi><m:mi>u</m:mi><m:mi>k</m:mi><m:mo>/</m:mo><m:mi>L</m:mi><m:mo>=</m:mo><m:mn>2.246</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>W</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>m</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>2</m:mn></m:mrow></m:msup><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>=</m:mo><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>i</m:mtext><m:mtext>n</m:mtext></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="indent">To calculate the heat transfer in the gap we use <a href="#eq4.43">equations 4.43</a> and <a href="#eq4.44">4.44</a>, noting that <i>Nu</i> and <i>Ra</i> are now calculated with the gap width, 12 mm. The aspect ratio is <i>AR</i> = 1.2/0.012 = 100.</p>
+<p class="indent">The physical property values are all as before but the temperature difference is 12 K.</p>
+<p class="indent">So <i>Ra</i> = 2548 and both <i>Ra</i> and <i>AR</i> are within the valid range of the equations, <i>n</i> works out at 7.94 and <i>Nu</i> at 1.025 giving</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>g</m:mtext><m:mtext>a</m:mtext><m:mtext>p</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mi>N</m:mi><m:mi>u</m:mi><m:mi>k</m:mi><m:mo>/</m:mo><m:mi>L</m:mi><m:mo>=</m:mo><m:mn>1.025</m:mn><m:mo>&#x00D7;</m:mo><m:mn>0.024</m:mn><m:mo>/</m:mo><m:mn>0.012</m:mn><m:mo>=</m:mo><m:mn>2.134</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>W</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>m</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>2</m:mn></m:mrow></m:msup><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:math></p>
+<p class="noindent">Using the standard <a href="Chapter02.xhtml#eq2.11">equation (2.11)</a> for the heat flux through a number of layers in series,</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>q</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>&#x0394;</m:mi><m:msub><m:mi>T</m:mi><m:mrow><m:mtext>t</m:mtext><m:mtext>o</m:mtext><m:mtext>t</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>i</m:mtext><m:mtext>n</m:mtext></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>g</m:mtext><m:mtext>a</m:mtext><m:mtext>p</m:mtext></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>o</m:mtext><m:mtext>u</m:mtext><m:mtext>t</m:mtext></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math></p>
+<table style="width:100%; margin-left:0em;margin-top:0em;margin-bottom:0em;">
+<colgroup>
+<col style="width:20%;"/>
+<col style="width:80%;"/>
+</colgroup>
+<tr>
+<td>we find</td>
+<td class="eq" style="padding-right:24em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>17.66</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>W</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>m</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent"><a id="page_57" class="page">Page 57, Chapter 4 Natural convection</a>A better value of <i>T</i><sub>1</sub> can now be calculated as 22 &#x2013;<i>q/h</i><sub>in</sub> = 14.14 &#x00B0;C. Similarly <i>T</i><sub>2</sub> = &#x2013;2 &#x002B; <i>q/h</i><sub>out</sub> = 5.86 &#x00B0;C.</p>
+<p class="indent">Repeating the calculation with these temperatures in place of the initially guessed temperatures gives</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>18.62</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>W</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>m</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:msup><m:mtext>&#x2009;</m:mtext><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>r</m:mtext><m:mtext>s</m:mtext><m:mtext>t</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>e</m:mtext><m:mtext>r</m:mtext><m:mtext>a</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>o</m:mtext><m:mtext>n</m:mtext><m:mo stretchy='false'>)</m:mo></m:mrow></m:math></p>
+<p class="indent">It is doubtful if further iteration is justified but if we do it anyway we find</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>18.5</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>W</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>m</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:msup><m:mtext>&#x2009;</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>s</m:mtext><m:mtext>e</m:mtext><m:mtext>c</m:mtext><m:mtext>o</m:mtext><m:mtext>n</m:mtext><m:mtext>d</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>e</m:mtext><m:mtext>r</m:mtext><m:mtext>a</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>o</m:mtext><m:mtext>n</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p>
+<p class="noindent">Although we have used a complicated equation to calculate the gap heat transfer we would have obtained virtually the same result if we had assumed pure conduction in the air in the gap, suggesting that the gap width could be increased to advantage.</p>
+<p class="indent">With this heat flux value we can estimate the temperature drop through the glass pane from the Fourier <a href="Chapter02.xhtml#eq2.2">equation (2.2)</a></p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:mi>T</m:mi><m:mo>=</m:mo><m:mi>q</m:mi><m:mi>&#x0394;</m:mi><m:mi>x</m:mi><m:mo>/</m:mo><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>18.5</m:mn><m:mo>&#x00D7;</m:mo><m:mn>0.005</m:mn><m:mo>/</m:mo><m:mn>0.8</m:mn><m:mo>=</m:mo><m:mn>0.1</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>K</m:mtext></m:mrow></m:math></p>
+<p class="noindent">so even allowing for the two panes the temperature drop through them is less than 1% of the total, and can be neglected.</p>
+<p class="tab-cap" id="tab4.1"><b>Table 4.1</b> Heat transfer correlations for isothermal surfaces</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">Geometry</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">Length scale for <i>Nu,Gr,Ra</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">Minimum <i>Ra</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">Maximum <i>Ra</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">Equation</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Vertical plate</p></td>
+<td style="vertical-align:top;"><p class="tab-l">Height</p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>4</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>9</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">4.26 and 4.28</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Vertical Plate</p></td>
+<td style="vertical-align:top;"><p class="tab-l">Height</p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>9</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>13</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">4.29</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Wide vertical cylinder</p></td>
+<td style="vertical-align:top;"><p class="tab-l">Height</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l">As plate<a id="rfn1" href="#fn1">*</a></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Inclined heated plate facing down<sup><a id="rfn2" href="#fn2">&#x2020;</a></sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">Length</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l">4.31</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Inclined heated plate facing up<sup><a href="#fn2">&#x2020;</a></sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">Length</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l">Laminar</p></td>
+<td style="vertical-align:top;"><p class="tab-l">4.31</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Inclined heated plate facing up<sup><a href="#fn2">&#x2020;</a></sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">Length</p></td>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l">Turbulent</p></td>
+<td style="vertical-align:top;"><p class="tab-l">4.32</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Horizontal heated plate facing up<sup><a href="#fn2">&#x2020;</a></sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">Shorter side</p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>7</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>11</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">4.34</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Horizontal heated plate facing down<sup><a href="#fn2">&#x2020;</a></sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">Shorter side</p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>6</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>11</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">4.33</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Horizontal cylinder</p></td>
+<td style="vertical-align:top;"><p class="tab-l">Diameter</p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>4</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>7</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">4.35</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Horizontal cylinder</p></td>
+<td style="vertical-align:top;"><p class="tab-l">Diameter</p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>7</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>12</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">4.36</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Horizontal Cylinder</p></td>
+<td style="vertical-align:top;"><p class="tab-l">Diameter</p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>&#x2013;6</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>9</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">4.39</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Sphere</p></td>
+<td style="vertical-align:top;"><p class="tab-l">Diameter</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">8 &#x00D7; 10<sup>8</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">4.37</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Vertical enclosure</p></td>
+<td style="vertical-align:top;"><p class="tab-l">Gap width</p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>2</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">10<sup>7</sup>to 10<sup>4</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">4.43 and 4.44</p></td>
+</tr>
+</table>
+<p class="tnote"><a id="fn1" href="#rfn1">*</a> assuming <a href="#eq4.30">equation 4.30</a> is satisfied.</p>
+<p class="tnote"><a id="fn2" href="#rfn2">&#x2020;</a> or for cooled surfaces facing in the opposite direction.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec4.5">
+<a id="page_58" class="page" style="width:70%;">Page 58, Chapter 4 Natural convection</a>
+<h2 class="main">4.5 Spacing of fins</h2>
+<p class="noindent">Often the heat transfer that is obtained by natural convection from a plane surface is insufficient to provide the required cooling. With air particularly the heat transfer coefficients are rather low, which is the condition needed to make adding fins to the surface worthwhile (as shown in <a href="Chapter02.xhtml">Chapter 2</a>). Vertical fins are more effective since they do not impede the flow in the boundary layer. To a good approximation the surface can still be regarded as a vertical plate as regards calculating the value of <i>Nu</i>.</p>
+<p class="indent">At some stage though, if the fins are too close together, there will not be room for the boundary layers typical of a flat plate to form. <a href="#eq4.21">Equation 4.21</a> (for <i>Pr</i> = 0.7) shows that the boundary layer thickness a vertical distance <i>x</i> above the lower edge of the heat transfer surface is given by:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msup><m:mi>&#x03B4;</m:mi><m:mn>4</m:mn></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>566</m:mn><m:mi>&#x03BC;</m:mi><m:mi>k</m:mi></m:mrow><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:mrow><m:mo>[</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mi>&#x221E;</m:mi></m:msub></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:mfrac><m:mi>x</m:mi></m:mrow></m:math></p>
+<p class="noindent">So if the boundary layer is to develop fully the spacing <i>s</i> between the fins must satisfy</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.45"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>s</m:mi><m:mo>&#x226B;</m:mo><m:mn>2</m:mn><m:mi>&#x03B4;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:-12em;">(4.45)</td>
+</tr>
+</table>
+<p class="indent">Accepting that the case of main interest is that of air at atmospheric pressure, and in addition assuming a film temperature of 40 &#x00B0;C and a temperature difference of 40 K, the condition on the fin spacing becomes</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.46"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>s</m:mi><m:mo>&#x226B;</m:mo><m:mn>0.042</m:mn><m:msup><m:mi>x</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:-12em;">(4.46)</td>
+</tr>
+</table>
+<p class="noindent">which is of limited use if we do not know how much greater the spacing has to be. Comparing these equations with the recommendations in <a href="#ref19">reference 19</a> we find</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.47"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>s</m:mi><m:mo>&#x2265;</m:mo><m:mn>100</m:mn><m:mi>&#x03B4;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:-12em;">(4.47)</td>
+</tr>
+</table>
+<p class="noindent">and for the assumed air conditions s &#x2265; 6 mm.</p>
+<p class="indent">In fact these can be regarded as optimum spacings since any spacing higher than the minimum will give a smaller number of fins and a reduced total heat transfer.</p>
+</section>
+<section epub:type="chapter" id="sec4.6">
+<h2 class="main">4.6 Constant heat flux surfaces</h2>
+<p class="noindent">For turbulent conditions where the heat transfer correlation takes the form</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mtext>c</m:mtext><m:mtext>o</m:mtext><m:mtext>n</m:mtext><m:mtext>s</m:mtext><m:mtext>t</m:mtext><m:mtext>e</m:mtext><m:mtext>n</m:mtext><m:mtext>t</m:mtext><m:mo>&#x00D7;</m:mo><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>3</m:mn></m:mrow></m:msup></m:mrow></m:math></p>
+<p class="noindent">the heat transfer coefficient is independent of distance along the surface. With constant heat flux, <i>q</i>, this gives a constant surface temperature, i.e. the two boundary conditions are equivalent and the equations previously suggested for turbulent conditions are all valid.</p>
+<p class="indent">Even for laminar conditions the heat transfer coefficient does not vary that much over the surface and all of the previous equations are valid as a first approximation.</p>
+<p class="indent">There is a practical difficulty in using the equations: the calculation of the Rayleigh number, <i>Ra</i>, requires a value for the temperature difference, which is unknown. A solution could be obtained simply by guessing the temperature difference and iteration. A better approach is to define a modified Rayleigh number (even here a guessed film temperature, usually half way up the surface, is required for property calculations).<a id="page_59" class="page">Page 59, Chapter 4 Natural convection</a></p>
+<p class="indent">The isothermal heat transfer correlations can generally be written</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.48"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mi>C</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mi>n</m:mi></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:-12em;">(4.48)</td>
+</tr>
+</table>
+<p class="noindent">where <i>C</i> is a constant and <i>n</i> is typically <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> for laminar conditions and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> for turbulent. In terms of the definitions of <i>Nu</i> and <i>Ra</i> this becomes</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>L</m:mi></m:mrow><m:mi>k</m:mi></m:mfrac><m:mo>=</m:mo><m:mi>C</m:mi><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:msup><m:mi>L</m:mi><m:mn>3</m:mn></m:msup><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>k</m:mi><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>h</m:mi></m:mfrac></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:math></p>
+<p class="noindent">where <i>&#x2206;T</i> has been replaced by <i>q/h</i>. Rearranging this to make <i>Nu</i> the subject gives</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>L</m:mi></m:mrow><m:mi>k</m:mi></m:mfrac><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>L</m:mi></m:mrow><m:mi>k</m:mi></m:mfrac></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup><m:mo>=</m:mo><m:mi>C</m:mi><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:msup><m:mi>L</m:mi><m:mn>3</m:mn></m:msup><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>k</m:mi><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mfrac><m:mi>L</m:mi><m:mi>k</m:mi></m:mfrac></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:math></p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:20%;"/>
+<col style="width:80%;"/>
+</colgroup>
+<tr>
+<td>or</td>
+<td style="padding-right:23em;"><p class="eq"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:msup><m:mi>u</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mi>C</m:mi><m:msup><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:msup><m:mi>L</m:mi><m:mn>4</m:mn></m:msup><m:mi>q</m:mi></m:mrow><m:mrow><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:math></p></td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:23%;"/>
+<col style="width:24%;"/>
+<col style="width:53%;"/>
+</colgroup>
+<tr>
+<td>i.e.</td>
+<td style="padding-right:0em;"><p class="eq" id="eq4.49"><i>Nu</i> = <i>C</i><sup>1/(<i>n</i>+1)</sup> <i>Ra</i><sup>* <i>n</i>/(<i>n</i>+1)</sup></p></td>
+<td style="padding-top:-12em;padding-left:9.0em;">(4.49)</td>
+</tr>
+</table>
+<p class="noindent">where the modified Rayleigh number is defined as</p>
+<table style="width:100%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq4.50"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>R</m:mi><m:msup><m:mi>a</m:mi><m:mo>*</m:mo></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x03C1;</m:mi><m:mn>2</m:mn></m:msup><m:mi>c</m:mi><m:mi>g</m:mi><m:mi>&#x03B2;</m:mi><m:msup><m:mi>L</m:mi><m:mn>4</m:mn></m:msup><m:mi>q</m:mi></m:mrow><m:mrow><m:msup><m:mi>k</m:mi><m:mn>2</m:mn></m:msup><m:mi>&#x03BC;</m:mi></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:-12em;">(4.50)</td>
+</tr>
+</table>
+<p class="noindent">As an example we can apply <a href="#eq4.49">equation 4.49</a> to the equations previously given for isothermal vertical plates. For laminar conditions <a href="#eq4.26">equation 4.26</a> transforms to</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0.58</m:mn><m:mi>R</m:mi><m:mi>a</m:mi><m:msup><m:mo>*</m:mo><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>5</m:mn></m:mrow></m:msup></m:mrow></m:math></p>
+<p class="nnoindent">and <a href="#eq4.29">equation 4.29</a> for a turbulent boundary layer transforms to</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0.18</m:mn><m:mi>R</m:mi><m:mi>a</m:mi><m:msup><m:mo>*</m:mo><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:math></p>
+<p class="indent">These two equations are within 10% or so of equations that have been specifically recommended for constant heat flux conditions (<a href="#ref20">References 20</a> and <a href="#ref21">21</a> respectively). For other geometries <a href="#eq4.49">equation 4.49</a> can equally be used to transform an isothermal equation represented by <a href="#eq4.48">equation 4.48</a>.</p>
+<h3 class="main2" id="ch4-ref">References</h3>
+<p class="refer" id="ref1">1.<span class="space">&#160;</span>H. B. Squire in <i>Modern Developments in Fluid Dynamics</i><b>, </b><i>Vol</i><b> </b>2, ed. S. Goldstein, Oxford, 1938.</p>
+<p class="refer" id="ref2">2.<span class="space">&#160;</span>O. A. Saunders, Natural convection in liquids, <i>Proc. Roy. Soc</i>. A, <b>172</b>, 55&#x2013;71, 1939; also <b>157</b>, 278&#x2013;291, 1936.</p>
+<p class="refer" id="ref3">3.<span class="space">&#160;</span>H. Schlichting, <i>Boundary layer theory</i><b>, </b>(7th edn). McGraw-Hill, 1979. (reissued 1987).</p>
+<p class="refer" id="ref4">4.<span class="space">&#160;</span>A. Bejan and J. L. Lage, The Prandtl number effect on the transition in natural convection on a vertical surface. <i>Trans. ASME J. Heat Transfer</i> <b>112</b>, 787&#x2013;790, 1990.</p>
+<p class="refer" id="ref5">5.<span class="space">&#160;</span>V. L. Vitharana and P. S. Lykoudis, Criteria for predicting the transition to turbulence., <i>Trans. ASME J. Heat Transfer</i> <b>116</b>, 633&#x2013;638, 1994.</p>
+<p class="refer" id="ref6">6.<span class="space">&#160;</span>F. J. Bayley, An analysis of turbulent natural convection heats transfer. <i>Proc. I. Mech</i>. E. <b>169</b>, 361&#x2013;368, 1955.</p>
+<p class="refer" id="ref7">7.<span class="space">&#160;</span>K. O. Pasametoglu, Turbulent natural convection to gases at high wall temperature. <i>Trans. ASME J. Heat Transfer</i> <b>116</b> 246&#x2013;247, 1994.<a id="page_60" class="page">Page 60, Chapter 4 Natural convection</a></p>
+<p class="refer" id="ref8">8.<span class="space">&#160;</span>S. W. Churchill and H. H. S. Chu, Correlating equations for laminar and turbulent free convection from a vertical plate, <i>Int. J. Heat Mass Transfer</i>, <b>18</b>, 1323&#x2013;1331, 1975.</p>
+<p class="refer" id="ref9">9.<span class="space">&#160;</span>T. Fujii and H. Imura, Natural convection heat transfer from a plate with arbitrary inclination. <i>Int. J. Heat Mass Transfer</i> <b>15</b>, 755&#x2013;767, 1972.</p>
+<p class="refer1" id="ref10">10.<span class="space">&#160;</span>M. Al-Arabi and B. Sakr, Natural convection heat transfer from inclined isothermal plates. <i>Int. J. Heat Mass Transfer</i>, <b>31</b>, 559&#x2013;566, 1988.</p>
+<p class="refer1" id="ref11">11.<span class="space">&#160;</span>V. T. Morgan, The overall convective heat transfer from smooth circular cylinders. <i>Advances in Heat Transfer</i>, <b>11</b>, 199&#x2013;264, 1975.</p>
+<p class="refer1" id="ref12">12.<span class="space">&#160;</span>S. B. Clemes <i>et al</i>, Natural convection heat transfer from long horizontal isothermal cylinders. <i>Trans ASME J. Heat Transfer</i>, <b>116</b>, 96&#x2013;104, 1994.</p>
+<p class="refer1" id="ref13">13.<span class="space">&#160;</span>T. Yuge, Experiments on heat transfer from spheres including natural and forced convection, <i>ASME J. Heat Transfer</i>, <b>82</b>, 214&#x2013;220, 1960.</p>
+<p class="refer1" id="ref14">14.<span class="space">&#160;</span>W. S. Amato and C. Tien, Free convection heat transfer from isothermal spheres in water. <i>Int. J. Heat Mass Transfer</i>, <b>15</b>, 327&#x2013;339, 1972.</p>
+<p class="refer1" id="ref15">15.<span class="space">&#160;</span>J. H. Lienhard, On the commonality of equations for natural convection from immersed bodies. <i>Int. J. Heat Mass Transfer</i>, <b>16</b>, 2121&#x2013;2123,1973.</p>
+<p class="refer1" id="ref16">16.<span class="space">&#160;</span>E. M. Sparrow and A. J. Stretton, Natural convection from variously orientated cubes and other bodies of unity aspect ratios. <i>Int. J. Heat Mass Transfer</i>, <b>28</b>, 741&#x2013;752, 1985.</p>
+<p class="refer1" id="ref17">17.<span class="space">&#160;</span>S. W. Churchill and H. H. S. Chu, Correlating equations for laminar and turbulent free convection from a horizontal cylinder. <i>Int. J. Heat Mass Transfer</i>, <b>18</b>, 1049&#x2013;1053, 1975.</p>
+<p class="refer1" id="ref18">18.<span class="space">&#160;</span>S. M. ElSherbiny, G. D. Raithby, and K. G. T. Hollands, Heat transfer by natural convection across vertical and inclined air layers. <i>Trans. ASME J. Heat Transfer</i>, <b>104</b>, 96&#x2013;102, 1982.</p>
+<p class="refer1" id="ref19">19.<span class="space">&#160;</span>G. N. Ellison, <i>Thermal computations for electronic equipment</i>. van Nostrand Reinhold, 1984.</p>
+<p class="refer1" id="ref20">20.<span class="space">&#160;</span>T. Fujii and M. Fujii, The dependence of local Nusselt number along a vertical surface with uniform heat flux. <i>Int. J. Heat Mass Transfer</i>, <b>19</b>, 121&#x2013;122, 1976.</p>
+<p class="refer1" id="ref21">21.<span class="space">&#160;</span>G. C. Vliet and C. K. Liu, An experimental study of turbulent natural convection boundary layers. <i>Trans. ASME J. Heat Transfer</i>, <b>91</b>, 517&#x2013;524, 1969.</p>
+<h3 class="main2" id="ch4-prob">Problems</h3>
+<p class="noindent" id="pro4.1"><b>4.1.</b> Aim high vertical surface is maintained at 40 &#x00B0;C. It is cooled by air at 20 &#x00B0;C. At what point does the boundary layer become turbulent? How thick is the boundary layer at this point? (Assume that the large Prandtl number solution is valid.)<span class="nor">&#x005B;0.81 m from base; 18 mm&#x005D;</span></p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent" id="pro4.2"><b>4.2.</b> It has been suggested that the variation in temperature <i>T</i> with distance <i>y</i> from the wall in laminar boundary layer, thickness <i>&#x03B4;</i>, can be fitted to a polynomial</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>T</m:mi><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mi>y</m:mi><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></p>
+<p class="noindent">Use the boundary conditions: <i>T</i> = <i>T</i><sub>w</sub> at <i>y</i> = 0; <i>T</i> = <i>T</i><sub>&#x221E;</sub> at <i>y</i> = <i>&#x03B4;</i>; and a smooth merging of temperature at <i>y</i> = <i>&#x03B4;</i>, to find an expression for <i>T</i>.<a id="page_61" class="page">Page 61, Chapter 4 Natural convection</a></p>
+<p class="noindent" id="pro4.3"><b>4.3.</b> Since the properties of air do not vary much over a limited range of temperature it is convenient to have an approximate equation where all the property values have already been worked out and none appear in the equation. The equation is to be valid for atmospheric pressure and &#x2013;10 &#x2264; <i>T</i><sub>&#x221E;</sub> &#x2264; 30 &#x00B0;C and 10 &#x2264; (<i>T<sub>w</sub></i> &#x2013; <i>T<sub>&#x221E;</sub></i>) &#x2264; 90 K.</p>
+<p class="indent">For a film temperature of 300 K show that <i>Nu</i> = <i>C Ra</i><sup>1/4</sup> converts to a prediction for air of</p>
+<table style="width:70%; margin-left:0em;margin-top:0.5em;margin-bottom:0.5em;">
+<colgroup>
+<col style="width:60%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td><p class="eq"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>2.58</m:mn><m:mtext>&#x2009;</m:mtext><m:mi>C</m:mi><m:mtext>&#x2009;</m:mtext><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x0394;</m:mi><m:mi>T</m:mi><m:mo>/</m:mo><m:mi>L</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:msup><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>W</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>m</m:mtext><m:mrow><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:0em;text-align:right">(A)</td>
+</tr>
+</table>
+<p class="indent">Is this equation consistent with a recommended equation for a horizontal cylinder of <i>h</i> = 1.32(&#x0394;<i>T</i>/<i>L</i>,)<sup>1/4</sup>?<span class="nor">&#x005B;A is 6% low&#x005D;</span></p>
+<p class="indent">From the point of view of property variation, what is the error in equation A for a film temperature of 325 K?<span class="nor">&#x005B;2%&#x005D;</span></p>
+<p class="noindent">&#160;</p>
+<p class="noindent" id="pro4.4"><b>4.4.</b> One side of a 0.5 m high by 3 m wide vertical surface at 100 &#x00B0;C is exposed to still air at 0 &#x00B0;C and 1 arm. What is the rate of heat loss due to natural convection?<span class="nor">&#x005B;723 W&#x005D;</span></p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent" id="pro4.5"><b>4.5.</b> A 2 kW horizontal immersion heater is to be used to maintain the temperature of a large tank of water at 60 &#x00B0;C. Boiling of the water on the surface of the heater is to be avoided so a maximum surface temperature of 90 &#x00B0;C is specified. If the diameter of the heater is 50 mm what length is required? The volume expansion coefficient of water is 6.21 &#x00D7; 10<sup>&#x2013;4</sup> K<sup>&#x2013;1</sup>.<span class="nor">&#x005B;356 mm&#x005D;</span></p>
+<p class="noindent">&#160;</p>
+<p class="noindent" id="pro4.6"><b>4.6.</b> A 100 mm outside diameter steam pipe has a surface temperature of 140 &#x00B0;C. Calculate the rate of heat loss over a 10 m horizontal length by natural convection if the ambient air temperature is 14 &#x00B0;C.<span class="nor">&#x005B;2.80 kW&#x005D;</span></p>
+<p class="noindent">&#160;</p>
+<p class="noindent" id="pro4.7"><b>4.7.</b> Part of a personal computer system is essentially a box 40 cm wide by 50 cm deep by 10 cm high. 25 W of heat are generated within the box. Because of the possibility the box could be surrounded on the sides by other equipment it is assumed that heat can only be lost from the top surface. Calculate the temperature of the box if the surrounding air is at 20 &#x00B0;C.<span class="nor">&#x005B;46 &#x00B0;C&#x005D;</span></p>
+<p class="noindent">&#160;</p>
+<p class="noindent" id="pro4.8"><b>4.8.</b> It is often stated that there is an optimum spacing for double glazing, i.e. a certain gap width gives a minimum heat loss. Is this true of the equations in this chapter?</p>
+<p class="indent">A 1.4 m high double-glazed window separates a room at 20 &#x00B0;C from the outside of the building at 0 &#x00B0;C. The gap between the panes is 15 mm. Estimate the heat flux through the window. Ignore the resistance to the heat transfer by conduction through the glass. Take all properties at 10 &#x00B0;C.<span class="nor">&#x005B;13.8 W m<sup>&#x2013;2</sup>&#x005D;</span></p>
+</section>
+</section>
+</body>
+</html>

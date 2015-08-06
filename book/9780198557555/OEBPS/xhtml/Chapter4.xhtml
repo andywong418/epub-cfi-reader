@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>4 Nuclear magnetic resonance spectroscopy: the basics</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<section epub:type="chapter" id="ch4">
+<a id="page_33" class="page" style="width:70%;">Page 33, Nuclear magnetic resonance spectroscopy: the basics</a>
+<h1 class="main">4<span class="space">&#160;</span>Nuclear magnetic resonance<br/>spectroscopy: the basics</h1>
+<p class="noindent">&#160;</p>
+<p class="noindent">There can be no doubt that nuclear magnetic resonance (NMR) spectroscopy is now the most powerful and versatile of all analytical techniques used routinely by organic chemists. It is now fifty years since the phenomenon was first observed experimentally, and, within only five years of this, it was being used to address chemical problems. The usefulness of this technique in chemistry can be attributed largely to the very detailed information that can be obtained; spectroscopic features correlate with individual atoms within a molecule, rather than groups of atoms as in UV or IR spectroscopy. Furthermore, these features relate, in a fairly straightforward and direct manner, to the chemist&#8217;s representation of chemical structure and bonding, as we shall discover in this chapter, and it is now routinely possible to determine the structures of small- to- medium- sized organic molecules (with a molecular mass of less than approximately 1000 daltons) in solution. Although NMR spectroscopy of solids is a well established field, we shall consider only solution spectroscopy as it is in this form that NMR finds greatest use in organic chemistry.</p>
+<section epub:type="chapter" id="ch4.1">
+<h2 class="h2">4.1<span class="space">&#160;</span>The physical background to NMR</h2>
+<p class="noindent">The phenomenon of nuclear magnetic resonance occurs because the nuclei of certain atoms possess <b><i>spin</i>.</b> The spin is characterized by the nuclear spin quantum number, <i>I</i>, which may take integer and half-integer values (<i>I</i> = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math>, 1, <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>2</mn></mfrac></math>, 2 and so on). From the chemist&#8217;s point of view, it is generally the nuclei that have <i>I</i> = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> that are of most interest because those with <i>I</i> greater than <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> turn out to have unfavourable properties with regard to the observation of their spectra. Nuclei with zero spin (<i>I</i> = 0) are not amenable to NMR observation, although most elements have at least one isotope that does possess nuclear spin. In organic chemistry, the most commonly studied nucleus is that of <sup>1</sup>H, followed by <sup>13</sup>C. You may find it surprising that the carbon nucleus is <i>not</i> the most popular one for observation, and this is because the most abundant carbon isotope, <sup>12</sup>C, has zero spin (as do all nuclei with atomic and mass numbers both even), so we are generally forced to observe the low natural abundance (1.1%) of <sup>13</sup>C and face problems with one of the major limitations in NMR, that of sensitivity. The <sup>1</sup>H nucleus, however, has almost 100% natural abundance and is one of the most sensitive nuclei to observe by NMR. Other commonly encountered nuclei are given in <a href="#tab4.1">Table 4.1</a>, together with some of their relevant parameters, which are discussed below.</p>
+<h3 class="h3">Nuclei in magnetic fields</h3>
+<p class="noindent">Some nuclei may possess spin and therefore have angular momentum, and <a id="page_34" class="page">Page 34, Nuclear magnetic resonance spectroscopy: the basics</a>all nuclei have charge. The motion of this charge, that is, the spinning, means that these nuclei have associated with them a weak magnetic field (they possess a <b><i>magnetic moment</i></b>, &#181;); indeed the nuclei can be considered to act as small bar magnets (<a href="#fig4.1">Fig. 4.1</a>). When these nuclei are placed in an external magnetic field (designated <i>B<sub>0</sub>)</i>, they experience a torque which forces them into precession about the axis of the external field (<a href="#fig4.2">Fig. 4.2</a>). This motion is referred to as <b><i>Larmor precession</i></b> and it occurs at the <b><i>Larmor frequency</i></b>, v, which is directly proportional to the strength of the applied magnetic field. The precession is analogous to the motion of a spinning gyroscope in the Earth&#8217;s gravitational field; the central wheel of the gyroscope spins about its own axis whilst this axis, in turn, precesses about the gravitational field. The Larmor frequency also depends on the <b><i>magnetogyric ratio</i></b>, &#947;, of the nucleus (still often referred to as the <b><i>gyromagnetic ratio</i></b>, although this is not S.I. terminology). This is defined as</p>
+<figure id="tab4.1" style="width:70%;">
+<p class="tcaption"><b>Table 4.1</b> Properties of NMR active isotopes of commonly encountered nuclides. Resonance frequencies are for a field strength of 11.74 tesla and the relative sensitivity includes a term for the intrinsic sensitivity of a nuclide and its natural abundance.</p>
+<img src="../images/he_9780198557555_graphic_0049.jpg" alt="images"/>
+</figure>
+
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>&#x03B3;</mtext><mo>=</mo><mfrac><mrow><mi>m</mi><mi>a</mi><mi>g</mi><mi>n</mi><mi>e</mi><mi>t</mi><mi>i</mi><mi>c</mi><mtext>&#x2009;</mtext><mi>m</mi><mi>o</mi><mi>m</mi><mi>e</mi><mi>n</mi><mi>t</mi></mrow><mrow><mi>a</mi><mi>n</mi><mi>g</mi><mi>u</mi><mi>l</mi><mi>a</mi><mi>r</mi><mtext>&#x2009;</mtext><mi>m</mi><mi>o</mi><mi>m</mi><mi>e</mi><mi>n</mi><mi>t</mi><mi>u</mi><mi>m</mi></mrow></mfrac><mtext>&#x2009;</mtext><mtext>rad</mtext><mtext>&#x2009;</mtext><msup><mtext>T</mtext><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup><mtext>&#x2009;</mtext><msup><mtext>S</mtext><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup></math></p>
+<aside class="abc" style="margin-top:-35em;" epub:type="sidebar">
+<figure id="fig4.1">
+<img src="../images/he_9780198557555_graphic_0050.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.1</b> Spin&#8211;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> nuclei may be considered to act as microscopic bar magnets.</p></figcaption>
+</figure>
+</aside>
+<p class="noindent">This value may be considered to be an indication of how &#8216;strongly magnetic&#8217; a nucleus is and its value is constant for a given nuclide (<sup>1</sup>H, <sup>2</sup>H, <sup>13</sup>C etc., see <a href="#tab4.1">Table 4.1</a>). The Larmor frequency is then given by</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>&#x03BD;</mtext><mtext>&#x2009;</mtext><mtext>=</mtext><mtext>&#x2009;</mtext><mfrac><mrow><mtext>&#x03B3;</mtext><msub><mi>B</mi><mn>0</mn></msub></mrow><mrow><mn>2</mn><mtext>&#x03C0;</mtext></mrow></mfrac><mtext>Hz</mtext></mrow></math></p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure id="fig4.2">
+<img src="../images/he_9780198557555_graphic_0051.jpg" alt="images"/>
+<figcaption style="width:120%;">
+<p class="noindent2"><b>Fig. 4.2</b> Spinning nuclei precess in an applied magnetic field, <i>B</i><sub>0</sub> at their characteristic Larmor frequencies.</p></figcaption>
+</figure>
+<p class="noindent2" style="width:120%;">Spectrometers are usually referred to by the frequency at which protons would resonate if placed in the instrument, for example, we may speak of a&#8216;200 MHz spectrometer&#8217;or a&#8216;500 MHz spectrometer&#8217;.</p>
+</aside>
+<p class="noindent">Thus, the nuclei possess a magnetic moment which is acted upon by the external field. Nuclei can take up 2<i>I</i>+ 1 possible orientations in this field so those with <i>I</i> = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> may align themselves in two ways; parallel to the field or anti-parallel to it, the former being of (slightly) lower energy. There are only these discrete orientations possible because the energy levels involved are <b><i>quantized</i></b>, with the lower energy state generally being designated &#945;, the higher &#946;. In common with UV and IR spectroscopy, the lower energy &#945; state may be excited to the higher level by the application of electromagnetic radiation oscillating at the appropriate frequency and therefore induce <b><i>nuclear magnetic resonance</i></b> (<a href="#fig4.3">Fig. 4.3</a>). Likewise, the higher energy &#946; state may lose its excess energy by a suitable means (known as relaxation, see <a id="page_35" class="page">Page 35, Nuclear magnetic resonance spectroscopy: the basics</a><a href="Chapter5.xhtml#ch5.2">Section 5.2</a>) and fall to the &#945; state; clearly in both cases this simply corresponds to a nuclear spin inverting its orientation with respect to the field. The frequencies required to excite these transitions correspond to the precessional frequencies of the nuclei, that is, their Larmor frequencies. With currently available magnetic fields (1.4 to 17.5 tesla) these fall in the range 60-750 MHz, which is within the radiofrequency region of the spectrum, the energies involved being given by</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x0394;</mi><mi>E</mi><mtext>&#160;=&#160;</mtext><mi>h</mi><mi>&#x03BD;</mi><mtext>&#x2009;</mtext><mtext>=</mtext><mfrac><mrow><mi>h</mi><mtext>&#x03B3;</mtext><msub><mi>B</mi><mn>0</mn></msub></mrow><mrow><mn>2</mn><mtext>&#x03C0;</mtext></mrow></mfrac></math></p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="noindent2" style="width:100%;"><i>h</i> = Planck&#8217;s constant<br/><i>&#957;</i> = Larmor frequency<br/><i>B</i><sub>0</sub> = applied field strength<br/><i>&#947;</i> = magnetogyric ratio</p>
+</aside>
+<p class="noindent">The need for relatively low frequency radiation indicates the energies between the &#945; and &#946; states to be very small. When we are recording a spectrum, we are actually sampling the population differences between these energy states, the differences at equilibrium being defined by the Boltzmann equation</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><msub><mi>N</mi><mtext>&#x03B1;</mtext></msub></mrow><mrow><msub><mi>N</mi><mtext>&#x03B2;</mtext></msub></mrow></mfrac><mo>=</mo><msup><mtext>e</mtext><mrow><mrow><mrow><mi>&#x0394;</mi><mi>E</mi></mrow><mo>/</mo><mrow><mi>R</mi><mi>T</mi></mrow></mrow></mrow></msup></math></p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="noindent2" style="width:100%;"><i>N</i> = number of nuclei in spin state<br/>&#916;<i>E</i> = energy of transition<br/><i>R</i> = gas constant<br/><i>T</i> = absolute temperature</p>
+</aside>
+<p class="noindent">In NMR spectroscopy, these population differences are only in the order of 1 part in 10<sup>4</sup> even with the strongest available field strengths, which means NMR is a relatively insensitive technique and sample size requirements are high; it is not uncommon for sample quantities to be within the milligram region, some orders of magnitude greater than those in optical spectroscopy.</p>
+<p class="indent">Within a molecule the energy levels associated with different nuclear environments will vary, as we shall see shortly, and so produce spectra displaying various resonance frequencies. To obtain a spectrum containing all these frequencies within a given sample one might suppose that a sensible approach would be to follow the procedures adopted in optical spectroscopy. Thus, one would place the sample in a magnetic field, irradiate it with a radiofrequency and scan through either a radio-frequency range or a magnetic field range, recording the frequencies at which resonance occurred. This was indeed how earlier spectrometers (built prior to approximately 1980) would operate and the scheme is known as <i>continuous wave</i> NMR spectroscopy operating in either frequency-sweep or field-sweep mode. However, this mode of operation is inferior to the modern pulse-Fourier transform (FT) approach described in <a href="Chapter1.xhtml#ch1">Chapters 1</a> and <a href="Chapter5.xhtml#ch5">5</a> and, in time, will become redundant. We shall consider FT NMR methodology only.</p>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<figure id="fig4.3">
+<img src="../images/he_9780198557555_graphic_0052.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 4.3</b> Spin-<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> nuclei may take up two orientations with respect to the applied field; parallel (&#945;) orantiparallel (&#946;) to it. <b><i>Nuclear magnetic resonance</i></b> occurs when radiation of the appropriate frequency is applied.</figcaption>
+</figure>
+</aside>
+<h3 class="h3">Instrumentation</h3>
+<aside class="abc" style="margin-top:2em;" epub:type="sidebar">
+<p class="noindent2" style="width:120%;">The detected frequencies, after subtraction of a <b><i>reference</i></b> or <b><i>carrier frequency</i>,</b> are in the audio range, so it is also possible to <i>hear</i> NMR spectra with suitable hardware,- a loudspeaker!</p>
+</aside>
+<p class="noindent">A schematic representation of a modern FT NMR spectrometer is presented in <a href="#fig4.4">Fig. 4.4</a>. The sample solution is held in a cylindrical glass tube and is placed in the magnet. The tube sits within a coil of wire (essentially a radiofrequency antenna) which is tuned to the nuclear frequency of interest, in much the same way that one would tune a radio receiver to the desired radio station. The pulse of radiofrequency radiation, typically a few |is in duration, from a suitable transmitter is delivered <i>via</i> this coil, which also receives the emitted frequencies from the stimulated sample in the form of an oscillating voltage (see <a href="Chapter5.xhtml#ch5.1">Section 5.1</a>). A reference frequency, that of the original pulse, is subtracted to reveal <i>differences</i> between the stimulating and detected frequencies, which are up to a few tens of <a id="page_36" class="page">Page 36, Nuclear magnetic resonance spectroscopy: the basics</a>kilohertz; in the audiofrequency range. These signals may then be converted to digital values <i>via</i> an analogue-to-digital converter (ADC) and then stored in the computer for signal averaging and analysis.</p>
+<figure id="fig4.4">
+<img src="../images/he_9780198557555_graphic_0053.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 4.4</b> Schematic representation of a Fourier transform NMR spectrometer. Abbreviations are RF, radiofrequency, AF, audiofrequency, and ADC, analogue-to-digital converter.</figcaption>
+</figure>
+
+<p class="indent">It is not uncommon to wish to resolve frequency differences of less than 1 Hz, requiring the magnetic field to be uniform and stable to 1 part in 10<sup>9</sup>. This remarkable feat is achieved by the use of superconducting solenoid magnets, which are very stable, and by spinning the sample whilst in the magnet, which averages away small field inhomogeneities that may remain. The <b><i>field-frequency lock</i></b> system monitors the deuterium resonance of the solvent and corrects any drift in magnetic field that may occur. This is one of two reasons for using <b><i>deuterated</i></b> solvents for NMR spectroscopy. The second is the simple fact that because there is usually far more solvent than solute in the NMR tube, the signals of interest would be swamped by those of a <i>protonated</i> solvent, whereas deuterium signals will not be apparent in a proton spectrum. Deuterated chloroform is the most widely used solvent, and the properties of this and other common solvents are presented in <a href="#tab4.2">Table 4.2</a>.</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<p class="noindent2" style="width:120%;">High quality sample preparation is essential for high quality NMR spectra. This should not come as a surprise when one considers the need to maintain a magnetic field throughout the sample that is homogeneous to 1 part in 10<sup>9</sup>! Thus, samples must contain no solid particles <b><i>at all</i></b> as these will distort local magnetic fields, sample tubes must not be scratched or cracked and must be kept clean and dry. Do not use chromic acid for cleaning tubes as residual traces will have detrimental effects on spectra (broad lines result from paramagnetic chromium, see <a href="Chapter5.xhtml#ch5.2">Section 5.2</a>). Maximize sample concentration by using the minimum solvent volume that is consistent with your spectrometer configuration.</p>
+</aside>
+<h3 class="h3">Features of the <sup>1</sup>H spectrum</h3>
+<p class="noindent">The <sup>1</sup>H NMR spectrum of ethyl <i>p</i>-tolylacetate is shown in <a href="#fig4.5">Fig. 4.5</a>. It comprises essentially three features:</p>
+<ol class="none">
+<li style="width:65%;">1.&#160;Proton resonances are distributed along the frequency axis. Each proton sits in a distinct chemical environment which is characterized by its <b><i>chemical shift</i>, &#948;</b> (the units of which will be described below).</li>
+<li style="width:65%;">2.&#160;Different peaks in the spectrum can be seen to be present with differing intensities, which relate to the numbers of protons giving rise to the signal.</li>
+<li style="width:65%;">3.&#160;Some resonances can be seen to possess fine structure, due to the proton interacting with neighbouring atoms. The degree of interaction, or coupling, is characterised by a <b><i>coupling constant, J</i>,</b> which has units of hertz (Hz).</li>
+</ol>
+<p class="noindent">These three features characterize <i>all</i> one-dimensional NMR spectra and<a id="page_37" class="page">Page 37, Nuclear magnetic resonance spectroscopy: the basics</a> an understanding of these and how they are influenced provides the basis for the interpretation of any spectrum, and each is considered in the following sections. The spectrum is referred to as being one-dimensional as it possesses one <b><i>frequency</i></b> axis. More advanced techniques may utilise two frequency axes and are therefore referred to as two-dimensional experiments which are introduced in the following chapter (<a href="Chapter5.xhtml#ch5.5">Section 5.5</a>).</p>
+<figure style="width:100%" id="fig4.5">
+<img src="../images/he_9780198557555_graphic_0054.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption><b>Fig. 4.5</b> The<sup>1</sup>H spectrum of ethyl <i>p</i>-tolylacetate.</figcaption>
+</figure>
+</section>
+<section epub:type="chapter" id="ch4.2">
+<h2 class="h2">4.2<span class="space">&#160;</span>Chemical shifts</h2>
+
+<figure id="tab4.2">
+<p class="tcaption"><b>Table 4.2</b> Properties of the common deuterated solvents. Proton shifts, <i>&#948;</i><sub>H</sub>, and carbon shifts <i>&#948;</i><sub>C</sub>, are quoted relative to tetramethylsilane,TMS (proton shifts are those of the residual partially <b><i>protonated</i></b> solvent).The proton shifts of residual HOD (<i>&#948;</i><sub>(HOD)</sub>) vary depending on solution conditions.</p>
+<img src="../images/he_9780198557555_graphic_0055.jpg" alt="images"/>
+</figure>
+<p class="noindent">When a nucleus is placed in an external magnetic field, it precesses at a rate determined by the magnetogyric ratio of the nucleus and the strength of the magnetic field. The nucleus is also surrounded by an electron cloud which will also be circulating in the magnetic field, about the nucleus. The <a id="page_38" class="page">Page 38, Nuclear magnetic resonance spectroscopy: the basics</a>circulating electrons generate magnetic fields of their own, which act in opposition to the applied external field and will influence the resultant field at the nucleus. The nucleus is said to be <b><i>shielded</i></b> to some extent from the applied field. The small change experienced at the nucleus will produce a slight change in the rate at which it precesses, and hence the frequency required to stimulate it into resonance. Differences in the chemical environment modify the electron density and distribution about nuclei. The corresponding different degrees of shielding can therefore be expected to produce resonances at differing frequencies. These differences are what constitute the chemical shift differences we observe and this is one of the means by which NMR spectra may be related to chemical structure.</p>
+<p class="indent">The effects produced by the local, internal fields, are considerably less than that imposed by the external field. The latter produces resonance frequencies at many hundreds of megahertz, whereas the former produce differences which are only of the order of a few kilohertz. From the chemist&#8217;s point of view we are interested in the frequency differences between nuclei in differing chemical environments, and so it turns out to be convenient to define the frequency scale as a <b><i>relative</i></b> scale. The <b><i>chemical shift</i></b>, &#948;, for any resonance is defined as:</p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<p class="noindent2" style="width:100%;">The &#948; scale has not always been used for defining chemical shifts, and in older literature you may encounter the &#964; scale, although this should never be seen in modern publications. For proton NMR the relationship is &#948; = 10&#8211;&#964;, so values may be readily altered.<br/><br/>&#957; = Frequency of the resonance<br/>&#957;<sub>ref</sub> = Frequency of the resonance of a reference compound</p>
+</aside>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>&#x03B4;</mtext><mo>=</mo><mfrac><mrow><mtext>&#x03BD;</mtext><mtext>&#x2009;</mtext><mo>&#x2212;</mo><msub><mtext>&#x03BD;</mtext><mrow><mtext>ref</mtext></mrow></msub></mrow><mrow><msub><mtext>&#x03BD;</mtext><mrow><mtext>ref</mtext></mrow></msub></mrow></mfrac></math></p>
+<p class="noindent">Strictly, this is a dimensionless property, but as the result is of the order of 10<sup>&#8722;6</sup>, the units of parts per million (ppm) are used so as to make this value implicit. The reference compound for both <sup>1</sup>H and <sup>13</sup>C NMR is tetramethylsilane (TMS) whose chemical shift is, therefore, defined as 0.0 ppm. This is a readily available, inert, and volatile liquid which is soluble in the majority of solvents and displays a single resonance whose shift falls conveniently in a region away from the vast majority of commonly encountered resonances. Aside from making the numbers involved convenient to handle, the use of the relative scale has a further benefit; <b><i>the chemical shift of any resonance, in ppm, is independent of the strength of the applied magnetic field</i></b> despite the fact that the frequency differences in Hz between the resonances will alter in direct proportion to the field. This means that any chemical shift assignments made on one spectrometer are equally applicable to the spectra obtained at any field strength. <a href="#fig4.6">Fig. 4.6</a> displays <sup>1</sup>H spectra obtained at a variety of field strengths. The chemical shifts for the resonances do not alter with increasing field, although their actual frequency differences do increase, that is, <b><i>greater peak dispersion is obtained at higher field strengths</i>.</b></p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure id="fig4.6">
+<img src="../images/he_9780198557555_graphic_0056.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="width:110%;"><p class="noindent2"><b>Fig. 4.6</b> Partial <sup>1</sup>H spectra recorded at frequencies of (a) 90 (b) 200 and (c) 500 MHz.</p></figcaption>
+</figure>
+</aside>
+<p class="indent">Resonances at higher frequency are often referred to as being <b><i>deshielded</i></b> or shifted to low-field whereas those at lower frequencies are described as <b><i>shielded</i></b> or shifted to high-field (<a href="#fig4.7">Fig. 4.7</a>). The references to high- and low-field arise from terminology used in the continuous wave era although they are still in widespread use.</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<figure id="fig4.7">
+<img src="../images/he_9780198557555_graphic_0057.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="width:110%;"><p class="noindent2"><b>Fig. 4.7</b> Nomenclature used when describing relative chemical shifts.</p></figcaption>
+</figure>
+</aside>
+<p class="indent">Now that we have seen what constitutes the chemical shift, we shall go on to see what influences this property and how this relates to chemical structures. Primarily, <b><i>intramolecular effects</i></b> result in substantial changes in chemical shifts, so, in most cases, the differences in shifts that are observed can be related to the structural features within a single molecule. <a href="#fig4.8">Figure 4.8</a> displays the shift regions in which various proton resonances are<a id="page_39" class="page">Page 39, Nuclear magnetic resonance spectroscopy: the basics</a> commonly encountered, and more detailed tables for predicting chemical shifts may be found in the Appendices. One generality to be aware of is that increased branching leads to an increase in chemical shift, so that for any functional group we find &#948; CH &#62; &#948; CH2 &#62; &#948; CH<sub>3</sub>.</p>
+<figure id="fig4.8">
+<img src="../images/he_9780198557555_graphic_0058.jpg" alt="images"/>
+<figcaption style="width:100%"><b>Fig. 4.8</b> Typical proton chemical shift ranges for various chemical environments.The ranges below the table show where alkane, alkene and arene protons would be expected to resonate in the absence of significant substituents.</figcaption>
+</figure>
+<h3 class="h3">Inductive effects</h3>
+<p class="noindent">The degree of shielding about any nucleus will be strongly influenced by the electron density surrounding it, which, in turn, will be affected by the presence of electronegative and electropositive neighbours. Electron withdrawing groups will tend to draw electron density away from the nucleus, so reducing the shielding effect and moving the resonance frequency to higher values (greater chemical shift, <a href="#fig4.9">Fig. 4.9</a>); the opposite arguments apply to electropositive groups.</p>
+<p class="indent">The effect tends to fall rapidly as the nucleus becomes more distant from the inductive group. For example, in proton spectroscopy, effects may be readily observed over two and, to a lesser extent, three bonds, but are often vanishingly small beyond this (<a href="#fig4.9">Fig. 4.9</a>).</p>
+<p class="indent">The effects of multiple substituents tend to be approximately additive, and tables may be used which allow one to predict the shifts of a nucleus in a given environment (see Appendices). The advent of more sophisticated NMR techniques means that chemists have to rely less on empirical estimates of chemical shifts to be able to assign spectra, and the need to pore over such tables is corresponding less. An understanding of general trends, such as those shown in <a href="#fig4.8">Fig. 4.8</a> is, however, fundamental to the routine analysis of NMR spectra and is strongly encouraged.</p>
+<aside class="abc" style="margin-top:-21em;" epub:type="sidebar">
+<figure id="fig4.9">
+<p class="center2">XC<sup>1</sup>H<sub>2</sub>C<sup>2</sup>H<sub>2</sub>C<sup>3</sup>H<sub>3</sub></p>
+<table>
+<tr>
+<td class="td5">X</td>
+<td class="td1-c">C<sup>1</sup>H<sub>2</sub></td>
+<td style="padding-left:0.5em;" class="td1-c">C<sup>2</sup>H<sub>2</sub></td>
+<td style="padding-left:0.5em;" class="td1-c">C<sup>3</sup>H<sub>3</sub></td>
+</tr>
+<tr>
+<td class="td5">Et</td>
+<td class="td1-c">1.3</td>
+<td class="td1-c">1.3</td>
+<td class="td1-c">0.9</td>
+</tr>
+<tr>
+<td class="td3">HOOC</td>
+<td class="td3-c">2.3</td>
+<td class="td3-c">1.7</td>
+<td class="td3-c">1.0</td>
+</tr>
+<tr>
+<td class="td3">SH</td>
+<td class="td3-c">2.5</td>
+<td class="td3-c">1.6</td>
+<td class="td3-c">1.0</td>
+</tr>
+<tr>
+<td class="td3">NH<sub>2</sub></td>
+<td class="td3-c">2.6</td>
+<td class="td3-c">1.5</td>
+<td class="td3-c">0.9</td>
+</tr>
+<tr>
+<td class="td3">Ph</td>
+<td class="td3-c">2.6</td>
+<td class="td3-c">1.6</td>
+<td class="td3-c">0.9</td>
+</tr>
+<tr>
+<td class="td3">Br</td>
+<td class="td3-c">3.4</td>
+<td class="td3-c">1.9</td>
+<td class="td3-c">1.0</td>
+</tr>
+<tr>
+<td class="td3">Cl</td>
+<td class="td3-c">3.5</td>
+<td class="td3-c">1.8</td>
+<td class="td3-c">1.0</td>
+</tr>
+<tr>
+<td class="td3">OH</td>
+<td class="td3-c">3.6</td>
+<td class="td3-c">1.6</td>
+<td class="td3-c">0.9</td>
+</tr>
+<tr>
+<td class="td1">NO<sub>2</sub></td>
+<td class="td2-c">4.4</td>
+<td class="td2-c">2.1</td>
+<td class="td2-c">1.0</td>
+</tr>
+</table>
+<figcaption style="width:110%"><b>Fig. 4.9</b> The influence of electronegative substituents on chemical shift (in ppm).The greater the electron withdrawing effect of the substituent, the greater the chemical shift of adjacent protons.</figcaption>
+</figure>
+</aside>
+<h3 class="h3">Anisotropic effects</h3>
+<p class="noindent">Often, the distribution of electron density within chemical bonds is unsymmetrical, and the shift of any nucleus in the vicinity of the bond will be dependent on its position relative to it. This <b><i>anisotropic effect</i></b> is most pronounced in unsaturated systems, in which the &#960;-electrons circulate locally in response to the external field and give rise to shielding effects that are highly spatially dependent. Whether this effect causes shifts to <a id="page_40" class="page">Page 40, Nuclear magnetic resonance spectroscopy: the basics</a>higher or lower frequency will depend not only on position, but also on the atoms in the bond(s) in question. The trends that are observed are most conveniently represented by regions of shielding or deshielding about the bond (<a href="#fig4.10">Fig. 4.10</a>).</p>
+<figure style="width:70%" id="fig4.10">
+<img src="../images/he_9780198557555_graphic_0060.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="width:100%" ><b>Fig. 4.10</b> Chemical shift anisotropy caused by some single, double and triple bonds. (+) indicates deshielding regions (increased chemical shift) whereas (&#8722;) indicates shielding regions (decreased chemical shift).</figcaption>
+</figure>
+
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure id="fig4.11">
+<img src="../images/he_9780198557555_graphic_0061.jpg" alt="images"/>
+<figcaption style="width:100%;"><p class="noindent2"><b>Fig. 4.11</b> Anisotropy is a localized effect. Only protons directly attached to the &#960; system experience significance deshielding.</p></figcaption>
+</figure>
+</aside>
+<p class="indent">This effect explains why resonances of alkene protons fall typically in the 5&#8211;6 ppm region, whereas those of alkyne protons are found between 2&#8211;3 ppm. The anisotropy of the C = O bond is somewhat larger and aldehyde resonances are found, characteristically, around 9&#8211;10 ppm. In any case, the effect falls rapidly with distance from the &#960;-system (<a href="#fig4.11">Fig. 4.11</a>) so the observation of protons with high-frequency shifts often suggests they are part of these functional groups.</p>
+<p class="indent">The hybridization of the carbon atom also has some influence on the shift of the attached proton as the electronegativity of the carbon increases as it takes on more s-character.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure id="fig4.12">
+<img src="../images/he_9780198557555_graphic_0062.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.12</b> The ring current effect in benzene moves aromatic proton resonances to higher frequency.</p></figcaption>
+</figure>
+</aside>
+<p class="indent">An additional influence is found in the case of aromatic rings. The proton resonances of benzene, for example, occur at <i>ca</i>. 7.3 ppm, so are considerably less shielded than protons in a lone double bond. This is attributed to the <b><i>ring-current</i></b> caused by the circulation of the &#960;-electrons around the ring on the application of an external field. The circulating electrons produce a field (B<sub>Local</sub>) that adds to the external field at the position of the protons and so causes shifts to higher frequency (<a href="#fig4.12">Fig. 4.12</a>). Conversely, the regions above and below the plane of the ring experience shielding from the applied field, and nuclei in these regions can be expected to resonate at lower frequencies. Such effects are indeed observed in the spectra of annulenes ((4<i>n</i> + 2) &#960; systems, <a href="#fig4.13">Fig. 4.13</a>a) for which, in the case of 18-annulene, the &#8216;inner&#8217; and &#8216;outer&#8217; proton shifts are &#8722;2.99 and 9.28 ppm respectively. The effect also has some use in stereochemical analysis, such as for the example of <a href="#fig4.13">Fig. 4.13</a>b, in which the unusual shift of &#8722;0.3 ppm, suggests the proton sits directly above the plane of the phenyl ring, which has been shown to be the case.</p>
+<p class="indent">Proton resonances in the 7&#8211;8 ppm region are often indicative of an aromatic system, although other factors may cause protons to stray into this region.</p>
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<figure id="fig4.13">
+<img src="../images/he_9780198557555_graphic_0063.jpg" alt="images"/>
+<figcaption style="width:110%;"><p class="noindent2"><b>Fig. 4.13</b> (a) Ring current effects in 18-annulene cause dramatic shift differences for the &#8216;inner&#8217; and &#8216;outer&#8217; protons, (b) Unusual shifts can be useful in predicting stereochemistry.</p></figcaption>
+</figure>
+</aside>
+<h3 class="h3">Mesomeric effects</h3>
+<p class="noindent">In unsaturated systems, electron density may also be influenced by the presence of groups which induce mesomeric effects. For example, compare the influence of the +M effect of the methoxy group with the &#8722;M effect of<a id="page_41" class="page">Page 41, Nuclear magnetic resonance spectroscopy: the basics</a> the ester group in <a href="#fig4.14">Fig. 4.14</a>. Clearly, these effects can be operative over many bonds, in contrast to the shorter-range inductive effects, which would also be present.</p>
+<figure style="width:70%" id="fig4.14">
+<img src="../images/he_9780198557555_graphic_0064.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 4.14</b> Mesomeric effects influence electron distribution and hence chemical shifts. &#8722; indicates an increase in electron density, and hence increased shielding whereas + indicates a decrease in density and hence deshielding of the protons.</figcaption>
+</figure>
+<h3 class="h3">Hydrogen bonding</h3>
+<p class="noindent">Hydrogen bonds, usually involving OH, NH or SH groups, have an electron withdrawing effect on the proton involved and may move such protons to high frequencies by many ppm. They may occur intramolecularly or intermolecularly. The shift of any hydrogen bonded proton tends to be hard to predict with any accuracy as it generally represents a population-averaged shift between that of the hydrogen bonded state and of the non- hydrogen bonded state (see <a href="#ch4.6">Section 4.6</a> for more discussions on averaging effects in NMR spectra). Shifts due to intermolecular hydrogen bonds are therefore concentration dependent. For example, carboxylic acids often occur in solutions as hydrogen bonded dimers, so that the acidic protons resonate in the 11&#8211;14 ppm region (due to a combination of inductive and hydrogen bonding effects), but shift to lower frequency as the solution becomes more dilute. Temperature also has a large influence on the shift of hydrogen bonded protons, with increases in temperature generally causing shifts to lower frequency, due to the breaking of these bonds.</p>
+<p class="indent">In addition to the effects described above, it should be noted that the solvent itself can also influence chemical shift values. Indeed, a change of solvent can often be a valuable tool in aiding the interpretation of a spectrum, as resonances that are coincident in one solvent may be well dispersed in another. Shift differences are often observed when changing from a relatively non-polar solvent to a more polar one, or to an aromatic solvent. Changing from chloroform to benzene can often have a dramatic effect (<a href="#fig4.15">Fig. 4.15</a>); solvation of the solute by benzene produces these changes because of the magnetic anisotropy associated with the aromatic ring, which is clearly not present with chloroform.</p>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<figure id="fig4.15">
+<img src="../images/he_9780198557555_graphic_0065.jpg" alt="images"/>
+<figcaption style="width:110%;"><p class="noindent2"><b>Fig. 4.15</b> Changing solvent can have a dramatic effect on the distribution of chemical shifts; (a) was recorded in chlorofom and (b) in benzene.</p></figcaption>
+</figure>
+</aside>
+</section>
+<section epub:type="chapter" id="ch4.3">
+<a id="page_42" class="page" style="width:70%;">Page 42, Nuclear magnetic resonance spectroscopy: the basics</a>
+<h2 class="h2">4.3<span class="space">&#160;</span>Resonance intensites</h2>
+<p class="noindent">The intensity of a resonance is proportional to the number of nuclei giving rise to it, provided some care is taken in the experimental conditions used to acquire the data. By intensity, we mean the total area under a peak, which is readily obtained by computer integration and is usually presented as a separate trace on the spectrum (<a href="#fig4.16">Fig. 4.16</a>) and/or a numerical value. Thus, <a href="#fig4.16">Fig. 4.16</a> shows proton resonances with integral ratios of 5:2:3, and provides a ready count of the relative number of nuclei in a given environment. Although computers can readily report integrals to many decimal places, it should be stressed that the accuracy of the measurements <i>on routine spectra</i> is generally low, for reasons that relate to the behaviour of the nuclei once excited by the radiofrequency pulse, which are more appropriately discussed in <a href="Chapter5.xhtml#ch5.2">Section 5.2</a>. The values reported may often be in error by as much as <i>ca</i>. 10% lower than their true values. Furthermore, the degree of inaccuracy will not necessarily be the same for all resonances in a spectrum, so an exact comparison of integrals is futile. However, if you simply wish to determine whether a resonance represents 1, 2 or 3 protons within a molecule, the level of accuracy is usually sufficient to answer this. Use of integrals for exact quantitative determinations (such as determining the ratio of two compounds in solution) is, however, possible, although special procedures are required.</p>
+<aside class="abc" style="margin-top:-23em;" epub:type="sidebar">
+<figure id="fig4.16">
+<img src="../images/he_9780198557555_graphic_0066.jpg" alt="images"/>
+<figcaption style="width:110%;"><p class="noindent2"><b>Fig. 4.16</b> Integration of resonances may be used to determine the relative number of protons present in different chemical environments. For ethyl benzene the ratio is 5:2:3.</p></figcaption>
+</figure>
+<p class="noindent2" style="width:110%;">Integrals only represent the <b><i>relative ratio</i></b> of protons in each environment, so don&#8217;t be caught out by symmetrical molecules. For example, the integrals for diethyl ketone would be 2:3, although they actually represent 10 protons.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="ch4.4">
+<h2 class="h2">4.4<span class="space">&#160;</span>Spin-spin coupling</h2>
+<p class="noindent">Coupling between nuclear spins gives rise to splitting of resonance lines, providing the chemist with evidence for chemical bonding within a molecule. This information can be obtained because the fine structure seen within resonances arises from a <b><i>through bond</i></b> effect, and so can be easily related to the common perception of chemical bonding. This information is fundamentally different from that obtained from UV or IR spectroscopy in that these techniques only give evidence for the <b><i>presence</i></b> of functional groups whereas spin coupling tells us about how nuclei <b><i>interact</i></b> with each other. How does this effect arise?</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<p class="noindent2" style="width:120%;">Unlike the information provided by all other spectroscopic techniques, where an absorption tells us only about the <b><i>absorbing species itself</i>,</b> spin-spin coupling provides information about the <b><i>neighbours</i></b> of the absorbing species.</p>
+</aside>
+<h3 class="h3">The origin of spin-spin coupling</h3>
+<p class="noindent">The magnetic field of a nucleus in a chemical bond will directly influence both the nuclei immediately surrounding it and the electrons in the bond. As we have seen above, the spin&#8211;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> nucleus can adopt two possible orientations in the applied field. Each orientation will have a differing influence on the electrons in the bond as the electron spins will favour an anti-parallel orientation relative to the nuclear spin. These electrons relay the effect of the different nuclear spin states according to the electron spin pairing rules of the Pauli exclusion principle and of Hund&#8217;s rules (<a href="#fig4.17">Fig. 4.17</a>). Hence, a nucleus is able to sense the possible orientations of a neighbouring nucleus when there is a suitable bonding network between them, and because the effect is operative only through bonds, it is referred to as indirect or <b><i>scalar coupling</i></b></p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure id="fig4.17">
+<img src="../images/he_9780198557555_graphic_0067.jpg" alt="images"/>
+<figcaption style="width:110%;"><p class="noindent2"><b>Fig. 4.17</b> The orientation of one spin can be relayed through the intervening bonding network <i>via</i> electron spins to a neighbouring nucleus. This is know as <b><i>scalar coupling</i>.</b></p></figcaption>
+</figure>
+</aside>
+<p class="indent">The <i>direct</i> influence of one nucleus on another is easier to imagine as it is somewhat analogous to the effect that two bar magnets would have on one another. Any nuclear spin will experience a different magnetic environment</p>
+<a id="page_43" class="page" style="width:70%;">Page 43, Nuclear magnetic resonance spectroscopy: the basics</a>
+<p class="noindent">for each of the two possible (&#945; and &#946;) states of its neighbour, according to whether the neighbouring field enforces or opposes the static field (<a href="#fig4.18">Fig. 4.18</a>). However, in solution the molecule tumbles rapidly, so that the orientation between the two nuclei and the static field is constantly altering and the fields they experience due to each other fluctuate as the molecule rotates. Because of the motion, the overall effect of the two states on a neighbouring nucleus averages to zero, so that the <b><i>direct interaction between nuclei produces no splittings in a spectrum</i></b> (this is not the case for spectra recorded in the solid state, where such rapid molecular motion does not exist to remove the effect). The direct coupling is known as <b><i>dipolar coupling</i></b> as the spins are considered to be magnetic dipoles (North and South). Although it is not seen in solution spectra, its presence can be detected with suitable experiments, and it provides the mechanism for one of the most useful NMR phenomenon available; the nuclear Overhauser effect (<a href="Chapter5.xhtml#ch5.3">Section 5.3</a>). Scalar coupling, however, is not averaged to zero by molecular motion, because of the through-bond dependence, and hence the following considerations will relate to scalar coupling only.</p>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<figure id="fig4.18">
+<img src="../images/he_9780198557555_graphic_0068.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.18</b> The direct magnetic influence of one spin on another is known as <b><i>dipolar coupling</i>.</b></p></figcaption>
+</figure>
+</aside>
+<h3 class="h3">The influence of scalar coupling</h3>
+<p class="noindent">Consider a molecule containing two chemically distinct coupled protons, designated A and X. So far we have seen that it is possible for a nuclear spin, say A, to sense the state of the neighbouring nucleus, X, to which it is coupled, <i>via</i> the bonding electrons. The two possible orientations of X, &#945;, and &#946;, will result in two slightly different local fields at A. Now, the sample as a whole will contain very many molecules and, as the population differences in NMR are so small (1 part in 10<sup>4</sup> at most), we can say that there will be approximately an equal number of X nuclei in the &#945; state as in the &#946; state. Thus, effectively, half the transitions for all the A nuclei in the sample will now occur at one frequency, resulting from the X&#945; state, with the other half resonating at a different frequency resulting from the X&#946; state. The A resonance will, therefore, constitute two lines; it will be a doublet. Similar arguments will apply to the X nuclei, so they will also give a doublet (<a href="#fig4.19">Fig. 4.19</a>)</p>
+<p class="indent">The frequency difference between the two lines of the doublet is known as the <b><i>coupling constant, J</i>.</b> As the coupling is dependent on nuclear and electron spin pairings <i>within</i> a molecule, the coupling constant is independent of the external field, so is always measured in hertz. The effect is also symmetrical, so that the coupling constant measured at A will be equal to that measured at X (<i>J</i><sub>AX</sub> = <i>J</i><sub>XA</sub>) and this equality provides a means of identifying nuclei that are coupled together and hence contained in a bonding pathway. In due course we shall see how this information may be related to structural fragments within a molecule.</p>
+<p class="indent">Coupling constants possess <b><i>sign</i></b> as well as <b><i>magnitude</i>.</b> The sign of <i>J</i> is not apparent in routine spectra, and may only be determined from specially designed experiments or, in some cases, from complex analysis of multiplet structures, so generally it is only the absolute value that is considered. It is important to be aware of the existence of sign because substituent effects within a molecule that increase coupling (make it more positive) may actually reduce the <i>measured value</i> of <i>J</i> if the coupling constant has negative sign. Coupling constants are defined as being <a id="page_44" class="page">Page 44, Nuclear magnetic resonance spectroscopy: the basics</a>positive if the two coupled spins have an anti-parallel orientation in a lower energy level than that of the uncoupled spins, and negative when parallel spins are favoured. Thus, the spin system in <a href="#fig4.19">Fig. 4.19</a> (the AX system described above) represents a positive coupling constant, as the anti-parallel spins, &#945;&#946;, have lower energy when coupled (<a href="#fig4.19">Fig. 4.19</a>c) than when they are not (<a href="#fig4.19">Fig. 4.19</a>b). The favoured interactions for two protons coupled over two and three bonds are shown in <a href="#fig4.20">Fig. 4.20</a> and it follows that couplings over three bonds are usually positive whereas those over two bonds are usually negative.</p>
+<figure style="width:70%" id="fig4.19">
+<img src="../images/he_9780198557555_graphic_0069.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 4.19</b> Energy level diagrams (above) and associated schematic spectra (below) for uncoupled and coupled spins, (a) A single spin has only a single transition, (b) Two spins without coupling (J = 0) show a single resonance for each spin as the two possible transitions of each are degenerate, (c) Coupling between the spin (J &#62; 0) removes the degeneracy and each spin now has two transitions of differing energy; each produces a doublet.</figcaption>
+</figure>
+
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<figure id="fig4.20">
+<img src="../images/he_9780198557555_graphic_0070.jpg" alt="images"/>
+<figcaption style="width:110%;"><p class="noindent2"><b>Fig. 4.20</b> Favoured nuclear and electron spin pairing in two-bond and three-bond coupling pathways.</p></figcaption>
+</figure>
+</aside>
+<p class="indent">So far we have given consideration to how coupling between spins arises through a suitable bonding network and how this affects resonances, but what consitutes a suitable bonding network? In proton spectroscopy, <sup>1</sup>H&#8211;<sup>1</sup>H couplings are most commonly seen to occur over only two or three bonds and are referred to as <b><i>geminal</i></b> and <b><i>vicinal</i></b> couplings respectively. In favourable cases, as we shall see later, couplings over more bonds may occur and these are generally referred to as <b><i>long-range</i></b> couplings. The full range over which <sup>1</sup>H&#8211;<sup>1</sup>H coupling constants have been observed is &#8722;24 to +40 Hz and discussions as to what influences the magnitude of <i>J</i> are presented in a later section. Note also that the nature of nuclei intermediate on a coupling path does not interfere with the coupling mechanism, so that coupling between two protons (or indeed any nuclei) may occur even though other nuclei on the bonding pathway may have zero spin.</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<p class="noindent2" style="width:110%;">The terms <b><i>geminal</i></b> and <b><i>vicinal</i></b> come from the Latin <i>geminus</i>, meaning twin, and <i>vicinus</i>, meaning neighbour.</p>
+</aside>
+<h3 class="h3">Interpreting coupling patterns</h3>
+<p class="noindent">The measurement of chemical shifts and coupling constants directly from spectra of coupled nuclei is strictly only possible when the spectra satisfy the <b><i>first-order approximation</i></b> (also known as the weak coupling approximation).</p>
+<p class="indent">This applies when the chemical shift difference between two coupled resonances is large compared with their coupling constant (what is meant by large is discussed later). For many coupled resonances, the first-order model is valid, or nearly so, allowing direct analysis of spectra; the following guidelines for interpreting patterns assume this to be the case.</p>
+<a id="page_45" class="page" style="width:70%;">Page 45, Nuclear magnetic resonance spectroscopy: the basics</a>
+<figure style="width:70%" id="fig4.21">
+<img src="../images/he_9780198557555_graphic_0071.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 4.21</b> Simple multiplet patterns arising from scalar coupling, (a) doublet, (b) double doublet, (c) triplet, (d, e) double triplets (see text also).</figcaption>
+</figure>
+<p class="indent">We have seen above that coupling to a single nucleus of spin-<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> splits a resonance into two lines of equal intensity, separated by the coupling constant, <i>J</i>. Coupling to further nuclei will simply repeat this line-splitting process according to the subsequent coupling constants, so that coupling to many nuclei may be analysed as a number of discrete stages. Thus, coupling to two different protons will reduce the resonance to four lines, three protons to eight lines and so on. The total area of a resonance remains constant (the integral must reflect the relative number of protons giving rise to the resonance) so that the introduction of coupling reduces the intensity of each line. The scheme in <a href="#fig4.21">Fig. 4.21</a> presents the analysis of some simple coupling patterns.</p>
+<p class="indent">Although the exact details of how a multiplet will appear will depend on the magnitudes of <i>J</i> involved, the chemical shift of the resonance always occurs at the centre of the multiplet and the magnitudes of the coupling constants can be measured directly from the line splittings.</p>
+<p class="indent">In some instances the magnitude of coupling to two or more protons may be the same, either because the protons are indistinguishable, those in a methyl group for example, or simply by a matter of chance. In such cases the number of lines will not follow the simple rule outlined above as certain lines will become coincident (<a href="#fig4.21">Fig. 4.21</a> c, d, and e), although it is possible to predict the relative line intensities by the total number of &#8216;branches&#8217; contributing to each line. Coupling to &#8216;<i>n&#8217;</i> equivalent spin-<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> nuclei produces line intensities that follow the coefficients of the binomial expansion of (1 + <i>x</i>)<sup><i>n</i></sup> which are conveniently displayed as <b><i>Pascal&#8217;s triangle</i></b> (<a href="#fig4.22">Fig. 4.22</a>). These patterns are evident for the ethyl group of ethyl <i>p-</i>tolylacetate (<a href="#fig4.5">Fig. 4.5</a>), which displays the quartet of the CH<sub>2</sub> group and the triplet of the CH<sub>3</sub> group. Note that <b><i>protons that are equivalent show no coupling amongst themselves</i></b>, so that, for example, the three protons of the methyl in an ethyl group show couplings only to the neighbouring methylene (more detailed discussions of what is meant by &#8216;equivalent&#8217; in an NMR sense, as opposed to the chemical sense, are presented later).</p>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<figure id="fig4.22">
+<img src="../images/he_9780198557555_graphic_0072.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.22</b> Pascal&#8217;s triangle. Coupling to <i>n</i> equivalent spin-<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> nuclei produces <i>n</i> + 1 lines, the relative intensities of which are given by the triangle.</p></figcaption>
+</figure>
+</aside>
+<a id="page_46" class="page" style="width:70%;">Page 46, Nuclear magnetic resonance spectroscopy: the basics</a>
+<h3 class="h3">Failure of the first-order approximation</h3>
+<p class="noindent">As the chemical shift difference between coupled protons is reduced, there comes a point at which the first-order approximation begins to break down. As a rule of thumb, this occurs when the shift difference (measured in hertz) is less than ten times the relevant coupling constant. As the chemical shift differences are in hertz, they will be dependent on the magnitude of the applied field, and the use of higher-field magnets will increase the likelihood of the first-order approximation being valid, and so aid spectroscopic analysis. In the preceding discussions it has been assumed that lines observed in the spectrum may be attributed to a single energy transition, or in other words, the flip of only a single spin. This is not the case when the first-order model no longer applies as the energy states become &#8216;mixed&#8217; and we say the spins are <b><i>strongly coupled</i>.</b> In this case, three significant features can be recognized:</p>
+<ol class="decimal1">
+<li>(a)<span class="space">&#160;</span>The centres of multiplets no longer reflect the true chemical shift of the resonance.</li>
+<li>(b)<span class="space">&#160;</span>Line splittings often do not represent coupling constants.</li>
+<li>(c)<span class="space">&#160;</span>Line intensities become distorted.</li>
+</ol>
+<aside class="abc" style="margin-top:-19em;" epub:type="sidebar">
+<figure id="fig4.23">
+<img src="../images/he_9780198557555_graphic_0073.jpg" alt="images"/>
+<figcaption style="width:110%;"><p class="noindent2"><b>Fig. 4.23</b> Simulations of a coupled two spin system showing the effect of reducing the shift difference between the resonances. The &#916;&#948;/<i>J</i> ratios are a) &#8734; (the AX system) b) 10 c) 5 d) 2 e) 1 and f) 0.5</p></figcaption>
+</figure>
+</aside>
+<p class="noindent">The extraction of &#948; and <i>J</i> can be made by detailed analysis of the fine structure, or more commonly nowadays, with the use of computers to simulate the spectra. Whilst these steps are not usually pursued in routine applications, it is important to be able to recognise when the first-order model fails, so that incorrect values of &#948; and <i>J</i> are not recorded. When analysing spectra, it is common practice to label each proton under consideration with a letter of the alphabet, and the further apart the protons in the spectrum, the further apart are the letters chosen. Thus, in the simple two spin system considered above, protons were designated A and X, to indicate a large shift difference, consistent with adherence to the first-order model. <a href="#fig4.23">Fig. 4.23</a> shows what happens when the shift difference, &#916;&#948;, between the two protons is reduced. Initially the protons change from an <b><i>AX</i></b> system to an <b><i>AB</i></b> system system until eventually they become equivalent (an <b><i>A</i></b><sub>2</sub> system) and show only a single line.</p>
+<p class="indent">In the AB system, the intensities of the inner lines increase at the expense of the outer lines; this so-called <b><i>roofing effect</i></b> can be very helpful in indicating coupling partners, or at least indicating where the partner may be. For this simple system, the separation between the lines still represents the true value of J. However, the chemical shift is no longer at the midpoint of the &#8216;doublet&#8217; but is weighted toward the inner (more intense) line until, for the A<sub>2</sub> system, the chemical shift corresponds with the shift of the single line. The AB system is often seen for lone CH<sub>2</sub> groups (with no other coupling partners) for which the two protons are chemically inequivalent, such as when in a rigid ring system or adjacent to a stereogenic centre (see <a href="#ch4.5">Section 4.5</a>).</p>
+<p class="indent">Another commonly observed pattern is that of a three spin system. If the shift difference between all three protons is very large relative to the coupling between them, then the spin system would be designated an <b><i>AMX</i></b> system and can be analysed as a first-order spectrum as described in the previous section. However, it is often the case that two of the protons will have similar shifts, whilst the third is distant from these, such as in RCH<sub>2</sub>CHXY or XCH = CH<sub>2</sub>. In this case the spin system is designated <a id="page_47" class="page">Page 47, Nuclear magnetic resonance spectroscopy: the basics</a><b><i>ABX</i></b>, and strong coupling effects are observed. For example, the spectra in <a href="#fig4.24">Fig. 4.24</a> show the effect when the shift difference between spins A and B is progressively reduced. The simple first order rules would predict that the X part of the spectrum would only be a doublet, as it has coupling to proton A only, but obviously this is not the case as the X resonance has additional fine structure. This phenomenon is referred to as <b><i>virtual coupling</i></b> to distinguish it from first-order scalar coupling.</p>
+<figure style="width:70%" id="fig4.24">
+<img src="../images/he_9780198557555_graphic_0074.jpg" alt="images"/>
+<figcaption style="width:100%;"><b>Fig. 4.24</b> Simulated ABX spectra showing the effects of a reduction in the shift difference between the A and B parts.The simulations used <i>J</i><sub>AB</sub> = 15, <i>J</i><sub>AX</sub> = 6 and <i>J</i><sub>BX</sub> = 0 Hz with &#916;&#948;/<i>J</i><sub>AB</sub> ratios of a) 5 b) 2 c) 1 and d) 0.5.</figcaption>
+</figure>
+<p class="indent">Clearly, one should be aware of such effects when analysing spectra so as not to interpret splittings arising from strong-coupling as being due to additional coupling to other protons. Notice that some of the outer lines of the AB part have very low intensities in some cases and it is not uncommon for these to be lost in noise or hidden by other resonances in real spectra, further complicating analysis.</p>
+<p class="indent"><b><i>ABC</i></b> systems in which the shifts of all three spins are close together, produce very complex spectra (<a href="#fig4.25">Fig. 4.25</a>), the appearance of which will be very sensitive to the chemical shifts and coupling constants involved, and are best analysed with the aid of a suitable spin-simulation program.</p>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<figure id="fig4.25">
+<img src="../images/he_9780198557555_graphic_0075.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.25</b> A simulated ABC spectrum with <i>J</i><sub>AB</sub> = 15, <i>J</i><sub>AC</sub> = 6 and <i>J</i><sub>BC</sub> = 0 Hz, &#916;&#948;<sub>AB</sub>/<i>J</i><sub>AB</sub> = 1 and &#916;&#948;<sub>AC</sub>/<i>J</i><sub>AC</sub> = 4.</p></figcaption>
+</figure>
+</aside>
+<p class="indent">Before we consider other instances in which the first-order approximation is not valid, it is necessary to define what is meant by equivalence in NMR terms. This may take two forms; <b><i>chemical equivalence</i></b> or <b><i>magnetic equivalence</i>.</b> For two nuclei to be chemically equivalent they must resonate at the same chemical shift and have the same chemical properties, for example the 2 and 6 protons of a 1,4 disubstituted benzene ring are chemically equivalent due to symmetry (<a href="#fig4.26">Fig. 4.26</a>). For nuclei to be magnetically equivalent they must <i>also</i> both demonstrate the same couplings to all other nuclei, which does not apply to the 2 and 6 protons in the above example. Thus, proton H<sup>2</sup> has coupling to H<sup>3</sup>, H<sup>6</sup> and H<sup>5</sup> with <i>J</i><sub>23</sub> &#62; J<sub>26</sub> &#62; <i>J</i><sub>25</sub>, whereas H<sup>6</sup> (the chemically equivalent partner) couples to the same protons but has <i>J</i><sub>56</sub> &#62; <i>J</i><sub>26</sub> &#62; <i>J</i><sub>36</sub> and, by symmetry, <i>J</i><sub>23</sub> = <i>J</i><sub>56</sub> and <i>J</i><sub>25</sub> = <i>J</i><sub>36</sub>. Clearly the coupling constants of protons 2 and 6 to, say, proton 3 are not the same, so 2 and 6 cannot be magnetically equivalent. In contrast,</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure id="fig4.26">
+<img src="../images/he_9780198557555_graphic_0076.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.26</b> The 2 and 6 or 3 and 5 protons in a 1,4 disubstituted benzene ring are <b><i>chemically equivalent</i></b> but not <b><i>magnetically equivalent</i></b> (see text).</p></figcaption>
+</figure>
+</aside>
+<a id="page_48" class="page" style="width:70%;">Page 48, Nuclear magnetic resonance spectroscopy: the basics</a>
+<p class="noindent">the protons in a freely rotating methyl group are magnetically equivalent because they all experience the same chemical environment and will have the same couplings to any neighbouring nuclei.</p>
+<p class="indent">Nuclei that are chemically equivalent but not magnetically equivalent are indicated by the use of an additional prime, so that the 1,4 disubstituted benzene described above becomes an AA&#8242;XX&#8242; or AA&#8242;BB&#8242; system.</p>
+<p class="indent">Generally, systems which possess chemical but not magnetic equivalence are more complex than may be anticipated because they do not follow the first-order approximation. The AA&#8242;BB&#8242; spectra (<a href="#fig4.27">Fig. 4.27</a>) which are commonly observed for 1,2 and 1,4 disubstituted benzenes demonstrate the complexity that can arise in these circumstances. They are greatly different from the simple A<sub>2</sub>X<sub>2</sub> or A<sub>2</sub>B<sub>2</sub> spectra that may have been anticipated for these systems, and are often mistakenly assigned as &#8216;AB quartets&#8217;, which clearly they are not (compare <a href="#fig4.23">Fig. 4.23</a>).</p>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<figure id="fig4.27">
+<img src="../images/he_9780198557555_graphic_0077.jpg" alt="images"/>
+<figcaption style="width:110%;"><p class="noindent2"><b>Fig. 4.27</b> The presence of <i>chemical</i> but not <i>magnetic</i> equivalence in molecules produce spectra that are more complex than may be anticipated. These AA&#8242;BB&#8242; spectra display considerably more fine structure than would be anticipated for a simple A<sub>2</sub>B<sub>2</sub> system. The chemical shift degeneracy means that use of higher-field spectrometers <i>does not</i> alleviate these complications.</p></figcaption>
+</figure>
+</aside>
+<h3 class="h3"><sup>1</sup>H&#8211;<sup>1</sup>H coupling constants and chemical structure</h3>
+<p class="noindent">From the previous discussions it may appear that any single proton in a molecule would be able to couple with all other protons within the same molecule <i>via</i> the various interconnecting bonding pathways. Fortunately for the chemist, this is not the case as the degree of coupling falls rapidly as the number of intervening bonds increases, so that coupling is only usually observed over two or three bonds. Of these, the three bond (vicinal) coupling is of most use in structure determination, as it offers a means of identifying neighbouring heteroatom (usually carbon) groups, to which the protons are attached, and hence piecing together the skeleton of the molecule. Spin coupling between protons separated by four or more bonds can be observed in favourable cases and is termed long-range coupling for obvious reasons. Values of typical <sup>1</sup>H&#8211;<sup>1</sup>H coupling constants are presented in <a href="#fig4.28">Fig. 4.28</a> and the influence of various structural features on these values is discussed in the following paragraphs.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent"><b><i>Geminal coupling</i></b>. The full range of geminal coupling constants, <sup>2</sup><i>J</i>, occurs over &#8722;20 to +40 Hz, but it is most common to encounter values around &#8722;10 to &#8722;15 Hz for saturated CH<sub>2</sub> groups (typically &#8722;12 Hz in the absence of electronegative substituents) and &#8722;3 to +3 Hz (typically &#8722;2 Hz) for terminal alkenes. Hybridization of the carbon atom has a large influence on the magnitude of <sup>2</sup><i>J</i>; a change from sp<sup>3</sup> to sp<sup>2</sup> and the</p>
+<figure style="width:70%" id="fig4.28">
+<img src="../images/he_9780198557555_graphic_0078.jpg" alt="images"/>
+<figcaption style="width:110%;"><b>Fig. 4.28</b> Examples of some typical<sup>1</sup>H&#8211;<sup>1</sup>H coupling constants (Hz).</figcaption>
+</figure>
+<a id="page_49" class="page" style="width:70%;">Page 49, Nuclear magnetic resonance spectroscopy: the basics</a>
+<p class="noindent">associated increase in H&#8211;C&#8211;H bond angle causes an increase in the size of <i>J</i>, that is, it becomes more positive. The addition of electronegative groups to the carbon will also make <i>J</i> more positive, and the effect of further substituents is approximately additive (<a href="#fig4.29">Fig. 4.29</a>). Remember that only the absolute value of a coupling constant is represented in the spectrum, so that the value of <i>J</i> measured will actually <i>decrease</i> when <i>J</i> becomes more positive, if it has negative sign.</p>
+<p class="indent">The presence of electronegative groups on the carbon atom adjacent to the methylene of interest, or unsaturation at this adjacent carbon, will cause <i>J</i> to become more negative.</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure id="fig4.29">
+<img src="../images/he_9780198557555_graphic_0079.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.29</b> Substitution of electronegative groups causes the <sup>2</sup><i>J</i> coupling constant to become more positive, although the apparent splitting may <i>decrease</i> as <i>J</i> may be negative.</p></figcaption>
+</figure>
+</aside>
+<p class="noindenta"><b><i>Vicinal coupling</i></b>. Vicinal coupling constants, <sup>3</sup><i>J</i>, are always positive in sign and may take values of up to 14 Hz in saturated or 18 Hz in unsaturated systems, although the average value of <sup>3</sup><i>J</i> across a freely rotating C&#8211;C bond is around 7 Hz. Four major influences on the magnitude of vicinal coupling constants can be identified and are considered further below, they are</p>
+<ol class="decimal1">
+<li>&#160;(a) substituent effects,</li>
+<li>&#160;(b) bond lengths,</li>
+<li>&#160;(c) bond valence angles,</li>
+<li>&#160;(d) dihedral angles.</li>
+</ol>
+<p class="noindent">The introduction of electronegative groups on the HCCH pathway tends to reduce the magnitude of <sup>3</sup><i>J</i> in both saturated and unsaturated systems. The effect is usually quite small, however (&#60; 1 Hz), but has a maximum influence when the electronegative group is <i>trans</i> to one of the protons, as can be observed in cyclohexane systems (<a href="#fig4.30">Fig. 4.30</a>).</p>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<figure id="fig4.30">
+<img src="../images/he_9780198557555_graphic_0080.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.30</b> Electronegative substituents on the coupling pathway tend to decrease <sup>3</sup><i>J</i>.</p></figcaption>
+</figure>
+</aside>
+<p class="indent">Vicinal coupling constants are very sensitive to the C&#8211;C bond length with an increase in length causing a decrease in <i>J</i>. For example, the C&#8211;C bonds in benzene possess less double bond character than those of alkenes, resulting in a slightly longer C&#8211;C bond length in the former, which is manifested in the different <sup>3</sup><i>J</i> values for benzene and for <i>Z</i>-alkenes of <i>ca</i>. 8 and 10 Hz respectively.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure id="fig4.31">
+<img src="../images/he_9780198557555_graphic_0081.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.31</b> Increases in the bond valence angle tend to decrease <sup>3</sup><i>J</i>.</p></figcaption>
+</figure>
+</aside>
+<p class="indent">An increase in the valence angle, &#952;, causes a reduction in the value of <sup>3</sup><i>J</i>, as can be seen for the protons in cyclic <i>Z</i>-alkenes of various ring sizes (<a href="#fig4.31">Fig. 4.31</a>).</p>
+<p class="indent">The variation of <sup>3</sup><i>J</i> with the dihedral angle is arguably the most useful of the four categories discussed here as it provides a means of conformational analysis and often proves useful in addressing problems of stereochemistry. The dependence of vicinal coupling constants on the dihedral angle, &#966;, is represented by the Karplus Curve, as represented in <a href="#fig4.32">Fig. 4.32</a>, which was first predicted theoretically, and has since been confirmed by experimental observation. The theoretical curve follows the relation</p>
+<p class="equ"><sup>3</sup><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>J</mi><mtext>=4</mtext><mtext>.22</mtext><mo>&#x2212;</mo><mtext>0</mtext><mtext>.5cos</mtext><mtext>&#x2009;</mtext><mn>&#x03D5;</mn><mo>+</mo><mn>4.5</mn><mi>cos</mi><mtext>&#x2009;</mtext><mn>2</mn><mn>&#x03D5;</mn><mo>.</mo></math></p>
+<p class="indent">The actual values of <sup>3</sup><i>J</i> encountered are, of course, also dependent on substituent effects, although the general shape of the curve is always reproduced, and <sup>3</sup><i>J</i><sub>180</sub> always has a larger value than <sup>3</sup><i>J</i><sub>0</sub>. This latter point explains the differences that are observed for <sup>3</sup><i>J</i> values in Z and E alkenes; the former have &#966; = 0&#176; and have <sup>3</sup><i>J</i> in the 8&#8211;11 Hz range whereas the latter have &#966; = 180&#176; and have typical <sup>3</sup><i>J</i> values of 12 -16 Hz (the large</p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure id="fig4.32">
+<img src="../images/he_9780198557555_graphic_0082.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.32</b> Variation of <sup>3</sup><i>J</i> with bond dihedral angle is represented by the Karplus curve.</p></figcaption>
+</figure>
+</aside>
+<a id="page_50" class="page" style="width:70%;">Page 50, Nuclear magnetic resonance spectroscopy: the basics</a>
+<p class="noindent">magnitudes of these couplings, relative to those encountered in unsaturated systems, arise from the shorter C = C double bonds).</p>
+<p class="indent">Similarly, <sup>3</sup><i>J</i> values for <i>axial-axial</i> protons (&#966; = 180&#176;) are larger than those of <i>axial-equatorial</i> or <i>equatorial-equatorial</i> partners (&#966; = 60&#176;) in cyclohexanes, as can be appreciated from <a href="#fig4.33">Fig. 4.33</a>. This provides a very useful criterion in the study of the conformation of these ring systems. Finally, notice that the value of <sup>3</sup><i>J</i> can become vanishingly small for &#966; angles close to 90&#176;, so that the lack of an observable coupling between two protons need not preclude them from being only three bonds apart.</p>
+<p class="indent"><b><i>Long-range couplings</i></b>. Long-range couplings are those that operate over more than three bonds. They are most commonly seen to occur over 4 or 5 bonds and have <sup>n</sup><i>J</i> &#8804; 3 Hz. In saturated systems, four-bond couplings may be observed when the protons sit in a &#8216;zig-zag&#8217; relationship (the so-called <i>w</i>-coupling, <a href="#fig4.34">Fig. 4.34</a>), but are rarely seen otherwise. The magnitude of the four-bond coupling may also be increased by ring strain, such as in the bicyclo[2.1.1] hexane in <a href="#fig4.34">Fig. 4.34</a>.</p>
+<aside class="abc" style="margin-top:-19em;" epub:type="sidebar">
+<figure id="fig4.33">
+<img src="../images/he_9780198557555_graphic_0083.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.33</b> The variation of <sup>3</sup><i>J</i> with dihedral angle can be useful in the assignment and conformational analysis of cyclohexanes.</p></figcaption>
+</figure>
+</aside>
+<p class="indent">The appearance of long-range coupling is most likely when the coupling pathway includes unsaturation, and is again favoured by a &#8216;zig-zag&#8217; relationship. Allylic couplings (H&#8211;C = C&#8211;C&#8211;H) of 1&#8211;2 Hz are widespread, and coupling over 5 or more bonds may be detected in conjugated systems; although these may not always be resolved they may be manifested as line-broadening. Four bond couplings in aromatic systems are commonly encountered (typically 1&#8211;3 Hz), and result in spectra that are more complex than may first be supposed, due to the introduction of magnetic inequivalence (see above).</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure id="fig4.34">
+<img src="../images/he_9780198557555_graphic_0084.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.34</b> Favoured &#8216;zig-zag&#8217;coupling pathways for observable long-range coupling in saturated systems.</p></figcaption>
+</figure>
+</aside>
+<p class="noindent">&#160;</p>
+<h3 class="h3">Spin decoupling</h3>
+<p class="noindent">Previous discussions have told us that it is possible to identify mutually coupled protons by virtue of them having the same coupling constant with one another. Whilst this is indeed the case it is often found in practice that a simple analysis of the spectrum does not provide an unambiguous assignment of coupled spins. For example, two coupled protons may exhibit a mutual coupling constant of 7 Hz suggesting them to be partners, but what if a third proton also coincidentally exhibited a coupling constant of 7 Hz to its partner? It is then not possible to say which of these protons are mutually coupled. Difficulties may also occur when a proton resonates in a crowded region of the spectrum so that its multiplicity and coupling constants cannot be determined directly. One technique that aims to establish connectivities unambiguously is that of <b><i>spin decoupling</i></b> in which radiofrequency irradiation is applied at the frequency of one resonance during the time the spectrum is being recorded. This induces rapid transitions between the a and P states for the irradiated proton so that the coupled partner senses only an average of the two spin states. Consequently, the coupled partner resonates at only a single frequency (in the absence of further coupling to other protons in the molecule) and the coupling between the protons appears to have been removed; they are said to have been <b><i>decoupled</i></b> from each other. Only couplings to the irradiated proton will be removed by this process so differences in spectra recorded with and without the irradiation will</p>
+<a id="page_51" class="page" style="width:70%;">Page 51, Nuclear magnetic resonance spectroscopy: the basics</a>
+<p class="noindent">indicate the shifts of protons that are spin coupled to the irradiated proton (<a href="#fig4.35">Fig. 4.35</a>). In complex spectra the two experiments are often subtracted so that only differences between the two remain, thus making identification of coupled protons easier, and is termed <b><i>decoupling difference spectroscopy</i>.</b> Because we are both irradiating and observing protons, the technique is referred to as <b><i>homonuclear decoupling</i></b></p>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<figure id="fig4.35">
+<img src="../images/he_9780198557555_graphic_0085.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.35</b> Homonuclear spin decoupling reveals the coupling partners of the irradiated proton (not shown), (a) Standard <sup>1</sup>H spectrum, (b) decoupled spectrum.</p></figcaption>
+</figure>
+</aside>
+</section>
+<section epub:type="chapter" id="ch4.5">
+<h2 class="h2">4.5<span class="space">&#160;</span>Chirality and NMR</h2>
+<p class="noindent">In many instances the two protons of a &#8722;CH<sub>2</sub>&#8722; group are seen to resonate at different frequencies and to show a mutual coupling, that is, they are chemically inequivalent, and are referred to as <b><i>diastereotopic</i></b> protons. This inequivalence occurs when the methylene group is adjacent to an asymmetric centre, such as the fragment WCH<sub>2</sub>-CXYZ, and is not lost by rapid rotation about the C&#8211;C bond. The reason for this can be understood from considering the Newman projections for the three energetically favoured rotamers, but the argument applies equally to any rotamer (<a href="#fig4.36">Fig. 4.36</a>).</p>
+<figure style="width:70%" id="fig4.36">
+<img src="../images/he_9780198557555_graphic_0086.jpg" alt="images"/>
+<figcaption style="width:120%;"><b>Fig. 4.36</b> Newman projections of the three energetically favoured rotamers (see discussions in text).</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<figure id="fig4.37">
+<img src="../images/he_9780198557555_graphic_0087.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.37</b> The CH<sub>2</sub> group of aspartic acid displays resonances characteristic of the AB part of an ABX system. The protons are inequivalent and are said to be <b><i>diastereotopic</i>.</b></p></figcaption>
+</figure>
+</aside>
+<p class="indent">From inspection it may be seen that, no matter what rotameric form, the chemical environments for the two protons are never mutually interchanged. For example, the environment of Hi in rotamer I is not the same as that of H2 in rotamer III, and so on, thus giving rise to chemical inequivalence. As an example, the diastereotopic methylene protons of aspartic acid are part of an ABX, not an A2X system, (<a href="#fig4.37">Fig. 4.37</a>) with each proton coupled to its geminal partner and to the proton on the adjacent chiral carbon. Replacing the W group with a proton will remove the differences between rotamers, so that all protons will experience the same average environment as the methyl group rotates, and hence will be equivalent.</p>
+<p class="indent">Inequivalence is not only limited to the protons of methylene groups, however, so that a pair of methyl groups may also be diastereotopic, for example, the two methyl groups of valine (H<sub>2</sub>NCH(CH(CH<sub>3</sub>)<sub>2</sub>)COOH) are inequivalent and resonate at 0.97 and 0.94 ppm.</p>
+<p class="indent">The idea of diastereotopic groups can be made more general, as a stereogenic centre is not always required for inequivalence. In fact, methylene protons adjacent to <i>any group that lacks symmetry</i> will be diastereotopic. Thus, in the group R&#8722;CH<sub>2</sub>&#8722;CXY&#8722;CH<sub>2</sub>&#8722;R, which is prochiral, the &#8722;CXY&#8722;CH<sub>2</sub>R group itself has no symmetry so that the methylene protons remain inequivalent. Groups that are equivalent because they share a mirror image relationship with one another are referred to as being <b><i>enantiotopic</i>.</b></p>
+<a id="page_52" class="page" style="width:70%;">Page 52, Nuclear magnetic resonance spectroscopy: the basics</a>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<figure id="fig4.38">
+<img src="../images/he_9780198557555_graphic_0088.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.38</b> Example chiral shift reagents. They all contain functional groups capable of hydrogen bonding with the solute molecules of interest, thus forming diastereomeric complexes.</p></figcaption>
+</figure>
+</aside>
+<p class="indent">Now let us briefly consider the analysis of enantiomers by NMR. Whilst the NMR spectra of diastereoisomers may be different, those of enantiomers are indistinguishable (radiofrequency is an achiral probe). However, it is often desirable to be able to assess the relative ratios of two enantiomers in solution, and this is made possible by the use of <b><i>chiral shift reagents</i></b>. Such reagents are single, pure enantiomers of a molecule that will interact with the species to be analysed when mixed in solution, forming a <b><i>diastereomeric complex</i>.</b> Some example reagents are shown in <a href="#fig4.38">Fig. 4.38</a>. The complex formation is brought about by the interaction of functional groups, and the shift differences of the diastereomeric complexes arise from the anisotropy of the shift reagent. The complexes now have spectra that can be distinguished, and the relative ratios of the enantiomers is determined from integration of suitable resonances. The ratio is usually expressed as the <b><i>enantiomeric excess</i></b> <i>(ee)</i>, where</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>e</mi><mi>e</mi><mtext>&#x2009;</mtext><mtext>=</mtext><mfrac><mrow><msub><mi>I</mi><mi>A</mi></msub><mo>&#x2212;</mo><msub><mi>I</mi><mi>B</mi></msub></mrow><mrow><msub><mi>I</mi><mi>A</mi></msub><mo>+</mo><msub><mi>I</mi><mi>B</mi></msub></mrow></mfrac><mo>&#x00D7;</mo><mtext>&#x2009;</mtext><mn>100</mn><mi>&#x0025;</mi></math></p>
+<p class="noindent">and <i>I</i><sub>A</sub> and <i>I</i><sub>B</sub> represent the integrals of the two complexes arising from enantiomers A and B. Clearly, the <i>ee</i> is zero for a racemic mixture, as <i>I</i><sub>A</sub> = <i>I</i><sub>B</sub>.</p>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="ch4.6">
+<h2 class="h2">4.6<span class="space">&#160;</span>Dynamic effects in NMR spectra</h2>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<figure id="fig4.39" style="text-align:left;">
+<img src="../images/he_9780198557555_graphic_0089.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.39</b> Simulated spectra for the dynamic exchange of two equally populated sites, (a) slow-exchange regime, (b) coalescence point, (c) fast exchange regime.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent2">In some instances, peaks in the intermediate exchange regime can become so broad they are lost in the baseline and effectively disappear.</p></figcaption>
+</figure>
+</aside>
+<p class="noindent">The NMR spectra of most molecules in solution usually represent an averaged spectrum of all possible conformations and orientations of the molecule, brought about by fast molecular motion (translations and rotations). In this section we consider what happens when the motion can no longer be consider fast, and indeed what defines &#8216;fast&#8217; in the context of NMR analysis.</p>
+<p class="indent">A commonly encountered situation which may occur on a timescale that gives rise to dynamic effects in NMR spectra is that of hindered rotation about a bond. Consider a proton that sits in a molecule that may take up two possible conformations of equal population. The proton can be expected to resonate at different frequencies in each conformer, let the difference between these two be &#948;v Hz. If we wished to characterize the two resonant frequencies and so observe each conformer separately, the Heisenberg uncertainty principle tells us that each conformer must have a lifetime of at least 1/(2&#960;&#948;v) seconds. If the lifetimes are less than this the chemical shifts for the proton in each environment cannot be determined, and only a single resonance is observed at an average chemical shift. Thus, if the rate constant, k, for an exchange process is much greater than 2&#960;&#948;v), the process is fast on the NMR timescale (or more specifically the chemical shift timescale) and an averaged spectrum is obtained. If the rate constant is much less than 2&#960;&#948;v, the process is slow and separate resonances are observed for the two conformers (<a href="#fig4.39">Fig. 4.39</a>). In between these two extremes the exchange is said to be intermediate; resonances become broad and the two separate peaks become one at the coalescence temperature, before forming the single time-averaged peak. Rate constants within the range of approximately 10<sup>&#8722;1</sup> to 10<sup>3</sup> s<sup>&#8722;1</sup> can be expected to produce directly observable changes to the NMR spectrum. Such effects are often observed <a id="page_53" class="page">Page 53, Nuclear magnetic resonance spectroscopy: the basics</a>in the spectra of amides in which rotation about the amide bond is restricted due to its partial double-bond character (<a href="#fig4.40">Fig. 4.40</a>).</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<figure id="fig4.40" style="text-align:center;">
+<img src="../images/he_9780198557555_graphic_0090.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.40</b> Slow rotation about amide bonds is often observed due to the partial double-bond character.</p></figcaption>
+</figure>
+</aside>
+<p class="indent">Studies of changes in lineshapes with temperature can lead to the determination of rate constants for a number of dynamic processes, but are beyond the scope of this text. For the simple case of two-site exchange with equal site populations the rate constant at the coalescence point, <i>k</i><sub>c</sub>, is given by</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>k</mi><mtext>C</mtext></msub><mo>=</mo><mfrac><mrow><mtext>&#x03C0;&#x03B4;&#x03BD;</mtext></mrow><mrow><msqrt><mn>2</mn></msqrt></mrow></mfrac><mtext>&#x2009;</mtext><msup><mtext>s</mtext><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msup></math></p>
+<p class="noindent">and the free energy of activation, &#916;<i>G</i><sup>&#8225;</sup> for the process at this coalescence temperature, <i>T<sub>c</sub></i> (in K), may be derived from the Eyring equation as</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x0394;</mi><msup><mi>G</mi><mo>&#x2021;</mo></msup><mo>=</mo><mn>8.31</mn><msub><mi>T</mi><mi>c</mi></msub><mrow><mo>[</mo><mrow><mn>22.96</mn><mo>+</mo><mtext>ln</mtext><mrow><mo>(</mo><mrow><mrow><mrow><msub><mi>T</mi><mtext>c</mtext></msub></mrow><mo>/</mo><mrow><mtext>&#x03B4;</mtext><mi>v</mi></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mtext>&#x2009;</mtext><mtext>J</mtext><mtext>&#x2009;</mtext><msup><mtext>mol</mtext><mrow><mo>&#x2212;</mo><mtext>1</mtext></mrow></msup></math></p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<p class="noindent2" style="width:100%;">Altering experimental conditions (temperature or field strength) to move into the slow-exchange regime is often said to&#8217;freeze out&#8217; the individual spectra of interconverting conformers.</p>
+<figure id="fig4.41" style="text-align:left;">
+<img src="../images/he_9780198557555_graphic_0091.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.41</b> Partial<sup>1</sup>H spectra of ethanol in (a) the absence and (b) the presence of acid. Coupling between the methylene and the hydroxyl protons is not seen in (b) due to <b><i>exchange decoupling</i></b></p>
+<p class="noindent">&#160;</p>
+<p class="noindent2">A simple test for the presence of exchangeable protons, often referred to as the &#8216;D<sub>2</sub>O shake&#8217;, is to add two drops of D<sub>2</sub>0 to the NMR tube, mix, leave to settle and re-record the spectrum. Exchangeable protons should disappear from the spectrum since they will have been replaced by deuterons.</p></figcaption>
+</figure>
+</aside>
+<p class="noindent">for which the value of &#x03B4;&#x03BD; must be determined from the shift difference between the resonances in the slow-exchange regime.</p>
+<p class="indent">Because the exchange timescales are dependent on the chemical shift difference <i>in hertz</i> between the exchanging resonances, the appearance of the spectra of dynamic systems may vary with the applied field strength. For example, shift differences are larger at higher field strengths, so that exchange processes may appear slow whereas on a lower-field instrument they may be in the intermediate or even fast regime; use of a higher field strength has a similar effect on the appearance of spectra as would cooling the sample (although in the latter case it is the actual exchange rates that alter). Likewise, observing another nucleus may provide very different results from those seen in proton spectra, because the shift differences are unlikely be the same as they were in the proton spectrum.</p>
+<p class="indent">Resonance broadening may also come about by intermolecular exchange processes, for example the resonances of exchangeable protons such as OH, NH or SH are often broad and show no resolved couplings, usually due to acid-, but sometimes base-, catalysed exchange. In a moiety such as CH&#8211;OH you might expect to observe splitting of the CH resonance due to the neighbouring hydroxyl proton, giving rise to a doublet in the absence of further couplings. The splitting arises, as described in <a href="#ch4.4">Section 4.4</a>, because the OH may take up two possible orientations, &#945; and &#946;, causing CH protons to resonate at two frequencies. Suppose the hydroxyl proton initially has the &#945; arrangement in a particular molecule, but is then exchanged for another proton. The incoming proton may have the same (&#945;) arrangement, in which the CH resonant frequency is unchanged, or it may have the opposite (&#946;) arrangement, in which case the CH proton now resonates as the other half of the doublet. If the exchange of the hydroxyl proton is sufficiently fast, the two lines of the doublet will never been seen, and a single averaged line is observed. The CH&#8211;OH pair are said to be <b><i>exchange decoupled</i>.</b> If the exchange rate was very slow, both transitions could be observed and the coupling would be apparent on the CH and OH resonances (<a href="#fig4.41">Fig. 4.41</a>).</p>
+</section>
+<section epub:type="chapter" id="ch4.7">
+<h2 class="h2">4.7<span class="space">&#160;</span>Exercises</h2>
+<p class="noindent"><a href="Exercise_answers.xhtml#exe4.1">1</a>.<span class="space">&#160;</span>Assign the <sup>1</sup>H spectrum of ethyl <i>p</i>-tolylacetate shown in <a href="#fig4.5">Fig. 4.5</a> using the chemical shifts and coupling patterns only.</p>
+<a id="page_54" class="page" style="width:70%;">Page 54, Nuclear magnetic resonance spectroscopy: the basics</a>
+<p class="noindent">2.<span class="space">&#160;</span>Assign the spectra below to the three structural fragments shown by analysing the coupling fine structure in these spectra.</p>
+<figure>
+<img src="../images/he_9780198557555_graphic_0093.jpg" alt="images"/>
+</figure>
+<p class="noindent">3.<span class="space">&#160;</span>An unknown molecule gave the <sup>1</sup>H spectrum shown below. Based on this, and the knowledge that the molecular formula is C<sub>5</sub>H<sub>10</sub>O, suggest a structure for the unknown.</p>
+<figure style="width:70%;text-align:center;">
+<img src="../images/he_9780198557555_graphic_0094.jpg" alt="images"/>
+</figure>
+<p class="noindent">4.<span class="space">&#160;</span>At room temperature, the 200 MHz <sup>1</sup>H spectrum of a N,N-dimethyl amide ((CH<sub>3</sub>)<sub>2</sub>NCOR) shows two sharp methyl resonances in a 1:1 ratio at 3.05 and 2.85 ppm. On warming the solution, the two resonances broaden and merge together at 84&#176; C, above which only a single resonance is observed. Explain these observations. How would you expect the spectrum to appear if acquired at 500 MHz and 84&#176; C? What is the rate constant and free energy of activation for the process measured at 84&#176; C at 200 MHz?</p>
+<h3 class="h3">Further reading</h3>
+<p class="noindent">1.<span class="space">&#160;</span>For a more detailed explanation of the physical basis of NMR see P. J. Hore, <i>Nuclear Magnetic Resonance</i>, Oxford Chemistry Primers, Oxford University Press, Oxford, 1995.</p>
+<p class="noindent">2.<span class="space">&#160;</span>R. Abraham, J. Fisher, and P. Loftus, <i>Introduction to NMR Spectroscopy</i>, Wiley, Chichester, 1988.</p>
+<p class="noindent">3.<span class="space">&#160;</span>H. G&#252;nter, <i>NMR Spectroscopy</i>, 2nd Ed., Wiley, Chichester, 1995.</p>
+<p class="noindent">4.<span class="space">&#160;</span>E. Breitmaier, <i>Structure Elucidation by NMR in Organic Chemistry. A Practical Guide</i>., Wiley, Chichester, 1993.</p>
+</section>
+</section>
+</body>
+</html>

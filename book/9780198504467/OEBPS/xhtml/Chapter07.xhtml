@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Computers in Chemistry</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch07">
+<a id="page_73" class="page" style="width:70%;">Page 73, Chapter 7 Presenting information</a>
+<h1 class="main">7<span class="space">&#160;</span>&#160; Presenting information</h1>
+<p class="banoindent">For all scientists, from school children undertaking classroom experiments to distinguished professors heading multinational research projects, it is necessary to be able to present results in a logical understandable manner. This chapter will attempt to present some of the techniques available using computers to help achieve this aim. Again, it must be stressed that it can not be a comprehensive review of all the programs available, there is simply not enough room here, nor would it be practical considering how quickly such information goes out of date; rather it is a guide to good practice and techniques.</p>
+<p class="baindent">Through necessity, a few packages that the author himself uses will be concentrated on; this is in no means a recommendation that the reader should adopt these packages themselves. The most important thing when using commercial packages is that they should be able to do all the tasks necessary and that the user is comfortable using them. There is little point in using the most recent, all-singing all-dancing word processor, if it takes twice as long to do everything; similarly, there is no point in using a simple, fast, text editor if it is incapable of inserting subscripts or superscripts&#x0021;</p>
+<section epub:type="chapter" id="ch7.1">
+<h2 class="h2">7.1 The armoury</h2>
+<p class="banoindent">The packages that it is necessary to have available depend, obviously, to a large extent on what sort of work is being presented. It is unlikely that an organic chemist would be able to survive without some form of molecule drawing package; however a physical chemist would find very little use for one. The programs will also depend tremendously on the platform(s) available and the &#x201C;tradition&#x201D; amongst those in the same field.</p>
+<p class="baindent">The bare minimum needed is some form of word processor. Indeed, it is surprising what can be done with a modern word processor &#x2013; they usually include some form of rudimentary drawing package along with some spreadsheet capabilities, and they are virtually all capable of formatting equations. Other useful packages include spreadsheets, drawing packages, graphing programs and, possibly, image manipulation.</p>
+<h3 class="h3"><span class="bold">Word processors</span></h3>
+<p class="banoindent">The ubiquitous word processor, especially on PCs and Macs, is Microsoft Word, although Corel WordPerfect is also very popular. The latter also has the advantage that it is available on some Unix platforms. In reality though, there is little to chose between these two in their capabilities, and the choice will largely depend upon individual tastes (to say nothing of local availability). Although Word and WordPerfect account for the majority of word processing packages installed world-wide, in the scientific community their dominance is rivalled by the TeX document processing package. TeX, or its more popular derivative LaTeX, is particularly favoured amongst <a id="page_74" class="page">Page 74, Chapter 7 Presenting information</a>mathematicians and those whose chief work is mathematical in nature, such as theoretical chemists.</p>
+<aside class="abc" style="margin-top:2em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">WYSIWYG &#x2013; What You See Is What You Get &#x2013; a term that describes word processors in which what appears on the screen is a direct representation of what will appear in the final printed document (or at least that is the idea &#x2013; some come closer than others&#x0021;).</p>
+</aside>
+<p class="baindent">The chief difference between Word/WordPerfect and LaTeX is that the former are WYSIWIG, whereas the latter is most definitely not. For those who have never come across LaTeX, its style of word processing can seem very strange: the text that is written can be likened to a program source that is compiled to produce the executable code, but in this case the output is not an executable program, but a file containing the formatted document. The text within the LaTeX source file contains instructions to the document processor about how the end document should look. The great advantages of LaTeX is that it is very customisable and the source text can be processed on almost any system since there are LaTeX &#8220;compilers&#8221; available, free of charge, for virtually every platform. An example of a LaTeX source file and the output it produces is shown in <a href="#fig7.1">Fig. 7.1</a>.</p>
+<figure class="image-s" id="fig7.1">
+<img src="../images/page74_1.jpg" alt="images"/>
+<figcaption>
+<aside class="abc2" style="margin-top:-10em;" epub:type="sidebar">
+Fig.7.1 An example LaTeX file, along with the output it produces.</aside>
+</figcaption>
+</figure>
+<div class="box">
+<p class="bin">The Schr&#x00F6;dinger equation for a particle of mass m moving in one dimension is</p>
+<p class="bin"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mover accent='true'><m:mi>H</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mi>&#x03A8;</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>&#x210F;</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>m</m:mi></m:mrow></m:mfrac><m:mfrac><m:mrow><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup><m:mi>&#x03A8;</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:mover accent='true'><m:mi>V</m:mi><m:mo>&#x005E;</m:mo></m:mover><m:mo>.</m:mo><m:mi>&#x03A8;</m:mi><m:mo>=</m:mo><m:mi>e</m:mi><m:mi>&#x03A8;</m:mi></m:mrow></m:math></p>
+</div>
+<p class="noindent">&#160;</p>
+<p class="baindent">The lack of WYSIWYG interface for LaTeX has been addressed in a number of ways. Commercial packages, such as Scientific Word for the PC, are available that act as a <i>front-end</i> for LaTeX; they look similar to a &#x2018;standard&#x2019; word processor, but produce LaTeX as their output which can then be processed further. Public domain packages, such as LyX are similar and give the same functionality on Unix workstations. These front-ends provide the bulk of the features that are expected of a word processor, but they are lacking in some of the more obscure functions &#x2013; although this may not be seen as a drawback by some&#x0021; In addition, they tend not to be as good as the likes of Word and WordPerfect at interacting with other packages on the computer. Their big advantage, as you would expect, is that they are very good at setting mathematical equations.</p>
+<h3 class="h3"><span class="bold">Style</span></h3>
+<p class="banoindent">One of the most difficult things for any writer is the development of a style. A writing style does not come into being fully formed: it can take a month or so of writing to develop. When producing written work of any significant <a id="page_75" class="page">Page 75, Chapter 7 Presenting information</a>length, my advice is always to go back and re-examine the first pieces of writing to check that the style is not vastly different from that which has developed. You will also inevitably find that your style will change over the years. It is impossible for anybody to say what is the &#x2018;correct&#x2019; style and it is up to the individual to decide what suits them and what is acceptable in the circumstances. Nevertheless, in scientific writing there are a few guidelines which should be born in mind.</p>
+<p class="baindent">First, make sure that the style is not too &#x2018;quirky&#x2019; and difficult to read: individualism can be taken too far. The whole point of scientific writing, be it writing essays or papers or books, is to impart information to the reader. An entertaining style may seem like a good idea, but its novelty wears off after a while when you are trying to search for information. Secondly, grammar is important. Grammar has developed over many years in order to make the meaning of sentences plain and unambiguous. If the grammar or sentence structure is unintelligible, then it will annoy and confuse your readers. Having said that, it is possible to take some liberties with grammar if the meaning is unambiguous: I&#x2019;m sure that not all of this primer is written in perfect English, but I hope the poor grammar does not detract from the information contained in it! Nevertheless, it should always be remembered that in scientific writing it is the content, not the form, of the writing that is important.</p>
+<p class="baindent">Other things to be careful or when writing are things such as introducing &#x2018;lab shorthand&#x2019; when writing published articles. This means using abbreviations, shortcuts, and so on that others not familiar with your work may not understand. An example may be referring to &#x201C;singlet delta&#x201D;, when what you really mean is O<sub>2</sub>(<sup>1</sup>&#x0394;<sub>g</sub>). You should also be aware of using <i>slang</i> words: you don&#x2019;t &#x2018;zap&#x2019; things, you &#x2018;photolyse&#x2019; them and so on. This sort of advice mav seem obvious, but it is surprising how often such things are seen.</p>
+<p class="baindent">The next thing to be aware of is consistency. There is nothing more annoying and confusing for a reader than for the author to change how things are referred to. For instance, you should be aware of continually changing between using &#x2018;ethene&#x2019; and &#x2018;ethylene&#x2019; or of using &#x2018;ml&#x2019;, &#x2018;cc&#x2019;, and &#x2018;cm<sup>3</sup>&#x2019; interchangeably. Again this may seem like common sense, but often common sense is not at the forefront of your mind when you are concentrating on what you are writing.</p>
+<p class="baindent">Finally, it is important to ensure that what you write is unambiguous. It may seem blindingly obvious to you what you mean, but that does not mean that it is what you have written! Take the short abstract shown below:</p>
+<p class="blockquote">&#x201C;The solution was centrifuged and the supernatant and solid residue extracted.This was then further treated...&#x201D;</p>
+<p class="baindent">It is unclear here what the &#x2018;this&#x2019; in the second sentence refers to. The rules of grammar say that it refers to the subject of the previous sentence, but it is likely in this case that the writer is referring to either the &#x2018;supernatant&#x2019; or &#x2018;the solid residue&#x2019; and not &#x2018;the solution&#x2019;. The answer is simply to start the second sentence with &#x2018;The supernatant...&#x2019; and all ambiguity is removed.</p>
+<h3 class="h3"><span class="bold">Equations</span></h3>
+<p class="banoindent">In virtually all branches of chemistry you will come across equations. The equations may be chemical or mathematical, but they inevitably form an <a id="page_76" class="page">Page 76, Chapter 7 Presenting information</a>integral part of the subject. The way that equations are presented depends on whether they are chemical or mathematical, consequently the two will be treated separately.</p>
+<h4 class="h4"><i>Chemical equations</i></h4>
+<p class="banoindent">Most chemists know how to layout a chemical equation, or at least most chemists have their own ideas about how chemical equations should be laid out. The principle is simple: &#x2018;reactants&#x2019; &#x2018;arrow&#x2019; &#x2018;products&#x2019;. The difficulty really arises when there are many reactions to display together. To some extent the style of presenting groups of equations is up to the author (although journals may proscribe a certain style), so long as the style is maintained. The differences amount to how the various parts of the equation are aligned: some prefer the equation to be monotonically spaced across the page, usually left justified; others prefer the equations to be placed so that the arrows are vertically aligned; yet others prefer each component of the equation to line-up (although this becomes very difficult when there is a mixture of uni-, bi- and termolecular reactions&#x0021;). Each of these type of alignment are shown in <a href="#fig7.2">Fig. 7.2</a></p>
+<figure class="image" id="fig7.2">
+<img src="../images/page76_1.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-18em;" epub:type="sidebar">
+Fig.7.2 Different styles of presenting chemical equations:
+<p class="noindent3" style="margin-left:2em;margin-top:1.5em;">(a)<span class="padding1"></span>monotonically spaced, left justified;</p>
+<p class="noindent3" style="margin-left:2em;margin-top:1.5em;">(b)<span class="padding1"></span>monotonically spaced, centered;</p>
+<p class="noindent3" style="margin-left:2em;margin-top:1.5em;">(c)<span class="padding1"></span>monotonically spaced, centered on the arrow;</p>
+<p class="noindent3" style="margin-left:2em;margin-top:1.5em;">(d)<span class="padding1"></span>individual components aligned</p>
+</aside>
+</figcaption>
+</figure>
+<p class="baindent">In general, any of these formats, and other similar ones, are acceptable, so long as one style is chosen and stuck to: style (a) is generally the easiest to produce of these, whilst style (d) probably looks best (but that is just personal opinion). The advantage of these simple formats is that they can be produced using nothing more complicated than the normal text functions of a word processor.</p>
+<p class="baindent">Further complications arise when more information is needed within the equations itself. For instance, it may be necessary to put something above the arrow:</p>
+<p class="img-c"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mtext>H</m:mtext><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mtext>O</m:mtext><m:mn>2</m:mn></m:msub><m:mover><m:mo>&#x2192;</m:mo><m:mrow><m:mtext>Pt</m:mtext></m:mrow></m:mover><m:msub><m:mtext>H</m:mtext><m:mn>2</m:mn></m:msub><m:mtext>O</m:mtext></m:mrow></m:math></p>
+<p class="baindent">It is usually not easy to produce such constructs using normal word processor features; however the above example was obtained fairly easily using a mathematical equation editor. Reactions that are more complex or <a id="page_77" class="page">Page 77, Chapter 7 Presenting information</a>larger reaction schemes may need to be created using a drawing package (see later) and <i>imported</i> into the document.</p>
+<h4 class="h4"><i>Mathematical equations</i></h4>
+<p class="banoindent">Mathematical equations are probably one of the most complex constructs that people will come across during the normal course of document processing. Most modern word processors have some form of equation editing function built in to them, indeed some, such as LaTeX, have mathematical typesetting as their primary function.</p>
+<p class="baindent">The equation function of some of the word processors is actually a separate program, and it is entirely possible to use the equation editor from one program to produce the equations in a different one.</p>
+<p class="baindent">There are two basic methods that programs use to produce equations: either graphically (using icons to pick the elements of the equation) or as a text description of the equation. The Microsoft Equation editor (as used primarily by Microsoft Word) and the later versions of WordPerfect, amongst others, use a graphical method, whereas LaTeX, earlier versions of WordPerfect, and many Unix based document processors use the text method.</p>
+<p class="baindent">Many of the textual description packages have as their predecessor the &#x2018;eqn&#x2019; equation editor that is part of the &#x2018;roff&#x2019; package available on just about any Unix system. In this system, the principle is to describe the equation as you see it. For instance, to produce the equation:</p>
+<p class="img-c">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+<m:mi>x</m:mi>
+<m:mo>=</m:mo>
+<m:msup>
+<m:mrow>
+<m:mo>(</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>+</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>&#x03B1;</m:mi>
+<m:mo>+</m:mo>
+<m:mi>&#x03B2;</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>)</m:mo>
+</m:mrow>
+<m:mrow class="MJX-TeXAtom-ORD">
+<m:mn>2</m:mn>
+</m:mrow>
+</m:msup>
+</m:math>
+</p>
+<p>would require the &#x2018;program&#x2019;</p>
+<p class="img-c"><i>x</i> = left ( { a + b } over { alpha + beta } right ) sup 2</p>
+<p class="banoindent">As can be seen, the equations are built up by grouping individual elements together using braces, and in this way, quite complex equations can be constructed. However, some people, especially those who do not have a mathematical background, find this textual descriptive method of producing equations very confusing.</p>
+<p class="baindent">The graphical method of producing equations is usually much simpler to understand: the particular construct or symbol you wish to insert is simply clicked on. Even non-mathematically based people can construct complex equations just on the basis that it &#x2018;looks right&#x2019;, without any real knowledge of what it is they are producing! <a href="#fig7.3">Fig. 7.3</a> shows the same equation as above being produced in Microsoft Equation 3.0. As can be seen, this screen shot is taken just as the &#x03B2; is being inserted.</p>
+<h4 class="h4"><i>Equation numbering</i></h4>
+<p class="banoindent">There are two schools of thought when it comes to numbering equations: should the mathematical and chemical equations be numbered together, or separately? There is not really an easy answer to this! It depends on the context in which the document is produced and on any style proscribed. In general most documents will be largely chemical or largely mathematical, <a id="page_78" class="page">Page 78, Chapter 7 Presenting information</a>and in these cases the minority equation can be labelled with a prefix, often &#x2018;E&#x2019;, so that, for example, the maths equations will be (1), (2), (3), &#x2026; and the chemical equations will be (E1), (E2), (E3), &#x2026;. Using this type of scheme will remove any ambiguity.</p>
+<figure class="image" id="fig7.3">
+<img src="../images/page78_1.jpg" alt="images"/>
+<figcaption class="fig1">Fig.7.3 Producing an equation in Microsoft Equation 3.0
+</figcaption></figure>
+<p class="baindent">Of course, if the document you are producing is in chapters, such as a thesis or a book, then the equations, and indeed everything else, should be prefixed with the chapter number.</p>
+<h3 class="h3"><span class="bold">Diagrams</span></h3>
+<p class="banoindent">Diagrams are an important part of any scientific text. It is much easier to explain concepts in the form of diagrams than in words and the old adage of &#x201C;a picture is worth a thousand words&#x201D; is particularly pertinent in science.</p>
+<p class="baindent">The choices when producing diagrams using a computer are just as wide as for producing text. Many word processors come as part of a suite of programs that include a drawing package, whereas others, such as Word, have some form of drawing capability built-in. However, these packages are usually only limited in their capabilities, and it is often worthwhile using a full package such as CorelDraw or Adobe Illustrator. One drawback with such large and powerful packages is that it takes some while to become proficient with their use, but the time taken practising is usually worthwhile considering the end result.</p>
+<p class="baindent" >One thing that must be remembered when drawing scientific diagrams is that you don&#x2019;t need to be an artist. The idea is to present a clear interpretation of the concept you are trying to portray, there is no need for it to be a work of high art. For instance, if it is necessary to draw an apparatus, there is usually no need for it to be an accurate scale drawing, indeed the individual <a id="page_79" class="page">Page 79, Chapter 7 Presenting information</a>components may not necessarily be in proportion since some parts may need to be emphasised over others, the only thing that is necessary is that it is logically correct. The key really is to try to make the diagrams uncluttered and to some degree self explanatory.</p>
+<figure class="image" id="fig7.4">
+<img src="../images/page79_1.jpg" alt="images"/>
+<figcaption class="fig1">Fig.7.4 sample diagram showing some techniques used in making clear illustrations</figcaption>
+</figure>
+<p class="baindent">Notwithstanding matters of style, there are a few guidelines that should be adhered to. First, don&#x2019;t make diagrams too small, or try to cram too much detail in. Not only will it make the illustrations more difficult to produce and much more difficult to understand, but also, if the work is to be published, it will make accurate reproduction difficult. On a similar theme, don&#x2019;t be afraid to use quite heavy lines. Thin lines may look nice on the original, but after a couple of photocopies, they will disappear! Secondly, clearly label things; if there is not much room, then use letters or numbers and include a key. The font used for the labels is also quite important: avoid cursive texts if possible, and if the style allows, use a sans-serif font such as Helvetica or Arial. Next, if it is possible to use colour, do so. Colour can significantly enhance the comprehensibility of a diagram and it allows specific items to be highlighted very effectively. But, don&#x2019;t go overboard with colour: garish colours splashed all over the diagram will only distract the reader from the point of the illustration. Finally, keep it simple. If a diagram is to illustrate a particular point or aspect of the work, then make sure that that is all that it does: remove any extraneous detail that is not pertinent to that particular aspect. A sample diagram is shown in <a href="#fig7.4">Fig. 7.4</a>; this particular diagram is a schematic representation of a photo-oxidation &#x2013; gas chromatograph system. It is obvious that the diagram is not to scale, and that unimportant details are omitted. For instance, the electrical circuitry controlling the photolysis lamps <a id="page_80" class="page">Page 80, Chapter 7 Presenting information</a>is very important; however it is irrelevant to this particular diagram, so it is omitted. Similarly, the Teflon bag is not drawn to scale, because although it is of prime importance in the experiment, drawing it much larger does not add any more information to the diagram.</p>
+
+<p class="baindent">A particular aspect of illustration, which is unique to chemistry, is the depiction of molecules. There are two main types of molecular illustration: structures and molecular modelling. Structural representation is usually employed by organic chemists to show the structure of complex molecules. Special packcages are available to aid in producing these diagrams probably the best known examples are programs such as ChemDraw or Isis/Draw, but most general purpose drawing packages can be coerced into producing perfectly acceptable diagrams. The advantage of the specialised packages is that they have the various bonds and ring structures pre-programmed into them, often they are also aware of chemistry and so will help in constructing the diagram. <a href="#fig7.5">Fig. 7.5</a>. shows a screen shot from the Isis/Draw package while a molecule (adamantane) is being produced. Various predefined structures can clearly be seen on the top menu bar, whilst the side bar shows various tools used in the construction of the molecule.</p>
+<figure class="image" id="fig7.5">
+<img src="../images/page80_1.jpg" alt="images"/>
+<figcaption class="fig1">Fig.7.5 Screen shot of ISIS/Draw producing a diagram of adamantane</figcaption>
+</figure>
+<p class="baindent">Molecular modelling packages are designed to give a realistic three-dimensional picture of a molecule. They may either work as a molecular designer where molecules can be built up by hand or be given the coordinates of the individual atoms and so produce a picture. There are usually <a id="page_81" class="page">Page 81, Chapter 7 Presenting information</a>different ways displaying each molecule: such as stick, ball-and-stick or space-filling, with different three-dimensional effects applied to them. Some examples of different representations of 2-methyl butadiene are shown in <a href="#fig7.6">Fig. 7.6.</a> Of course, it is impossible to give a good representation of these inherently 3D images on a page; the only way to get a good feel for a molecule in three dimensions is to use a computer and manipulate the image directly, preferably using stereoscopic imaging.</p>
+<figure class="image" id="fig7.6">
+<img src="../images/page81_1.jpg" alt="images"/>
+<figcaption><aside class="abc1" style="margin-top:-15em;" epub:type="sidebar">
+Fig. 7.6 Examples of different representations of 2-methyl butadiene. These pictures were produced using Cerius<sup>2</sup> from MSI Inc.</aside>
+</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">a) Stick model showing the bond multiplicity, but no 3D effects.</p>
+</aside>
+<p class="image"><img src="../images/page81_2.jpg" alt="images"/></p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">b) Cylinder model. This particular representation is useful for large molecules such as DNA as it gives fairly good 3D representation and is capable of distinguishing between different atoms.</p>
+</aside>
+<p class="image"><img src="../images/page81_3.jpg" alt="images"/></p>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">c) Ball and stick model. This is one of the classic representations of a molecule: the size of the balls gives an indication of the relative size of each atom.</p>
+</aside>
+<p class="noindent"><a id="page_82" class="page" style="width:70%;">Page 82, Chapter 7 Presenting information</a></p>
+<aside class="abc" style="margin-top:2em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">d) Ball or space-filling model. This is the other classic representation of a molecule. The principle is that each atom takes up approximately the correct relative amount of space in the molecule.</p>
+</aside>
+<p class="image"><img src="../images/page82_1.jpg" alt="images"/></p>
+<h3 class="h3"><span class="bold">Tables</span></h3>
+<p class="banoindent">Tables are a convenient way of presenting a large amount of information in a small space. In scientific writing tables usually consist of lists of numbers whereas elsewhere they often consist of text, and as such their construction needs some attention. Most word processors have many built-in functions to help in producing tables, but as usual it is the author&#x2019;s control of these functions that is critical, not just their presence.</p>
+<p class="baindent">The function of a table is to impart information, so care must be taken that that information is presented unambiguously. Of particular importance in scientific tables are the column headings: these must accurately label what is in the column. Often the numbers in the column will have units and rather than repeat the units for each individual entry, the units are often put in the column heading; similarly if all the values are of a similar order of magnitude, a multiplying factor may be put in the column heading. The style of labelling the column may be proscribed by the ultimate destination of the written work, but where it isn&#x2019;t, then it is up to the author how to present the information. There are two main styles in use: either the multiplier and units in parenthesis after the label, or a <i>quantity calculus</i> style is used.</p>
+<p class="baindent">In general, the elements of a table are not presented in their own individual boxes, despite what the word processors would have us believe. Most often horizontal rules only are used, and then only to separate the headers from the main body of the table and to delimit the top and bottom of the table as a whole. Sometimes horizontal rules can be used to separate sections of a table, but that is often more effectively achieved using a blank line. Vertical rules can be used to separate columns, but again, it is often better to omit these <a id="page_83" class="page">Page 83, Chapter 7 Presenting information</a>lines and merely ensure that there is sufficient space between the columns to make the division obvious.</p>
+<p class="baindent">If possible, a table should not be split across a page boundary. Ensuring such a thing does not occur is usually quite easy with modern word processors, although the method of automatically ensuring such a thing varies from program to program. If it is inevitable that a table is split across a page, for example the table may be longer than a page, then it is important that a single cell is not split across the page, and that the column headings are repeated at the top of the second page. Both Word and WordPerfect have facilities for specifying which row is the header row and automatically repeating this at the top of every page.</p>
+<p class="baindent">As with all other aspects of writing, once a style of table has been decided on, it should be maintained throughout the whole document. Changing styles of such prominent items as tables only makes the work look shoddy and will taint the view of the reader when it comes to judging the content.</p>
+<p class="baindent"> <a href="#fig7.7">Fig. 7.7.</a> below shows good and bad examples of tables. It is obvious how much clearer and uncluttered the second table is. Note also the use of scaling factors for the numbers in right hand columns, the trend is much more annarent than when non-scaled numbers are used.</p>
+<figure class="image" id="fig7.7">
+<figcaption>
+<aside class="abc1" style="margin-top:5em;" epub:type="sidebar">
+Fig. 7.7 Example tables. Compare the two examples: they both provide the same information; however the layout of the lower one is much clearer and the trends in the values are much more obvious.</aside>
+</figcaption>
+<table border="1" class="width70tb" style="width:85%;margin-left:3em;">
+<tr>
+<td style="padding-left:0.5em;">Wavelength</td>
+<td style="padding-left:0.5em;">&#x03C3;(&#x03BB;)<sub>ClClO2</sub></td>
+<td style="padding-left:0.5em;">&#x03C3;(&#x03BB;)<sub>Cl2O4</sub></td>
+<td style="padding-left:0.5em;">&#x03C3;(&#x03BB;)<sub>Cl2O6</sub></td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">260</td>
+<td style="padding-left:0.5em;">5.30 &#x00D7; 10<sup>&#x2013;18</sup></td>
+<td style="padding-left:0.5em;">3.1 &#x00D7; 10<sup>&#x2013;19</sup></td>
+<td style="padding-left:0.5em;">1.268 &#x00D7; 10<sup>&#x2013;17</sup></td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">265</td>
+<td style="padding-left:0.5em;">5.50 &#x00D7; 10<sup>&#x2013;18</sup></td>
+<td style="padding-left:0.5em;">2.2 &#x00D7; 10<sup>&#x2013;19</sup></td>
+<td style="padding-left:0.5em;">1.374 &#x00D7; 10<sup>&#x2013;17</sup></td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">270</td>
+<td style="padding-left:0.5em;">6.60 &#x00D7; 10<sup>&#x2013;18</sup></td>
+<td style="padding-left:0.5em;">1.4 &#x00D7; 10<sup>&#x2013;18</sup></td>
+<td style="padding-left:0.5em;">1.439 &#x00D7; 10<sup>&#x2013;17</sup></td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">275</td>
+<td style="padding-left:0.5em;">8.30 &#x00D7; 10<sup>&#x2013;18</sup></td>
+<td style="padding-left:0.5em;">8.8 &#x00D7; 10<sup>&#x2013;20</sup></td>
+<td style="padding-left:0.5em;">1.464 &#x00D7; 10<sup>&#x2013;17</sup></td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">280</td>
+<td style="padding-left:0.5em;">1.05 &#x00D7; 10<sup>&#x2013;17</sup></td>
+<td style="padding-left:0.5em;">5.5 &#x00D7; 10<sup>&#x2013;20</sup></td>
+<td style="padding-left:0.5em;">1.457 &#x00D7; 10<sup>&#x2013;17</sup></td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">285</td>
+<td style="padding-left:0.5em;">1.26 &#x00D7; 10<sup>&#x2013;17</sup></td>
+<td style="padding-left:0.5em;">4.0 &#x00D7; 10<sup>&#x2013;20</sup></td>
+<td style="padding-left:0.5em;">1.410 &#x00D7; 10<sup>&#x2013;17</sup></td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">290</td>
+<td style="padding-left:0.5em;">1.43 &#x00D7; 10<sup>&#x2013;17</sup></td>
+<td style="padding-left:0.5em;">2.7 &#x00D7; 10<sup>&#x2013;20</sup></td>
+<td style="padding-left:0.5em;">1.316 &#x00D7; 10<sup>&#x2013;17</sup></td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">295</td>
+<td style="padding-left:0.5em;">1.50 &#x00D7; 10<sup>&#x2013;17</sup></td>
+<td style="padding-left:0.5em;">2.2 &#x00D7; 10<sup>&#x2013;20</sup></td>
+<td style="padding-left:0.5em;">1.169 &#x00D7; 10<sup>&#x2013;17</sup></td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">300</td>
+<td style="padding-left:0.5em;">1.47 &#x00D7; 10<sup>&#x2013;17</sup></td>
+<td style="padding-left:0.5em;">1.7 &#x00D7; 10<sup>&#x2013;20</sup></td>
+<td style="padding-left:0.5em;">1.011 &#x00D7; 10<sup>&#x2013;17</sup></td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">305</td>
+<td style="padding-left:0.5em;">1.33 &#x00D7; 10<sup>&#x2013;17</sup></td>
+<td style="padding-left:0.5em;">1.2 &#x00D7; 10<sup>&#x2013;20</sup></td>
+<td style="padding-left:0.5em;">8.550 &#x00D7; 10<sup>&#x2013;18</sup></td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">310</td>
+<td style="padding-left:0.5em;">1.12 &#x00D7; 10<sup>&#x2013;17</sup></td>
+<td style="padding-left:0.5em;">7.0 &#x00D7; 10<sup>&#x2013;21</sup></td>
+<td style="padding-left:0.5em;">7.080 &#x00D7; 10<sup>&#x2013;18</sup></td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">315</td>
+<td style="padding-left:0.5em;">8.70 &#x00D7; 10<sup>&#x2013;18</sup></td>
+<td style="padding-left:0.5em;">&#x2003;</td>
+<td style="padding-left:0.5em;">5.830 &#x00D7; 10<sup>&#x2013;18</sup></td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">320</td>
+<td style="padding-left:0.5em;">6.30 &#x00D7; 10<sup>&#x2013;18</sup></td>
+<td style="padding-left:0.5em;">&#x2003;</td>
+<td style="padding-left:0.5em;">4.770 &#x00D7; 10<sup>&#x2013;18</sup></td>
+</tr>
+</table>
+</figure>
+<table class="width70tb" style="width:60%;margin-left:3em;">
+<tr>
+<td style="vertical-align:top;"><p class="table" style="margin-left:1em;">Wavelength</p></td>
+<td style="vertical-align:top;border-bottom:1px solid black;" colspan="3"><p class="tabler" style="text-align:center;">&#x03C3;(&#x03BB;) (10<sup>-20</sup> cm<sup>2</sup> molecule<sup>-1</sup>)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;border-bottom:1px solid black;"><p class="table" style="margin-left:2.2em;">(nm)</p></td>
+<td style="vertical-align:top;border-bottom:1px solid black;"><p class="tabler" style="margin-left:1em;">ClClO<sub>2</sub></p></td>
+<td style="vertical-align:top;border-bottom:1px solid black;"><p class="tabler" style="margin-left:1em;">Cl<sub>2</sub>O<sub>4</sub></p></td>
+<td style="vertical-align:top;border-bottom:1px solid black;"><p class="tabler" style="margin-left:1em;">Cl<sub>2</sub>O<sub>4</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="table" style="padding-left:1.2em;">260</p></td>
+<td style="vertical-align:top;"><p class="tabler">530</p></td>
+<td style="vertical-align:top;"><p class="tabler-s">31</p></td>
+<td style="vertical-align:top;"><p class="tabler">1268</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="table" style="padding-left:1.2em;">265</p></td>
+<td style="vertical-align:top;"><p class="tabler">550</p></td>
+<td style="vertical-align:top;"><p class="tabler-s">22</p></td>
+<td style="vertical-align:top;"><p class="tabler">1374</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="table" style="padding-left:1.2em;">270</p></td>
+<td style="vertical-align:top;"><p class="tabler">660</p></td>
+<td style="vertical-align:top;"><p class="tabler-s">14</p></td>
+<td style="vertical-align:top;"><p class="tabler">1439</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="table" style="padding-left:1.2em;">275</p></td>
+<td style="vertical-align:top;"><p class="tabler">830</p></td>
+<td style="vertical-align:top;"><p class="tabler">8.8</p></td>
+<td style="vertical-align:top;"><p class="tabler">1464</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="table" style="padding-left:1.2em;">280</p></td>
+<td style="vertical-align:top;"><p class="tabler">1050</p></td>
+<td style="vertical-align:top;"><p class="tabler">5.5</p></td>
+<td style="vertical-align:top;"><p class="tabler">1457</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="table" style="padding-left:1.2em;">285</p></td>
+<td style="vertical-align:top;"><p class="tabler">1260</p></td>
+<td style="vertical-align:top;"><p class="tabler">4.0</p></td>
+<td style="vertical-align:top;"><p class="tabler">1410</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="table" style="padding-left:1.2em;">290</p></td>
+<td style="vertical-align:top;"><p class="tabler">1430</p></td>
+<td style="vertical-align:top;"><p class="tabler">2.7</p></td>
+<td style="vertical-align:top;"><p class="tabler">1316</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="table" style="padding-left:1.2em;">295</p></td>
+<td style="vertical-align:top;"><p class="tabler">1500</p></td>
+<td style="vertical-align:top;"><p class="tabler">2.2</p></td>
+<td style="vertical-align:top;"><p class="tabler">1169</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="table" style="padding-left:1.2em;">300</p></td>
+<td style="vertical-align:top;"><p class="tabler">1470</p></td>
+<td style="vertical-align:top;"><p class="tabler">1.7</p></td>
+<td style="vertical-align:top;"><p class="tabler">1011</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="table" style="padding-left:1.2em;">305</p></td>
+<td style="vertical-align:top;"><p class="tabler">1330</p></td>
+<td style="vertical-align:top;"><p class="tabler">1.2</p></td>
+<td style="vertical-align:top;"><p class="tabler">855</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="table" style="padding-left:1.2em;">310</p></td>
+<td style="vertical-align:top;"><p class="tabler">1120</p></td>
+<td style="vertical-align:top;"><p class="tabler">0.7</p></td>
+<td style="vertical-align:top;"><p class="tabler">708</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="table" style="padding-left:1.2em;">315</p></td>
+<td style="vertical-align:top;"><p class="tabler">870</p></td>
+<td style="vertical-align:top;"><p class="tabler"></p></td>
+<td style="vertical-align:top;"><p class="tabler">583</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="table" style="padding-left:1.2em;">320</p></td>
+<td style="vertical-align:top;"><p class="tabler">630</p></td>
+<td style="vertical-align:top;"><p class="tabler"></p></td>
+<td style="vertical-align:top;"><p class="tabler">477</p></td>
+</tr>
+</table>
+<p class="noindent"><a id="page_84" class="page" style="width:70%;">Page 84, Chapter 7 Presenting information</a></p>
+<h3 class="h3"><span class="bold">Graphs</span></h3>
+<p class="banoindent">Graphing was first introduced in <a href="Chapter05.xhtml">Chapter 5</a>, where some of the programs available for producing graphs were introduced. However, graphs are not just used in the primary analysis of results. They are a useful tool in illustrating written work, and usually they go hand-in-hand with tables; in fact there is no better way of illustrating a trend (or otherwise) in data than displaying it on a graph.</p>
+<p class="baindent">As with any other diagram, care must be taken to ensure that a graph is clear and illustrates the point it is intended to. Again, there are a few guidelines to be aware of when creating a graph. First, make sure that the axis scales are relevant: this does not, necessarily, mean that the graph must fill all the space, but that they are sensible considering the point you intend to make. For instance, if the purpose of the graph is to illustrate that a set of data is invariant, then there is little sense in choosing the scale of the graph such that the points do not look invariant! But, you mustn&#x2019;t use the scale to hide things you would prefer weren&#x2019;t there.</p>
+<p class="baindent">Secondly, there should be a reasonable number of tick marks: an axis that spans from 0 to 100, should not have tick marks every unit, nor should it have tick marks every 100 units. As a general rule there should be more than three, and ten or less tick marks: A 0&#x2212;2 axis should have major ticks every 0.5 units, with minor ticks every 0.25, whereas a 0&#x2212;8 axis would have ticks every unit, with minor ticks every 0.5. As always though, this is not a hard and fast rule: if it is relevant to the purpose of the graph, then tick marks can be at whatever spacing you choose. Most major graphing packages will make life easier by making sensible choices for you when the graph is created.</p>
+<p class="baindent">On the subject of axes, it is very important that they are labelled correctly. This doesn<i>&#x2019;</i>t just mean what the axes represent, but also what units are used. As with tables, the tick labels should be scaled so that they lie in a sensible range (usually 0&#x2212;10), and both this scaling and the units should be indicated on the axes using methods similar to that described for tables.</p>
+<p class="baindent">The symbols and lines on the graphs should also be chosen with care. When more than one data set is being plotted different symbols should be used for each data set. These symbols are usually chosen from one of the following: <img src="../images/page84_1.jpg" alt="images"/>but other symbols can be used if necessary. Although there are different types of lines available, it is not usual to change the line type for each data set &#x2013; it is usually obvious which line goes with each data set. Where it is useful to use different line types is when there is more than one line associated with each data set. For example, if the purpose of the graph is to show how different parameters fit a set of data, then it might be sensible to plot the best fit data as a solid line, and the others as different types of dashed line. When different line styles are used, the distinction between them should be obvious &#x2013; there is no point in using different length dashes when you need a micrometer to tell the difference between them. The size of the data points and thickness of the lines should also be carefully chosen. There is little point in having data points so small that it is impossible to see what the symbol is, but conversely it is unwise to make them so large that they obscure the purpose of the plot. The lines should be thick enough to be plainly visible but without intruding and detracting from the data points and without breaking up when the figure is reproduced. Finally, the lines should appear to be below the data points.<a id="page_85" class="page">Page 85, Chapter 7 Presenting information</a></p>
+<p class="baindent">If it is possible, then colours can be used with good effect in graphs. But again, it is unwise to &#x201C;go overboard&#x201D; about it: rainbow-hued graphs would probably detract from the intended message rather than enhance and highlight a particular aspect of the data. However, if the graph is to be published, then it is unlikely that colours can be used in something like a graph unless it was of absolute necessity.</p>
+<p class="baindent"><a href="#fig7.8">Fig. 7.8.</a> shows &#x201C;good&#x201D; and &#x201C;bad&#x201D; graphs. These figures illustrate some of the points alluded to above. Notice in the first graph how the symbols used for the two sets of points are basically indistinguishable, and that it is virtually impossible to see the trends where the two sets overlap.</p>
+<figure class="image" id="fig7.8">
+<img src="../images/page85_1.jpg" alt="images"/>
+<figcaption>
+<aside class="abc1" style="margin-top:-18em;" epub:type="sidebar">
+Fig. 7.8 Examples of good (lower) and bad (upper) graphs. The &#x2018;good&#x2019; graph is considerably clearer.</aside>
+</figcaption>
+</figure>
+<p class="image"><img src="../images/page85_2.jpg" alt="images"/></p>
+<p class="noindent"><a id="page_86" class="page" style="width:70%;">Page 86, Chapter 7 Presenting information</a></p>
+<p class="baindent">A further useful technique is shown in <a href="#fig7.8">Fig. 7.8.</a> When sets of data are on clearly different scales, then two different axis scales can be used. The scale that corresponds to each data set should be clearly indicated; in this case, arrows are used to point to the scale that should be used. A different way of achieving the same aim is to &#x2018;multiply&#x2019; one data set by a scaling factor, then indicate on the plot what that factor is. Obviously, if the aim of the graph is to highlight the differences in scale, then it is probably best not to use these techniques.</p>
+</section>
+</section>
+</body>
+</html>

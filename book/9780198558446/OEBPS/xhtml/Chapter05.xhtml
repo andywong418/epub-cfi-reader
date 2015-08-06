@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Oscillations, waves, and chaos in chemical kinetics</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<div>
+<section epub:type="chapter" id="ch05">
+<a id="page_53" class="page" style="width:70%;">Page 53, Bistability and oscillations in flow reactors</a>
+<h1 class="main">5<span class="space">&#160;</span>Bistability and oscillations in flow reactors</h1>
+<p class="noindent">The disadvantages of studying reactions in thermodynamically closed vessels, in which anything other than the equilibrium state is strictly transient, have been remarked upon at various stages in the previous chapters. The use of open reactors that have a continuous inflow of fresh reactants and a matching outflow of products overcomes many of these, and the analysis of the behaviour is also made easier if the reactor is well stirred so there are no spatial gradients. Well-stirred flow reactors (CSTRs or continuous-flow well-stirred tank reactors) are also widely exploited in practical situations in the chemical industry, and their study&#x2014;chemical reaction engineering&#x2014;forms an important part of chemical engineering courses.</p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<figure class="fig2" id="fig5.1">
+<img src="../images/page53-1.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em; margin-top:1em;"><b>Fig. 5.1</b> The variation of steady-state iodate and iodide ion concentrations with flow rate for the Landolt reaction in a CSTR: (a) thermodynamic and flow branches merge smoothly so there is a unique steady state for each flow rate; (b), (c) thermodynamic and flow branches overlap to provide a region of bistability and the associated phenomenon of hysteresis.</p>
+</figcaption></figure>
+</aside>
+<p class="indent">Because of the continuous flow, molecules spend only a finite time in the reactor: the average time spent is called the <i>mean residence time</i>, <i>t</i><sub>res</sub>. This means that there is not infinite time for the reaction to approach the chemical equilibrium state appropriate to the inflow concentrations. The system is constrained &#x2018;far from equilibrium&#x2019;. In the simplest cases, the reaction proceeds to a true <i>steady state</i>, at which the net rate of inflow of each reactant species exactly balances its net rate of chemical removal by reaction, and the rate of chemical formation of each product or intermediate species balances its rate of outflow. There are, however, other possibilities, especially when the reaction allows for feedback.</p>
+<section epub:type="chapter" id="sec_5.1">
+<h2 class="h2">5.1<span class="space">&#160;</span>Steady states and bistability</h2>
+<p class="noindent">The iodate-arsenite and iodate-bisulphite reactions have been studied in flow reactors. We may anticipate the observed behaviour to some extent. If the reactants are pumped through the reactor at very high flow rates, the correspondingly very short residence times will be insufficient for much reaction to occur. The steady-state concentrations established will not differ much from the inflow composition. On the other hand, with very low flow rates, the residence time becomes very long and the system has almost enough time to approach the chemical equilibrium composition.</p>
+<p class="indent"><a href="#fig5.1">Figure 5.1(a)</a> shows the variation of steady-state iodate and iodide concentrations established within a CSTR as a function of the flow rate. At low flows, the system does indeed approach the equilibrium state (virtually complete conversion of iodate to iodide); this segment of the curve is known as the <i>thermodynamic branch</i> as it approaches the thermodynamic equilibrium. At high flow rate, the concentrations approach their inflow values <a id="page_54" class="page">Page 54 Bistability and oscillations in flow reactors</a><img src="../images/page54-1.jpg" alt="images"/> and [I<sup>&#x2212;</sup>]<sub>0</sub> respectively along the <i>flow branch</i> of the steady-status locus. For the system shown in <a href="#fig5.1">Fig. 5.1(a)</a>, the thermodynamic and flow branches connect through a continuous variation in the steady state concentrations. At any given flow rate there is just one steady state composition: the steady state concentration of iodate increases and that of iodide decreases as the flow rate increases (or, equivalently, as the residence time decreases). Although the curve is continuous, there is a region of relatively rapid variation, similar to the sharp change in the time-dependent concentrations observed in the clock reaction involving these species.</p>
+<p class="indent">If the operating conditions are varied somewhat, an important change may occur to the steady state locus. <a href="#fig5.1">Figures 5.1(b,c)</a> show the variation of the steady-state concentrations in which the locus has become &#x2018;folded&#x2019; so that the thermodynamic and flow branches overlap, rather than connect. For a range of flow rates, the system has more than one steady state to choose from. We will see that only the uppermost and lowermost are accessible, so this phenomenon is known as <i>bistability.</i> If the reaction is started with a sufficiently high flow rate, beyond the region of bistability, the system will settle onto the unique steady state lying on the flow branch. If the flow rate is decreased in small increments, the system will essentially move along the flow branch as the steady-state concentrations vary slightly; it will remain on the flow branch as the region of bistability is traversed. As the flow rate is decreased further, however, the flow branch turns back on itself&#x2014;the system must now &#x2018;fall off this branch and move to the thermodynamic branch. There is thus an abrupt change in the steady-state composition: the steady-state concentrations actually change discontinuously with the flow rate at such fold points: discontinuous responses to continuous changes in the operating conditions are known as <i>bifurcations</i> and this is an example of a <i>saddle-node</i> bifurcation, for reasons explained later. <a href="#fig5.1">Figures 5.1(a-c)</a> are examples of <i>bifurcation diagrams</i> in which the response of the system is plotted as a function of the experimental conditions.</p>
+<aside class="abc" style="margin-top:-22em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">G.A. Papsin, A. Hanna, and K. Showalter (1981). <i>J. Phys. Chem</i>., 85, 2575; P. De Kepper, I.R. Epstein, and K. Kustin (1981). <i>J. Am. Chem. Soc.</i>, 103, 6121.</p>
+</aside>
+<p class="indent">If the flow rate is now increased again, the system will remain on the thermodynamic branch through the region of bistability, until the second fold point is encountered. The jump back to the flow branch thus occurs at a higher flow rate than the jump away from it. There is <i>hysteresis</i> as the system is cycled around the S-shaped steady-state curve by these changes in flow rate. Within the region of bistability, the actual steady state selected depends not only on the flow rate but also on the previous history of operations within the reactor.</p>
+</section>
+
+<section epub:type="chapter" id="sec_5.2">
+<h2 class="h2">5.2<span class="space">&#160;</span>Mass balance equations for flow reactors</h2>
+<p class="noindent">We may use the simple model fo the iodate-arsenite reaction, involving just cubic autocatalysis, to illustrate the form and analysis of the equations governing the rates of change of the different species concentrations within a well-stirred flow reactor.</p>
+<p class="indent">In the presence of excess reductant, the iodine concentration remains very low and can be treated as if in dynamic steady state with the concentrations <a id="page_55" class="page">Page 55 Bistability and oscillations in flow reactors</a>of iodate and iodide. The reaction can be represented by the single stoichiometric process</p>
+<figure class="fig1a" id="eq5.1">
+<img src="../images/page55-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">In a closed system, taking <i>k</i><sub>&#x03B1;1</sub> &#x2248; 0,</p>
+<figure class="fig1a" id="eq5.2">
+<img src="../images/page55-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">where <i>k</i><sub><i>c</i></sub> = <i>k</i><sub>&#x03B1;&#x00A0;2</sub>[H<sup>+</sup>]<sup>2</sup> so that the reaction is assumed to be buffered. This has the same form as the cubic autocatalysis rate law (1.21) with A = IO<sub>3</sub><sup>&#x2212;</sup> and B = I<sup>&#x2212;</sup> as remarked earlier. In a closed system, we also have the conservation condition on iodine atoms:</p>
+<figure class="fig1a" id="eq5.3">
+<img src="../images/page55-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">at all times, where <img src="../images/page55-6.jpg" alt="images"/> and [I<sup>&#x2212;</sup>]<sub>0</sub> are the initial concentrations. Using the symbols <i>a</i> and <i>b</i>, the rate equation can then be written in any of the following ways:</p>
+<p class="noindent" id="eq5.4" style="margin-left:0em;margin-top:0.8em;margin-bottom:0.8em;width:75%;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mtext>d</mtext><mi>a</mi><mo>/</mo><mtext>d</mtext><mi>t</mi><mo>=</mo><mtext>d</mtext><mi>b</mi><mo>/</mo><mtext>d</mtext><mi>t</mi><mo>=</mo><msub><mi>k</mi><mtext>c</mtext></msub><mi>a</mi><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msub><mi>k</mi><mtext>c</mtext></msub><mi>a</mi><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><msub><mi>b</mi><mn>0</mn></msub><mo>&#x2212;</mo><mi>a</mi></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>=</mo><msub><mi>k</mi><mtext>c</mtext></msub><mi>a</mi><mrow><mo>(</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><msub><mi>b</mi><mn>0</mn></msub><mo>&#x2212;</mo><mi>b</mi></mrow><mo>)</mo></mrow><msup><mi>b</mi><mn>2</mn></msup></mrow>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.4</mn><mo stretchy='false'>)</mo></math>
+</p>
+<p class="noindent">In a flow reactor, there is an additional process that acts with the kinetics to change the species concentrations, namely, the flow process itself. The total rate at which the concentrations of iodate and iodide are changing is related to the instantaneous concentrations by the <i>mass balance equations</i></p>
+<figure class="fig1a" id="eq5.5">
+<img src="../images/page55-4.jpg" alt="images"/>
+</figure>
+<figure class="fig1a" id="eq5.6">
+<img src="../images/page55-5.jpg" alt="images"/>
+</figure>
+<p class="noindent">Here, <i>V</i> is the reactor volume and <i>q</i> is the total volumetric flow rate through the reactor. If there is a single inflow, containing all the reactants, then the inflow concentrations <img src="../images/page55-7.jpg" alt="images"/> and [I<sup>&#x2212;</sup>]<sub>0</sub> are simply the concentrations of the reactants in that stream. If, however, there are separate inflows for each reactant (to prevent reaction being initiated in the inflow) then these inflow concentrations must allow for the dilution that occurs when the inflows are mixed: if there are two inflows with equal flow rates, then <img src="../images/page55-8.jpg" alt="images"/> and [I<sup>&#x2212;</sup>]<sub>0</sub> will be one half of the actual concentrations of the stock solutions being pumped to the reactor.</p>
+<p class="indent">Each term in the mass balance equations has units of mol s<sup>&#x2212;1</sup>. If we divide through by the volume, the quotient <i>q</i>/<i>V</i> arises naturally. This has units of s<sup>&#x2212;1</sup> and is the <i>flow rate, k</i><sub>0</sub>. Its inverse is the mean residence time, <i>t</i><sub>res</sub>, of the molecules in the reactor.</p>
+<p class="indent">The conservation of iodine atoms, <a href="#eq5.3">Eqn (5.3)</a>, also still applies with the initial concentrations replace by the inflow concentrations. Thus, using the <i>a, b</i> notation we can rewrite <a href="#eq5.5">Eqn (5.5)</a> as</p>
+<p class="noindent" id="eq5.7" style="margin-left:2em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>d</mtext><mi>a</mi><mo>/</mo><mtext>d</mtext><mi>t</mi><mo>=</mo><msub><mi>k</mi><mn>0</mn></msub><mrow><mo>(</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>&#x2212;</mo><mi>a</mi></mrow><mo>)</mo></mrow><mo>&#x2212;</mo><msub><mi>k</mi><mtext>c</mtext></msub><mi>a</mi><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msub><mi>k</mi><mn>0</mn></msub><mrow><mo>(</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>&#x2212;</mo><mi>a</mi></mrow><mo>)</mo></mrow><mo>&#x2212;</mo><msub><mi>k</mi><mtext>c</mtext></msub><mi>a</mi><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><msub><mi>b</mi><mn>0</mn></msub><mo>&#x2212;</mo><mi>a</mi></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.7</mn><mo stretchy='false'>)</mo></math>
+</p>
+<p class="noindent"><a id="page_56" class="page">Page 56 Bistability and oscillations in flow reactors</a></p>
+<p class="noindent">The second form does not involve <i>b</i>: because we have a single stoichiometric process, the evolution of the system within the reactor is fully described by a single mass balance equation.</p>
+</section>
+
+<section epub:type="chapter" id="sec_5.3">
+<h2 class="h2">5.3<span class="space">&#160;</span>Steady state solutions: flow diagrams</h2>
+<p class="noindent"><a href="#eq5.7">Equation (5.7)</a> is a cubic equation that could, with some effort, be integrated analytically. This, however, is unnecessary: the concentration of iodate will evolve from any given initial value to a steady state that causes <i>da/dt</i> to become equal to zero. Thus, we seek the steady states that satisfy</p>
+<p class="noindent" id="eq5.8" style="margin-left:13.4em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>k</mi><mn>0</mn></msub><mrow><mo>(</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>&#x2212;</mo><msub><mi>a</mi><mrow><mtext>ss</mtext></mrow></msub></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>k</mi><mtext>c</mtext></msub><msub><mi>a</mi><mrow><mtext>ss</mtext></mrow></msub><mrow><mo>(</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><msub><mi>b</mi><mn>0</mn></msub><mo>&#x2212;</mo><msub><mi>a</mi><mrow><mtext>ss</mtext></mrow></msub></mrow><mo>)</mo></mrow></mrow>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.8</mn><mo stretchy='false'>)</mo></math>
+</p>
+<p class="noindent">The steady state will depend on the four parameters, <i>k</i><sub>0</sub>, <i>a</i><sub>0</sub>, and <i>b</i><sub>0</sub>, and <i>k</i><sub>c</sub>, which actually also involves the H<sup>+</sup> concentration. However, we know that <i>a</i><sub><i>ss</i></sub> must lie in the range 0 &#x2264; <i>a</i><sub><i>ss</i></sub> &#x003C; <i>a</i><sub>0</sub> on simple physical grounds. It helps to rewrite the steady-state condition in dimensionless terms:</p>
+<figure class="fig1a" id="eq5.9">
+<img src="../images/page56-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">Here &#x03B1; = <i>a/a</i><sub>0</sub>, so 0 &#x2264; <i>a</i> &#x2264; 1, is the concentration of iodate relative to its inflow concentration. This form of the equation has only two parameters: &#x03B2;<sub>0</sub> = <i>b</i><sub>0</sub>/<i>a</i><sub>0</sub>, the relative inflow concentrations of autocatalyst I<sup>&#x2212;</sup> and reactant <img src="../images/page56-2.jpg" alt="images"/> and <i>k</i><sub>0</sub> = <i>k</i><sub>0</sub>/<i>k</i><sub>c</sub><i>a</i><sub>0</sub><sup>2</sup> which is the ratio of the flow rate to a pseudo-first-order rate constant for the autocatalytic step. It is these ratios that determine the qualitative form of the steady-state locus rather than the absolute values of the individual components.</p>
+<p class="indent"><a href="#eq5.8">Equations (5.8)</a> or <a href="#eq5.9">(5.9)</a> are cubics in terms of the steady-state concentrations, but can be solved relatively easily &#x2018;the other way round&#x2019; for a given choice of &#x03B2;<sub>0</sub>, substituting in different values of <i>a<sub>ss</sub></i> or &#x03B1;<sub><i>ss</i></sub> and calculating the corresponding value for <i>k</i><sub>0</sub>. Another approach, which also illustrates how the value of &#x03B2;<sub>0</sub> influences the steady-state locus, is to use a <i>flow diagram</i>, similar to the thermal diagram introduced in <a href="Chapter02.xhtml#sec_2.1">Section 2.1</a>. The reaction term &#x211C; on the right-hand side of <a href="#eq5.9">Eqn (5.9)</a> describes a cubic curve if plotted against 1 &#x2212; &#x03B1;<sub>ss</sub>, as shown in <a href="#fig5.2">Fig. 5.2(a)</a>, which is simply a variation on curve (b) of <a href="Chapter01.xhtml#fig1.1">Figure 1.1</a>. There is a nonzero intersection point on the &#x211C;-axis, &#x211C; = &#x03B2;<sub>0</sub><sup>2</sup>, that depends on the ratio of inflow concentrations. The curve in <a href="#fig5.2">Fig. 5.2(a)</a> corresponds to a system with a relatively high inflow concentration of the autocatalytic species I<sup>&#x2212;</sup>, so &#x03B2; = 0.2. The flow line L demerges from the origin and has a slope determined by the dimensionless flow rate <i>k</i><sub>0</sub>. The intersection of &#x211C; and St indicates the steady-state point. As the flow rate is varied, with <i>k</i><sub>0</sub> increasing, so the flow line becomes steeper and the intersection point moves to the left, corresponding to the lower extents of conversion of iodate to iodide: &#x03B1;<sub><i>ss</i></sub> increases so the dimensionless steady-state concentration of iodide, given by</p>
+<p class="noindent" id="eq5.10" style="margin-left:20em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mtext>&#x03B2;</mtext><mrow><mtext>ss</mtext></mrow></msub><mo>=</mo><mn>1</mn><mo>+</mo><msub><mtext>&#x03B2;</mtext><mn>0</mn></msub><mo>&#x2212;</mo><msub><mi>&#x03B1;</mi><mrow><mtext>ss</mtext></mrow></msub></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.10</mn><mo stretchy='false'>)</mo></math>
+</p>
+<a id="page_57" class="page" style="width:70%;">Page 57 Bistability and oscillations in flow reactors</a>
+<figure class="fig1" id="fig5.2"><img src="../images/page57-1.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 0.5em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 5.2</b> Flow diagram representation of steady states. (a) &#x03B2;<sub>0</sub> &#x003E; <sup>1</sup>/<sub>8</sub>, three different flow lines &#x2212;<sub>1-3</sub> are shown, corresponding to three different flow rates &#x03BA;<sub>0,1-3</sub>, with &#x03BA;<sub>0,1</sub> &#x003E; &#x03BA;<sub>0,2</sub> &#x003E; &#x03BA;<sub>0,3</sub>. In each case, &#x211C; and &#x2112; intersect only once. (b) &#x03B2;&#x003C;<sup>1</sup>/<sub>8</sub>. Now &#x211C; and &#x2112; intersect three times for some range of flow rates, &#x2112;<sub>2</sub> &#x003E; &#x2112; &#x003E; &#x2112;<sub>4</sub>. For &#x2112; = &#x2112;<sub>2,4</sub>, the flow line touches the reaction rate curve tangentially.</p>
+</figcaption>
+</figure>
+<p class="noindent">decreases. There is always a single intersection point, indicating a unique steady state. The resulting steady-state locus has the qualitative form of <a href="#fig5.1">Fig. 5.1(a)</a>.</p>
+<p class="indent"><a href="#fig5.2">Figure 5.2(b)</a> shows the flow diagram for a lower inflow concentration of autocatalyst relative to reactant, &#x03B2;<sub>0</sub> = 0.05. The reaction curve &#x211C; intersects the rate axis much closer to the origin. Five different flow lines, &#x2112;<sub>1-5</sub> are shown, each corresponding to a different dimensionless flow rate &#x03BA;<sub>1, |-5</sub>. For the lowest flow rate, &#x03BA;<sub>0, 1</sub>, corresponding to the lowest gradient, the flow line intersects the rate curve at a high extent of reaction, corresponding to low &#x03B1;<sub><i>ss</i></sub> and high &#x03B2;<sub><i>ss</i></sub>. At the highest flow rate, &#x03BA;<sub>0,5</sub>, there is again a single intersection, now lying close to the origin, so &#x03B1;<sub><i>ss</i></sub> is close to 1 and &#x03B2;<sub><i>ss</i></sub> close to &#x03B2;<sub>0</sub>. In between these extremes, e.g., for the flow rate &#x03BA;<sub>0,3</sub>, &#x211C;, and &#x00E4; intersect three times, allowing for multiplicity of steady states. This gives rise to the region of bistability of the form shown in <a href="#fig5.1">Fig. 5.1</a>(b,c). The limits of the bistable region, corresponding to the turning points in the steady-state locus, arise when &#x211C; and &#x2112; meet tangentially, as indicated by &#x2112;<sub>2</sub> and &#x2112;<sub>4</sub> with flow rates &#x03BA;<sub>2</sub> and &#x03BA;<sub>4</sub> respectively.</p>
+</section>
+
+<section epub:type="chapter" id="sec_5.4">
+<h2 class="h2">5.4<span class="space">&#160;</span>Turning points and tangencies</h2>
+<p class="noindent">The condition for a turning point in the steady-state locus in this model is easily determined using the tangency condition: we require &#x211C; = &#x2112; and d&#x211C;/d&#x03B1;<sub>ss</sub> = d&#x2112;/d&#x03B1;<sub>ss</sub>, i.e.,</p>
+<p class="noindent" id="eq5.11" style="margin-left:14.2em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mtext>&#x03BA;</mtext><mn>0</mn></msub><mrow><mo>(</mo><mrow><mn>1</mn><mo>&#x2212;</mo><msub><mtext>&#x03B1;</mtext><mrow><mtext>ss</mtext></mrow></msub></mrow><mo>)</mo></mrow><mo>=</mo><msub><mtext>&#x03B1;</mtext><mrow><mtext>ss</mtext></mrow></msub><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><msub><mtext>&#x03B2;</mtext><mn>0</mn></msub><mo>&#x2212;</mo><msub><mtext>&#x03B1;</mtext><mrow><mtext>ss</mtext></mrow></msub></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.11</mn><mo stretchy='false'>)</mo></math>
+</p>
+<p class="noindent" id="eq5.12" style="margin-left:12.8em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><msub><mtext>&#x03BA;</mtext><mn>0</mn></msub><mo>=</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><msub><mtext>&#x03B2;</mtext><mn>0</mn></msub><mo>&#x2212;</mo><msub><mtext>&#x03B1;</mtext><mrow><mtext>ss</mtext></mrow></msub></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><msub><mtext>&#x03B2;</mtext><mn>0</mn></msub><mo>&#x2212;</mo><mn>3</mn><msub><mtext>&#x03B1;</mtext><mrow><mtext>ss</mtext></mrow></msub></mrow><mo>)</mo></mrow></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.12</mn><mo stretchy='false'>)</mo></math>
+</p>
+<p class="noindent">Dividing one equation by the other, we obtain a quadratic for the steady-state concentration &#x03B1;<sub>ss</sub> at the turning points, which has roots</p>
+<p class="noindent" id="eq5.13" style="margin-left:14.9em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mtext>&#x03B1;</mtext><mrow><mtext>ss</mtext></mrow></msub><msup><mrow></mrow><mo>&#x00B1;</mo></msup><mo>=</mo><mn>1</mn><mo>/</mo><mn>4</mn><mrow><mo>{</mo> <mrow><mn>3</mn><mo>&#x00B1;</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>&#x2212;</mo><mn>8</mn><msub><mtext>&#x03B2;</mtext><mn>0</mn></msub></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow> <mo>}</mo></mrow></mrow>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.13</mn><mo stretchy='false'>)</mo></math>
+</p>
+<a id="page_58" class="page" style="width:70%;">Page 58 Bistability and oscillations in flow reactors</a>
+<figure class="fig1" id="fig5.3"><img src="../images/page58-1.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 0.5em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 5.3</b> Region of bistability in the &#x03B2;<sub>0</sub>-&#x03BA;<sub>0</sub> (i.e., inflow concentration of I<sub>&#x2212;</sub> verses flow rate) parameter plane for cubic autocatalytic model for Landolt reaction. The region of bistability is bounded by the conditions for tangency in the flow diagram: the two tangents merge and bistability is lost for &#x03B2;<sub>0</sub> = <sup>1</sup>/<sub>8</sub>.</p>
+</figcaption></figure>
+<p class="noindent">with the corresponding <i>critical</i> flow rates &#x03BA;<sub>0</sub><sup>&#x00B1;</sup> given by</p>
+<p class="noindent" id="eq5.14" style="margin-left:11.0em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mtext>&#x03BA;</mtext><mn>0</mn></msub><msup><mrow></mrow><mo>&#x00B1;</mo></msup><mo>=</mo><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><msub><mtext>&#x03B2;</mtext><mn>0</mn></msub><mo>&#x2212;</mo><msub><mtext>&#x03B1;</mtext><mrow><mtext>ss</mtext></mrow></msub><msup><mrow></mrow><mo>&#x00B1;</mo></msup></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><msub><mtext>&#x03B2;</mtext><mn>0</mn></msub><mo>&#x2212;</mo><mn>3</mn><msub><mtext>&#x03B1;</mtext><mrow><mtext>ss</mtext></mrow></msub><msup><mrow></mrow><mo>&#x00B1;</mo></msup></mrow><mo>)</mo></mrow></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.14</mn><mo stretchy='false'>)</mo></math>
+</p>
+<p class="noindent"><a href="#eq5.13">Equation (5.13)</a> only has real roots provides &#x03B2;<sub>0</sub> &#x2264; <sup>1</sup>/<sub>8</sub>, i.e., if</p>
+<figure class="fig1a" id="eq5.15">
+<img src="../images/page58-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">The variation of &#x03BA;<sub>0</sub><sup>&#x00B1;</sup> with &#x03B2;<sub>0</sub> is shown in <a href="#fig5.3">Fig. 5.3</a>. There are two curves that meet at a cusp. Within the region bounded by the curves, the reaction system shows a multiple steady-state solutions (bistability) and hysteresis: outside there is just a single steady state. As &#x03B2;<sub>0</sub> is increased, the region of bistability decreases, and the steady-state locus unfolds completely for &#x03B2;<sub>0</sub> &#x003E; <sup>1</sup>/<sub>8</sub>. This unfolding is also sometimes called <i>transition</i>. <a href="#eq5.15">Equation (5.15)</a> thus gives a necessary condition for multiplicity in this system: if the flow provides too high a concentration of iodide, the feedback provided by the autocatalytic kinetics becomes swamped.</p>
+</section>
+
+<section epub:type="chapter" id="sec_5.5">
+<h2 class="h2">5.5<span class="space">&#160;</span>Nodes and saddles: stability of coexisting steady states</h2>
+<p class="noindent">The middle branch of solutions, shown as a dashed curve in <a href="#fig5.1">Fig. 5.1(b,c)</a>, has not entered into our discussion much so far. The steady state of the system switched between the thermodynamic and flow branches as the flow rate was varied, but the system never moved onto the middle branch. In fact, although the compositions represented by this section of the bistability loop satisfy the steady-state condition, they are <i>unstable</i> states and cannot be realized in practice under normal operating conditions. The existence of these unstable, <i>saddle point</i> solutions is, however, significant and they do <a id="page_59" class="page">Page 59 Bistability and oscillations in flow reactors</a>play an important role in helping decide which of the two stable state branches the system actually selects.</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<figure class="fig2" id="fig5.4">
+<img src="../images/page59-1.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 5.4</b> Variation of potential with concentration of iodate ion: (a) the three extrema correspond to the steady states (d<i>V</i>/d&#x03B1; = 0), with the minima &#x03B1;<sub>1,3</sub> corresponding to stable states and the maximum &#x03B1;<sub>2</sub> corresponding to an unstable state determining the regions of attraction of &#x03B1;<sub>1</sub> and &#x03B1;<sub>3</sub>; (b) as in (a), but now the parameters have been changed so that &#x03B1;<sub>2</sub> and &#x03B1;<sub>3</sub> are about to merge at the end of the region of bistability, leaving only the flow branch solution &#x03B1;<sub>1</sub>.</p>
+</figcaption></figure>
+</aside>
+<p class="indent">If we choose a flow rate from the region of multiple steady states and denote the three steady states as &#x03B1;<sub>1</sub>, &#x03B1;<sub>3</sub> in order of increasing &#x03B1; (iodate ion), then we can identify as corresponding <i>potential V</i>,</p>
+<p class="noindent" id="eq5.16" style="text-align:center;margin-top:0.8em;margin-bottom:0.1em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtext>V=</mtext><mstyle displaystyle='true'>
+  <mrow><mo>&#x222B;</mo>
+   <mrow>
+    <msub>
+     <mrow>
+      <mtext>&#x007B;&#x03B1;(1+&#x03B2;</mtext>
+     </mrow>
+     <mtext>0</mtext>
+    </msub>
+    <msup>
+     <mrow>
+      <mtext>-&#x03B1;)</mtext>
+     </mrow>
+     <mtext>2</mtext>
+    </msup>
+    <mtext>-</mtext>
+   </mrow>
+  </mrow>
+  
+ </mstyle><mtext>&#x2009;</mtext><msub>
+  <mtext>k</mtext>
+  <mtext>0</mtext>
+ </msub>
+ <mtext>(1-&#x03B1;)&#x007D;d&#x03B1;</mtext>
+</math>
+</p>
+<p class="noindent" style="text-align:center;margin-top:0.1em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msub>
+  <mtext>=1/2(1+&#x03B2;</mtext>
+  <mtext>0</mtext>
+ </msub>
+ <msup>
+  <mtext>)</mtext>
+  <mtext>2</mtext>
+ </msup>
+ <msup>
+  <mtext>&#x03B1;</mtext>
+  <mtext>2</mtext>
+ </msup>
+ <msub>
+  <mtext>-2/3(1+&#x03B2;</mtext>
+  <mtext>0</mtext>
+ </msub>
+ <msup>
+  <mtext>)&#x03B1;</mtext>
+  <mtext>3</mtext>
+ </msup>
+ <msup>
+  <mtext>+1/4&#x03B1;</mtext>
+  <mtext>4</mtext>
+ </msup>
+ <msub>
+  <mtext>-k</mtext>
+  <mtext>0</mtext>
+ </msub>
+ <msub>
+  <mtext>&#x03B1;(1-1/2&#x03B1;)+V</mtext>
+  <mtext>0</mtext>
+ </msub>
+ 
+</math>
+</p>
+<p class="noindent" style="margin-bottom:0.5em;margin-top:-2em;text-align:right">(5.16)</p>
+<p class="noindent">where <i>V</i><sub>0</sub> is some arbitrary constant related to our choice of energy zero. If <i>V</i> is plotted as a function of &#x03B1;, as shown in <a href="#fig5.4">Fig. 5.4</a>, the extrema correspond to the steady-state solutions, with &#x03B1;<sub>1</sub> and &#x03B1;<sub>3</sub> corresponding to minima and &#x03B1;<sub>2</sub> to the maximum. This allows a simple mechanical analogy. The steady state on the thermodynamic and flow branches correspond to potential wells in which the system can lie&#x2014;they are stable solutions. The middle solution is unstable in the same sense as a pendulum balanced upright or a pencil balanced on its end: in theory this state could be achieved from very special initial conditions, i.e., if we start the reaction with &#x03B1; and &#x03B2; exactly equal to &#x03B1;<sub>2</sub> and the corresponding &#x03B2;<sub>2</sub>. However, even if this is arranged, the slightest perturbation will send the system off to one or other of the stable states lying in the wells. This gives the middle solution the character of a saddle point. If we start with &#x03B1; &#x003C; &#x03B1;<sub>2</sub>, the system will evolve to &#x03B1;<sub>1</sub>: if we start with &#x03B1; &#x003E; &#x03B1;<sub>2</sub>, it goes to &#x03B1;<sub>3</sub>; the saddle point thus <i>separates the basins of attraction</i> of the coexisting stable steady states (the coexisting <i>at trac tors).</i></p>
+<p class="indent">If the conditions are varied, e.g., by altering the flow rate, so that the boundary of the region of multistability is approached then one minimum and the maximum will merge as these two steady states vanish. Steady states corresponding to potential wells are known as <i>nodes</i>, so this coalescence is termed a <i>saddle-node bifurcation.</i></p>
+</section>
+
+<section epub:type="chapter" id="sec_5.6">
+<h2 class="h2">5.6<span class="space">&#160;</span>Designing oscillatory reactions from bistable systems</h2>
+<p class="noindent">The nonlinear feedback process that support multiple steady states also frequently can provide the support for oscillatory behaviour. In flow systems, the resetting of the clock discussed in <a href="Chapter03.xhtml">Chapter 3</a> can be achieved more simply by the continuous direct inflow of the exhausted reactants at a flow rate appropriately matched to the chemical rates. The iodate-arsenite system described above cannot itself become oscillatory, as the reaction is determined by a single stoichiometric process and so has only one <i>degree of freedom:</i> once the concentration of iodate, say, has been specified, all other concentrations are fixed by the stoichiometry and the inflow concentrations. In order to have oscillations, two degrees of freedom are necessary: this allows a two-dimensional phase plane in which a limit cycle can lie, whereas a one-degree-of-freedom system has only a phase &#x2018;line&#x2019; onto which a limit cycle cannot be placed.</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">P. De Kepper and J. Boissonade (1985) in <i>Oscillations and travelling waves in chemical systems</i>, (ed. R.J. Field and M.J. Burger), Chap. 7, p. 223. Wiley, New York.</p>
+</aside>
+<p class="indent">The close connection between bistability and oscillations has been extensively exploited to design a large family of relaxation oscillators in flow systems, so much so that they constitute by far the largest class of chemical <a id="page_60" class="page">Page 60 Bistability and oscillations in flow reactors</a>oscillators. The basic principles and experimental method underlying the design of such systems can again be illustrated with the cubic autocatalysis representation of the Landolt iodate-reductant reaction. Some approximations will ease the algebra without misrepresenting the method. The important concepts can be represented pictorially.</p>
+<h3 class="h3">Model of a chemical oscillator</h3>
+<p class="noindent">The autocatalytic reaction is appended with an equilibrium process involving the autocatalyst and a second species C</p>
+<p class="noindent" id="eq5.17" style="margin-left:15.4em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>A+2B</mtext><mo>&#x2192;</mo><mtext>3B&#x00A0;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>Rate=</mtext><msub><mi>k</mi><mtext>c</mtext></msub><mi>a</mi><msup><mi>b</mi><mn>2</mn></msup></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.17</mn><mo stretchy='false'>)</mo></math>
+</p>
+<p class="noindent" id="eq5.18" style="margin-left:14.0em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>B+C</mtext><mo>&#x21CC;</mo><mtext>BC&#x00A0;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>Rate=</mtext><msub><mi>k</mi><mtext>1</mtext></msub><mi>b</mi><mi>c</mi><mo>&#x2212;</mo><msub><mi>k</mi><mn>1</mn></msub><mi>x</mi></mrow>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.18</mn><mo stretchy='false'>)</mo></math>
+</p>
+<p class="noindent">where <i>x</i> = [BC]. We will assume that C and BC do not flow into or out of the reactor and that the initial concentrations of these species are <i>c</i><sub>0</sub> and 0 respectively. At any time then <i>c</i> = <i>c</i><sub>0</sub> &#x2212; <i>x</i>. We also assume <i>a</i><sub>0</sub> + <i>b</i><sub>0</sub> = <i>a + b</i>, i.e., we expect the amount of B bound up in the BC complex to be small, so <i>a</i> = <i>a</i><sub>0</sub> + <i>b</i><sub>0</sub> &#x2212; <i>b</i>.</p>
+<p class="indent">If &#x03B3; = <i>x</i>/<i>a</i><sub>0</sub> and &#x03B3;<sub>0</sub> = <i>c</i><sub>0</sub>/<i>a</i><sub>0</sub>, the mass balance equations can be written much as before, except that it is more convenient to work with &#x03B2; rather than &#x03B1;:</p>
+<p class="noindent" id="eq5.19" style="margin-left:4.0em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mrow><mtext>d&#x03B2;/d&#x03C4; = &#x03BA;</mtext></mrow><mn>0</mn></msub><mrow><mo>(</mo><mrow><mtext>&#x03B2;</mtext><mo>&#x2212;</mo><mtext>&#x03B2;</mtext></mrow><mo>)</mo></mrow><mo>+</mo><msup><mtext>&#x03B2;</mtext><mn>2</mn></msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><msub><mtext>&#x03B2;</mtext><mn>0</mn></msub><mo>&#x2212;</mo><mtext>&#x03B2;</mtext></mrow><mo>)</mo></mrow><mo>&#x2212;</mo><msub><mtext>&#x03BA;</mtext><mn>1</mn></msub><mtext>&#x03B2;</mtext><mrow><mo>(</mo><mrow><msub><mtext>&#x03B3;</mtext><mn>0</mn></msub><mo>&#x2212;</mo><mtext>&#x03B3;</mtext></mrow><mo>)</mo></mrow><mo>+</mo><msub><mtext>&#x03BA;</mtext><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msub><mtext>&#x03B3;</mtext></mrow>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.19</mn><mo stretchy='false'>)</mo></math>
+</p>
+<p class="noindent" id="eq5.20" style="margin-left:16.5em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mrow><mtext>d&#x03B3;/d&#x03BA; = &#x03BA;</mtext></mrow><mn>1</mn></msub><mtext>&#x03B2;</mtext><mrow><mo>(</mo><mrow><msub><mtext>&#x03B3;</mtext><mn>0</mn></msub><mo>&#x2212;</mo><mtext>&#x03B3;</mtext></mrow><mo>)</mo></mrow><mo>&#x2212;</mo><msub><mtext>&#x03BA;</mtext><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msub><mtext>&#x03B3;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.20</mn><mo stretchy='false'>)</mo></mrow></math>
+</p>
+<p class="noindent">Typically &#x03BA;<sub>1</sub> and &#x03BA;<sub>-1</sub> might be small quantities indicating that the equilibrium is established on a much slower timescale than the rate of change in the autocatalyst concentration.</p>
+
+<p class="indent">In the absence of the equilibrium process, the dimensionless mass balance equation for the autocatalyst, equivalent to <a href="#eq5.7">Eqn (5.7)</a> would have the form</p>
+<figure class="fig1a" id="eq5.21">
+<img src="../images/page60-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">In the present case, <a href="#eq5.19">Eqn (5.19)</a> can be rearranged slightly to give</p>
+<figure class="fig1a" id="eq5.22">
+<img src="../images/page60-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">The second reaction step effectively modifies the form of the inflow and outflow terms. First, we may note that the effective inflow and outflow rates are now &#x2018;decoupled&#x2019;: in <a href="#eq5.21">Eqn (5.21)</a> the effective flow rate &#x03BA;<sub>0</sub> is the same for both flow terms, but in <a href="#eq5.22">Eqn (5.22)</a> there are different additional terms for the inflow and outflow. Second, the effective inflow and outflow rates involve the concentration &#x03B3; and so are determined by the instantaneous state of the system. Rather than remaining a fixed constant during the reaction, the flow terms involve a dynamic response variable, with</p>
+<p class="noindent" id="eq5.23" style="margin-left:20.8em;margin-top:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mtext>&#x03BA;</mtext><mrow><mn>0</mn><mo>,</mo><mtext>eff</mtext></mrow></msub><mo>=</mo><msub><mtext>&#x03BA;</mtext><mn>0</mn></msub><msub><mtext>&#x03B2;</mtext><mn>0</mn></msub><mo>+</mo><msub><mtext>&#x03BA;</mtext><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msub><mtext>&#x03B3;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.23</mn><mo stretchy='false'>)</mo></mrow></math>
+</p>
+<p class="noindent">for the inflow.</p>
+<a id="page_61" class="page" style="width:70%;">Page 61 Bistability and oscillations in flow reactors</a>
+<h3 class="h3">Pictorial representation</h3>
+<p class="noindent">For suitable values of &#x03B2;<sub>0</sub> and &#x03BA;<sub>0</sub>, <a href="#eq5.21">Eqn (5.21)</a> gives rise to multiple steady states, as described earlier. If we first imagine that &#x03B3; is a parameter we can control, <a href="#eq5.22">Eqn (5.22)</a> will also allow multiple steady-state solutions for the autocatalyst concentration over some range of the effective flow rate &#x03BA;<sub>0,eff</sub>, as shown in <a href="#fig5.5">Fig. 5.5</a>. When we then acknowledge that the x-axis really involves one of the response variables, we see that <a href="#fig5.5">Fig. 5.5</a> really has more in common with the phase plane representations used in <a href="Chapter03.xhtml">Chapter 3</a> than with the steady state bifurcation diagrams above. If the reactor has a high concentration of B at any moment, the concentration of the complex BC will increase, so the effective inflow rate increases via its definition in <a href="#eq5.23">Eqn (5.23)</a>. This would cause the system to move &#x2018;to the right&#x2019; along the upper branch in <a href="#fig5.5">Fig. 5.5</a>, with &#x03B2; also falling as BC is produced. If the system reaches the turning point, there will be a jump to the lower branch. Now &#x03B2; is small, so the equilibrium will shift to the left, reducing &#x03B3; and hence causing &#x03BA;<sub>0, eff</sub> to decrease. The system will move to the left along the lower branch, with &#x03B2; increasing as B is formed via dissociation of BC. If this &#x2018;trajectory&#x2019; reaches the left-hand turning point, there would be a jump back to the upper branch&#x2014;and the cycling would continue to provide sustained oscillations: from bistability to oscillation.</p>
+<aside class="abc" style="margin-top:-22em;" epub:type="sidebar">
+<figure class="fig2" id="fig5.5">
+<img src="../images/page61-1.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 5.5</b> Variation of the pseudo-steady state for &#x03B2; with the effective inflow rate &#x03BA;<sub>0, eff</sub> wing a folded locus similar to the bistability curve in the absence of C. If the system reaches one of the turning points, there will be a fast motion vertically, due to the smallness of &#x03BA;<sub>1</sub> and &#x03BA;<sub>-1</sub> as, indicated by the arrows.</p>
+</figcaption></figure>
+</aside>
+<p class="indent">To complete the analysis, we must add a second curve to the phase plane representation. The folded curve seen already is actually the &#x03B2;-nullcline, along which d&#x03B2;/d&#x03C4; = 0. The &#x03B3;-nullcline is defined by</p>
+<p class="noindent" id="eq5.24" style="margin-left:20.8em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mrow><mtext>&#x03B3;=&#x03BA;</mtext></mrow><mtext>1</mtext></msub><msub><mtext>&#x03B3;</mtext><mtext>0</mtext></msub><mtext>&#x03B2;/</mtext><mrow><mo>(</mo><mrow><msub><mtext>&#x03BA;</mtext><mrow><mtext>-1</mtext></mrow></msub><msub><mrow><mtext>+&#x03BA;</mtext></mrow><mtext>1</mtext></msub><mtext>&#x03B2;</mtext></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.24</mn><mo stretchy='false'>)</mo></mrow></math>
+</p>
+<aside class="abc" id="fig5.6" style="margin-top:-8.8em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page61-2.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">The position of this nullcline relative to the &#x03B2;-nullcline depends on the total concentration of the complexing agent &#x03B3;<sub>0</sub> and on the equilibrium constant <i>K</i><sub>eq</sub> = &#x03BA;<sub>1</sub>/&#x03BA;<sub>-1</sub>. There are four possibilities, as indicated in <a href="#fig5.6">Fig. 5.6</a>(a-d). In <a href="#fig5.6">Fig. 5.6(a)</a>, the two nullclines cross three times, indicating that the system has three steady states, &#x03B2;<sub>1</sub> &#x003C; &#x03B2;<sub>2</sub> &#x003C; &#x03B2;<sub>3</sub>. In <a href="#fig5.6">Fig. 5.6(b)</a>, the relative positions have shifted, so there is now only one intersection. This occurs for high &#x03B2; and so similar to &#x03B2;<sub>3</sub>. Like that steady state, this is a stable solution, so the system is attracted to this point and then remains there.</p>
+<p class="noindent2" style="margin-top:1em;margin-left:1em;width:68%;"><b>Fig. 5.6</b> As in <a href="#fig5.5">Fig. 5.5</a>, but now also showing the &#x03B3;-nullcline. (a) Three intersections corresponding to a system with three steady states: this system will exhibit bistability, with the intersections on the uppermost and lowest branches of the &#x00DF;-nullcline being stable. (b) One intersection, corresponding to a unique stable steady state with high autocatalyst concentration, (c) One intersection, corresponding to a unique stable steady state with low autocatalyst concentration. (d) One intersection, corresponding to a unique steady state. This lies on the middle branch of the &#x00DF;-nullcline and so is unstable. This system will exhibit sustained oscillations of the form indicated in <a href="#fig5.5">Fig. 5.5</a>.</p>
+
+<p class="indent" style="margin-top:0.8em;">In <a href="#fig5.6">Fig. 5.6</a>(c), there is again only one intersection, giving rise to a steady state with low &#x03B2;. This is similar to &#x03B2;<sub>1</sub> and is also stable, so again the system is attracted to the steady state. The final situation, represented in <a href="#fig5.6">Fig. 5.6(d)</a> has the intersection occurring on the middle branch of the fold. The steady <a id="page_62" class="page" style="width:70%;">Page 62 Bistability and oscillations in flow reactors</a>state is similar in concentration to &#x03B2;<sub>2</sub>, and like that solution is typically unstable. The system will, in this case, describe a limit cycle formed from the upper and lower branches of the fold with vertical jumps at the turning points.</p>
+<h3 class="h3">Cross-shaped diagrams</h3>
+<p class="noindent">The changes in the multiplicity and stability of the steady-state solutions just described can be brought about by suitably varying the actual flow rate &#x03BA;<sub>0</sub> and, say, the concentration &#x03BA;<sub>0</sub>, or their dimensional equivalents <i>k</i><sub>0</sub> and <i>c</i><sub>0</sub>. <a href="#fig5.7">Figure 5.7</a> shows the regions in which the different types of response are found. As <i>c</i><sub>0</sub> increases, the region of bistability (a) narrows as the locations of the two turning points move closer together. These meet at a cusp point, much as shown in <a href="#fig5.3">Fig. 5.3</a>. However, in this case, the curve seems to continue, giving rise to a <i>cross-shaped diagram.</i> Beyond the crossing point lies region (d), corresponding to <a href="#fig5.5">Fig. 5.5(d)</a> and hence to conditions for which oscillations may be found. Outside the regions of bistability or oscillations are the regions for stable-steady states of the types in <a href="#fig5.5">Figs 5.5(b)</a> and <a href="#fig5.5">(c)</a> as indicated.</p>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">I.R. Epstein, K. Kustin, P. De Kepper, and M. Orban (1983). Sci. Am., <b>248</b>, 96.</p>
+</aside>
+<p class="indent"><a href="#fig5.6">Figure 5.6</a> is typical of the diagrams observed experimentally as two of the control parameters are varied. Usually, the region of oscillations closes up again at high c<sub>0</sub> and beyond this is a region in which a unique steady state with autocatalyst concentration similar to &#x03B2;<sub>2</sub> is found. In these cases, &#x03B2;-null-cline will have unfolded in the phase plane. Close inspection reveals that the boundary of the oscillatory region is not simply an extension of the boundaries of the region for bistability. Rather these are separate curves, that lie very close near to the cusp of the bistability region. It is, in fact, possible to have multiple steady states and oscillations, but typically only over narrow ranges of parameter combinations. In these cases, either the uppermost or the lowest steady state loses its stability, so the system moves away if given a small perturbation, whilst the other remains stable. The system now chooses between the stable steady state or a stable limit cycle that emerges around the unstable steady state. If the system settles onto the limit cycle, small amplitude oscillations about the unstable steady state are observed. The unstable saddle point (middle solution) also continues to exist and separates those initial conditions that evolve to the two different coexisting attractors.</p>
+<aside class="abc" style="margin-top:-23em;" epub:type="sidebar">
+<figure class="fig2" id="fig5.7">
+<img src="../images/page62-1.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 5.7</b> A cross-shaped diagram showing the regions of different behaviour in the &#x03B3;<sub>0</sub>-&#x03BA;<sub>0</sub> parameter plane. The regions (a)-(d) correspond to the different phase plane portraits in <a href="#fig5.6">Fig. 5.6</a>, so region (a) corresponds to bistability. As the original system is perturbed by the inflow of species C, so bistability gives way to oscillations, region (d).</p>
+</figcaption></figure>
+</aside>
+<p class="indent">For some reactions, and typically over only very narrow ranges of the parameters, both the uppermost and lowest steady states can become unstable. Each may then be surrounded by a separate limit cycle, corresponding to two different oscillatory responses for the same experimental conditions. This bistability of oscillatory solution is known as <i>birhythmicity.</i></p>
+</section>
+
+<section epub:type="chapter" id="sec_5.7">
+<h2 class="h2">5.7<span class="space">&#160;</span>Applications of cross-shaped diagram technique</h2>
+<p class="noindent">Various bistable chemical reactions have been converted into relaxation oscillators via the above approach. The search for a chemical oscillator then begins with finding a system that shows bistability, such as the iodate-arsenite system. The next step is to find an additional reactant that somehow <a id="page_63" class="page">Page 63 Bistability and oscillations in flow reactors</a>provides an additional feedback process. The earliest example of this method involved the iodate-arsenite system to which chlorite ion was added: CIO<sub>2</sub><sup>&#x2212;</sup> plays a slightly different chemical role than the simple complexing equilibrium indicated above, but the basic principle remains intact. The idea of using chlorite ion arose as it is known to react with iodide, the product, to produce iodate, the reactant, and hence is a candidate for chemically &#x2018;resetting&#x2019; the Landolt clock. This feedback pathway</p>
+<figure class="fig1a" id="eq5.25">
+<img src="../images/page63-1.jpg" alt="images"/>
+</figure>
+<p class="noindent">is catalysed by I<sub>2</sub>, a crucial intermediate in the Landolt reaction.</p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">De Kepper, I.R. Epstein, and K. Kustin (1981). <i>J. Am. Chem. Soc.</i>, 103,2133. This proved the value of the basic method, even though the chlorite-iodide subsystem was later shown to be an oscillatory reaction in its own right.</p>
+</aside>
+<p class="indent">The iodate-bisulphite reaction has also been used to produce an oscillatory Landolt reaction by introducing an additional inflow of ferrocyanide ion to the reactor. Ferrocyanide is capable of acting in its own right as the reductant in the iodate clock, so this provides something of a mixed clock reaction. An example of the experimental cross-shape diagram for this system is shown in <a href="#fig5.8">Fig. 5.8</a></p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">E.C. Edblom, M. Orban, and I.R. Epstein (1986). <i>J Am. Chem. Soc.</i>, 108, 2826; E.C. Edblom, L. Gy&#x00F6;rgyi, M. Orban, and I.R. Epstein (1987). <i>J. Am. Chem. Soc.</i>, 109, 4876; V. Gaspar and K. Showalter (1987). <i>J. Am. Chem. Soc.</i>, 109, 4869; V. Gaspar and K. Showalter (1990). <i>J. Phys. Chem.</i>, 94,4973.</p>
+</aside>
+<p class="indent">Under the conditions for which the oscillatory Landolt (or EOE) system was studied, the main feedback processes appear to involve pH changes as sulphite is oxidized to the stronger acid sulphate ion. A relatively simple two variable model which accounts for the observed oscillatory waveform and the conditions under which they are observed can be written as</p>
+<figure class="figure-bh" id="step1-5">
+ <img src="../images/page63-5.jpg" alt="images"/>
+</figure>
+<p class="noindent">The mass balance equations for [HSO<sub>3</sub>] and H<sup>+</sup>] are then</p>
+<figure class="fig1a" id="eq5.26">
+<img src="../images/page63-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">with</p>
+<figure class="fig1a" id="eq5.27">
+<img src="../images/page63-3.jpg" alt="images"/>
+</figure>
+<figure class="fig1a" id="eq5.28">
+<img src="../images/page63-4.jpg" alt="images"/>
+</figure>
+<p class="noindent">The concentrations of sulphate ion and iodine are taken to be in dynamic steady state with the main variables, bisulphite and hydrogen ions. The Dushman reaction involving iodate and iodide is assumed to be fast, leading to the apparent transmutations of elements. Typical values for the rate <a id="page_64" class="page">Page 64 Bistability and oscillations in flow reactors</a> constants are given in <a href="#tab5.1">Table 5.1</a>, with oscillations being predicted over a range of the inflow concentration [H<sup>+</sup>]<sub>0</sub>.</p>
+<p class="noindent">The EOE reaction is one of a number of <i>pH oscillators</i> that have been discovered. Some other oscillators designed by this method are listed in <a href="#tab5.2">Table 5.2</a>. Various additional complexities in the behaviour of such redox reactions have also been observed. Some reactions exhibit <i>instability</i>, with up to three coexisting stable steady states (and two coexisting unstable saddle states). The iodate-arsenite reaction shows <i>mushroom</i> and <i>isola</i> steady state loci if the reactor is fed with additional stream of solvent. These patterns are illustrated in <a href="#fig5.9">Fig. 5.9</a>. The mushroom curve shows two separate regions of bistability: the new region, at low flow rates, allows the iodide concentration to be <i>washed-out.</i> As the neck of the mushroom skrinks, so the upper branch and the saddle branch become disconnected from the low [I<sup>&#x2212;</sup>] steady state. The system will not jump spontaneously to the high [I<sup>&#x2212;</sup>] branch no matter how the flow rate is varied, even though these solutions are stable. The system must be perturbed sufficiently, e.g., by the addition of iodide ion, to reach the upper branch, and it will fall off this if the flow rate is either made too high or too low.</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;">G. Rabai, M. Orban, and LR. Epstein (1990). <i>Acc. Chem. Res</i>., 23, 258.</p>
+</aside>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:2em;"><a id="tab5.1"/><b>Table 5.1</b> Typical values for rate constants in model of Oscillatory Landolt (EOE) reaction</p>
+<table class="width100b" style="width:70%;margin-bottom:1em;margin-top:1em;margin-left:2em;">
+<tr>
+<td style="verticle-align:top; border-top:1pt solid black;"><p class="tabled"><i>k</i><sub>1</sub></p></td>
+<td style="verticle-align:top; padding-left:1em; border-top:1pt solid black;"><p class="tabled">5&#x00D7;10<sup>10</sup>M<sup>&#x2212;1</sup>s<sup>&#x2212;1</sup>,</p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled"><i>k</i><sub>-1</sub></p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled">8.1&#x00D7;10<sup>3</sup>s<sup>&#x2212;1</sup></p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled"><i>k</i><sub>-1</sub></p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled">8.1&#x00D7;10<sup>3</sup>s<sup>&#x2212;1</sup></p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled"><i>k</i><sub>2</sub></p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled">0.06&#x00D7;s<sup>&#x2212;1</sup></p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled"><i>k</i><sub>3</sub></p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled">7.5&#x00D7;10<sup>4</sup>M<sup>&#x2212;1</sup>s<sup>&#x2212;1</sup></p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled"><i>k</i><sub>4</sub></p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled">2.3&#x00D7;10<sup>9</sup>M<sup>&#x2212;1</sup>s<sup>&#x2212;1</sup></p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled"><i>k</i><sub>5</sub></p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled">30s<sup>&#x2212;1</sup></p></td>
+</tr>
+<tr>
+<td style="verticle-align:top;"><p class="tabled"><i>k</i><sub>0</sub></p></td>
+<td style="verticle-align:top; padding-left:1em;"><p class="tabled">1.5&#x00D7;10<sup>&#x2212;3</sup>s<sup>&#x2212;1</sup></p></td>
+</tr>
+<tr>
+<td style="verticle-align:top; border-bottom:1pt solid black;"><p class="tabled">[HSO<sub>3</sub><sup>&#x2212;</sup>]<sub>0</sub></p></td>
+<td style="verticle-align:top; padding-left:1em; border-bottom:1pt solid black;"><p class="tabled">0.09M</p></td>
+</tr>
+</table>
+</aside>
+<p class="noindent2" style="margin-top:1em;margin-left:1em;width:68%;text-align:justify;"><a id="tab5.2"/><b>Table 5.2</b> Epsteins&#x2019;s taxonomy of inorganic chemical oscillators showing links between different &#x2018;families&#x2019; of components. (Reprinted from I.R. Epstein (1987). <i>Chemical &#x0026; Engineering News</i>, 65, (March) p.30.&#x00A9; American Chemical Society.)</p>
+<p class="image"><img src="../images/page64-1.jpg" alt="images"/></p>
+<a id="page_65" class="page" style="width:70%;">Page 65 Bistability and oscillations in flow reactors</a><p class="indent">Mushroom and isola patterns can also be found with the cubic autocatalysis model</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<figure class="fig2" id="fig5.8">
+<img src="../images/page65-1.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 5.8</b> Cross-shaped diagrams for the oscillatory Landolt (EOE) reaction in which <math xmlns='http://www.w3.org/1998/Math/MathML'><semantics><mrow><mn>F</mn><mn>e</mn><msubsup><mrow><mo stretchy='false'>(</mo><mn>C</mn><mn>N</mn><mo stretchy='false'>)</mo></mrow><mn>6</mn><mrow><mn>4</mn><mo>&#x2212;</mo></mrow></msubsup></mrow></semantics></math> is added to the inflow: (a) <i>T</i>= 20 &#x00B0;C, only bistability; (b) <i>T</i> = 30 &#x00B0;C, bistability and oscillations; (c) <i>T</i> = 40 &#x00B0;C, bistability and oscillations. (Reprinted with permission from Edblom eta/. (1986), O American Chemical Society.)</p>
+</figcaption></figure>
+</aside>
+<p class="noindent" id="eq5.29" style="margin-top:0.8em;margin-bottom:0.8em;margin-left:18em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>A+2B</mtext><mo>&#x2192;</mo><mtext>3B</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>Rate=</mtext><msub><mi>k</mi><mtext>c</mtext></msub><mi>a</mi><msup><mi>b</mi><mn>2</mn></msup><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.29</mn><mo stretchy='false'>)</mo></mrow></math>
+</p>
+<p class="noindent">if coupled with a simple, first-order termination step for the autocatalyst</p>
+<p class="noindent" id="eq5.30" style="margin-left:21.5em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>B</mtext><mo>&#x2192;</mo><mtext>C</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>Rate=</mtext><msub><mi>k</mi><mtext>t</mtext></msub><mtext>b</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.30</mn><mo stretchy='false'>)</mo></mrow></math>
+</p>
+<p class="noindent">The flow diagram technique can be applied to this model, with the flow line &#x2112; now depending in a slightly more complex manner on the flow rate <i>k</i><sub>0</sub> (and involving the termination rate constant <i>k</i><sub>t</sub>). If the CSTR is fed by streams of both A and B, with <i>b</i><sub>0</sub>/<i>a</i><sub>0</sub><sup>2</sup> and if <i>k</i><sub>t</sub> is sufficiently small (typically <math xmlns='http://www.w3.org/1998/Math/MathML'><semantics><mrow><msub><mi>k</mi><mi>t</mi></msub><mo>/</mo><msub><mi>k</mi><mi>c</mi></msub><msubsup><mi>a</mi><mn>0</mn><mn>2</mn></msubsup><msup><mo>&#x003C;</mo><mn>1</mn></msup><msub><mo>/</mo><mrow><mn>16</mn></mrow></msub></mrow></semantics></math>) then up to four tangencies of &#x211C; and &#x2112; become possible as <i>k</i><sub>0</sub> is varied.</p>
+<p class="indent">The mass conservation condition now becomes <i>a</i> + <i>b</i> + <i>c</i> = <i>a</i><sub>0</sub> + <i>b</i><sub>0</sub>, so we cannot use <i>b = a</i><sub>0</sub> + <i>b</i><sub>0</sub> &#x2212; <i>a</i> as before in <a href="#eq5.7">Eqn (5.7)</a>. The mass balance equations for <i>a</i> and <i>b</i> become</p>
+<p class="noindent" id="eq5.31" style="margin-left:15.4em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow><mrow><mtext>d</mtext><mi>a</mi></mrow><mo>/</mo><mrow><mtext>d</mtext><mi>t</mi></mrow></mrow><mo>=</mo><msub><mi>k</mi><mn>0</mn></msub><mrow><mo>(</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>&#x2212;</mo><mi>a</mi></mrow><mo>)</mo></mrow><mo>&#x2212;</mo><msub><mi>k</mi><mi>c</mi></msub><mi>a</mi><msup><mi>b</mi><mn>2</mn></msup><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.31</mn><mo stretchy='false'>)</mo></math>
+</p>
+<p class="noindent" id="eq5.32" style="margin-left:12.8em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow><mrow><mtext>d</mtext><mi>a</mi></mrow><mo>/</mo><mrow><mtext>d</mtext><mi>t</mi></mrow></mrow><mo>=</mo><msub><mi>k</mi><mn>0</mn></msub><mrow><mo>(</mo><mrow><msub><mi>b</mi><mn>0</mn></msub><mo>&#x2212;</mo><mi>b</mi></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>k</mi><mi>c</mi></msub><mi>a</mi><msup><mi>b</mi><mn>2</mn></msup><mo>&#x2212;</mo><msub><mi>k</mi><mi>t</mi></msub><mi>b</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.32</mn><mo stretchy='false'>)</mo></math>
+</p>
+<p class="noindent">For a steady state, d<i>a</i>/d<i>t</i> = d<i>b/dt</i> &#x2212; 0. Adding the steady state equations yields</p>
+<p class="noindent" id="eq5.33" style="margin-left:14em;margin-top:0.8em;margin-bottom:0.8em;">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<msub><mi>k</mi><mn>0</mn>
+</msub>
+<mrow><mo>(</mo><mrow>
+<msub><mi>a</mi><mn>0</mn>
+</msub>
+<mo>+</mo><msub><mi>b</mi><mn>0</mn>
+</msub>
+<mo>&#x2212;</mo><msub><mi>a</mi><mrow>
+<mtext>ss</mtext></mrow>
+</msub></mrow>
+<mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow>
+<msub><mi>k</mi><mn>0</mn>
+</msub>
+<mo>+</mo><msub><mi>k</mi><mi>t</mi>
+</msub></mrow>
+<mo>)</mo></mrow><msub><mi>b</mi><mrow>
+<mtext>ss</mtext></mrow>
+</msub>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>5.33</mn><mo stretchy='false'>)</mo>
+</math>
+</p>
+<p class="noindent">We can use this to obtain the steady state condition equivalent to <a href="#eq5.9">Eqn (5.9)</a>:</p>
+<figure class="fig1a" id="eq5.34">
+<img src="../images/page65-2.jpg" alt="images"/>
+</figure>
+<p class="noindent">or</p>
+<figure class="fig1a" id="eq5.35">
+<img src="../images/page65-3.jpg" alt="images"/>
+</figure>
+<p class="noindent">In dimensionless terms, where <math xmlns='http://www.w3.org/1998/Math/MathML'><semantics><mrow><msub><mi>&#x03BA;</mi><mi>t</mi></msub><mo>=</mo><msub><mi>k</mi><mi>t</mi></msub><mo>/</mo><msub><mi>k</mi><mi>c</mi></msub><msub><mi>a</mi><mn>0</mn></msub></mrow></semantics></math> and the other groups are as in <a href="#eq5.9">Eqn (5.9)</a>. The only difference, then, is that the gradient of the flow line &#x00E4; depends on flow rate as <math xmlns='http://www.w3.org/1998/Math/MathML'><semantics><mrow><msup><mrow><mo stretchy='false'>(</mo><msub><mi>&#x03BA;</mi><mn>0</mn></msub><mo>+</mo><msub><mi>&#x03BA;</mi><mn>1</mn></msub><mo stretchy='false'>)</mo></mrow><mn>2</mn></msup><mo>/</mo><msub><mi>&#x03BA;</mi><mn>0</mn></msub></mrow></semantics></math> instead of simply &#x03BA;<sub>0</sub>. This difference is not particularly significant at high flow rates; with <math xmlns='http://www.w3.org/1998/Math/MathML'><semantics><mrow><msub><mi>&#x03BA;</mi><mn>0</mn></msub><mo>&#x226B;</mo><msub><mi>&#x03BA;</mi><mi>t</mi></msub></mrow></semantics></math>, the slope is effectively given by &#x03BA;<sub>0</sub> and so we find step flow lines at high flow rates as before. The different dependence of the slope on flow rate is, however, important at low flow rates, with the slope becoming infinite in the present case but tending to zero in <a href="#eq5.9">Eqn (5.9)</a> for the system without the termination step. The flow line has a minimum slope of 4K<sub>t</sub> in the present case, arising when &#x03BA;<sub>0</sub> = &#x03BA;<sub>t</sub>. If this line of minimum slope lies above the tangent to the rate curve &#x211C;, which is independent of &#x03BA;<sub>t</sub>, then no tangencies will be possible, so no ranges of bistability will exist even if <math xmlns='http://www.w3.org/1998/Math/MathML'><semantics><mrow><msub><mi>&#x03B2;</mi><mn>0</mn></msub><msup><mo>&#x003C;</mo><mn>1</mn></msup><msub><mo>/</mo><mn>8</mn></msub></mrow></semantics></math>. If the line of minimum slope lies between the tangencies, the system will twice pass over the upper (extinction) line of tangency, giving rise to an isola pattern. Finally, if &#x03BA;<sub>t</sub> is sufficiently small, the flow line of minimum slope lies below the lower tangency <a id="page_66" class="page" style="width:70%;">Page 66 Bistability and oscillations in flow reactors</a>and &#x211C; and &#x2112; can become tangential four times, giving rise to a mushroom pattern. This sequence is indicated in <a href="#fig5.10">Fig. 5.10(a-f)</a>. The decay step B &#x2192; C also allows the cubic autocatalysis model to exhibit oscillations. Mushrooms, isolas, and oscillations are also exhibited by exothermic reactions when self-heating of the reacting mixture leads to thermal feedback.</p>
+
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure class="fig2" id="fig5.9">
+<img src="../images/page66-1.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 5.9</b> (a) Mushroom and (b) isola responses for the steady-state concentration of iodide ion in the Landolt reaction with an additional inflow of solvent. (Reprinted with permission from N. Ganapathisubramanian and K. Showalter (1984). <i>J. Am. Chem. Soc.</i>, 106,816.&#x00A9; American Chemical Society.)</p>
+</figcaption></figure>
+</aside>
+<figure class="fig1" id="fig5.10">
+<img src="../images/page66-2.jpg" alt="images"/>
+<figcaption style="width:100%; margin-top: 1em;">
+<p class="noindent2" style="margin-left:1em;"><b>Fig. 5.10</b> The evolution of mushroom and isola patterns in the cubic autocatalysis model with termination: (a) and (b) the termination rate constant is high, so the line of minimum slope lies above the upper tangency, giving no bistability; (c) and (d) the line of minimum slope lies between the two tangencies giving rise to an isola pattern as ko is varied; (e) and (f) the line of minimum slope lies below the low tangency, leading to a mushroom pattern.</p>
+</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<p class="noindent2" style="margin-left:1em;">For full details see P. Gray and S.K. Scott (1990). <i>Chemical oscillations and instabilities: non-linear chemical kinetics.</i> Oxford University Press, Oxford, <a href="Chapter06.xhtml">Chapter 6</a>;. (1985). <i>J. Phys. Chem.</i> 89, 22-32: S.K. Scott (1987). <i>Acc. Chem. Res.</i>,20, 186&#x2013;91.</p>
+</aside>
+</section>
+</section>
+</div>
+</body>
+</html>

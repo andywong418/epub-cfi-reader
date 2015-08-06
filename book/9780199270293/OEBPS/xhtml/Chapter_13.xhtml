@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Chapter 13</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+</head>
+<body>
+<div>
+<section epub:type="chapter" id="ch13">
+<a id="page_269" class="page">Page 269, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>
+<h1 class="main"><sup>1</sup>H NMR: Proton nuclear magnetic resonance&#x00A0;<span class="chright">13</span></h1>
+<p class="noindent">&#160;</p>
+<div class="cbox">
+<p class="chtit"><b>Connections</b></p>
+<table>
+<tr>
+<td style="padding-right:2em;">
+<p class="charrow"><img src="../images/bbull.jpg" alt="images"/><b>Building on</b></p>
+</td>
+<td style="background-color:#FFFFFF;padding-left:0.1em;padding-right:0.1em;">&#x00A0;</td>
+<td style="padding-right:2em;padding-left:1em;">
+<p class="charrow"><b>Arriving at</b></p>
+</td>
+<td style="background-color:#FFFFFF;padding-left:0.1em;padding-right:0.1em;">&#x00A0;</td>
+<td style="padding-right:2em;padding-left:1em;">
+<p class="charrow"><img src="../images/bbull.jpg" alt="images"/><b>Looking forward to</b></p>
+</td>
+</tr>
+<tr>
+<td style="padding-right:2em;">
+<p class="chlist"><span class="bbull">&#x2022;</span>&#x00A0;&#x00A0;X-ray crystallography, mass spectrometry, NMR, and infrared spectroscopy <span class="blue">ch3</span></p>
+<p class="noindent">&#160;</p>
+</td>
+<td style="background-color:#FFFFFF;padding-left:0.1em;padding-right:0.1em;">&#x00A0;</td>
+<td style="padding-right:2em;padding-left:1em;">
+<p class="chlist"><span class="bbull">&#x2022;</span>&#x00A0;&#x00A0;Proton (or <sup>1</sup>H) NMR spectra and their regions</p>
+<p class="chlist"><span class="bbull">&#x2022;</span>&#x00A0;&#x00A0;How <sup>1</sup>H NMR compares with <sup>13</sup>C NMR: integration</p>
+<p class="chlist"><span class="bbull">&#x2022;</span>&#x00A0;&#x00A0;How &#x2018;coupling&#x2019; in <sup>1</sup>H NMR provides most of the information needed to find the structure of an unknown molecule</p>
+</td>
+<td style="background-color:#FFFFFF;padding-left:0.1em;padding-right:0.1em;">&#x00A0;</td>
+<td style="padding-right:2em;padding-left:1em;">
+<p class="chlist"><span class="bbull">&#x2022;</span>&#x00A0;&#x00A0;Using <sup>1</sup>H NMR with other spectroscopic methods to solve structures rapidly <span class="blue">ch18</span></p>
+<p class="noindent">&#160;</p>
+<p class="chlist"><span class="bbull">&#x2022;</span>&#x00A0;&#x00A0;Using <sup>1</sup>H NMR to investigate the detailed shape (stereochemistry) of molecules <span class="blue">ch31</span></p>
+<p class="noindent">&#160;</p>
+<p class="chlist"><span class="bbull">&#x2022;</span>&#x00A0;&#x00A0;<sup>1</sup>H NMR spectroscopy is referred to in most chapters of the book as it is the most important tool for determining structure; you must understand this chapter before reading further</p>
+</td>
+</tr>
+</table>
+</div>
+<section epub:type="chapter" id="sec_13.1">
+<h2 class="h2">The differences between carbon and proton NMR</h2>
+<p class="noindent">We introduced nuclear magnetic resonance (NMR) in <a href="chapter_3.xhtml">Chapter 3</a> as part of a three-pronged attack on the problem of determining molecular structure. We showed that mass spectrometry weighs the molecules, infrared spectroscopy tells us about functional groups, and <sup>13</sup>C and <sup>1</sup>H NMR tell us about the hydrocarbon skeleton. We concentrated on <sup>13</sup>C NMR because it&#x2019;s simpler, and we were forced to admit that we were leaving the details of the most important technique of all&#x2014;proton (<sup>1</sup>H) NMR&#x2014;until a later chapter because it is more complicated than <sup>13</sup>C NMR. This is that chapter and we must now tackle those complications. We hope you will see <sup>1</sup>H NMR for the beautiful and powerful technique that it surely is. The difficulties are worth mastering for this is the chemist&#x2019;s primary weapon in the battle to solve structures.</p>
+<div class="ybox">
+<p class="cbh3"><b><span class="bull1">&#x2022;</span>&#x00A0;&#x00A0;We will make use of <sup>1</sup>H and <sup>13</sup>C NMR evidence for structure throughout this book, and it is essential that you are familiar with the explanations in this chapter before you read further.</b></p>
+</div>
+<p class="noindent">Proton NMR differs from <sup>13</sup>C NMR in a number of ways.</p>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span> &#x2018;<sup>1</sup>H NMR&#x2019; and &#x2018;proton NMR&#x2019; are interchangeable terms. All nuclei contain protons of course, but chemists often use &#x2018;proton&#x2019; specifically for the nucleus of a hydrogen atom, either as part of a molecule or in its &#x2018;free&#x2019; form as H+. This is how it will be used in this chapter.</p>
+</div>
+</aside>
+<p class="blist" style="width:67%;"><span class="b1bull">&#x2022;</span>&#x00A0;&#x00A0;<sup>1</sup>H is the major isotope of hydrogen (99.985&#x0025; natural abundance), while <sup>13</sup>C is only a minor isotope (1.1&#x0025;).</p>
+<p class="blist" style="width:67%;"><span class="b1bull">&#x2022;</span>&#x00A0;&#x00A0;<sup>1</sup>H NMR is quantitative: the area under the peak tells us the number of hydrogen nuclei, while <sup>13</sup>C NMR may give strong or weak peaks from the same number of <sup>13</sup>C nuclei.</p>
+<p class="blist" style="width:67%;"><span class="b1bull">&#x2022;</span>&#x00A0;&#x00A0;Protons interact magnetically (&#x2018;couple&#x2019;) to reveal the connectivity of the structure, while <sup>13</sup>C is too rare for coupling between <sup>13</sup>C nuclei to be seen.</p>
+<div style="margin-top:1em;margin-bottom:1em;margin-left:0em;margin-right:0em;background-color:#E6E0F0;padding:0.5em;width:100%;">
+<p class="bnoindent" style="width:70%;"><span style="color:#7657A0;"><b>Online support</b></span>. The icon <img src="../images/online.jpg" alt="images"/> in the margin indicates that accompanying interactive resources are provided online to help your understanding: just type <span style="color:#7657A0;"><b>www.chemtube3d.com/clayden/123</b></span> into your browser, replacing <b>123</b> with the number of the page where you see the icon. For pages linking to more than one resource, type <b>123-1</b>, <b>123-2</b> etc. (replacing <b>123</b> with the page number) for access to successive links.</p>
+</div>
+<p class="blist" style="width:67%;"><a id="page_270" class="page">Page 270, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>
+<span class="b1bull">&#x2022;</span>&#x00A0;&#x00A0;<sup>1</sup>H NMR shifts give a more reliable indication of the local chemistry than that given by <sup>13</sup>C spectra.</p>
+<p class="noindent1">We shall examine each of these points in detail and build up a full understanding of proton NMR spectra.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<div class="arrow">
+<p class="noindent2"><img src="../images/arrow.jpg" style="vertical-align:top;" alt="images"/> In <a href="chapter_3.xhtml">Chapter 3</a> we illustrated the alignment of nuclei using the analogy of a compass needle in a magnetic field.</p>
+</div>
+</aside>
+<p class="indent">Proton NMR spectra are recorded in the same way as <sup>13</sup>C NMR spectra: radio waves are used to study the energy level differences of nuclei in a magnetic field, but this time they are <sup>1</sup>H and not <sup>13</sup>C nuclei. Hydrogen nuclei in a magnetic field have two energy levels: they can be aligned either with or against the applied magnetic field.</p>
+<figure class="fig1">
+<img src="../images/pg_270_1.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span> All nuclei are characterized by their &#x2018;nuclear spin&#x2019;, a value known as <b>I</b>. The number of energy levels available to a nucleus of spin <b>I</b> is 2<i>I</i> + 1. <sup>1</sup>H and <sup>13</sup>C both have <b>I</b> &#x003D; 1/2.</p>
+</div>
+</aside>
+<p class="indent"><sup>1</sup>H and <sup>13</sup>C spectra have many similarities: the scale runs from right to left and the zero point is given by the same reference compound, although it is the proton resonance of Me<sub>4</sub>Si rather than the carbon resonance that defines the zero point. You will notice at once that the scale is much smaller, ranging over only about 10 ppm instead of the 200 ppm needed for carbon. This is because the variation in the chemical shift is a measure of the shielding of the nucleus by the electrons around it. There is inevitably less change possible in the distribution of two electrons around a hydrogen nucleus than in that of the eight valence electrons around a carbon nucleus. Here is the <sup>1</sup>H NMR spectrum of acetic acid, which you first saw in <a href="chapter_3.xhtml">Chapter 3</a>.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span> This 10 ppm scale is not the same as any part of the 13C NMR spectrum. It is at a different frequency altogether.</p>
+</div>
+</aside>
+<figure class="fig1">
+<img src="../images/pg_270_2.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span> A reminder from <a href="chapter_3.xhtml">Chapter 3</a>: ignore the peak at 7.25 shown in brown. This is from the solvent, as explained on p.272.</p>
+</div>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_13.2">
+<h2 class="h2">Integration tells us the number of hydrogen atoms in each peak</h2>
+<p class="noindent">You know from <a href="chapter_3.xhtml">Chapter 3</a> that the position of a signal in an NMR spectrum tells us about its environment. In acetic acid the methyl group is next to the electron-withdrawing carbonyl group and so is slightly deshielded at about &#x03B4; 2.0 ppm and the acidic proton itself, attached to O, is very deshielded at &#x03B4; 11.2 ppm. The same factor that makes this proton acidic&#x2014;the O&#x2013;H bond is polarized towards oxygen&#x2014;also makes it resonate at low field. So far things are much the same as in <sup>13</sup>C NMR. Now for a difference. In <sup>1</sup>H NMR the <i>size</i> of the peaks is also important: the area under the peaks is exactly proportional to the number of protons. Proton spectra are normally integrated, that is, the area under the peaks is computed and recorded as a line with steps corresponding to the area, like this.</p>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span> It is not enough simply to measure the relative heights of the peaks because, as here, some peaks might be broader than others. Hence the area under the peak is measured.</p>
+</div>
+</aside>
+<figure class="fig1">
+<a id="page_271" class="page" style="width:107%;">Page 271, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>
+<img src="../images/pg_271_1.jpg" alt="images"/>
+</figure>
+<p class="indent">Simply measuring the height of the steps with a ruler gives you the <i>ratio</i> of the numbers of protons represented by each peak. In many spectra this will be measured for you and reported as a number at the bottom of the spectrum. Knowing the atomic composition (from the mass spectrum) we also know the distribution of protons of various kinds. Here the heights are 6 mm and 18 mm, a ratio of about 1:3. The compound is C<sub>2</sub>H<sub>4</sub>O<sub>2</sub> so, since there are four H atoms altogether, the peaks must contain 1 &#x00D7; H and 3 &#x00D7; H, respectively.</p>
+<p class="indent">In the spectrum of 1,4-dimethoxybenzene there are just two signals in the ratio of 3:2. This time the compound is C<sub>8</sub>H<sub>10</sub>O<sub>2</sub> so the true ratio must be 6:4. The positions of the two signals are exactly where you would expect them to be from our discussion of the regions of the NMR spectrum in <a href="chapter_3.xhtml">Chapter 3</a>: the 4H aromatic signal is in the left-hand half of the spectrum, between 5 and 10 ppm, where we expect to see protons attached to sp<sup>2</sup> C atoms, while the 6H signal is in the right-hand half of the spectrum, where we expect to see protons attached to sp<sup>3</sup> C atoms.</p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<div class="arrow">
+<p class="noindent2"><img src="../images/arrow.jpg" style="vertical-align:top;" alt="images"/> We will come back to the regions of the <sup>1</sup>H NMR spectrum in more detail in just a moment, but we introduced them in <a href="chapter_3.xhtml">Chapter 3</a> on p. <a href="chapter_3.xhtml#page_60">60</a>.</p>
+</div>
+</aside>
+<figure class="fig1">
+<img src="../images/pg_271_2.jpg" alt="images"/>
+</figure>
+<p class="indent">In this next example it is easy to assign the spectrum simply by measuring the steps in the integral. There are two identical methyl groups (CMe<sub>2</sub>) with six Hs, one methyl group by itself with three Hs, the OH proton (1 H), the CH<sub>2</sub> group next to the OH (two Hs), and finally the CH<sub>2</sub>CH<sub>2</sub> group between the oxygen atoms in the ring (four Hs).</p>
+<figure class="fig1">
+<img src="../images/pg_271_3.jpg" alt="images"/>
+</figure>
+<p class="indent"><a id="page_272" class="page">Page 272, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>&#160;&#160;&#160;&#160;Before we go on, a note about the solvent peaks shown in brown in these spectra. Proton NMR spectra are generally recorded in solution in deuterochloroform (CDCl<sub>3</sub>)&#x2014;that is, chloroform (CHCl<sub>3</sub>) with the <sup>1</sup>H replaced by <sup>2</sup>H (deuterium). The proportionality of the size of the peak to the number of protons tells you why: if you ran a spectrum in C<i>H</i>Cl<sub>3</sub>, you would see a vast peak for all the solvent Hs because there would be much more solvent than the compound you wanted to look at. Using CDCl<sub>3</sub> cuts out all extraneous protons. <sup>2</sup>H atoms have different nuclear properties and so don&#x2019;t show up in the <sup>1</sup>H spectrum. Nonetheless, CDCl<sub>3</sub> is always unavoidably contaminated with a small amount of CHCl<sub>3</sub>, giving rise to the small peak at 7.25 ppm. Spectra may equally well be recorded in other deuterated solvents such as water (D<sub>2</sub>O), methanol (CD<sub>3</sub>OD), or benzene (C<sub>6</sub>D<sub>6</sub>).</p>
+</section>
+<section epub:type="chapter" id="sec_13.3">
+<h2 class="h2">Regions of the proton NMR spectrum</h2>
+<p class="noindent">All the H atoms in the last example were attached to sp<sup>3</sup> carbons, so you will expect them to fall between 0 and 5 ppm. However, you can clearly see that H atoms that are nearer to oxygen are shifted downfield within the 0&#x2013;5 ppm region, to larger &#x03B4; values (here as far as 3.3 and 3.9 ppm). We can use this fact to build some more detail into our picture of the regions of the <sup>1</sup>H NMR spectrum.</p>
+<figure class="fig1">
+<img src="../images/pg_272_1.jpg" alt="images"/>
+</figure>
+<p class="indent">These regions hold for protons attached to C: protons attached to O or N can come almost anywhere on the spectrum. Even for C&#x2013;H signals the regions are approximate and overlap quite a lot. You should use the chart as a basic guide, and you should aim to learn these regions. But you will also need to build up a more detailed understanding of the factors affecting proton chemical shift. To help you achieve this understanding, we now need to examine the classes of proton in more detail and examine the reasons for their particular shifts. It is important that you grasp these reasons.</p>
+<p class="indent">In this chapter you will see a lot of numbers&#x2014;chemical shifts and differences in chemical shifts. We need these to show that the ideas behind <sup>1</sup>H NMR are securely based in fact. <i>You do not need to learn these numbers.</i> Comprehensive tables can be found at the end of <a href="chapter_18.xhtml">Chapter 18</a>, which we hope you will find useful for reference while you are solving problems.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<div class="arrow">
+<p class="noindent2"><img src="../images/arrow.jpg" style="vertical-align:top;" alt="images"/> These tables can be found on pp. <a href="chapter_18.xhtml#page_422">422</a>&#x2013;426.</p>
+</div>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_13.4">
+<h2 class="h2">Protons on saturated carbon atoms</h2>
+<section epub:type="chapter" id="sec_13.4.1">
+<h3 class="h3">Chemical shifts are related to the electronegativity of substituents</h3>
+<p class="noindent">We shall start with protons on saturated carbon atoms. The top half of the diagram below shows how the protons in a methyl group are shifted more and more as the atom attached to them gets more electronegative.</p>
+<figure class="fig1">
+<img src="../images/pg_272_2.jpg" alt="images"/>
+</figure>
+<p class="indent"><a id="page_273" class="page">Page 273, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>&#160;&#160;&#160;&#160;When we are dealing with single atoms as substituents, these effects are straightforward and more or less additive. If we go on adding electronegative chlorine atoms to a carbon atom, electron density is progressively removed from it and the carbon nucleus and the hydrogen atoms attached to it are progressively deshielded. You can see this in the bottom half of the diagram above. Dichloromethane, CH<sub>2</sub>Cl<sub>2</sub>, and chloroform, CHCl<sub>3</sub>, are commonly used as solvents and their shifts will become familiar to you if you look at a lot of spectra.</p>
+</section>
+<section epub:type="chapter" id="sec_13.4.2">
+<h3 class="h3">Proton chemical shifts tell us about chemistry</h3>
+<p class="noindent">The truth is that shifts and electronegativity are not perfectly correlated. The key property is indeed electron withdrawal but it is the electron-withdrawing power of the whole substituent in comparison with the carbon and hydrogen atoms in the CH skeleton that matters. Methyl groups joined to the same element&#x2014;nitrogen, say&#x2014;may have very different shifts if the substituent is an amino group (CH<sub>3</sub>&#x2013;NH<sub>2</sub> has &#x03B4;<sub>&#x0397;</sub> for the CH<sub>3</sub> group &#x003D; 2.41 ppm) or a nitro group (CH<sub>3</sub>&#x2013;NO<sub>2</sub> has &#x03B4;<sub>&#x0397;</sub> 4.33 ppm). A nitro group is much more electron-withdrawing than an amino group.</p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span> You have seen &#x03B4; used as a symbol for chemical shift. Now that we have two sorts of chemical shift&#x2014;in the 13C NMR spectrum and in the <sup>1</sup>H NMR spectrum&#x2014;we need to be able to distinguish them. &#x03B4;H means chemical shift in the <sup>1</sup>H NMR spectrum, and &#x03B4;C is chemical shift in the 13C NMR spectrum.</p>
+</div>
+</aside>
+<p class="indent">What we need is a quick guide rather than some detailed correlations, and the simplest is this: all functional groups except very electron-withdrawing ones shift methyl groups from 1 ppm (where you find them if they are not attached to a functional group) downfield to about 2 ppm. Very electron-withdrawing groups shift methyl groups to about 3 ppm. This is the sort of thing it <i>is</i> worth learning.</p>
+<div class="ybox">
+<p class="crh3"><b><span class="bull1">&#x2022;</span>&#x00A0;&#x00A0;Estimating the chemical shift of a methyl group</b></p>
+<figure class="fig1">
+<img src="../images/pg_273_1.jpg" alt="images"/>
+</figure>
+</div>
+<p class="indent">Rather than trying to fit these data to some atomic property, even such a useful one as electronegativity, we should rather see these shifts as a useful measure of the electron-withdrawing power of the group in question. The NMR spectra are telling us about the chemistry. The largest shift you are likely to see for a methyl group is that caused by the nitro group, 3.43 ppm, at least twice the size of the shift for a carbonyl group. This gives us our first hint of some important chemistry: one nitro group is worth two carbonyl groups when it come to electron-withdrawing power. You have already seen that electron withdrawal and acidity are related (<a href="chapter_8.xhtml">Chapter 8</a>) and in later chapters you will see that we can correlate the anion-stabilizing power of groups like carbonyl, nitro, and sulfone with proton NMR.</p>
+</section>
+<section epub:type="chapter" id="sec_13.4.3">
+<h3 class="h3">Methyl groups give us information about the structure of molecules</h3>
+<p class="noindent">It sounds rather unlikely that the humble methyl group could tell us much that is important about molecular structure&#x2014;but just you wait. We shall look at four simple compounds and their NMR spectra&#x2014;just the methyl groups, that is.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/pg_273_2.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">The first compound, the acid chloride in the margin, shows just one methyl signal containing nine Hs at &#x03B4;<sub>&#x0397;</sub> 1.10. This tells us two things. All the protons in each methyl group are identical, <a id="page_274" class="page">Page 274, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>and all three methyl groups in the tertiary butyl (t-butyl, or Me<sub>3</sub>C&#x2013;) group are identical. This is because rotation about C&#x2013;C single bonds, both about the CH<sub>3</sub>&#x2013;C bond and about the (CH<sub>3</sub>)<sub>3</sub>C&#x2013;C bond, is fast. Although at any one instant the hydrogen atoms in one methyl group, or the methyl groups in the <i>t</i>-butyl group, may differ, on average they are the same. The time-averaging process is fast rotation about a &#x03C3; bond.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span> Rotation about single bonds is generally very fast (you are about to see an exception); rotation about double bonds is generally very, very slow (it just doesn&#x2019;t happen). We talked about rotation rates in <a href="chapter_12.xhtml">Chapter 12</a>.</p>
+</div>
+</aside>
+<p class="indent">The second compound shows two 3H signals, one at 1.99 and one at 2.17 ppm. Unlike a C&#x2013;C bond, the C&#x003D;C double bond does not rotate at all and so the two methyl groups are different. One is on the same side of the alkene as (or <i>&#x2018;cis</i> to&#x2019;) the &#x2013;COCl group while the other is on the opposite side (or <i>&#x2018;trans&#x2019;).</i></p>
+<p class="indent">The next pair of compounds contain the CHO group. One is a simple aldehyde, the other an amide of formic acid: it is DMF, dimethylformamide. The first has two sorts of methyl group: a 3H signal at &#x03B4;<sub>&#x03BA;</sub> 1.81 for the SMe group and a 6H signal at &#x03B4;<sub>&#x03BA;</sub> 1.35 for the CMe<sub>2</sub> group. The two methyl groups in the 6H signal are the same, again because of fast rotation about a C&#x2013;C &#x03C3; bond. The second compound also has two methyl signals, at 2.89 and 2.98 ppm, each 3H, and these are the two methyl groups on nitrogen. Restricted rotation about the N&#x2013;CO bond must be making the two Me groups different. You will remember from <a href="chapter_7.xhtml">Chapter 7</a> (p. <a href="chapter_7.xhtml#page_155">155</a>) that the N&#x2013;CO amide bond has considerable double-bond character because of conjugation: the lone pair electrons on nitrogen are delocalized into the carbonyl group.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/pg_274_1.jpg" alt="images"/>
+</figure>
+</aside>
+<figure class="fig1">
+<img src="../images/pg_274_2.jpg" alt="images"/>
+</figure>
+<p class="indent">Like double bonds, cage structures prevent bond rotation and can make the two protons of a CH<sub>2</sub> group appear different. There are many flavouring compounds (terpenoids) from herbs that have structures like this. In the example here&#x2014;myrtenal, from the myrtle bush&#x2014;there is a four-membered ring bridged across a six-membered ring. The methyl groups on the other bridge are different because one is over the alkene while one is over the CH<sub>2</sub>. No rotation of any bonds within the cage is possible, so these methyl groups resonate at different frequencies (0.74 and 1.33 ppm). The same is true for the two H atoms of the CH<sub>2</sub> group.</p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/pg_274_3.jpg" alt="images"/>
+</figure>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_13.4.4">
+<h3 class="h3">CH and CH<sub>2</sub> groups have higher chemical shift than CH<sub>3</sub> groups</h3>
+<p class="noindent">Electronegative substituents have a similar effect on the protons of CH<sub>2</sub> groups and CH groups, but with the added complication that CH<sub>2</sub> groups have <i>two</i> other substituents and CH groups <i>three.</i> A simple CH<sub>2</sub> (methylene) group resonates at 1.3 ppm, about 0.4 ppm further downfield than a comparable CH<sub>3</sub> group (0.9 ppm), and a simple CH group resonates at 1.7 ppm, another 0.4 ppm downfield. Replacing each hydrogen atom in the CH<sub>3</sub> group by a carbon atom causes a small downfield shift as carbon is slightly more electronegative (C 2.5; H 2.2) than hydrogen and therefore shields less effectively.</p>
+<div class="ybox">
+<p class="crh3"><b><span class="bull1">&#x2022;</span>&#x00A0;&#x00A0;Chemical shifts of protons in CH, CH<sub>2</sub>, and CH<sub>3</sub> groups with no nearby electronwithdrawing groups.</b></p>
+<figure class="fig1">
+<img src="../images/pg_274_4.jpg" alt="images"/>
+</figure>
+</div>
+<p class="indent">The benzyl group (PhCH<sub>2</sub>&#x2013;) is very important in organic chemistry. It occurs naturally in the amino acid phenylalanine, which you met in <a href="chapter_2.xhtml">Chapter 2</a>. Phenylalanine has its CH<sub>2</sub> signal at 3.0 ppm and is moved downfield from 1.3 ppm mostly by the benzene ring.</p>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/pg_274_5.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">Amino acids are often &#x2018;protected&#x2019; as the Cbz (carboxybenzyl) derivatives by reaction with an acid chloride (we&#x2019;ll discuss this more in <a href="chapter_23.xhtml">Chapter 23</a>). Here is a simple example together <a id="page_275" class="page">Page 275, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>with the NMR spectrum of the product. Now the CH<sub>2</sub> group has gone further downfield to 5.1 ppm as it is next to both oxygen and phenyl.</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<div class="arrow">
+<p class="noindent2"><img src="../images/arrow.jpg" style="vertical-align:top;" alt="images"/> You met this sort of amideforming reaction in <a href="chapter_10.xhtml">Chapter 10</a>&#x2014;here the amide is actually a carbamate as the C&#x003D;O group is flanked by both O and N.</p>
+</div>
+</aside>
+<figure class="fig1">
+<img src="../images/pg_275_1.jpg" alt="images"/>
+</figure>
+</section>
+<section epub:type="chapter" id="sec_13.4.5">
+<h3 class="h3">Chemical shifts of CH groups</h3>
+<p class="noindent">A CH group in the middle of a carbon skeleton resonates at about 1.7 ppm&#x2014;another 0.4 ppm downfield from a CH<sub>2</sub> group. It can have up to three substituents and these will cause further downfield shifts of about the same amount as we have already seen for CH<sub>3</sub> and CH<sub>2</sub> groups. Three examples from nature are nicotine, the methyl ester of lactic acid, and vitamin C. Nicotine, the compound in tobacco that causes the craving (although not the death, which is doled out instead by the carbon monoxide and tars in the smoke), has one hydrogen atom trapped between a simple tertiary amine and an aromatic ring at 3.24 ppm. The ester of lactic acid has a CH proton at 4.3 ppm. You could estimate this with reasonable accuracy using the guidelines in the two summary boxes on pp. <a href="chapter_13.xhtml#page_273">273</a> and 274. Take 1.7 (for the CH) and add 1.0 (for C&#x003D;O) plus 2.0 (for OH) &#x003D; 4.7 ppm&#x2014;not far out. Vitamin C (ascorbic acid) has two CHs. One at 4.05 ppm is next to an OH group (estimate 1.7 &#x002B; 2.0 for OH &#x003D; 3.7 ppm) and one is next to a double bond and an oxygen atom at 4.52 ppm (estimate 1.7 &#x002B; 1 for double bond &#x002B; 2 for OH &#x003D; 4.7 ppm). Again, not too bad for a rough estimate.</p>
+<figure class="fig1">
+<img src="../images/pg_275_2.jpg" alt="images"/>
+</figure>
+<p class="indent">An interesting case is the amino acid phenylalanine whose CH<sub>2</sub> group we looked at a moment ago. It also has a CH group between the amino and the carboxylic acid groups. If we record the <sup>1</sup>H NMR spectrum in D<sub>2</sub>O, in either basic (NaOD) or acidic (DCl) solutions, we see a large shift of that CH group. In basic solution the CH resonates at 3.60 ppm and in acidic solution it resonates at 4.35 ppm. There is a double effect here: CO<sub>2</sub>H and NH<sup>&#x002B;</sup><sub>3</sub> are both more electron-withdrawing than CO<sub>2</sub><sup>-</sup> and NH<sub>2</sub> so both move the CH group downfield.</p>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span> D<sub>2</sub>O, NaOD, and DCl have to be used in place of their <sup>1</sup>H equivalents to avoid swamping the spectrum with H<sub>2</sub>O protons. All acidic protons are replaced by deuterium in the process&#x2014;more on this later.</p>
+</div>
+</aside>
+<figure class="fig1">
+<img src="../images/pg_275_3.jpg" alt="images"/>
+<a id="page_276" class="page" style="width:107%;">Page 276, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>
+</figure>
+<div class="ybox">
+<p class="crh3"><b><span class="bull1">&#x2022;</span>&#x00A0;&#x00A0;A simple guide to estimating chemical shifts</b></p>
+<p class="cbh3a0"><b>We suggest you start with a very simple (and therefore necessarily over simplified) picture, which should be the basis for any further refinements. Start methyl groups at 0.9, methylenes (CH<sub>2</sub>) at 1.3, and methines (CH) at 1.7 ppm. Any functional group is worth a 1 ppm downfield shift except oxygen and halogen which are worth 2 ppm. This diagram summarizes this approach.</b></p>
+<figure class="fig1">
+<img src="../images/pg_276_1.jpg" alt="images"/>
+</figure>
+</div>
+<p class="indent">The guide above is very rough and ready, but is easily remembered and you should aim to learn it. However, if you want to, you can make it slightly more accurate by adding further subdivisions and separating out the very electron-withdrawing groups (nitro, ester OCOR, fluoride), which shift by 3 ppm. This gives us the summary chart on this page, which we suggest you use as a reference. If you want even more detailed information, you can refer to the tables in <a href="chapter_18.xhtml">Chapter 18</a> or better still the more comprehensive tables in any specialized text (see the Further reading section).</p>
+</section>
+<section epub:type="chapter" id="sec_13.4.6">
+<h3 class="h3">Summary chart of proton NMR shifts</h3>
+<figure class="fig1">
+<img src="../images/pg_276_2.jpg" alt="images"/>
+</figure>
+<p class="indent"><a id="page_277" class="page">Page 277, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>&#160;&#160;&#160;&#160;Answers deduced from this chart won&#x2019;t be perfect but will give a good guide. Remember&#x2014; these shifts are additive. Take a simple example, the ketoester below. There are just three signals and the integration alone distinguishes the two methyl groups from the CH<sub>2</sub> group. One methyl has been shifted from 0.9 ppm by about 1 ppm, the other by more than 2 ppm. The first must be next to C&#x003D;O and the second next to oxygen. More precisely, 2.14 ppm is a shift of 1.24 ppm from our standard value (0.9 ppm) for a methyl group, about what we expect for a methyl ketone, while 3.61 ppm is a shift of 2.71 ppm, close to the expected 3.0 ppm for an ester joined through the oxygen atom. The CH<sub>2</sub> group is next to an ester and a ketone carbonyl group and so we expect it at 1.3 &#x002B; 1.0 &#x002B; 1.0 &#x003D; 3.3 ppm, an accurate estimate, as it happens. We shall return to these estimates when we look at the spectra of unknown compounds.</p>
+<figure class="fig1">
+<img src="../images/pg_277_1.jpg" alt="images"/>
+</figure>
+</section>
+</section>
+<section epub:type="chapter" id="sec_13.5">
+<h2 class="h2">The alkene region and the benzene region</h2>
+<p class="noindent">In <sup>13</sup>C NMR, alkene and benzene carbons came in the same region of the spectrum, but in the <sup>1</sup>H NMR spectrum the H atoms attached to arene C and alkene C atoms sort themselves into two groups. To illustrate this point, look at the <sup>13</sup>C and <sup>1</sup>H chemical shifts of cyclohexene and benzene, shown in the margin. The two carbon signals are almost the same (1.3 ppm difference, &#x003C; 1&#x0025; of the total 200 ppm scale) but the proton signals are very different (1.6 ppm difference &#x003D; 16&#x0025; of the 10 ppm scale). There must be a fundamental reason for this.</p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/pg_277_2.jpg" alt="images"/>
+</figure>
+</aside>
+<section epub:type="chapter" id="sec_13.5.1">
+<h3 class="h3">The benzene ring current causes large shifts for aromatic protons</h3>
+<p class="noindent">A simple alkene has an area of low electron density in the plane of the molecule because the &#x03C0; orbital has a node there, and the carbons and hydrogen nuclei lying in the plane gain no shielding from the &#x03C0; electrons.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/pg_277_3.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">The benzene ring looks similar at first sight, and the plane of the molecule is indeed a node for all the &#x03C0; orbitals. However, as we discussed in <a href="chapter_7.xhtml">Chapter 7</a>, benzene is aromatic&#x2014;it has extra stability because the six &#x03C0; electrons fit into three very stable orbitals and are delocalized round the whole ring. The applied field sets up a ring current in these delocalized electrons that produces a local field rather like the field produced by the electrons around a nucleus. Inside the benzene ring the induced field opposes the applied field, but outside the ring it reinforces the applied field. The carbon atoms are in the ring itself and experience neither effect, but the hydrogens are outside the ring, feel a stronger applied field, and appear less shielded (i.e. more deshielded; larger chemical shift).</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span> Magnetic fi elds produced by circulating electrons are all around you: electromagnets and solenoids are exactly this.</p>
+</div>
+</aside>
+<figure class="fig1">
+<img src="../images/pg_277_4.jpg" alt="images"/>
+<a id="page_278" class="page" style="width:107%;">Page 278, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>
+</figure>
+<div class="bbox">
+<h3 class="ch3">Cyclophanes and annulenes</h3>
+<p class="bnoindent">You may think that it is rather pointless imagining what goes on inside an aromatic ring as we cannot have hydrogen atoms literally inside a benzene ring. However, we can get close. Compounds called cyclophanes have loops of saturated carbon atoms attached at both ends to the same benzene rings. You see here a structure for [7]-<i>para</i>-cyclophane, which has a string of seven CH<sub>2</sub> groups attached to the <i>para</i> positions of the same benzene ring. The four H atoms on the benzene ring itself appear as one signal at 7.07 ppm&#x2014;a typical ring-current deshielded value for a benzene ring. The two CH<sub>2</sub> groups joined to the benzene ring (C1) are also deshielded by the ring current at 2.64 ppm. The next two sets of CH<sub>2</sub> groups on C2 and C3 are neither shielded nor deshielded at 1.0 ppm. But the middle CH<sub>2</sub> group in the chain (C4) must be pointing towards the ring in the middle of the &#x03C0; system and is heavily shielded by the ring current at &#x2013;0.6 ppm).</p>
+<figure class="fig1">
+<img src="../images/pg_278_1.jpg" alt="images"/>
+</figure>
+<p class="bnoindent">With a larger aromatic ring it is possible actually to have hydrogen atoms inside the ring. Compounds are aromatic if they have 4n &#x002B; 2 delocalized electrons and this ring with nine double bonds, that is, 18 &#x03C0; electrons, is an example. The hydrogens outside the ring resonate in the aromatic region at rather low field (9.28 ppm) but the hydrogen atoms inside the ring resonate at an amazing &#x2013;2.9 ppm, showing the strong shielding by the ring current. Such extended aromatic rings are called <i>annulenes</i>: you met them in <a href="chapter_7.xhtml">Chapter 7</a>.</p>
+</div>
+<aside class="abc" style="margin-top:-25em;" epub:type="sidebar">
+<div class="mouse">
+<p class="noindent2"><img src="../images/mouse.jpg" alt="images"/> Interactive structures of cyclophane and annulene</p>
+</div>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_13.5.2">
+<h3 class="h3">Uneven electron distribution in aromatic rings</h3>
+<p class="noindent">The <sup>1</sup>H NMR spectrum of this simple aromatic amine has three peaks in the ratio 1:2:2, which must correspond to 3H:6H:6H. The 6.38 ppm signal clearly belongs to the protons round the benzene ring, but why are they at 6.38 and not at around 7.2 ppm? We must also distinguish the two methyl groups at 2.28 ppm from those at 2.89 ppm. The chart on p. <a href="chapter_13.xhtml#page_276">276</a> suggests that these should both be at about 2.4 ppm, close enough to 2.28 ppm but not to 2.89 ppm. The solution to both these puzzles is the distribution of electrons in the aromatic ring. Nitrogen feeds electrons into the &#x03C0; system, making it electron rich: the ring protons are more shielded and the nitrogen atom becomes positively charged and its methyl groups more deshielded. The peak at 2.89 ppm must belong to the NMe<sub>2</sub> group.</p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/pg_278_2.jpg" alt="images"/>
+</figure>
+</aside>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span>&#x00A0;&#x00A0;The greater electron density around the ring more than compensates for any change in the ring current.</p>
+</div>
+</aside>
+<figure class="fig1">
+<img src="../images/pg_278_3.jpg" alt="images"/>
+</figure>
+<p class="indent">Other groups, such as simple alkyl groups, hardly perturb the aromatic system at all and it is quite common for all five protons in an alkyl benzene to appear as one signal instead of the three we might expect. Here is an example with some non-aromatic protons too: there is another on p. <a href="chapter_13.xhtml#page_275">275</a>&#x2014;the Cbz-protected amino acid.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span>&#x00A0;&#x00A0;Why should you usually expect to see three types of protons for a monosubstituted phenyl ring?</p>
+</div>
+</aside>
+<figure class="fig1">
+<a id="page_279" class="page" style="width:107%;">Page 279, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>
+<img src="../images/pg_279_1.jpg" alt="images"/>
+</figure>
+<p class="noindent">The five protons on the aromatic ring all have the same chemical shift. Check that you can assign the rest. The OCH<sub>3</sub> group (green) is typical of a methyl ester (the chart on p. <a href="chapter_13.xhtml#page_276">276</a> suggests 3.9 ppm). One CH<sub>2</sub> group (yellow) is between two carbonyl groups (compare 3.35 ppm for the similar CH<sub>2</sub> group on p. <a href="chapter_13.xhtml#page_277">277</a>). The other (red) is next to an ester and a benzene ring: we calculate 1.3 &#x002B; 1.5 &#x002B; 3.0 &#x003D; 5.8 ppm for that&#x2014;reasonably close to the observed 5.19 ppm. Notice how the Ph and the O together act to shift the Hs attached to this sp<sup>3</sup> C downfield into what we usually expect to be the alkene region. Don&#x2019;t interpret the regions on p. <a href="chapter_13.xhtml#page_272">272</a> too rigidly&#x0021;</p>
+</section>
+<section epub:type="chapter" id="sec_13.5.3">
+<h3 class="h3">How electron donation and withdrawal change chemical shifts</h3>
+<p class="noindent">We can get an idea of the effect of electron distribution by looking at a series of benzene rings with the same substituent in the 1 and 4 positions. This pattern makes all four hydrogens on the ring identical. Here are a few compounds listed in order of chemical shift: largest shift (lowest field; most deshielded) first. Conjugation is shown by the usual curly arrows, and inductive effects by a straight arrow by the side of the group. Only one hydrogen atom and one set of arrows are shown.</p>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<div class="arrow">
+<p class="noindent2"><img src="../images/arrow.jpg" style="vertical-align:top;" alt="images"/> Conjugation, as discussed in <a href="chapter_7.xhtml">Chapter 7</a>, is felt through p bonds, while inductive effects are the result of electron withdrawal or donation felt simply by polarization of the s bonds of the molecule. See p. <a href="chapter_6.xhtml#page_135">135</a>.</p>
+</div>
+</aside>
+<figure class="fig1">
+<img src="../images/pg_279_2.jpg" alt="images"/>
+</figure>
+<p class="indent">The largest shifts come from groups that withdraw electrons by conjugation. Nitro is the most powerful&#x2014;this should not surprise you as we saw the same in non-aromatic compounds in both <sup>13</sup>C and <sup>1</sup>H NMR spectra. Then come the carbonyl and nitrile group followed by groups showing simple inductive withdrawal. CF<sub>3</sub> is an important example of this kind of group&#x2014; three fluorine atoms combine to exert a powerful effect.<a id="page_280" class="page">Page 280, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a></p>
+<p class="indent">In the middle of our sequence, around the position of benzene itself at 7.27 ppm, come the halogens, whose inductive electron withdrawal and lone pair donation are nearly balanced.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<div class="arrow">
+<p class="noindent2"><img src="../images/arrow.jpg" style="vertical-align:top;" alt="images"/> This all has very important consequences for the reactivity of differently substituted benzene rings: their reactions will be discussed in <a href="chapter_21.xhtml">Chapter 21</a>.</p>
+</div>
+</aside>
+<figure class="fig1">
+<img src="../images/pg_280_1.jpg" alt="images"/>
+</figure>
+<p class="indent">Alkyl groups are weak inductive donators, but the groups which give the most shielding&#x2014; perhaps surprisingly&#x2014;are those containing the electronegative atoms O and N. Despite being inductively electron withdrawing (the C&#x2013;O and C&#x2013;N &#x03C3; bonds are polarized with &#x03B4; &#x002B; C), on balance conjugation of their lone pairs with the ring (as you saw on p. <a href="chapter_13.xhtml#page_278">278</a>) makes them net electron donors. They <i>increase</i> the shielding at the ring hydrogens. Amino groups are the best. Note that one nitrogen-based functional group (NO<sub>2</sub>) is the best electron withdrawer while another (NH<sub>2</sub>) is the best electron donor.</p>
+<figure class="fig1">
+<img src="../images/pg_280_2.jpg" alt="images"/>
+</figure>
+<p class="indent">As far as the donors with lone pairs are concerned (the halogens plus O and N), two factors are important&#x2014;the size of the lone pairs and the electronegativity of the element. If we look at the four halides at the top of this page the lone pairs are in 2p (F), 3p (Cl), 4p (Br), and 5p (I) orbitals. In all cases the orbitals on the benzene ring are 2p so the fluorine orbital is of the right size to interact well and the others too large. Even though fluorine is the most electronegative, it is still the best donor. The others don&#x2019;t pull so much electron density away, but they can&#x2019;t give so much back either.</p>
+<p class="indent">If we compare the first row of the p block elements&#x2014;F, OH, and NH<sub>2</sub>&#x2014;all have lone pairs in 2p orbitals so now electronegativity is the only variable. As you would expect, the most electronegative element, F, is now the weakest donor.</p>
+</section>
+<section epub:type="chapter" id="sec_13.5.4">
+<h3 class="h3">Electron-rich and electron-deficient alkenes</h3>
+<p class="noindent">The same sort of thing happens with alkenes. We&#x2019;ll concentrate on cyclohexene so as to make a good comparison with benzene. The six identical protons of benzene resonate at 7.27 ppm; the two identical alkene protons of cyclohexene resonate at 5.68 ppm. A conjugating and electron-withdrawing group such as a ketone removes electrons from the double bond as expected&#x2014;but unequally. The proton nearer the C&#x003D;O group is only slightly downfield from cyclohexene but the more distant one is over 1 ppm downfield. The curly arrows show the electron distribution, <i>which we can deduce</i> from the NMR spectrum.</p>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/pg_280_3.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent"><a id="page_281" class="page">Page 281, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>&#160;&#160;&#160;&#160;Oxygen as a conjugating electron donor is even more dramatic. It shifts the proton next to it downfield by the inductive effect but pushes the more distant proton upfield a whole 1 ppm by donating electrons. The separation between the two protons is nearly 2 ppm.</p>
+<p class="indent">For both types of substituent, the effects are more marked on the more distant (&#x03B2;) proton. If these shifts reflect the true electron distribution, we should be able to deduce something about the chemistry of the following three compounds. You might expect that nucleophiles will attack the electron-deficient site in the nitroalkene, while electrophiles will be attacked by the electron-rich sites in silyl enol ethers and enamines. These are all important reagents and do indeed react as we predict, as you will see in later chapters. Look at the difference&#x2014; there are nearly 3 ppm between the shifts of the same proton on the nitro compound and the enamine&#x0021;</p>
+<figure class="fig1">
+<img src="../images/pg_281_1.jpg" alt="images"/>
+</figure>
+</section>
+<section epub:type="chapter" id="sec_13.5.5">
+<h3 class="h3">Structural information from the alkene region</h3>
+<p class="noindent">Alkene protons on different carbon atoms can obviously be different if the carbon atoms themselves are different and we have just seen examples of that. Alkene protons can also be different if they are on the same carbon atom. All that is necessary is that the substituents at the other end of the double bond should themselves be different. The silyl enol ether and the unsaturated ester below both fit into this category. The protons on the double bond must be different, because each is <i>cis</i> to a different group. We may not be able to assign which is which, but the difference alone tells us something. The third compound is an interesting case: the different shifts of the two protons on the ring prove that the N&#x2013;Cl bond is at an angle to the C&#x003D;N bond. If it were in line, the two hydrogens would be identical. The other side of the C&#x003D;N bond is occupied by a lone pair and the nitrogen atom is trigonal (sp<sup>2</sup> hybridized).</p>
+<figure class="fig1">
+<img src="../images/pg_281_2.jpg" alt="images"/>
+</figure>
+</section>
+</section>
+<section epub:type="chapter" id="sec_13.6">
+<h2 class="h2">The aldehyde region: unsaturated carbon bonded to oxygen</h2>
+<p class="noindent">The aldehyde proton is unique. It is directly attached to a carbonyl group&#x2014;one of the most electron-withdrawing groups that exists&#x2014;and is very deshielded, resonating with the largest shifts of any CH protons, in the 9&#x2013;10 ppm region. The examples below are all compounds that we have met before. Two are just simple aldehydes&#x2014;aromatic and aliphatic. The third is the solvent DMF. Its CHO proton is less deshielded than most&#x2014;the amide delocalization that feeds electrons into the carbonyl group provides some extra shielding.</p>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span>&#x00A0;&#x00A0;<i>Aliphatic</i> is a catch-all term for compounds that are not aromatic.</p>
+</div>
+</aside>
+<figure class="fig1">
+<a id="page_282" class="page" style="width:107%;">Page 282, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>
+<img src="../images/pg_282_1.jpg" alt="images"/>
+</figure>
+<p class="indent">Conjugation with an oxygen lone pair has much the same effect&#x2014;formate esters resonate at about 8 ppm&#x2014;but conjugation with &#x03C0; bonds does not. The aromatic aldehyde above, simple conjugated aldehyde below, and myrtenal all have CHO protons in the normal region (9&#x2013;10 ppm).</p>
+<figure class="fig1">
+<img src="../images/pg_282_3.jpg" alt="images"/>
+</figure>
+<section epub:type="chapter" id="sec_13.6.1">
+<h3 class="h3">Non-aldehyde protons in the aldehyde region: pyridines</h3>
+<p class="noindent">Two other types of protons resonate in the region around 9&#x2013;10 ppm: some aromatic protons and some protons attached to heteroatoms like OH and NH. We will deal with NH and OH protons in the next section, but first we must look at some electron-deficient aromatic rings with distinctively large shifts.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/pg_282_4.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">Protons on double bonds, even very electron-deficient double bonds like those of nitro-alkenes, hardly get into the aldehyde region. However, some benzene rings with very electron-withdrawing groups do manage it because of the extra downfield shift of the ring current, so look out for nitrobenzenes as they may have signals in the 8&#x2013;9 ppm region.</p>
+<p class="indent">More important molecules with signals in this region are the aromatic heterocycles such as pyridine, which you saw functioning as a base in Chapters 8 and 10. The NMR shifts clearly show that pyridine is aromatic: one proton is at 7.1 ppm, essentially the same as benzene, but the others are more downfield and one, at C2, is in the aldehyde region. This is not because pyridine is &#x2018;more aromatic&#x2019; than benzene but because nitrogen is more electronegative than carbon. Position C2 is like an aldehyde&#x2014;a proton attached to sp<sup>2</sup> C bearing a heteroatom&#x2014; while C4 is electron deficient due to conjugation (the electronegative nitrogen is electron withdrawing). Isoquinoline is a pyridine and a benzene ring fused together and has a proton even further downfield at 9.1 ppm&#x2014;this is an imine proton that experiences the ring current of the benzene ring.</p>
+<figure class="fig1">
+<img src="../images/pg_282_5.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<div class="arrow">
+<p class="noindent2"><img src="../images/arrow.jpg" style="vertical-align:top;" alt="images"/> There is more on the electronwithdrawing nature of the nitro group on p. <a href="chapter_8.xhtml#page_176">176</a>.</p>
+</div>
+</aside>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span>&#x00A0;&#x00A0;&#x2018;Note that the alternative conjugation&#x2019; shown in the structure below is wrong. The structure with two adjacent double bonds in a six-membered ring is impossible and, in any case, as you saw in <a href="chapter_8.xhtml">Chapter 8</a>, the lone pair electrons on nitrogen are in an sp2 orbital orthogonal to the p orbitals in the ring. There is no interaction between orthogonal orbitals.</p>
+<figure class="fig1">
+<img src="../images/pg_282_6.jpg" alt="images"/>
+</figure>
+</div>
+</aside>
+</section>
+</section>
+<section epub:type="chapter" id="sec_13.7">
+<h2 class="h2">Protons on heteroatoms have more variable shifts than protons on carbon</h2>
+<p class="noindent">Protons directly attached to O, N, or S (or any other heteroatom, but these are the most important) also have signals in the NMR spectrum. We have avoided them so far because the positions of these signals are less reliable and because they are affected by exchange.<a id="page_283" class="page">Page 283, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a></p>
+<figure class="fig1">
+<img src="../images/pg_283_1.jpg" alt="images"/>
+</figure>
+<p class="indent">In <a href="chapter_2.xhtml">Chapter 2</a> you met the antioxidant BHT. Its proton NMR is very simple, consisting of just four lines with integrals 2, 1, 3, and 18. The chemical shifts of the tert-butyl group (brown), the methyl group on the benzene ring (orange), and the two identical aromatic protons (green) should cause you no surprise. What is left, the 1 H signal at 5.0 ppm (pink), must be the OH. Earlier on in this chapter we saw the spectrum of acetic acid, CH<sub>3</sub>CO<sub>2</sub>H, which showed an OH resonance at 11.2 ppm. Simple alcohols such as tert-butanol have OH signals in CDCl<sub>3</sub> (the usual NMR solvent) at around 2 ppm. Why such big differences?</p>
+<figure class="fig1">
+<img src="../images/pg_283_2.jpg" alt="images"/>
+</figure>
+<p class="indent">This is a matter of acidity. The more acidic a proton is&#x2014;that is, the more easily it can escape as H<sup>&#x002B;</sup> (this is the definition of acidity from <a href="chapter_8.xhtml">Chapter 8</a>)&#x2014;the more the OH bond is polarized towards oxygen. The more the RO&#x2013;H bond is polarized, the closer we are to free H<sup>&#x002B;</sup>, which would have no shielding electrons at all, and so the further the proton goes downfield. The OH chemical shifts and the acidity of the OH group are&#x2014;to a rough extent at least&#x2014;related.</p>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<table class="stab">
+<tr>
+<td class="tdl"></td>
+<td class="tdl1">ROH<a id="ch13fn1" href="#ch13fn_1"><sup>a</sup></a></td>
+<td class="tdl1">ArOH<a id="ch13fn2" href="#ch13fn_2"><sup>b</sup></a></td>
+<td class="tdl1">RCO2H<a id="ch13fn3" href="#ch13fn_2"><sup>c</sup></a></td>
+</tr>
+<tr>
+<td class="tdl">pK<sub>a</sub></td>
+<td class="tdl1">16</td>
+<td class="tdl1">10</td>
+<td class="tdl1">5</td>
+</tr>
+<tr>
+<td class="tdl">&#x03B4; <sup>H</sup> (OH), ppm</td>
+<td class="tdl1">2.0</td>
+<td class="tdl1">5.0</td>
+<td class="tdl1">&#x003E;10</td>
+</tr>
+</table>
+<p class="source"><a id="ch13fn_1" href="#ch13fn1"><sup>a</sup></a>alcohol <a id="ch13fn_2" href="#ch13fn2"><sup>b</sup></a>phenol <a id="ch13fn_3" href="#ch13fn3"><sup>c</sup></a>carboxylic acid</p>
+</aside>
+<p class="indent">Thiols (RSH) behave in a similar way to alcohols but are not so deshielded, as you would expect from the smaller electronegativity of sulfur (phenols are all about 5.0 ppm, PhSH is at 3.41 ppm). Alkane thiols appear at about 2 ppm and arylthiols at about 4 ppm. Amines and amides show a big variation, as you would expect for the variety of functional groups involved, and are summarized below. Amides are slightly acidic, as you saw in <a href="chapter_8.xhtml">Chapter 8</a>, and amide protons resonate at quite low fields. Pyrroles are special&#x2014;the aromaticity of the ring makes the NH proton unusually acidic&#x2014;and they appear at about 10 ppm.</p>
+<figure class="fig1">
+<img src="../images/pg_283_3.jpg" alt="images"/>
+</figure>
+<section epub:type="chapter" id="sec_13.7.1">
+<h3 class="h3">Exchange of acidic protons is revealed in proton NMR spectra</h3>
+<p class="noindent">Compounds with very polar groups often dissolve best in water. NMR spectra are usually run in CDCl<sub>3</sub>, but heavy water, D<sub>2</sub>O, is an excellent NMR solvent. Here are some results in that medium.<a id="page_284" class="page">Page 284, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a></p>
+<figure class="fig1">
+<img src="../images/pg_284_1.jpg" alt="images"/>
+</figure>
+<p class="indent">Glycine is expected to exist as a zwitterion (<a href="chapter_8.xhtml">Chapter 8</a>, p. <a href="chapter_8.xhtml#page_167">167</a>). It has a 2H signal (green) for the CH<sub>2</sub> between the two functional groups, which would do for either form. The 3H signal at 4.90 ppm (orange) might suggest the NH<sub>3</sub><sup>&#x002B;</sup> group, but wait a moment before making up your mind.</p>
+<figure class="fig1">
+<img src="../images/pg_284_2.jpg" alt="images"/>
+</figure>
+<p class="indent">The aminothiol salt has the CMe<sub>2</sub> and CH<sub>2</sub> groups about where we would expect them (brown and green), but the SH and NH<sup>&#x002B;</sup><sub>3</sub> protons appear as one 4H signal.</p>
+<figure class="fig1">
+<img src="../images/pg_284_3.jpg" alt="images"/>
+</figure>
+<p class="indent">The double salt of EDTA has several curious features. The two (green) CH<sub>2</sub> groups in the middle are fine, but the other four CH<sub>2</sub> (brown) groups all appear identical, as do all the protons on both the CO<sub>2</sub>H and NH<sup>&#x002B;</sup><sub>3</sub> groups.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span>&#x00A0;&#x00A0;EDTA is ethylenediamine tetraacetic acid, an important complexing agent for metals. This is the salt formed with just two equivalents of ammonia.</p>
+</div>
+</aside>
+<figure class="fig1">
+<img src="../images/pg_284_4.jpg" alt="images"/>
+</figure>
+<p class="indent">The best clue to why this is so comes from the strange coincidence of the chemical shifts of the OH, NH, and SH protons in these molecules. They are all the same within experimental error: 4.90 ppm for glycine, 4.80 ppm for the aminothiol, and 4.84 ppm for EDTA. In fact all correspond to the same species: HOD, or monodeuterated water. Exchange between XH (where X&#x003D;O, N, or S) protons is extremely fast, and the solvent, D<sub>2</sub>O, supplies a vast excess of exchangeable <i>deuteriums.</i> These immediately replace all the OH, NH, and SH protons in the molecules with D, forming HOD in the process. Recall that we do not see signals for deuterium atoms (that&#x2019;s why deuterated solvents are used). They have their own spectra at a different frequency.<a id="page_285" class="page">Page 285, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a></p>
+<figure class="fig1">
+<img src="../images/pg_285_1.jpg" alt="images"/>
+</figure>
+<p class="indent">The same sort of exchange between OH or NH protons with each other or with traces of water in the sample means that the OH and NH peaks in most spectra in CDCl<sub>3</sub> are rather broader than the peaks for CH protons.</p>
+<p class="indent">Two questions remain. First, can we tell whether glycine is a zwitterion in water or not? Not really: the spectra fit either or an equilibrium between both&#x2014;other evidence leads us to expect the zwitterion in water. Second, why are all four CH<sub>2</sub>CO groups in EDTA the same? This we can answer. As well as the equilibrium exchanging the CO<sub>2</sub>H protons with the solvent, there will be an equally fast equilibrium exchanging protons between CO<sub>2</sub>D and CO<sup>-</sup><sub>2</sub>. This makes all four &#x2018;arms&#x2019; of EDTA the same.</p>
+<p class="indent">You should leave this section with an important chemical principle firmly established in your mind.</p>
+<div class="ybox">
+<p class="crh3"><b><span class="bull1">&#x2022;</span>&#x00A0;&#x00A0;Proton exchange between heteroatoms is fast</b></p>
+<p class="cbh3a0"><b>Proton exchange between heteroatoms, particularly O, N, and S, is a very fast process in comparison with other chemical reactions, and often leads to averaged peaks in the <sup>1</sup>H NMR spectrum.</b></p>
+</div>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<div class="arrow">
+<p class="noindent2"><img src="../images/arrow.jpg" style="vertical-align:top;" alt="images"/> We mentioned this fact before in the context of the mechanism of addition to a C&#x003D;O group (p. <a href="chapter_6.xhtml#page_136">136</a>), and we will continue to explore its mechanistic consequences throughout this book.</p>
+</div>
+</aside>
+</section>
+</section>
+<section epub:type="chapter" id="sec_13.8">
+<h2 class="h2">Coupling in the proton NMR spectrum</h2>
+<section epub:type="chapter" id="sec_13.8.1">
+<h3 class="h3">Nearby hydrogen nuclei interact and give multiple peaks</h3>
+<p class="noindent">So far proton NMR has been not unlike carbon NMR on a smaller scale. However, we have yet to discuss the real strength of proton NMR, something more important than chemical shifts and something that allows us to look not just at individual atoms but also at the way the C&#x2013;H skeleton is joined together. This is the result of the interaction between nearby protons, known as <i>coupling.</i></p>
+<p class="indent">An example we could have chosen in the last section is the nucleic acid component cytosine, which has exchanging NH<sub>2</sub> and NH protons giving a peak for HOD at 4.5 ppm. We didn&#x2019;t choose this example because the other two peaks would have puzzled you. Instead of giving just one line for each proton, they give two lines each&#x2014;doublets as you will learn to call them&#x2014;and it is time to discuss the origin of this &#x2018;coupling&#x2019;.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span> Cytosine is one of the four bases that, in combination with deoxyribose and phosphate, make up DNA. It is a member of the class of heterocycles called pyrimidines. We come back to the chemistry of DNA towards the end of this book, in <a href="chapter_42.xhtml">Chapter 42</a>.</p>
+</div>
+</aside>
+<figure class="fig1">
+<img src="../images/pg_285_2.jpg" alt="images"/>
+</figure>
+<p class="indent"><a id="page_286" class="page">Page 286, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>&#160;&#160;&#160;&#160;You might have expected a spectrum like that of the heterocycle below, which like cytosine is also a pyrimidine. It too has exchanging NH<sub>2</sub> protons and two protons on the heterocyclic ring. But these two protons give the expected two lines instead of the four lines in the cytosine spectrum. It is easy to assign the spectrum: the green proton labelled H<sup>A</sup> is attached to an aldehyde-like C&#x003D;N and so comes at lowest field. The red proton labelled H<sup>x</sup> is <i>ortho</i> to two electron-donating NH<sub>2</sub> groups and so comes at high field for an aromatic proton (p. <a href="chapter_13.xhtml#page_272">272</a>). These protons do not couple with each other because they are too far apart. They are separated by five bonds whereas the ring protons in cytosine are separated by just three bonds.</p>
+<figure class="fig1">
+<img src="../images/pg_286_1.jpg" alt="images"/>
+</figure>
+<p class="indent">Understanding this phenomenon is so important that we are going to explain it in three different ways&#x2014;you choose which appeals to you most. Each method offers a different insight.</p>
+<p class="indent">The diaminopyrimidine spectrum you have just seen has two single lines <i>(singlets</i> we shall call them from now on) because each proton, H<sup>A</sup> or H<sup>x</sup>, can be aligned either with or against the applied magnetic field. The cytosine spectrum is different because each proton, say H<sup>A</sup>, is near enough to experience the small magnetic field of the other proton H<sup>X</sup> as well as the field of the magnet itself. The diagram shows the result.</p>
+<figure class="fig1">
+<img src="../images/pg_286_2.jpg" alt="images"/>
+</figure>
+<p class="indent">If each proton interacted only with the applied field we would get two singlets. But proton H<sup>A</sup> actually experiences two slightly different fields: the applied field <i>plus</i> the field of <a id="page_287" class="page">Page 287, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>H<sup>x</sup> or the applied field <i>minus</i> the field of H<sup>X</sup>. H<sup>x</sup> acts either to increase or decrease the field experienced by H<sup>A</sup>. The position of a resonance depends on the field experienced by the proton so these two situations give rise to two slightly different peaks&#x2014;a <i>doublet</i> as we shall call it. And whatever happens to H<sup>A</sup> happens to H<sup>x</sup> as well, so the spectrum has two doublets, one for each proton. Each couples with the other. The field of a proton is a very small indeed in comparison with the field of the magnet and the separation between the lines of a doublet is very small. We shall discuss the size of the coupling later (pp. <a href="chapter_13.xhtml#page_294">294</a>-<a href="chapter_13.xhtml#page_300">300</a>).</p>
+<p class="indent">The second explanation takes into account the energy levels of the nucleus. In <a href="chapter_4.xhtml">Chapter 4</a>, when we discussed chemical bonds, we imagined electronic energy levels on neighbouring atoms interacting with each other and splitting to produce new molecular energy levels, some higher in energy and some lower in energy than the original atomic energy levels. When hydrogen <i>nuclei</i> are near each other in a molecule, the nuclear energy levels also interact and split to produce new energy levels. If a single hydrogen nucleus interacts with a magnetic field, we have the picture on p. <a href="chapter_13.xhtml#page_270">270</a> of this chapter: there are <i>two</i> energy levels as the nucleus can be aligned with or against the applied magnetic field, there is one energy jump possible, and there is a resonance at one frequency. This you have now seen many times and it can be summarized as shown below.</p>
+<figure class="fig1">
+<img src="../images/pg_287_1.jpg" alt="images"/>
+</figure>
+<p class="indent">The spectrum of the pyrimidine on p. <a href="chapter_13.xhtml#page_286">286</a> shows exactly this situation: two protons well separated in the molecules and each behaving independently. Each has two energy levels, each gives a singlet, and there are two lines in the spectrum. But in cytosine, whose spectrum is shown on p. <a href="chapter_13.xhtml#page_285">285</a>, the situation is different: each hydrogen atom has another hydrogen nucleus nearby and there are now <i>four</i> energy levels. Each nucleus H<sup>A</sup> and H<sup>x</sup> can be aligned with or against the applied field. There is one (lower) energy level where they are both aligned with the field and one (higher) level where they are both aligned against. In between there are two different energy levels in which one nucleus is aligned with the field and one against. Exciting H from alignment with to alignment against the applied field can be done in two slightly different ways, shown as A<sub>1</sub> and A<sub>2</sub> on the diagram. The result is two resonances very close together in the spectrum. </p>
+<figure class="fig1">
+<img src="../images/pg_287_2.jpg" alt="images"/>
+</figure>
+<p class="indent"><a id="page_288" class="page">Page 288, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>&#160;&#160;&#160;&#160;Please notice carefully that we cannot have this discussion about H<sup>A</sup> without discussing H<sup>X</sup> in the same way. If there are two slightly different energy jumps to excite H<sup>A</sup>, there must also be two slightly different energy jumps to excite H<sup>x</sup>. A<sub>1</sub>, A<sub>2</sub>, X<sub>1</sub>, and X<sub>2</sub> are all different, but the <i>difference</i> between A<sub>1</sub> and A<sub>2</sub> is exactly the same as the <i>difference</i> between X<sub>1</sub> and X<sub>2</sub>. Each proton now gives two lines (a doublet) in the NMR spectrum and the splitting of the two doublets is <i>exactly the same.</i> We describe this situation as coupling. We say &#x2018;A and X are coupled&#x2019; or &#x2018;X is coupled to A&#x2019; (and vice versa, of course). We shall be using this language from now on and so must you.</p>
+<p class="indent">Now look back at the spectrum of cytosine at the beginning of this section. You can see the two doublets, one for each of the protons on the aromatic ring. Each is split by the same amount (this is easy to check with a ruler). The separation of the lines is the coupling constant and is called J. In this case <i>J</i> &#x003D; 4 Hz. Why do we measure <i>J</i> in hertz and not in ppm? We pointed out on p. <a href="chapter_3.xhtml#page_55">55</a> (<a href="chapter_3.xhtml">Chapter 3</a>) that we measure chemical shifts in ppm because we get the same number regardless of the rating of the NMR machine in MHz. We measure <i>J</i> in Hz because we also get the same number regardless of the machine.</p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span> Spectrometers in common use typically have fi eld strengths of 200&#x2013;500 MHz.</p>
+</div>
+</aside>
+<p class="indent">The spectra below show <sup>1</sup>H NMR spectra of the same compound run on two different NMR machines&#x2014;one a 90 MHz spectrometer and one a 300 MHz spectrometer (these are at the lower and upper ends of the range of field strengths in common use). Notice that the peaks stay in the same place on the chemical shift scale (ppm) but the size of the coupling appears to change because 1 ppm is worth 90 Hz in the top spectrum but 300 Hz in the bottom.</p>
+<figure class="fig1">
+<img src="../images/pg_288_1.jpg" alt="images"/>
+</figure>
+<div class="bbox">
+<h3 class="ch3">Measuring coupling constants in hertz</h3>
+<p class="bnoindent">To measure a coupling constant it is essential to know the rating of the NMR machine in MHz (megahertz). This is why you are told that each illustrated spectrum is, say, a &#x2018;400 MHz <sup>1</sup>H NMR spectrum&#x2019;. Couplings may be marked on the spectrum, electronically, but if not then to measure the coupling, measure the distance between the lines by ruler or dividers and use the horizontal scale to find out the separation in ppm. The conversion is then easy&#x2014;to turn parts per million of megahertz into hertz you just leave out the million&#x0021; So 1 ppm on a 300 MHz machine is 300 Hz. On a 500 MHz machine, a 10 Hz coupling is a splitting of 0.02 ppm. </p>
+</div>
+<div class="ybox">
+<a id="page_289" class="page">Page 289, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>
+<h3 class="crh3"><span class="bull1">&#x2022;</span>&#x00A0;&#x00A0;Spectra from different machines</h3>
+<p class="cbh3a0"><b>When you change from one machine to another, say, from a 200 MHz to a 500 MHz NMR machine, chemical shifts (&#x03B4;) stay the same in ppm and coupling constants (<i>J</i>) stay the same in Hz.</b></p>
+</div>
+<p class="indent">Now for the third way to describe coupling. If you look again at what the spectrum would be like without interaction between H<sup>A</sup> and H<sup>X</sup> you will see the pattern on the right, with the chemical shift of each proton clearly obvious.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure>
+<img src="../images/pg_289_1.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">But you don&#x2019;t see this because each proton couples with the other and splits its signal by an equal amount either side of the true chemical shift. The true spectrum has a pair of doublets each split by an identical amount. Note that no line appears at the true chemical shift, but it is easy to measure the chemical shift by taking the midpoint of the doublet.</p>
+<p class="indent">So this spectrum would be described as &#x03B4;<sub>&#x0397;</sub> 7.5 (1H, d, <i>J</i> 4 Hz, H<sup>A</sup>) and 5.8 (1H, d, <i>J</i> 4 Hz, H<sup>X</sup>). The main number gives the chemical shift in ppm and then, in brackets, comes the integration as the number of Hs, the shape of the signal (here &#x2018;d&#x2019; for doublet), the size of coupling constants in Hz, and the assignment, usually related to a diagram. The integration refers to the combined area under both peaks in the doublet. If the doublet is exactly symmetrical, each peak integrates to half a proton. The combined signal, however complicated, integrates to the right number of protons.</p>
+<p class="indent">We have described these protons as A and X with a purpose in mind. A spectrum of two equal doublets is called an AX spectrum. A is always the proton you are discussing and X is another proton with a different chemical shift. The alphabet is used as a ruler: nearby protons (on the chemical shift scale&#x2014;not necessarily nearby in the structure&#x0021;) are called B, C, etc. and distant ones are called X, Y, etc. You will see the reason for this soon.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<div class="arrow">
+<p class="noindent2"><img src="../images/arrow.jpg" style="vertical-align:top;" alt="images"/> We introduced integrals in <sup>1</sup>H NMR spectra on p. <a href="chapter_13.xhtml#page_270">270</a>.</p>
+</div>
+</aside>
+<p class="indent">If there are more protons involved, the splitting process continues. Here is the NMR spectrum of a famous perfumery compound supposed to have the smell of &#x2018;green leaf lilac&#x2019;. The compound is an acetal with five nearly identical aromatic protons at the normal benzene position (7.2&#x2013;7.3 ppm) and six protons on two identical OMe groups.</p>
+<figure class="fig1">
+<img src="../images/pg_289_2.jpg" alt="images"/>
+</figure>
+<p class="indent">It is the remaining three protons that interest us. They appear as a 2H doublet at 2.9 ppm and a <sup>1</sup>H <i>triplet</i> at 4.6 ppm. In NMR talk, triplet means three equally spaced lines in the ratio 1:2:1. The triplet arises from the three possible states of the two identical protons in the CH<sub>2</sub> group.</p>
+<p class="indent">If one proton H<sup>A</sup> interacts with two protons H<sup>X</sup>, it can experience protons H<sup>X</sup> in three different possible states. Both protons H<sup>X</sup> can be aligned with the magnet or both against. These states will increase or decrease the applied field just as before. But if one proton H<sup>X</sup> is aligned with and one against the applied field, there is no net change to the field experienced by H<sup>A</sup>. There are two arrangements for this (see diagram overleaf). We&#x2019;ll therefore see a signal of double intensity for H<sup>A</sup> at the correct chemical shift, one signal at higher field and one at lower field. In other words, a 1:2:1 triplet.<a id="page_290" class="page">Page 290, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a></p>
+<figure class="fig1">
+<img src="../images/pg_290_1.jpg" alt="images"/>
+</figure>
+<p class="indent">We could look at this result by our other methods too. There is one way in which both nuclei can be aligned with and one way in which both can be aligned against the applied field, but two ways in which they can be aligned one with and one against. Proton H<sup>A</sup> interacts with each of these states. The result is a 1:2:1 triplet.</p>
+<figure class="fig1">
+<img src="../images/pg_290_2.jpg" alt="images"/>
+</figure>
+<p class="indent">Using our third way of seeing coupling to see how the triplet arises, we can just make the peaks split in successive stages:<a id="page_291" class="page">Page 291, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a></p>
+<figure class="fig1">
+<img src="../images/pg_291_1.jpg" alt="images"/>
+</figure>
+<p class="indent">If there are more protons involved, we continue to get more complex systems, but the intensities can all be deduced simply from Pascal&#x2019;s triangle, which gives the coefficients in a binomial expansion. If you are unfamiliar with this simple device, here it is.</p>
+<figure class="fig1">
+<img src="../images/pg_291_2.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span> <span class="c_green">Constructing Pascal&#x2019;s triangle</span></p>
+<p class="noindent">&#160;</p>
+<p class="noindent2a">Put &#x2018;1&#x2019; at the top and then add an extra number in each line by adding together the numbers on either side of the new number in the line above. If there is no number on one side, that counts as a zero, so the lines always begin and end with &#x2018;1&#x2019;.</p>
+</div>
+</aside>
+<p class="indent">You can read off from the triangle what pattern you may expect when a proton is coupled to <i>n</i> equivalent neighbours. There are always <i>n</i> &#x002B; 1 peaks with the intensities shown by the triangle. So far, you&#x2019;ve seen 1:1 doublets (line 2 of the triangle) from coupling to 1 proton, and 1:2:1 triplets (line 3) from coupling to 2. You will often meet ethyl groups (CH<sub>3</sub>CH<sub>2</sub>X), where the CH<sub>2</sub> group couples to three identical protons and appears as a 1:3:3:1 quartet and the methyl group as a 1:2:1 triplet. In isopropyl groups, (CH<sub>3</sub>)<sub>2</sub>CHX, the methyl groups appear as a 6H doublet and the CH group as a septuplet.</p>
+<p class="indent">Here is a simple example: the four-membered cyclic ether oxetane. Its NMR spectrum has a 4H triplet for the two identical CH<sub>2</sub> groups next to oxygen and a 2H quintet for the CH<sub>2</sub> in the middle. Each proton H<sup>x</sup> &#x2018;sees&#x2019; four identical neighbours (H<sup>A</sup>) and is split equally by them all to give a 1:4:6:4:1 quintet. Each proton H<sup>A</sup> &#x2018;sees&#x2019; two identical neighbours H<sup>x</sup> and is split into a 1:2:1 triplet. The combined integral of all the lines in the quintet together is 2 and of all the lines in the triplet is 4.<a id="page_292" class="page">Page 292, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a></p>
+<figure class="fig1">
+<img src="../images/pg_292_1.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span> <span class="c_green">Identical protons do not couple with themselves</span></p>
+<p class="noindent">&#160;</p>
+<p class="noindent2a">Remember, the coupling comes only from the neighbouring protons: it doesn&#x2019;t matter how many protons form the signal itself (2 for H<sup>X</sup>, 4 for H<sup>A</sup>)&#x2014;it&#x2019;s how many are next door (4 next to H<sup>X</sup>, 2 next to HA) that matters. The protons in each CH2 group are identical and cannot couple with each other. It&#x2019;s what you see that counts not what you are.</p>
+</div>
+</aside>
+<p class="indent">A slightly more complicated example is the diethyl acetal below. It has a simple AX pair of doublets for the two protons on the &#x2018;backbone&#x2019; (red and green) and a typical ethyl group (2H quartet and 3H triplet). An ethyl group is attached to only one substituent through its CH<sub>2</sub> group, so the chemical shift of that CH<sub>2</sub> group tells us what it is joined to. Here the peak at 3.76 ppm can only be an OEt group. There are, of course, two identical CH<sub>2</sub> groups in this molecule.</p>
+<figure class="fig1">
+<img src="../images/pg_292_2.jpg" alt="images"/>
+</figure>
+<p class="indent">In all of these molecules, a proton may have had several neighbours, but all those neighbours have been the same. And therefore all the <i>coupling constants</i> have been the same. What happens when coupling constants differ? Chrysanthemic acid, the structural core of the insecticides produced by pyrethrum flowers, gives an example of the simplest situation&#x2014; where a proton has two different neighbours.</p>
+<figure class="fig1">
+<img src="../images/pg_292_3.jpg" alt="images"/>
+</figure>
+<p class="indent"><a id="page_293" class="page">Page 293, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>&#160;&#160;&#160;&#160;Chrysanthemic acid has a carboxylic acid, an alkene, and two methyl groups on the three-membered ring. Proton H<sup>A</sup> has two neighbours, H<sup>X</sup> and H<sup>M</sup>. The coupling constant to H<sup>X</sup> is 8 Hz, and that to H<sup>M</sup> is 5.5 Hz. We can construct the splitting pattern as shown on the right.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure>
+<img src="../images/pg_293_1.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">The result is four lines of equal intensity called a <b>double doublet</b> (or sometimes a <b>doublet of doublets</b>), abbreviation dd. The smaller coupling constant can be read off from the separation between lines 1 and 2 or between lines 3 and 4, while the larger coupling constant is between lines 1 and 3 or between lines 2 and 4. The separation between the middle two lines is not a coupling constant. You could view a double doublet as an imperfect triplet where the second coupling is too small to bring the central lines together: alternatively, look at a triplet as a special case of a double doublet where the two couplings are identical and the two middle lines coincide.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="stcap1">Abbreviations used for style of signal</p>
+<table class="stab">
+<tr>
+<td class="tdh">Abbreviation</td>
+<td class="tdh1">Meaning</td>
+<td class="tdh1">Comments</td>
+</tr>
+<tr>
+<td class="tdl">s</td>
+<td class="tdl1">singlet</td>
+<td class="tdl1"></td>
+</tr>
+<tr>
+<td class="tdl">d</td>
+<td class="tdl1">doublet</td>
+<td class="tdl1">equal in height</td>
+</tr>
+<tr>
+<td class="tdl">t</td>
+<td class="tdl1">triplet</td>
+<td class="tdl1">should be 1:2:1</td>
+</tr>
+<tr>
+<td class="tdl">q</td>
+<td class="tdl1">quartet</td>
+<td class="tdl1">should be 1:3:3:1</td>
+</tr>
+<tr>
+<td class="tdl">dt</td>
+<td class="tdl1">double triplet</td>
+<td class="tdl1">other combinations too, such as dd, dq, tt</td>
+</tr>
+<tr>
+<td class="tdl">m</td>
+<td class="tdl1">multiplet</td>
+<td class="tdl1">a signal too complicated to resolve<a id="ch13fn4" href="#ch13fn_4">*</a></td>
+</tr>
+</table>
+<p class="source"><a id="ch13fn_4" href="#ch13fn4">*</a> Either because it contains a complex coupling pattern or because the signals from different protons overlap.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_13.8.2">
+<h3 class="h3">Coupling is a through-bond effect</h3>
+<p class="noindent">Do neighbouring nuclei interact through space or through the electrons in the bonds? We know that coupling is in fact a &#x2018;through-bond effect&#x2019; because of the way coupling constants vary with the shape of the molecule. The most important case occurs when the protons are at either end of a double bond. If the two hydrogens are <i>cis,</i> the coupling constant <i>J</i> is typically about 10 Hz, but if they are <i>trans, J</i> is much larger, usually 15&#x2013;18 Hz. These two chloro acids are good examples.</p>
+<figure class="fig1">
+<img src="../images/pg_293_2.jpg" alt="images"/>
+</figure>
+<p class="indent">If coupling were through space, the nearer <i>cis</i> hydrogens would have the larger <i>J</i>. In fact, coupling occurs <i>through the bonds</i> and the more perfect parallel alignment of the bonds in the <i>trans</i> compound provides better communication and a larger <i>J</i>.</p>
+<p class="indent">Coupling is at least as helpful as chemical shift in assigning spectra. When we said (p. <a href="chapter_13.xhtml#page_280">280</a>) that the protons on cyclohexenone had the chemical shifts shown, how did we know? It was coupling that told us the answer. The proton next to the carbonyl group (H<sup>2</sup> in the diagram) has one neighbour (H<sup>3</sup>) and appears as a doublet with <i>J</i> &#x003D; 11 Hz, just right for a proton on a double bond with a <i>cis</i> neighbour. The proton H<sup>3</sup> itself appears as a double triplet. Inside each triplet the separation of the lines is 4 Hz and the two triplets are 11 Hz apart.</p>
+<figure class="fig1">
+<img src="../images/pg_293_3.jpg" alt="images"/>
+</figure>
+<p class="indent">The coupling of H<sup>3</sup> is as complex as you have seen yet, but it can be represented diagram-matically by the same approach we have taken before.<a id="page_294" class="page">Page 294, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a></p>
+<figure class="fig1">
+<img src="../images/pg_294_1.jpg" alt="images"/>
+</figure>
+<p class="indent">As coupling gets more and more complicated it can be hard to interpret the results, but <i>if you know what you are looking for</i> things do become easier. Here is the example of heptan-2-one. The green protons next to the carbonyl group are a 2H triplet (coupled to the two red protons) with <i>J</i> 7 Hz. The red protons themselves are next to four protons, and although these four protons are not identical the coupling constants are about the same: the red protons therefore appear as a 2H quintet, with a coupling constant also of 7 Hz. The brown signal is more complicated: we might call it a &#x2018;4H multiplet&#x2019; but in fact we know what it must be: the signals for the four brown protons on carbons 5 and 6 overlap, and must be made up of a 2H quintet (protons on C5) and a 2H sextet (protons on C6). We can see the coupling of the protons on C6 with the terminal methyl group because the methyl group (orange) is a 3H triplet (also with a 7 Hz coupling constant).</p>
+<figure class="fig1">
+<img src="../images/pg_294_2.jpg" alt="images"/>
+</figure>
+</section>
+<section epub:type="chapter" id="sec_13.8.3">
+<h3 class="h3">Coupling constants depend on three factors</h3>
+<p class="noindent">The coupling constants in cyclohexenone were different, but all the coupling constants in heptanone are about the same&#x2014;around 7 Hz. Why?</p>
+<div class="ybox">
+<p class="crh3"><b><span class="bull1">&#x2022;</span>&#x00A0;&#x00A0;Factors affecting coupling constants</b></p>
+<p class="cbh3a2"><span class="bull">&#x2022;</span>&#x00A0;&#x00A0;<b>Through-bond distance between the protons.</b></p>
+<p class="cbh3a2"><span class="bull">&#x2022;</span>&#x00A0;&#x00A0;<b>Angle between the two C&#x2013;H bonds.</b></p>
+<p class="cbh3a2"><span class="bull">&#x2022;</span>&#x00A0;&#x00A0;<b>Electronegative substituents.</b></p>
+</div>
+<p class="indent"><a id="page_295" class="page">Page 295, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>&#160;&#160;&#160;&#160;The coupling constants we have seen so far have all been between hydrogen atoms on neighbouring carbon atoms&#x2014;in other words, the coupling is through three bonds (H&#x2013;C&#x2013; C&#x2013;H) and is designated <sup>3</sup>J<sub>HH</sub>. These coupling constants <sup>3</sup>J<sub>HH</sub> are usually about 7 Hz in an open-chain, freely rotating system such as we have in heptanone. The C&#x2013;H bonds vary little in length but in cyclohexenone the C&#x2013;C bond is a double bond, significantly shorter than a single bond. Couplings (<sup>3</sup><i>J</i><sub>HH</sub>) across double bonds are usually larger than 7 Hz (11 Hz in cyclohexenone). <sup>3</sup><i>J</i><sub>HH</sub> couplings are called <i>vicinal couplings</i> because the protons concerned are on neighbouring carbon atoms.</p>
+<p class="indent">Something else is different too: in an open-chain system we have a time average of all rotational conformations (we will look at this in the next chapter). But across a double bond there is no rotation and the angle between the two C&#x2013;H bonds is fixed: they are always in the same plane. In the plane of the alkene, the C&#x2013;H bonds are either at 60&#x00B0; (<i>cis</i>) or 180&#x00B0; (<i>trans</i>) to each other. Coupling constants in benzene rings are slightly less than those across <i>cis</i> alkenes because the bond is longer (bond order 1.5 rather than 2).</p>
+<figure class="fig1">
+<img src="../images/pg_295_1.jpg" alt="images"/>
+</figure>
+<p class="indent">In naphthalenes, there are unequal bond lengths around the two rings. The bond between the two rings is the shortest, and the lengths of the others are shown. Coupling across the shorter bond (8 Hz) is significantly stronger than coupling across the longer bond (6.5 Hz).</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/pg_295_2.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">The effect of the third factor, electronegativity, is easily seen in the comparison between ordinary alkenes and alkenes with alkoxy substituents, known as enol ethers. We are going to compare two pairs of compounds with a <i>cis</i> or a <i>trans</i> double bond. One pair has a phenyl group at one end of the alkene and the other has an OPh group. For either pair, the <i>trans</i> coupling is larger than the <i>cis</i>, as you would now expect. But if you compare the two pairs, the enol ethers have much smaller coupling constants. The <i>trans</i> coupling for the enol ethers is only just larger than the <i>cis</i> coupling for the alkenes. The electronegative oxygen atom is withdrawing electrons from the C&#x2013;H bond in the enol ethers and weakening communication through the bonds.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<div class="arrow">
+<p class="noindent2"><img src="../images/arrow.jpg" style="vertical-align:top;" alt="images"/> Conjugation in naphthalene was discussed in <a href="chapter_7.xhtml">Chapter 7</a>, p. <a href="chapter_7.xhtml#page_161">161</a>.</p>
+</div>
+</aside>
+<figure class="fig1">
+<img src="../images/pg_295_3.jpg" alt="images"/>
+</figure>
+</section>
+<section epub:type="chapter" id="sec_13.8.4">
+<h3 class="h3">Long-range coupling</h3>
+<p class="noindent">When the through-bond distance gets longer than three bonds, coupling is not usually seen. To put it another way, four-bond coupling <sup>4</sup><i>J</i><sub>HH</sub> is usually zero. However, it is seen in some special cases, the most important being <i>meta</i> coupling in aromatic rings and allylic coupling in alkenes. In both, the orbitals between the two hydrogen atoms can line up in a zig-zag<a id="page_296" class="page">Page 296, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a> fashion to maximize interaction. This arrangement looks rather like a letter &#x2018;W&#x2019; and this sort of coupling is called W-coupling. Even with this advantage, values of <sup>4</sup>J<sub>HH</sub> are usually small, about 1&#x2013;3 Hz.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure>
+<img src="../images/pg_296_1.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent"><i>Meta</i> coupling is very common when there is <i>ortho</i> coupling as well, but here is an example where there is no <i>ortho</i> coupling because none of the aromatic protons have immediate neighbours&#x2014;the only coupling is <i>meta</i> coupling. There are two identical H<sup>A</sup>s, which have one <i>meta</i> neighbour and appear as a 2H doublet. Proton H<sup>X</sup> between the two MeO groups has two identical <i>meta</i> neighbours and so appears as a <sup>1</sup>H triplet. The coupling is small (J ~ 2.5 Hz).</p>
+<figure class="fig1">
+<img src="../images/pg_296_2.jpg" alt="images"/>
+</figure>
+<p class="indent">We have already seen a molecule with allylic coupling. We discussed in some detail why cyclohexenone has a double triplet for H<sup>3</sup>. But it also has a less obvious double triplet for H<sup>2</sup>. The triplet coupling is less obvious since <i>J</i> is small (about 2 Hz) because it is <sup>4</sup><i>J</i><sub>HH</sub>&#x2014;allylic coupling to the CH<sub>2</sub> group at C4. Here is a diagram of the coupling, which you would be able to spot in an expansion of the cyclohexenone spectrum on p. <a href="chapter_13.xhtml#page_293">293</a>.</p>
+<figure class="fig1">
+<img src="../images/pg_296_3.jpg" alt="images"/>
+</figure>
+</section>
+<section epub:type="chapter" id="sec_13.8.5">
+<h3 class="h3">Coupling between similar protons</h3>
+<p class="noindent">Identical protons do not couple with each other. The three protons in a methyl group may couple to some other protons, but <i>never</i> couple with each other. They are an A<sub>3</sub> system. Identical neighbours do not couple either. Turn back to p. <a href="chapter_13.xhtml#page_271">271</a> and you&#x2019;ll see that even though each of the four protons on the <i>para</i>-disubstituted benzenes has one neighbour, they appear as one singlet because every proton is identical to its neighbour.</p>
+<p class="indent">We have also seen how two different protons forming an AX system give two separate doublets. Now we need to see what happens to protons in between these two extremes. What happens to two similar neighbours? As two protons get closer and closer together, do the two doublets you see in the AX system suddenly collapse to the singlet of the A<sub>2</sub> system? You have probably guessed that they do not. The transition is gradual. Suppose we have two different neighbours on an aromatic ring. The spectra below show what we see. These are all 1,4-disubstituted benzene rings with different groups at the 1 and 4 positions.<a id="page_297" class="page">Page 297, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a></p>
+<figure class="fig1">
+<img src="../images/pg_297_1.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-23em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/pg_297_2.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">You&#x2019;ll notice that when the two doublets are far apart, as in the first spectrum, they look like normal doublets. But as they get closer together the doublets get more and more distorted, until finally they are identical and collapse to a 4H singlet.</p>
+<figure class="fig1">
+<img src="../images/pg_297_3.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/pg_297_4.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">The critical factor in the shape of the peak is how the difference between the chemical shifts of the two protons (&#x0394;&#x03B4;) compares with the size of the coupling constant (J) for the machine in question. If &#x0394;&#x03B4; is much larger than <i>J</i> there is no distortion: if, say, &#x0394;&#x03B4; is 2 ppm at 500 MHz (&#x003D; 1000 Hz) and the coupling constant is a normal 7 Hz, then this condition is fulfilled and we have an AX spectrum of two 1:1 doublets. As &#x0394;&#x03B4; approaches <i>J</i> in size, so the inner lines of the two doublets increase and the outer lines decrease until, when &#x0394;&#x03B4; is zero, the outer lines vanish away altogether and we are left with the two superimposed inner lines&#x2014;a singlet or an A<sub>2</sub> spectrum. You can see this progression in the diagram on the right.<a id="page_298" class="page">Page 298, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a></p>
+<p class="indent">We call the last stages, where the distortion is great but the protons are still different, an AB spectrum because you cannot really talk about H<sup>A</sup> without also talking about H<sup>B</sup>. The two inner lines may be closer than the gap between the doublets or the four lines may all be equally spaced. Two versions of an AB spectrum are shown in the diagram&#x2014;there are many more variations.</p>
+<aside class="abc" style="margin-top:-7.2em;" epub:type="sidebar">
+<div class="gbox">
+<p class="noindent2"><span class="squ">&#x25A0;</span> You may see this situation described as an &#x2018;AB quartet&#x2019;. It isn&#x2019;t! A quartet is an exactly equally spaced 1:3:3:1 system arising from coupling to three identical protons, and you should avoid this misleading usage.</p>
+</div>
+</aside>
+<p class="indent">It is a generally useful tip that a distorted doublet &#x2018;points&#x2019; towards the protons with which it is coupled.</p>
+<figure class="fig1">
+<img src="../images/pg_298_1.jpg" alt="images"/>
+</figure>
+<p class="indent">Or, to put it another way, the AB system is &#x2018;roofed&#x2019; with the usual arrangement of low walls and a high middle to the roof. Look out for doublets (or any other coupled signals) of this kind.</p>
+<p class="indent">We shall end this section with a final example illustrating <i>para</i>-disubstituted benzenes and roofing as well as an ABX system and an isopropyl group. The aromatic ring protons form a pair of distorted doublets (2H each), showing that the compound is a <i>para</i>-disubstituted benzene. Then the alkene protons form the AB part of an ABX spectrum. They are coupled to each other with a large <i>(trans) J</i> &#x003D; 16 Hz and one is also coupled to another distant proton. The large doublets are distorted (AB) but the small doublets within the right-hand half of the AB system are equal in height. The distant proton X is part of an <i>i</i>-Pr group and is coupled to H<sup>B</sup> and the six identical methyl protons. Both <i>J</i>s are nearly the same so it is split by seven protons and is an octuplet. It looks like a sextuplet because the intensity ratios of the lines in an octuplet would be 1:7:21:35:35:21:7:1 (from Pascal&#x2019;s triangle) and it is hardly surprising that the outside lines disappear.</p>
+<figure class="fig1">
+<img src="../images/pg_298_2.jpg" alt="images"/>
+</figure>
+</section>
+<section epub:type="chapter" id="sec_13.8.6">
+<h3 class="h3">Coupling can occur between protons on the same carbon atom</h3>
+<p class="noindent">We have seen cases where protons on the same carbon atom are different: compounds with an alkene unsubstituted at one end. If these protons are different (and they are certainly near to each other), then they should couple. They do, but in this case the coupling constant is usually very small. Here is the spectrum of an example you met on p. <a href="chapter_13.xhtml#page_281">281</a>.<a id="page_299" class="page">Page 299, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a></p>
+<figure class="fig1">
+<img src="../images/pg_299_1.jpg" alt="images"/>
+</figure>
+<p class="indent">The small 1.4 Hz coupling is a <sup>2</sup>J<sub>HH</sub> coupling between two protons on the same carbon that are different because there is no rotation about the double bond. <sup>2</sup>J<sub>HH</sub> coupling is called <i>gemi-nal coupling.</i></p>
+<p class="indent">This means that a monosubstituted alkene (a vinyl group) will have characteristic signals for each of the three protons on the double bond. Here is the example of ethyl acrylate (ethyl propenoate, a monomer for the formation of acrylic polymers). The spectrum looks rather complex at first, but it is easy to sort out using the coupling constants.</p>
+<figure class="fig1">
+<img src="../images/pg_299_2.jpg" alt="images"/>
+</figure>
+<p class="indent">The largest <i>J</i> (16 Hz) is obviously between the orange and green protons <i>(trans</i> coupling), the medium <i>J</i> (10 Hz) is between the orange and red <i>(cis</i> coupling), and the small <i>J</i> (4 Hz) must be between the red and green (geminal). This assigns all the protons: red, 5.60 ppm; green, 6.40 ppm; orange, 6.11 ppm Assignments based on coupling are more reliable than those based on chemical shift alone.</p>
+<div class="ybox">
+<p class="crh3"><b><span class="bull1">&#x2022;</span>&#x00A0;&#x00A0;Coupling constants in a vinyl group</b></p>
+<figure class="fig1">
+<img src="../images/pg_299_3.jpg" alt="images"/>
+</figure>
+</div>
+<p class="indent"><a id="page_300" class="page">Page 300, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>&#160;&#160;&#160;&#160;Ethyl vinyl ether is a reagent used for the protection of alcohols. All its coupling constants are smaller than is usual for an alkene because of the electronegativity of the oxygen atom, which is now joined directly to the double bond. It is still a simple matter to assign the protons of the vinyl group because couplings of 13, 7, and 2 Hz must be <i>trans, cis,</i> and geminal, respectively. In addition, the orange H is on a carbon atom next to oxygen and so goes downfield while the red and green protons have extra shielding from the conjugation of the oxygen lone pairs (see p. <a href="chapter_13.xhtml#page_281">281</a>).</p>
+<figure class="fig1">
+<img src="../images/pg_300_1.jpg" alt="images"/>
+</figure>
+<p class="indent">Geminal coupling on saturated carbons can be seen only if the hydrogens of a CH<sub>2</sub> group are different. The bridging CH<sub>2</sub> group of myrtenal (p. <a href="chapter_13.xhtml#page_274">274</a>) provides an example. The coupling constant for the protons on the bridge, J<sub>AB</sub>, is 9 Hz. Geminal coupling constants in a saturated system can be much larger (typically 10&#x2013;16 Hz) than in an unsaturated one.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/pg_300_2.jpg" alt="images"/>
+</figure>
+</aside>
+<div class="ybox">
+<p class="crh3"><b><span class="bull1">&#x2022;</span>&#x00A0;&#x00A0;Typical coupling constants</b></p>
+<table class="ntab">
+<tr>
+<td class="tdl1" colspan="3"><b><span class="bull">&#x2022;</span>&#x00A0;&#x00A0;geminal <sup>2</sup><i>J</i><sub>HH</sub></b></td>
+</tr>
+<tr>
+<td class="tdl2">saturated</td>
+<td class="tdl2"><img src="../images/pg_300_4.jpg" alt="images"/></td>
+<td class="tdl2">10&#x2013;16 Hz</td>
+</tr>
+<tr>
+<td class="tdl2">unsaturated</td>
+<td class="tdl2"><img src="../images/pg_300_5.jpg" alt="images"/></td>
+<td class="tdl2">0&#x2013;3 Hz</td>
+</tr>
+<tr>
+<td class="tdl1" colspan="3"><b><span class="bull">&#x2022;</span>&#x00A0;&#x00A0;vicinal <sup>3</sup><i>J</i><sub>HH</sub></b></td>
+</tr>
+<tr>
+<td class="tdl2">saturated</td>
+<td class="tdl2"><img src="../images/pg_300_6.jpg" alt="images"/></td>
+<td class="tdl2">6&#x2013;8 Hz</td>
+</tr>
+<tr>
+<td class="tdl2">unsaturated <i>trans</i></td>
+<td class="tdl2"><img src="../images/pg_300_7.jpg" alt="images"/></td>
+<td class="tdl2">14&#x2013;18 Hz</td>
+</tr>
+<tr>
+<td class="tdl2">unsaturated <i>cis</i></td>
+<td class="tdl2"><img src="../images/pg_300_8.jpg" alt="images"/></td>
+<td class="tdl2">10&#x2013;12 Hz</td>
+</tr>
+<tr>
+<td class="tdl2">unsaturated aromatic</td>
+<td class="tdl2"><img src="../images/pg_301_1.jpg" alt="images"/></td>
+<td class="tdl2">8&#x2013;10 Hz</td>
+</tr>
+<tr>
+<td class="tdl1" colspan="3"><b><span class="bull">&#x2022;</span>&#x00A0;&#x00A0;long-range <sup>4</sup><i>J</i><sub>HH</sub></b></td>
+</tr>
+<tr>
+<td class="tdl2"><i>meta</i></td>
+<td class="tdl2"><img src="../images/pg_301_2.jpg" alt="images"/></td>
+<td class="tdl2">1&#x2013;3 Hz</td>
+</tr>
+<tr>
+<td class="tdl2">allylic</td>
+<td class="tdl2"><img src="../images/pg_301_3.jpg" alt="images"/></td>
+<td class="tdl2">1&#x2013;2 Hz</td>
+</tr>
+</table>
+</div>
+</section>
+</section>
+<section epub:type="chapter" id="sec_13.9">
+<a id="page_301" class="page" style="width:70%;">Page 301, Chapter 13: <sup>1</sup>H NMR: Proton nuclear magnetic resonance</a>
+<h2 class="h2">To conclude</h2>
+<p class="noindent">You have now met, in <a href="chapter_3.xhtml">Chapter 3</a> and this chapter, all of the most important spectroscopic techniques available for working out the structure of organic molecules. We hope you can now appreciate why proton NMR is by far the most powerful of these techniques, and we hope you will be referring back to this chapter as you read the rest of the book. We shall talk about proton NMR a lot, and specifically we will come back to it in detail in <a href="chapter_18.xhtml">Chapter 18</a>, where we will look at using all of the spectroscopic techniques in combination, and in <a href="chapter_31.xhtml">Chapter 31</a>, when we look at what NMR can tell us about the shape of molecules. </p>
+</section>
+<section epub:type="chapter" id="sec_13.10">
+<h2 class="bh2">Further reading</h2>
+<p class="c_noindent">A reminder: you will find it an advantage to have one of the short books on spectroscopic analysis to hand as they give explanations, comprehensive tables of data, and problems. We recommend <i>Spectroscopic Methods in Organic Chemistry</i> by D. H. Williams and Ian Fleming, McGraw-Hill, London, 6th edn, 2007.</p>
+<p class="c_indent">A simple introduction is the Oxford Primer <i>Introduction to Organic Spectroscopy</i>, L. M. Harwood and T. D. W. Claridge, OUP, Oxford, 1996. A more advanced source of practical uses of stereochemistry is the Oxford Primer <i>Stereoselectivity in Organic Synthesis</i>, Garry Procter, OUP, Oxford, 1998. </p>
+</section>
+<section epub:type="chapter" id="sec_12.11">
+<h2 class="bh2a">Check your understanding</h2>
+<table>
+<tr>
+<td class="glob"><img src="../images/glob.jpg" style="vertical-align:middle;" alt="images"/></td>
+<td class="glob1">To check that you have mastered the concepts presented in this chapter, attempt the problems that are available in the book&#x2019;s Online Resource Centre at <span class="c_blue"><a href="http://www.oxfordtextbooks.co.uk/orc/clayden2e/">http://www.oxfordtextbooks.co.uk/orc/clayden2e/</a></span></td>
+</tr>
+</table>
+</section>
+</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="p9780198556800">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:identifier id="p9780198556800">978-0-19-850104-6</dc:identifier>
+<dc:title>Foundations of Organic Chemistry</dc:title>
+<dc:language>en-US</dc:language>
+<dc:creator>Michael Hornby and Josephine Peach</dc:creator>
+<dc:publisher>Oxford University Press</dc:publisher>
+<meta property="dcterms:modified">2012-02-07T16:38:35Z</meta>
+<meta name="cover" content="cover-image"/>
+</metadata>
+<manifest>
+<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="toc" properties="nav" href="xhtml/toc.xhtml" media-type="application/xhtml+xml"/>
+<item id="stylesheet" href="styles/stylesheet.css" media-type="text/css"/>
+<item id="front01" href="xhtml/Oxford_Chemistry_Primers.xhtml" media-type="application/xhtml+xml"/>
+<item id="title" href="xhtml/Titlepage.xhtml" media-type="application/xhtml+xml"/>
+<item id="copyright" href="xhtml/Copyrightpage.xhtml" media-type="application/xhtml+xml"/>
+<item id="front02" href="xhtml/Series_Editor's_Foreword.xhtml" media-type="application/xhtml+xml"/>
+<item id="front03" href="xhtml/Preface.xhtml" media-type="application/xhtml+xml"/>
+<item id="contents" href="xhtml/Contents.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter01" href="xhtml/Chapter01.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter02" properties="remote-resources scripted mathml" href="xhtml/Chapter02.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter03" properties="remote-resources scripted mathml" href="xhtml/Chapter03.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter04" properties="remote-resources scripted mathml" href="xhtml/Chapter04.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter05" href="xhtml/Chapter05.xhtml" media-type="application/xhtml+xml"/>
+<item id="index" href="xhtml/Index.xhtml" media-type="application/xhtml+xml"/>
+
+<item id="script001" href="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" media-type="text/jscript"/>
+
+<item id="copy" href="images/copy.jpg" media-type="image/jpeg"/>
+<item id="Fig1" href="images/Fig1.jpg" media-type="image/jpeg"/>
+<item id="Fig10" href="images/Fig10.jpg" media-type="image/jpeg"/>
+<item id="Fig100" href="images/Fig100.jpg" media-type="image/jpeg"/>
+<item id="Fig101" href="images/Fig101.jpg" media-type="image/jpeg"/>
+<item id="Fig102" href="images/Fig102.jpg" media-type="image/jpeg"/>
+<item id="Fig103" href="images/Fig103.jpg" media-type="image/jpeg"/>
+<item id="Fig104" href="images/Fig104.jpg" media-type="image/jpeg"/>
+<item id="Fig105" href="images/Fig105.jpg" media-type="image/jpeg"/>
+<item id="Fig106" href="images/Fig106.jpg" media-type="image/jpeg"/>
+<item id="Fig107" href="images/Fig107.jpg" media-type="image/jpeg"/>
+<item id="Fig108" href="images/Fig108.jpg" media-type="image/jpeg"/>
+<item id="Fig109" href="images/Fig109.jpg" media-type="image/jpeg"/>
+<item id="Fig11" href="images/Fig11.jpg" media-type="image/jpeg"/>
+<item id="Fig110" href="images/Fig110.jpg" media-type="image/jpeg"/>
+<item id="Fig111" href="images/Fig111.jpg" media-type="image/jpeg"/>
+<item id="Fig112" href="images/Fig112.jpg" media-type="image/jpeg"/>
+<item id="Fig113" href="images/Fig113.jpg" media-type="image/jpeg"/>
+<item id="Fig114" href="images/Fig114.jpg" media-type="image/jpeg"/>
+<item id="Fig115" href="images/Fig115.jpg" media-type="image/jpeg"/>
+<item id="Fig116" href="images/Fig116.jpg" media-type="image/jpeg"/>
+<item id="Fig117" href="images/Fig117.jpg" media-type="image/jpeg"/>
+<item id="Fig118" href="images/Fig118.jpg" media-type="image/jpeg"/>
+<item id="Fig119" href="images/Fig119.jpg" media-type="image/jpeg"/>
+<item id="Fig12" href="images/Fig12.jpg" media-type="image/jpeg"/>
+<item id="Fig120" href="images/Fig120.jpg" media-type="image/jpeg"/>
+<item id="Fig121" href="images/Fig121.jpg" media-type="image/jpeg"/>
+<item id="Fig122" href="images/Fig122.jpg" media-type="image/jpeg"/>
+<item id="Fig123" href="images/Fig123.jpg" media-type="image/jpeg"/>
+<item id="Fig124" href="images/Fig124.jpg" media-type="image/jpeg"/>
+<item id="Fig125" href="images/Fig125.jpg" media-type="image/jpeg"/>
+<item id="Fig126" href="images/Fig126.jpg" media-type="image/jpeg"/>
+<item id="Fig127" href="images/Fig127.jpg" media-type="image/jpeg"/>
+<item id="Fig128" href="images/Fig128.jpg" media-type="image/jpeg"/>
+<item id="Fig129" href="images/Fig129.jpg" media-type="image/jpeg"/>
+<item id="Fig13" href="images/Fig13.jpg" media-type="image/jpeg"/>
+<item id="Fig130" href="images/Fig130.jpg" media-type="image/jpeg"/>
+<item id="Fig131" href="images/Fig131.jpg" media-type="image/jpeg"/>
+<item id="Fig132" href="images/Fig132.jpg" media-type="image/jpeg"/>
+<item id="Fig133" href="images/Fig133.jpg" media-type="image/jpeg"/>
+<item id="Fig134" href="images/Fig134.jpg" media-type="image/jpeg"/>
+<item id="Fig135" href="images/Fig135.jpg" media-type="image/jpeg"/>
+<item id="Fig136" href="images/Fig136.jpg" media-type="image/jpeg"/>
+<item id="Fig137" href="images/Fig137.jpg" media-type="image/jpeg"/>
+<item id="Fig138" href="images/Fig138.jpg" media-type="image/jpeg"/>
+<item id="Fig139" href="images/Fig139.jpg" media-type="image/jpeg"/>
+<item id="Fig14" href="images/Fig14.jpg" media-type="image/jpeg"/>
+<item id="Fig140" href="images/Fig140.jpg" media-type="image/jpeg"/>
+<item id="Fig141" href="images/Fig141.jpg" media-type="image/jpeg"/>
+<item id="Fig142" href="images/Fig142.jpg" media-type="image/jpeg"/>
+<item id="Fig143" href="images/Fig143.jpg" media-type="image/jpeg"/>
+<item id="Fig144" href="images/Fig144.jpg" media-type="image/jpeg"/>
+<item id="Fig145" href="images/Fig145.jpg" media-type="image/jpeg"/>
+<item id="Fig146" href="images/Fig146.jpg" media-type="image/jpeg"/>
+<item id="Fig147" href="images/Fig147.jpg" media-type="image/jpeg"/>
+<item id="Fig148" href="images/Fig148.jpg" media-type="image/jpeg"/>
+<item id="Fig149" href="images/Fig149.jpg" media-type="image/jpeg"/>
+<item id="Fig15" href="images/Fig15.jpg" media-type="image/jpeg"/>
+<item id="Fig150" href="images/Fig150.jpg" media-type="image/jpeg"/>
+<item id="Fig151" href="images/Fig151.jpg" media-type="image/jpeg"/>
+<item id="Fig152" href="images/Fig152.jpg" media-type="image/jpeg"/>
+<item id="Fig153" href="images/Fig153.jpg" media-type="image/jpeg"/>
+<item id="Fig154" href="images/Fig154.jpg" media-type="image/jpeg"/>
+<item id="Fig155" href="images/Fig155.jpg" media-type="image/jpeg"/>
+<item id="Fig156" href="images/Fig156.jpg" media-type="image/jpeg"/>
+<item id="Fig157" href="images/Fig157.jpg" media-type="image/jpeg"/>
+<item id="Fig158" href="images/Fig158.jpg" media-type="image/jpeg"/>
+<item id="Fig159" href="images/Fig159.jpg" media-type="image/jpeg"/>
+<item id="Fig16" href="images/Fig16.jpg" media-type="image/jpeg"/>
+<item id="Fig160" href="images/Fig160.jpg" media-type="image/jpeg"/>
+<item id="Fig161" href="images/Fig161.jpg" media-type="image/jpeg"/>
+<item id="Fig162" href="images/Fig162.jpg" media-type="image/jpeg"/>
+<item id="Fig163" href="images/Fig163.jpg" media-type="image/jpeg"/>
+<item id="Fig164" href="images/Fig164.jpg" media-type="image/jpeg"/>
+<item id="Fig165" href="images/Fig165.jpg" media-type="image/jpeg"/>
+<item id="Fig166" href="images/Fig166.jpg" media-type="image/jpeg"/>
+<item id="Fig167" href="images/Fig167.jpg" media-type="image/jpeg"/>
+<item id="Fig168" href="images/Fig168.jpg" media-type="image/jpeg"/>
+<item id="Fig169" href="images/Fig169.jpg" media-type="image/jpeg"/>
+<item id="Fig17" href="images/Fig17.jpg" media-type="image/jpeg"/>
+<item id="Fig170" href="images/Fig170.jpg" media-type="image/jpeg"/>
+<item id="Fig171" href="images/Fig171.jpg" media-type="image/jpeg"/>
+<item id="Fig172" href="images/Fig172.jpg" media-type="image/jpeg"/>
+<item id="Fig173" href="images/Fig173.jpg" media-type="image/jpeg"/>
+<item id="Fig174" href="images/Fig174.jpg" media-type="image/jpeg"/>
+<item id="Fig175" href="images/Fig175.jpg" media-type="image/jpeg"/>
+<item id="Fig176" href="images/Fig176.jpg" media-type="image/jpeg"/>
+<item id="Fig177" href="images/Fig177.jpg" media-type="image/jpeg"/>
+<item id="Fig178" href="images/Fig178.jpg" media-type="image/jpeg"/>
+<item id="Fig179" href="images/Fig179.jpg" media-type="image/jpeg"/>
+<item id="Fig18" href="images/Fig18.jpg" media-type="image/jpeg"/>
+<item id="Fig180" href="images/Fig180.jpg" media-type="image/jpeg"/>
+<item id="Fig181" href="images/Fig181.jpg" media-type="image/jpeg"/>
+<item id="Fig182" href="images/Fig182.jpg" media-type="image/jpeg"/>
+<item id="Fig183" href="images/Fig183.jpg" media-type="image/jpeg"/>
+<item id="Fig184" href="images/Fig184.jpg" media-type="image/jpeg"/>
+<item id="Fig185" href="images/Fig185.jpg" media-type="image/jpeg"/>
+<item id="Fig186" href="images/Fig186.jpg" media-type="image/jpeg"/>
+<item id="Fig187" href="images/Fig187.jpg" media-type="image/jpeg"/>
+<item id="Fig188" href="images/Fig188.jpg" media-type="image/jpeg"/>
+<item id="Fig189" href="images/Fig189.jpg" media-type="image/jpeg"/>
+<item id="Fig19" href="images/Fig19.jpg" media-type="image/jpeg"/>
+<item id="Fig190" href="images/Fig190.jpg" media-type="image/jpeg"/>
+<item id="Fig191" href="images/Fig191.jpg" media-type="image/jpeg"/>
+<item id="Fig192" href="images/Fig192.jpg" media-type="image/jpeg"/>
+<item id="Fig193" href="images/Fig193.jpg" media-type="image/jpeg"/>
+<item id="Fig194" href="images/Fig194.jpg" media-type="image/jpeg"/>
+<item id="Fig195" href="images/Fig195.jpg" media-type="image/jpeg"/>
+<item id="Fig196" href="images/Fig196.jpg" media-type="image/jpeg"/>
+<item id="Fig197" href="images/Fig197.jpg" media-type="image/jpeg"/>
+<item id="Fig198" href="images/Fig198.jpg" media-type="image/jpeg"/>
+<item id="Fig199" href="images/Fig199.jpg" media-type="image/jpeg"/>
+<item id="Fig2" href="images/Fig2.jpg" media-type="image/jpeg"/>
+<item id="Fig20" href="images/Fig20.jpg" media-type="image/jpeg"/>
+<item id="Fig200" href="images/Fig200.jpg" media-type="image/jpeg"/>
+<item id="Fig201" href="images/Fig201.jpg" media-type="image/jpeg"/>
+<item id="Fig202" href="images/Fig202.jpg" media-type="image/jpeg"/>
+<item id="Fig203" href="images/Fig203.jpg" media-type="image/jpeg"/>
+<item id="Fig204" href="images/Fig204.jpg" media-type="image/jpeg"/>
+<item id="Fig205" href="images/Fig205.jpg" media-type="image/jpeg"/>
+<item id="Fig206" href="images/Fig206.jpg" media-type="image/jpeg"/>
+<item id="Fig207" href="images/Fig207.jpg" media-type="image/jpeg"/>
+<item id="Fig208" href="images/Fig208.jpg" media-type="image/jpeg"/>
+<item id="Fig209" href="images/Fig209.jpg" media-type="image/jpeg"/>
+<item id="Fig21" href="images/Fig21.jpg" media-type="image/jpeg"/>
+<item id="Fig210" href="images/Fig210.jpg" media-type="image/jpeg"/>
+<item id="Fig211" href="images/Fig211.jpg" media-type="image/jpeg"/>
+<item id="Fig212" href="images/Fig212.jpg" media-type="image/jpeg"/>
+<item id="Fig213" href="images/Fig213.jpg" media-type="image/jpeg"/>
+<item id="Fig214" href="images/Fig214.jpg" media-type="image/jpeg"/>
+<item id="Fig215" href="images/Fig215.jpg" media-type="image/jpeg"/>
+<item id="Fig216" href="images/Fig216.jpg" media-type="image/jpeg"/>
+<item id="Fig217" href="images/Fig217.jpg" media-type="image/jpeg"/>
+<item id="Fig218" href="images/Fig218.jpg" media-type="image/jpeg"/>
+<item id="Fig219" href="images/Fig219.jpg" media-type="image/jpeg"/>
+<item id="Fig22" href="images/Fig22.jpg" media-type="image/jpeg"/>
+<item id="Fig220" href="images/Fig220.jpg" media-type="image/jpeg"/>
+<item id="Fig221" href="images/Fig221.jpg" media-type="image/jpeg"/>
+<item id="Fig222" href="images/Fig222.jpg" media-type="image/jpeg"/>
+<item id="Fig223" href="images/Fig223.jpg" media-type="image/jpeg"/>
+<item id="Fig224" href="images/Fig224.jpg" media-type="image/jpeg"/>
+<item id="Fig225" href="images/Fig225.jpg" media-type="image/jpeg"/>
+<item id="Fig226" href="images/Fig226.jpg" media-type="image/jpeg"/>
+<item id="Fig227" href="images/Fig227.jpg" media-type="image/jpeg"/>
+<item id="Fig228" href="images/Fig228.jpg" media-type="image/jpeg"/>
+<item id="Fig229" href="images/Fig229.jpg" media-type="image/jpeg"/>
+<item id="Fig23" href="images/Fig23.jpg" media-type="image/jpeg"/>
+<item id="Fig230" href="images/Fig230.jpg" media-type="image/jpeg"/>
+<item id="Fig231" href="images/Fig231.jpg" media-type="image/jpeg"/>
+<item id="Fig232" href="images/Fig232.jpg" media-type="image/jpeg"/>
+<item id="Fig233" href="images/Fig233.jpg" media-type="image/jpeg"/>
+<item id="Fig234" href="images/Fig234.jpg" media-type="image/jpeg"/>
+<item id="Fig235" href="images/Fig235.jpg" media-type="image/jpeg"/>
+<item id="Fig236" href="images/Fig236.jpg" media-type="image/jpeg"/>
+<item id="Fig237" href="images/Fig237.jpg" media-type="image/jpeg"/>
+<item id="Fig238" href="images/Fig238.jpg" media-type="image/jpeg"/>
+<item id="Fig239" href="images/Fig239.jpg" media-type="image/jpeg"/>
+<item id="Fig24" href="images/Fig24.jpg" media-type="image/jpeg"/>
+<item id="Fig240" href="images/Fig240.jpg" media-type="image/jpeg"/>
+<item id="Fig241" href="images/Fig241.jpg" media-type="image/jpeg"/>
+<item id="Fig242" href="images/Fig242.jpg" media-type="image/jpeg"/>
+<item id="Fig243" href="images/Fig243.jpg" media-type="image/jpeg"/>
+<item id="Fig244" href="images/Fig244.jpg" media-type="image/jpeg"/>
+<item id="Fig245" href="images/Fig245.jpg" media-type="image/jpeg"/>
+<item id="Fig246" href="images/Fig246.jpg" media-type="image/jpeg"/>
+<item id="Fig247" href="images/Fig247.jpg" media-type="image/jpeg"/>
+<item id="Fig248" href="images/Fig248.jpg" media-type="image/jpeg"/>
+<item id="Fig249" href="images/Fig249.jpg" media-type="image/jpeg"/>
+<item id="Fig25" href="images/Fig25.jpg" media-type="image/jpeg"/>
+<item id="Fig250" href="images/Fig250.jpg" media-type="image/jpeg"/>
+<item id="Fig251" href="images/Fig251.jpg" media-type="image/jpeg"/>
+<item id="Fig252" href="images/Fig252.jpg" media-type="image/jpeg"/>
+<item id="Fig253" href="images/Fig253.jpg" media-type="image/jpeg"/>
+<item id="Fig254" href="images/Fig254.jpg" media-type="image/jpeg"/>
+<item id="Fig255" href="images/Fig255.jpg" media-type="image/jpeg"/>
+<item id="Fig256" href="images/Fig256.jpg" media-type="image/jpeg"/>
+<item id="Fig257" href="images/Fig257.jpg" media-type="image/jpeg"/>
+<item id="Fig258" href="images/Fig258.jpg" media-type="image/jpeg"/>
+<item id="Fig26" href="images/Fig26.jpg" media-type="image/jpeg"/>
+<item id="Fig27" href="images/Fig27.jpg" media-type="image/jpeg"/>
+<item id="Fig28" href="images/Fig28.jpg" media-type="image/jpeg"/>
+<item id="Fig29" href="images/Fig29.jpg" media-type="image/jpeg"/>
+<item id="Fig3" href="images/Fig3.jpg" media-type="image/jpeg"/>
+<item id="Fig30" href="images/Fig30.jpg" media-type="image/jpeg"/>
+<item id="Fig31" href="images/Fig31.jpg" media-type="image/jpeg"/>
+<item id="Fig32" href="images/Fig32.jpg" media-type="image/jpeg"/>
+<item id="Fig33" href="images/Fig33.jpg" media-type="image/jpeg"/>
+<item id="Fig34" href="images/Fig34.jpg" media-type="image/jpeg"/>
+<item id="Fig35" href="images/Fig35.jpg" media-type="image/jpeg"/>
+<item id="Fig36" href="images/Fig36.jpg" media-type="image/jpeg"/>
+<item id="Fig37" href="images/Fig37.jpg" media-type="image/jpeg"/>
+<item id="Fig38" href="images/Fig38.jpg" media-type="image/jpeg"/>
+<item id="Fig39" href="images/Fig39.jpg" media-type="image/jpeg"/>
+<item id="Fig4" href="images/Fig4.jpg" media-type="image/jpeg"/>
+<item id="Fig40" href="images/Fig40.jpg" media-type="image/jpeg"/>
+<item id="Fig41" href="images/Fig41.jpg" media-type="image/jpeg"/>
+<item id="Fig42" href="images/Fig42.jpg" media-type="image/jpeg"/>
+<item id="Fig43" href="images/Fig43.jpg" media-type="image/jpeg"/>
+<item id="Fig44" href="images/Fig44.jpg" media-type="image/jpeg"/>
+<item id="Fig45" href="images/Fig45.jpg" media-type="image/jpeg"/>
+<item id="Fig46" href="images/Fig46.jpg" media-type="image/jpeg"/>
+<item id="Fig47" href="images/Fig47.jpg" media-type="image/jpeg"/>
+<item id="Fig48" href="images/Fig48.jpg" media-type="image/jpeg"/>
+<item id="Fig49" href="images/Fig49.jpg" media-type="image/jpeg"/>
+<item id="Fig5" href="images/Fig5.jpg" media-type="image/jpeg"/>
+<item id="Fig50" href="images/Fig50.jpg" media-type="image/jpeg"/>
+<item id="Fig51" href="images/Fig51.jpg" media-type="image/jpeg"/>
+<item id="Fig52" href="images/Fig52.jpg" media-type="image/jpeg"/>
+<item id="Fig53" href="images/Fig53.jpg" media-type="image/jpeg"/>
+<item id="Fig54" href="images/Fig54.jpg" media-type="image/jpeg"/>
+<item id="Fig55" href="images/Fig55.jpg" media-type="image/jpeg"/>
+<item id="Fig56" href="images/Fig56.jpg" media-type="image/jpeg"/>
+<item id="Fig57" href="images/Fig57.jpg" media-type="image/jpeg"/>
+<item id="Fig58" href="images/Fig58.jpg" media-type="image/jpeg"/>
+<item id="Fig59" href="images/Fig59.jpg" media-type="image/jpeg"/>
+<item id="Fig6" href="images/Fig6.jpg" media-type="image/jpeg"/>
+<item id="Fig60" href="images/Fig60.jpg" media-type="image/jpeg"/>
+<item id="Fig61" href="images/Fig61.jpg" media-type="image/jpeg"/>
+<item id="Fig62" href="images/Fig62.jpg" media-type="image/jpeg"/>
+<item id="Fig63" href="images/Fig63.jpg" media-type="image/jpeg"/>
+<item id="Fig64" href="images/Fig64.jpg" media-type="image/jpeg"/>
+<item id="Fig65" href="images/Fig65.jpg" media-type="image/jpeg"/>
+<item id="Fig66" href="images/Fig66.jpg" media-type="image/jpeg"/>
+<item id="Fig67" href="images/Fig67.jpg" media-type="image/jpeg"/>
+<item id="Fig68" href="images/Fig68.jpg" media-type="image/jpeg"/>
+<item id="Fig69" href="images/Fig69.jpg" media-type="image/jpeg"/>
+<item id="Fig7" href="images/Fig7.jpg" media-type="image/jpeg"/>
+<item id="Fig70" href="images/Fig70.jpg" media-type="image/jpeg"/>
+<item id="Fig71" href="images/Fig71.jpg" media-type="image/jpeg"/>
+<item id="Fig72" href="images/Fig72.jpg" media-type="image/jpeg"/>
+<item id="Fig73" href="images/Fig73.jpg" media-type="image/jpeg"/>
+<item id="Fig74" href="images/Fig74.jpg" media-type="image/jpeg"/>
+<item id="Fig75" href="images/Fig75.jpg" media-type="image/jpeg"/>
+<item id="Fig76" href="images/Fig76.jpg" media-type="image/jpeg"/>
+<item id="Fig77" href="images/Fig77.jpg" media-type="image/jpeg"/>
+<item id="Fig78" href="images/Fig78.jpg" media-type="image/jpeg"/>
+<item id="Fig79" href="images/Fig79.jpg" media-type="image/jpeg"/>
+<item id="Fig8" href="images/Fig8.jpg" media-type="image/jpeg"/>
+<item id="Fig80" href="images/Fig80.jpg" media-type="image/jpeg"/>
+<item id="Fig81" href="images/Fig81.jpg" media-type="image/jpeg"/>
+<item id="Fig82" href="images/Fig82.jpg" media-type="image/jpeg"/>
+<item id="Fig83" href="images/Fig83.jpg" media-type="image/jpeg"/>
+<item id="Fig84" href="images/Fig84.jpg" media-type="image/jpeg"/>
+<item id="Fig85" href="images/Fig85.jpg" media-type="image/jpeg"/>
+<item id="Fig86" href="images/Fig86.jpg" media-type="image/jpeg"/>
+<item id="Fig87" href="images/Fig87.jpg" media-type="image/jpeg"/>
+<item id="Fig88" href="images/Fig88.jpg" media-type="image/jpeg"/>
+<item id="Fig89" href="images/Fig89.jpg" media-type="image/jpeg"/>
+<item id="Fig9" href="images/Fig9.jpg" media-type="image/jpeg"/>
+<item id="Fig90" href="images/Fig90.jpg" media-type="image/jpeg"/>
+<item id="Fig91" href="images/Fig91.jpg" media-type="image/jpeg"/>
+<item id="Fig92" href="images/Fig92.jpg" media-type="image/jpeg"/>
+<item id="Fig93" href="images/Fig93.jpg" media-type="image/jpeg"/>
+<item id="Fig94" href="images/Fig94.jpg" media-type="image/jpeg"/>
+<item id="Fig95" href="images/Fig95.jpg" media-type="image/jpeg"/>
+<item id="Fig96" href="images/Fig96.jpg" media-type="image/jpeg"/>
+<item id="Fig97" href="images/Fig97.jpg" media-type="image/jpeg"/>
+<item id="Fig98" href="images/Fig98.jpg" media-type="image/jpeg"/>
+<item id="Fig99" href="images/Fig99.jpg" media-type="image/jpeg"/>
+<item id="pub" href="images/pub.jpg" media-type="image/jpeg"/>
+
+</manifest>
+<spine toc="ncx">
+<itemref idref="front01"/>
+<itemref idref="title"/>
+<itemref idref="copyright"/>
+<itemref idref="front02"/>
+<itemref idref="front03"/>
+<itemref idref="contents"/>
+<itemref idref="chapter01"/>
+<itemref idref="chapter02"/>
+<itemref idref="chapter03"/>
+<itemref idref="chapter04"/>
+<itemref idref="chapter05"/>
+<itemref idref="index"/>
+</spine>
+</package>

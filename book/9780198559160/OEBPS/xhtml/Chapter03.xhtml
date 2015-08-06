@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Introduction to Quantum Theory and Atomic Structure</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<div>
+<section epub:type="chapter" id="ch03">
+<a id="page_37" class="page" style="width:70%;">Page 37, Chapter 3: Applications of Schr&#x00F6;dinger&#x2019;s equation</a>
+<h1 class="main">3<span class="space">&#160;</span><b>Applications of Schr&#x00F6;dinger&#x2019;s equation</b></h1>
+<p class="noindent">This chapter deals with some solutions of Schr&#x00F6;dinger&#x2019;s equation in situations that are relatively simple, but which nevertheless have important applications in chemistry. Most of these deal with the quantization of energy. There is, however, another remarkable prediction of quantum mechanics, known as <i>tunnelling,</i> which is treated first.</p>
+<section epub:type="chapter" id="sec_3.1">
+<h2 class="h2">3.1 Barrier tunnelling</h2>
+<p class="noindent">In classical physics the kinetic energy cannot be negative; in other words, the total energy <i>E</i> cannot be less than the potential energy <i>V.</i> Schr&#x00F6;dinger&#x2019;s equation can, however, be solved when this is the case. In some situations, these solutions are physically significant.</p>
+<p class="noindent" style="margin-top:1em;margin-bottom:1em;"><b>Solution of the equation in &#x2018;classically forbidden&#x2019; regions</b></p>
+<p class="noindent">Consider the equation</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-1"><span class="equno">(3.1)</span></p>
+<p class="noindent"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mfrac>
+   <mrow>
+    <msup>
+     <mi>&#x210F;</mi>
+     <mn>2</mn>
+    </msup>
+    </mrow>
+   <mrow>
+    <mn>2</mn><mi>m</mi></mrow>
+  </mfrac>
+  <mfrac>
+   <mrow>
+    <msup>
+     <mi mathvariant="normal">d</mi>
+     <mn>2</mn>
+    </msup>
+    <mi>&#x03C8;</mi></mrow>
+   <mrow>
+    <mi mathvariant="normal">d</mi><msup>
+     <mi>x</mi>
+     <mn>2</mn>
+    </msup>
+    </mrow>
+  </mfrac>
+  <mo>+</mo><mrow><mo>(</mo>
+   <mrow>
+    <mi>E</mi><mo>&#x2212;</mo><mi>V</mi></mrow>
+  <mo>)</mo></mrow><mi>&#x03C8;</mi><mo>=</mo><mn>0</mn></mrow>
+</math>
+</p>
+<p class="noindent">in a region where <i>V</i> is a constant, but</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-2"><span class="equno">(3.2)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>E</mi><mo>&#x2212;</mo><mi>V</mi><mo>&#x003C;</mo><mn>0.</mn></mrow>
+</math>
+</p>
+<p class="noindent">The &#x2018;trial-and-error&#x2019; method for differential equations used in <a href="Chapter02.xhtml#sec_2.3">Section 2.3</a> suggests that we should look for a function which, when differentiated twice, gives a positive multiple of itself. The exponential function has this property, and so we try</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-3"><span class="equno">(3.3)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>&#x03C8;</mi><mo>=</mo><mi>A</mi><msup>
+   <mi>e</mi>
+   <mrow>
+    <mi>k</mi><mi>x</mi></mrow>
+  </msup>
+  <mo>.</mo></mrow>
+</math>
+</p>
+<p class="noindent">Substituting into <a href="Chapter03.xhtml#eqn3-1">eqn 3.1</a> shows that this works, provided that</p>
+<p class="noindent"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mfrac>
+   <mrow>
+    <msup>
+     <mi>&#x210F;</mi>
+     <mn>2</mn>
+    </msup>
+    <msup>
+     <mi>k</mi>
+     <mn>2</mn>
+    </msup>
+    </mrow>
+   <mrow>
+    <mn>2</mn><mi>m</mi></mrow>
+  </mfrac>
+  <mo>+</mo><mi>E</mi><mo>&#x2212;</mo><mi>V</mi><mo>=</mo><mn>0</mn><mo>,</mo></mrow>
+</math>
+</p>
+<p>or <a id="page_38" class="page" style="width:70%;">Page 38, Chapter 3: Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-4"><span class="equno">(3.4)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>k</mi><mo>=</mo><mo>&#x00B1;</mo><msqrt>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <mn>2</mn><mi>m</mi><mrow><mo>(</mo>
+       <mrow>
+        <mi>V</mi><mo>&#x2212;</mo><mi>E</mi></mrow>
+      <mo>)</mo></mrow></mrow>
+     <mrow>
+      <msup>
+       <mi>&#x210F;</mi>
+       <mn>2</mn>
+      </msup>
+      </mrow>
+    </mfrac>
+    <mo>.</mo></mrow>
+  </msqrt>
+  </mrow>
+</math>
+</p>
+<p class="noindent">As both positive and negative values of <i>k</i> are possible, we can write a general solution as</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-5"><span class="equno">(3.5)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>&#x03C8;</mi><mo>=</mo><mi>A</mi><mi>exp</mi><mrow><mo>(</mo>
+   <mrow>
+    <mo>+</mo><msqrt>
+     <mrow>
+      <mfrac>
+       <mrow>
+        <mn>2</mn><mi>m</mi><mrow><mo>(</mo>
+         <mrow>
+          <mi>V</mi><mo>&#x2212;</mo><mi>E</mi></mrow>
+        <mo>)</mo></mrow></mrow>
+       <mrow>
+        <msup>
+         <mi>&#x210F;</mi>
+         <mn>2</mn>
+        </msup>
+        </mrow>
+      </mfrac>
+      </mrow>
+    </msqrt>
+    <mi>x</mi></mrow>
+  <mo>)</mo></mrow><mo>+</mo><mi>B</mi><mi>exp</mi><mrow><mo>(</mo>
+   <mrow>
+    <mo>&#x2212;</mo><msqrt>
+     <mrow>
+      <mfrac>
+       <mrow>
+        <mn>2</mn><mi>m</mi><mrow><mo>(</mo>
+         <mrow>
+          <mi>V</mi><mo>&#x2212;</mo><mi>E</mi></mrow>
+        <mo>)</mo></mrow></mrow>
+       <mrow>
+        <msup>
+         <mi>&#x210F;</mi>
+         <mn>2</mn>
+        </msup>
+        </mrow>
+      </mfrac>
+      </mrow>
+    </msqrt>
+    <mi>x</mi></mrow>
+  <mo>)</mo></mrow><mo>,</mo></mrow>
+</math>
+</p>
+<p class="noindent">where <i>A</i> and <i>B</i> are any constants. The first exponential term goes to   as <i>x</i> goes to -&#x221E; , and the second as <i>x</i> goes to  . No solution of the form given by <a href="Chapter03.xhtml#eqn3-5">eqn 3.5</a> can therefore satisfy the boundary conditions on the wavefunction over <i>all</i> regions of space.</p>
+<p class="indent3-ka1">Consider now the situation of a finite <i>potential barrier.</i> We take</p>
+<p class="noindent"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>E</mi><mo>&#x2212;</mo><mi>V</mi><mo>&#x003C;</mo><mn>0</mn><mtext>&#x2003;</mtext><mi mathvariant="normal">for</mi><mtext>&#x2003;</mtext><mn>0</mn><mo>&#x003C;</mo><mi>x</mi><mo>&#x003C;</mo><mi>d</mi><mo>,</mo></mrow>
+</math>
+</p>
+<p class="noindent">and</p>
+<p class="noindent"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>V</mi><mo>=</mo><mn>0</mn><mtext>&#x2003;</mtext><mi>f</mi><mi>o</mi><mi>r</mi><mtext>&#x2003;</mtext><mi>x</mi><mo>&#x003C;</mo><mn>0</mn><mtext>&#x2003;</mtext><mi>a</mi><mi>n</mi><mi>d</mi><mtext>&#x2003;</mtext><mi>x</mi><mo>&#x003E;</mo><mi>d</mi><mo>.</mo></mrow>
+</math>
+</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig3.1">
+<img src="../images/fig3.1.jpg" alt="img"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;">
+<p class="noindent2" id="fig31" ><b>Fig.3.1</b>&#160;&#160; Barrier tunnelling, showing the form of the barrier potential, and a possible wavefunction for a particle.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="noindent"><a href="Chapter03.xhtml#fig31">Figure 3.1</a> shows this potential, and a possible solution of Schr&#x00F6;dinger&#x2019;s equation. To the left and right of the barrier, the positive kinetic energy gives oscillatory solutions, corresponding to the de Broglie waves discussed in <a href="Chapter02.xhtml#sec_2.3">Section 2.3.</a> Within the barrier, the solution is exponential in form. In classical physics, the barrier represented here is <i>impenetrable,</i> as the particle has insufficient energy to pass through this region. In the quantum theory however, the wavefunction does not immediately become zero here: the particle has some probability of <i>tunnelling</i> through the barrier.</p>
+<p class="indent3-ka1">In <a href="Chapter03.xhtml#fig31">Fig. 3.1</a> we assume that the particle is known initially to be on the left-hand side of the barrier. It is then appropriate to take the second term in <a href="Chapter03.xhtml#eqn3-5">eqn 3.5</a>, representing a wavefunction which decays exponentially, rather than increases, through the barrier. The smaller oscillatory wavefunction on the right-hand side corresponds to the small probability that tunnelling has taken place. A detailed calculation of this probability requires us to match the values of the wavefunction and its differential at the points <i>x</i> = 0 and <i>x</i> = <i>d.</i> A rough approximation to the tunnelling probability can be estimated simply by taking <i>B</i> = 1 in <a href="Chapter03.xhtml#eqn3-5">eqn 3.5</a>, and finding the value of <i>&#x03C8;</i> at<i> x</i> = <i>d.</i> Squaring this according the fhe Born interpretation, we find for the tunnelling probability</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-6"><span class="equno">(3.6)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>P</mi><mo>&#x2248;</mo><mi>exp</mi><mrow><mo>(</mo>
+   <mrow>
+    <mo>&#x2212;</mo><mn>2</mn><mi>d</mi><msqrt>
+     <mrow>
+      <mfrac>
+       <mrow>
+        <mn>2</mn><mi>m</mi><mrow><mo>(</mo>
+         <mrow>
+          <mi>V</mi><mo>&#x2212;</mo><mi>E</mi></mrow>
+        <mo>)</mo></mrow></mrow>
+       <mrow>
+        <msup>
+         <mi>&#x210F;</mi>
+         <mn>2</mn>
+        </msup>
+        </mrow>
+      </mfrac>
+      </mrow>
+    </msqrt>
+    </mrow>
+  <mo>)</mo></mrow><mo>.</mo></mrow>
+</math>
+</p>
+<p class="noindent">This shows that the tunnelling probability decreases sharply with</p>
+<p class="list">(a) the width of the barrier</p>
+<p class="list">(b) the mass of the particle  <a id="page_39" class="page">Page 39, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+
+<p class="list">(c) the deficit <i>V</i> &#x2013; <i>E</i> in the energy compared with the value required for a classical particle to pass the barrier.</p>
+
+<p class="noindent">Consider an electron, with an energy deficit of 1 eV, and a barrier 200 pm wide. The probability predicted by <a href="Chapter03.xhtml#eqn3-6">eqn 3.6</a> is 0.13, showing that in this situation there is a high probability of passing the barrier. However, with a proton in the same situation, the probability is as small as 10<sup>-38</sup>. This shows clearly that tunnelling is only likely to be observed with very light particles, over a short range.</p>
+<p class="noindent" style="margin-top:1em;margin-bottom:1em;"><b>Examples of tunnelling</b></p>
+<p class="noindent">We expect tunnelling to occur only with very light particles. Not surprisingly, it is easiest to observe with electrons. One example is in making an electrical contact between two metallic wires. We imagine that the metals are in direct contact, but this is often not the case. At the atomic scale, many metals are covered with a layer of oxide or other insulating material. Provided this layer is thin enough, 1 nm or less, electrons can tunnel though the insulator and so pass between the metals. An example more directly relevant in chemistry concerns oxidation&#x2013;reduction (redox) reactions between metal ions. The simplest type of redox reaction is one such as</p>
+<p class="noindent"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <msup>
+   <mrow>
+    <mi mathvariant="normal">Fe</mi></mrow>
+   <mrow>
+    <mn>3</mn><mo>+</mo></mrow>
+  </msup>
+  <mo>+</mo><msup>
+   <mi mathvariant="normal">V</mi>
+   <mrow>
+    <mn>2</mn><mo>+</mo></mrow>
+  </msup>
+  <mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><msup>
+   <mrow>
+    <mi mathvariant="normal">Fe</mi></mrow>
+   <mrow>
+    <mn>2</mn><mo>+</mo></mrow>
+  </msup>
+  <mo>+</mo><msup>
+   <mi mathvariant="normal">V</mi>
+   <mrow>
+    <mn>3</mn><mo>+</mo></mrow>
+  </msup>
+  <mo>,</mo></mrow>
+</math>
+</p>
+<p class="noindent">which involves a simple electron transfer from one ion to another. From detailed studies of such reactions in solution, it is clear that the two ions do not have to touch each other directly, but that electron transfer can take place while they still have coordinating ligands such as water molecules. These ligands are not oxidized or reduced in intermediate steps, as the electron tunnels through and does not affect them.</p>
+<p class="indent">An application in which electron tunnelling is exploited deliberately is <i>scanning tunnelling microscopy,</i> an experimental technique for studying surfaces. <a href="Chapter03.xhtml#fig32">Figure 3.2</a> shows schematically the apparatus, and an example of the results obtained. A metal tip is positioned very close to the surface of a conducting solid, and a small potential difference is applied. If the gap between the tip and the solid is small enough, electrons can tunnel through the vacuum, and a current passes. The tip scans across the surface, its height being controlled by a feedback mechanism designed to keep the current constant. Because the tunnelling probability (<a href="Chapter03.xhtml#eqn3-6">eqn 3.6</a>) is such a sensitive function of distance, the height can be controlled to within a fraction of an atomic diameter. Under suitable conditions, it is possible to obtain detailed atomic-scale images of the surface.</p>
+<p class="indent3-ka1">Particles heavier than electrons can tunnel, if the barrier is either low or very narrow. It is now recognized in a number of chemical reactions involving transfer of a hydrogen atom that some contribution to the reaction rate comes from tunnelling through the barrier, rather than by atoms having enough kinetic energy to pass over it. One indication of tunnelling is a failure of the normal <i>Arrhenius law,</i> which expresses the temperature <a id="page_40" class="page" >Page 40, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a>dependence of the reaction rate; another is that on replacing normal H by the heavier isotope D, the reaction rate becomes much slower. In <a href="Chapter03.xhtml#sec_3.2">Section 3.2</a> we shall see that there is another reason why rates for isotopes can be different. When tunnelling is involved, the differences can be very substantial, e.g. a factor of 1000, because of the exponential dependence of tunnelling probability, expressed in <a href="Chapter03.xhtml#eqn3-6">eqn 3.6</a>. </p>
+<figure class="figure-bh" id="fig32">
+<img src="../images/fig3.2.jpg" alt="img" style="margin-left:2em;"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;">
+<p class="noindent2" style="margin-bottom:2em;"><b>Fig 3.2</b> Scanning tunnelling microscopy, (a) Schematic experimental set-up, showing the tip which scans across a surface, its height being adjusted to keep the tunnelling current constant, (b) Image obtained from a tungsten oxide surface; lighter regions show higher points corresponding to individual atoms on the surface.</p>
+</figcaption>
+</figure>
+
+<p class="indent3-ka1">As with diffraction of de Broglie waves (see <a href="Chapter02.xhtml#sec_2.2">Section 2.2</a>), the heaviest particles for which tunnelling is ever significant in practice are helium nuclei. Very heavy atoms such as those of uranium undergo &#x03B1;<i> decay,</i> a radioactive breakdown where they emit a <sup>4</sup>He nucleus (an a particle). <a href="Chapter03.xhtml#fig33">Figure 3.3</a> shows the potential energy function appropriate to this process. Within the nucleus (with a size in the range of 10<sup>-15</sup> m), a low potential energy is produced by the attractive <i>strong interaction,</i> the short-range force that holds nuclei together. Outside the range of this interaction, the electrostatic repulsion between two positive charges gives a highly positive potential. It is estimated that the height of the potential barrier that a particles must cross is around 30 MeV, which is enormous by chemical standards, &#x03B1; particles emerging during radioactive decay have typical energies of 3 MeV, which is not nearly enough to pass over the barrier. Tunnelling is therefore essential in this process. As both the barrier height and the a particle mass are large, a significant tunnelling probability is possible only because of the very small distances involved. The wide range of half-lives shown by radioactive isotopes (ranging from a fraction of a second up to 10<sup>10</sup> years or more) can be explained in terms of the tunnelling probabilities, and the way they depend on barrier height, which is itself determined by the nuclear forces.</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig3.3">
+<img src="../images/fig3.3.jpg" alt="img"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;width:100%;">
+<p class="noindent2" id="fig33"><b>Fig. 3.3</b> &#x03B1; decay, showing how the potential energy for an a particle depends on its distance from a nucleus. The wavefunction for a particle tunnelling through the barrier is also shown.</p>
+</figcaption>
+</figure>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_3.2">
+<h2 class="h2"><b>3.2 The harmonic oscillator</b></h2>
+<p class="noindent">The harmonic oscillator is one of the most important elementary models in mechanics, and is especially relevant in chemistry in connection with the vibrations of molecules. <a id="page_41" class="page">Page 41, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+
+<h2 class="h2"><b>The classical system</b></h2>
+<p class="noindent">A harmonic oscillator is a system where the force on the particle varies with its position according to</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-7"><span class="equno">(3.7)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>F</mi><mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mo>&#x2212;</mo><mi>k</mi><mi>x</mi><mo>.</mo></mrow>
+</math>
+</p>
+<p class="noindent"><i>k</i> is a positive constant which we call the <i>force constant;</i> the minus sign ensures that the force always acts in an opposite direction to the displacement from the origin. With Newton&#x2019;s Second Law, we obtain</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-8"><span class="equno">(3.8)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>m</mi><mover accent='true'>
+   <mi>x</mi>
+   <mo>&#x00A8;</mo>
+  </mover>
+  <mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mo>&#x2212;</mo><mi>k</mi><mi>x</mi><mo>,</mo></mrow>
+</math>
+</p>
+<p class="noindent">a second-order differential equation which is essentially the same as that solved in <a href="Chapter02.xhtml">Chapter 2</a> (<a href="Chapter02.xhtml#eqn2-25">eqn 2.25</a>), apart from the fact that the variables are different. The general solution can easily be shown to be</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-9"><span class="equno">(3.9)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>x</mi><mo>=</mo><mi>A</mi><mtext>&#x2009;</mtext><mi>cos</mi><mrow><mo>(</mo>
+   <mrow>
+    <mi>&#x03C9;</mi><mi>&#x0020;</mi><mi>t</mi></mrow>
+  <mo>)</mo></mrow><mo>+</mo><mi>B</mi><mi>sin</mi><mrow><mo>(</mo>
+   <mrow>
+    <mi>&#x03C9;</mi><mtext>&#x2009;</mtext><mi>t</mi></mrow>
+  <mo>)</mo></mrow></mrow>
+</math>
+</p>
+<p class="noindent">where <i>A</i> and <i>B</i> are any constants which can be determined from the boundary conditions in a given problem, and</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-10"><span class="equno">(3.10)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>&#x03C9;</mi><mo>=</mo><msqrt>
+   <mrow>
+    <mi>k</mi><mo>/</mo><mi>m</mi></mrow>
+  </msqrt>
+  <mo>.</mo></mrow>
+</math>
+</p>
+<p class="indent3-ka1"><a href="#eqn3-9">Equation 3.9</a> describes the particle oscillating regularly about a mean position <i>(x</i> = 0), at a rate proportional to w<i>.</i> This rate is often expressed in terms of the <i>frequency of oscillation, v</i>, which specifies the number of complete cycles per unit time. It is given by</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-11"><span class="equno">(3.11)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>v</mi><mo>=</mo><mfrac>
+   <mi>&#x03C9;</mi>
+   <mrow>
+    <mn>2</mn><mi>&#x03C0;</mi></mrow>
+  </mfrac>
+  <mo>=</mo><mfrac>
+   <mn>1</mn>
+   <mrow>
+    <mn>2</mn><mi>&#x03C0;</mi></mrow>
+  </mfrac>
+  <msqrt>
+   <mrow>
+    <mfrac>
+     <mi>k</mi>
+     <mi>m</mi>
+    </mfrac>
+    </mrow>
+  </msqrt>
+  <mo>.</mo></mrow>
+</math>
+</p>
+<p class="indent3-ka1">For illustrative purposes we shall use the simplified solution</p>
+<p class="noindent"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>x</mi><mo>=</mo><mi>A</mi><mi>cos</mi><mrow><mo>(</mo>
+   <mrow>
+    <mi>&#x03C9;</mi><mtext>&#x2009;</mtext><mi>t</mi></mrow>
+  <mo>)</mo></mrow><mo>.</mo></mrow>
+</math>
+</p>
+<p class="noindent"><i>A</i> is the <i>amplitude</i> of oscillation. An important property of the harmonic oscillator is that its frequency does not depend on this amplitude.</p>
+<p class="indent3-ka1">From our results we can obtain expressions for the kinetic and potential energy of the oscillator. Thus</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-12"><span class="equno">(3.12)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>T</mi><mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mfrac>
+   <mrow>
+    <mi>m</mi><msup>
+     <mover accent='true'>
+      <mi>x</mi>
+      <mo>&#x02D9;</mo>
+     </mover>
+     
+     <mn>2</mn>
+    </msup>
+    </mrow>
+   <mn>2</mn>
+  </mfrac>
+  <mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mfrac>
+   <mrow>
+    <msup>
+     <mi>A</mi>
+     <mn>2</mn>
+    </msup>
+    <mi>m</mi><msup>
+     <mi>&#x03C9;</mi>
+     <mn>2</mn>
+    </msup>
+    </mrow>
+   <mn>2</mn>
+  </mfrac>
+  <msup>
+   <mrow>
+    <mi>sin</mi></mrow>
+   <mn>2</mn>
+  </msup>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mi>&#x03C9;</mi><mtext>&#x2009;</mtext><mi>t</mi></mrow>
+  <mo>)</mo></mrow><mo>.</mo></mrow>
+</math>
+</p>
+<p class="noindent">We also have <a id="page_42" class="page">Page 42, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+
+<p class="noindent" style="margin-top:1em;" id="eqn3-13"><span class="equno">(3.13)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>V</mi><mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mo>&#x2212;</mo><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mn>0</mn><mi>x</mi></munderover><mrow><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><mi>k</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></mrow>  </mstyle><mi mathvariant="normal">d</mi><mi>x</mi><mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mfrac><mrow><mi>k</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>,</mo></mrow></math></p>
+<p class="noindent">where we have chosen the zero of potential energy to correspond to the minimum value at <i>x</i> = 0. Then</p>
+<p class="noindent"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>V</mi><mo>=</mo><mfrac><mrow><msup><mi>A</mi><mn>2</mn></msup><mi>k</mi></mrow><mn>2</mn></mfrac><msup><mrow><mi>cos</mi></mrow><mn>2</mn></msup><mrow><mo>(</mo><mrow><mi>&#x03C9;</mi><mtext>&#x2009;</mtext><mi>t</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig3.4">
+<img src="../images/fig3.4.jpg" alt="img"/>
+</figure>
+</aside>
+<p class="noindent">The kinetic and potential energies both oscillate in time, but out of phase with one another. At zero displacement, the potential energy is at a minimum; this is where the particle is moving fastest, so that its kinetic energy is at a maximum. On the other hand, at the maximum displacement, the potential energy is a maximum, but the kinetic energy is zero because the particle is not moving. <a href="Chapter03.xhtml#fig34">Figure 3.4</a> illustrates these points.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig3.4a">
+<img src="../images/fig3.4a.jpg" alt="img"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;">
+<p class="noindent2" id="fig34" style="width:100%;"><b>Fig. 3.4</b> Simple harmonic motion, (a) Displacement <i>x</i> and velocity <i>v</i> as a function of time <i>t.</i> (b) Variation of potential and kinetic energies during the motion</p>
+</figcaption>
+</figure>
+</aside>
+<p class="noindent" style="margin-top:1em;margin-bottom:1em;"><b>The quantum solutions</b></p>
+<p class="noindent">Schr&#x00F6;dinger&#x2019;s equation for the harmonic oscillator is</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-14"><span class="equno">(3.14)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><msup><mi>h</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mrow><mo>(</mo><mrow><mi>E</mi><mo>&#x2212;</mo><mfrac><mrow><mi>k</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><mi>&#x03C8;</mi><mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mn>0</mn><mo>,</mo></mrow></math></p>
+<p class="noindent">using the potential energy function of <a href="Chapter03.xhtml#eqn3-13">eqn 3.13</a>. The boundary conditions for the wavefunction are</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-15"><span class="equno">(3.15)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x03C8;</mi><mo>&#x2192;</mo><mn>0</mn><mo>,</mo><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>a</mi><mi>s</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>x</mi><mo>&#x2192;</mo><mo>&#x00B1;</mo><mi>&#x221E;</mi><mo>.</mo></mrow></math></p>
+<p class="noindent">To obtain the complete set of solutions is much less elementary than with our previous examples. The one with lowest energy is</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-16"><span class="equno">(3.16)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mi>&#x03C8;</mi><mn>0</mn></msub><mo>=</mo><mi>N</mi><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mrow><mrow><mi>&#x03B1;</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo>,</mo></mrow></math></p>
+<p class="noindent">where</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-17"><span class="equno">(3.17)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x03B1;</mi><mo>=</mo><mfrac><mrow><msqrt><mrow><mi>k</mi><mi>m</mi></mrow></msqrt></mrow><mi>&#x210F;</mi></mfrac><mo>,</mo></mrow></math></p>
+<p class="noindent">and the corresponding energy is</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-18"><span class="equno">(3.18)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>=</mo><mfrac><mi>&#x210F;</mi><mn>2</mn></mfrac><msqrt><mrow><mfrac><mi>k</mi><mi>m</mi></mfrac></mrow></msqrt></mrow></math></p>
+<p class="noindent">To show that this is the case, we can substitute <a href="Chapter03.xhtml#eqn3-16">eqn 3.16</a> directly into <a href="Chapter03.xhtml#eqn3-14">eqn 3.14</a>. We have <a id="page_43" class="page">Page 43, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+<p class="noindent"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><msub><mi>&#x03C8;</mi><mn>0</mn></msub></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mi>N</mi><mrow><mo>(</mo><mrow><msup><mi>&#x03B1;</mi><mn>2</mn></msup><msup><mi>x</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi>&#x03B1;</mi></mrow><mo>)</mo></mrow><msup><mi>e</mi><mrow><mrow><mrow><mo>&#x2212;</mo><mi>&#x03B1;</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo>,</mo></mrow></math></p>
+<p class="noindent">so that</p>
+<p class="noindent"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>N</mi><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mrow><mo>(</mo><mrow><msup><mi>&#x03B1;</mi><mn>2</mn></msup><msup><mi>x</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi>&#x03B1;</mi></mrow><mo>)</mo></mrow><msup><mi>e</mi><mrow><mrow><mrow><mo>&#x2212;</mo><mi>&#x03B1;</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo>+</mo><mi>N</mi><mrow><mo>(</mo><mrow><mi>E</mi><mo>&#x2212;</mo><mfrac><mrow><mi>k</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><msup><mi>e</mi><mrow><mrow><mrow><mo>&#x2212;</mo><mi>&#x03B1;</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>/</mo><mn>2</mn></mrow></mrow></msup><mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mn>0.</mn></mrow></math></p>
+<p class="noindent"> Dividing through by <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mi>&#x03C8;</mi><mn>0</mn></msub></mrow></math> and rearranging gives</p>
+<p class="noindent"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><msup><mi>&#x03B1;</mi><mn>2</mn></msup><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mo>&#x2212;</mo><mfrac><mi>k</mi><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mo>(</mo><mrow><mi>E</mi><mo>&#x2212;</mo><mfrac><mrow><mi>&#x03B1;</mi><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mn>0.</mn></mrow></math></p>
+<p class="noindent">For a correct solution of Schr&#x00F6;dinger&#x2019;s equation, this equation must be satisfied for all values of <i>x.</i> It follows that both terms in parentheses must be zero. Rearranging these gives <a href="Chapter03.xhtml#eqn3-16">eqns 3.16</a>&#x2013;<a href="Chapter03.xhtml#eqn3-18">3.18</a>. If the constant <i>N</i> is chosen to normalize the wavefunction, then we can use the standard integral</p>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig3.5">
+<img src="../images/fig3.5.jpg" alt="img"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;">
+<p class="noindent2" id="fig35"><b>Fig. 3.5</b> The wavefunctions for the four lowest allowed energy states of the harmonic oscillator. The corresponding energies are given by <a href="Chapter03.xhtml#eqn3-20">eqn 3.20</a>, with <i>n</i> = 0&#x2013;3.</p>
+</figcaption>
+</figure>
+</aside>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <munderover>
+   <mo>&#x222B;</mo>
+   <mrow>
+    <mo>&#x2212;</mo><mi>&#x221E;</mi>
+   </mrow>
+   <mrow>
+    <mo>+</mo><mi>&#x221E;</mi>
+   </mrow>
+  </munderover>
+  <mtext>&#x2009;</mtext><msup>
+   <mtext>e</mtext>
+   <mrow>
+    <msup>
+     <mrow>
+      <mtext>-ax</mtext>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+  </msup>
+  <mtext>&#x2009;</mtext><mtext>dx</mtext><mtext>&#x2009;</mtext><mtext>=</mtext><mtext>&#x2009;</mtext><msqrt>
+   <mrow>
+    <mfrac>
+     <mi>&#x03C0;</mi>
+     <mi>&#x03B1;</mi>
+    </mfrac>
+    
+   </mrow>
+  </msqrt>
+  
+ </mrow>
+</math>
+</p>
+<p class="noindent">to give</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-19"><span class="equno">(3.19)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>N</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mi>&#x03B1;</mi><mi>p</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></mrow></msup></mrow></math></p>
+<p class="noindent">The wavefunction and its square are known as <i>gaussian</i> or <i>bell</i> curves; they occur in probability theory as the <i>normal distribution</i>. This function, together with three higher-energy solutions for the harmonic oscillator, is shown in <a href="Chapter03.xhtml#fig35">Fig. 3.5.</a></p>
+<p class="indent3-ka1">The complete set of allowed energies for the quantized harmonic oscillator is</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-20"><span class="equno">(3.20)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mrow><mo>(</mo><mrow><mi>n</mi><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow><mi>&#x210F;</mi><msqrt><mrow><mfrac><mi>k</mi><mi>m</mi></mfrac><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>,</mo><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext></mrow></msqrt><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>n</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>&#x2026;</mo><mo>,</mo><mtext>&#x2009;</mtext></mrow></math></p>
+<p class="noindent"><i>n</i> being known as the <i>vibrational quantum number.</i> Although the general solutions for these energies and the corresponding wavefunctions cannot be obtained by elementary arguments, they illustrate some of the principles discussed earlier (<a href="Chapter02.xhtml#sec_2.4">Section 2.4</a>). As can be seen in <a href="Chapter03.xhtml#fig35">Fig. 3.5,</a> the wavefunction for each successive energy level has one more node, as in the particle-in-a-box case. </p>
+
+<p class="indent3-ka1">The probability distributions obtained from the normalized are also interesting <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>&#x03C8;</mi><mn>2</mn></msup></mrow></math>. <a href="Chapter03.xhtml#fig36">Figure 3.6</a> plots two functions in such a way as to show their relation to the <i>classical turning points,</i> the displacement where a classical <a id="page_44" class="page">Page 44, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a>particle has zero kinetic energy. We can see that the quantum probability distribution does not immediately become zero at these points. As with the tunnelling problem (<a href="Chapter03.xhtml#sec_3.1">Section 3.1</a>), there is some probability of being found in the &#x2018; classically forbidden region &#x2019;. As the energy increases, the shape of these distributions does, however, approximate more to the form expected classically: as the particle is moving progressively more slowly as it approaches the turning point, the classical probability should rise here.</p>
+<p class="indent3-ka1">Using the results for the classical oscillator (<a href="Chapter03.xhtml#eqn3-11">eqn 3.11</a>), the allowed energies may be written in the alternative forms</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig3.6">
+<img src="../images/fig3.1.jpg" alt="img"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;">
+<p class="noindent2" id="fig36"><b>Fig.3.6</b>The probability distribution functions for a harmonic oscillator in the n=0 and n=10 levels, each plotted at the height corresponding to its energy, with the curve showing the potential energy function. The points where the energy equals the potential energy <i> classical turning points,</i> corresponding to the maximum possible displacement of classical partical with the same energy.</p>   
+</figcaption>
+</figure>
+</aside>
+<p class="noindent" style="margin-top:1em;" id="eqn3-21"><span class="equno">(3.21)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mrow><mo>(</mo><mrow><mi>n</mi><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow><mi>&#x210F;</mi><mi>&#x03C9;</mi><mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mrow><mo>(</mo><mrow><mi>n</mi><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow><mi>h</mi><mi>v</mi><mo>.</mo></mrow></math></p>
+<p class="noindent">Note that from <a href="Chapter02.xhtml#eqn2-24">eqn 2.24</a> and <a href="Chapter03.xhtml#eqn3-11">eqn 3.11</a>, the two expressions <i><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>h</mi><mi>v</mi></mrow></math></i> and <i><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x210F;</mi><mi>&#x03C9;</mi></mrow></math></i> are completely equivalent. The former uses the classical vibrational frequency <i>v</i>, and shows that the <i>difference</i> between successive levels is given by Einstein&#x2019;s formula <i>hv</i> for the photon energy. There is indeed a connection here. The modern theory of photons regards these as quantized energy levels of the electromagnetic field, expressed in a form which does look like a set of harmonic oscillators (one with every possible frequency). The number of photons present is equal to the corresponding value of <i>n.</i> The interesting prediction that the <i>n</i> = 0 level does not have zero energy is discussed below.</p>
+<p class="noindent" style="margin-top:1em;margin-bottom:1em;"><b>Molecular vibrations</b></p>
+<p class="noindent">The most important chemical applications of the harmonic oscillator model are to the vibrations of molecules. <a href="Chapter03.xhtml#fig3.7">Figure 3.7</a> shows how we can regard a diatomic molecule as two nuclei held together by a &#x2018;spring&#x2019; which represents the effects of the electrons forming the chemical bond. There are two difficulties we need to discuss, before the results of the previous section can be applied.</p>
+<p class="indent3-ka1">In the first place, we have <i>two</i> atoms free to move, not just the single particle treated previously. This is not in fact a serious problem. Provided that we are only interested in the <i>relative</i> motion of the nuclei, with the potential energy depending only on the distance between them, we can apply directly the classical and quantum results obtained above, <i>x</i> now represents a coordinate giving the displacements of the atoms relative to the centre of mass of the molecule. The mass must be altered to take account of the fact that both atoms move. We replace <i>m</i> by the <i>reduced mass</i> given in terms of the two atomic masses by</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig3.7">
+<img src="../images/fig3.7.jpg" alt="img"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;">
+<p class="noindent2"><b>Fig. 3.7</b> Model of a diatomic molecule, with the bond represented as a &#x2018;spring&#x2019;. The arrows show the type of motion corresponding to molecular vibration; the centre of mass of the molecule remains stationary.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="noindent" style="margin-top:1em;" id="eqn3-22"><span class="equno">(3.22)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x03BC;</mi><mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub></mrow></mfrac><mo>.</mo></mrow></math></p>
+<p class="noindent">For example, in H<sub>2</sub>, m is half an atomic mass unit; both atoms move equally relative to the centre of mass in this case. In <sup>1</sup>H<sup>127</sup>I, however, &#x03BC; is 0.99 atomic mass units, nearly equal to the mass of <sup>1</sup>H. This is understandable, as <sup>127</sup>I, being so much heavier, remains almost stationary during the vibrational motion. <a id="page_45" class="page" >Page 45, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+
+<p class="indent3-ka1">The second difficulty relates to the fact that the force between two atoms is not really harmonic. <a href="Chapter03.xhtml#fig38">Figure 3.8</a> shows how the potential energy of two atoms varies with their separation. There is a minimum value <i>V<sub>e</sub></i> at the equilibrium separation <i>r<sub>e</sub></i> where the force is zero. The force also dies away, at long distances, as the chemical bond between the atoms disappears. Near the minimum, however, the potential function may be approximated by the parabolic form</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig38">
+<img src="../images/fig3.8.jpg" alt="img"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;">
+<p class="noindent2"><b>Fig. 3.8</b> The potential energy as a function of separation for two nuclei, showing the energies typical of the lowest allowed vibrational levels. Near the bottom of the curve, the potential function approximates to that of a harmonic oscillator (<a href="Chapter03.xhtml#eqn3-13">eqn 3.13</a>), if <i>x</i> is the displacement from the point of minimum potential.</p>
+</figcaption>
+</figure>
+</aside>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>V</mi><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>&#x2248;</mo><msub><mi>V</mi><mi>e</mi></msub><mo>+</mo><mfrac><mi>k</mi><mn>2</mn></mfrac><msup><mrow><mrow><mo>(</mo><mrow><mi>r</mi><mo>&#x2212;</mo><msub><mi>r</mi><mi>e</mi></msub></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>.</mo></mrow></math></p>
+<p class="noindent">This is equivalent to the harmonic oscillator potential, <a href="Chapter03.xhtml#eqn3-13">eqn 3.13</a>, if  <i></i> represents the distance from the equilibrium separation <i>r<sub>e</sub>,</i> and if the zero of energy is taken as the minimum potential <i>V<sub>e</sub>.</i> The approximation is not accurate for vibrations of large amplitude, but is good enough for the lowest allowed energy levels, three of which are shown in <a href="Chapter03.xhtml#fig38">Fig. 3.8.</a></p>
+<p class="indent3-ka1">Typical values of   for chemical bonds are 500 N m<sup>-1</sup>, which, taken with the mass of a light atom such as hydrogen, leads to a classical vibrational frequency around 10<sup>14</sup> Hz. The value of <i>h v</i> in <a href="Chapter03.xhtml#eqn3-21">eqn 3.21</a> gives a vibrational energy quantum of about 0.35 eV, which is a chemically significant energy (around 35 kJ mol<sup>-1</sup>). The quantized vibrational levels of molecules are most easily studied by spectroscopy. A heteronuclear diatomic molecule (i.e. one with two different atoms, giving an asymmetric charge distribution in the bond) can absorb or emit radiation, where the photon energy corresponds to the change in vibrational energy according to the condition</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-23"><span class="equno">(3.23)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x0394;</mi><mi>n</mi><mo>=</mo><mo>&#x00B1;</mo><mn>1.</mn></mrow></math></p>
+<p class="noindent">A restriction such as this, which specifes the change in quantum numbers allowed in a spectroscopic transition, is known as a <i>selection rule.</i> The corresponding photon energy <i>h v</i> gives the radiation a frequency equal to the classical frequency of vibration of the atoms. The corresponding wavenumber is</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-24"><span class="equno">(3.24)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mover accent='true'><mi>&#x03C5;</mi><mo>&#x00AF;</mo></mover><mo>=</mo><mfrac><mi>v</mi><mi>c</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>c</mi></mrow></mfrac><msqrt><mrow><mfrac><mi>k</mi><mi>&#x03BC;</mi></mfrac></mrow></msqrt><mo>.</mo><mtext>&#x2009;</mtext></mrow></math></p>
+<p class="noindent">For the example illustrated above, this is about 3000 cm<sup>-1</sup>, which is infrared radiation of 3 <i>&#x03BC;</i>m wavelength (see <a href="Chapter01.xhtml#sec_1.3">Section 1.3</a> for units and conversion factors).</p>
+<p class="indent3-ka1">Infrared spectroscopy is a powerful method of studying molecules. For small molecules of known structure, it gives information on the force constants of chemical bonds, which can be related to their strengths. Larger molecules have more complicated spectra, arising from the existence of several different types of vibrational motion, with different frequencies and quantized energy levels. Studying these can help identify molecules and determine their structures. <a id="page_46" class="page" >Page 46, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+
+<p class="noindent" style="margin-top:1em;margin-bottom:1em;"><b>Zero-point energy</b></p>
+<p class="noindent">One interesting prediction of <a href="Chapter03.xhtml#eqn3-21">eqn 3.21</a> is that the lowest possible energy for a harmonic oscillator is <i>not</i> zero. The value of <i>E<sub>o</sub></i> given by <a href="Chapter03.xhtml#eqn3-18">eqn 3.18</a> is called the <i>zero-point energy.</i> A similar result was found for the particle in a box (see <a href="Chapter02.xhtml#eqn2-32">eqn 2.32</a> in <a href="Chapter02.xhtml#sec_2.3">Section 2.3</a>).</p>
+<p class="indent3-ka1">The existence of zero-point energy is a consequence of the uncertainty principle (<a href="Chapter02.xhtml#sec_2.4">Section 2.4</a>). If the particle were to have zero energy it would be necessary to know precisely its position (<i>x</i> = 0, giving zero potential energy) and its momentum (also zero, giving zero kinetic energy). This is impossible. The lowest-energy solution is essentially a compromise between the uncertainties in position (giving some potential energy) and in momentum (giving some kinetic energy).</p>
+<p class="indent3-ka1">The existence of zero-point vibrational energy means that when we dissociate a molecule, we are not starting with the energy <i>V<sub>e</sub></i> at the bottom of the potential curve shown in <a href="Chapter03.xhtml#fig38">Fig. 3.8</a>, but some way above it. Measured dissociation energies of bonds therefore always have a contribution from zero-point vibrations. Normally we do not see this, as there is no way of removing the zero-point energy, except in a theoretical calculation. However, the effects become significant when we change the zero-point energy in a bond, by changing the mass of one of the atoms. Consider replacing hydrogen in HCl by deuterium, which has twice the mass but the same nuclear charge. The behaviour of electrons in the bonds should be identical, as this is determined by the electrostatic attraction to the nucleus. Thus HCl and DC1 should have the same potential energy curves. However, the zero-point energies will not be the same. The reduced mass (<a href="Chapter03.xhtml#eqn3-22">eqn 3.22</a>) is 0.97 atomic mass units for HCl and 1.98 for DC1; this gives a factor of 0.70 difference in their vibrational frequencies and zero-point energies. As the ground state of DC1 is lower on the potential curve than that of HCl, the former will have a larger dissociation energy. The difference is about 6 kJ mol<sup>-1</sup>, which is measurable. Isotope effects in chemical equilibrium and rate constants result largely from such zero-point energy differences.</p>
+<p class="indent3-ka1">Another example of zero-point energy arises in the detailed quantum theory of the electromagnetic field, known as <i>quantum electrodynamics.</i> The &#x2018;empty&#x2019; vacuum with no photons present is actually the zero-point level with <i>n</i> = 0. The non-zero energy of this state cannot be measured directly, but does have some observable consequences. The vacuum is really a state of fluctuating electric and magnetic fields that are significant at the atomic level. Without them, there would be no mechanism for the spontaneous emission of photons from excited states. There also have very small effects on the energy levels of atoms (see <a href="Chapter04.xhtml#sec_4.4">Section 4.4</a>).</p>
+</section>
+<section epub:type="chapter" id="sec_3.3">
+<h2 class="h2"><b>3.3 Two and three dimensions</b></h2>
+<p class="noindent">The &#x2018;real world&#x2019; has three dimensions of space. The examples given so far show that one-dimensional models can predict some important effects, but we need to generalize the discussion in order to treat other situations. <a id="page_47" class="page" >Page 47, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+
+<p class="noindent" style="margin-top:1em;margin-bottom:1em;"><b>The generalization of Schr&#x00F6;dinger&#x2019;s equation</b></p>
+<p class="noindent">Consider first the situation where a particle moves in two dimensions, labelled <i>x</i> and <i>y.</i> The wavefunction now depends on these two variables. As before, the Born interpretation shows that its square gives the probability of finding the particle at some position (<i>x</i>,<i>y</i>). The two-dimensional form of Schr&#x00F6;dinger&#x2019;s equation is</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-25"><span class="equno">(3.25)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><msup><mi>&#x045B;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mrow><mo>(</mo><mrow><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mi>E</mi><mo>&#x2212;</mo><mi>V</mi></mrow><mo>)</mo></mrow><mi>&#x03C8;</mi><mo>=</mo><mn>0.</mn></mrow></math></p>
+<p class="noindent" style="margin-bottom:0.8em;">The &#x2018;curly d&#x2019; in this equation is called a <i>partial differential,</i> used in calculus when we have functions that depend on several variables. The notation</p>
+<p class="noindent" style="margin-bottom:0.8em;"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><mo>&#x2202;</mo><mi>f</mi></mrow><mrow><mo>&#x2202;</mo><mi>x</mi></mrow></mfrac></mrow></math></p>
+<p class="noindent">means &#x2018;differentiate with respect to <i>x,</i> treating all the other variables (<i>y</i>, etc.) as constants&#x2019;. Equations such as <a href="#eqn3-25">3.25</a> are known as <i>partial differential equations.</i> Their general solution is much harder than for <i>normal differential equations,</i> the type considered so far where only one variable is involved. The particle-in-a-box example discussed below will illustrate partial differentiation, and will demonstrate one way that can sometimes be used to solve the equations.</p>
+<p class="indent3-ka1">In a similar way, in three dimensions, we write</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-26"><span class="equno">(3.26)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><msup><mi>&#x045B;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><msup><mo>&#x2207;</mo><mn>2</mn></msup><mi>&#x03C8;</mi><mo>+</mo><mrow><mo>(</mo><mrow><mi>E</mi><mo>&#x2212;</mo><mi>V</mi></mrow><mo>)</mo></mrow><mi>&#x03C8;</mi><mo>=</mo><mn>0</mn><mo>,</mo></mrow></math></p>
+<p class="noindent">where <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mo>&#x2207;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow></math> is short-hand notation, defined as</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-27"><span class="equno">(3.27)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mo>&#x2207;</mo><mn>2</mn></msup><mi>&#x03C8;</mi><mo>&#x2261;</mo><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mfrac><mo>.</mo></mrow></math></p>
+<p class="noindent" style="margin-top:1em;margin-bottom:1em;"><b>The particle in a box: separability</b></p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mo>&#x2207;</mo><mn>2</mn></msup></mrow></math> is pronounced &#x2018;del squared&#x2019;, and is also known as the <i>Laplacian.</i> It arises often in three-dimensional problems involving, for example, wave motion, diffusion, or heat flow.</aside>
+<p class="noindent">Consider a particle, with the two-dimensional motion confined to a square box. By analogy to the one-dimensional problem (see <a href="Chapter02.xhtml#sec_2.3">Section 2.3</a>), we put the potential energy equal to zero within the box,</p>
+<p class="noindent" style="margin-bottom:0.8em;"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>V</mi><mo>=</mo><mn>0</mn><mo>,</mo><mtext>&#x2003;</mtext><mtext>&#x2003;</mtext><mn>0</mn><mo>&#x003C;</mo><mi>x</mi><mo>&#x003C;</mo><mi>a</mi><mo>,</mo><mtext>&#x2003;</mtext><mn>0</mn><mo>&#x003C;</mo><mi>y</mi><mo>&#x003C;</mo><mi>a</mi><mo>,</mo></mrow></math></p>
+<p class="noindent" style="margin-top:0.8em;">and equal to infinity everywhere else. Inside the box, Schr&#x00F6;dinger&#x2019;s equation (<a href="Chapter03.xhtml#eqn3-25">eqn 3.25</a>) becomes</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-28"><span class="equno">(3.28)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><msup><mi>&#x045B;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mrow><mo>(</mo><mrow><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mi>E</mi><mi>&#x03C8;</mi><mo>=</mo><mn>0.</mn></mrow></math> <a id="page_48" class="page" style="width:70%;">Page 48, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+
+<p class="indent3-ka1">It turns out that, even for one value of the energy, there is an infinite number of solutions to <a href="Chapter03.xhtml#eqn3-28">eqn 3.28</a>, and the boundary conditions are crucial in choosing the right one. Fortunately, the solutions we are interested in here can all be written in the form</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-29"><span class="equno">(3.29)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x03C8;</mi><mo>=</mo><mi>N</mi><mi>sin</mi><mrow><mo>(</mo><mrow><msub><mi>k</mi><mn>1</mn></msub><mi>x</mi></mrow><mo>)</mo></mrow><mi>sin</mi><mrow><mo>(</mo><mrow><msub><mi>k</mi><mn>2</mn></msub><mi>y</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math></p>
+<p class="noindent">that is, they are a product of a function that depends on <i>x</i> but not on <i>y</i>, and one that depends on <i>y</i> but not on <i>x.</i> Solutions of this kind are called <i>separable.</i> As before, we shall simply show that <a href="Chapter03.xhtml#eqn3-29">eqn 3.29</a> works, by direct substitution in <a href="Chapter03.xhtml#eqn3-28">eqn 3.28</a>.</p>
+<p class="indent3-ka1" style="margin-bottom:0.8em;">The definition of the partial differential gives</p>
+<p class="noindent" style="margin-bottom:0.8em;"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><mo>&#x2202;</mo><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mi>N</mi><msub><mi>k</mi><mn>1</mn></msub><mi>cos</mi><mrow><mo>(</mo><mrow><msub><mi>k</mi><mn>1</mn></msub><mi>x</mi></mrow><mo>)</mo></mrow><mi>sin</mi><mrow><mo>(</mo><mrow><msub><mi>k</mi><mn>2</mn></msub><mi>y</mi></mrow><mo>)</mo></mrow></mrow></math></p>
+<p class="noindent" style="margin-bottom:0.8em;">and</p>
+<p class="noindent" style="margin-bottom:0.8em;"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mo>&#x2212;</mo><mi>N</mi><msubsup><mi>k</mi><mn>1</mn><mn>2</mn></msubsup><mi>sin</mi><mrow><mo>(</mo><mrow><msub><mi>k</mi><mn>1</mn></msub><mi>x</mi></mrow><mo>)</mo></mrow><mi>sin</mi><mrow><mo>(</mo><mrow><msub><mi>k</mi><mn>2</mn></msub><mi>y</mi></mrow><mo>)</mo></mrow><mo>&#x2261;</mo><mo>&#x2212;</mo><msubsup><mi>k</mi><mn>1</mn><mn>2</mn></msubsup><mi>&#x03C8;</mi><mo>,</mo></mrow></math></p>
+<p class="noindent">where we treat the function of <i>y</i> as a constant. Differentiating in a similar way with respect to <i>y</i>, we see that on substituting <a href="Chapter03.xhtml#eqn3-29">eqn 3.29</a> into <a href="Chapter03.xhtml#eqn3-28">3.28</a>, we obtain</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-30"><span class="equno">(3.30)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>E</mi><mo>=</mo><mrow><mo>(</mo><mrow><msubsup><mi>k</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>k</mi><mn>1</mn><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mfrac><mrow><msup><mi>&#x045B;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mo>.</mo></mrow></math></p>
+<p class="noindent">This is analogous to the result obtained in one dimension (see <a href="Chapter02.xhtml#eqn2-27">eqn 2.27</a>), but now the energy depends on two variables, <i>k<sub>1</sub></i> and <i>k<sub>2</sub>,</i> which are related to the motion in the <i>x</i> and <i>y</i> directions, respectively.</p>
+<p class="indent3-ka1" style="margin-bottom:0.8em;">The potential we have used implies that <i>&#x03C8;</i> must be zero at the edges of the box. <a href="#eqn3-39">Equation 3.39</a> automatically satisfies</p>
+<p class="noindent" style="margin-bottom:0.8em;"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x03C8;</mi><mo>=</mo><mn>0</mn><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>a</mi><mi>t</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>x</mi><mo>=</mo><mn>0</mn><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>o</mi><mi>r</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>y</mi><mo>=</mo><mn>0.</mn></mrow></math></p>
+<p class="noindent" style="margin-bottom:0.8em;">To satisfy the other conditions,</p>
+<p class="noindent" style="margin-bottom:0.8em;"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x03C8;</mi><mo>=</mo><mn>0</mn><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>a</mi><mi>t</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>x</mi><mo>=</mo><mi>a</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>o</mi><mi>r</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>y</mi><mo>=</mo><mi>a</mi><mo>,</mo></mrow></math></p>
+<p class="noindent" style="margin-bottom:0.8em;">we need</p>
+<p class="noindent" style="margin-bottom:0.8em;"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mi>k</mi><mn>1</mn></msub><mi>a</mi><mo>=</mo><msub><mi>n</mi><mn>1</mn></msub><mi>&#x03C0;</mi><mo>,</mo><mtext>&#x2003;</mtext><mtext>&#x2003;</mtext><msub><mi>k</mi><mn>2</mn></msub><mi>a</mi><mo>=</mo><msub><mi>n</mi><mn>2</mn></msub><mi>&#x03C0;</mi></mrow></math></p>
+<p class="noindent">where <i>n<sub>1</sub></i> and <i>n<sub>2</sub></i> are both integers. We obtain from <a href="Chapter03.xhtml#eqn3-30">eqn 3.30</a>, therefore</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-31"><span class="equno">(3.31)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>E</mi><mo>=</mo><mrow><mo>(</mo><mrow><msubsup><mi>n</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>n</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mfrac><mrow><msup><mi>&#x03C0;</mi><mn>2</mn></msup><msup><mi>&#x045B;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mrow><mo>(</mo><mrow><msubsup><mi>n</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>n</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mfrac><mrow><msup><mi>h</mi><mn>2</mn></msup></mrow><mrow><mn>8</mn><mi>m</mi><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac><mo>.</mo></mrow></math> <a id="page_49" class="page" style="width:70%;">Page 49, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+
+<figure class="figure-bh" id="fig3.9">
+<img src="../images/fig3.9.jpg" alt="img" style="margin-left:2em;"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;">
+<p class="noindent2" id="fig39" style="width:88%;text-align:justify;margin-bottom:2em;"><b>Fig. 3.9</b> (a) The nine lowest allowed levels for a particle in a square box, in units of <i>h</i><sup>2</sup>/(8<i>ma<sup>2</sup></i>). The numbers in parentheses give the values of the quantum numbers <i>n</i><sub>1</sub><i></i> and <i>n</i><sub>2</sub>. (b) A representation of the wavefunctions for the four lowest levels. The density of shading shows the magnitude of <i>&#x03C8;</i>, with the signs also indicated.</p>
+</figcaption>
+</figure>
+<p class="noindent" style="margin-bottom:0.8em;">This is a direct extension of the one-dimensional result (<a href="Chapter02.xhtml#eqn2-32">eqn 2.32</a>), except that there are now two quantum numbers. <a href="Chapter03.xhtml#fig39">Figure 3.9</a> shows the nine lowest energy levels, and the wavefunctions for the lowest four. Just as <i>n</i> in the one-dimensional case is equal to the number of half wavelengths fitting into the box, so in two dimensions <i>n</i><sub>1</sub><i></i> and <i>n</i><sub>2</sub><i></i> give the numbers in the <i>x</i> and <i>y</i> directions, respectively. The energy expression given in <a href="Chapter03.xhtml#eqn3-31">eqn 3.31</a> can be related to the classical result that the kinetic energy of a particle moving in two dimensions is</p>
+<p class="noindent" style="margin-bottom:0.8em;"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>E</mi><mo>=</mo><mfrac><mi>m</mi><mn>2</mn></mfrac><mrow><mo>(</mo><mrow><msubsup><mi>v</mi><mi>x</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>v</mi><mi>y</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math></p>
+<p class="noindent">being the sum of two terms coming respectively from the <i>x</i> and <i>y</i> components of velocity <i>v<sub>x</sub></i> and <i>v<sub>y</sub>.</i></p>
+<p class="indent3-ka1">The three-dimensional particle-in-a-box problem is an obvious extension from two dimensions. For a cubic box with sides of length <i>a,</i> the allowed wavefunctions satisfying the boundary conditions are</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-32"><span class="equno">(3.32)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x03C8;</mi><mo>=</mo><mi>N</mi><mi>sin</mi><mrow><mo>(</mo><mrow><msub><mi>k</mi><mn>1</mn></msub><mi>x</mi></mrow><mo>)</mo></mrow><mi>sin</mi><mrow><mo>(</mo><mrow><msub><mi>k</mi><mn>2</mn></msub><mi>y</mi></mrow><mo>)</mo></mrow><mi>sin</mi><mrow><mo>(</mo><mrow><msub><mi>k</mi><mn>3</mn></msub><mi>z</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math></p>
+<p class="noindent">where</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-33"><span class="equno">(3.33)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mi>k</mi><mn>1</mn></msub><mi>a</mi><mo>=</mo><msub><mi>n</mi><mn>1</mn></msub><mi>&#x03C0;</mi><mo>,</mo><mtext>&#x2003;</mtext><msub><mi>k</mi><mn>2</mn></msub><mi>a</mi><mo>=</mo><msub><mi>n</mi><mn>2</mn></msub><mi>&#x03C0;</mi><mo>,</mo><mtext>&#x2003;</mtext><msub><mi>k</mi><mn>3</mn></msub><mi>a</mi><mo>=</mo><msub><mi>n</mi><mn>3</mn></msub><mi>&#x03C0;</mi><mo>.</mo></mrow></math> <a id="page_50" class="page" style="width:70%;">Page 50, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+
+<p class="noindent">The energy is given by</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-34"><span class="equno">(3.34)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>E</mi><mo>=</mo><mrow><mo>(</mo><mrow><msubsup><mi>n</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>n</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>n</mi><mn>3</mn><mn>2</mn></msubsup></mrow><mo>)</mo></mrow><mfrac><mrow><msup><mi>h</mi><mn>2</mn></msup></mrow><mrow><mn>8</mn><mi>m</mi><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac></mrow></math></p>
+<p class="noindent">for integral values of the three quantum numbers <i>n</i><sub>1</sub><i> n</i><sub>2</sub><i></i> and <i>n</i><sub>3</sub><i>.</i> It is a general feature of two- and three-dimensional problems that two and three quantum numbers, respectively, are required to specify the solution.</p>
+<p class="indent3-ka1">The three-dimensional particle in a box corresponds to the &#x2018;real life&#x2019; problem of gas molecules in a container, and is also sometimes used as a first approximation for the free conduction electrons in a metal. As we found for one dimension (<a href="Chapter02.xhtml#sec_2.3">Section 2.3</a>), the allowed energy levels are extremely closely spaced in macroscopically sized boxes. For many purposes they can be regarded as a continuum, with no discernible energy gaps. Nevertheless, there are problems, for example in the theory of metals and in the calculation of thermodynamic properties of gases, where it is essential to take note of the <i>existence</i> of discrete quantized levels, rather than a true continuum.</p>
+<p class="noindent" style="margin-top:1em;margin-bottom:1em;"><b>Degeneracy</b></p>
+<p class="noindent">Some of the levels shown in <a href="Chapter03.xhtml#fig39">Fig. 3.9</a>, for example those with <i>n</i><sub>1</sub><i>=</i>1<i>,</i> <i>n</i><sub>2</sub><i>=</i>2 and<i> n</i><sub>1</sub><i>=</i>2<i>,</i> <i>n</i><sub>2</sub><i>=</i>1, have the same energy. They are called <i>degenerate,</i> this term being used by mathematicians to describe situations where two or more (usually different) solutions to an equation turn out to be equal. (For example, a quadratic equation usually has two real solutions, or none at all; a case where there is only one solution is degenerate.) The particle-in-a-box levels in two dimensions illustrate double degeneracy. For the cubic box, some of the energies given by <a href="Chapter03.xhtml#eqn3-34">eqn 3.34</a> are triply degenerate, with three levels having the same energy.</p>
+<p class="indent3-ka1">Degeneracy often arises in two- or three-dimensional problems, especially where there is a high degree of symmetry. We shall see in <a href="Chapter04.xhtml">Chapters 4</a> and <a href="Chapter05.xhtml">5</a> that degeneracy is a feature of the solutions for the hydrogen atom, and is important in understanding atomic structure.</p>
+</section>
+<section epub:type="chapter" id="sec_3.4">
+<h2 class="h2">3.4<span class="space">&#160;</span>Rotations and angular momentum</h2>
+<p class="noindent">Problems involving rotation occur frequently in the quantum theory. This section discusses two models which look rather artificial, but which serve to introduce some important ideas. They have a direct application to the rotations of molecules, but are especially useful in the context of atomic structure, discussed in <a href="Chapter04.xhtml">Chapters 4</a> and <a href="Chapter05.xhtml">5</a>.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig3.10">
+<img src="../images/fig3.10.jpg" alt="img"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;">
+<p class="noindent2" id="fig310"><b>Fig. 3.10</b> The  coordinate system used to treat circular motion in the (<i>x,y</i>) plane (see <a href="Chapter03.xhtml#eqn3-35">eqn 3.35</a>).</p>
+</figcaption>
+</figure>
+</aside>
+<p class="noindent" style="margin-top:1em;margin-bottom:1em;"><b>Classical motion in a circle</b></p>
+<p class="noindent">We first consider a particle moving at constant speed in a circle in the (<i>x,y</i>) plane. It is convenient to use the <i>polar coordinates</i> illustrated in <a href="Chapter03.xhtml#fig310">Fig. 3.10.</a> In terms of the cartesian coordinates (<i>x</i>,<i>y</i>) we have</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-35"><span class="equno">(3.35)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi><mo>=</mo><mi>r</mi><mi>cos</mi><mi>&#x03D5;</mi><mo>;</mo><mtext>&#x2003;</mtext><mi>y</mi><mo>=</mo><mi>r</mi><mi>sin</mi><mi>&#x03D5;</mi><mo>.</mo></mrow></math> <a id="page_51" class="page" style="width:70%;">Page 51, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+
+<p class="noindent">We are interested in the case where <i>r</i> is constant, and <i><math xmlns='http://www.w3.org/1998/Math/MathML'><mi>&#x03D5;</mi></math> </i> changes at a constant rate. Let</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-36"><span class="equno">(3.36)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x03D5;</mi><mo>=</mo><mi>&#x03C9;</mi><mi>t</mi><mo>,</mo></mrow></math></p>
+<p class="noindent">where <i>&#x03C9;</i> is known as the <i>angular velocity.</i> The velocity itself is a vector, with <i>x</i> and <i>y</i> components given by differentiating <a href="Chapter03.xhtml#eqn3-35">eqn 3.35</a>, using <a href="Chapter03.xhtml#eqn3-36">eqn 3.36</a> and noting that <i>r</i> is constant:</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-37"><span class="equno">(3.37)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mover accent='true'><mi>x</mi><mo>&#x02D9;</mo></mover><mo>=</mo><mo>&#x2212;</mo><mi>r</mi><mi>&#x03C9;</mi><mi>sin</mi><mrow><mo>(</mo><mrow><mi>&#x03C9;</mi><mi>t</mi></mrow><mo>)</mo></mrow><mo>;</mo><mtext>&#x2003;</mtext><mtext>&#x2003;</mtext><mover accent='true'><mi>y</mi><mo>&#x02D9;</mo></mover><mo>=</mo><mi>r</mi><mi>&#x03C9;</mi><mi>cos</mi><mrow><mo>(</mo><mrow><mi>&#x03C9;</mi><mi>t</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></p>
+<p class="noindent">The magnitude of the velocity is given by Pythagoras&#x2019; theorem as</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-38"><span class="equno">(3.38)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><msup><mover accent='true'><mi>x</mi><mo>&#x02D9;</mo></mover>  <mn>2</mn></msup><mo>+</mo><msup><mover accent='true'><mi>y</mi><mo>&#x02D9;</mo></mover>  <mn>2</mn></msup></mrow></msqrt><mo>=</mo><mi>r</mi><mi>&#x03C9;</mi><mo>,</mo></mrow></math></p>
+<p class="noindent">and is constant as we expect. The kinetic energy is</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-39"><span class="equno">(3.39)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>T</mi><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup><msup><mi>&#x03C9;</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>.</mo></mrow></math></p>
+<p class="indent3-ka1">An important quantity in rotating systems is the <i>angular momentum.</i> For a particle moving in the (<i>x,y</i>)<span class="small-cap"></span> plane its definition is</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-40"><span class="equno">(3.40)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>J</mi><mo>=</mo><mi>x</mi><msub><mi>p</mi><mi>y</mi></msub><mo>&#x2212;</mo><mi>y</mi><msub><mi>p</mi><mi>x</mi></msub><mo>=</mo><mi>m</mi><mrow><mo>(</mo><mrow><mi>x</mi><mover accent='true'><mi>y</mi><mo>&#x02D9;</mo></mover><mo>&#x2212;</mo><mi>y</mi><mover accent='true'><mi>x</mi><mo>&#x02D9;</mo></mover></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></p>
+<p class="noindent">In the present case, using <a href="Chapter03.xhtml#eqn3-35">eqn 3.35</a> and <a href="Chapter03.xhtml#eqn3-37">3.37</a> gives</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-41"><span class="equno">(3.41)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>J</mi><mo>=</mo><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup><mi>&#x03C9;</mi><mo>.</mo></mrow></math></p>
+<p class="noindent">An alternative expression for the kinetic energy is therefore</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-42"><span class="equno">(3.42)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>T</mi><mo>=</mo><mfrac><mrow><msup><mi>J</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>.</mo></mrow></math></p>
+<p class="noindent">We also define the <i>moment of inertia I</i> by</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-43"><span class="equno">(3.43)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>I</mi><mo>=</mo><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup><mo>.</mo></mrow></math></p>
+<p class="noindent">Then <a href="Chapter03.xhtml#eqn3-41">eqns 3.41</a> and <a href="Chapter03.xhtml#eqn3-42">3.42</a> become</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-44"><span class="equno">(3.44)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>J</mi><mo>=</mo><mi>I</mi><mi>&#x03C9;</mi><mo>;</mo><mtext>&#x2003;</mtext><mtext>&#x2003;</mtext><mi>T</mi><mo>=</mo><mfrac><mrow><msup><mi>J</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>I</mi></mrow></mfrac><mo>.</mo></mrow></math></p>
+<p class="noindent">which are analogous to the equations for linear motion (see <a href="Chapter02.xhtml#sec_2.1">Section 2.1</a>), <a id="page_52" class="page" >Page 52, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+
+<p class="noindent" style="margin-bottom:0.8em;"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>p</mi><mo>=</mo><mi>m</mi><mi>v</mi><mo>;</mo><mtext>&#x2003;</mtext><mtext>&#x2003;</mtext><mi>T</mi><mo>=</mo><mfrac><mrow><msup><mi>p</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mo>.</mo></mrow></math></p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig3.11">
+<img src="../images/fig3.11.jpg" alt="img"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;">
+<p class="noindent2" id="fig311"><b>Fig. 3.11</b> Spherical polar coordinates (see <a href="Chapter03.xhtml#eqn3-45">eqn 3.45</a>).</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1">If the particle is not confined to the (<i>x</i>,<i>y</i>) plane we need to use the <i>spherical polar coordinates</i> (see <a href="Chapter03.xhtml#fig311">Fig. 3.11</a>), defined by</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-45"><span class="equno" style="margin-top:1.6em;">(3.45)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mtable><mtr><mtd><mi>x</mi></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mi>r</mi><mi>sin</mi><mi>&#x03B8;</mi><mi>cos</mi><mi>&#x03D5;</mi><mo>;</mo></mrow></mtd></mtr><mtr><mtd><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mi>r</mi><mi>sin</mi><mi>&#x03B8;</mi><mi>sin</mi><mi>&#x03D5;</mi><mo>;</mo></mrow></mtd></mtr><mtr><mtd><mi>z</mi></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mi>r</mi><mi>cos</mi><mi>&#x03B8;</mi><mo>.</mo></mrow></mtd></mtr>  </mtable></mrow></math></p>
+<p class="noindent">We shall not give the detailed equation relating to circular motion, but simply point out one important feature. The angular momentum is now regarded as a vector quantity, having magnitude and direction. The magnitude is still given by <a href="Chapter03.xhtml#eqn3-41">eqn 3.41</a>, and we can still use the expressions of <a href="Chapter03.xhtml#eqn3-44">eqn 3.44</a>. The direction of the angular momentum vector is, by definition, perpendicular to the plane of the motion. This is illustrated in <a href="Chapter03.xhtml#fig312">Fig. 3.12.</a></p>
+<p class="noindent" style="margin-top:1em;margin-bottom:1em;"><b>The particle on a ring</b></p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig3.12">
+<img src="../images/fig3.12.jpg" alt="img"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;">
+<p class="noindent2" id="fig312"><b>Fig. 3.12</b> The angular momentum <i>J</i> is defined as a vector perpendicular to the plane of rotation.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="noindent">The quantum mechanical analogue of the situation just discussed is called the <i>particle on a ring.</i> We imagine, as above, a particle constrained to move on a circular ring in the <i>(x,y)</i> plane, with a constant potential energy that we put equal to zero. It is most easily solved by expressing the two-dimensional Schr&#x00F6;dinger equation in polar coordinates, <i>&#x03C8;</i> depends only on the polar angle <i><math xmlns='http://www.w3.org/1998/Math/MathML'><mi>&#x03D5;</mi></math></i>, and in this case</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-46"><span class="equno">(3.46)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mi>d</mi><msup><mi>&#x03D5;</mi><mn>2</mn></msup></mrow></mfrac><mo>.</mo></mrow></math></p>
+<p class="noindent">This can be derived rigorously by using <a href="#eqn3-35">3.35</a> to express the differentials of a function with respect to <i>x</i> and <i>y</i> in terms of those with respect to <i>r</i> and <i>&#x03D5;.</i> We obtain</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-47"><span class="equno">(3.47)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>r</mi></mfrac><mfrac><mrow><mo>&#x2202;</mo><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><mi>r</mi></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>&#x03D5;</mi><mn>2</mn></msup></mrow></mfrac><mo>,</mo></mrow></math></p>
+<p class="noindent">and <a href="Chapter03.xhtml#eqn3-46">eqn 3.46</a> follows with the assumption that <i>&#x03C8;</i> does not depend on </p>
+<p class="indent3-ka1">A less rigorous approach is to imagine that we really have a one-dimensional problem, except that this &#x2018;one dimension&#x2019; is bent round to make a circle. Schr&#x00F6;dinger&#x2019;s equation (with zero potential) can then be written</p>
+<p class="noindent" style="margin-bottom:0.8em;"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><msup><mi>&#x045B;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mfrac><mrow><msup><mi mathvariant="normal">d</mi><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mi mathvariant="normal">d</mi><msup><mi>s</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mi>E</mi><mi>&#x03C8;</mi><mo>=</mo><mn>0</mn><mo>,</mo></mrow></math></p>
+<p class="noindent">where <i>s</i> is a variable giving the distance round the circle. Then</p>
+<p class="noindent" style="margin-bottom:0.8em;"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>s</mi><mo>=</mo><mi>r</mi><mi>&#x03D5;</mi></mrow></math> <a id="page_53" class="page">Page 53, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+
+<p class="noindent">with constant <i>r</i>, and making this substitution we find</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">For the remainder of this section we write <i>&#x03BC;</i> for the mass, to avoid confusion with the quantum number <i>m.</i></aside>
+<p class="noindent" style="margin-top:1em;" id="eqn3-48"><span class="equno">(3.48)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><msup><mi>&#x045B;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mfrac><mrow><msup><mi mathvariant="normal">d</mi><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mi mathvariant="normal">d</mi><msup><mi>&#x03D5;</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mi>E</mi><mi>&#x03C8;</mi><mo>=</mo><mn>0</mn><mo>,</mo></mrow></math></p>
+<p class="noindent">which is exactly what <a href="Chapter03.xhtml#eqn3-46">eqn 3.46</a> gives</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig3.13">
+<img src="../images/fig3.13.jpg" alt="img"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;">
+<p class="noindent2" id="fig313"><b>Fig. 3.13</b> Particle-on-a-ring wavefunctions. (a) One that satisfies the boundary condition (<a href="Chapter03.xhtml#eqn3-49">eqn 3.49</a>); (b) one that does not.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent3-ka1"><a href="Chapter03.xhtml#eqn3-48">Equation 3.48</a> is of course the same equation as we have solved before, e.g. for the particle in a box. Its solutions are simple sine and cosine functions of <i><math xmlns='http://www.w3.org/1998/Math/MathML'><mi>&#x03D5;</mi></math></i>. The difference is that <i><math xmlns='http://www.w3.org/1998/Math/MathML'><mi>&#x03D5;</mi></math></i> is now an angular variable, which repeats itself every 2<i>&#x03C0;</i> radians. The boundary conditions for the wavefunction are therefore different from those for the particle in a box. There is no requirement that <i>&#x03C8;</i> must be zero anywhere; instead, it must be <i>single valued,</i> which means for any <i><math xmlns='http://www.w3.org/1998/Math/MathML'><mi>&#x03D5;</mi></math></i>,</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-49"><span class="equno">(3.49)</span></p>
+<p class="noindent"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x03C8;</mi><mrow><mo>(</mo><mrow><mi>&#x03D5;</mi><mo>+</mo><mn>2</mn><mi>&#x03C0;</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>&#x03C8;</mi><mrow><mo>(</mo><mi>&#x03D5;</mi><mo>)</mo></mrow><mo>.</mo></mrow></math></p>
+<p class="noindent" style="margin-top:0.8em;"><a href="Chapter03.xhtml#fig313">Figure 3.13</a> shows two wavefunctions, one that satisfies this, and one that does not. The allowed wavefunctions are of the form</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-50"><span class="equno">(3.50)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x03C8;</mi><mo>=</mo><mi>N</mi><mi>sin</mi><mrow><mo>(</mo><mrow><mi>m</mi><mi>&#x03D5;</mi></mrow><mo>)</mo></mrow><mo>;</mo><mtext>&#x2003;</mtext><mi>&#x03C8;</mi><mo>=</mo><mi>N</mi><mi>cos</mi><mrow><mo>(</mo><mrow><mi>m</mi><mi>&#x03D5;</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math></p>
+<p class="noindent">where <i>N</i> is a normalization constant. The quantum number <i>m</i> can take the values</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-51"><span class="equno">(3.51)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>&#x2026;</mo></mrow></math></p>
+<p class="noindent">so that boundary condition, <a href="Chapter03.xhtml#eqn3-49">eqn 3.49</a>, is satisfied. From <a href="Chapter03.xhtml#eqn3-48">eqn 3.48</a>, we then find that the allowed energies are given </p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-52"><span class="equno">(3.52)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><msup><mi>m</mi><mn>2</mn></msup><msup><mi>&#x045B;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><msup><mi>m</mi><mn>2</mn></msup><msup><mi>&#x045B;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>I</mi></mrow></mfrac><mo>.</mo></mrow></math></p>
+<p class="noindent">Comparing this with <a href="Chapter03.xhtml#eqn3-44">eqn 3.44</a> shows that the angular momentum is quantized:</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-53"><span class="equno">(3.53)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>J</mi><mo>=</mo><mo>&#x00B1;</mo><mi>m</mi><mi>&#x210F;</mi><mo>.</mo></mrow></math></p>
+<p class="indent3-ka1">There is only one solution with <i>m</i> = 0, as the sine term in <a href="Chapter03.xhtml#eqn3-50">eqn 3.50</a> is then zero, which is not an allowed wavefunction. All the higher energy levels of <a href="Chapter03.xhtml#eqn3-50">eqn 3.50</a> are doubly degenerate, with both a sine and a cosine wavefunction having the same energy. The obvious physical significance of this is that a particle with non-zero angular momentum can be rotating in either a clockwise or an anticlockwise direction, with the same energy in each case.</p>
+<p class="noindent" style="margin-top:1em;margin-bottom:1em;"><b>The particle on a sphere</b></p>
+<p class="noindent">The particle on a ring is unduly restrictive to correspond immediately to a real situation. We now consider an obvious extension&#x2014;the <i>particle on a sphere</i>&#x2014; <a id="page_54" class="page" >Page 54, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a>where the distance to the origin (<i>r</i>) remains fixed, but otherwise the particle is allowed free movement. The spherical polar coordinates of <a href="Chapter03.xhtml#fig311">Fig. 3.11</a> and <a href="Chapter03.xhtml#eqn3-45">eqn 3.45</a> are now appropriate. In terms of these, we can show that </p>
+
+<p class="noindent" style="margin-top:1em;" id="eqn3-54"><span class="equno">(3.54)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mo>&#x2207;</mo><mn>2</mn></msup><mi>&#x03C8;</mi><mo>=</mo><mfrac><mn>1</mn><mi>r</mi></mfrac><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mrow><mo>(</mo><mrow><mi>r</mi><mi>&#x03C8;</mi></mrow><mo>)</mo></mrow></mrow><mrow><mo>&#x2202;</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mrow><mo>[</mo><mrow><mfrac><mn>1</mn><mrow><mi>sin</mi><mi>&#x03B8;</mi></mrow></mfrac><mfrac><mo>&#x2202;</mo><mrow><mo>&#x2202;</mo><mi>&#x03B8;</mi></mrow></mfrac><mrow><mo>(</mo><mrow><mi>sin</mi><mi>&#x03B8;</mi><mfrac><mrow><mo>&#x2202;</mo><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><mi>&#x03B8;</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><msup><mrow><mi>sin</mi></mrow><mn>2</mn></msup><mi>&#x03B8;</mi></mrow></mfrac><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>&#x03D5;</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>]</mo></mrow><mo>.</mo></mrow></math></p>
+<p class="noindent">For fixed r, <i>&#x03C8;</i> depends on <i>&#x03B8;</i> and <i><math xmlns='http://www.w3.org/1998/Math/MathML'><mi>&#x03D5;</mi></math> </i>, and the corresponding form of Schr&#x00F6;dinger&#x2019;s equation is</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-55"><span class="equno">(3.55)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><msup><mi>&#x045B;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mrow><mo>[</mo><mrow><mfrac><mn>1</mn><mrow><mi>sin</mi><mi>&#x03B8;</mi></mrow></mfrac><mfrac><mo>&#x2202;</mo><mrow><mo>&#x2202;</mo><mi>&#x03B8;</mi></mrow></mfrac><mrow><mo>(</mo><mrow><mi>sin</mi><mi>&#x03B8;</mi><mfrac><mrow><mo>&#x2202;</mo><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><mi>&#x03B8;</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><msup><mrow><mi>sin</mi></mrow><mn>2</mn></msup><mi>&#x03B8;</mi></mrow></mfrac><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>&#x03D5;</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>]</mo></mrow><mo>+</mo><mi>E</mi><mi>&#x03C8;</mi><mo>=</mo><mn>0.</mn></mrow></math></p>
+<p class="noindent">This partial differential equation is distinctly more complicated than we have considered before, and we only illustrate the solutions. As the particle now has effectively two dimensions of freedom, we expect there to be two quantum numbers. They are called <i>l</i> and <i>m</i>, and for allowed solutions can take the values</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-56"><span class="equno" style="margin-top:1.5em;">(3.56)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mtable columnalign='left'><mtr columnalign='left'><mtd columnalign='left'><mi>l</mi></mtd><mtd columnalign='left'><mo>=</mo></mtd><mtd columnalign='left'><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>&#x2026;</mo><mo>;</mo></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mi>m</mi></mtd><mtd columnalign='left'><mo>=</mo></mtd><mtd columnalign='left'><mrow><mn>0</mn><mo>,</mo><mo>&#x00B1;</mo><mn>1</mn><mo>,</mo><mo>&#x00B1;</mo><mn>2</mn><mo>,</mo><mo>&#x2026;</mo><mo>,</mo><mo>&#x00B1;</mo><mi>l</mi><mo>.</mo></mrow></mtd></mtr></mtable></mrow></math></p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="noindent" style="width:100%;margin-bottom:0.6em;" id="tbl31"><b>Table 3.1</b> Normalized spherical harmonics <i>Y<sub>I,m</sub></i> (&#x03B8;,&#x03D5;).</p>
+
+<table style="border-top: 2px black solid; border-bottom: 2px black solid;width:110%;">
+<tr>
+<td class="line1"><b>I</b></td>
+<td class="line1" style="padding-left:1.3em;"><b>m</b></td>
+<td class="line1" style="padding-left:1.3em;"><b>Y<i><sub>I,m</sub></i>(<i>&#x03B8;,&#x03D5;</i>)</b></td> 
+</tr>
+<tr>
+<td>0</td>
+<td style="padding-left:1.3em;">0</td>
+<td style="padding-left:1.3em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mn>1</mn><mrow><msqrt><mrow><mn>4</mn><mi>&#x03C0;</mi></mrow></msqrt></mrow></mfrac></mrow></math></td>
+</tr>
+<tr>
+<td>1</td>
+<td style="padding-left:1.3em;">0</td>
+<td style="padding-left:1.3em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msqrt><mrow><mfrac><mn>3</mn><mrow><mn>4</mn><mi>&#x03C0;</mi></mrow></mfrac></mrow></msqrt><mi>cos</mi><mi>&#x03B8;</mi></mrow></math></td>
+</tr>
+<tr>
+<td>1</td>
+<td style="padding-left:1.3em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>&#x00B1;</mo><mn>1</mn></mrow></math></td>
+<td style="padding-left:1.3em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msqrt><mrow><mfrac><mn>3</mn><mrow><mn>8</mn><mi>&#x03C0;</mi></mrow></mfrac></mrow></msqrt><mi>sin</mi><mi>&#x03B8;</mi><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mi>cos</mi><mi>&#x03D5;</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>sin</mi><mi>&#x03D5;</mi></mrow></mtd></mtr></mtable></mrow><mo>}</mo></mrow></mrow></math></td>
+</tr>
+<tr>
+<td>2</td>
+<td style="padding-left:1.3em;">0</td>
+<td style="padding-left:1.3em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msqrt><mrow><mfrac><mn>5</mn><mrow><mn>16</mn><mi>&#x03C0;</mi></mrow></mfrac></mrow></msqrt><mrow><mo>(</mo><mrow><mn>3</mn><msup><mrow><mi>cos</mi></mrow><mn>2</mn></msup><mi>&#x03B8;</mi><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math></td>
+</tr>
+<tr>
+<td>2</td>
+<td style="padding-left:1.3em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>&#x00B1;</mo><mn>1</mn></mrow></math></td>
+<td style="padding-left:1.3em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msqrt><mrow><mfrac><mrow><mn>15</mn></mrow><mrow><mn>8</mn><mi>&#x03C0;</mi></mrow></mfrac></mrow></msqrt><mi>c</mi><mi>o</mi><mi>s</mi><mi>&#x03B8;</mi><mi>sin</mi><mi>&#x03B8;</mi><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mi>cos</mi><mi>&#x03D5;</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>sin</mi><mi>&#x03D5;</mi></mrow></mtd></mtr></mtable></mrow><mo>}</mo></mrow></mrow></math></td>
+</tr>
+<tr>
+<td>2</td>
+<td style="padding-left:1.3em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>&#x00B1;</mo><mn>2</mn></mrow></math></td>
+<td style="padding-left:1.3em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msqrt><mrow><mfrac><mrow><mn>15</mn></mrow><mrow><mn>32</mn><mi>&#x03C0;</mi></mrow></mfrac></mrow></msqrt><msup><mrow><mi>sin</mi></mrow><mn>2</mn></msup><mi>&#x03B8;</mi><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mi>cos</mi><mn>2</mn><mi>&#x03D5;</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>sin</mi><mn>2</mn><mi>&#x03D5;</mi></mrow></mtd></mtr></mtable></mrow><mo>}</mo></mrow></mrow></math></td>
+</tr>
+</table>
+</aside>
+<p class="noindent">The energy depends only on <i>l,</i> not on <i>m</i>:</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-57"><span class="equno">(3.57)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>l</mi><mrow><mo>(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>l</mi><mrow><mo>(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>I</mi></mrow></mfrac></mrow></math></p>
+<p class="noindent">The most important fact about <i>m</i> is that for a given <i>l</i>, it can take 2<i>l</i> + 1 possible values according to <a href="Chapter03.xhtml#eqn3-56">eqn 3.56</a>; this therefore gives the degeneracy of the levels.</p>
+<p class="indent3-ka1">The allowed wavefunctions for the particle on a sphere are called <i>spherical harmonics,</i> generally written</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-58"><span class="equno">(3.58)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x03C8;</mi><mo>=</mo><msub><mi>Y</mi><mrow><mi>l</mi><mo>.</mo><mi>m</mi></mrow></msub><mrow><mo>(</mo><mrow><mi>&#x03B8;</mi><mo>,</mo><mi>&#x03D5;</mi></mrow><mo>)</mo></mrow></mrow></math></p>
+<p class="noindent"><a href="Chapter03.xhtml#tbl31">Table 3.1</a> shows the normalized functions for <i>l</i> = 0, 1, and 2, and they are illustrated in <a href="Chapter03.xhtml#fig314">Fig. 3.14.</a> We can see that, although they are more complicated functions than we have dealt with previously, they have some of the same properties. The lowest-energy state has a wavefunction with no nodes, those with <i>l</i> = 1 each have one nodal plane, those with <i>l</i> = 2 two nodal planes, and so on.</p>
+<p class="indent3-ka1">The physical significance of the particle-on-a-sphere wavefunctions is important in connection with the hydrogen atom. Comparing the energy formula (<a href="Chapter03.xhtml#eqn3-57">eqn 3.57</a>) with the classical result (<a href="Chapter03.xhtml#eqn3-44">eqn 3.44</a>) shows that the angular momentum is</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-59"><span class="equno">(3.59)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>J</mi><mo>=</mo><msqrt><mrow><mi>l</mi><mrow><mo>(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></msqrt><mi>&#x210F;</mi><mo>.</mo></mrow></math> <a id="page_55" class="page" style="width:70%;">Page 55, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+
+<figure class="figure-bh" id="fig3.14">
+<img src="../images/fig3.14.jpg" alt="img" style="margin-left:2em;"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;">
+<p class="noindent2" id="fig314" style="margin-bottom:2em;"><b>Fig. 3.14</b> Representation of the particle-on-a-sphere wavefunctions (spherical harmonics) with <i>l</i> = 0, 1, and 2, given in <a href="#tbl31">Table 3.1</a></p>
+</figcaption>
+</figure>
+<p class="noindent">This gives the <i>magnitude</i> of the angular momentum vector. The f<i></i> dependence of the functions in <a href="Chapter03.xhtml#tbl31">Table 3.1</a> is exactly the same as for the particle on a ring, and <i>m</i> indeed has the same significance: it gives the component of angular momentum about the <i>z</i> axis:</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-60"><span class="equno">(3.60)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mi>J</mi><mi>z</mi></msub><mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mi>m</mi><mtext>&#x2009;</mtext><mi>&#x210F;</mi><mo>.</mo></mrow></math></p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig3.15">
+<img src="../images/fig3.15.jpg" alt="img"/>
+<figcaption class="figcaption1" style="margin-top:0.5em;">
+<p class="noindent2" id="fig315"><b>Fig. 3.15</b> The angular momentum vector in the particle-on-a-sphere level where <i>l</i> = 2. Each cone shows the range of directions possible for a given <i>m</i> value. The <i>z</i> component is well defined, but the <i>x</i> and <i>y</i>. components are indefinite</p>
+</figcaption>
+</figure>
+</aside>
+<p class="noindent">Accepting this, we can understand why the range of allowed <i>m</i> values is limited by <i>l</i>, as no vector can have any component larger than its total magnitude. For example, with <i>l</i> = 1, <i>J</i> is 1.414<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>&#x210F;</mi></math><i> </i>, and the only possible <i>z</i> components according to <a href="Chapter03.xhtml#eqn3-60">eqn 3.60</a> are ?<i><math xmlns='http://www.w3.org/1998/Math/MathML'><mi>&#x210F;</mi></math></i>, 0, and <i>+<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>&#x210F;</mi></math></i>. <a href="Chapter03.xhtml#fig315">Figure 3.15</a> illustrates this for the case of <i>l</i> = 2.</p>
+<p class="indent3-ka1">Our result shows that not only is the total magnitude of angular momentum quantized according to <a href="Chapter03.xhtml#eqn3-59">eqn 3.59</a>, but also its direction in space. (Recall from <a href="Chapter03.xhtml#fig312">Fig. 3.12</a> that the plane of rotation is perpendicular to this vector.) This is known as <i>space quantization.</i> It has some aspects that are puzzling at first. Why does <i>m</i> specify the <i>z</i> component in particular? Why not any others? To answer these questions we must consider how angular momentum can be measured. In a classical system there is no problem, as all details of the motion can be specified as precisely as we wish, and the magnitude and direction of angular momentum can thereby be determined. In the quantum theory, this is not possible because of the limitations imposed by the uncertainty principle. The magnitude of <i>J</i> determines the energy of the particle on a sphere, and this can be measured. The only practical way of trying to measure the direction of <i>J</i> is to perturb our system, by placing it, for example, in an electric or magnetic field. If the particle has an electric charge, its rotation generates a magnetic field which can interact with an externally applied field. The energy changes slightly, according to the relative orientation of these fields, and in this way, the component of angular  <a id="page_56" class="page" >Page 56, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a>momentum in the direction of the applied field can be determined. In the context of atoms, this is called the <i>Zeeman effect.</i> The results confirm the predictions of space quantization; for example, a level with <i>l</i> = 1 does indeed split into three closely spaced levels, with different values of <i>m</i>. (A detailed interpretation of these experiments does, however, involved the complication of <i>electron spin,</i> discussed in <a href="Chapter05.xhtml#sec_5.3">Section 5.3.</a>) There is no way, however, to measure the components of <i>J</i> in more than one direction at once. In fact, theoretical arguments based on the uncertainty principle show that if one component, say <i>J<sub>z</sub></i> is measured exactly, then the components in other directions will be uncertain. The answers to the questions posed above, then, are: firstly, it is only possible to specify one component of <i>J</i>; secondly, <i>z</i> means &#x2018;the direction in which we apply a field to perform a measurement&#x2019;. We can make this any real direction we like, but space quantization implies that we can only find 2<i>l</i> + 1 possible components of angular momentum in that direction.</p>
+
+<p class="noindent" style="margin-top:1em;margin-bottom:1em;"><b>Molecular rotations</b></p>
+<p class="noindent">The most direct application of particle-on-a-sphere result is to the rotational motion of diatomic molecules in a gas. As with vibrations (see <a href="Chapter03.xhtml#sec_3.2">Section 3.2</a>), the real situation looks a little more complicated, but can be solved in a similar way. A molecule actually rotates about its centre of mass; the coordinates q<i></i> and f can be used to define its direction in space. If we replace the mass in Schr&#x00F6;dinger&#x2019;s equation by the reduced mass given by <a href="Chapter03.xhtml#eqn3-22">eqn 3.22</a>, and let <i>r</i> be the bond length, then the moment of inertia is</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-61"><span class="equno">(3.61)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>I</mi><mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup><mo>,</mo></mrow></math></p>
+<p class="noindent">and we can use the particle-on-a-sphere energy levels. The quantum number labelled <i>l</i> above is usually called <i>J</i> in this case, and we have therefore</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-62"><span class="equno">(3.62)</span></p>
+<p class="noindent" style="margin-bottom:0.8em;"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>E</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mi>J</mi><mo stretchy='false'>(</mo><mi>J</mi><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>1</mn><mo stretchy='false'>)</mo><mtext>&#x2009;</mtext><mfrac>
+   <mrow>
+    <msup>
+     <mi>&#x210F;</mi>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+   <mrow>
+    <mn>2</mn><mi>&#x03BC;</mi><msup>
+     <mi>r</mi>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+  </mfrac>
+  <mo>.</mo>
+ </mrow>
+</math>
+</p>
+<p class="noindent">Consider, for example, the molecule H<sup>35</sup>Cl, with <i>&#x03BC;</i> equal to 0.972 atomic mass units, or 1.625 &#x00D7; 10<sup>-27</sup> kg. The bond length is 127 pm, and the energy of the <i>J</i> = 1 level is 0.00131 eV, corresponding to 0.127 kJ mol<sup>-1</sup> This is relatively insignificant in chemical terms, and the quantization of rotational energy in molecules is generally less important in chemistry than that of vibrations, discussed in <a href="Chapter03.xhtml#sec_3.2">Section 3.2.</a> It is however, observable by spectroscopy. In unsymmetric molecules such as HCl the rotational motion can interact with electromagnetic radiation, to cause absorption or emission according to the selection rule</p>
+<p class="noindent" style="margin-top:1em;" id="eqn3-63"><span class="equno">(3.63)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x0394;</mi><mtext>&#x2009;</mtext><mi>J</mi><mtext>&#x2009;</mtext><mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mo>&#x00B1;</mo><mn>1.</mn></mrow></math></p>
+<p class="noindent">From <a href="Chapter03.xhtml#eqn3-62">eqn 3.62</a> the appropriate photon energy for a transition between levels <i>J</i> and <i>J+</i>1 is <a id="page_57" class="page" >Page 57, Chapter 3:  Applications of Schr&#x00F6;dinger&#x2019;s equation</a></p>
+
+<p class="noindent" style="margin-top:1em;" id="eqn3-64"><span class="equno" style="margin-top:2.6em;">(3.64)</span></p>
+<p><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mtable columnalign='left'><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>h</mi><mi>v</mi></mrow></mtd><mtd columnalign='left'><mo>=</mo></mtd><mtd columnalign='left'><mrow><mrow><mo>(</mo><mrow><mi>J</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>J</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>&#x2212;</mo><mi>J</mi><mrow><mo>(</mo><mrow><mi>J</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow></mrow></mtd><mtd columnalign='left'><mo>=</mo></mtd><mtd columnalign='left'><mrow><mn>2</mn><mrow><mo>(</mo><mrow><mi>J</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mfrac><mi>&#x210F;</mi><mrow><mn>2</mn><mi>&#x03BC;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>.</mo></mrow></mtd></mtr></mtable></mrow></math></p>
+<p class="noindent">This corresponds to radiation in the microwave or far-infrared regions of the spectrum. For example, with H<sup>35</sup>C1 the wavenumber of the <i>J</i> = 0 to <i>J</i> = 1 transition is 21.186 cm<sup>-1</sup>. Measurement of such rotational transitions is an accurate way of determining the moments of inertia of gas-phase molecules. If the masses of atoms are known, the bond length can then be estimated.</p>
+</section>
+<section epub:type="chapter" id="sec_3.5">
+<p class="noindent"><b>Problems</b></p>
+<p class="list" style="margin-bottom:0.6em;"><a href="Answertonumericalproblems.xhtml#ch3pro1">1.</a> In scanning tunnelling microscopy a typical barrier height <i>(V &#x2013; E</i> in <a href="Chapter03.xhtml#eqn3-6">eqn 3.6</a>) is 2 eV. If the measured current <i>i</i> is proportional to the tunnelling probability for electrons, show that it should vary with distance <i>d</i> from the surface (expressed in nanometres) according to</p>
+<p class="noindent" style="margin-bottom:0.6em;"><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>i</mi><mtext>&#x2009;</mtext><mtext>&#x2003;</mtext><mo>=</mo><mtext>&#x2003;</mtext><mtext>&#x2009;</mtext><mi>A</mi><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mn>14.5</mn><mi>d</mi></mrow></msup><mo>,</mo></mrow></math></p>
+<p class="list1" style="margin-bottom:0.6em;">where <i>A</i> is a constant. If the current can be measured to an accuracy of &#x00B1;1 per cent, how accurately can <i>d</i> be estimated in principle by the technique?</p>
+<p class="list" style="margin-bottom:0.6em;"><a href="Answertonumericalproblems.xhtml#ch3pro2">2.</a> The molecule HI has a bond stretching force constant of 314 N m<sup>-1</sup>. Calculate for both <sup>1</sup>H<sup>127</sup>I and <sup>2</sup>D<sup>127</sup>I, (a) the classical vibrational frequency <i>v</i> in hertz, and (b) the wavenumber of photons corresponding to the <i>n</i> = 0 to <i>n</i> = 1 transition in the vibrational spectrum.</p>
+<p class="list" style="margin-bottom:0.6em;"><a href="Answertonumericalproblems.xhtml#ch3pro3">3.</a> Using the data from Problem 2, calculate the zero-point vibrational energies of HI and DI. Estimate the difference in their dissociation energies, assuming that it comes only from the difference in zero-point energies. Express your answer in kilojoules per mole, specifying which molecule has the higher dissociation energy.</p>
+<p class="list" style="margin-bottom:0.6em;"><a href="Answertonumericalproblems.xhtml#ch3pro4">4.</a> Consider an electron, confined to a ring of radius 0.1 nm (about the size of an atom). Calculate the energies of the five lowest states, and express your answer in electron volts.</p>
+<p class="list" style="margin-bottom:0.6em;"><a href="Answertonumericalproblems.xhtml#ch3pro5">5.</a> The transition from <i>J</i> = 0 to <i>J</i> = 1 in the rotational spectrum of <sup>1</sup>H<sup>127</sup>I is found at a wavenumber of 13.022 cm<sup>-1</sup>. Estimate the bond length of the molecule. At what wavenumber would you expect to find the corresponding transition in <sup>2</sup>D<sup>127</sup>I?</p>
+</section>
+</section></div></body></html>
+
+
+
+
+

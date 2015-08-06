@@ -1,0 +1,2031 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Modern Liquid Phase Kinetics</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<a id="page_4" class="page" style="width:70%;"><b>Page 4, Empirical treatment of reaction rates</b></a>
+<section epub:type="chapter" id="ch02">
+<h1 class="main">2<span class="space">&#160;</span>Empirical treatment of reaction rates</h1>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_2.1">
+<h2 class="h2"><b>2.1</b><span class="space">&#160;</span><b>Introduction</b></h2>
+<p class="noindent">The starting point for most kinetic investigations of chemical reactions is the determination of the rate of the reaction and its dependence upon the concentrations of the species involved. However, before the reaction rate can be meaningfully discussed it is necessary to define the system carefully. In particular, this means a consideration of which type of system is under investigation:</p>
+<ul style="margin-top:0.5em;">
+<li style="margin-left:1em;margin-top:0.5em;"> <i>Closed or open</i>. A closed system is one in which matter is neither gained nor lost, as is typical for a liquid phase reaction in a flask or closed reactor. In an open system matter may be exchanged with the surroundings; common examples can be seen in living organisms and in flow systems.</li>
+<li style="margin-left:1em;margin-top:0.5em;"> <i>Constant volume</i>. Liquid phase reactions are for the most part effectively constant-volume processes, but volume changes may occur when reagents are added continuously.</li>
+<li style="margin-left:1em;margin-top:0.5em;"> <i>Isothermal</i>. Isothermal (constant temperature) conditions are convenient to work with and they also allow the use of temperature as an independent variable in controlling the reaction rate.</li>
+<li style="margin-left:1em;margin-top:0.5em;"> <i>Homogeneous or heterogeneous</i>. Homogeneous reactions are those which occur entirely in one phase. A reaction which requires the presence of at least two phases <i>to proceed at the rate it does</i> is described as heterogeneous, irrespective of where the reaction is occurring or of the distribution of the reagents among the phases.</li>
+</ul>
+<p class="noindent"></p>
+<p class="indent" style="margin-top:0.5em;">For the most part, we will be concerned with closed, constant-volume systems, maintained at constant temperature and pressure. These are the simplest to consider experimentally and theoretically, and are the most commonly encountered in practice in the laboratory. The experimental methods for determining rates and the kinetic treatment of the results described in the following sections normally relate to homogeneous reactions, but a separate chapter is devoted to heterogeneous liquid&#x2013;liquid reactions. This latter area is currently among the most active areas of research in solution kinetics; it is of great importance industrially, it is frequently encountered in the laboratory, and there is now widespread interest in reactions occurring at phase boundaries and across cell membranes in biological systems.</p>
+<a id="page_5" class="page" style="width:70%;"><b>Page 5, Empirical treatment of reaction rates</b></a>
+</section>
+<section epub:type="chapter" id="sec_2.2">
+<h2 class="h2"><b>2.2</b><span class="space">&#160;</span><b>Reaction rates and rate laws</b></h2>
+<p class="noindent">For a constant-volume, closed system the rate of a reaction may be defined as the rate of change of concentration of any of the reactants or products. For a general reaction of stoichiometry given by eqn <a href="Chapter02.xhtml#eqn_2.1">2.1</a>,</p>
+<figure class="eqn" id="eqn_2.1"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>a</mi><mstyle mathvariant='bold' mathsize='normal'><mi>A</mi></mstyle><mo>+</mo><mi>b</mi><mstyle mathvariant='bold' mathsize='normal'><mi>B</mi></mstyle><mo>&#x2192;</mo><mi>x</mi><mstyle mathvariant='bold' mathsize='normal'><mi>X</mi></mstyle><mo>+</mo><mi>y</mi><mstyle mathvariant='bold' mathsize='normal'><mi>Y</mi></mstyle>
+ </mrow>
+</math>
+<span class="no">(2.1)</span></figure>
+<p class="noindent">the rate can be expressed variously as &#x2013;<i>dA</i>/<i>dt</i>, &#x2013;<i>dB</i>/<i>dt</i>, <i>&#x002B;dX</i>/<i>dt</i>, or <i>&#x002B;dY</i>/<i>dt</i>, where <i>t</i> is time and <i>A</i>,<i>B</i>,<i>X</i>, and <i>Y</i> represent concentrations&#x2014;the square brackets commonly used to denote concentrations will be omitted for simplicity if no ambiguity arises. The appropriate sign is included in the expression so that the numerical value of the rate will always be positive. The rate has units of concentration divided by time, i.e., mol dm<sup>&#x2013;3</sup> s<sup>&#x2013;1</sup> (mol litre<sup>&#x2013;1</sup> s<sup>&#x2013;1</sup> M s<sup>&#x2013;1</sup>).</p>
+<p class="indent">In quoting numerical values of reaction rates, it is necessary to state not only the units of time and concentration, but also the particular substance under consideration. This is because, depending upon the reaction stoichiometry, the rates for the different substances involved may be different numerically. For example, in the dissociation by acid of the calcium complex of the cyclic diamine ligand (2,2), eqn <a href="Chapter02.xhtml#eqn_2.2">2.2</a>,</p>
+<figure class="eqn" id="eqn_2.2"><img src="../images/f0005-02.jpg" alt="images"/><span class="no">(2.2)</span></figure>
+<p class="noindent">two moles of H<sup>&#x002B;</sup> react for each mole of the complex and hence</p>
+<figure class="eqn" id="eqn_2.3"><img src="../images/f0005-04.jpg" alt="images"/><span class="no">(2.3)</span></figure>
+<p class="noindent">The problem can be avoided by defining the rate, <i>r</i>, for eqn <a href="Chapter02.xhtml#eqn_2.1">2.1</a> as</p>
+<p class="eqn" id="eqn_2.4"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>r</mi><mo>=</mo><mo>&#x2212;</mo><mfrac>
+   <mn>1</mn>
+   <mi>a</mi>
+  </mfrac>
+  <mfrac>
+   <mrow>
+    <mi>d</mi><mi>A</mi>
+   </mrow>
+   <mrow>
+    <mi>d</mi><mi>t</mi>
+   </mrow>
+  </mfrac>
+  <mo>=</mo><mo>&#x2212;</mo><mfrac>
+   <mn>1</mn>
+   <mi>b</mi>
+  </mfrac>
+  <mfrac>
+   <mrow>
+    <mi>d</mi><mi>B</mi>
+   </mrow>
+   <mrow>
+    <mi>d</mi><mi>t</mi>
+   </mrow>
+  </mfrac>
+  <mo>=</mo><mfrac>
+   <mn>1</mn>
+   <mi>x</mi>
+  </mfrac>
+  <mfrac>
+   <mrow>
+    <mi>d</mi><mi>X</mi>
+   </mrow>
+   <mrow>
+    <mi>d</mi><mi>t</mi>
+   </mrow>
+  </mfrac>
+  <mo>=</mo><mfrac>
+   <mn>1</mn>
+   <mi>y</mi>
+  </mfrac>
+  <mfrac>
+   <mrow>
+    <mi>d</mi><mi>Y</mi>
+   </mrow>
+   <mrow>
+    <mi>d</mi><mi>t</mi>
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+<span class="no">(2.4)</span></p>
+<aside class="abc" style="margin-left:0em;margin-top:-13.2em;" epub:type="sidebar">
+<figure class="fig1">
+ <img src="../images/f0005-03.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">This practice will be used throughout this book.</p>
+<p class="indent">The reaction rate at a fixed temperature can depend upon the concentrations of all of the species present, and the relationship between the rate and the concentrations is called the <i>rate law</i> or the <i>rate equation</i>. It is fundamental to chemical kinetics that the rate law must be determined by experiment as, in general, it cannot be predicted from the stoichiometric equation. Thus the reactions of bromine with aminobenzene (aniline) and dicyanomethane (malononitrile) in aqueous solution follow similar stoichiometric equations, <a href="Chapter02.xhtml#eqn_2.5">eqns 2.5</a> and <a href="Chapter02.xhtml#eqn_2.7">2.7</a>, respectively, but the observed rate laws have quite different forms:</p>
+<figure class="eqn" id="eqn_2.5">
+<img src="../images/f0005-06.jpg" alt="images"/><span class="no">(2.5)</span>
+</figure>
+<figure class="eqn" id="eqn_2.6">
+<img src="../images/f0005-07.jpg" alt="images"/><span class="no">(2.6)</span>
+</figure>
+<figure class="eqn" id="eqn_2.7">
+<img src="../images/f0005-08.jpg" alt="images"/><span class="no">(2.7)</span>
+</figure>
+<figure class="eqn" id="eqn_2.8">
+<img src="../images/f0005-09.jpg" alt="images"/><span class="no">(2.8)</span>
+</figure>
+<p class="noindent">The difference between the two rate laws arises from a difference in reaction mechanism&#x2014;reaction schemes which lead to complex rate expressions, such as that given in eqn <a href="Chapter02.xhtml#eqn_2.8">2.8</a>, are discussed in <a href="Chapter03.xhtml#ch03">Chapter 3</a>.</p>
+<a id="page_6" class="page" style="width:70%;"><b>Page 6, Empirical treatment of reaction rates</b></a>
+<p class="indent">Many reactions exhibit a simple rate law whereby the rate is proportional to the product of powers of concentrations, i.e.,</p>
+<p class="eqn" id="eqn_2.9"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>r</mi><mo>=</mo><mi>k</mi><msup>
+   <mi>A</mi>
+   <mrow>
+    <mi>n</mi><mn>1</mn>
+   </mrow>
+  </msup>
+  <msup>
+   <mi>B</mi>
+   <mrow>
+    <mi>n</mi><mn>2</mn>
+   </mrow>
+  </msup>
+  <mo>&#x22EF;</mo>
+ </mrow>
+</math>
+<span class="no">(2.9)</span></p>
+<p class="noindent">In such cases, and in such cases only, the overall <i>reaction order, n</i>, is defined as the sum of the exponents</p>
+<p class="eqn" id="eqn_2.10"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>n</mi><mo>=</mo><msub>
+   <mi>n</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>+</mo><msub>
+   <mi>n</mi>
+   <mn>2</mn>
+  </msub>
+  <mo>+</mo><mo>&#x22EF;</mo>
+ </mrow>
+</math>
+<span class="no">(2.10)</span></p>
+<p class="noindent">and each individual exponent is called the order with respect to that component. For example, the bromine-aniline reaction, eqn <a href="Chapter02.xhtml#eqn_2.5">2.5</a>, is a second-order reaction, and the order with respect to bromine and aniline separately is one. On the other hand, the concept of reaction order clearly does not apply to the bromine&#x2013;malononitrile reaction, except under limiting conditions where one or other of the terms in the denominator of eqn <a href="Chapter02.xhtml#eqn_2.8">2.8</a> is dominant; the reaction may, however, be described as first order in malononitrile.</p>
+<aside class="abc" style="margin-left:0em;margin-top:-2.2em;" epub:type="sidebar">
+<p class="noindent2">In strong acid, where <i>k</i>&#x2032;[H<sup>&#x002B;</sup>]&#x226B;<i>k</i>&#x2033;[Br<sub>2</sub>],eqn <a href="Chapter02.xhtml#eqn_2.8">2.8</a> reduces to &#x2013; <i>d</i>[Br<sub>2</sub>]/<i>dt</i> &#x003D; <i>k</i>[CH<sub>2</sub>(CN)<sub>2</sub>][Br<sub>2</sub>]/<i>k</i>&#x2032;[H<sup>&#x002B;</sup>].</p>
+</aside>
+<p class="indent">The constant, <i>k</i>, appearing in the rate equation, eqn <a href="Chapter02.xhtml#eqn_2.9">2.9</a>, is called the <i>rate constant</i> or occasionally the <i>rate coefficient</i> or <i>specific reaction rate</i>. It is independent of the concentrations or the scale of the reaction, but is usually dependent upon the temperature and the reaction medium. A simple analysis of the rate equation shows that the units of the rate constant are (concentration)<sup>1<i>&#x2013;n</i></sup> (time)<sup>&#x2013;1</sup>. Thus for a first-order reaction (<i>n</i> &#x003D; 1), the units of the rate constant are (time)<sup>&#x2013;1</sup>, i.e., s<sup>&#x2013;1</sup>, and for a second-order reaction (<i>n</i> &#x003D; 2) the units are (concentration &#x00D7; time)<sup>&#x2013;1</sup>, i.e., mol<sup>&#x2013;1</sup> dm<sup>3</sup> s<sup>&#x2013;1</sup> (M<sup>&#x2013;1</sup> s<sup>&#x2013;1</sup>).</p>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_2.3">
+<h2 class="h2"><b>2.3</b><span class="space">&#160;</span><b>Integrated rate equations</b></h2>
+<p class="noindent">The reaction rate is not normally measured directly; rather, the concentration of one of the reactants or products is monitored as a function of time. A typical result is illustrated in <a href="#fig_2.1">Fig. 2.1</a> for the rearrangement of <i>N</i>-bromoacetanilide to 4-bromoacetanilide, eqn <a href="Chapter02.xhtml#eqn_2.11">2.11</a>.</p>
+<p class="eqn" id="eqn_2.11"><img src="../images/f0006-03.jpg" alt="images"/><span class="no" style="margin-top:1em;">(2.11)</span></p>
+<p class="noindent">The concentration of the reactant, <i>N</i>-bromoacetanilide, decreases from its initial value more and more slowly with time and approaches zero asymptotically. The rate at any time is given by the negative slope of the curve, determined by graphical or other means.</p>
+<p class="indent">In practice, however, since it is the concentration which is measured, it is much more convenient to work with the <i>integrated rate equation</i>. The form of the equation depends upon the rate law, and a commonly used way of determining both the rate law and rate constant is to compare the experimental results with the integrated rate equations for reactions of different orders. The procedure is best illustrated through examples.</p>
+<aside class="abc" style="margin-left:0em;margin-top:-22.2em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.1">
+ <img src="../images/f0006-04.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="width:100%;margin-left:0em;margin-top:1em"><b>Fig. 2.1</b> The rearrangement of <i>N</i>-bromoacetanilide in chlorobenzene at 15&#x00B0;C (Bell 1934).</p>
+</figcaption>
+</figure>
+</aside>
+<a id="page_7" class="page" style="width:70%;"><b>Page 7, Empirical treatment of reaction rates</b></a>
+<p class="h2"><a id="heading-2_4"/><b>First-order reaction</b></p>
+<p class="noindent">The simplest type of reaction normally encountered is a <i>first-order</i> reaction, for which the rate is directly proportional to a single reactant concentration</p>
+<p class="eqn" id="eqn_2.12"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow><mrow>
+  <mo>&#x2212;</mo><mi>d</mi><mi>A</mi>
+ </mrow><mo>/</mo><mrow>
+  <mi>d</mi><mi>t</mi>
+ </mrow></mrow>
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mo>=</mo><mi>k</mi><mi>A</mi>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+   <mtd>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+ </mtable>
+</math>
+<span class="no">(2.12)</span></p>
+<p class="noindent">Rearranging the equation and integrating from time <i>t</i> &#x003D; 0, corresponding to an initial concentration, <i>A</i><sub>0</sub>, to time <i>t</i>, concentration <i>A</i></p>
+<figure class="eqn">
+<img src="../images/f0007-02.jpg" alt="images"/>
+</figure>
+<p class="noindent">gives the integrated equation 2.13.</p>
+<p class="eqn" id="eqn_2.13"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mtext>ln&#x00A0;</mtext><mi>A</mi><mo>&#x2212;</mo><mi>ln</mi><msub>
+   <mi>A</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>=</mo><mo>&#x2212;</mo><mi>k</mi><mi>t</mi><mtext>&#x2009;</mtext>
+ </mrow>
+</math>
+<span class="no">(2.13)</span></p>
+<p class="noindent">This may be written in two alternative convenient forms:</p>
+<p class="eqn" id="eqn_2.14"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>ln</mi><mo stretchy='false'>(</mo><mrow><mrow>
+   <msub>
+    <mi>A</mi>
+    <mn>0</mn>
+   </msub>
+   
+  </mrow><mo>/</mo><mi>A</mi></mrow>
+  <mo stretchy='false'>)</mo><mo>=</mo><mi>k</mi><mi>t</mi>
+ </mrow>
+</math>
+<span class="no">(2.14)</span></p>
+<p class="eqn" id="eqn_2.15"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>A</mi><mo>=</mo><msub>
+   <mi>A</mi>
+   <mn>0</mn>
+  </msub>
+  <msup>
+   <mtext>e</mtext>
+   <mrow>
+    <mo>&#x2212;</mo><mi>k</mi><mi>t</mi>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+<span class="no">(2.15)</span></p>
+<p class="noindent">Equation 2.15 in particular shows that for a first-order reaction, there is an exponential decrease in reactant concentration.</p>
+<p class="indent">To test data for a first-order reaction, the experimental results can be analyzed according to eqn <a href="Chapter02.xhtml#eqn_2.13">2.13</a>; e.g., a plot of In <i>A</i> versus time should be a straight line with a slope of &#x2013;<i>k</i>. Such a plot is shown in <a href="#fig_2.2">Fig. 2.2</a> for the rearrangement of <i>N</i>-bromoacetanilide.</p>
+<aside class="abc" style="margin-left:0em;margin-top:-9.2em;" epub:type="sidebar">
+<p class="noindent2">The integrated rate equation (eqn <a href="Chapter02.xhtml#eqn_2.15">2.15</a>) can also be expressed in terms of product formation (A &#x2192; P): it follows from <i>A &#x002B; P</i> &#x003D; <i>A</i><sub>0</sub> &#x003D; <i>P</i><sub>&#x221E;</sub>, that <i>P</i> &#x003D; <i>P<sub>&#x221E;</sub></i> (1 &#x2013; e<sup>&#x2013;<i>kt</i></sup>), where <i>P</i><sub>&#x221E;</sub> is the final concentration of P.</p>
+</aside>
+<p class="indent">An important characteristic of a first-order reaction is provided by the reaction <i>half-life</i>, <i>t</i><sub>1/2</sub>, the time taken for one half of the original substance to disappear. The half-life, which is a very useful and simple measure of the reaction rate, is readily obtained from the integrated rate equation, eqn <a href="Chapter02.xhtml#eqn_2.14">2.14</a>, by noting that <i>t</i><sub>1/2</sub> corresponds to the time at which <i>A</i> &#x003D; <i>A</i><sub>0</sub>/2, i.e., ln 2 &#x003D; <i>kt</i><sub>1/2</sub>, and hence</p>
+<aside class="abc" style="margin-left:0em;margin-top:-4.2em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.2">
+ <img src="../images/f0007-06.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="margin-left:2em;margin-top:1em"><b>Fig. 2.2</b> The arrangement of <i>N</i>-bromoacetanilide (<a href="#fig_2.1">Fig. 2.1</a>), plotted as a first-order reaction.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="eqn" id="eqn_2.16"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>t</mi>
+   <mrow>
+    <mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow>
+    
+   </mrow>
+  </msub>
+  <mo>=</mo><mrow><mrow>
+   <mo stretchy='false'>(</mo><mi>ln</mi><mn>2</mn><mo stretchy='false'>)</mo>
+  </mrow><mo>/</mo><mi>k</mi></mrow>
+  <mo>=</mo><mrow><mrow>
+   <mn>0.693</mn>
+  </mrow><mo>/</mo><mi>k</mi></mrow>
+  
+ </mrow>
+</math>
+<span class="no">(2.16)</span></p>
+<p class="noindent">Notably, the half-life of a first-order reaction is independent of the initial concentration and can be readily obtained from plots of concentration versus time. It provides a rapid means of determining the rate constant, although clearly a more reliable value is to be obtained using all of the data points, via eqn <a href="Chapter02.xhtml#eqn_2.13">2.13</a> or its equivalent.</p>
+<p class="h2"><a id="heading-2_5"/><b>Second-order reaction</b></p>
+<p class="noindent">The simplest form of a <i>second-order</i> reaction is one in which the rate is proportional to the square of the concentration of a single component, for example,</p>
+<p class="eqn" id="eqn_2.17"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mrow><mrow>
+   <mo>&#x2212;</mo><mi>d</mi><mi>A</mi>
+  </mrow><mo>/</mo><mrow>
+   <mi>d</mi><mi>t</mi>
+  </mrow></mrow>
+  <mo>=</mo><mi>k</mi><msup>
+   <mi>A</mi>
+   <mn>2</mn>
+  </msup>
+  
+ </mrow>
+</math>
+<span class="no">(2.17)</span></p>
+<p class="noindent">Again, rearranging and integrating</p>
+<p class="eqn"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow><mrow>
+  <mo>&#x2212;</mo><mi>d</mi><mi>A</mi>
+ </mrow><mo>/</mo><mrow>
+  <msup>
+   <mi>A</mi>
+   <mn>2</mn>
+  </msup>
+  <mo>=</mo><mi>k</mi><mi>d</mi><mi>t</mi>
+ </mrow></mrow>
+ 
+</math>
+</p>
+<a id="page_8" class="page" style="width:70%;"><b>Page 8, Empirical treatment of reaction rates</b></a>
+<p class="eqn"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mo>&#x2212;</mo><mstyle displaystyle='true'>
+  <mrow>
+   <msubsup>
+    <mo>&#x222B;</mo>
+    <mrow>
+     <msub>
+      <mi>A</mi>
+      <mn>0</mn>
+     </msub>
+     
+    </mrow>
+    <mi>A</mi>
+   </msubsup>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <mi>d</mi><mi>A</mi>
+     </mrow>
+     <mrow>
+      <msup>
+       <mi>A</mi>
+       <mn>2</mn>
+      </msup>
+      
+     </mrow>
+    </mfrac>
+    <mo>=</mo><mstyle displaystyle='true'>
+     <mrow>
+      <msubsup>
+       <mo>&#x222B;</mo>
+       <mn>0</mn>
+       <mi>t</mi>
+      </msubsup>
+      <mrow>
+       <mi>k</mi><mi>d</mi><mi>t</mi>
+      </mrow>
+     </mrow>
+     
+    </mstyle>
+   </mrow>
+  </mrow>
+  
+ </mstyle>
+</math>
+</p>
+<p class="noindent">gives the corresponding integrated rate equation:</p>
+<p class="eqn" id="eqn_2.18"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mrow><mn>1</mn><mo>/</mo><mi>A</mi></mrow>
+  <mo>&#x2212;</mo><mrow><mn>1</mn><mo>/</mo><mrow>
+   <msub>
+    <mi>A</mi>
+    <mn>0</mn>
+   </msub>
+   <mo>=</mo><mi>k</mi><mi>t</mi>
+  </mrow></mrow>
+  
+ </mrow>
+</math>
+<span class="no">(2.18)</span></p>
+<p class="noindent">Such a rate law is observed for the decomposition of the hypochlorite ion in solution, eqn <a href="Chapter02.xhtml#eqn_2.19">2.19</a></p>
+<figure class="eqn" id="eqn_2.19">
+<img src="../images/f0008-03.jpg" alt="images"/><span class="no">(2.19)</span>
+</figure>
+<p class="indent">Equation 2.18 shows that a plot of 1/<i>A</i> versus <i>t</i> should be linear with slope equal to the rate constant, <i>k</i>. It may also be used to obtain an expression for the half-life of a simple second-order reaction, by substituting <i>A &#x003D;</i> <i>A</i><sub>0</sub>/2 when <i>t &#x003D; t</i><sub>1/2</sub> to give 1/<i>A</i><sub>0</sub> &#x003D; <i>kt</i><sub>1/2</sub>, i.e.,</p>
+<aside class="abc" style="margin-left:0em;margin-top:-10.2em;" epub:type="sidebar">
+<p class="noindent2">Note the difference between the stoichiometry and the order with respect to [CIO<sup>&#x2013;</sup>]. This shows that the reaction must involve more than one step (Ch. 3): for example, <img src="../images/f0008-04.jpg" alt="images"/></p>
+</aside>
+<p class="eqn" id="eqn_2.20"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>t</mi>
+   <mrow>
+    <mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow>
+    
+   </mrow>
+  </msub>
+  <mo>=</mo><mrow><mn>1</mn><mo>/</mo><mrow>
+   <mrow><mo>(</mo>
+    <mrow>
+     <mi>k</mi><msub>
+      <mi>A</mi>
+      <mn>0</mn>
+     </msub>
+     
+    </mrow>
+   <mo>)</mo></mrow>
+  </mrow></mrow>
+  
+ </mrow>
+</math>
+<span class="no">(2.20)</span></p>
+<p class="noindent">Thus, <i>t</i><sub>1/2</sub> is inversely proportional to the initial concentration (cf. eqn <a href="Chapter02.xhtml#eqn_2.16">2.16</a> for a first-order reaction). It follows that the dependence of the half-life on concentration can be used as a simple means to distinguish between a first- and a second-order reaction.</p>
+<p class="indent">Much more common are reactions which are second order overall but first order with respect to each of two reagents,</p>
+<p class="eqn" id="eqn_2.21"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable columnalign='right'>
+  <mtr columnalign='right'>
+   <mtd columnalign='right'>
+    <mrow>
+     <mtext>A</mtext><mo>+</mo><mtext>B</mtext><mover>
+      <mo>&#x2192;</mo>
+      <mi>k</mi>
+     </mover>
+     <mtext>products</mtext><mrow><mo>(</mo>
+      <mtext>P</mtext>
+     <mo>)</mo></mrow>
+    </mrow>
+   </mtd>
+   <mtd columnalign='right'>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  <mtr columnalign='right'>
+   <mtd columnalign='right'>
+    <mrow>
+     <mo>&#x2212;</mo><mrow><mrow>
+      <mi>d</mi><mi>A</mi>
+     </mrow><mo>/</mo><mrow>
+      <mi>d</mi><mi>t</mi>
+     </mrow></mrow>
+     <mo>=</mo><mi>k</mi><mi>A</mi><mi>B</mi>
+    </mrow>
+</mtd></mtr>
+ </mtable>
+</math>
+<span class="no" style="margin-top:2em;">(2.21)</span></p>
+<p class="noindent">In the special case where the concentrations of A and B are equal, eqn <a href="Chapter02.xhtml#eqn_2.21">2.21</a> becomes identical to eqn <a href="Chapter02.xhtml#eqn_2.17">2.17</a>, and the data may be treated by plotting 1/(concentration) versus time, <a href="#fig_2.3">Fig. 2.3</a>. For the more usual case, where the initial concentrations are not equal, the rate equation cannot be integrated directly, and is convenient to use the decrease in concentration, <i>x</i>, of one reactant as the reaction variable. As the two reactants are consumed in equal amounts, <i>A<small> &#x003D; </small>A</i><sub><small>0</small></sub> &#x2013; <i>x</i> and <i>B</i> &#x003D; <i>B</i><sub>0</sub> &#x2013; <i>x</i>, and hence</p>
+<p class="eqn" id="eqn_2.22"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mrow><mrow>
+   <mi>d</mi><mi>x</mi>
+  </mrow><mo>/</mo><mrow>
+   <mi>d</mi><mi>t</mi>
+  </mrow></mrow>
+  <mo>=</mo><mi>k</mi><mrow><mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>A</mi>
+     <mn>0</mn>
+    </msub>
+    <mo>&#x2212;</mo><mi>x</mi>
+   </mrow>
+  <mo>)</mo></mrow><mrow><mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>B</mi>
+     <mn>0</mn>
+    </msub>
+    <mo>&#x2212;</mo><mi>x</mi>
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math>
+<span class="no">(2.22)</span></p>
+<p class="noindent">Note that <i>dA</i>/<i>dt</i> &#x003D; <i>d</i>(<i>A</i><sub>0</sub> &#x2013; <i>x</i>)/<i>dt</i> &#x003D; <i>&#x2013;dx</i>/<i>dt</i> because <i>A</i><sub>0</sub> is a constant.</p>
+<p class="indent">Integration of the last equation from <i>t</i> &#x003D; 0, <i>x</i> &#x003D; 0 is accomplished by the standard method of integration by parts</p>
+<aside class="abc" style="margin-left:0em;margin-top:-18.2em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.3">
+ <img src="../images/f0008-08.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="width:100%;margin-left:0em;margin-top:1em"><b>Fig. 2.3</b> Second-order plot for the reaction I<sup>&#x2013;</sup> &#x002B; OC1<sup>&#x2013;</sup> &#x2192; Cl<sup>&#x2013;</sup> &#x002B; OI<sup>&#x2013;</sup> at 25&#x00B0;C, with [OCl<sup>&#x2013;</sup>] &#x003D; [I<sup>&#x2013;</sup>] &#x003D; [A] (Chia and Connick 1959).</p>
+</figcaption>
+</figure>
+</aside>
+<p class="eqn"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mstyle displaystyle='true'>
+  <mrow>
+   <msubsup>
+    <mo>&#x222B;</mo>
+    <mn>0</mn>
+    <mi>x</mi>
+   </msubsup>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <mi>d</mi><mi>x</mi>
+     </mrow>
+     <mrow>
+      <mrow><mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>A</mi>
+         <mn>0</mn>
+        </msub>
+        <mo>&#x2212;</mo><mi>x</mi>
+       </mrow>
+      <mo>)</mo></mrow><mrow><mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>B</mi>
+         <mn>0</mn>
+        </msub>
+        <mo>&#x2212;</mo><mi>x</mi>
+       </mrow>
+      <mo>)</mo></mrow>
+     </mrow>
+    </mfrac>
+    <mo>=</mo><mstyle displaystyle='true'>
+     <mrow>
+      <msubsup>
+       <mo>&#x222B;</mo>
+       <mn>0</mn>
+       <mi>t</mi>
+      </msubsup>
+      <mrow>
+       <mi>k</mi><mi>d</mi><mi>t</mi>
+      </mrow>
+     </mrow>
+     
+    </mstyle>
+   </mrow>
+  </mrow>
+  
+ </mstyle>
+</math>
+</p>
+<p class="noindent">or equivalently</p>
+<a id="page_9" class="page" style="width:70%;"><b>Page 9, Empirical treatment of reaction rates</b></a>
+<p class="eqn"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mfrac>
+  <mn>1</mn>
+  <mrow>
+   <mrow><mo>(</mo>
+    <mrow>
+     <msub>
+      <mi>A</mi>
+      <mn>0</mn>
+     </msub>
+     <mo>&#x2212;</mo><msub>
+      <mi>B</mi>
+      <mn>0</mn>
+     </msub>
+     
+    </mrow>
+   <mo>)</mo></mrow>
+  </mrow>
+ </mfrac>
+ <mstyle displaystyle='true'>
+  <mrow>
+   <msubsup>
+    <mo>&#x222B;</mo>
+    <mn>0</mn>
+    <mi>x</mi>
+   </msubsup>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mfrac>
+       <mn>1</mn>
+       <mrow>
+        <mrow><mo>(</mo>
+         <mrow>
+          <msub>
+           <mi>B</mi>
+           <mn>0</mn>
+          </msub>
+          <mo>&#x2212;</mo><mi>x</mi>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+      </mfrac>
+      <mo>&#x2212;</mo><mfrac>
+       <mn>1</mn>
+       <mrow>
+        <mrow><mo>(</mo>
+         <mrow>
+          <msub>
+           <mi>A</mi>
+           <mn>0</mn>
+          </msub>
+          <mo>&#x2212;</mo><mi>x</mi>
+         </mrow>
+        <mo>)</mo></mrow>
+       </mrow>
+      </mfrac>
+      
+     </mrow>
+    <mo>)</mo></mrow><mi>d</mi><mi>x</mi>
+   </mrow>
+  </mrow>
+  
+ </mstyle><mo>=</mo><mstyle displaystyle='true'>
+  <mrow>
+   <msubsup>
+    <mo>&#x222B;</mo>
+    <mn>0</mn>
+    <mi>t</mi>
+   </msubsup>
+   <mrow>
+    <mi>k</mi><mi>d</mi><mi>t</mi>
+   </mrow>
+  </mrow>
+  
+ </mstyle>
+</math>
+</p>
+<p class="noindent">to give</p>
+<p class="eqn"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mfrac>
+  <mn>1</mn>
+  <mrow>
+   <mrow><mo>(</mo>
+    <mrow>
+     <msub>
+      <mi>A</mi>
+      <mn>0</mn>
+     </msub>
+     <mo>&#x2212;</mo><msub>
+      <mi>B</mi>
+      <mn>0</mn>
+     </msub>
+     
+    </mrow>
+   <mo>)</mo></mrow>
+  </mrow>
+ </mfrac>
+ <mrow><mo>(</mo>
+  <mrow>
+   <mi>ln</mi><mfrac>
+    <mrow>
+     <mrow><mo>(</mo>
+      <mrow>
+       <msub>
+        <mi>A</mi>
+        <mn>0</mn>
+       </msub>
+       <mo>&#x2212;</mo><mi>x</mi>
+      </mrow>
+     <mo>)</mo></mrow>
+    </mrow>
+    <mrow>
+     <msub>
+      <mi>A</mi>
+      <mn>0</mn>
+     </msub>
+     
+    </mrow>
+   </mfrac>
+   <mo>&#x2212;</mo><mi>ln</mi><mfrac>
+    <mrow>
+     <mrow><mo>(</mo>
+      <mrow>
+       <msub>
+        <mi>B</mi>
+        <mn>0</mn>
+       </msub>
+       <mo>&#x2212;</mo><mi>x</mi>
+      </mrow>
+     <mo>)</mo></mrow>
+    </mrow>
+    <mrow>
+     <msub>
+      <mi>B</mi>
+      <mn>0</mn>
+     </msub>
+     
+    </mrow>
+   </mfrac>
+   
+  </mrow>
+ <mo>)</mo></mrow><mo>=</mo><mi>k</mi><mi>t</mi>
+</math>
+</p>
+<p class="noindent">This can be simplified by combining the two logarithms and noting that <i>A &#x003D; A</i><sub>0</sub> &#x2013; <i>x</i>, <i>B &#x003D; B</i><sub>0</sub> &#x2013; <i>x</i> to give the desired equation</p>
+<p class="eqn" id="eqn_2.23"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mfrac>
+   <mn>1</mn>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>A</mi>
+       <mn>0</mn>
+      </msub>
+      <mo>&#x2212;</mo><msub>
+       <mi>B</mi>
+       <mn>0</mn>
+      </msub>
+      
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </mfrac>
+  <mi>ln</mi><mfrac>
+   <mrow>
+    <msub>
+     <mi>B</mi>
+     <mn>0</mn>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <msub>
+     <mi>A</mi>
+     <mn>0</mn>
+    </msub>
+    
+   </mrow>
+  </mfrac>
+  <mfrac>
+   <mi>A</mi>
+   <mi>B</mi>
+  </mfrac>
+  <mo>=</mo><mi>k</mi><mi>t</mi>
+ </mrow>
+</math>
+<span class="no">(2.23)</span></p>
+<p class="noindent">The rate constant, <i>k</i>, may be determined from a plot of ln <i>A</i>/<i>B</i> versus <i>t</i>, which should be linear with a slope equal to (<i>A</i><sub>0</sub> &#x2013; <i>B</i><sub>0</sub>)<i>k</i>.</p>
+<p class="indent">Numerous examples of bimolecular reactions with rate laws of the type given in eqn <a href="Chapter02.xhtml#eqn_2.21">2.21</a> exist, some of which are collected in <a href="#tab_2.1">Table 2.1</a>.</p>
+<p class="tablecaption"><a id="tab_2.1" class="page"></a><b>Table 2.1</b> Second-order reactions.</p>
+<table class="table">
+<tr><td class="tline2">(i)</td>
+<td class="tline2">alkaline hydrolysis of esters<br/>
+<br/>
+<img src="../images/f0009-04.jpg" alt="images"/></td></tr>
+<tr><td>(ii)</td>
+<td>nucleophilic substitution<br/>
+Cl<sup>&#x2013;</sup> &#x002B;CH<sub>3</sub>I &#x2192; CH<sub>3</sub>Cl &#x002B; I<sup>&#x2013;</sup></td></tr>
+<tr><td>(iii)</td>
+<td>bromination of alkenes<br/>
+CH<sub>3</sub>CH<sub>2</sub>&#x003D;CH<sub>2</sub> &#x002B; Br<sub>2</sub> &#x2192; CH<sub>3</sub>CHBrCH<sub>2</sub>Br</td></tr>
+<tr>
+<td>(iv)</td>
+<td>base-promoted elimination<br/>
+CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>Cl &#x002B; OH<sup>&#x2013;</sup> &#x2192; CH<sub>3</sub>CH<sub>2</sub>CH&#x003D;CH<sub>2</sub></td></tr>
+<tr><td class="tline1">(v)</td>
+<td class="tline1">cycloaddition<br/>
+<br/>
+<img src="../images/f0009-05.jpg" alt="images"/></td></tr>
+</table>
+<p class="h2"><a id="heading-2_6"/><b>Third-order reaction</b></p>
+<p class="noindent"><i>Third-order</i> reactions are less commonly encountered, but a very important class of reactions exhibiting third-order kinetics is the acid- or base-catalysed addition of nucleophiles to carbonyl compounds (Jencks 1981); for example, the addition of alcohols, ROH, to formaldehyde catalysed by acid HA (thought to proceed via 1):</p>
+<figure class="eqn">
+<img src="../images/f0009-06.jpg" alt="images"/>
+</figure>
+<p class="noindent">This is a third-order reaction with a rate law given by,</p>
+<figure class="eqn" id="eqn_2.24">
+<img src="../images/f0009-08.jpg" alt="images"/><span class="no">(2.24)</span>
+</figure>
+<aside class="abc" style="margin-left:0em;margin-top:-10.2em;" epub:type="sidebar">
+<figure class="fig1">
+ <img src="../images/f0009-07.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">but, as the catalyst concentration ([HA]) remains constant, it may be combined with the rate constant, <i>k</i><sub>3</sub>, to form a new constant, <i>k</i><sub>2</sub> &#x003D; <i>k</i><sub>3</sub>[HA]:</p>
+<figure class="eqn" id="eqn_2.25">
+<img src="../images/f0009-09.jpg" alt="images"/><span class="no">(2.25)</span>
+</figure>
+<p class="noindent">This rate law, which is described as <i>pseudo-second-order</i> (see below), can be treated identically to that for a normal second-order reaction.</p>
+<a id="page_10" class="page" style="width:70%;"><b>Page 10, Empirical treatment of reaction rates</b></a>
+<p class="indent">More generally, the method described for the determination of the integrated rate law for a second-order reaction of 1:1 stoichiometry can be applied in a straightforward way to third-order reactions, and indeed other reaction orders and stoichiometries. Some of the solutions are given in <a href="#tab_2.2">Table 2.2</a>.</p>
+<p class="tablecaption"><a id="tab_2.2"/><b>Table 2.2</b> Integrated rate equations</p>
+<figure class="fig1">
+ <img src="../images/f0010-01.jpg" alt="images"/>
+</figure>
+<p class="h2"><a id="heading-2_7"/><b>Pseudo-order reaction</b></p>
+<p class="noindent">The results summarized in <a href="#tab_2.2">Table 2.2</a> show that the integrated rate equations and hence the treatment of kinetic data becomes rapidly more complex as the reaction order increases. However, if the reaction conditions are such that the concentrations of one or more of the species appearing in the rate law remain effectively constant then these terms may be included in the rate constant <i>k.</i> The result is that <i>mathematically</i> the reactions become equivalent to lower order reactions. The reactions are then described as <i>pseudo-nth-order</i>, where <i>n</i> is the sum of the exponents of those concentration factors which change during the reaction. This situation exists for catalytic reactions, where the catalyst concentration remains constant during the reaction, as in the carbonyl addition reactions, eqn <a href="Chapter02.xhtml#eqn_2.24">2.24</a>, <a href="Chapter02.xhtml#eqn_2.25">2.25</a>, and commonly for reactions in buffered solutions.</p>
+<p class="indent">It is often convenient to be able to generate such conditions in order to simplify a kinetic or mechanistic study of a reaction. For the majority of second- or higher-order reactions, this may be achieved by running the reaction with one (or more) of the species in large excess, so that its concentration remains effectively constant. For example, the oxidation of aliphatic aldehydes such as ethanal with bromine in aqueous solution follows second-order kinetics (McTigue and Sime 1963)</p>
+<figure class="eqn" id="eqn_2.26">
+<img src="../images/f0010-02.jpg" alt="images"/><span class="no">(2.26)</span>
+</figure>
+<p class="noindent">However, if the aldehyde is in large excess, its concentration is virtually constant and the reaction obeys pseudo-first-order kinetics</p>
+<a id="page_11" class="page" style="width:70%;"><b>Page 11, Empirical treatment of reaction rates</b></a>
+<figure class="eqn" id="eqn_2.27">
+<img src="../images/f0011-01.jpg" alt="images"/><span class="no">(2.27)</span>
+</figure>
+<p class="noindent">The second-order rate constant, <i>k</i><sub>2</sub> &#x003D; <i>k</i><sub>1</sub>/[CH<sub>3</sub>CHO], can be determined via eqn <a href="Chapter02.xhtml#eqn_2.27">2.27</a> by measuring <i>k</i><sub>1</sub> at known aldehyde concentrations.</p>
+<p class="indent">The use of excess reagent concentrations in this way has very important practical consequences wherever physical methods, such as light absorption or conductance, are used to monitor reactions (<a href="#sec_2.5">Sect. 2.5</a>).</p>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_2.4">
+<h2 class="h2"><b>2.4</b><span class="space">&#160;</span><b>Determination of the rate law</b></h2>
+<p class="noindent">There is no general method for finding the rate law or the order of a reaction. A necessary prerequisite is a careful determination of the reaction stoichiometry, and this, or perhaps an assumed reaction mechanism may point to an initial guess at the rate law. Commonly, a trial-and-error procedure based upon various postulated rate laws is employed, but several useful and relatively systematic approaches may be identified.</p>
+<p class="h2"><a id="heading-2_9"/><b>Method of integration</b></p>
+<p class="noindent">Where a simple rate law is suspected, it is usual to attempt directly to fit concentration-time data for the reaction to the integrated rate equation appropriate to a particular reaction order, as described in the previous section. Thus a first-order reaction should show a linear relation between In (concentration) and time, as illustrated for the rearrangement of <i>N</i>-bromoacetanilide in <a href="#fig_2.2">Fig. 2.2</a>. Similarly for other reaction orders, the corresponding integrated rate equation (<a href="#tab_2.2">Table 2.2</a>) is applied to the kinetic data, by graphical or other means; the procedure is repeated until a satisfactory fit is obtained.</p>
+<p class="indent">A cautionary note is that in order to get reliable results it is essential to study reactions over a wide concentration range. The method relies upon detecting systematic deviations from a predicted rate equation, and these may only become apparent over significant concentration changes. Single reactions should, therefore, be monitored over several half-lives.</p>
+<p class="h2"><a id="heading-2_10"/><b>Half-life method</b></p>
+<p class="noindent">An alternative method of determining the reaction order is to measure the half- life as a function of the initial concentration. This can be done by noting the time required for several successive half-lives within a single kinetic run, or by using a series of reactions with different starting concentrations. In the event of the rate law being of the form</p>
+<p class="eqn" id="eqn_2.28"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mo>&#x2212;</mo><mi>d</mi><mi>A</mi><mo>/</mo><mi>d</mi><mi>t</mi><mo>=</mo><mi>k</mi><msup>
+  <mi>A</mi>
+  <mi>n</mi>
+ </msup>
+ 
+</math>
+<span class="no">(2.28)</span></p>
+<p class="noindent">a simple and characteristic relationship exists between the half-life and the reactant concentration. We have seen that for a first-order reaction, <i>t</i><sub>1/2</sub> (&#x003D; 0.693/<i>k</i>) is independent of starting concentration, whereas it is inversely proportional to the starting concentration for a second-order reaction (<i>t</i><sub>1/2</sub> &#x003D; 1/<i>kA</i><sub>0</sub>). For the <a id="page_12" class="page"><b>Page 12, Empirical treatment of reaction rates</b></a>general case, integration of eqn <a href="Chapter02.xhtml#eqn_2.28">2.28</a> and substituting <i>A</i> &#x003D; <i>A</i><sub>0</sub>/2 for <i>t</i> &#x003D; <i>t</i><sub>1/2</sub> gives</p>
+<p class="eqn" id="eqn_2.29"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msub>
+  <mi>t</mi>
+  <mrow>
+   <mn>1</mn><mo>/</mo><mn>2</mn>
+  </mrow>
+ </msub>
+ <mo>=</mo><mn>0.693</mn><mo>/</mo><mi>k</mi><mo stretchy='false'>(</mo><mi>n</mi><mo>=</mo><mn>1</mn><mo stretchy='false'>)</mo><mo>:</mo><msub>
+  <mi>t</mi>
+  <mrow>
+   <mn>1</mn><mo>/</mo><mn>2</mn>
+  </mrow>
+ </msub>
+ <mo>=</mo><mfrac>
+  <mrow>
+   <msup>
+    <mn>2</mn>
+    <mrow>
+     <mi>n</mi><mo>&#x2212;</mo><mn>1</mn>
+    </mrow>
+   </msup>
+   <mo>&#x2212;</mo><mn>1</mn>
+  </mrow>
+  <mrow>
+   <mo stretchy='false'>(</mo><mi>n</mi><mo>&#x2212;</mo><mn>1</mn><mo stretchy='false'>)</mo><mi>k</mi><msubsup>
+    <mi>A</mi>
+    <mn>0</mn>
+    <mrow>
+     <mi>n</mi><mo>&#x2212;</mo><mn>1</mn>
+    </mrow>
+   </msubsup>
+   
+  </mrow>
+ </mfrac>
+ <mo stretchy='false'>(</mo><mi>n</mi><mo>&#x2260;</mo><mn>1</mn><mo stretchy='false'>)</mo>
+</math>
+<span class="no">(2.29)</span></p>
+<p class="noindent">Equation 2.29 shows that <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msub>
+  <mi>t</mi>
+  <mrow>
+   <mn>1</mn><mo>/</mo><mn>2</mn>
+  </mrow>
+ </msub>
+ <mi>&#x03B1;</mi><mn>1</mn><mo>/</mo><msubsup>
+  <mi>A</mi>
+  <mn>0</mn>
+  <mrow>
+   <mi>n</mi><mo>&#x2212;</mo><mn>1</mn>
+  </mrow>
+ </msubsup>
+ 
+</math>: the order can usually then be obtained by inspection, but otherwise a plot of log <i>t</i><sub>1/2</sub> versus log <i>A</i><sub><small>0</small></sub> should be a straight line of slope (1 <i>&#x2013; n</i>).</p>
+<aside class="abc" style="margin-left:0em;margin-top:-1.2em;" epub:type="sidebar">
+<p class="noindent2">From eqn <a href="Chapter02.xhtml#eqn_2.29">2.29</a>, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <mi>log</mi><msub>
+     <mi>t</mi>
+     <mrow>
+      <mn>1</mn><mo>/</mo><mn>2</mn>
+     </mrow>
+    </msub>
+    <mo>=</mo><mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><mi>n</mi><mo stretchy='false'>)</mo><mi>log</mi><msub>
+     <mi>A</mi>
+     <mn>0</mn>
+    </msub>
+    <mo>+</mo>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mi>log</mi><mrow><mo>(</mo>
+     <mrow>
+      <mfrac>
+       <mrow>
+        <msup>
+         <mn>2</mn>
+         <mrow>
+          <mi>n</mi><mo>&#x2212;</mo><mn>1</mn>
+         </mrow>
+        </msup>
+        <msub>
+         <mrow></mrow>
+         <mrow>
+          <mo>&#x2212;</mo><mn>1</mn>
+         </mrow>
+        </msub>
+        
+       </mrow>
+       <mrow>
+        <mo stretchy='false'>(</mo><mi>n</mi><mo>&#x2212;</mo><mn>1</mn><mo stretchy='false'>)</mo><mi>k</mi>
+       </mrow>
+      </mfrac>
+      
+     </mrow>
+    <mo>)</mo></mrow><mo>=</mo><mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><mi>n</mi><mo stretchy='false'>)</mo><mi>log</mi><msub>
+     <mi>A</mi>
+     <mn>0</mn>
+    </msub>
+    <mo>+</mo><mi>C</mi>
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math>, where C is a constant.</p>
+</aside>
+<p class="indent">The half-life method, where applicable, is the simplest to use and requires the least computation of all of the methods described.</p>
+<p class="h2"><a id="heading-2_11"/><b>Isolation method</b></p>
+<p class="noindent">The principle behind the isolation method is a simple extension of that described for pseudo-order reactions. The method involves &#x2018;isolating&#x2019; one reactant, say A, through use of a large excess of all other reactants, thereby ensuring that their concentrations remain effectively constant. The rate law of a reaction represented by, for example,</p>
+<p class="eqn" id="eqn_2.30"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>r</mi><mo>=</mo><mi>k</mi><msup>
+  <mi>A</mi>
+  <mrow>
+   <msub>
+    <mi>n</mi>
+    <mn>1</mn>
+   </msub>
+   
+  </mrow>
+ </msup>
+ <msup>
+  <mi>B</mi>
+  <mrow>
+   <msub>
+    <mi>&#x03C0;</mi>
+    <mn>2</mn>
+   </msub>
+   
+  </mrow>
+ </msup>
+ <msup>
+  <mi>C</mi>
+  <mrow>
+   <msub>
+    <mi>n</mi>
+    <mn>3</mn>
+   </msub>
+   
+  </mrow>
+ </msup>
+ 
+</math>
+<span class="no">(2.30)</span></p>
+<p class="noindent">reduces under these conditions to a much simpler form in which the concentrations of B and C and their powers are included with the rate constant, <i>k</i>, to give a new rate constant,<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msup>
+  <mi>k</mi>
+  <mo>!</mo>
+ </msup>
+ <mo>=</mo><mi>k</mi><msup>
+  <mi>B</mi>
+  <mrow>
+   <msub>
+    <mi>&#x03C0;</mi>
+    <mn>2</mn>
+   </msub>
+   
+  </mrow>
+ </msup>
+ <msup>
+  <mi>C</mi>
+  <mrow>
+   <msub>
+    <mi>n</mi>
+    <mn>3</mn>
+   </msub>
+   
+  </mrow>
+ </msup>
+ 
+</math> hence</p>
+<p class="eqn" id="eqn_2.31"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>r</mi><mo>=</mo><msup>
+  <mi>k</mi>
+  <mo>!</mo>
+ </msup>
+ <msup>
+  <mi>A</mi>
+  <mrow>
+   <msub>
+    <mi>n</mi>
+    <mn>1</mn>
+   </msub>
+   
+  </mrow>
+ </msup>
+ 
+</math>
+<span class="no">(2.31)</span></p>
+<aside class="abc" style="margin-left:0em;margin-top:-1.2em;" epub:type="sidebar">
+<p class="noindent2">The concentrations of B and C will only change marginally during the reaction because of their large excess over A.</p>
+</aside>
+<p class="noindent">The order with respect to <i>A</i>, <i>n</i><sub>1</sub>, can now be obtained by fitting to the appropriate integrated rate equation (integration method) or from the properties of the reaction half-life (half-life method). Repeating the process by successively isolating the remaining reactants will give the order with respect to each one.</p>
+<p class="indent">The main limitation of this method is that for a complex mechanism involving several steps, the mechanism may be altered by the large concentration changes needed to isolate the various reactants and effects due to solution nonideality may complicate the interpretation.</p>
+<p class="h2"><a id="heading-2_12"/><b>Initial-rate method</b></p>
+<p class="noindent">A more obvious approach is to use the rate equation 2.30 directly to make a comparison between reaction rate and concentration, by measuring the initial rates for solutions of known concentration. For small changes in concentration (&#x2264; 10%), the rate can be approximated to the corresponding ratio of increments, i.e., &#x2013;<i>dA</i>/<i>dt</i> &#x2243; &#x2013;&#x0394;<i>A</i>/&#x0394;<i>t</i>, illustrated in <a href="#fig_2.4">Fig. 2.4</a>. If a measurement is made at two different concentrations of one component with the others held constant, the order with respect to that component can be determined very simply. For example, for two different concentrations of <i>A</i>, <i>A</i><sub>1</sub> and <i>A</i><sub>2</sub>,</p>
+<p class="eqn"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msub>
+  <mi>r</mi>
+  <mn>1</mn>
+ </msub>
+ <mo>&#x2243;</mo><mo>&#x2212;</mo><msub>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mi>&#x0394;</mi><mi>A</mi><mo>/</mo><mi>&#x0394;</mi><mi>t</mi>
+   </mrow>
+  <mo>)</mo></mrow>
+  <mn>1</mn>
+ </msub>
+ <mo>=</mo><mi>k</mi><msubsup>
+  <mi>A</mi>
+  <mn>1</mn>
+  <mrow>
+   <msub>
+    <mi>n</mi>
+    <mn>1</mn>
+   </msub>
+   
+  </mrow>
+ </msubsup>
+ <msup>
+  <mi>B</mi>
+  <mrow>
+   <msub>
+    <mi>n</mi>
+    <mn>2</mn>
+   </msub>
+   
+  </mrow>
+ </msup>
+ <msup>
+  <mtext>C</mtext>
+  <mrow>
+   <msub>
+    <mi>n</mi>
+    <mn>3</mn>
+   </msub>
+   
+  </mrow>
+ </msup>
+ 
+</math>
+</p>
+
+<aside class="abc" style="margin-left:0em;margin-top:-18.2em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.4">
+ <img src="../images/f0012-07.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="width:100%;margin-left:0em;margin-top:1em"><b>Fig. 2.4</b> Estimation of the initial rate of a chemical reaction.</p>
+</figcaption>
+</figure>
+</aside>
+<a id="page_13" class="page" style="width:70%;"><b>Page 13, Empirical treatment of reaction rates</b></a>
+<p class="eqn"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msub>
+  <mi>r</mi>
+  <mn>2</mn>
+ </msub>
+ <mo>&#x2243;</mo><mo>&#x2212;</mo><msub>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mi>&#x0394;</mi><mi>A</mi><mo>/</mo><mi>&#x0394;</mi><mi>t</mi>
+   </mrow>
+  <mo>)</mo></mrow>
+  <mn>2</mn>
+ </msub>
+ <mo>=</mo><mi>k</mi><msubsup>
+  <mi>A</mi>
+  <mn>2</mn>
+  <mrow>
+   <msub>
+    <mi>n</mi>
+    <mn>1</mn>
+   </msub>
+   
+  </mrow>
+ </msubsup>
+ <msup>
+  <mi>B</mi>
+  <mrow>
+   <msub>
+    <mi>n</mi>
+    <mn>2</mn>
+   </msub>
+   
+  </mrow>
+ </msup>
+ <msup>
+  <mtext>C</mtext>
+  <mrow>
+   <msub>
+    <mi>n</mi>
+    <mn>3</mn>
+   </msub>
+   
+  </mrow>
+ </msup>
+ 
+</math>
+</p>
+<p class="noindent">hence</p>
+<p class="eqn" id="eqn_2.32"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <msub>
+     <mi>r</mi>
+     <mn>1</mn>
+    </msub>
+    <mo>/</mo><msub>
+     <mi>r</mi>
+     <mn>2</mn>
+    </msub>
+    <mo>=</mo><msup>
+     <mrow><mo>(</mo>
+      <mrow>
+       <msub>
+        <mi>A</mi>
+        <mn>1</mn>
+       </msub>
+       <mo>/</mo><msub>
+        <mi>A</mi>
+        <mn>2</mn>
+       </msub>
+       
+      </mrow>
+     <mo>)</mo></mrow>
+     <mrow>
+      <msub>
+       <mi>n</mi>
+       <mn>1</mn>
+      </msub>
+      
+     </mrow>
+    </msup>
+    
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mi>log</mi><mo stretchy='false'>(</mo><msub>
+     <mi>r</mi>
+     <mn>1</mn>
+    </msub>
+    <mo>/</mo><msub>
+     <mi>r</mi>
+     <mn>2</mn>
+    </msub>
+    <mo stretchy='false'>)</mo><mo>=</mo><msub>
+     <mi>n</mi>
+     <mn>1</mn>
+    </msub>
+    <mi>log</mi><mo stretchy='false'>(</mo><msub>
+     <mi>A</mi>
+     <mn>2</mn>
+    </msub>
+    <mo>/</mo><msub>
+     <mi>A</mi>
+     <mn>2</mn>
+    </msub>
+    <mo stretchy='false'>)</mo>
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math>
+
+<span class="no" style="margin-top:2em;">(2.32)</span></p>
+<p class="noindent">This procedure can be used to determine all exponents, <i>n</i><sub>1</sub>,<i>n</i><sub>2</sub>,<i>n</i><sub>3</sub>,... and following this, the rate constant can be evaluated from any one run.</p>
+<p class="indent">The initial-rate method is the most general of those described and has the advantage that it can be used to handle complex rate equations. For simpler cases, however, it is more cumbersome to apply and the approximations involved in measuring the initial slopes give rise to less accurate results than the appropriate integrated rate equation.</p>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_2.5">
+<h2 class="h2"><b>2.5</b><span class="space">&#160;</span><b>Practical measurement of rates</b></h2>
+<p class="noindent">It is not profitable to attempt to describe all of the methods used to determine rates, but many of the major advances in kinetics have followed from the development of new techniques. This is especially true in the area of rapid reactions (Ch. 5). For conventional reactions, the problem reduces essentially to one of determining concentration as a function of time. The most desirable analytical methods are those which allow a continuous and rapid measurement of the concentration of a particular component, but it is normally necessary only to measure some property of the system as a whole which indicates the extent of reaction. The methods may be broadly divided into two categories:</p>
+<ul style="margin-top:0.5em;">
+<li style="margin-left:1em;margin-top:0.5em;"> <i>Chemical methods</i>. These involve sampling, quenching of the reaction, and direct determination of concentration using standard analytical methods. Their principal advantage is that they give an absolute measure of the concentration of a specific component. It is, however, difficult to automate chemical methods and they are not applicable to the majority of fast-reaction techniques.</li>
+<li style="margin-left:1em;margin-top:0.5em;"> <i>Physical methods</i>. Any physical property which varies monotonically with the extent of reaction can, in principle, be used to determine the reaction rate. By far the most useful are those which vary linearly with concentration&#x2014;conductance (ionic reagents), absorbtion of visible or ultraviolet light, rotation of polarized light (chiral molecules), volumes of dilute solutions, etc. A key feature of physical methods is the potential for continuous, rapid-response measurement, without the need for sampling.</li>
+</ul>
+<p class="noindent">&#160;</p>
+<p class="indent">The use of physical properties for the study of first-order reactions is especially convenient, as for such reactions <i>the absolute concentrations of the reactants or products need not be known</i>. Consider the base hydrolysis of the cobalt complex, [Co(NH<sub>3</sub>)<sub>5</sub>L]<sup>3&#x002B;</sup>, where L &#x003D; (CH<sub>3</sub>)<sub>2</sub>SO, in glycine buffers (Dixon <i>etal</i>. 1981)</p>
+<figure class="eqn">
+<img src="../images/f0013-03.jpg" alt="images"/>
+</figure>
+<a id="page_14" class="page" style="width:70%;"><b>Page 14, Empirical treatment of reaction rates</b></a>
+<figure class="eqn" id="eqn_2.33">
+<img src="../images/f0014-01.jpg" alt="images"/><span class="no">(2.33)</span>
+</figure>
+<p class="noindent">The release of dimethyl sulfoxide is accompanied by an increase in absorbance, <i>D</i>, at 325 nm, illustrated schematically in <a href="#fig_2.5">Fig. 2.5</a>. It is clear that the absorbance values during the reaction are simply related to the concentration of the cobalt complex, represented by A, as follows</p>
+<p class="eqn" id="eqn_2.34"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <msub>
+     <mi>A</mi>
+     <mn>0</mn>
+    </msub>
+    <mi>&#x03B1;</mi><mo stretchy='false'>(</mo><msub>
+     <mi>D</mi>
+     <mi>&#x221E;</mi>
+    </msub>
+    <mo>&#x2212;</mo><msub>
+     <mi>D</mi>
+     <mn>0</mn>
+    </msub>
+    <mo stretchy='false'>)</mo><mo>;</mo><msub>
+     <mi>A</mi>
+     <mn>0</mn>
+    </msub>
+    <mo>=</mo><mi>C</mi><mo stretchy='false'>(</mo><msub>
+     <mi>D</mi>
+     <mi>&#x221E;</mi>
+    </msub>
+    <mo>&#x2212;</mo><msub>
+     <mi>D</mi>
+     <mn>0</mn>
+    </msub>
+    <mo stretchy='false'>)</mo>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mi>A</mi><mi>&#x03B1;</mi><mo stretchy='false'>(</mo><msub>
+     <mi>D</mi>
+     <mi>&#x221E;</mi>
+    </msub>
+    <mo>&#x2212;</mo><mi>D</mi><mo stretchy='false'>)</mo><mo>&#x0027;</mo><mi>A</mi><mo>=</mo><mi>C</mi><mo stretchy='false'>(</mo><msub>
+     <mi>D</mi>
+     <mi>&#x03B1;</mi>
+    </msub>
+    <mo>&#x2212;</mo><mi>D</mi><mo stretchy='false'>)</mo>
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math>
+<span class="no" style="margin-top:2em;">(2.34)</span></p>
+<aside class="abc" style="margin-left:0em;margin-top:-8.8em;" epub:type="sidebar">
+<p class="noindent2">The absorbance, <i>D</i>, is defined as log(<i>I</i><sub>0</sub>/<i>I</i>), where <i>I</i><sub>0</sub> and <i>I</i> are the intensities of the incident and transmitted light.</p>
+</aside>
+<p class="noindent">where C is a proportionality constant related to the absorption coefficients of the reactants and products at 325 nm.</p>
+<p class="indent">Substitution of eqn <a href="Chapter02.xhtml#eqn_2.34">2.34</a> into the integrated rate equation for a first-order reaction, eqn <a href="Chapter02.xhtml#eqn_2.14">2.14</a>, gives the corresponding equations expressed in terms of the solution absorbance, <a href="Chapter02.xhtml#eqn_2.35">eqns 2.35</a> or <a href="Chapter02.xhtml#eqn_2.36">2.36</a>.</p>
+<p class="eqn" id="eqn_2.35"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtext>In</mtext><mo stretchy='false'>(</mo><msub>
+  <mi>D</mi>
+  <mi>&#x221E;</mi>
+ </msub>
+ <mo>&#x2212;</mo><mi>D</mi><mo stretchy='false'>)</mo><mo>=</mo><mo>&#x2212;</mo><mi>k</mi><mi>t</mi><mo>+</mo><mtext>In</mtext><mo stretchy='false'>(</mo><msub>
+  <mi>D</mi>
+  <mi>&#x221E;</mi>
+ </msub>
+ <mo>&#x2212;</mo><msub>
+  <mi>D</mi>
+  <mn>0</mn>
+ </msub>
+ <mo stretchy='false'>)</mo>
+</math>
+<span class="no">(2.35)</span></p>
+<p class="eqn" id="eqn_2.36"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>D</mi>
+   <mi>&#x221E;</mi>
+  </msub>
+  <mo>&#x2212;</mo><mi>D</mi><mo>=</mo><mrow><mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>D</mi>
+     <mi>&#x221E;</mi>
+    </msub>
+    <mo>&#x2212;</mo><msub>
+     <mi>D</mi>
+     <mn>0</mn>
+    </msub>
+    
+   </mrow>
+  <mo>)</mo></mrow><msup>
+   <mi>e</mi>
+   <mrow>
+    <mo>&#x2212;</mo><mi>k</mi><mi>t</mi>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+<span class="no">(2.36)</span></p>
+<p class="noindent">These show that the absorbance approaches the value at the end of the reaction (infinity value) with the same rate constant, <i>k</i>, as that for the reaction expressed in terms of the reactant concentration. Furthermore, the required rate constant can be obtained directly from the slope of a plot of ln(<i>D</i><sub>&#x221E;</sub> &#x2013; <i>D</i>) versus time. Exactly analogous equations can be written for reactions monitored in terms of optical rotation (<i>&#x03B1;</i>), conductance (&#x039B;), etc.</p>
+<p class="indent">The situation is not as straightforward for second- or higher-order reactions. Applying the same analysis to the alkaline hydrolysis of an ester, such as ethyl acetate, with equal concentrations</p>
+<figure class="eqn" id="eqn_2.37">
+<img src="../images/f0014-06.jpg" alt="images"/><span class="no">(2.37)</span>
+</figure>
+<p class="noindent">i.e., substituting eqn <a href="Chapter02.xhtml#eqn_2.34">2.34</a> into eqn <a href="Chapter02.xhtml#eqn_2.18">2.18</a>, gives eqn <a href="Chapter02.xhtml#eqn_2.38">2.38</a> for the change in absorbance at the selected wavelength</p>
+<p class="eqn" id="eqn_2.38"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mfrac>
+   <mn>1</mn>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>D</mi>
+       <mi>&#x221E;</mi>
+      </msub>
+      <mo>&#x2212;</mo><mi>D</mi>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </mfrac>
+  <mo>&#x2212;</mo><mfrac>
+   <mn>1</mn>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>D</mi>
+       <mi>&#x221E;</mi>
+      </msub>
+      <mo>&#x2212;</mo><mi>D</mi>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </mfrac>
+  <mo>=</mo><mi>C</mi><msub>
+   <mi>k</mi>
+   <mn>2</mn>
+  </msub>
+  <mi>t</mi>
+ </mrow>
+</math>
+<span class="no">(2.38)</span></p>
+<aside class="abc" style="margin-left:0em;margin-top:-30.2em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.5">
+ <img src="../images/f0014-03.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="margin-left:0em;width:100%;margin-top:1em"><b>Fig. 2.5</b> Relationship between concentration and absorbance changes (schematic) for the hydrolysis of [Co(NH<sub>3</sub>)<sub>5</sub>L]<sup>3&#x002B;</sup>, eqn <a href="Chapter02.xhtml#eqn_2.33">2.33</a>.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="noindent">This equation has the same form as that for the integrated equation expressed in terms of concentration, eqn <a href="Chapter02.xhtml#eqn_2.18">2.18</a>, and a plot of 1/(<i>D</i><sub>&#x221E;</sub> &#x2013; <i>D</i>) versus time is linear: the slope, however, is <i>Ck</i><sub>2</sub> and not simply the rate constant <i>k</i><sub>2</sub>. Thus evaluation of the rate constant requires a knowledge of the proportionality constant, <i>C</i>, between the absorbance change and the extent of reaction. The required proportionality constant can often be obtained by appropriate calibration of the system, but where possible it is normally more convenient and more accurate to study the reaction under pseudo-first-order conditions&#x2014;for example, in the above case by using excess hydroxide.</p>
+<aside class="abc" style="margin-left:0em;margin-top:-9.2em;" epub:type="sidebar">
+<p class="noindent2">It should be noted that these restrictions regarding the application of physical methods to higher-order reactions may be relaxed in certain rapid-reaction techniques in which only very small changes in concentration occur (<a href="Chapter05.xhtml#ch05">Chapter 5</a>).</p>
+</aside>
+<a id="page_15" class="page" style="width:70%;"><b>Page 15, Empirical treatment of reaction rates</b></a>
+<p class="h2"><a id="heading-2_14"/><b>Methods where the final value is unknown</b></p>
+<p class="noindent">There are many situations in which the final concentrations of a reaction or the final value (infinity value) of a physical parameter used to monitor a reaction are unknown. For example, to approach within one per cent of the infinity value requires some seven reaction half-lives, and for a slow reaction this may take an excessively long time. Also, the infinity value may in some cases be disturbed by a subsequent slow reaction.</p>
+<p class="indent">For first-order reactions, Guggenheim (1926) has described a method for finding the rate constant where the infinity value is unknown. This is illustrated for the decarboxylation of 2-carboxypyridine</p>
+<figure class="eqn" id="eqn_2.39">
+<img src="../images/f0015-01.jpg" alt="images"/><span class="no">(2.39)</span>
+</figure>
+<p class="noindent">The reaction can be followed by observing the increase in pressure over the solution due to the released CO<sub>2</sub>, <a href="#fig_2.6">Fig. 2.6</a>.</p>
+<p class="indent">If times <i>t</i><sub>1</sub>, <i>t</i><sub>2</sub>, <i>t</i><sub>3</sub>,..., pressure <i>P</i><sub>1</sub>, <i>P</i><sub>2</sub>, <i>P</i><sub>3</sub>,&#x2026;, and times <i>t</i><sub>1</sub> &#x002B; &#x0394;, <i>t</i><sub>2</sub> &#x002B; &#x0394;, <i>t</i><sub>3</sub> &#x002B; &#x0394;,..., pressure <i>P</i><sub>1&#x002B;&#x0394;</sub>, <i>P</i><sub>2&#x002B;&#x0394;</sub>, <i>P</i><sub>3&#x002B;&#x0394;</sub>,&#x2026;, are selected, where &#x0394; is a constant time interval, it follows that (compare eqn <a href="Chapter02.xhtml#eqn_2.36">2.36</a>):</p>
+<p class="eqn" id="eqn_2.40"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>P</mi>
+   <mi>&#x221E;</mi>
+  </msub>
+  <mo>&#x2212;</mo><msub>
+   <mi>P</mi>
+   <mi>t</mi>
+  </msub>
+  <mo>=</mo><mo stretchy='false'>(</mo><msub>
+   <mi>P</mi>
+   <mi>&#x221E;</mi>
+  </msub>
+  <mo>&#x2212;</mo><msub>
+   <mi>P</mi>
+   <mn>0</mn>
+  </msub>
+  <mo stretchy='false'>)</mo><msup>
+   <mtext>e</mtext>
+   <mrow>
+    <mo>&#x2212;</mo><mi>k</mi><mi>t</mi>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+<span class="no">(2.40)</span></p>
+<p class="eqn" id="eqn_2.41"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>P</mi>
+   <mi>&#x221E;</mi>
+  </msub>
+  <mo>&#x2212;</mo><msub>
+   <mi>P</mi>
+   <mrow>
+    <mi>t</mi><mo>+</mo><mo>&#x25B3;</mo>
+   </mrow>
+  </msub>
+  <mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><msub>
+   <mi>P</mi>
+   <mi>&#x221E;</mi>
+  </msub>
+  <mo>&#x2212;</mo><msub>
+   <mi>P</mi>
+   <mn>0</mn>
+  </msub>
+  <mo stretchy='false'>)</mo><msup>
+   <mtext>e</mtext>
+   <mrow>
+    <mo>&#x2212;</mo><mi>k</mi><mo stretchy='false'>(</mo><mi>t</mi><mo>+</mo><mo>&#x25B3;</mo><mo stretchy='false'>)</mo>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+<span class="no">(2.41)</span></p>
+<p class="noindent">Subtracting eqn <a href="Chapter02.xhtml#eqn_2.40">2.40</a> from eqn <a href="Chapter02.xhtml#eqn_2.41">2.41</a> gives</p>
+<p class="eqn" id="eqn_2.42"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable columnalign='right'>
+  <mtr columnalign='right'>
+   <mtd columnalign='right'>
+    <mrow></mrow>
+   </mtd>
+   <mtd columnalign='right'>
+    <mrow>
+     <msub>
+      <mi>P</mi>
+      <mrow>
+       <mi>t</mi><mo>+</mo><mo>&#x25B3;</mo>
+      </mrow>
+     </msub>
+     <mo>&#x2212;</mo><msub>
+      <mi>P</mi>
+      <mi>t</mi>
+     </msub>
+     
+    </mrow>
+   </mtd>
+   <mtd columnalign='right'>
+    <mo>=</mo>
+   </mtd>
+   <mtd columnalign='right'>
+    <mrow>
+     <mo stretchy='false'>(</mo><msub>
+      <mi>P</mi>
+      <mi>&#x221E;</mi>
+     </msub>
+     <mo>&#x2212;</mo><msub>
+      <mi>P</mi>
+      <mn>0</mn>
+     </msub>
+     <mo stretchy='false'>)</mo><msup>
+      <mtext>e</mtext>
+      <mrow>
+       <mo>&#x2212;</mo><mi>k</mi><mi>t</mi>
+      </mrow>
+     </msup>
+     <mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><msup>
+      <mtext>e</mtext>
+      <mrow>
+       <mo>&#x2212;</mo><mi>k</mi><mo>&#x25B3;</mo>
+      </mrow>
+     </msup>
+     <mo stretchy='false'>)</mo>
+    </mrow>
+   </mtd>
+   <mtd columnalign='right'>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  <mtr columnalign='right'>
+   <mtd columnalign='right'>
+    <mrow>
+     <mtext>i</mtext><mtext>.e</mtext><mtext>.</mtext>
+    </mrow>
+   </mtd>
+   <mtd columnalign='right'>
+    <mrow>
+     <msub>
+      <mrow>
+       <mtext>In(P</mtext>
+      </mrow>
+      <mrow>
+       <mi>T</mi><mo>+</mo><mo>&#x25B3;</mo>
+      </mrow>
+     </msub>
+     <mo>&#x2212;</mo><msub>
+      <mi>P</mi>
+      <mi>t</mi>
+     </msub>
+     <mtext>)</mtext>
+    </mrow>
+   </mtd>
+   <mtd columnalign='right'>
+    <mo>=</mo>
+   </mtd>
+   <mtd columnalign='right'>
+    <mrow>
+     <mo>&#x2212;</mo><mi>k</mi><mi>t</mi><mo>+</mo><mtext>In</mtext><mo stretchy='false'>(</mo><msub>
+      <mi>P</mi>
+      <mi>&#x221E;</mi>
+     </msub>
+     <mo>&#x2212;</mo><msub>
+      <mi>P</mi>
+      <mn>0</mn>
+     </msub>
+     <mo stretchy='false'>)</mo><mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><msup>
+      <mi>e</mi>
+      <mrow>
+       <mo>&#x2212;</mo><mi>k</mi><mo>&#x25B3;</mo>
+      </mrow>
+     </msup>
+     <mo stretchy='false'>)</mo>
+    </mrow>
+   </mtd>
+   <mtd columnalign='right'>
+    <mrow></mrow>
+   </mtd>
+  </mtr>
+  <mtr columnalign='right'>
+   <mtd columnalign='right'>
+    <mrow></mrow>
+   </mtd>
+   <mtd columnalign='right'>
+    <mrow>
+     <msub>
+      <mrow>
+       <mtext>In(P</mtext>
+      </mrow>
+      <mrow>
+       <mi>T</mi><mo>+</mo><mo>&#x25B3;</mo>
+      </mrow>
+     </msub>
+     <mo>&#x2212;</mo><msub>
+      <mi>P</mi>
+      <mi>t</mi>
+     </msub>
+     <mtext>)</mtext>
+    </mrow>
+   </mtd>
+   <mtd columnalign='right'>
+    <mo>=</mo>
+   </mtd>
+   <mtd columnalign='right'>
+    <mrow>
+     <mo>&#x2212;</mo><mi>k</mi><mi>t</mi><mo>+</mo><mi>C</mi>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+<span class="no" style="margin-top:3em;">(2.42)</span></p>
+<aside class="abc" style="margin-left:0em;margin-top:-18.2em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.6">
+ <img src="../images/f0015-02.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="width:110%;margin-left:0em;margin-top:1em"><b>Fig. 2.6</b> Determination of the first-order rate constant when the infinity value is unknown.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="noindent">where C &#x003D; ln(<i>P<sub>&#x221E;</sub></i> &#x2013; <i>P</i><sub>0</sub>)(l &#x2013; e<sup>&#x2013;<i>k</i>&#x0394;</sup>) is a constant. Thus a plot of ln(&#x03A1;<sub><i>t</i>&#x002B;&#x0394;</sub> &#x2013; <i>P<sub>t</sub></i>) against <i>t</i> should be linear with a slope equal to &#x2013;<i>k</i>. For good accuracy the time interval between the two series of readings, &#x0394;, should be two or three times the half-life.</p>
+<p class="indent">It is now more common, with the widespread availability of sophisticated data treatment packages, to fit the experimental data directly to the integrated equation, <i>P<sub>&#x221E;</sub></i> &#x2013; <i>P</i> &#x003D; (<i>P<sub>&#x221E;</sub></i> &#x2013; <i>P</i><sub>0</sub>)e<sup>&#x2013;<i>kt</i></sup>, using nonlinear least squares. This will generate best-fit values of the three constants: <i>k</i>, <i>P<sub>&#x221E;</sub></i>, and <i>P</i><sub>0</sub>.</p>
+<aside class="abc" style="margin-left:0em;margin-top:-1.2em;" epub:type="sidebar">
+<p class="noindent2">For example, MINSQ, Micromath Scientific Software, 1988.</p>
+</aside>
+<p class="indent">It is very important to check carefully that a reaction is indeed simple first order before applying any of the above methods involving the use of physical parameters to determine the rate constant. It will be shown in <a href="Chapter03.xhtml#ch03">Chapter 3</a> that certain other more complex reaction schemes, including reversible and parallel first-order reactions, give rise to equations identical in form to those in <a href="Chapter02.xhtml#eqn_2.35">eqns 2.35</a>, <a href="Chapter02.xhtml#eqn_2.36">2.36</a>, and <a href="Chapter02.xhtml#eqn_2.42">2.42</a>.</p>
+<a id="page_16" class="page" style="width:70%;"><b>Page 16, Empirical treatment of reaction rates</b></a>
+</section>
+<section epub:type="chapter" id="sec_2.6">
+<h2 class="h2"><b>2.6</b><span class="space">&#160;</span><b>Flow systems: continuous reactions</b></h2>
+<p class="noindent">The rate equations described to date, all apply to closed systems, commonly referred to as batch or static systems: the reactants are mixed in a reaction vessel or cell and the concentration changes are observed as the reaction proceeds to completion. In some cases, however, it is more convenient to use a flow system or continuous reactor (i.e., an open system), in which the reactants flow through a reactor and the products are collected at the end. Flow systems may be advantageous in several situations: continuous reactors are often cheaper to operate and easier to control and automate for large-scale industrial production; they represent the best means of studying fast irreversible reactions; and they provide an excellent means of investigating and utilizing reactive intermediates. An additional bonus is that the mathematical analysis of the reaction kinetics is often simpler than for static systems.</p>
+<p class="indent">Continuous-flow methods are of two general types, distinguished by the presence or not of stirring in the reactor (Denbigh 1984):</p>
+<ul style="margin-top:0.5em;">
+<li style="margin-left:1em;margin-top:0.5em;"> <i>Plug-flow or tubular reactor</i>. In this case, which is typical of that used in the study of fast reactions (Ch. 5), there is no stirring in the reactor and hence no mixing between one point and another along the direction of flow. There is complete mixing of reactants immediately prior to entering the reactor and the fluid moves through it like a plug.</li>
+<li style="margin-left:1em;margin-top:0.5em;"> <i>Continuous stirred tank reactor (CSTR)</i>. This corresponds to the extreme of complete mixing within the reactor, so that the concentration is uniform throughout the entire volume. There is a continuous flow of reactants into the vessel, from which the partially reacted material passes continuously.</li>
+</ul>
+<p class="indent" style="margin-top:1em;">Prior to any detailed study of the kinetics, it is useful to consider some general points concerning batch and continuous kinetics. In static systems the change in concentration occurs and is observed as a function of time. The significant difference for continuous reactions is that they are run under <i>steady-state</i> conditions and the corresponding coordinate for observing the reaction is space (distance). Thus in a plug-flow reactor with constant flow rate of the solution, the concentration at any point along the tube achieves a steady value, and the variation of composition shows itself between different points along the tube. Similarly, there is a variation between one tank and another in a stirred continuous reactor, but within any individual tank the concentration remains constant. It should be emphasized that this steady state is not an equilibrium; it results from a balance between the flow rate and reaction rate.</p>
+<p class="indent">The fundamental basis for the kinetics in flow systems under steady-state conditions is the mass balance of a given reagent within any volume element:</p>
+<p class="eqn" id="eqn_2.43">moles entering = moles reacting + moles leaving<span class="no">(2.43)</span></p>
+<p class="noindent">The application of eqn <a href="Chapter02.xhtml#eqn_2.43">2.43</a> to tubular and continuous stirred tank reactors is described below.</p>
+<a id="page_17" class="page" style="width:70%;"><b>Page 17, Empirical treatment of reaction rates</b></a>
+<p class="h2"><a id="heading-2_16"/><b>Continuous-flow tubular reactor</b></p>
+<p class="noindent">The principle of a continuous-flow tubular reactor is illustrated in <a href="#fig_2.7">Fig. 2.7</a>. The two reactant solutions are forced through a mixing chamber into the reactor (or observation-tube). The extent of reaction at various distances along the reactor is commonly found by measuring the absorbance change. For example, reaction of ferric ion with thiocyanate ion forms a complex of intense red colour</p>
+<figure class="eqn">
+<img src="../images/f0017-01.jpg" alt="images"/>
+</figure>
+<p class="noindent">and is easily monitored spectrophotometrically. The rate law in the presence of excess Fe<sup>3&#x002B;</sup> is given by</p>
+<figure class="eqn">
+<img src="../images/f0017-03.jpg" alt="images"/>
+</figure>
+<p class="indent">The kinetics of reactions occurring in tubular reactors are identical to those occurring in a static system, as each volume element leaving the mixing chamber is equivalent to a miniature batch reaction system passing down the tube. If the system flows with a constant rate of v dm<sup>3</sup> s<sup>&#x2013;1</sup> through a total volume <i>V</i> dm<sup>3</sup>, the time taken, the so-called <i>residence time</i>, <i>t</i><sub>r</sub>, is</p>
+<p class="eqn" id="eqn_2.44">t<i><sub>r</sub></i>=<i>V/v</i><span class="no">(2.44)</span></p>
+<aside class="abc" style="margin-left:0em;margin-top:-18.2em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.7">
+ <img src="../images/f0017-02.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="margin-left:2em;margin-top:1em"><b>Fig. 2.7</b> Continuous-flow tubular reactor.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="noindent">The extent of reaction within each volume element is identical to that which would have occurred in the same time if it had been stationary.</p>
+<p class="indent">This can be readily shown for a simple first-order reaction of species A, <i>dA/dt</i> &#x003D; &#x2013;<i>k</i><sub>1</sub><i>A</i>, by considering a small cylindrical element in the tube, volume <i>dV</i>, such that the concentration entering the element is <i>A</i> and the concentration leaving is <i>A</i> &#x002B; <i>dA</i> (note that <i>dA</i> will be negative). The number of moles of A lost by reaction in volume <i>dV</i> per unit time is <i>k</i><sub>1</sub><i>AdV</i>. Application of the mass balance eqn <a href="Chapter02.xhtml#eqn_2.43">2.43</a> gives</p>
+<figure class="fig1">
+ <img src="../images/f0017-05.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-left:0em;margin-top:-11.2em;" epub:type="sidebar">
+<figure class="fig1">
+ <img src="../images/f0017-06.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">Rearranging and integrating from the point of entry into the tube, <i>V</i> &#x003D; 0, concentration <i>A</i><sub>0</sub>, to volume <i>V</i>, concentration, <i>A</i>,</p>
+<p class="eqn"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mfrac>
+      <mrow>
+       <mi>d</mi><mi>A</mi>
+      </mrow>
+      <mi>A</mi>
+     </mfrac>
+     
+    </mrow>
+   </mtd>
+   <mtd>
+    <mo>=</mo>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mo>&#x2212;</mo><mfrac>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mn>1</mn>
+       </msub>
+       
+      </mrow>
+      <mi>v</mi>
+     </mfrac>
+     <mi>d</mi><mi>V</mi>
+    </mrow>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mstyle displaystyle='true'>
+      <mrow>
+       <msubsup>
+        <mo>&#x222B;</mo>
+        <mrow>
+         <msub>
+          <mi>A</mi>
+          <mn>0</mn>
+         </msub>
+         
+        </mrow>
+        <mi>A</mi>
+       </msubsup>
+       <mrow>
+        <mfrac>
+         <mrow>
+          <mi>d</mi><mi>A</mi>
+         </mrow>
+         <mi>A</mi>
+        </mfrac>
+        
+       </mrow>
+      </mrow>
+      
+     </mstyle>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mo>=</mo>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mo>&#x2212;</mo><mstyle displaystyle='true'>
+      <mrow>
+       <msubsup>
+        <mo>&#x222B;</mo>
+        <mn>0</mn>
+        <mi>v</mi>
+       </msubsup>
+       <mrow>
+        <mfrac>
+         <mrow>
+          <msub>
+           <mi>k</mi>
+           <mn>1</mn>
+          </msub>
+          
+         </mrow>
+         <mi>v</mi>
+        </mfrac>
+        <mi>d</mi><mi>V</mi>
+       </mrow>
+      </mrow>
+      
+     </mstyle>
+    </mrow>
+   </mtd>
+  </mtr>
+  
+ </mtable>
+</math>
+</p>
+<p class="noindent">gives eqn <a href="Chapter02.xhtml#eqn_2.45">2.45</a> for a first-order reaction in a continuous-flow tubular reactor</p>
+<p class="eqn" id="eqn_2.45"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mi>ln</mi><mo stretchy='false'>(</mo><mi>A</mi><mo>/</mo><msub>
+      <mi>A</mi>
+      <mn>0</mn>
+     </msub>
+     <mo stretchy='false'>)</mo><mo>=</mo><mo>&#x2212;</mo><msub>
+      <mi>k</mi>
+      <mn>1</mn>
+     </msub>
+     <mo stretchy='false'>(</mo><mi>V</mi><mo>/</mo><mi>v</mi><mo stretchy='false'>)</mo>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mtext>or</mtext>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mi>A</mi><mo>=</mo><msub>
+      <mi>A</mi>
+      <mn>0</mn>
+     </msub>
+     <msup>
+      <mtext>e</mtext>
+      <mrow>
+       <mo>&#x2212;</mo><mi>k</mi><mo stretchy='false'>(</mo><mi>V</mi><mo>/</mo><mi>v</mi><mo stretchy='false'>)</mo>
+      </mrow>
+     </msup>
+     
+    </mrow>
+   </mtd>
+     </mtr>
+  
+ </mtable>
+</math>
+<span class="no">(2.45)</span></p>
+<p class="noindent">However, <i>V</i>/<i>&#x03BD;</i> is simply equal to the reaction time (eqn <a href="Chapter02.xhtml#eqn_2.44">2.44</a>) so that eqn <a href="Chapter02.xhtml#eqn_2.45">2.45</a> is exactly equivalent to that for a simple batch reaction.</p>
+<p class="indent">The result can be generalised in that the rate equation for a reaction of any reaction order in a continuous-flow tubular reactor is identical in form to that in a batch (closed) system, but with the time variable replaced by <i>V</i>/<i>&#x03BD;</i>. Flow systems will be discussed further in <a href="Chapter05.xhtml#ch05">Chapter 5</a>.</p>
+<a id="page_18" class="page" style="width:70%;"><b>Page 18, Empirical treatment o f reaction rates</b></a>
+<p class="h2"><a id="heading-2_17"/><b>Continuous stirred tank reactor</b></p>
+<p class="noindent">The kinetics of reactions carried out in a continuous reactor with stirring are quite different and considerably simpler than those for a tubular reactor. The technique may be understood by reference to <a href="#fig_2.8">Fig. 2.8</a>.</p>
+<p class="indent">The reagents, A and B, are fed separately and continuously at a flow rate <i>&#x03BD;</i> dm<sup>3</sup> s<sup>&#x2013;1</sup> into the reaction vessel (volume <i>V</i> dm<sup>3</sup>), where reaction takes place&#x2014;the reaction is assumed to be slow compared to the speed of mixing. The product(s), P, and any remaining reactants, are discharged constantly through an outlet tube. The key points to note regarding continuous stirred tank reactors are that:</p>
+<ul style="margin-top:0.5em;">
+<li style="margin-left:1em;"> the reactor achieves a steady state after a time, regardless of the kinetics occurring within it;</li>
+<li style="margin-left:1em;"> the composition of the liquid flowing out of the reactor is the same as that at any point within.</li>
+</ul>
+<p class="noindent">The composition is made uniform throughout by the stirring, and it is this uniformity which gives rise to the distinctive features of continuous stirred tank reactors.</p>
+<aside class="abc" style="margin-left:0em;margin-top:-17.2em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.8">
+ <img src="../images/f0018-01.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="width:110%;margin-left:-1em;margin-top:1em"><b>Fig. 2.8</b> Continuous stirred tank reactor (CSTR).</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent">Analysis of the reaction kinetics again follows directly from the mass balance equation, eqn <a href="Chapter02.xhtml#eqn_2.43">2.43</a>. Consider a first-order reaction, exemplified by the preparation of fluorobenzene from the decomposition of the benzene diazonium ion (<b>2</b>) in the presence of excess fluoride</p>
+<figure class="eqn">
+<img src="../images/f0018-02.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-left:0em;margin-top:-9.2em;" epub:type="sidebar">
+<p class="noindent2">Detailed treatment and examples of higher-order and more complex reaction types are given by Denbigh (1944, 1984).</p>
+</aside>
+<p class="noindent">At steady state, the rate of addition of A (<i>&#x03BD;A</i><sub>0</sub> mole <i>s</i><sup>&#x2013;1</sup>, where <i>A</i><sub>0</sub> is the initial concentration of A) is equal to the rate of loss through reaction <i>(Vk</i><sub>1</sub><i>A</i> mol s<sup>&#x2013;1</sup>) and through flowing out of the reactor (<i>&#x03BD;A</i> mol s<sup>&#x2013;1</sup>):</p>
+<p class="eqn"><i>v</i>A<sub>0</sub>=<i>Vk</i><sub>1</sub>+<i>vA</i></p>
+<p class="noindent">Dividing through by <i>&#x03BD;</i> and rearranging gives the standard equation for a first-order reaction in a continuous stirred tank reactor</p>
+<p class="eqn" id="eqn_2.46"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mfrac>
+   <mi>A</mi>
+   <mrow>
+    <msub>
+     <mi>A</mi>
+     <mn>0</mn>
+    </msub>
+    
+   </mrow>
+  </mfrac>
+  <mo>=</mo><mfrac>
+   <mn>1</mn>
+   <mrow>
+    <mn>1</mn><mo>+</mo><msub>
+     <mi>k</mi>
+     <mn>1</mn>
+    </msub>
+    <msub>
+     <mi>t</mi>
+     <mtext>r</mtext>
+    </msub>
+    
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+<span class="no">(2.46)</span></p>
+<p class="noindent">where <i>t<sub>r</sub></i> &#x003D; <i>V/&#x03BD;</i> is the residence time in the reactor. It is clear from eqn <a href="Chapter02.xhtml#eqn_2.46">2.46</a> that a knowledge of the initial and the steady-state concentration of the reactant under constant flow conditions enables the rate constant, <i>k</i><sub>1</sub>, to be evaluated. Alternatively, if the rate constant is known, the concentration of unreacted material can be calculated for any given residence time, <i>t<sub>r</sub></i>.</p>
+<p class="indent">The product concentration follows from the difference between the inflowing and outflowing concentrations of A, i.e., <i>P</i><small> &#x003D; </small><i>A</i><sub>0</sub> &#x2013; <i>A</i>, or it may be calculated <a id="page_19" class="page"><b>Page 19, Empirical treatment of reaction rates</b></a>directly from mass balance of the rate at which it is formed in the vessel and the rate at which it flows out</p>
+<p class="eqn"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>v</mi><msub>
+  <mi>k</mi>
+  <mn>1</mn>
+ </msub>
+ <mi>A</mi><mo>=</mo><mi>v</mi><mi>P</mi>
+</math>
+</p>
+<p class="noindent">whence</p>
+<p class="eqn" id="eqn_2.47"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>P</mi><mo>=</mo><msub>
+  <mi>k</mi>
+  <mn>1</mn>
+ </msub>
+ <msub>
+  <mi>t</mi>
+  <mn>1</mn>
+ </msub>
+ <mi>A</mi><mo>=</mo><msub>
+  <mi>A</mi>
+  <mn>0</mn>
+ </msub>
+ <mrow><mo>(</mo>
+  <mrow>
+   <mn>1</mn><mo>&#x2212;</mo><mfrac>
+    <mn>1</mn>
+    <mrow>
+     <mn>1</mn><mo>+</mo><msub>
+      <mi>k</mi>
+      <mn>1</mn>
+     </msub>
+     <msub>
+      <mi>t</mi>
+      <mi>r</mi>
+     </msub>
+     
+    </mrow>
+   </mfrac>
+   
+  </mrow>
+ <mo>)</mo></mrow>
+</math>
+<span class="no">(2.47)</span></p>
+<p class="indent">The simplicity of the derivation of the equations for the reactants and products in continuous reactors with stirring is apparent. It stems from the avoidance of integration, and the advantage relative to static or tubular reactors is accentuated for more complex rate equations. However, there is a penalty to be paid in terms of longer reaction (residence) times when CSTRs are used. <a href="#fig_2.9">Figure 2.9</a> shows a plot of % conversion to product versus time for the different types of reactor: static or tubular flow reactor, % P &#x003D; 100{1 &#x2013; exp(&#x2013;<i>k</i><sub>1</sub><i>t</i><sub>r</sub>)}; continuous stirred tank reactors, % P &#x003D; 100(1 &#x2013; 1/(1 &#x002B; <i>k</i><sub>1</sub><i>t</i><sub>r</sub>)}. An arbitrary value for the rate constant of <i>k</i><sub>1</sub> &#x003D; 1s<sup>&#x2013;1</sup> has been used, but the plot can be made completely general by using the dimensionless constant <i>k</i><sub>1</sub><i>t</i><sub>r</sub> as the variable on the <i>x</i>-axis. It may be seen that considerably longer reaction times are required when using a continuous stirred tank reactor, especially for high degrees of conversion. Qualitatively, this is because a high degree of conversion means a low steady-state concentration of the reactants, thereby reducing the speed of the reaction.</p>
+<aside class="abc" style="margin-left:0em;margin-top:-25.2em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.9">
+ <img src="../images/f0019-03.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="width:110%;margin-left:-1em;margin-top:1em"><b>Fig. 2.9</b> Comparison of extent of reaction versus time for continuous stirred tank and plug-flow (tubular) reactors.</p>
+</figcaption>
+</figure>
+</aside>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_2.7">
+<h2 class="h2"><b>2.7</b><span class="space">&#160;</span><b>Temperature-dependence of rate constants</b></h2>
+<p class="noindent">The rates of most chemical reactions increase rapidly with temperature. For liquid phase reactions the rate is typically doubled or trebled by a rise of 10&#x00B0;C near room temperature.</p>
+<p class="indent">For the vast majority of reactions, the number of molecules which react is only a tiny fraction of the number which collide. The reason for this and for the rapid increase in reaction rate with temperature is that normally molecules will react only if their (kinetic) energy is much greater that the average kinetic energy of the molecules at that temperature, i.e., above some value <i>E&#x2032;</i>, <a href="#fig_2.10">Fig. 2.10</a>. A slow chemical change is therefore a reflection of the statistical nature of molecular events and the distribution of energy within the system.</p>
+<p class="indent">In 1889, Arrhenius pointed out that the increase in rate constants with temperature can be expressed with considerable accuracy by</p>
+<p class="eqn" id="eqn_2.48"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>k</mi><mo>=</mo><msup>
+  <mtext>Ae</mtext>
+  <mrow>
+   <mo>&#x005F;</mo><mi>E</mi><mi>a</mi><mo>/</mo><mi>R</mi><mi>T</mi>
+  </mrow>
+ </msup>
+ 
+</math>
+<span class="no">(2.48)</span></p>
+<p class="noindent">where <i>A</i> and <i>E</i><sub>a</sub> are constants: <i>A</i> is called the <i>pre-exponential factor</i>, <i>E</i><sub>a</sub> the <i>activation energy</i>, <i>R</i> is the gas constant and <i>T</i> is the absolute temperature. Empirically, the activation energy is a measure of the temperature sensitivity of the rate constant; a high <i>E<sub>a</sub></i> corresponds to a rate constant which increases rapidly with temperature.</p>
+<aside class="abc" style="margin-left:0em;margin-top:-22.2em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.10">
+ <img src="../images/f0019-05.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="margin-left:2em;margin-top:1em"><b>Fig. 2.10</b> Proportion of collisions with energy in excess that required for reaction, <i>E</i>&#x2032;.</p>
+</figcaption>
+</figure>
+</aside>
+<a id="page_20" class="page" style="width:70%;"><b>Page 20, Empirical treatment of reaction rates</b></a>
+<p class="indent">Values of the two parameters, <i>A</i> and <i>E</i><sub>a</sub>, may be determined from a plot of ln <i>k</i> against 1/<i>T</i></p>
+<p class="eqn" id="eqn_2.49"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtext>1nk</mtext><mo>=</mo><mn>1</mn><mi>n</mi><mi>A</mi><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mi>E</mi><mi>a</mi><mo>/</mo><mi>R</mi><mi>T</mi>
+</math>
+<span class="no">(2.49)</span></p>
+<p class="noindent">illustrated in <a href="#fig_2.11">Fig. 2.11</a> using data for the release of Na<sup>&#x002B;</sup> from its complex with the macrobicyclic cryptand ligand (2,2,1) in methanol</p>
+<figure class="eqn">
+<img src="../images/f0020-02.jpg" alt="images"/>
+</figure>
+<p class="noindent">The slope of this so-called <i>Arrhenius plot</i> is &#x2013;<i>E</i><sub>a</sub>/<i>R</i> and the intercept (calculated by extrapolation to 1/<i>T</i> &#x003D; 0; <i>T</i> &#x2192; &#x221E;) is ln <i>A</i>.</p>
+<aside class="abc" style="margin-left:0em;margin-top:-8.2em;" epub:type="sidebar">
+<figure class="fig1">
+ <img src="../images/f0020-03.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">The simple Arrhenius equation, eqn <a href="Chapter02.xhtml#eqn_2.48">2.48</a>, is still in widespread use and frequently provides a good description of the temperature dependence of rate constants for reactions of different orders over quite a wide range of temperature. In some cases, however, the factor <i>A</i> shows some temperature dependence, giving rise to a slight curvature of an Arrhenius plot, and the more general equation</p>
+<p class="eqn" id="eqn_2.50"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+  <mi>k</mi><mo>=</mo><mi>A</mi><mo>&#x2032;</mo><msup>
+   <mi>T</mi>
+   <mi>n</mi>
+  </msup>
+  <msup>
+   <mi>e</mi>
+   <mrow>
+    <mo>&#x2212;</mo><msub>
+     <mi>E</mi>
+     <mi>a</mi>
+    </msub>
+    <mo>/</mo><mi>R</mi><mi>T</mi>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+
+<span class="no">(2.50)</span></p>
+<p class="noindent">is used to give a better fit to the data. Here <i>n</i> can have any value determined by experiment. Theories of reaction rates, including <i>transition-state theory</i> (Ch. 4), which give rise to expressions of the type shown in <a href="Chapter02.xhtml#eqn_2.48">eqns 2.48</a> and <a href="Chapter02.xhtml#eqn_2.50">2.50</a>, are described elsewhere (see background reading).</p>
+<p class="indent">Pronounced deviations from simple Arrhenius behaviour do occur in particular cases. Probably the most common reason for a sharply curved Arrhenius plot for an apparently simple chemical reaction is the existence of two competing reactions, each with its own <i>A</i> and <i>E<sub>a</sub></i> values. The reaction with the higher activation energy will increasingly dominate as the temperature increases, whereas at low temperature the reaction with the lower activation energy predominates. A breakdown of a linear Arrhenius plot occurs within a transition region, where both reactions are contributing to the observed rate.</p>
+<aside class="abc" style="margin-left:0em;margin-top:-10.2em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.11">
+ <img src="../images/f0020-04.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="width:110%;margin-left:-1em;margin-top:1em"><b>Fig. 2.11</b> Rate constants for the dissociation of Na<sup>&#x002B;</sup> from cryptand (2,2,1) in methanol, plotted according to the Arrhenius equation, eqn <a href="Chapter02.xhtml#eqn_2.49">2.49</a> (Cox <i>et al</i>. 1980).</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent">Very unusual temperature dependences of rates, including rate maxima, may be associated with reactions having very strict conformational or orientation requirements. The rates of enzyme&#x2013;catalysed reactions, for example, drop precipitously at high temperatures due to thermal denaturation of the enzyme. An interesting chemical example showing dramatic deviations from Arrhenius behaviour is provided by the rearrangement of methyl or allyl <i>p</i>-(dimethylamino)benzenesulphonate to the corresponding quaternary ammonium sulphonate, Scheme 2.1.</p>
+<figure class="eqn">
+<img src="../images/f0020-06.jpg" alt="images"/>
+</figure>
+<p class="eqn"><b>Scheme 2.1</b></p>
+<a id="page_21" class="page" style="width:70%;"><b>Page 21, Empirical treatment of reaction rates</b></a>
+<p class="noindent">In this case, the rate is controlled by short-range orientational order in the solvent, due to the very strong stereochemical requirements of the rearrangement. The reaction, which displays simple second-order kinetics, occurs at a measurable rate only in correctly ordered liquid crystalline solvents (De Maria <i>et al</i>. 1984, 1988) or in the crystalline state&#x2014;the reactants are indefinitely stable in normal organic solvents. A plot of ln <i>k</i> versus 1/<i>T</i>, <a href="#fig_2.12">Fig. 2.12</a>, shows strong upward curvature over the temperature range corresponding to the required liquid crystal phase (28&#x00B0;C to 49&#x00B0;C), followed by an almost vertical drop at the temperature of transition to a different solvent phase.</p>
+<p class="h1"><a id="heading-2_19"/><b>Problems</b></p>
+<p class="noindent"><b>2.1</b> The data below refer to the rearrangement of <i>N</i>-bromoacetanilide (A), eqn <a href="Chapter02.xhtml#eqn_2.11">2.11</a>, in chlorobenzene at 15&#x00B0;C:</p>
+<figure class="eqn">
+<img src="../images/f0021-02.jpg" alt="images"/>
+</figure>
+<p class="noindent">Determine the first-order rate constant, <i>k</i><sub>1</sub>, and the half-life, <i>t</i><sub>1/2</sub>. (<i>k</i><sub>1</sub> &#x003D; 6.54 &#x00D7;10<sup>&#x2013;6</sup> s<sup>&#x2013;1</sup>; <i>t</i><sub>1/2</sub> &#x003D; 1.06 &#x00D7; 10<sup>5</sup> s).</p>
+<p class="noindent"><b>2.2</b> The oxidation of <img src="../images/f0021-03.jpg" alt="images"/> to <img src="../images/f0021-04.jpg" alt="images"/> by peroxidisulfate, <img src="../images/f0021-05.jpg" alt="images"/>, can be monitored spectrophotometrically by observing the increase in absorbance at 420 nm, <i>D</i><sub>420</sub>,</p>
+<figure class="eqn">
+<img src="../images/f0021-06.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-left:0em;margin-top:-28.2em;" epub:type="sidebar">
+<figure class="fig1" id="fig_2.12">
+ <img src="../images/f0021-01.jpg" alt="images"/>
+<figcaption>
+<p class="noindent2" style="width:110%;margin-left:0em;margin-top:1em"><b>Fig. 2.12</b> Arrhenius plot for allyl <i>p</i>-(dimethylamino) benzenesulphonate in the liquid crystalline ester solvent 4-pentylcyclohexyl 4-propylcyclohexanecarboxylate (De Maria <i>et al</i>. 1988).</p>
+</figcaption>
+</figure>
+</aside>
+<p class="noindent">Under pseudo-first-order conditions with<img src="../images/f0021-07.jpg" alt="images"/>, the following absorbances were recorded at 25&#x00B0;C:</p>
+<figure class="eqn">
+<img src="../images/f0021-09.jpg" alt="images"/>
+</figure>
+<p class="noindent">Calculate the pseudo-first-order rate constant, <img src="../images/f0021-10.jpg" alt="images"/> and hence <i>k</i><sub>2</sub> (<a href="#sec_2.5">Sect. 2.5</a>). (<i>k</i><sub>1</sub> &#x003D; 3.30 &#x00D7;10<sup>&#x2013;4</sup> s<sup>&#x2013;1</sup>; <i>k</i><sub>2</sub> &#x003D; 1.84 &#x00D7; 10<sup>&#x2013;2</sup> M<sup>&#x2013;1</sup> s<sup>&#x2013;1</sup>).</p>
+<p class="noindent"><b>2.3</b> Industrial continuous stirred tank reactors typically consist of several vessels in series to minimize loss of unreacted material in the exit stream. Show that for a first-order reaction <img src="../images/f0021-11.jpg" alt="images"/> with <i>n</i> vessels in series</p>
+<p class="eqn"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mfrac>
+  <mtext>A</mtext>
+  <mrow>
+   <msub>
+    <mtext>A</mtext>
+    <mtext>O</mtext>
+   </msub>
+   
+  </mrow>
+ </mfrac>
+ <mo>=</mo><msup>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mn>1</mn>
+     <mrow>
+      <mn>1</mn><mo>+</mo><msub>
+       <mi>k</mi>
+       <mn>1</mn>
+      </msub>
+      <msub>
+       <mi>t</mi>
+       <mi>R</mi>
+      </msub>
+      
+     </mrow>
+    </mfrac>
+    
+   </mrow>
+  <mo>)</mo></mrow>
+  <mi>n</mi>
+ </msup>
+ 
+</math>
+</p>
+<p class="noindent">where <i>A</i><sub>0</sub> is the input concentration, <i>A</i> is the exit concentration, and <i>t<sub>r</sub></i> is the residence time in each vessel (<a href="#sec_2.6">Sect. 2.6</a>).</p>
+<p class="noindent"><b>2.4</b> First-order rate constants, <i>k</i>, for the rotation about the C&#x2013;N bond in <i>N</i>, <i>N</i> -dimethylnicotinamide (<b>3</b>) measured at different temperatures by NMR (Ch. 5, <a href="Chapter05.xhtml#sec_5.4">Sect. 5.4</a>) are:</p>
+<aside class="abc" style="margin-left:0em;margin-top:-7.2em;" epub:type="sidebar">
+<figure class="fig1">
+ <img src="../images/f0021-13.jpg" alt="images"/>
+</figure>
+</aside>
+<a id="page_22" class="page" style="width:70%;"><b>Page 22, Empirical treatment o f reaction rates</b></a>
+<figure class="eqn"><img src="../images/f0022-01.jpg" alt="images"/></figure>
+
+<p class="noindent">Determine the activation energy, <i>E</i><sub>a</sub>, and the pre-exponential factor, <i>A</i>, for the rotation (<a href="#sec_2.6">Sect. 2.7</a>). (A &#x003D; 7.8 &#x00D7; 10<sup>14</sup> s<sup>&#x2013;1</sup>; <i>E</i><sub>a</sub> &#x003D; 78.9 kJ mol<sup>&#x2013;1</sup>).</p>
+</section>
+<section epub:type="chapter" id="sec_1f">
+<h2 class="h2a"><b>References</b></h2>
+<p class="noindent">Bell, R. P. (1934). <i>Proc. Roy. Soc</i>., A, 143, 377.</p>
+<p class="noindent">Chia, Y. T. and Connick, R. E. (1959). <i>J. Phys. Chem</i>., <b>63</b>, 1518.</p>
+<p class="noindent">Cox, B. G., Schneider, I., and Schneider, H. (1980). <i>Ber. Bunsenges. Phys. Chem</i>., <b>84</b>, 470.</p>
+<p class="noindent">De Maria, P., Lodi, A., Samori, B., Rustichelli, F., and Torquati, G. (1984). <i>J. Am. Chem. Soc</i>., <b>106</b>, 653.</p>
+<p class="noindent">De Maria, P., Samori, B., Tampieri, A., and Zani, P. (1988). <i>Bull. Soc. Chem. Jpn</i>, <b>61</b>, 1773.</p>
+<p class="noindent">Denbigh, K. G. (1944). <i>Trans. Faraday Soc</i>., <b>40</b>, 352.</p>
+<p class="noindent">Denbigh, K. G. (1984). <i>Chemical reactor theory: an introduction</i>. (3rd edn). Cambridge University Press.</p>
+<p class="noindent">Dixon, N. E., Jackson, W. G., Marty, W., and Sargeson, A. M. (1982). <i>Inorg. Chem</i>., <b>21</b>, 688.</p>
+<p class="noindent">Guggenheim, E. A. (1926). <i>Phil. Mag</i>., 2, 538.</p>
+<p class="noindent">Jencks, W. P. (1981). <i>Chem. Soc. Rev</i>., <b>10</b>, 345.</p>
+<p class="noindent">McTigue, P. T. and Sime, J. M. (1963). <i>J. Chem. Soc</i>., 1303.</p>
+<p class="h1"><a id="heading-2_21"/><b>Background reading</b></p>
+<p class="noindent">Moore, J. W. and Pearson, R. G. (1981). <i>Kinetics and mechanism</i>, (3rd edn). Wiley, New York.</p>
+<p class="noindent">Hammes, G. G. (1978). <i>Principles of chemical kinetics</i>. Academic Press, New York.</p>
+<p class="noindent">Laidler, K. J. (1987). <i>Chemical kinetics</i>, (3rd edn). Harper &#x0026; Row, Hilversum.</p>
+</section>
+</section>
+</body>
+</html>

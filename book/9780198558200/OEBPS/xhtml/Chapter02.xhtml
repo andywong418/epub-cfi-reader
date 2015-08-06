@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Molecular mechanisms and reaction rates</title>
+<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div>
+
+
+<section epub:type="chapter" id="ch02">
+<a id="page_15" class="page" style="width:70%">Page 15, Molecular mechanisms and reaction rates</a>
+
+<h1 class="main" style="width:70%"><b>2</b><span class="space">&#160;&#160;</span><b>Molecular mechanisms and reaction rates</b></h1>
+
+<section epub:type="chapter" id="sec_2.1">
+<h2 class="h2"><b>2.1 Introduction</b></h2>
+
+<p class="noindent">The principal technique for the investigation of mechanisms of chemical reactions is chemical kinetics. It is really a group of techniques whose common feature is that they involve measurements of rates of reactions. Some aspects will be illustrated here and others in later parts of the book.</p>
+</section>
+
+<section epub:type="chapter" id="sec_2.2">
+<h2 class="h2"><b>2.2 Rate laws, rate constants, and mechanism</b></h2>
+
+<p class="noindent">A simple bimolecular mechanism between like or unlike molecules will lead to a second-order rate law. For example, in solution, the reaction</p>
+
+<p class="noindent" style="text-align:center">Et<sub>3</sub>N &#x002B; EtBr &#x2192;  Et<sub>4</sub>N<sup>&#x002B;</sup> Br<sup>-</sup></p>
+
+<p class="noindent">has the rate law</p>
+
+<p class="noindent" style="text-align:center">-d[Et<sub>3</sub>N]/dt &#x003D; -d[EtBr]/dt &#x003D; <i>k</i> [Et<sub>3</sub>N] [EtBr];</p>
+
+<p class="noindent">and, in the gas phase, the reaction</p>
+
+<figure style="text-align:center;width:70%">
+<img src="../images/page_15_1.jpg" alt="images"/></figure>
+
+<p class="noindent">has the rate law</p>
+
+<p class="noindent" style="text-align:center">-d[C<sub>4</sub>H<sub>6</sub>]/dt &#x003D; <i>k</i>[C<sub>4</sub>H<sub>6</sub>]<sup>2</sup>.</p>
+
+<p class="noindent">In these and other comparable reactions, the second-order rate constants, <i>k</i>, usually have units dm<sup>3</sup> mol<sup>-1</sup> s<sup>-1</sup>.</p>
+
+<p class="indent3-ka">Correspondingly, simple unimolecular mechanisms lead to first-order rate laws, for example,</p>
+
+<figure style="text-align:center;width:70%">
+<img src="../images/page_15_2.jpg" alt="images"/></figure>
+
+
+<p class="noindent">and the first-order rate constants of such reactions, <i>k</i>, usually have units s<sup>-1</sup>.</p>
+
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<p class="aside">Unlike the rate constant, the rate of a chemical reaction usually slows down as the reaction proceeds and reactants are used up.</p></aside>
+
+<p class="indent3-ka">For each of these reactions, it is the rate constant which characterises the kinetics of the transformation under specified conditions of temperature, solvent (for reactions in solution), or pressure (for reactions in the gas phase). The <i>differential</i> terms on the left in each case are the <i>rates</i> at which <a id="page_16" class="page">Page 16, Molecular mechanisms and reaction rates</a>concentrations of reactants decrease with time. For reactions at constant volume, these are directly proportional to the rate of reaction, and are commonly but imprecisely taken actually to be the rate of reaction.</p>
+
+<p class="indent3-ka">Many reactions of organic compounds, both in solution and in the gas phase, do have first- or second-order rate laws which follow from the simplicity of their mechanisms as exemplified by the above. The converse is not true, however; establishing that a reaction&#x2019;s rate law is either first or second order is not sufficient evidence that its mechanism is either unimolecular or bimolecular, respectively. Reactions with quite complicated mechanisms are known which, for rather particular reasons, have deceptively simple rate laws. However, it does follow that a complicated rate law is the consequence of a complex mechanism, but this must ultimately comprise interconnected simple elementary steps which individually are either unimolecular or bimolecular.</p>
+
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<p class="aside">The frequency of genuine trimolecular collisions between molecules is so low that trimolecular elementary steps make virtually no contribution to chemical reactivity.</p></aside>
+
+<p class="indent3-ka">As indicated above, simple unimolecular and bimolecular mechanisms necessarily lead to first-order and second-order rate laws. Usually, though, we are dealing with a reaction whose mechanism we wish to understand, i.e. in practice, we start with a reaction, not a mechanism&#x0021; The strategy in the elucidation of mechanism, therefore, is to carry out exploratory investigations, produce a tentative mechanism, predict some consequences from the mechanism, then investigate them. The initial evidence will be product analysis as it is clearly essential that we know what the reaction is before we can investigate its mechanism. A provisional mechanism which accounts for the products is then proposed from which a rate law can be predicted and investigated. If the predicted rate law is not observed experimentally, however, the mechanism is defective and needs to be modified or replaced in the light of the experimental rate law. At the stage when the rate law required by the mechanism is identical with that observed, then some confidence in the mechanism is justifiable. More stringent and subtle kinetics and product analysis tests may next be applied.</p>
+
+</section>
+
+<section epub:type="chapter" id="sec_2.3">
+<h2 class="h2"><b>2.3 Simple transition state theory</b></h2>
+<h3 class="h3">The free energy of activation and reaction profiles</h3>
+
+<p class="noindent">For a simple unimolecular reaction in which reactant molecule A proceeds via the activated complex A<sup>&#x2021;</sup> as in <a href="#eq_2.1">eqn 2.1,</a></p>
+
+<p id="eq_2.1" style="text-align:center;width:70%"> 
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>A</mi><munder>
+   <mo>&#x2192;</mo>
+   <mrow>
+    <mo stretchy='false'>(</mo><mo>&#x2190;</mo><mo stretchy='false'>)</mo>
+   </mrow>
+  </munder>
+  <msup>
+   <mi>A</mi>
+   <mtable columnalign='left'>
+    <mtr>
+     <mtd>
+      <mo>&#x2021;</mo>
+     </mtd>
+    </mtr>
+  
+   </mtable>
+   
+  </msup>
+  <mo>&#x27F6;</mo><mi>Pr</mi><mi>o</mi><mi>d</mi><mi>u</mi><mi>c</mi><mi>t</mi>
+ </mrow>
+</math>
+<span style="float:right;margin-right:0.5em">(2.1)</span></p>
+
+<p class="noindent">the relationship between the experimental first-order rate constant, <i>k</i>, and the molar free energy of activation, &#916;G<sup>&#x2021;</sup>, is given by <a href="#eq_2.2">eqn 2.2</a> where all symbols have their usual meanings.</p>
+
+
+<p class="noindent"><a id="page_17" class="page">Page 17, Molecular mechanisms and reaction rates</a></p>
+
+
+<p style="text-align:center;width:70%" id="eq_2.2">
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>k</mi><mo>=</mo><mfrac>
+   <mrow>
+    <msub>
+     <mi>k</mi>
+     <mi>B</mi>
+    </msub>
+    <mi>T</mi>
+   </mrow>
+   <mi>h</mi>
+  </mfrac>
+  <mo>.</mo><msup>
+   <mi>e</mi>
+   <mrow>
+    <mo>&#x2212;</mo><mi>&#x0394;</mi><msup>
+     <mi>G</mi>
+     <mtable columnalign='left'>
+      <mtr>
+       <mtd>
+        <mo>&#x2021;</mo>
+       </mtd>
+      </mtr>
+
+     </mtable>
+     
+    </msup>
+    
+   </mrow>
+  </msup>
+  <mo>/</mo><mi>R</mi><mi>T</mi>
+ </mrow>
+</math>
+<span style="float:right;margin-right:0.5em">(2.2)</span></p>
+
+<p class="noindent">It follows that the rate constant and the free energy of activation are alternative temperature-dependent parameters which describe what we often loosely call the rate of a reaction. A high value for <i>k</i> and a small &#916;<i>G</i><sup>&#x2021;</sup> correspond to a fast reaction, and a low value for <i>k</i> and a large &#916;<i>G</i><sup>&#x2021;</sup> correspond to a slow reaction. The reaction may be described diagrammatically as shown in <a href="#fig_2.1">Fig. 2.1</a>.</p>
+
+<aside class="abc" style="margin-top:-8.3em;" epub:type="sidebar">
+<p class="aside">A transmission coefficient, <i>k,</i> is occasionally included in <a href="#eq_2.1">eqn 2.2</a>. This is almost invariably assumed to be unity so, for simplicity, we have left it out.</p>
+
+
+
+<p class="aside">Strictly, the molar free energy terms of <a href="#eq_2.2">eqn 2.2</a> and in profiles such as <a href="#fig_2.1">Fig. 2.1</a> are <i>standard</i> molar free energies, and should be labelled &#916;<i>G</i><sup>&#x019F;&#x2021;</sup> and &#916;<i>G</i><sup>&#x2021;</sup>, i.e. they refer to molar free energies of substances in a specified standard state. In kinetics, especially for reactions in solution, the material at 1 mol dm<sup>-3</sup> under 1 atm pressure in a specified solvent and at a specified temperature is the most convenient standard state. Here and subsequently, we omit the word &#x2018;standard&#x2019; for convenience and, in accord with common practice, dispense with the standard state superscript.</p></aside>
+
+
+<figure id="fig_2.1" style="width:70%;text-align:center">
+<img src="../images/page_17_1.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="text-align:center;width:100%"><b>Fig. 2.1</b> Molar free energy profile for the unimolecular first-order reaction of <a href="#eq_2.1">eqn 2.1</a></figcaption></figure>
+
+
+<p class="noindent">An analogous free energy profile is shown in <a href="#fig_2.2">Fig. 2.2</a> for the bimolecular reaction of <a href="#eq_2.3">eqn 2.3</a>.</p>
+
+<p class="fig1" style="text-align:center" id="eq_2.3">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>A</mi><mo>+</mo><mi>B</mi><munder>
+   <mo>&#x2192;</mo>
+   <mrow>
+    <mo stretchy='false'>(</mo><mo>&#x2190;</mo><mo stretchy='false'>)</mo>
+   </mrow>
+  </munder>
+  <mi>A</mi><msup>
+   <mi>B</mi>
+   <mtable columnalign='left'>
+    <mtr>
+     <mtd>
+      <mo>&#x2021;</mo>
+     </mtd>
+    </mtr>
+   
+   </mtable>
+   
+  </msup>
+  <mo>&#x27F6;</mo><mi>p</mi><mi>r</mi><mi>o</mi><mi>d</mi><mi>u</mi><mi>c</mi><mi>t</mi>
+ </mrow>
+</math>
+<span style="float:right;margin-right:0.2em">(2.3)</span></p>
+
+<figure id="fig_2.2" style="text-align:center;width:70%">
+<img src="../images/page_17_2.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="width:100%;text-align:center"><b>Fig. 2.2</b> Molar free energy profile for the bimolecular second-order reaction of <a href="#eq_2.3">eqn 2.3</a></figcaption></figure>
+
+
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<p class="aside">The profiles in <a href="#fig_2.1">Figs 2.1</a> and <a href="#fig_2.2">2.2</a> include molar free energy plotted against the reaction coordinate; initial state, transition state, and final state are indicated and represented by horizontal lines. The diagrams also include the reactant molecules and activated complexes (and could have included product molecules). It is to the interconversion of these molecular species (rather than the thermodynamic states) that the continuous curved line representing molecular potential energy corresponds. The distinction between the molecular species and the thermodynamic states is crucial. The former are real if the mechanism is correct and the latter are hypothetical.</p></aside>
+
+<p class="noindent">Here also, <a href="#eq_2.2">eqn 2.2</a> describes the relationship between the (standard) molar free energy of activation and the experimental rate constant. But there is a significant difference. When <a href="#eq_2.2">eqn 2.2</a> is used to calculate a reaction&#x2019;s free energy of activation, the experimental second-order rate constant must have units dm<sup>3</sup> mol<sup>-1</sup> s<sup>-1</sup> in order that the free energy of activation corresponds to a<a id="page_18" class="page">Page 18, Molecular mechanisms and reaction rates</a>standard state of 1 mol dm<sup>-3</sup>. This is not an issue for first-order rate constants since their units do not include a concentration term.</p>
+
+
+<p class="indent3-ka">One of the postulates of transition state theory is that the reactant molecules are in thermodynamic equilibrium with activated complex molecules. So, although the molecular species at the maximum in reaction profiles such as <a href="#fig_2.1">Figs 2.1</a> and <a href="#fig_2.2">2.2</a> are exceedingly short-lived compared with the time-scale of the chemical reaction, they are regarded as being in thermal equilibrium with their surroundings. It follows, therefore, that we can associate an equilibrium constant, <i>K</i><sup>&#x2021;</sup>, with this postulated equilibrium. Assuming further that the normal relationships of classical thermodynamics apply, this will be related to the free energy of activation, &#916;<i>G</i><sup>&#x2021;</sup>, by the equation</p>
+
+<p class="noindent" style="text-align:center">&#916;<i>G</i><sup>&#x2021;</sup> &#x003D; - <i>RT</i> In<i> K</i><sup>&#x2021;</sup></p>
+
+<aside class="abc" style="margin-top:-6.3em;" epub:type="sidebar">
+<p class="aside">This postulated equilibrium between initial state and transition state implies nothing about other possible transformations of the activated complex molecules.</p>
+
+
+<p class="aside">Here and throughout the book, we use In to mean ln<sub>e</sub>, i.e. logarithms to the base e (sometimes called natural logarithms).</p></aside>
+
+<p class="noindent">Formally, the molar free energy of activation is given by</p>
+
+<p class="noindent" style="text-align:center">&#916;<i>G</i><sup>&#x2021;</sup> &#x003D; &#916;<sub>f</sub><i>G</i>(activated complex) - &#x2211;&#916;<sub>f</sub><i>G</i>(reactants)</p>
+
+
+<p class="noindent">where &#916;<sub>f</sub><i>G</i> means the molar free energy of formation under the conditions of the reaction (temperature, solvent, pressure, etc.).</p>
+
+
+<h3 class="h3"><b>Enthalpy and entropy of activation</b></h3>
+<p class="noindent">The free energy of activation may be resolved into enthalpy and entropy components by the equation</p>
+
+<figure class="fig1" id="eq_2.4">
+<p class="noindent" style="text-align:center;width:70%">&#916;<i>G</i><sup>&#x2021;</sup> &#x003D; &#916;<i>H</i><sup>&#x2021;</sup> - <i>T</i>&#916;<i>S</i><sup>&#x2021;</sup><span style="float:right;margin-right:-10em">(2.4)</span></p></figure>
+
+
+<table style="width:70%">
+<tr><td>where</td> <td>&#916;<i>H</i><sup>&#x2021;</sup> &#x003D; (standard) molar enthalpy of activation, and</td></tr><tr><td>&#160;</td><td>&#916;<i>S</i><sup>&#x2021;</sup> &#x003D; (standard) molar entropy of activation.</td></tr></table>
+
+
+<p class="noindent">However, although &#916;<i>G</i><sup>&#x2021;</sup> at a particular temperature may be calculated from the rate constant using <a href="#eq_2.2">eqn 2.2</a>, &#916;<i>H</i><sup>&#x2021;</sup> and &#916;<i>S</i><sup>&#x2021;</sup> cannot.</p>
+
+
+<p class="indent3-ka">By substituting <a href="#eq_2.4">eqn 2.4</a> into eqn <a href="#eq_2.2">2.2</a>, we obtain</p>
+<p class="fig1" style="text-align:center">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>k</mi>
+   <mi>c</mi>
+  </msub>
+  <mo>=</mo><mstyle scriptlevel='+1'>
+   <mfrac>
+    <mrow>
+     <msub>
+      <mi>k</mi>
+      <mi>B</mi>
+     </msub>
+     <mi>T</mi>
+    </mrow>
+    <mi>h</mi>
+   </mfrac>
+  </mstyle>
+  <mo>.</mo><msup>
+   <mi>e</mi>
+   <mrow>
+    <mo>&#x2212;</mo><mo stretchy='false'>(</mo><mi>&#x0394;</mi><msup>
+     <mi>H</mi>
+     <mtable columnalign='left'>
+      <mtr>
+       <mtd>
+        <mo>&#x2021;</mo>
+       </mtd>
+      </mtr>
+      
+     </mtable>
+     
+    </msup>
+    <mo>&#x2212;</mo><mi>T</mi><mi>&#x0394;</mi><msup>
+     <mi>S</mi>
+     <mtable columnalign='left'>
+      <mtr>
+       <mtd>
+        <mo>&#x2021;</mo>
+       </mtd>
+      </mtr>
+     
+     </mtable>
+     
+    </msup>
+    <mo stretchy='false'>)</mo><mo>/</mo><mi>R</mi><mi>T</mi>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math></p>
+
+
+<p class="noindent">where <i>k<sub>c</sub></i> now represents either a first-order rate constant, or a second-order rate constant with the proper concentration units (mol dm<sup>-3</sup>).</p>
+<p class="noindent">This may be rewritten</p>
+
+<p style="text-align:center;width:70%" id="eq_2.5">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <msub>
+     <mi>k</mi>
+     <mi>c</mi>
+    </msub>
+    <mo>=</mo><mstyle scriptlevel='+1'>
+     <mfrac>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mi>B</mi>
+       </msub>
+       <mi>T</mi>
+      </mrow>
+      <mi>h</mi>
+     </mfrac>
+    </mstyle>
+    <mo>.</mo><msup>
+     <mi>e</mi>
+     <mrow>
+      <mi>&#x0394;</mi><msup>
+       <mi>S</mi>
+       <mtable columnalign='left'>
+        <mtr>
+         <mtd>
+          <mo>&#x2021;</mo>
+         </mtd>
+        </mtr>
+        
+       </mtable>
+       
+      </msup>
+      <mo>/</mo><msub>
+       <mi>R</mi>
+       <mrow>
+        <mo>.</mo><mi>e</mi>
+       </mrow>
+      </msub>
+      <mo>&#x2212;</mo><mi>&#x0394;</mi><msup>
+       <mi>H</mi>
+       <mtable columnalign='left'>
+        <mtr>
+         <mtd>
+          <mo>&#x2021;</mo>
+         </mtd>
+        </mtr>
+        
+       </mtable>
+       
+      </msup>
+      <mo>/</mo><mi>R</mi><mi>T</mi>
+     </mrow>
+    </msup>
+    
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mi>I</mi><mi>n</mi><msub>
+     <mi>k</mi>
+     <mi>c</mi>
+    </msub>
+    <mo>=</mo><mi>I</mi><mi>n</mi><mrow><mo>(</mo>
+     <mrow>
+      <mstyle scriptlevel='+1'>
+       <mfrac>
+        <mrow>
+         <msub>
+          <mi>k</mi>
+          <mi>B</mi>
+         </msub>
+         
+        </mrow>
+        <mi>h</mi>
+       </mfrac>
+      </mstyle>
+      
+     </mrow>
+    <mo>)</mo></mrow><mo>+</mo><mi>I</mi><mi>n</mi><mi>T</mi><mo>+</mo><mstyle scriptlevel='+1'>
+     <mfrac>
+      <mrow>
+       <mi>&#x0394;</mi><msup>
+        <mi>S</mi>
+        <mtable columnalign='left'>
+         <mtr>
+          <mtd>
+           <mo>&#x2021;</mo>
+          </mtd>
+         </mtr>
+         
+        </mtable>
+        
+       </msup>
+       
+      </mrow>
+      <mi>R</mi>
+     </mfrac>
+    </mstyle>
+    <mo>&#x2212;</mo><mstyle scriptlevel='+1'>
+     <mfrac>
+      <mrow>
+       <mi>&#x0394;</mi><msup>
+        <mi>H</mi>
+        <mtable columnalign='left'>
+         <mtr>
+          <mtd>
+           <mo>&#x2021;</mo>
+          </mtd>
+         </mtr>
+         
+        </mtable>
+        
+       </msup>
+       
+      </mrow>
+      <mrow>
+       <mi>R</mi><mi>T</mi>
+      </mrow>
+     </mfrac>
+    </mstyle>
+    
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math>
+<span style="float:right;margin-right:0.2em">(2.5)</span></p>
+<p class="noindent" style="margin-top:-2em">or</p>
+<p class="noindent">Differentiation with respect to temperature gives</p>
+
+<p style="text-align:center;width:70%">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mstyle scriptlevel='+1'>
+  <mfrac>
+   <mrow>
+    <mi>d</mi><mo stretchy='false'>(</mo><mi>I</mi><mi>n</mi><msub>
+     <mi>k</mi>
+     <mi>c</mi>
+    </msub>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mrow>
+    <mi>d</mi><mi>T</mi>
+   </mrow>
+  </mfrac>
+ </mstyle>
+ <mo>=</mo><mstyle scriptlevel='+1'>
+  <mfrac>
+   <mn>1</mn>
+   <mi>T</mi>
+  </mfrac>
+ </mstyle>
+ <mo>+</mo><mstyle scriptlevel='+1'>
+  <mfrac>
+   <mn>1</mn>
+   <mi>R</mi>
+  </mfrac>
+ </mstyle>
+ <mo>.</mo><mstyle scriptlevel='+1'>
+  <mfrac>
+   <mrow>
+    <mi>d</mi><mo stretchy='false'>(</mo><mi>&#x0394;</mi><msup>
+     <mi>S</mi>
+     <mtable columnalign='left'>
+      <mtr>
+       <mtd>
+        <mo>&#x2021;</mo>
+       </mtd>
+      </mtr>
+      
+     </mtable>
+     
+    </msup>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mrow>
+    <mi>d</mi><mi>T</mi>
+   </mrow>
+  </mfrac>
+ </mstyle>
+ <mo>&#x2212;</mo><mstyle scriptlevel='+1'>
+  <mfrac>
+   <mn>1</mn>
+   <mrow>
+    <mi>R</mi><mi>T</mi>
+   </mrow>
+  </mfrac>
+ </mstyle>
+ <mo>.</mo><mstyle scriptlevel='+1'>
+  <mfrac>
+   <mrow>
+    <mi>d</mi><mo stretchy='false'>(</mo><mi>&#x0394;</mi><msup>
+     <mi>H</mi>
+     <mtable columnalign='left'>
+      <mtr>
+       <mtd>
+        <mo>&#x2021;</mo>
+       </mtd>
+     </mtr>
+     </mtable>
+     
+    </msup>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mrow>
+    <mi>d</mi><mi>T</mi>
+   </mrow>
+  </mfrac>
+ </mstyle>
+ <mo>+</mo><mstyle scriptlevel='+1'>
+  <mfrac>
+   <mrow>
+    <mi>&#x0394;</mi><msup>
+     <mi>H</mi>
+     <mtable columnalign='left'>
+      <mtr>
+       <mtd>
+        <mo>&#x2021;</mo>
+       </mtd>
+      </mtr>
+    
+     </mtable>
+     
+    </msup>
+    
+   </mrow>
+   <mrow>
+    <mi>R</mi><msup>
+     <mi>T</mi>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+  </mfrac>
+ </mstyle>
+ 
+</math></p>
+
+<p class="noindent"><a id="page_19" class="page">Page 19, Molecular mechanisms and reaction rates</a></p>
+
+<p class="fig1" style="text-align:center" id="eq_2.6">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <mstyle scriptlevel='+1'>
+     <mfrac>
+      <mrow>
+       <mi>d</mi><mo stretchy='false'>(</mo><mi>&#x0394;</mi><msup>
+        <mi>S</mi>
+        <mtable columnalign='left'>
+         <mtr>
+          <mtd>
+           <mo>&#x2021;</mo>
+          </mtd>
+         </mtr>
+         
+        </mtable>
+        
+       </msup>
+       <mo stretchy='false'>)</mo>
+      </mrow>
+      <mrow>
+       <mi>d</mi><mi>T</mi>
+      </mrow>
+     </mfrac>
+    </mstyle>
+    <mo>=</mo><mstyle scriptlevel='+1'>
+     <mfrac>
+      <mn>1</mn>
+      <mi>T</mi>
+     </mfrac>
+    </mstyle>
+    <mo>.</mo><mstyle scriptlevel='+1'>
+     <mfrac>
+      <mrow>
+       <mi>d</mi><mo stretchy='false'>(</mo><mi>&#x0394;</mi><msup>
+        <mi>H</mi>
+        <mtable columnalign='left'>
+         <mtr>
+          <mtd>
+           <mo>&#x2021;</mo>
+          </mtd>
+         </mtr>
+        
+        </mtable>
+        
+       </msup>
+       <mo stretchy='false'>)</mo>
+      </mrow>
+      <mrow>
+       <mi>d</mi><mi>T</mi>
+      </mrow>
+     </mfrac>
+    </mstyle>
+    
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mstyle scriptlevel='+1'>
+     <mfrac>
+      <mrow>
+       <mi>d</mi><mo stretchy='false'>(</mo><mi>I</mi><mi>n</mi><msub>
+        <mi>k</mi>
+        <mi>c</mi>
+       </msub>
+       <mo stretchy='false'>)</mo>
+      </mrow>
+      <mrow>
+       <mi>d</mi><mi>T</mi>
+      </mrow>
+     </mfrac>
+    </mstyle>
+    <mo>=</mo><mstyle scriptlevel='+1'>
+     <mfrac>
+      <mrow>
+       <mi>&#x0394;</mi><msup>
+        <mi>H</mi>
+        <mtable columnalign='left'>
+         <mtr>
+          <mtd>
+           <mo>&#x2021;</mo>
+          </mtd>
+         </mtr>
+        
+        </mtable>
+        
+       </msup>
+       <mo>+</mo><mi>R</mi><mi>T</mi>
+      </mrow>
+      <mrow>
+       <mi>R</mi><msup>
+        <mi>T</mi>
+        <mn>2</mn>
+       </msup>
+       
+      </mrow>
+     </mfrac>
+    </mstyle>
+    
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math>
+<span style="float:right;margin-right:0.2em">(2.6)</span></p>
+
+<p class="noindent">The empirical Arrhenius equation also describes the temperature dependence of the rate constant of a chemical reaction, and its logarithmic form is</p>
+
+<p class="" style="text-align:center;width:70%">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>I</mi><mi>n</mi><msub>
+  <mi>k</mi>
+  <mi>c</mi>
+ </msub>
+ <mo>=</mo><mi>I</mi><mi>n</mi><mi>A</mi><mo>&#x2212;</mo><mstyle scriptlevel='+1'>
+  <mfrac>
+   <mrow>
+    <msub>
+     <mi>E</mi>
+     <mi>a</mi>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <mi>R</mi><mi>T</mi>
+   </mrow>
+  </mfrac>
+ </mstyle>
+ 
+</math></p>
+
+<table style="width:70%"><tr><td>where</td><td><i>A</i> &#x003D; the Arrhenius pre-exponential factor,</td></tr>
+<tr><td>&#160;</td><td><i>E<sub>a</sub></i> &#x003D; the Arrhenius activation energy, and</td></tr>
+<tr><td>&#160;</td><td><i>T</i> &#x003D; the absolute temperature.</td></tr></table>
+
+
+<p class="noindent">If we assume that <i>A</i> and <i>E<sub>a</sub></i> are constants, and differentiate this equation with respect to temperature, we obtain</p>
+
+<p class="" style="text-align:center;width:70%">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mstyle scriptlevel='+1'>
+  <mfrac>
+   <mrow>
+    <mi>d</mi><mo stretchy='false'>(</mo><mi>I</mi><mi>n</mi><msub>
+     <mi>k</mi>
+     <mi>c</mi>
+    </msub>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mrow>
+    <mi>d</mi><mi>T</mi>
+   </mrow>
+  </mfrac>
+ </mstyle>
+ <mo>=</mo><mstyle scriptlevel='+1'>
+  <mfrac>
+   <mrow>
+    <msub>
+     <mi>E</mi>
+     <mi>a</mi>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <mi>R</mi><msup>
+     <mi>T</mi>
+     <mn>2</mn>
+    </msup>
+    
+   </mrow>
+  </mfrac>
+ </mstyle>
+ 
+</math></p>
+
+
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<p class="aside">Linearity in an Arrhenius plot of lnfc<sub>c</sub> against (<i>T</i>)<sup>1</sup> is evidence of the temperature independence of A and <i>E<sub>a</sub></i></p></aside>
+
+<p class="noindent">which, following comparison with <a href="#eq_2.6">eqn 2.6</a>, establishes the relationship between <i>E<sub>a</sub></i> and &#916;<i>H</i><sup>&#x2021;</sup> shown in <a href="#eq_2.7">eqn 2.7</a>.</p>
+
+<figure id="eq_2.7">
+<p class="noindent" style="text-align:center;width:70%"><i>E<sub>a</sub></i> &#x003D; &#916;<i>H</i><sup>&#x2021;</sup> &#x002B; <i>RT.</i>	<span style="float:right">(2.7)</span></p></figure>
+
+
+<p class="noindent">We have, therefore, a ready method of determining &#916;<i>H</i><sup>&#x2021;</sup> from rate constant measurements at different temperatures; we simply use <i>E<sub>a</sub></i> obtained from the gradient of an Arrhenius plot of ln(<i>k</i><sub>c</sub>) against (<i>T</i>)<sup>-1</sup> and <a href="#eq_2.7">eqn 2.7</a>. For <i>T</i> in <a href="#eq_2.7">eqn 2.7</a>, we use the mean temperature of the Arrhenius investigation.</p>
+
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<p class="aside">Numerically, <i>RT</i> is usually quite small compared with <i>E<sub>a</sub></i></p></aside>
+
+<p class="indent3-ka">Next, we substitute for &#916;<i>H</i><sup>&#x2021;</sup> in <a href="#eq_2.5">eqn 2.5</a> using <a href="#eq_2.7">eqn 2.7</a> to obtain</p>
+
+<p class="" style="text-align:center;width:70%">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <msub>
+     <mi>k</mi>
+     <mi>c</mi>
+    </msub>
+    <mo>=</mo><mstyle scriptlevel='+1'>
+     <mfrac>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mi>B</mi>
+       </msub>
+       <mi>T</mi>
+      </mrow>
+      <mi>h</mi>
+     </mfrac>
+    </mstyle>
+    <mo>.</mo><msup>
+     <mi>e</mi>
+     <mrow>
+      <mi>&#x0394;</mi><msup>
+       <mi>S</mi>
+       <mtable columnalign='left'>
+        <mtr>
+         <mtd>
+          <mo>&#x2021;</mo>
+         </mtd>
+        </mtr>
+        
+       </mtable>
+       
+      </msup>
+      <mo>/</mo><mi>R</mi>
+     </mrow>
+    </msup>
+    <mo>.</mo><msup>
+     <mi>e</mi>
+     <mrow>
+      <mo>&#x2212;</mo><mo stretchy='false'>(</mo><msub>
+       <mi>E</mi>
+       <mi>a</mi>
+      </msub>
+      <mo>&#x2212;</mo><mi>R</mi><mi>T</mi><mo stretchy='false'>)</mo><mo>/</mo><mi>R</mi><mi>T</mi>
+     </mrow>
+    </msup>
+    
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <msub>
+     <mi>k</mi>
+     <mi>c</mi>
+    </msub>
+    <mo>=</mo><mstyle scriptlevel='+1'>
+     <mfrac>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mi>B</mi>
+       </msub>
+       <mi>T</mi>
+      </mrow>
+      <mi>h</mi>
+     </mfrac>
+    </mstyle>
+    <mo>.</mo><msup>
+     <mi>e</mi>
+     <mrow>
+      <mi>&#x0394;</mi><msup>
+       <mi>S</mi>
+       <mtable columnalign='left'>
+        <mtr>
+         <mtd>
+          <mo>&#x2021;</mo>
+         </mtd>
+        </mtr>
+       
+       </mtable>
+       
+      </msup>
+      <mo>/</mo><mi>R</mi>
+     </mrow>
+    </msup>
+    <mo>.</mo><msup>
+     <mi>e</mi>
+     <mrow>
+      <mo>&#x2212;</mo><msub>
+       <mi>E</mi>
+       <mi>a</mi>
+      </msub>
+      <mo>&#x2212;</mo><mi>R</mi><mi>T</mi>
+     </mrow>
+    </msup>
+    <mo>.</mo><mi>e</mi>
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math></p>
+<p class="noindent" style="margin-top:-2.5em">or</p>
+<p class="noindent">and comparison of this with the exponential form of the Arrhenius equation,</p>
+
+<p class=""  id="eq_2.8" style="text-align:center;width:70%">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <msub>
+     <mi>k</mi>
+     <mi>c</mi>
+    </msub>
+    <mo>=</mo><mi>A</mi><mo>.</mo><msup>
+     <mi>e</mi>
+     <mrow>
+      <mo>&#x2212;</mo><msub>
+       <mi>E</mi>
+       <mi>a</mi>
+      </msub>
+      <mo>&#x2212;</mo><mi>R</mi><mi>T</mi>
+     </mrow>
+    </msup>
+    <mo>,</mo>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mi>A</mi><mo>=</mo><mstyle scriptlevel='+1'>
+     <mfrac>
+      <mrow>
+       <msub>
+        <mi>k</mi>
+        <mi>B</mi>
+       </msub>
+       <mi>T</mi>
+      </mrow>
+      <mi>h</mi>
+     </mfrac>
+    </mstyle>
+    <mo>.</mo><mi>e</mi><mo>.</mo><msup>
+     <mi>e</mi>
+     <mrow>
+      <mi>&#x0394;</mi><msup>
+       <mi>S</mi>
+       <mtable columnalign='left'>
+        <mtr>
+         <mtd>
+          <mo>&#x2021;</mo>
+         </mtd>
+        </mtr>
+        
+       </mtable>
+       
+      </msup>
+      <mo>/</mo><mi>R</mi>
+     </mrow>
+    </msup>
+    
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math>
+<span style="float:right;margin-right:0.1em">(2.8)</span></p>
+
+<p class="indent3-ka">We see, therefore, that an experimental value for &#916;<i>S</i><sup>&#x2021;</sup> may be obtained from the pre-exponential factor, <i>A</i>, determined from the intercept in an Arrhenius plot of In<i>k<sub>c</sub></i> versus (<i>T</i>)<sup>-1</sup>. In <a href="#eq_2.8">eqn 2.8</a>, as in <a href="#eq_2.7">eqn 2.7</a>, <i>T</i> is the mean temperature of the Arrhenius investigation and, if the reaction is other than first order, <i>k<sub>c</sub></i> values must have mol dm<sup>-3</sup> concentration units.</p>
+
+<aside class="abc" style="margin-top:-7.3em;" epub:type="sidebar">
+<p class="aside">It turns out that &#916;<i>H</i><sup>&#x2021;</sup> and &#916;<i>S</i><sup>&#x2021;</sup> are relatively insensitive to temperature.</p></aside>
+
+
+<h3 class="h3"><b>The Eyring equation</b></h3>
+<p class="noindent">In the above sections, we saw that it is possible to determine &#916;<i>H</i><sup>&#x2021;</sup> and &#916;<i>S</i><sup>&#x2021;</sup> from the Arrhenius parameters <i>E<sub>a</sub></i> and <i>A</i>, respectively. It is possible to<a id="page_20" class="page">Page 20, Molecular mechanisms and reaction rates</a>determine them directly from the same experimental results by a slightly different approach. For most reactions in solution, this is the commonest and most convenient way to proceed.</p>
+
+
+
+<p class="indent3-ka">Rewriting <a href="#eq_2.2">eqn 2.2</a> using <i>k<sub>c</sub></i> rather than <i>k</i> to remind us to use rate constants with the proper units</p>
+<p class="" style="text-align:center;width:70%">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mi>k</mi>
+   <mi>c</mi>
+  </msub>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <msub>
+     <mi>k</mi>
+     <mi>B</mi>
+    </msub>
+    <mi>T</mi>
+   </mrow>
+   <mi>h</mi>
+  </mfrac>
+  <mo>.</mo><msup>
+   <mi>e</mi>
+   <mrow>
+    <mo>&#x2212;</mo><mi>&#x0394;</mi><msup>
+     <mi>G</mi>
+     <mtable columnalign='left'>
+      <mtr>
+       <mtd>
+        <mo>&#x2021;</mo>
+       </mtd>
+      </mtr>
+     
+     </mtable>
+     
+    </msup>
+    <mo>/</mo><mi>R</mi><mi>T</mi>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math></p>
+
+<p class="noindent">and substituting for &#916;<i>G</i><sup>&#x2021;</sup> we obtain, after a minor rearrangement,</p>
+<p class="" style="text-align:center;width:70%">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <mfrac>
+   <mrow>
+    <msub>
+     <mi>k</mi>
+     <mi>c</mi>
+    </msub>
+    
+   </mrow>
+   <mi>T</mi>
+  </mfrac>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <msub>
+     <mi>k</mi>
+     <mi>B</mi>
+    </msub>
+    <mi>T</mi>
+   </mrow>
+   <mi>h</mi>
+  </mfrac>
+  <mo>.</mo><msup>
+   <mi>e</mi>
+   <mrow>
+    <mo>&#x2212;</mo><mrow><mo>(</mo>
+     <mrow>
+      <mi>&#x0394;</mi><msup>
+       <mi>H</mi>
+       <mtable columnalign='left'>
+        <mtr>
+         <mtd>
+          <mo>&#x2021;</mo>
+         </mtd>
+        </mtr>
+      
+       </mtable>
+       
+      </msup>
+      <mo>&#x2212;</mo><mi>T</mi><mi>&#x0394;</mi><msup>
+       <mi>S</mi>
+       <mtable columnalign='left'>
+        <mtr>
+         <mtd>
+          <mo>&#x2021;</mo>
+         </mtd>
+        </mtr>
+       
+       </mtable>
+       
+      </msup>
+      
+     </mrow>
+    <mo>)</mo></mrow><mo>/</mo><mi>R</mi><mi>T</mi>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math></p>
+<p class="noindent">By separating the exponential term into two, taking logarithms, and rearranging, we obtain the equation</p>
+<p class="" style="text-align:center;width:70%">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>I</mi><mi>n</mi><mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <msub>
+       <mi>k</mi>
+       <mi>c</mi>
+      </msub>
+      
+     </mrow>
+     <mi>T</mi>
+    </mfrac>
+    
+   </mrow>
+  <mo>)</mo></mrow><mo>=</mo><mi>I</mi><mi>n</mi><mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <msub>
+       <mi>k</mi>
+       <mi>B</mi>
+      </msub>
+      
+     </mrow>
+     <mi>h</mi>
+    </mfrac>
+    
+   </mrow>
+  <mo>)</mo></mrow><mo>+</mo><mfrac>
+   <mrow>
+    <mi>&#x0394;</mi><msup>
+     <mi>S</mi>
+     <mtable columnalign='left'>
+      <mtr>
+       <mtd>
+        <mo>&#x2021;</mo>
+       </mtd>
+      </mtr>
+     
+     </mtable>
+     
+    </msup>
+    
+   </mrow>
+   <mi>R</mi>
+  </mfrac>
+  <mo>&#x2212;</mo><mfrac>
+   <mrow>
+    <mi>&#x0394;</mi><msup>
+     <mi>H</mi>
+     <mtable columnalign='left'>
+      <mtr>
+       <mtd>
+        <mo>&#x2021;</mo>
+       </mtd>
+      </mtr>
+   
+     </mtable>
+     
+    </msup>
+    
+   </mrow>
+   <mrow>
+    <mi>R</mi><mi>T</mi>
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math></p>
+<p class="noindent">which shows that the gradient is - &#916;<i>H</i><sup>&#x2021;</sup> in a graph of In(<i>k<sub>c</sub>/T)</i> against (<i>T</i>)<sup>-1</sup>, and the intercept is In<i>(k<sub>B</sub>/h)</i> &#x002B; &#916;<i>S</i><sup>&#x2021;</sup>/<i>R</i>.</p>
+</section>
+<section epub:type="chapter" id="sec_2.4">
+<h2 class="h2"><b>2.4 The physical significance and mechanistic</b></h2> 
+<h2 class="h2" style="margin-left:4em;margin-top:-0.5em"><b>interpretation of activation parameters</b></h2>
+<h3 class="h3"><b>Arrhenius activation energy,</b> <i>E<sub>a</sub></i></h3>
+<p class="noindent">The activation energy is the parameter in the empirical Arrhenius equation which describes the temperature dependence of the rate constant. A large <i>E<sub>a</sub></i> corresponds to a rate constant which increases rapidly with temperature, and a small <i>E<sub>a</sub></i> corresponds to a rate constant which increases only slightly with temperature. However, <i>E<sub>a</sub></i> is related by <a href="#eq_2.7">eqn 2.7</a> above to the enthalpy of activation, &#916;<i>H</i><sup>&#x2021;</sup>, a term whose origin lies in transition state theory and which is of considerable mechanistic significance (see below).</p>
+
+
+<aside class="abc" style="margin-top:-7.3em;" epub:type="sidebar">
+<p class="aside">Note that <i>E<sub>a</sub></i> &#x003D; 0 corresponds to a reaction whose rate constant is temperature-independent, and that, strictly, the value of <i>E<sub>a</sub></i> alone gives no information about the absolute value of the rate constant - only its temperature dependence.</p></aside>
+
+
+<h3 class="h3"><b>Arrhenius pre-exponential factor,</b> <i>A</i></h3>
+<p class="noindent">Formally, the pre-exponential factor in the Arrhenius equation is the hypothetical value of the rate constant as the temperature approaches infinity. It necessarily has the same units as the rate constant. Consequently, <i>A</i> values of different reactions may be legitimately compared only if they are of the same kinetic order. Although <i>A</i> originates in an empirical equation, we saw above in <a href="#eq_2.8">eqn 2.8</a> that it is related to the entropy of activation which is based in theory. As we shall see below, therefore, <i>A</i> indirectly provides mechanistic information via &#916;<i>S</i><sup>&#x2021;</sup>.</p>
+
+
+<h3 class="h3"><b>Free energy of activation, &#916;<i>G</i><sup>&#x2021;</sup></b></h3>
+<p class="noindent">The free energy of activation is a parameter which originates in transition state theory and provides the same information as the rate constant-they are interconvertible using <a href="#eq_2.2">eqn 2.2</a>. Both quantify and express what we may<a id="page_21" class="page">Page 21, Molecular mechanisms and reaction rates</a>otherwise state qualitatively by saying, for example, that a reaction is fast or slow, and neither provides more information or mechanistic insight than the other. The rate constant has the advantage that its units indicate the rate law of the reaction (for example, first order or second order), and warns us against inappropriately comparing reactions of different order. On the other hand, the free energy of activation allows us to represent the reaction diagrammatically in a reaction profile, and offers a <i>pseudo</i>-thermodynamic analysis of the kinetics in terms of enthalpy and entropy of activation.</p>
+
+
+<h3 class="h3"><b>Enthalpy of activation, &#916;<i>H</i><sup>&#x2021;</sup></b></h3>
+<p class="noindent">The enthalpy of activation is the component of the free energy of activation which is the enthalpy change as one mole of initial state becomes one mole of transition state. For gas-phase reactions, &#916;<i>G</i><sup>&#x2021;</sup> is the molar enthalpy change due to rebonding as one mole of reactant molecules become one mole of activated complex molecules, i.e. a theoretical process,</p>
+
+<figure class="" id="eq_2.9" style="width:70%">
+<p class="noindent" style="width:100%;text-align:center">&#916;<i>H</i><sup>&#x2021;</sup> &#x003D; &#916;<sub>f</sub><i>H</i>activated complex) - &#x2211;&#916;<sub>f</sub><i>H</i>(reactant molecules),<span style="float:right">(2.9)</span></p></figure> 
+
+<p class="noindent">where &#916;<sub>f</sub><i>H</i> &#x003D; molar enthalpy of formation.</p>
+
+<p class="noindent"><i>Gas-phase homolysis reaction.</i> In the gas-phase homolysis of ethane to give two methyl radicals,</p>
+
+<figure class="" id="eq_2.10" style="width:70%;text-align:center">
+<p class="noindent" style="text-align:center;width:100%">CH<sub>3</sub>-CH<sub>3</sub> &#x2192; 2CH<sub>3</sub><sup>&#x2022;</sup> (&#x2192; further reaction),<span style="float:right">(2.10)</span></p></figure>
+
+<p class="noindent">the experimental value of &#916;<i>H</i><sup>&#x2021;</sup> &#x003D; 361 kJ mol<sup>-1</sup> (obtained from <i>E<sub>a</sub></i> &#x003D; 368 kJ mol<sup>-1</sup> over the temperature range 823 - 893 K using <a href="#eq_2.7">eqn 2.7</a>) is virtually the same as the C-C bond dissociation enthalpy. The C-C bond, therefore, is almost completely broken in the transition state for homolysis and (according to this evidence) the activated complex comprises a pair of loosely associated methyl radicals.</p>
+
+<aside class="abc" style="margin-top:-14.3em;" epub:type="sidebar">
+<figure id="fig_2.3">
+<img src="../images/page_21_1.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption class="aside"><b>Fig. 2.3</b> Enthalpy profile for the homolysis of ethane The closeness of the transition structure to the product in energy leads to the deduction that, <i>structurally</i>, it is very product-like (see Hammond effect, <a href="Chapter01.xhtml#page_11">p. 11</a>).</figcaption></figure></aside>
+
+<p class="noindent"><i>Gas-phase isomerisation.</i> <a href="#eq_2.9">Equation 2.9</a> could be reformulated as <a href="#eq_2.11">eqn 2.11</a> where D<i>H</i> &#x003D; molar bond dissociation enthalpy.</p>
+
+<figure id="eq_2.11">
+<p class="noindent" style="text-align:center">&#916;<i>H</i><sup>&#x2021;</sup> &#x003D; &#x2211;D<i>H</i>(bonds broken) - &#x2211;D<i>H</i>(bonds formed)<span style="float:right">(2.11)</span></p></figure>
+
+<p class="noindent">This shows more clearly that a low enthalpy of activation may be anticipated if the formation of new bonds is concerted with the cleavage of old ones in the formation of the transition state.</p>
+
+<p class="indent3-ka">For the gas-phase isomerisation in <a href="#eq_2.12">eqn 2.12</a>, <i>E<sub>a</sub></i> &#x003D; 123 kJ mol<sup>-1</sup> from rate constant measurements made over the temperature range 416 - 467 K hence, by <a href="#eq_2.7">eqn 2.7</a>, &#916;<i>H</i><sup>&#x2021;</sup> &#x003D; 119 kJ mol<sup>-1</sup>.</p>
+
+<figure id="eq_2.12" style="text-align:right;width:70%">
+<img src="../images/page_21_2.jpg" alt="images"/></figure>
+
+
+<p class="noindent"><a id="page_22" class="page">Page 22, Molecular mechanisms and reaction rates</a></p>
+<p class="indent3-ka">This value is much smaller than typical bond dissociation enthalpies and indicates that bond breaking and bond making are concerted when reactant molecules are transformed into activated complex molecules as illustrated in <a href="#eq_2.12">eqn 2.12</a> where the broken lines represent partial bonds.</p>
+
+
+<p class="noindent"><i>Bimolecular substitution reaction in solution.</i> <b></b>The rate of the substitution reaction in <a href="#eq_2.13">eqn 2.13</a> was investigated in acetone as solvent. Measurement of the second-order rate constant at several temperatures around 45 &#x00B0;C gave an Arrhenius plot, and <i>E<sub>a</sub></i> &#x003D; 73 kJ mol<sup>-1</sup> hence &#916;<i>H</i><sup>&#x2021;</sup> &#x003D; 71 kJ mol<sup>-1</sup>.</p>
+
+<aside class="abc" style="margin-top:-4.3em;" epub:type="sidebar">
+<figure id="fig_2.4">
+<img src="../images/page_22_1.jpg" alt="images"/>
+<figcaption class="aside"><b>Fig. 2.4</b> Activated complex in the reaction of <a href="#eq_2.13">eqn 2.13</a></figcaption></figure></aside>
+
+<figure id="eq_2.13">
+<p class="noindent" style="text-align:center">C<sub>2</sub>H<sub>5</sub>-Br &#x002B; CI<sup>-</sup> &#x2192; C<sub>2</sub>H<sub>5</sub>-CI &#x002B; Br<sup>-</sup><span style="float:right">(2.13)</span></p></figure>
+
+<p class="noindent">This rather low value is due to the partial formation of the C-Cl bond being concerted with the cleavage of the C-Br bond, i.e. the enthalpy cost of partially breaking one bond is offset by the partial formation of another. The activated complex in this S<sub>N</sub>2 mechanism is represented in <a href="#fig_2.4">Fig. 2.4</a>.</p>
+
+<p class="indent3-ka">Additionally, however, as for all reactions in solution, the enthalpy of solvation of the initial state and of the transition state have to be taken into account. Chloride, being a relatively small anion of high charge density is strongly solvated whereas the activated complex shown in <a href="#fig_2.4">Fig. 2.4</a> has the same negative charge distributed over a much larger species. Consequently, the activated complex has a smaller polarising effect upon solvent molecules and so is less strongly solvated. Its formation, therefore, requires some desolvation of chloride which involves an enthalpy cost, and this is included in the enthalpy of activation. However, the liberation of solvent molecules is entropically very favourable as we shall see in the next section.</p>
+
+<p class="noindent"><i>Unimolecular substitution/elimination reaction in solution.</i> The importance of solvation in a unimolecular solvolysis is illustrated by the reaction of <i>tert-</i>butyl chloride (2-methyl-2-chloropropane) in methanoic acid.</p>
+
+<figure id="eq_2.14" style="text-align:center;width:70%">
+<img src="../images/eq_22_1.jpg" alt="images"/></figure>
+
+
+<p class="noindent">In <a href="#eq_2.14">eqn 2.14</a>, which is kinetically first order, the two products are formed from the <i>tert-</i>butyl carbenium ion intermediate either by solvent capture followed by proton loss (S<sub>N</sub>1) or by direct proton donation to the solvent (El). A simplified description of this type of S<sub>N</sub>1/E1 mechanism is shown in <a href="#eq_2.15">eqn 2.15</a> and includes a rate-determining ionization followed by partitioning of the carbenium ion between the alternative parallel product-forming steps.</p>
+
+<figure id="eq_2.15" style="text-align:right;width:70%">
+<img src="../images/eq_22_2.jpg" alt="images"/></figure>
+
+
+<p class="noindent">The enthalpy of activation of this reaction is 88 kJ mol<sup>-1</sup>. Whilst this is appreciably greater than values for typical S<sub>N</sub>2 reactions, it is still much smaller than the bond dissociation enthalpy of a C-Cl bond (ca. 350 kJ mol<sup>-1</sup> in the gas phase). There are two possible reasons for this. First, the bond in<a id="page_23" class="page">Page 23, Molecular mechanisms and reaction rates</a>
+the activated complex included in <a href="#eq_2.15">eqn 2.15</a> is not completely broken-there is still vestigial bonding between the carbon and the chlorine in the transition state. Secondly, the dipolar activated complex will be much more strongly solvated than a relatively nonpolar <i>tert</i>-butyl chloride reactant molecule by the polar methanoic acid molecules through hydrogen bonds and Lewis acid- base interactions. This greater solvation of the activated complex molecules relative to the reactant molecules reduces the enthalpy cost of the ionization in solution. And the better the solvent is able selectively to solvate the activated complex, the lower the enthalpy barrier as shown in <a href="#fig_2.5">Fig. 2.5</a>.</p>
+
+<figure id="fig_2.5" style="text-align:center;width:70%">
+<img src="../images/page_23_1.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="width:100%;text-align:center"><b>Fig. 2.5</b> Effect of solvation on the enthalpy of activation of ionization of neutral R-X</figcaption></figure>
+
+<aside class="abc" style="margin-top:-20.3em;" epub:type="sidebar">
+<p class="aside"><a href="#fig_2.5">Fig. 2.5</a> describes the ionisation of neutral substrate R-X. In the gas phase, there would not be a minimum corresponding to the ion pair, R<sup>&#x002B;</sup> X<sup>-</sup>. In the poor solvating medium, there is a shallow minimum, and the barrier to its formation is &#916;<i>H</i><sup>&#x2021;&#x00B4;</sup>. In the better solvating medium, both reactant and intermediate are stabilised, but the latter more than the former, and the activated complex is between the two. The consequence is that the enthalpy barrier to ionisation, &#916;<i>H</i><sup>&#x2021;</sup>, is appreciably smaller in the better solvating medium.</p></aside>
+
+
+
+<p class="indent3-ka">There are two corollaries of this interpretation. First, if the solvent does not have Lewis base sites to interact with the developing positive charge on the &#x03B1;-carbon, and does not have weakly acidic hydrogens to form hydrogen bonds with the developing nucleofuge, then there will be no selective stabilisation of the activated complex and the enthalpy cost of ionization will be high. This is observed. The enthalpy cost of ionisation in solvents such as hydrocarbons (which will solvate the nonpolar reactant molecules better than polar activated complex molecules) is prohibitively high, and S<sub>N</sub>1 reactions do not occur in such solvents. Secondly, the enhanced solvation of the activated complex molecules in a polar solvent corresponds to decreased rotational and translational freedom of the solvent molecules in the transition state. This should contribute adversely to the entropy of activation which is also observed as we shall see in the next section.</p>
+
+<aside class="abc" style="margin-top:-9.3em;" epub:type="sidebar">
+<p class="aside">Note that reduction of the energy difference between reactant and ion-pair by transferring the reaction to a better ionizing medium moves the transition structure for ionization towards the reactant; this is a parallel (Hammond) effect, see <a href="Chapter01.xhtml">chapter 1</a>.</p>
+</aside>
+
+<h3 class="h3"><b>Entropy of activation, &#916;<i>S</i><sup>&#x2021;</sup></b></h3>
+<p class="noindent">The entropy of activation is the non-enthalpic component of the free energy of activation. Like &#916;<i>H</i><sup>&#x2021;</sup>, it is approximately temperature independent but, unlike &#916;<i>H</i><sup>&#x2021;</sup>, it is difficult to interpret in general terms. Particular values admit quite different interpretations according to the natures of the reactions. However, as its relationship with the pre-exponential factor indicates (<a href="#eq_2.8">eqn 2.8</a>), it is not<a id="page_24" class="page">Page 24, Molecular mechanisms and reaction rates</a>legitimate to compare &#916;<i>S</i><sup>&#x2021;</sup> values for reactions of different kinetic orders. Consequently, in this respect also, it differs from &#916;<i>H</i><sup>&#x2021;</sup>.</p>
+
+
+<aside class="abc" style="margin-top:-3.3em;" epub:type="sidebar">
+<p class="aside">Whereas &#916;<i>H</i><sup>&#x2021;</sup> is independent of the units of the rate constants used in its determination, this is not true for &#916;<i>S</i><sup>&#x2021;</sup>.</p>
+<p class="aside">&#916;<i>S</i><sup>&#x2021;</sup> &#x003D; <i>S</i>(activated complex)- <i>S</i>(reactant)solvent</p></aside>
+
+
+<p class="noindent"><i>Gas-phase homolysis reaction.</i> For the dissociation of ethane into methyl radicals, <a href="#eq_2.10">eqn 2.10</a> above, <i>A</i> &#x003D; 5.0 &#x00D7; l0<sup>16</sup> s<sup>-1</sup> which leads by <a href="#eq_2.8">eqn 2.8</a> to &#916;<i>S</i><sup>&#x2021;</sup> &#x003D; 58 J K<sup>-1</sup> mol<sup>-1</sup>. This is a large positive result-exactly what would be expected if the activated complex comprises a very loosely bonded pair of methyl groups, i.e. the mechanism proposed in <a href="#fig_2.3">Fig. 2.3</a> on the basis of the enthalpy of activation evidence.</p>
+
+<p class="noindent"><i>Gas-phase isomerisation.</i> In contrast, &#916;<i>S</i><sup>&#x2021;</sup> &#x003D; -32 J K<sup>-1</sup> mol<sup>-1</sup> (calculated from <i>A</i> &#x003D; 5.4 &#x00D7; l0<sup>11</sup> s<sup>-1</sup>) for the gas-phase isomerisation of <a href="#eq_2.12">eqn 2.12</a>. This negative result, i.e. a loss of entropy as one mole of initial state gives one mole of transition state, is qualitatively what would be expected if a conformationally mobile reactant molecule has to assume a restricted conformation in order that rebonding can occur in the activated complex shown in <a href="#eq_2.12">eqn 2.12</a>. This entropy of activation result, therefore, is also fully in accord with the mechanism proposed from the enthalpy of activation evidence-a unimolecular mechanism through a cyclic activated complex involving concerted bond breaking and making.</p>
+
+<aside class="abc" style="margin-top:-1.3em;" epub:type="sidebar">
+<p class="aside">&#916;<i>S</i><sup>&#x2021;</sup> &#x003D; <i>S</i>(activated complex)solvent<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;- &#x2211;<i>S</i>(reactants)solvent</p>
+<p class="aside">Note the units of <i>A</i>; the reaction of <a href="#eq_2.13">eqn 2.13</a> is second order and <i>A</i> has the same units as the rate constant.</p></aside>
+
+
+<p class="noindent"><i>Bimolecular substitution reaction in solution.</i> Any bimolecular mechanism
+involves a loss of translational entropy in the formation of the transition state
+because each activated complex molecule is derived from two reactant
+molecules (or ions). In the bimolecular substitution reaction of eqn <a href="#eq_2.13">2.13</a> (<a href="#page_22">p.
+22</a>), the reactants are an ethyl bromide molecule and a chloride anion. From
+<i>A</i> &#x003D; 7.9 &#x00D7; l0<sup>8</sup> dm<sup>3</sup> mol<sup>-1</sup> s<sup>-1</sup>, we calculate &#916;<i>S</i><sup>&#x2021;</sup> &#x003D; -75 J K<sup>-1</sup>mol<sup>-1</sup>. In fact, the
+purely translational contribution due to the formation of the activated
+complex shown in <a href="#fig_2.4">Fig. 2.4</a> from reactants may be calculated and is even more
+negative than -75 J K<sup>-1</sup> mol<sup>-1</sup>. There must be another feature of this reaction,
+therefore, which makes a positive contribution to the overall experimental
+&#916;<i>S</i><sup>&#x2021;</sup>, and this is the change in solvation associated with the formation of the
+transition state. When considering the enthalpy of activation of this reaction
+above, we saw that the activated complex shown in <a href="#fig_2.4">Fig. 2.4</a> is less strongly
+solvated than chloride. This shedding of solvent molecules from around the
+chloride makes a positive contribution to the overall entropy of activation,
+hence the experimental value for &#916;<i>S</i><sup>&#x2021;</sup> is less negative than expected from just
+the reaction&#x2019;s bimolecularity.</p>
+
+
+<p class="indent3-ka">In other substitution reactions in solution, solvation effects can amplify the
+translational contribution of the bimolecularity. In the quaternisation reaction
+of <a href="#eq_2.16">eqn 2.16</a>, two neutral molecules form a tetra-alkylammonium iodide, and
+the activated complex involves some degree of dipolarity.</p>
+
+
+
+<figure id="eq_2.16" style="text-align:right;width:70%">
+<img src="../images/eq_24_1.jpg" alt="images"/></figure>
+
+
+<p class="noindent"><a id="page_25" class="page">Page 25, Molecular mechanisms and reaction rates</a></p>
+<p class="noindent">In this reaction, the activated complex molecules are more strongly solvated
+than the relatively nonpolar reactant molecules which leads to a strong
+negative contribution to the entropy of activation. Experimental values range
+between -160 and -200 J K<sup>-1</sup> mol<sup>-1</sup> depending upon the solvent.
+Correspondingly, the enthalpies of activation are very low, &#916;<i>H</i><sup>&#x2021;</sup> &#x003D; 46 - 50 kJ
+mol<sup>-1</sup> depending on the solvent, as the enthalpic cost of forming the activated
+complex from reactant molecules is offset by the enthalpy, of intermolecular
+interactions between the solvating molecules and the activated complex.</p>
+
+
+<aside class="abc" style="margin-top:1.3em;" epub:type="sidebar">
+<p class="aside">&#916;<i>S</i><sup>&#x2021;</sup> &#x003D; S(activated complex)solvent<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;- S(reactant)solvent</p></aside>
+
+
+<p class="noindent"><i>Unimolecular substitution/elimination reactions in solution.</i> The initial rate-
+limiting step of the S<sub>N</sub>1/E1 mechanism of <a href="#eq_2.15">eqn 2.15</a> involves cleavage of the
+bond between the nucleofuge and the &#x03B1;-carbon. Formation of the activated
+complex, therefore, involves appreciable loosening of this bond and, as in the
+homolysis of ethane in <a href="#eq_2.10">eqn 2.10</a> and <a href="#fig_2.3">Fig. 2.3</a>, would lead to a positive entropy of activation if nothing else were involved. However, there are two significant
+differences between the reactions of <a href="#eq_2.10">eqns 2.10</a> and <a href="#eq_2.15">2.15</a>. The former is in the gas phase and is a homolysis whereas the latter is in solution and is a heterolysis. Consequently, the formation of a dipolar activated complex from a relatively nonpolar reactant in <a href="#eq_2.15">eqn 2.15</a> leads to increased solvation. This corresponds to a decrease in the translational and rotational freedom of solvent molecules, i.e. a negative contribution to the overall entropy of activation. Typically, &#916;<i>S</i><sup>&#x2021;</sup> values for S<sub>N</sub>1/E1 reactions of neutral compounds as in <a href="#eq_2.15">eqn 2.15</a> are close to zero (-7 J K<sup>-1</sup> mol<sup>-1</sup> for the formolysis of <i>tert-</i>butyl chloride, <a href="#eq_2.14">eqn 2.14</a>), so it appears that the gain in entropy due to the bond loosening in the heterolysis is just about balanced by the loss of entropy due
+to the attendant increase in solvation in the transition state.</p>
+
+<aside class="abc" style="margin-top:-8.3em;" epub:type="sidebar">
+<p class="aside"><i>Formolysis</i> is solvolysis in formic acid, i.e. methanoic acid.</p></aside>
+
+
+<figure id="eq_2.17" style="text-align:right;width:70%">
+<img src="../images/eq_25_1.jpg" alt="images"/></figure>
+
+
+<p class="indent3-ka">Anomalous effects are observed for S<sub>N</sub>1/E1 reactions in water. The entropy
+of activation for hydrolysis of <i>tert-</i>butyl chloride, <a href="#eq_2.17">eqn 2.17</a>, is strongly
+positive (&#916;<i>S</i><sup>&#x2021;</sup> &#x003D; 51 J K<sup>-1</sup> mol<sup>-1</sup>). In addition to the effects described above,
+formation of the solvated dipolar activated complex disrupts the three-
+dimensional hydrogen-bonded structure of water. This makes an appreciable
+positive contribution to the overall entropy of activation.</p>
+
+
+<h3 class="h3"><b>Problems</b></h3>
+<p class="frc">2.1	The temperature dependence of the first-order rate constant of the gas-phase isomerisation of cyclobutene is given by the following equation.</p>
+
+<figure style="text-align:center;width:70%">
+<img src="../images/page_25_1.jpg" alt="images"/></figure>
+
+
+<p class="noindent"><a id="page_26" class="page">Page 26, Molecular mechanisms and reaction rates</a></p>
+<p class="frc1">(a)	Comparing this with the exponential form of the Arrhenius equation on <a href="#page_19">p. 19</a>, calculate <i>E<sub>a</sub></i>, &#916;<i>H</i><sup>&#x2021;</sup>, and &#916;<i>S</i><sup>&#x2021;</sup>, and comment on their values.</p>
+<p class="frc1">(b)	At 150&#x00B0;C, the experimental rate constant is 2.0 &#x00D7; l0<sup>-4</sup> s<sup>-1</sup>; does this fit the above expression?</p>
+<p class="frc1">(c)	Calculate &#916;<i>G</i><sup>&#x2021;</sup> from the value of <i>k</i> given in part (b); how does your value compare with that calculated from the results of part (a) at 150&#x00B0;C?</p>
+
+
+
+<p class="frc">2.2	Calculate &#916;<i>H</i><sup>&#x2021;</sup> and &#916;<i>S</i><sup>&#x2021;</sup> from the Arrhenius parameters given for the following two reactions, and comment upon their relative values. How do you account for the difference in the &#916;<i>S</i><sup>&#x2021;</sup> values?</p>
+
+<figure style="text-align:center;width:70%">
+<img src="../images/page_26_1.jpg" alt="images"/></figure>
+
+<aside class="abc" style="margin-top:-8.3em;" epub:type="sidebar">
+<p class="aside">We use log to mean decadic logarithms, logio, i.e. logarithms to the base 10.</p></aside>
+
+<p class="frc2">Calculate the rate constants for these two reactions at a common temperature of 600K, and comment upon their relative values.</p>
+
+<p class="frc">2.3	Calculate &#916;<i>H</i><sup>&#x2021;</sup> and &#916;<i>S</i><sup>&#x2021;</sup> from the Arrhenius parameters given for the following two reactions. Why are the &#916;<i>H</i><sup>&#x2021;</sup> values so different whereas the &#916;<i>S</i><sup>&#x2021;</sup> values are so similar?</p>
+
+<figure style="text-align:center;width:70%">
+<img src="../images/page_26_2.jpg" alt="images"/></figure>
+
+
+<p class="frc" style="width:65%">2.5	The decomposition of azomethane, Me-N&#x003D;N-Me, in the gas phase occurs by rate-limiting homolysis of a C-N bond; for this reaction, &#916;<i>H</i><sup>&#x2021;</sup> &#x003D; 227 kJ mol<sup>-1</sup> and &#916;<i>S</i><sup>&#x2021;</sup> &#x003D; 73 J K<sup>-1</sup> mol<sup>-1</sup>.</p>
+<p class="frc2">Azo-<i>iso</i>-butyronitrile, Me<sub>2</sub>C(CN)-N&#x003D;N-C(CN)Me<sub>2</sub>, decomposes by a similar mechanism but at much lower temperatures in an inert solvent; for this reaction, &#916;<i>H</i><sup>&#x2021;</sup> &#x003D; 131 kJ mol<sup>-1</sup> and &#916;<i>S</i><sup>&#x2021;</sup> &#x003D;51 J K<sup>-1</sup> mol<sup>-1</sup>.</p>
+<p class="frc2">How do you account for (a) the appreciable difference between the &#916;<i>H</i><sup>&#x2021;</sup> values, and (b) the substantially positive &#916;<i>S</i><sup>&#x2021;</sup> values?</p>
+
+</section></section></div></body></html>

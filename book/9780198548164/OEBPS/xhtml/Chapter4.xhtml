@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>4 Voltammetric sensors</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<section epub:type="chapter" id="ch4">
+<a id="page_48" class="page" style="width:70%;">Page 48, Voltammetric sensors</a>
+<h1 class="main">4<span class="space">&#160;</span>Voltammetric sensors</h1>
+<section epub:type="chapter" id="ch4.1">
+<h2 class="h2">4.1 Principles of voltammetric sensors</h2>
+<p class="noindent"><i>Voltammetric sensors</i> function by measurement of the current response as a function of applied potential (or the potential response as a function of applied current); in other words, they depend on the registering of current-potential profiles. A special case of voltammetric sensors is <i>amperometric sensors</i> where a fixed potential is applied and the current is registered. The recording of current as a function of time (<i>chronoamperometry</i>) can give important and useful information, as can the charge passed&#8212;<i>coulometry</i> and <i>chronocoulometry.</i> For this purpose, it is necessary that the species of interest is electroactive at the electrode material at a reasonable value of potential where neither solvent nor electrolyte decomposition occur (see <a href="Chapter2.xhtml#ch2.2">Section 2.2</a>).</p>
+<p class="indent">Hydrodynamic electrodes are important voltammetric sensors and were introduced in <a href="Chapter2.xhtml#ch2">Chapter 2</a>. They are usually operated under steady-state conditions so that steady-state voltammetric curves can be recorded. For purely analytical purposes, it is clear that the highest sensitivity amperometric sensors are those where a potential is applied corresponding to the limiting current region (see <a href="Chapter2.xhtml#fig2.11">Figs 2.11</a> and <a href="Chapter2.xhtml#fig2.12">2.12</a>).</p>
+<p class="indent">This chapter will concentrate mainly on describing the basic principles of a number of different types of non-steady-state techniques and their use in analysing electroactive species in solution, together with more elaborate schemes for application to detection of trace species.</p>
+</section>
+<section epub:type="chapter" id="ch4.2">
+<h2 class="h2">4.2<span class="space">&#160;</span>Experimental set-up and instrumentation</h2>
+<p class="noindent">The instrumentation for voltammetric sensors is more complex than that for potentiometric sensors. To control the applied potential and register the current at a working electrode (and/or charge passed) a <i>potentiostat</i> is necessary&#8212;most electroanalytical voltammetric techniques are based on potential control.</p>
+<p class="indent">Three electrodes are usually necessary (<a href="#fig4.1">Fig. 4.1</a>) in order to avoid passing current through the reference electrode, which would alter its potential via changes in the activities of the various species. The electrical circuit, through which the current passes, is between the working (indicator) electrode and an auxiliary electrode. The reference electrode serves in a three-electrode system to control the potential of the working electrode and thence the reactions which can occur there.</p>
+<p class="indent">There are a few exceptions where two-electrode systems may be able to be used. First is the case of microelectrodes, where the currents are very small and so do not perturb the potential of the reference electrode; indeed, it may be possible to use a quasi-reference electrode such as a platinum wire in particular situations. Secondly is the case when physically large, low <a id="page_49" class="page">Page 49, Voltammetric sensors</a>impedance reference electrodes are used so that, even when currents are passed, the activities of the solution species remain essentially unaltered. This often happens in systems with dropping mercury electrodes; for example, the auxiliary electrode could be a mercury pool in contact with a halide-containing electrolyte so that the sparingly soluble salt of Hg<sup>1</sup> is present at the surface.</p>
+<figure style="width:70%;" id="fig4.1">
+<img src="../images/he_9780198548164_0033.jpg" alt="images"/>
+<figcaption style="width:100%;"><p class="noindent2"><b>Fig. 4.1</b> A three-electrode electrochemical cell with control instrumentation.</p></figcaption>
+</figure>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="indent">The purpose of a <i>galvanostat</i> is to control the current between the working and auxiliary electrodes; the reference electrode acts as the reference voltage for the measurement of the potential of the working electrode. Thus, once again, three electrodes are, in practice, necessary (<a href="#fig4.1">Fig. 4.1</a>).</p>
+<p class="indent">Control and data acquisition of the response can be conveniently done by computer through an adequate interface in a digitally based potentiostat. Analogue potentiostats and galvanostats are not now widely available, and many modern voltammetric procedures are based on step functions which lends them directly to computer control. Naturally, the digital waveform can be converted into an analogue waveform by a digital to analogue converter (DAC) and the response redigitalised through an analogue to digital converter (ADC) if necessary. Indeed, erroneous interpretation of the results can arise in linear sweep techniques if this is not done, i.e. if a digital waveform is directly applied to the electrode as a staircase waveform with too-large steps, since the theory was derived for a linear voltage ramp.</p>
+</section>
+<section epub:type="chapter" id="ch4.3">
+<h2 class="h2">4.3<span class="space">&#160;</span>Potential sweep techniques</h2>
+<p class="noindent">Potential sweep methods consist of scanning a chosen region of potential and measuring the current response arising from the electron transfer and associated reactions that occur. They are widely used for the investigation of electrode processes, which is a first step towards developing an electroanalytical procedure. Naturally, they can also give quantitative information, since the currents obtained are directly proportional to concentration.</p>
+<p class="indent">The basic cyclic voltammetry scheme is shown in <a href="#fig4.2">Fig. 4.2</a>. Linear sweep voltammetry corresponds to just the first segment of the triangular waveform.<a id="page_50" class="page">Page 50, Voltammetric sensors</a> A number of parameters have to be specified. Besides those depicted in the figure, the sweep rate <i>v</i> = &#x007C;d<i>E</i>/d<i>t</i>&#x007C; is of extreme importance; typical values vary between 1 mV s<sup>&#8722;1</sup> and 1 V s<sup>&#x2212;1</sup>, although much higher sweep rates are routinely used at microelectrodes.</p>
+<aside class="abc" style="margin-top:-25em;" epub:type="sidebar">
+<figure id="fig4.2">
+<img src="../images/he_9780198548164_0034.jpg" alt="images"/>
+<figcaption style="width:100%;">
+<p class="noindent2"><b>Fig. 4.2</b> Potential waveform for cyclic voltammetry: <i>E<sub>i</sub></i> is the initial potential, <i>E<sub>f</sub></i> the final potential, <i>E<sub>max</sub></i> the maximum and <i>E<sub>min</sub></i> the minimum potentials.The initial sweep can be in the positive or negative direction (sweep rate <i>v</i>=&#x007C;d<i>E</i>/d<i>t</i>&#x007C;).</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent">As pointed out above, the implementation of linear sweeps in digitally based instruments is as a succession of steps in a staircase. This can lead to erroneous results, since the theory for linear sweep voltammetry and its cyclic equivalent, cyclic voltammetry (as shown in <a href="#fig4.2">Fig. 4.2</a>) is based on a voltage ramp and not on voltage steps. Particular care must be taken to ensure that the steps are small enough so that the two approaches are completely equivalent.</p>
+<p class="indent">The total current obtained is a sum of a contribution from a faradaic reaction and a capacitative contribution according to</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd><mrow><mi>I</mi><mo>=</mo><msub><mi>I</mi><mtext>C</mtext></msub><mo>+</mo><msub><mi>I</mi><mtext>F</mtext></msub><mo>=</mo><msub><mi>C</mi><mtext>d</mtext></msub><mfrac><mrow><mtext>d</mtext><mi>E</mi></mrow><mrow><mtext>d</mtext><mi>t</mi></mrow></mfrac><mo>+</mo><msub><mi>I</mi><mtext>F</mtext></msub><mo>=</mo><mi>v</mi><msub><mi>C</mi><mtext>d</mtext></msub><mo>+</mo><msub><mi>I</mi><mtext>F</mtext></msub></mrow></mtd><mtd><mrow></mrow></mtd><mtd><mrow></mrow></mtd></mtr></mtable></math><span class="no"><span class="space1">&#160;</span>(4.1)</span></p>
+<p class="noindent"><i>I</i><sub>c</sub> is proportional to <i>v</i> whereas, as will be shown below, <i>I</i><sub>F</sub> is proportional to v<sup>1/2</sup>. Thus, at high scan rates, the capacitative contribution must be subtracted. In practice this is often done, as with other voltammetric techniques and usually with good precision, by subtraction of the blank response, i.e. the sweep performed under the same experimental conditions in the same solution, but without the electroactive species present.</p>
+<p class="indent">The basic response to a linear sweep of potential is a peak-shaped curve, which can be understood as follows. The current begins to rise as potentials are reached where electrode reaction can occur. This creates a concentration gradient which sucks in more electroactive species until depletion effects set in and the current begins to fall again. Detection limits lie in the range 10<sup>&#x2212;5</sup> M.</p>
+<p class="indent">In cyclic voltammetry of <i>reversible reactions</i>, i.e. those with fast electrode kinetics relative to the time-scale of the sweep, the product of the initial oxidation or reduction is then reduced or oxidised, respectively, on reversing the scan direction. Theoretical analysis of the wave shape (see <a href="#fig4.3">Fig. 4.3</a>a) leads to the following equation for the peak current in linear sweep voltammetry (exemplified for an oxidation)</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML" id="eqn4.2"><mrow><msub><mi>I</mi><mrow><mtext>p</mtext><mtext>.a</mtext></mrow></msub><mo>=</mo><mn>2.69</mn><mo>&#x00D7;</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><msup><mi>n</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><mi>A</mi><msubsup><mi>D</mi><mi>R</mi><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msubsup><msub><mi>R</mi><mi>&#x221E;</mi></msub><msup><mi>v</mi><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup></mrow></math><span class="no"><span class="space1">&#160;</span>(4.2)</span></p>
+<p class="noindent">with <i>A</i> in cm<sup>2</sup>, <i>D</i><sub>R</sub> in cm<sup>2</sup> s<sup>&#8722;1</sup>, [R] in mmol cm<sup>&#8722;3</sup> and <i>v</i> in V s<sup>&#x2212;1</sup>. Of particular note is the proportionality between the peak current and <i>v</i><sup>1/2</sup>. <a href="#fig4.3">Fig. 4.3</a>a also shows the importance of measuring the peak current of the reverse peak from a baseline which is a continuation of the decaying current response in the initial scan direction.</p>
+<p class="indent">Other important data characteristic of reversible reactions are given in <a href="#box4.1">Box 4.1</a>, including the relationship between the peak potential, <i>E</i><sub>p</sub>, and the formal electrode potential, <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>E</mi><msup><mo>&#x2296;</mo><mo>&#x2032;</mo></msup></msup></math> As the sweep rate is increased, the time-scale of the experiment becomes smaller so that, eventually, equilibrium is not reached at the electrode surface and kinetic effects begin to appear.</p>
+<p class="indent">For completely <i>irreversible reactions</i> only the oxidation or reduction corresponding to the initial sweep direction appears, since re-reduction or re- oxidation, respectively, cannot occur, i.e. there is no reverse peak (<a href="#fig4.3">Fig. 4.3</a>b).</p>
+<a id="page_51" class="page" style="width:70%;">Page 51, Voltammetric sensors</a>
+<div class="babox">
+<h2 class="boxba" id="box4.1">BOX 4.1 CHARACTERISTIC OF REVERSIBLE AND IRREVERSIBLE SYSTEMS O + <i>n</i>e<sup>-</sup>&#8652; R IN LINEAR SWEEP METHODS ILLUSTRATED FOR A REDUCTION</h2>
+<p class="noindent" style="margin-top:0.8em;"><i>Reversible systems</i></p>
+<p class="noindent" style="margin-left:5em;margin-top:0.8em;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd><mrow><msub><mi>I</mi><mrow><mtext>p,c</mtext></mrow></msub></mrow></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mo>&#x2212;</mo><mn>2.69</mn><mtext>&#x2009;</mtext><mo>&#x00D7;</mo><mtext>&#x2009;</mtext><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mtext>&#x2009;</mtext><msup><mi>n</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><mtext>&#x2009;</mtext><mi>A</mi><msubsup><mi>D</mi><mtext>O</mtext><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup><mtext>&#x2009;</mtext><msub><mrow><mo stretchy='false'>[</mo><mtext>O</mtext><mo stretchy='false'>]</mo></mrow><mi>&#x221E;</mi></msub><mtext>&#x2009;</mtext><msup><mi>v</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mtd></mtr></mtable></math></p>
+<p class="noindent" style="margin-left:5em;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd><mrow><msub><mi>E</mi><mrow><mtext>p,c</mtext></mrow></msub></mrow></mtd><mtd><mo>=</mo></mtd><mtd><mrow><msubsup><mi>E</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mtext>r</mtext></msubsup><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mn>0.0285</mn><mo>/</mo><mi>n</mi><mtext>V</mtext></mrow></mtd></mtr></mtable></math></p>
+<p class="noindent" style="margin-left:5em;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>|</mo> <mrow><msub><mi>E</mi><mrow><mtext>p,e</mtext></mrow></msub><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><msub><mi>E</mi><mrow><mi>p</mi><mo>/</mo><mn>2</mn><mo>,</mo><mi>c</mi></mrow></msub></mrow> <mo>|</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>2.2</mn><mtext>&#x2009;</mtext><mfrac><mrow><mi>R</mi><mi>T</mi></mrow><mrow><mi>n</mi><mi>F</mi></mrow></mfrac><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mfrac><mrow><mn>56.6</mn></mrow><mi>n</mi></mfrac><mtext>mV</mtext><mtext>&#x2009;</mtext><mtext>at</mtext><mtext>&#x2009;</mtext><mtext>298</mtext><mtext>&#x2009;</mtext><mtext>K</mtext></mrow></math></p>
+<p class="noindent" style="margin-top:0.8em;">For cyclic voltammetry:</p>
+<p class="noindent" style="margin-top:0.8em;text-align:center;width:100%;">|<i>I</i><sub>p,a</sub>/<i>I</i><sub>p,c</sub>|=1 (if scan is inverted at least 0.1 V after the peak) Reverse Peak current must be measured from a baseline that is a continuation of the cathodic cure</p>
+<p class="noindent" style="margin-top:0.8em;"><i>Irreversible systems</i></p>
+<p class="noindent" style="margin-left:5em;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>E</mi><mrow><mi>p</mi><mo>.</mo><mi>c</mi></mrow></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msup><mi>E</mi><mi>&#x03B8;</mi></msup><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mfrac><mrow><mi>R</mi><mi>T</mi></mrow><mrow><msub><mi>&#x03B1;</mi><mi>c</mi></msub><mtext>&#x2009;</mtext><msup><mi>n</mi><mo>&#x2032;</mo></msup><mtext>&#x2009;</mtext><mi>F</mi></mrow></mfrac><mtext>&#x2009;</mtext><mrow><mo>[</mo> <mrow><mn>0.780</mn><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mtext>In</mtext><mtext>&#x2009;</mtext><mfrac><mrow><msubsup><mi>D</mi><mtext>O</mtext><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup></mrow><mrow><msub><mi>k</mi><mn>0</mn></msub></mrow></mfrac><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mn>0.5</mn><mtext>&#x2009;</mtext><mtext>In</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>&#x03B1;</mi><mi>c</mi></msub><mtext>&#x2009;</mtext><msup><mi>n</mi><mo>&#x2032;</mo></msup><mtext>&#x2009;</mtext><mi>F</mi><mi>v</mi></mrow><mrow><mi>R</mi><mi>T</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow> <mo>]</mo></mrow></mrow></math></p>
+<p class="noindent" style="margin-left:5em;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mi>p</mi><mo>.</mo><mi>c</mi></mrow></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mn>2.99</mn><mtext>&#x2009;</mtext><mo>&#x00D7;</mo><mtext>&#x2009;</mtext><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mtext>&#x2009;</mtext><mi>n</mi><msup><mrow><mo stretchy='false'>(</mo><msub><mi>&#x03B1;</mi><mrow><mtext>c</mtext><mtext>&#x2009;</mtext></mrow></msub><msup><mi>n</mi><mo>&#x2032;</mo></msup><mo stretchy='false'>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mtext>&#x2009;</mtext><mi>A</mi><mtext>&#x2009;</mtext><msub><mrow><mo stretchy='false'>[</mo><mtext>O</mtext><mo stretchy='false'>]</mo></mrow><mi>&#x221E;</mi></msub><mtext>&#x2009;</mtext><msubsup><mi>D</mi><mtext>o</mtext><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup><mtext>&#x2009;</mtext><msup><mi>v</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></math></p>
+</div>
+<figure style="width:70%;" id="fig4.3">
+<img src="../images/he_9780198548164_0035.jpg" alt="images"/>
+<figcaption style="width:100%;"><p class="noindent2"><b>Fig. 4.3</b> (a) Cyclic voltammogram for a reversible reaction, (b) Linear sweep voltammogram for an irreversible reaction. (----) corresponds to the continuation of current decay observed after sweep reversal.</p></figcaption>
+</figure>
+<a id="page_52" class="page" style="width:70%;">Page 52, Voltammetric sensors</a>
+<p class="indent">The peak current for the initial scan is given, for an oxidation at 298 K, by</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mtext>p,a</mtext></mrow></msub><mo>=</mo><mn>2.99</mn><mo>&#x00D7;</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mi>n</mi><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>&#x03B1;</mi><mi>a</mi></msub><msup><mi>n</mi><mo>&#x2032;</mo></msup></mrow><mo>)</mo></mrow></mrow><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup><mi>A</mi><msub><mi>R</mi><mi>&#x221E;</mi></msub><msubsup><mi>D</mi><mtext>R</mtext><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msubsup><msup><mi>v</mi><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup></mrow></math><span class="no"><span class="space1">&#160;</span>(4.3)</span></p>
+<p class="noindent">where <i>n</i>&#x2032; is the number of electrons in the rate-determining step and the units are as in <a href="#eqn4.2">Eqn 4.2</a>. In this case the peak potential varies with the sweep rate (see <a href="#box4.1">Box 4.1</a>) the effect of the kinetic limitations being to shift an oxidation to more positive potentials and a reduction to more negative potentials.</p>
+<p class="indent">The majority of redox couples fall between the two extremes and exhibit <i>quasi-reversible</i> behaviour. This means that the reverse peak appears but is smaller than the forward peak. By measuring the peak potentials for forward and reverse scans it is possible to deduce standard rate constants from values of peak separation for simple electrode processes O + <i>ne</i><sup>&#x2212;</sup> &#x21CC; R; this relation has been tabulated for a large number of values of peak separation (see <a href="#tab4.1">Table 4.1</a>). Such a table can be used at the same time as a quantitative determination is being carried out. Nowadays, there also exist powerful and fast computer simulation and fitting procedures which fit the whole curve and not just the peak potentials.</p>
+<p class="indent"><i>Adsorbed species</i> lead to changes in the shape of the cyclic voltammogram, since they do not have to diffuse to the electrode surface. In particular, if only adsorbed species are oxidised or reduced, in the case of fast kinetics the cyclic voltammogram is symmetrical, with oxidation and reduction peak potentials coincident (<a href="#fig4.4">Fig. 4.4</a>).</p>
+<p class="indent">If the adsorption energy of O and R is equal then the peak potential is equal to the formal potential of the adsorbed redox couple. As the kinetics become slower some peak separation begins to occur. Nevertheless, in all these cases the peak current is proportional to <i>v</i> (not <i>v</i><sup>1/2</sup>), which therefore represents a</p>
+<figure style="width:70%;" id="fig4.4">
+<img src="../images/he_9780198548164_0036.jpg" alt="images"/>
+<figcaption style="width:110%;"><p class="noindent2"><b>Fig. 4.4</b> Cyclic voltammogram for the reversible reaction of adsorbed species; &#x0393;<sub><i>R,i</i></sub>, is the initial surface concentration of adsorbed <i>i</i>.</p></figcaption>
+</figure>
+<a id="page_53" class="page" style="width:70%;">Page 53, Voltammetric sensors</a>
+<p style="width:70%;" class="tcaption" id="tab4.1"><b>Table 4.1</b> Relation between standard rate constants and separation of anodic and cathodic peak potentials where<br/><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x03C8;</mi><mo>=</mo><msub><mi>k</mi><mn>0</mn></msub><msup><mi>v</mi><mrow><mo>&#x2212;</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup><msup><mrow><mo>(</mo><mrow><mrow><mrow><mi>n</mi><mi>F</mi></mrow><mo>/</mo><mrow><mi>&#x03C0;</mi><mi>D</mi><mi>R</mi><mi>T</mi></mrow></mrow></mrow><mo>)</mo></mrow><mrow><mo>&#x2212;</mo><mrow><mn>1</mn><mo>/</mo><mrow><mn>2</mn><mtext>a</mtext></mrow></mrow></mrow></msup></math></p>
+<table>
+<tr>
+<td class="td1"><i>&#x03C8;</i></td>
+<td style="padding-left:2em;" class="td1"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mi>n</mi><mrow><mo>(</mo><mrow><msub><mi>E</mi><mrow><mtext>p,a</mtext></mrow></msub><mo>&#x2212;</mo><msub><mi>E</mi><mrow><mtext>p,c</mtext></mrow></msub></mrow><mo>)</mo></mrow></mrow><mo>/</mo><mrow><mtext>mv</mtext><mtext>&#x00A0;</mtext></mrow></mrow></math></td>
+<td style="padding-left:2em;" class="td1"><i>&#x03C8;</i></td>
+<td style="padding-left:2em;" class="td1"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mi>n</mi><mrow><mo>(</mo><mrow><msub><mi>E</mi><mrow><mtext>p,a</mtext></mrow></msub><mo>&#x2212;</mo><msub><mi>E</mi><mrow><mtext>p,c</mtext></mrow></msub></mrow><mo>)</mo></mrow></mrow><mo>/</mo><mrow><mtext>mv</mtext><mtext>&#x00A0;</mtext></mrow></mrow></math></td>
+</tr>
+<tr>
+<td  class="td1">20</td>
+<td style="padding-left:2em;" class="td1">61</td>
+<td style="padding-left:2em;" class="td1">0.38</td>
+<td style="padding-left:2em;" class="td1">117</td>
+</tr>
+<tr>
+<td  class="td3">7</td>
+<td style="padding-left:2em;" class="td3">63</td>
+<td style="padding-left:2em;" class="td3">0.35</td>
+<td style="padding-left:2em;" class="td3">121</td>
+</tr>
+<tr>
+<td  class="td3">6</td>
+<td style="padding-left:2em;" class="td3">64</td>
+<td style="padding-left:2em;" class="td3">0.26</td>
+<td style="padding-left:2em;" class="td3">140</td>
+</tr>
+<tr>
+<td  class="td3">5</td>
+<td style="padding-left:2em;" class="td3">65</td>
+<td style="padding-left:2em;" class="td3">0.25</td>
+<td style="padding-left:2em;" class="td3">141</td>
+</tr>
+<tr>
+<td  class="td3">3</td>
+<td style="padding-left:2em;" class="td3">68</td>
+<td style="padding-left:2em;" class="td3">0.16</td>
+<td style="padding-left:2em;" class="td3">176</td>
+</tr>
+<tr>
+<td  class="td3">2</td>
+<td style="padding-left:2em;" class="td3">72</td>
+<td style="padding-left:2em;" class="td3">0.14</td>
+<td style="padding-left:2em;" class="td3">188</td>
+</tr>
+<tr>
+<td  class="td3">1</td>
+<td style="padding-left:2em;" class="td3">84</td>
+<td style="padding-left:2em;" class="td3">0.12</td>
+<td style="padding-left:2em;" class="td3">200</td>
+</tr>
+<tr>
+<td  class="td3">0.91</td>
+<td style="padding-left:2em;" class="td3">86</td>
+<td style="padding-left:2em;" class="td3">0.11</td>
+<td style="padding-left:2em;" class="td3">204</td>
+</tr>
+<tr>
+<td  class="td3">0.80</td>
+<td style="padding-left:2em;" class="td3">89</td>
+<td style="padding-left:2em;" class="td3">0.10</td>
+<td style="padding-left:2em;" class="td3">212</td>
+</tr>
+<tr>
+<td  class="td3">0.75</td>
+<td style="padding-left:2em;" class="td3">92</td>
+<td style="padding-left:2em;" class="td3">0.077</td>
+<td style="padding-left:2em;" class="td3">240</td>
+</tr>
+<tr>
+<td  class="td3">0.61</td>
+<td style="padding-left:2em;" class="td3">96</td>
+<td style="padding-left:2em;" class="td3">0.074</td>
+<td style="padding-left:2em;" class="td3">244</td>
+</tr>
+<tr>
+<td  class="td3">0.54</td>
+<td style="padding-left:2em;" class="td3">104</td>
+<td style="padding-left:2em;" class="td3">0.048</td>
+<td style="padding-left:2em;" class="td3">290</td>
+</tr>
+<tr>
+<td  class="td3">0.50</td>
+<td style="padding-left:2em;" class="td3">105</td>
+<td style="padding-left:2em;" class="td3"></td>
+<td style="padding-left:2em;" class="td3"></td>
+</tr>
+<tr>
+<td  class="td1">&#160;</td>
+<td  class="td1">&#160;</td>
+<td  class="td1">&#160;</td>
+<td  class="td1">&#160;</td>
+</tr>
+</table>
+<p class="note"><sup>a</sup> This assumes <i>D<sub>o</sub></i> = <i>D<sub>R</sub></i> and <i>&#x03B1;</i> = 0.5 (in practice the variation of<br/><i>E<sub>p</sub></i> with <i>&#x03B1;</i> can be assumed not to vary in the range 0.3 &#x003C; <i>&#x03B1;</i> &#x003C; 0.7.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">diagnostic of electrode reaction of adsorbed species, as exemplified by the oxidation peak current for a reversible process</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mtext>p,a</mtext></mrow></msub><mo>=</mo><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><msup><mi>F</mi><mn>2</mn></msup><mi>v</mi><mi>A</mi><msub><mi>&#x0393;</mi><mrow><mtext>R,</mtext><mi>i</mi></mrow></msub></mrow><mrow><mn>4</mn><mi>R</mi><mi>T</mi></mrow></mfrac></mrow></math><span class="no"><span class="space1">&#160;</span>(4.4)</span></p>
+<p class="noindent">in which &#x0393;<sub><i>R,i</i></sub> is the surface excess of <b>R</b> before the sweep.</p>
+<p class="indent">Cyclic voltammetry may also be used to investigate <i>multistep electrode processes</i> and those involving <i>coupled homogeneous reactions.</i> Simulation packages for a number of mechanisms are available. In this way, the whole voltammetric curve is fitted and optimised in order to obtain the best kinetic and thermodynamic parameters. This is a modern alternative to convolution potential sweep voltammetry which consists of the transformation of the cyclic voltammetric curve into a sigmoidal shape of exactly the same form as a steady-state voltammetric curve, to which established analysis procedures are then applied.</p>
+<p class="indent">Finally, the question of convection-diffusion at slow sweep rates should be considered. Convection-diffusion sweeps away the products of the reaction and, if the sweep rate is sufficiently slow, there is always a steady-state current registered. If the sweep rate is increased then a steady state is not achieved and a peaked waveform begins to appear. At extremely high sweep rates the current due to the linear sweep is much higher than that from convection&#8212;the only (but very useful) function of the convection is to remove the products of the electrode reaction and to suppress natural convection.</p>
+<a id="page_54" class="page" style="width:70%;">Page 54, Voltammetric sensors</a>
+<p class="indent">At microelectrodes, the large induced concentration gradient from spherical diffusion means that steady-state conditions can be achieved if the sweep rate is not too high (see <a href="Chapter2.xhtml#ch2.9">Section 2.9</a>): at low scan rates a steady-state, scan rate- independent voltammogram is obtained. However, the higher mass transport, i.e. higher effective mass transfer coefficient, means that the influence of kinetics is more easily observed: reversibility is less than at larger electrodes and higher rate constants for electron transfer can be measured.</p>
+</section>
+<section epub:type="chapter" id="ch4.4">
+<h2 class="h2">4.4 Step and pulse techniques</h2>
+<p class="noindent">Many pulse techniques have been devised based on a succession of potential steps of varying height and in forward or reverse directions. They find wide application in digitally based potentiostats, which are directly suited to their exploitation. Indeed, as mentioned above, the implementation of cyclic voltammetry in many instruments is as a staircase waveform.</p>
+<p class="indent">The basics of the current response to a potential step were alluded to in <a href="Chapter2.xhtml#ch2">Chapter 2</a>. The response is a pulse of current which dies away with time as the electroactive species near the electrode surface is consumed (<a href="Chapter2.xhtml#fig2.7">Fig. 2.7</a>b). Superimposed on this faradaic response is a capacitative contribution due to double layer charging which dies away more quickly, often within 50 <i>&#x03BC;s</i> (see <a href="#fig4.5">Fig. 4.5</a>). After this, the current is given, for a reversible system, by a modified form of the Cottrell equation, in which <i>I</i> &#x221D; <i>t</i><sup>&#8722;1/2</sup>. This means that the charge <i>Q</i> &#x221D; <i>t</i><sup>&#8722;1/2</sup> which can also be used for analysis. (Note that at the DME and owing to the increasing electrode area and continuing production of fresh surface, the capacitative current diminishes, being proportional to <i>t</i><sup>&#x2212;1/3</sup> but continues throughout the drop life.)</p>
+<figure style="width:70%;" id="fig4.5">
+<img src="../images/he_9780198548164_0037.jpg" alt="images"/>
+<figcaption style="width:100%;"><p class="noindent2"><b>Fig. 4.5</b> Evolution of capacitative, <i>I</i><sub>c</sub>, and faradaic, <i>I</i><sub>F</sub>, currents after applying a potential step.</p></figcaption>
+</figure>
+<p class="indent">Thus, in step and pulse techniques the current is usually sampled after the capacitative current has died away. Pulse widths are adjusted to satisfy this condition and the additional condition that time has not been allowed for natural convection effects to influence the response. However, in square wave voltammetry the capacitative contribution is eliminated by subtraction (see <a id="page_55" class="page">Page 55, Voltammetric sensors</a>below). Experimental data are obtained in the form of a table of currents for given values of potential which are then plotted and joined together.</p>
+<p class="indent">A number of potential pulse techniques are in common use and will now be described. Their first use was at the dropping mercury electrode, synchronising the pulse period with drop time. Since then many applications at solid electrodes and at static mercury drop electrodes have arisen which do not suffer from the difficulties associated with drop growth. Detection limits of these techniques are of the order of 10<sup>&#x2212;7</sup> M.</p>
+<h3 class="h3">Normal pulse voltammetry (NPV)</h3>
+<p class="noindent">Short potential pulses of increasing height are superimposed on a constant base potential as shown in <a href="#fig4.6">Fig. 4.6</a>. This base potential is chosen where no faradaic reaction occurs, i.e. where <i>I</i> 0. Measurement of the current at the end of the pulse and plotting the succession of points against the potential of the applied pulses gives a voltammetric profile of the same form as a steady-state voltammogram, as seen in <a href="#fig4.6">Fig. 4.6</a>b. The maximum current is thus</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML" id="eqn4.5"><mrow><msub><mi>I</mi><mrow><mi>max</mi></mrow></msub><mo>=</mo><mfrac><mrow><mi>n</mi><mi>F</mi><mi>A</mi><msup><mi>D</mi><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup><msub><mi>c</mi><mi>&#x221E;</mi></msub></mrow><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>&#x03C0;</mi><msub><mi>t</mi><mtext>m</mtext></msub></mrow><mo>)</mo></mrow></mrow><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup></mrow></mfrac></mrow></math><span class="no"><span class="space1">&#160;</span>(4.5)</span></p>
+<figure style="width:70%;" id="fig4.6">
+<img src="../images/he_9780198548164_0038.jpg" alt="images"/>
+<figcaption style="width:110%;"><p class="noindent2"><b>Fig. 4.6</b> Normal pulse voltammetry. (a) Scheme of pulse application starting at <i>E</i><sub>base</sub>. The current is measured at the end of the pulses and it is assumed that <i>I</i> = 0 for <i>E</i>=<i>E</i><sub>base</sub>. &#x03C4; = 2&#8211;4 s and (&#x03C4; &#8211; &#x03C4;&#x2032;) = 5&#8211;100 ms. At the DME, the end of the pulse is synchronised with drop fall, (b) Resulting <i>I</i> &#8211; <i>E</i> profile.</p></figcaption>
+</figure>
+<p class="noindent"><a id="page_56" class="page">Page 56, Voltammetric sensors</a>where <i>t</i><sub>m</sub> is the sampling time after application of the pulse. An important advantage is that if irreversible adsorption of the product of the electrode reaction occurs then this will be much reduced through the use of pulses. Nevertheless, it should be remembered that a pulse leads to higher mass transport than a hydrodynamic electrode owing to the sharply induced concentration gradient, so that kinetic effects may be more visible; in particular, an electrode reaction which appears reversible at a hydrodynamic electrode may become quasi-reversible under NPV conditions. On the other hand, the short time-scale may mean that effects of coupled homogeneous reactions are not observed. Detection limits are of the order of 10<sup>&#x2212;7</sup> M.</p>
+<p class="indent">A related technique is that of <i>reverse pulse voltammetry.</i> The scheme for application of potential is the same except that the base potential corresponds to diffusion-limited reaction and the pulses are applied in the reverse direction. This can be useful in situations where there are parallel electrode reactions of the initial species.</p>
+<p class="noindent">&#160;</p>
+<h3 class="h3">Differential pulse voltammetry (DPV)</h3>
+<p class="noindent">As its name suggests, DPV measures the differences between two currents, just before the end of the pulse and just before pulse application. The base potential is incremented in a staircase as shown in <a href="#fig4.7">Fig. 4.7</a>. The pulse is a factor of 10 or more shorter than the period of the staircase waveform. Pulses superimposed on a potential ramp have also been employed in the past, although the staircase version is simpler to implement in digital instruments. The difference between the two sampled currents is plotted against the staircase potential and leads to a peak-shaped waveform. The peak for a reversible system occurs at a potential</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>E</mi><mi>p</mi></msub><mo>=</mo><msub><mi>E</mi><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msub><mo>&#x2212;</mo><mfrac><mrow><mi>&#x0394;</mi><mi>E</mi></mrow><mn>2</mn></mfrac></mrow></math><span class="no"><span class="space1">&#160;</span>(4.6)</span></p>
+<p class="noindent">where &#x0394;<i>E</i> is the pulse amplitude (with sign included). The corresponding current, <i>I</i><sub>p</sub>, is given by the expression</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mi>p</mi></msub><mo>=</mo><mi>N</mi><mfrac><mrow><mi>n</mi><mi>F</mi><mi>A</mi><msup><mi>D</mi><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup><msub><mi>C</mi><mi>&#x221E;</mi></msub></mrow><mrow><msup><mrow><mo stretchy='false'>(</mo><mi>&#x03C0;</mi><msub><mi>t</mi><mtext>m</mtext></msub><mo stretchy='false'>)</mo></mrow><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup></mrow></mfrac><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>&#x2212;</mo><mi>&#x03C3;</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>&#x03C3;</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></math><span class="no"><span class="space1">&#160;</span>(4.7)</span></p>
+<p class="noindent">where</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C3;</mi><mo>=</mo><mi>exp</mi><mrow><mo>(</mo><mrow><mfrac><mrow><mi>n</mi><mi>F</mi></mrow><mrow><mi>R</mi><mi>T</mi></mrow></mfrac><mfrac><mrow><mi>&#x0394;</mi><mi>E</mi></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math><span class="no"><span class="space1">&#160;</span>(4.8)</span></p>
+<p class="noindent">It can be seen that, as &#x007C; &#x0394;<i>E</i> &#x007C; increases in magnitude, the term (1 &#8211; &#x03C3;)/(l + &#x03C3;) also increases, becoming &#177;1 for very large &#x0394;<i>E</i> (reduction or oxidation, respectively), equal to the value for NPV (<a href="#eqn4.5">Eqn 4.5</a>). However, DPV is better than NPV in the great majority of situations owing to better elimination of the contribution of non-faradaic, mainly capacitative, processes to the current signal. In NPV the charging current is larger as the pulse becomes of larger <a id="page_57" class="page">Page 57, Voltammetric sensors</a>amplitude, except near the beginning of the 'scan', and, secondly, residual capacitative contributions will tend to be effectively subtracted out in DPV.</p>
+<figure style="width:70%;" id="fig4.7">
+<img src="../images/he_9780198548164_0039.jpg" alt="images"/>
+<figcaption style="width:110%;"><p class="noindent2"><b>Fig. 4.7</b> Differential pulse voltammetry. (a) Schematic waveform of pulses superimposed on a staircase (sometimes superimposed on a ramp), (b) Schematic voltammetric profile of &#x0394;/vs. staircase potential.</p></figcaption>
+</figure>
+<p class="indent">For resolving the signals due to two species with close half-wave potentials, the peak response of DPV is more useful than that of NPV. However, as the pulse amplitude increases so does the peak width, meaning that, in practice, &#x0394;<i>E</i> values of more than 100 mV are not viable. The expression for the half-width at half-height, <i>W</i><sub>1/2</sub></p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mtext>W</mtext><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msub><mo>=</mo><mrow><mrow><mn>3.52</mn><mi>R</mi><mi>T</mi></mrow><mo>/</mo><mrow><mi>n</mi><mi>F</mi></mrow></mrow></math><span class="no"><span class="space1">&#160;</span>(4.8)</span></p>
+<p class="noindent">leads to a value of 90.4 mV for <i>n</i> = 1 at 298 K showing that peaks separated by 50 mV may often be resolved. Detection limits are once again 10<sup>&#8722;7</sup> M.</p>
+<a id="page_58" class="page" style="width:70%;">Page 58, Voltammetric sensors</a>
+<h3 class="h3">Square wave voltammetry (SWV)</h3>
+<p class="noindent">The square wave voltammetric waveform consists of a square wave superimposed on a staircase, as demonstrated in <a href="#fig4.8">Fig. 4.8</a>. The currents at the end of the forward and reverse pulses are both registered as a function of staircase potential. The difference between them, the net current, is larger than either of its two component parts in the region of the peak which is centred on the half-wave potential. Capacitative contributions can be effectively discriminated against before they die away, since, over a small potential range between forward and reverse pulses, the capacity is constant and is thus annuled by subtraction. In this way the pulses can be shorter than in DPV or NPV, i.e. the square wave frequency can be higher. Instead of the effective sweep rates of 1&#8211;10 mV s<sup>&#8211;1</sup> of DPV, scan rates of 1 V s<sup>&#8211;1</sup> can be employed&#8212;for example, a square wave frequency of 200 Hz with 5 mV increments of potential. Detection limits of 1 x 10<sup>&#8211;8</sup> M are achievable under optimum conditions.</p>
+<figure id="fig4.8" style="width:70%;">
+<img src="../images/he_9780198548164_0040.jpg" alt="images"/>
+<figcaption style="width:110%;"><p class="noindent2"><b>Fig. 4.8</b> Square wave voltammetry. (a) Schematic waveform (sum of a staircase and a square wave), (b) Schematic voltammetric profiles of <i>l</i> vs. staircase potential.</p></figcaption>
+</figure>
+<a id="page_59" class="page" style="width:70%;">Page 59, Voltammetric sensors</a>
+<p class="indent">Apart from the advantages of increasing the speed of the experiment, in many electroanalytical applications in the negative potential region, oxygen does not have to be excluded from solution when using SWV unless it interferes directly with the electrode reaction under study. At rather negative potentials in the limiting current region for oxygen reduction, the forward and reverse currents are equal, leading to a zero net current. For a scan in the positive direction from negative potentials, the fast effective scan rate means that no electroactive species have time to diffuse to the electrode surface from bulk solution in a significant way. Thus, the bubbling nitrogen or argon prior to the experiment is avoided, decreasing experimental time and simplifying the procedure.</p>
+<p class="indent">Other advantages arise from lower consumption of electroactive species relative to DPV and reduced problems of blocking the electrode surface.</p>
+<p class="indent">Some care must be taken with the interpretation of SWV data. Whilst <a href="#fig4.8">Fig. 4.8</a> shows a typical profile for the forward and reverse currents for a reversible reaction, if the electrode kinetics are slow then the forward current is shifted to higher overpotentials than the reverse current is, and the reverse current can disappear entirely. For more complex mechanisms, two peaks may appear in the net current voltammogram which, unless the individual profiles are monitored, could lead to the erroneous conclusion that two species are reacting. Simulation software packages exist which can aid in the task of unravelling mechanisms and kinetics.</p>
+<h3 class="h3">Application of step and pulse techniques in electroanalysis</h3>
+<p class="noindent">At present, the step and pulse techniques used most widely in electroanalysis are differential pulse voltammetry and square wave voltammetry. The latter is relatively new for such work, mainly due to former problems of electronic implementation in the instrumentation, but it is taking over a large part of the traditional domain of the application of DPV.</p>
+<p class="indent">In conceptual terms, DPV and SWV are very similar. SWV can be thought of as a special case of a DPV waveform where the interval between pulses is equal to the pulse width, but with the important difference that the base potential, at which the current is registered on the voltammogram, is shifted in the scan direction by |&#916;<i>E</i>/2| in DPV terms. Many instruments allow the user complete freedom to choose the waveform parameters and to cover the whole transition range from DPV, as originally conceived, to SWV by reducing the interval between DPV pulses until it becomes equal to the pulse width. It must not be forgotten that, at this limit, <i>E<sub>p</sub></i> from such a DPV scheme is shifted relative to properly specified SWV as described.</p>
+</section>
+<section epub:type="chapter" id="ch4.5">
+<h2 class="h2">4.5<span class="space">&#160;</span>ac techniques</h2>
+<p class="noindent">In ac voltammetry a small amplitude sine wave is superimposed on a succession of fixed potentials or on a linear ramp of potential. The alternating current response varies in amplitude and phase angle from the perturbation. The form of the curves obtained gives information concerning the kinetics, <a id="page_60" class="page">Page 60, Voltammetric sensors</a>
+and the response can also be used for analytical purposes. Measuring the components of the current in-phase (0&#176;) and out-of-phase (90&#176;) with the applied voltage waveform enables effective separation of charging currents, which appear at 90&#176;, and faradaic currents, which appear at 0&#176;. The schematic response is shown in <a href="#fig4.9">Fig. 4.9</a>.</p>
+<figure id="fig4.9" style="width:70%;">
+<img src="../images/he_9780198548164_0041.jpg" alt="images"/>
+<figcaption style="width:100%;"><p class="noindent2"><b>Fig. 4.9</b> ac voltammetry schematic response.</p></figcaption>
+</figure>
+<p class="indent">A reversible system gives a symmetrical peak centred on the half-wave potential and for which the peak current for an oxidation is given by</p>
+<p style="width:70%;" class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mtext>p</mtext></msub><mo>=</mo><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><msup><mi>F</mi><mn>2</mn></msup><mi>A</mi><msup><mi>&#x03C9;</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><msubsup><mi>D</mi><mtext>R</mtext><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup><msub><mrow><mrow><mo>[</mo> <mtext>R</mtext> <mo>]</mo></mrow></mrow><mi>&#x221E;</mi></msub><mi>&#x0394;</mi><mi>E</mi></mrow><mrow><mn>4</mn><mi>R</mi><mi>T</mi></mrow></mfrac></mrow></math><span class="no">(4.9)</span></p>
+<p class="noindent">with &#196;E the rms (root mean square) amplitude of the sine wave of frequency &#x03C9; rad s<sup>&#8722;1</sup>. A symmetrical wave is obtained which can be described by</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>I</mi><mtext>p</mtext></msub></mrow><mi>I</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>&#x2212;</mo><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>I</mi><mtext>p</mtext></msub><mo>&#x2212;</mo><mi>I</mi></mrow><mi>I</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>=</mo><mi>exp</mi><mrow><mo>(</mo><mrow><mfrac><mrow><mi>n</mi><mi>F</mi><mrow><mo>(</mo><mrow><msub><mi>E</mi><mrow><mtext>dc</mtext></mrow></msub><mo>&#x2212;</mo><msubsup><mi>E</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mtext>r</mtext></msubsup></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><mi>R</mi><mi>T</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow>
+</math><span class="no">(4.10)</span></p>
+<p class="noindent">From this the peak half-width can be deduced as 90.4/<i>n</i> mV at 298 K.</p>
+<p class="indent">Detection limits of the order of 5 x 10<sup>&#8722;7</sup> M can be attained for reversible systems. Unfortunately, slower electrode kinetics results in a substantial loss of sensitivity due to reduced peak currents, but this can be turned to advantage in solutions where one component reacts reversibly and the other irreversibly.</p>
+</section>
+<section epub:type="chapter" id="ch4.6">
+<h2 class="h2">4.6<span class="space">&#160;</span>Increasing selectivity: membrane and modified electrodes</h2>
+<p class="noindent">As can be seen from the previous sections, much selectivity can be obtained in voltammetric techniques by control of the applied potential. The potential at <a id="page_61" class="page">Page 61, Voltammetric sensors</a>which the current peaks appear identifies the electroactive species. There are many situations, however, in which this is not sufficient. One reason may be the close proximity of the formal potentials of two electroactive species, or differing electrode kinetics&#8212;the result is overlapping peaks which are difficult to deconvolute. The other reason is a decrease in response with time due to blocking of the electrode surface by irreversible adsorption processes, commonly of organic compounds. The use of appropriate step and pulse techniques may help to reduce the problem of poisoning but additional measures are necessary.</p>
+<p class="indent">Any extra selectivity has to result from modification of the electrode surface or creation of a selective physical barrrier, i.e. modified electrodes and membranes. Both approaches are currently of importance.</p>
+<p class="indent">High specificity can often be achieved by using a biological sensing element, for example an enzyme, either immobilised on the electrode or on or within a membrane covering the electrode. These <i>amperometric</i> and <i>voltammetric biosensors</i> rely on a combination of electrochemical signal transduction together with the biological sensing component.</p>
+<h3 class="h3">Membrane-covered and metallised membrane electrodes</h3>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<figure id="fig4.10">
+<img src="../images/he_9780198548164_0042.jpg" alt="images"/>
+<figcaption style="width:120%;"><p class="noindent2"><b>Fig. 4.10</b> The Clark oxygen electrode.</p></figcaption>
+</figure>
+</aside>
+<p class="noindent">Two approaches can be used. The first of these involves covering the electrode with a porous membrane so that the species of interest can traverse the membrane, but larger species such as proteins are unable to do so&#8212;these are known as size-exclusion membranes. They are usually in direct contact with the electrode.</p>
+<p class="indent">Alternatively, the membrane can be separated from the electrode surface by a thin film of electrolyte. The most well-known example of such an electrode is the Clark oxygen electrode (<a href="#fig4.10">Fig. 4.10</a>) which allows only oxygen to traverse the membrane: oxygen either dissolved in solution or in the gas phase.</p>
+<p class="indent">An important variant of these membranes is when the inner surface of the membrane is itself the indicator electrode&#8212;metallised membrane electrodes&#8212; which contact with an inner electrolyte solution.</p>
+<h3 class="h3">Modified electrodes</h3>
+<p class="noindent">The essential distinction between modified electrodes and direct coverage with membranes is that surface modification involves more than just creating a physical barrier&#8212;it either changes the surface layers of the electrode itself or creates a layer with some form of chemical as well as physical selectivity. This means, in other words, that some electrode processes are enhanced whilst others are inhibited. In some cases, the modifying layer is electroactive, acting as a mediator (new electrode material) between the solution and the electrode substrate in electron transfer (<a href="#fig4.11">Fig. 4.11</a>).<br/>&#160;</p>
+<p class="indent">Modified electrodes can be prepared in the following ways,</p>
+<ol class="none1">
+<li style="width:69%;">(a)&#160;&#160;<i>Chemical modification.</i> The electrode surface is activated by chemical reaction, such as with silane, which is then used to react with another chemical species that becomes immobilised on the surface. Apart from  <a id="page_62" class="page">Page 62, Voltammetric sensors</a>organic compounds, enzymes are often immobilised by such procedures following reaction of the surface with reagents such as carbodiimide.</li>
+</ol>
+
+<figure id="fig4.11">
+<img src="../images/he_9780198548164_0043.jpg" alt="images"/>
+<figcaption style="width:100%;"><p class="noindent2"><b>Fig. 4.11</b> Surface-modified electrodes showing (a) selectivity, (b) action of a mediator, M, in regenerating an enzyme, E (subscripts O and R refer to oxidised and reduced forms, respectively).</p></figcaption>
+</figure>
+<ol class="none1">
+<li style="width:69%;">(b)&#160;&#160;<i>Adsorption.</i> This is used for coating electrode surfaces with solutions of the modifier either by dipping or, more commonly, by application of a drop of solution followed by spinning to evaporate the solvent (spin-coating). This is particularly used for modifying with soluble polymers. Some polymeric species which have a tendency for self-assembly can also be applied through such procedures, leading to self-assembled monolayers on the electrode surface.</li>
+<li style="width:69%;">(c)&#160;&#160;<i>Electroadsorption and electrodeposition.</i> If adsorption is carried out under the influence of an applied potential then thicker modifier layers usually result, but there is probably a greater guarantee of uniformity. Electropolymerisation of monomers is also possible. Such procedures are used for the formation of conducting polymers. Note that in these cases, however, the electrode material is effectively that of the conducting polymer, the function of the electrode substrate being merely that of current collector.</li>
+<li style="width:69%;">(d)&#160;&#160;<i>Plasma.</i> The electrode surface is cleaned by a plasma leaving the surface with dangling bonds and being highly active. Adsorption of any species, such as amines or ethenes, in the vicinity is very fast.</li>
+</ol>
+<p class="indent">&#160;</p>
+<p class="indent">Bulk modification rather than surface modification procedures are sometimes used. In such cases the modifier is mixed intimately with the electrode material, such as with carbon paste. The advantage of this approach is that a new surface of similar properties can be quickly exposed by polishing or cutting.</p>
+</section>
+<section epub:type="chapter" id="ch4.7">
+<h2 class="h2">4.7<span class="space">&#160;</span>Decreasing detection limits and increasing sensitivity: preconcentration methods</h2>
+<p class="noindent">Industrial and environmental analyses are increasingly demanding lower detection limits and those indicated above are often not sufficiently low. <a id="page_63" class="page">Page 63, Voltammetric sensors</a>Preconcentration of the analyte species at or on the electrode surface before the voltammetric scan, if possible, can often solve the problem and has the added advantage of simultaneously increasing sensitivity. The principles of three commonly used preconcentration techniques are shown in Table 4.2 and the responses obtained in <a href="#fig4.12">Fig. 4.12</a>. Collectively, these are often known as <i>stripping analysis</i>, a misnomer which arose from the first of these techniques where, after accumulation at the electrode surface, the analyte is 'stripped' into bulk solution during the determination step.</p>
+<p class="tcaption"><b>Table 4.2</b> Principles of preconcentration techniques</p>
+<table style="width:70%;">
+<tr>
+<td class="td1">Method</td>
+<td class="td1">Preconcentration step</td>
+<td class="td1">Determination step</td>
+<td class="td1">Measurement</td>
+</tr>
+<tr>
+<td class="td1"><b>SV:</b> Stripping</td>
+<td class="td1">Potential</td>
+<td class="td1">Potential</td>
+<td class="td1"><i>l vs.t</i></td>
+</tr>
+<tr>
+<td class="tdl">&#160;&#160;voltammetry</td>
+<td class="tdl">control</td>
+<td class="tdl">control</td>
+<td class="tdl">(or l vs. E)</td>
+</tr>
+<tr>
+<td class="tdl"><b>AdSV:</b></td>
+<td class="tdl">Adsorption (with</td>
+<td class="tdl">Potential</td>
+<td class="tdl"><i>l vs. t</i></td>
+</tr>
+<tr>
+<td class="tdl">&#160;&#160;adsorptive</td>
+<td class="tdl">or without</td>
+<td class="tdl">control</td>
+<td class="tdl">(or <i>l vs. E)</i></td>
+</tr>
+<tr>
+<td class="tdl">&#160;&#160;Stripping</td>
+<td class="tdl">applied potential)</td>
+<td class="tdl">&#160;</td>
+<td class="tdl">&#160;</td>
+</tr>
+<tr>
+<td class="tdl">&#160;&#160;voltammetry</td>
+<td class="tdl">&#160;</td>
+<td class="tdl">&#160;</td>
+<td class="tdl">&#160;</td>
+</tr>
+<tr>
+<td class="tdl"><b>PSA:</b></td>
+<td class="tdl">Potential</td>
+<td class="tdl">Reaction with</td>
+<td class="tdl"><i>E</i> vs. <i>t</i></td>
+</tr>
+<tr>
+<td class="tdl">&#160;&#160;Potentio</td>
+<td class="tdl">control</td>
+<td class="tdl">oxidant, reductant</td>
+<td class="tdl">&#160;</td>
+</tr>
+<tr>
+<td class="tdl">&#160;&#160;metrie Stripping</td>
+<td class="tdl">&#160;</td>
+<td class="tdl">in solution or</td>
+<td class="tdl">&#160;</td>
+</tr>
+<tr>
+<td class="tdl">&#160;&#160;analysis</td>
+<td class="tdl">&#160;</td>
+<td class="tdl">applied current<a id="itab4.2a" href="#tab4.2a"><sup>a</sup></a></td>
+<td class="tdl"></td>
+</tr>
+<tr>
+<td class="td1">&#160;</td>
+<td class="td1">&#160;</td>
+<td class="td1">&#160;</td>
+<td class="td1">&#160;</td>
+</tr>
+</table>
+<p class="note"><a href="#itab4.2a" id="tab4.2a"><sup>a</sup></a> In the case of applied current usually referred to as stripping chronopotentiometry.</p>
+<p class="indent">&#160;</p>
+<figure id="fig4.12">
+<img src="../images/he_9780198548164_0044.jpg" alt="images"/>
+<figcaption style="width:100%;"><p class="noindent2"><b>Fig. 4.12</b> Schematic responses in determination step of voltammetric preconcentration techniques in Table 4.2.</p></figcaption>
+</figure>
+<p class="indent">Thus the <i>preconcentration step</i> is carried out under fixed potential control, usually at a potential corresponding to the limiting current region or to maximum adsorption rate, or at open circuit. Its efficiency depends on the rate of transport of the species to be accumulated to the electrode surface; a constant rate of transport will lead to better reproducibility and repeatability and a linear dependence on accumulation time. Thus constant stirring is used with static mercury drop electrodes and stationary electrodes, as are <a id="page_64" class="page">Page 64, Voltammetric sensors</a>hydrodynamic electrodes, either rotating or in flow streams, in order to increase sensitivity and decrease detection limit.</p>
+<p class="indent">The <i>determination step</i> is under potential control, current control or at open circuit with an oxidant or reductant in solution. Potential control, used in stripping voltammetry and adsorptive stripping voltammetry, leads to a current peak whose height (and area) is proportional to the concentration of the accumulated species and thence to the bulk solution concentration. Normally a linear potential scan, a differential pulse scan or, more frequently, a square wave scan is applied during the determination step. The advantages of the latter in terms of speed were alluded to in the previous section; also, for the analysis of heavy metal ions deposited in mercury thin film electrodes at negative potentials during preconcentration (anodic stripping voltammetry), oxygen does not need to be removed from solution. In both potentiometric stripping analysis and stripping chronopotentiometry, rather than potential control, oxidation of the accumulated species is either induced or effected by an oxidation current, and an <i>E</i> vs. <i>t</i> transient is obtained, the duration of which is proportional to concentration of the analyte. Instead of <i>E</i> vs. <i>t</i>, <i>dt/dE</i> vs. <i>t</i> is often registered, which is a peak whose height is also proportional to concentration.</p>
+<p class="indent">Detection limits can be as low as 10<sup>&#8722;11</sup> M.</p>
+<h3 class="h3">Anodic stripping voltammetry (ASV)</h3>
+<p class="noindent">Anodic stripping voltammetry is used for the analysis of cations in solution, mainly heavy metal cations. These are accumulated at the electrode by reduction to the zero oxidation state. Usually the electrode material is the mercury electrode, the advantage of which is to increase the negative potential range available, particularly important in the case of the commonly analysed zinc; the elements are dissolved in or form an amalgam with the mercury. The mercury electrode can either be in the form of a static or hanging mercury drop, or as a mercury thin film electrode (MTFE) on a suitable substrate such as glassy carbon, the film being either preformed or codeposited with the analyte cations. Thus, in the preconcentration step the reaction is</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mtext>M</mtext><mrow><mi>n</mi><mo>+</mo></mrow></msup><mo>+</mo><mi>n</mi><msup><mi>e</mi><mo>&#x2212;</mo></msup><mo>&#x2192;</mo><mtext>M</mtext><mrow><mo>(</mo><mrow><mtext>Hg</mtext></mrow><mo>)</mo></mrow></mrow>
+</math></p>
+<p class="noindent">which is reversed in the determination step. The latter is now commonly accomplished by means of a square wave voltage scan, the technique being referred to as SWASV. Advantages of this are its rapidity, which means that solutions do not have to be deoxygenated since oxygen has no time to diffuse to the surface of the electrode during the determination scan and contribute to the signal (typically 1&#8722;2 s), and its high sensitivity. Important examples are the determination of copper, lead, cadmium and zinc ions at sub-ppb levels.</p>
+<p class="indent">When mixtures of cations are analysed at mercury electrodes problems can arise due to the formation of intermetallic compounds of variable stoichiometry that are soluble in mercury. To avoid this, specific strategies have to be developed for each case but often involve the codeposition of a third element. A pertinent example is in the analysis of solutions containing both Cu<sup>2+</sup> and Zn<sup>2+</sup>, which can lead to the formation of Cu&#8722;Zn intermetallics <a id="page_65" class="page">Page 65, Voltammetric sensors</a>in the mercury. To avoid this, the solution is spiked with Ga<sup>3+</sup> and Ga is codeposited, leading to the preferential formation of Cu&#8722;Ga. In this way, Zn<sup>2+</sup> can be analysed without interference, and Cu<sup>2+</sup> can be deposited at more positive potentials where Zn<sup>2+</sup> is not reduced in a separate experiment (see <a href="#fig4.13">Fig. 4.13</a>).</p>
+<p class="indent">Non-electroactive analytes can sometimes be determined by ASV. An example is Ru(NH<sub>3</sub>)<sup>3+</sup><sub>6</sub> which reduces Ag<sup>+</sup> near the surface of the electrode and which is then deposited.</p>
+<h3 class="h3">Cathodic stripping voltammetry (CSV)</h3>
+<p class="noindent">This is the inverse of ASV. At mercury electrodes it can be used to measure species which form sparingly soluble mercury salts such as halide ions, sulfide, cyanide, thiols and penicillins. The deposition step is, thus, schematically</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>A</mi><mrow><mi>n</mi><mo>-</mo></mrow></msup><mo>+</mo><mtext>Hg</mtext><mo>&#x2192;</mo><mtext>HgA</mtext><mo>+</mo><mi>n</mi><msup><mi>e</mi><mo>-</mo></msup></mrow>
+</math></p>
+<p class="noindent">which is inverted during determination.</p>
+<p class="indent">It is clear that CSV is not restricted to mercury electrodes. Any electrode material that, on oxidising, forms sparingly soluble salts will work, such as silver electrodes for the determination of halide ions. Another possibility is if the ion of interest oxidises to form an oxide precipitate on the electrode surface. Pb<sup>2+</sup> and Mn<sup>2+</sup> can be analysed in this way.</p>
+<figure id="fig4.13" style="width:70%;">
+<img src="../images/he_9780198548164_0045.jpg" alt="images"/>
+<figcaption style="width:100%;"><p class="noindent2"><b>Fig. 4.13</b> Removal of Cu&#8211;Zn interferences in ASV of solutions containing Cu<sup>2+</sup> and Zn<sup>2+</sup> by spiking with Ga<sup>3+</sup>: response without (-----) and with (_____) gallium ions.</p></figcaption>
+</figure>
+<a id="page_66" class="page" style="width:70%;">Page 66, Voltammetric sensors</a>
+<figure id="fig4.14">
+<img src="../images/he_9780198548164_0046.jpg" alt="images"/>
+<figcaption style="width:100%;"><p class="noindent2"><b>Fig. 4.14</b> Potentiometric stripping analysis showing transformation of <i>E</i>vs. <i>t</i> into df/dE vs. <i>E</i> profile.</p></figcaption>
+</figure>
+<p class="noindent">&#160;</p>
+<h3 class="h3">Potentiometric stripping analysis (PSA)</h3>
+<p class="noindent">This technique is very similar to ASV in that the accumulation procedure is the same. The difference is that in the stripping step an oxidant in solution, or alternatively an anodic current, causes the oxidation of the reduced analyte. In mixtures the stripping potential identifies the species present and the length of time at which the potential occurs gives the concentration (see <a href="Chapter2.xhtml#fig2.8">Fig. 2.8</a>). A plot of <i>dt/dE</i> vs. <i>t</i>, which gives peaked waveforms, instead of <i>E</i> vs. <i>t</i> facilitates analysis, as shown in <a href="#fig4.14">Fig. 4.14</a>. The oxidant can often be dissolved oxygen so that deoxygenation is not necessary, which is an advantage over many ASV schemes except for square wave ASV (SWASV). The species which can be measured by PSA are, in general, the same as can be measured by ASV.</p>
+<h3 class="h3">Adsorptive stripping voltammetry (AdSV)</h3>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<figure id="fig4.15">
+<img src="../images/he_9780198548164_0047.jpg" alt="images"/>
+<figcaption style="width:100%;"><p class="noindent2"><b>Fig. 4.15</b> Determination of Co and Ni by square wave AdSV of the oxime complexes, showing the catalytic effect on the height of the Co peak ([Ni<sup>2+</sup>] = [Co<sup>2+</sup>]).</p></figcaption>
+</figure>
+</aside>
+<p class="noindent">AdSV is based on the adsorption accumulation of a complex between the analyte and a complexing agent at the electrode surface, often at an applied potential chosen so as to aid the adsorption process. Thus, in principle, either the metal ion or the ligand can be measured in the presence of an excess of the other component in bulk solution. Usually the determination step involves reduction of the metal ion from the adsorbed complex. Adsorption follows an isotherm, usually of Langmuir-type, which means that an adsorption time can be reached corresponding to equilibrium saturation of the complex. In general this is avoided, it being preferred to work in the initial part of the isotherm where the adsorbed amount varies linearly with accumulation time.</p>
+<p class="indent">The success of the AdSV strategy relies on judicious choice of a sufficiently specific chelating agent. Sometimes during the reduction determination reaction this agent can participate by recycling the partially reduced cation through reoxidation&#8212;this happens, for example, in the AdSV of Co<sup>2+</sup> via formation of oxime complexes (<a href="#fig4.15">Fig. 4.15</a>).</p>
+<p class="indent">Adsorbed organic compounds can sometimes be measured by making use of adsorption&#8211;desorption phenomena, even when they are not electroactive: <a id="page_67" class="page">Page 67, Voltammetric sensors</a>desorption alters the interfacial capacity and gives rise to a tensammetric peak as the potential is scanned. The size of the tensammetric peak can be related to concentration.</p>
+<p class="indent">When adsorption is irreversible, the electrode can be transferred from the analyte-containing solution to pure electrolyte for the determination step, in order to avoid interferences; this is known as adsorptive transfer stripping voltammetry (AdTSV).</p>
+</section>
+<section epub:type="chapter" id="ch4.8">
+<h2 class="h2">4.8 Sensing strategies</h2>
+<p class="noindent">Voltammetry is extremely versatile. Different applied potentials or applied current waveforms can be devised according to the problem to be studied. Sample preparation must also be considered; in particular, whether electrolyte has to be added to make the sample sufficiently conducting&#8212;this leads to dilution of the electroactive species and a lower signal. The strategy to be followed depends on the type of results needed, how quickly and so forth.</p>
+<p class="indent">An important choice to be made in the elaboration of an experimental procedure or protocol is that between discrete batch analyses and continuous flow analyses. Each of these has its disadvantages. If discrete samples are available or are prepared then, at first sight, a batch analysis system may seem the most appropriate; however, depletion of reagents or build-up of products close to the electrode may influence the response. Assuming depletion becomes problematic, then the only alternative in batch mode is total electrolysis using a coulometric procedure&#8212;this does have the advantage that as long as 100% electrolysis can be guaranteed, then calibration is unnecessary. In continuous flow systems there is generally more reproducible and higher mass transport than in batch systems (assuming the solutions are stirred) owing to the high imposed convection; the disadvantage is the large consumption of sample solution. On the other hand, continuous flow systems do permit adding a derivatising reagent or reagents before the detector to make the substance electroactive, as is sometimes done in flow injection systems. With this in mind, flow injection procedures have been developed in which the sample is injected into a continuous flow carrier stream; some dilution of the sample occurs before the detector. A hybrid procedure is batch injection analysis in which the sample is injected directly over the detector. Electrolyte addition is not necessary and flow only occurs during the injection period. More details of this method can be found in <a href="Chapter2.xhtml#ch2.8">Section 2.8</a>. It should be noted that an injection of 20 <i>&#x03BC;</i>1 of a solution containing electroactive species of concentration 1 nM corresponds to detection of 20 femtomoles of analyte.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure id="fig4.16">
+<img src="../images/he_9780198548164_0048.jpg" alt="images"/>
+<figcaption style="width:100%;"><p class="noindent2"><b>Fig. 4.16</b> Typical amperometric response from injection into a continuous flow stream.</p></figcaption>
+</figure>
+</aside>
+<p class="indent">For on-line monitoring, continuous flow systems are to be preferred and a number of detectors have been developed with this in mind based on the wall- jet, tube and thin-layer principles. Whilst the flow of solution is continuous, it is often possible to inject analyte samples into the flow stream, as mentioned above; the same basic scheme effectively occurs in an HPLC detector. It is clear that such continuous flow monitoring is particularly simple for fixed potential, amperometric detection, especially for discrete injections (<a href="#fig4.16">Fig. 4.16</a>). However, with the advent of fast scan techniques such as square wave <a id="page_68" class="page">Page 68, Voltammetric sensors</a>voltammetry this no longer has to be the case, since the whole scan can be performed while the sample plug is passing the detector.</p>
+<p class="indent">Another type of sensing strategy makes use of microelectrodes. Owing to the large concentration gradients which they induce, they are much more insensitive to convection than macroelectrodes, which can be a significant advantage. An important advantage can come from the fact that the current passed is so small that the ohmic drop, <i>IR</i>, is also small, even in resistive media. This means that analyses can be carried out without the necessity of high ionic concentrations, i.e. inert electrolyte does not usually have to be added, which could perturb the chemical equilibria of the system. An additional benefit of microelectrodes, apart from their small size, is that fast scan cyclic voltammetry can be done with good signal resolution owing to the much diminished capacitative contribution to the total current.</p>
+<p class="indent">Thus, the experimental procedure to be developed will depend on the specific problem to be solved, the required sample throughput and the sample matrix. Many useful determinations need to be carried out in complex matrices, usually containing organic or biological compounds. These media encompass not only biological fluids but also many types of environmental samples such as effluents. Mineralisation removes the problem of electrode fouling but can markedly alter the speciation of the sample solution. This is strategically unsound since electrochemistry, unlike spectrometric analytical techniques, which give the total quantity of a particular element, can offer unique information on speciation and, in particular, the quantity of a given element which is labile, i.e. free to react at the electrode and not complexed or bound irreversibly to other chemical species. Thus, the aim should be, if possible, analysis of the as-received sample and protection of the electrode surface against fouling. For this purpose three strategies can be used either singly or in combination: first, use of a pulse waveform to minimise the time during which potentials (or currents) are applied that lead to irreversible adsorption; secondly, covering the electrode surface with a membrane, usually polymeric, which is permeable only to the types of species of interest, i.e. excluding and not adsorbing organic matter or modifying its surface; thirdly, reducing the contact time between sample and electrode through use of injection techniques.</p>
+</section>
+</section>
+</body>
+</html>

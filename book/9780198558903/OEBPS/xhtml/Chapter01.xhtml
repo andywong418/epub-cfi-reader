@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>NMR Spectroscopy in Inorganic Chemistry</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<section epub:type="chapter" id="Ch01">
+<p class="noindent">&#160;</p>
+<a id="page_1" class="page" style="width:60%">Page 1, Chapter 1 Fundamentals</a>
+<h1 class="chaptitle">1<span class="space">&#160;</span>Fundamentals</h1>
+<section id="sec1.1" epub:type="chapter">
+<h2 class="h2">1.1<span class="space">&#160;</span>Introduction</h2>
+<p class="noindent">NMR spectroscopy is commonly first encountered in Organic Chemistry; attention is focused on the NMR spectroscopy of a single element, hydrogen. There are however, many other elements that have isotopes with nuclear spin; if these elements are taken into account the analytical power of NMR spectroscopy is greatly increased and NMR becomes perhaps the most important spectroscopic technique today for the characterisation of inorganic compounds in solution and is of growing importance in the solid state. In solution, spin &#x00BD; nuclei give well resolved, sharp resonances for each NMR active site in the molecule whilst, in the solid state, cross-polarisation has increased the sensitivity and magic angle spinning the resolution possible.</p>
+<p class="indent">Although the presence of several different elements possessing nuclear spin in a molecule might at first seem likely to complicate the interpretation of the NMR spectrum, in fact it offers the possibility of simplification since, as we shall see, each nuclide/element has a characteristic resonance frequency so we can record a series of NMR spectra looking at each nuclide in turn. The chemical shifts and coupling patterns observed will, of course, depend on the other nuclides present. The aim of this book is to introduce the reader to the NMR spectroscopy of the &#x201C;inorganic&#x201D; elements and to its application in structure determination and the characterisation of reaction processes in inorganic chemistry.</p>
+<p class="indent">The rules for interpreting NMR spectra are independent of the particular nucleus, depending only on the nuclear spins present, <a href="Chapter01.xhtml#fig1.1">figure 1.1</a>; therefore, if we have a good understanding of why NMR spectra look the way they do we can apply that understanding directly to the interpretation of any NMR spectrum. The magnitude of the chemical shift and of the coupling constants will, of course, vary widely depending on the nuclides under study. For example, rhodium chemical shifts span a range +/- 4000 ppm and platinum-phosphorus coupling constants are measured in thousands of hertz(!) rather than the familiar proton ranges of 0 -10 ppm and 0 - 20 Hz respectively.</p>
+<p class="indent">This chapter presents some basic theory of NMR and a formalism for the prediction of NMR spectra <i>in solution</i>. The next chapter discusses the interpretation of NMR spectra to elucidate the structure of an inorganic compound using the formalism presented in <a href="Chapter01.xhtml">chapter 1</a> rather than the widely favoured &#x201C;pattern recognition&#x201D; approach. <a href="Chapter03.xhtml">Chapter 3</a> discusses the effect of dynamic processes on the NMR spectrum. The NMR of solids is discussed in <a href="Chapter04.xhtml">chapter 4</a>.</p>
+<aside class="right" style="margin-top:-35em;" epub:type="sidebar">
+<figure id="fig1.1">
+<img src="../images/fig1.1.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.1</b> The rules for interpreting NMR spectra depend only on the nuclear spins present, thus the <sup>1</sup>H NMR spectrum (top) of the ethyl group in CH<sub>3</sub>CH<sub>2</sub>OH and the <sup>19</sup>F NMR spectrum (bottom) of the perfluoro-ethyl group in CF<sub>3</sub>CF<sub>2</sub>OCIO<sub>3</sub> show the same coupling patterns although the coupling constants and chemical shifts differ.</figcaption>
+</figure>
+</aside>
+<a id="page_2" class="page" style="width:60%">Page 2, Chapter 1 Fundamentals</a>
+</section>
+<section id="sec1.2" epub:type="chapter">
+<h2 class="h2">1.2<span class="space">&#160;</span>Quantum numbers, energy levels and things</h2>
+<p class="noindent">Nuclear magnetic resonance spectroscopy, as its name implies, is a resonance spectroscopy, <a href="Chapter01.xhtml#fig1.2">figure 1.2</a>; we excite transitions between nuclear spin energy levels of the system then monitor the resulting absorption or emission of energy due to the transitions in order to gain some knowledge about the system. Questions we would like answered include: How many levels are there? What are the allowed transitions between the energy levels? What factors influence the energy level separation? How can we use this information to tell us about the chemistry of the sample? It is clearly important that we have an understanding of the energy levels involved. We will discover that the number of energy levels depends <i>inter alia</i> on interactions between spins (spin-spin coupling) whilst the energy level separation is determined by the chemical environment (chemical shift).</p>
+<aside class="right" style="margin-top:-16em;" epub:type="sidebar">
+<figure id="fig1.2">
+<img src="../images/fig1.2.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.2</b> In a resonance spectroscopy transitions are excited and the frequency dependence of the absorption (or emission) of energy monitored to produce a spectrum.</figcaption>
+</figure>
+</aside>
+<section id="sec1.2.1" epub:type="chapter">
+<h3 class="h3"><b>Nuclear spin</b></h3>
+<p class="noindent">The nuclear spin arises from the unpaired proton and neutron spins in the nucleus in the same way as unpaired electrons give an atom an electronic spin; all isotopes with an odd atomic number and/or an odd atomic mass will therefore have a nuclear spin, <a href="#tab1.1">table 1.1</a>. 63 elements of the periodic table have at least one NMR active isotope; however not all potential NMR active isotopes are useful since some only occur in paramagnetic compounds (most lanthanides) or have high quadrupole moments (<i>e</i>.<i>g</i>. <sup>179</sup>Hf, <sup>191</sup>Ir and <sup>197</sup>Au). Although rules exist to predict the spin of a nuclide it is easier to remember the spins of the common nuclei such as <sup>1</sup>H, <sup>11</sup>B, <sup>l3</sup>C, <sup>31</sup>P and consult tables for the rest, <a href="#tab1.2">table 1.2</a>. The energy levels involved in NMR spectroscopy arise from the interaction of the nuclear spin with the spectrometer magnetic field, with the magnetic fields set up by other nuclear spins and with the magnetic fields set up by the electrons in the sample.</p>
+<aside class="right" style="margin-top:-15em;" epub:type="sidebar">
+<table style="margin-top:1em;width:100%">
+<tr>
+<td style="vertical-align:top;text-align:center;"><b>No. of protons</b></td>
+<td style="vertical-align:top;text-align:center;"><b>No. of neutrons</b></td>
+<td style="vertical-align:top;text-align:center;"><b>spin</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:center;">even</td>
+<td style="vertical-align:top;text-align:center;">even</td>
+<td style="vertical-align:top;text-align:center;">0</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:center;">even</td>
+<td style="vertical-align:top;text-align:center;">odd</td>
+<td style="vertical-align:top;text-align:center;">&#x00BD;-integral</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:center;">odd</td>
+<td style="vertical-align:top;text-align:center;">even</td>
+<td style="vertical-align:top;text-align:center;">&#x00BD;-integral</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:center;">odd</td>
+<td style="vertical-align:top;text-align:center;">odd</td>
+<td style="vertical-align:top;text-align:center;">integral</td>
+</tr>
+</table>
+<p class="tablecaption-aside-left" id="tab1.1"><b>Table 1.1</b> All nuclides with an odd number of protons and/or an odd number of neutrons will have a nuclear spin.</p>
+</aside>
+</section>
+<section id="sec1.2.2" epub:type="chapter">
+<h3 class="h3"><b>Spin angular momentum and the nuclear magnetic moment</b></h3>
+<p class="noindent">Any spinning body, <i>e</i>.<i>g</i>. a bicycle wheel, a children&#x2019;s top, an electron or a nucleus, possesses <i>angular momentum</i>. In the case of a charged body, in NMR the nucleus, this spinning generates a magnetic moment, the <i>nuclear magnetic moment</i>, <i>&#x03BC;</i>. <i>&#x03BC;</i> is a vector quantity. The moment is proportional to the spin, <b><i>I</i></b>. The constant of proportionality <i>&#x03B3;</i>, is called the <i>gyromagnetic ratio</i>. Every isotope has a different nuclear magnetic moment, <i>&#x03BC;</i>. Put another way, each isotope has its own, unique gyromagnetic ratio, <i>&#x03B3;</i>. This is important since, as we shall see, it means that each element will have a characteristic NMR resonance frequency.</p>
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<p class="eq" id="eq1.1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>&#x03BC;</mi>
+ <mo>=</mo>
+ <mi>&#x03B3;<!-- ? --></mi>
+ <mi>I</mi>
+</math></p>
+<p class="eqcaption"><b>Eqn 1.1</b> The nuclear magnetic moment is proportional to the nuclear spin. The constant of proportionality, &#x03B3;, is the gyromagnetic ratio.</p>
+</aside>
+<a id="page_3" class="page" style="width:60%;">Page 3, Chapter 1 Fundamentals</a>
+</section>
+<section id="sec1.2.3" epub:type="chapter">
+<h3 class="h3"><b>Nuclear spin quantum numbers</b></h3>
+<p class="noindent">The nuclear spin (strictly the nuclear spin angular momentum) is quantized and is given the quantum number <b><i>I</i></b>. <b><i>I</i></b> can take integral or half-integral values depending on the number of unpaired protons and neutrons - <i>c</i>.<i>f</i>. the electron spin of an atom or ion depends on the number of unpaired electrons. For example, <sup>1</sup>H, <sup>19</sup>F, <sup>31</sup>P and <sup>103</sup>Rh all have spin &#x00BD;, <sup>2</sup>D and <sup>14</sup>N have spin 1, <sup>11</sup>B spin 3/2 and <sup>59</sup>Co spin 5/2. Nuclei that have spins greater than &#x00BD; are called <i>quadrupolar</i> and normally give broad NMR lines although coupling to other nuclei may be well resolved. Quantum mechanically, the nuclear spin <b><i>I</i></b> and one of its components, <i>I<sub>x</sub></i>, <i>I<sub>y</sub></i>, <i>I<sub>z</sub></i> will be eigenfunctions of the nuclear spin Hamiltonian; we can know the total nuclear spin angular momentum and the magnitude of its component along one of the cartesian axes. Arbitrarily we choose to make <i>I<sub>z</sub></i> an eigenfunction and give it the quantum number <i>m<sub>I</sub></i>. <i>m<sub>I</sub></i> can take the values <i>I</i>, <i>(I-1)</i>, &#x2026;., -<i>I</i> so there will be <i>2I</i>+<i>1</i> levels associated with the nuclear spin <b><i>I</i></b>, <a href="Chapter01.xhtml#fig1.3">figure 1.3</a>.</p>
+<aside class="right" style="margin-top:-20em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig1.3">
+<img src="../images/fig1.3.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.3</b> The number of m<sub>I</sub>, states (energy levels) for a nuclear spin I is 2I+1. Here the four m<sub>I</sub>, states for a spin I = 3/2 nucleus are shown. In the absence of a magnetic field the m<sub>I</sub>, states all have the same energy.</figcaption>
+</figure>
+</aside>
+</section>
+</section>
+<section id="sec1.3" epub:type="chapter">
+<h2 class="h2">1.3<span class="space">&#160;</span>Nuclear spins interacting with a magnetic field</h2>
+<p class="noindent">In the absence of an external magnetic field the <i>m<sub>I</sub></i> states are degenerate. This is reasonable; there is nothing with which the nuclear magnetic moment can interact so the orientation of the nuclear magnetic moment in space will not affect the energy of the system.</p>
+<section id="sec1.3.1" epub:type="chapter">
+<h3 class="h3"><b>Effect of an applied field</b></h3>
+<p class="noindent">If we place the nucleus in a magnetic field different orientations of the nuclear magnetic moment will have different energies depending on the relative orientations of the nuclear magnetic moment and the applied field. Since the nuclear spin is quantized only certain orientations of the nuclear magnetic moment with respect to the applied field are allowed, each orientation corresponding to a different <i>m<sub>I</sub></i> value so we get <i>2I</i>+<i>1</i> discrete energy levels - the Zeeman splitting. For spin &#x00BD; nuclei there are two energy levels corresponding to <i>m<sub>I</sub></i> = +&#x00BD; and -&#x00BD; . For nuclei with spin greater than &#x00BD; we get more than two energy levels, for example a spin 3/2 nucleus such as <sup>11</sup>B will give four energy levels corresponding to the four allowed <i>m<sub>I</sub></i> values; there are four allowed orientations of the nuclear magnetic moment with respect to the applied field, <a href="Chapter01.xhtml#fig1.4">figure 1.4</a>.</p>
+<a id="page_4" class="page" style="width:60%;">Page 4, Chapter 1 Fundamentals</a>
+<aside class="right" style="margin-top:-28em;" epub:type="sidebar">
+<figure id="fig1.4">
+<img src="../images/fig1.4.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.4</b> Placing the nucleus in a magnetic field, B<sub>0</sub>, lifts the degeneracy of the m<sub>I</sub>, states giving 2I+1 different energy levels, each corresponding to one of the allowed orientations of the nuclear spin with respect to the applied field. Here the four m<sub>I</sub>, states for a spin I = 3/2 nucleus are shown.</figcaption>
+</figure>
+</aside>
+<p class="noindent">&#160;</p>
+<figure id="tab1.2">
+<p class="tablecaption"><b>Table 1.2</b> Selected NMR properties of the elements. Receptivities are given <i>vs</i> <sup>1</sup>H = 1000. Common nuclei are given in bold, unobserved nuclei in italics. Data supplied by Bruker Spectrospin Ltd.</p>
+<img class="center" src="../images/tab1.1.jpg" alt="images"/>
+<a id="page_5" class="page" style="width:60%;">Page 5, Chapter 1 Fundamentals</a>
+<img class="center" src="../images/tab1.2.jpg" alt="images"/>
+</figure>
+<a id="page_6" class="page" style="width:60%">Page 6, Chapter 1 Fundamentals</a>
+</section>
+<section id="sec1.3.2" epub:type="chapter">
+<h3 class="h3"><b>Energies of the nuclear quantum states</b></h3>
+<p class="noindent">Intuitively we would expect the energies of the allowed orientations of the nuclear magnetic moment to depend on the strength of the applied field, <b><i>B<sub>0</sub></i></b>, on the size of the nuclear magnetic moment, <i>&#x03B3;</i>, and on the orientation of the nuclear magnetic moment to the applied field, <i>m<sub>I</sub></i>.</p>
+<p class="fig" id="eq1.2">
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>E</mi>
+ <mo>=</mo>
+ <msub>
+ <mi>m</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>I</mi>
+ </mrow>
+ </msub>
+ <mi>&#x03B3;<!-- ? --></mi>
+ <mi>B</mi>
+ <mi class="MJX-variant">&#x210F;<!-- ? --></mi>
+</math></p>
+<p class="eqcaption" style="width:60%"><b>Eqn 1.2.</b> The nuclear spin Hamiltonian can be solved to give the energies of the nuclear spin states. The energy levels for spin &#x003E; &#x00BD; nuclei are evenly spaced.</p>
+
+<p class="noindent">&#x00A0;</p>
+<p class="noindent">This relationship can be derived either classically or quantum mechanically and readers are referred to the texts in the bibliography. Here we need only note the result. Also note that this result predicts that the nuclear spin energy levels for nuclei with spin &#x003E;&#x00BD; are equally spaced, <a href="Chapter01.xhtml#fig1.5">figure 1.5</a>.</p>
+<aside class="right" style="margin-top:-16em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig1.5">
+<img src="../images/fig1.5.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.5</b> The energy levels are equally spaced. The selection rule &#x2206;m<sub>I</sub>, = &#x00B1; 1 results in all allowed transitions having the same energy.</figcaption>
+</figure>
+</aside>
+</section>
+</section>
+<section id="sec1.4" epub:type="chapter">
+<h2 class="h2">1.4<span class="space">&#160;</span>Nuclear magnetic resonance spectroscopy</h2>
+<section id="sec1.4.1" epub:type="chapter">
+<h3 class="h3"><b>Resonance frequencies</b></h3>
+<p class="noindent">Typically in NMR spectroscopy the magnetic field, <b><i>B<sub>0</sub></i></b>, is of the order of 9 tesla and the gyromagnetic ratio, <i>&#x03B3;</i>, around 10<sup>8</sup> T<sup>-1</sup>s<sup>-1</sup> giving a separation of adjacent nuclear spin energy levels of only 10<sup>-25</sup> joules, <a href="#eq1.2">equation 1.2</a>. Substituting this value for the energy level spacing in Plank&#x2019;s equation gives a frequency of 150 MHz, <a href="#eq1.3">equation 1.3</a>. Irradiation of the nuclear spins at this frequency will cause transitions between the nuclear spin energy levels. This frequency is known as the <i>resonance</i> or <i>Larmor frequency</i>. We are already familiar with the phenomenon of resonance from <i>e.g.</i> IR and UV spectroscopies. We can now add NMR to our list of resonance spectroscopies.</p>
+<p class="indent">Since each isotope has a distinct gyromagnetic ratio the nuclear spins of each element will resonate at characteristic, distinct frequencies. We will, therefore, not see resonances due to say <sup>103</sup>Rh in a <sup>31</sup>P NMR spectrum. The resonance frequencies and other relevant data for NMR active nuclei are given in <a href="#tab1.2">table 1.2</a>.</p>
+<aside class="right" style="margin-top:-10em;" epub:type="sidebar">
+<p class="eq" id="eq1.3"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>E</mi>
+ <mo>=</mo>
+ <mi>h</mi>
+ <mi>v</mi>
+</math></p>
+<p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>v</mi>
+ <mo>&#x2248;</mo>
+ <mfrac>
+ <msup>
+ <mn>10</mn>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>&#x2212;<!-- - --></mo>
+ <mn>25</mn>
+ </mrow>
+ </msup>
+ <mrow>
+ <mn>6.6</mn>
+ <mo>&#x00D7;</mo>
+ <msup>
+ <mn>10</mn>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>&#x2212;<!-- - --></mo>
+ <mn>34</mn>
+ </mrow>
+ </msup>
+ </mrow>
+ </mfrac>
+</math></p>
+<p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mo>.</mo>
+ <mo>.</mo>
+ <mo>.</mo>
+ <mo>&#x2248;</mo>
+ <mn>150</mn>
+ <mi>M</mi>
+ <mi>H</mi>
+ <mi>z</mi>
+</math></p>
+<p class="eqcaption"><b>Eqn 1.3</b> Substitution in Plank&#x0027;s equation gives a typical NMR resonance frequency of 150 MHz.</p>
+</aside>
+</section>
+<section id="sec1.4.2" epub:type="chapter">
+<h3 class="h3"><b>Selection rules</b></h3>
+<p class="noindent">Transitions are not allowed between all the energy levels. The selection rule for NMR is <i>&#x2206;</i><i>m<sub>I</sub></i> = &#x00B1;<i>1</i>. We noted above, <a href="#eq1.2">equation 1.2</a>, that the <i>m<sub>I</sub></i> levels, in the absence of any other effects, are equally spaced therefore a single resonance will be observed in the spectrum even for quadrupolar nuclei (for which there are more than two energy levels).</p>
+<a id="page_7" class="page" style="width:60%;">Page 7, Chapter 1 Fundamentals</a>
+</section>
+<section id="sec1.4.3" epub:type="chapter">
+<h3 class="h3"><b>Intensities</b></h3>
+<p class="noindent">When we irradiate the sample at the Larmor frequency we cause the nuclear spins both to be excited from lower to higher energy levels (absorption) and to relax from higher to lower states (emission). Since these absorptions and emissions are occurring with the same energy, <i>i.e.</i> at the same frequency, the intensity of the NMR signal depends on the difference between the number of absorptions and number of emissions that occur as the resonance is excited. In NMR this depends, essentially, on the population difference between the upper and lower energy levels. We do not have to worry about extinction coefficients as we do in <i>e.g.</i> IR spectroscopy; the probabilities of any given spin in the upper level falling to the lower and of any given spin being excited from the lower to the upper level are equal. We can therefore use the intensity of the NMR signal to count the number of nuclei giving rise to a transition, <i>i.e.</i> of a given type, in a molecule.</p>
+<p class="indent">Unfortunately the population difference in NMR is very small; for a separation of energy levels of 10<sup>-25</sup> J the Boltzmann distribution gives only a 1 in 50,000 population difference at 25 &#x00B0;C, <a href="#eq1.4">equation 1.4</a>. NMR signals will therefore be very weak; NMR spectroscopy is a very insensitive technique. Nuclei with low gyromagnetic ratios will tend to give weaker signals than high <i>&#x03B3;</i> nuclei since the energy level separation depends on <i>&#x03B3;</i>. Low sensitivity is NMR spectroscopy&#x2019;s greatest drawback. One way to improve the sensitivity is to make <b><i>B<sub>0</sub></i></b>, the applied field as large as possible. Using superconducting electromagnets fields up to 14 tesla are common in modern spectrometers with fields as high as 17.6 T available. To put this in context, a spanner &#x201C;lost&#x201D; inside a 4.7 T magnet will support the weight of a (large) student!</p>
+<aside class="right" style="margin-top:-18em;" epub:type="sidebar">
+<p class="eq" id="eq1.4"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+ <msub>
+ <mi>n</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>u</mi>
+ <mi>p</mi>
+ <mi>p</mi>
+ <mi>e</mi>
+ <mi>r</mi>
+ </mrow>
+ </msub>
+ <msub>
+ <mi>n</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>l</mi>
+ <mi>o</mi>
+ <mi>w</mi>
+ <mi>e</mi>
+ <mi>r</mi>
+ </mrow>
+ </msub>
+ </mfrac>
+ <mo>=</mo>
+ <msup>
+ <mi>e</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mfrac>
+ <mrow>
+ <mo>&#x2212;<!-- - --></mo>
+ <mi mathvariant="normal">&#x25B3;<!-- ? --></mi>
+ <mi>E</mi>
+ </mrow>
+ <mrow>
+ <mi>k</mi>
+ <mi>T</mi>
+ </mrow>
+ </mfrac>
+ </mrow>
+ </msup>
+</math></p>
+<p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mo>.</mo>
+ <mo>.</mo>
+ <mo>.</mo>
+ <mo>.</mo>
+ <mo>.</mo>
+ <mo>.</mo>
+ <mo>.</mo>
+ <mo>.</mo>
+ <mo>&#x2248;</mo>
+ <mn>1.00002</mn>
+</math></p>
+<p class="eqcaption"><b>Eqn 1.4</b> The population difference between the upper and lower energy levels is given by the Boltzmann distribution and is very small. NMR signals are therefore very weak.</p>
+</aside>
+</section>
+</section>
+<section id="sec1.5" epub:type="chapter">
+<h2 class="h2">1.5<span class="space">&#160;</span>Nuclear spins and their surroundings</h2>
+<p class="noindent">Nuclear spins interact only weakly with their surroundings <i>via</i> the magnetic fields produced by other magnetic dipoles such as electrons, paramagnetic species, other nuclear dipoles and by nuclear quadrupoles. This means that the lifetimes of nuclear spin states (at least for spin &#x00BD; nuclei in solution) are long, relaxation is slow, and therefore NMR lines are very sharp - there is little Heisenberg broadening. For quadrupolar nuclei however the relatively strong interaction between the nuclear quadrupole and dipole shortens the lifetime of the excited state considerably resulting in broader lines following Heisenberg&#x0027;s uncertainty principle, <a href="#eq1.5">equation 1.5</a>.</p>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<p class="eq" id="eq1.5"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi mathvariant="normal">&#x25B3;<!-- ? --></mi>
+ <mi>E</mi>
+ <mi mathvariant="normal">&#x25B3;<!-- ? --></mi>
+ <mi>t</mi>
+ <mo>=</mo>
+ <mi class="MJX-variant">&#x210F;<!-- ? --></mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>/</mo>
+ </mrow>
+ <mn>2</mn>
+</math></p>
+<p class="eqcaption"><b>Eqn 1.5</b> For spin &#x00BD; nuclei, &#x2206;t is large: the uncertainty in the NMR resonance frequency, &#x2206;E, is therefore very small since the lifetimes are long; NMR resonances (at least for spin &#x00BD; nuclei) are therefore very sharp.</p>
+</aside>
+<p class="indent">Paradoxically the weak interaction of the nuclear spin with its environment which gives both the small energy separation of the spin <a id="page_8" class="page">Page 8, Chapter 1 Fundamentals</a>states and the long lifetimes is responsible both for the analytical power of the technique - separate resonances are observed for each chemically different site in a molecule, couplings between nuclei are well resolved and so an accurate determination of the topology of a molecule is possible - and for the low sensitivity of NMR spectroscopy, its greatest drawback.</p>
+
+<section id="sec1.5.1" epub:type="chapter">
+<h3 class="h3"><b>Timescales</b></h3>
+<p class="noindent">A compound must exist in a given energy state for a finite time in order to be detectable spectroscopically. This is sometimes referred to as the <i>timescale</i> of the spectroscopy. For NMR, typical resonance frequency ~100 MHz, the timescale is about 10<sup>-7</sup> s. This compares with the IR timescale of 10<sup>-13</sup> - 10<sup>-14</sup> s, resonance frequency ~ 100 THz. NMR is thus a relatively slow technique.</p>
+<p class="indent">Other timescales can be identified, for example how long does the system take to re-establish equilibrium - for NMR this can be less than a millisecond or more than an hour(!) depending on the nucleus and its environment; or the ability of a spectroscopy to distinguish different, but exchanging species, say a gas adsorbing and desorbing on a surface or a ligand in a complex exchanging with free ligand in solution. NMR experiments can study such processes over a wide range of timescales from seconds to fractions of milliseconds.</p>
+</section>
+</section>
+<section id="sec1.6" epub:type="chapter">
+<h2 class="h2">1.6<span class="space">&#160;</span>Chemical Shielding</h2>
+<p class="noindent">If the applied magnetic field, <b><i>B<sub>0</sub></i></b>, were the only magnetic field experienced by the nuclear spin the NMR spectrum would be a rather uninteresting single line. Fortunately the electrons in the molecule, since they are charged, produce additional magnetic fields as they move in the molecular orbitals. Two types of induced field occur; circulation of electrons in the ground state orbitals produces a field that opposes the spectrometer magnet field, <a href="Chapter01.xhtml#fig1.6">figure 1.6</a>, so the nucleus sees a smaller total field, we say the nucleus is <i>shielded</i> from the spectrometer field. This is called the <i>diamagnetic term</i>. On the other hand, electrons mixed in to the ground state from excited electronic states by the magnetic field give rise to fields that reinforce the spectrometer field, the <i>paramagnetic term</i>: the nucleus now sees a greater field than expected, it is <i>deshielded</i> from the spectrometer field. These fields will depend on <i>e.g.</i> the elements present and the type of bonding and so will be characteristic of the chemical environment of the nucleus. Shielding changes the separation of the nuclear spin energy levels, <a href="#eq1.2">equation 1.2</a>, and hence the resonance frequency, <a href="#eq1.3">equation 1.3</a>. If there are <a id="page_9" class="page">Page 9, Chapter 1 Fundamentals</a>chemically different atoms of a given NMR active element present in the molecule each will see a slightly different magnetic field overall hence each chemically different group of nuclei will be shielded differently. Put another way the nuclear spin energy levels of each group of chemically equivalent nuclei will be split by a slightly different amount compared with every other group and so will resonate at a slightly different frequency. This effect is <i>chemical shielding</i>.</p>
+<aside class="right" style="margin-top:-35em;" epub:type="sidebar">
+<figure id="fig1.6">
+<img src="../images/fig1.6.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.6</b> Electrons are charged and so experience a force causing them to move when placed in a magnetic field. This motion generates additional magnetic fields at the nucleus giving rise to the chemical shift.</figcaption>
+</figure>
+</aside>
+<p class="indent">Consider the hypothetical trigonal bipyramidal molecule AF<sub>3</sub>Me<sub>2</sub>, <a href="Chapter01.xhtml#fig1.7">figure 1.7</a>. If we ignore any effects such as non-rigidity of the molecule, we can divide the fluorine atoms into two types: one is in an equatorial position, F<sub>e</sub> and two are in the axial positions, F<sub>a</sub>. Each group will have a different chemical shift due to the geometrically different positions they occupy. The <sup>19</sup>F NMR spectrum of AF<sub>3</sub>Me<sub>2</sub> will therefore show two sets of resonances one for each type of fluorine. The relative total intensities of the sets of resonances reflects the number of fluorine atoms of each type; 2 * F<sub>a</sub>, 1 * F<sub>e</sub>. The resonance of each group of fluorine nuclei will be further split by scalar coupling, <i>vide infra</i>.</p>
+<aside class="right" style="margin-top:-20em;" epub:type="sidebar">
+<figure id="fig1.7">
+<img src="../images/fig1.7.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.7</b> The <sup>19</sup>F NMR spectrum of AF<sub>3</sub>Me<sub>2</sub> at low resolution shows separate resonances for the axial and equatorial fluorines.</figcaption>
+</figure>
+</aside>
+
+<section id="sec1.6.1" epub:type="chapter">
+<h3 class="h3"><b>The chemical shift and the ppm scale</b></h3>
+<p class="noindent">The magnitude of chemical shielding, since it arises from the interaction of the electrons surrounding the nucleus with the spectrometer field, depends on the strength of the spectrometer field. Since different laboratories use magnets of different field strengths chemical shielding is normally reported as the shift of the resonance line from that of a reference compound, the <i>chemical shift</i>. It is convenient to give the chemical shift as a fraction of the applied magnetic field, in parts per million, from a standard reference, the 8 scale, since this gives the chemical shift in a form independent of the applied field, <a href="#eq1.6">equation 1.6</a>.</p>
+<aside class="right" style="margin-top:-12em;" epub:type="sidebar">
+<p class="eq" id="eq1.6"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>&#x03B4;<!-- d --></mi>
+ <mo>=</mo>
+ <mfrac>
+ <mrow>
+ <msub>
+ <mi>V</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>o</mi>
+ <mi>b</mi>
+ <mi>s</mi>
+ <mi>e</mi>
+ <mi>r</mi>
+ <mi>v</mi>
+ <mi>e</mi>
+ <mi>d</mi>
+ </mrow>
+ </msub>
+ <mo>&#x2212;<!-- - --></mo>
+ <msub>
+ <mi>V</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>r</mi>
+ <mi>e</mi>
+ <mi>f</mi>
+ <mi>e</mi>
+ <mi>r</mi>
+ <mi>e</mi>
+ <mi>n</mi>
+ <mi>c</mi>
+ <mi>e</mi>
+ </mrow>
+ </msub>
+ </mrow>
+ <msub>
+ <mi>V</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>r</mi>
+ <mi>e</mi>
+ <mi>f</mi>
+ <mi>e</mi>
+ <mi>r</mi>
+ <mi>e</mi>
+ <mi>n</mi>
+ <mi>c</mi>
+ <mi>e</mi>
+ </mrow>
+ </msub>
+ </mfrac>
+</math></p>
+<p class="eqcaption"><b>Eqn 1.6</b> The chemical shift is reported as the fractional shift from a reference in ppm to remove the effect of the spectrometer magnetic field strength. Chemical shift increases as shielding decreases.</p>
+<p class="noindent">&#160;</p>
+</aside>
+<figure class="figure-center-100" id="fig1.8">
+<img src="../images/fig1.8.jpg" alt="images"/>
+<figcaption><b>Fig. 1.8</b> Working at high spectrometer field strengths stretches the chemical shift axis but not scalar couplings, spreading out overlapping resonances. Here, in the <sup>13</sup>C NMR spectrum of Rh<sub>6</sub>(CO)<sub>15</sub>(PPh<sub>3</sub>), the overlapping resonances of the terminal CO ligands are spread out by increasing the spectrometer field from 2.35 T to 16.45 T, greatly simplifying analysis of the spectrum. The spectrum recorded at 2.35 T is shown expanded seven times with respect to that recorded at 16.45 T to allow the separate resonances to be seen. The assignment of the spectrum is described on <a href="Chapter02.xhtml#page_46">page 46</a> and shown beneath the 16.45 T spectrum.</figcaption>
+</figure>
+<a id="page_10" class="page" style="width:60%">Page 10, Chapter 1 Fundamentals</a>
+<p class="noindent">Working at very high fields has several advantages: the increased energy separation of the upper and lower states, through the effect this has on the Boltzmann distribution, results in a stronger NMR signal and the larger the field, the more separated the resonances become making it easier to distinguish resonances from closely similar groups, <a href="Chapter01.xhtml#fig1.8">figure 1.8</a>.</p>
+<p class="indent">Shifts to higher energy, downfield, are positive, to lower energy, upfield, are negative. In old texts this convention may be reversed, particularly for nuclei other than proton and carbon. To convert from ppm to hertz simply multiply by the resonance frequency (at the spectrometer field) appropriate to the nucleus under study.</p>
+<p class="indent">In inorganic chemistry it is difficult to predict the chemical shift since many competing factors such as oxidation state, nature of the ligands, nature of the bonding, and charge, have to be taken into account. However, an empirical understanding of factors likely to affect the shift can be gleaned by study of data for known compounds. In this way the chemical shift can tell us about differences in oxidation state, the nature and position of bonded atoms and about geometric factors.</p>
+</section>
+</section>
+<section id="sec1.7" epub:type="chapter">
+<h2 class="h2">1.7<span class="space">&#160;</span>Scalar Coupling</h2>
+<p class="noindent">Whenever there are groups of different NMR active nuclei present in the molecule there will be scalar coupling between them. The nuclei can be of the same element - homonuclear coupling - or of different elements - heteronuclear coupling.</p>
+<p class="indent">Scalar coupling arises because the nuclear magnetic moments of other NMR active nuclei surrounding the nucleus under observation produce small &#x201C;extra&#x201D; magnetic fields in addition to the fields due to the spectrometer magnet and the chemical shift. Thus the observed nucleus sees not one resultant field but several depending on the number and nature of the surrounding NMR active nuclei. As we shall see, unlike chemical shielding, the magnitude of scalar coupling depends only on the interaction of the nuclear magnetic dipoles so it does not vary with the spectrometer field. Coupling constants do not, therefore, vary from one instrument to another and so are reported in hertz.</p>
+<p class="indent">One important feature of scalar coupling is that identical nuclei, <i>i.e.</i> nuclei that occupy identical positions within a molecule <i>e.g.</i> the two axial F<sub>a</sub> nuclei in AF<sub>3</sub>Me<sub>2</sub>, <a href="Chapter01.xhtml#fig1.7">figure 1.7</a>, do not couple to each other but coupling between the inequivalent axial and equatorial fluorines does occur, <a href="Chapter01.xhtml#fig1.9">figure 1.9</a>.</p>
+<aside class="right" style="margin-top:-17em;" epub:type="sidebar">
+<figure id="fig1.9">
+<img src="../images/fig1.9.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.9</b> At high resolution the NMR resonances of the fluorines in AF<sub>3</sub>Me<sub>2</sub> are seen to be split by coupling between the two sets of inequivalent fluorines.</figcaption>
+</figure>
+</aside>
+<p class="indent">It is important to realize that the mechanism of scalar coupling is the same regardless of the nuclei involved, thus if we have a good physical <a id="page_11" class="page">Page 11, Chapter 1 Fundamentals</a>picture of the way scalar coupling works and understand the implications of our model we can deal with any coupling situation whether it be proton-proton, proton-carbon, silver-rhodium boron-lithium or whatever. In fact, it could be argued that &#x201C;Inorganic&#x201D; NMR becomes easier to understand than &#x201C;Organic&#x201D; NMR since there are usually fewer distinct groups of NMR active nuclei present, the resonances of which are well separated and show coupling to only one or two other nuclei. This contrasts with a typical proton NMR spectrum of an organic compound containing many overlapping resonances with extensive coupling.</p>
+
+<section id="sec1.7.1" epub:type="chapter">
+<h3 class="h3"><b>Coupling to a spin &#x00BD; nucleus - mechanism of scalar coupling - 1</b></h3>
+<p class="noindent">Consider a pair of spin &#x00BD; nuclei <b>A</b> and <b>B</b>: these could be <i>e.g.</i> two protons, a phosphorus and a fluorine, or a rhodium and a carbon-13, for our purposes the elements involved do not matter, only the nuclear spins. Let the nuclear spin on atom <b>A</b>, point up - the nuclear spin on <b>B</b> can align either with or against the spin on <b>A</b> giving a low and a high energy state, designated &#x03B1;&#x03B1; and &#x03B1;&#x03B2; respectively, <a href="Chapter01.xhtml#fig1.10">figure 1.10</a>.</p>
+<p class="indent">In a similar fashion, if the nuclear spin on <b>A</b> points down, we get two more energy levels for the nuclear spin on <b>B</b>, &#x03B2;&#x03B1; and &#x03B2;&#x03B2; respectively. This is also shown in <a href="Chapter01.xhtml#fig1.10">figure 1.10</a> both as arrangements of the nuclear spins and as an energy level diagram. In this way the NMR resonance of <b>B</b> is split in two by the presence of the spin on <b>A</b> since there are now four, rather than two energy levels in the <b>AB</b> spin system and the NMR selection rule, &#x2206;m = &#x00B1;1 tells us that transitions between &#x03B1;&#x03B1; and &#x03B1;&#x03B2; and between &#x03B2;&#x03B1; and &#x03B2;&#x03B2; are allowed in the NMR spectrum of <b>B</b>. In short, the nuclear spin on <b>B</b> can sense whether that on <b>A</b> is up or down and its NMR line is split accordingly.</p>
+<figure class="figure-left-60" id="fig1.10">
+<img src="../images/fig1.10.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.10</b> The nuclear spin on A has high and low energy states due to the orientation of the spin on B. In all there are now four energy levels in the AB spin system. The allowed transitions, according to the NMR selection rule &#x2206;m<sub>I</sub> = &#x00B1;1 are shown, for A (dotted arrows) and for B (solid arrows).</figcaption>
+</figure>
+<a id="page_12" class="page" style="width:60%">Page 12, Chapter 1 Fundamentals</a>
+<p class="indent">Since there is an (almost) equal probability that the spin on <b>A</b> is up or down each nuclear spin energy level on <b>B</b> will be split equally in two by the presence of the nuclear spin on atom <b>A</b> and so each line in the NMR spectrum of <b>B</b> will be split equally in two.</p>
+</section>
+<section id="sec1.7.2" epub:type="chapter">
+<h3 class="h3"><b>Mechanism of scalar coupling - 2</b></h3>
+<p class="noindent">Scalar coupling is not, however, a simple through space effect but is transmitted by polarization of the electrons in the bonds between the nuclei.</p>
+<p class="indent">Consider the pair of electrons in a bonding orbital between two spin &#x00BD; nuclei <b>A</b> and <b>B</b>. Let the nuclear spin on atom <b>A</b>, point up: the electron on <b>A</b> can then minimize its energy by aligning its spin with the nuclear spin. Since the electron on <b>B</b> is in the same molecular orbital as the electron on <b>A</b> its spin must now point down since the two electrons cannot have identical quantum states. The nuclear spin on <b>B</b> can align either with or against the electron spin giving a low and a high energy state, <a href="Chapter01.xhtml#fig1.11">figure 1.11</a>. In a similar fashion, if the nuclear spin on <b>A</b> points down, the electron spin on <b>B</b> will point up giving two more energy levels for the nuclear spin on <b>B</b>. In short, the nuclear spin on <b>B</b> can sense whether that on <b>A</b> is up or down <i>via</i> the polarisation of the electron spins in the bond. As the number of bonds between the nuclei increases the size of the coupling decreases: it is unusual to see coupling through more than four bonds.</p>
+<aside class="right" style="margin-top:-25em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig1.11">
+<img src="../images/fig1.11.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.11</b> The nuclear spin on B has high and low energy states due to the polarisation of the bonding electrons by the spin on A.</figcaption>
+</figure>
+</aside>
+</section>
+<section id="sec1.7.3" epub:type="chapter">
+<h3 class="h3"><b>Decoupling</b></h3>
+
+<figure class="figure-left-60" id="fig1.12">
+<img src="../images/fig1.12.jpg" alt="images"/>
+<figcaption style="width:100%"><b>Fig. 1.12</b> Irradiation of the axial fluorines at resonance removes the coupling from F<sub>a</sub> to all other nuclei in the molecule.</figcaption>
+</figure>
+
+<p class="noindent">The effect of scalar coupling can be removed by irradiating the coupling nucleus, say nucleus <b>A</b>, at its resonance frequency to induce rapid transitions between the possible orientations of the spin on <b>A</b>. Neighbouring nuclei then see a single, averaged field, rather than distinct fields, for the different possible orientations of the nuclear magnetic moment of <b>A</b>. The coupling appears to vanish. By convention we write the decoupled nucleus in curly brackets; thus a proton decoupled boron-11 spectrum is written <sup>11</sup>B{<sup>1</sup>H}. It is also possible to decouple selectively one set of, say fluorine, nuclei whilst leaving <a id="page_13" class="page">Page 13, Chapter 1 Fundamentals</a>others unaffected. For example, in our AF<sub>3</sub>Me<sub>2</sub> example above we could selectively decouple the axial fluorines; the triplet due to the equatorial fluorine then collapses to a singlet, <a href="Chapter01.xhtml#fig1.12">figure 1.12</a>. In this way it is possible to simplify apparently complex spectra and identify exactly which nuclei are responsible for any given coupling in the spectrum.</p>
+</section>
+<section id="sec1.7.4" epub:type="chapter">
+<h3 class="h3"><b>Mechanism of decoupling</b></h3>
+<p class="noindent">Our picture of the mechanism of scalar coupling above can easily show how decoupling works. Consider the following analogy: if we flick through a pack of cards slowly we can recognize each card in turn. However, if we flick through the pack quickly we cannot, instead we see a blurred averaged image - we must see a card for a certain amount of time in order to be able to distinguish its value. The same applies in spin-spin coupling; the nuclear spins of the coupling nuclei must remain in each orientation long enough for the observed nucleus to register the different orientations. If we irradiate one of the coupling nuclei rapid transitions between the <b><i>m<sub>I</sub></i></b> states are induced. Its nuclear spin rapidly flips up and down. Just as in the pack of cards analogy, the observed nucleus can no longer distinguish the different orientations of the coupling spins because the spins do not spend long enough in any given orientation and so the coupling vanishes.</p>
+</section>
+<section id="sec1.7.5" epub:type="chapter">
+<h3 class="h3"><b>The coupling constant</b></h3>
+
+<figure class="figure-center-60" id="fig1.13">
+<img src="../images/fig1.13.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.13</b> The coupling constant J<sub>AB</sub> must equal J<sub>BA</sub>. The chemical shifts &#x03B4;<sub>A</sub> and &#x03B4;<sub>B</sub> are measured from the midpoints of the multiplets.</figcaption>
+</figure>
+
+<p class="noindent">The size of the splitting caused by scalar coupling depends only on the interaction of the magnetic moments of the coupling nuclei and is independent of the spectrometer field. Unlike the chemical shift, the coupling constant does not change if we change the spectrometer field and so is given in hertz not ppm. The separation of the resonance energies, in hertz, is called the (scalar) coupling constant, and is given the symbol J<sub>AB</sub> or J(AB). The chemical shift of nucleus <b>B</b> is calculated from the midpoint of the resonances in its coupled multiplet. Scalar coupling is reciprocal; the energy levels, and hence the NMR spectrum, of nucleus <b>A</b> will be split by the nuclear spin of <b>B</b>. The magnitude of the coupling from <b>A</b> to <b>B</b> will be the same as that from <b>B</b> to <b>A</b>, <i>i.e.</i> the coupling constant J<sub>BA</sub> is the same as J<sub>AB</sub>, <a href="Chapter01.xhtml#fig1.13">figure 1.13</a>. Scalar coupling normally diminishes as the number of bonds between <b>A</b> and <b>B</b> increases <a id="page_14" class="page">Page 14, Chapter 1 Fundamentals</a>with <sup>1</sup>J <img src="../images/inline_g.jpg" alt="images"/> <sup>3</sup>J &#x003E; <sup>2</sup>J &#x003E; <sup>4</sup>J. Beyond four bonds coupling is normally too small to be observed. The number of bonds between the coupling nuclei is indicated by a superscripted prefix, <i>e.g</i>. a coupling through two bonds is written <sup>2</sup>J<sub>AB</sub>.</p>
+</section>
+<section id="sec1.7.6" epub:type="chapter">
+<h3 class="h3"><b>Coupling to nuclei with spin &#x003E;&#x00BD;</b></h3>
+<p class="noindent">We can easily extend our physical picture of scalar coupling to nuclei with spins greater than &#x00BD; and to more than one nucleus. We know that the number of allowed orientations of a nuclear spin <b><i>I</i></b> is 2<b>I</b>+1, the number of <i>m<sub>I</sub></i> states. This is two as we have seen for a spin &#x00BD; nucleus. Suppose A has spin <img src="../images/la_3b2.jpg" alt="images"/>. 2<b>I</b>+1 is then four, <i>m<sub>I</sub></i> on <b>A</b> can take the values +<img src="../images/la_3b2.jpg" alt="images"/>, +&#x00BD;, -&#x00BD;, or -<img src="../images/la_3b2.jpg" alt="images"/>. <b>B</b> senses these four possible orientations of the <b>A</b> spin. Since each possible <i>m<sub>I</sub></i> state of <b>A</b> occurs with almost equal probability the resonance of <b>B</b> will be split into four equally intense lines.</p>
+<p class="indent">An example of such a spin system is the <sup>1</sup>H NMR spectrum of <sup>ll</sup>BH4<sup>-</sup>, (<b>A</b> = <sup>11</sup>B; <b>B</b> = <sup>1</sup>H). Note that in <sup>11</sup>BH4<sup>-</sup> all four terminal protons are in identical environments so there is no coupling between them, we only need consider coupling to the <sup>11</sup><b>B</b>. The <sup>l</sup>H NMR spectrum of <sup>11</sup>BH4<sup>-</sup> shows four equally intense resonance lines due to coupling to the spin <img src="../images/la_3b2.jpg" alt="images"/> <sup>11</sup><b>B</b>. The chemical shift is the midpoint of the multiplet, <a href="Chapter01.xhtml#fig1.14">figure 1.14</a>.</p>
+
+<figure class="figure-center-100" id="fig1.14">
+<img src="../images/fig1.14.jpg" alt="images"/>
+<figcaption><b>Fig. 1.14</b> The nuclear spin can sense the 2I+1 orientations of a neighbouring spin. This is shown here for a proton coupling to a spin <img src="../images/la_3b2.jpg" alt="images"/> nucleus. The <sup>1</sup>H NMR resonance of <sup>11</sup>BH4<sup>-</sup> is split into four equally intense lines by the presence of the <sup>11</sup>B, I = <img src="../images/la_3b2.jpg" alt="images"/>,. The chemical shift of the protons is the mid-point of the multiplet.</figcaption>
+</figure>
+
+</section>
+<section id="sec1.7.7" epub:type="chapter">
+<h3 class="h3"><b>Coupling to several identical spin &#x00BD; nuclei</b></h3>
+<p class="noindent">If we now look at the boron atom in <sup>11</sup>BH4<sup>-</sup>, it will couple to all four proton nuclear spins. To determine the coupling pattern of the <sup>11</sup>B resonance we first must determine all possible combinations of the proton magnetic moments (<i>m<sub>I</sub></i> values). Since the four protons are equivalent the number of lines in the multiplet corresponds to the number of different values <i>&#x03A3;m<sub>I</sub></i> can take whilst the intensities of the lines within the multiplet depends on the number of ways a given value of <i>&#x03A3;m<sub>I</sub></i> can be obtained, <a href="Chapter01.xhtml#fig1.15">figure 1.15</a>.</p>
+
+<a id="page_15" class="page" style="width:60%;">Page 15, Chapter 1 Fundamentals</a>
+<figure class="figure-center-100" id="fig1.15">
+<img src="../images/fig1.15.jpg" alt="images"/>
+<figcaption><b>Fig. 1.15</b> To determine the splitting pattern of a nucleus coupled to more than one equivalent nucleus we simply work out the number of different combinations of the coupling spins possible. In the case of equivalent spins, the splitting caused by any given spin is the same as that produced by any other so the lines overlap whenever the combination gives the same value for &#x03A3;m<sub>I</sub>. This can be shown as a stick diagram, above right, essentially the vector diagram, above left, turned on its side.</figcaption>
+</figure>
+</section>
+<section id="sec1.7.8" epub:type="chapter">
+<h3 class="h3"><b>Coupling to several identical spin &#x003E;&#x00BD; nuclei</b></h3>
+
+<p class="noindent">For spin &#x00BD; nuclei the result above may also be obtained using Pascal&#x2019;s triangle, however for nuclei with spins &#x003E;&#x00BD; it is necessary to return to a consideration of the combinations of spins available.</p>
+<p class="indent">Consider the bridging hydrogens in Me<sub>4</sub><sup>11</sup>B<sub>2</sub>H<sub>2</sub>; the spin system, ignoring the methyl groups, is A<sub>2</sub>B<sub>2</sub>, A = <sup>1</sup>H, B = <sup>ll</sup>B. The protons, spin &#x00BD;, are in identical environments - so there is no coupling between them. Similarly there will be no coupling between the identical, spin <img src="../images/la_3b2.jpg" alt="images"/>, borons. There will, however, be coupling between the borons and protons. The boron resonance will be split into a 1:2:1 triplet by the two equivalent proton spins following Pascal&#x2019;s triangle as discussed above. To work out the splitting pattern of the proton resonance by the two equivalent <sup>11</sup>B spins we must work out all possible combinations of the boron spin orientations just as we did for the proton spins in BH<sub>4</sub><sup>-</sup> above. Again, since the borons are equivalent, combinations that give the same <i>&#x03A3;m<sub>I</sub></i> will overlap. The proton resonance will thus split into a 1:2:3:4:3:2:1 septet according to the different combinations of the boron spins as shown, <a href="Chapter01.xhtml#fig1.16">figure 1.16</a>.</p>
+<figure class="figure-center-100" id="fig1.16">
+<img src="../images/fig1.16.jpg" alt="images"/>
+<figcaption><b>Fig. 1.16</b> Two equivalent boron spin <img src="../images/la_3b2.jpg" alt="images"/> neighbours will split the proton resonance into a 1:2:3:4:3:2:1 septet according to the different combinations of the boron spins as shown in the diagram.</figcaption>
+</figure>
+<a id="page_16" class="page" style="width:60%">Page 16, Chapter 1 Fundamentals</a>
+</section>
+<section id="sec1.7.9" epub:type="chapter">
+<h3 class="h3"><b>Coupling to inequivalent nuclei</b></h3>
+<p class="noindent">We can work out the coupling patterns for any combination of nuclear spins in a similar way to that described above, considering each set of equivalent spins in turn. Of course we need to remember that the splittings caused by inequivalent spins will not be the same; overlaps as described above only happen when we are dealing with equivalent spins.</p>
+<p class="indent">Consider Me<sub>2</sub><sup>ll</sup>B(&#x03BC;-H)<sub>2</sub><sup>ll</sup>BH<sub>2</sub> <a href="Chapter01.xhtml#fig1.17">figure 1.17</a>. Ignoring the methyl groups, there are four chemically different sets of spins in the molecule; the terminal hydrogens, the bridging hydrogens and the two different boron atoms. The NMR resonance of the terminal hydrogens, H<sub>t</sub> will be split by the directly bonded boron <sup>11</sup>B<sub>a</sub> (spin <img src="../images/la_3b2.jpg" alt="images"/>) into four equally intense lines, <sup>1</sup>J<sub>BH</sub>. Each line will then be split into four more equally intense lines by the remote boron-11 spin, <sup>11</sup>B<sub>b</sub>, <sup>3</sup>J<sub>BH</sub>. Each of the resultant lines will be further split into 1:2:1 triplets by the bridging hydrogens, H<sub>b</sub>, (two equivalent spin &#x00BD; nuclei, Pascal&#x2019;s triangle rule), <sup>2</sup>J<sub>HH</sub>. The NMR resonance of the terminal hydrogens is thus split into forty-eight lines of intensities (1:2: 1) &#x00D7;4 &#x00D7;4.</p>
+<p class="indent">This, is clearly quite complicated; we need an easy way to keep track of all the couplings - Stick Diagrams.</p>
+<figure class="figure-center-60" id="fig1.17">
+<img src="../images/fig1.17.jpg" alt="images"/>
+<figcaption><b>Fig. 1.17</b> Stick diagrams can be used to represent the couplings in a spin system. Shown here is the stick diagram for the bridging protons in Me<sub>2</sub><sup>11</sup>B(&#x03BC;-H)<sub>2</sub><sup>11</sup>BH<sub>2</sub>.</figcaption>
+</figure>
+</section>
+<section id="sec1.7.10" epub:type="chapter">
+<h3 class="h3"><b>Stick diagrams</b></h3>
+<p class="noindent">Stick diagrams are a convenient way to keep track of the couplings on a given resonance. Starting from a single line to indicate the chemical shift of the resonance we consider the splitting caused by each group of coupling nuclei in turn writing in new lines to represent the number and intensity of the resultant spectral lines. It does not matter in which order we consider the couplings although it is usually simpler to start with the biggest and work down.</p>
+<a id="page_17" class="page" style="width:60%;">Page 17, Chapter 1 Fundamentals</a>
+</section>
+</section>
+<section id="sec1.8" epub:type="chapter">
+<h2 class="h2">1.8<span class="space">&#160;</span>Second order couplings</h2>
+<p class="noindent">So far we have considered only <i>first order</i> couplings where the splitting pattern can be deduced in a straightforward fashion as described above and the line separations relate directly to the coupling constants. However some spin systems do not obey these simple rules and it is necessary to consider <i>second order</i> effects. In practice it is essential that we recognize when second order effects are occurring since in a second order spectrum it is probable that none of the line separations corresponds to a coupling constant, rather the lines are split by the sums and differences of several coupling constants. Second order spectra commonly occur when two coupled but inequivalent nuclei have very similar chemical shifts, for example the familiar AB quartet often encountered for CH<sub>2</sub> groups and the rhodium complex shown in <a href="Chapter01.xhtml#fig1.18">figure 1.18</a> in which the phosphorus nuclei of the co-ordinated phosphine and of the phosphine oxide ends of the ligand are coupled and both have shifts close to 30 ppm.</p>
+<figure class="figure-center-100" id="fig1.18">
+<img src="../images/fig1.18.jpg" alt="images"/>
+<figcaption class="figcaption-justify-100"><b>Fig. 1.18</b> The <sup>31</sup>P{<sup>1</sup>H} NMR spectrum of <i>trans</i>-Rh(CO)CI{Ph<sub>2</sub>PCH<sub>2</sub>P(O)Ph<sub>2</sub>}<sub>2</sub> is distorted by second order effects due to the similar chemical shifts of the two mutually coupled phosphorus nuclei. This spectrum also shows &#x201C;roofing&#x201D;, the tendency of the inner lines in a coupled system to &#x201C;steal&#x201D; intensity from the outer lines. Roofing is an indication of the onset of 2<sup>nd</sup> order effects.</figcaption>
+</figure>
+<aside class="right" style="margin-top:2em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig1.19">
+<img src="../images/fig1.19.jpg" alt="images"/>
+<figcaption class="figcaption-aside-justify"><b>Fig. 1.19</b> The borons, the two bridging hydrogens and the four terminal hydrogens in B<sub>2</sub>H<sub>6</sub> form groups of <i>chemically</i> equivalent but <i>magnetically</i> inequivalent nuclei.</figcaption>
+</figure>
+</aside>
+<figure class="figure-left-60" id="fig1.20">
+<img src="../images/fig1.20.jpg" alt="images"/>
+<figcaption class="figcaption-aside-justify"><b>Fig. 1.20</b> The <sup>1</sup>H NMR spectrum of B<sub>2</sub>H<sub>6</sub> is extremely complex due to magnetic inequivalence. From data in Farrar <i>et al</i>. J. Chem. Phys., 1968,<b>49</b>,281.</figcaption>
+</figure>
+<a id="page_18" class="page" style="width:60%">Page 18, Chapter 1 Fundamentals</a>
+<section id="sec1.8.1" epub:type="chapter">
+<h3 class="h3"><b>Chemical <i>vs</i> magnetic equivalence</b></h3>
+
+<p class="noindent">Second order spectra are also observed when chemically equivalent nuclei are magnetically inequivalent - this can happen in apparently very simple molecules. The concept of <i>chemical equivalence</i> is straightforward - groups should be chemically the same. For example, in B<sub>2</sub>H<sub>6</sub> the two borons are chemically the same as are the two bridging hydrogens and the four terminal hydrogens, <a href="Chapter01.xhtml#fig1.19">figure 1.19</a>. However if we consider the possible couplings we notice that B<sub>a</sub> sees a one bond coupling to its directly bonded terminal hydrogens but a three bond coupling to the terminal hydrogens on B<sub>b</sub>. Clearly, as far as couplings are concerned the terminal hydrogens on B<sub>a</sub> are <i>different</i> from the terminal hydrogens on B<sub>b</sub> despite the chemical equivalence of the groups. Similarly the two borons are different from each other. This inequivalence, that only becomes apparent when couplings are considered, is called <i>magnetic inequivalence</i>. Magnetically inequivalent nuclei couple to each other even though they are chemically equivalent resulting in second order spectra. The <sup>1</sup>H NMR spectrum of <sup>11</sup>B<sub>2</sub>H<sub>6</sub>, is shown in <a href="Chapter01.xhtml#fig1.20">figure 1.20</a>. The complexity of the spectrum is due to second order effects.</p>
+<p class="indent">Another example of magnetic inequivalence but chemical equivalence resulting in an extremely complicated NMR spectrum for an apparently simple molecule is the <sup>31</sup>P{<sup>1</sup>H} NMR spectrum of Mo(CO)<sub>3</sub>(P<sub>6</sub>) shown in <a href="Chapter01.xhtml#fig1.21">figure 1.21</a>.</p>
+<figure class="figure-center-100" id="fig1.21">
+<img src="../images/fig1.21.jpg" alt="images"/>
+<figcaption><b>Fig. 1.21</b> Second order effects result In a very complicated <sup>31</sup>P{<sup>1</sup>H} NMR spectrum (inset is an expansion of the resonance centred around 121 ppm) for the apparently simple Mo(CO)<sub>3</sub>(P<sub>6</sub>) molecule due to extensive couplings between the magnetically inequivalent, but chemically equivalent, phosphorus atoms. Nevertheless the structure of the compound can be established without fully interpreting the spectrum. Data provided by M. J. Mays <i>et al</i>. There is an impurity at <i>ca</i>. 70 ppm.</figcaption>
+</figure>
+<p class="indent">Although the complexity of the spectrum should dissuade all but the most fanatical from trying to determine the coupling constants, enough information can be obtained from a cursory inspection of the spectrum to establish the likely co-ordination of the P<sub>6</sub> ligand. Clearly there are <a id="page_19" class="page">Page 19, Chapter 1 Fundamentals</a>three types of phosphorus with two types being similar and one type very different. We can therefore deduce that the P<sub>6</sub> ring ligand must be in a boat conformation with four co-ordinated and two unco-ordinated phosphorus atoms rather than in a crown conformation with three coordinated phosphoruses. There is an important point here; it is not necessary to understand every last coupling in an NMR spectrum to obtain the desired structural information, indeed sometimes it is pointless to search for an understanding of every coupling.</p>
+</section>
+</section>
+<section id="sec1.9" epub:type="chapter">
+<h2 class="h2">1.9<span class="space">&#160;</span>Natural abundance</h2>
+<p class="noindent">Some elements possess more than one isotope, not all of which will be NMR active. The NMR active isotopes will usually have different nuclear spins, <b><i>I</i></b>, and will certainly have different gyromagnetic ratios, &#x03B3;, and hence different resonance frequencies, <a href="#tab1.2">table 1.2</a>. The different isotopes will show different coupling constants and coupling patterns since these change with &#x03B3; and <b><i>I</i></b>. This situation is familiar from organic chemistry; carbon has three isotopes, <sup>12</sup>C which is NMR inactive and makes up 98.9% of natural carbon, <sup>13</sup>C which has spin &#x00BD; and is 1.1% abundant and <sup>14</sup>C which is NMR inactive.</p>
+<p class="indent">To understand the coupling in NMR spectra of compounds containing an element possessing more than one NMR active isotope we must separate mentally the sample into separate pots; one pot containing all those molecules that contain only the NMR inactive isotopes of the coupling element and then separate pots for those molecules that contain each specific NMR active isotope. We then work out the NMR spectrum for each pot and finally add together the separate spectra, weighting each according to the natural abundances of the isotopes to achieve the overall NMR spectrum. Fortunately the chemical shift of the observed nucleus is fairly insensitive to isotope effects from adjacent, coupling nuclei so the centres of the spectra do not change (much).</p>
+<p class="indent">This process is illustrated in <a href="Chapter01.xhtml#fig1.22">figure 1.22</a> for the <sup>1</sup>H NMR spectrum of the BH<sub>4</sub><sup>-</sup> ion. In the borane examples above we specified that the boron was all <sup>11</sup>B because boron actually has two isotopes both of which are NMR active; <sup>10</sup>B, spin 3, natural abundance ~20% and <sup>11</sup>B, spin <img src="../images/la_3b2.jpg" alt="images"/>, abundance ~80%. First consider only molecules that contain <sup>11</sup>B; the <sup>1</sup>H NMR spectrum will be four lines of equal intensity due to coupling to the spin <img src="../images/la_3b2.jpg" alt="images"/> <sup>11</sup>B, <a href="Chapter01.xhtml#fig1.22">figure 1.22a</a>. Similarly for those molecules that contain <sup>10</sup>B the <sup>1</sup>H NMR spectrum will be seven lines of equal intensity due to coupling to the spin 3 <sup>10</sup>B, <a href="Chapter01.xhtml#fig1.22">figure 1.22b</a>. Finally we must add the spectra <a id="page_20" class="page">Page 20, Chapter 1 Fundamentals</a> of the <sup>ll</sup>B and <sup>10</sup>B containing molecules in the ratio 80:20 (following the natural abundances of the two isotopes) to obtain the <sup>l</sup>H NMR spectrum of BH<sub>4</sub><sup>-</sup>, <a href="Chapter01.xhtml#fig1.22">figure 1.22c</a>.</p>
+<figure class="figure-center-100" id="fig1.22">
+<img src="../images/fig1.22.jpg" alt="images"/>
+<figcaption class="figcaption-left-60"><b>Fig. 1.22</b> The NMR spectrum of a molecule in which coupling to an element possessing several NMR active isotopes occurs is calculated by considering coupling to each isotope separately.</figcaption>
+</figure>
+<p class="indent">Notice that the coupling constants to <sup>11</sup>B and <sup>10</sup>B are different. In fact the ratio of the coupling constants is the ratio of the gyromagnetic ratios of the two isotopes.</p>
+<section id="sec1.9.1" epub:type="chapter">
+<h3 class="h3"><b>Isotopomers</b></h3>
+
+<figure class="figure-center-60" id="fig1.23">
+<img src="../images/fig1.23.jpg" alt="images"/>
+<figcaption class="figcaption-aside-justify"><b>Fig. 1.23</b> The <sup>1</sup>H NMR spectrum (bridging H region) of B<sub>2</sub>H<sub>2</sub>Me<sub>4</sub> at natural abundance shows coupling patterns due to each of the boron isotopomers possible. The major resonances, a 1:2:3:4:3:2:1 septet are due to the <sup>11</sup>B<sup>11</sup>B isotopomer, those of intermediate intensity, an overlapping 1:1:1:1 quartet of 1:1:1:1:1:1:1 septets to the <sup>11</sup>B<sup>10</sup>B isotopomer, whilst the very weak peaks are due to the <sup>10</sup>B<sup>10</sup>B isotopomer. From data in R. E. Williams <i>et al</i>, <i>J. Phys. Chem</i>., 1960,<b>64</b>,1583.</figcaption>
+</figure>
+
+
+<aside class="right" style="margin-top:-13em;" epub:type="sidebar">
+<p class="tablecaption-aside-left" id="tab1.3"><b>Table 1.3</b> The possible isotopomers of a compound containing two boron atoms are:</p>
+<table style="margin-top:1em;width:100%">
+<tr>
+<td style="vertical-align:top;">isotopomer</td>
+<td style="vertical-align:top;text-align:center;">&#160;&#160;&#160;&#160;&#160;&#160;probability</td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><sup>11</sup>B<sup>11</sup>B</td>
+<td style="vertical-align:top;text-align:right;">0.8&#x00D7;0.8&#160;&#160;&#160;&#160; =&#160;0.64</td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><sup>11</sup>B<sup>10</sup>B</td>
+<td style="vertical-align:top;text-align:right;">2&#x00D7;0.8&#x00D7;0.2 = 0.32</td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><sup>10</sup>B<sup>10</sup>B</td>
+<td style="vertical-align:top;text-align:right;">0.2 &#x00D7; 0.2&#160;&#160; = 0.04</td>
+</tr>
+</table>
+</aside>
+
+
+<p class="noindent">If there is more than one atom of the isotopically diverse element present in the molecule we must take account of the different possible combinations of isotopes that may arise - the isotopomers - and the abundance of each. For example, in the diborane examples above we must take account of the different combinations of boron isotopes <a id="page_21" class="page">Page 21, Chapter 1 Fundamentals</a>possible in a molecule containing two boron atoms and the probability (calculated from the isotope abundances) that each isotopomer occurs, <a href="#tab1.3">table 1.3</a>. Thus, the observed NMR spectrum for the bridging protons in Me<sub>2</sub>B(&#x03BC;-H)<sub>2</sub>BMe<sub>2</sub> will be a superposition of the spectra resulting from each of the isotopomers weighted according to the probability of each occurring, <a href="Chapter01.xhtml#fig1.23">figure 1.23</a>. Although this spectrum looks horrendously complicated we can understand how it arises using our simple picture of couplings outlined in <a href="#sec1.7">section 1.7</a> and <a href="#tab1.3">table 1.3</a>.</p>
+</section>
+<section id="sec1.9.2" epub:type="chapter">
+<h3 class="h3"><b>Satellites</b></h3>
+<p class="noindent">In the examples above both isotopes of boron are NMR active, all the lines in the proton NMR spectrum therefore show coupling to one or other boron isotope (or both). It often happens, however, that only one isotope of the coupling nucleus is NMR active. In this situation a central, unsplit line is observed for the molecules that do not contain the NMR active coupling isotope and <i>satellites</i> on either side of the central peak are observed for those molecules containing the NMR active isotope. For example, <sup>29</sup>Si, has a spin &#x00BD; and is 4.7% abundant. The <sup>19</sup>F NMR spectrum of SiF<sub>4</sub> is shown in <a href="Chapter01.xhtml#fig1.24">figure 1.24</a>. A strong central peak is seen due to molecules that contain NMR inactive silicon. A doublet due to those molecules that contain <sup>29</sup>Si can be seen on either side of the main resonance, the <sup>29</sup>Si satellites.</p>
+<aside class="right" style="margin-top:-28em;" epub:type="sidebar">
+<figure id="fig1.24">
+<img src="../images/fig1_24.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.24</b> The <sup>19</sup>F NMR spectrum of SiF<sub>4</sub> shows satellites due to coupling to <sup>29</sup>Si.</figcaption>
+</figure>
+</aside>
+</section>
+</section>
+<section id="sec1.10" epub:type="chapter">
+<h2 class="h2">1.10 Relaxation</h2>
+<p class="noindent">Relaxation refers to the processes which allow nuclear spins to lose energy and drop from the excited state to the ground state non-radiatively, <i>i.e</i>. without emitting an NMR signal. Nuclear spins can get from the upper to the lower level in several ways. Up till now we have considered only radiative transitions, the &#x201C;direct route&#x201D; <i>i.e</i>. those that obey the NMR selection rule. However it is also possible for a nucleus to relax by giving up its energy non-radiatively either to the surroundings, when Boltzmann equilibrium will be re-established -<i>spin-lattice relaxation</i> - or to other nuclear spins - <i>spin-spin relaxation</i>. In spin-spin relaxation energy is exchanged between nuclear spins but the total amount of excited spin in the system does not change. These relaxation processes can be likened to what happens after a bucket of boiling water is poured into a bath, <a href="Chapter01.xhtml#fig1.25">figure 1.25</a>. The heat from the molecules of added water first cause a &#x201C;hot spot&#x201D; before being transferred to the molecules already in the bath. This process evens out the temperature of the bath water but the total heat content of the bath does not change - this is an analogy for spin-spin relaxation. The bath <a id="page_22" class="page">Page 22, Chapter 1 Fundamentals</a>also slowly cools down as heat is lost to the bathroom, eventually the bath will cool back to its starting temperature - spin-lattice relaxation. These processes are normally exponential in nature and are characterized by, and referred to as, the time constants T<sub>2</sub> and T<sub>1</sub> respectively. The reciprocal of the time constant equates to the rate constant for the relaxation. It is possible for magnetisation to be exchanged between spins faster than the Boltzmann equilibrium is reestablished by dissipation of energy to the lattice but clearly the reverse is impossible; hence T<sub>2</sub> &#x2264; T<sub>1</sub>. T<sub>1</sub> relaxation is important, if for no other reason than it determines how frequently we can sample the magnetisation whereas T<sub>2</sub> relaxation tells us about the lifetime of the excited state and hence, <i>via</i> the uncertainty principle, the natural linewidth of the NMR line. Relaxation can also tell us about the chemistry going on in the system and will be explored further in later chapters.</p>
+<aside class="right" style="margin-top:-55em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig1.25">
+<img src="../images/fig1_25.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.25</b> After a bucket of boiling water is poured into a bath, at first there is a localised hot-spot, then, as heat from the added water is transferred to the water already in the bath the temperature of the bath water evens out. The total heat content of the bath does not change during this process- this is analogous to spin-spin relaxation. The bath also slowly cools down as heat is lost to the surroundings, eventually cooling back to its original temperature-this is analogous to spin-lattice relaxation.</figcaption>
+</figure>
+</aside>
+<section id="sec1.10.1" epub:type="chapter">
+<h3 class="h3"><b>Relaxation mechanisms</b></h3>
+<p class="noindent">Relaxation occurs when the nuclear spin interacts with a magnetic field oscillating at or near the Larmor frequency. The most common sources of such fields are the spins of other nuclei, unpaired electron spins and nuclear quadrupoles. The first two are examples of <i>dipole-dipole relaxation</i>, the last is called <i>quadrupolar relaxation</i>. Relaxation by <i>e.g. chemical shift anisotropy</i> and <i>chemical exchange</i> is also possible. If relaxation occurs by more than one mechanism, the observed relaxation rate will be the sum of the rates due to each mechanism and the reciprocal of the observed time constant, T<sub>obs</sub> will equal the sum of the reciprocals of the individual time constants, <a href="#eq1.7">equation 1.7</a>.</p>
+<aside class="right" style="margin-top:-11em;" epub:type="sidebar">
+<p class="eq" id="eq1.7"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+ <mn>1</mn>
+ <msub>
+ <mi>T</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>1</mn>
+ <mi>o</mi>
+ <mi>b</mi>
+ <mi>s</mi>
+ </mrow>
+ </msub>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+ <mn>1</mn>
+ <msub>
+ <mi>T</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>1</mn>
+ <mi>d</mi>
+ <mi>d</mi>
+ </mrow>
+ </msub>
+ </mfrac>
+ <mo>+</mo>
+ <mfrac>
+ <mn>1</mn>
+ <msub>
+ <mi>T</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>1</mn>
+ <mi>c</mi>
+ <mi>s</mi>
+ <mi>a</mi>
+ </mrow>
+ </msub>
+ </mfrac>
+ <mo>+</mo>
+ <mi>e</mi>
+ <mi>t</mi>
+ <mi>c</mi>
+</math></p>
+
+<p class="eqcaption"><b>Eqn 1.7</b> If relaxation occurs by more than one mechanism the reciprocal of the observed time constant, T<sub>obs</sub>, will equal the sum of the reciprocals of the individual time constants.</p>
+</aside>
+</section>
+<section id="sec1.10.2" epub:type="chapter">
+<h3 class="h3"><b>Dipole-dipole relaxation</b></h3>
+<p class="noindent">Dipole-dipole relaxation occurs when the sample contains other magnetic dipoles that can interact with the nuclear magnetic moment. These can be the magnetic moments of other nuclei or of unpaired electrons. The effectiveness of the relaxation depends on the square of the gyromagnetic ratios of the two nuclei, <a href="#eq1.8">equation 1.8</a>, so high y nuclei will give faster relaxation than low y nuclei. The gyromagnetic ratio of the electron is about 1000 times that of the proton thus, when unpaired electrons are present, <i>e.g.</i> in some transition-metal ions, the relaxation will be dominated by these electrons <i>(vide infra)</i>.</p>
+<p class="indent">To cause relaxation the dipoles must set up a magnetic field that oscillates at or near the NMR resonance frequency. This oscillation is produced by <i>e.g.</i> the Brownian motion of the molecules. It is usual to think of this motion in terms of a <i>correlation time, &#x03C4;<sub>c</sub></i>. This rather nebulous concept is the time it takes for the magnetic moment causing <a id="page_23" class="page">Page 23, Chapter 1 Fundamentals</a>the relaxation to reorientate in space the smallest significant amount relevant to the relaxation process! Clearly different molecules will be able do this more or less easily depending on factors such as size, shape, and the viscosity of the medium. <i>&#x03C4;<sub>c</sub></i> will clearly be temperature dependent, this means that we should expect the efficiency of dipole-dipole relaxation to vary with temperature. The equations describing dipole-dipole spin-lattice relaxation are given in <a href="#eq1.8">equations 1.8</a>. Dipole-dipole relaxation is a through space effect and falls off as r<sup>6</sup>. Similar expressions for spin-spin relaxation can be derived.</p>
+<p class="noindent" id="eq1.8">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msubsup>
+ <mi>T</mi>
+ <mn>1dd(homo)</mn>
+ <mn>&#x2013;1</mn>
+ </msubsup>
+ <mo>=</mo>
+ <mfrac>
+ <mrow>
+ <mtext></mtext>
+ <msubsup>
+ <mi>&#x03BC;<!-- --></mi>
+ <mi>o</mi>
+ <mn>2</mn>
+ </msubsup>
+ <msubsup>
+ <mi>&#x03B3;<!-- ? --></mi>
+ <mi>I</mi>
+ <mn>4</mn>
+ </msubsup>
+ <msup>
+ <mi class="MJX-variant">&#x210F;<!-- ? --></mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msup>
+ <mi>I</mi>
+ <mo stretchy="false">(</mo>
+ <mi>I</mi>
+ <mo>+</mo>
+ <mn>1</mn>
+ <mo stretchy="false">)</mo>
+ </mrow>
+ <mrow>
+ <mtext></mtext>
+ <mn>40</mn>
+ <msup>
+ <mi>&#x03C0;<!-- p --></mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msup>
+ <msup>
+ <mi>r</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>6</mn>
+ </mrow>
+ </msup>
+ </mrow>
+ </mfrac>
+ <mrow>
+ <mo>[</mo>
+ <mfrac>
+ <mrow>
+ <mtext></mtext>
+ <msub>
+ <mi>&#x03C4;<!-- t --></mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>c</mi>
+ </mrow>
+ </msub>
+ </mrow>
+ <mrow>
+ <mtext></mtext>
+ <mn>1</mn>
+ <mo>+</mo>
+ <msubsup>
+ <mi>&#x03C9;<!-- ? --></mi>
+ <mi>I</mi>
+ <mn>2</mn>
+ </msubsup>
+ <msubsup>
+ <mi>&#x03C4;<!-- t --></mi>
+ <mi>c</mi>
+ <mn>2</mn>
+ </msubsup>
+ </mrow>
+ </mfrac>
+ <mo>+</mo>
+ <mfrac>
+ <mrow>
+ <mtext></mtext>
+ <mn>4</mn>
+ <msub>
+ <mi>&#x03C4;<!-- t --></mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>c</mi>
+ </mrow>
+ </msub>
+ </mrow>
+ <mrow>
+ <mtext></mtext>
+ <mn>1</mn>
+ <mo>+</mo>
+ <mn>4</mn>
+ <msubsup>
+ <mi>&#x03C9;<!-- ? --></mi>
+ <mi>I</mi>
+ <mn>2</mn>
+ </msubsup>
+ <msubsup>
+ <mi>&#x03C4;<!-- t --></mi>
+ <mi>c</mi>
+ <mn>2</mn>
+ </msubsup>
+ </mrow>
+ </mfrac>
+ <mo>]</mo>
+ </mrow>
+ <mo>&#x2248;<!-- --></mo>
+ <mfrac>
+ <mrow>
+ <mtext></mtext>
+ <msubsup>
+ <mi>&#x03BC;<!-- --></mi>
+ <mi>o</mi>
+ <mn>2</mn>
+ </msubsup>
+ <msubsup>
+ <mi>&#x03B3;<!-- ? --></mi>
+ <mi>I</mi>
+ <mn>4</mn>
+ </msubsup>
+ <msup>
+ <mi class="MJX-variant">&#x210F;<!-- ? --></mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msup>
+ <mi>I</mi>
+ <mo stretchy="false">(</mo>
+ <mi>I</mi>
+ <mo>+</mo>
+ <mn>1</mn>
+ <mo stretchy="false">)</mo>
+ </mrow>
+ <mrow>
+ <mtext></mtext>
+ <mn>8</mn>
+ <msup>
+ <mi>&#x03C0;<!-- p --></mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msup>
+ <msup>
+ <mi>r</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>6</mn>
+ </mrow>
+ </msup>
+ </mrow>
+ </mfrac>
+ <msup>
+ <mi>&#x03C4;<!-- t --></mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>c</mi>
+ </mrow>
+ </msup>
+</math></p>
+<p class="noindent"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msubsup>
+ <mi>T</mi>
+ <mn>1dd(hetero)</mn>
+ <mn>&#x2013;1</mn>
+ </msubsup>
+ <mo>&#8776;</mo>
+ <mfrac>
+ <mrow>
+ <mtext></mtext>
+ <msubsup>
+ <mi>&#x03BC;<!-- --></mi>
+ <mi>o</mi>
+ <mn>2</mn>
+ </msubsup>
+ <msubsup>
+ <mi>&#x03B3;<!-- ? --></mi>
+ <mi>I</mi>
+ <mn>2</mn>
+ </msubsup>
+ <msubsup>
+ <mi>&#x03B3;<!-- ? --></mi>
+ <mi>S</mi>
+ <mn>2</mn>
+ </msubsup>
+ <msup>
+ <mi class="MJX-variant">&#x210F;<!-- ? --></mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msup>
+ <mi>S</mi>
+ <mo stretchy="false">(</mo>
+ <mi>S</mi>
+ <mo>+</mo>
+ <mn>1</mn>
+ <mo stretchy="false">)</mo>
+ </mrow>
+ <mrow>
+ <mtext></mtext>
+ <mn>12</mn>
+ <msup>
+ <mi>&#x03C0;<!-- p --></mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msup>
+ <msup>
+ <mi>r</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>6</mn>
+ </mrow>
+ </msup>
+ </mrow>
+ </mfrac>
+ <msup>
+ <mi>&#x03C4;<!-- t --></mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>c</mi>
+ </mrow>
+ </msup>
+</math></p>
+<p class="eqcaption_1"><b>Eqns 1.8</b> The form of the dependence of dipole-dipole relaxation on frequency and <i>&#x03C4;<sub>c</sub></i> has been derived (see bibliography). For fast motions (<i>&#x03C9;&#x03C4;</i><sub>c</sub>)<sup>2</sup> <img src="../images/in12_l.jpg" alt="images"/> 1 and T<sub>1</sub> is independent of frequency. From G. A. Webb in &#x201C;NMR and the Periodic Table&#x201D;, eds Harris and Mann.</p>
+
+<p class="indent">Relaxation is less effective (long T<sub>1</sub>) at short correlation times, (<i>the fast motion regime</i>) and at long correlation times (<i>the slow motion regime</i>). The T<sub>1</sub> minimum (most efficient relaxation) occurs when. <i>&#x03C4;<sub>c</sub></i> = (&#x03C9;<sub>0</sub> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"> <msqrt> <mn>2</mn> </msqrt> </math>)<sup>-1</sup>. T<sub>1</sub> will show strong temperature dependence and may show some field dependence depending on the value of <i>&#x03C4;<sub>c</sub></i>. The temperature dependence of T<sub>1</sub> has important consequences if we are to use comparisons of relaxation times between compounds to establish structure, see <a href="Chapter02.xhtml">chapter 2</a>. At short correlation times, T<sub>2</sub> equals T<sub>1</sub> but in the slow motion regime, T<sub>2</sub> continues to fall until a limiting value is reached, <a href="Chapter01.xhtml#fig1.26">figure 1.26</a>.</p>
+<p class="indent">Where unpaired electron spins are present in the sample, <i>e.g.</i> a paramagnetic transition metal ion, the nuclear spins can transfer energy to the electron spins by a similar dipolar relaxation process. Since the electronic magnetic moment is about 1000 times larger than the nuclear magnetic moment, electron-nuclear dipole-dipole relaxation will be the dominant relaxation mechanism when paramagnetic species are present.</p>
+
+<aside class="right" style="margin-top:-20em;" epub:type="sidebar">
+<figure id="fig1.26">
+<img src="../images/fig1_26.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.26.</b> The relaxation rate varies with temperature due to the temperature effect on Brownian motion and hence on <i>&#x03C4;<sub>c</sub></i>. Notice that T<sub>2</sub> &#x2264; T<sub>1</sub> (see <a href="Chapter01.xhtml#page_29">page 29</a>). After N. Blombergen, &#x201C;Nuclear Magnetic Relaxation&#x201D;.</figcaption>
+</figure>
+</aside>
+
+</section>
+<section id="sec1.10.3" epub:type="chapter">
+<h3 class="h3"><b>Quadrupolar relaxation</b></h3>
+
+
+<p class="noindent">The importance of quadrupolar relaxation depends on the size of the nuclear quadrupole and the electric field gradient at the nucleus. The latter depends on the symmetry of the molecule and is smallest in cubic environments. Where the quadrupole is large and/or the environment <a id="page_24" class="page">Page 24, Chapter 1 Fundamentals</a>far from cubic symmetry, quadrupolar relaxation is very efficient. Efficient quadrupolar relaxation has the effect of making some quadrupolar nuclei essentially NMR invisible. The very short lifetime of the NMR states results in severe Heisenberg broadening, <a href="#eq1.5">equation 1.5</a>, giving NMR lines many thousands of hertz wide - the NMR spectrum becomes a broad hump barely visible above the baseline. If quadrupolar relaxation is very efficient it can also effectively decouple the quadrupolar nucleus. In <a href="#sec1.7">section 1.7</a> we noted that the observed nucleus needed the nuclear spin of the coupling nucleus to stay in each of its possible orientations for some time in order to sense the different orientations otherwise coupling could not be observed. If quadrupolar relaxation is very efficient, the nuclear spin will be rapidly flicking between its different possible orientations, the observed nucleus will see only a &#x201C;blur&#x201D; and so will be effectively decoupled from the quadrupolar nucleus. In these cases the only likely effect of the presence of a quadrupolar nucleus in the sample may be to enhance the relaxation of other nuclear spins.</p>
+
+<figure class="figure-center-100" id="fig1.27">
+<img src="../images/fig1_27.jpg" alt="images"/>
+<figcaption><b>Fig. 1.27</b> The three icosahedral isomers of B<sub>10</sub>H<sub>10</sub>C<sub>2</sub>H<sub>2</sub> can be distinguished by <sup>11</sup>B NMR. Couplings to the terminal proton are well resolved. The reader is invited to work out which borons are equivalent in each isomer, the answer is given in <a href="Chapter02.xhtml">chap. 2</a>. From data in G. D. Vickers <i>et al</i> Inorg. Chem., 1966, 5, 693.</figcaption>
+</figure>
+
+<p class="indent">Not all quadrupolar nuclei, however, suffer from extreme quadrupolar relaxation, we have seen many examples above of the use of <sup>11</sup>B NMR to characterize diborane complexes, indeed <sup>11</sup>B NMR is routinely used to characterize quite complex boron cluster compounds since well resolved resonances are found for each type of boron in the molecule and couplings to protons are usually well resolved. Thus, for example the isomers of B<sub>10</sub>H<sub>10</sub>C<sub>2</sub>H<sub>2</sub> are readily distinguished by <sup>11</sup>B <a id="page_25" class="page">Page 25, Chapter 1 Fundamentals</a>NMR, <a href="Chapter01.xhtml#fig1.27">figure 1.27</a>. Separate resonances are observed for each chemically distinct boron site in the molecules. Coupling to the terminal protons is also well resolved.</p>
+
+
+<p class="indent">Although hard and fast rules for the assignment of boron chemical shifts do not exist the number and intensity of the resonances is often sufficient. More recently 2-dimensional NMR methods have been developed that use <sup>1</sup>J<sub>BB</sub> couplings to establish the connectivity of the boron atoms and hence lead to a direct assignment of the <sup>11</sup>B NMR spectrum. 2-D methods are discussed in <a href="Chapter02.xhtml">chapter 2</a>, <a href="Chapter02.xhtml#page_54">p. 54</a>.</p>
+<p class="indent">Other quadrupolar nuclei which give useful NMR spectra include <sup>2</sup>D, <sup>6</sup>Li, <sup>17</sup>O, <sup>23</sup>Na, <sup>27</sup>Al, <sup>51</sup>V, <sup>59</sup>Co, <sup>91</sup>Zr, and <sup>133</sup>Cs, all of which have quadrupole moments less than &#x00B1; 0.15 * 10<sup>-28</sup>m<sup>2</sup>.</p>
+
+</section>
+</section>
+<section id="sec1.11" epub:type="chapter">
+<h2 class="h2">1.11<span class="space">&#160;</span>Experimental methods</h2>
+<p class="noindent">Two methods are commonly used in NMR spectroscopy to find the resonance frequencies of the NMR active nuclei in a sample, continuous wave, CW, and Fourier transform, FT.</p>
+<section id="sec1.11.1" epub:type="chapter">
+<h3 class="h3"><b>Continuous wave NMR spectroscopy</b></h3>
+
+
+<p class="noindent">In the CW method either the magnetic field or the irradiation frequency is adjusted to bring each nucleus in turn on to resonance. The net absorption of energy at resonance is detected and a spectrum produced. This method is analogous to conventional IR or UV spectroscopy. To achieve good resolution of closely spaced resonances each much be measured carefully in turn <i>i.e.</i> the sweep rate must be slow. Typically a sweep will take five to twenty minutes, signal averaging - recording the spectrum many times to improve the signal to noise ratio is impractical. The low sensitivity of NMR restricts the CW method to samples that give strong NMR signals, <i>i.e.</i> to concentrated samples of nuclei with high gyromagnetic ratios, in effect protons and fluorine.</p>
+
+
+
+<aside class="right" style="margin-top:-20em;" epub:type="sidebar">
+<figure id="fig1.28">
+<img src="../images/fig1.28.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.28</b> The continuous wave method is very slow, each frequency must be tried separately to find the resonance frequency.</figcaption>
+</figure>
+</aside>
+
+
+</section>
+<section id="sec1.11.2" epub:type="chapter">
+<h3 class="h3"><b>The Fourier transform method</b></h3>
+<p class="noindent">If all the resonances in a sample could be excited simultaneously and the resultant signal analysed quickly, <i>i.e.</i> in a few seconds, it would be possible to measure the NMR spectrum many times, add the results to improve the signal to noise ratio and so obtain NMR spectra of dilute solutions and for nuclei with low receptivity. This is what the Fourier transform, FT, method achieves.</p>
+<p class="indent">Consider the following analogy: imagine we want to discover the resonance frequencies of a bell. We could borrow a sine wave generator and patiently try every frequency, listening for the bell&#x0027;s resonance, <a id="page_26" class="page">Page 26, Chapter 1 Fundamentals</a><a href="#fig1.28">figure 1.28</a>, this is the CW method, the bell&#x0027;s resonances are measured sequentially in the <i>frequency domain</i>. Since each frequency must be tried separately the process is time consuming. Alternatively, we could borrow a frequency analyser, hit the bell to excite all the bell&#x0027;s resonances and analyse the ringing of the bell, <a href="Chapter01.xhtml#fig1.29">figure 1.29</a>, <i>all</i> the bell&#x0027;s resonances are measured concurrently in the <i>time domain</i>. Since all frequencies are tried simultaneously the method is very time efficient, we need only analyse the ring for a few seconds to differentiate frequencies less than a hertz apart. We can convert from the time domain to the more familiar frequency domain by a Fourier transformation, hence the method is dubbed the FT method. Because we let the bell ring <i>freely</i> after striking it, because we had to strike the bell to <i>induce</i> it to ring and because the ringing of the bell dies away or <i>decays</i>, the signal we analyse is called the <i>Free Induction Decay</i> or <i>FID</i>. Using the FT method it is quite feasible to record thousands of FID&#x0027;s, add them together and then Fourier transform the result to obtain the NMR spectrum of even insensitive nuclei.</p>
+
+
+
+<aside class="right" style="margin-top:-43em;" epub:type="sidebar">
+<figure id="fig1.29">
+<img src="../images/fig1.29.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.29</b> The FT method excites all resonances simultaneously and is therefore very quick. The resonances can be excited and measured many times to improve the signal to noise ratio.</figcaption>
+</figure>
+</aside>
+</section>
+</section>
+<section id="sec1.12" epub:type="chapter">
+
+<h2 class="h2">1.12<span class="space">&#160;</span>The vector model and the rotating frame</h2>
+
+<section id="sec1.12.1" epub:type="chapter">
+<h3 class="h3"><b>Magnetic moment of a collection of spins</b></h3>
+<p class="indent">Up to now we have considered only a single molecule which aligns its nuclear magnetic moment at certain fixed angles with or against the magnet field. In a real sample, of course, there is more than one molecule and the molecules are not obligingly lined up with the applied field; in a solid the molecules are held in fixed positions in the lattice whilst in solution Brownian motion means that the molecules are tumbling randomly. Let&#x2019;s look at the nuclear magnetic moments of all the molecules in a liquid sample. At first sight the moments appear to be randomly oriented in all directions, <a href="Chapter01.xhtml#fig1.30">figure 1.30</a>; however if we look more closely we find that at any given time there is an excess of nuclear magnetisation aligned with the applied field. There will therefore be a macroscopic nuclear magnetic moment associated with the sample. Like the individual nuclear moments, this macroscopic moment can be represented by a vector. Since the individual moments of which the macroscopic moment is comprised are required by quantization to be at an angle to the applied field, the macroscopic moment is also at an angle to the field and so it must precess about the field at the Larmor frequency.</p>
+
+
+<aside class="right" style="margin-top:-21em;" epub:type="sidebar">
+<figure id="fig1.30">
+<img src="../images/fig1.30.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.30</b> The nuclear magnetic moments in a liquid sample appear randomly orientated but there is an excess of magnetisation aligned with the field.</figcaption>
+</figure>
+</aside>
+<a id="page_27" class="page" style="width:60%;">Page 27, Chapter 1 Fundamentals</a>
+</section>
+<section id="sec1.12.2" epub:type="chapter">
+<h3 class="h3"><b>Precession of the nuclear spin</b></h3>
+
+
+<p class="noindent">Classically, a spinning body, say a child&#x0027;s spinning top, in a static field, say the Earth&#x0027;s gravity, will precess <i>i.e.</i> it will rotate on the surface of a cone whose axis is in the field direction. Nuclear magnetic moments precess about an applied magnetic fidd for the same reason, <a href="Chapter01.xhtml#fig1.31">figure 1.31</a>. The rate of precession is known as the <i>Larmor frequency</i> and can be calculated classically or quantum mechanically. It turns out that the Larmor frequency is also the resonance frequency.</p>
+
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<figure id="fig1.31">
+<img src="../images/fig1.31.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.31</b> The macroscopic nuclear magnetic moment of the sample will precess about the applied field.</figcaption>
+</figure>
+</aside>
+
+
+</section>
+<section id="sec1.12.3" epub:type="chapter">
+<h3 class="h3"><b>The rotating frame</b></h3>
+
+
+<p class="noindent">To simplify the physical picture of what happens to the macroscopic magnetisation during the NMR experiment we move from the static laboratory frame of <a href="Chapter01.xhtml#fig1.30">figures 1.30</a> and <a href="Chapter01.xhtml#fig1.31">1.31</a>, axes x, y, z, to a rotating frame, axes x&#x0027;, y&#x0027;, z&#x0027;, rotating at the Larmor frequency and with the z&#x0027; axis inclined to the z axis at the same angle as the magnetisation. Basically this means we will sit on the end of the vector describing the magnetisation and look at the NMR experiment from there, ignoring the world as it flashes around us, <a href="Chapter01.xhtml#fig1.32">figure 1.32</a>. The effect of this is to make the Larmor precession appear to &#x201C;vanish&#x201D;. Many analogies have been given to illustrate the simplification of the physical picture of the behaviour of the magnetisation achieved by moving to the rotating frame, for example describing the motion of the Moon as viewed from the Sun (the laboratory frame) or the Earth (the rotating frame). Viewed from the Sun, the Moon appears to follow a complex path as it orbits the Earth, viewed from the Earth it simply goes round and round.</p>
+<p class="indent">The vector model of NMR considers what happens to the bulk magnetisation vector during the NMR experiment, as viewed in the rotating frame.</p>
+
+
+<aside class="right" style="margin-top:-14em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig1.32">
+<img src="../images/fig1.32.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.32</b> In the rotating frame, the z&#x0027;-axis is placed along the magnetisation vector and precesses with it at the Larmor frequency - the magnetisation appears stationary along z&#x0027;.</figcaption>
+</figure>
+</aside>
+
+</section>
+<section id="sec1.12.4" epub:type="chapter">
+<h3 class="h3"><b>The excitation pulse</b></h3>
+
+
+<p class="noindent">In the Fourier transform method, the NMR experiment begins by applying a pulse of radiation (energy), of the correct frequency to induce transitions between the upper and lower nuclear spin energy levels. The transitions induced in the individual nuclear spins must change the macroscopic magnetisation of the sample and this change appears as a displacement of the magnetisation from the z&#x0027; axis, <a href="Chapter01.xhtml#fig1.33">figure 1.33</a>.</p>
+
+
+<figure class="figure-center-60" id="fig1.33">
+<img src="../images/fig1.33.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.33</b> In the rotating frame excitation of the spins displaces the nuclear magnetic moment away from the z&#x0027; axis.</figcaption>
+</figure>
+
+<a id="page_28" class="page" style="width:60%">Page 28, Chapter 1 Fundamentals</a>
+
+<p class="indent">By convention, the pulse rotates the magnetization clockwise looking back along the pulse vector <i>from the tip to the origin</i>, <a href="Chapter01.xhtml#fig1.33">figure 1.33</a>. The intensity of the excitation pulse will determine how much the magnetisation vector is tipped away from the z&#x0027; axis, the <i>tip angle.</i> The strength of the pulse, called the <i>pulse length</i>, is the tip angle. The motion of the magnetisation vector after the excitation pulse is easily visualized; it will precess about the z&#x0027; axis. The NMR signal that we observe is the projection of this precession on to the x&#x0027;y&#x0027; plane.</p>
+<p class="indent">We can identify two important pulse lengths; a 90&#x00B0; pulse will bring the magnetisation vector into the x&#x0027;y&#x0027; plane and corresponds to the maximum intensity of the NMR signal; whilst a 180&#x00B0; pulse aligns the magnetisation along the minus z&#x0027; axis, the magnetisation is said to be inverted and there is no observable magnetisation (the projection on the x&#x0027;y&#x0027; plane is zero).</p>
+<p class="indent">The picture in the laboratory frame appears much more complicated. At equilibrium the nuclear magnetisation is precessing about the z-axis. To a first approximation, application of the excitation pulse causes a second precession of the magnetisation, not about the z-axis, but about an axis inclined to the z axis at the same angle as was the equilibrium magnetisation which is itself precessing about z, <a href="Chapter01.xhtml#fig1.34">figure 1.34</a>. The trajectory described by the magnetisation vector is hard to describe and harder still to visualize.</p>
+<figure class="figure-center-60" id="fig1.34">
+<img src="../images/fig1.34.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.34</b> In the laboratory frame the precession of the nuclear magnetic moment is complex.</figcaption>
+</figure>
+<aside class="right" style="margin-top:-8.5em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig1.35">
+<img src="../images/fig1.35.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.35</b> Chemical shifts cause the magnetisation to fan out. Here the magnetisation splits into four different chemical shifts. The four chemical shift vectors precess at independent rates.</figcaption>
+</figure>
+</aside>
+</section>
+
+<section id="sec1.12.5" epub:type="chapter">
+<h3 class="h3"><b>Vector model of chemical shifts</b></h3>
+<p class="noindent">The effect of the chemical shift is to split the macroscopic moment into several components each with a slightly different rate of precession, corresponding to the different resonance frequencies of the nuclei. This situation is very hard to visualize in the laboratory frame but is trivial in the rotating frame; at equilibrium we can regard all the magnetisation as aligned along the z&#x0027;-axis - this is not strictly true but is a sufficiently good approximation. The excitation pulse displaces the magnetisation from the z&#x0027; axis so it starts to precess as before, <a href="Chapter01.xhtml#fig1.33">figure 1.33</a>. However, the presence of different chemical shifts, <i>i.e.</i> of nuclei with differing resonance frequencies, results in a fanning out of the magnetisation into as many components as there are chemical shifts, <a href="Chapter01.xhtml#fig1.35">figure 1.35</a>.</p>
+<a id="page_29" class="page" style="width:60%;">Page 29, Chapter 1 Fundamentals</a>
+</section>
+<section id="sec1.12.6" epub:type="chapter">
+<h3 class="h3"><b>Vector model of scalar couplings</b></h3>
+<p class="noindent">Scalar couplings have a similar effect on the magnetisation vector as chemical shifts: this time the magnetisation splits into as many components as there are lines in the multiplet, the downfield lines precessing faster than the upfield lines. In the case of scalar coupling of course, the precession rates are not independent; the differences in the precession rates will be the coupling constant, <a href="Chapter01.xhtml#fig1.36">figure 1.36</a>. After time &#x03C4; the angle, in radians, between the two vectors is given by 2&#x03C0;J&#x03C4;. Thus, for a doublet, the magnetisation vectors corresponding to the two branches will lie over the x&#x0027; axis (but pointing in opposite directions) after time 1/2J, will line up over -y&#x0027; after time 1/J and finally come together again over y&#x0027; at time 2/J when each vector will have precessed through 180&#x00B0; but in opposite directions.</p>
+</section>
+<section id="sec1.12.7" epub:type="chapter">
+<h3 class="h3"><b>Vector model picture of relaxation</b></h3>
+<p class="noindent">In the vector model, the NMR signal arises from the projection of the precessing nuclear magnetic moment on the x&#x0027;y&#x0027; plane. In some samples this precession can last for hours but clearly the excitation must decay as energy is radiated to give the NMR spectrum, is lost to the lattice or is exchanged with other spins present in the sample. Clearly the NMR signal will vanish if the projection of the moment on the x&#x0027;y&#x0027; plane vanishes, this corresponds to spin-spin relaxation, <a href="Chapter01.xhtml#fig1.37">figure 1.37</a>; the x&#x0027; and y&#x0027; components of the magnetisation dephase or loose coherence.</p>
+<aside class="right" style="margin-top:-22em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig1.36">
+<img src="../images/fig1.36.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 1.36</b> Scalar coupling splits the magnetisation. Here we see the two components of a doublet. The two components precess at the same rate, J/2, but in opposite directions.</figcaption>
+</figure>
+</aside>
+<figure class="figcaption-center-100" id="fig1.37">
+<img src="../images/fig1.37.jpg" alt="images"/>
+<figcaption><b>Fig. 1.37</b> Spin-spin relaxation corresponds to the magnetization &#x201C;fading away&#x201D; in the x&#x0027;y&#x0027; plane, shown here after a 90 &#x00B0; pulse. When spin-spin relaxation is complete, there is no observable component of the magnetization.</figcaption>
+</figure>
+<p class="indent">This happens independently of relaxation of the z&#x0027; component of the magnetisation. Relaxation in the z&#x0027; direction corresponds to spin-lattice relaxation and re-establishment of Boltzmann equilibrium, <a href="Chapter01.xhtml#fig1.38">figure 1.38</a>. A consideration of the geometry of the situation confirms our earlier assertion that spin-spin relaxation must be at least as fast as spin-lattice relaxation but that spin-lattice relaxation cannot be faster than spin-spin relaxation.</p>
+<a id="page_30" class="page" style="width:65%">Page 30, Chapter 1 Fundamentals</a>
+<figure class="figcaption-center-100" id="fig1.38">
+<img class="center" src="../images/fig1.38.jpg" alt="images"/>
+<figcaption><b>Fig. 1.38</b> Spin-lattice relaxation corresponds to the magnetization &#x201C;growing back&#x201D; along the z&#x0027;-axis, shown here after a 180 &#x00B0; pulse. When spin-lattice relaxation is complete, the system has returned to its initial state.</figcaption>
+</figure>
+</section>
+<section id="sec1.12.8" epub:type="chapter">
+<h3 class="h3"><b>Measurement of T<sub>1</sub> and T<sub>2</sub></b></h3>
+<p class="noindent">T<sub>2</sub>, the spin-spin relaxation time constant, can in theory be measured directly from the linewidth, in practice it is more usual to use a spin echo method that periodically refocusses the magnetization along the x-axis. The loss in intensity of the resonance reflects spin-spin relaxation. T<sub>2</sub> is found by fitting the measured intensity to a simple exponential, <a href="#eq1.9">equation 1.9</a>. This method has the advantage of removing artifacts such as magnetic field inhomogenity from the measurement.</p>
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:50%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.9"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+ <mi>M</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>t</mi>
+ </mrow>
+ </msub>
+ <mo>=</mo>
+ <msub>
+ <mi>M</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>o</mi>
+ </mrow>
+ </msub>
+ <mo>.</mo>
+ <msup>
+ <mi>e</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>&#x2212;<!-- - --></mo>
+ <mi>t</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>/</mo>
+ </mrow>
+ <msub>
+ <mi>T</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msub>
+ </mrow>
+ </msup>
+</math></p></td>
+<td style="text-align:right;">(1.9)</td>
+</tr>
+</table>
+<p class="indent1">T<sub>1</sub> the spin-lattice relaxation time constant, is usually measured by the inversion recovery method in which a 180&#x00B0; pulse is used to invert the magnetization. A variable delay to allow relaxation to occur is then inserted, <a href="Chapter01.xhtml#fig1.38">figure 1.38</a>, before measuring the magnetization using a 90&#x00B0; pulse. The intensity of the magnetization then reflects spin-lattice relaxation. The time constant, T<sub>1</sub> is found by fitting the magnetisation to <a href="#eq1.10">equation 1.10</a>.</p>
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:50%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.10"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+ <mi>M</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>t</mi>
+ </mrow>
+ </msub>
+ <mo>=</mo>
+ <msub>
+ <mi>M</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>o</mi>
+ </mrow>
+ </msub>
+ <mo>.</mo>
+ <mo stretchy="false">(</mo>
+ <mn>1</mn>
+ <mo>&#x2212;<!-- - --></mo>
+ <mn>2</mn>
+ <msup>
+ <mi>e</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>&#x2212;<!-- - --></mo>
+ <mi>t</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>/</mo>
+ </mrow>
+ <msub>
+ <mi>T</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>1</mn>
+ </mrow>
+ </msub>
+ </mrow>
+ </msup>
+ <mo stretchy="false">)</mo>
+</math></p></td>
+<td style="text-align:right;">(1.10)</td>
+</tr>
+</table>
+</section>
+</section>
+</section>
+</body>
+</html>

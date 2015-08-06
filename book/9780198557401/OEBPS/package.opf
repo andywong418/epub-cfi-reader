@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="p9780198557401">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:identifier id="p9780198557401">978-0-19-855740-1</dc:identifier>
+<dc:title>Computational Chemistry</dc:title>
+<dc:language>en-US</dc:language>
+<dc:creator>Guy H. Grant</dc:creator>
+<dc:publisher>Oxford University Press</dc:publisher>
+<meta property="dcterms:modified">2012-02-07T16:38:35Z</meta>
+<meta name="cover" content="cover-image"/>
+</metadata>
+<manifest>
+<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="toc" properties="nav" href="xhtml/toc.xhtml" media-type="application/xhtml+xml"/>
+<item id="stylesheet" href="styles/stylesheet.css" media-type="text/css"/>
+<item id="front" href="xhtml/Oxford_Chemistry_Primers.xhtml" media-type="application/xhtml+xml"/>
+<item id="title" href="xhtml/Titlepage.xhtml" media-type="application/xhtml+xml"/>
+<item id="copyright" href="xhtml/Copyrightpage.xhtml" media-type="application/xhtml+xml"/>
+<item id="front02" href="xhtml/Series_Editor's_Foreword.xhtml" media-type="application/xhtml+xml"/>
+<item id="front03" href="xhtml/Preface.xhtml" media-type="application/xhtml+xml"/>
+<item id="contents" href="xhtml/Contents.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter01" href="xhtml/Chapter_01.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter02" properties="remote-resources scripted mathml" href="xhtml/Chapter_02.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter03" properties="remote-resources scripted mathml" href="xhtml/Chapter_03.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter04" properties="remote-resources scripted mathml" href="xhtml/Chapter_04.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter05" properties="remote-resources scripted mathml" href="xhtml/Chapter_05.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter06" properties="remote-resources scripted mathml" href="xhtml/Chapter_06.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter07" href="xhtml/Concluding.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter08" href="xhtml/Further.xhtml" media-type="application/xhtml+xml"/>
+<item id="index" href="xhtml/Index.xhtml" media-type="application/xhtml+xml"/>
+<item id="script001" href="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" media-type="text/jscript"/>
+<item id="Img0001" href="images/copy.jpg" media-type="image/jpeg"/>
+<item id="Img0002" href="images/fig2_1.jpg" media-type="image/jpeg"/>
+<item id="Img0003" href="images/fig2_10.jpg" media-type="image/jpeg"/>
+<item id="Img0004" href="images/fig2_11.jpg" media-type="image/jpeg"/>
+<item id="Img0005" href="images/fig2_2.jpg" media-type="image/jpeg"/>
+<item id="Img0006" href="images/fig2_3.jpg" media-type="image/jpeg"/>
+<item id="Img0007" href="images/fig2_4.jpg" media-type="image/jpeg"/>
+<item id="Img0008" href="images/fig2_5.jpg" media-type="image/jpeg"/>
+<item id="Img0009" href="images/fig2_6.jpg" media-type="image/jpeg"/>
+<item id="Img0010" href="images/fig2_7.jpg" media-type="image/jpeg"/>
+<item id="Img0011" href="images/fig2_8.jpg" media-type="image/jpeg"/>
+<item id="Img0012" href="images/fig2_9.jpg" media-type="image/jpeg"/>
+<item id="Img0013" href="images/fig3_1.jpg" media-type="image/jpeg"/>
+<item id="Img0014" href="images/fig3_2.jpg" media-type="image/jpeg"/>
+<item id="Img0015" href="images/fig3_3.jpg" media-type="image/jpeg"/>
+<item id="Img0016" href="images/fig3_4.jpg" media-type="image/jpeg"/>
+<item id="Img0017" href="images/fig3_5.jpg" media-type="image/jpeg"/>
+<item id="Img0018" href="images/fig3_6.jpg" media-type="image/jpeg"/>
+<item id="Img0019" href="images/fig3_7.jpg" media-type="image/jpeg"/>
+<item id="Img0020" href="images/fig3_8.jpg" media-type="image/jpeg"/>
+<item id="Img0021" href="images/fig4_1.jpg" media-type="image/jpeg"/>
+<item id="Img0022" href="images/fig4_2.jpg" media-type="image/jpeg"/>
+<item id="Img0023" href="images/fig4_3.jpg" media-type="image/jpeg"/>
+<item id="Img0024" href="images/fig4_4.jpg" media-type="image/jpeg"/>
+<item id="Img0025" href="images/fig4_5.jpg" media-type="image/jpeg"/>
+<item id="Img0026" href="images/fig4_6.jpg" media-type="image/jpeg"/>
+<item id="Img0027" href="images/fig4_7.jpg" media-type="image/jpeg"/>
+<item id="Img0028" href="images/fig5_1.jpg" media-type="image/jpeg"/>
+<item id="Img0029" href="images/fig5_10.jpg" media-type="image/jpeg"/>
+<item id="Img0030" href="images/fig5_11.jpg" media-type="image/jpeg"/>
+<item id="Img0031" href="images/fig5_2.jpg" media-type="image/jpeg"/>
+<item id="Img0032" href="images/fig5_3.jpg" media-type="image/jpeg"/>
+<item id="Img0033" href="images/fig5_4.jpg" media-type="image/jpeg"/>
+<item id="Img0034" href="images/fig5_5.jpg" media-type="image/jpeg"/>
+<item id="Img0035" href="images/fig5_6.jpg" media-type="image/jpeg"/>
+<item id="Img0036" href="images/fig5_7.jpg" media-type="image/jpeg"/>
+<item id="Img0037" href="images/fig5_8.jpg" media-type="image/jpeg"/>
+<item id="Img0038" href="images/fig5_9.jpg" media-type="image/jpeg"/>
+<item id="Img0039" href="images/fig6_1.jpg" media-type="image/jpeg"/>
+<item id="Img0040" href="images/fig6_2.jpg" media-type="image/jpeg"/>
+<item id="Img0041" href="images/fig6_3.jpg" media-type="image/jpeg"/>
+<item id="Img0042" href="images/fig6_4.jpg" media-type="image/jpeg"/>
+<item id="Img0043" href="images/fig6_5.jpg" media-type="image/jpeg"/>
+<item id="Img0044" href="images/fig6_6.jpg" media-type="image/jpeg"/>
+<item id="Img0045" href="images/fig6_7.jpg" media-type="image/jpeg"/>
+<item id="Img0046" href="images/logo.jpg" media-type="image/jpeg"/>
+           
+</manifest>
+<spine toc="ncx">    
+<itemref idref="title"/>
+<itemref idref="copyright"/>
+<itemref idref="front02"/>
+<itemref idref="front03"/>
+<itemref idref="contents"/>
+<itemref idref="chapter01"/>
+<itemref idref="chapter02"/>
+<itemref idref="chapter03"/>
+<itemref idref="chapter04"/>
+<itemref idref="chapter05"/>
+<itemref idref="chapter06"/>
+<itemref idref="chapter07"/>
+<itemref idref="chapter08"/>
+<itemref idref="index"/>
+</spine>   
+</package>

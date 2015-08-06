@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="p9780198556923">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:identifier id="p9780198556923">978-0-19-855692-3</dc:identifier>
+<dc:title>Coordination Chemistry of Macrocyclic Compounds</dc:title>
+<dc:language>en-US</dc:language>
+<dc:creator>Edwin C. Constable</dc:creator>
+<dc:publisher>Oxford University Press</dc:publisher>
+<meta property="dcterms:modified">2012-02-07T16:38:35Z</meta>
+<meta name="cover" content="cover-image"/>
+</metadata>
+<manifest>
+<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="toc" properties="nav" href="xhtml/toc.xhtml" media-type="application/xhtml+xml"/>
+<item id="stylesheet" href="styles/stylesheet.css" media-type="text/css"/>
+<item id="oxford_chemistry_primers" href="xhtml/Oxford_Chemistry_Primers.xhtml" media-type="application/xhtml+xml"/>
+<item id="title" href="xhtml/Titlepage.xhtml" media-type="application/xhtml+xml"/>
+<item id="copyright" href="xhtml/Copyrightpage.xhtml" media-type="application/xhtml+xml"/>
+<item id="series_editors_foreword" href="xhtml/Series_Editors_Foreword.xhtml" media-type="application/xhtml+xml"/>
+<item id="preface" href="xhtml/Preface.xhtml" media-type="application/xhtml+xml"/>
+<item id="contents" href="xhtml/Contents.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter1" href="xhtml/Chapter1.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter2" properties="remote-resources scripted mathml" href="xhtml/Chapter2.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter3" href="xhtml/Chapter3.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter4" href="xhtml/Chapter4.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter5" properties="remote-resources scripted mathml" href="xhtml/Chapter5.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter6" href="xhtml/Chapter6.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter7" href="xhtml/Chapter7.xhtml" media-type="application/xhtml+xml"/>
+<item id="further_reading" href="xhtml/Further_reading.xhtml" media-type="application/xhtml+xml"/>
+<item id="index" href="xhtml/Index.xhtml" media-type="application/xhtml+xml"/>
+<item id="bm" href="xhtml/Periodic_table.xhtml" media-type="application/xhtml+xml"/>
+
+<item id="script001" href="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" media-type="text/jscript"/>
+
+<item id="copy" href="images/copy.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0001" href="images/he_9780198556923_0001.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0002" href="images/he_9780198556923_0002.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0003" href="images/he_9780198556923_0003.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0004" href="images/he_9780198556923_0004.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0005" href="images/he_9780198556923_0005.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0006" href="images/he_9780198556923_0006.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0007" href="images/he_9780198556923_0007.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0008" href="images/he_9780198556923_0008.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0009" href="images/he_9780198556923_0009.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0010" href="images/he_9780198556923_0010.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0011" href="images/he_9780198556923_0011.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0012" href="images/he_9780198556923_0012.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0013" href="images/he_9780198556923_0013.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0014" href="images/he_9780198556923_0014.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0015" href="images/he_9780198556923_0015.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0016" href="images/he_9780198556923_0016.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0017" href="images/he_9780198556923_0017.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0018" href="images/he_9780198556923_0018.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0019" href="images/he_9780198556923_0019.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0020" href="images/he_9780198556923_0020.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0021" href="images/he_9780198556923_0021.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0022" href="images/he_9780198556923_0022.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0023" href="images/he_9780198556923_0023.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0024" href="images/he_9780198556923_0024.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0025" href="images/he_9780198556923_0025.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0026" href="images/he_9780198556923_0026.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0027" href="images/he_9780198556923_0027.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0028" href="images/he_9780198556923_0028.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0029" href="images/he_9780198556923_0029.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0030" href="images/he_9780198556923_0030.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0034" href="images/he_9780198556923_0034.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0037" href="images/he_9780198556923_0037.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0038" href="images/he_9780198556923_0038.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0039" href="images/he_9780198556923_0039.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0040" href="images/he_9780198556923_0040.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0041" href="images/he_9780198556923_0041.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0042" href="images/he_9780198556923_0042.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0043" href="images/he_9780198556923_0043.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0044" href="images/he_9780198556923_0044.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0045" href="images/he_9780198556923_0045.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0046" href="images/he_9780198556923_0046.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0047" href="images/he_9780198556923_0047.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0048" href="images/he_9780198556923_0048.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0049" href="images/he_9780198556923_0049.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0050" href="images/he_9780198556923_0050.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0051" href="images/he_9780198556923_0051.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0052" href="images/he_9780198556923_0052.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0053" href="images/he_9780198556923_0053.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0054" href="images/he_9780198556923_0054.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0055" href="images/he_9780198556923_0055.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0061" href="images/he_9780198556923_0061.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0062" href="images/he_9780198556923_0062.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0063" href="images/he_9780198556923_0063.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0064" href="images/he_9780198556923_0064.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0065" href="images/he_9780198556923_0065.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0066" href="images/he_9780198556923_0066.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0069" href="images/he_9780198556923_0069.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0070" href="images/he_9780198556923_0070.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0072" href="images/he_9780198556923_0072.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0074" href="images/he_9780198556923_0074.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0075" href="images/he_9780198556923_0075.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0076" href="images/he_9780198556923_0076.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0077" href="images/he_9780198556923_0077.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0078" href="images/he_9780198556923_0078.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0079" href="images/he_9780198556923_0079.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0081" href="images/he_9780198556923_0081.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0082" href="images/he_9780198556923_0082.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0083" href="images/he_9780198556923_0083.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0086" href="images/he_9780198556923_0086.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0088" href="images/he_9780198556923_0088.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0089" href="images/he_9780198556923_0089.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0090" href="images/he_9780198556923_0090.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0091" href="images/he_9780198556923_0091.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0092" href="images/he_9780198556923_0092.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0094" href="images/he_9780198556923_0094.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0095" href="images/he_9780198556923_0095.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0096" href="images/he_9780198556923_0096.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0098" href="images/he_9780198556923_0098.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0099" href="images/he_9780198556923_0099.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0100" href="images/he_9780198556923_0100.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0101" href="images/he_9780198556923_0101.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0102" href="images/he_9780198556923_0102.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0105" href="images/he_9780198556923_0105.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0106" href="images/he_9780198556923_0106.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0107" href="images/he_9780198556923_0107.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0108" href="images/he_9780198556923_0108.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0109" href="images/he_9780198556923_0109.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0110" href="images/he_9780198556923_0110.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0111" href="images/he_9780198556923_0111.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0112" href="images/he_9780198556923_0112.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0113" href="images/he_9780198556923_0113.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0114" href="images/he_9780198556923_0114.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0116" href="images/he_9780198556923_0116.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0117" href="images/he_9780198556923_0117.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0118" href="images/he_9780198556923_0118.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0119" href="images/he_9780198556923_0119.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0120" href="images/he_9780198556923_0120.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0121" href="images/he_9780198556923_0121.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0122" href="images/he_9780198556923_0122.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0123" href="images/he_9780198556923_0123.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0125" href="images/he_9780198556923_0125.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0127" href="images/he_9780198556923_0127.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0128" href="images/he_9780198556923_0128.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0129" href="images/he_9780198556923_0129.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0130" href="images/he_9780198556923_0130.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0131" href="images/he_9780198556923_0131.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0132" href="images/he_9780198556923_0132.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0136" href="images/he_9780198556923_0136.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0138" href="images/he_9780198556923_0138.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0141" href="images/he_9780198556923_0141.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0142" href="images/he_9780198556923_0142.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0143" href="images/he_9780198556923_0143.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0145" href="images/he_9780198556923_0145.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0146" href="images/he_9780198556923_0146.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0147" href="images/he_9780198556923_0147.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0148" href="images/he_9780198556923_0148.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0149" href="images/he_9780198556923_0149.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0150" href="images/he_9780198556923_0150.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0151" href="images/he_9780198556923_0151.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0152" href="images/he_9780198556923_0152.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0153" href="images/he_9780198556923_0153.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0154" href="images/he_9780198556923_0154.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0154a" href="images/he_9780198556923_0154a.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0156" href="images/he_9780198556923_0156.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0157" href="images/he_9780198556923_0157.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0158" href="images/he_9780198556923_0158.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0161" href="images/he_9780198556923_0161.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0162" href="images/he_9780198556923_0162.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0164" href="images/he_9780198556923_0164.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0167" href="images/he_9780198556923_0167.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0168" href="images/he_9780198556923_0168.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0169" href="images/he_9780198556923_0169.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0170" href="images/he_9780198556923_0170.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0171" href="images/he_9780198556923_0171.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0174" href="images/he_9780198556923_0174.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0175-01" href="images/he_9780198556923_0175-01.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0175-02" href="images/he_9780198556923_0175-02.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0175" href="images/he_9780198556923_0175.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0176" href="images/he_9780198556923_0176.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0178" href="images/he_9780198556923_0178.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0179" href="images/he_9780198556923_0179.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0180" href="images/he_9780198556923_0180.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0181" href="images/he_9780198556923_0181.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0182" href="images/he_9780198556923_0182.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0183" href="images/he_9780198556923_0183.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0183a" href="images/he_9780198556923_0183a.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0184" href="images/he_9780198556923_0184.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0185" href="images/he_9780198556923_0185.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0186" href="images/he_9780198556923_0186.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0187" href="images/he_9780198556923_0187.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0188" href="images/he_9780198556923_0188.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0189" href="images/he_9780198556923_0189.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0190" href="images/he_9780198556923_0190.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0191" href="images/he_9780198556923_0191.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0192" href="images/he_9780198556923_0192.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0193" href="images/he_9780198556923_0193.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0194" href="images/he_9780198556923_0194.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0196" href="images/he_9780198556923_0196.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0197" href="images/he_9780198556923_0197.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0198" href="images/he_9780198556923_0198.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0199" href="images/he_9780198556923_0199.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0200" href="images/he_9780198556923_0200.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0201" href="images/he_9780198556923_0201.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0202" href="images/he_9780198556923_0202.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0203" href="images/he_9780198556923_0203.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0204" href="images/he_9780198556923_0204.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0205" href="images/he_9780198556923_0205.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0206" href="images/he_9780198556923_0206.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0207" href="images/he_9780198556923_0207.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0208" href="images/he_9780198556923_0208.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0209" href="images/he_9780198556923_0209.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0210" href="images/he_9780198556923_0210.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0211" href="images/he_9780198556923_0211.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0212" href="images/he_9780198556923_0212.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0213" href="images/he_9780198556923_0213.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0214" href="images/he_9780198556923_0214.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0215" href="images/he_9780198556923_0215.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0216" href="images/he_9780198556923_0216.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0220" href="images/he_9780198556923_0220.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0222" href="images/he_9780198556923_0222.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0223" href="images/he_9780198556923_0223.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0224" href="images/he_9780198556923_0224.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0225" href="images/he_9780198556923_0225.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0226" href="images/he_9780198556923_0226.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0227" href="images/he_9780198556923_0227.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0228" href="images/he_9780198556923_0228.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0229" href="images/he_9780198556923_0229.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0230" href="images/he_9780198556923_0230.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0231" href="images/he_9780198556923_0231.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0232" href="images/he_9780198556923_0232.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0233" href="images/he_9780198556923_0233.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0234" href="images/he_9780198556923_0234.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0235" href="images/he_9780198556923_0235.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0236" href="images/he_9780198556923_0236.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0237" href="images/he_9780198556923_0237.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0238" href="images/he_9780198556923_0238.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0239" href="images/he_9780198556923_0239.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0239a" href="images/he_9780198556923_0239a.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0240" href="images/he_9780198556923_0240.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0241" href="images/he_9780198556923_0241.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0242" href="images/he_9780198556923_0242.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0243" href="images/he_9780198556923_0243.jpg" media-type="image/jpeg"/>
+<item id="he_9780198556923_0244" href="images/he_9780198556923_0244.jpg" media-type="image/jpeg"/>
+<item id="pub" href="images/pub.jpg" media-type="image/jpeg"/>
+
+</manifest>
+<spine toc="ncx">    
+<itemref idref="oxford_chemistry_primers"/>
+<itemref idref="title"/>
+<itemref idref="copyright"/>
+<itemref idref="series_editors_foreword"/>
+<itemref idref="preface"/>
+<itemref idref="contents"/>
+<itemref idref="chapter1"/>
+<itemref idref="chapter2"/>
+<itemref idref="chapter3"/>
+<itemref idref="chapter4"/>
+<itemref idref="chapter5"/>
+<itemref idref="chapter6"/>
+<itemref idref="chapter7"/>
+<itemref idref="further_reading"/>
+<itemref idref="index"/>
+<itemref idref="bm"/>
+</spine>   
+</package>

@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Foundations of Organic Chemistry: Worked Examples</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<section epub:type="chapter" id="ch03">
+<a id="page_39" class="page" style="width:70%;">Page 39, Chapter3 Exact solutions</a>
+<h1 class="ch-title">3<span class="space">&#160;</span>Exact solutions</h1>
+<p class="noindent">In <a href="Chapter01.xhtml">Chapter 1</a> we showed how a Schr&#x00F6;dinger equation can be set up for atoms and molecules by using the coordinates of the nuclei and electrons as variables. It is difficult to gain any physical insight from the solution to such a complicated problem, and so <a href="Chapter02.xhtml">Chapter 2</a> detailed several ways in which this description can be simplified by separating the variables upon which the wavefunction depends. These separations transform the problem from a single multi-dimensional equation to a set of one-variable equations. In some cases the simplification is a fundamental, exact property of the system; in other cases (for example, the Born&#x2013;Oppenheimer separation, or the orbital approximation) it is approximate.</p>
+<p class="indent">In this chapter we consider some of the simplified Schr&#x00F6;dinger equations obtained in <a href="Chapter02.xhtml">Chapter 2</a>, and find explicit solutions for the energy levels and the corresponding wavefunctions.</p>
+<section epub:type="chapter" id="sec3.1">
+<h2 class="main">3.1<span class="space">&#160;</span>The free particle</h2>
+<p class="noindent">In <a href="Chapter02.xhtml#sec2.4">Section 2.4</a> we separated the coordinates of the centre of mass of an atom or a molecule, leading to a Schr&#x00F6;dinger equation for the translational motion:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.1"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>M</mi></mrow></mfrac><msup><mo>&#x2207;</mo><mn>2</mn></msup><mi>&#x03C8;</mi><mo>=</mo><mi>E</mi><mi>&#x03C8;</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(3.1)</td>
+</tr>
+</table>
+<p class="noindent">This equation can be separated further, since the Cartesian variables <i>x</i>, <i>y</i>, <i>z</i> can be separated, and a solution found of the form <i>X</i>(<i>x</i>)<i>Y</i>(<i>y</i>)<i>Z</i>(<i>z</i>). The separated equation for <i>X</i> is</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.2"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>M</mi></mrow></mfrac><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>X</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><msub><mi>E</mi><mi>x</mi></msub><mi>X</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math></p></td>
+<td style="padding-top:0.5em;">(3.2)</td>
+</tr>
+</table>
+<p class="noindent">with similar equations for <i>Y</i> and <i>Z.</i> These are simple second-order differential equations with constant coefficients, whose solutions are well known to be</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.3"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>X</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>A</mi><mtext>&#x2009;</mtext><mi>exp</mi><mrow><mo>(</mo><mrow><mi>i</mi><msub><mi>p</mi><mi>x</mi></msub><mi>x</mi><mo>/</mo><mi>&#x210F;</mi></mrow><mo>)</mo></mrow></mrow></math></p></td>
+<td>(3.3)</td>
+</tr>
+</table>
+<p class="noindent">where <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>p</mi><mi>x</mi></msub><mo>=</mo><msqrt><mrow><mn>2</mn><mi>M</mi><msub><mi>E</mi><mi>x</mi></msub></mrow></msqrt></mrow></math> is the <i>x</i>-component of the momentum, and <i>A</i> is an arbitrary constant. These functions are also eigenfunctions of the momentum operator, as discussed in <a href="Chapter01.xhtml#sec1.3">Section 1.3</a>.</p>
+<p class="indent">Combining all three parts of the solution, we obtain the wavefunction</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.4"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C8;</mi><mo>=</mo><mi>N</mi><mtext>&#x2009;</mtext><mi>exp</mi><mrow><mo>(</mo><mrow><mi>i</mi><mrow><mo>(</mo><mrow><msub><mi>p</mi><mi>x</mi></msub><mi>x</mi><mo>+</mo><msub><mi>p</mi><mi>y</mi></msub><mi>y</mi><mo>+</mo><msub><mi>p</mi><mi>z</mi></msub><mi>z</mi></mrow><mo>)</mo></mrow><mo>/</mo><mi>&#x210F;</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>N</mi><mtext>&#x2009;</mtext><mi>exp</mi><mrow><mo>(</mo><mrow><mi>i</mi><mi mathvariant="bold">p</mi><mo>.</mo><mi mathvariant="bold">r</mi><mo>/</mo><mi>&#x210F;</mi></mrow><mo>)</mo></mrow></mrow></math></p></td>
+<td>(3.4)</td>
+</tr>
+</table>
+<p class="noindent">where <b>p</b> represents the momentum vector and <b>r</b> the position vector of the particle. This equation is the three-dimensional momentum eigen-function, as claimed in <a href="Chapter01.xhtml#sec1.2">Section 1.2</a>. <i>N</i> is a normalization constant. <a id="page_40" class="page">Page 40, Chapter3 Exact solutions</a></p>
+</section>
+<section epub:type="chapter" id="sec3.2">
+<h2 class="main">3.2<span class="space">&#160;</span>Particle in a box</h2>
+<aside class="abc" style="margin-top:0.3em;" epub:type="sidebar">
+<p class="sidebar" id="pro3.2.1"><b>Problem 3.2.1.</b> <i>Show that the only solutions of <a href="Chapter03.xhtml#eq3.2">eqn 3.2</a> that obey both boundary conditions are &#x03C8;<sub>n</sub></i> = <i>N</i> sin(<i>n&#x03C0;x/a</i>), with <i>n = 1, 2, 3, &#x2026;</i>, <i>and that the energy is E<sub>n</sub>=n</i><sup>2</sup><i>h</i><sup>2</sup><i>/</i>8<i>Ma</i><sup>2</sup>.</p>
+</aside>
+<p class="noindent">The <i>particle in a box</i> of <a href="Chapter01.xhtml#pro1.3.1">Problem 1.3.1</a> is a related problem. The wave-function is also a solution to <a href="Chapter03.xhtml#eq3.2">eqn 3.2</a>. The only difference is that a free particle is not confined by a boundary, whereas the particle in a box must be found inside the box between <i>x</i> = 0 and <i>x</i> = <i>a.</i> This means that <i>&#x03C8;</i> must be zero everywhere outside the box, and since <i>&#x03C8;</i> is continuous, it must also be zero at the edges of the box.</p>
+<p class="indent">The solutions can also be written in the form</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.5"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C8;</mi><mo>=</mo><mfrac><mi>N</mi><mrow><mn>2</mn><mi>i</mi></mrow></mfrac><mrow><mo>[</mo><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>n</mi><mi>&#x03C0;</mi><mi>x</mi><mo>/</mo><mi>a</mi></mrow></msup><mo>&#x2212;</mo><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>i</mi><mi>n</mi><mi>&#x03C0;</mi><mi>x</mi><mo>/</mo><mi>a</mi></mrow></msup></mrow><mo>]</mo></mrow></mrow></math></p></td>
+<td>(3.5)</td>
+</tr>
+</table>
+<p class="noindent">so that inside the box the wavefunction is a superposition of two free-particle wavefunctions with characteristic momenta <i>&#x00B1;nh/</i>2<i>a.</i> This observation means essentially that the absolute value of the momentum is certain, but that the particle is equally likely to be travelling to the right or to the left. A more rigorous analysis of the momentum in this case, including boundary effects, can be found in reference 1.</p>
+<p class="indent">The particle in a box is the simplest example of a confined particle, and enables us to understand the origin of many features of such systems, such as the appearance of discrete energy levels. These arise from the restriction of <i>n</i> to be a whole number, which is forced by the boundary conditions describing the confinement of the particle, insisting that the wavefunction be zero at both edges of the box. It is a general feature of particles confined by a potential to some region of space that solutions to the Schr&#x00F6;dinger equation can only be found at certain discrete energies.</p>
+<p class="indent">Another feature of bound systems is the existence of a <i>zero-point energy,</i> which is the lowest energy that the particle can have. The origin of the zero-point energy can be understood in terms of the uncertainty principle. Since the particle is confined in some region of space, its position has a finite uncertainty. This means in turn that its momentum must have a nonzero uncertainty. If a particle could exist in a restricted region of space with zero kinetic energy, then its momentum would be exactly zero, and the uncertainty principle would be violated. Thus, a confined particle must have nonzero kinetic energy.</p>
+</section>
+<section epub:type="chapter" id="sec3.3">
+<h2 class="main">3.3<span class="space">&#160;</span>The harmonic oscillator</h2>
+<p class="noindent">We now turn to another type of system confined by a potential, the harmonic oscillator, which was introduced in <a href="Chapter02.xhtml#sec2.8">Section 2.8</a> as an approximate model for the vibration of a diatomic molecule. The harmonic oscillator shows similar features to the particle in a box, but the detailed solution is more difficult. It is not necessary to follow all the details of the mathematical development which follows, but all chemistry students should be familiar with the forms of the resulting wavefunctions and the energy levels.</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.6"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi></mrow></mfrac><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>&#x03C8;</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>k</mi><msup><mi>x</mi><mn>2</mn></msup><mi>&#x03C8;</mi><mo>=</mo><msub><mi>E</mi><mi>&#x03C5;</mi></msub><mi>&#x03C8;</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math></p></td>
+<td>(3.6)</td>
+</tr>
+</table>
+<p class="indent">The harmonic oscillator Schr&#x00F6;dinger equation is <a id="page_41" class="page">Page 41, Chapter3 Exact solutions</a>In the application to the vibration of a diatomic molecule <i>x</i> = <i>r</i> &#x2013; <i>r<sub>e</sub>,</i> the bond extension from its equilibrium value <i>r<sub>e</sub>.</i> For polyatomic molecules <i>x</i> represents a normal vibrational coordinate as described in <a href="Chapter02.xhtml#sec2.9">Section 2.9</a>.</p>
+<p class="indent">In classical mechanics a particle in a parabolic potential well, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>k</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></math>, experiences a restoring force &#x2013; <i>kx</i> towards the point 0, and undergoes a sinusoidal motion called <i>simple harmonic motion</i> with angular frequency <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C9;</mi><mo>=</mo><msqrt><mrow><mi>k</mi><mo>/</mo><mi>&#x03BC;</mi></mrow></msqrt></mrow></math> &#x00B7;</p>
+<section epub:type="chapter">
+<h3 class="sub"><b>Ladder operator method</b></h3>
+<p class="noindent">(<i>This subsection is more advanced; for an alternative, see reference 2.</i>) Following the method of <a href="Chapter02.xhtml#sec2.9">Section 2.9</a> we introduce mass-weighted coordinates <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>q</mi><mo>=</mo><mi>x</mi><msqrt><mi>&#x03BC;</mi></msqrt></mrow></math>. The Schr&#x00F6;dinger equation then becomes</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.7"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo>(</mo><mrow><msup><mover accent='true'><mi>p</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup><mo>+</mo><msup><mi>&#x03C9;</mi><mn>2</mn></msup><msup><mover accent='true'><mi>q</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup></mrow><mo>)</mo></mrow><mi>&#x03C8;</mi><mo>=</mo><mi>E</mi><mi>&#x03C8;</mi></mrow></math></p></td>
+<td>(3.7)</td>
+</tr>
+</table>
+<p class="noindent">where <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>q</mi><mo>&#x005E;</mo></mover></math> is the position operator and <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>p</mi><mo>&#x005E;</mo></mover></math> is the momentum operator, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>p</mi><mo>&#x005E;</mo></mover><mo>=</mo><mo>&#x2212;</mo><mi>i</mi><mi>&#x210F;</mi><mi>d</mi><mo>/</mo><mi>d</mi><mi>q</mi></mrow></math>. We now define the operators <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo></msup></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msup></mrow></math>,</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.8"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo></msup><mo>=</mo><mfrac><mn>1</mn><mrow><msqrt><mn>2</mn></msqrt></mrow></mfrac><mrow><mo>[</mo><mrow><mover accent='true'><mi>p</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo><mi>i</mi><mi>&#x03C9;</mi><mover accent='true'><mi>q</mi><mo>&#x005E;</mo></mover></mrow><mo>]</mo></mrow></mrow></math></p></td>
+<td style="padding-top:0.25em;">(3.8)</td>
+</tr>
+</table>
+<p class="indent">The commutator of <a href="#pro3.3.1">Problem 3.3.1</a> can be rearranged to find</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.10"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>H</mi><mo>&#x005E;</mo></mover><mrow><mo>(</mo><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo></msup><mi>&#x03C8;</mi></mrow><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mi>E</mi><mo>&#x00B1;</mo><mi>&#x210F;</mi><mi>&#x03C9;</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo></msup><mi>&#x03C8;</mi></mrow><mo>)</mo></mrow></mrow></math></p></td>
+<td style="padding-top:0.25em;">(3.10)</td>
+</tr>
+</table>
+<p class="noindent">Thus, if <i>&#x03C8;</i> is an eigenfunction of <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>H</mi><mo>&#x005E;</mo></mover></math> with energy <i>E,</i> then <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo></msup><mi>&#x03C8;</mi></mrow></math> are also eigenfunctions of <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>H</mi><mo>&#x005E;</mo></mover></math> with energies shifted by <i>&#x00B1;&#x0127;&#x03C9;.</i><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo></msup></mrow></math> therefore transforms a wavefunction with energy <i>E</i> to a wavefunction with energy <i>E</i> &#x002B; <i>&#x0127;&#x03C9;</i> and is called a <i>ladder-up</i> operator. <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msup></mrow></math> ladders the energy down by the same constant amount <i>&#x0127;&#x03C9;.</i></p>
+<aside class="abc" style="margin-top:-11.5em;" epub:type="sidebar">
+<p class="sidebar" id="pro3.3.1"><b>Problem 3.3.1.</b> <i>Use the results of <a href="Chapter01.xhtml#pro1.4.1">Problem 1.4.1</a> to show that the commutators</i><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>[</mo><mrow><mover accent='true'><mi>H</mi><mo>&#x005E;</mo></mover><mo>,</mo><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo></msup></mrow><mo>]</mo></mrow></mrow></math> <i>are given by</i></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.9"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>[</mo><mrow><mover accent='true'><mi>H</mi><mo>&#x005E;</mo></mover><mo>,</mo><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo></msup></mrow><mo>]</mo></mrow><mo>=</mo><mo>&#x00B1;</mo><mi>&#x210F;</mi><mi>&#x03C9;</mi><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo></msup></mrow></math></p></td>
+<td style="padding-top:0.5em;">(3.9)</td>
+</tr>
+</table></aside>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<p class="sidebar" id="pro3.3.2"><b>Problem 3.3.2.</b> <i>Show that</i><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>H</mi><mo>&#x005E;</mo></mover><mo>=</mo><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msup><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>&#x210F;</mi><mi>&#x03C9;</mi></mrow></math>.</p>
+</aside>
+<p class="indent">The results of <a href="#pro3.3.2">Problems 3.3.2</a> and <a href="#pro3.3.3">3.3.3</a> can be combined: if <i>&#x03C8;</i> is an eigenfunction of <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent='true'><mi>H</mi><mo>&#x005E;</mo></mover></math><i>,</i> then</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.11"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mo>=</mo><mo>&#x003C;</mo><mi>&#x03C8;</mi><mrow><mo>|</mo><mover accent='true'><mi>H</mi><mo>&#x005E;</mo></mover><mo>|</mo></mrow><mi>&#x03C8;</mi><mo>&#x003E;</mo><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mo>&#x003C;</mo><mi>&#x03C8;</mi><mrow><mo>|</mo><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo></msup><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msup></mrow><mo>|</mo></mrow><mi>&#x03C8;</mi><mo>&#x003E;</mo><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>&#x210F;</mi><mi>&#x03C9;</mi><mtext>&#x2009;</mtext></mrow></math></p></td>
+<td style="padding-top:0.40em;">(3.11)</td>
+</tr>
+</table>
+<p class="noindent">but because the expectation of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo></msup><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msup></mrow></math> cannot be negative,</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.12"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mo>&#x2265;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>&#x210F;</mi><mi>&#x03C9;</mi></mrow></math></p></td>
+<td style="padding-top:0.15em;">(3.12)</td>
+</tr>
+</table>
+<p class="indent">Applying the ladder-down operator reduces the energy by <i>&#x0127;&#x03C9;.</i> But, since no permissible energy can be less than <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>&#x210F;</mi><mi>&#x03C9;</mi></mrow></math>, it cannot be possible to carry on laddering down for ever. There must come a point when laddering down would take <i>E</i> below <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>&#x210F;</mi><mi>&#x03C9;</mi></mrow></math>, which is not possible. We conclude that there must be a lowest possible value of the energy, <i>E</i><sub>0</sub><i>,</i> with a corresponding eigenfunction <i>&#x03C8;</i><sub>0</sub><i>,</i> and that since it is not possible to ladder down from this energy <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msup><msub><mi>&#x03C8;</mi><mn>0</mn></msub></mrow></math>.</p>
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+<p class="sidebar" id="pro3.3.3"><b>Problem 3.3.3.</b> <i>Show that, since</i><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo></msup></mrow></math> <i>and</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msup></mrow></math> <i>are hermitian conjugates, the expectation</i><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x003C;</mo><mi>&#x03C8;</mi><mrow><mo>|</mo><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo></msup><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msup></mrow><mo>|</mo></mrow><mi>&#x03C8;</mi><mo>&#x003E;</mo></mrow></math> <i>must be real and non-negative.</i></p>
+</aside>
+<p class="indent">Applying the explicit form of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msup></mrow></math>, we obtain a first-order differential equation for the lowest wavefunction, <i>&#x03C8;</i><sub>0</sub> <a id="page_42" class="page">Page 42, Chapter3 Exact solutions</a>which can be integrated to give</p>
+<p class="noindent">&#160;</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.13"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x210F;</mi><mfrac><mrow><mi>d</mi><msub><mi>&#x03C8;</mi><mn>0</mn></msub></mrow><mrow><mi>d</mi><mi>q</mi></mrow></mfrac><mo>+</mo><mi>&#x03C9;</mi><mi>q</mi><msub><mi>&#x03C8;</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow></math></p></td>
+<td style="padding-top:0.15em;">(3.13)</td>
+</tr>
+</table>
+
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.14"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>&#x03C8;</mi><mn>0</mn></msub><mrow><mo>(</mo><mi>q</mi><mo>)</mo></mrow><mo>=</mo><mi>N</mi><mtext>&#x2009;</mtext><mi>exp</mi><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><mi>&#x03C9;</mi><msup><mi>q</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn><mi>&#x210F;</mi></mrow><mo>)</mo></mrow></mrow></math></p></td>
+<td>(3.14)</td>
+</tr>
+</table>
+<p class="indent">The energy of this state, which is the lowest permissible energy, can be found by application of the Hamiltonian</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.15"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent='true'><mi>H</mi><mo>&#x005E;</mo></mover><msub><mi>&#x03C8;</mi><mn>0</mn></msub><mo>=</mo><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo></msup><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msup><msub><mi>&#x03C8;</mi><mn>0</mn></msub><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>&#x210F;</mi><mi>&#x03C9;</mi><msub><mi>&#x03C8;</mi><mn>0</mn></msub></mrow></math></p></td>
+<td style="padding-top:0.25em;">(3.15)</td>
+</tr>
+</table>
+<p class="noindent">The first term is zero because <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msup><msub><mi>&#x03C8;</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow></math>, and therefore we conclude that <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>&#x210F;</mi><mi>&#x03C9;</mi></mrow></math>.</p>
+<p class="indent">Higher energy levels can be found by laddering up, so that the <i>&#x03C5;</i>th energy level above <i>E</i><sub>0</sub><i></i> has energy</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.16"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>E</mi><mi>&#x03C5;</mi></msub><mo>=</mo><mrow><mo>(</mo><mrow><mi>&#x03C5;</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><mi>&#x210F;</mi><mi>&#x03C9;</mi></mrow></math></p></td>
+<td style="padding-top:0.45em;">(3.16)</td>
+</tr>
+</table>
+<p class="noindent">and the corresponding wavefunction is</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.17"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>&#x03C8;</mi><mi>&#x03C5;</mi></msub><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo></msup></mrow><mo>)</mo></mrow></mrow><mi>&#x03C5;</mi></msup><msub><mi>&#x03C8;</mi><mn>0</mn></msub></mrow></math></p></td>
+<td style="padding-top:0.45em;">(3.17)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<p class="tab-cap" id="tab3.1"><b>Table 3.1</b>. Harmonic oscillator wavefunctions</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03C5;</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c"><i>&#x03A8;&#x03C5;</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-lc"><i>N</i><sub>0 </sub>exp(&#x2013;&#x03BE;<sup>2</sup>/2)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-lc"><i>N</i><sub>1 </sub>2&#x03BE; exp(&#x2013;&#x03BE;<sup>2</sup>/2)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">2</p></td>
+<td style="vertical-align:top;"><p class="tab-lc"><i>N</i><sub>2</sub>(4&#x03BE;<sup>2</sup>&#x2013;2)exp(&#x2013;&#x03BE;<sup>2</sup>/2)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">3</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-lc"><i>N</i><sub>3</sub>4&#x03BE;(2&#x03BE;<sup>2</sup>&#x2013;3)exp(&#x2013;&#x03BE;<sup>2</sup>/2).</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-lc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable columnalign='left'><mtr><mtd><msub><mi>N</mi><mi>&#x03C5;</mi></msub><mo>=</mo><msup><mrow><mo>(</mo><mrow><msup><mn>2</mn><mi>n</mi></msup><mi>n</mi><mo>!</mo></mrow><mo>)</mo></mrow><mrow><mo>&#x2212;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><msup><mrow><mo>(</mo><mrow><mi>&#x03BC;</mi><mi>&#x03C9;</mi><mo>/</mo><mi>&#x03C0;</mi><mi>&#x210F;</mi></mrow><mo>)</mo></mrow><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></msup></mtd></mtr><mtr><mtd><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>&#x03BE;</mi><mo>=</mo><mi>q</mi><msup><mrow><mo>(</mo><mrow><mi>&#x03C9;</mi><mo>/</mo><mi>&#x210F;</mi></mrow><mo>)</mo></mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup></mtd></mtr></mtable></math></p></td>
+</tr>
+</table>
+</aside>
+<p class="noindent">Of course <i>&#x03C8;<sub>&#x03C5;</sub></i> obtained in this way still has to be normalized.</p>
+<p class="noindentt" id="pro3.3.4"><b>Problem 3.3.4.</b> <i>Verify that application of</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo></msup></mrow></math> <i>to &#x03C8;</i><sub>0</sub> <i>followed by normalization gives &#x03C8;</i><sub>1</sub> <i>as tabulated in <a href="#tab3.1">Table 3.1</a>. &#x005B;You will need the following standard integral to perform the normalization&#x005D;</i></p>
+<p class="imgc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle='true'><mrow><msubsup><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi>&#x221E;</mi></mrow><mi>&#x221E;</mi></msubsup><mrow><msup><mi>x</mi><mrow><mn>2</mn><mi>n</mi></mrow></msup><mtext>&#x2009;</mtext><mi>exp</mi><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><msup><mi>&#x03B1;</mi><mn>2</mn></msup><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mrow><mo>(</mo><mrow><mn>2</mn><mi>n</mi></mrow><mo>)</mo></mrow><mo>!</mo><msqrt><mi>&#x03C0;</mi></msqrt></mrow><mrow><mi>n</mi><mo>!</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>2</mn><mi>&#x03B1;</mi></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></mfrac></mrow></mrow></mstyle></mrow></math></p>
+<p class="indent">No other solutions with energies between <i>&#x0127;&#x03C9;/</i>2 and 3<i>&#x0127;&#x03C9;/</i>2 are possible since <i>&#x03C8;</i><sub>0</sub> is the only solution of the equation <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msup><msub><mi>&#x03C8;</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow></math>.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="fig1" id="fig3.1">
+<img src="../images/Fig3.1.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 3.1</b> Vibrational wavefunctions and energy levels for the harmonic oscillator.</p></figcaption></figure>
+<p class="sidebar">Zero-point energy is a illustration of the uncertainty principle. Because the particle is confined in the potential well there is a finite uncertainty in its position.</p>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="sub"><b>Properties of the solutions</b></h3>
+<p class="noindent">The wavefunctions for the harmonic oscillator have several interesting features.</p>
+<p class="nlist">1.<span class="space">&#160;</span>Like the particle in a box, the harmonic oscillator is a bound system, and so solutions only exist at certain well-defined energy levels. The energy levels form a ladder with an equal spacing of <i>&#x0127;&#x03C9;,</i> which is <i>h</i> times the vibrational frequency of a classical harmonic oscillator with the same potential energy function (see <a href="#fig3.1">Fig. 3.1</a>).</p>
+<p class="nlist">2.<span class="space">&#160;</span>There is a <i>zero-point energy</i> equal to <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>&#x210F;</mi><mi>&#x03C9;</mi></mrow></math>. Zero-point energy has important consequences in chemistry: for example it is the main source of the difference between the dissociation energies of the H<sub>2</sub> and the D<sub>2</sub> molecules. Both molecules have the same potential energy curves, and therefore the same force constants, because the electronic wavefunctions which produce the bonding are not dependent on the nuclear masses. However, the vibrational frequencies <a id="page_43" class="page">Page 43, Chapter3 Exact solutions</a>(and therefore the zero point energies) are different because they do depend on the nuclear masses <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy='false'>(</mo><mi>&#x03C9;</mi><mo>=</mo><msqrt><mrow><mi>k</mi><mo>/</mo><mi>&#x03BC;</mi></mrow></msqrt><mo stretchy='false'>)</mo></mrow></math>; in consequence, the bond dissociation energy of D<sub>2</sub> is larger than that of H<sub>2</sub>, as shown in <a href="#fig3.2">Fig. 3.2</a>.</p>
+<p class="nlist">3.<span class="space">&#160;</span>The wavefunctions are depicted in <a href="#fig3.1">Fig. 3.1</a>. The lowest energy wavefunction contains no nodes, and is an even function, <i>&#x03C8;</i><sub>1</sub> has one node and is an odd function of <i>q,</i> etc. In each case the wave-function penetrates into classically forbidden regions where the total energy is less than the potential energy. There is therefore a nonzero probability of finding the oscillator in these classically forbidden regions. This <i>tunnelling</i> has important consequences in chemistry, leading to the possibility of penetrating barriers even when there does not seem to be enough energy available.</p>
+<p class="nlist">4.<span class="space">&#160;</span>The probability density is depicted in <a href="#fig3.3">Fig. 3.3</a>. In the lowest energy level the wavefunction is concentrated about the centre of the well at <i>q</i> = 0, which represents the equilibrium bond extension. As we climb higher up the ladder the wavefunction has higher amplitude further and further away from 0. At high energy the probability density gradually approaches the classical limit where the oscillator is most likely to be found near its turning points, since it spends most time in regions of space where it is travelling slowest.</p>
+<aside class="abc" style="margin-top:-21em;" epub:type="sidebar">
+<p class="sidebar">There is therefore a minimum uncertainty in the momentum, which means that the particle must have a positive expectation kinetic energy, and therefore a positive energy.</p>
+<figure class="fig1" id="fig3.2">
+<img src="../images/Fig3.2.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 3.2</b> Potential energy curve for the H<sub>2</sub> molecule, showing the different zero-point energies and dissociation energies of H<sub>2</sub> and D<sub>2</sub>.</p></figcaption></figure>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="sub"><b>The Morse potential</b></h3>
+<p class="noindent">The harmonic approximation is not exact, as can be seen by reference to <a href="Chapter02.xhtml#fig2.3">Fig. 2.3</a>. The parabolic potential function may be a good approximation close to the minimum of the curve, but it exhibits two unphysical tendencies further away from the minimum.</p>
+<p class="nlist">1.<span class="space">&#160;</span>The true potential energy becomes infinite as the bond length approaches zero, whereas the harmonic approximation is finite and the wavefunctions are nonzero in the impossible region <i>r &#x003C;</i> 0.</p>
+<p class="nlist">2.<span class="space">&#160;</span>At long bond extensions the potential energy in a real molecule approaches an asymptote, corresponding to two dissociated atoms, whereas the harmonic approximation shows no such effect.</p>
+<p class="noindentt">The broadening of the potential well towards dissociation leads to a reduction in the the energy level spacing as the energy increases (see <a href="#fig3.4">Fig. 3.4</a>). The energy levels finally converge into a continuum at the dissociation limit. For such systems an improved approximation to the potential energy function is the Morse potential</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.18"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>D</mi><mi>e</mi></msub><msup><mrow><mrow><mo>[</mo><mrow><mn>1</mn><mo>&#x2212;</mo><mi>exp</mi><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><mi>&#x03B2;</mi><mrow><mo>(</mo><mrow><mi>r</mi><mo>&#x2212;</mo><msub><mi>r</mi><mi>e</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow></mrow><mn>2</mn></msup></mrow></math></p></td>
+<td>(3.18)</td>
+</tr>
+</table>
+<p class="noindent">This function answers the second criticism, tending to a constant dissociation energy <i>D<sub>e</sub></i> at high bond extensions. However, the potential function is still finite (but large) at <i>r</i> = 0. For the Morse potential the vibrational energy levels become</p>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<figure class="fig1" id="fig3.3">
+<img src="../images/Fig3.3.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 3.3</b> Probability densities <i>&#x03C8;</i><sup>2</sup> for the harmonic oscillator.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="noindent"><a id="page_44" class="page">Page 44, Chapter3 Exact solutions</a></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.19"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>E</mi><mi>&#x03C5;</mi></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mi>&#x210F;</mi><msub><mi>&#x03C9;</mi><mi>e</mi></msub><mtext>&#x2009;</mtext><mrow><mo>(</mo><mrow><mi>&#x03C5;</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mi>&#x210F;</mi><msub><mi>&#x03C9;</mi><mi>e</mi></msub><msub><mi>x</mi><mi>e</mi></msub><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mi>&#x03C5;</mi><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy='false'>)</mo><msup><mtext>&#x2009;</mtext><mn>2</mn></msup></mrow></math></p></td>
+<td style="padding-top:0.25em;">(3.19)</td>
+</tr>
+</table>
+<p class="noindent">This energy level formula is often used to analyse vibrational structure in infra-red and electronic spectroscopy.<sup>3</sup> The parameter <i>x<sub>e</sub></i> is known as the anharmonicity.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec3.4">
+<h2 class="main">3.4<span class="space">&#160;</span>Angular momentum</h2>
+<p class="noindent">Angular momentum is an extremely important concept in chemistry. It is not possible to understand most types of spectroscopy, for example, without a grasp of the quantum mechanical nature of angular momentum, and in particular its eigenvalues and eigenfunctions.</p>
+<aside class="abc" style="margin-top:-14em;" epub:type="sidebar">
+<figure class="fig1" id="fig3.4">
+<img src="../images/Fig3.4.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 3.4</b> Morse potential and its energy levels for the hydrogen molecule.</p></figcaption></figure>
+</aside>
+<section epub:type="chapter">
+<h3 class="sub"><b>Spherical symmetry</b></h3>
+<p class="noindent">In a spherically symmetrical system the potential energy does not depend on either of the spherical polar angle variables <i>&#x03B8;</i> or <i>&#x03D5;,</i> and in classical mechanics the angular momentum <i>vector</i> is a constant of the motion. We have already considered the angular momentum operator for such a system (<a href="Chapter01.xhtml#eq1.20">eqn 1.20</a>), and the separation of its eigenfunctions into products of the form <i>&#x03A5;</i>(<i>&#x03B8;,&#x03D5;</i>) = <i>&#x0398;</i>(<i>&#x03B8;</i>)<i>&#x03A6;</i>(<i>&#x03D5;</i>) (<a href="Chapter02.xhtml#sec2.3">Section 2.3</a>). We now consider the properties of the angular momentum in more detail.</p>
+</section>
+<section epub:type="chapter">
+<h4 class="3sub"><i>Angular momentum operators</i></h4>
+<p class="noindent">First we formulate operators for the three components of the angular momentum, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>x</mi></msub><mo>,</mo><mtext>&#x2009;</mtext><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>y</mi></msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub></mrow></math> The operators are calculated from the correspondence principle using <a href="Chapter01.xhtml#eq1.18">eqn 1.18</a>. For example, we have</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.20"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mover accent='true'><mi>x</mi><mo>&#x005E;</mo></mover><msub><mover accent='true'><mi>p</mi><mo>&#x005E;</mo></mover><mi>y</mi></msub><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mover accent='true'><mi>y</mi><mo>&#x005E;</mo></mover><msub><mover accent='true'><mi>p</mi><mo>&#x005E;</mo></mover><mi>x</mi></msub></mrow></math></p></td>
+<td>(3.20)</td>
+</tr>
+</table>
+<p class="indent">In the context of the uncertainty principle the commutators of <a href="#pro3.4.1">Problems 3.4.1</a> and <a href="#pro3.4.2">3.4.2</a> imply that it is possible to specify simultaneous values for the squared magnitude of the angular momentum and any <i>one</i> component. But, because the three component operators do not commute with one another it is not possible to specify more than one component at the same time, except for the special case where the angular momentum is precisely zero. The maximum information about the angular momentum permitted.is therefore the eigenvalue of the squared magnitude and one component, which we arbitrarily choose to be the <i>z</i>-component.</p>
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<p class="sidebar" id="pro3.4.1"><b>Problem 3.4.1.</b> <i>Applying the rules for commutators derived in <a href="Chapter01.xhtml#pro1.4.1">Problem 1.4.1</a>, demonstrate the following:</i></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.21"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtable><mtr><mtd><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>x</mi></msub><mo>,</mo><mtext>&#x2009;</mtext><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>y</mi></msub></mrow></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mtext>i</mtext><mi>&#x210F;</mi><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>y</mi></msub><mo>,</mo><mtext>&#x2009;</mtext><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>x</mi></msub></mrow></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mtext>i</mtext><mi>&#x210F;</mi><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>x</mi></msub><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub><mo>,</mo><mtext>&#x2009;</mtext><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>x</mi></msub></mrow></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mtext>i</mtext><mi>&#x210F;</mi><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>y</mi></msub><mo>,</mo></mrow></mtd></mtr></mtable></mrow></math></p></td>
+<td style="padding-top:2.25em;">(3.21)</td>
+</tr>
+</table>
+<p class="sidebar"><i>&#x005B;Hint: it is only necessary to derive one of these, the others follow by cyclic permutation of x, y and z.&#x005D;</i></p>
+</aside>
+</section>
+<section epub:type="chapter">
+<h4 class="3sub"><i>Separation of variables</i></h4>
+<p class="noindent">We already know the eigenfunctions and eigenvalues of the operator <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub></mrow></math>. The operator is most conveniently represented in polar coordinates:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.23"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>i</mtext><mi>&#x210F;</mi><mfrac><mo>&#x2202;</mo><mrow><mo>&#x2202;</mo><mi>&#x03D5;</mi></mrow></mfrac></mrow></math></p></td>
+<td style="padding-top:0.25em;">(3.23)</td>
+</tr>
+</table>
+
+<aside class="abc" style="margin-top:-13.5em;" epub:type="sidebar">
+<p class="sidebar" id="pro3.4.2"><b>Problem 3.4.2.</b> <i>Defining the operator for the square of the total angular momentum, by</i><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><msubsup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>x</mi><mn>2</mn></msubsup><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><msubsup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>y</mi><mn>2</mn></msubsup><mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><msubsup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi><mn>2</mn></msubsup></mrow></math>, <i>show that</i></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.22"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>[</mo><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>x</mi></msub><mo>,</mo><mtext>&#x2009;</mtext><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup></mrow><mo>]</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>[</mo><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>y</mi></msub><mo>,</mo><mtext>&#x2009;</mtext><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup></mrow><mo>]</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mrow><mo>[</mo><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub><mo>,</mo><mtext>&#x2009;</mtext><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup></mrow><mo>]</mo></mrow><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><mn>0</mn></mrow></math></p></td>
+<td style="padding-top:0.5em;">(3.22)</td>
+</tr>
+</table>
+<p class="sidebar"><i>&#x005B;The algebra is much simplified if the results of <a href="Chapter01.xhtml#pro1.4.1">Problem 1.4.1</a> are used.&#x005D;</i></p>
+</aside>
+<p class="noindent">which we recognize as the angular momentum operator pertaining in <a id="page_45" class="page">Page 45, Chapter3 Exact solutions</a>cylindrical symmetry, whose eigenfunctions are exp(&#x00B1;i<i>m<sub>l</sub>&#x03D5;</i>), with corresponding eigenvalues &#x00B1;<i>&#x0127;m<sub>l</sub></i>.</p>
+<p class="indent">In <a href="Chapter02.xhtml">Chapter 2</a> we discussed the separation of the squared angular momentum operator in spherical polar coordinates. The separated equation in the variable <i>&#x03D5;</i> is <a href="Chapter02.xhtml#eq2.16">eqn 2.16</a></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.24"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><msup><mtext>d</mtext><mn>2</mn></msup><mi>&#x03A6;</mi></mrow><mrow><mtext>d</mtext><msup><mi>&#x03D5;</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mo>&#x2212;</mo><msubsup><mi>m</mi><mi>l</mi><mn>2</mn></msubsup><mi>&#x03A6;</mi></mrow></math></p></td>
+<td style="padding-top:0.45em;">(3.24)</td>
+</tr>
+</table>
+<p class="noindent">This is the eigenvalue equation for the square of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub></mrow></math> operator, which has the same eigenfunctions as <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mrow><mover accent='true'><mi>l</mi><mo stretchy='true'>&#x005E;</mo></mover></mrow><mi>z</mi></msub></mrow></math>.</p>
+<p class="indent">The equation m <i>&#x03B8;</i> <a href="Chapter02.xhtml#eq2.18">(2.18)</a> is harder to solve. As tor the harmonic oscillator there are two possible methods. For a detailed solution by the method of series see reference 4. The solutions have been known since the early nineteenth century, and are known as associated Legendre polynomials. The mathematical details are not important, but the form of the solutions and the possible values for the separation constant <i>W</i> (see <a href="Chapter02.xhtml#eq2.14">eqn 2.14</a>) are very important. Solutions only exist if <i>W = &#x0127;<sup>2</sup>l</i>(<i>l</i> &#x002B; l)/2<i>m</i> where <i>l</i> is an integer &#x2265; |<i>m<sub>l</sub></i>|. In other words, for a given value of <i>l</i>, <i>m<sub>l</sub></i> may take whole number values only from &#x2013;<i>l</i> to &#x002B;<i>l</i>. This means that in a spherical system the square of the angular momentum may only take values <i>&#x0127;</i><sup>2</sup><i>l</i>(<i>l</i> &#x002B; 1), and that this value has a degeneracy of 2<i>l</i> &#x002B; 1 corresponding to the 2<i>l</i> &#x002B; 1 values of <i>m<sub>l</sub></i> between &#x2013;<i>l</i> and <i>l</i>. The first few eigenfunctions will be found in <a href="#tab3.2">Table 3.2</a>.</p>
+<aside class="abc" style="margin-top:-14em;" epub:type="sidebar">
+<p class="tab-cap" id="tab3.2"><b>Table 3.2</b>. Rotational wavefunctions, &#x0398;<i><sub>lm</sub></i>(<i>&#x03B8;</i>)</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>l</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>m</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">&#x0398;<i><sub>lm</sub></i>(<i>&#x03B8;</i>)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-lc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-lc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mtext>&#x2009;</mtext><mi>sin</mi><mi>&#x03B8;</mi></mrow></math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x00B1;1</p></td>
+<td style="vertical-align:top;"><p class="tab-lc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mi>sin</mi><mi>&#x03B8;</mi></mrow></math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">2</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-lc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mn>5</mn><mn>8</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mrow><mo>(</mo><mrow><mn>3</mn><msup><mrow><mi>cos</mi></mrow><mn>2</mn></msup><mi>&#x03B8;</mi><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">2</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x00B1;1</p></td>
+<td style="vertical-align:top;"><p class="tab-lc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><mn>15</mn></mrow><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mi>sin</mi><mi>&#x03B8;</mi><mi>cos</mi><mi>&#x03B8;</mi></mrow></math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">2</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x00B1;2</p></td>
+<td style="vertical-align:top;"><p class="tab-lc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><mn>15</mn></mrow><mrow><mn>16</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><msup><mrow><mi>sin</mi></mrow><mn>2</mn></msup><mi>&#x03B8;</mi></mrow></math></p></td>
+</tr>
+</table>
+</aside>
+<p class="indent">When the functions &#x0398; and &#x03A6; are multiplied together, the resulting solutions are known as <i>sphencal harmonics.</i> They are the fundamental angular solutions of the Schr&#x00F6;dinger equation for all problems which are equivalent to a single entity moving in a spherically symmetrical potential. They are also of great utility in other areas of science, for example in geology they are used to analyse the vibration of the earth. Some of them are depicted in <a href="#fig3.5">Fig. 3.5</a>. They should appear familiar;&#x00B7; they also control the shapes of the atomic orbitals because atoms are effectively spherically symmetrical.</p>
+<p class="indent">One of the most important applications or the spherical harmonics in chemistry is to the rotation of diatomic molecules. Rotation of a rigid molecule simply involves motion of its orientation, specified by the angles <i>&#x03B8;</i> and <i>&#x03D5;.</i> In an isotropic space the potential energy of a molecule is independent of its orientation, and so the rotational wavefunctions are spherical harmonics, and the square of the rotational angular momentum takes the values <i>&#x0127;</i><sup>2</sup> <i>J</i>(<i>J</i> &#x002B; 1) (<i>J</i> is used instead of <i>l</i> to signify the total angular momentum quantum number in this context). The classical rotational kinetic energy is equal to <i>l</i><sup>2</sup>/2<i>I</i>, where <i>I</i> is the moment of inertia: using the correspondence principle the corresponding rotational Hamiltonian is <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup><mo>/</mo><mn>2</mn><mi>I</mi></mrow></math>, and the rotational energy levels follow immediately:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.25"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>E</mi><mi>J</mi></msub><mo>=</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>I</mi></mrow></mfrac><mi>J</mi><mrow><mo>(</mo><mrow><mi>J</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math></p></td>
+<td style="padding-top:0.45em;">(3.25)</td>
+</tr>
+</table>
+<p class="noindent">each of which has a degeneracy of 2<i>J</i> + 1.</p>
+<aside class="abc" style="margin-top:-21em;" epub:type="sidebar">
+<figure class="fig1" id="fig3.5">
+<img src="../images/Fig3.5.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 3.5</b> Polar diagrams for some spherical harmonics:</p>
+<p class="sidebar">(a) <i>l</i> = 0, <i>s</i> orbital; (b)</p>
+<p class="sidebar"><i>l = l, m<sub>l</sub></i> = 0, <i>p<sub>z</sub></i> orbital;(c)</p>
+<p class="sidebar"><i>l =</i> 2<i>, m<sub>l</sub> =</i> 1, <i>d</i> orbital; (d)</p>
+<p class="sidebar"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>l</mi><mo>=</mo><mn>2</mn><mo>,</mo><mtext>&#x2009;</mtext><msub><mi>m</mi><mi>l</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mtext>&#x2009;</mtext><msub><mi>d</mi><mrow><msup><mi>z</mi><mn>2</mn></msup></mrow></msub></mrow></math> orbital.</p>
+</figcaption></figure>
+</aside>
+<p class="noindent"><a id="page_46" class="page">Page 46, Chapter3 Exact solutions</a></p>
+<p class="noindent"><i>Ladder operator method</i></p>
+<p class="noindent"><i>&#x005B;This subsection is more advanced.&#x005D;</i></p>
+<p class="noindent">Just as for the harmonic oscillator, there is an elegant method for solution of the <i>&#x03B8;</i> equation, using ladder operators. The required operators, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo></msub></mrow></math>, are defined by</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.26"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo></msub><mo>=</mo><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>x</mi></msub><mo>&#x00B1;</mo><mtext>i</mtext><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>y</mi></msub></mrow></math></p></td>
+<td style="padding-top:0.25em;">(3.26)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<p class="sidebar" id="pro3.4.3"><b>Problem 3.4.3.</b> <i>Show using <a href="Chapter03.xhtml#eq3.21">eqns 3.21</a> and <a href="Chapter03.xhtml#eq3.22">3.22</a> that the commutators of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo></msub></mrow></math> with <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup></mrow></math><sup> </sup>and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub></mrow></math> are given by <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy='false'>[</mo><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup><mo>,</mo><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo></msub><mo stretchy='false'>]</mo><mo>=</mo><mn>0</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy='false'>[</mo><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub><mo>,</mo><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo></msub><mo stretchy='false'>]</mo><mo>=</mo><mo>&#x00B1;</mo><mi>&#x210F;</mi><msub><mi>l</mi><mo>&#x00B1;</mo></msub></mrow></math></i>.</p>
+</aside>
+<p class="indent">The first of the commutators of <a href="#pro3.4.3">Problem 3.4.3 </a> implies that the operation of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo></msub></mrow></math> on an eigenfunction of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup></mrow></math> does not alter the eigenvalue. Applying the second commutation relation for <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>+</mo></msub></mrow></math> to an eigenfunction of <i>l<sub>z</sub></i>, which we label <i>|M</i> &#x003E;, we find</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.27"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>+</mo></msub><mi>&#x007C;</mi><mi>M</mi><mo>&#x003E;</mo><mtext>&#x2009;</mtext><mo>=</mo><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>+</mo></msub><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub><mi>&#x007C;</mi><mi>M</mi><mo>&#x003E;</mo><mo>+</mo><mi>&#x210F;</mi><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>+</mo></msub><mi>&#x007C;</mi><mi>M</mi><mo>&#x003E;</mo><mtext>&#x2009;</mtext><mo>=</mo><mi>&#x210F;</mi><mrow><mo>(</mo><mrow><mi>M</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>+</mo></msub><mi>&#x007C;</mi><mi>M</mi><mo>&#x003E;</mo></mrow></math></p></td>
+<td>(3.27)</td>
+</tr>
+</table>
+<p class="noindent">In other words <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>+</mo></msub><mi>&#x007C;</mi><mi>M</mi><mo>&#x003E;</mo></mrow></math> is an eigenfunction of <i><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub></mrow></math></i> whose eigenvalue has been laddered up from <i>&#x0127;M</i> to <i>&#x0127;</i>(<i>M &#x002B;</i> 1), (cf. <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>R</mi><mo>&#x005E;</mo></mover><mo>+</mo></msup></mrow></math> in <a href="Chapter03.xhtml#sec3.3">Section 3.3</a>).</p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<p class="sidebar" id="pro3.4.4"><b>Problem 3.4.4.</b> <i>Show that</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msub></mrow></math> <i>ladders the eigenvalue down by &#x0127;.</i></p>
+</aside>
+<p class="indent">The ladder operators can also be represented in spherical polar coordinates:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.28"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>&#x00B1;</mo></msub><mo>=</mo><mi>&#x210F;</mi><mi>exp</mi><mrow><mo>(</mo><mrow><mo>&#x00B1;</mo><mtext>i</mtext><mi>&#x03D5;</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mo>&#x00B1;</mo><mfrac><mo>&#x2202;</mo><mrow><mo>&#x2202;</mo><mi>&#x03B8;</mi></mrow></mfrac><mo>+</mo><mtext>i</mtext><mi>cot</mi><mi>&#x03B8;</mi><mfrac><mo>&#x2202;</mo><mrow><mo>&#x2202;</mo><mi>&#x03D5;</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></math></p></td>
+<td style="padding-top:0.45em;">(3.28)</td>
+</tr>
+</table>
+<p class="indent">The eigenvalue of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi><mn>2</mn></msubsup></mrow></math> may not be larger than that of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup></mrow></math>, because the component of a vector in a particular direction may&#x2019;not be larger than the length of the whole vector. In consequence, for a given eigenvalue of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup></mrow></math> it cannot be possible to continue laddering up indefinitely; there must be a maximum possible value of <i>l<sub>z</sub>.</i> Let the maximum possible value of <i>M</i> for the given total angular momentum be <i>L</i>. The application of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>+</mo></msub></mrow></math> on the state <i>|L</i> &#x003E; must give zero, since it is not possible to ladder up any further. We now use this fact to derive the eigenvalues and eigenfunctions <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup></mrow></math>.</p>
+<aside class="abc" style="margin-top:0.3em;" epub:type="sidebar">
+<p class="sidebar" id="pro3.4.5"><b>Problem 3.4.5.</b> Show that <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msub><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>+</mo></msub><mo>=</mo><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup><mo>&#x2212;</mo><msubsup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi><mn>2</mn></msubsup><mo>&#x2212;</mo><mi>&#x210F;</mi><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub></mrow></math></p>
+</aside>
+<p class="indent">Since <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>+</mo></msub><mo>/</mo><mi>L</mi><mo>&#x003E;</mo><mtext>&#x2009;</mtext><mo>=</mo><mn>0</mn></mrow></math>, we can see immediately that <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>&#x2212;</mo></msub><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>+</mo></msub><mo>/</mo><mi>L</mi><mo>&#x003E;</mo><mtext>&#x2009;</mtext><mo>=</mo><mn>0</mn></mrow></math>, and hence (from <a href="#pro3.4.5">Problem 3.4.5</a>) <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy='false'>(</mo><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup><mo>&#x2212;</mo><msubsup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi><mn>2</mn></msubsup><mo>&#x2212;</mo><mi>&#x210F;</mi><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub><mo stretchy='false'>)</mo><mi>L</mi><mo>&#x003E;</mo><mtext>&#x2009;</mtext><mo>=</mo><mn>0</mn></mrow></math>, so that</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.29"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mn>2</mn></msup><mi>&#x007C;</mi><mi>L</mi><mo>&#x003E;</mo><mtext>&#x2009;</mtext><mo>=</mo><mrow><mo>(</mo><mrow><msubsup><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi><mn>2</mn></msubsup><mo>+</mo><mi>&#x210F;</mi><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mi>z</mi></msub></mrow><mo>)</mo></mrow><mo>&#x005C;</mo><mi>L</mi><mo>&#x003E;</mo><mo>=</mo><msup><mi>&#x210F;</mi><mn>2</mn></msup><mi>L</mi><mrow><mo>(</mo><mrow><mi>L</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mi>&#x007C;</mi><mi>L</mi><mo>&#x003E;</mo></mrow></math></p></td>
+<td style="padding-top:0.25em;">(3.29)</td>
+</tr>
+</table>
+<p class="noindent">We conclude that if the maximum <i>z</i>-component of the angular momentum is <i>&#x0127;L,</i> then the squared total angular momentum is <i>&#x0127;<sup>2</sup>L</i>(<i>L</i> &#x002B; 1).</p>
+<aside class="abc" style="margin-top:-2.25em;" epub:type="sidebar">
+<p class="sidebar" id="pro3.4.6"><b>Problem 3.4.6.</b> <i>Show that the minimum value of the z-component for the total angular momentum &#x0127;L(L &#x002B;</i> 1) <i>is &#x2013;&#x0127;L.</i></p>
+</aside>
+<p class="indent">The angular momentum eigenfunctions can therefore be labelled with two integers: <i>M</i> specifies the <i>z</i>-component and <i>L</i> specifies the squared amplitude and hence the maximum value allowed for <i>|M|.</i> The eigenfunction is usually specified |<i>L</i>, <i>M</i> &#x003E;.</p>
+<p class="indent">The ladder operators may also be used to find the angular momentum eigenfunctions explicitly. Since</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.30"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>+</mo></msub><mi>&#x007C;</mi><mi>L</mi><mo>,</mo><mi>L</mi><mo>&#x003E;</mo><mtext>&#x2009;</mtext><mo>=</mo><mn>0</mn></mrow></math></p></td>
+<td style="padding-top:0.25em;">(3.30)</td>
+</tr>
+</table>
+<p class="noindent">using the representation of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>+</mo></msub></mrow></math> in polar coordinates, <a href="Chapter03.xhtml#eq3.28">eqn 3.28</a>, we find, after separating the variables <i>&#x03B8;</i> and <i>&#x03D5;</i>, <a id="page_47" class="page">Page 47, Chapter3 Exact solutions</a>Now we substitute in the known form of &#x03A6;<i><sub>L</sub></i>,(<i>&#x03D5;</i>) = exp(i<i>L&#x03D5;</i>) to obtain a first-order differential equation for &#x0398;</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.31"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent='true'><mi>l</mi><mo>&#x005E;</mo></mover><mo>+</mo></msub><mi>&#x007C;</mi><mi>L</mi><mo>,</mo><mi>L</mi><mo>&#x003E;</mo><mtext>&#x2009;</mtext><mo>=</mo><mi>&#x210F;</mi><mi>exp</mi><mrow><mo>(</mo><mrow><mtext>i</mtext><mi>&#x03D5;</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mfrac><mo>&#x2202;</mo><mrow><mo>&#x2202;</mo><mi>&#x03B8;</mi></mrow></mfrac><mo>+</mo><mtext>i</mtext><mi>cot</mi><mi>&#x03B8;</mi><mfrac><mo>&#x2202;</mo><mrow><mo>&#x2202;</mo><mi>&#x03D5;</mi></mrow></mfrac></mrow><mo>)</mo></mrow><msub><mi>&#x0398;</mi><mrow><mi>L</mi><mo>,</mo><mi>L</mi></mrow></msub><mrow><mo>(</mo><mi>&#x03B8;</mi><mo>)</mo></mrow><msub><mi>&#x03A6;</mi><mi>L</mi></msub><mrow><mo>(</mo><mi>&#x03D5;</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></math></p></td>
+<td style="padding-top:0.25em;">(3.31)</td>
+</tr>
+</table>
+
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.32"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mtext>d</mtext><msub><mi>&#x0398;</mi><mrow><mi>L</mi><mo>,</mo><mi>L</mi></mrow></msub></mrow><mrow><mtext>d</mtext><mi>&#x03B8;</mi></mrow></mfrac><mo>=</mo><mi>L</mi><mi>cot</mi><mi>&#x03B8;</mi><mtext>&#x2009;</mtext><msub><mi>&#x0398;</mi><mrow><mi>L</mi><mo>,</mo><mi>L</mi></mrow></msub></mrow></math></p></td>
+<td style="padding-top:0.25em;">(3.32)</td>
+</tr>
+</table>
+<p class="noindent">which has the solution (subject to normalization)</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.33"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>&#x0398;</mi><mrow><mi>L</mi><mo>,</mo><mi>L</mi></mrow></msub><mrow><mo>(</mo><mi>&#x03B8;</mi><mo>)</mo></mrow><mo>=</mo><mi>N</mi><msup><mrow><mi>sin</mi></mrow><mi>L</mi></msup><mi>&#x03B8;</mi></mrow></math></p></td>
+<td>(3.33)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<p class="sidebar" id="pro3.4.7"><b>Problem 3.4.7.</b> <i>Show that the tabulated eigenfunction</i> |2, 0 &#x003E; <i>can be found<sub>,</sub> both by laddering down twice from</i> |2, 2 &#x003E;, <i>and by laddering up twice from</i> |2, &#x2013;2 &#x003E;.</p>
+</aside>
+<p class="noindent">Exactly the same solution is found for &#x0398;<i><sub>L,&#x2013;L</sub></i>&#x00B7; Solutions for intermediate values of <i>M</i> can be found directly by using the ladder operators.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec3.5">
+<h2 class="main">3.5<span class="space">&#160;</span>Rotations of a polyatomic molecule</h2>
+<h3 class="sub"><b>Rotational energy</b></h3>
+<p class="noindent">A nonlinear molecule has three moments of inertia, <i>I<sub>a</sub>, I<sub>b</sub></i> and <i>I<sub>c</sub></i> which describe the rotation of the molecule about its three orthogonal principal axes. If the components of the classical angular momentum about each axis are <i>J<sub>a</sub>, J<sub>b</sub></i> and <i>J<sub>c</sub></i>, respectively, then the classical rotational energy of the molecule is</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.34"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>E</mi><mi>r</mi></msub><mo>=</mo><mfrac><mrow><msubsup><mi>J</mi><mi>a</mi><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><msub><mi>I</mi><mi>a</mi></msub></mrow></mfrac><mo>+</mo><mfrac><mrow><msubsup><mi>J</mi><mi>b</mi><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><msub><mi>I</mi><mi>b</mi></msub></mrow></mfrac><mo>+</mo><mfrac><mrow><msubsup><mi>J</mi><mi>c</mi><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><msub><mi>I</mi><mi>c</mi></msub></mrow></mfrac></mrow></math></p></td>
+<td style="padding-top:0.5em;">(3.34)</td>
+</tr>
+</table>
+<p class="noindent">In the Schr&#x00F6;dinger equation for the rotational wavefunction these classical angular momenta are replaced by the corresponding operators. However, the resulting equation is only easy to solve in special cases, because, although we can find eigenvalues for the total angular momentum and its component in one direction, we are precluded from knowing its simultaneous values in either of the other directions by the uncertainty principle (see <a href="#pro3.4.1">Problems 3.4.1</a> and <a href="#pro3.4.2">3.4.2</a>). We therefore only consider special cases here.</p>
+<h3 class="sub"><b>Symmetric top</b></h3>
+<p class="noindent">In the case of the <i>symmetric top,</i> two of the principal moments of inertia are identical, for example <i>I<sub>b</sub> = I<sub>a</sub></i>, so that the classical rotational energy can be written in terms of the total angular momentum <i>J</i> and one component, <i>J<sub>c</sub></i>,</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.35"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>E</mi><mi>r</mi></msub><mo>=</mo><mfrac><mrow><msup><mi>J</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msub><mi>I</mi><mi>a</mi></msub></mrow></mfrac><mo>+</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><msub><mi>I</mi><mi>c</mi></msub></mrow></mfrac><mo>&#x2212;</mo><mfrac><mn>1</mn><mrow><mn>2</mn><msub><mi>I</mi><mi>a</mi></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mn>2</mn><msubsup><mi>J</mi><mi>c</mi><mn>2</mn></msubsup></mrow></math></p></td>
+<td style="padding-top:0.5em;">(3.35)</td>
+</tr>
+</table>
+<p class="noindent">The energy levels can therefore be written in terms of the eigenvalues of the operator for the total angular momentum squared, <i>&#x0127;<sup>2</sup>J</i>(<i>J</i> &#x002B; 1), and the projection onto the <i>c</i>-axis in the molecule, <i>&#x0127;K</i>: <a id="page_48" class="page">Page 48, Chapter3 Exact solutions</a></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.36"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>E</mi><mi>r</mi></msub><mo>=</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup><mi>J</mi><mrow><mo>(</mo><mrow><mi>J</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><msub><mi>I</mi><mi>a</mi></msub></mrow></mfrac><mo>+</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><msub><mi>I</mi><mi>c</mi></msub></mrow></mfrac><mo>&#x2212;</mo><mfrac><mn>1</mn><mrow><mn>2</mn><msub><mi>I</mi><mi>a</mi></msub></mrow></mfrac></mrow><mo>)</mo></mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup><msup><mi>K</mi><mn>2</mn></msup></mrow></math></p></td>
+<td style="padding-top:0.45em;">(3.36)</td>
+</tr>
+</table>
+<p class="noindent">In addition to the obvious degeneracy between positive and negative values of <i>K</i> in this equation, there is an additional degeneracy because, although the projection <i>K</i> has been specified along the <i>c</i>-axis <i>fixed in the molecule,</i> there is no link between this and an axis <i>fixed in space.</i> Thus each energy level with specified <i>J</i> and <i>K</i> has an additional space degeneracy of 2 <i>J</i> &#x002B; 1 corresponding to the different possible projections of <i>J</i> onto the space-fixed <i>z</i>-axis.</p>
+<h3 class="sub"><b>Spherical top</b></h3>
+<p class="noindent">The second special case is known as a <i>spherical top,</i> in which all three moments of inertia are the same. In this case the rotational energy is simply</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.37"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>E</mi><mi>r</mi></msub><mo>=</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup><mi>J</mi><mrow><mo>(</mo><mrow><mi>J</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><msub><mi>I</mi><mi>a</mi></msub></mrow></mfrac></mrow></math></p></td>
+<td style="padding-top:0.5em;">(3.37)</td>
+</tr>
+</table>
+<p class="noindent">because <i>I<sub>c</sub> = I<sub>a</sub></i> in <a href="Chapter03.xhtml#eq3.36">eqn 3.36</a>. Each energy level is (2<i>J</i> &#x002B; l)<sup>2</sup> degenerate.</p>
+<h3 class="sub"><b>Asymmetric top</b></h3>
+<p class="noindent">The final possibility is that all three moments of inertia are different, and is beyond the scope of this book. The interested reader will find a detailed discussion in reference 5.</p>
+</section>
+<section epub:type="chapter" id="sec3.6">
+<h2 class="main">3.6<span class="space">&#160;</span>The hydrogen atom</h2>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="sidebar">Electronic wavefunctions for the H atom, or orbitals, can be written in the form <i>R</i>(<i>r</i>)&#x0398;(<i>&#x03B8;</i>)&#x03A6;(<i>&#x03D5;</i>).</p>
+</aside>
+<p class="noindent">To conclude this chapter we consider briefly the exact solutions to the Schr&#x00F6;dinger equation for the hydrogen atom, in which the potential energy is spherically symmetrical. In <a href="Chapter02.xhtml">Chapter 2</a> we have already considered the separation of the centre of mass coordinates, and the separation of the angular coordinates from the radial coordinates. In <a href="Chapter03.xhtml#sec3.5">Section 3.5</a> we have just dealt with the solution to the angular part of the Schr&#x00F6;dinger equation, leaving, as the final stage, the radial part of the equation:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.38"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi></mrow></mfrac><mrow><mo>(</mo><mrow><mfrac><mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>R</mi></mrow><mrow><mo>&#x2202;</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mn>2</mn><mi>r</mi></mfrac><mfrac><mrow><mo>&#x2202;</mo><mi>R</mi></mrow><mrow><mo>&#x2202;</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03F5;</mi><mn>0</mn></msub><mi>r</mi></mrow></mfrac><mi>R</mi><mo>+</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup><mi>l</mi><mrow><mo>(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><mi>&#x03BC;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mi>R</mi><mo>=</mo><mi>E</mi><mi>R</mi></mrow></math></p></td>
+<td style="padding-top:0.5em;">(3.38)</td>
+</tr>
+</table>
+<p class="noindent">where <i>&#x0127;<sup>2</sup>l</i>(<i>l</i> &#x002B; 1) is the orbital angular momentum of the electron. Once again, the eigenvalues of this equation can be found by two methods, a classical method involving solution of the radial equation in power series and an operator method. The details are beyond the scope of this book, but the solutions are tabulated in <a href="#tab3.3">Table 3.3</a>. The interested reader may verify by direct substitution that the tabulated functions are indeed solutions of the radial equation. The solutions are labelled by a new quantum number n, called the <i>principal quantum number.</i> Solutions can only be found for values of <i>n</i> greater than <i>l</i>: equivalently for a given <a id="page_49" class="page">Page 49, Chapter3 Exact solutions</a>value of <i>n</i> the angular momentum quantum number <i>l</i> can only take values from 0 to <i>n &#x2013;</i> 1.</p>
+
+
+<p class="tab-cap" id="tab3.3"><b>Table 3.3</b> Hydrogen-like radial wavefunctions, <i>R<sub>nl</sub></i>(<i>r</i>)</p>
+<table class="width100b" style="margin-bottom:0em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>n</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>I</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c"><i>R<sub>nl</sub></i>(<i>r</i>)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-c"><i>N</i> exp(&#x2013;<i>&#x03C1;</i>)</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">2</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>N</mi><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></mfrac></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>2</mn><mo>&#x2212;</mo><mi>&#x03C1;</mi></mrow><mo>)</mo></mrow><mi>exp</mi><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><mi>&#x03C1;</mi><mo>/</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow></math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">2</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>N</mi><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></mfrac></mrow><mo>)</mo></mrow><mi>&#x03C1;</mi><mi>exp</mi><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><mi>&#x03C1;</mi><mo>/</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow></math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">3</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>N</mi><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><mn>18</mn><msqrt><mn>3</mn></msqrt></mrow></mfrac></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>27</mn><mo>&#x2212;</mo><mn>18</mn><mi>&#x03C1;</mi><mo>+</mo><mn>2</mn><msup><mi>&#x03C1;</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow><mi>exp</mi><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><mi>&#x03C1;</mi><mo>/</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">3</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>N</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mrow><mn>81</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mi>&#x03C1;</mi><mo stretchy='false'>(</mo><mn>6</mn><mo>&#x2212;</mo><mi>&#x03C1;</mi><mo stretchy='false'>)</mo><mi>e</mi><mi>x</mi><mi>p</mi><mo stretchy='false'>(</mo><mo>&#x2212;</mo><mi>&#x03C1;</mi><mo>/</mo><mn>3</mn><mo stretchy='false'>)</mo></mrow></math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">3</p></td>
+<td style="vertical-align:top;"><p class="tab-l">2</p></td>
+<td style="vertical-align:top;"><p class="tab-c"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>N</mi><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><mn>18</mn><msqrt><mn>6</mn></msqrt></mrow></mfrac></mrow><mo>)</mo></mrow><msup><mi>&#x03C1;</mi><mn>2</mn></msup><mi>exp</mi><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><mi>&#x03C1;</mi><mo>/</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math></p></td>
+</tr>
+</table>
+<p class="noindent"><i>Z</i> is the nuclear charge, <i>a</i> is the Bohr radius, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>N</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><msup><mi>Z</mi><mn>3</mn></msup><mo>/</mo><msup><mi>a</mi><mn>3</mn></msup></mrow><mo>)</mo></mrow></mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mo>,</mo><mi>&#x03C1;</mi><mo>&#x2212;</mo><mi>Z</mi><mi>r</mi><mo>/</mo><mi>a</mi></mrow></math></p>
+<p class="noindent">&#160;</p>
+<p class="indent">The energy levels of the hydrogen atom turn out to depend only on the principal quantum number, and not on the angular momentum quantum number <i>l.</i></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.39"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mo>&#x2212;</mo><mfrac><mrow><mi>&#x03BC;</mi><msup><mi>e</mi><mn>4</mn></msup></mrow><mrow><mn>2</mn><msup><mrow><mrow><mo>(</mo><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03F5;</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mrow></math></p></td>
+<td style="padding-top:0.5em;">(3.39)</td>
+</tr>
+</table>
+<p class="noindent">The reason for this additional degeneracy is not obvious&#x2014;it is unique to potential energy functions which are proportional to <i>r</i><sup>&#x2013;1</sup>, such as the Coulomb potential. Each energy level is labelled with a value for <i>n</i>, and has a degeneracy arising from the <i>n</i> possible values of <i>l.</i> In turn each of these values of <i>l</i> have a degeneracy 2<i>l</i> &#x002B;1 arising from the 2<i>l</i> &#x002B;1 possible values of the <i>z</i>-component of the angular momentum, <i>m<sub>l</sub>,</i> between &#x2013;<i>l</i> and &#x002B;<i>l</i>. It is straightforward to show that the overall degeneracy of the energy level <i>n</i> is equal to <i>n</i><sup>2</sup>:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.40"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>g</mi><mi>n</mi></msub><mo>=</mo><mstyle displaystyle='true'><munderover><mo>&#x2211;</mo><mrow><mi>l</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>&#x2212;</mo><mn>1</mn></mrow></munderover><mrow><mrow><mo>(</mo><mrow><mn>2</mn><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>=</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mstyle></mrow></math></p></td>
+<td style="padding-top:0.75em;">(3.40)</td>
+</tr>
+</table>
+<p class="noindent">(the sum is an arithmetic progression).</p>
+<p class="indent">The radial and angular solutions tabulated in <a href="#tab3.2">Tables 3.2</a> and <a href="#tab3.3">Table 3.3</a> are multiplied together to give the full electronic wavefunctions of the H atom, or orbitals. For example the 3<i>p</i> orbital with <i>m<sub>l</sub></i> = 1 is given by</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.41"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C8;</mi><mo>=</mo><mfrac><mrow><msqrt><mn>3</mn></msqrt></mrow><mrow><mn>162</mn><msqrt><mi>&#x03C0;</mi></msqrt></mrow></mfrac><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mi>Z</mi><mi>a</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></msup><mi>&#x03C1;</mi><mrow><mo>(</mo><mrow><mn>6</mn><mo>&#x2212;</mo><mi>&#x03C1;</mi></mrow><mo>)</mo></mrow><msup><mtext>e</mtext><mrow><mo>&#x2212;</mo><mi>&#x03C1;</mi><mo>/</mo><mn>3</mn></mrow></msup><mi>sin</mi><mi>&#x03B8;</mi><mtext>&#x2009;</mtext><msup><mtext>e</mtext><mrow><mtext>i</mtext><mi>&#x03D5;</mi></mrow></msup></mrow></math></p></td>
+<td style="padding-top:0.5em;">(3.41)</td>
+</tr>
+</table>
+<p class="noindent">where <i>&#x03C1;</i> = <i>Zr/a</i> and <i>a</i> is the Bohr radius <i>a</i> = 0.529 nm. The form of the orbital as the product of three separated functions <i>R</i>(<i>r</i>)&#x0398;(<i>&#x03B8;</i>)&#x03A6;(<i>&#x03D5;</i>) can clearly be seen.</p>
+<p class="indent">So far we have considered the orbitals of the H atom in a representation defined by the three quantum numbers <i>n</i>, <i>l</i> and <i>m<sub>l</sub></i>. Since for given values of <i>n</i> and <i>l</i> there are 2<i>l</i> &#x002B; 1 different possibilities for <i>m<sub>l</sub></i> and since the radial wave equation is independent of <i>m<sub>l</sub></i>, any combination of <a id="page_50" class="page">Page 50, Chapter3 Exact solutions</a>these 2<i>l</i> &#x002B;1 degenerate orbitals will also be a valid solution. The orbitals tabulated are in general complex functions, since the &#x03A6; function e<sup>i</sup><i><sup>m&#x03D5; </sup></i>has real and imaginary parts. It is common practice to take suitable real combinations of these functions as an alternative representation of the orbitals. For example the three possible 2<i>p</i> orbitals can be represented using the <i>m</i> quantum number by</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.42"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtable columnalign='left'><mtr columnalign='left'><mtd columnalign='left'><mrow><mn>2</mn><msub><mi>p</mi><mn>1</mn></msub></mrow></mtd><mtd columnalign='left'><mrow><mo>=</mo><msub><mi>N</mi><mn>1</mn></msub><msub><mi>R</mi><mrow><mn>2</mn><mi>p</mi></mrow></msub><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mi>sin</mi><mi>&#x03B8;</mi><mi>exp</mi><mrow><mo>(</mo><mrow><mtext>i</mtext><mi>&#x03D5;</mi></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mn>2</mn><msub><mi>p</mi><mn>0</mn></msub></mrow></mtd><mtd columnalign='left'><mrow><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msub><mi>R</mi><mrow><mn>2</mn><mi>p</mi></mrow></msub><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mi>cos</mi><mi>&#x03B8;</mi></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mn>2</mn><msub><mi>p</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msub></mrow></mtd><mtd columnalign='left'><mrow><mo>=</mo><msub><mi>N</mi><mn>1</mn></msub><msub><mi>R</mi><mrow><mn>2</mn><mi>p</mi></mrow></msub><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mi>sin</mi><mi>&#x03B8;</mi><mi>exp</mi><mrow><mo>(</mo><mrow><mo>&#x2212;</mo><mtext>i</mtext><mi>&#x03D5;</mi></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></mrow></math></p></td>
+<td style="padding-top:1.75em;">(3.42)</td>
+</tr>
+</table>
+<p class="noindent">or using the real combinations (NB 2<i>p</i><sub>0</sub> is already real)</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.43"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtable columnalign='left'><mtr columnalign='left'><mtd columnalign='left'><mrow><mn>2</mn><msub><mi>p</mi><mi>x</mi></msub></mrow></mtd><mtd columnalign='left'><mrow><mo>=</mo><mfrac><mn>1</mn><mrow><msqrt><mn>2</mn></msqrt></mrow></mfrac><mrow><mo>(</mo><mrow><mn>2</mn><msub><mi>p</mi><mn>1</mn></msub><mo>+</mo><mn>2</mn><msub><mi>p</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msub></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msub><mi>R</mi><mrow><mn>2</mn><mi>p</mi></mrow></msub><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mi>sin</mi><mi>&#x03B8;</mi><mi>cos</mi><mi>&#x03D5;</mi></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mn>2</mn><msub><mi>p</mi><mi>z</mi></msub></mrow></mtd><mtd columnalign='left'><mrow><mo>=</mo><mn>2</mn><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msub><mi>R</mi><mrow><mn>2</mn><mi>p</mi></mrow></msub><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mi>cos</mi><mi>&#x03B8;</mi></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mn>2</mn><msub><mi>p</mi><mi>y</mi></msub></mrow></mtd><mtd columnalign='left'><mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mtext>i</mtext><msqrt><mn>2</mn></msqrt></mrow></mfrac><mrow><mo>(</mo><mrow><mn>2</mn><msub><mi>p</mi><mn>1</mn></msub><mo>&#x2212;</mo><mn>2</mn><msub><mi>p</mi><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></msub></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msub><mi>R</mi><mrow><mn>2</mn><mi>p</mi></mrow></msub><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mi>sin</mi><mi>&#x03B8;</mi><mi>sin</mi><mi>&#x03D5;</mi></mrow></mtd></mtr></mtable></mrow></math></p></td>
+<td style="padding-top:2.25em;">(3.43)</td>
+</tr>
+</table>
+<h3 class="sub"><b>Spatial probability distributions</b></h3>
+<p class="noindent">One of the most important aspects of the interpretation of three dimensional wavefunctions such as atomic orbitals is the idea of probability density and the correct manipulation of the square modulus of the wave-function to calculate the required probability.</p>
+<p class="indent">As discussed in <a href="Chapter01.xhtml">Chapter 1</a> <i>&#x03C8;*&#x03C8;</i> is a probability density. Thus the probability of finding the electron in a rectangular volume element of dimensions <i>dx, dy</i> and <i>dz,</i> at the point (<i>x</i>, <i>y</i>, <i>z</i>) is given by <i>&#x03C8;*&#x03C8; dx dy dz.</i> This is the product of the probability density <i>&#x03C8;*&#x03C8;</i> and the infinitesimal volume d<i>x</i> d<i>y</i> d<i>z.</i> Similarly, in spherical polar coordinates, the probability of finding the electron in a volume element spanned by the dimensions d<i>r</i>, d<i>&#x03B8;</i> and d<i>&#x03D5;</i> is equal to the product of <i>&#x03C8;*&#x03C6;</i> with the volume of the element thus specified, which can be seen by reference to <a href="#fig3.6">Fig. 3.6</a> to be <i>r</i><sup>2</sup>sin <i>&#x03B8;</i> d<i>r</i> d<i>&#x03B8;</i> d<i>&#x03D5;.</i></p>
+<p class="indent">The electron must exist somewhere in three-dimensional space, and so the orbital is normalized by integration over all three dimensions. For this purpose it is again most convenient to employ the representation in spherical polar coordinates.</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.44"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable columnalign='left'><mtr><mtd><mstyle displaystyle='true'><mrow><mo>&#x222D;</mo><mrow><msup><mi>&#x03C8;</mi><mo>&#x2217;</mo></msup><mi>&#x03C8;</mi><mtext>&#x2009;</mtext><mtext>d</mtext><mi>x</mi></mrow></mrow></mstyle><mtext>&#x2009;</mtext><mtext>d</mtext><mi>y</mi><mtext>&#x2009;</mtext><mtext>d</mtext><mi>z</mi><mo>=</mo><mstyle displaystyle='true'><mrow><msubsup><mo>&#x222B;</mo><mn>0</mn><mi>&#x221E;</mi></msubsup><mrow><mstyle displaystyle='true'><mrow><msubsup><mo>&#x222B;</mo><mn>0</mn><mi>&#x03C0;</mi></msubsup><mrow><mstyle displaystyle='true'><mrow><msubsup><mo>&#x222B;</mo><mn>0</mn><mrow><mn>2</mn><mi>&#x03C0;</mi></mrow></msubsup><mrow><msup><mi>&#x03C8;</mi><mo>&#x2217;</mo></msup><mi>&#x03C8;</mi><mtext>&#x2009;</mtext><msup><mi>r</mi><mn>2</mn></msup><mi>sin</mi><mi>&#x03B8;</mi><mtext>&#x2009;</mtext><mtext>d</mtext><mi>&#x03D5;</mi><mtext>&#x2009;</mtext><mtext>d</mtext><mi>&#x03B8;</mi><mtext>&#x2009;</mtext><mtext>d</mtext><mi>r</mi></mrow></mrow></mstyle></mrow></mrow></mstyle></mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>=</mo><mstyle displaystyle='true'><mrow><msubsup><mo>&#x222B;</mo><mn>0</mn><mi>&#x221E;</mi></msubsup><mrow><msup><mi>r</mi><mn>2</mn></msup><msup><mi>R</mi><mn>2</mn></msup><mtext>d</mtext><mi>r</mi></mrow></mrow></mstyle><mstyle displaystyle='true'><mrow><msubsup><mo>&#x222B;</mo><mn>0</mn><mi>&#x03C0;</mi></msubsup><mrow><mi>sin</mi><mi>&#x03B8;</mi><mtext>&#x2009;</mtext><msup><mi>&#x0398;</mi><mn>2</mn></msup><mtext>d</mtext><mi>&#x03B8;</mi><mstyle displaystyle='true'><mrow><msubsup><mo>&#x222B;</mo><mn>0</mn><mrow><mn>2</mn><mi>&#x03C0;</mi></mrow></msubsup><mrow><msup><mi>&#x03A6;</mi><mo>&#x2217;</mo></msup><mi>&#x03A6;</mi><mtext>&#x2009;</mtext><mtext>d</mtext><mi>&#x03D5;</mi><mo>=</mo><mn>1</mn></mrow></mrow></mstyle></mrow></mrow></mstyle></mtd></mtr></mtable></math></p></td>
+<td style="padding-top:5em;">(3.44)</td>
+</tr>
+</table>
+<p class="noindent">Since the normalization integral separates into the product of three one-dimensional integrals, it is possible to arrange that each of the functions <i>R</i>(<i>r</i>), &#x0398;(<i>&#x03B8;</i>) and &#x03A6;(<i>&#x03D5;</i>) is normalized separately, and this has been done in the tables.</p>
+<p class="indent">We can now answer questions such as &#x2018;what is the probability density <a id="page_51" class="page">Page 51, Chapter3 Exact solutions</a>of the distance of the electron from the nucleus?&#x2019;. The answer to this question can be found by writing the probability of finding the electron in the volume element d<i>r</i> d<i>&#x03B8;</i> d<i>&#x03D5;</i> and then by integrating this probability over all possible values of <i>&#x03B8;</i> and <i>&#x03D5;</i> which will leave us with the overall probability of finding the particle somewhere in the spherical shell between <i>r</i> and <i>r</i> &#x002B; d<i>r</i>.</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.45"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>p</mi><mi>r</mi></msub><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mtext>d</mtext><mi>r</mi><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup><msup><mi>R</mi><mn>2</mn></msup><mtext>d</mtext><mi>r</mi><mstyle displaystyle='true'><mrow><msubsup><mo>&#x222B;</mo><mn>0</mn><mi>&#x03C0;</mi></msubsup><mrow><mi>sin</mi><mi>&#x03B8;</mi><mtext>&#x2009;</mtext><msup><mi>&#x0398;</mi><mn>2</mn></msup><mtext>&#x2009;</mtext><mtext>d</mtext><mi>&#x03B8;</mi><mstyle displaystyle='true'><mrow><msubsup><mo>&#x222B;</mo><mn>0</mn><mrow><mn>2</mn><mi>&#x03C0;</mi></mrow></msubsup><mrow><msup><mi>&#x03A6;</mi><mo>&#x2217;</mo></msup><mi>&#x03A6;</mi><mtext>&#x2009;</mtext><mtext>d</mtext></mrow></mrow></mstyle></mrow></mrow></mstyle><mi>&#x03D5;</mi></mrow></math></p></td>
+<td style="padding-top:1.15em;">(3.45)</td>
+</tr>
+</table>
+<p class="noindent">Since the three functions <i>R</i>, &#x0398; and &#x03A6; have been normalized separately in our tables, the two integrals in this equation are both equal to one, leaving the so-called radial distribution function</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.46"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>p</mi><mi>r</mi></msub><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup><msup><mi>R</mi><mn>2</mn></msup></mrow></math></p></td>
+<td>(3.46)</td>
+</tr>
+</table>
+<p class="noindent">In exactly the same way the probability densities for the two angles can be found.</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:0.5em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.47"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>p</mi><mi>&#x03B8;</mi></msub><mrow><mo>(</mo><mi>&#x03B8;</mi><mo>)</mo></mrow><mo>=</mo><mi>sin</mi><mi>&#x03B8;</mi><mtext>&#x2009;</mtext><msup><mi>&#x0398;</mi><mn>2</mn></msup><mrow><mo>(</mo><mi>&#x03B8;</mi><mo>)</mo></mrow><mtext>and</mtext><mtext>&#x2009;</mtext><msub><mi>p</mi><mi>&#x03D5;</mi></msub><mrow><mo>(</mo><mi>&#x03D5;</mi><mo>)</mo></mrow><mo>=</mo><msup><mi>&#x03A6;</mi><mo>&#x2217;</mo></msup><mi>&#x03A6;</mi></mrow></math></p></td>
+<td>(3.47)</td>
+</tr>
+</table>
+<p class="noindent">Sections through several different wavefunctions are depicted in <a href="#fig3.7">Fig. 3.7</a>, showing how the probability density varies as a function of space.</p>
+<aside class="abc" style="margin-top:-13.5em;" epub:type="sidebar">
+<p class="sidebar" id="pro3.6.1"><b>Problem 3.6.1.</b> <i>Show that for an s orbital this expression of the radial distribution function is equivalent to the usual formula,</i> 4<i>&#x03C0;r</i><sup>2</sup><i>&#x03C8;</i><sup>2</sup>.</p>
+</aside>
+<p class="indent">Because of the form of the wavefunction as a product, B&#x0398;&#x03A6;, it is possible to identify three different types of node. A node is a place where <i>&#x03C8;</i> is zero. For <i>&#x03C8;</i> to be zero, at least one of the three functions <i>R</i>, &#x0398; or &#x03A6; must be zero. If <i>R</i>(<i>r</i>) is zero the wavefunction is said to have a radial node at <i>r</i>, and it is then zero everywhere on a sphere of radius <i>r</i> centred at the nucleus. Similarly, if &#x0398;(<i>&#x03B8;</i>) is zero, then the wavefunction must be zero everywhere on a cone whose apex has half-angle <i>&#x03B8;.</i> This is said to be an angular node. Both types of node can be seen in <a href="#fig3.7">Fig. 3.7</a>.</p>
+<aside class="abc" style="margin-top:-85em;" epub:type="sidebar">
+<figure class="fig1" id="fig3.6">
+<img src="../images/Fig3.6.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 3.6</b> The area element on the surface of a sphere is the rectangle of intersection of the two slices shown. The vertical sides are measured round great circles (lines of longitude with radius <i>r</i>) from <i>&#x03B8;</i> to <i>&#x0398; &#x002B;</i> d<i>&#x03B8;</i> and therefore have length <i>r d&#x03B8;.</i> The horizontal sides are measured from <i>&#x03D5;</i> to <i>&#x03D5;</i> &#x002B; <i>d&#x03D5;</i> around a line of latitude, which is a circle of radius <i>r</i> sin <i>&#x03B8;</i>, and they therefore have length I sin <i>&#x03B8;</i>d<i>&#x03D5;</i>.</p></figcaption></figure>
+</aside>
+<p class="indent">The form of the radial distribution function has profound chemical consequences. Although the 2<i>s</i> and the 2<i>p</i> orbitals have the same energy in the one-electron atom, this is no longer the case in many-electron atoms such as Li. These energy differences underlie the structure of the periodic table, since they determine the order in which the orbitals are filled. It is important to understand the reason for the removal of this degeneracy, which originates in the mutual repulsion energy between the electrons. At a simple level it can be seen from <a href="#fig3.7">Figures 3.7</a> and <a href="#fig3.8">3.8</a> that the radial distribution function for the 2<i>s</i> orbital comes in two parts, separated by a radial node. One part is close to the nucleus, and the other part is further away. The 2<i>p</i> orbital has no such node, and its electron density is smaller than that of the 2<i>s</i> orbital close to the nucleus. In the Li atom the first two electrons occupy the 1<i>s</i> orbital, which forms the core. The outer electron is partially screened from the full nuclear charge by the core electrons. However, the 2<i>s</i> orbital is screened less effectively than the 2<i>p</i> orbital because it penetrates inside the core into a region where it experiences the full nuclear charge. The 2<i>p</i> orbital penetrates less effectively, and so lies at a higher energy than the 2<i>s</i> orbital. In consequence the 2<i>s</i> orbital is generally filled before the 2<i>p</i> orbital.</p>
+<p class="indent">Of course the whole picture just presented is an oversimplification, <a id="page_52" class="page">Page 52, Chapter3 Exact solutions</a>since it relies on the picture in which each electron can be assigned to an orbital, the <i>orbital approximation</i> discussed in <a href="Chapter02.xhtml#sec2.7">Section 2.7</a>. However, the very fact that this approximate picture leads to a framework for rationalizing the structure of the periodic table illustrates its great utility, and explains why it is so widely used to describe the properties of multi-electron atoms.</p>
+
+<figure class="fig1" id="fig3.7">
+<img src="../images/Fig3.7.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 3.7</b> Sections through the electron densities of different atomic orbitals of the H atom</p></figcaption></figure>
+<p class="noindent"><a id="page_53" class="page">Page 53, Chapter3 Exact solutions</a></p>
+<aside class="abc" style="margin-top:5em;" epub:type="sidebar">
+<p class="sidebar" id="pro3.6.2"><b>Problem 3.6.2.</b> <i>Use the tables to find for the H atom</i></p>
+<p class="alist"><i>(a)<span class="space">&#160;</span>the radial and angular nodes of a 3p</i><sub>0</sub> <i>orbital;</i></p>
+<p class="alist"><i>(b)<span class="space">&#160;</span>the radial distribution function, and hence the most probable distance from the nucleus of a 3d electron;</i></p>
+<p class="alist"><i>(c)<span class="space">&#160;</span>the angular distribution function p<sub>&#x03B8;</sub>, and hence the most probable and least probable values of the angle &#x03B8; for an electron in a 3d</i><sub>0</sub> <i>orbital. (The least probable values are at the angular nodes.)</i></p>
+</aside>
+<figure class="fig1" id="fig3.8">
+<img src="../images/Fig3.8.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 3.8</b> Radial distribution functions for the <i>H</i> atom, <i>r</i><sup>2</sup><i>R</i><sup>2</sup></p></figcaption></figure>
+<p class="ref"><b>References</b></p>
+<p class="refl">1.<span class="space">&#160;</span>Landau, L. D. and Lifshitz, E. M. (1977). <i>Quantum mechanics.</i> Pergamon Press, Oxford.</p>
+<p class="refl">2.<span class="space">&#160;</span>Pauling, L. and Wilson, E.B. (1985). <i>Introduction to quantum mechanics</i>. Dover, New York.</p>
+<p class="refl">3.<span class="space">&#160;</span>Herzberg, G. (1950). <i>Spectra of diatomic molecules,</i> van Nostrand Reinhold, New York.</p>
+<p class="refl">4.<span class="space">&#160;</span>McQuarrie, D. A. (1983). <i>Quantum chemistry.</i> Oxford University Press, Oxford.</p>
+<p class="refl">5.<span class="space">&#160;</span>Bunker, P. R. (1979). <i>Molecular symmetry and spectroscopy.</i> Academic Press, San Diego.</p>
+</section>
+</section>
+</body>
+</html>

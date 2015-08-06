@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Radiation Heat Transfer</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch07">
+<a id="page_60" class="page" style="width:70%;">Page 60, Chapter 7 Combined modes of heat transfer</a>
+<h1 class="main">7<span class="space">&#160;</span>Combined modes of heat transfer</h1>
+<section epub:type="chapter" id="sec7.1">
+<h2 class="h2">7.1<span class="space">&#160;</span>Introduction</h2>
+<p class="noindent">We have so far considered only radiative heat transfer and have neglected any effects of conduction and convection. In all practical systems there will nearly always be contributions from all three heat transfer modes. For example, in a furnace the stock will be heated by a combination of radiation and convection, and conduction is important in transferring heat from the surface to the interior of the stock. Conduction is also responsible for any heat losses through the walls of the furnace. We must therefore consider the analysis of systems where two or more mechanisms are occurring simultaneously. Computation is inevitable made more difficult when more than one mechanism operates, with a full analytical solution often leading to non-linear differential or integrodifferential equations.</p>
+<p class="indent">If only rough hand-calculation is required, such complexities are inconvenient and considerable time and effort can be saved, if, from the outset, it is recognised that one or more heat transfer mechanisms can be neglected. Thus the engineer needs some idea of when any particular mode is likely to dominate or, conversely, may be safely ignored. A few rules-of-thumb can be summarised as follows:</p>
+<p class="noindent">&#160;</p>
+<p class="nlist">(1)<span class="space">&#160;</span>Conduction is generally important only for heat transfer through solids. For opaque solids, conduction can be assumed to be the only mechanism, but radiation is also important in transparent or porous solids, including packed beds and fluidised beds.</p>
+<p class="nlist">(2)<span class="space">&#160;</span>Radiation is the only possible mechanism through a vacuum. It also is dominant in many low pressure (sub-atmospheric) systems.</p>
+<p class="nlist">(3)<span class="space">&#160;</span>Radiation dominates over convection in high temperature furnaces (&#x003E; 1000 &#x00B0;C), unless there is strong forced convection with high gas velocities, as is found in gas-fired rapid heaters.</p>
+<p class="nlist">(4)<span class="space">&#160;</span>Convection normally outweighs radiation in all low temperature systems (&#x003C;&#x007E; 400 &#x00B0;C) in which there is forced convection.</p>
+<p class="nlist">(5)<span class="space">&#160;</span>Radiation and convection are comparable from external surfaces in stagnant surroundings such as central heating radiators, heat losses from pipes.</p>
+<p class="nlist">(6)<span class="space">&#160;</span>Radiation dominates over convection with very large objects, e.g. the earth, where the surface temperature on a still, cloudless night can drop below the air temperature because of radiation to the much colder outer atmosphere.</p>
+<p class="noindent"><a id="page_61" class="page">Page 61, Chapter 7 Combined modes of heat transfer</a><a href="Chapter06.xhtml#ex6.1">Example 6.1</a> introduced the idea of incorporating convective heat transfer into a radiative problem, by including a convection term in the heat balance (<a href="Chapter06.xhtml#eq6.4">Equation 6.4</a>) . Convection between the gases and the walls could have been quantified in the form <i>h</i>(<i>T</i><sub>g</sub>&#x2013;<i>T</i><sub>w</sub>), where <i>T</i><sub>w</sub> is the temperature of the zone walls (assumed constant in any zone). This chapter considers two further approaches to dealing with combined modes of heat transfer. First we look at the use of heat transfer coefficients in the context of radiative heat transfer, and then we look at analytical methods for combining heat transfer modes.</p>
+</section>
+<section epub:type="chapter" id="sec7.2">
+<h2 class="h2"><b>7.2 The radiative heat transfer coefficient</b></h2>
+<p class="noindent">Convective heat transfer between a surface and a fluid is usually described in terms of a convective heat transfer coefficient, <i>h</i><sub>conv</sub>, defined as the ratio of the convective heat flux (<i>Q</i><sub>conv</sub><i>/A</i>) to the temperature difference between the surface and the surrounding fluid:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq7.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>conv</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>conv</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:mi>A</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mrow><m:mtext>surface</m:mtext></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mrow><m:mtext>surr</m:mtext></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(7.1)</td>
+</tr>
+</table>
+<p class="noindent">In principle we can define a radiative heat transfer coefficient in exactly the same way, i.e. the ratio of the net radiative flux (<i>Q</i><sub>rad</sub><i>/A</i>) to the difference in temperature between a hot body (the source) and a cold body (the receiver):</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq7.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>rad</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>rad</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:mi>A</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mrow><m:mtext>source</m:mtext></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mrow><m:mtext>receiver</m:mtext></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(7.2)</td>
+</tr>
+</table>
+<p class="noindent">In order to make use of these expressions to calculate the convective or radiative heat flux, we need to determine these heat transfer coefficients. The convective coefficient is generally found using experimental correlations involving such dimensionless groups as the Reynolds, Prandtl, Nusselt and Grashof Numbers, which are primarily functions of the fluid properties. Correlations are given in most heat transfer texts. An expression for the radiative coefficent is obtained by substituting <a href="Chapter04.xhtml#eq4.11">Equation 4.11</a> for <i>Q</i><sub>rad</sub>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq7.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>rad</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>rad</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mrow><m:mtext>source</m:mtext></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mrow><m:mtext>receiver</m:mtext></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>&#x2131;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mrow><m:mtext>source</m:mtext></m:mrow><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mrow><m:mtext>receiver</m:mtext></m:mrow><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mrow><m:mtext>source</m:mtext></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mrow><m:mtext>receiver</m:mtext></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>rad</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mi>&#x2131;&#x03C3;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>T</m:mi><m:mrow><m:mtext>source</m:mtext></m:mrow><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>T</m:mi><m:mrow><m:mtext>receiver</m:mtext></m:mrow><m:mn>2</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mrow><m:mtext>source</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>T</m:mi><m:mrow><m:mtext>receiver</m:mtext></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:3em;">(7.3)</td>
+</tr>
+</table>
+<p class="noindent">The radiation factor <i><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mi>&#x2131;</m:mi></m:math></i> can be calculated using the methods described in earlier chapters, and will depend on the geometry and the emissivities of the materials.</p>
+<p class="indent">Use of <i>h</i><sub>rad</sub> is often convenient in combined mode heat transfer problems. Suppose that we need to determine the heat loss from a pipe through which a hot fluid is flowing. We can consider four heat transfer mechanisms which result in the transfer of heat from the hot fluid to the surroundings:</p>
+<p class="noindent">&#160;</p>
+<p class="blist">(i)<span class="space">&#160;</span>forced convection from the fluid to the inner pipe wall;</p>
+<p class="blistk">(ii)<span class="space-n">&#160;</span>conduction through the pipe wall;</p>
+<p class="blistk1">(iii)<span class="space-n1">&#160;</span>natural convection from the outer pipe wall to the surroundings;</p>
+<p class="blist">(iv)<span class="space-n">&#160;</span>radiation from the outer pipe wall to the surroundings.</p>
+<p class="noindent"><a id="page_62" class="page">Page 62, Chapter 7 Combined modes of heat transfer</a>Radiative effects may also be present inside the pipe. These will be neglected here, but are discussed in more detail in <a href="#sec7.3.3">Section 7.3.3.</a> Note that mechanisms (iii) and (iv) act in parallel. Both are responsible for transfer of heat from the outer wall to the surroundings; the net transfer from the outer wall will be the sum of the two contributions.</p>
+<p class="indent">From basic principles of heat transfer, the net rate of heat loss from the hot fluid to the surroundings can be written:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq7.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Rate</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Heat</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Loss</m:mtext><m:mo>=</m:mo><m:mi>U</m:mi><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>LMTD</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(7.4)</td>
+</tr>
+</table>
+<p class="noindent">where <i>U</i> is the overall heat transfer coefficient from the hot fluid to the surroundings based on outer area <i>A</i><sub>2</sub>, and LMTD is the log mean temperature difference between the hot fluid in the pipe and the bulk of the fluid surrounding the pipe. For the concentric cylindrical geometry under discussion here, <i>U</i> can be expressed in terms of the individual heat transfer coefficients and the conductivity of the wall of the pipe:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq7.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>U</m:mi><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>h</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:msub><m:mi>k</m:mi><m:mtext>w</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>h</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>rad</m:mtext></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.75em;">(7.5)</td>
+</tr>
+</table>
+<p class="noindent">where <i>r</i><sub>1</sub> and <i>r</i><sub>2</sub> are the inner and outer radius of the pipe, <i>h</i><sub>1</sub> and <i>h</i><sub>2</sub> are the convective heat transfer coefficients at the inner and outer walls, and <i>k</i><sub>w</sub> is the thermal conductivity of the pipe wall. For thin-walled metal pipes, the conductivity term can usually be neglected. If the outer wall of the pipe is grey, then <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mi>&#x2131;</m:mi></m:math> &#x2192; <i>&#x03B5;</i><sub>2</sub>, the emissivity of the outer wall (<a href="Chapter04.xhtml#sec4.3">Section 4.3</a>). If the temperatures of the fluid and the surroundings are known, then we can calculate first the convective and radiative heat transfer coefficients, using appropriate correlations and <a href="#eq7.3">Equation 7.3</a>. (Note that these equations assume a constant wall temperature for the pipe; if this is not a fair assumption, then the wall will need to be divided into a number of zones, in each of which the wall can be assumed to be isothermal.) <a href="#eq7.5">Equation 7.5</a> gives <i>U</i> and finally the heat loss is found using <a href="#eq7.4">Equation 7.4</a>.</p>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec7.3">
+<h2 class="h2"><b>7.3 Analytical methods</b></h2>
+<p class="noindent">The requirement for constant wall temperature in the above analysis, and the possibility that surfaces may need to be sub-divided leads naturally to analytical methods, where we consider heat transfer to and from differential elements in order to build up sets of differential equations, which, hopefully, can be solved to give the required solution to the problem. This section considers a number of examples of radiation combined with conduction, with convection, and with both conduction and convection. It shows the principles of how to set up the governing equations, but does not offer methods of solution. Most of the equations require numerical solution, and, if unfamiliar with the necessary techniques, the reader should refer to appropriate mathematical texts.</p>
+<section epub:type="chapter" id="sec7.3.1">
+<a id="page_63" class="page" style="width:70%;">Page 63, Chapter 7 Combined modes of heat transfer</a>
+<h3 class="h3"><b>7.3.1 Radiation with conduction</b></h3>
+<p class="noindent">Radiation combined with conduction is a system which is generally confined to heat transfer through a vacuum, since the presence of any fluid at all is likely to produce convection effects in some form. It is of principal importance in space technology, where radiation is the only means of heat transfer to or from a spacecraft. We shall consider as an example heat losses by radiation from a heat exchanger fin.</p>
+<figure class="imgc" id="fig7.1">
+<img src="../images/fig7-1.jpg" alt="images"/>
+<figcaption><b>Figure 7.1</b> Schematic of radiating fin, showing (right) heat balance on a fin element.</figcaption></figure>
+<p class="indent">Consider a single fin of length <i>L</i> and thickness 2<i>y</i> attached to a surface of uniform temperature <i>T</i><sub>1</sub>, which is higher than <i>T</i><sub>o</sub> the temperature of the surroundings (see <a href="#fig7.1">Figure 7.1</a>). Heat is lost from the fin by conduction along the fin, followed by radiation from the fin surface. In analysing the heat losses we shall assume the following:</p>
+<p class="noindent">&#160;</p>
+<p class="nlist">(1)<span class="space">&#160;</span>The fin is very thin compared with its length, such that there is a temperature gradient only along the length of the fin, and not across it.</p>
+<p class="nlist">(2)<span class="space">&#160;</span>If the fin is very thin, we can also assume that radiation losses from the tip of the fin (in the <i>x</i>-direction) are negligible compared with radiation from the sides. Algebraically this can be expressed (d<i>T/</i>d<i>x</i>)<i><sub>x</sub></i> <sub>=</sub> <sub><i>L</i> </sub>&#x2248; 0.</p>
+<p class="nlist">(3)<span class="space">&#160;</span>All surfaces are opaque with constant emissivity <i>&#x03B5;</i> and absorptivity <i>&#x03B1;</i>.</p>
+<p class="nlist">(4)<span class="space">&#160;</span>The fin material has constant thermal conductivity <i>k</i>.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Consider a small element of fin thickness d<i>x</i> (<a href="#fig7.1">Figure 7.1</a>). A heat balance of conduction and radiation effects gives:</p>
+<p class="indent">Conduction into element &#x002B; Radiation received = Conduction out &#x002B; Leaving Radiation</p>
+<p class="noindent">Algebraically:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq7.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mi>G</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mfrac><m:mtext>d</m:mtext><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>T</m:mi><m:mo>+</m:mo><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:mfrac><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>J</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(7.6)</td>
+</tr>
+</table>
+<p class="noindent">Note the allowance for radiation emitted/received from both sides of the element. The incident flux will consist of radiation received from the surroundings and the baseplate of the fin. We can introduce the definition of radiosity and then simplify <a href="#eq7.6">Equation 7.6</a> to give:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq7.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mi>k</m:mi><m:mi>y</m:mi><m:mfrac><m:mrow><m:msup><m:mtext>d</m:mtext><m:mtext>2</m:mtext></m:msup><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>&#x03B5;</m:mi><m:mi>&#x03C3;</m:mi><m:msup><m:mi>T</m:mi><m:mn>4</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:mi>&#x03B1;</m:mi><m:mi>G</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(7.7)</td>
+</tr>
+</table>
+<p class="noindent">to which we can apply two boundary conditions: <i>T</i> = <i>T</i><sub>1</sub> at <i>x</i> = 0, and (d<i>T</i>/d<i>x</i>) = 0 at <i>x</i> = <i>L</i>.<a id="page_64" class="page">Page 64, Chapter 7 Combined modes of heat transfer</a></p>
+<p class="indent">Clearly we have a non-linear differential equation, which will in general require a numerical solution to give the temperature distribution as a function of <i>x</i>. Having obtained the temperature distribution, the rate of heat loss from the fin is then given by a heat balance over the whole fin:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq7.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>Q</m:mi><m:mo>=</m:mo><m:msub><m:mrow><m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>y</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>|</m:mo></m:mrow></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>&#x03B5;</m:mi><m:mi>&#x03C3;</m:mi><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>L</m:mi></m:munderover><m:mrow><m:msup><m:mi>T</m:mi><m:mn>4</m:mn></m:msup><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>&#x2212;</m:mo><m:mn>2</m:mn><m:mi>&#x03B1;</m:mi><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>L</m:mi></m:munderover><m:mrow><m:mi>G</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;">(7.8)</td>
+</tr>
+</table>
+<p class="noindent">The most difficult term to deal with in <a href="#eq7.7">Equations 7.7</a> and <a href="#eq7.8">7.8</a> is the final one, since the incident flux, <i>G</i>, depends on the extent to which the element can see the surroundings and the baseplate. This will vary with <i>x</i>, because elements closer to the baseplate will receive proportionally more radiation from that surface. We will consider three cases of increasing complexity:</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">(1) <i>Incident radiation is negligible</i>. We will first assume that <i>G</i> &#x2248; 0, in which case <a href="#eq7.7">Equation 7.7</a> becomes:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq7.9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mi>k</m:mi><m:mi>y</m:mi><m:mfrac><m:mrow><m:msup><m:mtext>d</m:mtext><m:mn>2</m:mn></m:msup><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>&#x03B5;</m:mi><m:mi>&#x03C3;</m:mi><m:msup><m:mi>T</m:mi><m:mn>4</m:mn></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(7.9)</td>
+</tr>
+</table>
+<p class="noindent">It is helpful to introduce a dimensionless distance <i>X</i> (= <i>x/L</i>) and a dimensionless temperature <i>&#x03B8;</i> (<i>= T/T</i><sub>1</sub>), which lead to:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mi>L</m:mi></m:mfrac><m:mo>.</m:mo><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>&#x03B8;</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>X</m:mi></m:mrow></m:mfrac></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>and</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:mfrac><m:mrow><m:msup><m:mtext>d</m:mtext><m:mtext>2</m:mtext></m:msup><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msup><m:mi>L</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo><m:mfrac><m:mrow><m:msup><m:mtext>d</m:mtext><m:mtext>2</m:mtext></m:msup><m:mi>&#x03B8;</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:msup><m:mi>X</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">Subsitution into <a href="#eq7.9">Equation 7.9</a> gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq7.10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:msup><m:mtext>d</m:mtext><m:mtext>2</m:mtext></m:msup><m:mi>&#x03B8;</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:msup><m:mi>X</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:mi>N</m:mi><m:msup><m:mi>&#x03B8;</m:mi><m:mn>4</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(7.10)</td>
+</tr>
+</table>
+<p class="noindent">where <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>N</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>&#x03B5;</m:mi><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>3</m:mn></m:msubsup><m:msup><m:mi>L</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mi>k</m:mi><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow></m:math> and the boundary conditions become <i>&#x03B8;</i> = 1 at <i>X</i> = 0, and (d<i>&#x03B8;/</i>d<i>X</i>) = 0 at <i>X = L. N</i> is a measure of the relative contributions of radiation and conduction, and is therefore a form of Biot Number.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">(2) <i>Incident radiation comes from the surroundings only</i>. If incident radiation from the surroundings cannot be neglected, then we can assume that <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>o</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:math>,<small> </small>noting that the surroundings always appear black to a sufficiently small object (<a href="Chapter04.xhtml#sec4.3">Section 4.3</a>). <a href="#eq7.7">Equation 7.7</a> therefore becomes:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mi>k</m:mi><m:mi>y</m:mi><m:mfrac><m:mrow><m:msup><m:mtext>d</m:mtext><m:mn>2</m:mn></m:msup><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>&#x03B5;</m:mi><m:mi>&#x03C3;</m:mi><m:msup><m:mi>T</m:mi><m:mn>4</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:mi>&#x03B1;</m:mi><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>o</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:math></p>
+<p class="noindent">Using the same dimensionless groups as before, together with <i>&#x03B8;</i><sub>o</sub> = <i>T</i><sub>o</sub><i>/T</i><sub>1</sub>, this equation becomes</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq7.11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:msup><m:mtext>d</m:mtext><m:mn>2</m:mn></m:msup><m:mi>&#x03B8;</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:msup><m:mi>X</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>&#x2212;</m:mo><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>&#x03B8;</m:mi><m:mn>4</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mi>&#x03B1;</m:mi><m:msubsup><m:mi>&#x03B8;</m:mi><m:mtext>o</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow><m:mi>&#x03B5;</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(7.11)</td>
+</tr>
+</table>
+<p class="noindent">which must be solved numerically. Note that this equation applies for any non-grey surface; assuming a grey fin gives very little further simplification.</p>
+<p class="noindent"><a id="page_65" class="page">Page 65, Chapter 7 Combined modes of heat transfer</a>(3) <i>Incident radiation comes from surfaces and surroundings</i>. The fin shown in <a href="#fig7.1">Figure 7.1</a> will receive radiation not only from the surroundings, but also from the surface supporting the fin (see <a href="#fig7.2">Figure 7.2</a>). The rate at which radiation from the surface impinges on the fin element is given by:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>Transfer</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Rate</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>&#x2192;</m:mo><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>1</m:mn><m:mo>&#x2192;</m:mo><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:math></p>
+<p class="noindent">where <i>F</i><sub>d</sub><sub><i>x</i>&#x2192;</sub><sub>1</sub> is the view factor from the fin element to the baseplate, and <i>J</i><sub>1</sub> is the radiosity of the baseplate. Similarly the rate at which radiation from surroundings impinges on the fin element is given by:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>Transfer</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Rate</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mtext>surrs</m:mtext><m:mo>&#x2192;</m:mo><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>o</m:mtext><m:mn>4</m:mn></m:msubsup><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mtext>surrs</m:mtext></m:mrow></m:msub><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>o</m:mtext><m:mn>4</m:mn></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:math></p>
+<figure class="imgc" id="fig7.2">
+<img src="../images/fig7-2.jpg" alt="images"/>
+<figcaption><b>Figure 7.2</b> Schematic showing radiation impinging on fin.</figcaption></figure>
+<p class="noindent"><a href="#eq7.7">Equation 7.7</a> then becomes:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mi>k</m:mi><m:mi>y</m:mi><m:mfrac><m:mrow><m:msup><m:mtext>d</m:mtext><m:mn>2</m:mn></m:msup><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>&#x03B5;</m:mi><m:mi>&#x03C3;</m:mi><m:msup><m:mi>T</m:mi><m:mn>4</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:mi>&#x03B1;</m:mi><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>o</m:mtext><m:mn>4</m:mn></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>&#x03B1;</m:mi><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mrow></m:math></p>
+<p class="noindent">Note that <i>F</i><sub>d</sub><sub><i>x</i>&#x2192;</sub><sub>1</sub> is a function of <i>x</i>, since the view factor from the fin element to the baseplate depends on the distance of the element from the base. An expression for <i>F</i><sub>d</sub><sub><i>x</i>&#x2192;</sub><sub>1</sub> as a function of <i>x</i> is therefore required before a solution can be obtained to the whole equation.</p>
+<p class="indent">All of the above analysis has assumed a single fin. Most heat exchange systems will consist of a series of fins, in which case a full analysis must also include heat transfer between adjacent fins. Further details are given in more comprehensive tests, such as Siegel and Howell.</p>
+<p class="indent">One final aspect of fins is the concept of fin effectiveness. If we recall that the purpose of a fin is to dissipate heat, then we can, in principle, compare the radiative loss from our fin with the maximum possible. The maximum would be the radiative loss if the whole fin were at the same temperature as the baseplate. Thus the fin effectiveness (<i>&#x019E;</i>) is defined by:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>&#x03B7;</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>Actual</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Heat</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Transfer</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>from</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>fin</m:mtext></m:mrow><m:mrow><m:mtext>Heat</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Transfer</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>if</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>whole</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>fin</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>is</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>at</m:mtext><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>L</m:mi></m:munderover><m:mrow><m:mi>&#x03B5;</m:mi><m:mi>&#x03C3;</m:mi><m:msub><m:mi>T</m:mi><m:mn>4</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle></m:mrow><m:mrow><m:mi>&#x03B5;</m:mi><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>L</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mn>1</m:mn></m:munderover><m:mrow><m:msup><m:mi>&#x03B8;</m:mi><m:mn>4</m:mn></m:msup></m:mrow></m:mrow></m:mstyle><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>X</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math><span class="mr">(if &#x03B5; &#x2260; f(<i>T</i>))</span></p>
+<p class="noindent">So, if <i>&#x03B8;</i> can be found from solving the appropriate differential equation, then a further integration will give the fin effectiveness. Clearly from the definition 0 &#x003C; <i>&#x03B8;</i> &#x003C; 1. A high fin effectiveness is obtained for low values of <i>N</i>, i.e. when <a id="page_66" class="page">Page 66, Chapter 7 Combined modes of heat transfer</a> conduction dominates such that there is very little temperature gradient and the fin is essentially isothermal at <i>T</i><sub>1</sub>.</p>
+</section>
+<section epub:type="chapter" id="sec7.3.2">
+<h3 class="h3"><b>7.3.2 Radiation with conduction and convection</b></h3>
+<p class="noindent">The previous section can be extended to give an example of all three modes of heat transfer, if we allow heat to be lost by the fin by a combination of radiation and convection. If the fin is placed in a stagnant fluid, then convection effects can usually be neglected, but if the fluid is moving, then forced convection effects are likely to be significant. We will consider the same geometry as before, but assume that the surrounding fluid to be at temperature <i>T</i><sub>f</sub>. The problem, as before, is to find the temperature distribution along the fin, and hence the rate of heat loss. This is achieved by a simple modification to the energy balance, incorporating an additional heat transfer term to account for convection between the fin and the surrounding fluid. Thus <a href="#eq7.7">Equation 7.7</a> becomes:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2212;</m:mo><m:mi>k</m:mi><m:mi>y</m:mi><m:mfrac><m:mrow><m:msup><m:mtext>d</m:mtext><m:mn>2</m:mn></m:msup><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>&#x03B5;</m:mi><m:mi>&#x03C3;</m:mi><m:msup><m:mi>T</m:mi><m:mn>4</m:mn></m:msup><m:mo>+</m:mo><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>T</m:mi><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>f</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mi>&#x03B1;</m:mi><m:mi>G</m:mi></m:mrow></m:math></p>
+<p class="noindent">where <i>h</i> is the convective heat transfer coefficient. Use of an appropriate expression for the incident flux will lead to a non-linear equation which may be solved numerically, as before.</p>
+</section>
+<section epub:type="chapter" id="sec7.3.3">
+<h3 class="h3"><b>7.3.3 Radiation with convection</b></h3>
+<p class="noindent">As an example of radiation and convection, we will extend the pipe flow example in <a href="#sec7.2">Section 7.2</a> to include radiation effects inside the pipe. Consider flow of a hot fluid within a colder pipe. The fluid will cool down as it passes along the pipe. In <a href="#sec7.2">Section 7.2</a> we assumed that the wall temperature remained constant; in reality the wall temperature will also decrease in the direction of flow. Suppose that we wish to determine the temperature profile of both the fluid and the wall as a function of distance along the pipe, taking into account convective heat transfer between the fluid and the pipe wall, and radiation effects within the pipe. The latter may be significant if one end of the pipe is significantly hotter than the other.</p>
+<figure class="imgc" id="fig7.3">
+<img src="../images/fig7-3.jpg" alt="images"/>
+<figcaption><b>Figure 7.3</b> Schematic for heat transfer for gas flow in a pipe.</figcaption></figure>
+<p class="indent">Suppose that we have a thin-walled pipe of length <i>L</i> and diameter <i>D</i>, through which a fluid flows at mass flowrate <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mover accent='true'><m:mi>m</m:mi><m:mo>&#x02D9;</m:mo></m:mover></m:math>, with inlet temperature <i>T</i><sub>g1</sub> and exit temperature <i>T</i><sub>g2</sub> (<a href="#fig7.3">Figure 7.3</a>). Consider a volume element d<i>V</i> of length d<i>x</i>, <a id="page_67" class="page">Page 67, Chapter 7 Combined modes of heat transfer</a>where the gas temperature is <i>T</i><sub>g</sub>, the wall temperature is <i>T</i><sub>w</sub>, and these temperatures change by d<i>T</i><sub>g</sub> and d<i>T</i><sub>w</sub> respectively. We shall assume here only the case of a transparent fluid, and a pipe wall which is grey and of uniform emissivity <i>&#x03B5;</i>.</p>
+
+<p class="indent">Since the fluid is non-participating, it loses heat only by convective heat transfer to the wall. An energy balance on the gas in volume d<i>V</i> therefore gives:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Rate</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>heat</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>transfer</m:mtext><m:mo>=</m:mo><m:mover accent='true'><m:mi>m</m:mi><m:mo>&#x02D9;</m:mo></m:mover><m:msub><m:mi>c</m:mi><m:mtext>p</m:mtext></m:msub><m:mtext>d</m:mtext><m:msub><m:mi>T</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>h</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>&#x03C0;</m:mi><m:mi>D</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:math></p>
+<p class="noindent">noting that d<i>T</i><sub>g</sub> is positive when <i>T</i><sub>w</sub> is greater than <i>T</i><sub>g</sub>. This leads to the differential equation</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq7.12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:msub><m:mi>T</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>h</m:mi><m:mn>1</m:mn></m:msub><m:mi>&#x03C0;</m:mi><m:mi>D</m:mi></m:mrow><m:mrow><m:mover accent='true'><m:mi>m</m:mi><m:mo>&#x02D9;</m:mo></m:mover><m:msub><m:mi>c</m:mi><m:mtext>p</m:mtext></m:msub></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(7.12)</td>
+</tr>
+</table>
+<p class="noindent">with the boundary condition <i>T</i><sub>g</sub> = <i>T</i><sub>g1</sub> at <i>x</i> = 0, and <i>T</i><sub>g</sub> = <i>T</i><sub>g2</sub> at <i>x</i> = <i>L</i>. An energy balance can also be carried out on the surface of the pipe in volume d<i>V</i>, in terms of convective and radiative fluxes:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="padding-left:2em;" id="eq7.13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mtable columnalign='left'><m:mtr><m:mtd><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mtext>Net</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>flux</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>to</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>wall</m:mtext></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mtext>Convection</m:mtext><m:mtext>&#x2009;</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>gas</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x2192;</m:mo><m:mtext>&#x2009;</m:mtext><m:mtext>wall</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mtext>Incident</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Radiation</m:mtext></m:mrow></m:mtd></m:mtr>
+</m:mtable></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x2212;</m:mo><m:mtext>Leaving</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Radiation</m:mtext></m:mtd></m:mtr></m:mtable>
+</m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mi>q</m:mi></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:msub><m:mi>h</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>G</m:mi><m:mo>&#x2212;</m:mo><m:mi>J</m:mi></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:msub><m:mi>h</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>&#x03B1;</m:mi><m:mi>G</m:mi><m:mo>&#x2212;</m:mo><m:mi>&#x03B5;</m:mi><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>w</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></td>
+<td style="padding-top:5.75em;">(7.13)</td>
+</tr>
+</table>
+<p class="noindent">The incident flux has three components: radiation received from the inlet end, radiation received from the outlet end, and radiation received from the pipe walls. (If the fluid were participating, then we would also include radiation from the fluid.) <i>G</i> is therefore a function of <i>x</i>, and we must derive an appropriate expression in terms of temperatures. Although the fluid is non-participating, we shall assume that radiation is received from the pipe ends at their respective temperatures, and that the pipe ends are black. The three components of the incident radiation can be expressed algebraically as:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>L</m:mi></m:munderover><m:mrow><m:mi>J</m:mi><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mtext>d</m:mtext><m:mi>&#x03BE;</m:mi></m:mrow></m:msub><m:mtext>d</m:mtext><m:mi>&#x03BE;</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p>
+<p class="noindent">where <i>J</i>, the radiosity of the wall is a function of <i>x</i>. The last term, the radiation received from the pipe walls, is determined by considering heat transfer between the wall element d<i>x</i> and another wall element d<i>&#x03BE;</i>, and then integrating over all the d<i>&#x03BE;</i> (see <a href="#fig7.3">Figure 7.3</a>). Analytical expressions for the three view factors are available in tables. Substitution into <a href="#eq7.13">Equation 7.13</a> gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq7.14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>q</m:mi><m:mo>=</m:mo><m:msub><m:mi>h</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>&#x03B5;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>L</m:mi></m:munderover><m:mrow><m:mi>J</m:mi><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>&#x2192;</m:mo><m:mtext>d</m:mtext><m:mi>&#x03BE;</m:mi></m:mrow></m:msub><m:mtext>d</m:mtext><m:mi>&#x03BE;</m:mi><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>w</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:mrow></m:mstyle></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:2em;">(7.14)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_68" class="page">Page 68, Chapter 7 Combined modes of heat transfer</a>Continuity of heat flow requires the rate of transfer of heat at the outer wall is same as that at the inner wall. Therefore we can also write:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq7.15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>q</m:mi><m:mo>=</m:mo><m:msub><m:mi>h</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>w</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>o</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>&#x03B5;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>w</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>o</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(7.15)</td>
+</tr>
+</table>
+<p class="noindent">which can be combined with <a href="#eq7.14">Equation 7.14</a> to give a second equation in terms of <i>T</i><sub>g</sub> and <i>T</i><sub>w</sub>. This together with <a href="#eq7.12">Equation 7.12</a> can be solved numerically to give the two required temperature profiles.</p>
+</section>
+</section>
+</section>
+</body>
+</html>

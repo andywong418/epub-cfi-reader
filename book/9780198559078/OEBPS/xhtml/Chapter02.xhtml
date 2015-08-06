@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Chapter02</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter">
+<a id="page_8" class="page" style="width:60%;">page8, Chapter 2 Potential energy surfaces</a>
+<h1 class="chaptitle">2<span class="space">&#160;</span>Potential energy surfaces</h1>
+<p class="noindent">&#160;</p>
+<p class="noindent">A prerequisite for calculating a reaction cross-section or rate coefficient is a knowledge of the forces acting on the nuclei. Such information is usually derived from a potential energy function, known as a <i>potential energy surface</i> (PES). The word &#x2018;surface&#x2019; emphasizes that the potential energy function depends on the relative positions of all the nuclei involved in a reaction, and thus is generally a function of more than one parameter.</p>
+<section epub:type="chapter">
+<h2 class="h2" id="sub2.1"><b>2.1<span class="space">&#160;</span>Calculation of potential energy surfaces</b></h2>
+<p class="noindent">One difficulty associated with the theoretical study of chemical reactions is that they involve the motion of both electrons and nuclei. Fortunately, electrons are much lighter than nuclei and respond very rapidly to changes in nuclear geometry, enabling the electronic and nuclear motions to be decoupled. It is this <i>adiabatic</i> separation of electronic and nuclear motion, known as the Born&#x2013;Oppenheimer approximation, which allows chemists to view reactions in terms of the motions of nuclei over single electronic potential energy surfaces.</p>
+<section epub:type="chapter">
+<h3 class="h3">Born&#x2013;Oppenheimer separability</h3>
+<p class="noindent">The use of quantum mechanics is essential for treating the electronic motion. Within the Born-Oppenheimer approximation, the total molecular wavefunction, <img src="../images/in07_pd.jpg" alt="images"/>(<i>r</i><sub>e</sub>, <i>R</i><sub>n</sub>) (which is a function of generalized electronic and nuclear coordinates, <i>r</i><sub>e</sub> and <i>R</i><sub>n</sub>) is written as a product of electronic and nuclear terms</p>
+
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>&#x03A8;</mi>
+ <mo stretchy="false">(</mo>
+ <msub>
+  <mi>r</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>e</mi>
+  </mrow>
+ </msub>
+ <mo>,</mo>
+ <msub>
+  <mi>R</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <msub>
+  <mi>&#x03A8;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>e</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">(</mo>
+ <msub>
+  <mi>r</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>e</mi>
+  </mrow>
+ </msub>
+ <mo>;</mo>
+ <msub>
+  <mi>R</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <msub>
+  <mi>&#x03C8;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">(</mo>
+ <msub>
+  <mi>R</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+</math>
+</p>
+
+<p class="noindent">where <img src="../images/in07_pd.jpg" alt="images"/><sub>e</sub>(<i>r</i><sub>e</sub> ; <i>R</i><sub>n</sub>) is the wavefunction characterizing the electronic motion, and <img src="../images/in07_ps.jpg" alt="images"/><sub>n</sub>(<i>R</i><sub>n</sub>) is that describing the nuclear motion. <img src="../images/in07_pd.jpg" alt="images"/><sub>e</sub> depends on the relative positions of all the electrons, <i>r</i><sub>e</sub> and, parametrically, on the nuclear positions, <i>R</i><sub>n</sub>, and satisfies the Schr&#x00F6;dinger equation for the electronic motion:</p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mover>
+    <mi>H</mi>
+    <mo stretchy="false">&#x005E;</mo>
+   </mover>
+  </mrow>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>e</mi>
+  </mrow>
+ </msub>
+ <msub>
+  <mi>&#x03A8;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>e</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">(</mo>
+ <msub>
+  <mi>r</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>e</mi>
+  </mrow>
+ </msub>
+ <mo>;</mo>
+ <msub>
+  <mi>R</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <mi>E</mi>
+ <mo stretchy="false">(</mo>
+ <msub>
+  <mi>R</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <msub>
+  <mi>&#x03A8;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>e</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">(</mo>
+ <msub>
+  <mi>r</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>e</mi>
+  </mrow>
+ </msub>
+ <mo>;</mo>
+ <msub>
+  <mi>R</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <mo>.</mo>
+</math>
+</p>
+<p class="noindent">The resulting eigenvalues, <i>E</i>(<i>R</i><sub>n</sub>), which include internuclear repulsions, correspond to the electronic energy levels, or states, of the molecule at each fixed nuclear geometry, <i>R</i><sub>n</sub>. Repeating the calculation at other nuclear geometries allows the variation of the total electronic energy with <i>R</i><sub>n</sub> to be mapped out. The function <i>E</i>(R<sub>n</sub>) may be regarded as the potential energy which the nuclei experience at a given <i>R</i><sub>n</sub>, and henceforth we will use the symbol <i>V</i>(<i>R</i><sub>n</sub>) for this energy rather than <i>E</i>(<i>R</i><sub>n</sub>). It is employed to solve the Schr&#x00F6;dinger equation for the nuclear motion</p>
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mover>
+    <mi>H</mi>
+    <mo stretchy="false">&#x005E;</mo>
+   </mover>
+  </mrow>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <msub>
+  <mi>&#x03C8;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">(</mo>
+ <msub>
+  <mi>R</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <mrow>
+  <mo>[</mo>
+  <msub>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mover>
+     <mi>T</mi>
+     <mo stretchy="false">&#x005E;</mo>
+    </mover>
+   </mrow>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mi>n</mi>
+   </mrow>
+  </msub>
+  <mo>+</mo>
+  <mi>V</mi>
+  <mo stretchy="false">(</mo>
+  <msub>
+   <mi>R</mi>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mi>n</mi>
+   </mrow>
+  </msub>
+  <mo stretchy="false">)</mo>
+  <mo>]</mo>
+ </mrow>
+ <msub>
+  <mi>&#x03C8;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">(</mo>
+ <msub>
+  <mi>R</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <msub>
+  <mi>E</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <msub>
+  <mi>&#x03C8;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">(</mo>
+ <msub>
+  <mi>R</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>n</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <mo>,</mo>
+</math></td>
+</tr>
+</table>
+
+<p class="noindent" style="text-align:right;margin-top:-2.7em;margin-bottom:2em;" id="eq2.1">(2.1)</p>
+<p class="noindent">where <img src="../images/in07_3.jpg" alt="images"/> represents the kinetic energy operator for the nuclear motion. If the potential energy surface employed in this equation corresponded to that of a</p>
+
+
+<p class="noindent"><a id="page_9" class="page">Page 9, Chapter 2 Potential energy surfaces</a>stable molecule, then the <i>E</i><sub>n</sub> would be the bound rovibrational energy levels of the molecule.</p>
+<p class="indent">One important consequence of the Born&#x2013;Oppenheimer approximation is that the potential energy between the atoms involved in a reaction is independent of isotopic mass. In fact, study of the variation in energy level structure of stable molecules upon isotopic substitution provides an important test of the validity of the Born&#x2013;Oppenheimer approximation.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Review of molecular orbital theory</h3>
+<p class="noindent">In molecular orbital theory, the electronic wavefunction for the molecule, <img src="../images/in07_pd.jpg" alt="images"/><sub>e</sub>, is approximated by a product of one-electron orbitals, <img src="../images/in07_ps.jpg" alt="images"/><sub><i>i</i></sub></p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+  <mi>&#x03A8;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>e</mi>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <munderover>
+  <mo>&#x220F;</mo>
+  <mi>i</mi>
+  <mi>n</mi>
+ </munderover>
+ <msub>
+  <mi>&#x03C8;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>i</mi>
+  </mrow>
+ </msub>
+</math>
+</p>
+<p class="noindent">where the product runs over all the electrons, <i>n</i>, in the molecule. This approximation is analogous to (and, indeed, borrowed from) the orbital approximation employed in atomic electronic structure calculations. Each electron, in its one-electron orbital, is assumed to experience an average electron&#x2013;electron repulsion determined by the average positions of the other electrons in the molecule. One approach to the molecular electronic structure problem is to express the one-electron molecular orbitals as linear combinations of atomic orbitals, <i>&#x03D5;</i><sub><i>j</i></sub> (hence the acronym LCAO approximation), </p>
+
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>&#x03C8;</mi>
+ <mo>=</mo>
+ <munderover>
+  <mo>&#x2211;</mo>
+  <mi>j</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+  </mrow>
+ </munderover>
+ <msub>
+  <mi>c</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <msub>
+  <mi>&#x03D5;</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>j</mi>
+  </mrow>
+ </msub>
+ <mo>,</mo>
+</math></td>
+<td style="text-align:right;" id="eq2.2">(2.2)</td>
+</tr>
+</table>
+
+<aside class="right" style="margin-top:-21em;" epub:type="sidebar">
+<p class="sidebar">Electron spin wavefunctions should be included in the one-electron orbitals. If they are, the product is replaced by a <i>Slater determinant</i>, which ensures that the total electronic wavefunction, including electron spin, satisfies the Pauli exclusion principle.</p>
+</aside>
+<p class="noindent">where the expansion coefficient <i>c</i><sub><i>j</i></sub> is the amplitude of the <i>j</i>th atomic orbital in the one-electron molecular orbital, <img src="../images/in07_ps.jpg" alt="images"/>.</p>
+<p class="noindent">The wavefunctions given above are approximate ones, and a procedure is required to optimize them, and determine the set of coefficients <i>c</i><sub><i>j</i></sub> which lead to the best approximation to the true wavefunction. One commonly used method employs the <i>variational principle</i>, which states that the approximate ground state energy of a molecule, <i>E</i><sub>trial</sub>, obtained using a trial wavefunction, <img src="../images/in07_pd.jpg" alt="images"/><sub>trial</sub> will always be an upper bound to the true ground state energy of the molecule, <i>E:</i></p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <msub>
+  <mi>E</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>t</mi>
+   <mi>r</mi>
+   <mi>i</mi>
+   <mi>a</mi>
+   <mi>l</mi>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <mfrac>
+  <mrow>
+   <msubsup>
+    <mo>&#x222B;</mo>
+    <mrow class="MJX-TeXAtom-ORD">
+
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+
+    </mrow>
+   </msubsup>
+   <msubsup>
+    <mi>&#x03B2;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>t</mi>
+     <mi>r</mi>
+     <mi>i</mi>
+     <mi>a</mi>
+     <mi>l</mi>
+    </mrow>
+    <mo>&#x2217;</mo>
+   </msubsup>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mover>
+     <mi>H</mi>
+     <mo stretchy="false">&#x005E;</mo>
+    </mover>
+   </mrow>
+   <msub>
+    <mi>&#x03B2;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>t</mi>
+     <mi>r</mi>
+     <mi>i</mi>
+     <mi>a</mi>
+     <mi>l</mi>
+    </mrow>
+   </msub>
+  </mrow>
+  <mrow>
+   <msubsup>
+    <mo>&#x222B;</mo>
+    <mrow class="MJX-TeXAtom-ORD">
+
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+
+    </mrow>
+   </msubsup>
+   <msubsup>
+    <mi>&#x03B2;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>t</mi>
+     <mi>r</mi>
+     <mi>i</mi>
+     <mi>a</mi>
+     <mi>l</mi>
+    </mrow>
+    <mo>&#x2217;</mo>
+   </msubsup>
+   <msub>
+    <mi>&#x03B2;</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>t</mi>
+     <mi>r</mi>
+     <mi>i</mi>
+     <mi>a</mi>
+     <mi>l</mi>
+    </mrow>
+   </msub>
+  </mrow>
+ </mfrac>
+ <mo>&#x2265;</mo>
+ <mi>E</mi>
+ <mo>.</mo>
+</math>
+</p>
+<p class="noindent">For many-electron problems, the trial ground state wavefunction of the molecule must be optimized iteratively, since the average electron&#x2013;electron repulsion experienced by one electron, in its approximate one-electron orbital, depends on the one-electron wavefunctions of all the other electrons in the molecule. The method frequently employed for this optimization is known as the self-consistent field procedure. However, even this methodology fails to take proper account of electron&#x2013;electron repulsion, since it neglects the instantaneous correlations between the positions of each of the electrons in the molecule. These effects may be accounted for using techniques such as configuration interaction, and more details of this and other procedures can be found in texts given in the Background reading.</p>
+<aside class="right" style="margin-top:-18em;" epub:type="sidebar">
+<p class="sidebar">In simple molecular orbital theory, this procedure is employed to find the best set of coefficients (i.e. the set which minimizes the energy, <i>E</i><sub>trial</sub>) by setting the derivatives of <i>E</i><sub>trial</sub> with respect to each of the coefficients, <i>C</i><sub><i>j</i></sub>, to zero. This leads to a set of simultaneous equations, known as the <i>secular equations</i>, the solution of which yields the coefficients and the orbital energies of interest.</p>
+</aside>
+<p class="indent">To calculate a potential energy <i>surface</i>, the Schr&#x00F6;dinger equation for the electronic motion must be solved many times, over a wide range of nuclear</p>
+</section>
+</section>
+<aside class="right" style="margin-top:5.5em;" epub:type="sidebar">
+<p class="sidebar">For the four-atom system, most of the computational effort in calculating the potential energy surface has focused on the region close to the minimum energy path from reactants to products (see <a href="Chapter02.xhtml#sub2.2">Section 2.2</a>), and the surface is only believed accurate for modelling the H + H<sub>2</sub>O <i>&#x2192;</i> OH + H<sub>2</sub> reaction at low energy.<sup>2</sup></p>
+</aside>
+<p class="noindent"><a id="page_10" class="page">Page 10, Chapter 2 Potential energy surfaces</a>configurations, <i>R</i><sub>n</sub>. This yields the potential energy at a series of points, corresponding to the different nuclear geometries, and these are usually fitted with some analytic function so that potential energy may be evaluated at any arbitrarily chosen geometry. The latter procedure is necessary for reaction dynamics calculations, which require the potential energy to be evaluated continuously from reactants to products. To date, global <i>ab initio</i> potential energy surfaces of sufficient accuracy to provide reliable rate coefficient data have only been obtained for comparatively small systems (both in terms of the number of atoms and the number of electrons), such as H + H<sub>2</sub>, F + H<sub>2</sub>, and H + H<sub>2</sub>O.</p>
+<p class="indent">Because of the difficulty in calculating accurate <i>ab initio</i> potential energy surfaces for larger systems than those described above, numerous approximate procedures for estimating features of the potential energy surface have been developed. One commonly employed strategy is to rescale the reactant and product energies (and sometimes the vibrational frequencies) obtained from low level <i>ab initio</i> calculations (i.e. calculations which do not account properly for electron correlation, or employ small basis sets in the expansion of the molecular orbitals given in <a href="Chapter02.xhtml#eq2.2">eqn 2.2</a>) to those determined experimentally. Another is to calculate the potential energy accurately only in regions that are thought to be important in the reaction, for example in the region of the potential energy barrier (see below). Even more approximate are the LEPS (London, Eyring, Polanyi, and Sato) and DIM (diatomics in molecules) <i>semi-empirical</i> potential energy surfaces, details of which can be found in the texts given in the Background reading. Both of these surfaces are constructed solely from experimentally derived knowledge of the diatomic potential energy curves for the species AB, BC, and AC. One important feature of the LEPS surface is that it is expressed by a comparatively simple analytic function, which enables the potential energy to be evaluated efficiently at any nuclear geometry.</p>
+<aside class="right" style="margin-top:-4.5em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_2.1.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig2.1"><b>Fig. 2.1</b> Schematic potential energy curves for a diatomic molecule. <i>D<sub>e</sub></i> is the dissociation energy measured from the bottom of the well.</figcaption>
+</figure>
+</aside>
+<section epub:type="chapter">
+<h2 class="h2" id="sub2.2">2.2<span class="space">&#160;</span>Types of potential energy surface</h2>
+<section epub:type="chapter">
+<h3 class="h3">Diatomic potential energy curves</h3>
+<p class="noindent">For a diatomic molecule, the potential energy <i>curve</i> is a function of a single parameter, the bond length or atomic separation, <i>R</i>. For a stable molecule, it has a familiar Morse-like form, shown in <a href="Chapter02.xhtml#fig2.1">Fig. 2.1</a>. Also included in this figure is a repulsive excited state of the molecule, which might arise from promotion of a valence electron from a bonding to an antibonding orbital. The potential energy curve for the stable ground electronic state is repulsive at short range, but becomes attractive at longer range, tending to the dissociation limit of the two separated atoms (the potential energy in this limit would generally be set to zero, if ground electronic state fragments were produced in the dissociation process). This potential curve supports bound vibrational levels (i.e. the solutions to the Schr&#x00F6;dinger equation for the nuclear motion, <a href="Chapter02.xhtml#eq2.1">eqn 2.1</a>) up to the dissociation limit, where they converge to the dissociation continuum. Approximate, harmonic vibrational frequencies,</p>
+<p class="noindent">&#160;</p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>&#x03BD;</mi>
+ <mo>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mrow>
+   <mn>2</mn>
+   <mi>&#x03C0;</mi>
+  </mrow>
+ </mfrac>
+ <msqrt>
+  <mfrac>
+   <mi>k</mi>
+   <mi>&#x03BC;</mi>
+  </mfrac>
+ </msqrt>
+ <mo>,</mo>
+</math></p>
+
+<p class="noindent"><a id="page_11" class="page">Page 11, Chapter 2 Potential energy surfaces</a>can be obtained from the potential energy curve by determining the force constant, <i>k</i>, defined as</p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>k</mi>
+ <mo>=</mo>
+ <msub>
+  <mrow>
+   <mo>(</mo>
+   <mfrac>
+    <mrow>
+     <msup>
+      <mi>d</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+       <mn>2</mn>
+      </mrow>
+     </msup>
+     <mi>V</mi>
+    </mrow>
+    <mrow>
+     <mi>d</mi>
+     <msup>
+      <mi>x</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+       <mn>2</mn>
+      </mrow>
+     </msup>
+    </mrow>
+   </mfrac>
+   <mo>)</mo>
+  </mrow>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>x</mi>
+   <mo>=</mo>
+   <mn>0</mn>
+  </mrow>
+ </msub>
+ <mo>,</mo>
+</math></p>
+
+ 
+<p class="noindent">where <i>x</i> is the displacement (<i>R</i> &#x2013; <i>R</i><sub>e</sub>), and <i>R</i><sub>e</sub> is the equilibrium bond length of the molecule at the bottom of the potential energy well; this bond length also serves to define the equilibrium rotational constant of the molecule. Most pertinent of all, knowledge of the potential energy curve also allows determination of the force on the atoms at any internuclear separation, via the equation,</p> 
+<p class="noindent">&#160;</p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mi>F</mi>
+ <mo stretchy="false">(</mo>
+ <mi>R</mi>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <mo>&#x2212;</mo>
+ <mfrac>
+  <mrow>
+   <mi>d</mi>
+   <mi>V</mi>
+   <mo stretchy="false">(</mo>
+   <mi>R</mi>
+   <mo stretchy="false">)</mo>
+  </mrow>
+  <mrow>
+   <mi>d</mi>
+   <mi>R</mi>
+  </mrow>
+ </mfrac>
+ <mo>.</mo>
+</math></p>
+
+
+<aside class="right" style="margin-top:-14em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_2.2.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig2.2"><b>Fig. 2.2</b> Two choices of coordinates used to describe a triatomic PES.</figcaption>
+</figure>
+</aside>
+<p class="noindent">If the two atoms involved were closed-shell, noble gas atoms, then the form of the potential energy curve would be rather different from the Morse-like behaviour observed in stable diatomic molecules. Under these circumstances, the potential at short range is dominated by the repulsive interaction between the nuclei and between the two filled charge clouds (cf. the repulsive curve shown in <a href="Chapter02.xhtml#fig2.1">Fig. 2.1</a>). At long range, however, the potential exhibits a shallow well, associated with long range attractive, dispersion interactions, known as <i>van der Waals</i> forces. The potential energy curves for weakly bound van der Waals complexes are difficult to calculate accurately using <i>ab initio</i> techniques, because the origin of the attractive forces lies in the instantaneous correlation between the positions of the electrons in the two atoms. It is this electron correlation energy which is most difficult to allow for in potential energy surface calculations. The potential curves are often modelled using a function known as the Lennard-Jones potential,</p> 
+<table style="width:100%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><p class="eq1"> <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>V</mi>
+ <mo stretchy="false">(</mo>
+ <mi>R</mi>
+ <mo stretchy="false">)</mo>
+ <mo>=</mo>
+ <mn>4</mn>
+ <mi>&#x03F5;</mi>
+ <mrow>
+  <mo>[</mo>
+  <msup>
+   <mrow>
+    <mo>(</mo>
+    <mfrac>
+     <mi>&#x03C3;</mi>
+     <mi>R</mi>
+    </mfrac>
+    <mo>)</mo>
+   </mrow>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>12</mn>
+   </mrow>
+  </msup>
+  <mo>&#x2212;</mo>
+  <msup>
+   <mrow>
+    <mo>(</mo>
+    <mfrac>
+     <mi>&#x03C3;</mi>
+     <mi>R</mi>
+    </mfrac>
+    <mo>)</mo>
+   </mrow>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>6</mn>
+   </mrow>
+  </msup>
+  <mo>]</mo>
+ </mrow>
+ <mo>,</mo>
+<mo>&#x00A0;&#x00A0;&#x00A0;</mo>
+</math></p></td>
+</tr>
+</table>
+
+<p class="noindent" style="text-align:right;margin-top:-4.3em;margin-bottom:2.5em;"  id="eq2.3">(2.3)</p>
+
+<p class="noindent">where <i>&#x03F5;</i> is the well depth and <i>&#x03C3;</i> the separation when the potential energy is zero.</p>
+<aside class="right" style="margin-top:-22em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_2.3.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig2.3"><b>Fig. 2.3</b> The collinear PES for D+ H<sub>2</sub>.</figcaption>
+</figure>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Triatomic potential energy surfaces</h3>
+<p class="noindent">The potential energy surface for a three-atom system is a function of three coordinates, either the three interatomic bond lengths or, more commonly, the bond lengths of BC and AB, <i>r</i><sub>BC</sub> and <i>r</i><sub>AB</sub>, and the bond angle between the BC and AB bonds, <i>&#x03B8;</i> (see <a href="Chapter02.xhtml#fig2.2">Fig. 2.2</a>). To start with, we will use the latter. To plot the potential energy surface, one of the degrees of freedom needs to be frozen and we will fix the bond angle to 180&#x00B0; (such that A approaches BC in a <i>collinear</i> fashion). The potential energy can then be plotted as a function of the two bond lengths.</p>
+<aside class="right" style="margin-top:-10em;" epub:type="sidebar">
+<p class="sidebar">A discussion of three-atom systems in terms of simple MO theory can be found in Levine and Bernstein&#x2019;s <i>Molecular reaction dynamics and chemical reactivity</i>.</p>
+<p class="noindent">&#160;</p>
+<p class="sidebar">In general, for an <i>N</i>-atom reaction, the potential energy surface is a function of 3<i>N</i> &#x2013; 6 degrees of freedom.</p>
+</aside>
+
+<p class="indent">An example of the resulting <i>collinear</i> potential surface is illustrated in <a href="Chapter02.xhtml#fig2.3">Fig. 2.3</a> for the D + H<sub>2</sub> reaction (we use the D isotope merely to distinguish the different atoms).<sup>3</sup> The surface is mapped in the form of a contour plot, where the contours connect points of equal potential energy. Within the Born-Oppenheimer approximation, the potential energy of the reactants (arbitrarily taken as zero) is identical to that of the products, and thus the diagram is symmetric about the diagonal line <i>r</i><sub>HD</sub> = <i>r</i><sub>HH</sub>. Consider taking a slice through</p>
+
+<aside class="right" style="margin-top:4.5em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_2.4.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig2.4"><b>Fig. 2.4</b> The variation in potential energy along the MEP for D + H<sub>2</sub>. The upper curve shows the analogous variation for <i>&#x03B8;</i> = 90&#x00B0;. V<sup>&#x2260;</sup> is the potential energy barrier height.</figcaption>
+</figure>
+</aside>
+
+<p class="noindent"><a id="page_12" class="page">Page 12, Chapter 2 Potential energy surfaces</a>the potential parallel with the <i>r</i><sub>HH</sub> axis when <i>r</i><sub>DH</sub> is large and constant (i.e. parallel to the <i>y</i> axis at the extreme right of the diagram). This region of the potential corresponds to the reactants, and the potential energy curve along the slice is simply the diatomic Morse-like potential of the H<sub>2</sub>. A similar slice through the potential at large, fixed <i>r</i><sub>HH</sub> separations (corresponding to a line at the top of the diagram, parallel to the <i>x</i> axis), which is in the product region of the potential energy surface, yields the diatomic potential curve of DH. Reaction takes place when the two reactants come together, and the region of the surface where all three atoms are in close proximity is the bottom left of the diagram (conversely, the top right of the diagram represents the potential energy when the three atoms become separated).</p>
+
+<p class="indent">The bold line in <a href="Chapter02.xhtml#fig2.3">Fig. 2.3</a> represents the lowest energy path from reactants to products, and is known as the <i>minimum energy path</i> (MEP) or the <i>reaction coordinate</i>. The variation of the potential energy along this coordinate is illustrated in <a href="Chapter02.xhtml#fig2.4">Fig. 2.4</a>. As the D atom approaches H<sub>2</sub>, the potential energy rises along the <i>reactant valley</i> until the barrier is reached, and subsequently falls as the D&#x2013;H&#x2013;H species passes into the <i>product valley</i> of the surface. Motion along the MEP is best viewed as a translational motion over a barrier, taking DH<sub>2</sub> from the reactants into the products. By contrast, motion at right angles (orthogonal) to the MEP represents the symmetric stretching <i>vibrational</i> coordinate of the D&#x2013;H&#x2013;H species. The variation of potential energy along this coordinate corresponds to a well rather than a barrier, and is similar in form to the diatomic Morse-type curve illustrated in the previous section. Therefore, the barrier region encompasses a <i>saddle point</i> on the potential energy surface. Motion along the reaction coordinate corresponds to unbound, translational motion over a barrier, while motions along other coordinates, orthogonal to the MEP, correspond to bound vibrational motions.</p>
+<aside class="right" style="margin-top:-10.5em;" epub:type="sidebar">
+<p class="sidebar">For the isotopically pure species, H&#x2032;&#x2013;H&#x2013;H, the symmetric stretching coordinate lies along the line <i>r</i><sub>HH</sub> = <i>r</i><sub>HH</sub> in <a href="Chapter02.xhtml#fig2.3">Fig. 2.3</a>.The dissociation limit reached by stretching motion orthogonal to the MEP therefore corresponds to the completely separated atoms, H&#x2032; + H + H.</p>
+</aside>
+<p class="indent">If we are to describe reactions properly, we must allow for D atom collisions which approach H<sub>2</sub> in a sideways fashion, as well as collisions involving rotationally excited H<sub>2</sub> reactants and DH products. To account for such events, knowledge of the variation of potential energy with bond angle is essential. In addition to the collinear potential energy surface shown in <a href="Chapter02.xhtml#fig2.3">Fig. 2.3</a>, a whole family of similar surfaces must be generated, corresponding to different bending angles in the DH<sub>2</sub> species. For the DH<sub>2</sub> system, detailed calculations show that the potential energy rises steeply as the bond angle is reduced from 180&#x00B0;, and thus the minimum energy path for this reaction corresponds to the collinear path already shown in <a href="Chapter02.xhtml#fig2.4">Fig. 2.4</a>. This diagram also shows the variation in the potential energy in the barrier region as the bond angle is reduced from 180&#x00B0;. The bond lengths employed to illustrate this variation are the same as those used to define the MEP.</p>
+<p class="indent">A rather different potential energy surface is obtained for the F + H<sub>2</sub> system, shown for collinear approach in <a href="Chapter02.xhtml#fig2.5">Fig. 2.5</a>, <sup>4</sup></p>
+
+
+<figure class="fig">
+<img src="../images/12_1.jpg" alt="images"/>
+</figure>
+
+
+<p class="noindent">Since the HF bond is much stronger than that of H<sub>2</sub>, the reaction is highly exothermic. For clarity, contours with energy greater than zero (defined here as the energy of F + H<sub>2</sub> at infinite separation) are shown as continuous lines, while negative potential energy contours are shown as dashed lines. The potential energy surface is no longer symmetric, and the modest barrier to reaction occurs in the entrance, reactant valley. Such a surface is said to</p>
+<aside class="right" style="margin-top:-16em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_2.5.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig2.5"><b>Fig. 2.5</b> The collinear PES for F+ H<sub>2</sub>.</figcaption>
+</figure>
+</aside>
+
+<p class="noindent"><a id="page_13" class="page">Page 13, Chapter 2 Potential energy surfaces</a>possess an <i>early barrier</i>. Another interesting feature of the surface is that the minimum energy path for this reaction does not correspond to collinear approach. To illustrate this, it is convenient to employ an alternative set of coordinates, <i>R</i>, <i>r</i> and <i>&#x03B3;</i>, the separation of F to the H<sub>2</sub> centre-of-mass, the H&#x2013;H internuclear separation, and the angle between the vector <b>R</b> and the H<sub>2</sub> bond axis, <b>r</b> (see <a href="Chapter02.xhtml#fig2.2">Fig. 2.2</a>). This representation of the surface is shown in <a href="Chapter02.xhtml#fig2.6">Fig. 2.6</a>. The remaining coordinate, the H<sub>2</sub> bond length, <i>r</i>, has been fixed at its optimized value at the saddle point (<i>r</i> = 0.11 &#x00C5;).</p>
+
+<aside class="right" style="margin-top:-7em;" epub:type="sidebar">
+<p class="sidebar">Together, the coordinates (<i>R</i>, <i>r</i>, <i>&#x03B3;</i>) are known as Jacobi coordinates.</p>
+</aside>
+
+<p class="indent">Our last example of a potential energy surface is that for the reaction of electronically excited oxygen atoms, 0(<sup>1</sup>D), with H<sub>2</sub>, <sup>5</sup></p>
+
+<figure class="fig">
+<img src="../images/13_1.jpg" alt="images"/>
+</figure>
+
+<aside class="right" style="margin-top:-7.5em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_2.6.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig2.6"><b>Fig. 2.6</b> The dependence of the PES for F + H<sub>2</sub> on Jacobi coordinates <i>R</i> and <i>&#x03B3;</i>.</figcaption>
+</figure>
+</aside>
+
+<p class="indent">This reaction proceeds over a surface with a deep potential energy minimum, corresponding to the ground electronic state of the water molecule, and the minimum energy path corresponds to insertion of the O atom into the H<sub>2</sub> bond, with a perpendicular angle of approach. It is convenient to employ the same set of coordinates as used in the previous example, and in <a href="Chapter02.xhtml#fig2.7">Fig. 2.7</a> the potential energy surface is plotted as a function of <i>R</i> and <i>r</i>, the O&#x2013;H<sub>2</sub> separation and the H<sub>2</sub> bond length. The angle, <i>&#x03B3;</i>, between the vectors <b>R</b> and <b>r</b> has been fixed at 90&#x00B0; the point group of the HOH species corresponding to this diagram is, therefore, <i>C</i><sub>2<i>v</i></sub>. The potential energy minimum on the surface, which corresponds to the ground electronic state of the water molecule, is also shown in the figure. Note that there is no barrier to O(<sup>1</sup>D) insertion on the surface.</p>
+<aside class="right" style="margin-top:-4em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_2.7.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig2.7"><b>Fig. 2.7</b> The <i>R</i>, <i>r</i> dependence of the PES for O(<sup>1</sup> D) + H<sub>2</sub>. The Jacobi angle <i>&#x03B3;</i> is fixed at 90&#x00B0;.</figcaption>
+</figure>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Non-adiabaticity and correlation rules</h3>
+<p class="noindent">Thus far we have assumed that the Born&#x2013;Oppenheimer approximation is valid. However, there are occasions when it is not possible to separate nuclear and electronic motion, particularly at energies close to molecular dissociation limits, where, within the Born&#x2013;Oppenheimer picture, several electronic states often converge to a common dissociation asymptote. In such circumstances, allowance must be made for the coupling between the nuclear and electronic motions, and this is often achieved by treating the coupling as a perturbation to the decoupled, Born&#x2013;Oppenheimer motion.</p>
+
+<p class="indent">Examples of non-adiabatic effects arise in the chemical reactions between alkali metal atoms with halogen molecules, such as</p>
+
+<figure class="fig">
+<img src="../images/13_2.jpg" alt="images"/>
+</figure>
+
+<aside class="right" style="margin-top:-6em;" epub:type="sidebar">
+<p class="sidebar">A concise account of the treatment of non-adiabatic effects is given by Billing and Mikkelsen in <i>Molecular dynamics and chemical kinetics</i>.</p>
+</aside>
+
+<p class="noindent">which at high collision energy undergoes a competing electron transfer reaction to yield <img src="../images/in06_1.jpg" alt="images"/>. Reaction to produce neutral products proceeds via a mechanism known as the <i>harpoon</i> mechanism, which involves an electron jump (the harpoon) from the K atom to the I<sub>2</sub> molecule at large K&#x2013;I<sub>2</sub> separations. The electron transfer occurs at the intersection between the covalent potential energy surface, which is largely repulsive in character, and an attractive ionic surface, correlating with the <img src="../images/in06_1.jpg" alt="images"/> asymptote. Because electron transfer takes place at large internuclear separations, these reactions usually possess very large reaction cross-sections and rate coefficients (see <a href="Chapter04.xhtml#sub4.2">Section 4.2</a>). The generation of ionic products at high collision energies reflects the crossing to the ionic surface, and the production of ions with sufficient energy to escape the Coulomb attraction.</p>
+
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<p class="sidebar">Another example of such a reaction was provided in <a href="Chapter01.xhtml#tab1.1">Table 1.1</a>, namely that of K + Br<sub>2</sub>. Note that the reaction possesses a very large Arrhenius <i>A</i>-factor, and a steric factor exceeding unity.</p>
+</aside>
+
+<aside class="right" style="margin-top:5em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_2.8.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig2.8"><b>Fig. 2.8</b> Correlation diagram for F + H<sub>2</sub>.<sup>6</sup></figcaption>
+</figure>
+</aside>
+<a id="page_14" class="page" style="width:60%;">Page 14, Chapter 2 Potential energy surfaces</a>
+<p class="indent">One means of ascertaining whether non-adiabatic effects are likely to be important is to identify the electronic symmetries of the low-lying electronic states of reactant and product species, and attempt to correlate these states according to their symmetries. An example of such a correlation diagram for the F + H<sub>2</sub> reaction is shown in <a href="Chapter02.xhtml#fig2.8">Fig. 2.8</a>.<sup>6</sup> For simplicity, the diagram is drawn assuming collinear approach of F to H<sub>2</sub>. The ground state of the F atom is <sup>2</sup>P, and the <i>p</i> orbital containing the unpaired electron may approach either along the H&#x2013;H axis or perpendicular to it. These two configurations lead to <sup>2</sup>&#x2211; and <sup>2</sup>&#x220F; states of the F&#x2013;H&#x2013;H supermolecule. Switching attention to the products, it is known from simple molecular orbital (MO) considerations that HF has a <sup>1</sup>&#x2211; ground state and a first excited <sup>3</sup>&#x220F; state. When H(<sup>2</sup>S) atoms approach the HF molecule in either of these two states (again in a collinear configuration) the resulting doublet F&#x2013;H&#x2013;H molecular states produced are of <sup>2</sup>&#x2211; and <sup>2</sup>&#x220F; symmetry. Thus, the lowest electronic states in both the reactant and the product regions are of <sup>2</sup>&#x2211; symmetry and correlate adiabatically with one another on a single potential surface. This suggests that non-adiabatic effects in the F + H<sub>2</sub> reaction are unlikely to play a dominant role.</p>
+
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<p class="sidebar">Further examples of correlation diagrams can be found in Herzberg&#x2019;s <i>Electronic spectra and electronic structure of polyatomic molecules</i>.</p>
+</aside>
+</section>
+</section>
+<section epub:type="chapter">
+<h2 class="h2" id="sub2.3">2.3<span class="space">&#160;</span>Experimental probes of potential energy surfaces</h2>
+<p class="noindent">Spectroscopic techniques for probing transitions between electronic, vibrational, and rotational energy levels of stable diatomic and polyatomic molecules are well established. It would be desirable to have similar spectroscopic tools to probe regions of the potential energy surface well away from the reactant and product asymptotes, close to the barrier or <i>transition state region?</i><sup>7</sup></p>
+<aside class="right" style="margin-top:-7.3em;" epub:type="sidebar">
+<p class="sidebar">The precise definition of the term <i>transition state</i> is given in <a href="Chapter05.xhtml">Chapter 5</a>. For now we simply refer to the barrier region of the potential energy surface, where the two reactant species are in close proximity.</p>
+</aside>
+<p class="indent">The barrier region of the potential energy surface does not correspond to a stable molecule, which makes the direct spectroscopic interrogation of the transition state region very difficult. One method of stabilizing the (reactive) reactant molecules makes use of the long range attractive van der Waals forces, which can lead to a small potential well at large internuclear separations, even for reactions proceeding over surfaces with a barrier. The reactants are cooled by adiabatic expansion of a high pressure of the reactant mixture through a pin-hole into a low pressure chamber, a technique known as <i>jet cooling</i>. Collisions immediately downstream of the expansion orifice lead to the formation and stabilization of van der Waals complexes, which are then further cooled by subsequent energy transferring collisions. Once generated, the van der Waals molecules can be probed by a variety of spectroscopic techniques. Examples are provided by studies of Ca&#x2013;HX van der Waals complexes. The electronic spectra of the complexes provide information about transition state regions of the potential energy surfaces for the reactions of electronically excited Ca* atoms with the hydrogen halides (HX).<sup>8</sup></p>
+
+<p class="indent">A recent alternative spectroscopic method for probing the transition state region employs a variant of photoelectron spectroscopy known as anion photoelectron detachment spectroscopy. In these experiments, stable though weakly bound anions of the species of interest, such as <img src="../images/in06_2.jpg" alt="images"/> and <img src="../images/in06_3.jpg" alt="images"/>, are made by electron bombardment of a suitable mixture of jet cooled precursor molecules. Once generated, the anions are studied by conventional photoelectron spectroscopy, which involves measuring the kinetic energy distribution of the electrons ejected by photon absorption, for example,<sup>9</sup></p>
+<aside class="right" style="margin-top:-11em;" epub:type="sidebar">
+<p class="sidebar">An introduction to photoelectron spectroscopy can be found in Atkins&#x2019; <i>Physical chemistry</i></p>
+</aside>
+<a id="page_15" class="page" style="width:60%;">Page 15, Chapter 2 Potential energy surfaces</a>
+<figure class="fig">
+<img src="../images/15_1.jpg" alt="images"/>
+</figure>
+
+<p class="noindent">The species left behind after electron ejection is the neutral &#x2018;supermolecule&#x2019; (FH<sub>2</sub>), rather than a positive ion, as is the case in conventional photoelectron spectroscopy. The distribution (or spectrum) of electron kinetic energies reflects the distribution of internal rotational and vibrational energies, <i>E<sub>int</sub></i> accessed in the neutral species. This follows from the simple energy conservation equation for the electron kinetic energy,</p>
+
+<figure class="fig">
+<img src="../images/15_2.jpg" alt="images"/>
+</figure>
+
+<p class="noindent">where <i>D</i><sub>0</sub> is the dissociation energy of the anion and <i>E<sub>ea</sub></i> is the electron affinity of F, as shown in <a href="Chapter02.xhtml#fig2.9">Fig. 2.9</a>.</p>
+<aside class="right" style="margin-top:-18em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_2.9.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig2.9"><b>Fig. 2.9</b> Schematic diagram of the anion photoelectron detachment experiment on <img src="../images/in06_2.jpg" alt="images"/></figcaption>
+</figure>
+</aside>
+
+<p class="indent">The resulting photoelectron spectrum of <img src="../images/in06_2.jpg" alt="images"/> is shown in <a href="Chapter02.xhtml#fig2.10">Fig. 2.10</a>. It consists of a series of broad transitions, corresponding to excitation to vibrational &#x2018;states&#x2019; in the barrier region of the F + H<sub>2</sub> reaction. The broadening of the lines reflects the <i>lifetime broadening</i> associated with rapid dissociation of FH<sub>2</sub> to F + H<sub>2</sub> and to HF + H. The transitions themselves can be rationalized using the same Franck-Condon arguments employed to discuss electronic and photoelectron spectra of diatomic molecules. <i>Ab initio</i> potential energy surface calculations suggest that the anion, <img src="../images/in06_2.jpg" alt="images"/>, has a stable linear geometry (with the F<sup>&#x2013;</sup> anion on average sitting about 2 &#x00C5; from the centre-of-mass of H<sub>2</sub>), whereas the neutral FH<sub>2</sub> supermolecule has a preferred bent configuration in the barrier region (see <a href="Chapter02.xhtml#fig2.6">Fig. 2.6</a>). The spectral features of this linear-to-bent transition thus correspond to excitation to bending levels of FH<sub>2</sub>. These bending levels are best thought of as hindered rotations of H<sub>2</sub> about the F&#x2013;H<sub>2</sub> bond, which become excited when the electron on the linear anion is suddenly removed in the photodetachment process. The spectrum thus provides very direct experimental evidence that the minimum energy path for the F + H<sub>2</sub> reaction passes through a bent FH<sub>2</sub> structure at the barrier.</p>
+<aside class="right" style="margin-top:-17em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_2.10.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig2.10"><b>Fig. 2.10</b> The anion photoelectron detachement spectrum of <img src="../images/in06_2.jpg" alt="images"/>. The dashed curve is the quantum calculated spectrum.</figcaption>
+</figure>
+</aside>
+</section>
+
+<section epub:type="chapter">
+<h2 class="h2" id="sub2.4">2.4<span class="space">&#160;</span>Motion over the surface</h2>
+<p class="noindent">Motion of the nuclei over the potential energy surface cannot be regarded simply as translation along a one-dimensional minimum energy path. The motion is a multidimensional one, and the method chosen to determine the nuclear dynamics depends on the experimental property being modelled, as well as the complexity of the reaction to be studied. Ideally quantum mechanical methods should be employed, but this is still only feasible for relatively light three- or four-atom systems. Frequently, classical mechanics is employed as an approximate alternative. The validity of employing classical mechanics for reaction dynamics studies is still debated, and aspects of this issue will be touched on henceforward.</p>
+<section epub:type="chapter">
+
+<aside class="right" style="margin-top:-0.1em;" epub:type="sidebar">
+<p class="sidebar">A commonly employed variant of the <i>classical trajectory</i> method is the <i>quasiclassical trajectory</i> (QCT) method, in which the initial rotational and vibrational energies of the reactants are chosen to correspond to the known quantum mechanical energy levels of the molecules (see <a href="Chapter03.xhtml#sub3.2">Section 3.2</a>).</p>
+</aside>
+<h3 class="h3">Classical mechanics</h3>
+<p class="noindent">The classical motion of the atoms involved in a collision is represented by the time dependence of their positions, usually referred to as a <i>trajectory</i>. The motion is determined by solving Newton&#x2019;s laws, subject to a set of initial conditions, which correspond to the initial velocities or <i>momenta</i> of each reactant atom and their initial relative positions. Newton&#x2019;s laws of motion are usually expressed in terms of Hamilton&#x2019;s equations, <a id="page_16" class="page">Page 16, Chapter 2 Potential energy surfaces</a>where <i>Q<sub>i</sub></i> represents the <i>i</i>th (<i>X</i>, <i>Y</i>, and <i>Z</i>) coordinate, with associated momentum <i>P<sub>i</sub></i> and <i>H</i>, known as the Hamiltonian, is the total energy of the system (i.e. the sum of the kinetic, <i>T</i>, and potential, <i>V</i>, energies, expressed in the above position and momentum &#x2018;coordinates&#x2019;). For a reaction involving three atoms there will be a total of 3<i>N</i> = 9 coordinates and nine momenta, corresponding to the positions and momenta of each atom along the <i>X</i>, <i>Y</i>, and <i>Z</i> axes. Thus, for three atoms, Hamilton&#x2019;s equations of motion (2.4) are a set of 18 coupled differential equations. As shown below, six of these equations describe the position and momentum of the centre-of-mass of the system, which is conserved throughout the reaction, and can therefore be factored out of the problem. This leaves a total of 12 differential equations which must be solved numerically for each set of initial conditions to characterize the time evolution (trajectory) of the three atoms. The trajectories must satisfy the laws of conservation of energy and (linear and angular) momentum, and these constraints are normally employed as a check that the numerical integration has been performed with sufficient accuracy.</p>
+
+<table style="width:60%; margin-top:1em; margin-bottom:0em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mfrac>
+  <mrow>
+   <mi mathvariant="normal">&#x2202;</mi>
+   <mi>H</mi>
+  </mrow>
+  <mrow>
+   <mi mathvariant="normal">&#x2202;</mi>
+   <msub>
+    <mi>P</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>i</mi>
+    </mrow>
+   </msub>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <mrow>
+   <mi>d</mi>
+   <msub>
+    <mi>Q</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>i</mi>
+    </mrow>
+   </msub>
+  </mrow>
+  <mrow>
+   <mi>d</mi>
+   <mi>t</mi>
+  </mrow>
+ </mfrac>
+ <mo>&#x2261;</mo>
+ <msub>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mover>
+    <mi>Q</mi>
+    <mo>&#x02D9;</mo>
+   </mover>
+  </mrow>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>i</mi>
+  </mrow>
+ </msub>
+</math></td>
+</tr>
+</table>
+
+<table style="width:60%; margin-top:0.1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+<mo>&#x2212;</mo>
+ <mfrac>
+  <mrow>
+   <mi mathvariant="normal">&#x2202;</mi>
+   <mi>H</mi>
+  </mrow>
+  <mrow>
+   <mi mathvariant="normal">&#x2202;</mi>
+   <msub>
+    <mi>Q</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>i</mi>
+    </mrow>
+   </msub>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mfrac>
+  <mrow>
+   <mi>d</mi>
+   <msub>
+    <mi>P</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>i</mi>
+    </mrow>
+   </msub>
+  </mrow>
+  <mrow>
+   <mi>d</mi>
+   <mi>t</mi>
+  </mrow>
+ </mfrac>
+ <mo>&#x2261;</mo>
+ <msub>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mover>
+    <mi>P</mi>
+    <mo>&#x02D9;</mo>
+   </mover>
+  </mrow>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>i</mi>
+  </mrow>
+ </msub>
+ <mo>,</mo>
+<mo>&#x00A0;&#x00A0;&#x00A0;</mo>
+</math></td>
+</tr>
+</table>
+
+<p class="noindent" style="text-align:right;margin-top:-3.5em;margin-bottom:2em;" id="eq2.4">(2.4)</p>
+
+<p class="indent">To calculate a reaction cross-section or rate coefficient, many trajectories (typically &#x003E; 10<sup>3</sup>) must be calculated, each trajectory corresponding to a different initial condition of the system. The sampling of the latter must reflect the layers of averaging described in <a href="Chapter01.xhtml">Chapter 1</a>, although the precise details of the sampling depend on the property to be determined (see <a href="Chapter03.xhtml">Chapter 3</a>).</p>
+<p class="indent">The application of Hamilton&#x2019;s equations can be illustrated in the simple case of a collision between two atoms, labelled A and B. The Hamiltonian, the sum of the kinetic and potential energies of the two particles, is most conveniently written</p>
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>H</mi>
+ <mo>=</mo>
+ <mfrac>
+  <msubsup>
+   <mn>P</mn>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>c</mn>
+    <mn>m</mn>
+   </mrow>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msubsup>
+  <mrow>
+   <mn>2</mn>
+   <mi>M</mi>
+  </mrow>
+ </mfrac>
+ <mo>+</mo>
+ <mfrac>
+  <msubsup>
+   <mn>P</mn>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>c</mn>
+    <mn>m</mn>
+   </mrow>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msubsup>
+  <mrow>
+   <mn>2</mn>
+   <mi>&#x03BC;</mi>
+  </mrow>
+ </mfrac>
+ <mo>+</mo>
+ <mi>V</mi>
+ <mo stretchy="false">(</mo>
+ <mi>R</mi>
+ <mo stretchy="false">)</mo>
+ <mo>,</mo>
+<mo>&#x00A0;&#x00A0;&#x00A0;</mo>
+</math></td>
+<td style="text-align:right;" id="eq2.5">(2.5)</td>
+</tr>
+</table>
+
+<p class="noindent">where the terms appearing in the expression are defined explicitly as</p>
+<p class="noindent">&#160;</p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <msub>
+  <mn>P</mn>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mn>c</mn>
+   <mn>m</mn>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <mi>M</mi>
+ <msub>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mover>
+    <mn>R</mn>
+    <mo>&#x02D9;</mo>
+   </mover>
+  </mrow>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mn>c</mn>
+   <mn>m</mn>
+  </mrow>
+ </msub>
+</math></p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mn>P</mn>
+ <mo>=</mo>
+ <mi>&#x03BC;</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+  <mover>
+   <mn>R</mn>
+   <mo>&#x02D9;</mo>
+  </mover>
+ </mrow>
+</math></p>
+
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <msub>
+  <mn>R</mn>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mn>c</mn>
+   <mn>m</mn>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <mfrac>
+  <mn>1</mn>
+  <mi>M</mi>
+ </mfrac>
+ <mo stretchy="false">(</mo>
+ <msub>
+  <mi>m</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>A</mi>
+  </mrow>
+ </msub>
+ <msub>
+  <mn>R</mn>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>A</mi>
+  </mrow>
+ </msub>
+ <mo>+</mo>
+ <msub>
+  <mi>m</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>B</mi>
+  </mrow>
+ </msub>
+ <msub>
+  <mn>R</mn>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>B</mi>
+  </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+</math></p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mi>R</mi>
+ <mo>=</mo>
+ <msub>
+  <mn>R</mn>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>A</mi>
+  </mrow>
+ </msub>
+ <mo>&#x2212;</mo>
+ <msub>
+  <mn>R</mn>
+  <mrow class="MJX-TeXAtom-ORD">
+   <mi>B</mi>
+  </mrow>
+ </msub>
+</math></p>
+
+<aside class="right" style="margin-top:-1em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_2.11.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig2.11"><b>Fig. 2.11</b> Coordinates for motion of two atoms.</figcaption>
+</figure>
+</aside>
+
+<p class="noindent">and <i>M</i> and <i>&#x03BC;</i> are the total mass and the reduced mass of the two atoms, <b>R</b><sub>A</sub> and <b>R</b><sub>B</sub> being their position vectors. The coordinates are illustrated in <a href="Chapter02.xhtml#fig2.11">Fig. 2.11</a>. The <b>P</b><sup>2</sup> terms are the squared magnitudes of the momenta, given by <b>P</b> &#x00B7; <b>P</b> = <i>p</i><sup>2</sup><sub>X</sub> + <i>P</i><sup>2</sup><sub>Y</sub> + <i>P</i><sup>2</sup><sub>Z</sub>. The first term in <a href="Chapter02.xhtml#eq2.5">eqn 2.5</a> is the kinetic energy associated with the motion of the centre-of-mass (CM), whilst the remaining two terms are the kinetic energy associated with the <i>relative</i> motion of the two particles, and the potential energy. The potential energy only depends on the particle separation, <i>R</i>.</p>
+<p class="indent">Applying the second of Hamilton&#x2019;s equations (which may be recognized as an expression for Newton&#x2019;s second law) to each of the coordinates of the</p>
+
+<p class="noindent"><a id="page_17" class="page">Page 17, Chapter 2 Potential energy surfaces</a>centre-of-mass motion, we obtain the following equation:</p>
+<p class="noindent">&#160;</p>
+<p class="eq1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mo>&#x2212;</mo>
+ <mfrac>
+  <mrow>
+   <mi mathvariant="normal">&#x2202;</mi>
+   <mi>H</mi>
+  </mrow>
+  <mrow>
+   <mi mathvariant="normal">&#x2202;</mi>
+   <msub>
+    <mn>R</mn>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>c</mi>
+     <mi>m</mi>
+     <mo>,</mo>
+     <mi>i</mi>
+    </mrow>
+   </msub>
+  </mrow>
+ </mfrac>
+ <mo>&#x2261;</mo>
+ <mo>&#x2212;</mo>
+ <mfrac>
+  <mrow>
+   <mi mathvariant="normal">&#x2202;</mi>
+   <mi>V</mi>
+  </mrow>
+  <mrow>
+   <mi mathvariant="normal">&#x2202;</mi>
+   <msub>
+    <mn>R</mn>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>c</mi>
+     <mi>m</mi>
+     <mo>,</mo>
+     <mi>i</mi>
+    </mrow>
+   </msub>
+  </mrow>
+ </mfrac>
+ <mo>=</mo>
+ <mn>0</mn>
+ <mo>=</mo>
+ <mfrac>
+  <mrow>
+   <mtext>d</mtext>
+   <msub>
+    <mn>P</mn>
+    <mrow class="MJX-TeXAtom-ORD">
+     <mi>c</mi>
+     <mi>m</mi>
+     <mo>,</mo>
+     <mi>i</mi>
+    </mrow>
+   </msub>
+  </mrow>
+  <mrow>
+   <mtext>d</mtext>
+   <mi>t</mi>
+  </mrow>
+ </mfrac>
+ <mo>.</mo>
+</math></p>
+
+
+<p class="noindent">The last equality states that the momentum (and hence the velocity) of the centre-of-mass does not change with time; i.e. that it is a constant during the collision. This is because there is no <i>external</i> force (= &#x2013;<i>&#x2202;V</i>/<i>&#x2202;R</i><sub>cm</sub>) acting on the centre-of-mass: the potential energy only depends on the interatomic separation (i.e. the <i>relative</i> positions of atoms A and B). Thus, we can write the Hamiltonian describing the relative motion of the two atoms as</p>
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<p class="sidebar">The frame of reference (i.e. the coordinate axes) employed to describe the relative motion of the particles is usually referred to as the centre-of-mass (CM) frame. In this frame, the position of the CM of the particles is stationary during the collision encounter, and the CM linear momenta of the two particles are equal and opposite at all times.</p>
+</aside>
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:55%;"/>
+<col style="width:5%;"/>
+</colgroup>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>H</mi>
+ <mo>=</mo>
+ <mfrac>
+  <msup>
+   <mn>P</mn>
+   <mrow class="MJX-TeXAtom-ORD">
+    <mn>2</mn>
+   </mrow>
+  </msup>
+  <mrow>
+   <mn>2</mn>
+   <mi>&#x03BC;</mi>
+  </mrow>
+ </mfrac>
+ <mo>+</mo>
+ <mi>V</mi>
+ <mo stretchy="false">(</mo>
+ <mi>R</mi>
+ <mo stretchy="false">)</mo>
+ <mo>,</mo>
+<mo>&#x00A0;&#x00A0;&#x00A0;</mo>
+</math></td>
+</tr>
+</table>
+
+
+<p class="noindent" style="text-align:right;margin-top:-3.5em;margin-bottom:2em;"  id="eq2.6">(2.6)</p>
+
+<p class="noindent">where <b>P</b><sup>2</sup> is the squared magnitude of the momentum associated with the relative motion of the two particles. Although this example is a simple one, the final result applies more generally. All reactions can be described using a simplified Hamiltonian written in terms of relative positions and momenta.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="h3">Quantum calculations</h3>
+<aside class="right" style="margin-top:0.1em;" epub:type="sidebar">
+<p class="sidebar">A detailed account of quantum mechanical reaction dynamics (or quantum reactive scattering theory) is beyond the scope of this book and the reader is referred to texts given in the Background reading.</p>
+</aside>
+<p class="noindent">Major advances in quantum dynamical calculations have been made in the past two decades, facilitated by new efficient numerical algorithms and the dramatic improvements in computer speed and memory capacity. The problem of solving the Schrodinger equation for the nuclear motion scales not just with the number of atoms (as is the case with Newton&#x2019;s laws), but also with the number of reactant and product quantum states accessible at a given energy or temperature. Thus, although there have been several examples of accurate quantum dynamics calculations of three-atom reactions in which all degrees of freedom have been treated rigorously, most work has been performed on direct reactions involving light atoms. Reactions proceeding over surfaces with deep potential energy wells, such as the O(<sup>1</sup>D) + H<sub>2</sub> reaction (see <a href="Chapter02.xhtml#sub2.1">Section 2.1</a>), have only recently received attention, concurrently with the study of direct four-atom reactions such as H + H<sub>2</sub>O. However, for these more difficult reactions, angular momentum effects have yet to be treated exactly.</p>
+<p class="indent">The ability to solve rigorously the nuclear dynamics problem allows comparison to be made with rate coefficients and cross-sections calculated using more approximate methods employing the same potential energy surface. Although the surface may not be accurate, such a comparison of results enables chemists to test the validity of approximate treatments. To illustrate this point, we compare experimental<sup>10</sup> and calculated rate constants for the reaction D + n-H<sub>2</sub> (where the n stands for normal hydrogen) obtained using exact quantum mechanical (QM)<sup>11</sup> methods and the quasi-classical trajectory (QCT) method<sup>12</sup> (see <a href="Chapter02.xhtml#fig2.12">Fig. 2.12</a>), employing the same <i>ab initio</i> potential energy surface. The calculations of both the surface and the dynamics are completely parameter-free. The agreement between the quantum results and experiment is impressive, though not perfect at high energies. Somewhat more surprising is the good correspondence between the QCT calculated and the quantum mechanical rate coefficients, with discrepancies ranging from a factor of three at low temperatures to less than a factor of two at high temperatures.</p>
+<aside class="right" style="margin-top:-35em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig_2.12.jpg" alt="images"/>
+<figcaption class="figurecaption29" style="width:150%;" id="fig2.12"><b>Fig. 2.12</b> Arrhenius plot of <i>k</i>(<i>T</i>) for the D + n-H<sub>2</sub> reaction, comparing experimental, QCT, and QM rate data.</figcaption>
+</figure>
+<p class="sidebar">Such good agreement between <i>ab initio</i> theory and experiment is currently achievable only for the simplest of chemical reactions. Also, the good agreement between quantum and classical mechanics may not be realized for other reactions.</p>
+</aside>
+</section>
+</section>
+
+</section>
+</body>
+</html>

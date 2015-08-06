@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Nuclear Magnetic Resonance</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch02">
+<a id="page_8" class="page" style="width:70%;">page 8, Chemical shifts</a>
+
+<h1 class="main">2<span class="space">&#160;</span> Chemical shifts</h1>
+<p class="noindent" style="margin-top:4.5em;">The NMR frequency of a nucleus in a molecule is determined principally by its gyromagnetic ratio &#x03B3; and the strength <i>B</i> of the magnetic field it experiences (<a href="Chapter01.xhtml#eqn_1.10">eqn 1.10</a>):</p>
+<p class="noindent" id="equ21" style="margin-top:1.5em;"><span class="equno">(2.1)</span></p>
+<p class="noindent" style="margin-left:12em;margin-top:1em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><mi>&#x03B3;</mi><mi>B</mi></mrow><mrow><mn>2</mn><mi>&#x03C0;</mi></mrow></mfrac><mo>.</mo></mrow></math></p>
+<p class="noindent">Thus, protons and carbon-13 nuclei resonate respectively at 400 and 100.6 MHz in a 9.4 T field. But not all protons, nor all <sup>13</sup>C nuclei, have identical resonance frequencies: v depends (slightly) on the position of the nucleus in the molecule, or to be more precise, on the local electron distribution. This effect, the <i>chemical shift</i>, is what makes NMR so attractive to chemists. It allows one to distinguish, for example, the three types of hydrogen atom in ethanol (<a href="Chapter01.xhtml#fig_1.2">Fig. 1.2</a>) and, at the other extreme, gives separately detectable signals for the hundreds of protons in a protein (<a href="#fig_2.1">Fig. 2.1</a>).</p>
+<figure style="margin-left:0em;width:70%;text-align:center;" id="fig_2.1">
+<img src="../images/fig21.jpg" alt="images"/>
+<figcaption style="margin-top:1em;margin-left:0em;width:145%;">
+<p class="fig2"><b>Fig. 2.1</b> 750 MHz <sup>1</sup>H spectrum of the SH3 domain of the tyrosine kinase, Fyn, in H<sub>2</sub>O. This protein domain has 69 amino acid residues and a molecular weight of 7688. The resonance of the solvent protons at 4.7 ppm has been truncated. This spectrum was kindly provided by C. J. Morton and J. Boyd.</p>
+</figcaption>
+</figure>
+<section epub:type="chapter" id="sec_2.1">
+<h2 class="h2" style="margin-top:3em;"><b>2.1&#160;&#160;Nuclear shielding</b></h2>
+<p class="noindent">Chemical shifts arise because the field, <i>B</i>, actually experienced by a nucleus in an atom or molecule differs slightly from the external field <i>B</i><sub>0</sub>, i.e. the field that would be felt by a bare nucleus, stripped of its electrons. In an atom, <i>B</i> is slightly smaller than <i>B</i><sub>0</sub> because the external field causes the electrons to circulate within their atomic orbitals; this induced motion, much like an electric current passing through a coil of wire, generates a small magnetic <a id="page_9" class="page">page 9, Chemical shifts</a> field <i>B</i>&#x0027; in the <i>opposite</i> direction to <i>B</i><sub>0</sub> (<a href="#fig_2.2">Fig. 2.2</a>). The nucleus is thus <i>shielded</i> from the external field by its surrounding electrons (<i>B</i> = <i>B</i><sub>0</sub> &#x2013; <i>B</i>&#x0027;).</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure id="fig_2.2">
+<img src="../images/fig22.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.2</b> An applied magnetic field <i>B</i><sub>0</sub> causes the electrons in an atom to circulate within their orbitals. This motion generates an extra field <i>B&#x0027;</i> at the nucleus in opposition to <i>B</i><sub>0</sub><b>.</b></p>
+</figcaption>
+</figure>
+<figure id="fig_2.3">
+<img src="../images/fig23.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.3</b> Energy levels of a spin-<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mstyle scriptlevel='+1'><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow></math> nucleus.</p></figcaption>
+</figure></aside>
+<p class="indent"><i>B</i>&#x0027; is proportional to <i>B</i><sub>0</sub> (the stronger the external field, the more it &#x2018;stirs up&#x2019; the electrons) and typically 10<sup>4</sup>&#x2013;10<sup>5</sup> times smaller. Thus, the field at the nucleus may be written</p>
+<p class="noindent" id="equ22" style="margin-top:1.5em;"><span class="equno">(2.2)</span></p>
+<p class="noindent" style="margin-left:12em;margin-top:1em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>B</mi><mo>=</mo><msub><mi>B</mi><mn>0</mn></msub><mo>&#x2212;</mo><msup><mi>B</mi><mo>&#x2032;</mo></msup><mo>=</mo><msub><mi>B</mi><mn>0</mn></msub><mrow><mo>(</mo><mrow><mn>1</mn><mo>&#x2212;</mo><mi>&#x03C3;</mi></mrow><mo>)</mo></mrow></mrow></math></p>
+<p class="noindent">Where &#x03C3;, the constant of proportionality between <i>B</i>&#x0027; and <i>B</i><sub>0</sub>, is called the <i>shielding constant</i> or <i>screening constant</i>. As a result of nuclear shielding, the resonance condition (<a href="#equ21">eqn 2.1</a>) becomes</p>
+<p class="noindent" id="equ23" style="margin-top:1.5em;"><span class="equno">(2.3)</span></p>
+<p class="noindent" style="margin-left:12em;margin-top:1em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><mi>&#x03B3;</mi><msub><mi>B</mi><mn>0</mn></msub><mrow><mo>(</mo><mrow><mn>1</mn><mo>&#x2212;</mo><mi>&#x03C3;</mi></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><mi>&#x03C0;</mi></mrow></mfrac><mo>,</mo></mrow></math></p>
+<p class="noindent">i.e. the resonance frequency of a nucleus in an atom is slightly lower than that of a bare nucleus, stripped of all its electrons (<a href="#fig_2.3">Fig. 2.3</a>).</p>
+<p class="indent">Similar effects occur for nuclei in molecules, except that the motion of the electrons is rather more complicated than in atoms and the induced fields may either <i>augment</i> or <i>oppose</i> the external field. Nevertheless, the effect is still referred to as nuclear shielding. Both the size and sign of the shielding constant in <a href="#equ23">eqn 2.3</a> are determined by the electronic structure of the molecule in the vicinity of the nucleus. The resonance frequency of a nucleus is therefore characteristic of its environment.</p>
+<h3 class="h3"><b>Measuring chemical shifts</b></h3>
+<p class="noindent">The shielding constant &#x03C3; is an inconvenient measure of the chemical shift. Since absolute shifts are rarely needed and difficult to determine, it is common practice to define the chemical shift in terms of the <i>difference</i> in resonance frequencies between the nucleus of interest (v) and a reference nucleus (v<sub>ref</sub>), by means of a dimensionless parameter &#x03B4;:</p>
+<p class="noindent" id="equ24" style="margin-top:1.5em;"><span class="equno">(2.4)</span></p>
+<p class="noindent" style="margin-left:12em;margin-top:1em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x03B4;</mi><mo>=</mo><msup><mrow><mn>10</mn></mrow><mn>6</mn></msup><mfrac><mrow><mrow><mo>(</mo><mrow><mi>v</mi><mo>&#x2212;</mo><msub><mi>v</mi><mrow><mtext>ref</mtext></mrow></msub></mrow><mo>)</mo></mrow></mrow><mrow><msub><mi>v</mi><mrow><mtext>ref</mtext></mrow></msub></mrow></mfrac><mo>.</mo></mrow></math></p>
+<p class="noindent">The frequency difference v &#x2013; v<sub>ref</sub> is divided by v<sub>ref</sub> so that &#x03B4; is a molecular property, independent of the magnetic field used to measure it. The factor of 10<sup>6</sup> simply scales the numerical value of &#x03B4; to a more convenient size: &#x03B4; values are quoted in <i>parts per million</i>, or ppm.</p>
+<p class="indent">To see how &#x03B4; is related to &#x03C3;, <a href="#equ23">eqns 2.3</a> and <a href="#equ24">2.4</a> can be combined to give</p>
+<p class="noindent" id="equ25" style="margin-top:1.5em;"><span class="equno">(2.5)</span></p>
+<p class="noindent" style="margin-left:12em;margin-top:1em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x03B4;</mi><mo>=</mo><mn>1</mn><msup><mn>0</mn><mn>6</mn></msup><mfrac><mrow><msub><mi>&#x03C3;</mi><mrow><mtext>ref</mtext></mrow></msub><mo>&#x2212;</mo><mi>&#x03C3;</mi></mrow><mrow><mn>1</mn><mo>&#x2212;</mo><msub><mi>&#x03C3;</mi><mrow><mtext>ref</mtext></mrow></msub></mrow></mfrac><mo>&#x2248;</mo><mn>1</mn><msup><mn>0</mn><mn>6</mn></msup><mrow><mo>(</mo><mrow><msub><mi>&#x03C3;</mi><mrow><mtext>ref</mtext></mrow></msub><mo>&#x2212;</mo><mi>&#x03C3;</mi></mrow><mo>)</mo></mrow></mrow></math></p>
+<p class="noindent">where <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mi>&#x03C3;</mi><mrow><mtext>ref</mtext></mrow></msub><mo>&#x226A;</mo><mn>1</mn></mrow></math> has been used. An increase in a (greater shielding) leads to a decrease in &#x03B4;: &#x03B4; is thus a <i>de</i>shielding parameter.</p>
+<p class="indent">The reference signal is most conveniently obtained by adding a small amount of a suitable compound to the NMR sample. For <sup>1</sup>H and <sup>13</sup>C spectra this is usually tetramethylsilane (CH<sub>3</sub>)<sub>4</sub>Si, or TMS. This molecule is inert, soluble in most organic solvents, and gives a single, strong <sup>1</sup>H resonance from its 12 identical protons. Moreover, both <sup>1</sup>H and <sup>13</sup>C nuclei are<a id="page_10" class="page">page 10, Chemical shifts</a>quite strongly shielded (large &#x03C3;), so that the TMS resonance falls at the low frequency end of the spectrum: most <sup>1</sup>H and <sup>13</sup>C chemical shifts are therefore conveniently positive (&#x03B4; > 0).</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure id="fig_2.4">
+<img src="../images/fig24.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.4</b> NMR spectra are conventionally plotted with chemical shift &#x03B4; increasing from right to left. Nucleus A, which is more strongly shielded than B, thus appears to the right of B, has a lower resonance frequency than B, and is sometimes referred to as being &#x2018;upfield&#x2019; of B.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent">Conventionally, NMR spectra are plotted with &#x03B4; (and v) increasing from right to left. Thus, more heavily shielded nuclei (larger &#x03C3;, smaller v, smaller &#x03B4;) appear towards the right-hand side of the spectrum. Occasionally, chemical shifts are referred to as &#x2018;upfield&#x2019; or &#x2018;downfield&#x2019;, meaning &#x2018;more shielded&#x2019; or &#x2018;less shielded&#x2019; respectively. These terms date from the early days of NMR when spectra were recorded by sweeping the magnetic field strength <i>B</i><sub>0</sub>, keeping the radiofrequency fixed: the more shielded nuclei (larger &#x03C3;) required a larger <i>B<sub>0</sub></i> to come into resonance (see <a href="#equ23">eqn 2.3</a>). Although field-swept NMR is rare now, these terms linger on. The various conventions are summarized in Fig. 2.4.</p>
+
+<figure id="fig_2.5" style="margin-left:0em;width:70%;">
+<img src="../images/fig25.jpg" alt="images"/>
+<figcaption class="fig2" style="margin-left:0em;width:100%;"><b>Fig. 2.5</b> 400 MHz <sup>1</sup>H NMR spectrum of a mixture of benzene, dimethylsulphoxide, acetone, acetonitrile and tetramethylsilane.</figcaption>
+</figure>
+
+<p class="indent">As a simple example, <a href="#fig_2.5">Fig. 2.5</a> shows the 400 MHz <sup>1</sup>H spectrum of a mixture of compounds with a small amount of TMS added. Each of the five molecules has a single group of identical protons, and hence a single chemical shift. Notice that the chemical shift scale covers about 10 ppm, a typical range for protons. Chemical shifts can easily be converted back into frequencies using <a href="#equ24">eqn 2.4</a>: for example, the acetone peak in <a href="#fig_2.5">Fig. 2.5</a> has a &#x03B4; of 2.0 ppm, so that</p>
+<p class="noindent" id="equ26" style="margin-top:1.5em;"><span class="equno">(2.6)</span></p>
+<p class="noindent" style="margin-left:2em;margin-top:1em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mi>v</mi><mrow><mtext>acetone</mtext></mrow></msub><mo>&#x2212;</mo><msub><mi>v</mi><mrow><mtext>TMS</mtext></mrow></msub><mo>=</mo><mrow><mo>(</mo><mrow><mrow><mi>&#x03B4;</mi><mo>/</mo><mrow><mtext>ppm</mtext></mrow></mrow></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mrow><mrow><msub><mi>v</mi><mrow><mtext>TMS</mtext></mrow></msub></mrow><mo>/</mo><mrow><msup><mrow><mn>10</mn></mrow><mn>6</mn></msup></mrow></mrow></mrow><mo>)</mo></mrow><mo>=</mo><mn>2.0</mn><mo>&#x00D7;</mo><mn>400</mn><mtext>&#x2009;</mtext><mtext>Hz</mtext><mo>=</mo><mn>800</mn><mtext>&#x2009;</mtext><mtext>Hz</mtext><mtext>.</mtext></mrow></math></p>
+<aside class="abc" style="margin-top:-14em;" epub:type="sidebar">
+<figure id="fig_2.6">
+<img src="../images/fig26.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.6</b> <sup>31</sup>P NMR spectra of phosphorus pentachloride in the solid state and in solution in CS<sub>2</sub>. The former was obtained using a technique known as <i>magic angle spinning</i> to remove the large linebroadening caused by, amongst other things, the dipolar interactions between nuclei in the solid. Chemical shifts are quoted relative to an 85% aqueous solution of orthophosphoric acid (&#x03B4; = 0). (Adapted from E. R. Andrew, <i>Phil. Trans. R. Soc</i>., 1981, <b>A299</b>, 505.)</p>
+</figcaption>
+</figure>
+</aside>
+<p class="noindent">On a 100 MHz spectrometer, the chemical shift of acetone is still 2.0 ppm, but the resonance frequency relative to TMS is reduced in proportion to <i>B</i><sub>0</sub> to 200 Hz.</p>
+<h3 class="h3"><b>Examples</b></h3>
+<p class="noindent">As we shall see later, so many factors play a role in determining the size of chemical shifts that it is often impossible to relate experimental measurements <i>quantitatively</i> to molecular structure. However, valuable information can readily be extracted from NMR spectra simply by noting the number of resonances and their relative intensities, as the simple examples in the following paragraphs illustrate.</p>
+<p class="indent">In CS<sub>2</sub> solution, phosphorus pentachloride, PC1<sub>5</sub>, has a single <sup>31</sup>P resonance (<a href="#fig_2.6">Fig. 2.6</a>), as might be expected from the trigonal bipyramidal</p>
+<figure style="margin-left:-12em;" id="fig_2.7"><a id="page_11" class="page" style="width:94%;">page 11, Chemical shifting</a>
+<img src="../images/fig27.jpg" alt="images"/>
+</figure>
+<aside class="abc" style="margin-top:-22em;" epub:type="sidebar">
+<p class="noindent2"><b>Fig. 2.7</b> The <sup>17</sup>O NMR spectrum of Co<sub>4</sub>(CO)<sub>12</sub> in chloroform at &#x2212;25&#x00B0;C is consistent with the <i>C</i><sub>3v</sub>structure shown, but not the <i>T</i><sub>d</sub> or <i>D</i><sub>2d</sub> forms.</p></aside>
+<p class="noindent">structure found in the gas phase. Solid phosphorus pentachloride, however, has <i>two</i> equally intense <sup>31</sup>P peaks, revealing clearly that the change of phase is accompanied by a change in structure (actually the disproportionation <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>2</mn><msub><mrow><mtext>PCl</mtext></mrow><mn>5</mn></msub><mo>&#x2192;</mo><msubsup><mrow><mtext>PCl</mtext></mrow><mn>6</mn><mo>&#x2212;</mo></msubsup><mo>+</mo><msubsup><mrow><mtext>PCl</mtext></mrow><mn>4</mn><mo>+</mo></msubsup></mrow></math>).</p>
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<figure id="fig_2.8">
+<img src="../images/fig28.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.8</b> <sup>1</sup>H spectra of compounds with molecular formulae C<sub>9</sub>H<sub>12</sub> and C<sub>10</sub>H<sub>14</sub>. The relative intensities of the peaks, obtained by integration, are as shown.</p>
+</figcaption>
+</figure>
+<figure style="margin-top:0.5em;"  id="fig_2.9">
+<img src="../images/fig29.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.9</b> <sup>13</sup>C NMR spectrum of buckminsterfullerene, C<sub>60</sub>. (Adapted from R. Taylor, J. P. Hare, A. K. Abdul-Sada, and H. W. Kroto, <i>Chem. Common.</i>, 1990, 1423.)</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent">The <sup>17</sup>O NMR spectrum of Co<sub>4</sub>(CO)<sub>12</sub> in chloroform at low temperature comprises four equally intense lines (<a href="#fig_2.7">Fig. 2.7</a>), consistent with a bridged structure containing four distinct types of carbonyl. This spectrum clearly rules out a non-bridged Ir<sub>4</sub>(CO)<sub>12</sub>-type structure (<i>T</i><sub>d</sub> symmetry), in which all 12 carbonyls are in identical environments. It also provides strong evidence against the <i>D</i><sub>2d</sub> structure at one time proposed for Co<sub>4</sub>(CO)<sub>12</sub> in which there are <i>three</i> distinct carbonyl environments: one bridging and two terminal.</p>
+<p class="indent">Occasionally, <i>unambiguous</i> molecular structures can be deduced solely from the relative intensities of NMR lines. For example, the only possible structures for the compounds C<sub>9</sub>H<sub>12</sub> and C<sub>10</sub>H<sub>14</sub> with the <sup>1</sup>H spectra shown in <a href="#fig_2.8">Fig. 2.8</a> are 1, 3, 5-trimethylbenzene and 1, 2, 5, 6-tetramethylbenzene, respectively.</p>
+<p class="indent">A dramatic illustration of the use of chemical shifts is provided by the <sup>13</sup>C NMR spectrum of the fullerene C<sub>60</sub> (<a href="#fig_2.9">Fig. 2.9</a>). The observation of a single NMR line for this unusual molecule provides direct evidence for its highly symmetrical football-like structure in which all 60 carbon atoms are in identical environments.</p>
+<p class="indent">Zeolites are aluminosilicates built from corner-sharing SiO<sub>4</sub> and AlO<sub>4</sub> tetrahedra. Each silicate and aluminate group is linked, via oxygen bridges, to four other tetrahedra to give framework structures containing cavities and channels, which confer useful catalytic properties. Up to five distinct chemical shifts can be observed in the <sup>29</sup>Si NMR spectra of powdered zeolites (<a href="#fig_2.10">Fig. 2.10</a>), corresponding to Si atoms linked to <i>n</i> AlO<sub>4</sub> and (4 &#x2013; <i>n</i>)<a id="page_12" class="page">page 12, Chemical shifts</a> SiO<sub>4</sub> tetrahedra, with <i>n</i> = 0, 1, 2, 3, 4. Each Al atom shifts the Si resonance by roughly +5 ppm. The relative intensities of the five peaks give the Si/Al ratio, and can be used to test model structures with different Si/Al ordering patterns.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure id="fig_2.10">
+<img src="../images/fig210.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;width:100%;">
+<p class="noindent2"><b>Fig. 2.10</b> <sup>29</sup>Si NMR spectra of synthetic zeolites recorded with magic angle spinning. The resonances of Si atoms linked to <i>n</i> AlO<sub>4</sub> and (4 &#x2013; <i>n</i>) SiO<sub>4</sub> tetrahedra are labelled <i>n</i> = 0, 1, 2, 3, 4. The Si/Al ratios are as indicated. (Adapted from J. Klinowski, S. Ramdas, J. M. Thomas, C. A. Fyfe, and J. S. Hartman, <i>J. Chem. Soc., Faraday Trans. II</i>, 1982, <b>78</b>, 1025.)</p></figcaption>
+</figure></aside>
+
+<p class="indent">A somewhat different use of chemical shifts is illustrated by the pH dependence of the <sup>1</sup>H NMR spectrum of the amino acid histidine. The resonance frequencies of the C2 and C4 protons in the imidazole group change smoothly with pH between the chemical shifts of the charged form HA<sup>+</sup>, stable in acidic solution, and those of the neutral, deprotonated form A, which is present at high pH. At any pH, the observed chemical shift is a weighted average of the two extreme values &#x03B4;(HA<sup>+</sup>) and &#x03B4;(A):</p>
+<p class="noindent" style="margin-left:12em;margin-top:1em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mi>&#x03B4;</mi><mrow><mtext>av</mtext></mrow></msub><mo>=</mo><mfrac><mrow><mi>&#x03B4;</mi><mrow><mo>(</mo><mrow><msup><mrow><mtext>HA</mtext></mrow><mo>+</mo></msup></mrow><mo>)</mo></mrow><mrow><mo>[</mo><mrow><msup><mrow><mtext>HA</mtext></mrow><mo>+</mo></msup></mrow><mo>]</mo></mrow><mo>+</mo><mi>&#x03B4;</mi><mrow><mo>(</mo><mtext>A</mtext><mo>)</mo></mrow><mrow><mo>[</mo><mtext>A</mtext><mo>]</mo></mrow></mrow><mrow><mrow><mo>[</mo><mrow><msup><mrow><mtext>HA</mtext></mrow><mo>+</mo></msup></mrow><mo>]</mo></mrow><mo>+</mo><mrow><mo>[</mo><mtext>A</mtext><mo>]</mo></mrow></mrow></mfrac><mo>.</mo></mrow></math></p>
+<p class="noindent" style="margin-top:1em;">The details of this averaging process are given in <a href="Chapter04.xhtml">Chapter 4</a>. The midpoint of the titration occurs when the concentrations of the acid and its conjugate base are equal: [HA<sup>+</sup>] = [A], i.e. when the pH equals the p<i>K</i><sub>a</sub> of the histidine side-chain. <a href="#fig_2.11">Figure 2.11</a> shows the pH dependence of the chemical shift of the C2 proton of one of the histidines (His-&#x03B2;-146) in the oxy and deoxy forms of haemoglobin, the protein responsible for oxygen transport in blood. The p<i>K</i><sub>a</sub> of His-&#x03B2;-146 in the deoxy form is higher by about 1 pH unit due to the stabilization of the protonated imidazole by the <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mtext>CO</mtext><mmultiscripts><mrow></mrow><mprescripts/><mn>2</mn><mo>&#x2212;</mo></mmultiscripts></mrow></math> group of a nearby aspartate (Asp-&#x03B2;-94). These two groups are brought into close proximity by the conformational changes in the protein that accompany deoxygenation. The His-&#x03B2;-146&#x2013;Asp-&#x03B2;-94 interaction is partially responsible for the change in oxygen affinity of haemoglobin with pH (the Bohr effect).</p>
+<p class="indent">Finally, chemical shifts may be interpreted empirically using data derived from compounds of known structure. For example, Fig. 2.12 shows typical <sup>1</sup>H chemical shift ranges for assorted organic functional groups. When combined with empirical rules for predicting substituent effects (see for example G&#x00FC;nther 1980, Bovey 1988, and Williams and Fleming 1989), such tables can be extremely useful in making connections between observed shifts and molecular structures. However, as NMR techniques</p>
+<figure style="margin-left:-10em;" id="fig_2.11">
+<img src="../images/fig211.jpg" alt="images"/>
+<figcaption class="noindnt2" style="margin-top:0em;margin-left:10em;width:100%;">
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<p class="noindent2"><b>Fig. 2.11</b> The chemical shift of the C2 proton of histidine-&#x03B2;-146 in oxy- and deoxyhaemoglobin as a function of pH. (Adapted from I. D. Campbell and R. A. Dwek, <i>Biological spectroscopy</i>,Benjamin/Cummings, Menlo Park, California, 1984, p. 161.)</p>
+</aside>
+</figcaption>
+</figure>
+
+<figure style="margin-left:-11.5em;" id="fig_2.12"><a id="page_13" class="page" style="width:93%;">page 13, Chemical shifts</a>
+<img src="../images/fig212.jpg" alt="images"/>
+<figcaption class="noindnt2" style="margin-top:0em;margin-left:11.4em;width:100%;">
+<aside class="abc" style="margin-top:-14em;" epub:type="sidebar">
+<p class="noindent2"><b>Fig. 2.12</b> Typical <sup>1</sup>H chemical shift ranges for some common organic functional groups.
+TMS = tetramethylsilane (&#x03B4; = 0 ppm). More complete <sup>1</sup>H data, and tables for other nuclei, can be found in G&#x00FC;nther (1980), Kemp (1986), and Williams and Fleming (1989).</p></aside>
+</figcaption>
+</figure>
+<p class="noindent" style="margin-bottom:2.5em;">become ever more sophisticated (<a href="Chapter06.xhtml">Chapter 6</a>), such methods become less and less necessary. More direct structural evidence is often provided by spin&#x2013;spin couplings (<a href="Chapter03.xhtml">Chapter 3</a>) and nuclear Overhauser effects (<a href="Chapter05.xhtml">Chapter 5</a>). For example, the complete three-dimensional structures of proteins can be determined in this way (W&#x00FC;thrich 1986).</p>
+</section>
+<section epub:type="chapter" id="sec_2.2">
+<h2 class="h2"><b>2.2&#160;&#160;Origin of chemical shifts</b></h2>
+<p class="noindent">A magnetic field can induce two kinds of electronic current in a molecule: <i>diamagnetic</i> and <i>paramagnetic</i> (a diamagnetic material is one in which the magnetization induced by an external field acts so as to <i>oppose</i> that field; in a paramagnetic material the induced magnetization <i>augments</i> the external field). Diamagnetic and paramagnetic currents flow in opposite directions and give rise to nuclear <i>shielding</i> and <i>deshielding</i> respectively. The shielding constant may thus be written as a sum of diamagnetic and paramagnetic contributions:</p>
+<p class="noindent" id="equ27" style="margin-top:1.5em;"><span class="equno">(2.7)</span></p>
+<p class="noindent" style="margin-left:12em;margin-top:1em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>&#x03C3;</mi><mo>=</mo><msub><mi>&#x03C3;</mi><mtext>d</mtext></msub><mo>+</mo><msub><mi>&#x03C3;</mi><mtext>P</mtext></msub></mrow></math></p>
+<aside class="abc" style="margin-top:-21.5em;" epub:type="sidebar">
+<p class="noindent2"><a href="#fig_2.6">Figures 2.6</a>, <a href="#fig_2.7">2.7</a>, <a href="#fig_2.8">2.8</a>, and several others in subsequent chapters contain NMR spectra that have been drawn on a computer so as to resemble the original experimental spectra (references to which are often given in the figure captions). Genuine spectra, e.g. <a href="#fig_2.5">Figs 2.5</a>, <a href="#fig_2.9">2.9</a>, <a href="#fig_2.10">2.10</a>, can be recognized as such by the presence of noise.</p></aside>
+<p class="noindent" style="margin-top:1em;">with &#x03C3;<sub>d</sub> positive, and &#x03C3;<sub>p</sub> negative.</p>
+<p class="indent"><i>Diamagnetic currents</i> arise from the movement of electrons <i>within</i> atomic or molecular orbitals. As indicated in <a href="#fig_2.2">Fig. 2.2</a>, the external field causes electrons to circulate in a plane perpendicular to the field direction. The current so induced generates a small local field opposed to <i>B</i><sub>0</sub>. The magnitude of the diamagnetic current is determined solely by the <i>ground state</i> electronic wavefunction of the atom or molecule, depends sensitively on the electron density close to the nucleus and provides the only contribution to &#x03C3; for spherical, closed-shell atoms. The diamagnetic shielding is fairly easy to calculate for atoms and varies strongly with the number of electrons: 17.8 ppm for hydrogen, 261 ppm for carbon, 961 ppm for phosphorus, rising to about 10 000 ppm for atoms in the fifth row of the periodic table.</p>
+<a id="page_14" class="page" style="width:70%;">page 14, Chemical shifts</a>
+<p class="indent"><i>Paramagnetic currents</i> also arise from the movement of electrons within molecules, but by a more circuitous route. Imagine a somewhat artificial molecule with just two electronic states: a ground state with the form of an atomic p<i><sub>x</sub></i> orbital containing two electrons with paired spins, and an unoccupied excited state resembling a p<sub>y</sub> orbital <a href="#fig_2.13">(Fig. 2.13)</a>.</p>
+<aside class="abc" style="margin-top:-7.5em;" epub:type="sidebar">
+<figure id="fig_2.13">
+<img src="../images/fig213.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:1em;">
+<p class="noindent2"><b>Fig. 2.13</b> The circulation of electronic charge brought about by the mixing of electronic wavefunctions by a magnetic field. This paramagnetic current generates a small local magnetic field that deshields the nucleus at the centre of the electron density.</p></figcaption>
+</figure></aside>
+
+<p class="indent">An external magnetic field applied along the <i>z</i> axis distorts the wavefunction of the ground state by mixing into it a small fraction of the excited state wavefunction. In this way, the field partially overcomes the energy gap between p<i><sub>x</sub></i> and p<sub><i>y</i></sub> which keeps the electrons locked along the <i>x</i> axis, and creates a path for electrons to circulate in the <i>xy</i> plane <a href="#fig_2.13">(Fig. 2.13)</a>. This induced current generates a magnetic field which (it turns out) <i>augments</i> the external field and <i>deshields</i> a nucleus at the centre of the electron density.</p>
+<p class="indent">The extent of deshielding is clearly linked to the energy gaps involved: other things being equal, low-lying excited states should make a greater contribution than higher energy states. Theory suggests that &#x03C3;<sub>p</sub> should be approximately inversely proportional to &#x0394;<i>E</i>, the average excitation energy. The paramagnetic shift is also related to the distance <i>R</i> between the nucleus and its surrounding electrons. Since the magnetic field at the centre of a small current loop is proportional to the inverse cube of its radius, we can expect a similar dependence for &#x03C3;<sub>p</sub>. So, very roughly,</p>
+<p class="noindent" id="equ28" style="margin-top:1.5em;"><span class="equno">(2.8)</span></p>
+<p class="noindent" style="margin-left:12em;margin-top:1em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mi>&#x03C3;</mi><mtext>p</mtext></msub><mo>&#x221D;</mo><mfrac><mn>1</mn><mrow><mtext>&#x0394;</mtext><mi>E</mi></mrow></mfrac><mrow><mo>&#x2329;</mo><mrow><mfrac><mn>1</mn><mrow><msup><mi>R</mi><mn>3</mn></msup></mrow></mfrac></mrow><mo>&#x232A;</mo></mrow></mrow></math></p>
+<p class="noindent">where <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mrow><mo>&#x2329;</mo><mo>&#x2026;</mo><mo>&#x232A;</mo></mrow></mrow></math> indicates an average over the local electronic distribution.</p>
+<p class="indent" style="margin-bottom:2em;">When the electron distribution has cylindrical symmetry and the applied field is parallel to the symmetry axis, the magnetic field is unable to mix excited states into the ground state. Loosely speaking, this could be compared to a weather vane which can only rotate in the wind if it is not cylindrically symmetric about its vertical axis. Thus the &#x03C0; electrons in acetylene, for instance, do not give rise to paramagnetic deshielding when the magnetic field lies along the molecular axis. Similarly there is no paramagnetic contribution to the chemical shifts of atoms. The theory of diamagnetic and paramagnetic currents and the chemical shifts they generate is described by Atkins (1983).</p>
+</section>
+<section epub:type="chapter" id="sec_2.3">
+<h2 class="h2"><b>2.3&#160; Contributions to nuclear shielding</b></h2>
+<p class="noindent">It should be clear from the previous section that calculating chemical shifts from first principles is a formidable task. Chemical shifts are sensitive to subtle changes in electron density, sometimes in regions of the molecule relatively remote from the nucleus of interest. One therefore needs to know the ground state wavefunction and <i>all</i> electronically excited state wavefunctions of the molecule to high accuracy&#x2014;knowledge that is normally only available for the smallest of molecules. A simple illustration of the difficulties involved in computing nuclear shieldings is provided by the two isotopomers of carbon monoxide, <sup>13</sup>C<sup>16</sup>O and <sup>13</sup>C<sup>17</sup>O, whose <sup>13</sup>C chemical <a id="page_15" class="page">page 15, Chemical shifts</a> shifts differ by 0.025 ppm (a small but measurable difference). This isotope shift is due to a bond length difference of only 5 &#x00D7; 10<sup>&#x2013;15</sup>m. However, the situation is not nearly as gloomy as this might suggest. As we saw in <a href="#sec_2.1">Section 2.1</a>, it is often not necessary to interpret the magnitudes of chemical shifts beyond the level of empirical correlations with structure <a href="#fig_2.12">(Fig. 2.12)</a>. Sometimes, however, chemical shift differences <i>can</i> be traced back to straightforward changes in electron density or excited state energies, as described below.</p>
+<p class="indent">It will prove useful to divide the nuclear shielding constant &#x03C3;, arbitrarily, into four parts:</p>
+<p class="noindent" id="equ29" style="margin-top:4em;"><span class="equno">(2.9)</span></p>
+<figure style="margin-top:-3em;">
+<img src="../images/pg21a.jpg" alt="images"/>
+</figure>
+<p class="noindent">The first two are contributions from the electrons in the <i>immediate</i> vicinity of the nucleus, i.e. from electrons circulating around it. The third term accounts for the diamagnetic and paramagnetic effects of electrons circulating around other (nearby) nuclei. The final part includes electric field shifts, hydrogen bonding, solvent shifts, unpaired electrons, etc., effects which, though diamagnetic or paramagnetic in origin, are more conveniently discussed separately. The remainder of this chapter gives a few illustrations of each of these contributions to &#x03C3;.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure id="fig_2.14">
+<img src="../images/fig214.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.14</b> <sup>1</sup>H chemical shifts of methyl halides plotted against the Pauling electronegativity of the halogen.</p>
+</figcaption>
+</figure>
+<figure style="margin-top:1.5em;" id="fig_2.15">
+<img src="../images/fig215.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.15</b> <sup>1</sup>H chemical shifts of 1-chlorobutane compared to those of propane.</p>
+</figcaption>
+</figure>
+</aside>
+<h3 class="h3"><b>Local diamagnetic shifts</b></h3>
+<p class="noindent">The contributions to chemical shifts from local diamagnetic currents are strongly dependent on the electron density around the nucleus: the larger the electron density, the greater the shielding and the smaller the chemical shift, &#x03B4;.</p>
+<p class="indent">The <sup>1</sup>H chemical shifts of the methyl halides <a href="#fig_2.14">(Fig. 2.14)</a> may readily be understood in these terms. As the electronegativity of the halogen increases, on going from iodine to fluorine, electron density is withdrawn from the methyl group, deshielding the protons. Indeed there is a linear correlation between the <sup>1</sup>H chemical shifts and the Pauling electronegativities of the halogens. Methane, which lacks an electron withdrawing group, has a substantially smaller chemical shift (0.13 ppm) than methyl iodide. Electro-positive substituents increase the shielding still further, e.g. 0.00 ppm for(CH<sub>3</sub>)<sub>4</sub>Si.</p>
+<p class="indent">The deshielding effect of electronegative atoms is fairly short range, as demonstrated by 1-chlorobutane, <a href="#fig_2.15">Fig. 2.15.</a> Relative to the CH<sub>2</sub> group in propane, the Cl protons of 1-chlorobutane are strongly deshielded; the effect on the C2 and C3 protons is much smaller, but still measurable. The terminal methyl group (C4), four carbons away from the chlorine, is essentially unaffected by the substituent, as judged by its chemical shift relative to the methyl protons in propane.</p>
+<p class="indent">Similar behaviour is found for monosubstituted benzenes (<a href="#fig_2.16">Fig. 2.16</a>). Groups with electron withdrawing mesomeric effects, NO<sub>2</sub> and CN for <a id="page_16" class="page">page 16, Chemical shifts</a> example, deshield the ring protons, while electron donating groups, such as NH<sub>2</sub> and OCH<sub>3</sub>, result in shielding. The shielding/deshielding is most pronounced for the protons <i>ortho</i> and <i>para</i> to the substituent, as indicated by the resonance structures.</p>
+<aside class="abc" style="margin-top:-5.5em;" epub:type="sidebar">
+<figure id="fig_2.16">
+<img src="../images/fig216.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.16</b> Chemical shifts of the <i>ortho, meta</i> and <i>para</i> protons of aniline and nitrobenzene, together with resonance structures which account for the larger shielding/deshielding of the <i>ortho</i> and <i>para</i> protons compared to the <i>meta</i> proton.</p>
+</figcaption>
+</figure>
+</aside>
+
+
+<h3 class="h3"><b>Local paramagnetic shifts</b></h3>
+<p class="noindent">The &#x0394;<i>E</i> variation of &#x03C3;<sub>p</sub> (<a href="#equ28">eqn 2.8</a>) is nicely illustrated by the <sup>59</sup>Co chemical shifts of octahedral cobalt complexes. The five 3d orbitals of the cobalt(III) ion are split by the octahedral field of the ligands into a degenerate set of three t<sub>2g</sub> orbitals and a degenerate pair of e<sub>g</sub> orbitals, <a href="#fig_2.17">Fig. 2.17</a>. The ground state corresponds to the (t<sub>2g</sub>)<sup>6</sup> electronic configuration. The four excited states arising from the first excited configuration (t<sub>2g</sub>)<sup>5</sup>(e<sub>g</sub>)<sup>1</sup> all have energies similar to &#x0394;, the ligand field splitting. As shown in <a href="#fig_2.17">Fig. 2.17</a>, there is a remarkably good correlation between the <sup>59</sup>Co chemical shift and the wave-length of the lowest energy absorption band (roughly proportional to 1/&#x0394;<i>E).</i> Ligands such as carbonate, oxalate, and acetylacetonate which produce small ligand field splittings give large paramagnetic deshielding and hence large chemical shifts &#x03B4;.</p>
+<p class="noindent3" style="margin-top:1.5em;"><b>Fig. 2.17</b> <sup>59</sup>Co chemical shifts (relative to <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mtext>Co</mtext><msubsup><mrow><mrow><mo>(</mo><mrow><mtext>CN</mtext></mrow><mo>)</mo></mrow></mrow><mn>6</mn><mrow><mn>3</mn><mo>&#x2212;</mo></mrow></msubsup><mo>)</mo></mrow></math> of octahedral cobalt complexes plotted against the wavelength of the first electronic absorption band, en = ethylenediamine; ox = oxalate; acac = acetylacetonate. (Adaptedfrom R. Freeman, G. R. Murray,and R. E. Richards, <i>Proc</i>. <i>R. Soc. (London</i>), 1957, <b>A242</b>, 455.)</p>
+<figure style="margin-top:-13.5em; margin-left:10em;" id="fig_2.17">
+<img src="../images/fig217.jpg" alt="images"/>
+</figure>
+<p class="indent" style="margin-top:0em;">The <sup>13</sup>C chemical shifts of monosubstituted benzenes provide a good example of the dependence of &#x03C3;<sub>p</sub> on <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mrow><mo>&#x2329;</mo><mrow><msup><mi>R</mi><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></msup></mrow><mo>&#x232A;</mo></mrow><mo>.</mo></mrow></math> As shown in <a href="#fig_2.18">Fig. 2.18</a>, the <i>para</i> carbon is deshielded by electron withdrawing substituents and shielded by electron releasing groups. Although this is the same trend observed for the <sup>1</sup>H shifts in these compounds, the effect is paramagnetic rather than diamagnetic in origin. Electron donating groups delocalize their lone pairs into the ring and increase the electron density at the <i>ortho</i> and <i>para</i> carbons. The increased electron repulsion causes the orbitals around these atoms to <i>expand</i>, reducing <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mrow><mo>&#x2329;</mo><mrow><msup><mi>R</mi><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></msup></mrow><mo>&#x232A;</mo></mrow></mrow></math> and hence &#x03B4;.</p>
+<p class="indent">At this point we can see why the chemical shift range of protons is so small compared to other nuclei (&#x2248; 10 ppm for <sup>1</sup>H; &#x2248; 200 ppm for <sup>13</sup>C; &#x2248; 300 ppm for <sup>19</sup>F, &#x2248; 500 ppm for <sup>31</sup>P, etc.). Local diamagnetic and local paramagnetic currents make only modest contributions to <sup>1</sup>H shielding because of the low electron densities and high electronic excitation energies <a id="page_17" class="page">page 17, Chemical shifts</a> associated with hydrogen atoms. Indeed, <sup>1</sup>H chemical shifts are often more strongly influenced by the diamagnetic and paramagnetic currents in <i>neighbouring groups</i> of atoms which have larger electron densities and lower excitation energies, as we shall now see.</p>
+<h3 class="h3"><b>Neighbouring groups</b></h3>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<figure id="fig_2.18">
+<img src="../images/fig218.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.18</b> <sup>13</sup>C chemical shifts of the <i>para</i> carbons in monosubstituted benzenes.</p>
+</figcaption>
+</figure>
+</aside>
+
+<p class="noindent">To see how a nucleus can be shielded or deshielded by the motions of electrons on nearby groups of atoms, consider the following highly simplified model. Suppose that the distribution of electrons in the neighbouring group has cylindrical symmetry (e.g. the triple bond in acetylene) and pretend that the magnetic field generated by the circulating electrons has the same form as the field that would be produced by a magnetic dipole (i.e. a tiny bar magnet) sitting at the centre of the electron density. (Never mind that this approximation is only strictly valid at distances much larger than the extent of the electron distribution.) Let the size of the induced magnetic moment be &#x03BC;<sub>par</sub> when <i>B</i><sub>0</sub> is parallel to the symmetry axis, and &#x03BC;<sub>per</sub>, when it is perpendicular: only when the neighbouring group has very high symmetry, e.g. tetrahedral, will the two magnetic moments be equal.</p>
+<p class="indent">The properties of magnetic dipoles are explored in <a href="Chapter03.xhtml#sec_3.8">Section 3.8.</a> For now, we simply need to recognize that the field generated by a magnetic dipole &#x03BC; has the form shown in <a href="Chapter03.xhtml#fig_3.32">Fig. 3.32(a)</a> (p. 40), and that its component along the <i>B</i><sub>0</sub> direction at a point specified by polar coordinates (<i>r</i>,&#x03B8;) (see <a href="Chapter03.xhtml#fig_3.31">Fig. 3.31</a>, p. 40) is</p>
+<p class="noindent" style="margin-top:1.5em;" id="equ210"><span class="equno">(2.10)</span></p>
+<p class="noindent" style="margin-left:12em;margin-top:1em;"><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mfrac><mi>&#x03BC;</mi><mrow><msup><mi>r</mi><mn>3</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>3</mn><msup><mrow><mi>cos</mi></mrow><mn>2</mn></msup><mtext>&#x03B8;</mtext><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math></p>
+<p class="noindent">(&#x03BC;<sub>0</sub> is the vacuum permeability). Note that when &#x03B8; = 0&#x00B0;, the dipolar field is 2(&#x03BC;<sub>0</sub>/4&#x03C0;)(&#x03BC;/<i>r</i><sup>3</sup>), and when &#x03B8; = 90&#x00B0;, it is &#x2013;(&#x03BC;<sub>0</sub>/4&#x03C0;)(&#x03BC;/<i>r</i><sup>3</sup>), i.e. half as big and in the opposite direction.</p>
+<p class="indent">To discover whether the field arising from the induced magnetic moment shields or deshields a nearby nucleus, we need simply to average the dipolar field experienced by that nucleus over all orientations of the molecule as it tumbles in solution. This is done in <a href="#fig_2.19">Fig. 2.19</a> together with <a href="#tbl21">Table 2.1.</a></p>
+<figure style="margin-left:-12em;" id="fig_2.19">
+<img src="../images/fig219.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:12em;">
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<p class="noindent2"><b>Fig. 2.19</b> Dipolar lines of flux generated by an induced magnetic moment at the centre of a cylindrically symmetric neighbouring group (shown as an elipsoid) with two nearby protons A and B. The external field <i>B</i><sub>0</sub> is parallel in (a) and perpendicular in (b) to the symmetry axis of the group. The diagram has been drawn for the case &#x03BC;<sub>par</sub>>&#x03BC;<sub>per</sub>>0. See also <a href="#tbl21">Table2.1.</a></p>
+</aside>
+</figcaption>
+</figure>
+
+<a id="page_18" class="page" style="width:70%;">page 18, Chemical shifting</a>
+<p class="noindent" style="margin-bottom:-0.5em;"><b>Table 2.1</b> Nuclear shielding/deshielding arising from neighbouring group anisotropy.</p>
+<figure id="tbl21" style="margin-left:-11.5em;">
+<img src="../images/tbl21.jpg" alt="images"/>
+</figure>
+<p class="noindent" style="margin-top:-0.8em;">To obtain the net dipolar field at the positions of two protons H<sub>A</sub> and H<sub>B</sub><span class="small-cap"></span> in a molecule tumbling end over end in solution (see <a href="#fig_2.19">Fig. 2.19</a>), add up the fields experienced by each spin when the external field <i>B</i><sub>0</sub> is parallel to the <i>x</i>, <i>y</i> and <i>z</i> axes of the neighbouring group. &#x03B8;<sub>A</sub><span class="small-cap"></span> and &#x03B8;<sub>B</sub> are the angles between <i>B<sub>0</sub></i> and vectors connecting the centre of the neighbouring group to the two protons. The dipolar fields are quoted in units of (&#x03BC;<sub>0</sub>/4&#x03C0;)<i>r</i><sup>&#x2212;3</sup> (see <a href="#equ210">eqn 2.10</a>). &#x03BC;<sub>par</sub> and &#x03BC;<sub>per</sub> are the magnetic moments induced in the neighbouring group by the external field when it is respectively parallel and perpendicular to the symmetry axis of the group.</p>
+<p class="noindent" style="margin-top:4em;">A proton H<sub>A</sub>, lying on the symmetry axis of the neighboring group, experiences an average field 2(&#x03BC;<sub>0</sub>/4&#x03C0;)(&#x03BC;<sub>par</sub> &#x2013; &#x03BC;<sub>per</sub>)/<i>r</i><sup>3</sup>; the corresponding field for a proton H<sub>B</sub>, situated to one side of the group, is &#x2013;(&#x03BC;<sub>0</sub>/4&#x03C0;)(&#x03BC;<sub>par</sub> &#x2013; &#x03BC;<sub>per</sub>)/<i>r</i><sup>3</sup>. That is, the size of the local field depends on the magnetic <i>anisotropy</i> of the neighbouring group (&#x03BC;<sub>par</sub> &#x2013; &#x03BC;<sub>per</sub>) and has opposite signs for the two nuclei. This source of nuclear shielding/deshielding is therefore often referred to as <i>neighbouring group anisotropy.</i> When &#x03BC;<sub>par</sub> > &#x03BC;<sub>per</sub>, the average dipolar field at H<sub>a</sub> augments <i>B</i><sub>0</sub>, while that at H<sub>B</sub> opposes <i>B</i><sub>0</sub>: H<sub>A</sub> is therefore deshielded, and H<sub>b</sub> shielded by the electrons circulating around the neighbouring group. The situation is reversed if &#x03BC;<sub>par</sub> &#x003C; &#x03BC;<sub>per</sub>. Note that <i>diamagnetic</i> currents in the neighbouring group correspond to a <i>negative</i> induced magnetic moment (opposing <i>B</i><sub>0</sub>), while <i>paramagnetic</i> currents give <i>positive</i> &#x03BC;<sub>par</sub> and &#x03BC;<sub>per.</sub></p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure id="fig_2.20">
+<img src="../images/fig220.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.20</b> Regions of shielding (+) and deshielding (&#x2013;) due to neighbouring group magnetic anisotropy, for (a) &#x03BC;<sub>par</sub> > &#x03BC;<sub>per</sub> and (b) &#x03BC;<sub>par</sub> &#x003C; &#x03BC;<sub>per</sub>. The half angle of the cones is 54.7&#x00B0; (the so-called<i> magic angle</i> at which 3 cos<sup>2</sup>&#x03B8; = 1). The axis of the cones coincides with the symmetry axis of the neighbouring group (shown as an elipsoid).</p>
+</figcaption>
+</figure></aside>
+
+<p class="indent">A simple extension of this argument leads to the sketches in <a href="#fig_2.20">Fig. 2.20</a>. When &#x03BC;<sub>par</sub> > &#x03BC;<sub>per</sub> (a), a nucleus lying <i>within</i> one of the two Cones (half angle 54.7&#x00B0;) should be deshielded, while a nucleus in the region <i>outside</i> the cones should be shielded. The opposite holds when &#x03BC;<sub>par</sub> &#x003C; &#x03BC;<sub>per</sub> (b). Of course, both the angular and radial dependence of the induced field are more complicated than the dipolar approximation would suggest; nevertheless this model remains a useful way of thinking about neighbouring group anisotropy, and if approached with caution, can be used to predict the direction, if not the magnitude, of chemical shifts.</p>
+<p class="indent">As an example of neighbouring group anisotropy, consider the triple bond in acetylene. The dominant contribution to the shielding of nearby nuclei comes from the <i>paramagnetic</i> currents that are inducted when the field is <i>perpendicular</i> to the axis of the molecule: this is because the diamagnetic currents are almost isotropic, and the paramagnetic current around the molecular axis is zero due to the cylindrical symmetry. Thus &#x03BC;<sub>per</sub> &gt; 0, and <a id="page_19" class="page">page 19, Chemical shifts</a> &#x03BC;<sub>par</sub> &#x2013; &#x03BC;<sub>per</sub> &#x003C; 0 so that, from <a href="#fig_2.20">Fig. 2.20(b)</a>, the protons in acetylene should be <i>shielded.</i></p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<figure id="fig_2.21">
+<img src="../images/fig221.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.21</b> <sup>1</sup>H chemical shifts of ethane, ethylene, and acetylene</p>
+</figcaption>
+</figure>
+<figure id="fig_2.22">
+<img src="../images/fig222.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.22</b> Deshielding due to the magnetic anisotropy of a <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mtext>C</mtext><mo>&#x2261;</mo><mtext>C</mtext></mrow></math> bond.</p>
+</figcaption>
+</figure>
+<figure id="fig_2.23">
+<img src="../images/fig223.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.23</b>Schematic magnetic flux lines arising from the diamagnetic current induced in an aromatic ring when the external field is perpendicular to the plane of the ring.</p> </figcaption>
+</figure>
+</aside>
+<p class="indent"><a href="#fig_2.21">Figure 2.21</a> shows the <sup>1</sup>H chemical shifts of acetylene, ethylene, and ethane. Based on the hybridization of the molecular orbitals, one would expect &#x03B4;(C<sub>2</sub>H<sub>2</sub>) &#x003E; &#x03B4; (C<sub>2</sub>H<sub>4</sub>) &#x003E; &#x03B4; (C<sub>2</sub>H<sub>6</sub>): as the s-electron character increases in the order sp<sup>3</sup> &#x003C; sp<sup>2</sup> &#x003C; sp, so the bonding electrons should be held more tightly to the carbon, removing electron density from the hydrogen atoms and deshielding the protons. The observed order of shifts arises from the <i>shielding</i> effect of the &#x03C0; electrons of the triple bond, as discussed above, and also the neighbouring group effect of the C=C double bond which <i>deshields</i> the protons in ethylene.</p>
+<p class="indent">A further example of the neighbouring group effect of a <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mtext>C</mtext><mo>&#x2261;</mo><mtext>C</mtext></mrow></math>  bond is provided by the acetylene-substituted phenanthrene in <a href="#fig_2.22">Fig. 2.22</a>. The proton beside the triple bond falls in the deshielding region of Fig. 2.20(b) and suffers a shift of + 1.7 ppm relative to the corresponding proton in phenanthrene itself.</p>
+<p class="indent">A more important instance of the neighbouring group effect occurs in <i>aromatic</i> compounds, whose extensive &#x03C0; electron &#x2018;clouds&#x2019; can support large electronic currents. In molecules such as benzene, the dominant contribution to the magnetic anisotropy comes from the circulation of the &#x03C0; electrons <i>within</i> their delocalized molecular orbitals; i.e. the neighbouring group effect is due principally to the <i>diamagnetic</i> moment induced when the external field is perpendicular to the molecular plane, as indicated in Fig. 2.23. However, the end result is the same as for acetylene because the induced diamagnetic moment is <i>opposed</i> to the external field (&#x03BC;<sub>par</sub> &#x003C; 0), so that the anisotropy &#x03BC;<sub>par</sub> &#x2013; &#x03BC;<sub>per</sub> is once again negative. Thus we can anticipate deshielding for nuclei in the plane of the aromatic ring, and shielding for any nuclei above or below the ring.</p>
+
+<p class="indent">This <i>ring current shift</i> is demonstrated clearly by benzene itself, whose <sup>1</sup>H chemical shift is 1.4 ppm to the high frequency side of the olefinic protons in cyclohexa-1,3-diene, Fig. 2.24(a). A more interesting example is the dimethyl-substituted pyrene which, with 14 &#x03C0; electrons, is aromatic according to the 4<i>n</i> + 2 rule (<i>n</i> = 3). The ring protons are deshielded, as expected, by analogy with benzene, but the methyl groups, which protrude above and below the plane of the molecule, are shielded by more than 5 ppm relative to ethane, Fig. 2.24(b). (Negative &#x03B4; values correspond to protons resonating to the low frequency side of TMS.) As indicated in Fig. 2.23, these protons lie in a region where the induced field <i>opposes</i> the external field.</p>
+<p class="indent">Finally, the planar annulene in <a href="#fig_2.24">Fig. 2.24(c)</a>, with 4<i>n</i> + 2 = 18 &#x03C0; electrons (<i>n</i> = 4), shows two proton resonances, one from the 12 strongly deshielded external protons, and one at &#x2013;2.99 ppm from the six internal protons. The latter set of hydrogen atoms lies within the current loop formed by the circulating &#x03C0; electrons, and as indicated in Fig. 2.23 is shielded by the ring current effect. Note that the chemical shifts of these nuclei cannot, even qualitatively, be described using the point dipole approximation (<a href="#fig_2.20">Fig. 2.20</a>)<a id="page_20" class="page">page 20, Chemical shifts</a>which predicts deshielding for any nucleus in the plane of the aromatic ring, however close to the centre of the molecule.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure id="fig_2.24">
+<img src="../images/fig224.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.24</b> Ring current shifts.<sup>1</sup>H chemical shifts in: (a) benzene compared to cyclohexa-1, 3-diene; (b) a dimethyl-substituted pyrene; (c) [18]-annulene.</p>
+</figcaption>
+</figure>
+<figure id="fig_2.25">
+<img src="../images/fig225.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.25</b> Deshielding due to hydrogen bonding. <sup>1</sup>H chemical shifts in salicylaldehyde and the enol form of acetylacetone.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent">The magnitude of the neighbouring group effect depends on the magnetic anisotropy of the group itself and not on the nucleus being shielded or deshielded. Neighbouring group anisotropy is therefore <i>relatively</i> more important for protons with their small local diamagnetic and paramagnetic (de)shieldings than for other nuclei, <sup>13</sup>C for instance, which have larger electron densities and lower excitation energies.</p>
+<p class="indent">Although only triple bonds and aromatic rings have been discussed, neighbouring group effects exist for other functional groups&#x2014;C&#x2013;C, C&#x2550;C, C&#x2550;O, N&#x2550;O, for example&#x2014;and have a strong influence on <sup>1</sup>H chemical shifts.</p>
+<h3 class="h3"><b>Other sources of chemical shifts</b></h3>
+<p class="noindent"><i>Hydrogen bonding</i> is responsible for some of the largest observed deshielding effects in <sup>1</sup>H NMR. Two compounds that form intramolecular hydrogen bonds are shown in Fig. 2.25: in both, the hydrogen-bonded proton is heavily deshielded. Intermolecular hydrogen bonds, which are generally somewhat weaker, produce smaller shifts. For example, the hydroxyl proton resonance of ethanol moves by about &#x2013;4 ppm when the intermolecular hydrogen bonding is disrupted by dilution into CCl<sub>4</sub> (see <a href="#fig_2.26">Fig. 2.26</a>). The limiting shift of the OH resonance at infinite dilution (0.8 ppm) compares well with the value for monomeric ethanol in the gas phase (0.55 ppm). Similar changes in the OH chemical shift are found with increasing temperature, which also favours the monomer side of the monomer &#x21CC; dimer, trimer, &#x2026; equilibrium. The origin of the deshielding caused by hydrogen bonding is unclear. Most probably, the strong electric field of the Y atom in <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mtext>X</mtext><mo>&#x2212;</mo><mtext>H</mtext><mo>&#x22EF;</mo><mtext>Y</mtext></mrow></math> draws the hydrogen atom away from the electrons in the X&#x2013;H bond, so reducing the electron density immediately around it.</p>
+<p class="indent">Chemical shifts are also affected by the local <i>electric</i> fields arising from charged or polar groups. These can modify both diamagnetic and paramagnetic currents by polarizing local electron distributions, and by perturbing ground and excited state wavefunctions and energies. Positive charges usually deshield nearby protons, while negative charges often give rise to shielding. For example, the protons on the imidazole side-chain of the</p>
+<figure style="margin-left:-12em;" id="fig_2.26">
+<img src="../images/fig226.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:12em;">
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="noindent2"><b>Fig. 2.26</b> Hydrogen bonding shifts in ethanol, as a function of concentration in CCl<sub>4</sub>.</p>
+</aside>
+</figcaption>
+</figure>
+<a id="page_21" class="page" style="width:70%;">page 21, Chemical shifts</a>
+<p class="noindent">amino acid histidine shift to higher frequencies by about 1 ppm when the ring is protonated (see <a href="#fig_2.11">Fig. 2.11</a>).</p>
+<p class="noindent">Finally, in this far from complete survey, there are the <i>paramagnetic</i> shifts produced by unpaired electrons (in this context paramagnetic refers to the permanent magnetic moment of the electron and not to the induced electronic currents discussed earlier). Unpaired electrons give rise to large dipolar magnetic fields&#x2014;the gyromagnetic ratio of the electron is 660 times that of the proton&#x2014;which can result in substantial nuclear shielding/ deshielding, as illustrated by the two metal&#x2013;porphin complexes in <a href="#fig_2.27">Fig. 2.27</a>. The two types of proton in the aromatic ligand, which have large ring current shifts in the diamagnetic Zn<sup>2+</sup> complex, are heavily shielded in the paramagnetic Fe<sup>3+</sup> compound.</p>
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<figure id="fig_2.27">
+<img src="../images/fig227.jpg" alt="images"/>
+<figcaption class="noindent2" style="margin-top:1em;margin-left:0em;">
+<p class="noindent2"><b>Fig. 2.27</b> <sup>1</sup>H chemical shifts of the two types of proton (x and y) in (a) the paramagnetic Fe<sup>3+</sup> (porphin) (CN<sup>&#x2013;</sup>) and (b) the diamagnetic Zn<sup>2+</sup> (porphin).</p>
+</figcaption>
+</figure>
+</aside>
+</section>
+</section>
+</body>
+</html>

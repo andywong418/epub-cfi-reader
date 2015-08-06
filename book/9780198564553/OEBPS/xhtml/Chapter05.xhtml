@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en-US">
+<head>
+<meta charset="utf-8" />
+<title>Radiation Heat Transfer</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch05">
+<a id="page_38" class="page" style="width:70%;">Page 38, Chapter 5 Emission and absorption by gases</a>
+<h1 class="main"><b>5<span class="space">&#160;</span>Emission and absorption by gases</b></h1>
+<section epub:type="chapter" id="sec5.1">
+<h2 class="h2"><b>5.1<span class="space">&#160;</span>Introduction</b></h2>
+<p class="noindent">So far we have assumed that the medium separating two surfaces emits no radiation itself and has no effect on the radiation passing through it, i.e. the medium is <i>non</i>-<i>participating</i>. The equations and methods used in the previous two chapters can usually be used to give reasonable estimates of the various unknowns. However, in many real systems the intervening medium can have a significant influence on the radiation, and some allowance must be made.</p>
+<p class="indent">The extent to which gases emit or absorb radiation is governed by quantum physics, which is beyond the scope of this volume. There are a number of pertinent features of gas radiation:</p>
+<p class="nlist-1">(1)<span class="space">&#160;</span>For a molecule to emit or absorb infra-red radiation, its dipole moment must change as it vibrates. So homonuclear diatomic molecules (such as N<sub>2</sub>, O<sub>2</sub>, H<sub>2</sub>) do not emit or absorb, but all others do (e.g. CO, CO<sub>2</sub>, H<sub>2</sub>O, SO<sub>2</sub>, NH<sub>3</sub>, hydrocarbons). Thus systems involving air can be assumed to be non-participating, but gas radiation must be taken into account in furnaces, etc. where there are combustion products at high temperature.</p>
+<figure class="imgc" id="fig5.1">
+<img src="../images/fig5.1.jpg" alt="images"/>
+<figcaption><b>Figure 5.1</b> Monochromatic absorptivity for carbon dioxide.</figcaption>
+</figure>
+<p class="nlist-1">(2)<span class="space">&#160;</span>Radiation from solids and liquids is distributed continuously with wavelength, i.e. <i>&#x03B5;<sub>&#x03BB;</sub></i> &#x003E; 0 for all wavelengths. For gases, radiation occurs at very specific wavelengths (or bands): emission/absorption can be very strong at some wavelengths, but can be effectively zero at others (see <a href="#fig5.1">Figure 5.1</a>). For example, the earth&#x2019;s atmosphere is transparent to visible</p>
+<p class="noindent"><a id="page_39" class="page">Page 39, Chapter 5 Emission and absorption by gases</a></p>
+<p class="nlist-1t">radiation from the sun, but filters (absorbs) much of the sun&#x2019;s ultra-violet radiation. Thus <i>&#x03B5;<sub>&#x03BB;</sub></i> and <i>&#x03B1;<sub>&#x03BB;</sub></i> are very dependent on wavelength.</p>
+
+<p class="nlist-1">(3)<span class="space">&#160;</span>Radiation passing through a gas is, either transmitted, absorbed, or scattered. Scattering includes both reflection, refraction, and diffraction effects. These are especially important if the gas contains any particulate material. Scattering is discussed briefly in <a href="Chapter09.xhtml">Chapter 9</a>. It suffices to say at this stage that scattering can generally be neglected in many engineering systems.</p>
+<p class="nlist-1">(4)<span class="space">&#160;</span>Gas emission and absorption is a volumetric phenomenon. The amount of absorption and emission depends on the thickness of the gas, not the contact area with surrounding surfaces.</p>
+<p class="noindent">&#160;</p>
+</section>
+<section epub:type="chapter" id="sec5.2">
+<h2 class="h2"><b>5.2<span class="space">&#160;</span>General characteristics of gas radiation</b></h2>
+<p class="noindent">Consider a beam of radiation of wavelength &#x03BB; and initial intensity <i>I</i><sub>&#x03BB;0</sub> which is incident on a layer of absorbing gas of thickness <i>L</i> (see <a href="#fig5.2">Figure 5.2</a>). The beam will be attenuated as it passes through the medium by an amount which will be proportional to the intensity of the beam, the thickness of the absorbing gas, and the concentration of the absorbing molecules (i.e. the gas pressure). Suppose that the beam intensity changes by d<i>I</i><sub>&#x03BB;</sub> as the beam passes through an element of gas of thickness cbc. We may write:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>d</m:mtext><m:msub><m:mi>I</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:msub><m:mi>K</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:msub><m:mi>I</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:math></p></td>
+<td>(5.1)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<figure class="imgc" id="fig5.2">
+<img src="../images/fig5.2.jpg" alt="images"/>
+<figcaption><b>Figure 5.2</b> Schematic of a beam passing through a layer of absorbing gas.</figcaption>
+</figure>
+</aside>
+<p class="noindent">where <i>k</i><sub>&#x03BB;</sub> is a proportionality constant, known as either the monochromatic attenuation or extinction coefficient. This parameter includes the combined effects of absorption and scattering by the gas. (Readers should beware some ambiguities: some authors define the combination <i>k</i><sub>&#x03BB;</sub><i>p</i> as the extinction coefficient; there is also a tendency to regard the extinction coefficient and absorption coefficient to be synonymous&#x2014;this is true only if scattering is negligible.) <i>k</i><sub>&#x03BB;</sub> is a property of the gas and measures the absorbing and scattering power of the gas. It is wavelength-dependent, and also varies with the temperature of the gas. In a mixture of absorbing and non-absorbing gases (e.g. CO<sub>2</sub> in air) <i>p</i> can be taken to be the partial pressure of the absorbing species.</p>
+<p class="indent">If the gas is isothermal, then <i>k</i><sub>&#x03BB;</sub> can be assumed to be independent of <i>x</i>, and the integration of <a href="#eq5.1">Equation 5.1</a> over the length of the gas layer gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:12em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>I</m:mi><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mn>0</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>L</m:mi></m:mrow></m:msub></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:msub><m:mi>I</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub></m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>L</m:mi></m:munderover><m:mrow><m:msub><m:mi>K</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x21D2;</m:mo><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mfrac><m:mrow><m:msub><m:mi>I</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mrow></m:mrow><m:mi>L</m:mi></m:msub></m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mrow></m:mrow><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>K</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msup><m:mi>p</m:mi><m:mi>L</m:mi></m:msup></m:mrow></m:msup></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<p class="noindent">This expression is known as Beer&#x2019;s Law, and predicts exponential decay of the beam intensity as it passes through the gas. The ratio (<i>I</i><sub>&#x03BB;<i>L</i></sub>/<i>I</i><sub>&#x03BB;</sub><sub>0</sub>) represents<a id="page_40" class="page">Page 40, Chapter 5 Emission and absorption by gases</a>the fraction of incident radiation of wavelength &#x03BB; which is transmitted through the gas, i.e. the monochromatic transmissivity, &#x03C4;<sub>&#x03BB;</sub>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>I</m:mi><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>L</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mn>0</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:msub><m:mi>&#x03C4;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:mi>L</m:mi></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td>(5.2)</td>
+</tr>
+</table>
+<figure class="imgc" id="fig5.3">
+<img src="../images/fig5.3.jpg" alt="images"/>
+<figcaption><b>Figure 5.3</b> Absorptivity and transmissivity of an absorbing medium as a function of thickness.</figcaption>
+</figure>
+<p class="noindent">Assuming negligible scattering, the monochromatic absorptivity is given by:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03C4;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>k</m:mi><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>p</m:mi></m:mrow></m:msub><m:mi>L</m:mi></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td>(5.3)</td>
+</tr>
+</table>
+<p class="noindent">Applying Kirchhoffs Law (<a href="Chapter01.xhtml#eq1.18">Equation 1.18</a>) gives the monochromatic emissivity:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:mi>L</m:mi></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td>(5.4)</td>
+</tr>
+</table>
+<p class="noindent">For small values of <i>k<sub>&#x03BB;</sub>pL, &#x03B1;</i><sub>&#x03BB;</sub> &#x2248; <i>k</i><sub>&#x03BB;</sub><i>pL</i>, i.e. the absorptivity varies linearly with <i>L</i>. <a href="#fig5.3">Figure 5.3</a> plots schematically <i>&#x03B1;<sub>&#x03BB;</sub></i> and <i>&#x03C4;</i><sub>&#x03BB;</sub> as a function of the thickness of the absorbing layer. Media where <i>&#x03B1;<sub>&#x03BB;</sub></i>, and hence <i>&#x03B5;<sub>&#x03BB;</sub></i> are both close to zero, i.e. the material is almost transparent, are generally said to be <i>optically thin</i>; media where <i>&#x03C4;</i><sub>&#x03BB;</sub> &#x2192; 0 are said to be <i>optically thick</i>. However, caution needs to be exercised with these terms, because the band nature of emission/absorption from gases means that a material will be optically thin at some wavelengths, but optically thick at others.</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<figure class="imgc" id="fig5.4">
+<img src="../images/fig5.4.jpg" alt="images"/>
+<figcaption><b>Figure 5.4</b> Schematic showing the need for a mean beam length.</figcaption>
+</figure></aside>
+</section>
+<section epub:type="chapter" id="sec5.3">
+<h2 class="h2"><b>5.3<span class="space">&#160;</span>Mean beam length</b></h2>
+<p class="noindent">The algebra in the previous section was for a one-dimensional system of thickness <i>L</i>. Most real systems are two or three dimensional, which poses a problem of how to define <i>L</i>. For example, <a href="#fig5.4">Figure 5.4</a> shows two parallel plates, with two beams of radiation originating from the same point on one plate and travelling to the opposite plate. Clearly the thickness of gas encountered by each beam is different, as, indeed, it will be for every other <a id="page_41" class="page">Page 41, Chapter 5 Emission and absorption by gases</a>beam travelling between the two plates. So, how should we define <i>L</i>? We need to introduce the idea of the <i>mean beam length</i>, which represents an average thickness of gas encountered by all beams of radiation between the two plates.</p>
+<p class="indent">Consider an enclosure of volume <i>V</i> and surface area <i>A</i> with black walls (<a href="#fig5.5">Figure 5.5</a>). Let d<i>A</i> be an area element, from which a beam of radiation leaves at an angle <i>&#x03B8;</i> to the normal at d<i>A</i>. At a distance <i>x</i> from d<i>A</i> let the beam meet a volume element of gas d<i>V</i>, which has length d<i>x</i> and cross-section area d<i>S</i> normal to the beam.</p>
+<p class="indent">Using the Cosine Law (<a href="Chapter02.xhtml#eq2.5">Equation 2.5</a>), the radiation of wavelength &#x03BB; emitted by dA towards d<i>S</i> is:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:12em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>d&#x03BB;</m:mtext></m:mrow><m:mi>&#x03C0;</m:mi></m:mfrac><m:mo>.</m:mo><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>S</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>A</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>cos</m:mtext><m:mtext>&#x2009;</m:mtext><m:mi>&#x03B8;</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math></td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+<figure class="imgc" id="fig5.5">
+<img src="../images/fig5.5.jpg" alt="images"/>
+<figcaption><b>Figure 5.5</b> Radiative transfer from a surface area element to a gas volume element in an enclosure.</figcaption>
+</figure>
+</aside>
+<p class="noindent">The beam will be attenuated as it travels through the gas. Thus, from <a href="#eq5.2">Equation 5.2</a>, the radiation entering the gas element will be:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:12em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>d&#x03BB;</m:mtext></m:mrow><m:mi>&#x03C0;</m:mi></m:mfrac><m:mo>.</m:mo><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>S</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>A</m:mi><m:mi>cos</m:mi><m:mi>&#x03B8;</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">Using <a href="#eq5.1">Equation 5.1</a> the radiation absorbed by the gas element is:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:4em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:mfrac><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>d</m:mtext><m:mtext>&#x03BB;</m:mtext></m:mrow><m:mi>&#x03C0;</m:mi></m:mfrac><m:mo>.</m:mo><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>S</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>A</m:mi><m:mi>cos</m:mi><m:mi>&#x03B8;</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:mfrac><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>d</m:mtext><m:mtext>&#x03BB;</m:mtext></m:mrow><m:mi>&#x03C0;</m:mi></m:mfrac><m:mo>.</m:mo><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>A</m:mi><m:mi>cos</m:mi><m:mi>&#x03B8;</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext><m:mi>p</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>V</m:mi></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">We can integrate over the whole of the surface of the enclosure to give the absorption by the gas element of all incident radiation of wavelength &#x03BB;:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>K</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>&#x2009;</m:mtext><m:mtext>d&#x03BB;&#x00A0;</m:mtext><m:mtext>&#x200B;</m:mtext><m:mtext>d</m:mtext><m:mi>V</m:mi></m:mrow><m:mi>&#x03C0;</m:mi></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:munder><m:mo>&#x222B;</m:mo><m:mi>A</m:mi></m:munder><m:mrow><m:mfrac><m:mrow><m:mi>cos</m:mi><m:mi>&#x03B8;</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mo>.</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mtext>d</m:mtext><m:mi>A</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.5)</td>
+</tr>
+</table>
+<p class="noindent">This is generally very difficult to integrate. In optically thin media, <i>k</i><sub>&#x03BB;</sub><i>px</i> is small, such that <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:mi>x</m:mi></m:mrow></m:msup><m:mo>&#x2248;</m:mo><m:mn>1</m:mn></m:mrow></m:math>. <a href="#eq5.5">Equation 5.5</a> then becomes:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>d</m:mtext><m:mtext>&#x03BB;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>V</m:mi></m:mrow><m:mi>&#x03C0;</m:mi></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:munder><m:mo>&#x222B;</m:mo><m:mi>A</m:mi></m:munder><m:mrow><m:mfrac><m:mrow><m:mi>cos</m:mi><m:mi>&#x03B8;</m:mi></m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mtext>d</m:mtext><m:mi>A</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(5.6)</td>
+</tr>
+</table>
+<p class="noindent">Now, (cos <i>&#x03B8;</i> d<i>A</i>/<i>x<sup>2</sup></i>) is the solid angle d&#x03A9; subtended by dA at dV, so we can rewrite <a href="#eq5.6">Equation 5.6</a>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:8em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>K</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>&#x2009;</m:mtext><m:mtext>d&#x03BB;&#x00A0;d</m:mtext><m:mi>V</m:mi></m:mrow><m:mi>&#x03C0;</m:mi></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:munder><m:mo>&#x222B;</m:mo><m:mi>A</m:mi></m:munder><m:mrow><m:mtext>d</m:mtext><m:mi>&#x03A9;</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>d</m:mtext><m:mtext>&#x03BB;&#x00A0;</m:mtext><m:mtext>d</m:mtext><m:mi>V</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">given that the total solid angle is 4&#x03C0; for an enclosure. This can be integrated over the whole volume to give:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:10em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Absorption</m:mtext><m:mo>=</m:mo><m:mn>4</m:mn><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>&#x2009;</m:mtext><m:mi>V</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mtext>&#x03BB;</m:mtext></m:mrow></m:math></td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Absorption&#x00A0;per&#x00A0;unit&#x00A0;area&#x00A0;of&#x00A0;emitting&#x00A0;surface&#x00A0;</m:mtext><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:msub><m:mi>K</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>&#x2009;</m:mtext><m:mi>V</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mtext>&#x03BB;</m:mtext></m:mrow><m:mi>A</m:mi></m:mfrac></m:mrow></m:math></p></td>
+<td>(5.7)</td>
+</tr>
+</table>
+<p class="noindent">This gives a general expression for any enclosure. Let us compare this with a known geometry, viz. a hemisphere of radius <i>R</i>, with radiation of wavelength<a id="page_42" class="page">Page 42, Chapter 5 Emission and absorption by gases</a>&#x03BB; from a surface element at the centre of the base to the whole of the curved surface. In this case all beams are of length <i>R</i>. From <a href="#eq5.3">Equation 5.3</a>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:3em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Absorption&#x00A0;per&#x00A0;unit&#x00A0;area&#x00A0;of&#x00A0;emitting&#x00A0;surface</m:mtext><m:mo>=</m:mo><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>&#x2009;</m:mtext><m:mtext>d&#x03BB;</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:mi>R</m:mi></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>&#x2248;</m:mo><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:mi>R</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mtext>&#x03BB;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>f</m:mtext><m:mtext>o</m:mtext><m:mtext>r</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>s</m:mtext><m:mtext>m</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext><m:mtext>l</m:mtext><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:mi>R</m:mi></m:mrow></m:math></p></td>
+<td>(5.8)</td>
+</tr>
+</table>
+<p class="tab-cap" id="tab5.1"><b>Table 5.1</b> Mean Beam Lengths for gas radiation in a number of geometries</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">Geometry</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">4<i>V</i>/<i>A</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">3.6<i>V</i>/<i>A</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Sphere (radius <i>r</i>) radiating to surface</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>&#x00D7;</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac><m:mi>&#x03C0;</m:mi><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mn>4</m:mn><m:mi>&#x03C0;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac><m:mi>r</m:mi></m:mrow></m:math></p></td>
+<td style="vertical-align:top;"><p class="tab-l">1.2<i>r</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l" style="width:65%;">Cube (side length <i>L</i>) radiating to one face</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mi>L</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>L</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>L</m:mi></m:mrow></m:math></p></td>
+<td style="vertical-align:top;"><p class="tab-l">3.6<i>L</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l" style="width:65%;">Cube (side length <i>L</i>) radiating to all faces</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mi>L</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mn>6</m:mn><m:msup><m:mi>L</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mi>L</m:mi></m:mrow></m:math></p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.6<i>L</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l" style="width:65%;">Cylinder (radius <i>r</i>, length <i>L</i>) radiating to curved surface</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>&#x00D7;</m:mo><m:mi>&#x03C0;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mi>L</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>r</m:mi><m:mi>L</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>r</m:mi></m:mrow></m:math></p></td>
+<td style="vertical-align:top;"><p class="tab-l">1.8<i>r</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l" style="width:65%;">Cylinder (radius <i>r</i>, length <i>L</i>), radiating to curved surface and ends</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>&#x00D7;</m:mo><m:mi>&#x03C0;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mi>L</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>r</m:mi><m:mi>L</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>r</m:mi><m:mi>L</m:mi></m:mrow><m:mrow><m:mi>L</m:mi><m:mo>+</m:mo><m:mi>r</m:mi></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mrow><m:mn>1.8</m:mn><m:mi>r</m:mi><m:mi>L</m:mi></m:mrow><m:mrow><m:mi>L</m:mi><m:mo>+</m:mo><m:mi>r</m:mi></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l" style="width:65%;">Space between two parallel plates (each area <i>A</i>, distance <i>L</i> apart) to both plates</p></td>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>&#x00D7;</m:mo><m:mi>A</m:mi><m:mi>L</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>A</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>L</m:mi></m:mrow></m:math></p></td>
+<td style="vertical-align:top;"><p class="tab-l">1.8<i>L</i></p></td>
+</tr>
+</table>
+<p class="noindent">A comparison of <a href="#eq5.7">Equations 5.7</a> and <a href="#eq5.8">5.8</a> shows that:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:3em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Beam</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Length</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo stretchy='false'>(</m:mo><m:mtext>R</m:mtext><m:mo stretchy='false'>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:mi>V</m:mi></m:mrow><m:mi>A</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>&#x00D7;</m:mo><m:mtext>&#x2009;</m:mtext><m:mtext>Volume</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>gas</m:mtext><m:mtext>&#x2009;</m:mtext></m:mrow><m:mrow><m:mtext>Area</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>contact</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>between</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>gas</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>and</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>surface</m:mtext></m:mrow></m:mfrac></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">This has been derived for an optically thin gas. More detailed analysis for gases with finite values of <i>k</i><sub>&#x03BB;</sub><i>pR</i> shows that this expression overestimates the actual beam length by around 10%, because a significant proportion of the radiation emitted by the gas is absorbed elsewhere in the gas before it reaches the surface. In practical systems it is therefore usual to use</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:13em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Beam</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Length</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x2248;</m:mo><m:mfrac><m:mrow><m:mn>3.6</m:mn><m:mi>V</m:mi></m:mrow><m:mi>A</m:mi></m:mfrac></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent"></p>
+<p class="noindent">Although derived for a hemisphere, it has become customary for beam lengths for all shapes of enclosure to be defined in similar terms. Thus we have:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Mean</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Beam</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Length</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3.6</m:mn><m:mo>&#x00D7;</m:mo><m:mtext>Volume</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>gas</m:mtext></m:mrow><m:mrow><m:mtext>Area</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Contact</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>between</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>gas</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>and</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>surface</m:mtext></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td>(5.9)</td>
+</tr>
+</table>
+<p class="noindent">This can be evaluated quite easily for many geometries, and tabulations are given in many sources. A small selection is given in <a href="#tab5.1">Table 5.1</a>.</p>
+</section>
+<section epub:type="chapter" id="sec5.4">
+<h2 class="h2"><b>5.4<span class="space">&#160;</span>Total emissivity for a gas</b></h2>
+<p class="noindent">The concept of total emissivity introduced in <a href="Chapter01.xhtml">Chapter 1</a> in the context of surfaces can be applied equally well to gases. Using the previous definitions, <a id="page_43" class="page">Page 43, Chapter 5 Emission and absorption by gases</a>we can define the total emissivity of a gas <i>&#x03B5;</i><sub>g</sub>:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:10em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mi>W</m:mi><m:mrow><m:msub><m:mi>W</m:mi><m:mi>b</m:mi></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>g</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>&#x2009;</m:mtext><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">where <i>T</i><sub>g</sub> is the absolute temperature of the gas. Substituting <a href="#eq5.4">Equation 5.4</a> for <i>&#x03B5;</i><sub>&#x03BB;</sub> and Planck&#x2019;s Law (<a href="Chapter01.xhtml#eq1.13">Equation 1.13</a>) for <i>W<sub>b</sub></i><sub>&#x03BB;</sub>, we obtain:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>g</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:msub><m:mi>L</m:mi><m:mi>m</m:mi></m:msub></m:mrow></m:msup></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow><m:mo>[</m:mo> <m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>h</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mn>5</m:mn></m:msup></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:msub><m:mi>T</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow><m:mtext>d</m:mtext><m:mtext>&#x03BB;</m:mtext></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;">(5.10)</td>
+</tr>
+</table>
+<p class="noindent">We can also define the total gas emissivity in terms of an overall absorption coefficient (<i>k</i>):</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>k</m:mi><m:mi>p</m:mi><m:msub><m:mi>L</m:mi><m:mi>m</m:mi></m:msub></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td>(5.11)</td>
+</tr>
+</table>
+<p class="noindent">It can be seen that <i>&#x03B5;</i><sub>g</sub> is a function of the gas temperature and the product <i>pL<sub>m</sub></i>. The integral in <a href="#eq5.10">Equation 5.10</a> can, in principle, be evaluated, provided that the wavelength dependence of the absorption coefficient is known. This has been done by a number of workers, using experimental spectral data. For engineering calculations, it is generally most convenient if values of <i>&#x03B5;</i><sub>g</sub> can be presented in either tabular or graphical form. Hottel&#x2019;s pioneering experimental work included the production of emissivity charts for a number of gases of practical importance (see, for example, McAdams). More recent work combining theory and experiment has produced more refined data over a much wider range of conditions (see review by Modest). However, Hottel&#x2019;s charts still find favour among many engineers. Agreement between Hottel&#x2019;s charts and more recent data is generally good, except that the charts should not be extrapolated outside the limits of Hottel&#x2019;s data.</p>
+<p class="indent"><a href="#fig5.6">Figures 5.6</a> and <a href="#fig5.7">5.7</a> are emissivity charts for carbon dioxide and water vapour at 1 bar total pressure as a function of temperature for various values of <i>pL<sub>m</sub></i>. The total emissivity is simply read directly from the chart, given knowledge of the gas temperature, the partial pressure of the absorbing gas, and the mean beam length for the system. These charts can be used for pure CO<sub>2</sub> or pure water vapour, or mixtures of either gas in a non-participating gas, such as air. Mixtures of two participating gases (e.g. combustion products containing CO<sub>2</sub> and H<sub>2</sub>O) will be considered in <a href="#sec5.6">Section 5.6</a>.</p>
+<p class="indent">For total pressures other than 1 bar, Hottel produced pressure correction charts. These give a correction factor (C) which must be multiplied with the value of emissivity for 1 bar pressure, i.e. <i>&#x03B5;</i>(<i>p</i><sub>total</sub>) = <i>C</i> &#x00D7; <i>&#x03B5;</i>(1 bar). More modern data are available, including empirical correlation equations, but charts are still considered to be more convenient for order-of-magnitude engineering calculations. Again, they should not be used outside the limits of Hottel&#x2019;s original data. <a href="#fig5.8">Figure 5.8</a> shows a pressure correction chart for carbon dioxide, and clearly shows that emissivity generally increases as total pressure increases.<a id="page_44" class="page">Page 44, Chapter 5 Emission and absorption by gases</a></p>
+<figure class="imgc" id="fig5.6">
+<img src="../images/fig5.6.jpg" alt="images"/>
+<figcaption><b>Figure 5.6</b> Emissivity chart for carbon dioxide at 1 bar total pressure as a function of temperature and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>P</m:mi><m:mrow><m:msub><m:mrow><m:mtext>CO</m:mtext></m:mrow><m:mn>2</m:mn></m:msub></m:mrow></m:msub><m:msub><m:mi>L</m:mi><m:mi>m</m:mi></m:msub></m:mrow></m:math> (redrawn from Siegel and Howell).</figcaption></figure>
+<figure class="imgc" id="fig5.7">
+<img src="../images/fig5.7.jpg" alt="images"/>
+<figcaption><b>Figure 5.7</b> Emissivity chart for water vapour at 1 bar total pressure as a function of temperature and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>P</m:mi><m:mrow><m:msub><m:mtext>H</m:mtext><m:mtext>2</m:mtext></m:msub><m:mtext>O</m:mtext></m:mrow></m:msub><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub></m:mrow></m:math> (redrawn from Siegel and Howell).</figcaption></figure>
+<p class="noindent"><a id="page_45" class="page">Page 45, Chapter 5 Emission and absorption by gases</a></p>
+<figure class="imgc" id="fig5.8">
+<img src="../images/fig5.8.jpg" alt="images"/>
+<figcaption><b>Figure 5.8</b> Pressure Correction Factor for carbon dioxide as a function of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>P</m:mi><m:mrow><m:msub><m:mrow><m:mtext>CO</m:mtext></m:mrow><m:mtext>2</m:mtext></m:msub></m:mrow></m:msub><m:msub><m:mi>L</m:mi><m:mi>m</m:mi></m:msub></m:mrow></m:math>.</figcaption></figure>
+</section>
+<section epub:type="chapter" id="sec5.5">
+<h2 class="main2"><b>5.5 Total absorptivity</b></h2>
+<p class="noindent">The defining equations for absorption can also be applied to gases. Thus if a gas receives radiation from a surface whose temperature is <i>T</i><sub>s</sub>, then, from <a href="Chapter01.xhtml#eq1.17">Equation 1.17</a> <b>,</b> the total absorptivity <i>&#x03B1;</i><sub>g</sub> for the gas is given by:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td style="padding-left:6em;"><p class="equ" id="eq5.12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mi>G</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mtext>d</m:mtext><m:mtext>&#x03BB;</m:mtext></m:msub></m:mrow></m:mrow></m:mstyle></m:mrow><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>G</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mtext>d</m:mtext><m:mtext>&#x03BB;</m:mtext></m:msub></m:mrow></m:mrow></m:mstyle></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>s</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mi>G</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mtext>d</m:mtext><m:mtext>&#x03BB;</m:mtext></m:msub></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>&#x03B1;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>s</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>k</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mi>p</m:mi><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub></m:mrow></m:msup></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow><m:mo>[</m:mo> <m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>h</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mtext>5</m:mtext></m:msup></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:msub><m:mi>T</m:mi><m:mtext>s</m:mtext></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow><m:mtext>d&#x03BB;</m:mtext></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:9.8em;">(5.12)</td>
+</tr>
+</table>
+<p class="noindent">The right-hand side of <a href="#eq5.12">Equation 5.12</a> shows that total absorptivity is a function of <i>pL</i><sub>m</sub>, <i>T</i><sub>g</sub>, and <i>T</i><sub>s</sub>. The dependence on the temperature of the surrounding surfaces creates a major complication if this integral is to be evaluated. There is, however, an empirical short-cut, originally developed by Hottel, which uses the total emissivity charts (<a href="#fig5.6">Figure 5.6</a> and <a href="#fig5.7">5.7</a>) to determine the total absorptivity. A value for <i>&#x03B1;</i><sub>g</sub> can be found using the following procedure:</p>
+<p class="noindent">&#160;</p>
+<p class="blist">(i)<span class="space">&#160;</span>use <i>T</i><sub>s</sub> not <i>T</i><sub>g</sub> on the horizontal axis;</p>
+<p class="blistk">(ii)<span class="space-n">&#160;</span>use <i>pL</i><sub>m</sub> &#x00D7; (<i>T</i><sub>s</sub><i>/T</i><sub>g</sub>) instead of <i>pL</i><sub>m</sub>;</p>
+<p class="blistk1">(iii)<span class="space-n1">&#160;</span>read off a value from the chart;</p>
+<p class="blistk">(iv)<span class="space-n">&#160;</span>multiply by (<i>T</i><sub>g</sub>/<i>T</i><sub>s</sub>)<sup>0.5</sup>.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent"><a id="page_46" class="page">Page 46, Chapter 5 Emission and absorption by gases</a>Hottel&#x2019;s pioneering work recommended (on purely empirical grounds) using exponents of 0.65 for CO<sub>2</sub> and 0.45 for H<sub>2</sub>O in step (iv). Although these values are still in common use, a single value of 0.5 can be justified theoretically.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Example 5.1.</p>
+<p class="noindent">CO<sub>2</sub> at 1 bar and 1500 K is in a vessel whose walls are at 1000 K. If <i>pL</i><sub>m</sub> is 0.02 bar m, determine <i>&#x03B5;</i><sub>g</sub> and <i>&#x03B1;</i><sub>g</sub>.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Solution.</p>
+<p class="noindent">From <a href="#fig5.6">Figure 5.6</a>, <i>&#x03B5;</i><sub>g</sub> (<i>T</i><sub>g</sub> <i>=</i> 1500 K, <i>pL</i><sub>m</sub> <i>=</i> 0.02 bar m) = <b>0.051</b><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1000</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>K,</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>0</m:mtext><m:mtext>.02</m:mtext><m:mo>&#x00D7;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>1000/1500</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>bar</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1500</m:mn><m:mo>/</m:mo><m:mn>1000</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>0.5</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1000</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>K,</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>0</m:mtext><m:mtext>.0133</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>bar</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1500</m:mn><m:mo>/</m:mo><m:mn>1000</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>0.5</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mn>0.056</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1500</m:mn><m:mo>/</m:mo><m:mn>1000</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>0.5</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mn mathvariant='bold'>0</m:mn><m:mo>.</m:mo><m:mn mathvariant='bold'>0</m:mn><m:mn mathvariant='bold'>6</m:mn><m:mn mathvariant='bold'>9</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Note that the total emissivity and absorptivity have quite different values. Although this is a simple example, it illustrates a common complication with gas radiation, viz. <i>&#x03B5;</i><sub>g</sub> &#x2260; <i>&#x03B1;</i><sub>g</sub>. This means that gases cannot normally be assumed to be grey. We shall see later in <a href="#sec5.8">Section 5.8</a> how using an assumption of grey gases results in easier calculations, but can give rise to errors which are unacceptable in all but rough calculation.</p>
+</section>
+<section epub:type="chapter" id="sec5.6">
+<h2 class="main2"><b>5.6 Spectral overlap</b></h2>
+<p class="noindent">In systems where more than two absorbing/emitting species are present, there will be a contribution from each component. A straight addition of the individual contributions will not generally suffice, because of overlap of the spectral bands of the various species, i.e. two or more different species having radiation bands at the same wavelength. The effect of overlap is increased self-absorption, which lowers the emissivity of the gas mixture, compared with the sum of the individual contributions.</p>
+<p class="indent">The usual approach is to find the individual contributions from charts, etc., and then to apply an overlap correction. So, for a mixture of two gases we can write:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mrow><m:mtext>mixture</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mrow><m:mtext>g1</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mrow><m:mtext>g2</m:mtext></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mtext>&#x0394;</m:mtext><m:mi>&#x03B5;</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(5.13)</td>
+</tr>
+</table>
+<p class="noindent">where <i>&#x03B5;</i><sub>g1</sub> and <i>&#x03B5;</i><sub>g2</sub> are the contributions from each gas (each being determined as if the other gas were absent) and &#x0394;<i>&#x03B5;</i> is the spectral overlap correction. Hottel originally produced empirical charts of <i>&#x2206;&#x03B5;</i> for various CO<sub>2</sub>/H<sub>2</sub>O mixtures as a function of temperature (see <a href="#fig5.9">Figure 5.9</a>). A considerable degree of interpolation is required with these charts. However, the uncertainty which this introduces is negligible, as &#x2206;<i>&#x03B5;</i> is normally small compared with the sum of <i>&#x03B5;</i><sub>g1</sub> and <i>&#x03B5;</i><sub>g1</sub>. Indeed, for CO<sub>2</sub>/H<sub>2</sub>O mixtures, neglecting spectral overlap completely introduces an error of only 10 to 15% at most in practical systems.</p>
+<p class="indent">We can use an analogous procedure to determine spectral overlap corrections for the total absorptivity of mixtures. Thus for a mixture of two gases we have:</p>
+<p class="noindent"><a id="page_47" class="page">Page 47, Chapter 5 Emission and absorption by gases</a></p>
+<figure class="imgc" id="fig5.9">
+<img src="../images/fig5.9.jpg" alt="images"/>
+<figcaption><b>Figure 5.9</b> Spectral overlap correction for gas mixtures containing H<sub>2</sub>O and CO<sub>2</sub>.</figcaption></figure>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mrow><m:mtext>mixture</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mrow><m:mtext>g1</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mrow><m:mtext>g1</m:mtext></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x0394;</m:mi><m:mi>&#x03B1;</m:mi></m:mrow></m:math></p>
+<p class="noindent">where <i>&#x03B1;</i><sub>g1</sub> and <i>&#x03B1;</i><sub>g1</sub> are the contributions from each gas and &#x2206;<i>&#x03B1;</i> is the spectral overlap correction. &#x2206;<i>&#x03B1;</i> is determined from the &#x2206;<i>&#x03B5;</i> charts, using the temperature of the radiation source, instead of the gas temperature.</p>
+<p class="indent">It is obvious that determination of gas emissivities and absorptivities is somewhat approximate. Emissivities are generally difficult to measure, so all published charts include a degree of uncertainty. Recent workers have attempted to derive correlations for the experimental data, particularly as an aid for computer-based calculations. Such correlations normally involve too may parameters to help in simple hand-calculations, and are not therefore included here.</p>
+</section>
+<section epub:type="chapter" id="sec5.7">
+<h2 class="main2"><b>5.7 Network analogy for gases</b></h2>
+<p class="noindent">We have seen how radiation heat transfer problems are solved much more easily if the network approach is used, especially if the grey body approximation is valid. The network approach can also be used for participating media, provided that we can take account of the effect of the medium on transfer between surfaces. We need to consider the effect of absorption on the direct transfer of radiation between the two surfaces, and the emission of radiation by the gas to each surface.</p>
+<p class="indent">Consider two surfaces separated by an absorbing/emitting gas. Then:</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Transmission from surface 1 to surface 2 = <i>J</i><sub>1</sub><i>A</i><sub>1</sub><i>F</i><sub>12</sub><i>&#x03C4;</i><sub>g1</sub> <i>= J</i><sub>1</sub><i>A</i><sub>1</sub><i>F</i><sub>12</sub>(1 <i>&#x2013; &#x03B1;</i><sub>g1</sub>)</p>
+<p class="noindent">Transmission from surface 2 to surface 1 = <i>J</i><sub>2</sub><i>A</i><sub>2</sub><i>F</i><sub>21</sub><i>&#x03C4;</i><sub>g2</sub> = <i>J</i><sub>2</sub><i>A</i><sub>2</sub><i>F</i><sub>21</sub>(1 <i>&#x2013; &#x03B1;</i><sub>g2</sub>)</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">where <i>&#x03C4;</i><sub>gi</sub> is the transmissivity of the gas to the radiation emitted by surface <i>i</i>. Note that because the spectral distribution of the radiation from each surface is different, the proportion of the radiation originating from each surface which is transmitted/absorbed will also differ. The net transmission <i>Q</i><sub>12</sub> from surface 1 to surface 2 will be, after using reciprocity:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mrow><m:mtext>g1</m:mtext></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mrow><m:mtext>g2</m:mtext></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math></p>
+<p class="noindent"><a id="page_48" class="page">Page 48, Chapter 5 Emission and absorption by gases</a>Let us assume that the gas is grey, i.e. whatever the radiation source, the absorptivity equals the emissivity then <i>&#x03B1;</i><sub>g1</sub> <i>= &#x03B5;</i><sub>g</sub> and <i>&#x03B1;</i><sub>g2</sub> = <i>&#x03B5;</i><sub>g</sub>, which means that:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(5.14)</td>
+</tr>
+</table>
+<p class="noindent">This is now in a form which is suitable for use in the network analogy. On comparison with <a href="Chapter04.xhtml#eq4.1">Equation 4.1</a> for transfer between non-black surfaces, it is clear that the effect of the gas is to modify the conductance between nodes <i>J</i><sub>1</sub> and <i>J</i><sub>2</sub> by a factor (1 &#x2013; <i>&#x03B5;</i><sub>g</sub>).</p>
+<p class="indent">We must now consider radiation to/from the gas. For interchange between the gas and surface 1, we have:</p>
+<p class="imgc">Emission from gas to surface <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mn>1</m:mn><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>g</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:math></p>
+<p class="imgc">Radiation from surface 1 absorbed by gas = <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x03B1;</m:mi><m:mrow><m:mtext>g1</m:mtext></m:mrow></m:msub></m:mrow></m:math></p>
+<p class="noindent">As the gas is in intimate contact with the surface, the view factor between the surface and the gas can be taken to be 1. The net radiative transfer from the gas to surface 1 is therefore:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>g1</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>g</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mrow><m:mtext>g1</m:mtext></m:mrow></m:msub><m:msubsup><m:mi>J</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p>
+<p class="noindent">If the gas can be assumed to be grey, then <i>&#x03B1;</i><sub>g1</sub> <i>= &#x03B5;</i><sub>g</sub> and the equation becomes</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>g1</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>g</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>J</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(5.15)</td>
+</tr>
+</table>
+<p class="noindent">Once again an assumption of a grey gas has given a form which is suitable for the network analogy. Transfer between a surface and a gas can be represented by a conductance <i>A</i><sub>1</sub><i>&#x03B5;</i><sub>g</sub> between a <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>g</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:math> node for the gas and a radiosity node for the surface. Note that the gas is similar to a refractory in its use of the emissive power as the voltage node.</p>
+</section>
+<section epub:type="chapter" id="sec5.8">
+<h2 class="main2"><b>5.8 Worked example</b></h2>
+<figure class="imgc" id="fig5.10">
+<img src="../images/fig5.10.jpg" alt="images"/>
+<figcaption><b>Figure 5.10</b> Geometry for worked example for gas radiation.</figcaption></figure>
+<p class="noindent">In order to demonstrate the use of gas emissivity data in engineering calculations, this section considers a simple geometry (two large parallel plates) using a variety of different assumptions and conditions. <a href="#fig5.10">Figure 5.10</a> shows the system: the two plates are 2 m apart and at temperatures of 1800 K and 1000 K. The gas between the plates is at a constant, uniform temperature and is stagnant, such that convective effects can be ignored. Thermal <a id="page_49" class="page">Page 49, Chapter 5 Chapter 5 Emission and absorption by gases</a>conduction through the gas will be assumed to be negligible. Four different conditions will be considered:</p>
+
+<p class="blist" style="margin-top:1em;">(i)<span class="space">&#160;</span>black surfaces, non-participating gas;</p>
+<p class="blistk">(ii)<span class="space-n">&#160;</span>black surfaces, participating gas (20 vol% CO<sub>2</sub> in air at 1 bar);</p>
+<p class="blistk1">(iii)<span class="space-n1">&#160;</span>black surfaces, grey gas;</p>
+<p class="blistk">(iv)<span class="space-n1">&#160;</span>grey surfaces, grey gas.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">In each case we will determine the rate of heat transfer from the hotter to the cooler plate, and the temperature of the gas.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Case I&#x2014;Black surfaces, non-participating gas</p>
+<p class="noindent">If the gas is non-participating, then it has no r&#x00F4;le in the problem, which is reduced to a simple two-surface problem of the type discussed in <a href="Chapter03.xhtml">Chapter 3</a> . As the plates are very large, it is convenient to determine the heat flux, which will be given by:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mtext>F</m:mtext><m:mtext>l</m:mtext><m:mtext>u</m:mtext><m:mtext>x</m:mtext><m:mo>=</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mi>&#x03C3;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>&#x00D7;</m:mo><m:mn>5.67</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>8</m:mn></m:mrow></m:msup><m:mo>&#x00D7;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mrow><m:mn>1800</m:mn></m:mrow><m:mn>4</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mrow><m:mn>1000</m:mn></m:mrow><m:mn>4</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mn mathvariant='bold'>5</m:mn><m:mn mathvariant='bold'>3</m:mn><m:mn mathvariant='bold'>9</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext mathvariant='bold'>k</m:mtext><m:mtext mathvariant='bold'>W</m:mtext><m:mo mathvariant='bold'>/</m:mo><m:msup><m:mtext mathvariant='bold'>m</m:mtext><m:mn mathvariant='bold'>2</m:mn></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">Since the gas plays no r&#x00F4;le, its temperature is irrelevant to the analysis, and the calculated heat flux holds for all gas temperatures. The corollary to this is that a value for the gas temperature is indeterminate. The gas temperature is relevant (and hence calculable) only if the assumption that convection is negligible breaks down, or if the gas absorbs/emits radiation.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Case II&#x2014;Black surfaces, participating gas</p>
+<p class="noindent">The problem is most easily solved by considering the net radiant heat flux (<i>Q</i><sub>1</sub>) leaving the hot plate, which, because of the geometry of the problem, is equal to the net radiant heat flux arriving at the cooler plate. A balance on surface 1 gives:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mtext>Emission&#x00A0;from&#x00A0;plate&#x00A0;1</m:mtext><m:mo>&#x2212;</m:mo><m:mrow><m:mo>(</m:mo> <m:mrow><m:mtext>Emission&#x00A0;from&#x00A0;gas&#x00A0;to&#x00A0;plate&#x00A0;1&#x00A0;+&#x00A0;Emission</m:mtext></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow> <m:mrow><m:mtext>from&#x00A0;plate&#x00A0;2&#x00A0;which&#x00A0;reaches&#x00A0;plate&#x00A0;1</m:mtext></m:mrow> <m:mo>)</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:math></p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>g</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup><m:msub><m:mi>&#x03C4;</m:mi><m:mtext>g</m:mtext></m:msub><m:msub><m:mrow></m:mrow><m:mn>2</m:mn></m:msub></m:mrow></m:math></p>
+<p class="noindent">Using reciprocity, and noting that <i>F</i><sub>12</sub> = 1, the heat flux becomes</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>Flux</m:mtext><m:mo>=</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>g</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mrow><m:mtext>g2</m:mtext></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(5.16)</td>
+</tr>
+</table>
+<p class="noindent">This gives us two unknowns&#x2014;the flux and the gas temperature <i>T</i><sub>g</sub>. A second equation can be obtained from a balance on the gas. The gas is neither a heat source nor a heat sink, so can be considered to be essentially adiabatic, in which case:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:mtext>Radiation&#x00A0;absorbed&#x00A0;from&#x00A0;surface&#x00A0;1&#x00A0;+&#x00A0;Radiation&#x00A0;absorbed&#x00A0;from&#x00A0;surface&#x00A0;2</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>=&#x00A0;Radiation&#x00A0;emitted&#x00A0;by&#x00A0;gas&#x00A0;to&#x00A0;both&#x00A0;surfaces</m:mtext></m:mtd></m:mtr></m:mtable></m:math></p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:msub><m:mi>&#x03B1;</m:mi><m:mrow><m:mtext>g1</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup><m:msub><m:mi>&#x03B1;</m:mi><m:mrow><m:mtext>g2</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>g</m:mn><m:mn>4</m:mn></m:msubsup><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow></m:math></p>
+<p class="noindent"><a id="page_50" class="page">Page 50, Chapter 5 Emission and absorption by gases</a>Rearrangement, noting that <i>A</i><sub>1</sub> = <i>A</i><sub>2</sub> for parallel plates, gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:35%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq5.17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>T</m:mi><m:mn>g</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mrow><m:mtext>g1</m:mtext></m:mrow></m:msub><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mrow><m:mtext>g2</m:mtext></m:mrow></m:msub><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mrow><m:mn>2</m:mn><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(5.17)</td>
+</tr>
+</table>
+<p class="noindent">So, the problem is solved if we determine the emissivity and absorptivities, calculate the gas temperature using <a href="#eq5.17">Equation 5.17</a>, and then the flux using <a href="#eq5.16">Equation 5.16</a> .</p>
+<p class="indent">First, we need to find the mean beam length for the system. For unit cross-section, the volume is 2 m<sup>3</sup>, and the surface area to which the gas radiates is 2 m<sup>2</sup>. Therefore using <a href="#eq5.9">Equation 5.9</a> gives</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3.6</m:mn><m:mi>V</m:mi></m:mrow><m:mi>A</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>3.6</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mo>&#x21D2;</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:msub><m:mi>p</m:mi><m:mrow><m:mtext>CO</m:mtext></m:mrow></m:msub><m:msub><m:mrow></m:mrow><m:mrow><m:msub><m:mrow></m:mrow><m:mn>2</m:mn></m:msub></m:mrow></m:msub><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mn>0.2</m:mn><m:mo>&#x00D7;</m:mo><m:mn>3.6</m:mn><m:mo>=</m:mo><m:mn>0.72</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>bar</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">Use of the emissivity chart requires knowledge of the gas temperature, which is currently unknown. We must therefore make an initial estimate of the gas temperature in order to determine emissivities and absorptivities. We can then calculate the gas temperature using <a href="#eq5.17">Equation 5.17</a> ; if our initial estimate of <i>T</i><sub>g</sub><i><sub> </sub></i>is wrong, we can iterate to give a better value. In this example, an initial estimate halfway between the temperature of the two surfaces would seem to be a sensible starting point, so let us assume a gas temperature of 1400 K. (Note that <a href="#fig5.6">Figure 5.6</a> shows that <i>&#x03B5;</i><sub>g</sub> for CO<sub>2</sub> is not a strong function of temperature in the range 1300 to 1600 K, so the problem will not be greatly affected by any error in this estimate.) From <a href="#fig5.6">Figure 5.6</a>:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1500</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>K,</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>0</m:mtext><m:mtext>.72</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>bar</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.18</m:mn></m:mrow></m:math></p>
+<p class="noindent">We now use the procedure of <a href="#sec5.5">Section 5.5</a> to determine absorptivities. For <i>&#x03B1;</i><sub>g1</sub>:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>1800</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>K</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>and</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>p</m:mi><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.72</m:mn><m:mo>&#x00D7;</m:mo><m:mfrac><m:mrow><m:mn>1800</m:mn></m:mrow><m:mrow><m:mn>1400</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.93</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>bar</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mrow><m:mtext>g1</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1800</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>K,</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>0</m:mtext><m:mtext>.93</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>bar</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>1400</m:mn></m:mrow><m:mrow><m:mn>1800</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>0.5</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mo>=</m:mo><m:mn>0.16</m:mn><m:mo>&#x00D7;</m:mo><m:mn>0.88</m:mn><m:mo>=</m:mo><m:mn>0.14</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">Similarly for <i>&#x03B1;</i><sub>g2</sub>:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>T</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>1000</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>K</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>and</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>p</m:mi><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>T</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.72</m:mn><m:mo>&#x00D7;</m:mo><m:mfrac><m:mrow><m:mn>1000</m:mn></m:mrow><m:mrow><m:mn>1400</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.51</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>bar</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>&#x03B1;</m:mi><m:mrow><m:mtext>g2</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1000</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>K,</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>0</m:mtext><m:mtext>.51</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>bar</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>1400</m:mn></m:mrow><m:mrow><m:mn>1800</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>0.5</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mo>=</m:mo><m:mn>0.18</m:mn><m:mo>&#x00D7;</m:mo><m:mn>1.18</m:mn><m:mo>=</m:mo><m:mn>0.21</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">Substitution of emissivity and absorptivities into <a href="#eq5.17">Equation 5.17</a> gives:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>0.14</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>1800</m:mn></m:mrow><m:mn>4</m:mn></m:msup><m:mo>+</m:mo><m:mn>0.21</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>1000</m:mn></m:mrow><m:mn>4</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:mn>0.18</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:msup><m:mo>=</m:mo><m:mn mathvariant='bold'>1</m:mn><m:mn mathvariant='bold'>4</m:mn><m:mn mathvariant='bold'>7</m:mn><m:mn mathvariant='bold'>0</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext mathvariant='bold'>K</m:mtext></m:mrow></m:math></p>
+<p class="noindent"><a id="page_51" class="page">Page 51, Chapter 5 Emission and absorption by gases</a>Given the two figure accuracy of the charts and the weak temperature dependence of <i>&#x03B5;</i><sub>g</sub>, this is probably close enough to our initial estimate not to require any iteration. Substitution into <a href="#eq5.16">Equation 5.16</a> gives:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>H</m:mtext><m:mtext>e</m:mtext><m:mtext>a</m:mtext><m:mtext>t</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>F</m:mtext><m:mtext>l</m:mtext><m:mtext>u</m:mtext><m:mtext>x</m:mtext><m:mo>=</m:mo><m:mn>5.67</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>8</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mrow><m:mn>1800</m:mn></m:mrow><m:mn>4</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:mn>0.18</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>1470</m:mn></m:mrow><m:mn>4</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mrow><m:mn>1000</m:mn></m:mrow><m:mn>4</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mn>0.21</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mo>=</m:mo><m:mn mathvariant='bold'>5</m:mn><m:mn mathvariant='bold'>0</m:mn><m:mn mathvariant='bold'>3</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext mathvariant='bold'>k</m:mtext><m:mtext mathvariant='bold'>W</m:mtext><m:mo>/</m:mo><m:msup><m:mtext mathvariant='bold'>m</m:mtext><m:mn mathvariant='bold'>2</m:mn></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">Compared with Case I, we see that the effect of the gas is to reduce the net heat flux by almost 7%. Note that surface 1 is still radiating at the same rate as before&#x2014;it is still a black surface at 1800 K. Energy is not being lost, but is being absorbed by the gas and re-radiated back to surface 1, thereby reducing the next flux from surface 1 to surface 2.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Case III&#x2014;Black surfaces, grey gas</p>
+<p class="noindent">For rough calculations it can be time-consuming to carry out the full analysis of case II. We can get a reasonable estimate of heat flux if we assume that the gas is grey, even though it is clear that <i>&#x03B1;</i><sub>g1</sub><i>, &#x03B1;</i><sub>g2</sub>, and <i>&#x03B5;</i><sub>g</sub> are not very similar. The heat balances in <a href="#eq5.16">Equations 5.16</a> and <a href="#eq5.17">5.17</a> remain the same as before; the only difference in the solution is that we assume that <i>&#x03B1;</i><sub>g1</sub> = <i>&#x03B1;</i><sub>g1</sub> = <i>&#x03B5;</i><sub>g</sub> <i>=</i> 0.18. Therefore:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>0.18</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>1800</m:mn></m:mrow><m:mn>4</m:mn></m:msup><m:mo>+</m:mo><m:mn>0.18</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>1000</m:mn></m:mrow><m:mn>4</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:mn>0.18</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:msup><m:mo>=</m:mo><m:mn mathvariant='bold'>1</m:mn><m:mn mathvariant='bold'>5</m:mn><m:mn mathvariant='bold'>4</m:mn><m:mn mathvariant='bold'>8</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext mathvariant='bold'>K</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>H</m:mtext><m:mtext>e</m:mtext><m:mtext>a</m:mtext><m:mtext>t</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>F</m:mtext><m:mtext>l</m:mtext><m:mtext>u</m:mtext><m:mtext>x</m:mtext><m:mo>=</m:mo><m:mn>5.67</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>8</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mrow><m:mn>1800</m:mn></m:mrow><m:mn>4</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:mn>0.18</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>1548</m:mn></m:mrow><m:mn>4</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mrow><m:mn>1000</m:mn></m:mrow><m:mn>4</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mn>0.18</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mo>=</m:mo><m:mn mathvariant='bold'>4</m:mn><m:mn mathvariant='bold'>9</m:mn><m:mn mathvariant='bold'>0</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext mathvariant='bold'>k</m:mtext><m:mtext mathvariant='bold'>W</m:mtext><m:mo>/</m:mo><m:msup><m:mtext mathvariant='bold'>m</m:mtext><m:mn mathvariant='bold'>2</m:mn></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">Clearly the assumption that the gas is grey introduces a sizeable overestimate of the gas temperature, and a slight underestimate of the heat flux.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Case IV&#x2014;Grey surfaces, grey gas</p>
+<p class="noindent">We have seen in <a href="Chapter03.xhtml">Chapters 3</a> and <a href="Chapter04.xhtml">4</a> how use of the electrical network analogy can increase the speed of solution of radiation heat transfer problems. The case of two grey surfaces and a grey gas is most easily addressed using such a network. <a href="#fig5.11">Figure 5.11</a> shows the network appropriate for our geometry, using the conductances derived in <a href="#sec5.7">Section 5.7</a> . We shall assume in this problem that <i>&#x03B5;</i><sub>1</sub> <i>=</i> 0.75 and <i>&#x03B5;</i><sub>2</sub> <i>=</i> 0.8.</p>
+<figure class="imgc" id="fig5.11">
+<img src="../images/fig5.11.jpg" alt="images"/>
+<figcaption><b>Figure 5.11</b> Equivalent electrical network for two grey surfaces and a grey gas.</figcaption></figure>
+<p class="indent">We note, as before, that <i>A</i><sub>1</sub> <i>= A</i><sub>2</sub> and <i>F</i><sub>12</sub> = 1 for large parallel plates, and that <i>&#x03B5;</i><sub>g</sub> = 0.18. We require the overall conductance between <i><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow></m:math></i>and <i><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow></m:math></i>. The <a id="page_52" class="page">Page 52, Chapter 5 Emission and absorption by gases</a>triangle of conductances between <i>J</i><sub>1</sub> and <i>J</i><sub>2</sub> has net conductance</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p>
+<p class="noindent">and the overall conductance <i>C</i><sub>T</sub> is given by</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>C</m:mi><m:mtext>T</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfrac></m:mrow></m:math></p>
+<p class="noindent">which, on substitution of the emissivity data, leads to <i>C</i><sub>T</sub> = 0.594<i>A</i><sub>1</sub>. The rate of heat transfer is given by</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mtext>T</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mo>&#x21D2;</m:mo><m:mtext>&#x2009;</m:mtext><m:mtext>H</m:mtext><m:mtext>e</m:mtext><m:mtext>a</m:mtext><m:mtext>t</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>F</m:mtext><m:mtext>l</m:mtext><m:mtext>u</m:mtext><m:mtext>x</m:mtext><m:mo>=</m:mo><m:mn>0.594</m:mn><m:mo>&#x00D7;</m:mo><m:mn>5.67</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>8</m:mn></m:mrow></m:msup><m:mo>&#x00D7;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mrow><m:mn>1800</m:mn></m:mrow><m:mn>4</m:mn></m:msup><m:mo>&#x2212;</m:mo><m:msup><m:mrow><m:mn>1000</m:mn></m:mrow><m:mn>4</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn mathvariant='bold'>3</m:mn><m:mn mathvariant='bold'>2</m:mn><m:mn mathvariant='bold'>0</m:mn><m:mtext>&#x2009;</m:mtext><m:mi mathvariant='bold'>k</m:mi><m:mi mathvariant='bold'>W</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant='bold'>m</m:mi><m:mn mathvariant='bold'>2</m:mn></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+
+<p class="noindent"><a href="Chapter04.xhtml#eq4.4">Equation 4.4</a> can be used to give <i>J</i><sub>1</sub> = 489 kW/m<sup>2</sup> and <i>J</i><sub>2</sub> = 137 kW/m<sup>2</sup>. A current balance around the gas node gives</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>J</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>g</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>g</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>J</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>=</m:mo><m:mn mathvariant='bold'>1</m:mn><m:mn mathvariant='bold'>5</m:mn><m:mn mathvariant='bold'>3</m:mn><m:mn mathvariant='bold'>2</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext mathvariant='bold'>K</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">The effect of having grey rather than black surfaces is a large reduction in the net rate of heat transfer, but, in this example, there is relatively little effect on the temperature of the gases.</p>
+</section>
+</section>
+</body>
+</html>

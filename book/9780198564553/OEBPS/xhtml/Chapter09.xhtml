@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Radiation Heat Transfer</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch09">
+<a id="page_78" class="page" style="width:70%;">Page 78, Chapter 9 Radiation from flames</a>
+<h1 class="main"><b> 9<span class="space">&#160;</span>Radiation from flames</b></h1>
+<section epub:type="chapter" id="sec9.1">
+<h2 class="h2"><b>9.1<span class="space">&#160;</span>Introduction</b></h2>
+<p class="noindent">The final chapter deals with radiation heat transfer in combustion system, in particular the combustion gases present in such systems. The main complication which can arise is that combustion gases are often laden with particles, which can play a significant r&#x00F4;le in the heat transfer processes. It is the particles present which give a flame its luminosity, and this luminosity is a major contributor to heat transfer from flame gases to the surroundings. Understanding the heat transfer processes involved is therefore of great importance in the development of the modelling of high temperature systems.</p>
+</section>
+<section epub:type="chapter" id="sec9.2">
+<h2 class="h2"><b>9.2 Non-luminous gases</b></h2>
+<p class="noindent">The gaseous phase in combustion gases will contain a mixture of carbon dioxide, water vapour, unused oxygen, nitrogen, and unburnt fuel. There will also be traces of carbon monoxide and nitrogen oxides, but these small concentrations will have a negligible effect on radiation. The analysis of these combustion gases will be the same as for any absorbing/emitting gas mixture. If the gases are well mixed and isothermal we have a standard gas problem; if the gases are not isothermal we can use a zone method, with a sufficiently large number of subdivisions for each zone to be considered isothermal. Methods for solution have been given in earlier chapters.</p>
+</section>
+<section epub:type="chapter" id="sec9.3">
+<h2 class="h2"><b>9.3 Luminous gases</b></h2>
+<section epub:type="chapter" id="sec9.3.1">
+<h4 class="main2-no"><b>9.3.1 General</b></h4>
+<p class="noindent">The luminosity (i.e. the yellow coloration) in combustion gases is due to glowing solid particles, which come principally from three sources:</p>
+<p class="noindent">&#160;</p>
+<p class="nlist">(1)<span class="space">&#160;</span>Solid fuel particles, which are usually injected into a furnace with a particle size in the range 10 to 200 <i>&#x03BC;</i>m. The particle size does not remain constant as the particle burns: there is some swelling during the devolatilisation stage, followed by a steady decrease in size until either complete burnout occurs, or a small residual ash particle is formed. Ash particles will continue to radiate after the fuel has been consumed, so the ash content of the coal has an important bearing on the radiation characteristics of the gases.</p>
+<p class="nlist">(2)<span class="space">&#160;</span>Fuel oils, particularly the heavier ones containing polycyclic aromatic hydrocarbons, have a tendency to carbonise to form solid or semi-solid particles when sprayed into a hot combustion chamber. These particles <a id="page_79" class="page">Page 79, Chapter 9 Radiation from flames</a>have similar characteristics to burning coal particles and their radiation properties are very similar.</p>
+<p class="nlist">(3)<span class="space">&#160;</span>Soot, which is formed in fuel-rich hydrocarbon flames with particle sizes in the range 0.005 to 0.15 <i>&#x03BC;</i>m. Soot is essentially a polymeric hydrocarbon material formed by condensation and dehydrogenation of heavy gaseous hydrocarbons and subsequent particle growth.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Note that because this radiation comes from a solid phase, it is a continuous emission over all wavelengths, and not band emission like gases. Consequently radiative transfer from solid particles is normally much greater than from gases. The latter can usually be neglected in engineering calculations.</p>
+<p class="indent">Radiation passing through a particle-laden medium can be absorbed or scattered as a result of the interaction between radiation and particles. The theory of scattering and absorption is described fully by Maxwell&#x2019;s Equations. Solution of these equations is rather complex and limiting cases or simplifications are usually sought in order to make calculations more tractable for certain ranges of particle size. We find that the radiation properties of particles are crucially dependent on the refractive index of the particles and the particle size relative to the wavelength of the radiation. The latter is usually expressed as the parameter (<i>&#x03c0;d</i>/&#x03BB;), where <i>d</i> is the particle diameter and &#x03BB; the wavelength of the radiation. Three important regimes can be identified:</p>
+<table class="width100b" style="margin-bottom:1em;margin-top:1em;width:30%;margin-left:10em;">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03c0;d</i>/&#x03BB;</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">&#x003C;0.3</p></td>
+<td style="vertical-align:top;"><p class="tab-l">Rayleigh Scattering</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">0.3&#x2013;5</p></td>
+<td style="vertical-align:top;"><p class="tab-l">Mie Scattering</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">&#x003E;5</p></td>
+<td style="vertical-align:top;"><p class="tab-l">Reflective Scattering</p></td>
+</tr>
+</table>
+<p class="indent">The thermal radiation of engineering interest is in the visible and infra-red regions of the electromagnetic spectrum, in a range of approximately 0.5 to 10 <i>&#x03BC;</i>m. Thus fuel particles are generally of a diameter much greater than the wavelength of thermal radiation, in which case scattering is principally by reflection at the particle surface. Soot particles are generally smaller than the wavelength of thermal radiation, and fall within the regime of Rayleigh Scattering.</p>
+</section>
+<section epub:type="chapter" id="sec9.3.2">
+<h4 class="main3"><b>9.3.2 Large particles</b> (<b><i>d</i></b> &#x003E; 2&#x03BB;)</h4>
+<p class="noindent">The following analysis can be used for particles whose diameter is much larger than typical wavelengths of thermal radiation. It is therefore applicable to coal flames, oil droplets, and other solid fuels. We shall assume that the particles are black, i.e. the absorptivity and hence the emissivity are both 1. Because all scattering is reflective, this also means that there is negligible scattering of radiation from the particles in this size range. Further we shall assume that the particles are widely spaced, such that the volume fraction of particles is much less than 1.</p>
+<p class="indent">The basis of the analysis is that a beam of radiation entering the enclosure containing the particle-laden gases either impinges on a particle and is absorbed, or passes through the gases untouched. The particles therefore simply block the radiation and prevent it from passing through. The radiation <a id="page_80" class="page">Page 80, Chapter 9 Radiation from flames</a>absorbed will be proportional to the projected area of particles presented to the incoming radiation. We can therefore write:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="padding-left:0em;"><p class="equ" id="eq9.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mtable><m:mtr><m:mtd><m:mtable columnalign='left'><m:mtr><m:mtd><m:mtext>Projected</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>area</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>particles</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>per</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>unit</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>volume</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>suspension</m:mtext></m:mtd></m:mtr></m:mtable></m:mtd><m:mtd><m:mtext>=</m:mtext></m:mtd><m:mtd><m:mtable columnalign='left'><m:mtr><m:mtd><m:mtext>Particle</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>volume</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Fraction</m:mtext></m:mtd></m:mtr></m:mtable></m:mtd><m:mtd><m:mtext>&#x00D7;</m:mtext></m:mtd><m:mtd><m:mrow><m:mfrac><m:mrow><m:mtext>Projected</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>area</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>all</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>particles</m:mtext></m:mrow><m:mrow><m:mtext>Volume</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>all</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>particles</m:mtext></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mi>K</m:mi><m:mo>=</m:mo><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub><m:msub><m:mi>A</m:mi><m:mtext>v</m:mtext></m:msub></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:4.25em;">(9.1)</td>
+</tr>
+</table>
+<p class="noindent">For a suspension of <i>N</i> spherical particles of diameter <i>d</i>,</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>A</m:mi><m:mtext>v</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>&#x03C0;</m:mi><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>&#x03C0;</m:mi><m:msup><m:mi>d</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>2</m:mn><m:mi>d</m:mi></m:mrow></m:mfrac></m:mrow></m:math></p>
+<p class="noindent">Substitution into <a href="#eq9.1">Equation 9.1</a> gives</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq9.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>K</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>d</m:mi></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(9.2)</td>
+</tr>
+</table>
+<p class="noindent"><i>K</i> represents a form of absorption coefficient which can be substituted for <i>k</i><sub>&#x03BB;</sub><i>p</i> in <a href="Chapter05.xhtml#eq5.2">Equations 5.2</a> to <a href="Chapter05.xhtml#eq5.4">5.4</a> to yield expressions for the absorptivity and hence emissivity of the suspension:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq9.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>I</m:mi><m:mi>L</m:mi></m:msub></m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>&#x03C4;</m:mi><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>3</m:mn><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub><m:mi>L</m:mi><m:mo>/</m:mo><m:mn>2</m:mn><m:mi>d</m:mi></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(9.3)</td>
+</tr>
+</table>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq9.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03B5;</m:mi><m:mo>=</m:mo><m:mi>&#x03B1;</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>3</m:mn><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub><m:mi>L</m:mi><m:mo>/</m:mo><m:mn>2</m:mn><m:mi>d</m:mi></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(9.4)</td>
+</tr>
+</table>
+<p class="noindent">The volume fraction of particles can be estimated from the flowrates of fuel and air. If <i>m</i><sub>f</sub> kg/s of solid fuel and <i>m</i><sub>a</sub> kg/s of air are fed to a furnace, then</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq9.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>Fuel</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Volume</m:mtext></m:mrow><m:mrow><m:mtext>Total</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Volume</m:mtext></m:mrow></m:mfrac><m:mo>&#x2248;</m:mo><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>f</m:mtext></m:msub><m:mo>/</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mtext>f</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>f</m:mtext></m:msub><m:mo>+</m:mo><m:msub><m:mi>m</m:mi><m:mtext>a</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>/</m:mo><m:msub><m:mi>&#x03C1;</m:mi><m:mtext>p</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(9.5)</td>
+</tr>
+</table>
+<p class="noindent">where <i>&#x03C1;</i><sub>f</sub> and <i>&#x03C1;</i><sub>p</sub> are the densities of the solid fuel particles and the combustion products, respectively. Note that we approximate the total volume to the volume of all combustion products. Note also that <a href="#eq9.4">Equation 9.4</a> predicts that the emissivity of coal flames increases as the combustor becomes larger, as particles become smaller, and as the pressure is increases (via its effect on gas density).</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Example 9.1.</p>
+<p class="noindent">A pulverised coal of density 1300 kg/m<sup>3</sup> and mean particle diameter of 50 <i>&#x03BC;</i>m is burnt stoichiometrically in air at 1600 &#x00B0;C, 1 bar in a cylindrical combustor which has 0.5 m internal radius and is 2 m long. Calculate the emissivity of the combustion gases, assuming that the combustion gases have a mean Relative Molecular Mass of 30 kg/kmol, and that stoichiometric combustion of the coal requires 12 kg of air per kg of coal. How does the emissivity change if a chamber ten times larger (<i>r</i> = 5 m, <i>L</i> = 20 m) is used?</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Solution.</p>
+<p class="noindent">We first calculate <i>f</i><sub>v</sub> using <a href="#eq9.5">Equation 9.5</a> and then substitute the result into <a href="#eq9.4">Equation 9.4</a> to give the emissivity. The problem does not give flowrates, but <a id="page_81" class="page">Page 81, Chapter 9 Radiation from flames</a>we do know the fuel/air ratio. Thus we will take as a basis for the calculation a fuel flowrate of 1 kg/s and an air flowrate of 12 kg/s.</p>
+<p class="indent">The mean beam length for the cylindrical chamber is given in <a href="Chapter05.xhtml#tab5.1">Table 5.1</a>:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1.8</m:mn><m:mi>r</m:mi><m:mi>L</m:mi></m:mrow><m:mrow><m:mi>L</m:mi><m:mo>+</m:mo><m:mi>r</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1.8</m:mn><m:mo>&#x00D7;</m:mo><m:mn>0.5</m:mn><m:mo>&#x00D7;</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>0.5</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.72</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext></m:mrow></m:math></p>
+<p class="noindent">From the ideal gas law:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03C1;</m:mi><m:mtext>p</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>P</m:mi><m:mi>M</m:mi></m:mrow><m:mrow><m:mi>R</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>5</m:mn></m:msup><m:mo>&#x00D7;</m:mo><m:mn>30</m:mn></m:mrow><m:mrow><m:mn>8314</m:mn><m:mo>&#x00D7;</m:mo><m:mn>1873</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.193</m:mn><m:mtext>&#x2009;</m:mtext><m:msup><m:mrow><m:mtext>kg/m</m:mtext></m:mrow><m:mtext>3</m:mtext></m:msup></m:mrow></m:math></p>
+<p class="noindent">Substitution in <a href="#eq9.5">Equation 9.5</a> gives:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>1300</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>12</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>/</m:mo><m:mn>0.193</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1.14</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>5</m:mn></m:mrow></m:msup></m:mrow></m:math></p>
+<p class="noindent">We note that the calculated <i>f</i><sub>v</sub> is much less than 1, so our initial assumption is shown to be valid. This value is substituted into <a href="#eq9.4">Equation 9.4</a>:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03B5;</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mtext>exp</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mo>&#x2212;</m:mo><m:mn>3</m:mn><m:mo>&#x00D7;</m:mo><m:mn>1.14</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>5</m:mn></m:mrow></m:msup><m:mo>&#x00D7;</m:mo><m:mn>0.72</m:mn></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:mn>50</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>6</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn mathvariant='bold'>0</m:mn><m:mo mathvariant='bold'>.</m:mo><m:mn mathvariant='bold'>2</m:mn><m:mn mathvariant='bold'>1</m:mn><m:mn mathvariant='bold'>8</m:mn></m:mrow></m:math></p>
+<p class="noindent">If the combustion chamber is ten times larger, then the only change is the mean beam length, which also increases tenfold to 7.2 m. The densities and volume fraction depend only on the stoichiometry, not on actual flowrates, so the emissivity of the enlarged chamber is</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x03B5;</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mtext>exp</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mo>&#x2212;</m:mo><m:mn>3</m:mn><m:mo>&#x00D7;</m:mo><m:mn>1.14</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>5</m:mn></m:mrow></m:msup><m:mo>&#x00D7;</m:mo><m:mn>7.2</m:mn></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:mn>50</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>6</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn mathvariant='bold'>0</m:mn><m:mo mathvariant='bold'>.</m:mo><m:mn mathvariant='bold'>9</m:mn><m:mn mathvariant='bold'>1</m:mn><m:mn mathvariant='bold'>5</m:mn></m:mrow></m:math></p>
+<p class="noindent">Clearly there is a large increase in the emissivity of the combustion gases. This has great implications when scaling-up designs of combustion systems. In large pulverised coal combustors, such as those used for power generation, the combustion gases can be generally assumed to be black.</p>
+</section>
+<section epub:type="chapter" id="sec9.3.3">
+<h4 class="main3"><b>9.3.3 Small particles (</b><b><i>d</i></b> &#x003E; <b>0.5&#x03BB;)</b></h4>
+<p class="noindent">Soot particles are much smaller than the wavelengths of radiation which are important in radiation heat transfer. Scattering of radiation by soot particles therefore falls in the regime of Rayleigh scattering. Theory predicts that the degree of Rayleigh scattering is strongly dependent on wavelength, varying as 1/&#x03BB;<sup>4</sup>, whereas absorption varies as just 1/&#x03BB;. (These dependencies are slightly different in practice, because scattering and absorption are also dependent on the refractive index, which is itself a weak function of &#x03BB;.) At the long wavelengths of interest in thermal radiation problems, scattering can be safely neglected, and attenuation is assumed to be due only to absorption.</p>
+<p class="indent">The general outcome of the analysis is that the expression for the absorption coefficient <i>K</i> in <a href="#eq9.2">Equation 9.2</a> is modified by a factor which includes dependence on the wavelength of the radiation and the complex refractive index (<i>m</i>):</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>K</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>d</m:mi></m:mrow></m:mfrac><m:mo>&#x00D7;</m:mo><m:mfrac><m:mrow><m:mn>24</m:mn><m:mi>&#x03C0;</m:mi><m:mi>d</m:mi></m:mrow><m:mtext>&#x03BB;</m:mtext></m:mfrac><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>m</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>36</m:mn><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub><m:mi>&#x03C0;</m:mi></m:mrow><m:mtext>&#x03BB;</m:mtext></m:mfrac><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>m</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p>
+<p class="noindent"><a id="page_82" class="page">Page 82, Chapter 9 Radiation from flames</a>We can define <i>A</i> = 36<i>&#x03c0;f</i>(<i>m</i>) and simplify the algebra to give:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>K</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>A</m:mi><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub></m:mrow><m:mtext>&#x03BB;</m:mtext></m:mfrac></m:mrow></m:math></p>
+<p class="noindent">Note that <i>K</i> is now wavelength-dependent, so substitution of this expression into <a href="Chapter05.xhtml#eq5.2">Equations 5.2</a> to <a href="Chapter05.xhtml#eq5.4">5.4</a> gives us an equation for the monochromatic emissivity and absorptivity:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq9.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>&#x03B1;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mtext>exp</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mi>A</m:mi><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub></m:mrow><m:mtext>&#x03BB;</m:mtext></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(9.6)</td>
+</tr>
+</table>
+<p class="noindent">This must be intergrated using <a href="Chapter01.xhtml#eq1.10">Equation 1.10</a> and Wien&#x2019;s Approximation (<a href="Chapter01.xhtml#eq1.14">Equation 1.14</a>) to give the total emissivity and absorptivity:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq9.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>&#x03B5;</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>&#x03BB;</m:mtext></m:msub><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mtext>&#x03BB;</m:mtext></m:mrow></m:msub><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mi>A</m:mi><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub></m:mrow><m:mtext>&#x03BB;</m:mtext></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>h</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mtext>5</m:mtext></m:msup></m:mrow></m:mfrac><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>&#x03C0;</m:mi><m:mi>h</m:mi><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mtext>5</m:mtext></m:msup></m:mrow></m:mfrac><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mtext>5</m:mtext></m:msup></m:mrow></m:mfrac><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mi>A</m:mi><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub><m:mi>k</m:mi><m:mi>T</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mtext>5</m:mtext></m:msup></m:mrow></m:mfrac><m:mi>exp</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mtext>&#x03BB;</m:mtext><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:10em;">(9.7)</td>
+</tr>
+</table>
+<p class="noindent">These two integrals are both in the form <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msup><m:mtext>&#x03BB;</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>5</m:mn></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>B</m:mi><m:mo>/&#x03BB;</m:mo></m:mrow></m:msup><m:mtext>d&#x03BB;</m:mtext></m:mrow></m:mrow></m:mstyle></m:mrow></m:math>, where <i>B</i> is a constant, and can be solved using the substitution <i>x</i> = <i>B</i>/&#x03BB; to give:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq9.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msup><m:mi>&#x03BB;</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>5</m:mn></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>B</m:mi><m:mo>/</m:mo><m:mi>&#x03BB;</m:mi></m:mrow></m:msup></m:mrow></m:mrow></m:mstyle><m:mtext>d</m:mtext><m:mi>&#x03BB;</m:mi><m:mo>=</m:mo><m:msup><m:mi>B</m:mi><m:mrow><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow></m:msup><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msup><m:mi>x</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>3</m:mn></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:mrow></m:mstyle><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:1.5em;">(9.8)</td>
+</tr>
+</table>
+<p class="noindent">Application of <a href="#eq9.8">Equation 9.8</a> to <a href="#eq9.7">Equation 9.7</a> gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq9.9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>&#x03B5;</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:mi>A</m:mi><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub><m:mi>k</m:mi><m:mi>T</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>4</m:mn></m:msup><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msup><m:mi>x</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>3</m:mn></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:mrow></m:mstyle><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>4</m:mn></m:msup><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>&#x221E;</m:mi></m:munderover><m:mrow><m:msup><m:mi>x</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>3</m:mn></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mn>3</m:mn></m:mrow></m:msup><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>&#x03B5;</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow><m:mrow><m:mi>A</m:mi><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub><m:mi>k</m:mi><m:mi>T</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>4</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mrow><m:mi>A</m:mi><m:msub><m:mi>f</m:mi><m:mtext>v</m:mtext></m:msub><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub><m:mi>k</m:mi><m:mi>T</m:mi></m:mrow><m:mrow><m:mi>h</m:mi><m:mi>c</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:8em;">(9.9)</td>
+</tr>
+</table>
+<p class="noindent">The integration assumes that the weak dependence of <i>A</i> on wavelength (via the refractive index) is negligible. <a href="#eq9.9">Equation 9.9</a> gives an algebraically straightforward calculation of emissivity. The difficulty lies in providing values for <i>f</i><sub>v </sub>and <i>A</i>, both of which depend on the amount of soot being produced in the flame. The formation of soot depends in turn on the local and overall <a id="page_83" class="page">Page 83, Chapter 9 Radiation from flames</a>stoichiometry and temperature. Soot concentrations are not uniform, so there is considerable spatial variation in both parameters. Values for <i>f</i><sub>v</sub> and <i>A</i> are best obtained from empirical data in the literature. Typical values for <i>f</i><sub>v</sub> in combustion gases are in the range 10<sup>&#x2013;8</sup> to 10<sup>&#x2013;4</sup>; for most industrial applications a value of <i>f</i><sub>v</sub> above about 10<sup>&#x2013;6</sup> will give gases which are essentially black. Experimental values of <i>A</i> for various combustion conditions are given in <a href="#tab9.1">Table 9.1</a>. A varies over a relatively small range, and a value of 5 can usually be taken as a good estimate if a literature value cannot be found. Any uncertainty in <i>A</i> is generally small compared with uncertainties in the value for <i>f</i><sub>v</sub>.</p>
+<p class="tab-cap1" id="tab9.1"><b>Table 9.1</b> Experimental values of <i>A</i> for various combustion conditions</p>
+<table class="width100b" style="margin-bottom:1em;width:40%;margin-left:6em;">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>Fuel</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>A</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Propane</p></td>
+<td style="vertical-align:top;"><p class="tab-l">4.9</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Acetylene</p></td>
+<td style="vertical-align:top;"><p class="tab-l">4</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Coal</p></td>
+<td style="vertical-align:top;"><p class="tab-l">3.7&#x2013;7.5</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">Oil</p></td>
+<td style="vertical-align:top;"><p class="tab-l">6.3</p></td>
+</tr>
+</table>
+<p class="indent">As indicated above, radiation from soot in flames is normally much greater than from the gases, such that gas radiation can be ignored. For small flames or flames with low soot concentrations, we can sum the contributions from the soot and the gases and then subtract a published spectral overlap correction of the type used for CO<sub>2</sub>/H<sub>2</sub>O mixtures.</p>
+</section>
+</section>
+</section>
+</body>
+</html>

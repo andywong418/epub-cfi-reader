@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Thermodynamics of Chemical Processes</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch01">
+<a id="page_1" class="page" style="width:70%;">Page 1, Chapter 1 Preamble: energy in chemical systems</a>
+<h1 class="ch-title">1<span class="space">&#160;</span>Preamble: energy in chemical systems</h1>
+<p class="noindent">Chemistry is essentially the science concerned with explaining molecular behaviour. Synthetic chemists try to change one type of molecule into another; structural chemists try to understand how atoms and molecules are arranged; physical and theoretical chemists try to explain how and why molecules behave in the way they do. Of course, these are generalities and most chemists are interested in more than one of these categories. This primer is concerned with the factors which govern chemical change. After studying the material covered, you should be able to make predictions about the behaviour of reactions and processes from first principles.</p>
+<aside class="abc" style="margin-top:-10.5em;" epub:type="sidebar">
+<figure class="fig1" id="fig1.1">
+<img src="../images/fig1.1.jpg" alt="images"/>
+<figcaption style="width:100%;text-align:left;"><b>Fig. 1.1</b> Types of chemical systems:</figcaption></figure>
+<p class="sidebar">(a) an open system;</p>
+<p class="sidebar">(b) a closed system; and</p>
+<p class="sidebar">(c) an isolated system.</p>
+<p class="sidebar" style="padding-top:0.5em;">In (c), the contents are held in the flask by the stopper and cannot be removed or added to. The vacuum flask prevents heat (energy) exchange with the surroundings. In (b), heat exchange can take place although the contents of the flask are fixed. In (a), exchange of both heat and matter with the surroundings is possible.</p>
+</aside>
+<p class="indent">Thermodynamics is concerned with the study of <i>macroscopic</i> systems. We will be concerned with the properties of large, measurable amounts of matter rather than those of individual molecules. Indeed, many of the concepts covered in this primer do not need us to understand the molecular nature of matter or even to know that molecules exist. However, many topics are more easily understood (especially those concerned with entropy changes) if we consider what state the molecules are in and how they are arranged in our systems. Indeed, a related branch of physical chemistry&#x2014;<i>molecular</i> or <i>statistical thermodynamics</i>&#x2014;begins with the properties of individual molecules and derives the behaviour of chemical systems from these. However, this is outside the scope of this introductory primer.</p>
+<p class="indent">As we develop the tools of thermodynamics we will find that one factor dominates our discussions. This is the <i>energy</i> of the system. In several universities I have visited, the material covered in this primer is actually titled <i>&#x2018;energy changes in chemical processes&#x2019;</i> to emphasize the usefulness of thermodynamics in chemistry. This chapter will focus on the origin of energy in chemical systems and particularly how it changes during chemical processes. Before proceeding to a detailed discussion of energy in chemical processes and reactions, there are some basic ideas common to the whole story that need to be established.</p>
+<section epub:type="chapter" id="sec1.1">
+<h2 class="main">1.1<span class="space">&#160;</span>Chemical systems</h2>
+<p class="noindent">In beginning a discussion of thermodynamics, we must be careful to define in a very precise manner, the part of the universe with which we are concerned. We describe this as the <i>system</i> of interest. The rest of the universe is described as the <i>surroundings.</i> Various kinds of system exist. <i>Isolated</i> systems occur where there can be no exchange of heat or matter with the surroundings. A <i>closed</i> system contains a fixed amount of matter but allows exchange of heat. <i>Adiabatic</i> systems allow no exchange of energy. Finally, the most common type of system which we encounter is an <i>open</i> system, in which both matter <a id="page_2" class="page">Page 2, Chapter 1 Preamble: energy in chemical systems</a>and energy can be exchanged with the surroundings. For example, a reaction taking place in a sealed, well-insulated calorimeter would be an isolated system, while the same reaction in an ordinary beaker would be an open system, as shown schematically in <a href="#fig1.1">Fig. 1.1</a>.</p>
+<section epub:type="chapter">
+<h3 class="main2">Changes in systems</h3>
+<p class="noindent">Another factor requiring great care when discussing thermodynamics is the precise use of symbols and terminology. It is customary to represent the change in any property of a system by the symbol &#x0394;. In order to be consistent, if we are interested in some property <i>X,</i> then &#x0394; is precisely defined by</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="equ" id="eq1.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>&#x0394;</m:mtext><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>X</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>a</m:mtext><m:mtext>f</m:mtext><m:mtext>t</m:mtext><m:mtext>e</m:mtext><m:mtext>r</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>t</m:mtext><m:mtext>h</m:mtext><m:mtext>e</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>c</m:mtext><m:mtext>h</m:mtext><m:mtext>a</m:mtext><m:mtext>n</m:mtext><m:mtext>g</m:mtext><m:mtext>e</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x2212;</m:mo><m:mtext>&#x2009;</m:mtext><m:mi>X</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>b</m:mtext><m:mtext>e</m:mtext><m:mtext>f</m:mtext><m:mtext>o</m:mtext><m:mtext>r</m:mtext><m:mtext>e</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>t</m:mtext><m:mtext>h</m:mtext><m:mtext>e</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>c</m:mtext><m:mtext>h</m:mtext><m:mtext>a</m:mtext><m:mtext>n</m:mtext><m:mtext>g</m:mtext><m:mtext>e</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>X</m:mi><m:mrow><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext><m:mtext>&#x2009;</m:mtext></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>X</m:mi><m:mrow><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow></m:math></p></td>
+<td style="padding-top:1em;">(1.1)</td>
+</tr>
+</table>
+<p class="indent">Thus, for a system being heated from a temperature <i>T</i><sub>1</sub> to <i>T</i><sub>2</sub>, &#x2206;<i>T</i> =<i> T<sub>2</sub></i> &#x2013;<i> T</i><sub>1</sub>. For a chemical reaction, &#x2206;<i>X</i> would be calculated as <i>X</i>(products) &#x2013; <i>X</i>(reactants).</p>
+<aside class="abc" style="margin-top:-12.5em;" epub:type="sidebar">
+<p class="sidebar"><i>Note:</i> &#x2206; is the upper case Greek letter delta and usually means an observable change to a system. In later discussions, we will use the lower case delta, &#x03B4;, to signify a very small or <i>infinitesimally small</i> change.</p>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="main2">Ideal gases and atmospheric pressure</h3>
+<p class="noindent">The concept of an <i>ideal gas</i> should be a familiar one. It is one of a number of so-called &#x2018;ideal&#x2019; reference states which obey relatively simple laws and enable us to develop theoretical models of their behaviour. Another which we will meet later is that of an <i>ideal solution</i> (see <a href="Chapter05.xhtml#sec5.3">Section 5.3</a>).</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<p class="sidebar"><i>Note:</i> As an example, if a system is heated from 20 to 100 &#x00B0;C, &#x0394; <i>T</i> would be (100 &#x2013; 20) = 80 &#x00B0;C. If it were cooled from 20 to 0 &#x00B0;C, &#x2206;<i>T</i> would be (0 &#x2013; 20) = &#x2013;20 &#x00B0;C.</p>
+</aside>
+<p class="indent">In its most simple definition, an ideal gas is one whose properties obey the following simple equation:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>p</m:mi><m:mi>V</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>R</m:mi><m:mi>T</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(1.2)</td>
+</tr>
+</table>
+<p class="noindent">where <i>p</i> is the pressure when <i>n</i> moles of a gas occupy a volume <i>V</i> at temperature <i>T</i> (measured in Kelvin). <i>R</i> is the <i>gas constant,</i> which is a fundamental constant and has the value (in SI units) of 8.314 J K<sup>&#x2013;1</sup> mol<sup>&#x2013;1</sup>. It can be shown that <a href="#eq1.2">eqn 1.2</a> follows if we make some simple assumptions about the gas molecules. For example, the molecules are treated as point masses which have negligible size and no interaction with other molecules. Also, all collisions are elastic so that there is no energy transfer.</p>
+<aside class="abc" style="margin-top:-14.5em;" epub:type="sidebar">
+<p class="sidebar"><i>Note:</i> In the majority of thermodynamic work, we use the absolute temperature scale so that values are measured in Kelvin.The relationship needed to convert from degrees Celsius is:</p>
+<p class="equ"><i>T</i>/K = <i>T</i>/&#x00B0;C &#x002B; 273.15.</p>
+</aside>
+<p class="indent">Although ideal reference states often have little to do with reality, the ideal gas is useful since most gases act ideally under the conditions in which we most frequently encounter them. It is only at very high pressures that significant deviations from <a href="#eq1.2">eqn 1.2</a> occur. Indeed, many of the concepts of thermodynamics are most easily understood by considering an ideal gas and then relaxing the assumptions made to account for the behaviour of real systems. This is an approach which we will use in a number of places in this primer.</p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<figure class="fig1" id="fig1.2">
+<img src="../images/fig1.2.jpg" alt="images"/>
+<figcaption><b>Fig. 1.2</b> Measuring pressure with a mercury barometer. The atmospheric pressure is equivalent to the height, <i>h,</i> of the mercury column it will support.</figcaption></figure>
+</aside>
+<p class="indent">While discussing gases, it is appropriate to make some comment on the units used to measure pressures. Historically, pressures were measured by determining the height of a column of mercury that the pressure could support (<a href="#fig1.2">Fig. 1.2</a>). Thus, a common unit of &#x2018;pressure&#x2019; was the &#x2018;millimetre of mercury&#x2019; or &#x2018;mmHg&#x2019;, named the <i>torr</i> under the SI system. The pressure exerted by the atmosphere was about 730&#x2013;780 mmHg depending on the weather. To standardize this and to provide a convenient unit for larger pressures, the <i>standard atmosphere,</i> 1 atm, was defined to be 760 torr. Even though we no longer rely on mercury manometers for pressure measurement (not the least for safety reasons) these units are still in widespread use.<a id="page_3" class="page">Page 3, Chapter 1 Preamble: energy in chemical systems</a></p>
+<p class="indent">The SI unit of pressure is the pascal, Pa, which is the pressure when a force of 1 N acts on an area of 1 m<sup>2</sup>. This is a rather small value&#x2014;atmospheric pressure is around 100 000 Pa&#x2014;so that for convenience we define another unit, the <i>bar,</i> where 1 bar = 10<sup>5</sup> Pa. The relationship between the various pressure units is shown in <a href="#tab1.1">Table 1.1</a>.</p>
+<aside class="abc" style="margin-top:-7.5em;" epub:type="sidebar">
+<p class="tab-cap" id="tab1.1"><b>Table 1.1</b> Pressure units and conversion factors.</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;padding-top:0.5em; border-top:1px solid black;"><p class="tab-l">1Pa</p></td>
+<td style="vertical-align:top;padding-top:0.5em;"><p class="tab-l">= 1Nm<sup>&#x2013;2</sup></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">1bar</p></td>
+<td style="vertical-align:top;"><p class="tab-l">= 10<sup>5</sup> Pa</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">1torr</p></td>
+<td style="vertical-align:top;"><p class="tab-l">= 133.32 Pa</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">1atm</p></td>
+<td style="vertical-align:top;"><p class="tab-l">= 1.013 bar</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"></p></td>
+<td style="vertical-align:top;"><p class="tab-l">= 101325 Pa</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; border-bottom:1px solid black;padding-bottom:0.5em;"><p class="tab-l"></p></td>
+<td style="vertical-align:top; border-bottom:1px solid black;padding-bottom:0.5em;"><p class="tab-l">= 760 Torr</p></td>
+</tr>
+</table>
+</aside>
+<div class="box1">
+<p class="noindent" id="ex1.1" style="width:100%;"><i>Example 1.1</i> Calculate the volume occupied by 1 mole of an ideal gas at 25 &#x00B0;C and 1 atmosphere pressure.</p>
+<p class="line1"></p>
+<p class="noindentb">From <a href="#eq1.2">eqn 1.2</a>, <i>pV</i> =<i> nRT</i></p>
+<p class="equleft">(101 325 N m<sup>&#x2013;2</sup>) (<i>V</i>/m<sup>3</sup>) = (1 mol) (8.314 J K<sup>&#x2013;1</sup> mol<sup>&#x2013;1</sup>) (298.15 K)</p>
+<p class="equcen"><i>V</i> = 0.02447 m<sup>3</sup> = 24470 cm<sup>3</sup></p>
+<p class="noteb">The last equality follows since 1 m<sup>3</sup> = 10<sup>6</sup> cm<sup>3</sup>. Note that it is good practice in problem solving to include the units alongside the quantities in each equation. It can help to prevent errors.</p>
+</div>
+</section>
+<section epub:type="chapter" id="sec1.2">
+<h2 class="main">1.2<span class="space">&#160;</span>Energy in chemistry</h2>
+<p class="noindent">In everyday, common-sense terms, most people have a feel for what is meant by energy. We say that active people are &#x2018;full of energy&#x2019;; we consider the energy usage in heating (or cooling) our homes. In a scientific sense, energy is more difficult to define, largely because it is a concept that occurs in many disguises. The interconversion of various types of energy is also familiar to us. The chemical energy in a fossil fuel such as coal or oil is released by burning and used to heat water to steam in a power station. This is used to produce motion in a turbine which converts mechanical energy to electrical energy which is delivered to our homes. The electrical energy can produce motion in an electric motor or heat in an electric fire or light from a lamp.</p>
+<p class="indent">In physics textbooks, energy is often defined as <i>the capacity to do work.</i> This is a rather useless definition for us since we now have to define <i>work.</i> The easiest way to do this is by saying that work is done as a result of motion or a mechanical change. From Newton&#x2019;s laws, it is fundamental that these changes are the direct result of the action of a force. This leads us to define a unit for measuring energy, the joule, J. One joule is the work done when a force of 1 newton acts over a distance of 1 m. Thus,</p>
+<p class="equ" style="text-align:center;width:70%;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mn>1</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>J</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>N</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>1</m:mn><m:mtext>&#x2009;</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>k</m:mtext><m:mtext>g</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>s</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>1</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>k</m:mtext><m:mtext>g</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>m</m:mtext><m:mn>2</m:mn></m:msup><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>s</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:math></p>
+<div class="box1">
+<p class="noindentb" id="ex1.2"><i>Example 1.2</i> Calculate the energy needed to lift a book weighing 1 kg from the floor to a bookshelf 2 m high.</p>
+<p class="line1"></p>
+<p class="noindentb">Here the force is provided by overcoming the action of gravity on the book.</p>
+<p class="equ"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr><m:mtd><m:mrow><m:mtext>E</m:mtext><m:mtext>n</m:mtext><m:mtext>e</m:mtext><m:mtext>r</m:mtext><m:mtext>g</m:mtext><m:mtext>y</m:mtext></m:mrow></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mrow><m:mtext>f</m:mtext><m:mtext>o</m:mtext><m:mtext>r</m:mtext><m:mtext>c</m:mtext><m:mtext>e</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x00D7;</m:mo><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mtext>i</m:mtext><m:mtext>s</m:mtext><m:mtext>t</m:mtext><m:mtext>a</m:mtext><m:mtext>n</m:mtext><m:mtext>c</m:mtext><m:mtext>e</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow></m:mrow></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>k</m:mtext><m:mtext>g</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x00D7;</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>9.8</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>s</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>&#x2009;</m:mtext><m:mo>&#x00D7;</m:mo><m:mtext>&#x2009;</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>19.6</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>k</m:mtext><m:mtext>g</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>m</m:mtext><m:mn>2</m:mn></m:msup><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>s</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow></m:mrow></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mrow><m:mn>19.6</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>J</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+</div>
+<p class="noindent"><a id="page_4" class="page">Page 4, Chapter 1 Preamble: energy in chemical systems</a></p>
+<p class="indent">A different type of energy with which we must be concerned in chemistry is <i>heat.</i> This is the form of energy that can be transferred as a result of temperature changes. Historically, this led to an alternative unit for energy&#x2014; the calorie, cal. One calorie is the energy needed at 25 &#x00B0;C to heat 1 g of pure water by 1 &#x00B0;C.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="sidebar"><i>Note:</i> The joule and calorie are related by</p>
+<p class="sidebarc">1 cal = 4.181 J</p>
+</aside>
+<p class="indent">To be consistent with the unit for work, the SI unit of energy is the joule and this will be used throughout this book. The calorie, however, remains in widespread use, particularly in US texts.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="main2">Quantifying heat changes</h3>
+<p class="noindent">In order to quantify heat changes in systems, we introduce the heat capacity, <i>c.</i> The <i>molar heat capacity</i> is the amount of energy needed to raise the temperature of 1 mole of a substance by 1 K. The <i>specific heat capacity</i> is defined in an analogous way except that it refers to 1 gram of a substance. <i>c</i> therefore has units of J K<sup>&#x2013;1</sup> mol<sup>&#x2013;1</sup> or J K<sup>&#x2013;1</sup> g<sup>&#x2013;1</sup>. Hence, if <i>q</i> joules of heat are added to a system containing <i>n</i> mol or <i>m</i> grams of a substance and the temperature is raised from <i>T</i><sub>1</sub> to <i>T</i><sub>2</sub> then,</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>q</m:mi><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:mi>m</m:mi><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>c</m:mi><m:mi>s</m:mi></m:msub><m:mtext>&#x0394;</m:mtext><m:mi>T</m:mi><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:mi>n</m:mi><m:msub><m:mi>c</m:mi><m:mi>m</m:mi></m:msub><m:mtext>&#x0394;</m:mtext><m:mi>T</m:mi></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(1.3)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<p class="sidebar"><i>Note: Specific</i> values are those that refer to unit mass of a substance, usually per gram or per kilogram.</p>
+</aside>
+<p class="noindent">where &#x2206;<i>T</i> =<i> T</i><sub>2</sub> &#x2013; <i>T</i><sub>1</sub>. Here, the molar and specific heat capacities are denoted as c<sub>m</sub> and c<sub>s</sub>, although rather confusingly in many books the same symbol tends to be used for both. However, which one is being used should be readily apparent from its units. The two values are, of course, related by the molar mass of the compound.</p>
+<div class="box1">
+<p class="noindentb" id="ex1.3"><i>Example 1.3</i> The heat capacity of liquid water is 4.18 J K<sup>&#x2013;1</sup><i>g</i><sup>&#x2013;1</sup>. Calculate the energy required to heat 1 mole of water from 25 to 90 &#x00B0;C.</p>
+<p class="line1"></p>
+<p class="noindentb">Since the value is quoted per gram, it must be the specific heat capacity. Taking the molar mass of water as 18 g mol<sup>&#x2013;1</sup>, we can use <a href="#eq1.3">eqn. 1.3</a></p>
+<p class="equ"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mi>q</m:mi><m:mo>/</m:mo><m:mtext>J</m:mtext></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:mtext>l</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x00D7;</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>18</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>g</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4.18</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>J</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>g</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>363.15</m:mn><m:mtext>&#x2009;</m:mtext><m:mo>&#x2212;</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>298.15</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>K</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>4890.6</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>J</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:mn>4.89</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>k</m:mtext><m:mtext>J</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noteb">Note that the temperatures were converted from degrees Celsius to kelvin. Even though this was not necessary in this particular problem, it is a good habit to always use K as the units for temperature.</p>
+</div>
+<p class="indent">Later, we will see that the value of the heat capacity will vary depending on the conditions under which it is measured and it also depends on temperature. However, this will suffice for present purposes.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="main2">Quantifying changes of work</h3>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="fig1" id="fig1.3">
+<img src="../images/fig1.3.jpg" alt="images"/>
+<figcaption><b>Fig. 1.3</b> Schematic diagram of a frictionless piston expanding against an external pressure.</figcaption></figure>
+</aside>
+<p class="noindent">We now need to be able to account for the energy encountered in chemistry as <i>work.</i> A simple example is to consider a reaction which forms a gas taking place inside a cylinder as shown in <a href="#fig1.3">Fig. 1.3</a>. The production of gas will push out the piston. Of course, in our thermodynamically ideal world, there is no friction and hence no heat caused as a result of the motion. The reaction can therefore be performed isothermally. The gas in the cylinder expands so that <a id="page_5" class="page">Page 5, Chapter 1 Preamble: energy in chemical systems</a>the piston moves a distance <i>dx</i> against the external pressure, <i>p</i><sub>ext</sub>, changing the Volume from <i>V</i><sub>initial</sub> to <i>V</i><sub>final</sub>.</p>
+<p class="indent">The force acting on the piston can be calculated since</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="sidebar"><i>Mathematical note:</i> The volume, <i>V,</i> of a cylinder of radius rand height <i>h</i> is given by <i>V =</i> (&#x03C0;<i>r<sup>2</sup>h</i>) or as (area) &#x00D7; (height).</p>
+</aside>
+<p class="equcen" style="margin-bottom:0em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtext>p</m:mtext><m:mtext>r</m:mtext><m:mtext>e</m:mtext><m:mtext>s</m:mtext><m:mtext>s</m:mtext><m:mtext>u</m:mtext><m:mtext>r</m:mtext><m:mtext>e</m:mtext><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>f</m:mtext><m:mtext>o</m:mtext><m:mtext>r</m:mtext><m:mtext>c</m:mtext><m:mtext>e</m:mtext></m:mrow><m:mrow><m:mtext>a</m:mtext><m:mtext>r</m:mtext><m:mtext>e</m:mtext><m:mtext>a</m:mtext></m:mrow></m:mfrac><m:mtext>&#x2009;</m:mtext><m:mtext>o</m:mtext><m:mtext>r</m:mtext><m:mtext>&#x2009;</m:mtext><m:mi>F</m:mi><m:mo>=</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mtext>e</m:mtext><m:mtext>x</m:mtext><m:mtext>t</m:mtext></m:mrow></m:msub><m:mtext>&#x03C0;</m:mtext><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></p>
+<table style="width:70%; margin-left:0em;margin-top:0em;">
+<colgroup>
+<col style="width:34%;"/>
+<col style="width:32%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="padding-top:0.75em;">hence</td>
+<td><p class="equ" id="eq1.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mtext>w</m:mtext><m:mtext>o</m:mtext><m:mtext>r</m:mtext><m:mtext>k</m:mtext> <m:mtext>d</m:mtext><m:mtext>o</m:mtext><m:mtext>n</m:mtext><m:mtext>e</m:mtext><m:mo>=</m:mo><m:mtext>f</m:mtext><m:mtext>o</m:mtext><m:mtext>r</m:mtext><m:mtext>c</m:mtext><m:mtext>e</m:mtext><m:mo>&#x00D7;</m:mo><m:mtext>d</m:mtext><m:mtext>i</m:mtext><m:mtext>s</m:mtext><m:mtext>t</m:mtext><m:mtext>a</m:mtext><m:mtext>n</m:mtext><m:mtext>c</m:mtext><m:mtext>e</m:mtext><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:mtext>v</m:mtext><m:mtext>e</m:mtext><m:mtext>d</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>d</m:mi><m:mi>w</m:mi><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>p</m:mi><m:mrow><m:mi>e</m:mi><m:mi>x</m:mi><m:mi>t</m:mi></m:mrow></m:msub><m:mtext>&#x2009;</m:mtext><m:mi>&#x03C0;</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mi>e</m:mi><m:mi>x</m:mi><m:mi>t</m:mi></m:mrow></m:msub><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>V</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>w</m:mi><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow></m:munderover><m:mrow><m:mo>&#x2212;</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mtext>e</m:mtext><m:mtext>x</m:mtext><m:mtext>t</m:mtext></m:mrow></m:msub></m:mrow></m:mrow></m:mstyle><m:mtext>d</m:mtext><m:mi>V</m:mi></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:6.5em;text-align:right;">(1.4)</td>
+</tr>
+</table>
+<p class="noindent">d<i>V</i> is the change in volume of the gas on expansion. The negative sign arises since the movement is in the opposite direction to that in which the force is acting, d<i>w</i> is therefore the work done when the gas expands through a volume <i>dV</i> against a pressure, <i>p<sub>ext</sub>.</i> Since the volume is continually changing, to find the total work done during the expansion, <i>w,</i> we need to integrate the expression between the initial and final volumes as shown in <a href="#eq1.4">eqn 1.4</a>.</p>
+<aside class="abc" style="margin-top:-16.5em;" epub:type="sidebar">
+<p class="sidebar"><i>Mathematical note:</i> We use the notation d<i>X</i> to denote a small change in <i>X,</i> in fact <i>an infinitesimally small change.</i> This allows us to use the powerful tools of calculus to analyse the situation. Integration can be thought of as a method for summing a large number of small changes. The values above and below the integral sign are the limits of the summation, i.e. the final and initial values. So <a href="#eq1.4">eqn 1.4</a> effectively sums a large number of (<i>p</i> &#x00D7; <i>V</i>) values between V<sub>initial</sub> and V<sub>final</sub>.</p>
+</aside>
+<p class="indent">Let us now think about how we might carry out the expansion. To simplify the problem we will consider <i>isothermal</i> changes, <i>i.e.</i> those at constant temperature. We start with the system at equilibrium and the piston at rest, with the pressures inside and outside the cylinder equalized.</p>
+<p class="noindentt"><i>Expansion against a constant pressure.</i> Firstly, we could push the piston in to compress the gas and then release it. The expansion would then take place against a constant pressure, <i>p</i><sub>ext</sub>. In this case, <a href="#eq1.4">eqn. 1.4</a> reduces to</p>
+<p class="equcen"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>w</m:mi><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mtext>e</m:mtext><m:mtext>x</m:mtext><m:mtext>t</m:mtext></m:mrow></m:msub><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow></m:munderover><m:mrow><m:mtext>d</m:mtext><m:mi>V</m:mi><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mtext>e</m:mtext><m:mtext>x</m:mtext><m:mtext>t</m:mtext></m:mrow></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p>
+<table style="width:70%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:20%;"/>
+<col style="width:46%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td>or</td>
+<td><p class="eq" id="eq1.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>w</m:mi><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mtext>e</m:mtext><m:mtext>x</m:mtext><m:mtext>t</m:mtext></m:mrow></m:msub><m:mtext>&#x0394;</m:mtext><m:mi>V</m:mi></m:mrow></m:math></p></td>
+<td style="vertical-align:top;padding-top:0em;text-align:right;">(1.5)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<p class="sidebar"><i>Mathematical note:</i> We now need to do some integration. In general, for values of <i>n</i> &#x2260; &#x2013;1,then</p>
+<p class="equ"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:mo>&#x222B;</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p>
+<p class="sidebar">In other words, we increase the index (<i>n</i>) by 1 and divide by the new index. Other integrations will be introduced as needed.The integration involved here is</p>
+<p class="equ"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:mo>&#x222B;</m:mo><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:mo>&#x222B;</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>0</m:mn></m:msup><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>1</m:mn></m:msup></m:mrow><m:mn>1</m:mn></m:mfrac><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p>
+</aside>
+<div class="box1">
+<p class="noindentb" id="ex1.4"><i>Example 1.4</i> Calculate the work done when 1 mole of a gas expands from 5 dm<sup>3</sup> to 10 dm<sup>3</sup> against a constant pressure of 1 atmosphere.</p>
+<p class="line1"></p>
+<p class="noindentb">work = &#x2013;<i>p</i><sub>ext</sub> &#x2206;<i>V =</i> &#x2013;(101 325 N m<sup>&#x2013;2</sup>) &#x005B;(10 &#x2013; 5) dm<sup>3</sup> &#x00D7; 10<sup>&#x2013;3</sup> m<sup>3</sup> dm<sup>&#x2013;3</sup>&#x005D;</p>
+<p class="equ">&#160;= &#x2013;506.6 J</p>
+<p class="noteb">Note that the work is negative since it is done in opposition to the external pressure.</p>
+</div>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<p class="sidebar"><i>Note:</i> You may be wondering why we are indulging in this rather unrealistic exercise. It turns out that, with some of the topics to be discussed later, carrying them out in a reversible manner allows us to considerably simplify the mathematics. Real situations can then be considered in terms of reversible ones.</p>
+</aside>
+<p class="noindent"><i>Reversible expansion of an ideal gas.</i> A second way of performing the experiment would be to push the piston in by rapidly increasing <i>p</i><sub>ext</sub> and then allowing the gas in the cylinder to expand slowly by gradually reducing the push on the piston or the external pressure. If the expansion were carried out very slowly, then the external pressure would only be very slightly lower than that inside the cylinder, <i>p</i><sub>in</sub>, at all stages of the expansion. As a thought experiment in our thermodynamic world, we could perform the expansion <a id="page_6" class="page">Page 6, Chapter 1 Preamble: energy in chemical systems</a>infinitely slowly where, effectively, we reduce the external pressure by a minute amount and allow the system to come back to equilibrium by equalizing the pressures. This is then repeated a large number of times until we reach the desired final pressure. By this means, we can assume that <i>p</i><sub>in</sub> = <i>p</i><sub>ext </sub>throughout the experiment so that the system is always very close to equilibrium with its surroundings.</p>
+<p class="indent">Such a process is called a <i>reversible change.</i> One of the criteria of reversibility is that the change can be reversed by an infinitesimal change in the opposite direction. If we simply modify the conditions so that <i>p</i><sub>ext</sub> becomes infinitesimally larger than <i>p</i><sub>in</sub>, the expansion would stop and be reversed</p>
+<p class="indent">In the piston containing an ideal gas introduced in the previous section, we cannot use the simplification of <a href="#eq1.4">eqn 1.4</a> since <i>p</i><sub>ext</sub> is continually changing. However, under reversible conditions, we can substitute <i>p</i><sub>ext</sub> =<i> p</i><sub>in</sub> and use the ideal gas equation to describe the pressure.</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='center'><m:mtr><m:mtd><m:mi>w</m:mi><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow></m:munderover><m:mrow><m:mo>&#x2212;</m:mo><m:mi>p</m:mi><m:mtext>d</m:mtext><m:mi>V</m:mi><m:mo>=</m:mo></m:mrow></m:mrow></m:mstyle><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow></m:munderover><m:mrow><m:mo>&#x2212;</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mtext>R</m:mtext><m:mtext>T</m:mtext></m:mrow><m:mi>V</m:mi></m:mfrac><m:mtext>d</m:mtext><m:mi>V</m:mi><m:mo>=</m:mo></m:mrow></m:mrow></m:mstyle><m:mtext>&#x2009;</m:mtext><m:mi>n</m:mi><m:mi>R</m:mi><m:mi>T</m:mi><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow></m:munderover><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>V</m:mi></m:mfrac><m:mtext>d</m:mtext><m:mi>V</m:mi></m:mrow></m:mrow></m:mstyle></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>w</m:mi><m:mrow><m:mtext>r</m:mtext><m:mtext>e</m:mtext><m:mtext>v</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>n</m:mi><m:mi>R</m:mi><m:mi>T</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>l</m:mi><m:mi>n</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>f</m:mtext><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>V</m:mi><m:mrow><m:mtext>i</m:mtext><m:mtext>n</m:mtext><m:mtext>i</m:mtext><m:mtext>t</m:mtext><m:mtext>i</m:mtext><m:mtext>a</m:mtext><m:mtext>l</m:mtext></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:6em;">(1.6)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<p class="sidebar"><i>Mathematical note:</i> <a href="#eq1.6">Eqn 1.6</a> arises from a rather special case of integration since</p>
+<p class="eq-s"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:mo>&#x222B;</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow><m:mi>x</m:mi></m:mfrac><m:mo>=</m:mo><m:mi>ln</m:mi><m:mtext>&#x2009;</m:mtext><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p>
+<p class="sidebar">and<span class="space">&#160;</span>(ln <i>a</i>) &#x2013; (ln <i>b</i>) = ln(<i>a/b</i>)</p>
+</aside>
+<div class="box1">
+<p class="noindentb" id="ex1.5"><i>Example 1.5</i> Calculate the work done when 1 mole of a gas reversibly expands from 5 dm<sup>3</sup> to 10 dm<sup>3</sup> at 25 &#x00B0;C.</p>
+<p class="line1"></p>
+<p class="equleft"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mtext>w</m:mtext><m:mtext>o</m:mtext><m:mtext>r</m:mtext><m:mtext>k</m:mtext></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:mtext>l</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>&#x2009;</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8.314</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>J</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>K</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mtext>&#x2009;</m:mtext><m:mtext>m</m:mtext><m:mtext>o</m:mtext><m:msup><m:mtext>l</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>298.15</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>K</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>l</m:mtext><m:mtext>n</m:mtext><m:mtext>&#x2009;</m:mtext><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>10</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:msup><m:mtext>m</m:mtext><m:mn>3</m:mn></m:msup><m:mo>/</m:mo><m:mn>5</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:msup><m:mtext>m</m:mtext><m:mn>3</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mn>2478</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>J</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x00D7;</m:mo><m:mtext>&#x2009;</m:mtext><m:mtext>l</m:mtext><m:mtext>n</m:mtext><m:mtext>&#x2009;</m:mtext><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1718</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>J</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+</div>
+<aside class="abc" style="margin-top:-12.5em;" epub:type="sidebar">
+<p class="sidebar"><i>Mathematical note:</i> An alternative way of interpreting the integral in <a href="#eq1.4">eqn 1.4</a> is to consider it graphically. The value to be integrated is the product of pressure <i>x</i> volume and so can be thought of as finding the area of a plot of <i>p</i> versus <i>V</i> between the final and initial states. For an ideal gas, this can be represented as:</p>
+</aside>
+<p class="indent">The results from <a href="#ex1.3">Examples 1.3</a> and <a href="#ex1.4">1.4</a> indicate that more work is done when the expansion occurs reversibly than when it occurs against a constant pressure. In fact, although we will not prove the fact here, the work obtained when a change is carried out reversibly is the <i>maximum</i> work available.</p>
+<p class="indent">In chemical reactions involving gases, the volume changes can be large so that significant amounts of work can be done. In general, volume changes in systems containing only liquids or solids are much smaller and, as a first approximation, can be ignored.</p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/fig1.01.jpg" alt="images"/>
+<figcaption>The shaded area is equivalent to the integral in <a href="#eq1.4">eqn 1.4</a>.</figcaption></figure>
+</aside>
+<p class="indent">Although discussion here has centred on heat and work, there are of course other sorts of energy change that can occur in chemical systems. One which will not concern us here is that due to mass changes in nuclear systems. The energy change here is governed by the Einstein equation and given by &#x2206;<i>E</i> = &#x2206;<i>mc</i><sup>2</sup>, where &#x2206;<i>m</i> is the loss in mass when nuclei are transformed and <i>c</i> is the speed of light. In the kind of chemical reactions usually considered, the mass does not change, so that we can safely ignore the nuclear energy. Similarly, we will not discuss the energy of electromagnetic radiation involved in photochemical processes</p>
+<p class="indent">A form of energy which is rather more commonly met is in the form of electrical work that is done when electrons move around a system owing to a potential difference. If a charge <i>Q</i> moves through a potential difference <i>E,</i> then the work done is given by</p>
+<p class="noindent"><a id="page_7" class="page">Page 7, Chapter 1 Preamble: energy in chemical systems</a></p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>w</m:mi><m:mrow><m:mtext>elec</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>initial</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>final</m:mtext></m:mrow></m:msub></m:mrow></m:munderover><m:mrow><m:mo>&#x2212;</m:mo><m:mi>E</m:mi><m:mtext>&#x2009;</m:mtext><m:mtext>d</m:mtext><m:mi>Q</m:mi></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:2em;">(1.7)</td>
+</tr>
+</table>
+<p class="indent">We will return to a discussion of the thermodynamics of electrochemical systems later in <a href="Chapter04.xhtml#sec4.10">Section 4.10</a>.</p>
+</section>
+<section epub:type="chapter">
+<h3 class="main2">An accounting system for energy changes</h3>
+<p class="noindent">At this stage, we need to have a scheme for accounting for energy changes. The one normally used is rather analogous to that used in keeping track of your personal finances in your bank account. (Your account is analogous to the chemical system.) Money given to you or which is added to your account is regarded as positive; money you spend or is charged to your account is negative. Similarly, for chemical systems:</p>
+<p class="blockquote" style="margin-top:.5em;"><i>Energy added to or work done on a system is POSITIVE.</i></p>
+<p class="blockquote" style="margin-bottom:.5em;"><i>Energy removed from or work done by a system is NEGATIVE.</i></p>
+<p class="noindent">Clearly, if a system gains an amount of energy <i>q</i> from the surroundings, then the change is <i>&#x002B;q</i> for the system and &#x2013;<i>q</i> for the surroundings. In <a href="#ex1.2">Examples 1.2</a> and <a href="#ex1.3">1.3</a> the system was undergoing an expansion. Hence the system was doing work on the surroundings so that <i>w</i> was negative.</p>
+</section>
+<section epub:type="chapter" id="sec1.3">
+<h2 class="main">1.3<span class="space">&#160;</span>Internal energy and the First Law</h2>
+<p class="noindent">In all matter, atoms and molecules are moving and so have energy. This is easy to see in fluids where the species undergo rotation and translational motion, giving rise to macroscopic effects such as gas pressure, Brownian motion, and diffusion. In other than monoatomic species, the chemical bonds are vibrating. Even in solids, the ions or molecules are vibrating (except at absolute zero temperature). This implies that they have energy. In addition, molecules possess potential energy as a result of their chemical bonds and the intermolecular forces. We call the sum of the kinetic and potential energy the <i>internal energy,</i> given the symbol <i>U.</i> In practice, to evaluate this energy, we would have to sum all the various contributions to the energy, which cannot easily be done. Good estimates of these parameters can be obtained from statistical thermodynamics but discussion of this is outside the scope of this primer. Rather than absolute values, however, it is more straightforward and useful to think of <i>changes</i> to this internal energy.</p>
+<p class="indent">If we heat a gas, the molecules move faster, i.e. have more energy. If we compress a gas, as discussed above, its pressure will rise. From the definition of work given earlier, this means that the gas has a greater capacity to move the piston, i.e. it has greater energy.</p>
+<p class="indent">We can summarize this in the <i>First Law of thermodynamics.</i> For an isolated system, the change in internal energy is the sum of heat, <i>q,</i> and work, <i>w,</i> changes.</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:mi>U</m:mi><m:mo>=</m:mo><m:mi>q</m:mi><m:mo>+</m:mo><m:mi>w</m:mi></m:mrow></m:math></p></td>
+<td>(1.8)</td>
+</tr>
+</table>
+<p class="indent">There are a number of ways of expressing this law. One is that the total energy of an isolated system is constant. Perhaps the most common statement is the principle of conservation of energy: <i>&#x2018;Matter can neither be created or</i> <a id="page_8" class="page">Page 8, Chapter 1 Preamble: energy in chemical systems</a><i>destroyed, merely interconverted between forms&#x2019;.</i> This, of course, discounts any nuclear energy changes which were referred to earlier.</p>
+<aside class="abc" style="margin-top:-18em;" epub:type="sidebar">
+<p class="sidebar"><i>Note:</i> <a href="#eq1.8">Eqn 1.8</a> is more correctly written in the calculus form as</p>
+<p class="equ"><i>dU</i> = <i>dq &#x002B; dw</i></p>
+<p class="sidebar">In more advanced work this allows calculus to be used in deriving a number of useful relationships.</p>
+</aside>
+<div class="box1">
+<p class="noindentb" id="ex1.6"><i>Example 1.6</i> The temperature of 1 mol of a substance is raised by heating it with 750 J of energy. It expands and does the equivalent of 200 J of work. Calculate the change in internal energy.</p>
+<p class="line1"></p>
+<p class="noindentb">Since the temperature increases, <i>q</i> = &#x002B;750 J. In an expansion, the system does work so that <i>w</i> = &#x2013;200 J. Using <a href="#eq1.7">eqn. 1.7</a></p>
+<p class="eq-s"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:mi>U</m:mi><m:mo>=</m:mo><m:mi>q</m:mi><m:mo>+</m:mo><m:mi>w</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>+</m:mo><m:mn>750</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>&#x2212;</m:mo><m:mn>200</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>+</m:mo><m:mn>550</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>J</m:mtext></m:mrow></m:math></p>
+</div>
+<p class="indent">Perhaps a more useful way of thinking of the internal energy is to write <a href="#eq1.8">eqn 1.8</a> in the form</p>
+<p class="eq-c"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:mi>U</m:mi><m:mo>=</m:mo><m:mi>q</m:mi><m:mo>+</m:mo><m:mi>p</m:mi><m:mi>&#x0394;</m:mi><m:mi>V</m:mi></m:mrow></m:math></p>
+<p class="indent">If we now heat a system which cannot do <i>p</i>&#x2013;<i>V</i> type work, i.e. at fixed volume, then</p>
+<table style="width:100%; margin-left:0em;margin-top:0.75em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:mi>U</m:mi><m:mo>=</m:mo><m:mi>q</m:mi><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:msub><m:mi>q</m:mi><m:mtext>V</m:mtext></m:msub></m:mrow></m:math></p></td>
+<td>(1.9)</td>
+</tr>
+</table>
+<p class="noindent">where <i>q</i><sub>v</sub> indicates a heat change at <i>constant volume.</i> In other words, the change in internal energy can be thought of as the heat change for a process carried out at constant volume.</p>
+<aside class="abc" style="margin-top:-9.5em;" epub:type="sidebar">
+<p class="sidebar"><i>Mathematical note:</i> The style (<i>X</i>)<i><sub>p</sub></i><sub>,T</sub><sup> </sup>shorthand for <i>&#x2018;The value of X at constant p and T</i>&#x2019;.The value inside the parentheses is evaluated at constant values of the subscripts.</p>
+</aside>
+<p class="indent"><a href="#eq1.9">Equation 1.9</a> is completely general. However, an isothermal change to the internal energy of ideal gases produces a rather specialized result which is worthy of further comment. Since one of the assumptions is that the molecules are far apart and non-interacting, the internal energy depends only on the temperature and not on the volume which contains the gas or the pressure it exerts. Thus, if we compress the ideal gas <i>isothermally</i> at constant temperature, there must be a net outflow of heat from the system. Alternatively, an expansion must be accompanied by the absorption of heat.</p>
+<p class="eq-c"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>&#x0394;</m:mi><m:mi>U</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mi>q</m:mi><m:mo>+</m:mo><m:mi>w</m:mi></m:mrow></m:mtd><m:mtd><m:mrow><m:mo>&#x2234;</m:mo><m:mi>q</m:mi><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mi>w</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<p class="sidebar"><i>Mathematical note:</i> The formalism <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow></m:math> comes from <i>differential calculus.</i> Differentiation can be thought of as the opposite of integration. In particular, the differential tells us how the value of <i>X</i> changes for a small change in <i>T</i>. It is the equivalent of measuring the slope of a graph of <i>X versus T,</i> and is particularly useful where the slope continuously changes its value.</p>
+</aside>
+</section>
+<section epub:type="chapter">
+<h3 class="main2">Heat capacities of gases</h3>
+<p class="noindent">We can correlate the amount of energy required for the heating a substance by using an equation analogous to <a href="#eq1.3">eqn 1.3</a>. If an amount of energy <i>dq<sub>v</sub></i> added to a gas at constant volume causes a temperature change d<i>&#x03A4;,</i> then the <i>constant volume molar heat capacity, c</i><sub>v</sub>, is given by</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>d</m:mtext><m:msub><m:mi>q</m:mi><m:mtext>v</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>c</m:mi><m:mtext>v</m:mtext></m:msub><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>or</m:mtext></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>c</m:mi><m:mtext>v</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>q</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mtext>v</m:mtext></m:msub></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td>(1.10)</td>
+</tr>
+</table>
+<p class="noindent">the subscript &#x2018;v&#x2019; indicating that the heating is carried out at constant volume. The differential form of <a href="#eq1.10">eqn 1.10</a> is more strictly correct since <i>c</i><sub>v</sub> in fact changes somewhat with temperature. However, for small temperature ranges the variation is small and heat capacities are often considered constant. We will see in the next chapter how to deal with situations where this assumption cannot be made.</p>
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<figure class="fig">
+<img src="../images/fig1.02.jpg" alt="images"/>
+<figcaption><i>Note:</i> In the case of heat capacities, the variation of <i>q</i> with <i>T</i> is much closer to a straight line than the curve in this figure.</figcaption></figure>
+</aside>
+</section>
+<section epub:type="chapter">
+<a id="page_9" class="page" style="width:70%;">Page 9, Chapter 1 Preamble: energy in chemical systems</a>
+<h3 class="main2">State functions</h3>
+<p class="noindent">The internal energy is an example of a <i>state function.</i> Its value depends only on the energy of the system, defined by the pressure and temperature (or volume and temperature) of the system, i.e. the present state of the system. There is no dependence on previous behaviour of the system nor of how the system achieved its present state.</p>
+<p class="indent">State functions have a series of properties, the most important of which is that the change in value of the function depends only on the final and initial conditions and is independent of the path between them. An analogy from everyday life (and hence inexact&#x0021;) is in climbing a mountain. You could climb up the hill in a straight line to reach the summit. Alternatively, you could wander around the mountain in a gentle climb and eventually reach the summit. The distance that you cover in each case will be very different; the change in altitude will, however, be the same. The altitude is therefore analogous to a state function. A number of other state functions will be introduced as we progress through the discussion of thermodynamics.</p>
+</section>
+<section epub:type="chapter" id="sec1.4">
+<h2 class="main">1.4<span class="space">&#160;</span>Measurement of internal energy changes</h2>
+<p class="noindent">From the above discussion, the change in internal energy during a reaction is simply the heat change during the reaction if it is conducted at constant volume. Thus, carrying out a reaction under conditions where the volume is fixed provides the easiest way of measuring &#x2206;<i>U.</i> The relation between &#x2206;<i>U</i> and other measurable parameters will be discussed in the following chapter.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="fig1" id="fig1.4">
+<img src="../images/fig1.4.jpg" alt="images"/>
+<figcaption><b>Figure 1.4</b> Schematic diagram of a bomb calorimeter for measuring changes in internal energy on combustion.</figcaption></figure>
+</aside>
+<p class="indent">As an example, &#x2206;<i>U</i> during a combustion reaction can be measured using a <i>bomb calorimeter,</i> shown schematically in <a href="#fig1.4">Fig. 1.4</a>. The reaction chamber or (totally misnamed&#x0021;) <i>bomb</i> which contains the substance under study is constructed from thick (&#x007E;1 cm) stainless steel, ensuring that the system volume does not change. After pressurizing with oxygen gas, the reaction can be started by electrically heating a piece of wire in contact with the reactants.</p>
+<p class="indent">The heat given out on combustion warms up both the metal of the calorimeter and the water that surrounds it. The temperature is measured precisely to &#x00B1;0.001 &#x00B0;C with an accurate thermometer. We can calculate the effective heat capacity, <i>c,</i> of the calorimeter since</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>c</m:mi><m:mrow><m:mtext>calorimeter</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>m</m:mi><m:mrow><m:mtext>water</m:mtext></m:mrow></m:msub><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>c</m:mi><m:mrow><m:mtext>water</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>m</m:mi><m:mrow><m:mtext>steel</m:mtext></m:mrow></m:msub><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>c</m:mi><m:mrow><m:mtext>steel</m:mtext></m:mrow></m:msub></m:mrow></m:math></p></td>
+<td>(1.11)</td>
+</tr>
+</table>
+<p class="noindent">where <i>m</i> represents the mass of water or steel and <i>c</i> the appropriate specific heat capacity. If the combustion of <i>n</i> moles of a compound results in a temperature increase &#x2206;<i>T,</i> then the internal energy change is</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:65%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq1.12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>&#x0394;</m:mi><m:msup><m:mi>U</m:mi><m:mrow><m:mtext>combustion</m:mtext></m:mrow></m:msup><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:msub><m:mi>c</m:mi><m:mrow><m:mtext>calorimeter</m:mtext></m:mrow></m:msub><m:mi>&#x0394;</m:mi><m:mi>T</m:mi><m:mo>/</m:mo><m:mi>n</m:mi></m:mrow></m:math></p></td>
+<td>(1.12)</td>
+</tr>
+</table>
+<p class="noindent">the negative sign arises from our sign convention, since the heat is given out from the system.</p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="sidebar"><i>Note:</i> The chemical changes involved in the reactions for calibrating the calorimeter are:</p>
+<p class="equleft" style="font-size:60%;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:msub><m:mtext>C</m:mtext><m:mrow><m:mn>1</m:mn><m:mn>0</m:mn></m:mrow></m:msub><m:msub><m:mtext>H</m:mtext><m:mrow><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo><m:mtext>s</m:mtext><m:mo>)</m:mo></m:mrow></m:mrow></m:msub><m:mo>+</m:mo><m:mn>1</m:mn><m:mn>2</m:mn><m:msub><m:mtext>O</m:mtext><m:mrow><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mtext>g</m:mtext><m:mo>)</m:mo></m:mrow></m:mrow></m:msub><m:mo>&#x2192;</m:mo><m:mn>1</m:mn><m:mn>0</m:mn><m:mtext>C</m:mtext><m:msub><m:mtext>O</m:mtext><m:mrow><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mtext>g</m:mtext><m:mo>)</m:mo></m:mrow></m:mrow></m:msub><m:mo>+</m:mo><m:mn>4</m:mn><m:msub><m:mtext>H</m:mtext><m:mn>2</m:mn></m:msub><m:msub><m:mtext>O</m:mtext><m:mrow><m:mrow><m:mo>(</m:mo><m:mtext>l</m:mtext><m:mo>)</m:mo></m:mrow></m:mrow></m:msub></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mtext>C</m:mtext><m:mn>6</m:mn></m:msub><m:msub><m:mtext>H</m:mtext><m:mn>5</m:mn></m:msub><m:mtext>C</m:mtext><m:mtext>O</m:mtext><m:mtext>O</m:mtext><m:msub><m:mtext>H</m:mtext><m:mrow><m:mrow><m:mo>(</m:mo><m:mtext>s</m:mtext><m:mo>)</m:mo></m:mrow></m:mrow></m:msub><m:mo>+</m:mo><m:mn>7</m:mn><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mtext>O</m:mtext><m:mrow><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mtext>g</m:mtext><m:mo>)</m:mo></m:mrow></m:mrow></m:msub></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>&#x2192;</m:mo><m:mn>7</m:mn><m:mtext>C</m:mtext><m:msub><m:mtext>O</m:mtext><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:mn>3</m:mn><m:msub><m:mtext>H</m:mtext><m:mn>2</m:mn></m:msub><m:msub><m:mtext>O</m:mtext><m:mrow><m:mrow><m:mo>(</m:mo><m:mtext>l</m:mtext><m:mo>)</m:mo></m:mrow></m:mrow></m:msub></m:mtd></m:mtr></m:mtable></m:math></p>
+</aside>
+<p class="indent">In practice, rather than using <a href="#eq1.11">eqn 1.11</a>, <i>c</i><sub>calorimeter</sub> is determined by a calibration. The temperature rise when a known mass of a compound with accurately known &#x2206;<i>U</i><sup>combustion</sup> undergoes reaction is measured and <i>c</i><sub>calorimeter</sub> calculated from <a href="#eq1.12">eqn 1.12</a>. Naphthalene or benzoic acid are commonly used for this purpose. Alternatively, an electrical calibration can be performed. If a current <i>I</i> passes through the wire at a voltage <i>V</i> for time <i>t,</i> the energy delivered is given by (<i>I</i> &#x00D7; <i>V</i> &#x00D7; <i>t</i>). Measurement of the temperature increase caused by <a id="page_10" class="page">Page 10, Chapter 1 Preamble: energy in chemical systems</a>this energy applied to a wire inside the bomb also allows <i>c</i><sub>calorimeter</sub> to be calculated, as in <a href="#ex1.7">Example 1.7</a>.</p>
+<div class="box1">
+<p class="noindentb" id="ex1.7"><i>Example 1.7</i> The combustion of 0.6475 g of naphthalene in a bomb pressurized with oxygen at 25 &#x00B0;C resulted in a temperature increase of 2.424 &#x00B0;C. Under the same conditions, passage of an electric current of 1.5 A at 15 V for 15 min raised the temperature by 1.890 &#x00B0;C. Calculate &#x0394; <i>U</i><sub>combustion</sub> for naphthalene.</p>
+<p class="line1"></p>
+<p class="noindentb">First, we need to find the heat capacity of the calorimeter.</p>
+<p class="bnoindentt">Energy supplied = <i>IVt</i> = 1.5 A &#x00D7; 15 V &#x00D7; (15 &#x00D7; 60)s = 20250 J</p>
+<p class="bequ"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>c</m:mi><m:mrow><m:mtext>calorimeter</m:mtext></m:mrow></m:msub><m:mtext>=</m:mtext><m:mfrac><m:mrow><m:mtext>energy</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>supplied</m:mtext></m:mrow><m:mrow><m:mtext>temperature</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>change</m:mtext></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>20</m:mn><m:mtext>&#x2009;</m:mtext><m:mn>250</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>J</m:mtext></m:mrow><m:mrow><m:mn>1.89</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>K</m:mtext></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>10714</m:mn><m:mtext>&#x2009;</m:mtext><m:msup><m:mrow><m:mtext>JK</m:mtext></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:math></p>
+<p class="bindent">Now, turning to the data for naphthalene, 0.6475 g = 5.05 &#x00D7; 10<sup>&#x2013;3 </sup>moles. Therefore,</p>
+<p class="bequ"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mtable columnalign='left'><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow><m:mn>5.05</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>3</m:mn></m:mrow></m:msup><m:mtext>&#x2009;</m:mtext><m:mtext>mol</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>releases</m:mtext><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>c</m:mi><m:mrow><m:mtext>calorimeter</m:mtext></m:mrow></m:msub><m:mtext>&#x2009;</m:mtext><m:mi>&#x0394;</m:mi><m:mi>T</m:mi></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mn>10714</m:mn><m:mtext>&#x2009;</m:mtext><m:msup><m:mrow><m:mtext>JK</m:mtext></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo>&#x00D7;</m:mo><m:mn>2.424</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>K</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr columnalign='left'><m:mtd columnalign='left'><m:mrow></m:mrow></m:mtd><m:mtd columnalign='left'><m:mrow><m:mo>=</m:mo><m:mn>25</m:mn><m:mtext>&#x2009;</m:mtext><m:mn>967</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>J</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>&#x0394;</m:mi><m:msup><m:mi>U</m:mi><m:mrow><m:mi>c</m:mi><m:mi>o</m:mi><m:mi>m</m:mi><m:mi>b</m:mi><m:mi>u</m:mi><m:mi>s</m:mi><m:mi>t</m:mi><m:mi>i</m:mi><m:mi>o</m:mi><m:mi>n</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mo>&#x2212;</m:mo><m:mn>25</m:mn><m:mtext>&#x2009;</m:mtext><m:mn>967</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>J/5</m:mtext><m:mtext>.05</m:mtext><m:mo>&#x00D7;</m:mo><m:msup><m:mtext>10</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mtext>3</m:mtext></m:mrow></m:msup><m:mtext>&#x2009;</m:mtext><m:mtext>mol=</m:mtext><m:mo>&#x2212;</m:mo><m:mn>5</m:mn><m:mtext>&#x2009;</m:mtext><m:mn>124</m:mn><m:mtext>&#x2009;</m:mtext><m:mn>040</m:mn><m:mtext>&#x2009;</m:mtext><m:mtext>J</m:mtext><m:mtext>&#x2009;</m:mtext><m:msup><m:mtext>mol</m:mtext><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mtd></m:mtr></m:mtable></m:math></p>
+<p class="indent">Hence,</p>
+<p class="bequ">&#x2206; <i>U</i><sup>combustion</sup> for naphthalene at 25 &#x00B0;C = &#x2013;5142 kJ mol<sup>&#x2013;1</sup></p>
+<p class="noteb">Note that energy is evolved from the naphthalene to raise the temperature of the water. The change in internal energy of the system is therefore <i>negative.</i></p>
+</div>
+</section>
+<section epub:type="chapter" id="sec1.5">
+<h2 class="main">1.5<span class="space">&#160;</span>Concluding remarks</h2>
+<p class="noindent">The discussion in this chapter has centred on the internal energy of a system and allowed us to introduce a number of useful concepts. However, &#x2206;<i>U</i> is of limited use since few chemical processes are conducted at constant volume. With these basic tools though, we can now begin to tackle some more typical chemical processes. In many cases, we will investigate in detail the situation for a model system, for example an ideal gas, and then generalize the equations developed to describe more realistic situations.</p>
+</section>
+</section>
+</section>
+</body>
+</html>

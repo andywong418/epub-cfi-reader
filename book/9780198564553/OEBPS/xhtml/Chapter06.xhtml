@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Radiation Heat Transfer</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch06">
+<a id="page_53" class="page" style="width:70%;">Page 53, Chapter 6 Radiative heat transfer in furnaces</a>
+<h1 class="main">6<span class="space">&#160;</span>Radiative heat transfer in furnaces</h1>
+<section epub:type="chapter" id="sec6.1">
+<h2 class="h2">6.1<span class="space">&#160;</span>Introduction</h2>
+<p class="noindent">We turn now to one important application of radiation heat transfer, namely the high temperature furnace, where radiation is generally the dominant mechanism of heat transfer. The object of any furnace is to heat some material (generally known as the <i>stock</i>) using a high temperature heat source, such as combustion gases or an electrically heated panel. A wide variety of different geometries can be used, depending on the application. Correct design and sizing of a furnace depends on accurate modelling of radiation heat transfer within the furnace.</p>
+<p class="indent">This chapter considers two aspects of radiative heat transfer calculations which are particularly pertinent to furnaces, although the principles described are equally applicable to other systems. First we consider the question of time dependence: furnace designers are frequently concerned with the heating time required for a given material to reach a target temperature. Second we address the non-isothermal nature of most furnaces: in general we cannot assume that the walls and gases are at a constant temperature, and some allowance must be made for this.</p>
+</section>
+<section epub:type="chapter" id="sec6.2">
+<h2 class="h2">6.2<span class="space">&#160;</span>Variation of temperature with time</h2>
+<p class="noindent">All analyses so far have assumed steady-state conditions, where surface and gas temperatures do not vary with time. Many applications involve placing material in a furnace and waiting until it has reached some pre-determined temperature. A furnace will normally be designed such that the approach of the stock to the target temperature will not normally be asymptotic. This requires the heat source to be at a temperature considerably higher than the target temperature. If the approach to the target temperature is asymptotic, then the length of time for which the material is at high temperature may be long enough for appreciable oxidation to occur, which may lead to impaired product quality. It is therefore important that designers and operators are able to predict temperature&#x2013;time histories for furnaces. We consider only a very simple example here, but the principles can be applied to more complex models.</p>
+<p class="indent">Consider a rectangular furnace with grey surfaces, consisting of a heater panel (surface 1) at constant temperature <i>T</i><sub>1</sub>, the stock (surface 2) at variable temperature <i>T</i> placed on the floor of the furnace, and all remaining surfaces refractory. If the heater panel is electrically heated, then we can assume that <a id="page_54" class="page">Page 54, Chapter 6 Radiative heat transfer in furnaces</a>the furnace gases are primarily air, so gas radiation can be ignored. (In a fossil fuel-fired furnace, the hot combustion gases would be the heat source, and it can normally be assumed that all surfaces, other than the stock, are refractory.)</p>
+<p class="indent">Let the stock have mass <i>m</i> and specific heat capacity <i>C</i>. We shall also assume that the stock has a sufficiently high thermal conductivity that the stock is at a uniform temperature and there are no temperature gradients within it. If heat transfer is by radiation alone, then the instantaneous net rate of heat transfer from the heat source to the stock is:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq6.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mover accent='true'><m:mi>&#x2131;</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msup><m:mi>T</m:mi><m:mn>4</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(6.1)</td>
+</tr>
+</table>
+<p class="noindent">where <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>&#x2131;</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:math> is the total grey radiation factor for transfer from the heat source to the stock. <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>&#x2131;</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:math> includes all the information about the geometry (via the view factors) and emissivities of the surfaces. <a href="#eq6.1">Equation 6.1</a> can be applied to any multi-surface furnace, not just the three-surface example given here. The limiting factor is the ease of calculation of <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>&#x2131;</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:math> : as we have seen in <a href="Chapter04.xhtml">Chapter 4</a>, the more complex the geometry, the more difficult <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>&#x2131;</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:math> is to calculate.</p>
+<p class="indent">Consider also a time interval d<i>t</i> in which heat d<i>H</i> is transferred resulting in a temperature rise d<i>T</i>. We can write:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq6.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>d</m:mtext><m:mi>H</m:mi><m:mtext>&#x2009;</m:mtext><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>C</m:mi><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>H</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>C</m:mi><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p></td>
+<td style="padding-top:2em;">(6.2)</td>
+</tr>
+</table>
+<p class="noindent">Combining <a href="#eq6.1">Equations 6.1</a> and <a href="#eq6.2">6.2</a> gives:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow><m:mrow><m:mtext>d</m:mtext><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>&#x03C3;</m:mi><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mover accent='true'><m:mi>&#x2131;</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:mi>m</m:mi><m:mi>C</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msup><m:mi>T</m:mi><m:mn>4</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p>
+<p class="noindent">Let us assume that the stock is heated from an initial temperature <i>T</i><sub>0</sub> at <i>t</i> = 0 to a general temperature <i>T</i> at time <i>t</i>. The differential equation may be solved by separating the variables and integrating, assuming that the specific heat capacity of the stock and all emissivities (hence <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mover accent='true'><m:mi>&#x2131;</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:math>) do not vary with temperature:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mn>0</m:mn><m:mi>t</m:mi></m:munderover><m:mrow><m:mtext>d</m:mtext><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>m</m:mi><m:mi>C</m:mi></m:mrow><m:mrow><m:mi>&#x03C3;</m:mi><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mover accent='true'><m:mi>&#x2131;</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mstyle displaystyle='true'><m:mrow><m:munderover><m:mo>&#x222B;</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mi>T</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mtext>d</m:mtext><m:mi>T</m:mi></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msup><m:mi>T</m:mi><m:mn>4</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p>
+<p class="noindent">The right-hand side is a standard integral, from which we obtain the solution:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq6.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>m</m:mi><m:mi>C</m:mi></m:mrow><m:mrow><m:mi>&#x03C3;</m:mi><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mover accent='true'><m:mi>&#x2131;</m:mi><m:mo>&#x00AF;</m:mo></m:mover><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>.</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>3</m:mn></m:msubsup></m:mrow></m:mfrac><m:msubsup><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mn>l</m:mn><m:mtext>n</m:mtext><m:mrow><m:mo>|</m:mo> <m:mrow><m:mfrac><m:mrow><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mi>T</m:mi></m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:mi>T</m:mi></m:mrow></m:mfrac></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn><m:mtext>&#x2009;</m:mtext><m:msup><m:mrow><m:mi>tan</m:mi></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>T</m:mi><m:mrow><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow><m:mrow><m:mi>T</m:mi><m:mo>=</m:mo><m:msub><m:mi>T</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mi>T</m:mi><m:mo>=</m:mo><m:mi>T</m:mi></m:mrow></m:msubsup></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(6.3)</td>
+</tr>
+</table>
+<p class="noindent"><a href="#eq6.3">Equation 6.3</a> gives the temperature-time history for the material being heated. <a href="#fig6.1">Figure 6.1</a> plots the equation for two values of <i>T</i><sub>1</sub> (1200 and 1500 K), with an initial temperature (<i>T</i><sub>0</sub>) of 298 K. The asymptotic nature of the heating curve is evident: the curve begins to flatten appreciably at around 300 K below the temperature of the heat source. The most effective heating (in terms of high rate of rise of temperature) is therefore obtained if the temperature of the source is significantly above the target temperature of the stock. If the stock is <a id="page_55" class="page">Page 55, Chapter 6 Radiative heat transfer in furnaces</a>likely to be affected by excessive residence time at high temperature, the designer should ensure that a sufficiently high temperature source is used so that heating occurs on the linear part of the heating curve. A thorough review of furnace design is given by Rhine and Tucker.</p>
+<figure class="imgc" id="fig6.1">
+<img src="../images/Fig6.1.jpg" alt="images" style="width:70%;"/>
+<figcaption><b>Figure 6.1</b> Temperature&#x2013;time plot for a furnace with heat sources of two different temperatures.</figcaption></figure>
+</section>
+<section epub:type="chapter" id="sec6.3">
+<h2 class="h2">6.3<span class="space">&#160;</span>Non-Isothermal systems</h2>
+<p class="noindent">All analyses so far have assumed that a participating gas is isothermal and that all surfaces are at a uniform temperature. Most furnaces are far from this idealized view. For example, if a box furnace of the type introduced in <a href="Chapter03.xhtml">Chapter 3</a> had walls of uniform temperature, then there would be a discontinuity in the temperature where one surface met another; similarly, when radiating gases were discussed in <a href="Chapter05.xhtml">Chapter 5</a>, the gas and all surfaces were assumed to be uniform, which results in a temperature discontinuity at the interface between the gas and any surface. In real systems there are no discontinuities, but a continuous change in temperature at the interface between two surfaces or a surface and a gas.</p>
+<p class="indent">If we require accurate calculation, then this issue needs to be addressed, and a number of methods have been developed which attempt to reconcile the non-isothermal nature of real surfaces and gases. (A thorough account of many of the available methods is given by Modest.) Four generic types of heat transfer analysis are in use. The <i>spherical harmonics method</i> and the <i>discrete ordinates method</i> both attempt to transform the radiative transfer equations into a set of simultaneous partial differential equations, which can then be solved usually by numerical procedures; the <i>zone method</i> subdivides a non-isothermal system into a series of isothermal zones, which can then be analysed using the methods already described; the <i>Monte Carlo method</i> <a id="page_56" class="page">Page 56, Chapter 6 Radiative heat transfer in furnaces</a>extends the statistical techniques introduced for view factor determination in <a href="Chapter02.xhtml#sec2.7">Section 2.7</a> to a complete analysis of tracing the history of randomly generated beams of radiation as they travel through an enclosure. A number of hybrid schemes, involving a mixture of two or more these methods, have been proposed within the last decade or so, e.g. the discrete transfer method of Lockwood and Shah. We shall concentrate on what was historically the first approach to be used successfully in furnaces, and is arguably the most suited to hand-calculation. This is the zonal method, which was originally developed by Hottel.</p>
+<p class="indent">As indicated above, the basis of the method is to divide the non-isothermal system into a sufficiently large number of zones, such that each zone can be considered to be essentially isothermal. Surfaces can be sub-divided into a number of surface zones; gas volumes can be sub-divided into a number of volume zones. The problem is thereby reduced to a <i>N</i>-surface problem of the type discussed in earlier chapters: heat balances can be set up resulting in a set of <i>N</i> simultaneous equations which can be solved using matrix algebra. Clearly, the greater the number of sub-divisions, the greater the number of zones and the more accurate the results (i.e. the better the spatial resolution). The procedure can be summarised in the following way:</p>
+<p class="blist">(i)<span class="space">&#160;</span>divide system into a suitable number of zones;</p>
+<p class="blistk">(ii)<span class="space-n">&#160;</span>assume wall and gas temperatures are uniform in each zone;</p>
+<p class="blistk1">(iii)<span class="space-n1">&#160;</span>neglect conduction and convection effects;</p>
+<p class="blistk">(vi)<span class="space-n1">&#160;</span>perform a heat balance on each zone, and solve for the unknowns.</p>
+<p class="noindent">Neglecting conduction and convection is a fair assumption in most high temperature furnaces, unless gas velocities over the surfaces are high. If required, it is relatively straightforward to allow for convection and conduction when constructing the heat balances. Simultaneous conduction and convection are discussed in detail in <a href="Chapter07.xhtml">Chapter 7</a>.</p>
+<p class="indent">Very often the zonal method can result in a sequential, rather than simultaneous set of <i>N</i> equations, which makes hand-calculation very much easier. This is illustrated in the following example, where we wish to determine the temperature distribution in a long furnace.</p>
+<p class="noindentt" id="ex6.1">Example 6.1.</p>
+<p class="noindent">A furnace 5 m long with 1 m &#x00D7; 1 m cross-section is fed with a fuel/air mixture at 2 kg/s and 300 K. Combustion occurs, resulting in gradual release of heat along the furnace. The stock occupies the whole of the floor of the furnace. The specific heat capacity of the gases is 1250 J/kg K. By sub-dividing the furnace into five 1 m &#x00D7; 1 m &#x00D7; 1 m zones (see <a href="#fig6.2">Figure 6.2</a>), determine the temperature distribution of the gases within the furnace, given the following data:</p>
+<p class="noindent">&#160;</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td class="borb" style="vertical-align:top;">Zone</td>
+<td class="borb" style="vertical-align:top;"><p class="tab-c">1</p></td>
+<td class="borb" style="vertical-align:top;" id="zone2"><p class="tab-c">2</p></td>
+<td class="borb" style="vertical-align:top;" id="zone3"><p class="tab-c">3</p></td>
+<td class="borb" style="vertical-align:top;" id="zone4"><p class="tab-c">4</p></td>
+<td class="borb" style="vertical-align:top;" id="zone5"><p class="tab-c">5</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="borb">Heat Release (kW)</td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">2400</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">1000</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">100</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">0</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-c">0</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;">Total</td>
+</tr>
+<tr>
+<td style="vertical-align:top;">Absorption Coefficient (<i>kp</i>)</td>
+<td style="vertical-align:top;"><p class="tab-c">2.0</p></td>
+<td style="vertical-align:top;"><p class="tab-c">1.5</p></td>
+<td style="vertical-align:top;"><p class="tab-c">1.0</p></td>
+<td style="vertical-align:top;"><p class="tab-c">0.6</p></td>
+<td style="vertical-align:top;"><p class="tab-c">0.4</p></td>
+</tr>
+</table>
+<p class="noindent"><a id="page_57" class="page" style="width:70%;">Page 57, Chapter 6 Radiative heat transfer in furnaces</a></p>
+<figure class="imgc" id="fig6.2">
+<img src="../images/Fig6.2.jpg" alt="images" style="width:70%;"/>
+<figcaption><b>Figure 6.2</b> Schematic of long furnace for <a href="#ex6.1">Example 6.1</a>, showing five zones.</figcaption></figure>
+<p class="noindent">&#160;</p>
+<p class="noindent">We shall assume that the gases at the inlet and outlet to the furnace are cold and black (i.e. there is no emission from the gases in the plane of the entrance and exit), and the walls and roof of the furnace are refractory and somewhat colder than the gases. Additionally, in order to simplify the calculations in this example, we will assume no heat transfer across the zone boundaries, i.e. the zone boundaries are also essentially refractory.</p>
+<p class="noindentt">Solution.</p>
+<p class="noindent">The emissivity of the gases in each zone can be calculated from the mean beam length and <a href="Chapter05.xhtml#eq5.11">Equation 5.11</a>. In each zone, the gases are radiating to the six faces of the cube. So, using <a href="Chapter05.xhtml#tab5.1">Table 5.1</a>, we have a mean beam length (<i>L</i><sub>m</sub>) = 0.6 &#x00D7; 1 = 0.6 m. <a href="Chapter05.xhtml#eq5.11">Equation 5.11</a> then gives:</p>
+<p class="noindent">&#160;</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">Zone</p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">2</p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">3</p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">4</p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">5</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>&#x2212;</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>&#x2212;</m:mo><m:mi>k</m:mi><m:mi>p</m:mi><m:msub><m:mi>L</m:mi><m:mtext>m</m:mtext></m:msub></m:mrow></m:msup></m:mrow></m:math></p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.699</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.593</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.451</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.302</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0.213</p></td>
+</tr>
+</table>
+<p class="indent">An energy balance can be applied to each zone. Heat is released by combustion which is then transferred to the furnace walls and the stock by radiation and convection. (The latter will be neglected in this example.) Radiation will also be received by the gases from the furnace walls. If the rate of heat transfer from the gases is higher or lower than the rate of heat release, then any surplus/deficit results in a rise/fall in the temperature of the gases as they pass through the zone. The heat balance is therefore:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq6.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign='left'><m:mtr><m:mtd><m:mtable columnalign='right'><m:mtr columnalign='right'><m:mtd columnalign='right'><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>Heat</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Release</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>by</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>Combustion</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mtd><m:mtd columnalign='right'><m:mo>=</m:mo></m:mtd><m:mtd columnalign='right'><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>Radiation</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>gas</m:mtext><m:mo>&#x2192;</m:mo><m:mtext>walls</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mtd><m:mtd columnalign='right'><m:mo>&#x2212;</m:mo></m:mtd><m:mtd columnalign='right'><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>Radiation</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>walls</m:mtext><m:mo>&#x2192;</m:mo><m:mtext>gas</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mtd><m:mtd columnalign='right'><m:mo>+</m:mo></m:mtd><m:mtd columnalign='right'><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>Convection</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>gas</m:mtext><m:mo>&#x2192;</m:mo><m:mtext>walls</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mo>+</m:mo><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>Enthaply</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>rise</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>of</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>the</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>gases</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr></m:mtable></m:math></p></td>
+<td style="padding-top:3.5em;">(6.4)</td>
+</tr>
+</table>
+<p class="noindent">In any zone, we will assume that the walls are cold compared with the gases, so the radiation received by the gases (the second term on the right-hand side) will be negligible. We shall also assume that convection is negligible, so the balance becomes, algebraically:</p>
+<p class="imgc"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>Q</m:mi><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mtext>w</m:mtext></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>g</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:mi>m</m:mi><m:msub><m:mi>c</m:mi><m:mtext>p</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>o</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>i</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p>
+<p class="noindent"><a id="page_58" class="page">Page 58, Chapter 6 Radiative heat transfer in furnaces</a>where <i>A</i><sub>w</sub> is the surface area of wall removing heat from gases, <i>&#x1e41;</i> is the mass flow rate of gases, <i>T</i><sub>o</sub> is the outlet temperature of the gases from the zone, and <i>T</i><sub>i</sub> is the inlet temperature of the gases to the zone. We shall take <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msubsup><m:mi>T</m:mi><m:mtext>g</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow></m:math>, the gas temperature in a zone, to be the arithmetic mean of the fourth powers of the inlet and outlet temperatures. The balance then becomes:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq6.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mi>Q</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msub><m:mi>A</m:mi><m:mtext>w</m:mtext></m:msub><m:msub><m:mi>&#x03B5;</m:mi><m:mtext>g</m:mtext></m:msub><m:mi>&#x03C3;</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>T</m:mi><m:mtext>o</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>T</m:mi><m:mtext>i</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mover accent='true'><m:mi>m</m:mi><m:mo>&#x02D9;</m:mo></m:mover><m:msub><m:mi>c</m:mi><m:mtext>p</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>o</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>T</m:mi><m:mtext>i</m:mtext></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.25em;">(6.5)</td>
+</tr>
+</table>
+<p class="noindent">From <a href="#eq6.5">Equation 6.5</a>, we can see in our example that if we know the inlet temperature for a given zone, then the outlet temperature is the only unknown. Thus, starting from zone 1, we can solve for <i>T</i><sub>o</sub>, albeit from a non-linear equation, and use that value as the inlet temperature for the next zone. Thus we can build up a temperature profile for the gases along the axis of the furnace.</p>
+<p class="indent">Let us consider zone 1. Here heat is lost by radiation to the stock and to the cold front end of the furnace, with other walls and the boundary with zone 2 being refractory. Thus we have:</p>
+<p class="imgc" style="margin-top:0em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>2.4</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>6</m:mn></m:msup><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>&#x00D7;</m:mo><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:mn>0.699</m:mn><m:mo>&#x00D7;</m:mo><m:mn>5.67</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>8</m:mn></m:mrow></m:msup><m:mo>&#x00D7;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mrow><m:mn>300</m:mn></m:mrow><m:mn>4</m:mn></m:msup><m:mo>+</m:mo><m:msubsup><m:mi>T</m:mi><m:mtext>o</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:mn>1250</m:mn><m:mo>&#x00D7;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>o</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:mn>300</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msubsup><m:mi>T</m:mi><m:mtext>o</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:mn>6.310</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>10</m:mn></m:mrow></m:msup><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>T</m:mi><m:mtext>o</m:mtext></m:msub><m:mo>=</m:mo><m:mn>7.949</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>13</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">Numerical solution gives <i>T</i><sub>o</sub> = 1224 K for zone 1, which can be used as <i>T</i><sub>i</sub> for zone 2. Noting that only the stock removes heat in zone 2, the heat balance for zone 2 is:</p>
+<p class="imgc" style="margin-top:0em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>1.0</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>6</m:mn></m:msup><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>&#x00D7;</m:mo><m:mn>1</m:mn><m:mo>&#x00D7;</m:mo><m:mn>0.593</m:mn><m:mo>&#x00D7;</m:mo><m:mn>5.67</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mo>&#x2212;</m:mo><m:mn>8</m:mn></m:mrow></m:msup><m:mo>&#x00D7;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mrow><m:mn>1224</m:mn></m:mrow><m:mn>4</m:mn></m:msup><m:mo>+</m:mo><m:msubsup><m:mi>T</m:mi><m:mtext>o</m:mtext><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>&#x00D7;</m:mo><m:mn>1250</m:mn><m:mo>&#x00D7;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mtext>o</m:mtext></m:msub><m:mo>&#x2212;</m:mo><m:mn>1224</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msubsup><m:mi>T</m:mi><m:mtext>o</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:mn>1.486</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>11</m:mn></m:mrow></m:msup><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>T</m:mi><m:mtext>o</m:mtext></m:msub><m:mo>=</m:mo><m:mn>2.391</m:mn><m:mo>&#x00D7;</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>14</m:mn></m:mrow></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></p>
+<p class="noindent">giving <i>T</i><sub>o</sub> = 1568 K for zone 2. Progressing one zone at a time along the furnace gives us the temperature profile:</p>
+<p class="noindent">&#160;</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">Zone</p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">2</p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">3</p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">4</p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">5</p></td>
+</tr>
+<tr>
+<td class="borb" style="vertical-align:top;"><p class="tab-l"><i>T</i><sub>i</sub></p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">&#160;&#160;300</p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">1224</p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">1568</p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">1548</p></td>
+<td class="borb" style="vertical-align:top;"><p class="tab-l">1510</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>T</i><sub>o</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">1224</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1568</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1548</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1510</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1463</p></td>
+</tr>
+</table>
+<p class="indent">This calculation shows that the approximation that zones are isothermal is probably fair in zones 3 to 5, but is not so good in the main combustion zone. If greater accuracy is required, then we might considered splitting the first two zones into smaller units, and repeating the calculations.</p>
+<p class="indent">This rough calculation gives us a good idea of what is happening to the gases in the furnace. The assumptions which have been made do not allow us to determine the wall temperature. This would require us to include the second or third term in <a href="#eq6.4">Equation 6.4</a>, so that the wall temperature becomes an unknown in each zone. Also, if we needed to allow for heat transfer across <a id="page_59" class="page">Page 59, Chapter 6 Radiative heat transfer in furnaces</a>zone boundaries, then the first term on the right-hand side would need to include radiation from the gases of the zone in question to all surfaces in the furnace, and the second term would include radiation from walls and gases of other zones. Such extra complexities are best suited to computer simulation.</p>
+</section>
+</section>
+</body>
+</html>

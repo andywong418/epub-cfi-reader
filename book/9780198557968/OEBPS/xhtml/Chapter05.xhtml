@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Noise and its reduction</title>
+<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div>
+<section epub:type="chapter" id="ch05">
+<a id="page_61" class="page" style="width:70%">Page 61, 5 Noise and its reduction</a>
+<h1 class="main1">5<span class="space">&#160;</span><b>Noise and its control</b></h1>
+
+<section epub:type="chapter" id="sec_5.1">
+<h2 class="h2">5.1<span class="span"></span><b> Noise and experiments</b></h2>
+<p class="noindent">By analogy with sound, where <i>noise</i> implies the presence of unwanted sounds, the term as applied to electrical systems also means that there are voltages or currents present that are not related to the quantity being investigated. Just as with sound, the noise detracts from the information that can be gathered from material to which the hearer is listening. The reduction of information means a loss of precision that can be regained only by conveying the message more slowly or by repeating it as many times as necessary (which also means a slower process). In
+ <a href="Chapter01.xhtml">Chapter 1,</a> it was pointed out that noise always accompanies the signal in any real piece of instrumentation (see pp.<a href="Chapter01.xhtml#page_9"> 9</a>&#x002D;<a href="Chapter01.xhtml#page_11">11</a>). Even if there are no &#x2018;avoidable&#x2019; sources of noise (see later), there remain inherent sources of noise that thus serve to limit the precision of measurements. The <i>signal&#x002D;to&#x002D;noise ratio</i> (<i>S/N)</i> is a measure of the relative magnitudes of the wanted signal and the unwanted noise. The smaller the <i>S/N</i> ratio, the more difficult it is to make the required measurement. The only way to restore the quality of the information is to spend longer on making the measurement.</p>
+<p class="indent3-ka">In many applications of electronic instrumentation in science, the signals are often very weak and the noise relatively large. The problems of <i>S/N</i> ratios can thus be very important, and proper handling of the available material may sometimes mean the difference between success and failure of an experiment. A skilled experimentalist will attempt both to reduce the noise to as near to the theoretical limit as possible, and to ensure that signals that are available are handled and processed in such a way as to ensure that the information in them is degraded or wasted as little as possible. This chapter is intended first to give an outline of what the sources of noise are and the extent to which the noise may be reduced, and secondly to illustrate methods for making the best of the initial <i>S/N</i> ratio and of enhancing the precision of the measurements. An understanding of these principles can often guide the user to a more effective employment of instrumentation in tackling a problem.</p>
+<h3 class="h3"><b>Sources of noise</b></h3>
+<p class="noindent">Before proceeding further, it is essential to investigate the different sources of noise. For our purposes, it is convenient to distinguish between three distinct kinds of noise, which are</p>
+<p class="noindent">&#160;</p>
+
+<p class="noindent">(i)&#160;&#160;&#160;&#160;<i>fundamental noise;</i><br/>
+(ii)&#160;&#160; <i>excess tioise</i> and<br/>
+(iii)&#160;&#160; <i>interference.</i> </p>
+
+<p class="noindent"><a id="page_62" class="page">Page 62, 5 Noise and its reduction </a>Fundamental noise arises from the physical properties of electrical systems, and cannot be eliminated. Excess noise is a term applied to noise generated from within the instrumentation, possibly as a consequence of imperfections in the components of the apparatus. Improvements in design can bring a reduction in noise of this type. Finally, interference arises from outside the instrumentation itself; in principle, it can be eliminated entirely, although the practice often proves difficult and depends on experience and intuition. The characteristics, and especially the frequency spectrum and time distribution, of the different sorts of noise aid in discriminating between signal and noise (<a href="#sec_5.3">Section 5.3</a>), and thus in improving <i>S/N</i> ratios (
+<a href="#sec_5.4">Sections 5.4</a><a href="#sec_5.6"> to 5.6</a>).</p>
+<h3 class="h3"><b>Fundamental noise</b></h3>
+<p class="noindent">Motions of discrete charge carriers, such as electrons, in electrical circuits give rise to the fundamental noise. There are two important types. The first arises directly from the thermal motions of electrons in conductors, which generate a noise voltage even in the absence of a signal current. This noise is <i>thermal noise,</i> and is also known as <i>Johnson noise</i> or k<i>T noise.</i>The second type of fundamental noise is <i>shot noise,</i> and it arises from the statistical nature of the flow of a signal current. The name is said to derive from the sound made when a large quantity of lead shot is poured. Shot noise shows up as random fluctuations superposed on a mean level of the signal current.</p>
+
+<aside class="abc" style="margin-top:-12em;" epub:type="sidebar">
+<p class="aside" id="formula_5.1"><b>Formula 5.1</b> The mean square of the thermal noise voltage is given by the equation</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mover accent='true'>
+    <mi>V</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mi>n</mi>
+  </msub>
+  <msup>
+   <mrow></mrow>
+   <mn>2</mn>
+  </msup>
+  <mo>=</mo><mn>4</mn><mi>k</mi><mi>T</mi><mi>R</mi><mi>&#x0394;</mi><mi>f</mi>
+ </mrow>
+</math>
+
+
+<p class="aside">where k is the Boltzmann constant, R the resistance in which the noise is being generated, and Af is the bandwidth in which the noise is observed.</p></aside>
+
+
+
+
+
+<p class="indent3-ka">Thermal noise occurs in resistors and similar devices that are at temperatures above absolute zero, and result from the thermal agitation (Brownian motion) of all particles. Fluctuations in the velocities of the charge carriers gives rise to a fluctuating unbalance of charge across the resistor and thus to a noise voltage. Application of the laws of thermodynamics (and especially the equipartition theorem) allows an average value for the noise energy or power to be calculated. The electrical equivalent is a mean square noise voltage, VJ for which the equation is given in 
+<a href="#formula_5.1">Formula 5.1.</a> Substitution of numbers into the equation shows that the square root of <i>V&#x0305;<sub>n</sub><sup>2</sup></i> (that is, the rms noise voltage: 
+<a href="Chapter02.xhtml#page_24">see p. 24</a>) should be about <a href="Chapter01.xhtml#page_4">1.3</a> 
+&#x03BC;V in a 10 kHz bandwidth for a 10 k&#x2126; resistor at room temperature (300 K). The quantity <i>(V<sup>&#x0305;</sup><sub>n</sub><sup>2</sup>/R&#x0394;f)</i> is the noise power per unit frequency interval, or the <i>noise power density.</i> One important conclusion to be drawn from the equation is that the this power density is <i>independent of frequency</i> (see<a href="#fig_5.1">Fig. 5.1</a>): the noise is said to be &#x2018;white&#x2019;, this time drawing on an optical analogy. In fact, the only quantities remaining in the expression for the power density are the Boltzmann constant, k, and the temperature, <i>T.</i> It should be noted, however, that the derivation is based on <i>classical</i> thermodynamics, and when the equipartition theorem becomes inapplicable (at energies corresponding to frequencies of more than a few hundred GHz) the noise ceases to be white.</p>
+<p class="indent3-ka">Thermal noise can be minimized at source in two ways. The first is to arrange for resistances in the critical (low signal) parts of the circuits to be kept as low as possible. Further improvement may be achieved by operating these critical parts of the circuit at low temperature; cooling of ultra-sensitive amplifiers by liquid helium is not unknown.</p>
+
+
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.1"><img src="../images/page_62_1.jpg" alt="images"/>
+<p class="aside"><b>Fig. 5.1</b> The thermal noise power density spectrum. The ordinate, 
+(V<sup>&#x0305;</sup><sub>n</sub><sup>2</sup>/R&#x0394;f), is the power density (i.e. the power per unit frequency interval)</p></figure></aside>
+
+
+<p class="indent3-ka"><a id="page_63" class="page">Page 63, 5 Noise and its reduction</a>&#160;&#160;&#160;&#160; Shot noise is a direct consequence of the way in which current is carried by individual charges, negative or positive, that ultimately depend on the presence or absence of electrons. Even quite small currents involve very large numbers of electrons (one microamp, for example, corresponds to a flow of more than 6 x 10<sup>18</sup> electronic charges per second), and the effects of the &#x2018;granularity&#x2019; of the current are not normally apparent. However, when small currents are made up of independent charge carriers, as they are, for example in the currents of charged particle detectors (<a href="Chapter03.xhtml#sec_3.4">Section 3.4</a>) and many photon detectors (<a href="Chapter03.xhtml#sec_3.6">Section 3.6</a>), and at semiconductor junctions, the current pulses are essentially random. Together, the arrival of the charges constitutes a mean current, but the randomness means that there is a fluctuation about the mean. Formula 5.2, which shows the mean square current noise, can be derived from simple statistics. The noise is again white, showing the frequency-independent characteristics similar to those of<a href="#fig_5.1"> Fig. 5.1.</a> Note that, although the <i>absolute</i> shot noise current increases with the signal current,  the <i>S/N</i> ratio decreases inversely as the square root of <i>I.</i> For a value of <i>I</i> &#x003D; 1 &#x03BC;A and &#x0394;f &#x003D; 1 kHz, the shot-limited <i>S/N</i> ratio is about 56000, easily enough to satisfy most requirements in chemical instrumentation. Currents a million times smaller are not uncommon, however, and the <i>S/N</i> ratio will then drop to 56, adequate for many purposes, but corresponding to a limiting precision of the measurement of only just better than two percent.</p>
+<aside class="abc" style="margin-top:-19em;" epub:type="sidebar">
+
+<p class="aside"><b>Formula 5.2</b> The mean square shot noise current is given by the 
+expression</p></aside>
+
+<aside class="abc" style="margin-top:-14em;" epub:type="sidebar">
+<p class="fig1" style="margin-left:0em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <msubsup>
+   <mover accent='true'>
+    <mi>l</mi>
+    <mo>&#x00AF;</mo>
+   </mover>
+   
+   <mi>n</mi>
+   <mn>2</mn>
+  </msubsup>
+  <mo>=</mo><mn>2</mn><mi>e</mi><mi>l</mi><mi>&#x0394;</mi><mi>f</mi>
+ </mrow>
+</math></p>
+
+</aside>
+
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+
+<p class="aside">where e is the charge on the electron and / is the (mean) signal current. The signal-to-noise ratio (S/N) is thus given by the equation</p>
+<p class="fig1" style="margin-left:0em">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>S</mi><mo>/</mo><mi>N</mi><mo>=</mo><msup>
+   <mrow>
+    <mo stretchy='false'>(</mo><mi>l</mi><mo>/</mo><msubsup>
+     <mover accent='true'>
+      <mi>l</mi>
+      <mo>&#x00AF;</mo>
+     </mover>
+     
+     <mi>n</mi>
+     <mn>2</mn>
+    </msubsup>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mrow>
+    <mn>1</mn><mo>/</mo><mn>2</mn>
+   </mrow>
+  </msup>
+  <mo>=</mo><msup>
+   <mrow>
+    <mo stretchy='false'>(</mo><mi>l</mi><mo>/</mo><mn>2</mn><mi>e</mi><mi>l</mi><mi>&#x0394;
+</mi><mi>f</mi><mo stretchy='false'>)</mo>
+   </mrow>
+   <mrow>
+    <mn>1</mn><mo>/</mo><mn>2</mn>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math></p>
+
+</aside>
+
+
+
+<p class="indent3-ka"><i>Dark currents</i> in photodetectors (<a href="Chapter03.xhtml#page_44">see pp. 44</a>&#x002D;<a href="Chapter03.xhtml#page_46">46</a>), and thermionic leakage currents in other kinds of semiconductor, can be thought of as related to both resistive thermal noise and shot noise. The currents have their origins in the thermal generation of charge carriers, the numbers depending in a way described by the Boltzmann distribution on the temperature and the work function (or band gap) of the material concerned. If the dark current were absolutely steady, it might merely provide an offset to the current to be measured. Unfortunately, though, the dark current is itself subject to statistical shot noise which is superimposed on the shot noise associated with the signal itself. The practical remedies are to use cooled devices (and the avoidance of these thermionic currents may be a better reason for cooling rather than just the reduction of Johnson noise), and to select cathode or junction materials that have the highest possible work function or band gap consistent with the application envisaged. For example, to detect ultraviolet radiation, a photoelectric device with a cathode that has a long-wavelength cut-off in the blue region of the spectrum is more suitable than one whose sensitivity extends into the deep red.</p>
+
+
+
+<h3 class="h3"><b>Excess noise</b></h3>
+<p class="noindent">Noise beyond the inevitable thermal and shot components is regarded as excess noise. The changes in leakage currents with changing temperature just discussed should therefore probably be counted as excess noise. Temperature sensitivity of individual electronic components, circuit elements, or even complete instrumentation certainly contributes to excess noise. In the context of complete systems, for example, an instrument such as a spectrophotometer?</p>
+
+
+
+
+<p class="noindent"><a id="page_64" class="page">Page 64, 5 Noise and its reduction</a>might show sensitivity to geometric distortions as the temperature alters, and changing temperature might also affect the intensity of light sources as well as the dark current of detectors and amplifiers. Contacts made between different metals can be a source of thermoelectric e.m.f.s 
+(<a href="Chapter03.xhtml#page_43">see p. 43</a>) if there are temperature differentials present. Poor contacts and bad soldering can lead to fluctuating circuit resistances. These kinds of problem can be avoided, or at least alleviated, by proper circuit design and constructional technique, and, if necessary, by thermostatic reduction of the temperature. Excess noise introduced by the circuit components themselves can be more difficult to deal with. Carbon composition resistors are often noisy, probably because of their granular construction. Semiconductor devices, including diodes, transistors, and integrated circuits, often introduce their own excess noise, possibly because of crystal defects and the presence of grain boundaries and chemical impurities in the semiconductor material. The designer must always search for &#x2018;low noise&#x2019; components for use in the low-signal parts of a system. While it is true that component manufacturers are continually offering devices with better noise performance, it is certainly the case that almost every instrument, and every part of it, generates noise in excess of the theoretical minimum.</p>
+<p class="indent3-ka">Some of the sources of excess noise can be identified, while others are less clearly understood. However, many have in common a noise power spectrum that peaks at low frequencies, and that decreases approximately as the inverse of the frequency over quite a wide range. This noise is therefore not white, but &#x2018;pink&#x2019;, and is often referred to simply as <i>1/f noise</i> or as <i>flicker noise.</i></p>
+
+
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.2"><img src="../images/page_64_1.jpg" alt="images"/>
+
+<p class="aside"><b>Fig. 5.2</b> Pink or Vf noise</p></figure></aside>
+
+<p class="indent3-ka">A typical power density spectrum is illustrated in 
+<a href="#fig_5.2">Fig. 5.2.</a> We shall see shortly that this frequency dependence can be used to provide some discrimination against excess noise. For the time being, it is worth seeing how the 1/f noise affects experimental measurements. Very many measurements involve determining a current or voltage that is virtually at d.c. (zero frequency); of course, the signal has to change sometime to provide some information (<a href="Chapter01.xhtml#page_9">see pp. 9</a>&#x002D;<a href="Chapter01.xhtml#page_10">10</a>), but the information is often conveyed by very low frequency components with periods of the order of minutes to hours. These are the very frequencies where the 1/f noise power density is maximum. The noise displays itself in the form of slow drifts of the measured quantity that may completely swamp the signal being sought. The solution must be to attempt to find a way of performing the experiment so that higher frequencies are used in the critical low&#x002D;signal stages. We return to this topic later. The problems of noise and drift at very low frequencies is one reason why d.c. amplifiers are much more difficult to construct than a.c. ones. Small leakage currents, and slow fluctuations in them, that are present at the high sensitivity parts are amplified right through to the output. Although transistors do not show the same problems of ageing and heat generation as valves do, and although integrated circuits can employ many matched transistors in balanced configurations that offset the tendencies to drift, the fact remains that d.c. amplifiers are inherently more noisy (in terms of the noise power density near zero frequency) than are similar a.c. amplifiers.</p>
+
+
+
+
+<p class="noindent"><a id="page_65" class="page">Page 65, 5 Noise and its reduction</a></p>
+
+<h3 class="h3"><b>Interference</b></h3>
+<p class="noindent">Noise arising from outside the experimental system is regarded as interference, and ought to be completely separable from the signal. However, a whole book would not suffice to describe the sources of interference and the cures, some rational and some verging on magic, that are employed. We must content ourselves here with a very brief survey. The electrical mains supply is one major contributor to interference. It is familiar enough in the form of &#x2018;hum&#x2019; in audio equipment. Inadequately smoothed power supplies are one cause. Inductive or capacitative coupling to a.c. supplies internal to the equipment are another. Furthermore, the whole of the laboratory environment is subjected to alternating electric fields that can induce voltages virtually up to the mains supply voltage. Because motors, pumps, lights, heaters, and even scientific instruments, are all drawing current, an alternating magnetic field is present. These alternating fields can be prevented from entering the equipment only by adequate electrostatic and magnetic <i>shielding.</i> More insidiously, shielded cables that are grounded in more than one place may act as small transformers coupled into the oscillating magnetic field. The cables are then said to constitute a <i>ground loop</i> or <i>earth loop.</i> One characteristic of the mains <i>pick-up</i> in all these cases is that the frequency of the interference is that of the mains itself (50 Hz in the UK), and because the waveform is not very pure, harmonics of it. Other sources of a.c., such as local radio stations or r.f. power supplies in neighbouring rooms, can provide fixed frequency interference. Sometimes, inductive magnetic or capacitative electrical coupling is involved, but at higher frequencies a propagated electromagnetic wave may be detected by some part of the circuitry that is acting, possibly inadvertently, as a radio receiver. Similar remarks apply to pulse interference. Large amounts of power are dissipated suddenly by discharges in lasers and flash lamps. The outcome is a large pulse of energy that may be propagated directly as an electromagnetic wave or transmitted electrically down the mains supply wiring. The frequency spread associated with a short pulse is correspondingly large (see p. 7), so that this kind of noise can be nearly white. It occurs, however, at times associated with the pulses. Good detective work is often needed to track down what device in the laboratory is firing at particular intervals and at certain times of the day. Lasers are by no means the only culprits. Motors, thermostatically switched ovens, photocopiers, and almost all other electrical devices can be responsible. The counsel of perfection is to provide sufficient screening and shielding of the experiment and to filter the incoming mains supply adequately. It is often easier, scientifically if not socially, to eliminate the interference at source.</p>
+
+<aside class="abc" style="margin-top:-25em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.3"><img src="../images/page_65_1.jpg" alt="images"/>
+<figcaption>
+<p class="aside" style="width:130%;"><b>Fig. 5.3</b> Typical noise power spectrum of interference. The interference is often at the frequency of the mains and at harmonics of it</p></figcaption></figure></aside>
+</section>
+
+
+<section epub:type="chapter" id="sec_5.2">
+<h2 class="h2"><span class="span">&#160;</span>	<b>5.2 Signal&#x002D;to&#x002D;noise ratios and averages</b></h2>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.4"><img src="../images/page_65_2.jpg" alt="images"/>
+
+<p class="aside" style="width:100%;"><b>Fig. 5.4</b> Noise superimposed on a constant d.c. signal</p></figure></aside>
+<p class="noindent">Let us consider first the noise on a d.c. signal, which is the situation most often encountered at the output of an experiment (<a href="#page_64">see p. 64</a>). 
+<a href="#fig_5.4">Figure 5.4</a> shows an average d.c. voltage level, and random noise superposed on it. A useful definition of <i>S/N</i> is then the ratio of the average signal to the root mean <a id="page_66" class="page">Page 66, 5 Noise and its reduction</a>square (rms) noise, as defined in formula 5.3. The rms is a convenient mean of the noise to use, because the squaring of the deviations means that both positive and negative excursions from the mean contribute to the total. For a varying or alternating signal, the definition of <i>S/N</i> is slightly more complicated, because the noise has to be referred to the expected true time-dependent signal, as illustrated in <a href="#fig_5.5">Fig. 5.5</a> for a decaying transient signal. Nevertheless, the same principles apply. It is worth noting that, if the noise stays at the same level while the signal decays, which would be the case for thermal and excess flicker noise, the <i>S/N</i> ratio degrades markedly with time, a factor that must be considered when weighting data points in subsequent analysis.</p>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+
+<p class="aside" id="formula_5.3"><b>Formula 5.3</b> Signal&#x002D;to&#x002D;noise ratio. For a hypothetical series of n individual signal voltages V<sub>1</sub> V<sub>2</sub>,.., the rms noise is given by the expression</p>
+<p class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> 
+
+ <mrow>
+  <msup>
+   <mrow>
+    <mo stretchy='false'>(</mo><msup>
+     <mover accent='true'>
+      <mi>V</mi>
+      <mo>&#x00AF;</mo>
+     </mover>
+     
+     <mn>2</mn>
+    </msup>
+    <msub>
+     <mrow></mrow>
+     <mi>n</mi>
+    </msub>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mrow>
+    <mfrac bevelled='true'>
+     <mn>1</mn>
+     <mn>2</mn>
+    </mfrac>
+    
+   </mrow>
+  </msup>
+  <mo>=</mo><msup>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mfrac>
+       <mn>1</mn>
+       <mi>n</mi>
+      </mfrac>
+      <mrow><mo>[</mo> <mrow>
+       <msup>
+        <mrow>
+         <mo stretchy='false'>(</mo><msub>
+          <mi>V</mi>
+          <mi>s</mi>
+         </msub>
+         <mo>&#x2212;</mo><msub>
+          <mi>V</mi>
+          <mn>1</mn>
+         </msub>
+         <mo stretchy='false'>)</mo>
+        </mrow>
+        <mn>2</mn>
+       </msup>
+       <mo>+</mo><msup>
+        <mrow>
+         <mo stretchy='false'>(</mo><msub>
+          <mi>V</mi>
+          <mi>s</mi>
+         </msub>
+         <mo>&#x2212;</mo><msub>
+          <mi>V</mi>
+          <mn>2</mn>
+         </msub>
+         <mo stretchy='false'>)</mo>
+        </mrow>
+        <mn>2</mn>
+       </msup>
+       <mn>..</mn>
+      </mrow> <mo>]</mo></mrow>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mrow>
+    <mfrac bevelled='true'>
+     <mn>1</mn>
+     <mn>2</mn>
+    </mfrac>
+    
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math>
+</p>
+
+Where V<sub>s</sub>is the average signal: 
+<p class="fig1">
+ <math xmlns="http://www.w3.org/1998/Math/MathML"> 
+ <mrow>
+  <msub>
+   <mi>V</mi>
+   <mi>s</mi>
+  </msub>
+  <mo>=</mo><mfrac>
+   <mn>1</mn>
+   <mi>n</mi>
+  </mfrac>
+  <mrow><mo>[</mo> <mrow>
+   <msub>
+    <mi>V</mi>
+    <mn>1</mn>
+   </msub>
+   <mo>+</mo><msub>
+    <mi>V</mi>
+    <mn>2</mn>
+   </msub>
+   <mn>...</mn>
+  </mrow> <mo>]</mo></mrow>
+ </mrow>
+</math>
+</p>
+Thus
+<p class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> 
+ <mrow>
+  <mrow><mi>S</mi><mo>/</mo><mrow>
+   <mi>N</mi><mo>=</mo><mfrac>
+    <mrow>
+     <mi>a</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>e</mi><mi>s</mi><mi>i</mi><mi>g</mi><mi>n</mi><mi>a</mi><mi>l</mi>
+    </mrow>
+    <mrow>
+     <mi>r</mi><mi>m</mi><mi>s</mi><mi>n</mi><mi>o</mi><mi>i</mi><mi>s</mi><mi>e</mi>
+    </mrow>
+   </mfrac>
+   
+  </mrow></mrow>
+  
+ </mrow>
+</math>
+</p>
+<p class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> 
+ <mrow>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <msub>
+     <mi>V</mi>
+     <mi>s</mi>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <mo stretchy='false'>(</mo><msup>
+     <mi>V</mi>
+     <mn>2</mn>
+    </msup>
+    <msub>
+     <mrow></mrow>
+     <mi>n</mi>
+    </msub>
+    <mo stretchy='false'>)</mo><mfrac bevelled='true'>
+     <mn>1</mn>
+     <mn>2</mn>
+    </mfrac>
+    
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math></p>
+</aside>
+
+
+
+<p class="indent3-ka">We must now examine what happens to the <i>S/N</i> ratio if two or more sets of measurements are averaged. The total signal, <i>S,</i> builds up in proportion to the number of readings taken and added together. The noise values do not add up in quite the same way. Sometimes the noise voltages add to reinforce each other, but sometimes they subtract from each other. The total noise thus increases less slowly than the signal, and the <i>S/N</i> ratio improves as more readings are taken to make up the average. It is easy to show, as is illustrated in Formula 5.4, that with 
+<i>M</i> separate measurements averaged, the <i>S/N</i> ratio improves by a factor
+ <i>M<sup>1/2</sup></i> The central feature in demonstrating this result is that the cross terms in noise, such as <i>V<sub>nl</sub>V<sub>n2</sub>,</i> vanish <i>on average</i> if the noise is truly random, because there are as many random positive terms as negative ones. Only the squared terms remain, and the mean square of the total noise is equal to the sum of the individual mean square noise contributions.</p>
+
+
+
+<p class="indent3-ka">The conclusion that the <i>S/N</i> ratio increases with the number of measurements taken is an extremely important one. In fact, the increase by the factor <i>M<sup>1/2</sup></i> is exactly the same as ordinary simple statistics would predict for the increase in precision of the mean of any repeated determination, be it of a mass, a length, a temperature, or, as here, an electrical quantity. Many techniques used to enhance <i>S/N</i> ratios from a given noisy input signal depend, in one way or another, on the principle of making repeated measurements. Sometimes, the application of the principle is explicit as in the <i>boxcar integrator</i> 
+(<a href="#sec_5.5">Section 5.5</a>) or in a <i>multichannel averager</i> (<a href="#sec_5.6">Section 5.6</a>). However, other methods such as those that rely directly on bandwidth reduction 
+(<a href="#sec_5.4">Section 5.4</a>) also make use of the cancellation of random noise. In every case, the 
+<i>S/N</i> ratio improves in proportion to the square root of the time taken to make the set of repeated discrete measurements or taken to acquire the data. While it is fortunate that <i>S/N</i> ratios increase at all with extended observation times, the limitations imposed by the square root dependence should not be forgotten. Suppose that the <i>S/N</i> ratio is 1/10 for a one&#x002D;second experiment; at this level, the signal is barely detectable above the noise. To obtain a precision in an experiment of ten per cent will require <i>S/N</i> to be roughly ten, which is 100 times larger than before. That means that 100<sup>2</sup> experiments must be done or an equivalent amount of information accumulated, taking (at least) 10<sup>4</sup> seconds, or rather under three hours. Three hours might be an acceptable time for a determination in a chemical</p>
+
+<aside class="abc" style="margin-top:-14em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.5"><img src="../images/page_66_1.jpg" alt="images"/>
+<p class="aside" style="width:130%;"><b>Fig. 5.5</b> Noise superimposed on a decaying transient signal
+</p></figure></aside>
+
+<p class="noindent"><a id="page_67" class="page">Page 67, 5 Noise and its reduction</a>experiments must be done or an equivalent amount of information accumulated, taking (at least) 10<sup>4</sup> seconds, or rather under three hours. Three hours might be an acceptable time for a determination in a chemical experiment. However, to improve the precision to one per cent requires a further increase of a factor of ten in the S/N ratio, and thus of one hundred in the time taken to obtain the data. Now the experiment takes more than 11 days. It may prove impossible to operate an experiment satisfactorily for periods of this kind; reactants may run out, or factors such as temperatures, atmospheric pressures, and so on, may cause drifts or otherwise invalidate the experiment. There are thus practical limitations to the improvement of S/N ratios by any of these methods, and it remains important to design experiments to minimize noise at the outset, and not to waste signal (
+see <a href="#sec_5.7">Section 5.7</a>).
+</p> 
+
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+
+
+
+<p class="aside" id="formula_5.4"><b>Formula 5.4 </b>Improvement of S/N ratio with increasing numbers of samples.</p>
+Consider first an average of two measurements in which the signal voltages are V<sub>s1</sub> and V<sub>s2</sub> and the rms noise voltages are
+<p class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> 
+<mrow>
+  <msup>
+   <mrow>
+    <mo stretchy='false'>(</mo><mover accent='true'>
+     <mrow>
+      <msubsup>
+       <mi>V</mi>
+       <mrow>
+        <mi>n</mi><mn>1</mn>
+       </mrow>
+       <mn>2</mn>
+      </msubsup>
+      
+     </mrow>
+     <mo stretchy='true'>&#x00AF;</mo>
+    </mover>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mrow>
+    <mn>1</mn><mo>/</mo><mn>2</mn>
+   </mrow>
+  </msup>
+  <msup>
+   <mrow>
+ <mo stretchy='false'>(</mo><mover accent='true'>
+     <mrow>
+      <msubsup>
+       <mi>V</mi>
+       <mrow>
+        <mi>n</mi><mn>2</mn>
+       </mrow>
+       <mn>2</mn>
+      </msubsup>
+      
+     </mrow>
+     <mo stretchy='true'>&#x00AF;</mo>
+    </mover>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mrow>
+    <mn>1</mn><mo>/</mo><mn>2</mn>
+   </mrow>
+  </msup>
+  
+ </mrow>
+</math></p>
+<p class="aside" style="width:130%;margin-top:-1em;">The total signal is given by</p>
+<p class="aside" style="width:130%;margin-top:-1em;"><i>V<sub>s</sub></i> &#x003D; <i>V<sub>s1</sub></i>&#x002B;<i>V<sub>s2</sub></i> &#x003D; 2<i>V<sub>s1</sub></i> since</p>
+<p class="aside" style="width:130%;margin-top:-1em;"><i>V<sub>s1</sub></i> &#x003D; <i>V<sub>s2</sub></i>. The mean square noice is</p>
+<p class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mover accent='true'>
+   <mrow>
+    <msubsup>
+     <mi>V</mi>
+     <mi>n</mi>
+     <mn>2</mn>
+    </msubsup>
+    
+   </mrow>
+   <mo stretchy='true'>&#x00AF;</mo>
+  </mover>
+  <mo>=</mo><msup>
+   <mrow>
+    <mo stretchy='false'>(</mo><msub>
+     <mi>V</mi>
+     <mrow>
+      <mi>n</mi><mn>1</mn>
+     </mrow>
+    </msub>
+    <mo>+</mo><msub>
+     <mi>V</mi>
+     <mrow>
+      <mi>n</mi><mn>2</mn>
+     </mrow>
+    </msub>
+    <mo stretchy='false'>)</mo>
+   </mrow>
+   <mn>2</mn>
+  </msup>
+  
+ </mrow>
+</math></p>
+
+<p class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+
+ <mrow>
+  <mo>=</mo><mover accent='true'>
+   <mrow>
+    <msubsup>
+     <mi>V</mi>
+     <mrow>
+      <mi>n</mi><mn>1</mn>
+     </mrow>
+     <mn>2</mn>
+    </msubsup>
+    
+   </mrow>
+   <mo stretchy='true'>&#x00AF;</mo>
+  </mover>
+  <mo>+</mo><mover accent='true'>
+   <mrow>
+    <msubsup>
+     <mi>V</mi>
+     <mrow>
+      <mi>n</mi><mn>2</mn>
+     </mrow>
+     <mn>2</mn>
+    </msubsup>
+    
+   </mrow>
+   <mo stretchy='true'>&#x00AF;</mo>
+  </mover>
+  <mo>+</mo><mn>2</mn><msub>
+   <mi>V</mi>
+   <mrow>
+    <mi>n</mi><mn>1</mn>
+   </mrow>
+  </msub>
+  <msub>
+   <mi>V</mi>
+   <mrow>
+    <mi>n</mi><mn>2</mn>
+   </mrow>
+  </msub>
+  
+ </mrow>
+</math>
+</p>
+<p class="aside" style="width:130%;margin-top:-1em;">But <i>V<sub>n1</sub>V<sub>n2</sub></i> &#x003D; 0 for random signals, so that</p>
+
+<p class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+
+ <mrow>
+  <mover accent='true'>
+   <mrow>
+    <msubsup>
+     <mi>V</mi>
+     <mi>n</mi>
+     <mn>2</mn>
+    </msubsup>
+    
+   </mrow>
+   <mo stretchy='true'>&#x00AF;</mo>
+  </mover>
+  <mo>=</mo><mover accent='true'>
+   <mrow>
+    <msubsup>
+     <mi>V</mi>
+     <mrow>
+      <mi>n</mi><mn>1</mn>
+     </mrow>
+     <mn>2</mn>
+    </msubsup>
+    
+   </mrow>
+   <mo stretchy='true'>&#x00AF;</mo>
+  </mover>
+  <mo>+</mo><mover accent='true'>
+   <mrow>
+    <msubsup>
+     <mi>V</mi>
+     <mrow>
+      <mi>n</mi><mn>2</mn>
+     </mrow>
+     <mn>2</mn>
+    </msubsup>
+    
+   </mrow>
+   <mo stretchy='true'>&#x00AF;</mo>
+  </mover>
+  <mo>&#x2248;</mo><mn>2</mn><mover accent='true'>
+   <mrow>
+    <msubsup>
+     <mi>V</mi>
+     <mrow>
+      <mi>n</mi><mn>1</mn>
+     </mrow>
+     <mn>2</mn>
+    </msubsup>
+    
+   </mrow>
+   <mo stretchy='true'>&#x00AF;</mo>
+  </mover>
+  
+ </mrow>
+</math>
+</p>
+<p class="aside" style="width:130%;margin-top:-1em;">for roughly equal noise on each signal. Thus,</p>
+<p class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>S</mi><mo>/</mo><mi>N</mi><mo>=</mo><mfrac>
+   <mrow>
+    <mn>2</mn><msub>
+     <mi>V</mi>
+     <mrow>
+      <mi>s</mi><mn>1</mn>
+     </mrow>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <mo stretchy='false'>(</mo><mn>2</mn><mover accent='true'>
+     <mrow>
+      <msubsup>
+       <mi>V</mi>
+       <mrow>
+        <mi>n</mi><mn>1</mn>
+       </mrow>
+       <mn>2</mn>
+      </msubsup>
+      <msup>
+       <mo stretchy='false'>)</mo>
+       <mrow>
+        <mn>1</mn><mo>/</mo><mn>2</mn>
+       </mrow>
+      </msup>
+      
+     </mrow>
+     <mo stretchy='true'>&#x00AF;</mo>
+    </mover>
+    
+   </mrow>
+  </mfrac>
+  <mo>=</mo><msup>
+   <mn>2</mn>
+   <mrow>
+    <mn>1</mn><mo>/</mo><mn>2</mn>
+   </mrow>
+  </msup>
+  <mfrac>
+   <mrow>
+    <msub>
+     <mi>V</mi>
+     <mrow>
+      <mi>s</mi><mn>1</mn>
+     </mrow>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <mover accent='true'>
+     <mrow>
+      <msup>
+       <mrow>
+        <mo stretchy='false'>(</mo><msubsup>
+         <mi>V</mi>
+         <mrow>
+          <mi>n</mi><mn>1</mn>
+         </mrow>
+         <mn>2</mn>
+        </msubsup>
+        <mo stretchy='false'>)</mo>
+       </mrow>
+       <mrow>
+        <mn>1</mn><mo>/</mo><mn>2</mn>
+       </mrow>
+      </msup>
+      
+     </mrow>
+     <mo stretchy='true'>&#x00AF;</mo>
+    </mover>
+    
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+</p>
+<p class="aside" style="width:130%;margin-top:-1em;">In general, for M readings</p>
+
+<p class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ 
+ <mrow>
+  <mi>S</mi><mo>/</mo><mi>N</mi><mo>=</mo><mfrac>
+   <mrow>
+    <mi>M</mi><msub>
+     <mi>V</mi>
+     <mrow>
+      <mi>s</mi><mn>1</mn>
+     </mrow>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <mo stretchy='false'>(</mo><mi>M</mi><mover accent='true'>
+     <mrow>
+      <msubsup>
+       <mi>V</mi>
+       <mrow>
+        <mi>n</mi><mn>1</mn>
+       </mrow>
+       <mn>2</mn>
+      </msubsup>
+      <mo stretchy='false'>)</mo>
+     </mrow>
+     <mo stretchy='true'>&#x00AF;</mo>
+    </mover>
+    
+   </mrow>
+  </mfrac>
+  <mo>=</mo><msup>
+   <mi>M</mi>
+   <mrow>
+    <mn>1</mn><mo>/</mo><mn>2</mn>
+   </mrow>
+  </msup>
+  <mfrac>
+   <mrow>
+    <msub>
+     <mi>V</mi>
+     <mrow>
+      <mi>s</mi><mn>1</mn>
+     </mrow>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <msup>
+     <mrow>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mover accent='true'>
+         <mrow>
+          <msubsup>
+           <mi>V</mi>
+           <mrow>
+            <mi>n</mi><mn>1</mn>
+           </mrow>
+           <mn>2</mn>
+          </msubsup>
+          
+         </mrow>
+         <mo stretchy='true'>&#x00AF;</mo>
+        </mover>
+        
+       </mrow>
+      <mo>)</mo></mrow>
+     </mrow>
+     <mrow>
+      <mn>1</mn><mo>/</mo><mn>2</mn>
+     </mrow>
+    </msup>
+    
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math>
+</p>
+</aside></section>
+<section epub:type="chapter" id="sec_5.3">
+<h2 class="h2"><span class="span">&#160;</span>	<b>5.3 Distinguishing characteristics of signal and noise</b></h2>
+<p class="noindent">The improvement of S/N ratios depends on there being characteristics of the noise that differ from those of the signal. We have just seen that truly random noise tends to cancel over time. This randomness implies no preference for one frequency over another, and such random noise is white (<a href="#page_62">see p. 62</a>). Even pink noise (<a href="#page_64">see p. 64</a>) cancels over long enough averaging periods. The signal, on the other hand, occurs at or near d.c., or has well defined a.c. or time&#x002D;dependent components. External interference 
+(<a href="#page_65">see p. 65</a>) sometimes involves narrow-band a.c., but the frequencies are not related to those of the signal of interest; if they are, the experiment has been badly designed. One method of discriminating between signal and noise is thus based on the frequency spectrum, and 
+<a href="#sec_5.4">Section 5.4</a> explores some of the possibilities.</p>
+<p class="indent3-ka"><i>Time </i>may also be used to distinguish between signal and noise. Signals in some experiments may be anticipated only at certain times, whereas the random noise will be continuous in time. An example of such an experiment can be found the formation of an absorbing intermediate in a photochemical experiment initiated by a short laser pulse. It might be desired to obtain the spectrum of this intermediate.<a href="#fig_5.6">Figure 5.6</a> shows the time dependence of the concentration of the intermediate, called B here; B builds up to a maximum after the laser pulse has been fired and then decays. There is only any point in examining the absorption spectrum while substantial amounts of the intermediate remain, otherwise only noise, and no signal, will be present. The S/N ratio is enhanced by making use of the distinction in time between the signal and the noise. 
+<a href="#sec_5.5">Section 5.5</a> considers how use can be made of this behaviour, particularly in cases where the experiment can be made repetitive.</p>
+
+<p class="indent3-ka"><i>Phase information </i>is related to time for repetitive a.c. signals, and can be used as another method for distinguishing between signal and noise. Although not the most important benefit of the phase-sensitive detector (<a href="#sec_5.4">Section 5.4</a>), the discrimination between signal and noise leads to an improvement in S/N.</p>
+
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.6"><img src="../images/page_67_1.jpg" alt="images"/>
+<figcaption>
+<p class="aside" style="width:130%;"><b>Fig. 5.6</b> Transient absorption in a chemical reaction initiated by a laser pulse</p></figcaption></figure></aside>
+
+</section>
+<section epub:type="chapter" id="sec_5.4">
+<h2 class="h2"><span class="span">&#160;</span>	<b>5.4 Bandwidth reduction and integration</b></h2>
+<h3 class="h3">Low-pass filters and integrators</h3>
+<p class="noindent">Starting, as before, with the idea of a signal that consists of a slowly varying d.c. level, one idea immediately presents itself for improving the S/N ratio.</p>
+
+
+<p class="noindent"><a id="page_68" class="page">Page 68, 5 Noise and its reduction</a>Random noise has a power density spectrum that is independent of frequency, so that a large proportion of the noise is rejected by a filter that passes only d.c. and low frequencies. The <i>S/N</i> ratio has been enhanced because of the <i>bandwidth reduction</i> imposed by the filter, which passes only a more or less narrow band of frequencies, starting at zero frequency. A simple <i>low-pass filter</i> of the appropriate kind was introduced on<a href="Chapter01.xhtml#page_14"> p. 14,</a> and the frequency response was shown in <a href="Chapter01.xhtml#fig_1.20">Fig. 1.20</a>. <a href="#fig_5.7">Figure 5.7</a> illustrates how such a filter removes the high frequency components from a noisy signal. So far as the signal itself is concerned, the main consequence of adding the filter is that the abrupt change in d.c. level becomes distorted, the filtered output dropping to its new level with a time constant, &#x03C4;, approximately equal to the product <i>RC</i> (<a href="Chapter01.xhtml#page_14">see p. 14</a>). The a.c. components are attenuated more and more as the cut-off frequency <i>(1/(2&#x03C0;RC)</i> &#x003D; 1/2
+&#x03C0;&#x03C4;:	<a href="Chapter01.xhtml#fig_1.20">see Fig. 1.20</a>) is decreased, so that <i>S/N</i>
+increases with increasing <i>RC.</i> The rms noise voltages or currents for white noise are proportional to (&#x0394;f)'<sup>1/2</sup> according to Formula 5.1 or 5.2, so that <i>S/N</i> ought to increase as <i>&#x03C4;<sup>1/2</sup></i> in accord with the general principle established in Section 5.2. The maximum value of <i>1</i> that is tolerable is determined by the demands of the experiment, including the length of time for which it will operate, as discussed on <a href="#page_66">pp. 66</a>&#x002D;<a href="#page_67">67</a>, (and the patience of the experimenter). Filters can be designed (perhaps in the form of <i>active filters</i> that are based on amplifier-feedback circuits) that can have more satisfactory response characteristics compared with those shown in 
+<a href="Chapter01.xhtml#fig_1.20">Fig. 1.20,</a> such as a faster fall in response with increasing frequency beyond the &#x2018;knee&#x2019;. Nevertheless, the trade-off between precision and response time remains.</p>
+
+
+<aside class="abc" style="margin-top:-25em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.7"><img src="../images/page_68_1.jpg" alt="images"/>
+
+<p class="aside" style="width:130%;"><b>fig 5.7</b> Use of a low-pass filter to reduce high-frequency noise</p>
+</figure></aside>
+
+
+<p class="indent3-ka">In reality, another serious obstacle may exist to satisfactory improvement of the <i>S/N</i> ratio by filtering a d.c. signal. Examination of the noise imposed on the signal in
+<a href="#fig_5.7"> Fig. 5.7 </a>will show that the low-frequency excursions are relatively larger than the high-frequency 
+ones; this excess low-frequency noise is exactly the situation represented by the pink noise of
+ <a href="#fig_5.2">Fig. 5.2,</a> and one that is very frequently encountered in practice. Most of the noise power is concentrated near zero frequency, so that attempts to remove the noise will also attenuate or distort unacceptably the signal changes that are to be measured. A solution to the problem will be examined in the next Section.</p>
+<p class="indent3-ka"><i>Integration</i> is an alternative to the use of low-pass filters in conditioning noisy d.c. signals. Analogue circuits such as those of <a href="Chapter04.xhtml#fig_4.15">Fig. 4.15</a> (<a href="Chapter04.xhtml#page_58">p. 58</a>) may be used, or digital computer techniques 
+(<a href="Chapter06.xhtml">Chapter 6</a>) may be harnessed. A linear integrator accumulates a running sum of the input voltages, and thus gives a constant weighting to all values as they contribute. 
+<a href="#fig_5.8">Figure 5.8</a> illustrates the type of response expected for the noisy input of
+<a href="#fig_5.7">Fig. 5.7.</a> The total integrated voltage increases with time, although the positive and negative noise excursions add and subtract from the running total. When the signal level changes, the underlying slope of the integrated output also changes. Dividing the voltage increase by constant time intervals gives the average signal over the integration period.</p>
+
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.8"><img src="../images/page_68_2.jpg" alt="images"/>
+<figcaption>
+<p class="aside" style="width:130%;"><b>fig 5.8</b> Integrator output for the noisy input of fig 5.7</p></figcaption></figure></aside>
+
+
+<p class="noindent"><a id="page_69" class="page">Page 69, 5 Noise and its reduction</a></p>
+
+<h3 class="h3"><b>Modulation, chopping, and a.c. techniques</b></h3>
+<p class="noindent">As emphasized in connection with the noisy signal of<a href="#fig_5.7"> Fig. 5.7</a>, the excess low-frequency components associated with many noise sources makes recovery of simple d.c. signals exceptionally difficult. One way of getting round this difficulty is to arrange for the signal itself <i>not</i> to be a slowly varying d.c. one, but rather an a.c. signal whose frequency is sufficiently high that it is clear of the obstructive 1/f region (<a href="#fig_5.2">see Fig. 5.2</a>). Signals from many experiments are a.c. right from the outset, and so long as the frequencies are satisfactory, can be subjected to bandwidth reduction to obtain enhancements in <i>S/N</i> almost approaching the theoretical limit for white noise. For these cases, a <i>tuned band-pass filter</i> is used to limit the bandwidth. Filters based on combinations of high and low-pass units may be used, or resonant circuits may be employed (<a href="Chapter01.xhtml#page_15">see p. 15</a> and
+<a href="Chapter01.xhtml#fig_1.21"> fig. 1.21</a>). Although the applied a.c. signal level may change abruptly, the output of the filter takes some time to settle down. This behaviour of the band-pass filter is of fundamental origin. Any resonant system will exhibit damped oscillatory behaviour when subject to an impulse (including a change in sine wave amplitude). A wine glass or a tuning fork are familiar acoustic examples. The higher the <i>Q </i>of the system (corresponding to a narrow bandwidth: see p. 15), the longer this &#x2018;ringing&#x2019; persists. There is thus a limitation in how rapidly a measurement can be taken, so that yet again the improved precision of the measurement given by the increased <i>S/N</i> forces an increase in the time needed to obtain the information, the time constant &#x03C4;
+ being 1/&#x03C0;&#x0394;f (this formula is similar to that for the low-pass filter for d.c., except that the latter has a factor of two in it because it is missing the contributions below the central frequency).</p>
+<p class="indent3-ka">Improvement in the <i>S/N</i> ratio apply not only to the signal source itself, but also to the amplifiers used at small signal levels, because a.c. amplifiers are inherently less noisy and subject to drift than d.c. ones (<a href="#page_63">see pp. 63</a>
+<a href="#page_64">&#x002D;64</a> and also note comments on <a href="Chapter04.xhtml#page_55">p. 55</a>). To take advantage of the potential gains in <i>S/N</i> for signals that are slowly varying d.c., or at a.c. frequencies too low to clear the 1/f noise, it is necessary to convert the signal to a suitable a.c. frequency by a process of <i>modulation</i> or <i>chopping.</i> At the very simplest level, we might imagine switching a d.c. input signal at a constant frequency derived from an oscillator, as illustrated schematically in <a href="#fig_5.9">Fig. 5.9.</a> With equal on and off periods, the output will be a square wave, the amplitude of which will follow the (slow) variations in the d.c. input level. The square wave can be amplified and processed as it is, or the fundamental frequency 
+(<a href="Chapter01.xhtml#page_5">see pp. 5</a>&#x002D;<a href="Chapter01.xhtml#page_6">6</a>) filtered out. Even this simple trick allows use of an a.c. amplifier, and forms the basis of the <i>chopper amplifier.</i> The switch itself is almost always an electronic one (although mechanical devices were used in the past). Probably, it will be desirable to convert the output signal after amplification back to d.c. for display or recording purposes. This <i>detection</i> or <i>demodulation</i> may be achieved with a straightforward rectifier circuit, such as the one shown in <a href="Chapter01.xhtml#fig_1.25">Fig. 1.25</a>, accompanied by a suitable low-pass filter. However, it is virtually universal practice to employ, instead, a <i>phase-sensitive detector,</i> which will be described in more detail in the next Section.</p>
+
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.9"><img src="../images/page_69_1.jpg" alt="images"/>
+<figcaption>
+<p class="aside" style="width:130%;"><b>Fig. 5.9</b> Chopping of a d.c. input signal to generate a modulated a.c.
+ signal</p></figcaption></figure></aside>
+
+
+
+
+
+<p class="indent3-ka"><a id="page_70" class="page">Page 70, 5 Noise and its reduction</a>&#160;&#160;&#160;&#160; Simple chopping of the d.c. input signal allows a.c. amplifiers to be used, but any noise originally present on the signal itself will be amplified along with the signal. Chopper amplifiers are therefore only of great value where the signal is noise&#x002D;free in comparison with the signal&#x002D;processing electronics. In the more usual case, where the signal itself is noisy, some means has to be provided of modulating the phenomenon that produces the electrical signal in the first place. One common example of such modulation is the use of mechanical choppers in optical experiments. 
+<a href="Chapter03.xhtml#fig_3.11">Figure 3.11</a> shows the principle with a sectored disc used as a rotating chopper wheel. Light from the source passes through the rotating blades, and the light falling on the photodetector is therefore &#x2018;switched&#x2019; at a frequency determined by the rate of rotation and the number of blades. The chopped light will generate a (square&#x002D;wave) alternating current in the photodetector, which can then be amplified using a.c. techniques. With a narrow&#x002D;band a.c. filter, much low&#x002D;frequency <i>l/f</i> noise can be rejected. Furthermore, discrimination is provided against interference from stray light that falls directly on the detector, because it will not, in general, fluctuate at the same frequency as the chopper. Stray light that <i>does</i> pass through the blades is not rejected, so that an even better solution is to modulate the light source of interest itself. The feasibility of this suggestion depends on the nature of the experiment. Feeble light from a star can hardly be turned on and off in the source, but feeble light from a chemical reaction could be modulated by modulating the <i>chemistry.</i> The closer one gets to modulating the phenomenon of interest (the chemistry, here) rather than the effect it produces at later stages (first the light, then the electric current), the better chance there is of rejecting noise, as suggested by <a href="#fig_5.10">Fig. 5.10</a>.</p>
+
+<aside class="abc" style="margin-top:-29em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.10"><img src="../images/page_70_1.jpg" alt="images"/>
+<figcaption>
+<p class="aside" style="width:130%;"><b>Fig. 5.10</b> Three ways of chopping or modulating the electrical signal from an experiment</p></figcaption></figure></aside>
+
+
+<p class="indent3-ka">Other examples of modulation of the &#x2018;chemical&#x2019; phenomena are found in many spectroscopic instruments, and especially in <i>magnetic resonance</i> spectrometers, such as an NMR machine. This is not the place to describe how such a spectrometer works in terms of the physical chemistry. Most readers will be familiar with the basic arrangement of a swept-field NMR spectrometer. The sample is held between the poles of a magnet (an electromagnet in our example), and radiofrequency (r.f.) energy is also supplied to the sample by means of a circuit that can also detect the absorption of energy. The principle is that the magnetic field is increased by changing the energizing current through the main magnet windings. When the nuclear spin resonance condition is met, absorption of the r.f. energy is detected. The display of absorption, in terms of voltage, against magnetic field (<a href="#fig_5.11">Fig. 5.11</a>) is then the NMR spectrum. Except in very special cases, the signal would, in reality, be far too small to be detected satisfactorily for most applications in the way described. Instead, modulation is applied to the sample by using small auxiliary coils that are supplied with sine-wave a.c. at a frequency much higher than the sweep repetition rate (but much lower than the r.f. of the resonance signal).<a href="#fig_5.12"> Figure 5.12</a> shows how the absorption signal responds. Off resonance there is no absorption, and therefore nothing to generate an output signal. On the approach to resonance (<a href="#fig_5.12">Fig. 5.12</a>(a), the absorption increases with increasing auxiliary field, and vice versa. The output signal is thus an </p>
+
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.11"><img src="../images/page_70_2.jpg" alt="images"/>
+
+<p class="aside" style="width:130%;"><b>Fig. 5.11</b> Absorption band in an NMR spectrum displayed as a quasi-d.c. signal as a function of field strength</p></figure></aside>
+
+<p class="noindent"><a id="page_71" class="page">Page 71, 5 Noise and its reduction</a></p>
+<p class="noindent">a.c. voltage (superposed on a d.c. level) whose frequency is equal to the modulation frequency. At the peak of the absorption, the absorption does not change with field for small variations (<a href="#fig_5.12">Fig. 5.12</a>(b)) and there is no output again. 
+<a href="#fig_5.12">Figure 5.12</a>(c) shows what happens on the other side of resonance. An a.c. signal is again obtained, but it now decreases as the field increases, so that the signal is <i>out of phase</i> with the modulation. In fact, the signal has an output that is proportional to the <i>slope</i> or <i>gradient</i> of the absorption spectrum of <a href="#fig_5.11">Fig. 5.11.</a> If the a.c. signal is demodulated so as to preserve the phase information (see next section), an output such as that in <a href="#fig_5.12">Fig. 5.12</a>(d) is obtained. The output is the <i>differential</i> or <i>derivative</i> of the true spectrum. The point provides an interesting illustration of the effects of two different kinds of modulation. In large amplitude modulation, such as with the light chopper, the entire &#x2018;effect&#x2019; is turned on and off. One could envisage such a modulation for the NMR case if the magnets could be switched on or off rapidly, or subject to large amplitude modulation. The whole absorption would be in or out of resonance, and the modulated a.c. response voltage would be proportional to the absorption and not to its slope; that is, the integral spectrum would be obtained. Although it is not usual to switch magnetic fields in this way, the exact electrical analogue of this method is used in some <i>microwave absorption spectrometers,</i> in which a large square-wave electrical field modulates the absorption via the <i>Stark effect.</i></p>
+
+<aside class="abc" style="margin-top:-24em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.12"><img src="../images/page_71_1.jpg" alt="images"/>
+
+<p class="aside" style="width:130%;"><b>Fig. 5.12</b> Modulation of the magnetic field in an NMR spectrometer</p>
+</figure></aside>
+
+
+<h3 class="h3"><b>Phase-sensitive detectors and lock-in amplifiers</b></h3>
+<p class="noindent">The <i>phase-sensitive detector (psd)</i> plays a central part in instrumentation, because it provides a very satisfactory method of demodulating a.c. signals in an efficient manner. It is, indeed, phase sensitive, and can therefore be used to produce a demodulated output such as the one shown in <a href="#fig_5.12">Fig. 5.12</a>(d). The term <i>lock&#x002D;in amplifier</i> is usually applied to an electronic instrument or building block that contains both amplifier and phase-sensitive detector elements in it, and probably tuned filters and reference signal conditioning (see later) as well. Alternative terms that imply essentially the same as phase-sensitive detector are <i>synchronous, coherent,</i> or <i>homodyne</i> detector.</p>
+
+
+
+<p class="indent3-ka">A simple diode detector (<a href="Chapter01.xhtml#page_17">see p. 17</a> and
+<a href="Chapter01.xhtml#fig_1.25"> Fig. 1.25</a>) is a kind of switch, where the switching operation is initiated by the applied voltage itself. The diode and a imaginary switch equivalent are shown in 
+<a href="#fig_5.13">Fig. 5.13.</a> If the voltage goes positive, the switch is on; if it is negative, the switch is off. All voltages passed are positive, therefore, and the a.c. has been demodulated (half-wave rectified); after smoothing by a low-pass filter, a d.c. output is obtained 
+(<a href="Chapter01.xhtml#fig_1.25">see Fig. 1.25 again</a>). The output is always positive, and it is <i>not</i> sensitive to phase. A very simple modification to the switch circuit turns the detector into a phase-sensitive detector. All that is required is that the switching circuit is reductionled <i>independently</i> of the signal by a <i>reference</i> waveform, as in <a href="#fig_5.14">Fig. 5.14.</a> For our purposes, it is convenient to think of this waveform as a square wave, but any other regular waveform would do so long as it turns the switch on for positive half cycles and off for negative half cycles. In the examples of the chopped light beam that we have just</p>
+<aside class="abc" style="margin-top:-19em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.13"><img src="../images/page_71_2.jpg" alt="images"/>
+
+<p class="aside" style="width:130%;"><b>Fig. 5.13</b> The diode as a switch</p></figure></aside>
+<p class="noindent"><a id="page_72" class="page">Page 72, 5 Noise and its reduction</a>examined, this reference signal might be derived from a separate small lamp and photodiode combination placed on either side of the chopper disk. For the NMR spectrometer, the reference might be the oscillator itself that applies excitation to the modulation coils. Any signal (current produced in the main photodetector, NMR absorption voltage) will be locked in frequency to the reference waveform, but is not directly derived from it. <a href="#fig_5.14">Figure 5.14</a>(a) shows what happens if a signal appears at the input to the switch if it is in phase with the switching reference waveform. Positive half cycles are passed. However, if the signal leads (or lags) the reference by half a cycle (180&#x00B0; out of phase), then the <i>negative</i> half cycles are passed, as illustrated in Fig. 5.14(b). After low-pass filtering, a positive or negative d.c. output is obtained 
+(<a href="#fig_5.14">Fig. 5.14</a>(c), (d): the output of this detector is thus sensitive to phase. The demodulated output voltage is proportional to the rms a.c. input voltage. It should immediately be apparent how the use of a psd gives rise to the differential demodulated output shown in 
+<a href="#fig_5.12">Fig. 5.12</a>(d). For practical purposes, it may be more satisfactory to employ <i>a full-wave</i> psd, in which there are no half-cycle gaps between the switching periods, but we can illustrate the general behaviour of the psd in terms of the half-wave device.</p>
+
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.14"><img src="../images/page_72_1.jpg" alt="images"/>
+
+<p class="aside" style="width:130%;"><b>Fig. 5.14</b> A half-wave phase-sensitive detector.
+Output waveforms are given for signals (a) in&#x002D;phase and (b) 180&#xB0; out of phase with the reference. Addition of a low&#x002D;pass filter (LPF) produces the smoothed outputs (c) from (a), and (d) from (b)</p></figure></aside>
+
+
+
+<p class="indent3-ka">We start by extending the previous discussion to the situation where there is a phase difference of 90&#x00B0; between signal and reference waveforms, as shown in 
+<a href="#fig_5.15">Fig. 5.15</a> for a 90&#x00B0; lag. Assume that the switch is closed, and current flows, only when the reference signal is positive. The output consists of half cycles of the signal which have equal positive and negative contributions. After processing by a low&#x002D;pass filter, the net output will be <i>zero.</i> From here, it is only a small step to imagine what happens as the phase difference between reference and signal waveforms is shifted by a full cycle. Starting with the two waveforms in phase, when the output takes its maximum positive value, the output drops with increasing phase difference to reach zero at a quarter of a cycle shift. The output becomes negative for larger phase differences, reaching its maximum negative value for one-half cycle shift. From that point on, the changes are reversed, the output becoming zero at three&#x002D;quarters of a cycle, and fully positive at one full cycle.</p>
+<p class="indent3-ka">In using a psd as a demodulator, it is normally required that the signal and reference waveforms be in phase to provide the largest possible positive output. Some electronic means of adjusting the relative phases is often provided by introducing an adjustable delay into the reference voltage.</p>
+<p class="indent3-ka">When there is no fixed frequency or phase relationship between the sample and reference waveforms, the output always averages to zero if enough cycles are examined. For high&#x002D;frequency signals, this property is obvious, as shown in <a href="#fig_5.16">Fig. 5.16</a>(a) for a high-frequency noise waveform. Even within one half-cycle switching period, the negative and positive contributions to the net signal will come approximately to zero, and averaging with the signals in subsequent half cycles will bring the net output even closer to zero. With signal frequencies nearer to the reference frequency, the cancellation still occurs, but now over more cycles. 
+<a href="#fig_5.16">Figures 5.16</a> (b) and (c) represent the situations for signal frequencies higher and lower than the reference frequency.</p>
+
+<aside class="abc" style="margin-top:-19em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.15"><img src="../images/page_72_2.jpg" alt="images"/>
+
+<p class="aside" style="width:130%;"><b>Fig. 5.15</b> Signal waveform that is 90&#x00B0; behind the reference</p>
+</figure></aside>
+
+
+<p class="noindent"><a id="page_73" class="page">Page 73, 5 Noise and its reduction</a>&#160;&#160;&#160;&#160; More than the sensitivity to phase, it is this ability of the psd to discriminate against all frequencies other than the reference frequency that constitutes the true power of the psd. The device acts, in fact, as a bandpass filter tuned to the reference frequency, and it can therefore reject noise by bandwidth limiting. The effective bandwidth is determined by the number of cycles over which the samples are averaged, and thus by the cut-off characteristics of the low-pass filter. The bandwidth at the a.c. frequency is closely related to the time constant or cut-off frequency of the band-pass filter used at d.c.. Since this time constant can be seconds or more, it is apparent that the bandwidth of the psd can be less than one hertz. Yet this bandwidth is imposed on the a.c. frequency, which might be hundreds to millions of hertz. The ratio of bandwidth to centre frequency is thus very large (corresponding to a very large effective <i>Q</i> factor), and the performance is difficult to obtain in other ways. Furthermore, the psd <i>tracks</i> the reference exactly, the centre of the pass band remaining locked to the reference frequency even if the latter wanders or is changed deliberately well outside the bandwidth of the filter itself. These qualities allow the psd to gain the maximum advantage from bandwidth narrowing of modulated signals, and permit the satisfactory recovery of weak signals in which the raw input starts off with a very unpromising <i>S/N</i> ratio. A further gain of a factor of two arises from the partial or complete rejection of signals of the correct frequency but wrong phase. It is no wonder that the psd finds such widespread application in so many kinds of instrumentation.</p>
+
+<aside class="abc" style="margin-top:-26em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.16"><img src="../images/page_73_1.jpg" alt="images"/>
+
+<p class="aside" style="width:130%;"><b>Fig. 5.16 </b>Demodulation of waveforms not related to the frequency of the reference</p></figure></aside>
+
+
+<p class="indent3-ka">The psd shows its value most clearly when it is used to demodulate a repetitive alternating a.c. waveform. If the input signal is not a repetitive one, then some means of modulation must be provided as described. This theme of making a signal repetitive runs throughout the methods adopted to enhance <i>S/N</i> ratios. Another way of looking at the psd is to regard it as a <i>signal averager,</i> the average being taken of the individual half&#x002D;cycle waveforms over the time constant of the low-pass filter. As emphasized on pp.<a href="#page_65"> 65</a>&#x002D;
+<a href="#page_67">67,</a> signal averaging and bandwidth reduction are different facets of the same process.</p>
+
+</section>
+<section epub:type="chapter" id="sec_5.5">
+<h2 class="h2"><span class="span">&#160;</span>	<b>5.5 Time discrimination and averaging</b></h2>
+
+<p class="noindent">The output from the psd after filtering gives information about the average (rms) voltage of the a.c. and about its phase, but not about the shape of the waveform. In this section, we discuss the <i>boxcar detector</i> or <i>integrator</i>, which is able to extract the <i>wave shape</i> by a process of analogue signal averaging of a repetitive signal. The device is also able to provide discrimination between signal and noise on the basis of the time of occurrence, as described in <a href="#sec_5.4">Section 5.4,</a> and it is this aspect that we shall examine first.</p>
+
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.17"><img src="../images/page_73_2.jpg" alt="images"/>
+<figcaption>
+<p class="aside" style="width:130%;"><b>Fig. 5.17</b> Repetitive pulsed experiment (<a href="#fig_5.6">Fig. 5.6</a> redrawn for repeated laser shots)</p></figcaption></figure></aside>
+
+<p class="indent3-ka">Refer again to <a href="#fig_5.6">Fig. 5.6,</a> which shows a signal pulse (optical absorption of a reaction intermediate is the example used) that follows a triggering signal (a laser flash in the example), and grows and decays (with characteristics determined by the chemistry). This experiment can be made repetitive just by retriggering the laser at regular intervals. The repetitive waveform is</p>
+<p class="noindent"><a id="page_74" class="page">Page 74, 5 Noise and its reduction</a>represented in <a href="#fig_5.17">Fig. 5.17.</a> Only noise, and not signal, is present during most of the period between laser pulses, a situation in which the signal is said to possess a small <i>mark-to-space</i> ratio (in contrast to the modulated signals of the last section, which were presumed to have unity mark-to-space ratios). As suggested in <a href="#sec_5.4">Section 5.4</a>, it is wasteful of the <i>S/N</i> ratio to accumulate data throughout the period between the laser pulses, because only noise is present during most of this period (the &#x2018;space&#x2019;). A method of measuring only when the signal is present (the &#x2018;mark&#x2019;) will obviously be advantageous. The boxcar detector provides one method of making measurements in this way.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.18">
+<img src="../images/page_74_1.jpg" alt="images"/>
+<figcaption><p class="noindent">&#160;</p>
+<p class="aside" style="width:130%;"><b>Fig. 5.18.</b> A switch and averager (&#x2018;sample-and-hold&#x2019; circuit). Note that a gate is said to be open (allows current to flow) when the switch is closed</p></figcaption></figure></aside>
+<p class="indent3-ka">In essence, the boxcar detector is very simple, and consists of a switch or <i>gate</i> connected between the source of signal (and noise) and an averaging device, as indicated in <a href="#fig_5.18">Fig. 5.18</a> (see the note about open and closed gates). In its simplest form, the averager might just be a low-pass filter with a time constant much longer than the period &#x03C4; between repetitions. The generation of the signal that activates the switch is of central importance. What is required is a signal that will turn the switch on at a fixed period, <i>t<sub>1</sub></i> after a trigger pulse from the laser, and hold it open for another fixed period, <i>t<sub>2</sub></i>. The waveform needed (b), and its relation to the laser trigger (a), is shown in<a href="#fig_5.19"> Fig. 5.19.</a> A possible way of achieving the result is shown schematically in <a href="#fig_5.20">Fig. 5.20.</a> It is the shape of the gating signal of <a href="#fig_5.19">Fig. 5.19(b)</a> that gives rise to the boxcar&#x2019;s name, because the shape is said to resemble that of a railway wagon (which, in America, is called a boxcar). Now we examine how the averager responds to the noisy absorption signal. <a href="#fig_5.19">Figure 5.19(c)</a> shows the absorption in a single shot on a time axis expanded from that of <a href="#fig_5.17">Fig. 5.17.</a> This signal reaches the averager only during the period <i>t<sub>2</sub>,</i> and after the delay <i>t<sub>1</sub>.</i> After a time &#x03C4; (see <a href="#fig_5.19">Fig. 5.19</a>), the entire sequence repeats itself as the laser fires another shot. Typically, the period &#x03C4;  is much longer than either <i>t<sub>1</sub></i> or <i>t<sub>2</sub>.</i> At each shot, the gate is opened, and because of the long time constant of the low-pass filter, the final output is the average of the signals that are present during many repetitions. These signals are, in the system we have described, made up of a noise-free zero voltage when the gate is closed, and the signal &#x002B; noise when the gate is open, equivalent to a simple scaling factor (t<sub>2</sub>/&#x03C4;) multiplied by the average of signal &#x002B; noise during the period <i>t<sub>2</sub>.</i> The final output is thus effectively the result of averaging many gate-open samples, and the <i>S/N</i> ratio will be improved over the single-shot value by the square root of the number of cycles averaged (or by the equivalent bandwidth reduction). This is the usual gain expected from frequency discrimination. In addition, since noise is present only during the period <i>t<sub>2</sub>,</i> the <i>S/N</i> ratio is also improved over that for an average obtained without time discrimination (that is, without gating) by the factor <i>&#x03C4;/t<sub>2</sub>.</i></p>
+<aside class="abc" style="margin-top:-21em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.19">
+<img src="../images/page_74_2.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<p class="aside" style="width:130%;"><b>Fig. 5.19</b> The boxcar integrator: (a) trigger,(b)	sample gating signals; and (c)	input, (d) sampled waveforms</p></figure></aside>
+<p class="indent3-ka">One disadvantage of the device as it has been described is that for very short gate periods and long repetition periods, the ratio <i>t<sub>2</sub>/&#x03C4;</i> may make the output voltage very small. Modern implementations of the boxcar integrator often employ <i>sample-and-hold</i> circuits ahead of the final low-pass filter that <i>sample</i> the signal while the switch is closed, and <i>hold</i> the information when the switch is open. In this way, the averages of each individual gate-open<a id="page_75" class="page">Page 75, 5 Noise and its reduction</a>voltage are themselves averaged, but the long zero periods between repetitions are not included. Repetitive waveforms lasting for a few picoseconds, but repeated at intervals from microseconds to much longer, can be studied successfully with this kind of instrumentation. One of the necessary skills in using the boxcar is in choosing the gate period and delay to exclude the unwanted noise, yet accept almost all of the wanted signal.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.20">
+<img src="../images/page_75_1.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<p class="aside" style="width:130%;"><b>Fig. 5.20</b> A method for obtaining the timed gating signals for the boxcar integrator. A trigger pulse sets off two timed delays. The output pulse A from the first delay circuit opens the gate, while the pulse from delay B closes it again</p></figure></aside>
+<p class="indent3-ka">A comparison of the descriptions of the phase-sensitive detector and the boxcar detector as given here should indicate the close similarities of the two types of device. Both possess switches or gates driven by a reference waveform, and the gated signal (and noise) is averaged in some way with a low-pass filter. The reference waveform in the boxcar can be shifted to give an adjustable time delay from a trigger signal, and a similar delay <i>may</i> be introduced in the psd to provide electronic phase shifts. The difference is essentially in the shape of the gating waveform. In the psd, the mark-to-space ratio is unity, while in the boxcar it is (much) less than unity.</p>
+<p class="indent3-ka">So far, we have considered the use of the boxcar integrator in recovering the amplitude of the signal present at a fixed delay <i>t<sub>1</sub></i> after the trigger, with the objective of rejecting noise present at other times. The other use of the boxcar is in recovering the waveform itself when the signal is obscured by noise. Once again, it is the repetitive nature of the experiment that makes possible the improvement in the <i>S/N</i> ratio. The only difference in the experiment is that instead of using a fixed delay <i>t<sub>1</sub></i> the delay is varied to encompass the entire waveform. The experiment could be done in a step-by-step manner, with the investigator adjusting the delay, and taking the reading of signal amplitude with an output time constant that is long enough to give the required S/N ratio. The delay is then set to a new value, and the signal voltage measured again. Ultimately, the complete waveform will have been explored, and the results can be plotted out by hand or otherwise. Note that improved precision on the amplitudes requires longer to be spent making each individual reading. Higher time resolution requires the gate-open period, <i>t<sub>2</sub>,</i> to be reduced. More readings are therefore needed to cover the complete waveform; the experiment takes longer for a fixed precision in amplitude.</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.21">
+<img src="../images/page_75_2.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<p class="aside" style="width:130%;"><b>Fig. 5.21 </b>A boxcar integrator with electronically swept delay for waveform examination</p>
+</figure></aside>
+<p class="indent3-ka">In reality, the manual point-by-point determination of a waveform is replaced by electronic scanning .<a href="#fig_5.21"> Figure 5.21 </a>shows how this scanning might be achieved, with the final result being displayed on a chart recorder. A slowly increasing sweep voltage is used both to vary the delay time f<sub>;</sub> and to drive the <i>X</i> axis of an <i>X&#x2014;Y</i> chart recorder (see<a href="Chapter04.xhtml#page_52"> p. 52</a>). The output of the boxcar averager itself drives the<i>Y</i> axis. As the delay is advanced, the pen moves along the horizontal axis, while the boxcar determines the averaged (and therefore S/N-enhanced) amplitude of the waveform at each delay. One aspect of the boxcar is thus that it apparently transforms the timescale over which the waveform is available for examination. The boxcar arrangement of <a href="#fig_5.21">Fig. 5.21</a> is a form of<i>transient recorder.</i> It may take many minutes for the sweep to be completed, during which time the waveform can have repeated itself many hundreds of millions of times. <a id="page_76" class="page" style="width:70%">Page 76, 5 Noise and its reduction</a></p>
+</section>
+<section epub:type="chapter" id="sec_5.6">
+<h2 class="h2">5.6<span class="space">&#160;</span>Multichannel methods</h2>
+<h3 class="h3">Multichannel transient recorders</h3>
+<p class="noindent">The explanation of the mode of action of the boxcar integrator illustrates one of the problems associated with instrumentation of this type. Even if the waveform is investigated with a scanning electronic sweep, the process of recording it can be regarded as a step-by-step examination of successive portions of the waveform, each one separated by the gate width,<i>t<sub>2</sub>.</i> Although the entire waveform could occupy a maximum time &#x03C4;, the boxcar only collects information within the much smaller gate-width period, and all other information during the much longer period (&#x03C4; -<i>t<sub>2</sub></i>) is wasted. If the initial<i>S/N</i> ratio is sufficiently large that the entire waveform can be built up with adequate freedom from noise within a total accumulation period of seconds to minutes, this waste may not matter much. However, if the<i>S/N</i> enhancement requires many repeated shots at each point, then the experiment may become impossible because it takes too long (either for the operator&#x2019;s convenience or, as we have emphasized earlier, for the reason that the experiment may not be capable of yielding unchanging data over the entire period). Consider a specific example, in which the waveform of interest spans a period of 1 ms, and the gate width (corresponding to the resolution on the time axis) is 1 ps. There are thus 1000 consecutive portions or &#x2018;channels&#x2019; of waveform to be examined. Suppose further that the<i>S/N</i> ratio on the input waveform from a single shot is 1/10 and that it is required that this ratio be improved in the output to 10/1. The required enhancement is thus a factor of 100, so that, in theory, a total of 100<sup>2</sup> &#x003D; 10<sup>4</sup> individual waveforms must be averaged. The minimum time for the accumulation is thus this number multiplied by the repetition period of the experiment, which is at least 1 ms (but might be much more if the experiment cannot be repeated immediately after the outDut of interest has died away). Ten seconds, at least, must therefore be spent in obtaining the data. This length of time might be acceptable if the amplitude at just one time delay were required. However, to accumulate the amplitude data for all 1000 channels will require 10 x 1000 seconds, or nearly three hours, which may prove impossibly long.</p>
+<aside class="abc" style="margin-top:-3em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.22">
+<img src="../images/page_76_1.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<p class="aside" style="width:130%;"><b>Fig. 5.22</b> Outline of a transient recorder</p></figure></aside>
+<p class="indent3-ka">An enormous saving in time could obviously be obtained if<i>all</i> the channels could be recorded on<i>every</i> shot. In the example presented here, the gain would be the factor of 1000 that results from the number of hypothetical channels. It is exactly this gain that is provided by a series of<i>multichannel</i> devices. A<i>transient recorder</i> is an instrument capable of memorizing the amplitude-time profile of a single shot of a transient waveform. Transient recorders are manufactured with typically anything from a few hundred to a few thousand discrete channels in which the data are stored. The basic operation of the instrument is illustrated in <a href="#fig_5.22">Fig. 5:22.</a> An internal<i>time base</i> or sweep generator (see <a href="Chapter02.xhtml#page_26">pp. 26</a>-<a href="Chapter02.xhtml#page_27">27</a>) is triggered by some event linked to the start of the transient waveform to be examined. The voltage ramp of the time base is translated to provide the sequence number of a memory channel. Into this channel is stored the amplitude information appropriate to the particular<a id="page_77" class="page">Page 77, 5 Noise and its reduction</a>time delay since the sweep started. The time per channel can be less than one nanosecond in the more sophisticated of the transient recorders available; there is no theoretical limitation on the maximum period. The data stored in the memories can be read out at any later stage by addressing each of the channels at a rate convenient for the application in question. The data might be used repeatedly to produce a continuous display on an oscilloscope, in which case the transient recorder has been used as an essential component of a storage oscilloscope (see<a href="Chapter02.xhtml#page_27"> pp. 27</a>-<a href="Chapter02.xhtml#page_28">28</a>), or the data might be read out for plotting or subsequent processing in some form of computer. Indeed, the next stage in multichannel signal processing involves just such an addition of suitable numerical data handling that allows the averages of the waveforms of multiple shots to be calculated, more or less in real time. The result is sometimes called a<i>computer of average transients</i> or <i>CAT,</i> and is the multichannel equivalent of the boxcar integrator. The provision of many channels brings with it the so-called<i>multiplex advantage,</i> which means that for M channels, the same information can be obtained in <i>1/M</i> of the time as in a single channel. For the <i>same</i> data acquisition time as the single-channel device,<i>M</i> times more information is obtained, which implies that the <i>S/N</i> ratio is improved by a further factor of <i>M<sup>1/2</sup></i></p>
+<p class="indent3-ka">One could envisage one form of CAT as consisting of a whole array of hundreds or even thousands of boxcar integrators. Some of the very fastest transient recorders do, in fact, utilize something along these lines at the first stages of data capture. However, the last paragraph will suggest that digital techniques and memories might be particularly suited to the task of multichannel recording. The basic instrument is the <i>multichannel scaler,</i> which in its simplest form allows counts to be accumulated in memory channels. For the purposes of recording transient phenomena, these channels are addressed sequentially by the triggered time base. In this form, the multichannel scaler is, as its name implies, a <i>counting</i> device. For some sorts of instrumentation, where the signal appears as digital pulses (for example, from electron multipliers in mass spectrometers or from photomultipliers in low light-level experiments), this counting capability is exactly what is needed. When an analogue signal is to be averaged, which is the situation that we have envisaged hitherto in this section, it must first be digitized by use of an analogue-to-digital converter (ADC: see<a href="Chapter02.xhtml#page_22"> p. 22</a>).</p>
+<h3 class="h3">Multiplex spectrometers</h3>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.23">
+<img src="../images/page_77_1.jpg" alt="images"/>
+<figcaption><p class="noindent">&#160;</p>
+<p class="aside" style="width:130%;"><b>Fig. 5.23</b> Principle of a scanning optical spectrometer</p></figcaption></figure></aside>
+<p class="noindent">Many scanning instruments, such as spectrometers, are essentially sequential in the manner in which they record information, and thus suffer from wastage in the same way as does the boxcar. <a href="#fig_5.23">Figure 5.23</a> shows the essential elements of a simple spectrometer for the visible or ultraviolet regions of the spectrum. The feature that should be emphasized here is the single exit slit that allows one band of wavelengths to pass through to the detector. To scan the spectrum, the grating angle is changed. Intensities are recorded at each wavelength (properly speaking, band of wavelengths) in turn. For <a id="page_78" class="page">Page 78, 5 Noise and its reduction</a>low-intensity sources of radiation, noise is often a problem, and one of the methods described earlier in this chapter must be used to provide<i>S/N</i> enhancement at the expense of increased data acquisition time. If just one or a few wavelengths need to be examined, there may be no problem (compare this situation with the boxcar used to probe amplitudes at one delay time). However, if the entire spectrum must be examined, it is evident that there would be a considerable advantage in finding a multiplex alternative to scanning that would be analogous to the CAT or multichannel scaler. In the past, photographic plates in the focal plane of the spectrometer were used instead of the slit and photoelectric detector of <a href="#fig_5.23">Fig. 5.23.</a> Although there are problems about convenience, sensitivity, and most particularly quantitative measurement using the photographic method, at least it does have the advantage of probing the whole spectrum simultaneously: that is, it is a multiplex method. Modern technology has brought a comparable photoelectric technique in which a<i>diode army</i> (see pp. <a href="Chapter03.xhtml#page_45">45</a>-<a href="Chapter03.xhtml#page_46">46</a>) in the focal plane (<a href="#fig_5.24">Fig. 5.24</a>) replaces the single photodiode of <a href="#fig_5.23">Fig. 5.23.</a> The array is a specialized integrated circuit in which a large number of photosensitive elements are fabricated side-by-side on a single semiconductor wafer (usually silicon). Typically, there might be 512 or 1024 elements, each of which defines a small portion of the dispersed spectral image and thus corresponds to a small wavelength band. The outputs from the individual photodiodes are fed, often via sample-and-hold circuitry (see <a href="Chapter05.xhtml#page_74">pp. 74</a>-<a href="Chapter05.xhtml#page_75">75</a>), to its own memory that accumulates or averages the total photocurrent generated by that diode. Small &#x2018;personal&#x2019; computers have proved ideal for the purposes of acquisition and subsequent numerical manipulation of the data (see also<a href="Chapter06.xhtml"> Chapter 6</a>). Just as with the CAT or multichannel scaler (see pp. <a href="Chapter05.xhtml#page_76">76</a>-<a href="Chapter05.xhtml#page_77">77</a>), the multiplex advantage for an M-element array brings a gain in speed of a factor<i>M</i> for the same<i>S/N,</i> or an improvement in <i>S/N</i> of  <i>M<sup>1/2</sup></i> for the same acquisition time, over the single-channel spectrometer.</p>
+<aside class="abc" style="margin-top:-21em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.24">
+<img src="../images/page_78_1.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<p class="aside" style="width:130%;"><b>Fig. 5.24</b> Replacement of the slit and single photodiode of Fig. 5.23 by a diode array</p>
+</figure></aside>
+<p class="indent3-ka">Other examples of multichannel multiplex instrumentation in chemistry include devices that measure ejected electron energies in<i>photoelectron spectroscopy</i> and in <i>ESCA (electron spectroscopy for chemical analysis).</i> The information of interest is contained in the energy or velocity of the electrons that are removed from the parent species by UV or X-ray ionization. Normal scanning instruments probe the electron energy by use of an energy filter that transmits only electrons of the selected energy. There is thus the usual wastage of information that is possessed by the electrons that are rejected. One multiplex method allows the ejected electrons to pass through a perpendicular electric field, which bends them to an extent dependent on the electron velocity. The electrons are dispersed according to energy rather as the photons in the spectrometers of <a href="#fig_5.23">Figs 5.23</a> and <a href="#fig_5.24">5.24</a> are dispersed by the grating according to wavelength. The electrons are allowed to fall on a fluorescent screen whose light is coupled into a diode array photodetector. Position along this detector therefore corresponds to electron energy, which is recorded for<i>all</i> electron energies simultaneously.</p>
+<p class="noindent"><a id="page_79" class="page">Page 79, 5 Noise and its reduction</a></p>
+<h3 class="h3">Pulse height analysis</h3>
+<p class="noindent">The<i>pulse height analyser (PHA)</i> is another multichannel instrument. One important application of pulse height analysis is in measuring the energy spectrum of ionizing radiation (e.g., of X-rays or gamma rays), and in nuclear instrumentation generally. Two examples of the use of this instrumentation in chemical analysis can be used to illustrate the use of the PHA. The first is<i>neutron activation analysis,</i> in which a sample is bombarded with neutrons so that some radioactive isotopes of the elements present are generated. If these isotopes produce gamma rays in their decay, the characteristic energy spectrum of the gamma rays can be used to identify the elements present with extremely high sensitivity.<i>Proton-induced X-ray emission (PIXE) spectroscopy</i> is similar in concept. Here, high energy protons are used to bombard the sample, and the energy of the X-rays produced is analysed, once again producing chemical identification of trace elements, but this time with the possibility of providing spatial resolution.</p>
+<p class="indent3-ka">The determination of the energies of the radiation produced starts with the detectors employed. These detectors include gas-filled<i>proportional detectors, scintillators</i> in which the incoming radiation is converted by a suitable crystal or liquid to a flash of light that is measured with a photomultiplier, and a variety of solid-state detectors. All have the property of producing an output pulse for each incoming X-ray or gamma-ray photon that is proportional in amplitude to the energy of that photon.</p>
+<p class="indent3-ka">The next step is to build up an energy spectrum of the ionizing radiation, and it is for this purpose that the PHA is used. Instead of directing information to a specific channel of a multichannel recorder according to the time at which the signal arises, as in the multichannel scaler, the choice of channel is made according to the amplitude of a pulse (see <a href="#fig_5.25">Fig. 5.25</a>). The idea is to accumulate in a specific channel all input pulses whose amplitudes lie between certain chosen limits. The readout from such a device is then a histogram of the total number of pulses as a function of their amplitudes. Several straightforward electronic techniques are available to act as<i>lower</i> and<i>upper threshold discriminators</i> and the combination of a pair of such devices will constitute a<i>window discriminator.</i> Each incoming pulse is analysed for amplitude with a window discriminator, and the memory channel appropriate to that pulse height is incremented by one unit. The technique possesses the usual advantages of multichannel operation, and the signal-to-noise ratio increases as before in proportion to the square root of the number of counts accumulated in each channel. One constraint is that individual pulses must not arrive more rapidly than the rate at which their heights can be analysed and the appropriate memory addressed and incremented.</p>
+<aside class="abc" style="margin-top:-20em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.25">
+<img src="../images/page_79_1.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<p class="aside" style="width:130%;"><b>Fig. 5.25</b> The pulse-height analyser (PHA). The analyser (a specialized ADC) measures the pulse height and selects the appropriate channel of the memory. The contents of the memory is incremented by one count</p>
+</figure></aside>
+<h3 class="h3">Time to amplitude conversion (TAC)</h3>
+<p class="noindent">One further application of the PHA merits brief discussion here. Some measurements in chemistry involve very short time periods. For example, the decay of fluorescence may occur over a timescale of nanoseconds or less.</p>
+<p class="noindent"><a id="page_80" class="page">Page 80, 5 Noise and its reduction</a>The addressing in conventional multiscalers, in which the channels are selected sequentially as a function of time, is not fast enough to deal with these short periods. One alternative is to use a<i>time-to-amplitude (TAC)</i> converter in conjunction with a pulse height analyser. In the TAC, a voltage ramp is generated from the instant of arrival of a &#x2018;start&#x2019; pulse until the arrival of a &#x2018;stop&#x2019; pulse, as indicated in <a href="#fig_5.26">Fig. 5.26.</a> The voltage that the ramp has reached is thus proportional to the time between the two pulses. This voltage is next converted to a single pulse of the same amplitude, and stored in a PHA. The rate of increase of voltage can be sufficiently large that time resolutions of the order of picoseconds are attainable. In the fluorescence experiment, the &#x2018;start&#x2019; pulse might be derived from a flash of light used to excite the fluorescence, and the &#x2018;stop&#x2019; pulse from the first photon of fluorescent radiation detected by a photomultiplier. Each time the flash is triggered, the sequence repeats, and a new pulse height is stored in the PHA. Ultimately, the pulse-height &#x2018;spectrum&#x2019; will correspond to the averaged distribution in time of the photons. While very fast, the TAC is only suitable for experiments that will provide just one &#x2018;stop&#x2019; pulse for each ramp started. For the example of fluorescence lifetimes used here, this requirement translates to one fluorescent photon<i>or less</i> being detected for each flash of the exciting radiation (the TAC voltage ramp can be reset to zero if no photon is detected). A low-intensity light source is therefore needed, but the flash can be repeated as fast as the PHA can cope (10 000 times a second is typical in this kind of experiment) in order to build up a statistically significant picture of the time distribution of fluorescent photons with an adequate signal-to-noise ratio.</p>
+<aside class="abc" style="margin-top:-29em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.26">
+<img src="../images/page_80_1.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<p class="aside" style="width:130%;"><b>Fig. 5.26</b> Time-to-amplitude converter. A voltage ramp is started and stopped by the timing signals; the amplitude of the voltage at the end gives a measure of the elapsed interval, and can be stored in a pulse-height analyser.</p></figure>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="aside" style="width:130%;">The reader is advised to review material on Fourier  transforms presented on <a href="Chapter01.xhtml#page_9">p. 9</a></p></aside>
+<h3 class="h3">Fourier transform methods: a second look</h3>
+<p class="noindent">The use in a multiplex instrument of a suitable number of channels, each of which replicates the basic measuring device, is conceptually straightforward. Arrays of boxcar integrators, counters, or photodiodes are all of this multiple detector kind. This solution to the improvement of <i>S/N</i> figures cannot be adopted universally, because of geometrical or cost problems, or just because of the sheer number of individual detectors that would be needed to provide  the required range and resolution. For example, in NMR spectroscopy, the upwards of 50000 individual narrow-band r.f. detectors would be needed,There is sometimes another way of getting at the multiplex advantage thatrelies on the use of Fourier transforms (<a href="Chapter01.xhtml#page_9">see p. 9</a>). The availability of computers allows mathematical computation of the transforms so rapidly that there is no significant obstacle to working in one Fourier domain, such as time, when what is required is information in the partner domain, such as frequency. Data may be collected in whichever domain is more accessible and convenient, and sometimes this procedure also brings with it the multiplex advantage. In chemical instrumentation, the use of Fourier transform techniques has become established for a variety of spectroscopies, including NMR, ion cyclotron resonance, and infrared, as well as for the study of other electrochemical, dielectric, and optical phenomena. In the present section, we review the principles by considering the analysis of the frequency spectrum <a id="page_81" class="page">Page 81, 5 Noise and its reduction</a>of a complex alternating current waveform. Although the a.c.<i>spectrum</i><i>analyser</i> is an instrument of particular value in investigating the behaviour of electronic devices, it is also an important  building block or diagnostic device in several pieces of chemical instrumentation. The objective is to generate spectra, such as those in<a href="Chapter01.xhtml#fig_1.6"> Figs 1.6(c)</a> or <a href="Chapter01.xhtml#fig_1.7">1.7(b)</a> from the corresponding waveforms.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.27">
+<img src="../images/page_81_1.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<p class="aside" style="width:130%;"><b>Fig.</b> 5.27 A sequential (swept) frequency analyser</p></figure></aside>
+<p class="indent3-ka">A simplified outline of a scanning spectrum analyser is shown in <a href="#fig_5.27">Fig. 5.27.</a> Some frequency-selective device, which we have called a variable tuned filter in the figure, selects a narrow band of the a.c. and the output is converted to d.c. in the detector so that the amplitude can be measured. The filter is now tuned to a new frequency, and the amplitude measurement repeated. The process is continued until the whole spectrum has been examined. The production of a spectrum is entirely analogous to that in the optical case (compare with <a href="#fig_5.23">Fig. 5.23</a>). To make the analyser a little more sophisticated, we have allowed the filter to be voltage reductionled, with a sweep generator altering the bandpass frequency as well as driving the X-plates of an oscilloscope used in <i>X-Y</i> mode. The spectrum is thus displayed directly on the oscilloscope. For very high frequencies, this kind of arrangement continues to be used, but it suffers from the drawback, especially for noisy signals, that only one band is examined at a time, so that it may take excessively long to build up a sufficiently noise-free spectrum. One alternative would be to construct a multiple detector analyser, according to the outline in<a href="#fig_5.28"> Fig. 5.28</a>. This solution might be suitable for analysing a few rather wide bands in order to get an idea of the distribution of frequencies present, or for looking at a few selected spot frequencies. But for many channels, it becomes impossibly unwieldy, as well as prohibitively expensive.</p>
+<aside class="abc" style="margin-top:-16em;" epub:type="sidebar">
+<figure class="fig1" id="fig_5.28">
+<img src="../images/page_81_2.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<p class="aside" style="width:130%;"><b>Fig. 5.28</b> Conceptual outline of a multiple-filter frequency 
+analyser</p></figure>
+<p class="noindent">&#160;</p>
+<figure class="fig1" id="fig_5.29">
+<img src="../images/page_81_3.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<p class="aside" style="width:130%;"><b>Fig. 5.29</b> Block diagram of a Fourier transform frequency analyser. Compare this diagram with <a href="#fig_5.22">Fig. 5.22.</a> The essential difference is the addition of a computer</p></figure></aside>
+<p class="indent3-ka">Fourier transform techniques provide the key to multiplex spectrum analysis of a.c. at frequencies up to about 1 MHz (the limit is set by the speed of the digital devices that are used). The point to be remembered is that the waveform is the amplitude of the a.c. signal as a function of<i>time,</i> while what is required is the amplitude of the different components as a function of <i>frequency.</i> Since time and frequency are two domains related by the Fourier transform, it follows that the waveform can be recorded and the Fourier transform operation performed on it mathematically in order to yield the required frequency spectrum. Virtually all Fourier transform (FT) analysers and spectrometers now use digital techniques, in order that the subsequent processing can be performed directly by computer, which in turn almost always uses a discrete version of the (continuous) FT embodied in the<i>Fast</i> <i>Fourier Transform</i><i>(FFT</i>). <a href="#fig_5.29">Figure 5.29</a> shows a block outline of an FT spectrum analyser. It should be compared with the transient recorder of <a href="#fig_5.22">Fig. 5.22.</a> The essential difference is the addition of the FT computer after the memory. The description of digitization, timing, and storage of the signal given in connection with <a href="#fig_5.22">Fig. 5.22</a> applies equally to the FT spectrum
+analyser. The output of the FT computer is the frequency spectrum required. This output is, of course, itself digital and can be stored or manipulated accordingly, or it can be converted back to an analogue signal for display on
+<a id="page_82" class="page">Page 82, 5 Noise and its reduction</a>an oscilloscope. In a single shot of the waveform, the entire spectrum is built up, so that the potentiality of gaining the multiplex enhancement of the <i>S/N</i> ratio is provided. The multiplex information was obtained in time (by not allowing any part of the waveform to pass unrecorded) but it appears in the FT partner domain, the frequency. Of course, the possibility also exists of co-adding or averaging many waveforms if the signal is repetitive (as we have been assuming here). The expected further improvement in <i>S/N</i> may then be obtained. In fact, it is unimportant whether the averaging is performed on the waveform (time domain) or spectrum (frequency domain).</p>
+<p class="indent3-ka">The number of independent spectral (frequency) data points or equivalent channels, M, that can be computed has a direct relationship to the duration over which waveform samples taken, so that the spectral resolution depends on the length of the sample. There are other sampling conditions that must be fulfilled as well, but these questions are ones of detail.</p>
+</section>
+<section epub:type="chapter" id="sec_5.7">
+<h2 class="h2">5.7<span class="space">&#160;</span>Limitations on the improvement of <i>S/N</i> ratios</h2> 
+<p class="noindent">This chapter has been concerned with the methods available for the recovery of signals in the presence of noise. Success in scientific instrumentation often turns around this problem, and the length of the chapter reflects the importance of the topic. A recurring theme has been that repetition of the measurements may lead to an enhancement of the <i>S/N,</i> corresponding to an increase in precision of the overall measurement, even though that improvement is at the expense of a longer time needed to obtain the result. Multiplex methods, including FT techniques, prevent the unnecessary waste of signal or time. We have sought to show that multiplex methods possessing <i>M</i> actual or equivalent channels should provide again in <i>S/N</i> of <i>M<sup>1/2</sup></i> over the corresponding single-channel device. However, this maximum gain in <i>S/N</i> applies only to certain types of noise. In the first place, it has been assumed that the noise is truly white or random. If that is not the case, then the simple statistical arguments will not hold. With some kinds of <i>1/f</i> noise, for example, the noise builds up in proportion to the signal, so that signal averaging offers no advantage, and FT methods can even degrade the <i>S/N</i> ratio, rather than improve it. In many cases, however, the noise is essentially white, and independent of the signal level. Thermal noise generated in detectors behaves in this way, and the noise is said to be<i>detector limited.</i> Both multiple detector and FT multiplex techniques provide the gain in <i>S/N</i> of <i>M<sup>1/2</sup></i> over the single-channel detector. If the dominant form of noise is shot noise-on-signal<i>(source limited noise</i>: see <a href="Chapter05.xhtml#page_62">pp. 62</a>-<a href="Chapter05.xhtml#page_63">63</a>), then the advantages to be gained from multiplex experiments are different again. For the multiple detector experiment, the gain is <i>M<sup>1/2</sup></i> as anticipated. For the FT experiment, however, there is no gain at all over the single channel method. It should be apparent, therefore, that a sensible approach to successful noise reduction really does require an understanding of the origins and characteristics of the noise, and that the brute-force application of the most sophisticated techniques may be at best a waste of time and at worst an unjustifiable squandering of resources.</p>
+</section>
+</section>
+</div>
+</body>
+</html>
+
+

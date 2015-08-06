@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Appendix 1. Data analysis</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<section epub:type="appendix" id="app1">
+<a id="page_76" class="page" style="width:70%;">Page 76, Appendix 1. Data analysis</a>
+<h1 class="main">Appendix 1. Data analysis</h1>
+<section epub:type="chapter" id="a1.1">
+<h2 class="h2">A1.1<span class="space">&#160;</span>The importance of data analysis</h2>
+<p class="noindent">Data obtained in any experiment have to be subjected to widely accepted, stringent analysis procedures to assess their quality, in particular their <i>accuracy</i>, i.e. closeness to the truth, and their <i>precision</i>, i.e. reproducibility. Thus, the importance of objective analysis of data obtained in any analytical procedure cannot be overstressed. For example, new electroanalytical procedures are often subjected to method validation in which comparison is made with another technique, such as electrothermal atomisation spectroscopy, or interlaboratory comparisons are done where the same samples are analysed in different laboratories by the same procedure.</p>
+<p class="indent">Criteria that can affect the quality of the data may be linked to the cost of performing the analyses and how competent the technical operator needs to be. With present trends in the computer control of analytical experiments, including data analysis, chemical analysis is becoming more user friendly and the level of expertise necessary in order to obtain meaningful results is becoming less high. The other side of the coin is that apparently excellent, but wrong, results can be obtained by operators without sufficient background knowledge to be able to interpret their raw results correctly, know the limitations of the procedures, and understand when the information obtained is not meaningful, and the reasons why not, in order to be able to modify the experimental procedure in a satisfactory way.</p>
+<p class="indent">The objective of this appendix is to give a brief summary of some of the commonly used methods for evaluation of electroanalytical data. For a more exhaustive and more detailed approach the reader should consult some of the texts listed at the end of the appendix.</p>
+</section>
+<section epub:type="chapter" id="a1.2">
+<h2 class="h2">A1.2<span class="space">&#160;</span>Mean and standard deviation</h2>
+<p class="noindent">Nearly all data analytical methods are based, in one way or another, on the <i>mean, x,</i> and <i>standard deviation</i>, <i>s</i>, of the distribution of <i>n</i> experimental results according to</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd><mrow><mover accent='true'><mi>x</mi><mo>&#x00AF;</mo></mover><mo>=</mo><mfrac><mrow><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow></mstyle></mrow><mi>n</mi></mfrac></mrow></mtd><mtd><mrow></mrow></mtd><mtd><mrow></mrow></mtd></mtr></mtable></math><span class="no">(A1.1)</span></p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd><mrow><mi>s</mi><mo>=</mo><msqrt><mrow><mfrac><mrow><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>&#x2212;</mo><mover accent='true'><mi>x</mi><mo>&#x00AF;</mo></mover></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></mstyle></mrow><mrow><mrow><mo>(</mo><mrow><mi>n</mi><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mfrac></mrow></msqrt></mrow></mtd><mtd><mrow></mrow></mtd><mtd><mrow></mrow></mtd></mtr></mtable></math><span class="no">(A1.2)</span></p>
+<p class="noindent">These equations assume that errors can be equally positive or negative about the mean value. If this is the case, i.e. there are no systematic errors, then <i>x</i> is <a id="page_77" class="page">Page 77, Appendix 1. Data analysis</a> equal to the mean of the <i>normal</i> or <i>Gaussian distribution.</i> In the true Gaussian distribution (<a href="#figA1.1">Fig. A1.1</a>) with mean <i>&#956;</i> and standard deviation <i>&#963;</i> (the same equation as A1.2 but with <i>n</i> in the denominator), 68% of the values lie between <i>&#956;</i> &#8211; <i>&#963;</i> and <i>&#956;</i> + <i>&#963;</i>, 95% between <i>&#956;</i> &#8211; 2<i>&#963;</i> and <i>&#956;</i> + 2<i>&#963;</i> and 99.7% between <i>&#956;</i> &#8211; 3<i>&#963;</i> and <i>&#956;</i> + 3<i>&#963;</i>. This is the basis of confidence intervals and confidence limits, which will be discussed below. Another important quantity is the <i>standard error of the mean</i> (sem)</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure style="width:70%;" id="figA1.1"><img src="../images/he_9780198548164_0049.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="width:130%;"><b>Fig. A1.1</b> The Gaussian distribution showing the percentage of values lying between <i>&#956;</i> &#8211; <i>n&#963;</i> and <i>&#956;</i> + <i>n&#963;</i>.</figcaption>
+</figure>
+</aside>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr><mtd><mrow><mtext>sem</mtext><mo>=</mo><mfrac><mi>&#x03C3;</mi><mrow><msqrt><mi>n</mi></msqrt></mrow></mfrac></mrow></mtd><mtd><mrow></mrow></mtd><mtd><mrow></mrow></mtd></mtr></mtable></math><span class="no">(A1.3)</span></p>
+<p class="noindent">The sem is a measure of the uncertainty involved in estimating <i>&#956;</i> from the experimental mean <i>x</i>, reflecting the fact that the more measurements are made the greater the reliablity in measuring <i>&#956;</i>.</p>
+</section>
+<section epub:type="chapter" id="a1.3">
+<h2 class="h2">A1.3<span class="space">&#160;</span>Evaluation of the quality of sets of data</h2>
+<p class="noindent">In developing a new analytical procedure, comparison often has to be made with an accepted &#8216;accurate&#8217; value or with another procedure, possibly already established. There are two important data analysis methods for such comparisons, the <i>t-test</i> and the <i>F-test.</i> However, before applying them each data set should be tested for outliers, i.e. values that appear to be unreasonably distant from the others in the set; the objective way of doing this is by using the <i>Q-test</i>.</p>
+<h3 class="h3">The Q-test</h3>
+<p class="noindent">The rejection of outliers from a set of data by the <i>Q</i>-test involves calculating</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>Q</mi><mo>=</mo><mrow><mo>|</mo> <mrow><mfrac><mrow><mtext>suspect</mtext><mtext>&#x2009;</mtext><mtext>value</mtext><mo>&#x2212;</mo><mtext>nearest</mtext><mtext>&#x2009;</mtext><mtext>value</mtext></mrow><mrow><mi>max</mi><mo>.</mo><mtext>value</mtext><mo>&#x2212;</mo><mi>min</mi><mo>.</mo><mtext>value</mtext></mrow></mfrac></mrow> <mo>|</mo></mrow></mrow></math><span class="no">(A1.4)</span></p>
+<p class="noindent">from the experimental values and comparing with tabulated critical values of <i>Q</i>. Critical values for confidence levels of 90 and 95% are shown in <a href="#tabA1.1">Table A1.1</a>.</p>
+<figure style="width:70%;" id="tabA1.1">
+<figcaption style="width:100%;"><b>Table. A1.1</b> Critical values of <i>Q</i> for rejection of data</figcaption>
+</figure>
+<table style="width:50%;">
+<tr>
+<td class="td5">Number of observations</td>
+<td class="td1-c" colspan="2"><i>Q<sub>crit</sub></i></td>
+</tr>
+<tr>
+<td class="td1-c">&#160;</td>
+<td class="td1-c">90% confidence</td>
+<td class="td1-c">95% confidence</td>
+</tr>
+<tr>
+<td class="td1-c">4</td>
+<td class="td1-c">076</td>
+<td class="td1-c">0.83</td>
+</tr>
+<tr>
+<td class="td3-c">5</td>
+<td class="td3-c">0.64</td>
+<td class="td3-c">0.72</td>
+</tr>
+<tr>
+<td class="td3-c">6</td>
+<td class="td3-c">0.56</td>
+<td class="td3-c">0.62</td>
+</tr>
+<tr>
+<td class="td3-c">7</td>
+<td class="td3-c">0.51</td>
+<td class="td3-c">0.57</td>
+</tr>
+<tr>
+<td class="td3-c">8</td>
+<td class="td3-c">0.47</td>
+<td class="td3-c">0.53</td>
+</tr>
+<tr>
+<td class="td3-c">9</td>
+<td class="td3-c">0.44</td>
+<td class="td3-c">0.49</td>
+</tr>
+<tr>
+<td class="td2-c">10</td>
+<td class="td2-c">0.41</td>
+<td class="td2-c">0.47</td>
+</tr>
+</table>
+<a id="page_78" class="page" style="width:70%;">Page 78, Appendix 1. Data analysis</a>
+<p class="indent">If the calculated <i>Q</i> exceeds the critical value then the suspect value is rejected. Clearly, the suspect value must be either the maximum value or the minimum value. If a value is rejected then the test should be repeated with the smaller data set until no further data are removed.</p>
+<h3 class="h3">The t-test</h3>
+<p class="noindent">The <i>t</i>-test was developed for comparing means and testing for systematic errors, even though precision is also taken into account.</p>
+<p class="noindent1"><i>Comparison between an accepted value and an experimental data set.</i> For a Gaussian distribution of data, the percentage of the distribution lying between specified limits around the mean value can be calculated. This is the width of the confidence interval corresponding to that percentage for an infinite population (infinite number of degrees of freedom).</p>
+<p class="indent">Analogously, for a finite number of analyses, the equation describing the limits within which the true mean must lie at a given confidence level with respect to the experimental mean, <i>x,</i> is</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03BC;</mi><mo>=</mo><mtext>&#x2009;</mtext><mover accent='true'><mi>x</mi><mo>&#x00AF;</mo></mover><mo>&#x00B1;</mo><mfrac><mrow><mi>t</mi><mi>s</mi></mrow><mrow><msqrt><mi>n</mi></msqrt></mrow></mfrac></mrow></math><span class="no">(A1.5)</span></p>
+<p class="noindent">Thus, for there to be no significant difference</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>|</mo> <mrow><mi>&#x03BC;</mi><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mover accent='true'><mi>x</mi><mo>&#x00AF;</mo></mover></mrow> <mo>|</mo></mrow><munder accentunder='true'><mo>&#x003E;</mo><mo>&#x00AF;</mo></munder><mfrac><mrow><mi>t</mi><mi>s</mi></mrow><mrow><msqrt><mi>n</mi></msqrt></mrow></mfrac></mrow></math><span class="no">(A1.6)</span></p>
+<p class="noindent">Values of <i>t</i> are tabulated according to the number of degrees of freedom, in this case (<i>n</i> &#8211; 1), and depend on the number of analyses performed and the confidence interval, i.e. what percentage of the hypothetical Gaussian distribution is to be included. Confidence levels are also presented as probabilities, <i>P</i>, of differences being found, e.g. a confidence level of 95% corresponds to <i>P</i> &#8212; 0.05. Some of these values are shown in <a href="#tabA1.2">Table A1.2</a>. Note that an infinite number of degrees of freedom corresponds exactly to the Gaussian distribution.</p>
+<p class="indent">Occasionally, a bias of experimental results in one particular direction may be suspected, equivalent to a systematic error. The <i>t</i>-test can be employed to evaluate whether the bias is significant using a so-called one-sided (one-tailed) test, instead of the normal two-sided test. The equations are the same but the <i>P</i>-values, such as those in <a href="#tabA1.2">Table A1.2</a>, should be halved and the corresponding confidence levels altered accordingly.</p>
+<p class="noindent1"><i>Comparison of two experimental data sets.</i> The degree of overlap of the two distributions is evaluated, i.e. if there are significant differences between the data series at a specified level of confidence. Expression A1.6 now becomes</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>|</mo> <mrow><mi>&#x03BC;</mi><mo>&#x2212;</mo><mtext>&#x2009;</mtext><mover accent='true'><mi>x</mi><mo>&#x00AF;</mo></mover></mrow> <mo>|</mo></mrow><munder accentunder='true'><mo>&#x003E;</mo><mo>&#x00AF;</mo></munder><mi>t</mi><mi>s</mi><msqrt><mrow><mfrac><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub></mrow><mrow><msub><mi>n</mi><mn>1</mn></msub><msub><mi>n</mi><mn>2</mn></msub></mrow></mfrac></mrow></msqrt></mrow></math><span class="no">(A1.7)</span></p>
+<a id="page_79" class="page" style="width:70%;">Page 79, Appendix 1. Data analysis</a>
+<p class="tcaption" id="tabA1.2"><b>Table. A1.2</b> The <i>t</i>-distribution: values of <i>t</i></p>
+<table style="width:70%;">
+<tr>
+<td class="td5">Confidence interval<br/>Significance level, <i>P</i></td>
+<td class="td1-r">90%<br/>0.10</td>
+<td class="td1-r">95%<br/>0.05</td>
+<td class="td1-r">98%<br/>0.02</td>
+<td style="padding-right:1em;" class="td1-r">99%<br/>0.01</td>
+</tr>
+<tr>
+<td class="td5">Degrees of freedom</td>
+<td class="td1-c">&#160;</td>
+<td class="td1-c">&#160;</td>
+<td class="td1-c">&#160;</td>
+<td style="padding-right:1em;" class="td1-c">&#160;</td>
+</tr>
+<tr>
+<td class="td3-c">&#160;1</td>
+<td class="td3-r">6.31</td>
+<td class="td3-r">12.71</td>
+<td class="td3-r">31.82</td>
+<td style="padding-right:1em;" class="td3-r">63.66</td>
+</tr>
+<tr>
+<td class="td3-c">&#160;2</td>
+<td class="td3-r">2.92</td>
+<td class="td3-r">4.30</td>
+<td class="td3-r">6.96</td>
+<td style="padding-right:1em;" class="td3-r">9.92</td>
+</tr>
+<tr>
+<td class="td3-c">&#160;3</td>
+<td class="td3-r">2.35</td>
+<td class="td3-r">3.18</td>
+<td class="td3-r">4.54</td>
+<td style="padding-right:1em;" class="td3-r">5.84</td>
+</tr>
+<tr>
+<td class="td3-c">&#160;4</td>
+<td class="td3-r">2.13</td>
+<td class="td3-r">2.78</td>
+<td class="td3-r">3.75</td>
+<td style="padding-right:1em;" class="td3-r">4.60</td>
+</tr>
+<tr>
+<td class="td3-c">&#160;5</td>
+<td class="td3-r">2.02</td>
+<td class="td3-r">2.57</td>
+<td class="td3-r">3.36</td>
+<td style="padding-right:1em;" class="td3-r">4.03</td>
+</tr>
+<tr>
+<td class="td3-c">&#160;6</td>
+<td class="td3-r">1.94</td>
+<td class="td3-r">2.45</td>
+<td class="td3-r">3.14</td>
+<td style="padding-right:1em;" class="td3-r">3.71</td>
+</tr>
+<tr>
+<td class="td3-c">&#160;7</td>
+<td class="td3-r">1.89</td>
+<td class="td3-r">2.36</td>
+<td class="td3-r">3.00</td>
+<td style="padding-right:1em;" class="td3-r">3.50</td>
+</tr>
+<tr>
+<td class="td3-c">&#160;8</td>
+<td class="td3-r">1.86</td>
+<td class="td3-r">2.31</td>
+<td class="td3-r">2.90</td>
+<td style="padding-right:1em;" class="td3-r">3.36</td>
+</tr>
+<tr>
+<td class="td3-c">&#160;9</td>
+<td class="td3-r">1.83</td>
+<td class="td3-r">2.26</td>
+<td class="td3-r">2.82</td>
+<td style="padding-right:1em;" class="td3-r">3.25</td>
+</tr>
+<tr>
+<td class="td3-c">10</td>
+<td class="td3-r">1.81</td>
+<td class="td3-r">2.23</td>
+<td class="td3-r">2.76</td>
+<td style="padding-right:1em;" class="td3-r">3.17</td>
+</tr>
+<tr>
+<td class="td3-c">12</td>
+<td class="td3-r">1.78</td>
+<td class="td3-r">2.18</td>
+<td class="td3-r">2.68</td>
+<td style="padding-right:1em;" class="td3-r">3.05</td>
+</tr>
+<tr>
+<td class="td3-c">14</td>
+<td class="td3-r">1.76</td>
+<td class="td3-r">2.14</td>
+<td class="td3-r">2.62</td>
+<td style="padding-right:1em;" class="td3-r">2.98</td>
+</tr>
+<tr>
+<td class="td3-c">16</td>
+<td class="td3-r">1.75</td>
+<td class="td3-r">2.12</td>
+<td class="td3-r">2.55</td>
+<td style="padding-right:1em;" class="td3-r">2.92</td>
+</tr>
+<tr>
+<td class="td3-c">18</td>
+<td class="td3-r">1.73</td>
+<td class="td3-r">2.10</td>
+<td class="td3-r">2.55</td>
+<td style="padding-right:1em;" class="td3-r">2.88</td>
+</tr>
+<tr>
+<td class="td3-c">20</td>
+<td class="td3-r">1.72</td>
+<td class="td3-r">2.09</td>
+<td class="td3-r">2.53</td>
+<td style="padding-right:1em;" class="td3-r">2.85</td>
+</tr>
+<tr>
+<td class="td3-c">30</td>
+<td class="td3-r">1.70</td>
+<td class="td3-r">2.04</td>
+<td class="td3-r">2.46</td>
+<td style="padding-right:1em;" class="td3-r">275</td>
+</tr>
+<tr>
+<td class="td2-c">&#8734;</td>
+<td class="td2-r">1.64</td>
+<td class="td2-r">1.96</td>
+<td class="td2-r">2.33</td>
+<td style="padding-right:1em;" class="td2-r">2.58</td>
+</tr>
+</table>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">where <i>s</i> is the pooled standard deviation from the two sets of data, given by</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>s</mi><mo>=</mo><msqrt><mrow><mfrac><mrow><mrow><mo>(</mo><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow><msubsup><mi>s</mi><mtext>1</mtext><mtext>2</mtext></msubsup><mo>+</mo><mrow><mo>(</mo><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow><msubsup><mi>s</mi><mtext>2</mtext><mtext>2</mtext></msubsup></mrow><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub><mo>&#x2212;</mo><mn>2</mn></mrow></mfrac></mrow></msqrt></mrow></math><span class="no">(A1.8)</span></p>
+<p class="indent">A potentially useful application of this formula is in the prediction of <i>detection limits.</i> One series of data represents already measured blank values, of number <i>n</i><sub>b</sub>, and the other the data to be measured, of number <i>n</i><sub>1</sub>. If the standard deviation is assumed to be equal for both series then the minimum number of measurements necessary to attain a predetermined detection limit, &#916;<i>x</i><sub>min</sub>, can be calculated for a given confidence level through application of</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x0394;</mi><msub><mi>x</mi><mrow><mi>min</mi></mrow></msub><mo>=</mo><mi>t</mi><msub><mi>s</mi><mtext>b</mtext></msub><msqrt><mrow><mfrac><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mtext>b</mtext></msub></mrow><mrow><msub><mi>n</mi><mn>1</mn></msub><msub><mi>n</mi><mtext>b</mtext></msub></mrow></mfrac></mrow></msqrt></mrow></math><span class="no">(A1.9)</span></p>
+<h3 class="h3">The F-test</h3>
+<p class="noindent">The <i>F</i>-test compares the precision of two sets of data via the expression</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>F</mi><mo>=</mo><mfrac><mrow><msubsup><mi>s</mi><mn>1</mn><mn>2</mn></msubsup></mrow><mrow><msubsup><mi>s</mi><mn>2</mn><mn>2</mn></msubsup></mrow></mfrac></mrow></math><span class="no">(A1.10)</span></p>
+<a id="page_80" class="page" style="width:70%;">Page 80, Appendix 1. Data analysis</a>
+<p class="noindent">where <i>s</i><sub>1</sub> &#62; <i>s</i><sub>2</sub>. If the calculated <i>F</i> is greater than a critical value that is tabulated for the chosen confidence level, then there is a significant difference at that probability level. Some values are shown in <a href="#tabA1.3">Table A1.3</a>, where <i>&#965;</i><sub>1</sub> and <i>&#965;</i><sub>2</sub> are the number of degrees of freedom of each data set.</p>
+<p class="tcaption" id="tabA1.3"><b>Table. A1.3</b> Values of <i>F</i> at the 95% confidence level (<i>P</i> = 0.05)</p>
+<table style="width:60%;">
+<tr>
+<td class="td5"><i>&#957;</i><sub>2</sub></td>
+<td style="padding-right:1em;" class="td1-c" colspan="8"><i>&#957;</i><sub>1</sub></td>
+</tr>
+<tr>
+<td class="td3">&#160;</td>
+<td class="td1-c">2</td>
+<td class="td1-c">3</td>
+<td class="td1-c">4</td>
+<td class="td1-c">5</td>
+<td class="td1-c">6</td>
+<td class="td1-c">7</td>
+<td class="td1-c">8</td>
+<td style="padding-right:1em;" class="td1-c">&#8734;</td>
+</tr>
+<tr>
+<td class="td5">2</td>
+<td class="td1-r">19.00</td>
+<td class="td1-r">19.16</td>
+<td class="td1-r">19.25</td>
+<td class="td1-r">19.30</td>
+<td class="td1-r">19.33</td>
+<td class="td1-r">19.35</td>
+<td class="td1-r">19.37</td>
+<td style="padding-right:1em;" class="td1-r">19.50</td>
+</tr>
+<tr>
+<td class="td3">3</td>
+<td class="td3-r">9.55</td>
+<td class="td3-r">9.28</td>
+<td class="td3-r">9.12</td>
+<td class="td3-r">9.01</td>
+<td class="td3-r">8.94</td>
+<td class="td3-r">8.89</td>
+<td class="td3-r">8.85</td>
+<td style="padding-right:1em;" class="td3-r">8.53</td>
+</tr>
+<tr>
+<td class="td3">4</td>
+<td class="td3-r">6.94</td>
+<td class="td3-r">6.59</td>
+<td class="td3-r">6.39</td>
+<td class="td3-r">6.26</td>
+<td class="td3-r">6.16</td>
+<td class="td3-r">6.09</td>
+<td class="td3-r">6.04</td>
+<td style="padding-right:1em;" class="td3-r">5.63</td>
+</tr>
+<tr>
+<td class="td3">5</td>
+<td class="td3-r">5.79</td>
+<td class="td3-r">5.41</td>
+<td class="td3-r">5.19</td>
+<td class="td3-r">5.05</td>
+<td class="td3-r">4.95</td>
+<td class="td3-r">4.88</td>
+<td class="td3-r">4.82</td>
+<td style="padding-right:1em;" class="td3-r">4.36</td>
+</tr>
+<tr>
+<td class="td3">6</td>
+<td class="td3-r">5.14</td>
+<td class="td3-r">4.76</td>
+<td class="td3-r">4.53</td>
+<td class="td3-r">4.39</td>
+<td class="td3-r">4.28</td>
+<td class="td3-r">4.21</td>
+<td class="td3-r">4.15</td>
+<td style="padding-right:1em;" class="td3-r">3.67</td>
+</tr>
+<tr>
+<td class="td3">7</td>
+<td class="td3-r">4.74</td>
+<td class="td3-r">4.35</td>
+<td class="td3-r">4.12</td>
+<td class="td3-r">3.97</td>
+<td class="td3-r">3.87</td>
+<td class="td3-r">3.79</td>
+<td class="td3-r">3.73</td>
+<td style="padding-right:1em;" class="td3-r">3.23</td>
+</tr>
+<tr>
+<td class="td3">8</td>
+<td class="td3-r">4.46</td>
+<td class="td3-r">4.07</td>
+<td class="td3-r">3.84</td>
+<td class="td3-r">3.69</td>
+<td class="td3-r">3.58</td>
+<td class="td3-r">3.50</td>
+<td class="td3-r">3.44</td>
+<td style="padding-right:1em;" class="td3-r">2.93</td>
+</tr>
+<tr>
+<td class="td1a">&#8734;</td>
+<td class="td2-r">3.00</td>
+<td class="td2-r">2.60</td>
+<td class="td2-r">2.37</td>
+<td class="td2-r">2.21</td>
+<td class="td2-r">2.10</td>
+<td class="td2-r">2.01</td>
+<td class="td2-r">1.94</td>
+<td style="padding-right:1em;" class="td2-r">1.00</td>
+</tr>
+</table>
+</section>
+<section epub:type="chapter" id="a1.4">
+<h2 class="h2">A1.4<span class="space">&#160;</span>Calibration and standard addition plots&#8212;detection limits</h2>
+<p class="noindent">Calibration plots are extremely important in quantitative analysis. Usually, a linear relationship between concentration and response is required. Calibration plots can be obtained by constructing plots of response vs. standard concentrations encompassing the concentration range of interest; the unknown is then analysed by interpolation. Alternatively, once the adequacy of the procedure has been proved, the <i>standard addition method</i> can be employed. In this method, after the sample solution of unknown concentration is analysed, it is spiked several times with a solution of a standard in such a way so as to give equally spaced increasing concentrations of the species to be determined. A plot of response vs. concentration of standard is constructed; the concentration of the unknown can be found from the intercept of the plot on the concentration axis.</p>
+<p class="indent">In either of these cases, and assuming that a linear calibration plot is obtained, it is important to determine the line of best fit and the respective error. Known concentrations are plotted on the <i>x</i>-axis and the response on the <i>y</i>-axis, and it is assumed that all errors are in the <i>y-</i>values. It is also generally assumed that the magnitude of errors in <i>y</i> is independent of analyte concentration, although the statistical analysis can be modified to take varying error magnitudes into account.</p>
+<p class="indent">The first indicator of a good straight line is the correlation coefficient, <i>r</i>, varying between &#8211;1 (perfect correlation on a line of negative slope) and +1 (perfect correlation on a line of positive slope). In practice, numerical values of at least 0.99 are necessary for what would be referred to visually as a reasonable straight line.</p>
+<a id="page_81" class="page" style="width:70%;">Page 81, Appendix 1. Data analysis</a>
+<p class="indent">The next step is to calculate the line of best fit, which is usually done by minimising the sum of the squares of the residuals from the line of best fit (method of least squares) leading to the slope and the intercept. Most pocket calculators will do this calculation as well as calculating the correlation coefficient. Usually, they do not calculate the errors in the slope and intercept directly, although it is common for computer statistics software packages to do so.</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<figure style="width:110%;" id="figA1.2"><img src="../images/he_9780198548164_0050.jpg" alt="images"/>
+<p class="noindent">&#160;</p>
+<figcaption style="text-align:left;width:100%;"><b>Fig. A1.2</b> Determination of detection limit from a linear calibration plot.</figcaption>
+</figure>
+</aside>
+<p class="indent">The detection limit is defined as the minimum value of the signal from the species being measured that is significantly different from the blank signal. Although there is some discussion on this point, the recent tendency is to base its calculation from calibration plots on three times the standard deviation of the <i>y</i>-residuals. Thus, the intercept of the linear plot, <i>y</i> = <i>a</i> + <i>bx</i>, is the blank value of the response <i>y</i><sub>B</sub> (= <i>a</i>), and the limit of detection (lod) for <i>x</i> corresponds to the <i>y</i>-value for <i>y = y</i><sub>B</sub> + 3<i>s</i><sub>B</sub>, where <i>s</i><sub>B</sub> is the standard deviation of the <i>y</i>-residuals from the line of best fit. Once again many software packages provide the value of <i>s</i><sub>B</sub> directly. The limit of detection is then (3<i>s</i><sub>B</sub>/<i>b</i>) as shown in <a href="#figA1.2">Fig. A1.2</a>.</p>
+<p class="indent">Some thought concerning this method for determining detection limits reveals a potential weakness which can be of great importance. If the calibration plot is of high quality, then <i>s</i><sub>B</sub> will be very small, leading to an extremely low detection limit. In practice, however, such a limit may not be attainable owing to limitations of the experimental procedure or the instrumentation (noise and drift at low signal levels), apart from any chemical interferences. Practical detection limits determined experimentally, corresponding to when it is not possible to distinguish the signal from the background visually, are of the greatest importance. Fortunately, in many cases the difference between the two approaches is not large.</p>
+<p class="indent">More complicated statistical analyses, including non-linear regression, can be treated. The reader is referred to the bibliography at the end of the appendix for details.</p>
+</section>
+<section epub:type="chapter" id="a1.5">
+<h2 class="h2">A1.5<span class="space">&#160;</span>Experimental design and factorial analysis</h2>
+<p class="noindent">Recently, more elegant ways of analysing complex experimental data have been developed. These are based on consideration and identification of all the factors that can influence the outcome of the experiment and using statistical analysis to separate their influences; this is known as <i>factorial analysis.</i> The analysis of variance (ANOVA) can be employed for this purpose for both random-effect factors and factors that show a trend over a period of time. In the latter case the order of the experimental results is randomised so as to permit the use of ANOVA techniques. The exploitation of this type of analysis is referred to as <i>chemometrics.</i></p>
+<p class="indent">The capacity to separate the contributing factors leads to sophisticated experimental design patterns that permit the minimisation of the number of experiments necessary to characterise a system completely, since several influencing parameters can be varied simultaneously. Additionally, the application of pattern recognition techniques to the large masses of data <a id="page_82" class="page">Page 82, Appendix 1. Data analysis</a> obtained in automated experiments may allow relationships to be established that would otherwise be hidden.</p>
+</section>
+<section epub:type="chapter">
+<h2 class="h2">Bibliography</h2>
+<p class="noindent">E. Morgan, <i>Chemometrics: experimental design</i>, Wiley, Chichester, 1991.</p>
+<p class="hang">J.C. Miller and J.N. Miller, <i>Statistics for analytical chemistry</i>, 2<sup>nd</sup> edn, Ellis Horwood, Chichester, 1992.</p>
+<p class="hang">L. Davies, <i>Efficiency in research, development and production: the statistical design and analysis of chemical experiments,</i> RSC, Cambridge, 1993.</p>
+</section>
+</section>
+</body>
+</html>

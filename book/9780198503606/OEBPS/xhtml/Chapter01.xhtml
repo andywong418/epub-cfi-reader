@@ -1,0 +1,2100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Foundations of Organic Chemistry: Worked Examples</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<div>
+<a class="page" id="page_1" style="width:70%;">Page 1, Classical mechanics</a>
+<section epub:type="chapter" id="ch01">
+<h1 class="main">1<span class="space">&#160;</span>Classical mechanics</h1>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_1.1">
+<h2 class="h2">1.1<span class="space">&#160;</span>Introduction</h2>
+<p class="noindent">The Oxford English Dictionary describes Physics as &#x201C;the scientific study of the properties and interactions of matter and energy&#x201D;. An important aspect of this study is a desire to understand a wide range of disparate phenomena in terms of a few basic rules or &#x2018;laws of nature&#x2019;. One of the first people to achieve a major success in this endeavour was Sir Isaac Newton, who was able to explain why apples fell to the ground and how the planets orbited the sun within a single theory of the universal law of gravitation. We begin our discussion of Physics, therefore, with Newton&#x2019;s work on forces and motion; this topic is usually called classical or Newtonian mechanics.</p>
+<aside class="abc" style="margin-top:-10.3em;" epub:type="sidebar">
+<p class="noindent2">Newton (1642-1727) became Lucasian Professor at Cambridge at the age of 27, and stayed at the university for 30 years before becoming Master of the Royal Mint. While his contributions to Mathematics and Physics were far-reaching, his greatest interests were alchemy and the occult.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_1.2">
+<h2 class="h2">1.2<span class="space">&#160;</span>Newton&#x2019;s laws of motion</h2>
+<section epub:type="chapter" id="sec_1.2.1">
+<h3 class="h2">1.2.1<span class="space">&#160;</span>The first law</h3>
+<p class="noindent"><i>A body remains at rest, or moves at a constant speed in a straight line, unless acted upon by a force</i>. The first law provides a definition of force: that which causes an object to change its speed or direction of motion. In lay terms, a &#x2018;push or a puli&#x2019;.</p>
+<p class="indent">It&#x2019;s not too difficult to imagine that a force exerted along the line of motion will result in a change of speed, whereas a corresponding nudge in a perpendicular direction will alter the course of travel. This dependence on the orientation of the force tells us that it is a <i>vector</i> quantity, being specified by both a magnitude and a direction; by contrast, mass is a <i>scalar</i> quantity, having only the former property of a &#x2018;size&#x2019; (or how heavy or light something is). The statement of the first law can be made more succinct by rephrasing it in terms of a uniform <i>velocity</i>, where velocity is a vector pertaining to speed (a scalar) in a given direction. Explicitly, 10 metres per second (m/s or m s<sup>&#x2212;1</sup>) is a speed, but 10 m s<sup>&#x2212;1</sup> due east is a velocity.</p>
+<aside class="abc" style="margin-top:-9.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page1-1.jpg" alt="images"/>
+</figure>
+<p class="noindent2"><b><i>F</i></b> = (<i>F<sub>x</sub></i>, <i>F<sub>y</sub></i>) = <i>F<sub>x</sub><b>i</b></i> + <i>F<sub>y</sub><b>j</b></i></p>
+<p class="noindent2">where <i>F<sub>x</sub></i> = | <b><i>F</i></b> | cos<i>&#x03B8;</i></p>
+<p class="noindent2"> and <i>F<sub>y</sub></i> = | <b><i>F</i></b> | sin<i>&#x03B8;</i></p>
+<p class="noindent2">or | <b><i>F</i></b> |<sup>2</sup> =<i>F<sub>x</sub><sup>2</sup></i>+<i>F<sub>y</sub><sup>2</sup></i></p>
+</aside>
+<p class="indent">We will not go into a detailed discussion of vectors, or any other topic in applied mathematics, in this text (referring the reader instead to Sivia and Rawlings OCP 77 and 82), but will try to give a brief reminder of the relevant properties at opportune times.</p>
+<p class="indent">A vector, <b><i>F</i></b> say, is represented graphically by an arrow where the length of the line corresponds to its magnitude, | <b><i>F</i></b> |, and the pointed-end indicates its direction. If the vector lies in the <i>x-y</i> plane (so that it can easily be drawn on a piece of paper), then it can be decomposed, or <i>resolved</i>, into two components that are perpendicular to each other. Using the <i>x</i> (or horizontal) and <i>y</i> (or vertical) directions as our reference, we can then express <b><i>F</i></b> as (<i>F<sub>x</sub></i>,<i>F<sub>y</sub></i>), where <i>F<sub>x</sub></i> and <i>F<sub>y</sub></i> are scalars (or ordinary numbers); specifically, if <b><i>F</i></b> points at an <a class="page" id="page_2">Page 2, Classical mechanics</a>angle <i>&#x03B8;</i> (anti-clockwise) with respect to the <i>x</i>-axis, then elementary trigonometry shows that <i>F<sub>x</sub></i> = | <b><i>F</i></b> | cos&#x03B8; and <i>F<sub>y</sub></i> = | <b><i>F</i></b> | sin<i>&#x03B8;</i>. Using the identity sin<sup>2</sup><i>&#x03B8;</i> + cos<sup>2</sup><i>&#x03B8;</i> = 1, it follows that the magnitude | <b><i>F</i></b> | is given by the square root of+. Two vectors are said to be equal if they have the same magnitude and direction; this is equivalent to requiring each of the corresponding components to be equal.</p>
+<aside class="abc" style="margin-top:-6.5em;" epub:type="sidebar">
+<p class="noindent2"><i><b>A = B</b></i> if <i>A<sub>x</sub></i> = <i>B<sub>x</sub></i>, <i>A<sub>y</sub></i> = <i>B<sub>y</sub></i>, and so on.</p>
+</aside>
+
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page2-2.jpg" alt="images"/>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mtable columnalign='left'>
+<mtr>
+<mtd>
+<mtext>C=</mtext><mi>A</mi><mo>&#x00B1;</mo><mi>B</mi><mo>&#x21D2;</mo><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><msub>
+<mi>C</mi>
+<mi>x</mi>
+</msub>
+<mtext>=</mtext><msub>
+<mi>A</mi>
+<mi>x</mi>
+</msub>
+<mo>&#x00B1;</mo><msub>
+<mi>B</mi>
+<mi>x</mi>
+</msub>
+<mo>,</mo>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><msub>
+<mi>C</mi>
+<mi>y</mi>
+</msub>
+<mtext>=</mtext><msub>
+<mi>A</mi>
+<mi>y</mi>
+</msub>
+<mo>&#x00B1;</mo><msub>
+<mi>B</mi>
+<mi>y</mi>
+</msub>
+<mtext>,</mtext>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>And</mtext><mtext>&#x2009;</mtext><mtext>so</mtext><mtext>&#x2009;</mtext><mtext>on</mtext><mtext>.</mtext>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mrow></mrow>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mi>C</mi><mtext>=</mtext><mo>&#x00B5;</mo><mi>A</mi><mo>&#x21D2;</mo><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><msub>
+<mi>C</mi>
+<mi>x</mi>
+</msub>
+<mtext>=</mtext><mo>&#x00B5;</mo><msub>
+<mi>A</mi>
+<mi>x</mi>
+</msub>
+<mo>,</mo>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><msub>
+<mi>C</mi>
+<mi>y</mi>
+</msub>
+<mtext>,=</mtext><mo>&#x00B5;</mo><msub>
+<mi>A</mi>
+<mi>y</mi>
+</msub>
+<mo>,</mo><mtext>&#x00A0;</mtext>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>And</mtext><mtext>&#x2009;</mtext><mtext>so</mtext><mtext>&#x2009;</mtext><mtext>on</mtext><mtext>.</mtext>
+</mtd>
+</mtr>
+</mtable>
+</semantics>
+</math>
+</figure>
+</aside>
+<p class="indent">Vectors are added together graphically by sequentially placing the flat-end of one arrow representation at the location of another&#x2019;s apex, so that the sum is the resultant displacement from the start to the finish; algebraically, this amounts to separately adding-up the various components of the contributing vectors. Subtraction is just a special case of addition, with a negative vector having the same magnitude but opposite direction as its positive counterpart. Multiplication and division of a vector by a scalar is straightforward, resulting in only a change of magnitude but not direction (with a sign reversal if the scalar is negative). The product of two vectors is more involved, and we defer its discussion to appropriate points in this chapter. Nevertheless, we can categorically state that division by a vector is not defined; as such, this operation must never appear in our calculations.</p>
+<p class="indent">Finally, we can now paraphrase Newton&#x2019;s first law of motion by saying that &#x201C;a force is required to change an object&#x2019;s velocity&#x201D;. A stationary body is a special case when the magnitude of the velocity, or speed, happens to be zero. Indeed, its study forms a separate branch of mechanics called <i>statics</i> (as opposed to <i>dynamics</i>); it plays a central role in working out the strength of the materials needed to prevent a bridge from collapsing, or the frictional roughness of a surface required to stop a ladder from slipping, and so on. According to the first law, of course, the net force on an object must be zero if it is to remain stationary; this forms the basis of the topic of <i>statics</i>.</p>
+</section>
+<section epub:type="chapter" id="sec_1.2.2">
+<h3 class="h2">1.2.2<span class="space">&#160;</span>The second law</h3>
+<p class="noindent"><i>The force acting on a body is directly proportional to its rate of change of momentum</i>. The second law is a quantitative statement about the strength, and influence, of a force. To appreciate it, however, we must first understand what is meant by momentum.</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<p class="noindent">Linear momentum <i>p</i> = <i>mv</i></p>
+</aside>
+<p class="indent">In everyday parlance, we sometimes talk about a movement developing a momentum of its own; the implication being that it is a trend that is becoming increasingly difficult to argue with or stop. A simple physical picture that conjures-up the same sense is that of a car, or a truck, careering down a hill due to brake failure. It&#x2019;s not hard to imagine that the effort required to control the run-away vehicle will be greater the faster its going or the heavier it is; consequently, the definition of the momentum of an object as the product of its mass and velocity does not seem unreasonable. Like velocity <b><i>v</i></b>, and in contrast to the scalar quantity mass <i>m</i>, momentum <b><i>p</i></b> is also a vector, being specified by both a magnitude and direction.</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mtable columnalign='left'>
+<mtr>
+<mtd>
+<mfrac>
+<mrow>
+<mtext>d</mtext><mi>p</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+<mo>=</mo><munder>
+<mrow>
+<mi>lim</mi></mrow>
+<mrow>
+<mi>&#x03B4;</mi><mi>t</mi><mo>&#x2192;</mo><mn>0</mn></mrow>
+</munder>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mfrac>
+<mrow>
+<mi>&#x03B4;</mi><mi>p</mi></mrow>
+<mrow>
+<mi>&#x03B4;</mi><mi>t</mi></mrow>
+</mfrac>
+</mtd>
+</mtr>
+<mtr>
+<mtd>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>=</mo><munder>
+<mrow>
+<mi>lim</mi></mrow>
+<mrow>
+<mi>&#x03B4;</mi><mi>t</mi><mo>&#x2192;</mo><mn>0</mn></mrow>
+</munder>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mfrac>
+<mrow>
+<mi>p</mi><mrow><mo>(</mo>
+<mrow>
+<mi>t</mi><mo>+</mo><mi>&#x03B4;</mi><mi>t</mi></mrow>
+<mo>)</mo></mrow><mo>&#x2212;</mo><mi>p</mi><mrow><mo>(</mo>
+<mi>t</mi>
+<mo>)</mo></mrow></mrow>
+<mrow>
+<mi>&#x03B4;</mi><mi>t</mi></mrow>
+</mfrac>
+</mtd>
+</mtr>
+</mtable>
+</semantics>
+</math>
+</figure>
+</aside>
+<p class="indent">Returning to Newton&#x2019;s second law of motion, we can now state this mathematically as:</p>
+<figure class="fig1a" id="eq1.1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>F</mi><mi>&#x03B1;</mi><mfrac>
+<mrow>
+<mtext>d</mtext><mi>p</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+<mo>=</mo><mfrac>
+<mtext>d</mtext>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+<mrow><mo>(</mo>
+<mrow>
+<mi>m</mi><mi>v</mi></mrow>
+<mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.1</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<a class="page" id="page_3" style="width:70%;">Page 3, Classical mechanics</a>
+<p class="noindent">where d/d <i> t</i> is the differential operator meaning &#x2018;the rate-of-change, with respect to time (<i>t</i>), of&#x2019;, and we have replaced the proportionality with an equality assuming that force, mass and velocity are given in suitable (SI) units (Newtons N, kilograms kg, and metres per second ms<sup>&#x2212;1</sup> respectively). If the mass of the object does not change during the motion, so that d<i>m</i>/d<i>t</i> = 0, then <a href="#eq1.1">eqn (1.1)</a> simplifies slightly to the more familiar form:</p>
+<figure class="fig1a" id="eq1.2">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>F</mi><mo>=</mo><mi>m</mi><mfrac>
+<mrow>
+<mtext>d</mtext><mi>v</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+<mo>=</mo><mi>m</mi><mi>a</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.2</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where <i>a</i> = d<i>v</i>/d<i>t</i>, the rate-of-change of velocity with time, is the <i>acceleration</i>.</p>
+<p class="indent">Early on in our school life, we usually learn Newton&#x2019;s second law of motion as &#x201C;force = mass &#x00D7; acceleration&#x201D;. The discussion above shows that while this is generally true, we must remember that force and acceleration are vectors; as such, <a href="#eq1.2">eqn (1.2)</a> yields separate relationships for each of its components. We should also bear in mind the proviso of an invariant mass, and add a term <b><i>v</i></b> d<i>m</i>/dt to the right-hand side of <a href="#eq1.2">eqn (1.2)</a> if this is appropriate (as for a rocket where fuel burning is significant).</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<p class="noindent2"><i>F<sub>x</sub></i> = <i>m a<sub>x</sub></i>,</p>
+<p class="noindent2"><i>F<sub>y</sub></i> = <i>m a<sub>y</sub></i>,</p>
+<p class="noindent2">and so on.</p>
+</aside>
+<p class="indent">Newton&#x2019;s second law of motion tells us that for the same applied force, the magnitude of the acceleration experienced by a body is inversely proportional to its mass. That&#x2019;s why motorcycles with modestly powerful engines can easily overtake most cars, or why racing cars are made from the lightest (but structurally strong) materials available. Incidentally, the change in the momentum of an object is called the <i>impulse</i> and, by integration of <a href="#eq1.1">eqn (1.1)</a> with respect to time, is easily shown to be equal to &#x222B;<b><i>F</i></b>d<i>t</i>:</p>
+<figure class="fig1a" id="eq1.3">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mstyle displaystyle='true'>
+        <mrow><munderover>
+         <mo>&#x222B;</mo>
+         <mrow>
+          <msub>
+           <mi>t</mi>
+           <mn>1</mn>
+          </msub>
+          
+         </mrow>
+         <mrow>
+          <msub>
+           <mi>t</mi>
+           <mn>2</mn>
+          </msub>
+          
+         </mrow>
+        </munderover>
+        <mrow>
+         <mi>F</mi><mtext>d</mtext><mi>t</mi><mo>=</mo><msubsup>
+          <mrow>
+           <mo stretchy='false'>[</mo><mi>m</mi><mi>v</mi><mo stretchy='false'>]</mo>
+          </mrow>
+          <mrow>
+           <msub>
+            <mi>t</mi>
+            <mn>1</mn>
+           </msub>
+           
+          </mrow>
+          <mrow>
+           <msub>
+            <mi>t</mi>
+            <mn>2</mn>
+           </msub>
+           
+          </mrow>
+         </msubsup>
+         <mo>=</mo><mi>m</mi><mo stretchy='false'>(</mo><msub>
+          <mi>v</mi>
+          <mn>2</mn>
+         </msub>
+         <mo>&#x2212;</mo><msub>
+          <mi>v</mi>
+          <mn>1</mn>
+         </msub>
+         <mo stretchy='false'>)</mo>
+        </mrow>
+       </mrow>
+       
+      </mstyle>
+     </mrow>
+    </mtd>
+    <mtd>
+     <mrow>
+      <mo stretchy='false'>(</mo><mn>1.3</mn><mo stretchy='false'>)</mo>
+     </mrow>
+    </mtd>
+   </mtr>
+   
+  </mtable>
+ </mrow>
+</semantics>
+</math>
+
+</figure>
+<p class="noindent">where we have assumed that d<i>m</i>/d<i>t</i>=0 in writing the term on the far right-hand side. If the force itself happens to be constant, then <a href="#eq1.3">eqn (1.3)</a> reduces to &#x201C;force &#x00D7; time = mass &#x00D7; change-of-velocity&#x201D;. Thus to return a tennis ball so that it approaches our opponent at very high speed we can either ensure a brief but powerful contact with the racket, or attempt a less vigorous stroke that maintains contact between the racket-head and the ball for a longer time.</p>
+</section>
+<section epub:type="chapter" id="sec_1.2.3">
+<h3 class="h2">1.2.3<span class="space">&#160;</span>The third law</h3>
+<p class="noindent"><i>To every action there is an equal and opposite reaction</i>. The third law is a statement about the nature of forces, in that they mediate a mutual interaction between two objects. If the earth is held in its orbit around the sun by the latter&#x2019;s gravitational attraction pulling us towards the centre of the solar system, then the sun experiences a (gravitational) pull of equal magnitude towards the earth; the influence of this force on the sun is much smaller than that on the earth, of course, because of the enormous difference in their masses (a factor of more than one hundred thousand).</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<p class="noindent2">Weight, a force, <b><i>W= mg</i></b> (N)</p>
+<p class="noindent2">where <i>m</i> = mass (kg)</p>
+<p class="noindent2">and <b><i>g</i></b> &#x2248; 9.8ms<sup>&#x2212;2</sup>, is the acceleration due to gravity.</p>
+</aside>
+<p class="indent">Similarly, the forward propulsion of a bullet fired from a rifle is accompanied by a backwards recoil of the gun. Indeed, our feeling of weight is the result of the ground pushing up against the soles of our feet as gravity pulls us towards the centre of the earth. We would have only a sixth of our normal <a class="page" id="page_4">Page 4, Classical mechanics</a>weight (measured in Newtons) on the moon, because it is a smaller body than the earth, although our mass (in kilograms) would be the same; in free-fall, where there is nothing pushing against our feet, we would behave as though weightless.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec_1.3">
+<h2 class="h2">1.3<span class="space">&#160;</span>A kinematic example: projectiles</h2>
+<p class="noindent">Suppose a shell is fired out to sea from the battlements of a coastal fort which are at a height <i>H</i> metres above sea-level; if <i>u</i> (ms<sup>&#x2212;1</sup>) is the speed of this projectile on leaving the gun-barrel, which is inclined at an angle <i>&#x03B8;</i> to the horizontal, how far (<i>R</i>) will it go before it hits the water?</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page4-6.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">Let&#x2019;s take the coastal-base of the fort as the origin (0,0) of our reference coordinates, with <i>x</i> and <i>y</i> denoting the horizontal and vertical displacements. Applying Newton&#x2019;s second law of motion in the upward direction, we have:</p>
+<figure class="fig1a" id="eq1.4">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mo>&#x2212;</mo><mi>m</mi><mi>g</mi><mo>=</mo><mi>m</mi><mfrac>
+<mrow>
+<msup>
+<mi>d</mi>
+<mn>2</mn>
+</msup>
+<mi>y</mi></mrow>
+<mrow>
+<mi>d</mi><msup>
+<mi>t</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.4</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">Where the force, simply the weight of the shell, is negative because gravity acts downward, and the acceleration is equal to the second derivative of <i>y</i> with respect to time <i>t</i> (<i>a<sub>y</sub></i> = d<i>v<sub>y</sub></i>/d<i>t</i> and <i>v<sub>y</sub></i> = d<i>y</i>/d<i>t</i>). Cancelling <i>m</i> from <a href="#eq1.4">eqn (1.4)</a>, and integrating twice with respect to <i>t</i>, we obtain:</p>
+<figure class="fig1a" id="eq1.5">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mfrac>
+<mrow>
+<mtext>d</mtext><mi>y</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+<mo>=</mo><msub>
+<mi>u</mi>
+<mi>y</mi>
+</msub>
+<mo>&#x2212;</mo><mi>g</mi><mi>t</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>and</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>y</mi><mo>=</mo><msub>
+<mi>u</mi>
+<mi>y</mi>
+</msub>
+<mi>t</mi><mo>&#x2212;</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>g</mi><msup>
+<mi>t</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mi>H</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.5</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where <i>u<sub>y</sub></i> is a constant equal to the initial vertical speed of the shell, <i>u</i>sin<i>&#x03B8;</i> by elementary trigonometry, and we have let <i>t</i> = 0 at the beginning by setting the second constant-of-integration to be <i>H</i>. The mathematical condition for hitting the ground is that <i>y</i> = 0; in conjunction with <a href="#eq1.5">eqn (1.5)</a>, this leads to a quadratic equation for the time to the impact:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>g</mi><msup>
+<mi>t</mi>
+<mn>2</mn>
+</msup>
+<mo>&#x2212;</mo><mo stretchy='false'>(</mo><mi>u</mi><mi>sin</mi><mi>&#x03B8;</mi><mo stretchy='false'>)</mo><mi>t</mi><mo>&#x2212;</mo><mi>H</mi><mo>=</mo><mn>0</mn></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">Although this formally has two solutions for <i>t</i>, only the one with the positive square root makes physical sense (as <i>t</i> > 0). Hence,</p>
+<figure class="fig1a" id="eq1.6">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>t</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>u</mi><mi>sin</mi><mi>&#x03B8;</mi><mo>+</mo><msqrt>
+<mrow>
+<msup>
+<mi>u</mi>
+<mn>2</mn>
+</msup>
+<msup>
+<mrow>
+<mi>sin</mi></mrow>
+<mn>2</mn>
+</msup>
+<mi>&#x03B8;</mi><mo>+</mo><mn>2</mn><mi>g</mi><mi>H</mi></mrow>
+</msqrt>
+</mrow>
+<mi>g</mi>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.6</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">Since there is no force acting in the horizontal direction, the <i>x</i>-component of Newton&#x2019;s second law reduces to:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mfrac>
+<mrow>
+<msup>
+<mtext>d</mtext>
+<mn>2</mn>
+</msup>
+<mi>x</mi></mrow>
+<mrow>
+<mtext>d</mtext><msup>
+<mi>t</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+<mo>=</mo><mn>0</mn></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">On integrating this twice, and using the boundary conditions d<i>x</i>/d<i>t</i> = <i>u<sub>x</sub></i> = <i>u</i>cos<i>&#x03B8;</i> and <i>x</i> = 0 at <i>t</i> = 0, we obtain:</p>
+<p class="fig1"><i>x</i> = (<i>u</i> cos<i>&#x03B8;</i>) <i>t</i></p>
+<a class="page" id="page_5" style="width:70%;">Page 5, Classical mechanics</a>
+<p class="noindent">Thus, the substitution of <i>t</i> from <a href="#eq1.6">eqn (1.6)</a> leads to the result that the distance to the explosion, or range <i>R</i>, is:</p>
+<figure class="fig1a" id="eq1.7">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>R</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>u</mi><mi>cos</mi><mi>&#x03B8;</mi></mrow>
+<mi>g</mi>
+</mfrac>
+<mrow><mo>[</mo> <mrow>
+<mi>u</mi><mi>sin</mi><mi>&#x03B8;</mi><mo>+</mo><msqrt>
+<mrow>
+<msup>
+<mi>u</mi>
+<mn>2</mn>
+</msup>
+<msup>
+<mrow>
+<mi>sin</mi></mrow>
+<mn>2</mn>
+</msup>
+<mi>&#x03B8;</mi><mo>+</mo><mn>2</mn><mi>g</mi><mi>H</mi></mrow>
+</msqrt>
+</mrow> <mo>]</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.7</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page5-5.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">If required, the angle of inclination for the maximum range can be calculated by solving the equation d<i>R</i>/d<i>&#x03B8;</i> = 0. While the differentiation is straight-forward, if slightly messy, finding the value(s) of <i>&#x03B8;</i> which make d<i>R</i>/d<i>&#x03B8;</i> = 0 is not easy. The special case of <i>H</i> = 0 can be done analytically, however, because <a href="#eq1.7">eqn (1.7)</a> simplifies to <i>R</i> = <i>u</i><sup>2</sup>sin2<i>&#x03B8;</i>/<i>g</i>; then <i>&#x03B8;</i> = 45&#x00B0; gives <i>R</i><sub>max</sub>= <i>u</i><sup>2</sup>/<i>g</i>.</p>
+</section>
+<section epub:type="chapter" id="sec_1.4">
+<h2 class="h2">1.4<span class="space">&#160;</span>Conservation of momentum</h2>
+<p class="noindent">In <a href="#sec_1.2.1">section 1.2.1</a>, we noted that Newton&#x2019;s first law of motion meant that an object moved with a uniform velocity if there was no force acting on it. An integration of the second law, stated mathematically in <a href="#eq1.1">eqn (1.1)</a>, with respect to time, shows that</p>
+<p class="fig1"><b><i>p</i></b> = <i>m</i><b><i>v</i></b> = constant</p>
+<p class="noindent">if <b><i>F</i></b> = 0. While this is not particularly useful for an isolated body, it becomes an important property once we realise that the total momentum of a collection of interacting particles is always conserved if there is no net external force acting on them.</p>
+<p class="indent">To see this, consider a system of <i>N</i> particles; we will label each with a subscript, so that the <i>i<sup>th</sup></i> one has a momentum <b><i>p</i></b><i><sub>i</sub></i>. If <b><i>F</i></b><sub><i>i</i></sub> denotes the external force acting on the <i>i<sup>th</sup></i> particle, and <i>F<sub>ij</sub></i> is the force exerted by the <i>j<sup>th</sup></i> on <i>i</i>, then Newton&#x2019;s second law of motion for this component is:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<msub>
+<mi>F</mi>
+<mi>i</mi>
+</msub>
+<mo>+</mo><mstyle displaystyle='true'>
+<munder>
+<mo>&#x2211;</mo>
+<mrow>
+<mi>i</mi><mo>&#x2260;</mo><mi>j</mi></mrow>
+</munder>
+<mrow>
+<msub>
+<mi>F</mi>
+<mrow>
+<mi>i</mi><mi>j</mi></mrow>
+</msub>
+</mrow>
+</mstyle><mo>=</mo><mfrac>
+<mrow>
+<mtext>d</mtext><msub>
+<mi>p</mi>
+<mi>i</mi>
+</msub>
+</mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where the &#x03A3;-term gives the sum of all the internal interactions. Adding up the <i>N</i> equations for <i>i</i> =1,2,3..., <i>N</i>, we have:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mstyle displaystyle='true'>
+<munderover>
+<mo>&#x2211;</mo>
+<mrow>
+<mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+<mi>N</mi>
+</munderover>
+<mrow>
+<mfrac>
+<mrow>
+<mtext>d</mtext><msub>
+<mi>p</mi>
+<mi>i</mi>
+</msub>
+</mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+</mrow>
+</mstyle><mo>=</mo><mstyle displaystyle='true'>
+<munderover>
+<mo>&#x2211;</mo>
+<mrow>
+<mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+<mi>N</mi>
+</munderover>
+<mrow>
+<msub>
+<mi>F</mi>
+<mi>i</mi>
+</msub>
+<mo>+</mo></mrow>
+</mstyle><munderover>
+<mi>&#x03A3;</mi>
+<mrow>
+<mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+<mi>N</mi>
+</munderover>
+<mrow><mo>(</mo>
+<mrow>
+<munder>
+<mi>&#x03A3;</mi>
+<mrow>
+<mi>j</mi><mo>&#x2260;</mo><mn>1</mn></mrow>
+</munder>
+<msub>
+<mi>F</mi>
+<mrow>
+<mi>i</mi><mi>j</mi></mrow>
+</msub>
+</mrow>
+<mo>)</mo></mrow></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">According to Newton&#x2019;s third law, <b><i>F</i></b><sub><i>ij</i></sub> = &#x2212;<b><i>F</i></b><sub><i>ji</i></sub>; hence, the term on the far right will sum to zero and the equation of motion reduces to:</p>
+<figure class="fig1a" id="eq1.8">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mfrac>
+<mi>d</mi>
+<mrow>
+<mi>d</mi><mtext>t</mtext></mrow>
+</mfrac>
+<mrow><mo>(</mo>
+<mrow>
+<mstyle displaystyle='true'>
+<munderover>
+<mo>&#x2211;</mo>
+<mrow>
+<mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+<mi>N</mi>
+</munderover>
+<mrow>
+<msub>
+<mi>p</mi>
+<mi>i</mi>
+</msub>
+</mrow>
+</mstyle></mrow>
+<mo>)</mo></mrow><mo>=</mo><mstyle displaystyle='true'>
+<munderover>
+<mo>&#x2211;</mo>
+<mrow>
+<mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+<mi>N</mi>
+</munderover>
+<mrow>
+<msub>
+<mi>F</mi>
+<mi>i</mi>
+</msub>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.8</mn><mo stretchy='false'>)</mo></mrow>
+</mstyle></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where we have used the linearity of the differential operator, d/d<i>t</i>, to write the sum of the derivatives as the derivative of the sum, on the left-hand side. If the system is isolated, so that there is no net force acting on the <i>N</i> particles (i.e. &#x03A3;<b><i>F</i></b><i><sub>i</sub></i> = 0), then the integration of <a href="#eq1.8">eqn (1.8)</a> with respect to time gives:</p>
+<a class="page" id="page_6" style="width:70%;">Page 6, Classical mechanics</a>
+<figure class="fig1a" id="eq1.9">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mstyle displaystyle='true'>
+<munderover>
+<mo>&#x2211;</mo>
+<mrow>
+<mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+<mi>N</mi>
+</munderover>
+<mrow>
+<msub>
+<mi>p</mi>
+<mi>i</mi>
+</msub>
+</mrow>
+</mstyle><mo>=</mo><mstyle displaystyle='true'>
+<munderover>
+<mo>&#x2211;</mo>
+<mrow>
+<mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+<mi>N</mi>
+</munderover>
+<mrow>
+<msub>
+<mi>m</mi>
+<mi>i</mi>
+</msub>
+<msub>
+<mi>v</mi>
+<mi>i</mi>
+</msub>
+<mo>=</mo><mtext>cons</mtext><mi>tan</mi><mtext>t</mtext></mrow>
+</mstyle><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.9</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page6-3.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">In other words, the total linear momentum is conserved.</p>
+<p class="indent">As an explicit illustration of <a href="#eq1.9">eqn (1.9)</a>, suppose that the two particles, with mass <i>m</i><sub>1</sub> and <i>m</i><sub>2</sub>, collide with velocities <b><i>u</i></b><sub>1</sub> and <b><i>u</i></b><sub>2</sub>, and separate at <b><i>v</i></b><sub>1</sub> and <b><i>v</i></b><sub>2</sub>. The combined initial momentum is <i>m</i><sub>1</sub><b><i>u</i></b><sub>1</sub>+<i>m</i><sub>2</sub><b><i>u</i></b><sub>2</sub>, whereas the outgoing total is <i>m</i><sub>1</sub><b><i>v</i></b><sub>1</sub>+<i>m</i><sub>2</sub><b><i>v</i></b><sub>2</sub>. According to the conservation of momentum, therefore, one constraint on their motion is given by the equation:</p>
+<p class="fig1a" id="eq1.10"><i>m</i><sub>1</sub><b><i>u</i></b><sub>1</sub> + <i>m</i><sub>2</sub><b><i>u</i></b><sub>2</sub> = <i>m</i><sub>1</sub><b><i>v</i></b><sub>1</sub> + <i>m</i><sub>2</sub><b><i>v</i></b><sub>2</sub>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(1.10)</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page6-4.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">A particularly simple case of the above scenario occurs when particle 2 is initially at rest (<b><i>u</i></b><sub>2</sub> = 0) and they both stick together on impact, or coalesce, so that <b><i>v</i></b><sub>1</sub> = <b><i>v</i></b><sub>2</sub> = <b><i>v</i></b>; then, <a href="#eq1.10">eqn (1.10)</a> simplifies to:</p>
+<p class="fig1"><i>m</i><sub>1</sub><b><i>u</i></b><sub>1</sub> = (<i>m</i><sub>1</sub> + <i>m</i><sub>2</sub>)<b><i>v</i></b></p>
+<p class="noindent">That is to say, the initial and final velocities are in the same direction (i.e. a straight-line collision), but the onward-going speed is reduced by a factor of <i>m</i><sub>1</sub>/(<i>m</i><sub>1</sub>+<i>m</i><sub>2</sub>).</p>
+<p class="indent">Finally, we should remind ourselves that <a href="#eq1.8">eqn (1.8)</a> yields a slight variant of <a href="#eq1.3">eqn (1.3)</a> if our system is not isolated from external influences:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mstyle displaystyle='true'>
+<mrow><munderover>
+<mo>&#x222B;</mo>
+<mrow>
+<msub>
+<mi>t</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+<mrow>
+<msub>
+<mi>t</mi>
+<mn>2</mn>
+</msub>
+</mrow>
+</munderover>
+<mrow>
+<mrow><mo>(</mo>
+<mrow>
+<mstyle displaystyle='true'>
+<munderover>
+<mo>&#x2211;</mo>
+<mrow>
+<mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+<mi>N</mi>
+</munderover>
+<mrow>
+<msub>
+<mi>F</mi>
+<mi>i</mi>
+</msub>
+</mrow>
+</mstyle></mrow>
+<mo>)</mo></mrow></mrow>
+</mrow>
+</mstyle><mi>d</mi><mtext>t=</mtext><msubsup>
+<mrow>
+<mrow><mo>[</mo> <mrow>
+<mstyle displaystyle='true'>
+<munderover>
+<mo>&#x2211;</mo>
+<mrow>
+<mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+<mi>N</mi>
+</munderover>
+<mrow>
+<msub>
+<mi>m</mi>
+<mi>i</mi>
+</msub>
+<msub>
+<mi>v</mi>
+<mi>i</mi>
+</msub>
+</mrow>
+</mstyle></mrow> <mo>]</mo></mrow></mrow>
+<mrow>
+<msub>
+<mi>t</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+<mrow>
+<msub>
+<mi>t</mi>
+<mn>2</mn>
+</msub>
+</mrow>
+</msubsup>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">Thus the net change in momentum is always equal to the applied &#x2018;impulse&#x2019; (by definition), but the latter is zero in the absence of a resultant outside force.</p>
+</section>
+<section epub:type="chapter" id="sec_1.5">
+<h2 class="h2">1.5<span class="space">&#160;</span>Work done, energy and power</h2>
+<section epub:type="chapter" id="sec_1.5.1">
+<h3 class="h2">1.5.1<span class="space">&#160;</span>Work done</h3>
+<p class="noindent">Lifting a heavy object is often a difficult task, and entails a great deal of effort; we&#x2019;d be inclined to say that it was &#x2018;hard work&#x2019;! In Physics and Chemistry, the term &#x2018;work&#x2019; has a very specific and quantitative meaning: it is &#x201C;the distance moved in opposition to a force&#x201D;. If the force <b><i>F</i></b> had a constant magnitude and acted in a fixed direction, and we moved a distance <i>l</i> in a straight line directly against it, then the work done is defined to be equal to | <b><i>F</i></b> | <i>l</i> Newton metres (Nm) or Joules (J); in other words, &#x201C;force &#x00D7; distance&#x201D;. Conversely, if we are displaced by <i>l</i> along the direction of <b><i>F</i></b>, then | <b><i>F</i></b> | <i>l</i> is the work done by the force (rather than us).</p>
+<p class="indent">When we are making the effort, there is no particular reason why <b><i>F</i></b> and the displacement vector <b><i>l</i></b> should be parallel (or antiparallel) to each other. If their orientation differs by an angle <i>&#x03B8;</i> but are otherwise acting in a uniform manner, then the work done is given by | <b><i>F</i></b> | | <i>l</i> | cos<i>&#x03B8;</i>; this is because the component of the displacement in the direction of the force is | <i>l</i> | cos<i>&#x03B8;</i> (by elementary trigonometry). Alternatively, we could think of | <b><i>F</i></b> | cos<i>&#x03B8;</i> as the <a class="page" id="page_7">Page 7, Classical mechanics</a>component of the force along the displacement-path. In either case, the work done, <i>W</i>, can be written as the <i>scalar</i>, or <i>dot</i>, <i>product</i> of the vectors <b><i>F</i></b> and <b><i>l</i></b>:</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page7-4.jpg" alt="images"/>
+</figure>
+</aside>
+<figure class="fig1a" id="eq1.11">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>W</mi><mo>=</mo><mo>&#x2212;</mo><mi>F</mi><mo>&#x00B7;</mo><mi>l</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.11</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">The dot product is one way of multiplying two vectors, <b><i>a</i></b> and <b><i>b</i></b> say, that we alluded to in <a href="#sec_1.2.1">section 1.2.1</a>; the result is a scalar quantity of magnitude | <b><i>a</i></b> | | <b><i>b</i></b> | cos<i>&#x03B8;</i>, where <i>&#x03B8;</i> is the angle between them. In terms of the components of <b><i>a</i></b> and <b><i>b</i></b>, (<i>a<sub>x</sub></i>, <i>a<sub>y</sub></i>, &#x2026;) and (<i>b<sub>x</sub></i>, <i>b<sub>y</sub></i>, &#x2026;), the dot product is given by the sum <i>a<sub>x</sub></i><i>b<sub>x</sub></i> + <i>a<sub>y</sub></i><i>b<sub>y</sub></i>+ &#x2026;. Both from its physical interpretation and component definition, a scalar product is seen to be <i>commutative</i> in that <b><i>a</i></b> &#x00B7; <b><i>b</i></b> = <b><i>b</i></b> &#x00B7; <b><i>a</i></b>. We should note that in <a href="#eq1.11">eqn (1.11)</a>, <i>W</i> is positive if the work is done by us; it is negative when we simply respond to the force.</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page7-5.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">In general, neither the displacement nor the direction of the force will lie along a fixed direction; indeed, the magnitude of <b><i>F</i></b> may also vary. Nevertheless, we can still calculate the work done by dividing up the path into many small straight-line segments &#x03B4;<b><i>l</i></b>, and adding up all the tiny contributions &#x03B4;<i>W</i>= &#x2212; <b><i>F</i></b> &#x00B7; &#x03B4;<b><i>l</i></b>. Thus the special case of <a href="#eq1.11">eqn (1.11)</a> is replaced by a <i>line integral</i>:</p>
+<figure class="fig1a" id="eq1.12">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>W</mi><mo>=</mo><mo>&#x2212;</mo><munder>
+<mrow>
+<mi>lim</mi></mrow>
+<mrow>
+<mi>&#x03B4;</mi><mi>t</mi><mo>&#x2192;</mo><mn>0</mn></mrow>
+</munder>
+<mi>&#x03A3;</mi><mi>F</mi><mo>&#x00B7;</mo><mi>&#x03B4;</mi><mi>l</mi><mo>=</mo><mo>&#x2212;</mo><mstyle displaystyle='true'>
+<mrow>
+<munder>
+<mo>&#x222B;</mo>
+<mrow>
+<mi>p</mi><mi>a</mi><mi>t</mi><mi>h</mi></mrow>
+</munder>
+<mrow>
+<mi>F</mi><mo>&#x00B7;</mo><mi>&#x03B4;</mi><mi>l</mi></mrow>
+</mrow>
+ 
+</mstyle><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.12</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">To get a better feel for this formula, let&#x2019;s consider some specific cases.</p>
+</section>
+<section epub:type="chapter" id="sec_1.5.2">
+<h3 class="h2">1.5.2<span class="space">&#160;</span>Potential energy</h3>
+<p class="noindent">Potential energy is literally the potential of an object, or a system, to do work by virtue of its location, position, or state of being. For example, a large rock on a cliff-top, or water at the top of a high waterfall, has a lot of potential energy by virtue of its ability to do considerable damage, or to drive a turbine to generate electricity. Similarly, a stretched spring stores potential energy, which can be used to catapult things when the tension is released. Let&#x2019;s look at gravitational potential energy in some detail first.</p>
+<p class="indent">Close to the Earth&#x2019;s surface, the acceleration due to gravity is very nearly constant; it has a magnitude <i>g</i> (&#x2248;9.8m s<sup>&#x2212;2</sup>) and acts towards the centre of the Earth. By Newton&#x2019;s second law, therefore, the force exerted on an object of mass <i>M</i> (kg) is simply its weight, <i>Mg</i> (N), pulling it downwards. If we lift it vertically, then its potential energy <i>V</i> (J) at a height <i>H</i> (m) above the ground is equal to the work we have to do in order to raise it by that amount; using <a href="#eq1.12">eqn (1.12)</a>, this gives</p>
+<figure class="fig1a" id="eq1.13">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>V</mi><mo>=</mo><mstyle displaystyle='true'>
+<mrow><munderover>
+<mo>&#x222B;</mo>
+<mrow>
+<mi>h</mi><mo>=</mo><mn>0</mn></mrow>
+<mrow>
+<mi>h</mi><mo>=</mo><mi>H</mi></mrow>
+</munderover>
+<mrow>
+<mi>M</mi><mi>g</mi><mtext>&#x2009;</mtext><mtext>d</mtext><mi>h</mi></mrow>
+</mrow>
+</mstyle><mo>=</mo><msubsup>
+<mrow>
+<mrow><mo>[</mo> <mrow>
+<mi>M</mi><mi>g</mi><mi>h</mi></mrow> <mo>]</mo></mrow></mrow>
+<mn>0</mn>
+<mi>H</mi>
+</msubsup>
+<mo>=</mo><mi>M</mi><mi>g</mi><mi>H</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.13</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where we have substituted <b><i>F</i></b> &#x00B7; d <b><i>l</i></b> =<i> Mg</i> d<i>h</i>, because the force is <i>Mg</i> downwards and the displacement element is d<i>h</i> upwards (so that <i>&#x03B8;</i> = 180&#x00B0;). This concurs with our intuition that the effort required to raise something depends on how heavy it is and how far we have to lift it.</p>
+<p class="indent">The formula of <a href="#eq1.13">eqn (1.13)</a> can be extended to any arbitrary distance from the Earth&#x2019;s surface by using the general form of <i>Newton&#x2019;s law of gravitation</i>; <a class="page" id="page_8">Page 8, Classical mechanics</a>this slates that the mutual attraction of two bodies of masses <i>M</i><sub>1</sub> and <i>M</i><sub>2</sub> which are separated by a distance <i>r</i> is given by:</p>
+<figure class="fig1a" id="eq1.14">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>F</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>G</mi><msub>
+<mi>M</mi>
+<mn>1</mn>
+</msub>
+<msub>
+<mi>M</mi>
+<mn>2</mn>
+</msub>
+</mrow>
+<mrow>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.14</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where G is the &#x2018;universal constant of gravitation&#x2019; (6.672&#x00D7;l0<sup>&#x2212;11</sup> Nm<sup>2</sup>kg<sup>&#x2212;2</sup>). If <i>M</i><sub>1</sub> = <i>M</i><sub>E</sub> is the mass of the Earth, then <a href="#eq1.12">eqn (1.12)</a> gives the work done in raising an object of mass <i>M</i> from the ground, at <i>r</i> = <i>R</i><sub>E</sub>, to a distance <i>H</i> above the surface, so that <i>r</i> = <i>R</i><sub>E</sub> + <i>H</i>, as:</p>
+<figure class="fig1a" id="eq1.15">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>W</mi><mo>=</mo><msubsup>
+<mrow>
+<mstyle displaystyle='true'>
+<mrow><munderover>
+<mo>&#x222B;</mo>
+<mrow>
+<mi>r</mi><mo>=</mo><msub>
+<mi>R</mi>
+<mi>E</mi>
+</msub>
+</mrow>
+<mrow>
+<msub>
+<mi>R</mi>
+<mi>E</mi>
+</msub>
+<mo>+</mo><mi>H</mi></mrow>
+</munderover>
+<mrow>
+<mfrac>
+<mrow>
+<mi>G</mi><msub>
+<mi>M</mi>
+<mi>E</mi>
+</msub>
+<mi>M</mi></mrow>
+<mrow>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+<mtext>d</mtext><mi>r</mi><mo>=</mo><mrow><mo>[</mo> <mrow>
+<mo>&#x2212;</mo><mfrac>
+<mrow>
+<mi>G</mi><msub>
+<mi>M</mi>
+<mi>E</mi>
+</msub>
+<mi>M</mi></mrow>
+<mi>r</mi>
+</mfrac>
+</mrow> <mo>]</mo></mrow></mrow>
+</mrow>
+</mstyle></mrow>
+<mrow>
+<msub>
+<mi>R</mi>
+<mi>E</mi>
+</msub>
+</mrow>
+<mrow>
+<msub>
+<mi>R</mi>
+<mi>E</mi>
+</msub>
+<mo>+</mo><mi>H</mi></mrow>
+</msubsup>
+<mo>=</mo><mi>G</mi><msub>
+<mi>M</mi>
+<mi>E</mi>
+</msub>
+<mi>M</mi><mrow><mo>[</mo> <mrow>
+<mfrac>
+<mn>1</mn>
+<mrow>
+<msub>
+<mi>R</mi>
+<mi>E</mi>
+</msub>
+</mrow>
+</mfrac>
+<mo>&#x2212;</mo><mfrac>
+<mn>1</mn>
+<mrow>
+<msub>
+<mi>R</mi>
+<mi>E</mi>
+</msub>
+<mo>+</mo><mi>H</mi></mrow>
+</mfrac>
+</mrow> <mo>]</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.15</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<img src="../images/page8-5.jpg" alt="images"/>
+</aside>
+<p class="noindent">If the object is only lifted by a small amount by comparison with the radius of the Earth, <i>H</i>&#x226A; <i>R<sub>E</sub></i>, then the binomial expansion (<i>R<sub>E</sub></i>+ <i>H</i>)<sup>&#x2212;1</sup> &#x2248; <i>R<sub>E</sub></i><sup>&#x2212;1</sup>(1&#x2212;<i>H</i>/<i>R<sub>E</sub></i>) leads to the recovery of <a href="#eq1.13">eqn (1.13)</a>: <i>W</i> = <i>MgH</i> where <i>g</i> = G<i>M<sub>E</sub></i>/<i>R<sub>E</sub></i><sup>2</sup>.</p>
+<p class="indent">Finally, let&#x2019;s consider the potential energy stored in a spring. According to <i>Hooke&#x2019;s law</i>, the magnitude of the force <i>F</i> exerted by a spring when it is compressed or extended by a distance <i>x</i> from its &#x2018;natural&#x2019; state is given by:</p>
+<p class="fig1"><i>F</i> = <i>k x</i></p>
+<p class="noindent">where <i>k</i> (Nm <sup>&#x2212;1</sup>) is called the <i>spring constant</i>. The work done in stretching the spring by an amount <i>X</i> is, therefore,</p>
+<figure class="fig1a" id="eq1.16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>W</mi><mo>=</mo><mstyle displaystyle='true'>
+<mrow><munderover>
+<mo>&#x222B;</mo>
+<mrow>
+<mi>x</mi><mo>=</mo><mn>0</mn></mrow>
+<mrow>
+<mi>x</mi><mo>=</mo><mi>X</mi></mrow>
+</munderover>
+<mrow>
+<mi>k</mi><mi>x</mi><mtext>d</mtext><mi>x</mi></mrow>
+</mrow>
+</mstyle><mo>=</mo><msubsup>
+<mrow>
+<mrow><mo>[</mo> <mrow>
+<mi>k</mi><mfrac>
+<mrow>
+<msup>
+<mi>x</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow> <mo>]</mo></mrow></mrow>
+<mn>0</mn>
+<mi>X</mi>
+</msubsup>
+<mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>k</mi><msup>
+<mi>X</mi>
+<mn>2</mn>
+</msup>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.16</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">which is equal to the stored potential energy <i>V</i> (J).</p>
+</section>
+<section epub:type="chapter" id="sec_1.5.3">
+<h3 class="h2">1.5.3<span class="space">&#160;</span>Kinetic energy</h3>
+<p class="noindent">Kinetic energy is the energy associated with motion. Intuitively, we might think that it depends on the mass and speed of an object; but what is the exact relationship?</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page8-6.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">Suppose that a particle of mass <i>M</i> is at a position <b><i>r</i></b> relative to some origin, and is moving with velocity <b><i>v</i></b> along a path from a point 1 (at <b><i>r</i></b><sub>1</sub>) to point 2 (at <b><i>r</i></b><sub>2</sub>). If it is acted upon by a force <b><i>F</i></b>, then Newton&#x2019;s second law of motion in <a href="#eq1.2">eqn (1.2)</a> states that:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>F</mi><mo>=</mo><mi>m</mi><mfrac>
+<mrow>
+<mtext>d</mtext><mi>v</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">By elementary calculus, the small change in the particle&#x2019;s position, d<b><i>r</i></b>, incurred in a tiny time-increment, d<i>t</i>, is given by:</p>
+<p class="fig1">d<b><i>r</i></b> = <b><i>v</i></b> d<i>t</i></p>
+<p class="noindent">Combining the two formulae above to evaluate the work d<i>W</i> done by the force, we obtain:</p>
+<a class="page" id="page_9" style="width:70%;">Page 9, Classical mechanics</a>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>d</mi><mi>W</mi><mo>=</mo><mi>F</mi><mo>&#x00B7;</mo><mtext>d</mtext><mi>r</mi><mo>=</mo><mi>M</mi><mtext>d</mtext><mi>v</mi><mo>&#x00B7;</mo><mi>v</mi><mo>=</mo><mfrac>
+<mi>M</mi>
+<mn>2</mn>
+</mfrac>
+<mi>d</mi><mo stretchy='false'>(</mo><msup>
+<mi>v</mi>
+<mn>2</mn>
+</msup>
+<mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where we have used the result from vector calculus that</p>
+<p class="fig1">d(<i>v</i><sup>2</sup>) = d(<b><i>v</i></b> &#x00B7; <b><i>v</i></b>) = <b><i>v</i></b> &#x00B7; d<b><i>v</i></b> + d<b><i>v</i></b> &#x00B7; <b><i>v</i></b> = 2d<b><i>v</i></b> &#x00B7; <b><i>v</i></b> </p>
+<p class="noindent">Integrating d<i>W</i> above between the end-points 1 and 2, we find that the work done, or the change in the kinetic energy, reduces to:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>W</mi><mo>=</mo><mstyle displaystyle='true'>
+<mrow><munderover>
+<mo>&#x222B;</mo>
+<mn>1</mn>
+<mn>2</mn>
+</munderover>
+<mrow>
+<mi>d</mi><mi>W</mi></mrow>
+</mrow>
+</mstyle><mo>=</mo><mfrac>
+<mi>M</mi>
+<mn>2</mn>
+</mfrac>
+<mstyle displaystyle='true'>
+<mrow><munderover>
+<mo>&#x222B;</mo>
+<mn>1</mn>
+<mn>2</mn>
+</munderover>
+<mrow>
+<mtext>d</mtext><mo stretchy='false'>(</mo><msup>
+<mi>v</mi>
+<mn>2</mn>
+</msup>
+<mo stretchy='false'>)</mo></mrow>
+</mrow>
+</mstyle><mo>=</mo><mfrac>
+<mi>M</mi>
+<mn>2</mn>
+</mfrac>
+<msubsup>
+<mrow>
+<mrow><mo>[</mo> <mrow>
+<msup>
+<mi>v</mi>
+<mn>2</mn>
+</msup>
+</mrow> <mo>]</mo></mrow></mrow>
+<mn>1</mn>
+<mn>2</mn>
+</msubsup>
+<mo>=</mo><mfrac>
+<mi>M</mi>
+<mn>2</mn>
+</mfrac>
+<mrow><mo>[</mo> <mrow>
+<msub>
+<mi>v</mi>
+<mn>2</mn>
+</msub>
+<msup>
+<mrow></mrow>
+<mn>2</mn>
+</msup>
+<mo>&#x2212;</mo><msub>
+<mi>v</mi>
+<mn>1</mn>
+</msub>
+<msup>
+<mrow></mrow>
+<mn>1</mn>
+</msup>
+</mrow> <mo>]</mo></mrow></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">This difference formula leads us to deduce that the kinetic energy (in Joules) of mass <i>M</i> (kg) moving at a speed <i>v</i> (m s<sup>&#x2212;1</sup>) is:</p>
+<figure class="fig1a" id="eq1.17">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>K</mi><mi>E</mi><mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>M</mi><msup>
+<mi>v</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mfrac>
+<mrow>
+<msup>
+<mi>p</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mrow>
+<mn>2</mn><mi>M</mi></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.17</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where <b><i>p</i></b> =<i>M<b>v</b></i> is the linear momentum, so that <i>p</i><sup>2</sup> = <b><i>p</i></b>&#x00B7;<b><i>p</i></b> ==<i>M</i><sup>2</sup><i>v</i><sup>2</sup>.</p>
+</section>
+<section epub:type="chapter" id="sec_1.5.4">
+<h3 class="h2">1.5.4<span class="space">&#160;</span>Conservation of energy</h3>
+<p class="noindent">One of the most useful devices in Physics for carrying out quantitative calculations are &#x2018;conservation laws&#x2019;. We met an example of this in <a href="#sec_1.4">section 1.4</a>, the conservation of linear momentum, which was derived from Newton&#x2019;s second and third laws of motion. Perhaps the most fundamental of all such rules, or assumptions based on experience, is that of the conservation of energy: <i>Energy may be transformed from one form to another, but it cannot be created or destroyed</i>. In other words, the total energy of a system is constant.</p>
+<p class="indent">Let&#x2019;s consider a specific but simple case: an object of mass <i>M</i> falling under gravity <i>g</i>, close to the ground, starting from rest at height <i>H</i>. Calling the upwards displacement <i>y</i>, and following <a href="#eq1.4">eqns (1.4)</a> and <a href="#eq1.5">(1.5)</a> with <i>u<sub>y</sub></i>=0, we have:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>y</mi><mo>=</mo><mi>H</mi><mo>&#x2212;</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>g</mi><msup>
+<mi>t</mi>
+<mn>2</mn>
+</msup>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>a</mi><mi>n</mi><mi>d</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mfrac>
+<mrow>
+<mtext>d</mtext><mi>y</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+<mo>=</mo><mi>v</mi><mo>=</mo><mo>&#x2212;</mo><mi>g</mi><mi>t</mi></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">Thus the sum of the potential and kinetic energies, at a time <i>t</i>, between 0 and, <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <msqrt>
+    <mrow>
+     <mn>2</mn><mtext>&#x200B;</mtext><mtext>H/g</mtext>
+    </mrow>
+   </msqrt>
+   
+  </mrow>
+  </semantics>
+</math>
+ is given by:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mtext>Total</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>energy=PE+KE=</mtext><mi>M</mi><mi>g</mi><mi>y</mi><mtext>+</mtext><mfrac>
+<mtext>1</mtext>
+<mn>2</mn>
+</mfrac>
+<mi>M</mi><msup>
+<mi>v</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mi>M</mi><mi>g</mi><mi>H</mi></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:3em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page9-6.jpg" alt="images"/>
+</figure>
+</aside>
+
+<p class="noindent">Hence the total energy of the object is constant during its drop, and equal to the initial PEof <i>MgH</i>; as the height decreases, so too does the PE but with an equivalent gain of KE. What happens once the ground is struck depends on the material (and mechanical) properties of the object and the ground. In one extreme, the collision could be perfectly &#x2018;elastic&#x2019;, so that the object begins to rise upwards towards its starting point, thereby losing KE and gaining PE; having reached the pinnacle, it will then begin to drop again and the whole cycle will continue to repeat itself. An equally ideal, but opposite, situation is that of putty, which will simply stick to the ground on impact. Since the <a class="page" id="page_10">Page 10, Classical mechanics</a>object will have lost PE, and no longer have any KE, the apparent energy deficit will have dissipated in the form of <i>internal energy</i> by which the ground and the object will have heated up (slightly). Usually an intermediate behaviour is observed, consisting of a series of bounces of decreasing height, so that a certain fraction of the KE is converted to internal energy upon impact.</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 1.1</b> A nucleus A of mass 2<i>m</i>, travelling with velocity <i>u</i>, collides with a stationary nucleus B of mass 10<i>m</i>. The collision is inelastic. After the collision nucleus A is observed to be travelling with a speed <i>v</i><sub>1</sub> at 90&#x00B0; to its original direction of motion, and B is travelling with speed <i>v</i><sub>2</sub> at angle <i>&#x03B8;</i> (sin<i>&#x03B8;</i> = 3/5) to the original direction of motion of A.</p>
+<p class="noindent2">(a) in terms of <i>u</i>, what are the magnitudes of <i>v</i><sub>1</sub> and <i>v</i><sub>2</sub>?</p>
+<p class="noindent2">(b) What fraction of the initial kinetic energy is gained or lost as a result of the interaction?</p>
+</aside>
+<p class="indent">While the total energy of an isolated system is always conserved, to the extent that Einstein showed that even changes of mass in nuclear reactions were to be regarded as a form of energy according to the formula <i>E=Mc</i><sup>2</sup> where <i>c</i> is the speed of light, 3&#x00D7;l0<sup>8</sup>m s<sup>&#x2212;l</sup>), there is often special interest in its KE. This is especially true in collision phenomena, where the term <i>elastic</i> is used to denote the conservation of KE. If the interaction of <a href="#eq1.10">eqn (1.10)</a> was elastic, for example, then the velocities would also satisfy the constraint:</p>
+<p class="fig1"><i>m</i><sub>1</sub><i>u</i><sub>1</sub><sup>2</sup> + <i>m</i><sub>2</sub><i>u</i><sub>2</sub><sup>2</sup> = <i>m</i><sub>1</sub><i>v</i><sub>1</sub><sup>2</sup> + <i>m</i><sub>2</sub><i>v</i><sub>2</sub><sup>2</sup></p>
+<p class="noindent">Where <i>u</i><sub>1</sub><sup>2</sup> <b>=<i>u</i></b><sub>1</sub>&#x00B7; <b><i>u</i></b><sub>1</sub>, <i>v</i><sub>1</sub><sup>2</sup> <b>=<i>v</i></b><sub>1</sub>&#x00B7; <b><i>v</i></b><sub>1</sub>, and so on, are scalars just like energy. The case where the two particles stick together is said to be completely <i>inelastic</i>. The intermediate situation can be specified by giving the <i>coefficient of restitution</i>, which is minus the ratio of the relative velocities perpendicular to the plane of contact after the collision to that before the impact: </p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>&#x03B5;</mi><mo>=</mo><mo>&#x2212;</mo><mfrac>
+<mrow>
+<mo stretchy='false'>(</mo><msub>
+<mi>v</mi>
+<mn>2</mn>
+</msub>
+<mo>&#x2212;</mo><msub>
+<mi>v</mi>
+<mn>1</mn>
+</msub>
+<mo stretchy='false'>)</mo><mo>&#x22A5;</mo></mrow>
+<mrow>
+<mo stretchy='false'>(</mo><msub>
+<mi>u</mi>
+<mn>2</mn>
+</msub>
+<mo>&#x2212;</mo><msub>
+<mi>u</mi>
+<mn>1</mn>
+</msub>
+<mo stretchy='false'>)</mo><mo>&#x22A5;</mo></mrow>
+</mfrac>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">An elastic collision corresponds to <i>&#x03B5;</i> = 1, and a fully inelastic one has <i>&#x03B5;</i> = 0; different degrees of inelasticity are then covered by the range 0 &#x003C; <i>&#x03B5;</i> &#x003C; 1.</p>
+<p class="indent">The universal nature of the law of conservation of energy can be seen from the fact that it appears in several different guises in science. For example, the first law of Thermodynamics, and the Born-Haber and Hess cycles in Chemistry, are nothing more than restatements of this principle.</p>
+</section>
+<section epub:type="chapter" id="sec_1.5.5">
+<h3 class="h2">1.5.5<span class="space">&#160;</span>Power</h3>
+<p class="noindent">Although the concept of energy tells us how much work is, or can be done, it gives us no indication of how quickly the relevant task is performed. This temporal aspect is encapsulated by the term <i>power</i>, which is defined to be &#x201C;the rate of doing work&#x201D;. In calculus notation, then,</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>P</mi><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo><mfrac>
+<mrow>
+<mi>d</mi><mi>W</mi></mrow>
+<mrow>
+<mi>d</mi><mi>t</mi></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>and</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>W</mi><mo>=</mo><mstyle displaystyle='true'>
+<mrow><munderover>
+<mo>&#x222B;</mo>
+<mrow>
+<msub>
+<mi>t</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+<mrow>
+<msub>
+<mi>t</mi>
+<mn>2</mn>
+</msub>
+</mrow>
+</munderover>
+<mrow>
+<mi>P</mi><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo><mtext>d</mtext><mi>t</mi></mrow>
+</mrow>
+</mstyle></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where power is the derivative of the work done with respect to time, and conversely, the work done (between two times, <i>t</i><sub>1</sub> and <i>t</i><sub>2</sub>) is the integral of the power. The average power is simply the total work done divided by the duration of the exercise. The standard unit of power is Watts (W), which is equivalent to Joules per second (Js<sup>&#x2212;1</sup>). A measure familiar from car specifications is &#x2018;horsepower&#x2019; where 1 hp= 746 W. We note that the most common everyday unit of energy is a <i>calorie</i> (Cal), frequently misused for k Cal (or 1000 Cal), and is approximately equal to 4.2 J; 1 Cal is formally defined as the energy required to raise the temperature of lcm<sup>3</sup> of water by 1&#x00B0;C.</p>
+<a class="page" id="page_11" style="width:70%;">Page 11, Classical mechanics</a>
+</section>
+</section>
+<section epub:type="chapter" id="sec_1.6">
+<h2 class="h2">1.6<span class="space">&#160;</span>Fields, potentials and stability</h2>
+<p class="noindent">In <a href="#eq1.14">eqn (1.14)</a>, we encountered Newton&#x2019;s law of gravitation. It is an example of an &#x2018;action-at-a-distance&#x2019; force, since there is no apparent contact between the two bodies that are being attracted towards each other. In such contexts, it can be useful to introduce the concept of the &#x2018;<i>field</i> of a force&#x2019;. The idea is probably familiar, as the pattern made by iron-filings scattered on a piece of paper above a bar magnet gives a visual indication of the lines of the magnetic field. A small object, which is susceptible to the effects of magnetism, will move along the field lines when placed in the vicinity of the bar magnet.</p>
+<p class="indent">There is, of course, a close link between a field and a force; it is essentially one of normalisation, or scaling. That is to say, a gravitational field <i>g</i> is defined to be the force per unit mass (N kg<sup>&#x2212;1</sup>) experienced by an object:</p>
+<p class="fig1a" id="eq1.18"><b><i>g</i></b> = <b><i>F</i></b> / <i>M</i>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(1.18)</p>
+<p class="noindent">and an electric field <b><i>E</i></b> is the force per unit charge (<i>Q</i>):</p>
+<p class="fig1a" id="eq1.19"><b><i>E</i></b> = <b><i>F</i></b> / <i>Q</i>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(1.19)</p>
+<p class="noindent">which is measured in Newtons per Coulomb (NC<sup>&#x2212;1</sup>). Combining <a href="#eq1.14">eqns (1.14)</a> and <a href="#eq1.18">(1.18)</a>, we find that the field due to a body of mass <i>M</i><sub>1</sub> is given by:</p>
+<figure class="fig1a" id="eq1.20">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>g</mi><mo>=</mo><mo>&#x2212;</mo><mfrac>
+<mrow>
+<mi>G</mi><msub>
+<mi>M</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+<mrow>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+<mfrac>
+<mi>r</mi>
+<mi>r</mi>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo>
+<mrow>
+<mn>1.20</mn></mrow>
+<mo>)</mo></mrow></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where the vector <b><i>r</i></b> is a displacement relative to the origin at the centre of <i>M</i><sub>1</sub> and <i>r</i> = | <b><i>r</i></b> |; the negative sign indicates that the force is attractive, being directed towards <i>M</i><sub>1</sub>.</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 1.2</b> The equatorial and polar radii of the earth are 6378 km and 6357 km respectively. Calculate the difference in gravitational field strengths at the pole and the equator. The mass of the earth is 6 &#x00D7; 10<sup>24</sup> kg.</p>
+</aside>
+<p class="indent">Just as it is sometimes useful to think in terms of a field rather than a force, so too is there an analogous (scalar) quantity for the potential energy: namely, the <i>potential</i>, or the PE per unit mass (J&#x00B7;kg<sup>&#x2212;1</sup>), or unit charge (J C<sup>&#x2212;1</sup>), for example. The gravitational potential <i>&#x00F8;</i> corresponding to the field in <a href="#eq1.20">eqn (1.20)</a> can be ascertained from <a href="#eq1.15">eqn (1.15)</a>, with a bit of thought, as being:</p>
+<p class="fig1a" id="eq1.21"><i>&#x00F8;</i> = &#x2212;G <i>M</i><sub>1</sub>/<i>r</i><span class="space">&#160;</span><span class="space">&#160;</span>(1.21) </p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page11-2.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">If the negative sign seems strange, then it can be understood in the following way: suppose that <i>M</i><sub>1</sub> corresponds to the mass of the Earth, so that the potential energy <i>V</i> of an object of mass <i>M</i><sub>2</sub> at a distance <i>H</i> above the ground at <i>r</i> = <i>R<sub>E</sub></i> is given by:</p>
+<p class="fig1"><i>V</i> = <i>&#x00F8;M</i><sub>2</sub> = &#x2212; G <i>M</i><sub>1</sub><i>M</i><sub>2</sub>/(<i>R<sub>E</sub></i> +<i> H</i>)</p>
+<p class="noindent">This makes sense because the PE when <i>H</i> ? 8 is much greater than when <i>H</i>?0; it is simply that <i>V</i>, or <i>&#x00F8;</i>, is defined to be zero at infinite separation, so that it must be negative for all finite values of <i>r</i>.</p>
+<p class="indent">Apart from the complication that the field is a vector quantity and a potential is a scalar one, <b><i>g</i></b> in <a href="#eq1.20">eqn (1.20)</a> resembles the derivative of <i>&#x00F8;</i> in <a href="#eq1.21">eqn (1.21)</a> because d/d<i>r</i> (1/<i>r</i>) = &#x2212;1/<i>r</i><sup>2</sup>. The formal relationship turns out to be:</p>
+<p class="fig1a" id="eq1.22"><b><i>g</i></b> = &#x2212;&#x2207;<i>&#x00F8;</i>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(1.22)</p>
+<a class="page" id="page_12" style="width:70%;">Page 12, Classical mechanics</a>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page12-1.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">where &#x2207; a &#x2018;vector differential operator&#x2019;. For a 1-dimensional problem, with a horizontal co-ordinate <i>r</i>, <a href="#eq1.22">eqn (1.22)</a> reduces to <i>g</i> = &#x2212;d<i>&#x00F8;</i>/d<i>r</i>. In 2 dimensions, it becomes <b><i>g</i></b> = (<i>g<sub>r</sub></i>, <i>g</i><i>&#x03B8;</i>) = (&#x2202;<i>&#x00F8;</i>/&#x2202;<i>r</i>, 1/<i>r</i> &#x2202;&#x00F8;/&#x2202;<i>&#x03B8;</i>) in (<i>r</i>, <i>&#x03B8;</i>) polar co-ordinates and <b><i>g</i></b> = (<i>g<sub>x</sub></i>, <i>g</i><sub>y</sub>) = (&#x2202;&#x00F8;/&#x2202; <i>x</i>, &#x2202; &#x00F8;/&#x2202;<i>y</i>) in (<i>x,y</i>) Cartesian co-ordinates. The symbol &#x2202; represents a <i>partial derivative</i>, so that &#x2202;&#x00F8;/&#x2202; <i>r</i> is the derivative of &#x00F8; with respect to <i>r</i> with <i>&#x03B8;</i> treated as a constant; and so on. Rather than extending the formulae for &#x2207;<i>&#x00F8;</i> higher dimensions, we can obtain a physical interpretation of the gradient vector by considering the contours of constant <i>&#x00F8;</i>, or &#x2018;equipotentials&#x2019;, and the field lines. According to <a href="#eq1.21">eqn (1.21)</a>, <i>&#x00F8;</i> depends only on the distance from the centre of <i>M<sub>1</sub></i>, hence the lines of constant <i>&#x00F8;</i> are concentric circles. The direction of &#x2207;<i>&#x00F8;</i> indicates the way in which <i>&#x00F8;</i> increases most rapidly, and its magnitude tells us how quickly it does so. Thus the gradient vector points radially outwards, and is at 90&#x00B0; to the equipotentials. The field lines face inwards, being equal to &#x2212;&#x2207;<i>&#x00F8;</i>, marking the attractive nature of the gravitational force.</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<p class="noindent2">Hess&#x2019;s law is a direct consequence of the fact that enthalpy and entropy are both state functions.</p>
+</aside>
+<p class="indent">The differential relationship between the potential and the field in <a href="#eq1.22">eqn (1.22)</a>, or equivalently the potential energy and the force, holds generally, and has a special significance in terms of the conservation of energy. If the field can be expressed as the vector derivative of a scalar function (the potential) then the related force will be &#x2018;conservative&#x2019;. That is to say, if we do a certain amount of work in moving an object from position A to B, then we will recover the same quantity of energy from the field if the force is allowed to return the object from B back to A: there is no loss of energy to heat, say, as there would be in a frictional system for example. The relevant mathematics required to show this result is essentially the same as that needed to verify an &#x2018;exact differential&#x2019;, and associate a corresponding &#x2018;state function&#x2019;, in Chemistry. In other words, the integral of <b><i>F</i></b> &#x00B7;d<b><i>r</i></b> from A to B is independent of the route taken, or equivalently,</p>
+<p class="fig1a" id="eq1.23">&#x222E; <b><i>F</i></b> &#x00B7; d<b><i>r</i></b> = 0 &#x00A0;&#x00A0;&#x00A0;&#x00A0;(1.23)</p>
+<p class="noindent">where &#x222E; is called a &#x2018;loop integral&#x2019;, and represents an integral around any closed path.</p>
+<p class="indent">The final topic we need to discuss in this section is that of &#x2018;stability&#x2019;. Suppose that a particle exists in a certain potential <i>&#x00F8;</i> (<i>r</i>), where we will make the problem 1-dimensional for simplicity. Are there any locations, or values of <i>r</i>, where it can remain at rest? According to Newton&#x2019;s first law of motion, this can only happen if the net force is zero. Following <a href="#eq1.22">eqn (1.22)</a>, therefore, we need d<i>&#x00F8;</i>/d<i>r</i> = 0, or the stationary points of the potential. If the latter is a minimum, so that d<sup>2</sup><i>&#x00F8;</i>/d<i>r</i><sup>2</sup> &#x003E; 0 when d<i>&#x00F8;</i>/d<i>r</i> = 0, then it is called a point of <i>stable equilibrium</i>: the particle moves back towards the stationary value of <i>r</i>if it is given a small nudge. Conversely, any perturbation will be amplified if d<sup>2</sup><i>&#x00F8;</i>/d<i>r</i><sup>2</sup> &#x003C; 0 because such a maximum is a point of <i>unstable equilibrium</i>. The case when d<sup>2</sup><i>&#x00F8;</i>/d<i>r</i><sup>2</sup> = 0, and d<i>&#x00F8;</i>/d<i>r</i> = 0, is not so straightforward, and needs to be considered carefully on an individual basis.</p>
+<aside class="abc" style="margin-top:-9.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page12-2.jpg" alt="images"/>
+</figure>
+</aside>
+<a class="page" id="page_13" style="width:70%;">Page 13, Classical mechanics</a>
+</section>
+<section epub:type="chapter" id="sec_1.7">
+<h2 class="h2">1.7<span class="space">&#160;</span>Angular motion</h2>
+<p class="noindent">Perhaps the simplest and most common form of non-straightline motion is one that follows a circular curve. The orbits of the planets around the sun, or the moon around the Earth, for example, are very nearly circular (although more generally elliptical); and the Bohr model of an atom had the electrons moving around the nucleus along circular paths. In this section, therefore, we will consider the special case of rotational, or angular, motion.</p>
+<section epub:type="chapter" id="sec_1.7.1">
+<h3 class="h2">1.7.1<span class="space">&#160;</span>Centripetal forces</h3>
+<p class="noindent">According to Newton&#x2019;s first law of motion, any deviation from travel in a straight line is indicative of a net external force. In particular, circular motion requires a centrally acting, or <i>centripetal</i>, force that continually pulls the orbiting body towards a focal, or pivotal, point. In an astronomical setting, this is provided by gravity; and in the Bohr model, by the electrostatic attraction between the negatively charged electrons and the positive nucleus.</p>
+<p class="indent">As children we have all spun a bucket, or some other object, tied to our hand with a piece of string. The centripetal force here is provided by tension in the string. Our hand, however, feels an outwards tug; but this is nothing more than Newton&#x2019;s third law of motion in action.</p>
+</section>
+<section epub:type="chapter" id="sec_1.7.2">
+<h3 class="h2">1.7.2<span class="space">&#160;</span>Angular velocity and acceleration</h3>
+<p class="noindent">For simplicity, let us restrict ourselves to the case of circular motion at a constant speed. This can be specified in rotations, or cycles per second, and is known as the <i>angular frequency</i>; it is denoted by the symbol <i>f</i> and measured in Hertz (Hz). An alternative way of giving the angular frequency is in terms of radians per second (rad s<sup>&#x2212;1</sup>), where a radian is a dimensionless unit of angle; the latter is formally defined to be the ratio of the length of arc <i>l</i> subtended by an angle <i>&#x03B8;</i> at a radial distance <i>r</i>, <i>&#x03B8;</i> =<i>l</i>/<i>r</i>, so that there are 2&#x03C0; radians in one complete turn (or 360&#x00B0;). Hence, the angular frequency in Hertz, <i> f</i>, can be converted into radians per second, <i>&#x03C9;</i>, through &#x03C9; =2&#x03C0;<i>f</i>.</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page13-1.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">However, usually we measure the speed <i>v</i> of an object in metres per second; how is this related to <i>f</i> or &#x03C9;? Well, <i>v</i> is the actual distance travelled, or the arc length <i>l</i>, divided by the time taken <i>t</i>. Thus, we have <i>v</i> = <i>l</i>/<i>t</i> and <i>l</i> = <i>r</i><i>&#x03B8;</i> (with <i>&#x03B8;</i> rads), giving:</p>
+<p class="fig1a" id="eq1.24"><i>v</i> = <i>r</i> <i>&#x03B8;</i>/<i>t</i> = <i>&#x03C9;</i> <i>r</i> &#x00A0;&#x00A0;&#x00A0;&#x00A0;(1.24)</p>
+<p class="noindent">where <i>&#x03C9;</i> = <i>&#x03B8;</i>/<i>t</i> (rads s<sup>&#x2212;1</sup>). As we have seen several times in this chapter, many of the formulae learnt at secondary school are special cases of more general vector relationships. This is also true of <a href="#eq1.24">eqn (1.24)</a>, which should read:</p>
+<p class="fig1a" id="eq1.25"><b><i>v</i></b> = <i>&#x03C9;</i> &#x00D7; <b><i>r</i></b>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(1.25)</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page13-2.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">so that the velocity <i>v</i> is equal to the <i>cross</i>, or <i>vector, product</i> of the angular frequency and the displacement vectors, <i>&#x03C9;</i> and <b><i>r</i></b>, respectively. The cross product is another way of multiplying two vectors, <b><i>a</i></b> and <b><i>b</i></b>, alluded to in <a href="#sec_1.2.1">section 1.2.1</a>; unlike the dot product of <a href="#sec_1.5.1">section 1.5.1</a>, which results in a scalar quantity, this yields a vector. The magnitude of <b><i>a</i></b> &#x00D7; <b><i>b</i></b> is |<b><i>a</i></b> | |<b><i>b</i></b> | sin<i>&#x00F8;</i>, where <i>&#x00F8;</i>is the angle between <b><i>a</i></b> and <b><i>b</i></b>, and its direction is perpendicular to both vectors and is given by the &#x2018;right-hand screw&#x2019; rule. That is to say, if the curl of the fingers on our right hand matches the sense of rotation needed to go from <b><i>a</i></b> to <a class="page" id="page_14">Page 14, Classical mechanics</a><b><i>b</i></b>, then the out-stretched thumb indicates the direction of <b><i>a</i></b> &#x00D7; <b><i>b</i></b>. It&#x2019;s not too difficult to see that the cross product is not commutative in that <b><i>a</i></b> &#x00D7; <b><i>b</i></b> = &#x2212; <b><i>b</i></b> &#x00D7; <b><i>a</i></b>. The angular frequency vector is also defined in terms of the right- hand screw rule, in that <i>&#x03C9;</i> lies along the axis of rotation.</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page14-5.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">The acceleration, <b><i>a</i></b> = d<b><i>v</i></b>/d<i>t</i>, of the orbiting body can be ascertained by differentiating <a href="#eq1.25">eqn (1.25)</a> with respect to time:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mfrac>
+<mrow>
+<mtext>d</mtext><mi>v</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+<mo>=</mo><mi>w</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>X</mtext><mtext>&#x2009;</mtext><mfrac>
+<mrow>
+<mtext>d</mtext><mi>r</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where we have used the fact that a constant angular speed implies that d<i>&#x03C9;</i>/d <i>t</i> = 0, otherwise there would be an additional term, d<i>&#x03C9;</i>/d<i>t</i>&#x00D7;<b><i>r</i></b>, on the right-hand side. Since the change in the displacement vector d<b><i>r</i></b> in an infinitesimal time-interval d<i>t</i> is tangential to the circular orbit, <i>&#x03C9;</i>&#x00D7;d<b><i>r</i></b> /d<i>t</i> points radially inwards; hence, the acceleration is centripetal. Also, as <i>&#x03C9;</i> and d<b><i>r</i></b>/d<i>t</i> are perpendicular to each other (<i>&#x00F8;</i> = 90&#x00B0;), the magnitude of the acceleration reduces to | <i>&#x03C9;</i>| | d<b><i>r</i></b> /d<i>t</i> |; the former is just <i>&#x03C9;</i>, and the latter is d<i>l</i> /d<i>t</i> in the limit d<i>t</i>&#x2192;0. Substituting <i>l</i> = <b><i>r</i></b><i>&#x03B8;</i>, and using d<i>&#x03B8;</i>/d<i>t</i> = <i>&#x03C9;</i>, we find that:</p>
+<figure class="fig1a" id="eq1.26">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>a</mi><mo>=</mo><mi>w</mi><mi>r</mi><mfrac>
+<mrow>
+<mtext>d</mtext><mi>&#x03B8;</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+<mo>=</mo><msup>
+<mi>w</mi>
+<mn>2</mn>
+</msup>
+<mi>r</mi><mo>=</mo><mfrac>
+<mrow>
+<msup>
+<mi>v</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mi>r</mi>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.26</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where we have substituted <i>&#x03C9;</i> = <i>v</i>/<b><i>r</i></b> from <a href="#eq1.24">eqn (1.24)</a> to obtain the result on the far right.</p>
+<p class="indent">As a simple example of the use of <a href="#eq1.26">eqn (1.26)</a> let&#x2019;s estimate the mass of the Earth <i>M<sub>E</sub></i>. If we apply Newton&#x2019;s second law of motion (centripetaily) to our orbiting moon, then we obtain:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mfrac>
+<mrow>
+<mi>G</mi><msub>
+<mi>M</mi>
+<mi>E</mi>
+</msub>
+<msub>
+<mi>M</mi>
+<mi>m</mi>
+</msub>
+</mrow>
+<mrow>
+<msup>
+<mi>R</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+<mo>=</mo><msub>
+<mi>M</mi>
+<mi>m</mi>
+</msub>
+<msup>
+<mi>w</mi>
+<mn>2</mn>
+</msup>
+<mi>R</mi></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where the force on the left-hand side comes from <a href="#eq1.14">eqn (1.14)</a>, with <i>M<sub>m</sub></i> being the mass of the moon and <i>R</i> its distance to Earth (&#x2248; a quarter of a million miles), and the acceleration on the right is from <a href="#eq1.26">eqn (1.26)</a>. Cancelling out the <i>M<sub>m</sub></i> terms and putting <i>&#x03C9;</i> = 2&#x03C0;/<i>T</i>, where <i>T</i> is the time taken by the moon to go once around the Earth (about a month), we find that:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<msub>
+<mi>M</mi>
+<mi>E</mi>
+</msub>
+<mo>=</mo><mfrac>
+<mrow>
+<mn>4</mn><mi>&#x03C0;</mi><msup>
+<mi>R</mi>
+<mn>3</mn>
+</msup>
+</mrow>
+<mrow>
+<mi>G</mi><msup>
+<mi>T</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+<mo>&#x2248;</mo><mn>6</mn><mi>x</mi><mn>1</mn><msup>
+<mn>0</mn>
+<mrow>
+<mn>2</mn><mn>4</mn></mrow>
+</msup>
+<mtext>kg</mtext></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">with the Universal gravitational constant G = 6.672 x 10<sup>&#x2212;11</sup> Nm<sup>2</sup> kg<sup>&#x2212;2</sup>, and <i>R</i> and <i>T</i> substituted in metres and seconds respectively.</p>
+</section>
+<section epub:type="chapter" id="sec_1.7.3">
+<h3 class="h2">1.7.3<span class="space">&#160;</span>Rigid body rotation</h3>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page14-6.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">Suppose we have a solid object with a fixed spindle through it; how do we make it spin? Well, by applying a &#x2018;turning-force&#x2019; to it! In terms of a simple linear force, <b><i>F</i></b>, we give the rigid body a push some distance away from the axis of rotation; if the latter displacement is denoted by <b><i>r</i></b>, then the turning- force vector, or <i>torque</i>,<b><i>G</i></b>, is defined as:</p>
+<p class="fig1a" id="eq1.27"><b><i>G</i></b> = <b><i>r</i></b> &#x00D7; <b><i>F</i></b>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(1.27)</p>
+<p class="noindent">This makes sense because the body spins more quickly as the magnitude of <b><i>F</i></b> increases, or as the perpendicular distance to its line-of-action from the axis <a class="page" id="page_15">Page 15, Classical mechanics</a>of rotation is made larger; in particular, no rotation is induced if we push through the spindle. The torque is also referred to as the &#x2018;moment of the force&#x2019;, and is measured in Newton metres (Nm).</p>
+<p class="indent">When trying to turn something, such as a water-tap handle, we often do so by pushing in opposite directions on either side of the spindle. If the magnitude of the two anti-parallel forces is the same, <b><i>F</i></b>, and the separation between them is <i>d</i>, then the resultant moment of this &#x2018;couple&#x2019; (as it is known) is <i>F d</i> (Nm). This is easily derived from the addition law for vectors, whereby</p>
+<p class="fig1"><b><i>G</i></b> = <b><i>G</i></b><sub>1</sub> + <b><i>G</i></b><sub>2</sub> = <b><i>r</i></b><sub>1</sub>&#x00D7; <b><i>F</i></b><sub>1</sub> + <b><i>r</i></b><sub>2</sub>&#x00D7; <b><i>F</i></b><sub>2</sub></p>
+<p class="indent">We can always think of a rigid body as being made up of a collection of many tiny particles, and apply Newton&#x2019;s second law of motion to each one of them. If the <i>j<sup>th</sup></i> one of them has a mass <i>m<sub>j</sub></i> and rotates about the axis of the spindle with angular frequency <i>&#x03C9;</i> (the same for everything in the solid object) at a radial distance <i>r<sub>j</sub></i>, then we have:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<msub>
+<mi>F</mi>
+<mi>j</mi>
+</msub>
+<mo>=</mo><msub>
+<mi>m</mi>
+<mi>j</mi>
+</msub>
+<mfrac>
+<mrow>
+<mtext>d</mtext><mi>w</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+<msub>
+<mi>r</mi>
+<mi>j</mi>
+</msub>
+</mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page15-5.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">where <i>F<sub>j</sub></i> is the tangential component of the external force on the <i>j<sup>th</sup></i> particle, and we have used the fact that the related acceleration is <i>r</i><sub>j</sub>d<i>&#x03C9;</i>/d<i>t</i> from <a href="#sec_1.7.2">section 1.7.2</a>; the latter term, giving the tangential acceleration, was ignored earlier when considering uniform circular motion (<i>&#x03C9;</i> = constant), whereas now it is the <i>&#x03C9;</i> d<i>r</i><sub>j</sub>/d<i>t</i> contribution that is zero (<i>r<sub>j</sub></i> is fixed). Multiplying the expression above by <i>r<sub>j</sub></i>, and summing over all the particles, we find that the net torque is given by:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>G</mi><mo>=</mo><mstyle displaystyle='true'>
+<munder>
+<mo>&#x2211;</mo>
+<mi>j</mi>
+</munder>
+<mrow>
+<msub>
+<mi>G</mi>
+<mi>j</mi>
+</msub>
+</mrow>
+</mstyle><mo>=</mo><mstyle displaystyle='true'>
+<munder>
+<mo>&#x2211;</mo>
+<mi>j</mi>
+</munder>
+<mrow>
+<msub>
+<mi>r</mi>
+<mi>j</mi>
+</msub>
+</mrow>
+</mstyle><msub>
+<mi>F</mi>
+<mi>j</mi>
+</msub>
+<mo>=</mo><mfrac>
+<mrow>
+<mtext>d</mtext><mi>w</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+<mstyle displaystyle='true'>
+<munder>
+<mo>&#x2211;</mo>
+<mi>j</mi>
+</munder>
+<mrow>
+<msub>
+<mi>m</mi>
+<mi>j</mi>
+</msub>
+</mrow>
+</mstyle><msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<msub>
+<mrow></mrow>
+<mi>j</mi>
+</msub>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">Although we have used a particularly simple setup to arrive at this formula, it lends support to the more general vector result that:</p>
+<figure class="fig1a" id="eq1.28">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>G</mi><mo>=</mo><mi>I</mi><mfrac>
+<mrow>
+<mtext>d</mtext><mi>w</mi></mrow>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.28</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where the scalar <i>I</i> is called the <i>moment of inertia</i>, and is defined by :</p>
+<figure class="fig1a" id="eq1.29">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mi>I</mi><mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><munder>
+        <mi>&#x03A3;</mi>
+        <mi>j</mi>
+       </munder>
+       <mtext>&#x2009;</mtext><msub>
+        <mi>m</mi>
+        <mi>j</mi>
+       </msub>
+       <mtext>&#x2009;</mtext><msubsup>
+        <mi>r</mi>
+        <mi>j</mi>
+        <mn>2</mn>
+       </msubsup>
+       <mtext>&#x2009;</mtext><mo>=</mo><mtext>&#x2009;</mtext><munder>
+        <mrow>
+         <mo>&#x222B;</mo><mo>&#x222B;</mo><mo>&#x222B;</mo>
+        </mrow>
+        <mrow>
+         <mi>s</mi><mi>o</mi><mi>l</mi><mi>i</mi><mi>d</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>o</mi><mi>b</mi><mi>j</mi><mi>e</mi><mi>c</mi><mi>t</mi>
+        </mrow>
+       </munder>
+       <mtext>&#x2009;</mtext><mi>&#x03C1;</mi><mo stretchy='false'>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy='false'>)</mo><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><msup>
+        <mi>x</mi>
+        <mn>2</mn>
+       </msup>
+       <mtext>&#x2009;</mtext><mo>+</mo><mtext>&#x2009;</mtext><msup>
+        <mi>y</mi>
+        <mn>2</mn>
+       </msup>
+       <mo stretchy='false'>)</mo><mtext>&#x2009;</mtext><mtext>d</mtext><mi>x</mi><mtext>&#x2009;</mtext><mtext>d</mtext><mi>y</mi><mtext>&#x2009;</mtext><mtext>d</mtext><mi>z</mi>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mrow>
+       <mo stretchy='false'>(</mo><mn>1.29</mn><mo stretchy='false'>)</mo>
+      </mrow>
+     </mtd>
+    </mtr>
+    
+   </mtable>
+  </mrow>
+ </semantics>
+</math>
+
+
+</figure>
+<p class="noindent">with the axis of rotation being along <i>z</i> and passing through the origin (0,0,0), and <i>&#x03C1;</i> is the density of the rigid body (kg m<sup>&#x2212;3</sup>) as a function of position. Since <i>&#x03C1;</i> is normally just a constant, and the solid object usually has a lot of symmetry, the triple integral of <a href="#eq1.29">eqn (1.29)</a> can often be reduced to a more familiar 1-dimensional one (as a function of the radial distance <i>r</i>).</p>
+<p class="indent">As suggested by <a href="#eq1.28">eqn (1.28)</a>, there is an analogy between the formulae for linear and rotational motion: a force is replaced by a torque, mass with the moment of inertia, and linear velocity with its angular counterpart. Thus, <a href="#eq1.28">eqn (1.28)</a> is the rotational equivalent of Newton&#x2019;s second law of motion. Similarly, the <i>angular momentum</i> <b><i>L</i></b>, which is defined to be the moment of the linear momentum <b><i>r</i></b><i><sub>j</sub></i> &#x00D7; (<i>m<sub>j</sub></i> <b><i>v</i></b><i><sub>j</sub></i>) for a particle <i>j</i>, turns out to be equal to <i>I<i>&#x03C9;</i></i> </p>
+<a class="page" id="page_16" style="width:70%;">Page 16, Classical mechanics</a>
+<figure class="fig1a" id="eq1.30">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>L</mi><mo>=</mo><mstyle displaystyle='true'>
+<munder>
+<mo>&#x2211;</mo>
+<mi>j</mi>
+</munder>
+<mrow>
+<msub>
+<mi>m</mi>
+<mi>j</mi>
+</msub>
+</mrow>
+</mstyle><msub>
+<mi>r</mi>
+<mn>j</mn>
+</msub>
+<mtext>&#x2009;</mtext><mtext>&#x00D7;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo>
+<mrow>
+<mi>w</mi><mtext>&#x2009;</mtext><mtext>&#x00D7;</mtext><msub>
+<mi>r</mi>
+<mi>j</mi>
+</msub>
+</mrow>
+<mo>)</mo></mrow><mo>=</mo><mi>I</mi><mi>w</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.30</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:0.5em;" epub:type="sidebar">
+<p class="noindent2"><b><i>a</i></b> &#x00D7; (<b><i>b</i></b> &#x00D7; <b><i>c</i></b>) = (<b><i>a</i></b> &#x00B7; <b><i>c</i></b>) <b><i>b</i></b> &#x2212; (<b><i>a</i></b> &#x00B7; <b><i>b</i></b>) <b><i>c</i></b></p>
+<p class="noindent2">and <b><i>a</i></b> &#x00B7; <b><i>b</i></b> = 0 if <b><i>a</i></b> &#x22A5; <b><i>b</i></b></p>
+</aside>
+<p class="noindent">Just as for the linear case of <a href="#sec_1.4">section 1.4</a>, the total angular momentum of a system is conserved if there is no external torque involved. This is frequently exploited by ice-skaters who alter their rate of spinning by spreading out, or straightening up, to change their body&#x2019;s moment of inertia. Another interesting example is provided by the revolving earth and the orbiting moon: the former is slowing down and losing angular momentum, due to &#x2018;tidal friction&#x2019;, and this is being compensated for by a gradual increase in the distance between the two bodies.</p>
+<p class="indent">Continuing the theme of analogies, the kinetic energy associated with rotation, &#x03A3; <i>m<sub>j</sub>v<sub>j</sub></i><sup>2</sup>/2, is easily shown to be:</p>
+<figure class="fig1a" id="eq1.31">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>K</mi><msub>
+<mi>E</mi>
+<mrow>
+<mi>r</mi><mi>o</mi><mi>t</mi></mrow>
+</msub>
+<mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>I</mi><msup>
+<mi>w</mi>
+<mn>2</mn>
+</msup>
+<mo>=</mo><mfrac>
+<mrow>
+<msup>
+<mi>L</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mrow>
+<mn>2</mn><mi>I</mi></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.31</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where <i>&#x03C9;</i><sup>2</sup> = <i>&#x03C9;</i> &#x00B7; <i>&#x03C9;</i> and <i>L</i><sup>2</sup>= <b><i>L</i></b> &#x00B7; <b><i>L</i></b> = <i>I</i><sup>2</sup> <i>&#x03C9;</i><sup>2</sup>. The total kinetic energy of an object is, therefore, given by the sum of <a href="#eq1.17">eqns (1.17)</a> and <a href="#eq1.31">(1.31)</a>:</p>
+<figure class="fig1a" id="eq1.32">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>K</mi><mi>E</mi><mo>=</mo><mi>K</mi><msub>
+<mi>E</mi>
+<mrow>
+<mi>l</mi><mi>i</mi><mi>n</mi></mrow>
+</msub>
+<mo>+</mo><mi>K</mi><msub>
+<mi>E</mi>
+<mrow>
+<mi>r</mi><mi>o</mi><mi>t</mi></mrow>
+</msub>
+<mo>=</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>M</mi><msup>
+<mi>v</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo><mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+<mi>I</mi><msup>
+<mi>w</mi>
+<mn>2</mn>
+</msup>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.32</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">The formula for the work done by a couple also resembles its &#x2018;force &#x00D7; distance&#x2019; counterpart met in <a href="#sec_1.5.1">section 1.5.1</a>; namely, &#x2018;torque &#x00D7; angle of rotation&#x2019;.</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 1.3</b> Given that the H<sub>2</sub> bond length is 75 pm, evaluate its moment of inertia. If the average rotational energy of H<sub>2</sub> at <i>T</i> = 300K is k<i>T</i> where k is the Boltzmann constant, determine the average angular momentum of the molecule.</p>
+</aside>
+<p class="indent">On a final note, we should point out that <a href="#eq1.32">eqn (1.32)</a> reminds us that the general motion of an extended body is the resultant of both linear and rotational forces. Hence the condition for equilibrium (statics) is that both the net force and the overall torque must be zero. A useful theorem also tells us that a potentially complicated behaviour, where the spin-axis may be continually changing, can always be analysed in terms of the point-like motion of the <i>centre of mass, r</i>, where</p>
+<figure class="fig1a" id="eq1.33">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mover accent='true'>
+        <mi>r</mi>
+        <mo stretchy='true'>&#x00AF;</mo>
+       </mover>
+       <mo>=</mo><mfrac>
+        <mrow>
+         <mstyle displaystyle='true'>
+          <mo>&#x2211;</mo> <mrow>
+           <msub>
+            <mi>m</mi>
+            <mi>j</mi>
+           </msub>
+           <msub>
+            <mi>r</mi>
+            <mi>j</mi>
+           </msub>
+           
+          </mrow>
+         </mstyle>
+        </mrow>
+        <mrow>
+         <mstyle displaystyle='true'>
+          <mo>&#x2211;</mo> <mrow>
+           <msub>
+            <mi>m</mi>
+            <mi>j</mi>
+           </msub>
+           
+          </mrow>
+         </mstyle>
+        </mrow>
+       </mfrac>
+       <mo>=</mo><mfrac>
+        <mrow>
+         <mstyle displaystyle='true'>
+          <mrow>
+           <mo>&#x222D;</mo>
+           <mrow>
+            <mo stretchy='false'>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy='false'>)</mo><mi>&#x03C1;</mi>
+           </mrow>
+          </mrow>
+          
+         </mstyle><mo stretchy='false'>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy='false'>)</mo><mtext>d</mtext><mi>x</mi><mtext>&#x2009;</mtext><mtext>d</mtext><mi>y</mi><mtext>&#x2009;</mtext><mtext>d</mtext><mi>z</mi>
+        </mrow>
+        <mrow>
+         <mstyle displaystyle='true'>
+          <mrow>
+           <mo>&#x222D;</mo>
+           <mrow>
+            <mi>&#x03C1;</mi><mo stretchy='false'>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy='false'>)</mo><mtext>d</mtext><mi>x</mi><mtext>&#x2009;</mtext><mtext>d</mtext><mi>y</mi><mtext>&#x2009;</mtext><mtext>d</mtext><mi>z</mi>
+           </mrow>
+          </mrow>
+          
+         </mstyle>
+        </mrow>
+       </mfrac>
+       
+      </mrow>
+     </mtd>
+     <mtd>
+      <mrow>
+       <mo stretchy='false'>(</mo><mn>1.33</mn><mo stretchy='false'>)</mo>
+      </mrow>
+     </mtd>
+    </mtr>
+    
+   </mtable>
+  </mrow>
+ </semantics>
+</math>
+</figure>
+<p class="noindent">and a rotation about (through) it.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec_1.8">
+<h2 class="h2">1.8<span class="space">&#160;</span>Limitations of classical mechanics</h2>
+<p class="noindent">We have now covered most of the basic topics in classical mechanics, essentially as developed by Newton. Alternative, but equivalent, formulations were later put forward by Lagrange and Hamilton; while these can be very powerful reworkings in their own right, especially in a more theoretical context, let us briefly turn our attention to the limitations of classical mechanics.</p>
+<section epub:type="chapter" id="sec_1.8.1">
+<h3 class="h2">1.8.1<span class="space">&#160;</span>Relativistic mechanics</h3>
+<p class="noindent">If two trains are parked adjacent to each other at a station and then one starts to leave, a passenger can sometimes find it difficult to tell which one is moving before the (fixed) platform or surroundings come into view; this is <a class="page" id="page_17">Page 17, Classical mechanics</a>one of the simplest examples of what we call &#x2018;relative motion&#x2019;. At the beginning of the 20<sup>th</sup> century, Albert Einstein was wondering how things going on in the world might appear to two observers that were moving relative to each other; one could be standing on a platform, say, and the other a passenger on an ultra-fast train. He began by considering the special, and the easiest, case of travel at a constant velocity; this gave rise to the term <i>special relativity</i>.</p>
+<p class="indent">According to classical mechanics, the answer is given by a <i>Galilean transformation</i>. If an object moves at speed <i>u</i> parallel to the (straight) railway track, as seen by the stationary observer, then the passenger on a train travelling at v would see something hurtling by at a speed <i>v &#x2212; u</i> or <i>v + u</i> depending on whether both were going in the same or opposite directions, respectively. This is straightforward, and concurs with everyday experiences. Unfortunately, this common sense view is found to conflict with experimental evidence when the relative motion approaches the speed of light <i>c</i> &#x2248; 3&#x00D7;10<sup>8</sup> ms<sup>&#x2212;1</sup>. For example, the speed of light measured from a fixed source in a laboratory is exactly the same as that found for photons radiated by an electron which approaches us at almost <i>c</i> as it travels in a circular orbit in a synchrotron ring; according to a Galilean transformation, however, we should measure &#x2248;2<i>c</i> in the second case!</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page17-2.jpg" alt="images"/>
+</figure>
+<p class="noindent2">The two reference frames that are used in the Lorentz transformation.</p>
+</aside>
+<p class="indent">To work out a generalisation of the Galilean transformation that would hold even for relativistic speeds, <i>v</i> &#x2192; <i>c</i>, Einstein used two basic assumptions (or axioms): (i) the laws of physics appear the same to all observers moving at a constant velocity (i.e. no experiment can determine absolute motion); and (ii) the speed of light, in a vacuum, is always the same (i.e. <i>c</i>). This led to the use of the <i>Lorentz transformation</i>, which states that an event observed at position(<i>x,y,z</i>) at time <i>t</i> in a laboratory is found to occur at (<i>x</i>&#x2032;, <i>y</i>&#x2032;, <i>z</i>&#x2032;) and <i>t</i>&#x2032; in a reference frame that has a relative speed of <i>v</i> along the positive <i>x</i>-axis, with the two sets of coordinates being related by:</p>
+<p class="fig1a" id="eq1.34"><i>x</i>&#x2032; = &#x03B3; (<i>x</i> &#x2212; <i>vt</i>), <i>t</i>&#x2032; = &#x03B3; (<i>t</i> &#x2212; <i>vx</i> / <i>c</i><sup>2</sup>), <i>y</i>&#x2032; = <i>y</i> and <i>z</i>&#x2032; = <i>z</i> &#x00A0;&#x00A0;&#x00A0;&#x00A0;(1.34)</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page17-3.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">where <i>&#x03B3;</i> = (1 &#x2212; <i>v</i><sup>2</sup> / <i>c</i><sup>2</sup>)<sup>&#x2212;1/2</sup> is the <i>Lorentz factor</i>. At everyday speeds <i>v</i> &#x226A; <i>c</i> and <i>&#x03B3;</i> &#x2192; 1, so that the Lorentz transformation reduces to the Galilean one (<i>x</i>&#x2032; = <i>x</i> &#x2212; <i>vt</i> and <i>t</i>&#x2032; = <i>t</i>) and classical mechanics is more than adequate. As <i>v</i> approaches the speed of light, <i>v</i> &#x2192; <i>c</i>, <i>&#x03B3;</i> &#x226B; 1 and relativistic effects become significant.</p>
+<p class="indent">In addition to the coordinate transformation given above, the consequences of special relativity can also be stated in more physical terms. There is a length-contraction along the direction of motion: a rod of length <i>l</i><sub>0</sub> will be measured as being <i>l</i><sub>0</sub> / <i>&#x03B3;</i> long by an observer who is travelling at a relative speed <i>v</i>. By contrast, time is dilated so that an interval <i>t</i><sub>o</sub> in a stationary frame is registered as <i>t</i><sub>o</sub><i>&#x03B3;</i> in a moving one. While these results can be inferred from <a href="#eq1.34">eqn (1.34)</a>, as can the constant velocity transformations</p>
+<figure class="fig1a" id="eq1.35">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>u</mi><msub>
+<mo>&#x00B4;</mo>
+<mi>x</mi>
+</msub>
+<mo>=</mo><mfrac>
+<mrow>
+<msub>
+<mi>u</mi>
+<mi>x</mi>
+</msub>
+<mo>&#x2212;</mo><mi>v</mi></mrow>
+<mrow>
+<mn>1</mn><mo>&#x2212;</mo><msub>
+<mi>u</mi>
+<mi>x</mi>
+</msub>
+<mi>v</mi><mo>/</mo><msup>
+<mi>c</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+<mo>,</mo><mtext>&#x2009;</mtext><mi>u</mi><msub>
+<mo>&#x00B4;</mo>
+<mi>y</mi>
+</msub>
+<mo>=</mo><mfrac>
+<mrow>
+<msub>
+<mi>u</mi>
+<mi>y</mi>
+</msub>
+</mrow>
+<mrow>
+<mn>1</mn><mo>&#x2212;</mo><msub>
+<mi>u</mi>
+<mi>x</mi>
+</msub>
+<mi>v</mi><mo>/</mo><msup>
+<mi>c</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+<mo>,</mo><mi>u</mi><msub>
+<mo>&#x00B4;</mo>
+<mi>z</mi>
+</msub>
+<mo>=</mo><mfrac>
+<mrow>
+<msub>
+<mi>u</mi>
+<mi>z</mi>
+</msub>
+</mrow>
+<mrow>
+<mn>1</mn><mo>&#x2212;</mo><msub>
+<mi>u</mi>
+<mi>x</mi>
+</msub>
+<mi>v</mi><mo>/</mo><msup>
+<mi>c</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</mfrac>
+<mo>,</mo><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.35</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<a class="page" id="page_18" style="width:70%;">Page 18, Classical mechanics</a>
+<p class="noindent">where <i>u</i>&#x2032;<sub><i>x</i></sub>= d<i>x</i>&#x2032; / d<i>t</i>&#x2032; and <i>u</i><sub><i>x</i></sub>= d<i>x</i>/d<i>t</i> and so on, it&#x2019;s somewhat less obvious that the mass increases as <i>m</i> = <i>m</i><sub>o</sub><i>&#x03B3;</i>. Nevertheless, a replacement of the constant <i>rest- mass m</i><sub>o</sub> by the relativistic counterpart <i>m</i> enables us to preserve the form of the equations of classical motion. Thus the momentum <b><i>p</i></b> = <i>m<b>u</b></i> = <i>m</i><sub>o</sub><i>&#x03B3;</i> <b><i>u</i></b>, and Newton&#x2019;s generalised second law becomes:</p>
+<figure class="fig1a" id="eq1.36">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>F</mi><mo>=</mo><mfrac>
+<mtext>d</mtext>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+<mrow><mo>(</mo>
+<mrow>
+<mi>m</mi><mi>u</mi></mrow>
+<mo>)</mo></mrow><mo>=</mo><mfrac>
+<mtext>d</mtext>
+<mrow>
+<mtext>d</mtext><mi>t</mi></mrow>
+</mfrac>
+<mrow><mo>(</mo>
+<mrow>
+<msub>
+<mi>m</mi>
+<mi>o</mi>
+</msub>
+<mi>&#x03B3;</mi><mi>u</mi></mrow>
+<mo>)</mo></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>1.36</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">&#160;</p>
+<aside class="abc" style="margin-top:-10.7em;" epub:type="sidebar">
+<figure class="fig2">
+<img src="../images/page18-2.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">If an object is subjected to a constant thrust, then it can be shown that initially it will speed up uniformly in accordance with classical mechanics; as it approaches the speed of light, however, it starts to become heavier rather than faster.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 1.4</b> The average lifetime of muons at rest is 2.2&#x03BC;s. If their lifetime measured in the laboratory is 7.9&#x03BC;s, calculate the speed and the kinetic energy of the muons. The muon has a mass 207 times that of the electron.</p>
+</aside>
+<p class="indent">Einstein was also able to derive the relationship between mass and energy, whereby the total energy <i>E</i> associated with a particle of relativistic mass <i>m</i> is <i>E</i> = <i>m c</i><sup>2</sup> = <i>m</i><sub>0</sub><i>&#x03B3;</i> <i>c</i><sup>2</sup>. Since a particle at rest has <i>E</i> = <i>m</i><sub>0</sub> <i>c</i><sup>2</sup>, the kinetic energy is given by KE = (<i>m</i> &#x2212; <i>m</i><sub>0</sub>)<i> c</i><sup>2</sup> = (<i>&#x03B3;</i> &#x2212; 1) <i>m</i><sub>0</sub> <i>c</i><sup>2</sup>; in the classical limit of <i>v</i>&#x226A;<i>c</i>, or <i>&#x03B3;</i> &#x2192; 1, it reduces to the familiar form <i>mv</i><sup>2</sup>/2. It can be shown further that the conservation of both momentum and energy are equivalent to the conservation of relativistic mass; indeed, they can be combined into a single invariant entity:</p>
+<p class="fig1a" id="eq1.37">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <msup>
+        <mi>E</mi>
+        <mn>2</mn>
+       </msup>
+       <mo>/</mo><msup>
+        <mi>c</mi>
+        <mn>2</mn>
+       </msup>
+       <mo>&#x2212;</mo><msup>
+        <mi>p</mi>
+        <mn>2</mn>
+       </msup>
+       <mo>=</mo><msubsup>
+        <mi>m</mi>
+        <mn>0</mn>
+        <mn>2</mn>
+       </msubsup>
+       <msup>
+        <mi>c</mi>
+        <mn>2</mn>
+       </msup>
+       
+      </mrow>
+     </mtd>
+     <mtd>
+      <mrow>
+       <mo stretchy='false'>(</mo><mn>1.37</mn><mo stretchy='false'>)</mo>
+      </mrow>
+     </mtd>
+    </mtr>
+    
+   </mtable>
+  </mrow>
+ </semantics>
+</math>
+
+
+</p>
+<p class="noindent">where <i>p</i><sup>2</sup>= <b><i>p</i></b> &#x00B7; <b><i>p</i></b>, which has the same value in all reference frames because the right-hand side is a constant.</p>
+<p class="indent">The <i>general theory of relativity</i>, which relaxes the special conditions of uniform relative motion, is beyond the scope of the present text. All we&#x2019;ll say is that it provides a theory of gravity, based on the equivalence principle that gravitational forces are indistinguishable from forces due to accelerating frames; again it leads to an insignificant discrepancy with Newtonian gravity for the most part, but a large departure under more extreme conditions of mass concentration (such as near a collapsed star or a black-hole).</p>
+</section>
+<section epub:type="chapter" id="sec_1.8.2">
+<h3 class="h2">1.8.2<span class="space">&#160;</span>Quantum mechanics</h3>
+<p class="noindent">In addition to regimes of light-like speeds and the vicinity of ultra-heavy masses, classical mechanics is also found to be inadequate for understanding phenomena on an atomic length-scale. The latter brings us into the world of <i>quantum mechanics</i>, a topic which we&#x2019;ll consider in some depth in <a href="Chapter03.xhtml">Chapter 3</a>.</p>
+</section>
+</section>
+</section>
+</div>
+</body>
+</html>

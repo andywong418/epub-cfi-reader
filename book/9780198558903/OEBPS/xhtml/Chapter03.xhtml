@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>NMR Spectroscopy in Inorganic Chemistry</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<a id="page_59" class="page" style="width:60%;">Page 59, Chapter 3 Dynamic process and NMR</a>
+<section epub:type="chapter" id="Ch03">
+<h1 class="chaptitle">3<span class="space">&#160;</span>Dynamic processes and NMR</h1>
+<section id="sec3.1" epub:type="chapter">
+<h2 class="h2">3.1<span class="space">&#160;</span>Introduction</h2>
+<p class="noindent">So far we have looked at how NMR spectroscopy can be used to determine a rigid molecular structure. Not all compounds, however, have rigid structures; for example rotation can occur about the bonds in a molecule, rings can spin or change conformation, and ligands can migrate between different sites in a molecule, <a href="#fig3.1">figure 3.1</a>.</p>
+<figure class="figure-left-60" id="fig3.1">
+<img src="../images/fig3.1.jpg" alt="images"/>
+<figcaption class="figcaption-left-60" style="width:100%"><b>Fig. 3.1</b> The NMR spectrum is sensitive to a variety of molecular motions, for example, rotation about a metal-olefin bond, rotation of co-ordinated rings, conformational changes, and migration of a ligand between different sites in a molecule.</figcaption>
+</figure>
+<p class="noindent">&#160;</p>
+<p class="noindent">These are all intramolecular processes that can be studied by NMR and are called <i>fluxional</i> processes.</p>
+<p class="indent">NMR can also be used to study intermolecular processes such as the exchange of bound and free ligands, <a href="#fig3.2">figure 3.2</a> - these are called <i>exchange</i> processes. In this chapter we will look at how NMR can be used to study fluxionality and exchange.</p>
+<figure class="figure-left-60" id="fig3.2">
+<img src="../images/fig3.2.jpg" alt="images"/>
+<figcaption class="figcaption-left-60" style="width:100%"><b>Fig. 3.2</b> The NMR spectrum is sensitive to exchange of free and co-ordinated ligands.</figcaption>
+</figure>
+<a id="page_60" class="page" style="width:60%;">Page 60, Chapter 3 Dynamic process and NMR</a>
+</section>
+<section id="sec3.2" epub:type="chapter">
+<h2 class="h2">3.2<span class="space">&#160;</span>Some theory</h2>
+<aside class="right" style="margin-top:0.3em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.3">
+<img src="../images/fig3.3.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 3.3</b> Whether or not we can distinguish individual components of a changing system depends on how fast the system is changing.</figcaption>
+</figure>
+</aside>
+<section id="sec3.2.1" epub:type="chapter">
+<h3 class="h3"><b>The NMR timescale</b></h3>
+<p class="noindent">If we look at a changing system, say a brightly coloured child&#x2019;s top, if the top is spinning slowly we will be able to see each separate segment of colour. As the top spins faster the colours start to merge until finally we only see an average, <a href="#fig3.3">figure 3.3</a>. In much the same way all resonance spectroscopies (IR, UV-Vis, NMR etc) can only distinguish the different sites in an exchanging system if the molecule, ligand, whatever, remains in each site for long enough. More exactly, for separate resonances to be observed, the rate of exchange between sites must be less than 2&#x03C0;&#x2206;<i>v</i>, where &#x2206;<i>v</i> is the difference between resonance frequencies of the sites. Typically the NMR resonances of exchanging sites might differ by a few hertz to a few kilohertz, whereas in IR spectroscopy a difference in band position of only 1 cm<sup>-1</sup> corresponds to a frequency separation of 3 * 10<sup>10</sup> Hz! Clearly, even in very fast exchanging systems, IR will be able to distinguish each site whereas the NMR spectrum will be sensitive to quite slow motions.</p>
+<p class="indent">For example, several isomers of Co<sub>2</sub>(CO)<sub>8</sub> exist in solution, one of which adopts a bridged conformation, the other two all terminal conformations, <a href="#fig3.4">figure 3.4a</a>. The isomers interconvert by a fluxional process that exchanges the bridging and terminal the CO ligands. Not only is IR spectroscopy able to distinguish the resonances of each isomer but also the bridging and terminal ligands, <a href="#fig3.4">figure 3.4b</a>, whereas by NMR we see only a single band, <a href="#fig3.4">figure 3.4c</a> - all the CO ligands look the same due to the fluxional process. Clearly this process must be occurring at a rate much greater than the NMR, but less than the IR, timescale.</p>
+<p class="indent">We can define NMR and IR timescales for exchange of around 10<sup>-7</sup> s and 10<sup>-14</sup> s respectively.</p>
+<figure id="fig3.4">
+<p class="center"><img src="../images/fig3.4.jpg" alt="images"/></p>
+<figcaption><b>Fig. 3.4</b> The structure of Co<sub>2</sub>(CO)<sub>8</sub> is fluxional, interconverting between several isomers (a). The IR spectrum of Co<sub>2</sub>(CO)<sub>8</sub> (b) can distinguish between the terminal and bridging ligands and between the isomers; however, the NMR spectrum of (c) cannot even distinguish the terminal and bridging ligands. Reprinted from R. L. Sweany <i>et al. Inorg. Chem.</i> 1977, <b>16</b>, 415. Copyright 1977 American Chemical Society.</figcaption>
+</figure>
+<a id="page_61" class="page" style="width:60%;">Page 61, Chapter 3 Dynamic process and NMR</a>
+</section>
+<section id="sec3.2.2" epub:type="chapter">
+<h3 class="h3"><b>Fast and slow exchange limits</b></h3>
+<p class="noindent">In NMR we can distinguish two limiting exchange regimes:</p>
+<aside class="right" style="margin-top:0em;" epub:type="sidebar">
+<p class="eq" id="eq3.1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi mathvariant="normal">&#x2206;</mi> <mi>&#x03C5;</mi> <mo>=</mo> <mfrac> <mi>k</mi> <mi>&#x03C0;</mi> </mfrac> <mo>=</mo> <mfrac> <mn>1</mn> <mrow> <mi>&#x03C0;</mi> <mi>&#x03C4;</mi> </mrow> </mfrac> </math></p>
+<p class="eqcaption"><b>Eqn 3.1</b> In the slow motion regime, the increase in linewidth, &#x2206;v, depends inversely on the lifetime, &#x03C4;.</p>
+</aside>
+<p class="noindent">&#160;</p>
+<p class="noindent">(i) slow exchange, much slower than the difference in resonance frequencies; a separate resonance, at the characteristic resonance position, is observed for each site in the system. The resonance will however be broadened by the dynamic process, the degree of broadening depending on how much time the nuclei spend in each site, <a href="#eq3.1">equation 3.1</a>, the lines become broader as the exchange rate increases.</p>
+<p class="noindent">&#160;</p>
+<aside class="right" style="margin-top:2em;" epub:type="sidebar">
+<p class="eq" id="eq3.2"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mi mathvariant="normal">&#x25B3;</mi> <mi>&#x03C5;</mi> <mo>=</mo> <mfrac> <mrow> <mi>&#x03C0;</mi> <mo stretchy="false">(</mo> <mi>&#x03B4;</mi> <mi>&#x03C5;</mi> <msup> <mo stretchy="false">)</mo> <mrow class="MJX-TeXAtom-ORD"> <mn>2</mn> </mrow> </msup> </mrow> <mrow> <mn>2</mn> <mi>k</mi> </mrow> </mfrac> </math></p>
+<p class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mo>=</mo>
+ <mfrac>
+ <mn>1</mn>
+ <mn>2</mn>
+ </mfrac>
+ <mo stretchy="false">(</mo>
+ <mi>&#x03B4;</mi>
+ <mi>&#x03C5;</mi>
+ <msup>
+ <mo stretchy="false">)</mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msup>
+ <mi>&#x03C4;</mi>
+</math>
+</p>
+<p class="eqcaption"><b>Eqn 3.2</b> In the fast motion regime, the linewidth narrows as the exchange rate (&#x221D; 1/&#x03C4;) increases. &#x03B4;v is the difference in resonance frequencies in the absence of exchange.</p>
+</aside>
+<p class="noindent">(ii) fast exchange, much faster than the difference in resonance frequencies; a single line is observed at the weighted average resonance position - in calculating the average resonance position we must remember to take account of the number of each type of site participating in the exchange/fluxional process. In the fast exchange regime the linewidth becomes narrower as the rate of exchange increases, <a href="#eq3.2">equation 3.2</a>. At very fast exchange rates the distinction between the sites is completely lost, the system behaves as though a single site existed.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">Between the fast and slow motion regimes is the coalescence point, <a href="#eq3.3">equation 3.3</a>, where the separate resonances of the exchanging sites have just merged into a single peak, see for example, <a href="#fig3.5">figure 3.5</a>.</p>
+</section>
+<section id="sec3.2.3" epub:type="chapter">
+<h3 class="h3"><b>Effect of temperature</b></h3>
+<aside class="right" style="margin-top:-0em;" epub:type="sidebar">
+<p class="eq" id="eq3.3"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mi>&#x03C4;</mi> <mo>=</mo> <msqrt> <mn>2</mn> </msqrt> <mrow class="MJX-TeXAtom-ORD"> <mo>/</mo> </mrow> <mi>&#x03C0;</mi> <mo stretchy="false">(</mo> <mi>&#x03B4;</mi> <mi>&#x03C5;</mi> <mo stretchy="false">)</mo> </math></p>
+<p class="eqcaption"><b>Eqn 3.3</b> For exchange between two equally populated sites, coalescence occurs when the lifetime is given by the equation above.</p>
+</aside>
+<p class="noindent">We can alter the rate of a dynamic process by varying the temperature - at low temperatures the process will be slowed down, we are likely to be in the slow exchange regime, whilst at high temperatures, the process will likely be fast, we are in the fast exchange regime. At intermediate temperatures the lines first broaden, then coalesce into a single broad peak which sharpens up as the fast exchange limit is reached. For example, (C<sub>5</sub>H<sub>5</sub>)<sub>2</sub>Fe<sub>2</sub>(CO)<sub>4</sub> exists as <i>cis</i> and <i>trans</i> isomers, which interconvert in solution. At low temperature, separate resonances are observed in the <sup>l</sup>H NMR spectrum for the cyclopentadienyl ligands of the two isomers. As the temperature increases these first broaden, then coalesce until finally a single sharp resonance is observed, <a href="#fig3.5">figure 3.5</a>.</p>
+<p class="noindent">&#160;</p>
+</section>
+<section id="sec3.2.4" epub:type="chapter">
+<h3 class="h3"><b>Concerted <i>vs</i> non-concerted exchange</b></h3>
+<p class="noindent">Clearly some movement of the carbonyl ligands is also required by the isomerization described above. The <sup>l3</sup>CO NMR spectrum reveals that at high temperature all the CO ligands become equivalent, however <a id="page_62" class="page">Page 62, Chapter 3 Dynamic process and NMR</a> equivalencing of all the CO&#x2019;s is not required by the <i>cis &#x2013; trans</i> isomerization &#x2013; we can imagine an isomerization process in which the cyclopentadienyl and terminal CO ligands interchange by a localized rotation at a single iron centre, <a href="#fig3.6">figure 3.6</a>. Such a process does not exchange the bridge and terminal CO&#x2019;s.</p>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.5">
+<img src="../images/fig3.5.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" style="width:100%;"><b>Fig. 3.5</b> The variable temperature <sup>1</sup>H NMR spectra of <i>cis</i> and <i>trans</i> (C<sub>5</sub>H<sub>5</sub>)<sub>2</sub>Fe<sub>2</sub>(CO)<sub>4</sub> showing the effect of temperature on the resonances, From data in FA Cotton and G. Wilkinson, (1988) <i>Advanced Inorganic Chemistry</i>, Wiley, Chichester.</figcaption>
+</figure>
+</aside>
+<figure class="figure-left-60" id="fig3.6">
+<img src="../images/fig3.6.jpg" alt="images"/>
+<figcaption class="figcaption-left-60" style="width:100%"><b>Fig. 3.6</b> Isomerization by a localized rotation at a single iron centre does not interchange bridging and terminal CO ligands.</figcaption>
+</figure>
+<p class="noindent">We could then envisage a second fluxional process in which the terminal and bridging CO&#x2019;s interchange but leave the cyclopentadienyls unaffected, <a href="#fig3.7">figure 3.7</a>.</p>
+<figure class="figure-left-60" id="fig3.7">
+<img src="../images/fig3.7.jpg" alt="images"/>
+<figcaption class="figcaption-left-60" style="width:100%"><b>Fig. 3.7</b> In a second process, exchange of bridging and terminal CO ligands might occur.</figcaption>
+</figure>
+<p class="noindent">Together, these two processes could explain the <sup>l</sup>H and <sup>l3</sup>C NMR data at both high and low temperature. Since the processes are quite separate from each other they represent a <i>non-concerted mechanism</i> for the exchange.</p>
+<p class="indent">Alternatively we can propose a <i>concerted mechanism</i> for the exchange in which <i>cis</i> &#x2013; <i>trans</i> isomerization and interchange of terminal and bridging CO&#x2019;s is intimately linked <i>via</i> an all-terminal intermediate, <a href="#fig3.8">figure 3.8</a>. Interchange between the bridged and terminal structures equivalences the carbonyl ligands and rotation about the iron &#x2013; iron bond in the all-terminal intermediate provides a pathway for <i>cis</i> &#x2013; <i>trans</i> isomerization.</p>
+<p class="indent">Fortunately, analysis of changes in the NMR lineshapes with temperature allows us to extract the rates of the fluxional processes and, more importantly, &#x2206;G<sup>&#x2021;</sup>, &#x2206;H<sup>&#x2021;</sup>, and &#x2206;S<sup>&#x2021;</sup> for both the <i>cis</i> &#x2013; <i>trans</i> isomerization and for the equivalencing of the carbonyl ligands and hence to decide between the concerted and non-concerted mechanisms.</p>
+<a id="page_63" class="page" style="width:60%;">Page 63, Chapter 3 Dynamic process and NMR</a>
+<figure class="figure-aside-center" id="fig3.8">
+<img src="../images/fig3.8.jpg" alt="images"/>
+<figcaption><b>Fig. 3.8</b> Interconversion of bridged and all terminal structures combined with rotation about the iron - iron bond provides a concerted pathway for the exchange in (C<sub>5</sub>H<sub>5</sub>)<sub>2</sub>Fe<sub>2</sub>(CO)<sub>4</sub>.</figcaption>
+</figure>
+<p class="noindent">&#160;</p>
+<p class="noindent">In fact, it is found that &#x2206;G<sup>&#x2021;</sup> is the same for both processes implying a concerted mechanism.</p>
+</section>
+</section>
+<section id="sec3.3" epub:type="chapter">
+<h2 class="h2">3.3<span class="space">&#160;</span>Determination of the thermodynamic and kinetic parameters of exchange</h2>
+<p class="noindent">There are several strategies available to determine thermodynamic and kinetic parameters of a dynamic process via an analysis of the NMR spectrum including determination of the coalescence temperature, lineshape analysis, saturation transfer, and 2-D methods.</p>
+
+<section id="sec3.3.1" epub:type="chapter">
+<h3 class="h3"><b>The rate constant</b></h3>
+<p class="noindent">Consider the equilibrium shown in <a href="#eq3.4">equation 3.4</a></p>
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:35%;"/>
+<col style="width:25%;"/>
+</colgroup>
+<tr>
+<td><figure id="eq3.4" style="text-align:center;"><img src="../images/eq_3.4.jpg" alt="images"/>
+</figure>
+</td>
+<td style="text-align:right;vertical-align:middle;"><b>(3.4)</b></td>
+</tr>
+</table>
+<p class="noindent">in which exchange is occurring between two sites of unequal population, these might be, for example, a co-ordinated ligand with free ligand in solution, <a href="#fig3.2">figure 3.2</a>, or the bridging and terminal carbonyl ligands in a transition metal carbonyl cluster, <a href="#fig3.4">figures 3.4</a> and <a href="#fig3.8">3.8</a>. We can obtain the forward and backward rates of the reaction from the broadening of the NMR resonances of the two types of site.</p>
+<a id="page_64" class="page" style="width:60%;">Page 64, Chapter 3 Dynamic process and NMR</a>
+<p class="indent">Suppose the two sites have populations <i>p</i><sub><i>A</i></sub> and <i>p</i><sub><i>B</i></sub> where <i>p</i><sub><i>A</i></sub> + <i>p</i><sub><i>B</i></sub> = <i>1</i> then, at equilibrium, <i>p</i><sub><i>A</i></sub><i>k</i><sub><i>A</i></sub> = <i>p</i><sub><i>B</i></sub><i>k</i><sub><i>B</i></sub>. Above the coalescence point, the linewidth of the single coalesced peak depends on the rate of exchange, <a href="#eq3.5">equation 3.5</a>.</p>
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:35%;"/>
+<col style="width:25%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.5"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mi mathvariant="normal">&#x25B3;</mi> <mi>&#x03BD;</mi> <mo>=</mo> <mfrac> <mrow> <mn>4</mn> <mi>&#x03C0;</mi> <msub> <mi>p</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>A</mi> </mrow> </msub> <msub> <mi>p</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>B</mi> </mrow> </msub> <mo stretchy="false">(</mo> <mi>&#x03B4;</mi> <mi>&#x03BD;</mi> <msup> <mo stretchy="false">)</mo> <mrow class="MJX-TeXAtom-ORD"> <mn>2</mn> </mrow> </msup> </mrow> <mrow> <msub> <mi>k</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>A</mi> </mrow> </msub> <mo>+</mo> <msub> <mi>k</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>B</mi> </mrow> </msub> </mrow> </mfrac> </math></p>
+</td>
+<td style="text-align:right;"><b>(3.5)</b></td>
+</tr>
+</table>
+<p class="noindent">Below the coalescence temperature the broadening of the NMR lines also depends on the rate at which the nuclei leave each site, <a href="#eq3.6">equations 3.6</a>.</p>
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:35%;"/>
+<col style="width:25%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.6"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mi mathvariant="normal">&#x25B3;</mi> <msub> <mi>&#x03BD;</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>A</mi> </mrow> </msub> <mo>=</mo> <mfrac> <msub> <mi>k</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>A</mi> </mrow> </msub> <mi>&#x03C0;</mi> </mfrac> <mo>=</mo> <mfrac> <mn>1</mn> <mrow> <mi>&#x03C0;</mi> <msub> <mi>&#x03C4;</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>A</mi> </mrow> </msub> </mrow> </mfrac> </math></p></td>
+<td style="vertical-align:middle; text-align:right;"><b>(3.6)</b></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mi mathvariant="normal">&#x25B3;</mi> <msub> <mi>&#x03BD;</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>B</mi> </mrow> </msub> <mo>=</mo> <mfrac> <msub> <mi>k</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>B</mi> </mrow> </msub> <mi>&#x03C0;</mi> </mfrac> <mo>=</mo> <mfrac> <mn>1</mn> <mrow> <mi>&#x03C0;</mi> <msub> <mi>&#x03C4;</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>B</mi> </mrow> </msub> </mrow> </mfrac> </math></td>
+</tr>
+</table>
+</section>
+<section id="sec3.3.2" epub:type="chapter">
+<h3 class="h3"><b>&#x0394;G<sup>&#x2021;</sup></b></h3>
+<p class="noindent">From transition state theory we know that, <a href="#eq3.7">equation 3.7</a>,</p>
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:35%;"/>
+<col style="width:25%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.7"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <msub> <mi>k</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>r</mi> <mi>x</mi> <mi>n</mi> </mrow> </msub> <mo>=</mo> <mfrac> <mrow> <mi>k</mi> <mi>T</mi> </mrow> <mi>h</mi> </mfrac> <msup> <mi>e</mi> <mrow class="MJX-TeXAtom-ORD"> <mo stretchy="false">(</mo> <mo>&#x2212;</mo> <mi mathvariant="normal">&#x2206;</mi> <msup> <mi>G</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>&#x2021;</mi> </mrow> </msup> <mrow class="MJX-TeXAtom-ORD"> <mo>/</mo> </mrow> <mi>R</mi> <mi>T</mi> <mo stretchy="false">)</mo> </mrow> </msup> <mo>=</mo> <mfrac> <mn>1</mn> <mi>&#x03C4;</mi> </mfrac> </math></p></td>
+<td style="text-align:right;"><b>(3.7)</b></td>
+</tr>
+</table>
+<p class="noindent">where <i>k</i><sub><i>rxn</i></sub> is the rate constant and all other symbols have their usual meanings. Combining <a href="#eq3.3">equations 3.3</a> and <a href="#eq3.7">3.7</a> we find that, at coalescence, <a href="#eq3.8">equation 3.8</a>.</p>
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:35%;"/>
+<col style="width:25%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.8"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mfrac> <mrow> <mi mathvariant="normal">&#x2206;</mi> <msup> <mi>G</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>&#x2021;</mi> </mrow> </msup> </mrow> <mrow> <mi>R</mi> <msub> <mi>T</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>c</mi> </mrow> </msub> </mrow> </mfrac> <mo>=</mo> <mi>I</mi> <mi>n</mi> <mrow> <mo>(</mo> <mfrac> <mrow> <msqrt> <mn>2</mn> </msqrt> <mi>k</mi> <msub> <mi>T</mi> <mrow class="MJX-TeXAtom-ORD"> <mi>c</mi> </mrow> </msub> </mrow> <mrow> <mi>&#x03C0;</mi> <mo stretchy="false">(</mo> <mi>&#x03B4;</mi> <mi>&#x03BD;</mi> <mo stretchy="false">)</mo> <mi>h</mi> </mrow> </mfrac> <mo>)</mo> </mrow> </math></p></td>
+<td style="text-align:right;"><b>(3.8)</b></td>
+</tr>
+</table>
+<p class="noindent">Although <a href="#eq3.8">equation 3.8</a> is strictly only valid for the the case of exchange between two equally populated sites, it is often used to obtain approximate values for &#x2206;G<sup>&#x2021;</sup> in more complex systems.</p>
+<a id="page_65" class="page" style="width:60%;">Page 65, Chapter 3 Dynamic process and NMR</a>
+</section>
+<section id="sec3.3.3" epub:type="chapter">
+<h3 class="h3"><b>Lineshape analysis</b></h3>
+<p class="noindent">The exchange rate constants and thermodynamic parameters can be obtained by modelling the changes in the NMR lineshape as the temperature (and hence rate) increases. Several computer programmes are now available to do this.</p>
+<p class="indent">Crown ethers and cryptands form an important class of ligand that can show high selectivity for particular metal ions based on size and find application in metal ion extraction and as models for antibiotics of the valinomycin and nigericin families. The uptake of metal ions from solution by these ligands provides an example of the use of NMR lineshape analysis in determining the thermodynamic and kinetic parameters of a dynamic process. The co-ordination - deco-ordination equilibrium can be considered as a two site exchange of free and complexed metal ions, <a href="#eq3.9">equation 3.9</a>.</p>
+<figure class="fig" id="eq3.9">
+<img src="../images/eq_3.9.jpg" alt="images"/>
+<p class="eqcaption"><b>Eqn. 3.9</b> Complexation of Li<sup>+</sup> by a cryptand can be viewed as a two site exchange.</p>
+</figure>
+<figure class="figure-center-60" id="fig3.9">
+<img src="../images/fig3.9.jpg" alt="images"/>
+<figcaption class="figcaption-justify-60" style="width:100%"><b>Fig. 3.9</b> <sup>7</sup>Li NMR spectra of a 0.01 M solution of LiCI0<sub>4</sub> in methanol in the presence of (A) 0.30, (B) 0.45, and (C) 0.63 mole equivalents of cryptand. Reprinted from Shampsipue <i>et al, Polyhedron</i>, 1998, <b>17</b>, 3809, with permission from Elsevier Science.</figcaption>
+</figure>
+<a id="page_66" class="page" style="width:60%;">Page 66, Chapter 3 Dynamic process and NMR</a>
+<p class="tablecaptions" id="tab3.1"><b>Table 3.1</b> Thermodynamic and kinetic parameters for lithium ion exchange.</p>
+<table style="margin-top:1em;width:100%">
+<tr>
+<td style="vertical-align:top;text-align:center;border-top:2px solid;">pathway</td>
+<td style="vertical-align:top;text-align:center;border-top:2px solid;">E<sub>a</sub></td>
+<td style="vertical-align:top;text-align:center;border-top:2px solid;">&#x2206;H<sup>&#x2020;</sup></td>
+<td style="vertical-align:top;text-align:center;border-top:2px solid;">&#x2206;S<sup>&#x2020;</sup></td>
+<td style="vertical-align:top;text-align:center;border-top:2px solid;">&#x2206;G<sup>&#x2020;</sup></td>
+<td style="vertical-align:top;text-align:center;border-top:2px solid;">k<sup></sup></td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:center;">&#x00A0;</td>
+<td style="vertical-align:top;text-align:center;">/KJmol<sup>-1</sup></td>
+<td style="vertical-align:top;text-align:center;">/KJmol<sup>-1</sup></td>
+<td style="vertical-align:top;text-align:center;">/KJmol<sup>-1</sup></td>
+<td style="vertical-align:top;text-align:center;">/KJmol<sup>-1</sup> k<sup>-1</sup></td>
+<td style="vertical-align:top;text-align:center;">&#x00A0;</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:center;border-top:2px solid;">bimolecular</td>
+<td style="vertical-align:top;text-align:center;border-top:2px solid;">9.9 &#x00B1; 0.4</td>
+<td style="vertical-align:top;text-align:center;border-top:2px solid;">8.0 &#x00B1; 0.4</td>
+<td style="vertical-align:top;text-align:center;border-top:2px solid;">-146 &#x00B1; 2</td>
+<td style="vertical-align:top;text-align:center;border-top:2px solid;">51.5 &#x00B1; 0.2</td>
+<td style="vertical-align:top;text-align:center;border-top:2px solid;">23 &#x00B1; 1 M<sup>-1</sup> s<sup>-1</sup></td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:center;border-bottom:2px solid;">dissociative</td>
+<td style="vertical-align:top;text-align:center;border-bottom:2px solid;">22.0 &#x00B1; 2</td>
+<td style="vertical-align:top;text-align:center;border-bottom:2px solid;">20.0 &#x00B1; 2</td>
+<td style="vertical-align:top;text-align:center;border-bottom:2px solid;">-144 &#x00B1; 8</td>
+<td style="vertical-align:top;text-align:center;border-bottom:2px solid;">62.9 &#x00B1; 0.4</td>
+<td style="vertical-align:top;text-align:center;border-bottom:2px solid;">70 &#x00B1; 2 s<sup>-1</sup></td>
+</tr>
+</table>
+<aside class="right" style="margin-top:0.3em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig3.10">
+<img src="../images/fig3.10.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig. 3.10</b> Computer fitted (o) and experimental (x) <sup>7</sup>Li NMR spectra of a 0.01 M solution of LiCI0<sub>4</sub> In methanol in the presence of 0.45 mole equivalents of cryptand at 263 K. Reproduced from Shampsipue <i>et al, Polyhedron</i>, 1998, <b>17</b>, 3809, with permission from Elsevier Science.</figcaption>
+</figure>
+</aside>
+<p class="noindent">&#160;</p>
+<p class="noindent">The <sup>7</sup>Li NMR spectrum of this system has been measured at several concentrations and temperatures, <a href="#fig3.9">figure 3.9</a>, whilst <a href="#fig3.10">figure 3.10</a> compares the experimental and calculated NMR lineshapes. Once the exchange rate is known as a function of temperature the thermodynamic parameters of the dynamic process can be obtained by the usual methods (Arrenhius plots <i>etc</i>). In this way lithium ion exchange was shown to proceed by both a bimolecular (<i>i.e.</i> solvated Li<sup>+</sup> reacting with the Li<sup>+</sup> cryptand complex) and a dissociative pathway. The thermodynamic parameters for both mechanisms were determined, <a href="#tab3.1">table 3.1</a>.</p>
+</section>
+<section id="sec3.3.4" epub:type="chapter">
+<h3 class="h3"><b>Differential broadening</b></h3>
+<p class="noindent">The rate at which each peak in the low temperature spectrum broadens depends on the rate of site leaving, <a href="#eq3.5">equation 3.5</a>, therefore the resonances of sites with low populations broaden first. This phenomenon is called differential broadening and can be seen in the spectra of <a href="#fig3.9">figure 3.9</a>. For example in the series of spectra labelled C, in which complexed lithium is the major species, the line of &#x201C;free&#x201D; lithium broadens significantly more than that of the complexed ion, whilst in series A, in which &#x201C;free&#x201D; lithium dominates, it is the complexed line that broadens first.</p>
+</section>
+<section id="sec3.3.5" epub:type="chapter">
+<h3 class="h3"><b>Multisite dynamic processes</b></h3>
+<p class="noindent">Similar lineshape analysis can be performed on exchanging systems in which multisite exchange occurs. For example, exchange of all the carbonyl ligands in Rh<sub>4</sub>(CO)<sub>12</sub> is proposed to occur by a fluxional process in which the bridges open and then reform about any one of the four tetrahedral faces - the &#x201C;Cotton&#x201D; merry-go-round, <a href="#fig3.11">figure 3.11</a>. Lineshape analysis of the variable temperature <sup>13</sup>C NMR spectra of the cluster has confirmed this proposal and allowed the free enthalpy of activation, &#x2206;H<sup>&#x2021;</sup> = 42.8 &#x00B1; 0.4 kJmol<sup>-1</sup> at 298 K, to be determined.</p>
+<a id="page_67" class="page" style="width:60%;">Page 67, Chapter 3 Dynamic process and NMR</a>
+<figure class="figure-aside-center" id="fig3.11">
+<img src="../images/fig3.11.jpg" alt="images"/>
+<figcaption class="figcaption-justify-100"><b>Fig. 3.11</b> Measured (left) and calculated (right) <sup>13</sup>C NMR spectra of Rh<sub>4</sub>(CO)<sub>12</sub> at different temperatures and the proposed fluxional process. Merry-go-rounds 1, 2, and 3 are symmetry equivalent. Adapted with permission from Besancon <i>et al, Inorg. Chem.</i> 1998, <b>37</b>, 5634. Copyright 1998 American Chemical Society.</figcaption>
+</figure>
+</section>
+</section>
+<section id="sec3.4" epub:type="chapter">
+<h2 class="h2">3.4<span class="space">&#160;</span>Effect of dynamic processes on relaxation</h2>
+<p class="noindent">Exchange not only affects the position and linewidth of resonances in the NMR spectrum, it also affects the observed relaxation times. This can be simply understood. Consider the equilibrium 3.10</p>
+<table style="width:60%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:35%;"/>
+<col style="width:25%;"/>
+</colgroup>
+<tr>
+<td><figure class="fig1" id="eq3.10"><img src="../images/eq_3.10.jpg" alt="images"/>
+</figure>
+</td>
+<td style="vertical-align:middle; text-align:right;"><b>(3.10)</b></td>
+</tr>
+</table>
+<p class="noindent">where A and B are two exchanging sites having different T<sub>1</sub>&#x2019;s and &#x03C4; is the mean site lifetime. Clearly, the nuclear spins will spend some of the time in site A, relaxing at T<sub>lA</sub> and some of the time in site B, relaxing at T<sub>lB</sub>. When exchange is fast on the timescale of the relaxation, the apparent relaxation rate will be the weighted average of the two relaxation rates. This technique can be made quantitative when exchange is sufficiently slow for separate resonances for the two sites to be observed; even qualitative data can, however, be used to show the presence of exchange.</p>
+<p class="indent">For example, exchange of chemisorbed hydrogen between the copper and oxide phases of a Cu/ZnO/alumina methanol synthesis catalyst was demonstrated by comparing the <i>apparent</i> relaxation rate of <a id="page_68" class="page">Page 68, Chapter 3 Dynamic process and NMR</a>the &#x201C;hydrogen on copper sites&#x201D; in two experiments, <a href="#fig3.12">figure 3.12</a>. In the first the spins of all the hydrogens (on copper and on the oxide phases) were inverted whilst in the second selective inversion of the spins of hydrogen on copper was used. The &#x201C;true&#x201D; relaxation time constant, T<sub>1</sub>, of the hydrogen on copper is obtained from the first experiment and was found to be <i>ca.</i> 50 ms whilst in the second experiment an additional relaxation pathway is available to the hydrogen on copper spins <i>viz</i> exchange with the fully relaxed hydrogen spins on the oxide phases. If exchange is occurring then the <i>observed</i> relaxation of the spins on copper should be faster. A T<sub>lobs</sub> of 14 ms was found confirming that exchange does indeed occur.</p>
+<figure class="figure-aside-center" id="fig3.12">
+<img src="../images/fig3.12.jpg" alt="images"/>
+<figcaption><b>Fig. 3.12</b> Inversion recovery <sup>1</sup>H NMR spectra for hydrogen adsorbed on Cu/ZnO/alumina showing the apparently faster relaxation rate of the selectively inverted hydrogen on copper spins (right) confirming the presence of exchange between adsorption sites on the copper and on the oxide phases. Reproduced from P. R. Dennison <i>et al., J. Chem. Soc, Faraday Trans. 1</i>, 1989, 3537.</figcaption>
+</figure>
+</section>
+<section id="sec3.5" epub:type="chapter">
+<h2 class="h2">3.5<span class="space">&#160;</span>Saturation transfer</h2>
+<p class="noindent">An alternative strategy for obtaining rate constants is to work in the slow exchange regime and selectively excite the nuclei at one of the exchanging sites. Since NMR relaxation is a slow process (chapter 1.10) the excited nuclei will carry the excitation with them as they move from one site in the molecule to another and so the excitation <a id="page_69" class="page">Page 69, Chapter 3 Dynamic process and NMR</a> will appear at each site the excited nucleus visits during the exchange process. This is much like heating up a cup of water then pouring the hot water into another cup - the water takes its heat with it. If there are several possible alternative cups, we can find out which one the hot water has been poured into by monitoring the temperature of each cup.</p>
+
+<section id="sec3.5.1" epub:type="chapter">
+<h3 class="h3"><b>Monitoring exchange using saturation transfer</b></h3>
+<p class="noindent">Dynamic processes involving cyclic polyene and polyenyl ligands such as cyclopentadiene, benzene, cycloheptatriene, cyclooctadiene etc have been much studied since these ligands may spin about the metal to ligand axis rather like a &#x201C;plate on a stick&#x201D; or may contain free olefinic bonds allowing the possibility of exchange between the free and bound carbon-carbon double bonds.</p>
+<p class="indent">A consideration of the geometry of such an exchange suggests that suprafacial (<i>i.e.</i> over a face) shifts of the metal should be favoured, the metal moving smoothly over the surface of the ligand whilst it is difficult to imagine a pathway for antarfacial (<i>i.e.</i> from one face to the other) shifts that does not involve deco-ordination of the metal. Woodward-Hoffmann rules can then be used to predict the allowed shifts.</p>
+<p class="indent">Consider the migration of the metal fragment around of the &#x019E;<sup>4</sup>-cyclooctatetraenyl group in (&#x019E;<sup>4</sup>-cot)Fe(CO)<sub>2</sub>(CNPr<sup>i</sup>). Several possible migration pathways exist, <i>e.g.</i> a stepwise migration by [1, 2] shifts, or migration by [1, 3], [1, 4], [1, 5] etc shifts of which only the [1, 5] shift is Woodward-Hoffmann allowed, <a href="#fig3.13">figure 3.13</a>.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<figure class="figcaption-center-60" id="fig3.13">
+<img src="../images/fig3.13.jpg" alt="images"/>
+<figcaption class="figcaption-justify-60" style="width:100%;"><b>Fig. 3.13</b> Woodward-Hoffmann rules predict that a [1, 5] sigmatropic shift should be the lowest energy pathway for migration of the metal around an &#x019E;<sup>4</sup>-cyclooctatetraenyl group.</figcaption>
+</figure>
+<p class="indent">This prediction can be confirmed by saturating the resonance of a specific carbon atom in the cyclooctatetraene ligand. As the metal fragment migrates around the polyenyl ligand we can identify the sites visited by the excited carbon atom by following the appearance of the excitation, <a href="#fig3.14">figure 3.14</a>. The initial saturation, which appears as negative NMR intensity at carbon b&#x2019; &#x2018;moves&#x2019; initially to carbons a, c&#x2019; and c&#x201D; consistent only with the occurrence of a [1, 5] migration pathway.</p>
+<a id="page_70" class="page" style="width:60%;">Page 70, <i>Dynamic processes and NMR</i></a>
+<figure class="figure-aside-center" id="fig3.14">
+<img src="../images/fig3.14.jpg" alt="images"/>
+<figcaption class="figcaption-justify-100"><b>Fig. 3.14</b> Excitation at carbon b&#x201D; (bottom spectrum) is transferred to carbons a, c&#x2019; and c&#x201D; (middle spectrum) by a fluxional process involving [1, 5] sigmatropic shifts. The transferred excitation is more clearly seen in the difference spectrum (top). Adapted from B. E. Mann <i>et al, J. Chem. Soc</i>., <i>Dalton Trans</i>., 1985, 693.</figcaption>
+</figure>
+<p class="indent">Where Woodward-Hoffmann forbidden pathways appear to be occurring this can often be ascribed to migration <i>via</i> deco-ordination - reco-ordination pathways, <i>e.g</i>. the apparent [1, 3] shift in (&#x03B7;<sup>6</sup>-cot)Cr(CO)<sub>3</sub>, <a href="#fig3.15">figure 3.15</a>.</p>
+<p class="noindent">&#160;</p>
+<figure class="figure-left-60" id="fig3.15">
+<img src="../images/fig3.15.jpg" alt="images"/>
+<figcaption class="figcaption-justify-60" style="width:100%"><b>Fig. 3.15</b> Migrations that appear to violate Woodward-Hoffmann rules can usually be explained by deco-ordination of one of the olefinic bonds. (m = Cr(C)<sub>3</sub>.</figcaption>
+</figure>
+</section>
+<section id="sec3.5.2" epub:type="chapter">
+<h3 class="h3"><b>Measuring rate using saturation transfer</b></h3>
+<p class="noindent">Saturation transfer methods can also be used to study the rates of intra and inter-molecular exchange by monitoring the appearance and disappearance of excitation at the various sites with time. The rate at which the excitation appears at other sites in the dynamic system can be measured by inserting a variable time delay (during which exchange occurs) between the excitation and measuring the spectrum.</p>
+<a id="page_71" class="page" style="width:60%;">Page 71, Chapter 3 Dynamic process and NMR</a>
+<figure class="figure-aside-center" id="fig3.16">
+<img src="../images/fig3.16.jpg" alt="images"/>
+<figcaption><b>Fig. 3.16</b> Isomerization of derivatives of Wilkinson&#x2019;s catalyst might proceed <i>via</i> a tetrahedral intermediate, or by dissociation of either a phosphine ligand or of X.</figcaption>
+</figure>
+<p class="indent">Consider, for example, phosphine isomerization and dissociation in the derivatives of Wilkinson&#x2019;s catalyst, [Rh(PPh<sub>3</sub>)<sub>3</sub>X]. Three possible mechanisms for the isomerization are shown in <a href="#fig3.16">figure 3.16</a>. Clearly, isomerization <i>via</i> a tetrahedral intermediate is an intramolecular process, so its rate need not be linked to that of ligand dissociation, whilst in the last two isomerization pathways, isomerization cannot be faster than phosphine or X dissociation respectively. Saturation transfer experiments, <a href="#fig3.17">figure 3.17</a>, have been used to determine the rates of phosphine isomerization and dissociation in this type of complex.</p>
+<p class="indent">The isomerization and association/dissociation of phosphine in the Rh(I) complexes can be treated as separate two site exchanges. For the exchange of free and co-ordinated ligand we can then write down simultaneous equations describing the disappearance and appearance of the excitation at free and co-ordinated phosphine, <a href="#eq3.11">eqns 3.11</a> and <a href="#eq3.12">3.12</a></p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;">
+<colgroup>
+<col style="width:90%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq3.11"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mo>&#x2212;</mo>
+ <mi>d</mi>
+ <mo stretchy="false">[</mo>
+ <mo>&#x2217;</mo>
+ <mi>P</mi>
+ <mi>P</mi>
+ <msub>
+ <mi>h</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>3</mn>
+ </mrow>
+ </msub>
+ <mo stretchy="false">]</mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>/</mo>
+ </mrow>
+ <mi>d</mi>
+ <mi>t</mi>
+ <mo>=</mo>
+ <mo>+</mo>
+ <msub>
+ <mi>K</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>a</mi>
+ <mi>s</mi>
+ <mi>s</mi>
+ </mrow>
+ </msub>
+ <mo stretchy="false">[</mo>
+ <mi>R</mi>
+ <mi>h</mi>
+ <mi>X</mi>
+ <mo stretchy="false">(</mo>
+ <mi>P</mi>
+ <mi>P</mi>
+ <msub>
+ <mi>h</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>3</mn>
+ </mrow>
+ </msub>
+ <msub>
+ <mo stretchy="false">)</mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msub>
+ <mo stretchy="false">]</mo>
+ <mo stretchy="false">[</mo>
+ <mo>&#x2217;</mo>
+ <mi>P</mi>
+ <mi>P</mi>
+ <msub>
+ <mi>h</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>3</mn>
+ </mrow>
+ </msub>
+ <mo stretchy="false">]</mo>
+ <mo>+</mo>
+ <mn>1</mn>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>/</mo>
+ </mrow>
+ <msub>
+ <mi>T</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>1</mn>
+ <mo stretchy="false">(</mo>
+ <mi>f</mi>
+ <mi>r</mi>
+ <mi>e</mi>
+ <mi>e</mi>
+ <mo stretchy="false">)</mo>
+ </mrow>
+ </msub>
+ <mo stretchy="false">[</mo>
+ <mo>&#x2217;</mo>
+ <mi>P</mi>
+ <mi>P</mi>
+ <msub>
+ <mi>h</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>3</mn>
+ </mrow>
+ </msub>
+ <mo stretchy="false">]</mo>
+ <mo>&#x2212;</mo>
+ <msub>
+ <mi>K</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>d</mi>
+ <mi>i</mi>
+ <mi>s</mi>
+ <mi>s</mi>
+ </mrow>
+ </msub>
+ <mo stretchy="false">[</mo>
+ <mi>R</mi>
+ <mi>h</mi>
+ <mi>X</mi>
+ <mo stretchy="false">(</mo>
+ <mo>&#x2217;</mo>
+ <mi>P</mi>
+ <mi>P</mi>
+ <msub>
+ <mi>h</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>3</mn>
+ </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <mo stretchy="false">(</mo>
+ <mi>P</mi>
+ <mi>P</mi>
+ <msub>
+ <mi>h</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>3</mn>
+ </mrow>
+ </msub>
+ <msub>
+ <mo stretchy="false">)</mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msub>
+ <mo stretchy="false">]</mo>
+</math></p></td>
+<td style="text-align:right;"><b>(3.11)</b></td>
+</tr>
+</table>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;" >
+<colgroup>
+<col style="width:90%;"/>
+<col style="width:10%;"/>
+</colgroup>
+<tr>
+<td id="eq3.12"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <mi>d</mi>
+ <mo stretchy="false">[</mo>
+ <mi>R</mi>
+ <mi>h</mi>
+ <mi>X</mi>
+ <mo stretchy="false">(</mo>
+ <mo>&#x2217;</mo>
+ <mi>P</mi>
+ <mi>P</mi>
+ <msub>
+ <mi>h</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>3</mn>
+ </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <mo stretchy="false">(</mo>
+ <mi>P</mi>
+ <mi>P</mi>
+ <msub>
+ <mi>h</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>3</mn>
+ </mrow>
+ </msub>
+ <msub>
+ <mo stretchy="false">)</mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msub>
+ <mo stretchy="false">]</mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>/</mo>
+ </mrow>
+ <mi>d</mi>
+ <mi>t</mi>
+ <mo>=</mo>
+ <msub>
+ <mi>K</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>a</mi>
+ <mi>s</mi>
+ <mi>s</mi>
+ </mrow>
+ </msub>
+ <mo stretchy="false">[</mo>
+ <mi>R</mi>
+ <mi>h</mi>
+ <mi>X</mi>
+ <mo stretchy="false">(</mo>
+ <mi>P</mi>
+ <mi>P</mi>
+ <msub>
+ <mi>h</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>3</mn>
+ </mrow>
+ </msub>
+ <msub>
+ <mo stretchy="false">)</mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msub>
+ <mo stretchy="false">]</mo>
+ <mo stretchy="false">[</mo>
+ <mo>&#x2217;</mo>
+ <mi>P</mi>
+ <mi>P</mi>
+ <msub>
+ <mi>h</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>3</mn>
+ </mrow>
+ </msub>
+ <mo stretchy="false">]</mo>
+ <mo>&#x2212;</mo>
+ <msub>
+ <mi>K</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mi>d</mi>
+ <mi>i</mi>
+ <mi>s</mi>
+ <mi>s</mi>
+ </mrow>
+ </msub>
+ <mo stretchy="false">[</mo>
+ <mi>R</mi>
+ <mi>h</mi>
+ <mi>X</mi>
+ <mo stretchy="false">(</mo>
+ <mo>&#x2217;</mo>
+ <mi>P</mi>
+ <mi>P</mi>
+ <msub>
+ <mi>h</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>3</mn>
+ </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <mo stretchy="false">(</mo>
+ <mi>P</mi>
+ <mi>P</mi>
+ <msub>
+ <mi>h</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>3</mn>
+ </mrow>
+ </msub>
+ <msub>
+ <mo stretchy="false">)</mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msub>
+ <mo stretchy="false">]</mo>
+ <mo>&#x2212;</mo>
+ <mn>1</mn>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mo>/</mo>
+ </mrow>
+ <msub>
+ <mi>T</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>1</mn>
+ <mo stretchy="false">(</mo>
+ <mi>c</mi>
+ <mi>o</mi>
+ <mo>&#x2212;</mo>
+ <mi>o</mi>
+ <mi>r</mi>
+ <mi>d</mi>
+ <mo stretchy="false">)</mo>
+ </mrow>
+ </msub>
+ <mo stretchy="false">[</mo>
+ <mi>R</mi>
+ <mi>h</mi>
+ <mi>X</mi>
+ <mo stretchy="false">(</mo>
+ <mo>&#x2217;</mo>
+ <mi>P</mi>
+ <mi>P</mi>
+ <msub>
+ <mi>h</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>3</mn>
+ </mrow>
+ </msub>
+ <mo stretchy="false">)</mo>
+ <mo stretchy="false">(</mo>
+ <mi>P</mi>
+ <mi>P</mi>
+ <msub>
+ <mi>h</mi>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>3</mn>
+ </mrow>
+ </msub>
+ <msub>
+ <mo stretchy="false">)</mo>
+ <mrow class="MJX-TeXAtom-ORD">
+ <mn>2</mn>
+ </mrow>
+ </msub>
+ <mo stretchy="false">]</mo>
+</math></td>
+<td style="text-align:right;padding:1em;"><b>(3.12)</b></td>
+</tr>
+</table>
+
+<a id="page_72" class="page" style="width:60%;">Page 72, Chapter 3 Dynamic processes and NMR</a>
+
+<figure class="figure-center-60" id="fig3.17">
+<img src="../images/fig3.17.jpg" alt="images"/>
+<figcaption class="figcaption-left-60" style="width:100%"><b>Fig. 3.17</b> <sup>31</sup>P NMR spectra showing saturation transfer between the <i>cis</i> and <i>trans</i> co-ordinated PPh<sub>3</sub> in Wilkinson&#x2019;s catalyst. From J.M. Brown <i>et al., J Chem. Soc., Perkin 2</i>, 1987, 1589.</figcaption>
+</figure>
+ <p class="indent">The experimental data, <a href="#fig3.17">figure 3.17</a>, for transfer of saturation with time can then be fitted to these equations to yield values for the rate constants for intermolecular exchange of co-ordinated and free phosphine, k<sub>diss</sub> and k <sub>ass</sub>. Similar experiments yield rate constants for the intramolecular exchange of P<sub>a</sub> and P<sub>b</sub>, <a href="#tab3.2">table 3.2</a></p>
+<p class="tablecaption-justify_60" id="tab3.2"><b>Table 3.2</b> Rate constants for ligand exchange in a series of derivatives of Wilkinson&#x2019;s catalyst determined by saturation transfer. From data in L. Bengtsonn <i>et al., J. Chem. Soc, Dalton Trans</i>., 1994, 1857.</p>
+<table style="margin:20px 0px 20px 0px;width:60%;border:1px solid;">
+<colgroup>
+<col style="width:20%"/>
+<col style="width:20%"/>
+<col style="width:20%"/>
+</colgroup>
+<tr>
+<td style="vertical-align:top;text-align:center;border-bottom:1px solid;border-right:1px solid;">complex</td>
+<td style="vertical-align:top;text-align:center;border-bottom:1px solid;border-right:1px solid;">k<sub>diss</sub>/s<sup>-1</sup></td>
+<td style="vertical-align:top;text-align:center;border-bottom:1px solid;border-right:1px solid;">k<sub>iso</sub>/s<sup>-1</sup></td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:left;border-bottom:1px solid;border-right:1px solid;">[Rh(PPh<sub>3</sub>)<sub>3</sub>Cl]</td>
+<td style="vertical-align:top;text-align:center;border-bottom:1px solid;border-right:1px solid;">0.3</td>
+<td style="vertical-align:top;text-align:center;border-bottom:1px solid;border-right:1px solid;"> 17</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:left;border-bottom:1px solid;border-right:1px solid;">[Rh(PPh<sub>3</sub>)<sub>3</sub>(ONO<sub>2</sub>)]</td>
+<td style="vertical-align:top;text-align:center;border-bottom:1px solid;border-right:1px solid;"> 58</td>
+<td style="vertical-align:top;text-align:center;border-bottom:1px solid;border-right:1px solid;"> 102</td>
+</tr>
+<tr>
+<td style="vertical-align:top;text-align:left;border-right:1px solid;">[Rh(PPh<sub>3</sub>)<sub>3</sub>NH<sub>3</sub>]<sup>+</sup></td>
+<td style="vertical-align:top;text-align:center;border-right:1px solid;"> 1.4</td>
+<td style="vertical-align:top;text-align:center;border-right:1px solid;"> 0.7</td>
+</tr>
+</table>
+<p class="indent">The rate of nitrate dissociation in [Rh(PPh<sub>3</sub>)<sub>3</sub>(ONO<sub>2</sub>)] was also determined by conventional variable temperature <sup>15</sup>N NMR. The rate constant at 303 K was found to be <i>ca</i> 3.5 *10<sup>3</sup> s<sup>-1</sup> which is considerably faster than the rate of phosphine isomerization in this complex thus the X-dissociative mechanism appears to be dominant for the nitrato complex whereas the observation that isomerization is much faster than dissociation in the chloro and ammine complexes indicates the dominant mechanism for these complexes is <i>via</i> the pseudo-tetrahedral intermediate.</p>
+<a id="page_73" class="page" style="width:60%;">Page 73, Chapter 3 Dynamic process and NMR</a>
+</section>
+</section>
+<section id="sec3.6" epub:type="chapter">
+<h2 class="h2">3.6 Effect of exchange on spin-spin coupling</h2>
+<p class="noindent">The effect of exchange on coupling differs between a fluxional process and an intermolecular exchange process.</p>
+<section id="sec3.6.1" epub:type="chapter">
+<h3 class="h3"><b>Averaging of the coupling constant in an intramolecular process</b></h3>
+<p class="noindent">In a fluxional process the ligand/migrating group is bound at all times to the molecule and hence the coupling is retained; the observed coupling constant is the weighted average of the individual couplings and the coupling pattern is that expected assuming all the coupling partner nuclei are seen.</p>
+<p class="indent">Consider for example the <sup>31</sup>P NMR spectrum of [Rh(PPh<sub>3</sub>)<sub>3</sub>]C1O<sub>4</sub> in dichloromethane solution, <a href="#fig3.18">figure 3.18</a>. At low temperature this shows two resonances in the ratio 1:2 due to the unique and <i>trans</i>- phosphines respectively. As the temperature is increased, both resonances broaden and then coalesce to form a doublet. The preservation of <sup>l</sup>J(Rh-P) at high temperatures indicates that the bonds between rhodium and the phosphine ligands are retained throughout consistent with a fast <i>intra</i>-molecular fluxional process for exchange of inequivalent tripheny lphosphines.</p>
+<figure class="figure-aside-center" id="fig3.18">
+<img src="../images/fig3.18.jpg" alt="images"/>
+<figcaption class="figcaption-justify-100"><b>Fig. 3.18</b> The variable temperature <sup>31</sup>P{<sup>1</sup>H} NMR spectra of [Rh(PPh<sub>3</sub>)<sub>3</sub>]CIO<sub>4</sub> showing the effect on spin-spin coupling of intramolecular exchange. At low temperature (lower spectrum) P-P coupling and discrete P-Rh couplings are seen whereas at high temperature (upper spectrum) an averaged coupling to rhodium is seen. The phosphoruses are now equivalent so no longer couple to each other. From data in A. R. Siedle <i>et al, Inorg. Chem</i>., 1988, <b>27</b>, 2473.</figcaption>
+</figure>
+<a id="page_74" class="page" style="width:60%;">Page 74, Chapter 3 Dynamic processes and NMR</a>
+</section>
+<section id="sec3.6.2" epub:type="chapter">
+<h3 class="h3"><b>Exchange decoupling in an intermolecular process</b></h3>
+<p class="noindent">In an intermolecular exchange process the bond between the exchanging group and the rest of the molecule breaks. Since coupling is transmitted through the bonds (see chapter 1.7) decoupling will occur when the exchange rate - the rate of bond breaking - is greater than the coupling constant. This phenomenon is known as exchange decoupling; the well known absence of coupling between the OH proton in methanol or ethanol and the other protons in the molecule is not due to the intervening oxygen atom but to rapid intermolecular exchange of this proton catalysed by traces of acid or base in the sample. If the alcohol is rigorously purified the expected couplings are seen in the <sup>1</sup>H NMR spectrum.</p>
+<p class="indent">Exchange decoupling can also be seen in the <sup>31</sup>P and <sup>13</sup>C NMR spectra of [Rh(PBu<sub>3</sub>)<sub>2</sub>(<sup>13</sup>CO)Cl] in the presence of dissolved <sup>l3</sup>CO, <a href="#fig3.19">figure 3.19</a>. In the absence of CO, <a href="#fig3.19">figure 3.19a</a>, the <sup>13</sup>C NMR spectrum shows a well resolved doublet of triplets due to coupling to the two equivalent phosphines and <sup>103</sup>Rh. Addition of traces of CO results in loss of the small coupling to phosphorus, <a href="#fig3.19">figure 3.19b</a>. Simplistically, the rate of bond breaking is greater than the phosphorus-carbon coupling constant so the coupling disappears, the phosphorus is exchange decoupled from the carbon. This is consistent with the on-set of <i>intermolecular</i> exchange of free and co-ordinated CO giving exchange decoupling and loss of <sup>2</sup>J<sub>PC</sub>.</p>
+<p class="indent">The larger rhodium-carbon coupling, however, is still present, even though it is the rhodium-carbon bond that is breaking, since the rate of bond cleavage does not yet exceed this coupling constant. At high CO concentration, exchange of free and co-ordinated CO becomes fast enough to decouple the rhodium and carbon nuclei and a singlet is seen, <a href="#fig3.19">figure 3.19c</a>. Similar changes are seen in the <sup>31</sup>P NMR spectrum.</p>
+<figure class="figure-aside-center" id="fig3.19">
+<img src="../images/fig3.19.jpg" alt="images"/>
+<figcaption><b>Fig. 3.19</b> The variable <sup>13</sup>C NMR spectra of [Rh(PBu<sub>3</sub>)<sub>2</sub>(CO)Cl] in the presence of traces of dissolved CO, showing the effect on spin-spin coupling of intermolecular exchange. Exchange decoupling occurs.</figcaption>
+</figure>
+<a id="page_75" class="page" style="width:60%;">Page 75, Chapter 3 Dynamic process and NMR</a>
+<p class="indent">This result seems somewhat surprising given the relative positions of the various ligands in the <i>trans</i> effect series (we might have expected the chloride ligand to be most labile) and may reflect the high affinity for phosphorus ligands of rhodium and the inability of the reaction solvent, toluene, to support the cationic rhodium species, [Rh(PBu<sub>3</sub>)<sub>2</sub>(<sup>13</sup>CO)]<sup>+</sup>, that would result from chloride loss from the complex.</p>
+</section>
+</section>
+<section id="sec3.7" epub:type="chapter">
+<h2 class="h2">3.7 2-D methods for studying exchange</h2>
+<p class="noindent">So far we have described variable temperature and 1-D saturation transfer methods for studying exchange. In those experiments we looked at relatively simple systems where the identification of the dynamic process was straightforward. However in more complex systems in which there are several, possibly interdependent exchange pathways, these 1-D methods may give ambiguous results or be excessively tedious to perform. For example, VT spectra may reveal the overall exchange but not allow individual ligand movements to be identified, <a href="#fig3.20">figure 3.20</a>, or many 1-D saturation transfer experiments, exciting each site in turn, may be needed to map out the exchange. It would clearly be advantageous if we could excite all sites simultaneously in a saturation transfer experiment. In effect this is what the 2-D EXSY (EXchange Spectroscopy) experiment achieves.</p>
+<figure class="figure-aside-center" id="fig3.20">
+<img src="../images/fig3.20.jpg" alt="images"/>
+<figcaption><b>Fig. 3.20</b> The variable temperature <sup>13</sup>C NMR spectra of Rh<sub>6</sub>(CO)<sub>15</sub>PAr<sub>3</sub> reveal a fluxlonal process is occurring but do not allow the fluxional pathways to be determined.</figcaption>
+</figure>
+<a id="page_76" class="page" style="width:60%;">Page 76, Chapter 3 Dynamic processes and NMR</a>
+<section id="sec3.7.1" epub:type="chapter">
+<h3 class="h3"><b>Exchange Spectroscopy</b></h3>
+<p class="noindent">In the EXSY experiment we first excite all the nuclear spins in the sample (<i>c.f</i>. the 1-D saturation transfer in which we selectively excited the nuclear spin at a particular site), and then allow a mixing delay for exchange to occur before measuring the FID. The experiment is repeated using a series of mixing delays; in this way a second time dimension &#x2013; mixing time &#x2013; that contains information about the exchange processes that are occurring is generated. We can now do a Fourier transformation of the FID&#x2019;s in the conventional time domain generating a series of conventional NMR spectra each differing only in the amount of exchange that has occurred <i>and</i> in the second time dimension created by the mixing delays. This second Fourier transformation reveals the exchange information in the spectra - we end up with a 2-D map in which (in addition to the diagonal peaks) peaks appear linking sites between which exchange is occurring. In this way the exact ligand movements involved can be determined.</p>
+</section>
+<section id="sec3.7.2" epub:type="chapter">
+<h3 class="h3"><b>Multisite exchange</b></h3>
+<p class="noindent">In most of the examples above there were two sites involved in the exchange process; the cyclopentadienyl rings in (C<sub>5</sub>H<sub>5</sub>)<sub>2</sub>Fe<sub>2</sub>(CO)<sub>4</sub> were either mutually <i>cis</i> or <i>trans</i>, or free and co-ordinated ligands were exchanged. However in many systems there are more than two sites involved in the fluxional process and it can be difficult, using variable temperature methods, to determine exactly which ligand moves where. EXSY is particularly useful in studying dynamic processes in complex systems involving multisite exchanges in which the exact atom movements cannot readily be obtained from conventional variable temperature measurements.</p>
+</section>
+<section id="sec3.7.3" epub:type="chapter">
+<h3 class="h3"><b>Virtual exchange</b></h3>
+<p class="noindent">Virtual exchange occurs when a symmetry transformation, as a result of movement of some other ligand in the compound, equivalences two otherwise distinct sites. Virtual exchange is thus likely to occur in systems where multisite exchange is possible.</p>
+<p class="indent">The variable temperature <sup>13</sup>CO NMR spectra of Rh<sub>6</sub>(CO)<sub>15</sub>PPh<sub>3</sub>, <a href="Chapter01.xhtml#fig1.8">figure 1.8</a>, are shown in <a href="#fig3.20">figure 3.20</a> (see <a href="Chapter01.xhtml#fig1.8">figure 1.8</a>, for the assignment of the resonances at 213 K). Clearly a fluxional process is occurring, however it is not obvious exactly which CO ligands are involved and which moves where.</p>
+<p class="indent">The <sup>13</sup>C EXSY spectra, <a href="#fig3.21">figure 3.21</a>, of the cluster shows correlations corresponding to the pairwise equivalencing of C(4)O with C(1)O, C(2)O with C(3)O, C(5)O with C(7)O and C(6)O with C(8) for the <a id="page_77" class="page">Page 77, Chapter 3 Dynamic process and NMR</a> lowest energy scrambling process. The rates of each pairwise equivalencing can be evaluated from the crosspeak integrals and are equal indicating an overall concerted mechanism.</p>
+<figure class="figure-aside-center" id="fig3.21">
+<img src="../images/fig3.21.jpg" alt="images"/>
+<figcaption><b>Fig. 3.21</b> The <sup>13</sup>C EXSY spectrum of Rh<sub>6</sub>(CO)<sub>15</sub>PAr<sub>3</sub> shows correlations corresponding to a localized exchange about Rh(A); crosspeaks occur where real or virtual exchange links two carbonyl ligands. The terminal - bridge EXSY spectrum (right) shows a correlation between C(1)O and C(4)O, and the terminal - terminal EXSY spectrum (left) correlations between (the rhodium coupled doublets of) C(5)O with C(7)O, and C(6)O with C(8)O.</figcaption>
+</figure>
+<figure class="figure-aside-center" id="fig3.22">
+<img src="../images/fig3.22.jpg" alt="images"/>
+<figcaption><b>Fig. 3.22</b> The fluxional process in Rh<sub>6</sub>(CO)<sub>15</sub>PPh<sub>3</sub> involves the phosphine ligand moving &#x201C;up and over&#x201D; at Rh(A). To make room, the terminal C(4)O moves into a site bridging the Rh(A)Rh(C) edge and the face bridging C(1)O moves onto the Rh(B)Rh(A) edge. As the PPh<sub>3</sub> ligand moves into the terminal site on Rh(A) previously occupied by C(4)O, C(1)O can move into the terminal site on Rh(A) previously occupied by the PPh<sub>3</sub> and C(4)O moves into the face-bridging site.</figcaption>
+</figure>
+<a id="page_78" class="page" style="width:60%;">Page 78, Chapter 3 Dynamic processes and NMR</a>
+<p class="indent">The observed exchanges are entirely consistent with the dynamic process shown in <a href="#fig3.22">figure 3.22</a> in which the triply bridging C(1)O moves into a &#x03BC;<sub>2</sub>-bridging position across the Rh(A)-Rh(B) edge with a concomitant movement of the terminal C(4)O ligand to the Rh(A)-Rh(C) edge and the associated movement of the phosphine ligand to an &#x201C;on top&#x201D; position on Rh(A) as shown for B in <a href="#fig3.22">figure 3.22</a>; this is followed by further movement of the phosphine ligand into the terminal site previously occupied by C(4)O, C(4)O then moves into the &#x03BC;<sub>3</sub>-bridging position and C(1)O into the terminal site on Rh(A). In effect a localised rotation of C(1)O, C(4)O and the phosphine ligand about Rh(A) has occurred. All the other carbonyls remain static throughout this process, the correlations observed in the EXSY spectrum, <i>viz</i>. C(2)O with C(3)O, C(5)O with C(7)O, and C(6)O with C(8)O, arise from the symmetry related transformations as a result of the ligand movements about Rh(A) and are examples of virtual exchange.</p>
+<p class="indent">At higher temperatures, EXSY spectroscopy reveals a second fluxional processes in this cluster - stereospecific exchanges around Rh(B) and around Rh(C) that probably proceed <i>via</i> a similar pathway to that described above for Rh(A), <a href="#fig3.23">figure 3.23</a>.</p>
+<figure class="figure-aside-center" id="fig3.23">
+<img src="../images/fig3.23.jpg" alt="images"/>
+<figcaption><b>Fig. 3.23</b> At higher temperatures a second localized exchange process occurs around Rh(B) and around Rh(C).</figcaption>
+</figure>
+<a id="page_79" class="page" style="width:60%;">Page 79, Chapter 3 Dynamic process and NMR</a>
+<p class="indent">It is interesting to note that the face-bridging C(1)O ligand involved in the low energy fluxional process around Rh(A) occupies a position close to the Rh(A)Rh(B) edge and away from the Rh(A)Rh(C) edge, <a href="#fig3.24">figure 3.24</a>. This might be considered a distortion away from the &#x201C;perfect&#x201D; face-bridging site and towards the transition state for the fluxional process. C(2)O and C(3)O, the face-bridging ligands involved in the high energy process, however, occupy near &#x201C;perfect&#x201D; face-bridging sites. This might explain the difference in activation energy for the two processes however, whilst the latter exchange appears to be a general dynamic process for clusters of this type <i>i.e</i>. Rh<sub>6</sub>(CO)<sub>15</sub>L, the former exchange around Rh(A) appears to be limited only to phosphine derivatives despite the fact that all derivatives show similar distortion of C(1)O towards the Rh(A)Rh(B) edge. Structural distortions in the cluster cannot therefore be the cause of fluxionality around Rh(A) in the phosphine substituted clusters but rather it must be attributed to the labilizing effect of phosphine substitution on Rh(A).</p>
+<figure class="figure-center-60" id="fig3.24">
+<img src="../images/fig3.24.jpg" alt="images"/>
+<figcaption class="figcaption-left-60" style="width:100%"><b>Fig. 3.24</b> The face-bridging CO ligand is distorted toward the Rh(A)Rh(B) edge in the fluxional process around Rh(A) lowering the activation energy, however, clusters substituted with other than phosphine ligands also show this distortion but are rigid around Rh(A) therefore the distortion cannot be the cause of the fluxionality.</figcaption>
+</figure>
+</section>
+</section>
+</section>
+</body>
+</html>

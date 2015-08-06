@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en-US">
+<head>
+<meta charset="utf-8" />
+<title>Radiation Heat Transfer</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section epub:type="chapter" id="ch03">
+<a id="page_25" class="page" style="width:70%;">Page 25, Chapter 3 Heat exchange between black surfaces</a>
+<h1 class="main" style="width:66%">3<span class="space">&#160;</span>Heat exchange between black surfaces</h1>
+<section epub:type="chapter" id="sec3.1">
+<h2 class="h2"><b>3.1<span class="space">&#160;</span>Introduction</b></h2>
+<p class="noindent">Various methods for determining view factors between surfaces were discussed in the previous chapter. We can now start solving problems of heat transfer between surfaces. In this chapter we will confine ourselves solely to radiation exchange between black surfaces, in which case the only radiation leaving a given surface is thermal emission. All incident radiation on a black surface is absorbed and none is reflected. Further, we shall assume that the medium between the surfaces neither emits nor absorbs radiation, i.e. it is non-participating. Non-black surfaces dealt with in <a href="Chapter04.xhtml">Chapter 4</a>, whereas participating media are considered in <a href="Chapter05.xhtml">Chapter 5</a>.</p>
+<p class="indent">All radiative transfer problems involving surfaces are built around a consideration of the radiative fluxes incident on and leaving a given surface. Consider two black surfaces (1 and 2), where surface 1 is at a higher temperature than surface 2. The radiation from surface 1 to surface 2 will be the fraction of the emission from surface 1 which is incident on surface 2, i.e. <i>W<sub>b</sub></i><sub>1</sub><i>A</i><sub>1</sub><i>F</i><sub>12</sub>. Similarly, the radiation from surface 2 to surface 1 will be <i>W<sub>b</sub></i><sub>2</sub><i>A</i><sub>2</sub><i>F</i><sub>21</sub>= <i>W<sub>b</sub></i><sub>2</sub><i>A</i><sub>1</sub><i>F</i><sub>12 </sub>(using Reciprocity). The net transfer of radiation (<i>Q</i><sub>12</sub>) from surface 1 to surface 2 will be the difference between these terms, i.e.</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq" id="eq3.1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mi>A</m:mi><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo stretchy='false'>(</m:mo><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mn>1</m:mn></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mn>2</m:mn></m:mrow></m:msub><m:mo stretchy='false'>)</m:mo><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(3.1)</td>
+</tr>
+</table>
+<p class="noindent">Clearly, if the geometry, the view factor, and the temperatures of the two surfaces are known, then the rate of heat transfer can be calculated. This general approach, of analysing a configuration in terms of transfer between various pairs of surfaces, forms the basis of all radiation calculations.</p>
+<p class="noindent">&#160;</p>
+</section>
+<section epub:type="chapter" id="sec3.2">
+<h2 class="h2"><b>3.2<span class="space">&#160;</span>Three-surface enclosures&#x2014;the refractory surface</b></h2>
+<p class="noindent">We can generalise the above approach to a system of black surfaces, all of which are at different temperatures. <a href="#eq3.1">Equation 3.1</a> can be applied to the radiation between any pair of surfaces. The direct radiation <i>Q<sub>ij</sub></i> from surface <i>i</i> to surface <i>j</i> will be given by</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq" id="eq3.2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mi>i</m:mi><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mi>j</m:mi><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(3.2)</td>
+</tr>
+</table>
+<p class="noindent">and the net radiation <i>Q<sub>i</sub></i> leaving surface <i>i</i> in all directions will be:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq" id="eq3.3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mstyle displaystyle='true'><m:munder><m:mo>&#x2211;</m:mo><m:mi>j</m:mi></m:munder><m:mrow><m:msub><m:mi>A</m:mi><m:mi>i</m:mi></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mi>i</m:mi><m:mi>j</m:mi></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mi>i</m:mi><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mi>j</m:mi><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.3)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_26" class="page">Page 26, Chapter 3 Heat exchange between black surfaces</a>We see that knowledge of the geometry, all surface temperatures, and the view factors will enable the rate of heat transfer to be determined. (Note on nomenclature for <i>Q</i>: a double subscript, such as <i>Q<sub>ij</sub></i>, is taken to mean the radiative transfer from surface <i>i</i> to surface <i>j;</i>a single subscript, such as <i>Q<sub>i</sub></i>, is taken to mean the radiation received/emitted by surface <i>i</i> from/to <i>all</i> other surfaces.)</p>
+<p class="indent">Enclosure problems are common to many industrial engineering applications, e.g. furnaces. In high temperature furnaces, we usually find surfaces acting as a heat source (such as radiant panels or a bed of burning fuel), surfaces acting as a heat sink (i.e. the material being heated) and the furnace walls. Furnace walls will normally be well insulated in order to reduce heat losses by conduction through the walls to the surroundings. A perfectly insulated surface will exchange radiation with other surfaces within the enclosure, but there will be zero conductive heat flow to the surroundings. If convective heat transfer between the furnace gases and the walls is also negligible, then at steady state the incident flux and the emissive flux will be equal (if the surface is black), and the net radiation leaving the furnace wall will be zero. The temperature of the surface will, essentially, float in such a way that the emissive flux matches the incident flux. Such a surface is variously called a <i>refractory</i> surface, a <i>reradiating</i> surface, or an <i>adiabatic</i> surface. If we can assume that any surfaces in a multi-surface problem are refractory, then it greatly simplifies the analysis.</p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<figure class="imgc" id="fig3.1">
+<img src="../images/fig3.1.jpg" alt="images"/>
+<figcaption><b>Figure 3.1</b> Schematic of a three-surface rectangular furnace</figcaption>
+</figure></aside>
+<p class="indent">Consider a rectangular box furnace (<a href="#fig3.1">Figure 3.1</a>) where all the surfaces are black, the whole of the roof (surface 1) is the heat source, the whole of the floor (surface 2) is the heat sink, and all the walls are refractory (surface R). Suppose that we wish to calculate the net rate of heat transfer to the heat sink, i.e. the material that we are interested in heating. We will assume that each of these three surfaces is at a constant temperature (<i>T</i><sub>1</sub>, <i>T</i><sub>2</sub>, and T<sub>R</sub>, respectively). (This problem is, of course, somewhat idealised. The heat source and sink would rarely occupy the whole face of a furnace, and the temperatures would not be uniform, especially at the interfaces, where we would not expect discontinuities. However, this suits our purpose here.)</p>
+<p class="indent">We approach the problem by thinking about the net radiative flux to surface 2. Surface 2 receives radiation from both surface 1 and surface R; it also emits radiation to surface 1 and surface R. In this example surface 2 is a plane, so there is no radiation received/emitted from/to elsewhere on surface 2. The net radiation received (<i>Q</i><sub>2</sub>) will be the difference between the incident and emitted radiation:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:3em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:msub><m:mi>Q</m:mi><m:mtext>2</m:mtext></m:msub><m:mtext>=Radiation&#x00A0;received&#x00A0;by&#x00A0;surface&#x00A0;2&#x00A0;&#x2013;&#x00A0;Radiation&#x00A0;emitted&#x00A0;by&#x00A0;surface&#x00A0;2</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>&#x2212;</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>21</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>2</m:mn><m:mtext>R</m:mtext></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:msub><m:mi>A</m:mi><m:mtext>R</m:mtext></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>R</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>21</m:mn></m:mrow></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>2</m:mn><m:mtext>R</m:mtext></m:mrow></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<p class="noindent">which on using the Reciprocity Relation gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq" id="eq3.4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>2</m:mn><m:mtext>R</m:mtext></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>R</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(3.4)</td>
+</tr>
+</table>
+<p class="noindent"><a href="#eq3.4">Equation 3.4</a> clearly shows the two contributions to the overall rate of heat transfer to surface 2: the first term represents direct exchange from the heat <a id="page_27" class="page">Page 27, Chapter 3 Heat exchange between black surfaces</a>source, whereas the second term represents radiation received from the walls. If all the quantities on the right-hand side of the equation are known, then the rate of heat transfer may be calculated. The temperature of the walls (<i>T</i><sub>R</sub>) may be calculated, using the basic definition of a refractory surface:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:3em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>Radiation&#x00A0;received&#x00A0;by&#x00A0;surface&#x00A0;R</m:mtext><m:mo>=</m:mo><m:mtext>&#x00A0;Radiation&#x00A0;emitted&#x00A0;by&#x00A0;surface&#x00A0;R</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mtable><m:mtr><m:mtd><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>1</m:mn><m:mtext>R</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>2</m:mn><m:mtext>R</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>RR</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>Q</m:mi><m:mrow><m:mtext>RR</m:mtext></m:mrow></m:msub></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mrow></m:mrow><m:mtext>R</m:mtext></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mrow></m:mrow><m:mtext>R</m:mtext></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mtext>R</m:mtext></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>R</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:msub><m:mi>A</m:mi><m:mtext>R</m:mtext></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>R</m:mtext><m:mn>4</m:mn></m:msubsup></m:mtd></m:mtr><m:mtr><m:mtd><m:msubsup><m:mi>T</m:mi><m:mtext>R</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mrow></m:mrow><m:mtext>R</m:mtext></m:msub><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mrow></m:mrow><m:mtext>R</m:mtext></m:msub><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mrow><m:msub><m:mi>A</m:mi><m:mtext>R</m:mtext></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mfrac></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr></m:mtable></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">Using the Reciprocity Relation, we obtain</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:13em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msubsup><m:mi>T</m:mi><m:mtext>R</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mtext>2</m:mtext></m:mrow></m:msub><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">where the temperature of the walls is now expressed purely in terms of view factors and the temperatures of surfaces 1 and 2. Substitution of this into <a href="#eq3.4">Equation 3.4</a> gives, after some rearrangement:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:6em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>2</m:mn><m:mtext>R</m:mtext></m:mrow></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">Use of reciprocity then gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq" id="eq3.5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:mfrac><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>1</m:mn><m:mtext>R</m:mtext></m:mrow></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>1</m:mn><m:mtext>R</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0.5em;">(3.5)</td>
+</tr>
+</table>
+<p class="noindent">Again, the two contributions to <i>Q</i><sub>2</sub> are readily noticeable. It is worth noting at this point that because refractory surfaces behave as reradiators (incident flux = emitted flux), the radiation received by surface 2 from the walls can be thought of as radiation from surface 1 which arrives at surface 2 indirectly via the walls. Thus <a href="#eq3.5">Equation 3.5</a> represents the sum of direct radiation (from 1 to 2) and indirect radiation (from 1 to 2 via the walls). (Some care must be exercised with this approach. The notion of indirect radiation must not be misconstrued into thinking of a refractory surface as a reflecting surface. Although the total incident flux and emitted flux from the refractory are equal, the spectral distributions of those fluxes will be very different, because the temperatures of the radiation sources are not the same. A black refractory surface is not a reflector&#x2014;it absorbs radiation incident upon it, and emits radiation with the same total flux, but with a spectral distribution appropriate to its own surface temperature.) The bracketed combination of view factors in <a href="#eq3.5">Equation 3.5</a> represents the fraction of radiation emitted by surface 1 which reaches surface 2 directly and indirectly with the assistance of the refractory surface. It can be thought of as a modified view factor, and is known as the <i>total radiation factor</i>. <a href="#eq3.5">Equation 3.5</a> can therefore be rewritten:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq" id="eq3.6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mrow><m:mover accent='true'><m:mi>F</m:mi><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(3.6)</td>
+</tr>
+</table>
+<p class="noindent"><a id="page_28" class="page">Page 28, Chapter 3 Heat exchange between black surfaces</a>where <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mrow><m:mover accent='true'><m:mi>F</m:mi><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:math> is the total radiation factor between surface 1 and surface 2 and is given by:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:12em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mrow><m:mover accent='true'><m:mi>F</m:mi><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mrow><m:mover accent='true'><m:mi>F</m:mi><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:mfrac><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>1</m:mn><m:mtext>R</m:mtext></m:mrow></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>1</m:mn><m:mtext>R</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">Clearly, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msub><m:mrow><m:mover accent='true'><m:mi>F</m:mi><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:mrow></m:math> is always greater than <i>F</i><sub>12</sub>, since it includes the indirect path via the refractory. Total radiation factors have the same properties as view factors in that they obey both the summation and reciprocity relations.</p>
+</section>
+<section epub:type="chapter" id="sec3.3">
+<h2 class="h2"><b>3.3<span class="space">&#160;</span>Electrical Network Analogy</b></h2>
+<p class="noindent">The method described in the previous section can, in principle, be used for any <i>N</i>-surface enclosure to develop a set of equations for solution. The complexity of the calculations increases as the number of surfaces increases. There is a method available which can reduce the number of calculations considerably, especially for grey surfaces (see <a href="Chapter04.xhtml">Chapter 4</a>). This has become known as the Electrical Network Analogy.</p>
+<p class="indent">We have already seen that the radiative transfer (<i>Q</i><sub>12</sub>) between two black surfaces is given by:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;margin-bottom:0em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mn>1</m:mn></m:mrow></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>W</m:mi><m:mrow><m:mi>b</m:mi><m:mn>2</m:mn></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo stretchy='false'>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtable columnalign='left'><m:mtr><m:mtd><m:mn>2</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow></m:mrow></m:mtd></m:mtr></m:mtable><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo stretchy='false'>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td style="padding-top:0em;">(3.1)</td>
+</tr>
+</table>
+<p class="noindent">Closer inspection shows that the form of this equation is very similar to that for the flow of current <i>I</i><sub>12</sub> in an electrical circuit between nodes 1 and 2:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:12em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>I</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>V</m:mi><m:mn>1</m:mn></m:msub><m:mo>&#x2212;</m:mo><m:msub><m:mi>V</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">where <i>C</i> is the electrical conductance between points 1 and 2, and <i>V<sub>i</sub></i> is the electrical potential at node <i>i</i>. We can therefore construct an equivalent electrical network where each surface is represented by a node with a potential of <i>&#x03C3;T</i><sup>4</sup> and the nodes are connected to each other by conductances <i>A<sub>i</sub>F<sub>ij</sub></i>. The equivalence is shown diagrammatically in <a href="#fig3.2">Figure 3.2</a>.</p>
+<p class="indent">In order to solve a radiation problem, we set up the equivalent electrical circuit and calculate the various unknowns using the rules of basic circuit theory, notably:</p>
+<p class="noindent">&#160;</p>
+<p class="nlist">(1)<span class="space">&#160;</span>conductances in parallel are additive;</p>
+<p class="nlist">(2)<span class="space">&#160;</span>conductances in series add reciprocally;</p>
+<p class="nlist">(3)<span class="space">&#160;</span>current flow into a node must equal current flow away from a node.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">The last rule is effectively a statement of conservation of energy.</p>
+<figure class="imgc" id="fig3.2">
+<img src="../images/fig3.2.jpg" alt="images"/>
+<figcaption><b>Figure 3.2</b> The equivalence of radiative transfer and an electrical circuit.</figcaption>
+</figure>
+<p class="noindent"><a id="page_29" class="page">Page 29, Chapter 3 Heat exchange between black surfaces</a></p>
+<p class="indent">We can repeat the analysis of the three-surface black enclosure from <a href="#sec3.2">Section 3.2</a> using the network approach. <a href="#fig3.3">Figure 3.3</a> shows the equivalent circuit. Each of the three surfaces (1, 2, and R) is identified by a potential node, and the nodes are connected by the appropriate conductances. We require the net radiative transfer from surface 1 to surface 2, i.e. the net current from node 1 to node 2. In order to do this, we use the additive rules for conductances to replace the network of three conductances by a single conductance <i>C</i><sub>T</sub> If the value of that single conductance can be determined, then calculation of the current becomes straightforward using:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq" id="eq3.7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mi>T</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></p></td>
+<td>(3.7)</td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="imgc" id="fig3.3">
+<img src="../images/fig3.3.jpg" alt="images"/>
+<figcaption><b>Figure 3.3</b> Equivalent electrical network for a three-surface enclosure (one heat source, one heat sink, one refractory surface).</figcaption>
+</figure></aside>
+<p class="noindent">The total conductance in <a href="#fig3.3">Figure 3.3</a> between nodes 1 and 2 is given by:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:66%;"/>
+<col style="width:34%;"/>
+</colgroup>
+<tr>
+<td style="text-align:center;"><p class="eq" id="eq3.8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>C</m:mi><m:mtext>T</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>C</m:mi><m:mtext>D</m:mtext></m:msub><m:mo>+</m:mo><m:msub><m:mi>C</m:mi><m:mtext>R</m:mtext></m:msub></m:mrow></m:math></p></td>
+<td>(3.8)</td>
+</tr>
+</table>
+<p class="noindent">where <i>C</i><sub>D</sub> is the &#x201C;direct&#x201D; conductance between nodes 1 and 2, and <i>C</i><sub>R</sub> is the &#x201C;indirect&#x201D; conductance via node R. <i>C</i><sub>R</sub> is itself a combination of two series conductances, such that:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:11em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable><m:mtr><m:mtd><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>C</m:mi><m:mtext>R</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>A</m:mi><m:mtext>R</m:mtext></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>A</m:mi><m:mtext>R</m:mtext></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>&#x21D2;</m:mo><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>C</m:mi><m:mtext>R</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mtext>R</m:mtext></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mtd></m:mtr></m:mtable></m:math></td>
+</tr>
+</table>
+<p class="noindent">Substitution into <a href="#eq3.8">Equation 3.8</a> gives:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:54%;"/>
+<col style="width:46%;"/>
+</colgroup>
+<tr>
+<td style="padding-left:5em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:msub><m:mi>C</m:mi><m:mtext>T</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mtext>R</m:mtext></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtable><m:mtr><m:mtd><m:mo>&#x21D2;</m:mo></m:mtd><m:mtd><m:mrow><m:msub><m:mi>C</m:mi><m:mtext>T</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:mfrac><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math></td>
+<td style="padding-left:1em; padding-top:3em;">(using reciprocity)</td>
+</tr>
+</table>
+<p class="noindent">This is the net conductance between nodes 1 and 2. Substitution into <a href="#eq3.7">Equation 3.7</a> gives the rate of radiative transfer.</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<tr>
+<td style="padding-left:4em;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:msub><m:mi>Q</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>[</m:mo> <m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:mfrac><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>1</m:mn><m:mtext>R</m:mtext></m:mrow></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mn>1</m:mn><m:mtext>R</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow> <m:mo>]</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mrow><m:mover accent='true'><m:mi>F</m:mi><m:mo stretchy='true'>&#x00AF;</m:mo></m:mover></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></td>
+</tr>
+</table>
+<p class="noindent">This is exactly the same expression as before (<a href="#eq3.5">Equation 3.5</a>), but the derivation has required considerably less algebra. If we require the temperature of the refractory, we apply the third circuit rule to the refractory node:</p>
+<table style="width:100%; margin-left:0em;margin-top:1em;">
+<colgroup>
+<col style="width:50%;"/>
+<col style="width:50%;"/>
+</colgroup>
+<tr>
+<td style="padding-left:2em"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>Sum&#x00A0;of&#x00A0;currents&#x00A0;into&#x00A0;node&#x00A0;R</m:mtext><m:mo>=</m:mo><m:mtext>&#x00A0;Sum&#x00A0;of&#x00A0;currents&#x00A0;away&#x00A0;from&#x00A0;node&#x00A0;R</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mtable><m:mtr><m:mtd><m:msub><m:mi>A</m:mi><m:mtext>R</m:mtext></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mtext>R</m:mtext></m:msub><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mtext>R</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>&#x2212;</m:mo><m:mi>&#x03C3;</m:mi><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mtable><m:mtr><m:mtd><m:mo>&#x21D2;</m:mo></m:mtd><m:mtd><m:mrow><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>&#x2009;</m:mtext><m:msubsup><m:mi>T</m:mi><m:mtext>R</m:mtext><m:mn>4</m:mn></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:msubsup><m:mi>T</m:mi><m:mn>1</m:mn><m:mn>4</m:mn></m:msubsup><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub><m:msubsup><m:mi>T</m:mi><m:mn>2</m:mn><m:mn>4</m:mn></m:msubsup></m:mrow><m:mrow><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>1</m:mn></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>R</m:mtext><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:mfrac></m:mrow></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr></m:mtable></m:mrow></m:math></td>
+<td style="padding-top:4.5em; padding-left:0.75em;">(as before)</td>
+</tr>
+</table>
+<p class="noindent">The network analogy has a certain elegance and is very appealing for these relatively straightforward systems. For more complicated systems involving more surfaces and hence more complicated equivalent circuitry, calculations can quickly become tedious, if not impossible to solve by hand. For multi-surface enclosures more sophisticated computational techniques are needed, <a id="page_30" class="page">Page 30, Chapter 3 Heat exchange between black surfaces</a>because analysis of such systems usually leads to a large number of equations with a large number of unknowns. Fortunately matrix algebra can be used in conjunction with digital computers and this is recommended for all but the simplest problems. A discussion of matrix solutions for black and grey enclosures is given in <a href="Chapter04.xhtml">Chapter 4</a>.</p>
+</section>
+</section>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Foundations of Organic Chemistry: Worked Examples</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="ch06"> 
+<a id="page_87" class="page" style="width:70%;">Page 87, Chapter6 Molecular orbitals</a>
+<h1 class="ch-title">6<span class="space">&#160;</span>Molecular orbitals</h1>
+<p class="noindent">We now turn to consideration of the electronic wavefunction, which determines the distribution of electrons in the molecule, and therefore the bonding. Chemists describe bonding in terms of atomic and molecular orbitals, and in this chapter we show how group theory can be used to classify the symmetries of orbitals and to find suitable combinations of atomic orbitals for the construction of a molecular orbital. We start by considering the case of atoms before proceeding to the more complex problem of molecules.</p>
+<section epub:type="chapter" id="sec6.1"> 
+<h2 class="main">6.1<span class="space">&#160;</span>Atoms</h2>
+<p class="noindent">In the orbital approximation, introduced in <a href="Chapter02.xhtml#sec2.7">Section 2.7</a>, the electronic wavefunction of an atom is constructed as a product of one-electron wavefunctions, or orbitals. Each orbital obeys a Schr&#x00F6;dinger equation of the form</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq6.1"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>&#x2212;</mo><mfrac><mrow><msup><mi>&#x210F;</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><msup><mo>&#x2207;</mo><mn>2</mn></msup><mi>&#x03C8;</mi><mo>+</mo><mi>V</mi><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mi>&#x03C8;</mi><mo>=</mo><mo>&#x03C5;</mo><mi>&#x03C8;</mi></mrow></math></p></td>
+<td>(6.1)</td>
+</tr>
+</table>
+<p class="noindent">where <i>V</i>(<i>r</i>) is the potential energy, including the average potential energy of interaction with all other electrons in the atom.</p>
+<aside class="abc" style="margin-top:-0em;" epub:type="sidebar">
+<p class="sidebar">In the central field approximation each electron in an atom feels a spherically symmetrical potential energy. The angular dependence of the orbitals is therefore the same as in the H atom.</p>
+</aside>
+<p class="indent">For atoms it is usual to average the potential energy over all orientations of the nucleus&#x2013;electron vector so that <i>V</i>(<i>r</i>) becomes spherically symmetrical. This additional approximation is known as the <i>central field approximation.</i> Equations of this type have many possible solutions, each corresponding to a different atomic orbital with a different, self-consistent, spherically averaged <i>V</i>(<i>r</i>), and each with a different orbital energy. However, the angular parts of the solutions are always spherical harmonics because of the spherical symmetry of the potential energy (see <a href="Chapter02.xhtml#sec2.3">Sections 2.3</a> and <a href="Chapter03.xhtml#sec3.4">3.4</a>). Each solution can therefore be labelled by an angular momentum quantum number <i>l</i>, and has degeneracy 2<i>l &#x002B;</i> 1, the number of possible values for the quantum number <i>m<sub>l</sub></i>. The radial functions, however, are not the same as for the hydrogen atom, because <i>V</i>(<i>r</i>) is not a simple Coulomb potential.</p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<p class="tab-cap" id="tab6.1" style="font-size:90%;"><b>Table 6.1.</b> Degeneracies of the spherical group <i>R</i><sub>3</sub></p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-lc">Irrep</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-lc">Degeneracy</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-lc"><i>l</i></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc"><i>S</i></p></td>
+<td style="vertical-align:top;"><p class="tab-lc">1</p></td>
+<td style="vertical-align:top;"><p class="tab-lc">0</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc"><i>P</i></p></td>
+<td style="vertical-align:top;"><p class="tab-lc">3</p></td>
+<td style="vertical-align:top;"><p class="tab-lc">1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc"><i>D</i></p></td>
+<td style="vertical-align:top;"><p class="tab-lc">5</p></td>
+<td style="vertical-align:top;"><p class="tab-lc">2</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc"><i>F</i></p></td>
+<td style="vertical-align:top;"><p class="tab-lc">7</p></td>
+<td style="vertical-align:top;"><p class="tab-lc">3</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc"><i>G</i></p></td>
+<td style="vertical-align:top;"><p class="tab-lc">9</p></td>
+<td style="vertical-align:top;"><p class="tab-lc">4</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-lc">&#x2026;</p></td>
+<td style="vertical-align:top;"><p class="tab-lc">2<i>l</i> + 1</p></td>
+<td style="vertical-align:top;"><p class="tab-lc"><i>l</i></p></td>
+</tr>
+</table>
+</aside>
+
+<p class="indent">These familiar ideas can also be looked at from the point of view of group theory. In the central field approximation each one-electron Schr&#x00F6;dinger equation is invariant to all symmetry operations of a sphere, which form the point group <i>R</i><sub>3</sub><i>.</i> The set of orbitals with a given energy therefore forms a symmetry-related set which is a basis for an irrep of <i>R</i><sub>3</sub><i>.</i> Some properties of the irreps of <i>R</i><sub>3</sub> are given in <a href="#tab6.1">Table 6.1</a>. The symmetry labels for the irreps are <i>S</i>, <i>P</i>, <i>D</i>, <i>F</i>, etc. with degeneracies 1, 3, 5, 7, respectively. The characters of these irreps define the symmetry properties of the spherical harmonics, and thus each energy level (often <a id="page_88" class="page">Page 88, Chapter6 Molecular orbitals</a>called a <i>sub-shell</i>) can be given a symmetry label indicating these symmetry properties, such as <i>s</i>, <i>p</i>, <i>d</i>, &#x0192; etc. A detailed description of the electronic wavefunctions of atoms can be found in reference 1.</p>
+</section>
+<section epub:type="chapter" id="sec6.2">
+<h2 class="main">6.2<span class="space">&#160;</span>The LCAO method</h2>
+<p class="noindent">For molecules the situation is more complicated because there are several nuclei acting as centres of attraction. In the Born&#x2013;Oppenheimer approximation, where the nuclei form a rigid framework, the one-electron Schr&#x00F6;dinger equation, <a href="#eq6.1">eqn 6.1</a> is not spherically symmetrical. The electronic kinetic energy operator always has spherical symmetry. However, the potential energy of the electron reflects the symmetry of the nuclear arrangement, and is assumed to be invariant to symmetry operations of the molecular point group. This assumption takes the place of the central field approximation for atoms. In consequence a set of degenerate orbitals forms a basis for an irrep of the molecular point group.</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<p class="sidebar">In a molecule the potential energy is assumed to have the full symmetry of the molecular point group. The molecular orbitals can then be labelled with irreps of the group, which determine their symmetry properties.</p>
+</aside>
+<p class="indent">It is normal to distinguish between <i>valence electrons</i> and <i>core electrons.</i> Chemical bonding arises from the rearrangement of the valence electrons, to occupy molecular orbitals extending over several nuclei. To a first approximation the core electrons do not take part in the bonding and can still be associated with a single nucleus. It is natural to try to construct the molecular orbitals by superposing appropriate combinations of the valence atomic orbitals (the LCAO method). Thus, if we denote the molecular orbital by <i>&#x03C8;</i> and the <i>i</i>th valence atomic orbital by <i>&#x03D5;<sub>i</sub></i> then we construct a molecular orbital by linear combination of the atomic orbitals:</p>
+<table style="width:100%; margin-top:1em; margin-bottom:1em;margin-left:1em;margin-left:1em;">
+<colgroup>
+<col style="width:64%;"/>
+<col style="width:36%;"/>
+</colgroup>
+<tr>
+<td><p class="eq" id="eq6.2"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>&#x03C8;</mi><mo>=</mo><mstyle displaystyle='true'><munder><mo>&#x2211;</mo><mi>i</mi></munder><mrow><msub><mi>a</mi><mi>i</mi></msub><msub><mi>&#x03D5;</mi><mi>i</mi></msub></mrow></mstyle></mrow></math></p></td>
+<td>(6.2)</td>
+</tr>
+</table>
+<p class="noindent">where <i>a<sub>i</sub></i> are the coefficients in the linear combination. There are infinitely many linear combinations of this form for even the smallest molecule. We clearly need some way of finding the correct combinations. As with the case of the normal vibrational coordinates this procedure can be made much simpler by the use of group theory.</p>
+<p class="indent">Since each set of degenerate molecular orbitals must generate an irrep of the molecular point group, the problem will be greatly simplified if we can find those combinations of the valence atomic orbitals that generate each possible irrep. As in the case of vibrations, group theory does not give energies, but it does give the symmetries and the degeneracies of the orbitals. The method is now familiar.</p>
+<p class="nlist">1.<span class="space">&#160;</span>The basis functions are chosen to be the valence orbitals of the atoms that make up the molecule.</p>
+<p class="nlist">2.<span class="space">&#160;</span>The basis is used to generate a representation of the point group.</p>
+<p class="nlist">3.<span class="space">&#160;</span>The representation is reduced.</p>
+<p class="nlist">4.<span class="space">&#160;</span>Projection operators are applied to determine the <i>symmetry-adapted linear combinations.</i></p>
+
+<p class="indent"><a id="page_89" class="page">Page 89, Chapter6 Molecular orbitals</a>&#160;&#160;&#160;  As an example we consider the methane molecule. The valence orbitals are the four 1<i>s</i> orbitals on the H atoms, the three 2<i>p</i> orbitals and the 2<i>s</i> orbital on the C atom. Each of these three sets of orbitals would, on its own, form a basis for a representation of <i>T<sub>d</sub>.</i> For example, the carbon 2<i>p</i> orbitals are transformed into one another by the symmetry operations, but there is no symmetry operation that can transform a C 2<i>p</i> orbital into a H 1<i>s</i> orbital. We have already considered the four H 1<i>s</i> orbitals in <a href="Chapter04.xhtml#sec4.4">Section 4.4</a> where we showed that they generate the representation <i>A</i><sub>1</sub> &#x002B; <i>T</i><sub>2</sub><i>.</i> The C 2<i>s</i> orbital is totally symmetric, since it has spherical symmetry and is located at the centre of mass. The 2<i>p</i> orbitals have the same symmetry as an (<i>x</i>, <i>y</i>, <i>z</i>) axis system based at the centre of mass, and therefore generate &#x0393;<sup>(</sup><i><sup>t</sup></i><sup>)</sup><i> = T</i><sub>2</sub> (see <a href="Chapter05.xhtml#sec5.2">Section 5.2</a>). The total representation is therefore 2<i>A</i><sub>1</sub> <i>&#x002B;</i>2<i>T</i><sub>2</sub><i>.</i> We conclude that the molecule will have two nondegenerate <i>a</i><sub>1</sub> molecular orbitals and two triply degenerate <i>t</i><sub>2</sub> sets of molecular orbitals in the valence shell. The two <i>a</i><sub>1</sub> orbitals will be superpositions of the C 2<i>s</i> orbital and the <i>A</i><sub>1</sub> combination of the four H 1<i>s</i> orbitals (which is H<sub>1</sub> &#x002B; H<sub>2</sub> &#x002B; H<sub>3</sub> &#x002B; H<sub>4</sub>). We expect that one of these combinations will be bonding (i.e. the orbitals will interfere constructively and be lowered in energy); the other combination will be raised in energy and be an antibonding orbital (destructive interference). Similar considerations will apply for the two <i>t</i><sub>2</sub> sets of orbitals. The exact coefficients are not completely determined by symmetry, except in rare cases, and will be considered in more detail in II. A schematic orbital correlation diagram is shown in <a href="#fig6.1">Fig. 6.1</a>. Only combinations of AOs with the same symmetry can be combined with one another to form an MO because each MO must be a basis for an irrep. Thus an MO of <i>&#x0391;</i><sub>1</sub> symmetry can only be built from the C 2<i>s</i> orbital, and the <i>&#x0391;</i><sub>1</sub> combination of the H orbitals.</p>
+<aside class="abc" style="margin-top:-30.5em;" epub:type="sidebar">
+<figure class="fig1" id="fig6.1">
+<img src="../images/Fig6.1.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 6.1</b> Molecular orbital correlation diagram for methane. The dashed lines show the correlations between symmetry adapted combinations of atomic orbitals and molecular orbitals of the same symmetry.</p></figcaption></figure>
+</aside>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<figure class="fig1" id="fig6.2">
+<img src="../images/Fig6.2.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 6.2</b> Photoelectron spectrum of methane.</p></figcaption></figure>
+</aside>
+<p class="indent">The eight valence electrons are distributed among the molecular orbitals in accordance with the Aufbau principle, filling the lowest four MOs, which are the bonding <i>a</i><sub>1</sub> orbital and the triply degenerate bonding <i>t</i><sub>2</sub> orbital. The antibonding orbitals are all empty, giving a total of eight bonding electrons (or equivalently four CH bonds), in agreement with the usual picture of the methane molecule. Notice, however, that the simple molecular orbital theory predicts that the bonding electrons are divided between orbitals with two different energies, two in the <i>a</i><sub>1</sub> orbital and six in the <i>t</i><sub>2</sub> orbitals. The qualitative value of the MO picture is reinforced by an analysis of the photoelectron spectrum, <a href="#fig6.2">Fig. 6.2</a>, in which the lowest ionization energy is interpreted as ionization from a triply degenerate orbital. (Strictly speaking the orbital symmetry of the resulting ion is <i>T</i><sub>2</sub>, see II.) Notice also that this simple molecular orbital picture seems to contradict the idea of <i>sp</i><sup>3</sup> hybridization No mixing of the <i>s</i> and <i>p</i> orbitals is possible in methane because they have different symmetries.</p>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<p class="sidebar" id="pro6.2.1"><b>Problem 6.2.1.</b> <i>Find the symmetries of the valence molecular orbitals in the LCAO approximation for the following molecules, and propose an orbital correlation diagram for each: NH</i><sub>3</sub><i>, O</i><sub>2</sub><i>, H</i><sub>2</sub><i>O.</i></p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec6.3"> 
+<h2 class="main">6.3<span class="space">&#160;</span><b><i>&#x03C0;</i></b> <b>bonding</b></h2>
+<p class="noindent">The ideas of molecular orbitals and delocalization of electrons across <a id="page_90" class="page">Page 90, Chapter6 Molecular orbitals</a>several atoms are probably most familiar in the context of &#x03C0; bonding and aromaticity. We shall therefore consider the problem of finding the symmetries and degeneracies of the &#x03C0; orbitals in a delocalized system.</p>
+<p class="indent">One of the simplest delocalized &#x03C0; systems is found in the allyl radical, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>=</mo><mi>C</mi><mi>H</mi><mo>&#x2212;</mo><mi>C</mi><msubsup><mi>H</mi><mn>2</mn><mo>&#x2022;</mo></msubsup></mrow></math>, which belongs to the <i>C</i><sub>2</sub><i><sub>v</sub></i> point group. There are two equivalent structures which can be considered to be in resonance, one of which has the odd electron on the right hand <i>C</i> atom and the other has it on the left. The <i>&#x03C3;</i> bonding orbitals of the carbon framework are constructed from the carbon 2<i>s</i> orbitals and the 2<i>p</i> orbitals that lie in the plane of the molecule. The &#x03C0; bonding orbitals are constructed from the 2<i>p</i> orbitals that are orthogonal to the plane of the molecule. These orbitals are also orthogonal to the <i>&#x03C3;</i> bonding orbitals because they have opposite symmetries with respect to reflection in the plane of the molecule. They can therefore be considered independently of the <i>&#x03C3;</i> bonding framework.</p>
+<aside class="abc" style="margin-top:-18.65em;" epub:type="sidebar">
+<figure class="fig1" id="fig6.3">
+<img src="../images/Fig6.3.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 6.3</b> Basis functions for &#x03C0; bonding in the allyl radical.</p></figcaption></figure>
+<p class="tab-cap" id="tab6.2" style="font-size:90%;"><b>Table</b> 6.2. Transformations of the out of plane <i>p</i> orbitals in the allyl radical</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>E</i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>C</i><sub>2</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03C3;<sub>v</sub></i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><msup><mi>&#x03C3;</mi><mo>&#x2032;</mo></msup><mi>v</mi></msub></mrow></math></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>p</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x2013;p</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>p</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x2013;p</i><sub>1</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>p</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;<i>p</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>p</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>&#x2013;p</i><sub>2</sub></p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>p</i><sub>3</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;<i>p</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l"><i>p</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;<i>p</i><sub>3</sub></p></td>
+</tr>
+</table>
+<p class="tab-cap" id="tab6.3" style="font-size:90%;"><b>Table</b> 6.3. Representations of the <i>&#x03C0;</i> orbitals in the allyl radical</p>
+<table class="width100b" style="margin-bottom:1em;width:70%">
+<tr>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>C</i><sub>2</sub><i><sub>v</sub></i></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l">E</p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>C</i><sub>2</sub></p></td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><i>&#x03C3;<sub>v</sub></i></p>
+</td>
+<td style="vertical-align:top;" class="borb"><p class="tab-l"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><msup><mi>&#x03C3;</mi><mo>&#x2032;</mo></msup><mi>v</mi></msub></mrow></math></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">&#x0393;<sup>(13)</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">2</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">0</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;2</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l">&#x0393;<sup>(2)</sup></p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>A</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>A</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>B</i><sub>1</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tab-l"><i>B</i><sub>2</sub></p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">&#x2013;1</p></td>
+<td style="vertical-align:top;"><p class="tab-l">1</p></td>
+</tr>
+</table>
+<p class="sidebar" id="pro6.3.1"><b>Problem 6.3.1.</b> <i>Verify the characters in <a href="#tab6.3">Table 6.3</a> and the reduction of the two representations</i> &#x0393;<sup>(2)</sup> <i>and</i> &#x0393;<sup>(13)</sup>. <i>Apply projection operators to show</i> (<i>using <a href="#tab6.2">Table 6.2</a></i>)<i> that the A</i><sub>2</sub><i> combination of p</i><sub>1</sub><i> and p</i><sub>3</sub><i> is p</i><sub>1</sub> <i>&#x2013; p</i><sub>3</sub><i> and that the B</i><sub>1</sub><i> combination is p</i><sub>1</sub><i> &#x002B; p</i><sub>3</sub><i>.</i></p>
+</aside>
+<p class="indent">To illustrate the use of group theory here we consider the effect of each symmetry operation of the <i>C</i><sub>2</sub><i><sub>v</sub></i> point group on the three out-of-plane 2<i>p</i> orbitals, shown in <a href="#fig6.3">Fig. 6.3</a>. The ways in which these three orbitals are transformed are tabulated in <a href="#tab6.2">Table 6.2</a>. It will be seen that orbitals 1 and 3 are interconverted by some symmetry operations but orbital 2 is transformed into itself by each operation, because the central atom is not related by symmetry to the two outer atoms. We therefore consider the basis made up of orbitals 1 and 3 separately from the basis made up of orbital 2. The representations generated by each of these bases are given in <a href="#tab6.3">Table 6.3</a> together with the <i>C</i><sub>2</sub><i><sub>v</sub></i> character table. It can be seen, either by inspection or by use of the reduction formula, that &#x0393;<sup>(2)</sup> = <i>B</i><sub>1</sub> and that &#x0393;<sup>(13)</sup> = <i>A</i><sub>2</sub><i> &#x002B; &#x0392;</i><sub>1</sub><i>.</i></p>
+<p class="indent">We conclude that there are three &#x03C0; orbitals in the valence shell of the allyl radical. One of them has <i>A</i><sub>2</sub> symmetry and is equal to <i>p</i><sub>1</sub><i> &#x2013; p</i><sub>3</sub><i>.</i> The other two have <i>B</i><sub>1</sub> symmetry and are combinations of <i>p</i><sub>1</sub> &#x002B; <i>p</i><sub>3</sub> with <i>p</i><sub>2</sub><i>.</i> One of these will be bonding and the other will be antibonding. The <i>a</i><sub>2</sub><i></i> orbital is essentially nonbonding as there is a node on atom 2. An energy level diagram is given in <a href="#fig6.4">Fig. 6.4</a>. The allyl radical has three &#x03C0; electrons. The first two occupy the <i>b</i><sub>1</sub> bonding orbital and the odd electron goes into the nonbonding <i>b</i><sub>2</sub> orbital. It therefore has significant density only on the terminal C atoms, a fact borne out by the tendency of the allyl radical to react at the terminal C and by the esr spectrum, which shows hyperfine coupling between the odd electron and the two terminal CH<sub>2</sub> groups, but none with the central CH group.</p>
+<p class="noindentt" id="pro6.3.2"><b>Problem 6.3.2.</b> <i>Perform a similar analysis for the cis-butadiene molecule to show that the &#x03C0; molecular orbitals have symmetries</i> 2<i>a</i><sub>2</sub> &#x002B; 2<i>b</i><sub>1</sub><i>. Identify the a</i><sub>2</sub><i> and b</i><sub>1</sub><i> combinations of the orbitals on atoms 1 and 4 and on atoms 2 and 3. By mixing combinations of the same symmetry in bonding and antibonding ways suggest the order of energies for the &#x03C0; molecular orbitals, sketch them and identify the HOMO and the LUMO.</i></p>
+<p class="noindent">&#160;</p>
+<p class="noindentt" id="pro6.3.3"><b>Problem 6.3.3.</b> <i>In benzene all the carbon atoms are symmetry-related.</i> <a id="page_91" class="page">Page 91, Chapter6 Molecular orbitals</a></p>
+
+<p class="noindent"><i>Show the &#x03C0;</i> <i>orbitals of benzene, and show that they have symmetries a</i><sub>2</sub><i><sub>u</sub></i>&#x002B;<i>b</i><sub>2</sub><i><sub>g</sub></i>&#x002B;<i>e</i><sub>2</sub><i><sub>g</sub></i>&#x002B;e<sub>1</sub><i><sub>u</sub></i>. <i>Apply projection operators to find the forms of these orbitals and hence predict the order of their energies and the ground state configuration of the &#x03C0; electrons in benzene.</i></p></section>
+<section epub:type="chapter" id="sec6.4"> 
+<h2 class="main">6.4<span class="space">&#160;</span>Orbital symmetry and chemical reactivity</h2>
+<p class="noindent">Molecular orbitals and their symmetries are not only useful in rationalizing the bonding of simple molecules, they can also be used to give insight into the pathways of some chemical reactions. In analysing a reaction pathway it is common to identify a transition state and to trace the symmetries of the valence orbitals of the transition state from reactants to products. If the valence orbitals of the reactants have the correct symmetries to interact and lead to the transition state, then the reaction is said to be <i>symmetry-allowed.</i> If not, the reaction is <i>symmetry-forbidden.</i></p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="fig1" id="fig6.4">
+<img src="../images/Fig6.4.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 6.4</b> MOs for the allyl radical.</p></figcaption></figure>
+</aside>
+<p class="indent">Chemical reactions involve transfers of electron density between orbitals, and in the <i>frontier orbital</i> method it is usual to concentrate simply on the HOMO of one molecule and the LUMO of the other. The new bonding comes from the interaction of these orbitals, which is favoured if they have large overlap and similar energies. The method is not exact for several reasons:</p>
+<p class="nlist">1.<span class="space">&#160;</span>The transition state may not have any exact symmetry elements, even when the reactant molecules do. The first example we consider below is such a case.</p>
+<p class="nlist">2.<span class="space">&#160;</span>The bonding in a transition state cannot be described accurately using only the HOMO and the LUMO.</p>
+<p class="nlist">3.<span class="space">&#160;</span>Some reactions are not <i>adiabatic.</i> For a nonadiabatic reaction a transition occurs from one electronic state to another during the course of the reaction and the bonding does not therefore change smoothly from reactant to product.</p>
+<p class="indentt">In spite of these caveats orbital symmetry arguments have proved particularly useful in understanding electrocyclic reactions and sigmatropic rearrangements, and we briefly consider one example of each. For a more detailed exposition the reader is referred to reference 4.</p>
+<section epub:type="chapter"> 
+<h3 class="sub"><b>The Diels&#x2013;Alder reaction</b></h3>
+
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure class="fig1" id="fig6.5">
+<img src="../images/Fig6.5.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 6.5</b> HOMO and LUMO for a Diels&#x2013;Alder reaction.</p></figcaption></figure>
+</aside>
+<p class="noindent">The Diels&#x2013;Alder reaction is an electrocyclic reaction between a conjugated diene, such as cyclopentadiene, and a <i>dienophile,</i> which can be considered to be a two-electron &#x03C0; system, such as methyl acrylate. In the frontier orbital picture the key interaction is between the HOMO of the diene and the LUMO of the dienophile. The reaction is enhanced by neighbouring groups which raise the HOMO energy of the diene or reduce the LUMO energy of the dienophile, thus improving the energy matching. The most important features of the HOMO of the diene and the LUMO of a typical single &#x03C0; bond are shown in <a href="#fig6.5">Fig. 6.5</a>. If the <a id="page_92" class="page">Page 92, Chapter6 Molecular orbitals</a>dienophile is considered to attack the diene symmetrically from above or below the plane of the conjugated pi system of the diene the transition state will have a plane of symmetry, as marked on the figure. The HOMO and LUMO have the same symmetry with respect to this plane, which is the only symmetry operation remaining in the transition state (in the case shown it is only approximately a symmetry operation). In consequence we conclude that the reaction is symmetry-allowed with this (supra&#x2013;supra) transition state.</p>
+<aside class="abc" style="margin-top:-7.4em;" epub:type="sidebar">
+<p class="sidebar" id="pro6.4.1"><b>Problem 6.4.1.</b> <i>Use the</i> <i>symmetry of the frontier orbitals to discuss the type of transition state for which a 2&#x002B;2 cycloaddition, such as ethene &#x002B; ethene is symmetry-allowed.</i></p>
+</aside></section>
+<section epub:type="chapter">
+<h3 class="sub"><b>1&#x2013;3 Sigmatropic shift of propene</b></h3>
+<p class="noindent">Another type of reaction for which orbital symmetry arguments are helpful is the sigmatropic shift of an H atom from one C to another. A simple example of such a reaction is the shift of an H atom from one terminal C atom to the other in propene. Of course for propene the product of this reaction is identical to the reactant, but if the propene is substituted this is no longer the case. The simplest way to visualize the transition state for this reaction is to disconnect the H atom, leaving an allyl radical. The frontier orbital interactions are between the SOMO of the allyl radical (see <a href="#sec6.3">Section 6.3</a>) and the SOMO (1<i>s</i> orbital) of the H atom. The orbitals and their interactions are shown for a supra transition state in <a href="#fig6.6">Fig. 6.6</a>. In order to transfer from one terminal C atom to the other the H <i>1</i>s orbital must have positive interactions with both C atoms. This is not the case for the supra transition state. The SOMO of the allyl radical has the opposite symmetry to the H-1<i>s</i> orbital with respect to the one remaining reflection symmetry. In order to have a symmetry-allowed reaction some way must be found for the H atom to interact with the lobes of the SOMO on opposite sides of the plane. This can be done in principle by twisting the two C atoms in the same direction and placing the H atom in the CCC plane on the <i>C</i><sub>2</sub> axis, which is now the only remaining symmetry element. This <i>antara</i> transition state is depicted in <a href="#fig6.7">Fig. 6.7</a>. Although the reaction is symmetry-allowed through the antara transition state, so much steric strain must be introduced to twist the C atoms against the conjugated system that the reaction does not readily take place.</p>
+<aside class="abc" style="margin-top:-30em;" epub:type="sidebar">
+<figure class="fig1" id="fig6.6">
+<img src="../images/Fig6.6.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 6.6</b> Supra transition state for a 1&#x2013;3 sigmatropic shift.</p></figcaption></figure>
+</aside>
+<aside class="abc" style="margin-top:-17em;" epub:type="sidebar">
+<figure class="fig1" id="fig6.7">
+<img src="../images/Fig6.7.jpg" alt="images"/>
+<figcaption>
+<p class="noindent" style="width:130%;font-size:90%;text-align:left;"><b>Fig. 6.7</b> Antara transition state for a 1&#x2013;3 sigmatropic shift. There is a <i>C</i><sub>2</sub> axis perpendicular to the plane of the paper.</p></figcaption></figure>
+</aside>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="sidebar" id="pro6.4.2"><b>Problem 6.4.2.</b> <i>Show that the 1&#x2013;5 sigmatropic shift in penta-1,3-diene is symmetry-allowed through a supra transition state.</i></p>
+</aside>
+<p class="ref"><b>References</b></p>
+<p class="refl">1.<span class="space">&#160;</span>Woodgate, G. K. (1983). <i>Elementary atomic structure.</i> 2nd edn. Oxford University Press, Oxford.</p>
+<p class="refl">2.<span class="space">&#160;</span>Schonland, D. S. (1965). <i>Molecular symmetry,</i> van Nostrand Reinhold, New York.</p>
+<p class="refl">3.<span class="space">&#160;</span>Bishop, D. M. (1973). <i>Group theory and chemistry.</i> Clarendon Press, Oxford.</p>
+<p class="refl">4.<span class="space">&#160;</span>Fleming, I. (1982). <i>Frontier orbitals and chemical reactivity.</i> Wiley, New York.</p>
+</section>
+</section>
+</section>
+</body>
+</html>

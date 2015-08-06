@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Inorganic Spectroscopic Methods</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div>
+<section id="Ch02" epub:type="chapter">
+<a id="page_10" class="page" style="width:60%;">Page 10, Chapter 2 Vibrational spectroscopy</a>
+<h1 class="chaptitle">2<span class="space">&#160;</span>Vibrational spectroscopy</h1>
+<p class="noindent">&#160;</p>
+<section id="sec2.1" epub:type="chapter">
+<h2 class="h2">2.1 The basics</h2>
+<p class="noindent">Vibrational spectroscopy was one of the first spectroscopic techniques to be widespread in its use, in particular infrared or IR spectroscopy&#x2014;so called because of the region of the electromagnetic spectrum used. There is a second form of vibrational spectroscopy&#x2014;Raman spectroscopy&#x2014;which provides similar information but has a different physical basis and is covered in more detail later in this chapter. As the name suggests these forms of spectroscopy are tied up with changes in the <i>vibrational</i> state of molecules.</p>
+<p class="indent">In a simple diatomic molecule, such as carbon monoxide, shown in <a href="Chapter02.xhtml#fig2.1">Fig. 2.1</a>, the two atoms are held together by the overlap of a number of orbitals. At a certain intemuclear distance there is a balance between the attracti ve bonding forces and the repulsive interaction between the remaining electrons of the two atoms. This equilibrium bond distance (usually denoted as re, where e refers to the equilibrium position) can be changed by applying energy. In this respect we could think of this molecule as being two balls (of mass <i>m</i><sub>1</sub> and <i>m</i><sub>2</sub> held together by a spring of a certain strength (<i>k</i>). Classical physics tells us that such a system will vibrate at a particular frequency, <i>&#x03C9;</i>, given by <a href="#eq2.1">eqn 2.1</a></p>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig2.1.jpg" alt="images"/>
+<p class="figcaption-aside-left" id="fig2.1"><b>Fig. 2.1</b> The structure of carbon monoxide.</p>
+</figure>
+</aside>
+<p class="eq" id="eq2.1"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>&#x03C9;</mi><mo>=</mo><mfrac>
+  <mn>1</mn>
+  <mrow>
+   <mn>2</mn><mi>&#x03C0;</mi>
+  </mrow>
+ </mfrac>
+ <msqrt>
+  <mrow>
+   <mfrac>
+    <mi>k</mi>
+    <mi>&#x03BC;</mi>
+   </mfrac>
+   
+  </mrow>
+ </msqrt>
+ 
+</math><span class="no">(2.1)</span>
+</p>
+<p class="noindent">where <i>&#x03BC;</i> is the reduced mass of the two objects, given by <a href="#eq2.2">eqn 2.2</a></p>
+<p class="eq" id="eq2.2"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>&#x03BC;</mi><mo>=</mo><mfrac>
+  <mrow>
+   <mrow><mo>(</mo>
+    <mrow>
+     <msub>
+      <mi>m</mi>
+      <mn>1</mn>
+     </msub>
+     <mo>&#x00D7;</mo><msub>
+      <mi>m</mi>
+      <mn>2</mn>
+     </msub>
+     
+    </mrow>
+   <mo>)</mo></mrow>
+  </mrow>
+  <mrow>
+   <mrow><mo>(</mo>
+    <mrow>
+     <msub>
+      <mi>m</mi>
+      <mn>1</mn>
+     </msub>
+     <mo>+</mo><msub>
+      <mi>m</mi>
+      <mn>2</mn>
+     </msub>
+     
+    </mrow>
+   <mo>)</mo></mrow>
+  </mrow>
+ </mfrac>
+ 
+</math><span class="no">(2.2)</span>
+
+</p>
+<p class="indent">This macroscopic view of an oscillator would allow us to sketch an energy diagram similar to that shown in <a href="Chapter02.xhtml#fig2.2">Fig. 2.2</a>. Although this is a useful analogy it is limited in a number of respects. Firstly, on the atomic scale quantum theory requires that only certain energy levels may exist, in other words our &#x2018;molecular-spring&#x2019; can only be stretched in steps of a certain size, given by <a href="#eq2.3">eqn 2.3</a>. In fact, the lowest energy state, v=0, does not possess zero vibrational energy; if it did it would contradict the uncertainty principle. Instead the energy is given by</p>
+<p class="eq" id="eq2.3"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>E</mi><mo>=</mo><mi>h</mi><mi>&#x03C9;</mi><mrow><mo>(</mo>
+  <mrow>
+   <mi>v</mi><mo>+</mo><mfrac bevelled='true'>
+    <mn>1</mn>
+    <mn>2</mn>
+   </mfrac>
+   
+  </mrow>
+ <mo>)</mo></mrow>
+</math><span class="no">(2.3)</span>
+</p>
+<p class="noindent">where <i>v</i> is the vibrational quantum number.</p>
+<aside class="right" style="margin-top:-16em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig2.2.jpg" alt="images"/>
+<p class="figcaption-aside-left" id="fig2.2"><b>Fig. 2.2</b> A Potential well for a classical vibrator.</p>
+</figure>
+</aside>
+<a id="page_11" class="page" style="width:60%;">Page 11, Chapter 2 Vibrational spectroscopy</a>
+<p class="indent">Repulsion between the two nuclei and their electrons makes it much more difficult to bring the two atoms very close to each other than the simple model predicts. Conversely, if we put sufficient vibrational energy into the molecule the atoms will vibrate so much that eventually the atoms will become far enough apart that the attractive forces are too weak to keep them together and so the bond <i>dissociates.</i> <a href="Chapter02.xhtml#fig2.3">Figure 2.3</a> shows a modified, Morse, potential-well diagram that takes these factors into account and is more realistic for diatomic molecules. As can be seen by comparing <a href="#fig2.2">Figs 2.2</a> and <a href="#fig2.3">2.3</a>, provided we do not consider the extremes, the behaviour is similar and so we can still use <a href="#eq2.1">eqn 2.1</a> as a guide to the factors involved in the frequency at which pairs of atoms will vibrate. In particular, this tells us that the vibrational frequency will depend on the mass of the two atoms at either end of the bond and the strength of the bond, or <i>force constant</i>, holding them together.</p>
+<aside class="right" style="margin-top:-14em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig2.3.jpg" alt="images"/>
+<p class="figcaption-aside-left" id="fig2.3"><b>Fig. 2.3</b> A modified potential well for a diatomic.</p>
+</figure>
+</aside>
+<p class="indent">We should expect heavy atoms held by weak bonds to vibrate at lower frequencies than lighter atoms and those held by multiple bonds. On this basis we would predict that the vibrational frequency of HC1 will be higher than that of the deuterated analogue, DC1, which is indeed so [v(HCl) = 2990 cm<sup>&#x2013;1</sup> and v(DCl) = 2145 cm<sup>&#x2013;1</sup>]. <a href="Chapter02.xhtml#tab2.1">Table 2.1</a> shows how the N-0 vibrational frequency varies as the charge on the nitrogen monoxide molecule alters. As the number of electrons in the molecule alters, the occupation of the bonding and non-bonding molecular orbitals varies, so altering the N-O bond order. As the bond order and hence the bond strength increase, so does the observed vibrational frequency.</p>
+<aside class="right" style="margin-top:-7em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 2.1</b> Which of the following pairs of molecules would you expect to have the highest vibrational frequency: (i) BrCI, ICI; (ii) Br<sub>2</sub>, Br<sub>2</sub><sup>+</sup>; (iii) NH<sub>3</sub>I PH<sub>3</sub>?</p>
+</aside>
+<section id="sec2.1.1" epub:type="chapter">
+<h3 class="h3"><b>The number and type of vibrations for a molecule</b></h3>
+<p class="noindent">The position of a single atom in space can be defined with respect to an arbitrary origin by defining its distance along three axes, traditionally labelled <i>x</i>, <i>y</i>, <i>z</i>. A group of <i>N</i> atoms would require <i>3N</i> such distances, or coordinates, to define their relative positions. We can distort the molecule by moving any atom in any of the three cartesian directions and thus a molecule of <i>N</i> atoms is described as possessing 3<i>N degrees of freedom.</i> For the study of vibrational spectroscopy we are only interested in the movement of the atoms such that the molecule is distorted either by altering the bonds or angles within the molecule. Not all the possible movements of the atoms will result in such a distortion, for example if every atom in the molecule moves by a similar amount in the <i>x</i>, <i>y</i>, or <i>z</i> direction then the whole molecule is merely translated. Similarly, if the atoms are moved so that the complete molecule is rotated around the <i>x</i>, <i>y</i>, or <i>z</i> axes then again this will not correspond to a change in bond lengths or angles within the molecule. So neither translation nor rotation results in a change in the shape of the molecule and, therefore, of the original 3<i>N</i> degrees of freedom, three are taken up by translations and three by rotations leaving 3<i>N</i>&#x2013;6 for vibrations. Thus water, being composed of three atoms, will possess a total of nine degrees of freedom of which three [3&#x00D7;3&#x2013;6] correspond to vibrations.</p>
+<p class="indent">There is, however, an important proviso if a molecule is linear, such as carbon dioxide which is shown in <a href="Chapter02.xhtml#fig2.4">Fig. 2.4</a>. In these cases there are only two rotational degrees of freedom, since rotating the molecule around the O&#x2013;C&#x2013;<a id="page_12" class="page">Page 12, Chapter 2 Vibrational spectroscopy</a>O axis by any amount does not appear to rotate the molecule at all, so 3<i>N</i>&#x2013;5 vibrational modes are expected.</p>
+<aside class="right" style="margin-top:-14em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig2.4.jpg" alt="images"/>
+<p class="figcaption-aside-left" id="fig2.4"><b>Fig. 2.4</b> The structure of carbon dioxide.</p>
+</figure>
+</aside>
+<aside class="right" style="margin-top:-31em;" epub:type="sidebar">
+<table style="width:100%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:35%"/>
+<col style="width:35%"/>
+<col style="width:30%"/>
+</colgroup>
+<tr>
+<td class="border-s">Molecule</td>
+<td class="border-s">v (cm<sup>&#x2013;1</sup>)</td>
+<td class="border-s">Bond order</td>
+</tr>
+<tr>
+<td>NO<sup>+</sup></td>
+<td>2273</td>
+<td>3</td>
+</tr>
+<tr>
+<td>NO</td>
+<td>1880</td>
+<td>2.5</td>
+</tr>
+<tr>
+<td>NO<sup>-</sup></td>
+<td>1365</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="border-12s">NO<sup>2-</sup></td>
+<td class="border-12s">886</td>
+<td class="border-12s">1.5</td>
+</tr>
+</table>
+<p class="tablecaption-aside-left" id="tab2.1"><b>Table 2.1</b> Vibrational frequency of the nitrogen monoxide molecule and related ions.</p>
+</aside>
+<p class="indent">Vibrations arise from changes in bond lengths and angles and in many simple, non-cyclic molecules these vibrational modes can be thought of separately and are referred to as <i>bond stretching</i> and <i>bending</i> modes. S ince we can, in theory, alter every bond in a molecule, the maximum number of stretching vibrational modes for a particular type of bond is given by the number of bonds of that type in the molecule. For example, H<sub>2</sub>O has two O&#x2013;H bonds and therefore there will be two O&#x2013;H stretching modes, usually denoted by the symbolism <i>v</i>(O&#x2013;H). In fact, the two O&#x2013;H bonds do not vibrate independently, their motions are coupled so that they both move together either in or out of phase. This results in a symmetric stretching mode and an asymmetric stretching mode, which are labelled as and <i>v</i><sub>1</sub> and <i>v</i><sub>3</sub> in <a href="Chapter02.xhtml#fig2.5">Fig. 2.5</a>. Similarly, there is just as one bond angle defining this molecule (the 105&#x00B0; H&#x2013;O&#x2013;H angle) and so there is only one bending mode for H<sub>2</sub>O, usually denoted as &#x03B4;(H&#x2013;O&#x2013;H).</p>
+<aside class="right" style="margin-top:-17em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 2.2</b> What is the total number of vibrational modes expected for (i) H<sub>2</sub>S; (ii) CO; (iii) NH<sub>3</sub>; (iv) Ni(CO)<sub>4</sub>?</p>
+</aside>
+<aside class="right" style="margin-top:-3em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 2.3</b> How many Pt-CI vibrations exist for (i) <i>cis</i>-PtCl<sub>2</sub>l<sub>2</sub> and (ii) <i>trans</i>-Pt(P(CH<sub>3</sub>)<sub>3</sub>)<sub>2</sub>Cl<sub>2</sub>?</p>
+</aside>
+<figure>
+<img src="../images/fig2.5.jpg" alt="images"/>
+<figcaption>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<p class="figcaption-aside-left" id="fig2.5"><b>Fig. 2.5</b> The vibrational modes of a bent triatomic, such as water.</p>
+</aside>
+</figcaption>
+</figure>
+<p class="indent">For a linear triatomic such as carbon dioxide the structure is defined by two bond lengths and two bond angles and therefore there are two bond stretching modes and two bond bending modes, as shown in <a href="Chapter02.xhtml#fig2.6">Fig. 2.6</a>. The two stretching modes can be described as symmetric and asymmetric modes (<i>v</i><sub>1</sub> and <i>v</i><sub>2</sub>). The two bending modes only differ by the plane in which the motion occurs and therefore the vibrational frequencies are the same. These two modes are therefore said to be <i>degenerate</i>.</p>
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<p class="sidebar-left">Vibrational modes are numbered in order of their symmetry class (most symmetric first) and from highest to lowest frequency.</p>
+</aside>
+<figure>
+<img src="../images/fig2.6.jpg" alt="images"/>
+<figcaption>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<p class="figcaption-aside-left" id="fig2.6"><b>Fig. 2.6</b> The vibrational modes of a linear triatomic, such as carbon dioxide.</p>
+</aside>
+</figcaption>
+</figure>
+</section>
+<section id="sec2.1.2" epub:type="chapter">
+<h3 class="h3"><b>Infrared active bands</b></h3>
+<p class="noindent">The requirement for a vibration to be infrared active (and therefore observed in an IR spectrum) is that during the vibration there must be a change in the electric dipole of the molecule. Consider the two molecules N<sub>2</sub> and CO and their stretching vibrations which are shown in <a href="Chapter02.xhtml#fig2.7">Fig. 2.7</a>. For dinitrogen, because the two constituents atoms are the same there is no permanent <a id="page_13" class="page">Page 13, Chapter 2 Vibrational spectroscopy</a>electric dipole in the molecule. As the bond stretches and contracts there will still be no electric dipole, so at no time during the vibration does the electric dipole change and so the N&#x2261;N bond stretch is not observed in infrared spectra. The same is true for all homonuclear diatomics. On the other hand, in the CO molecule there is a permanent electric dipole since oxygen is more electronegative than carbon. As the carbon-oxygen bond lengthens and shortens during the vibration the size of the dipole will change because the separation of the two charges alters. Since the electric dipole does vary during the vibration a band will be seen in the infrared spectrum arising from this stretching mode.</p>
+<aside class="right" style="margin-top:-7em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig2.7.jpg" alt="images"/>
+<p class="figcaption-aside-left" id="fig2.7"><b>Fig. 2.7</b> The stretching vibrations of N<sub>2</sub> and CO.</p>
+</figure>
+</aside>
+<p class="indent">In fact, the C&#x2013;O stretching vibration, written as <i>v</i>(CO), falls in an otherwise uncrowded part of the infrared spectrum which makes infrared spectroscopy of great use for inorganic molecules containing carbon monoxide as a ligand, such as metal carbonyls.</p>
+<p class="indent">For example, <a href="Chapter02.xhtml#fig2.8">Fig. 2.8</a> shows part of the infrared spectrum for tungsten hexacarbonyl, W(CO)<sub>6</sub>. A single peak is observed in the carbonyl region at around 1980 cm<sup>&#x2013;1</sup>, which arises from the C&#x2013;O stretching vibration. This is at a lower wavenumber value (and hence energy) than that observed for uncoordinated carbon monoxide (2143 cm<sup>&#x2013;1</sup>). In fact, the position of <i>v</i>(CO) varies over a small range of frequencies from compound to compound which arises because of the way carbonyls are bound to transition metals.</p>
+<aside class="right" style="margin-top:-9em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 2.4</b> By considering the dipole change, how many of the vibration&#x00E2;l modes of water (Fig. 2.5) and carbon dioxide (Fig. 2.6) are infrared active?</p>
+</aside>
+<aside class="right" style="margin-top:-4em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig2.8.jpg" alt="images"/>
+<p class="figcaption-aside-left" id="fig2.8"><b>Fig. 2.8</b> Part of the infrared spectrum of W(CO)<sub>6</sub>.</p>
+</figure>
+</aside>
+<p class="indent">Bonding of this ligand to a metal is usually broken into two components, described by the Dewar and Chatt model. A simple molecular orbital diagram for carbon monoxide is shown in <a href="Chapter02.xhtml#fig2.9">Fig. 2.9</a>. Because oxygen has a higher atomic charge than carbon and shielding of the nuclear charge by filled orbitals is less than 100% efficient the energy levels for the oxygen 2s and 2p orbitals are lower than their carbon equivalents. This energy difference means that the 2p<i><sub>z</sub></i>(O) and 2s(C) atomic orbitals are the nearest in energy capable of yielding sigma-bonding and anti-bonding molecular orbitals. This results in the oxygen 2s atomic orbital remaining non-bonding as will be the carbon-based 2p<i><sub>z</sub></i> orbital. This latter orbital, the highest occupied molecular orbital, or HOMO, is used to form a &#x03C3;-bond to the metal.</p>
+<p class="indent">The second part of the bonding arises from metal d-orbitals donating electron density into the LUMO (lowest unoccupied molecular orbital) of carbon monoxide, which is the <i>&#x03C0;</i>*-orbital. This part of the bonding scheme is often referred to as <i>backbonding</i> and its effect is to increase the bond order of the M-C bond, since the amount of orbital overlap increases between the metal and carbon. However, because the electron density from the metal is being donated into an anti-bonding molecular orbital of carbon monoxide, the C&#x2013;O bond order is reduced. Since the energy at which vibrations occur depends cm the bond strength we should expect that <i>v</i>(CO) would be lower for the coordinated ligand than for free CO.</p>
+<aside class="right" style="margin-top:-15em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig2.9.jpg" alt="images"/>
+<p class="figcaption-aside-left" id="fig2.9"><b>Fig. 2.9</b> An MO diagram for carbon monoxide.</p>
+</figure>
+</aside>
+<p class="indent">This combination of a-donation and <i>&#x03C0;</i>-backbonding is often referred to as a <i>synergic</i> bonding scheme, in that the two components enhance the effect of each other. Donation from the CO ligand to the metal increases the electron density on the metal which will result in an increase in the backbonding from the metal to the ligand. This in turn reduces the electron <a id="page_14" class="page">Page 14, Chapter 2 Vibrational spectroscopy</a>density on the metal and hence favours cr-donation from the carbonyl ligand.</p>
+<figure>
+<img  class="figure-left-60" src="../images/fig2.10.jpg" alt="images"/>
+<figcaption class="figcaption-left-60" id="fig2.10"><b>Fig. 2.10</b> A representation of the synergic model of transition metal carbonyl bonding.</figcaption>
+</figure>
+<p class="indent">We can use the position in the infrared spectrum of the C-O stretching absorption to make qualitative predictions of the amount of backbonding occurring in different complexes. For example, compare the three isoelectronic complexes [V(CO)<sub>6</sub>]<sup>-</sup>, [Cr(CO)<sub>6</sub>], and [Mn(CO)<sub>6</sub>]<sup>+</sup>; the highest formal excess of electron density, i.e. negative charge, on the metal occurs in the [V(CO)<sub>6</sub>]<sup>-</sup> complex which means more backbonding will occur in this complex than in either of the other two. The increased backbonding will result in a decrease in the C&#x2013;O bond strength and hence a decrease in vibrational frequency, as shown in <a href="Chapter02.xhtml#tab2.2">Table 2.2</a>. We should also expect the strength of the M&#x2013;C bond to increase as the degree of backbonding increases; however, the change in <i>v</i>(M&#x2013;C) vibrations, which occur just below 400 cm<sup>&#x2013;1</sup>, is small, typically of the order of 10 cm<sup>1</sup>, and therefore much less easily used.</p>
+<aside class="right" style="margin-top:-16em;" epub:type="sidebar">
+<table style="width:100%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:50%"/>
+<col style="width:50%"/>
+</colgroup>
+<tr>
+<td class="border-s">Complex</td>
+<td class="border-s">v(CO) (cm<sup>&#x2013;1</sup>)</td>
+</tr>
+<tr>
+<td>[V(CO)<sub>6</sub>]<sup>-</sup></td>
+<td>1860</td>
+</tr>
+<tr>
+<td>Cr(CO)<sub>6</sub></td>
+<td>2000</td>
+</tr>
+<tr>
+<td class="border-12s">[Mn(CO)<sub>6</sub>]<sup>+</sup></td>
+<td class="border-12s">2095</td>
+</tr>
+</table>
+<p class="tablecaption-aside-left" id="tab2.2"><b>Table 2.2</b> The IR-observed carbonyl absorption for some transition metal carbonyl species.</p>
+</aside>
+<p class="indent">Strictly, comparisons should always be made between force constants rather than vibrational frequencies, since in that way changes in the mass of the remainder of the molecule and any structural differences are taken into account. However, comparisons between vibrational frequencies for structurally related compounds can provide useful trends.</p>
+<aside class="right" style="margin-top:-6em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 2.5</b> Would you expect Ni(CO)<sub>4</sub> or [Co(CO)<sub>4</sub>]<sup>-</sup> to possess the highest <i>v</i>(CO) vibration?</p>
+</aside>
+<p class="indent">Carbon monoxide can also act as a bridging ligand between two or more metal centres. Under these circumstances the carbonyl stretching vibration is observed at lower frequencies, typically 1850&#x2013;1600 cm<sup>&#x2013;1</sup>. This decrease in vibrational frequency for bridging carbonyls can be rationalised if the ligand is considered to be bound as shown in <a href="Chapter02.xhtml#fig2.11">Fig. 2.11</a>. Bonding to more than one metal results in a reduced C&#x2013;O bond order and lower vibrational frequency.</p>
+<figure>
+<img class="figure-center-60" src="../images/fig2.11.jpg" alt="images"/>
+</figure>
+<aside class="right" style="margin-top:-8em;" epub:type="sidebar">
+<p class="figcaption-aside-left" id="fig2.11"><b>Fig. 2.11</b> Bonding modes of carbon monoxide and typical IR vibrational frequencies: (a) terminal; (b) bridging two metals; (c) bridging three metals.</p>
+</aside>
+</section>
+</section>
+<section id="sec2.2" epub:type="chapter">
+<h2 class="h2"><b>2.2 Symmetry</b></h2>
+<p class="noindent">It might appear strange that the IR spectrum of W(CO)<sub>6</sub> exhibits just a single CO stretching band despite possessing six carbonyl ligands from <a id="page_15" class="page">Page 15, Chapter 2 Vibrational spectroscopy</a>which we might expect to see up to six carbonyl vibrations. The fact that we do not suggests that either the majority of the expected carbonyl stretching vibrations are not infrared active because there is no dipole change during the vibration, or that a number of vibrations all occur at the same energy. In reality both of these factors are partially responsible.</p>
+<p class="indent">This molecule does not possess a permanent dipole moment, since the carbonyl ligands are evenly distributed around the central metal atom. One vibrational mode we should expect for all molecules is a symmetric stretch, which will correspond to all six of the C&#x2013;O bonds vibrating in phase (written as <i>v</i><sub>s</sub>(CO)). In this mode all C&#x2013;O bonds are becoming equally long or short in phase at the same time, as shown in <a href="Chapter02.xhtml#fig2.12">Fig. 2.12</a>. The effect of this vibration is that there will be no electric dipole produced and therefore no change in dipole and so it will not be seen in the IR spectrum.</p>
+<aside class="right" style="margin-top:-12em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig2.12.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig2.12"><b>Fig. 2.12</b> The symmetric carbonyl stretching mode for a metal hexacarbonyl.</figcaption>
+</figure>
+</aside>
+<p class="indent">But what about the other modes? With seme experience it is possible to make a reasonable guess of what all the vibrational modes for a molecule might be and whether they involve a dipole change. There is, however, a more reliable way and that is to make use of the symmetry of the molecule and group theory. There is not enough space here to go into this subject in detail so references to a number of suitable texts are given later.</p>
+<p class="indent">Tungsten hexacarbonyl is octahedral and therefore belongs to the Oh point group, the character table for this group is given in <a href="Chapter02.xhtml#tab2.3">Table 2.3</a>.</p>
+<p class="indent">These tables list, along the top, all the symmetry elements possessed by a molecule of a particular symmetry. The left-hand column lists the <i>Mulliken symbols</i> for the group, the entries in the following table give the representation for such species under each symmetry operation. The final two columns show the symmetry species for the p and d orbitals, the <i>x</i>, <i>y</i>, and <i>z</i> axes and rotations around these axes.</p>
+<figure>
+<img src="../images/tab2.3.jpg" alt="images"/>
+<p class="tablecaption-center-100" id="tab2.3"><b>Table 2.3</b> The octahedral symmetry point group.</p>
+</figure>
+<p class="indent">To predict the symmetry of the carbonyl vibrations we consider the C&#x2013;O bonds of the molecule under each of the symmetry operations and determine how many of the bonds are unchanged, that is they remain in exactly the same place in the molecule. Under the identity operation (E) all atoms, and therefore every C&#x2013;O bond, remain unmoved, giving a total of six unchanged carbonyl bonds. Since all eight of the C<sub>3</sub> axes (which run through every pair of opposite faces of the molecule, shown in <a href="Chapter02.xhtml#fig2.13">Fig. 2.13</a>) are symmetrically equivalent we need only consider the effect of any one. Rotating the</p>
+<aside class="right" style="margin-top:-10.5em;" epub:type="sidebar">
+<p class="sidebar-left"><b>The following molecular symmetry elements exist:</b></p>
+<p class="sidebar-left"><b>E identity operator</b></p>
+<p class="sidebar-left"><b>C<i><sub>n</sub></i> rotation axis, by (360/<i>n</i>)&#x00B0;</b></p>
+<p class="sidebar-left"><b><i>&#x03C3;<sub>h</sub></i> horizontal mirror plane</b></p>
+<p class="sidebar-left"><b><i>&#x03C3;<sub>v</sub></i> vertical mirror plane</b></p>
+<p class="sidebar-left"><b><i>&#x03C3;<sub>d</sub></i> dihedral mirror plane</b></p>
+<p class="sidebar-left">i centre of inversion</p>
+<p class="sidebar-left"><b>S<i><sub>n</sub></i> improper rotation axis</b></p>
+<p class="sidebar-left"><b>[rotation by (360/<i><sub>n</sub></i>)&#x00B0; followed by <i>&#x03C3;</i>].</b></p>
+</aside>
+<a id="page_16" class="page" style="width:60%;">Page 16, Chapter 2 Vibrational spectroscopy</a>
+<aside class="right" style="margin-top:2em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig2.13.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig2.13"><b>Fig. 2.13</b> Some of the symmetry elements of an octahedral complex such as W(CO)<sub>6</sub>.</figcaption>
+</figure>
+<p class="noindent">&#160;</p>
+<figure class="figure-aside-center">
+<img src="../images/fig2.14.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig2.14"><b>Fig. 2.14</b> The source of each number is as shown in the sketch for the first part of the sum.</figcaption>
+</figure>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="sidebar-left">Modes labelled A or B are singly degenerate, E doubly degenerate, and T (or sometimes F) triply degenerate.</p>
+</aside>
+<p class="noindent">molecule by 120&#x00B0; around such a C<sub>3</sub> axis (the angle of rotation for a C<sub><i>n</i></sub> axis is 360/w degrees) results in all of the carbonyls being moved around one position. Since no C&#x2013;O bonds remain unchanged, the character for this operation is zero. Going through each of the operations in turn allows us to build the entries in the table below corresponding to the <i>reducible representation</i> of the carbonyl bonds in this molecule:</p>
+<figure class="figure">
+<img src="../images/16_1.jpg" alt="images"/>
+</figure>
+<p class="indent">However, this reducible representation corresponds to <i>all</i> the carbonyl stretching vibrational modes and it must be broken down, or reduced, into its <i>irreducible representation</i>, that is a summation of the various Mulliken symbols used in the group table (A<sub>1g</sub>, A<sub>2g</sub>, etc.). Only then can we determine how many carbonyl vibrations should be observed in the IR spectrum.</p>
+<p class="indent">For relatively simple problems this process can be done by visual inspection but for larger ones it is better performed using the reduction formula given in <a href="#eq2.4">eqn 2.4</a>.</p>
+<table style="width:60%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:55%"/>
+<col style="width:10%"/>
+</colgroup>
+<tr>
+<td id="eq2.4"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msub>
+    <mi>n</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>i</mi>
+    </mrow>
+  </msub>
+  <mo>=</mo>
+  <mfrac>
+    <mn>1</mn>
+    <mi>h</mi>
+  </mfrac>
+  <mo>&#x03A3;<!-- ? --></mo>
+  <msub>
+    <mi>g</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>i</mi>
+    </mrow>
+  </msub>
+  <msub>
+    <mi>&#x03C7;<!-- ? --></mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>i</mi>
+    </mrow>
+  </msub>
+  <msub>
+    <mi>&#x03C7;<!-- ? --></mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>r</mi>
+    </mrow>
+  </msub>
+</math></td>
+<td style="text-align:right">(2.4)</td>
+</tr>
+</table>
+<p class="indent">The number of irreducible representations of type <i>i</i> in our reducible representation, <i>n<sub>i</sub></i> is determined by multiplying in turn each entry for an irreducible representation (<i>&#x03C7;<sub>i</sub></i>) with the number of such operations (<i>g<sub>i</sub></i>) and the corresponding entry in the reducible representation table (<i>&#x03C7;<sub>r</sub></i>). The sum of these numbers is divided by the total number of operations in the group, <i>h</i>, which in this case is 48 [1(E)+8(C<sub>3</sub>)+6(C<sub>2</sub>)+6+3+l+6+8+3+6]. So to determine the number of A<sub>1g</sub> irreducible representations in our reducible representation of the carbonyl bonds the calculation would be:</p>
+<p class="eq">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mtable columnalign='left'>
+  <mtr>
+   <mtd>
+    <mi>n</mi><mrow><mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>A</mi>
+       <mrow>
+        <mi>lg</mi>
+       </mrow>
+      </msub>
+      
+     </mrow>
+    <mo>)</mo></mrow><mo>=</mo><mfrac>
+     <mn>1</mn>
+     <mrow>
+      <mn>48</mn>
+     </mrow>
+    </mfrac>
+    <mo stretchy='false'>(</mo><mn>6</mn><mo>&#x00D7;</mo><mn>1</mn><mo>&#x00D7;</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>&#x00D7;</mo><mn>8</mn><mo>&#x00D7;</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>&#x00D7;</mo><mn>6</mn><mo>&#x00D7;</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>&#x00D7;</mo><mn>6</mn><mo>&#x00D7;</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>&#x00D7;</mo><mn>3</mn><mo>&#x00D7;</mo><mn>1</mn><mo>+</mo>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mn>0</mn><mo>&#x00D7;</mo><mn>1</mn><mo>&#x00D7;</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>&#x00D7;</mo><mn>6</mn><mo>&#x00D7;</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>&#x00D7;</mo><mn>8</mn><mo>&#x00D7;</mo><mn>1</mn><mo>+</mo><mn>4</mn><mo>&#x00D7;</mo><mn>3</mn><mo>&#x00D7;</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>&#x00D7;</mo><mn>6</mn><mo>&#x00D7;</mo><mn>1</mn><mo stretchy='false'>)</mo>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>=</mo><mfrac>
+     <mn>1</mn>
+     <mrow>
+      <mn>48</mn>
+     </mrow>
+    </mfrac>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mn>48</mn>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>=</mo><mn>1</mn>
+   </mtd>
+  </mtr>
+ </mtable>
+ 
+</math>
+
+</p>
+
+<p class="indent"><a href="Chapter02.xhtml#fig2.14">Figure 2.14</a> illustrates where some of these numbers arise from. Carrying out this calculation for each of the possible representations results in an irreducible representation of A<sub>1g</sub> + E<sub>g</sub> + T<sub>1u</sub>. Since there are a total of six carbonyl bonds we would expect a total of six vibrational modes, which is actually what we have, when we take into account that some of the modes are degenerate. The E<sub>g</sub> representation corresponds to a doubly degener ate pair of vibrational modes and the T<sub>1u</sub> to a triply degenerate set. These degenerate modes correspond to a number of different vibrations (two in the case of the E<sub>g</sub> mode and three for T<sub>1u</sub>) which occur at <i>exactly</i> the same energy and therefore appear as a single peak in the vibrational spectrum.</p>
+<p class="indent">As stated previously, in order to observe a vibration in the infrared spectrum a change of electric dipole during the vibration is necessary. Such <a id="page_17" class="page">Page 17, Chapter 2 Vibrational spectroscopy</a> a dipole change occurs along the <i>x</i>, <i>y</i> or <i>z</i> axis, or a combination of them. Therefore, irreducible representations that correspond to any of the representations of the cartesian axes will be infrared active. The symmetry label for the cartesian axes can be determined directly from the symmetry tables using the entries in the next-to-last column of the group table (see <a href="Chapter02.xhtml#tab2.3">Table 2.3</a>). The symmetry representations for the cartesian axes are denoted by (x, y, z and the rotation of the molecule around these axes by (R<sub>x</sub>, R<sub>y</sub> and R<sub>z</sub>). For [W(CO)<sub>6</sub>] the cartesian axes correspond to Tlu and therefore only Tlu vibrations will be infrared active. On the basis of this symmetry treatment we should expect to observe just a single peak in the infrared spectrum arising from vibrations of the CO bonds and this is what is observed as shown in <a href="Chapter02.xhtml#fig2.8">Fig. 2.8</a>.</p>
+<aside class="right" style="margin-top:2em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 2.6</b> The bending vibrations of an octahedral molecule are T<sub>1u</sub> + T<sub>2g</sub> + T<sub>2u</sub>. How many peaks will be seen in the IR spectrum?</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="sidebar-left"><b>Question 2.7</b> What will be the symmetry representation for the W&#x2013;C bonds of W(CO)<sub>6</sub>?</p>
+</aside>
+<p class="indent">These symmetry-based calculations can be carried out for a complete molecule or part of it. If one of the carbonyl ligands of a metal hexacarbonyl is replaced with an alternative donor such as bromide as in the compound Mn(CO)<sub>5</sub>Br (shown in <a href="Chapter02.xhtml#fig2.15">Fig. 2.15</a>), we can determine the number of infrared active carbonyl bands and metal&#x2013;bromide stretches. In this case the molecule possesses different symmetry elements, two fourfold and one twofold rotational axis down the Br&#x2013;Mn&#x2013;CO axis. It has two sets of mirror planes running through the opposite equatorial bonds and between them; these are vertical and dihedral mirror planes (with respect to the C<sub>4</sub> axis) so it belongs to the C<sub>4v</sub> point group. By considering each of the symmetry operations in turn and their effect on the C&#x2013;O and Mn&#x2013;Br bands separately, we obtain</p>
+<figure class="figure">
+<img src="../images/17_1.jpg" alt="images"/>
+</figure>
+<p class="indent">The representation for the carbonyl bonds (&#x0393;c-o ) can be reduced to give an irreducible representation of 2A<sub>1</sub> + B<sub>2</sub> + E, which corresponds to a total of five carbonyl stretching modes, two of A<sub>1</sub> symmetry, one of B<sub>2</sub> symmetry, and one doubly-degenerate E mode; this is the expected number since there are five carbonyl braids in the molecule. Because the symmetry label for the <i>x</i> and <i>y</i> axes is E and for <i>z</i> A<sub>1</sub> we would expect to observe three carbonyl peaks in the IR spectrum, corresponding to the 2A<sub>1</sub> and E symmetry modes. The carbonyl region of the IR spectrum for this compound is shown in <a href="Chapter02.xhtml#fig2.16">Fig. 2.16</a> and three carbonyl bands are observed at 2140, 2051, and 2013 cm<sup>&#x2013;1</sup>.</p>
+<aside class="right" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig2.15.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig2.15"><b>Fig. 2.15</b> The shape of Mn(CO)<sub>5</sub>Br.</figcaption>
+</figure>
+<figure class="figure-aside-center">
+<img src="../images/fig2.16.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig2.16"><b>Fig. 2.16</b> IR spectrum of the carbonyl peaks of Mn(CO)<sub>5</sub>Br dissolved in CH<sub>3</sub>CN.</figcaption>
+</figure>
+</aside>
+<p class="indent">By a similar process we obtain the representation for the Mn-Br bond which cannot be reduced any further since it already corresponds to the A<sub>1</sub>, representation. This band should also be infrared active and seen in the IR spectrum. However, since the bromide ligand is much heavier than the carbonyl ligand it will vibrate at a lower frequency, at around 220 cm<sup>&#x2013;1</sup>, which is below the lower limit of many infrared spectrometers.</p>
+<p class="indent">We have only considered stretching vibrational modes so far. The symmetry of bending and torsional modes can be determined by obtaining the reducible representation for all molecular motions and removing the contributions due to translation, rotation, and bond-stretching vibrations of the molecule. However, bending modes occur at lower energies and they <a id="page_18" class="page">Page 18, Chapter 2 Vibrational spectroscopy</a> tend to be in a more cluttered part of the spectrum. They are therefore more difficult to assign confidently.</p>
+<p class="indent"><a href="#tab2.4">Table 2.4</a> shows the result of symmetry treatment for some of the more common molecular shapes and hence the number of infrared active stretching and bending modes to be expected.</p>
+<figure class="figure-center-100">
+<img class="center" src="../images/tab2.4.jpg" alt="images"/>
+</figure>
+<p class="tablecaption-center-100" id="tab2.4"><b>Table 2.4</b> The number of IR bands of some common geometric arrangements (representations underlined are IR active, Raman active modes are denoted by *).</p>
+<aside class="right" style="margin-top:1em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig2.17.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig2.17"><b>Fig. 2.17</b> The compound <i>cis</i>-PtCl<sub>2</sub>(PR<sub>3</sub>)<sub>2</sub>.</figcaption>
+</figure>
+<p class="noindent">&#160;</p>
+<figure class="figure-aside-center">
+<img src="../images/fig2.18.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig2.18"><b>Fig. 2.18</b> The complex <i>trans-</i> MCl<sub>4</sub>(PR<sub>3</sub>)<sub>2</sub>.</figcaption>
+</figure>
+<p class="noindent">&#160;</p>
+<p class="sidebar-left"><b>Question 2.8</b> How many IR-active M&#x2013;Cl stretches should be observed for (i) <i>trans</i>-MCl<sub>2</sub>(PR<sub>3</sub>)<sub>2</sub> and (ii) <i>fac-</i> MCl<sub>3</sub>(PR<sub>3</sub>)<sub>3</sub> complexes?</p>
+</aside>
+<p class="indent">The above table can be used to determine the number of vibrational bands not just for complete molecules but also for distinct parts. For example, the compounds <i>cis-</i>PtCl<sub>2</sub>(PR<sub>3</sub>)<sub>2</sub> adopt square-planar shapes as shown in <a href="Chapter02.xhtml#fig2.17">Fig. 2.17</a>. If we assume that the Pt&#x2013;Cl and Pt&#x2013;P vibrations are independent of other modes then we can consider each separately. The whole complex has C<sub>2v</sub> symmetry, as do the Cl&#x2013;Pt&#x2013;Cl and P&#x2013;Pt&#x2013;P parts of the molecule. If we concentrate only on the Pt&#x2013;Cl part of the molecule and effectively ignore the rest then we have a fragment similar in shape to water&#x2014;that is two chloride ligands around the metal in a non-linear arrangement. We can therefore use the second entry in the above table to predict that there should be two IR- active Pt&#x2013;Cl stretches. Likewise there should be two IR-active Pt&#x2013;P stretching vibrations. Although this procedure tells us the number of vibrations to be expected, the Mulliken symbols given to these representations will not be correct unless the point group of the fragment coincides with that of the complete molecule.</p>
+<p class="indent">In a similar way, rather than go through a rigorous symmetry treatment of a complete molecule such as <i>trans</i>-MCl<sub>4</sub>(PR<sub>3</sub>)<sub>2</sub>, shown in <a href="Chapter02.xhtml#fig2.18">Fig. 2.18</a>, we can break the complex down into the equatorial square planar MC14 part and a separate linear M(PR<sub>3</sub>)<sub>2</sub> section. Reference to the data in <a href="Chapter02.xhtml#tab2.4">Table 2.4</a> suggests that we should therefore expect to observe one IR-active M&#x2013;Cl stretching vibration and one IR-active M&#x2013;P stretching vibration.</p>
+</section>
+<section id="sec2.3" epub:type="chapter">
+<h2 class="h2">2.3 Infrared experiments</h2>
+<p class="indent"></p>
+<p class="noindent">The basis of the IR experiment is to pass infrared radiation through a thin sample of compound and measure which energies of the applied infrared <a id="page_19" class="page">Page 19, Chapter 2 Vibrational spectroscopy</a> radiation are transmitted by the sample. Traditionally this was carried out using a grating or prism to scan through a range of energies produced by a source (usually an electrically heated element) and record the percentage transmission spectrum as a function of energy. It is much more likely these days that the spectrometer will be of the Fourier transform type. These work by recording the interference pattern (interferogram) that arises from two different beams of IR radiation (one fixed and one that varies) as a function of the difference between the two path lengths (in cm). Fourier transformation of this signal results in a spectrum of absorbance against energy, although it is more usual (see Chapter 1) for the energy scale to be expressed in terms of wavenumbers (cm<sup>&#x2013;1</sup>).</p>
+<p class="indent">Infrared spectra can be recorded of solids, liquids, solutions, and gases using a variety of different sampling arrangements, but are probably most commonly recorded as liquids or solutions or of a solid which has been ground up with a mulling agent and pressed between two alkali halide plates. The choice of plates (see <a href="Chapter02.xhtml#tab2.5">Table 2.5</a>) and mulling agent depends on which part of the spectrum you are particularly interested in obtaining data for. One of the more common mulling agents is Nujol, a paraffin, the infrared spectrum of which is shown in <a href="Chapter02.xhtml#fig2.19">Fig. 2.19</a>.</p>
+<figure class="figure-center-60">
+<img src="../images/fig2.19.jpg" alt="images"/>
+<figcaption id="fig2.19"><b>Fig. 2.19</b> Fourier transform infrared spectrum obtained for a sample of liquid Nujol.</figcaption>
+</figure>
+<section id="sec2.3.1" epub:type="chapter">
+<h3 class="h3">Group frequencies</h3>
+<p class="noindent">The IR spectrum shown above for Nujol contains relatively few bands with those that are present occurring in a number of well-separated regions. If spectra were to be recorded of other hydrocarbons we would find that absorptions are observed in similar regions of the spectrum. In most cases the same ligand or the same common group of atoms vibrates at very similar frequencies in a wide range of different complexes and molecules. These characteristic absorptions are known as <i>group frequencies</i> and provide one of the most straightforward methods of obtaining structural information from vibrational studies.</p>
+<aside class="right" style="margin-top:-24em;" epub:type="sidebar">
+<table style="width:100%">
+<colgroup>
+<col style="width:40%"/>
+<col style="width:60%"/>
+</colgroup>
+<tr>
+<td style="border-top:2px solid;border-bottom:1px solid;">Material</td>
+<td style="border-top:2px solid;border-bottom:1px solid;">Spectroscopic window lower limit(cm<sup>-1</sup>)</td>
+</tr>
+<tr>
+<td>NaCl</td>
+<td>625</td>
+</tr>
+<tr>
+<td>KBr</td>
+<td>400</td>
+</tr>
+<tr>
+<td style="border-bottom:2px solid;">Csl</td>
+<td style="border-bottom:2px solid;">200</td>
+</tr>
+</table>
+<p class="tablecaption" id="tab2.5"><b>Table 2.5</b> Lower limit for some common IR plate materials.</p>
+</aside>
+<p class="indent">The concept is based on the notion that most absorptions occurring at different energies or between sets of heavy and light atoms are not coupled with other vibrations of the molecule. Simplistically, therefore, a vibration can be viewed as reflecting the atoms involved and the strength of the bond holding them together. <a href="Chapter02.xhtml#fig2.20">Figure 2.20</a> illustrates the position of typical group <a id="page_20" class="page">Page 20, Chapter 2 Vibrational spectroscopy</a> frequencies for some commonly encountered groups, fragments, and linkages in inorganic and organic molecules.</p>
+<figure class="figure-center-100">
+<img src="../images/fig2.20.jpg" alt="images"/>
+<figcaption class="figcaption-center-100" id="fig2.20"><b>Fig. 2.20</b> The positions of characteristic group vibrational absorptions.</figcaption>
+</figure>
+<aside class="right" style="margin-top:2em;" epub:type="sidebar">
+<table style="width:100%">
+<tr>
+<td style="border-top:2px solid;border-bottom:1px solid;">Absorption</td>
+<td style="border-top:2px solid;border-bottom:1px solid;">Assignment</td>
+</tr>
+<tr>
+<td>2925(s)</td>
+<td>C&#x2013;H stretch</td>
+</tr>
+<tr>
+<td>2855(s)</td>
+<td>C&#x2013;H stretch</td>
+</tr>
+<tr>
+<td>1462(m)</td>
+<td>C&#x2013;C stretch</td>
+</tr>
+<tr>
+<td>1377(m)</td>
+<td>C&#x2013;H bend</td>
+</tr>
+<tr>
+<td style="border-bottom:2px solid;">721(w)</td>
+<td style="border-bottom:2px solid;">C&#x2013;C bend</td>
+</tr>
+</table>
+<p class="tablecaption-aside-left" id="tab2.6"><b>Table 2.6</b> Band assignments for the IR spectrum of Nujol.</p>
+</aside>
+<p class="indent">We can therefore use the data in <a href="Chapter02.xhtml#fig2.20">Fig. 2.20</a> to assign the major peaks observed in the infrared spectrum of Nujol as follows. The peaks at 2925 and 2855 cm<sup>&#x2013;1</sup> correspond to the C-H stretching region and the band at 1462 cm&#x0027;<sup>1</sup> to the C&#x2013;C stretching region. The peaks at 1377 and 721 cm<sup>&#x2013;1</sup> are due to bending rather than stretching vibrations. It is also common to indicate the relative intensity of each band using the letters (s) for strong, (m) for medium and (w) for weak. Additionally, (br) is used to indirate particularly broad peaks and (sh) for absorptions that appear as shoulders; on another. <a href="Chapter02.xhtml#tab2.6">Table 2.6</a> shows the complete assignment for the Nujol spectrum in this way.</p>
+<p class="indent">It should be obvious that to record the infrared spectrum of a compound in order to determine whether it contains C&#x2013;H bonds, an alternative mulling agent may need to be used since most C&#x2013;H stretching absorptions fall in a similar part of the spectrum and would therefore be obscured by the C&#x2013;H vibrations of Nujol. A common alternative for this purpose is hexachlorobutadiene (HCB), which displays no IR bands between 4000 and 1600 cm<sup>&#x2013;1</sup>.</p>
+<p class="indent">It is possible, although it would be an extremely time-consuming process for complicated molecules, to assign all the bands in a vibrational spectrum. However, in our quest for structural information we can often just look for certain characteristic bands. For example, a number of different structures <a id="page_21" class="page">Page 21, Chapter 2 Vibrational spectroscopy</a> can be envisaged for the dimeric complex [(&#x03B7;<sup>5</sup>-C<sub>5</sub>Me<sub>5</sub>)<sub>2</sub>Fe<sub>2</sub>(CO)<sub>4</sub>], two of which are shown in <a href="Chapter02.xhtml#fig2.21">Fig. 2.21</a>.</p>
+<figure>
+<img src="../images/fig2.21.jpg" alt="images" />
+	 <figcaption>
+	 <aside class="right" style="margin-top:-6em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig2.21"><b>Fig. 2.21</b> Two possbls structures for the complex [(&#x03B7;<sup>5</sup>-C<sub>5</sub>Me<sub>5</sub>Fe<sub>2</sub>(CO)<sub>4</sub>].</p>
+	</aside>
+	</figcaption>
+</figure>
+<p class="indent">The principal difference between these two structures is the presence, or otherwise, of bridging carbonyl ligands. Reference to the group frequency chart suggests that the carbonyl vibrations, but no other bands from this molecule, are likely to occur in the region 2200&#x2013;1700 on<sup>&#x2013;1</sup>. The Nujol mull spectrum shown in <a href="Chapter02.xhtml#fig2.22">Fig. 2.22</a> clearly shows bands in the carbonyl region at 1960 and 1770 cm<sup>&#x2013;1</sup>. These can be assigned to absorptions arising from the presence of terminal CO ligands (1960 cm<sup>&#x2013;1</sup>) and bridging carbonyl ligands (1770 cm<sup>&#x2013;1</sup>). On this basis we would expect structure 1 to be adopted rather than 2.</p>
+
+<figure>
+<img src="../images/fig2.22.jpg" alt="images"/>
+	 <figcaption>
+	 <aside class="right" style="margin-top:-6em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig2.22"><b>Fig. 2.22</b> The IR spectrum of [(&#x03B7;<sup>5</sup>- C<sub>5</sub>Me<sub>5</sub>)<sub>2</sub>Fe<sub>2</sub>(CO)<sub>4</sub>] (bands marked * arise from the Nujol mulling agent).</p>
+	</aside>
+	</figcaption>
+</figure>
+<p class="indent">As another example SnCl<sub>3</sub>(CH<sub>2</sub>CH<sub>2</sub>COOCH<sub>3</sub>) reacts with 2,2&#x2032;-bipyridine (abbreviated to bipy) to yield a light pink-coloured solid which according to elemental analysis corresponds to SnCl<sub>3</sub>(CH<sub>2</sub>CH<sub>2</sub>COOCH<sub>3</sub>)(bipy). The structure of the starting materials and the most probable products are shown in <a href="Chapter02.xhtml#fig2.23">Fig. 2.23</a>. The principal distinction between the two products 3 and 4 is whether the bipy molecule acts as a mono- or a bidentate ligand. In the latter case we would expect the ester group to no longer be coordinated to the metal. The Nujol mull IR spectrum of the product is shown in <a href="Chapter02.xhtml#fig2.24">Fig. 2.24(a)</a> and the spectrum of the starting tin-containing material is also shown, for comparison, in <a href="#fig2.24">Fig 2.24(b)</a>.</p>
+<p class="indent">Once confronted with a spectrum containing many different peaks, such as those shown in <a href="Chapter02.xhtml#fig2.24">Fig. 2.24</a>, it is often difficult to know exactly where to start interpreting it. We know that the sample was run in Nujol and therefore these bands can be assigned first; in the figures they are labelled with an asterisk. Next we try to focus on peaks arising from specific fragments or groups in the molecule that might be diagnostic. In the case of the starting material one of the obvious groups we might look for is the ester linkage. From the chart in <a href="Chapter02.xhtml#fig2.20">Fig. 2.20</a> the C=O vibration should lie in the range 2000&#x2013;1500 cm<sup>&#x2013;1</sup>. Because this group is coordinated to the metal in the starting material, by donation of electron density to the tin atom, its</p>
+<a id="page_22" class="page" style="width:60%;">Page 22, Chapter 2 Vibrational spectroscopy</a>
+<aside class="right" style="margin-top:-1em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig2.23.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig2.23"><b>Fig. 2.23</b> The structures of (a) SnCl<sub>3</sub>(CH<sub>2</sub>CH<sub>2</sub>COOCH<sub>3</sub>) and (b) 2, 2&#x2032;-bipyridine and two possible Products.</figcaption>
+</figure>
+</aside>
+<p class="noindent">vibrational frequency will be at the lower end of this range, and in the spectrum the only peak observed in this range occurs at 1651 cm<sup>&#x2013;1</sup>.</p>
+<p class="indent">If we look at the <i>v</i>(CO) region of the IR spectrum of the product we see one peak at 1713 cm<sup>&#x2013;1</sup>. This C=O vibration now occurs at higher energy than that observed in the starting material which suggests that the C=O is no longer coordinated to the tin atom and that the bipy is therefore acting as a bidentate ligand as in compound 4.</p>
+<figure class="figure-left-60">
+<img src="../images/fig2.24.jpg" alt="images"/>
+<figcaption class="figcaption1-left-60" id="fig2.24"><b>Fig. 2.24</b> The Nujol mull IR spectra of (a) the product after reacting 2, 2&#x2032;-bipyridine with SnCl<sub>3</sub>(CH<sub>2</sub>CH<sub>2</sub>COOCH<sub>3</sub>) and (b) the starting complex.</figcaption>
+</figure>
+<p class="indent">Infrared spectroscopy is also very useful in determining the mode of coordination for ligands capable of coordinating through more than one atom. The compounds that arise from these differently bonded ligands are called <i>linkage isomers</i>. There are many ligands capable of this, we have already seen carbon monoxide acting as a terminal or bridging ligand. Other examples include cyanate, thiocyanate, sulfur dioxide, and the nitro group (NO<sub>2</sub><sup>-</sup>) <a href="Chapter02.xhtml#fig2.25">Figure 2.25</a> shows some of these examples and their typical vibration frequencies.</p>
+<figure class="figure-center-100">
+<img src="../images/fig2.25.jpg" alt="images"/>
+<figcaption class="figcaption-center-100" id="fig2.25"><b>Fig. 2.25</b> Some of the common ligands capable of forming linkage isomers.</figcaption>
+</figure>
+<p class="indent">The NO<sub>2</sub><sup>-</sup> group can coordinate to a metal centre in a variety of ways including through the nitrogen atom, when it is called the nitro ligand, or</p>
+<a id="page_23" class="page" style="width:60%;">Page 23, Chapter 2 Vibrational spectroscopy</a>
+<p class="noindent">through one of the oxygen atoms, referred to as the nitrito ligand. In the first case the charge is delocalised resulting in two N&#x2013;O bonds formally of bond order 1.5. We would expect two N&#x2013;O absorptions because there are two N&#x2013;O bonds. Because the bonds are similar they will couple to give a symmetric and an asymmetric stretching vibration with similar frequencies. In the case of the nitrito ligand one N&#x2013;O bond can be viewed as a single bond and the other as a double bond which means we would expect to see one higher vibrational frequency and one lower one.</p>
+<aside class="right" style="margin-top:-5em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 2.9</b> The compound K<sub>4</sub>[Ni(NO<sub>2</sub>)<sub>6</sub>] exhibits bands at 1387, 1347, 1325, and 1206 cm<sup>&#x2013;1</sup>. What does this suggest about the bonding of the NO<sub>2</sub> ligands?</p>
+<p class="noindent">&#160;</p>
+<figure class="figure-aside-center">
+<img src="../images/fig2.26.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig2.26"><b>Fig. 2.26</b> An idealised representation of the PQR structure observed for some IR bands and their source.</figcaption>
+</figure>
+</aside>
+<p class="indent">So far the spectra presented have been of mulled solids or solutions, but it is also quite common for spectra to be recorded of gases. However, gas-phase spectra frequently show additional structure on the observed bands arising from rotational excitation as well as vibrational transitions. These additional features have not been observed so far because rotation is hindered in the solid and solution phases. <a href="Chapter02.xhtml#fig2.26">Figure 2.26</a> shows an idealised representation of the fine structure observed on some infrared bands. Three distinct sets of peaks are observed: a single central peak corresponding to vibrational transitions which are not accompanied by a change in rotational energy level and on either side a set of bands in which there is a change in rotational quantum number by either +1 or &#x2013;1. The actual form of the fine structure, in particular whether the central band labelled as the Q band is observed or not, depends on the form of the vibration and the shape of the molecule. For the majority of small molecules vibrations in which the dipole change occurs parallel with the principal rotational axis (usually the highest order symmetry axis) will show P and R but not Q fine-structure, because in addition to the vibrational selection rule of &#x0394;v = &#x00B1;1 there is a rotational selection rule based on the rotational quantum number (<i>J</i>) of &#x0394;<i>J</i> = &#x00B1;1. For those vibrations where the dipole change occurs perpendicular to the rotational axis, the rotational selection rule becomes &#x0394;<i>J</i> = 0, &#x00B1;1 and so these absorptions should show P, Q, and R fine-structure.</p>
+<p class="indent">The infrared spectrum of a sample of a gas mixture containing sulfur dioxide and carbon dioxide is shown in <a href="Chapter02.xhtml#fig2.27">Fig. 2.27</a>. Although the resolution of the spectrum is not sufficiently high to see the individual peaks arising from the rotational fine structure, all five of the observed peaks, labelled A to E, appears as more than a single absorption due to the presence of rotational structure. The first peak, labelled A, shows P and R structure similar to that in <a href="Chapter02.xhtml#fig2.26">Fig. 2.26</a> whilst the absorption marked B, which is shown in greater detail in <a href="Chapter02.xhtml#fig2.28">Fig. 2.28</a>, exhibits PQR structure. The two peaks C and E both appear to show PR structure and the peak at around 662 cm<sup>&#x2013;1</sup> marked D is dominated by a very intense sharp Q-band absorption with much less intense P and R bands.</p>
+<figure><img src="../images/fig2.27.jpg" alt="images" />
+	 <figcaption>
+	 <aside class="right" style="margin-top:-6em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig2.27"><b>Fig. 2.27</b> The gas-phase IR spectrum of a sample of CO<sub>2</sub> and SO<sub>2</sub>.</p>
+	</aside>
+	</figcaption>
+</figure>
+<a id="page_24" class="page" style="width:60%;">Page 24, Chapter 2 Vibrational spectroscopy</a>
+<aside class="right" style="margin-top:12em;" epub:type="sidebar">
+<figure class="figure-aside-center">
+<img src="../images/fig2.28.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig2.28"><b>Fig. 2.28</b> Expansion of <a href="Chapter02.xhtml#fig2.27">Fig. 2.27</a> in the range 1450&#x2013;1050 cm<sup>&#x2013;1</sup></figcaption>
+</figure>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<table style="width:100%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:34%"/>
+<col style="width:33%"/>
+<col style="width:33%"/>
+</colgroup>
+<tr>
+<td style="border-bottom:solid 1px;border-top:solid 2px;">Peek</td> 
+<td style="border-bottom:solid 1px;border-top:solid 2px;">Rotational structure</td>
+<td style="border-bottom:solid 1px;border-top:solid 2px;">Assignment</td>
+</tr>
+<tr>
+<td>2348(m)</td> 
+<td>PR </td> 
+<td><i>v</i><sub>as</sub>(CO<sub>2</sub>)</td>
+</tr>
+<tr>
+<td>1357(s)</td> 
+<td>PQR </td> 
+<td><i>v</i><sub>as</sub>(SO<sub>2</sub>)</td>
+</tr>
+<tr>
+<td>1147(w)</td> 
+<td>PR</td> 
+<td><i>v</i><sub>s</sub>(SO<sub>2</sub>)</td>
+</tr>
+<tr>
+<td style="padding-left:0.5em;">662(w)</td> 
+<td>PQR </td> 
+<td>&#x03B4;(CO<sub>2</sub>)</td>
+</tr>
+<tr>
+<td style="border-bottom:solid 1px;padding-left:0.5em;">573(w) </td> 
+<td style="border-bottom:solid 1px;">PR </td> 
+<td style="border-bottom:solid 1px;">&#x03B4;(SO<sub>2</sub>)</td>
+</tr>
+</table>
+<p class="tablecaption-aside-left" id="tab2.7"><b>Table 2.7</b> Assignment of the peaks observed in <a href="Chapter02.xhtml#fig2.27">Fig. 2.27</a>.</p>
+</aside>
+<p class="indent">Carbon dioxide is a linear molecule and so will possess a total of four (3N&#x2013;5) vibrations whereas sulphur dioxide is a bent triatomic molecule and will therefore exhibit three vibrational modes. Application of symmetry, or reference to <a href="Chapter02.xhtml#tab2.4">Table 2.4</a>, shows that for SO<sub>2</sub> there are three separate modes two of which correspond to stretches (A<sub>1</sub> + B<sub>1</sub>) and one is a bending mode (A<sub>1</sub>). For CO<sub>2</sub> two stretching modes are expected, of which one, the A<sub>1g</sub> is infrared inactive, and a single infrared active doubly degenerate bending mode of E<sub>2u</sub> symmetry. We should therefore expect a mixture of these two gases to give rise to a total of five infrared absorptions.</p>
+<p class="indent">The next stage is to try and assign the bands on the basis of group frequencies. From the data in <a href="Chapter02.xhtml#fig2.20">Fig. 2.20</a> we should expect the S=O stretches to be within the range 1500&#x2013;1100 cm<sup>&#x2013;1</sup> and the C=O stretches around 2000 cm<sup>&#x2013;1</sup>. On this basis we can assign the bands at 1357 and 1147 cm<sup>&#x2013;1</sup>, marked B and C, to the <i>v</i>(S=O) and absorption A at about 2348 cm<sup>&#x2013;1</sup> must be <i>v</i>(CO). According to the group frequency chart the bending mode for carbon dioxide is in the region 750&#x2013;600 cm<sup>&#x2013;1</sup> and the O=S=O bending vibration at slightly lower energy (as might be expected since sulfur is heavier than carbon) in the range 700&#x2013;400 cm<sup>&#x2013;1</sup>. The band at 662 cm<sup>&#x2013;1</sup> marked as <i>D</i> is, therefore, most likely the bending mode for CO<sub>2</sub> and band E (553 cm<sup>&#x2013;1</sup>) the bending mode for SO<sub>2</sub>. Thus, on the basis of the expected number of absorptions and typical group frequencies we have assigned all the peaks in the spectrum to the appropriate species.</p>
+<p class="indent">There is one final assignment to try to make and that is to identify which of the peaks at 1357 and 1147 cm<sup>&#x2013;1</sup> corresponds to which of the two S=O stretching modes of sulfur dioxide. Since SO<sub>2</sub> is a bent triatomic its tliree vibrational modes will have the same form as those for other similarly bent triatomic molecules such as water, which are shown in <a href="Chapter02.xhtml#fig2.5">Fig. 2.5</a>. During the symmetric stretch, labelled as <i>v</i><sub>1</sub>, the change in dipole is parallel with the principal axis so no Q band should be seen in the rotational fine structure. But during the asymmetric vibration the dipole change is not parallel to the rotational axis and so a Q-band should be observed in conjunction with this vibrational absorption.</p>
+<p class="indent"><a href="Chapter02.xhtml#fig2.28">Figure 2.28</a> shows an expansion of these two bands from which it is obvious that although the individual peaks of the fine structure are not visible, the band at higher frequency clearly possesses a central Q-band feature whilst the lower frequency band does not. The band at 1357 cm<sup>&#x2013;1</sup> must therefore correspond to the asymmetric S=O stretching mode and the much weaker peak (because there is a much smaller overall change in the dipole during the vibration) at 1147 cm<sup>&#x2013;1</sup> corresponds to v<sub>s</sub>(S=O). A complete assignment of this spectrum is given in <a href="Chapter02.xhtml#tab2.7">Table 2.7</a>.</p>
+</section>
+<section id="sec2.3.2" epub:type="chapter">
+<h3 class="h3">Fingerprints</h3>
+<p class="noindent">A further use of vibrational spectroscopy is to confirm the identity of a compound by comparison with a known sample. In this instance rather than looking for a limited number of peaks specific to a particular part of the molecule, IR spectra are recorded for both the unknown and known compounds and the two spectra are then compared either by eye or using a computer. For the compounds to be confirmed as the same, all peaks should <a id="page_25" class="page">Page 25, Chapter 2 Vibrational spectroscopy</a> match in terms of position and relative intensity. The peaks at higher energy (4000&#x2013;1000 cm<sup>&#x2013;1</sup>) are typical of certain characteristic groups and ligands within molecules, while those at lower energies (typically below 1000 cm<sup>&#x2013;1</sup>) are known as the <i>fingerprint</i> region since they are sensitive to small variations between similar compounds. Because of this distinction it is not usual to try to assign fingerprint peaks unless you have a very good idea of the structure of the compound.</p>
+</section>
+<section id="sec2.3.3" epub:type="chapter">
+<h3 class="h3">Analysis of mixtures</h3>
+<p class="noindent">An extension of the fingerprint application is to use infrared spectroscopy as a method of identifying a mixture of compounds. Since the spectrum recorded for a mixture will be a weighted composite of the individual spectra, this is an area where computer subtraction is of great use. By comparison of the spectrum with a library of standard spectra the identification and composition of complex mixtures can be determined.</p>
+<p class="indent">There are a number of compendia of infrared spectra, both printed and in computer libraries, available for comparison, references to some of which are given at the end of this chapter.</p>
+</section>
+</section>
+<section id="sec2.4" epub:type="chapter">
+<h2 class="h2">2.4 Raman spectroscopy</h2>
+<aside class="right" style="margin-top:-1em;" epub:type="sidebar">
+<figure class="figure-aside-center" id="fig2.29">
+<img src="../images/fig2.29.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left"><b>Fig 2.29</b> Energy levels involved in Raman spectroscopy</figcaption>
+</figure>
+</aside>
+<p class="noindent">The second common form of vibrational spectroscopy is based on a different physical process. When light of energy less than that required to promote a molecule into an excited electronic state is absorbed by a molecule a <i>virtual excited state</i> is created. This virtual state is of very short lifetime and the majority of the light is re-emitted over 360&#x00B0; at the same energy: this is called <i>Rayleigh scattering</i>. However, C.V. Raman noticed, in 1928, that the energy of a small proportion of the re-emitted light differs from the incident radiation (<i>v</i><sub>0</sub>) by energy gaps that correspond to some of the vibrational modes. The non-Rayleigh light occurs both at higher energy (<i>v</i><sub>0</sub> + <i>hv</i>), where the energy difference derives from a loss of vibrational energy of the molecule, and at a lower energy (<i>v</i><sub>0</sub> &#x2013; <i>hv</i>) because a vibrational promotion has occurred. These two events are shown schematically in <a href="#fig2.29">Fig 2.29</a>.</p>
+<p class="indent">The ground vibrational state is more densely populated than the excited state, and it is therefore more likely that promotion of a ground state molecule into a vibrationally excited state will occur rather than the reverse. The peaks observed at lower frequency than the incident radiation (called Stokes lines) will, by virtue of the greater population and hence greater probability, be more intense than those derived from excited vibrational states at higher energy, called anti-Stokes lines.</p>
+<p class="indent">Unfortunately, the Raman effect is very weak and a lot of monochromatic radiation is required so that there is sufficient of the energy-shifted light available to be detected. This need and the requirement for a well-collimated and monochromatic source of light mean that the radiation in Raman experiments is usually derived from a laser. A schematic representation of the instrument set-up is shown in <a href="Chapter02.xhtml#fig2.30">Fig. 2.30</a>.</p>
+<p class="indent">However, problems may arise for dark-coloured samples which absorb an appreciable amount of the incident light resulting in localised heating and <a id="page_26" class="page">Page 26, Chapter 2 Vibrational spectroscopy</a> ultimately burning of the sample. There may also be problems with samples that are fluorescent, since this will often swamp the Raman effect. These problems have been reduced by the advent of Fourier-transform Raman (FTR) spectrometers which use an infrared laser to overcome fluorescence problems and interferometry techniques to increase the speed of acquiring spectra.</p>
+<figure><img src="../images/fig2.30.jpg" alt="images" />
+	 <figcaption>
+	 <aside class="right" style="margin-top:-6em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig2.30"><b>Fig. 2.30</b> A schematic representation of a Raman spectrometer.</p>
+	</aside>
+	</figcaption>
+</figure>
+<aside class="right" style="margin-top:5em;" epub:type="sidebar">
+<figure class="figure-aside-left">
+<img src="../images/fig2.31.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig2.31"><b>Fig. 2.31</b> Change in electron density and polarisability for the N<sub>2</sub> vibration.</figcaption>
+</figure>
+</aside>
+<p class="indent">The information obtained from Raman spectroscopy is vibrational frequencies, measured as a Raman shift relative to the exciting energy source. But because the physical processes involved are different from those in IR spectroscopy the selection rules also differ. Instead of requiring a change in electric dipole for the vibrational mode to be observed, as in IR spectroscopy, a change in the <i>polarisability</i> of the molecule during a vibration is required for Raman activity. The polarisability is a measure of the ease with which the electron cloud may be distorted, or polarised.</p>
+<p class="indent">During the course of the N&#x2261;N stretching vibration of dinitrogen the electron distribution will change, as illustrated in <a href="Chapter02.xhtml#fig2.31">Fig. 2.31</a>. When the N&#x2013;N bond is at its most stretched the electron density will be spread more thinly over a larger volume and can be distorted more easily than if it is concentrated in a very small area. Because the electron density is altered in such a way that further distortion, or polarisation, varies between the extremes of the vibration, the band will be Raman active.</p>
+<p class="indent">In general, it is not easy to determine whether the polarisability changes for the vibrational modes of more complicated molecules. But, just as it is possible to determine the activity of vibrational bands for a particular molecule in the infrared using group theory, so the Raman activity may also be obtained this way. In this instance, if the representation of a particular vibrational mode corresponds to one or more of the &#x2018;squared&#x2019; terms, e.g. <i>x</i><sup>2</sup>, <i>y</i><sup>2</sup>, <i>z</i><sup>2</sup> or <i>xy</i>, <i>xz</i>, <i>yz</i> or combinations of these, then it will be Raman active.</p>
+<p class="indent">The infrared activity of the carbonyl stretching vibrations of W(CO)<sub>6</sub> were determined earlier. We can now determine whether any of them will be Raman active. The symmetries of the carbonyl stretching modes were determined as A<sub>1g</sub> + E<sub>u</sub> + T<sub>1u</sub>. The final column of the group table (<a href="#tab2.3">Table 2.3</a>) gives &#x2018;squared&#x0027; terms corresponding to the symmetry labels Alg, Eg, and T<sub>2g</sub>, For this compound, therefore, only the A<sub>1g</sub> carbonyl stretch will be Raman active.</p>
+<a id="page_27" class="page" style="width:60%">Page 27, Chapter 2 Vibrational spectroscopy</a>
+<section id="sec2.4.1" epub:type="chapter">
+<h3 class="h3">Raman applications</h3>
+<p class="noindent">One area of study where the Raman effect is frequently more useful than infrared spectroscopy is for the determination of low frequency vibrations (below <i>ca.</i> 400 cm<sup>&#x2013;1</sup>), for example the stretching frequency of compounds containing heavy elements or of weakly bound molecules. This is because IR studies are usually carried out as thin samples between alkali-metal halide plates which start to absorb strongly at low energies, see <a href="Chapter02.xhtml#tab2.5">Table 2.5</a>, and so mask any sample absorptions in these regions. However, because the Raman spectrum may be recorded using monochromatic light, any material which is clear to visible light can be used as a sample holder, for example thin-walled glass tubes. Figure. 2.32 shows part of the Raman spectrum of the product of the reaction of PMe<sub>3</sub> with I<sub>2</sub> in diethyl ether and the structure of this compound.</p>
+<p class="indent">The Raman spectrum clearly shows two peaks, the lower energy of which (at <i>ca</i>. 210 cm<sup>-1</sup>) is assigned as the I&#x2013;I stretching mode. By comparison, <i>v</i>(I&#x2013;I) for diiodine occurs at 215 cm<sup>&#x2013;1</sup> which suggests that the I&#x2013;I bond in the adduct is weaker than in diiodine. This is consistent with the donation of electrons from the lone pair of the phosphine into an orbital of diiodine possessing anti-bonding character resulting in a decrease in the I&#x2013;I bond order and a lower vibrational frequency.</p>
+
+<figure>
+<img src="../images/fig2.32.jpg" alt="images" />
+	 <figcaption>
+	 <aside class="right" style="margin-top:-7em;" epub:type="sidebar">
+	 <p class="figcaption-aside-left" id="fig2.32"><b>Fig. 2.32</b> (a) Raman spectrum of the PMe<sub>3</sub>&#x2013;I<sub>2</sub> adduct and (b) its solution-phase structure.</p>
+	</aside>
+	</figcaption>
+</figure>
+</section>
+<section id="sec2.4.2" epub:type="chapter">
+<h3 class="h3">Depolarisation measurements</h3>
+<p class="noindent">Depending on the set-up of a Raman spectrometer it may be possible to measure the scattered light in two different planes and hence obtain a value for the <i>depolarisation ratio.</i> If light is directed onto a sample along, say, the <i>x</i> direction and the detected light is along the <i>y</i> direction then the light will be polarised in the <i>z</i> direction such that the depolarisation ratio is given by</p>
+<p class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>&#x03C1;<!-- ? --></mi>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <msub>
+        <mi>I</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>Z</mi>
+        </mrow>
+      </msub>
+      <mo stretchy="false">(</mo>
+      <mo>&#x22A5;<!-- ? --></mo>
+      <mo stretchy="false">)</mo>
+    </mrow>
+    <mrow>
+      <msub>
+        <mi>I</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>Z</mi>
+        </mrow>
+      </msub>
+      <mo stretchy="false">(</mo>
+      <mo>&#x2225;<!-- ? --></mo>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mfrac>
+</math></p>
+<p class="indent">For all non-totally symmetric vibrations depolarised lines are observed with <i>&#x03C1;</i> = 3/4. In the case of totally symmetric modes bands will possess a depolarisation ratio in the range 0 &#x003C; <i>&#x03C1;</i> &#x003C; 3/4. By placing a polariser before the detector and measuring the peak intensities in two perpendicular planes it is possible to identify which bands correspond to totally symmetric modes.</p>
+<aside class="right" style="margin-top:-7.5em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 2.10</b> The following Raman shifts (and depolarisation values) are obtained for a sample of CCl<sub>4</sub>: 218 cm<sup>&#x2013;1</sup> (0.75), 314 cm<sup>&#x2013;1</sup> (0.75), 459 cm<sup>&#x2013;1</sup> (0.02). Assign the peaks as far as possible.</p>
+</aside>
+<a id="page_28" class="page" style="width:60%;">Page 28, Chapter 2 Vibrational spectroscopy</a>
+</section>
+<section id="sec2.4.3" epub:type="chapter">
+<h3 class="h3">Complementary nature of Raman and IR spectroscopy</h3>
+<p class="noindent">We have seen that we would expect to observe <i>v</i>(N&#x2261;N), the N&#x2013;N stretch of dinitrogen, in the Raman spectrum because it results in a change in the polarisability of the molecule. Conversely, this vibration is infrared inactive because there is no associated change in electric dipole. Similarly, one of the carbonyl stretching vibrations of W(CO)<sub>6</sub> is infrared active and a different one is Raman active. Indeed, for all molecules such as these, possessing a centre of symmetry (symmetry operation i), vibrational modes which result in a change in electric dipole and hence are infrared active do not give rise to a change in polarisability and so are Raman inactive and vice versa. In this respect Raman and infrared spectroscopies are complementary and can be used as a method to infer the presence, or otherwise, of a centre of symmetry in a molecule. Compounds which possess a centre of symmetry will not display any common peaks in their Raman and IR spectra. This is termed the <i>mutual exclusion principle.</i></p>
+<aside class="right" style="margin-top:-1em;" epub:type="sidebar">
+<p class="sidebar-left"><b>Question 2.11</b> The IR spectrum of KrF<sub>2</sub> has bands aft 233 and 588 cm<sup>&#x2013;1</sup>, the Raman spectrum displays a single band at 449 cm<sup>&#x2013;1</sup>. Is KrF<sub>2</sub> linear a bent?</p>
+<p class="noindent">&#160;</p>
+<figure class="figure-aside-center">
+<img src="../images/fig2.33.jpg" alt="images"/>
+<figcaption class="figcaption-aside-left" id="fig2.33"><b>Fig. 2.33</b> Predicted Mo=O and Mo&#x2013;Cl Raman activity of the complexes [MoO<sub>3</sub>Cl<sup>2</sup>]<sup>2&#x2013;</sup>, [MoO<sub>2</sub>Cl<sup>4</sup>]<sup>2&#x2013;</sup>.</figcaption>
+</figure>
+</aside>
+<p class="indent">There are other characteristics that make IR and Raman spectroscopic techniques complimentary. Generally, polar bonds which result in a large dipole absorb strongly in the infrared, while covalent bonds which are more easily polarised absorb more strongly in Raman spectra. This has important implications when choosing solvents for vibrational spectroscopic work. For example, water is a poor Raman scatterer and therefore aqueous solutions are more amenable to study by Raman than IR spectroscopy.</p>
+<p class="indent">The Raman spectrum of sodium molybdate (Na<sub>2</sub>MoO<sub>4</sub>) dissolved in HCl exhibits peaks at 964, 925, 392, 311, 246, and 219 cm<sup>&#x2013;1</sup> with the bands at 925 and 311 cm<sup>&#x2013;1</sup> being polarised. What can be deduced from these data?</p>
+<p class="indent">From a chemical standpoint we should expect these conditions to result either in protonation or chlorination of the molybdate species. Firstly, the negative evidence&#x2014;there are no bands corresponding to <i>v</i>(Mo&#x2013;H) or <i>v</i>	(O&#x2013;H) observed in the spectrum, so protonation does not appear to have occurred. The peaks at 964 and 925 cm<sup>&#x2013;1</sup> can be assigned to <i>v</i>(Mo=O) vibrations, and because there are two of these bands there must be at least two Mo=O bonds in the molecule. It is more difficult to assign the remaining bands unambiguously since both Mo&#x2013;Cl stretching vibrations and Mo=O bending modes are expected to fall within a similar region of the spectrum. In other oxides of molybdenum the Mo=O bending modes are found between 370 and 420 cm<sup>&#x2013;1</sup> and on this basis the band at 392 cm<sup>&#x2013;1</sup> is assigned to such a mode. The remaining three bands are tentatively assigned as Mo&#x2013;Cl stretching modes. The most likely products would arise from substitution of oxide for chloride ligands leading to the complexes [MoO<sub>3</sub>Cl<sub>2</sub>]<sup>2&#x2013;</sup>, [MoO<sub>2</sub>Cl<sub>4</sub>]<sup>2&#x2013;</sup>, and [MoOCl<sub>6</sub>]<sup>2&#x2013;</sup>. The last of these can be discounted since it would only give rise to one <i>v</i>(Mo=O) peak.</p>
+<p class="indent">A symmetry treatment of the possible isomers for the other complexes can be used to determine the number of Raman-active stretching vibrations resulting in the data shown in <a href="Chapter02.xhtml#fig2.33">Fig. 2.33</a>. Only for one structure is there agreement between the observed and expected number of Mo=O and Mo&#x2013;Cl stretching modes. On this basis it would appear that <i>cis</i>-[MoO<sub>2</sub>Cl<sub>4</sub>]<sup>2&#x2013;</sup> is the species present in solution.</p>
+<a id="page_29" class="page" style="width:60%;">Page 29, Chapter 2 Vibrational spectroscopy</a>
+</section>
+</section>
+<section id="sec2.5" epub:type="chapter">
+<h2 class="h2">2.5 Potential problems</h2>
+<p class="noindent">The following table identifies some of the more common problems encountered in IR spectroscopic studies and suggests possible remedies.</p>
+<table style="width:100%; margin-top:1em;margin-bottom:1em">
+<colgroup>
+<col style="width:25%"/>
+<col style="width:40%"/>
+<col style="width:35%"/>
+</colgroup>
+<tr>
+<td style="border-bottom:solid 1px;border-top:solid 2px;">Problem</td>
+<td style="border-bottom:solid 1px;border-top:solid 2px;">Possible cause</td>
+<td style="border-bottom:solid 1px;border-top:solid 2px;"> Suggested remedy</td>
+</tr>
+<tr>
+<td>More peaks than expected</td>
+<td>(a) Mixture of compounds</td>
+<td>(a) Effect separation if possible</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td>(b) Lower molecular symmetry than expected</td>
+<td>(b) Re-evaluate spectrum</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td>(c) Partially resolved rotational structure </td>
+<td>&#160;</td>
+</tr>
+<tr>
+<td style="padding-top:1em;">Fewer peaks than expected</td>
+<td style="padding-top:1em;">(a) Molecule possesses higher symmetry than expected</td>
+<td style="padding-top:1em;">(a) Re-evaluate spectrum</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td>(b) Accidental overlap of peaks</td>
+<td>(b, c) Record Raman spectrum</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td>(c) Very low IR activity for some bands</td>
+<td>&#160;</td>
+</tr>
+<tr>
+<td style="padding-top:1em;">Very broad peaks</td>
+<td style="padding-top:1em;">(a) Poorly mulled sample</td>
+<td style="padding-top:1em;">(a) Grind sample well before adding mulling</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td>(b) Hydrogen bonding </td>
+<td> agent</td>
+</tr>
+<tr>
+<td style="border-bottom:solid 1px;">&#160;</td>
+<td style="border-bottom:solid 1px;">&#160;</td>
+<td style="border-bottom:solid 1px;">(b) Try solution-phase spectra</td>
+</tr>
+</table>
+</section>
+<section id="sec2.6" epub:type="chapter">
+<h3 class="h2">2.6 Further questions</h3>
+<p class="noindent">2.12 The IR spectra of (&#x03B7;<sup>6</sup>-C<sub>6</sub>H<sub>6</sub>)Cr(CO)<sub>3</sub> and (&#x03B7;<sup>6</sup>-C<sub>6</sub>H<sub>3</sub>Me<sub>3</sub>)Cr(CO)<sub>3</sub> dissolved in hexane exhibit bands at 1984, 1917 cm<sup>&#x2013;1</sup> and 1971, 1903 cm<sup>&#x2013;1</sup> respectively. What conclusions can be drawn about the bonding of the two arene ligands?</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">2.13 Which vibrational spectroscopic method would be most appropriate in order to study the following systems: (i) K<sub>2</sub>PdBr<sub>4</sub>; (ii) O<sub>2</sub>; (iii) very dilute samples? Explain why.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">2.14 The IR spectrum of (Me<sub>3</sub>PO)<sub>2</sub>SnF<sub>4</sub> exhibits bands due to stretching modes at 1083, 1065, 577, 561, 551, 472, and 448 cm<sup>&#x2013;1</sup>. Assign these bands as far as possible and determine the geometry of the complex.</p>
+<section id="sec2.6.1" epub:type="chapter">
+<h3 class="h3">Further reading</h3>
+<p class="noindent">G. Davidson, Group theory for chemists, MacMillan Education Ltd (1991).</p>
+<p class="noindent">F. A. Cotton, Chemical applications of group theory, Wiley (1990).</p>
+<p class="noindent">K. Nakamoto, Infrared and Raman spectra of inorganic and coordination compounds, Wiley (1986).</p>
+<p class="noindent">E.B. Wilson, J.C. Decius and P.C. Cross, Molecular vibrations, McGraw- Hill, New York (1945).</p>
+<p class="noindent">The Aldrich library of FT-IR spectra, Aldrich Chemical Company Inc., Wisconsin, (1985).</p>
+</section>
+</section>
+</section>
+</div>
+</body>
+</html>

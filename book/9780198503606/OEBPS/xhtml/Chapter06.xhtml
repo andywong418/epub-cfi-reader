@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Electromagnetism</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<div>
+<a class="page" id="page_61" style="width:70%;">Page 61, Electromagnetism</a>
+<section epub:type="chapter" id="ch06">
+<h1 class="main">6<span class="space">&#160;</span>Electromagnetism</h1>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_6.1">
+<h2 class="h2">6.1<span class="space">&#160;</span>Introduction</h2>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page61-1.jpg" alt="images"/>
+</figure>
+<p class="noindent2">Two parallel wires carrying current in the same direction are attracted to one another.</p>
+</aside>
+<p class="noindent">In the previous chapter we discussed the electric force between stationary charges. Now we consider the magnetic effects arising from moving charged particles. The experimental observation that two current carrying wires exert a force on one another led Biot and Savart to derive a mathematical formula that allows the magnetic flux density to be determined for an arbitrary arrangement of conductors. Some common examples are examined in this chapter. In the far field, current loops behave like magnetic dipoles, and show many properties that are analogous to electric dipoles. The classical calculation for an atomic magnetic dipole moment is introduced and related to the angular momentum of the electron. These microscopic magnetic moments are used to explain the macroscopic properties of magnetic materials.</p>
+</section>
+<section epub:type="chapter" id="sec_6.2">
+<h2 class="h2">6.2<span class="space">&#160;</span>The magnetic force between current elements</h2>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page61-2.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">Consider two parallel wires, carrying currents <i>I</i><sub>1</sub> and <i>I</i><sub>2</sub>, respectively, which are separated by a distance <i>r</i> in a vacuum. Amp&#x00E8;re found experimentally that the wires are attracted to one another if both currents travel in the same direction, and are repelled if the charges flow in an opposite sense. The magnitude of the force depends on the size of the current and the separation of the wires. Amp&#x00E8;re concluded that, for a current <i>I</i><sub>1</sub> flowing through an infinitely short length of wire d<i>l</i><sub>1</sub>, known as a <i>current element</i>, parallel to another element <i>I</i><sub>2</sub>d<i>l</i><sub>2</sub> and separated from it by a distance <i>r</i>, the magnitude of the force between them, d<i>F</i>, is</p>
+<figure class="fig1a" id="eq6.1">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+
+ <semantics>
+  <mrow>
+   <mtable>
+    <mtr>
+     <mtd>
+      <mrow>
+       <mtext>d</mtext><mi>F</mi><mo>=</mo><mfrac>
+        <mrow>
+         <msub>
+          <mi>&#x03BC;</mi>
+          <mn>0</mn>
+         </msub>
+         
+        </mrow>
+        <mrow>
+         <mn>4</mn><mi>&#x03C0;</mi>
+        </mrow>
+       </mfrac>
+       <mfrac>
+        <mn>1</mn>
+        <mrow>
+         <msup>
+          <mi>r</mi>
+          <mn>2</mn>
+         </msup>
+         
+        </mrow>
+       </mfrac>
+       <msub>
+        <mi>I</mi>
+        <mn>1</mn>
+       </msub>
+       <mtext>d</mtext><msub>
+        <mi>l</mi>
+        <mn>1</mn>
+       </msub>
+       <msub>
+        <mi>I</mi>
+        <mn>2</mn>
+       </msub>
+       <mi>sin</mi><mi>&#x03B8;</mi>
+      </mrow>
+     </mtd>
+     <mtd>
+      <mrow>
+       <mo stretchy='false'>(</mo><mn>6.1</mn><mo stretchy='false'>)</mo>
+      </mrow>
+     </mtd>
+    </mtr>
+    
+   </mtable>
+  </mrow>
+ </semantics>
+</math>
+
+
+</figure>
+<p class="noindent">where &#x03BC;<sub>0</sub> is a fundamental constant known as the <i>permeability of free space</i> and has the value 4&#x03C0; &#x00D7; 10<sup>&#x2212;7</sup>Js<sup>2</sup>C<sup>&#x2212;2</sup>m<sup>&#x2212;1</sup>. Isolated current elements are impossible to produce experimentally and so, in order to use <a href="#eq6.1">eqn (6.1)</a> to obtain the total force, d<i>F</i> must be integrated over the entire current path for both <i>I</i><sub>1</sub> and <i>I</i><sub>2</sub>. This interaction between two conductors is reminiscent of the way in which two point charges act upon each other through an intermediary electric field. In this case, the conductors act on each other through the intermediary of the magnetic field. Note the similarities between <a href="#eq6.1">eqn (6.1)</a> and Coulomb&#x2019;s law given in <a href="Chapter05.xhtml#eq5.1">eqn (5.1)</a>.</p>
+<a class="page" id="page_62" style="width:70%;">Page 62, Electromagnetism</a>
+<section epub:type="chapter" id="sec_6.2.1">
+<h3 class="h2">6.2.1<span class="space">&#160;</span>Magnetic field of a current element</h3>
+<p class="noindent">Let us reconsider the previous situation in terms of the magnetic field, a vector quantity <b><i>B</i></b>, due to a current element, and the subsequent force on another current element placed in that field. Biot and Savart showed that the experimental results could be explained if each current element <i>I</i> d<i>l</i> (which is a vector quantity) gives rise to a contribution d<b><i>B</i></b> to the total magnetic field of</p>
+<figure class="fig1a" id="eq6.2">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mtext>d</mtext><mi>B</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>&#x03BC;</mi><mi>o</mi><mi>I</mi><mi>d</mi><mi>l</mi><mo>&#x00D7;</mo><mover accent='true'>
+<mi>r</mi>
+<mo>&#x005E;</mo>
+</mover>
+</mrow>
+<mrow>
+<mn>4</mn><mi>&#x03C0;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.2</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where <b>r</b> is a unit vector along <b><i>r</i></b>. By definition, d<b><i>B</i></b> is perpendicular to both the position vector <b><i>r</i></b> and the current element. The total magnetic field <b><i>B</i></b> is found by integrating over the entire current path. If the magnetic field arising from current <i>I</i><sub>1</sub> is <b><i>B</i></b><sub>1</sub> then the force, d<b><i>F</i></b>, on the current element <i>I</i><sub>2</sub> d<b><i>l</i></b> is</p>
+<p class="fig1">d<b><i>F</i></b> = <i>I</i><sub>2</sub> d<b><i>l</i></b> &#x00D7; <b><i>B</i></b><sub>1</sub></p>
+<p class="noindent">which is perpendicular to both the current element and the magnetic field. The general expression for the force experienced by a straight current carrying wire of length <i>l</i> in a magnetic field is</p>
+<p class="fig1a" id="eq6.3"><b><i>F</i></b> = 1 <i><b>l</b></i>&#x00D7;<b><i>B</i></b>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(6.3)</p>
+</section>
+<section epub:type="chapter" id="sec_6.2.2">
+<h3 class="h2">6.2.2<span class="space">&#160;</span>Magnetic flux and flux density</h3>
+<p class="noindent">The vector <b><i>B</i></b>, which is a measure of the strength (and direction) of the magnetic field, is called the <i>magnetic flux density</i>. The SI unit of magnetic flux density is the <i>Tesla</i>, where 1T = 1 J A<sup>&#x2212;1</sup> m<sup>&#x2212;2</sup>. The Earth&#x2019;s magnetic flux density at the surface is &#x2248;5 &#x00D7; 10<sup>&#x2212;5</sup>T. By contrast, very strong electromagnets produce magnetic flux densities of about 10T. Related to <b>B</b> is the magnetic flux, <i>&#981;</i>, through an area <i>A</i>. Magnetic flux is a scalar quantity and is defined as</p>
+<figure class="fig1a" id="eq6.4">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>&#981;</mi><mo>=</mo><mi>B</mi><mo>.</mo><mi>A</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.4</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where the vector <b>A</b> has a direction that is normal to the area <b>A</b>. The unit of magnetic flux is the Weber (Wb) and one Tesla is equivalent to one Weber per square meter (Wb m<sup>&#x2212;2</sup>). A simple application of <a href="#eq6.4">eqn (6.4)</a> is for the case of a current carrying coil whose area is perpendicular to the magnetic flux density. In this case the flux through the coil is simply <b>BA</b>. If the coil is rotated by 90&#x00B0; in the field however then the flux through the coil is zero.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec_6.3">
+<h2 class="h2">6.3<span class="space">&#160;</span>Examples</h2>
+<p class="noindent">In this section the Biot-Savart law is used to calculate the resultant magnetic flux density <b>B</b> from some simple experimental arrangements.</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page62-2.jpg" alt="images"/>
+</figure>
+</aside>
+<section epub:type="chapter" id="sec_6.3.1">
+<h3 class="h2">6.3.1<span class="space">&#160;</span>Magnetic fields due to a current carrying wire</h3>
+<p class="noindent">The magnetic flux density at point P due to any current element along a current carrying wire has magnitude</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mtext>d</mtext><mi>B</mi><mo>=</mo><mfrac>
+<mrow>
+<msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi><mtext>d</mtext><mi>l</mi><mi>sin</mi><mi>&#x03B8;</mi></mrow>
+<mrow>
+<mn>4</mn><mi>&#x03C0;</mi><mo stretchy='false'>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>l</mi><mn>2</mn></msup><mo stretchy='false'>)</mo></mrow>
+</mfrac>
+</mrow>
+</semantics>
+</math>
+</figure>
+<a class="page" id="page_63" style="width:70%;">Page 63, Electromagnetism</a>
+<p class="noindent">and a direction perpendicular to both the wire and the vector between the current element and point P. As <i>l</i> = <i>x</i> cot<i>&#x03B8;</i> and d<i>l</i> = &#x2212;<i>x</i> cosec<sup>2</sup><i>&#x03B8;</i> d<i>&#x03B8;</i>, d<i>B</i> becomes</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mtext>d</mtext><mi>B</mi><mo>=</mo><mfrac>
+<mrow>
+<msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi><mtext>d</mtext><mi>l</mi><mi>sin</mi><mi>&#x03B8;</mi></mrow>
+<mrow>
+<mn>4</mn><mi>&#x03C0;</mi><mo stretchy='false'>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>l</mi><mn>2</mn></msup><mo stretchy='false'>)</mo></mrow>
+</mfrac>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">Integrating this expression between the limits <i>&#x03B1;</i> and <i>&#x03B2;</i> yields</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>B</mi><mo>=</mo><mfrac>
+<mrow>
+<msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi></mrow>
+<mrow>
+<mn>4</mn><mi>&#x03C0;</mi><mi>x</mi></mrow>
+</mfrac>
+<mo stretchy='false'>(</mo><mi>cos</mi><mi>&#x03B2;</mi><mo>&#x2212;</mo><mi>cos</mi><mi>&#x03B1;</mi><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">For an infinitely long wire &#x03B1;&#x2192;0 and <i>&#x03B2;</i>&#x2192;&#x03C0;, and the magnitude of <b>B</b> is</p>
+<figure class="fig1a" id="eq6.5">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>B</mi><mo>=</mo><mfrac>
+<mrow>
+<msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi></mrow>
+<mrow>
+<mn>2</mn><mi>&#x03C0;</mi><mi>x</mi></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.5</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig1a">
+<img src="../images/page63-3.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">The magnetic field lines around the conductor have cylindrical symmetry. The magnitude and direction of the magnetic field can be represented by a series of field lines in the same manner as an electrostatic field. The direction of the field at any point is given by the direction of the arrow on the line and the magnitude of the field is proportional to the density of field lines. It should be noted that electric and magnetic fields are different in one very important aspect: magnetic field lines have no sources, unlike electric fields (the sources are the electric charges), but are continuous and join back on themselves. This means that there are no free &#x2018;magnetic charges&#x2019; or poles.</p>
+<p class="noindent">Now reconsider the case of the two current carrying wires. If the first wire carries a current <i>I</i><sub>1</sub> then from <a href="#eq6.5">eqn (6.5)</a> the magnetic field at every point on the second wire is &#x03BC;<sub>0</sub><i>I</i><sub>1</sub>/2&#x03C0;<i>r</i>. If the current carried by wire 2 is <i>I</i><sub>2</sub>, the force on a length <i>l</i> of the conductor has magnitude</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>F</mi><mo>=</mo><mfrac>
+<mrow>
+<msub><mi>&#x03BC;</mi><mn>0</mn></msub><msub><mi>I</mi><mn>1</mn></msub><msub><mi>I</mi><mn>2</mn></msub><mi>l</mi></mrow>
+<mrow>
+<mn>2</mn><mi>&#x03C0;</mi><mi>r</mi></mrow>
+</mfrac>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">and is directed towards <i>I</i><sub>1</sub>. Thus the force per unit length is</p>
+<figure class="fig1a" id="eq6.6">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mfrac>
+<mi>F</mi>
+<mi>l</mi>
+</mfrac>
+<mo>=</mo><mfrac>
+<mrow>
+<msub><mi>&#x03BC;</mi><mn>0</mn></msub><msub><mi>I</mi><mn>1</mn></msub><msub><mi>I</mi><mn>2</mn></msub></mrow>
+<mrow>
+<mn>2</mn><mi>&#x03C0;</mi><mi>r</mi></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.6</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">Hence the conductors attract each other. The attraction or repulsion between straight parallel conductors provides the basis for the definition of the <i>amp&#x00E8;re</i>: &#x2018;One ampere is that constant current which, if present in two infinitely long parallel conductors of negligible cross-section that are one metre apart in vacuum, will produce a force of 2 &#x00D7; 10<sup>&#x2212;7</sup> N m<sup>&#x2212;1</sup> between the conductors&#x2019;. It follows from this definition that &#x03BC;<sub>0</sub> = 4&#x03C0; &#x00D7; 10<sup>&#x2212;7</sup> N A<sup>&#x2212;2</sup>.</p>
+</section>
+<section epub:type="chapter" id="sec_6.3.2">
+<h3 class="h2">6.3.2<span class="space">&#160;</span>Magnetic field of a circular loop</h3>
+<p class="noindent">Consider a point P that lies on a line through the centre of a current carrying loop of radius <i>a</i>, and perpendicular to its plane. For this case d<b>l</b> and <b>r</b> are always perpendicular to one another so that sin<i>&#x03B8;</i> = 1. The fields due to two elements on the coil that are directly opposite to one another have the same magnitude</p>
+<a class="page" id="page_64" style="width:70%;">Page 64, Electromagnetism</a>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mtext>d</mtext><mi>B</mi><mo>=</mo><mfrac>
+<mrow>
+<msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi><mtext>&#x2009;</mtext><mi>d</mi><mi>l</mi></mrow>
+<mrow>
+<mn>4</mn><mi>&#x03C0;</mi><mo stretchy='false'>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup><mo stretchy='false'>)</mo></mrow>
+</mfrac>
+</mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page64-1.jpg" alt="images"/>
+</figure>
+<p class="noindent2">The magnetic field contributions from two current elements in a coil.</p>
+</aside>
+<p class="noindent">but different directions. Resolving each element d<b>B</b> into two components that are perpendicular and parallel to the axis, leads to the conclusion that the perpendicular components cancel whilst those parallel to the axis add. The total field is then</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>B</mi><mo>=</mo><mstyle displaystyle='true'>
+<mrow><mo>&#x222B;</mo>
+<mrow>
+<mo stretchy='false'>(</mo><mi>d</mi><mi>B</mi><mi>sin</mi><mi>&#x03B1;</mi><mo stretchy='false'>)</mo><mi>d</mi><mi>l</mi><mo>=</mo></mrow>
+</mrow>
+</mstyle><mfrac>
+<mrow>
+<msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi><mi>a</mi></mrow>
+<mrow>
+<mn>4</mn><mi>&#x03C0;</mi><mo stretchy='false'>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup><mo stretchy='false'>)</mo><mn>3</mn><mo>/</mo><mn>2</mn></mrow>
+</mfrac>
+<mstyle displaystyle='true'>
+<mrow><mo>&#x222B;</mo>
+<mrow>
+<mi>d</mi><mi>l</mi></mrow>
+</mrow>
+</mstyle></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">The integral of d<i>l</i> around the loop is simply 2<i>&#x03C0;a</i> so that the magnitude of <b>B</b> is</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>B</mi><mo>=</mo><mfrac>
+<mrow>
+<msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi><mi>a</mi><mn>2</mn></mrow>
+<mrow>
+<mn>2</mn><mo stretchy='false'>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup><mo stretchy='false'>)</mo><mn>3</mn><mo>/</mo><mn>2</mn></mrow>
+</mfrac>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">At the centre of the coil <i>x</i> = 0, and the above expression reduces to</p>
+<figure class="fig1a" id="eq6.7">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>B</mi><mo>=</mo><mfrac>
+<mrow>
+<msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi></mrow>
+<mrow>
+<mn>2</mn><mi>a</mi></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.7</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-8.7em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 6.1</b> Consider the case where two identical current carrying coils are placed on the same axis and separated by a distance equal to their radii. Show that at the point midway between the coils d<i>B</i>/d<i>x</i> and <i>d</i><sup>2</sup><i>B</i>/d<i>x</i><sup>2</sup> both equal zero.</p>
+</aside>
+<p class="noindent">Alternatively, if the point P is far from the loop then <i>x</i> &#x226B; <i>a</i> and the magnitude of <i>B</i> is</p>
+<figure class="fig1a" id="eq6.8">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>B</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>&#x03BC;</mi><mn>02</mn><mi>I</mi><mi>A</mi></mrow>
+<mrow>
+<mn>4</mn><mi>&#x03C0;</mi><msup><mi>x</mi><mn>3</mn></msup></mrow>
+</mfrac>
+<mo>=</mo><mfrac>
+<mrow>
+<msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>m</mi></mrow>
+<mrow>
+<mn>2</mn><mi>&#x03C0;</mi><msup><mi>x</mi><mn>3</mn></msup></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mrow><mo>(</mo>
+<mrow>
+<mn>6.8</mn></mrow>
+<mo>)</mo></mrow></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<p class="noindent"><b>Exercise 6.2</b> Find the magnetic flux density at the centre of a square wire loop of side length 5cm, carrying a current of 20A.</p>
+</aside>
+<p class="noindent">where <i>A</i> is the area of the coil. The quantity <i>IA</i> is known as the <i>magnetic dipole moment</i>, <i>m</i>, and will be discussed later in the chapter. Far from the loop the magnetic field depends only on the area of the loop and not on its shape. Just like the electric field from an electric dipole, the field drops off with an <i>r</i><sup>&#x2212;3</sup> dependence.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec_6.4">
+<h2 class="h2">6.4<span class="space">&#160;</span>The torque on a current loop and the magnetic dipole</h2>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page64-6.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">Consider a rectangular current loop having sides of length <i>a</i> and <i>b</i>, that is oriented in a magnetic field such that the area <i>A</i> = <i>ab</i> has a normal that makes an angle <i>&#x03B1;</i> with <b>B</b>. If the loop carries a current <i>l</i>, then the magnitude of the force along side <i>a</i> is <i>F</i> = <i>laB</i> (<i>a</i> is perpendicular to <i>B</i>) and the force on the opposite side is equal in magnitude but in the opposite direction. The forces on the sides of length <i>b</i> have magnitude <i>lbB</i>sin(90&#x00B0; &#x2212;<i>&#x03B1;</i>) = <i>lbB</i>cos<i>&#x03B1;</i> and are equal and opposite, lying along the same line, and so produce no resultant effect. Although the total force on the loop is zero, the two forces on the sides of length <i>a</i> don&#x2019;t lie on the same line and form a couple. The torque supplied by the couple is the magnitude of one of the forces multiplied by the distance between the line of action of the two forces. The magnitude of the torque, <i>&#x0393;</i>, on the loop is</p>
+<p class="fig1"><i>&#x0393;</i> = (<i>laB</i>)(<i>b</i> sin <i>&#x03B1;</i>)</p>
+<p class="noindent">Representing area <i>A</i> by the vector <i>A</i> normal to the plane of the coil, the equation for the torque then becomes:</p>
+<p class="fig1a" id="eq6.9"><i>&#x0393;</i> = <i>lA</i> &#x00D7; <b>B</b> = <b>m</b> &#x00D7; <b>B</b>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(6.9)</p>
+<a class="page" id="page_65" style="width:70%;">Page 65, Electromagnetism</a>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 6.3</b> Consider a square coil of side 2 cm having 200 turns that is situated in a radial magnetic field of 1 T and is able to rotate about its vertical axis. A spring provides a countertorque to the magnetic torque resulting in a steady angular deflection <i>&#x00F8;</i> corresponding to a given current in the coil. If a current of 1 mA causes an angular deflection of 20&#x00B0;, what is the torsional constant, <i>&#x03BA;</i> of the coil?</p>
+</aside>
+<p class="noindent">where <b>m</b> is the magnetic dipole moment of the loop. The magnetic dipole vector is perpendicular to the plane of the coil and tends to be aligned parallel to the external field direction by the magnetic torque. This behaviour is analogous to that of the electric dipole in an electric field. The fact that a current loop is subject to a torque in the presence of an external magnetic field and that the torque is proportional to the current in the loop is the basis of the galvanometer, the most important current-measuring instrument.</p>
+</section>
+<section epub:type="chapter" id="sec_6.5">
+<h2 class="h2">6.5<span class="space">&#160;</span>Forces on isolated charged particles in a magnetic field</h2>
+<p class="noindent">The magnetic force on individual moving charges (each having charge <i>q</i>) can be calculated by modifying <a href="#eq6.3">eqn (6.3)</a>. The current in a conductor, <b><i>I</i></b>, depends on the number of charges per unit volume, <i>n</i>, their average velocity, , and the cross sectional area, <i>A</i>, of the conductor:</p>
+<p class="fig1"><b>I</b> = <i>nq</i> <i>A</i></p>
+<p class="noindent">For the case of a single charge <i>n</i> = 1 and= <i>v</i> and <a href="#eq6.3">eqn (6.3)</a> becomes</p>
+<p class="fig1a" id="eq6.10"><b>F</b> = <i>q <b>v</b></i> &#x00D7; <b>B</b>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(6.10)</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page65.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">This is the basic equation for the magnetic force on a charged particle moving in a magnetic field. The resultant force is always perpendicular to the direction of motion. If a particle has a velocity, <b>v</b>, which is parallel to the <b>B</b> field, the force on the particle is zero and the particle will continue to move with uniform velocity along the initial direction of motion. However, if <b>v</b> is perpendicular to <b>B</b>, the magnetic force is non-zero and perpendicular to both <b>v</b> and <b>B</b>. As the force is perpendicular to <b>v</b>, it cannot change the magnitude of <b>v</b> but only its direction. The magnitudes of both <b>F</b> and <b>v</b> are constant, and so the trajectory of the particle is circular. Equating the centripetal and magnetic forces allows the radius, <i>r</i>, of the trajectory to be calculated:</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>r</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>m</mi><mi>v</mi></mrow>
+<mrow>
+<mi>q</mi><mi>B</mi></mrow>
+</mfrac>
+</mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page65-2.jpg" alt="images"/>
+</figure>
+<p class="noindent2">Schematic of the magnetic field region of a mass spectrometer.</p>
+</aside>
+<p class="noindent">Particles with different <i>mvlq</i> ratios move in circles of different radii in the same uniform magnetic field. This fact is the physical principle at the heart of the operation of a mass spectrometer. In its simplest form a mass spectrometer consists of an ion source, an analyser and a detector. The ions are made in the source by electron impact or chemical ionisation and then accelerated by a potential difference before passing into the analyser, which consists of a magnetic field whose direction is perpendicular to the velocity of the ions. Only those ions with the correct <i>mvlq</i> ratio are able to emerge from the analyser through the collimating slit and impinge upon the detector. Variation of the magnetic field or the accelerating voltage brings the various ions with different <i>mvlq</i> ratios in turn to the detector where an ion current is measured. The ion current is proportional to the number of ions reaching the detector, and a mass spectrum is simply a plot of ion current against mass-charge ratio.</p>
+<p class="indent">If the particle has an initial velocity that is neither parallel nor perpendicular to the <b>B</b> field but at some arbitrary angle, <i>&#x03B8;</i>, then the velocity can be resolved into a component parallel to <b>B</b>(<b>v</b> cos <i>&#x03B8;</i>) and one perpendicular to <b>B</b>(<b>v</b> sin <i>&#x03B8;</i>). The parallel component is unaffected by the <a class="page" id="page_66">Page 66, Electromagnetism</a>magnetic field while the perpendicular component exhibits a circular motion. The superposition of the two motions results in the particle moving in a helical trajectory.</p>
+<section epub:type="chapter" id="sec_6.5.1">
+<h3 class="h2">6.5.1<span class="space">&#160;</span>Motion of charged particles in E and B fields</h3>
+<p class="noindent">If both electric and magnetic fields are present then the total force on a charged particle is</p>
+<p class="fig1a" id="eq6.11"><b>F</b> = <i>q</i>(<b>E</b> + <b>v</b> &#x00D7; <b>B</b>)&#x00A0;&#x00A0;&#x00A0;&#x00A0;(6.11)</p>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page66.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">This is known as the <i>Lorentz force</i>. Consider the case where the electric and magnetic fields are perpendicular to one another and define the <i>y</i>- and <i>z</i>-axes respectively. If a particle travels in the <i>x</i> direction, the force only has a non-zero component in the <i>y</i> direction and is</p>
+<p class="fig1"><i><b>F</b><sub>y</sub></i> = <i>q</i>(E &#x2212; <i>v<sub>x</sub>B</i>)</p>
+<p class="noindent">In the special case where <i>v<sub>x</sub></i> = <i>E/B</i>, <i>F<sub>y</sub></i> = 0 and the particle continues to move through the field region with its velocity unchanged. This is the basis of the velocity filter that is used in a mass spectrometer to select ion velocities before the ions enter the analysis region.</p>
+</section>
+<section epub:type="chapter" id="sec_6.5.2">
+<h3 class="h2">6.5.2<span class="space">&#160;</span>The Hall effect</h3>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page66-1.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">Consider a steady current flowing through a flat strip of conducting material in the <i>x</i> direction. If a magnetic field is applied perpendicular to the current flow, then if the charge carriers are electrons, an excess negative charge will accumulate at the upper edge of the conducting strip, leaving excess positive charge at the lower edge. Charge accumulation will continue until the electrostatic force in the <i>z</i> direction (<i>qE<sub>z</sub></i>) due to this potential difference is equal and opposite to the magnetic force <i>qvB</i>. At this point the potential difference between the opposite edges of the strip is called the Hall emf, <i>V<sub>H</sub></i> and is given by</p>
+<p class="fig1"><i>V<sub>H</sub></i> = <i>E<sub>z</sub></i> <i>d</i> = <i>v B<sub>y</sub> d</i></p>
+<p class="noindent">where <i>d</i> is the length of the strip. The magnitude of the current in the conductor is <i>l</i> = <i>nevA</i> = <i>nevtd</i> where <i>t</i> is the width of the conductor and so the previous expression can be rewritten as</p>
+<figure class="fig1a" id="eq6.12">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msub>
+<mrow></mrow>
+<mrow>
+<mi>V</mi><mi>H</mi></mrow>
+</msub>
+<mo>=</mo><mfrac>
+<mrow>
+<mi>B</mi><mi>I</mi></mrow>
+<mrow>
+<mo stretchy='false'>(</mo><mi>n</mi><mi>e</mi><mi>t</mi><mo stretchy='false'>)</mo></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.12</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<p class="noindent2"><b>Exercise 6.4</b> A copper strip 1.5 cm wide and 1.0 mm thick is placed in a magnetic field with <i>B</i> = 2.5 T. If a current of 300 A flows through the strip and <i>V<sub>H</sub></i> = 30 &#x03BC;V, calculate the density of charge carriers, <i>n</i>.</p>
+</aside>
+<p class="noindent">The Hall effect is useful as its measurement enables the density of charge carriers, <i>n</i>, to be determined. Furthermore, the sign of the charge carriers determines the sign of <i>V<sub>H</sub></i>. Measurement of <i>V<sub>H</sub></i> for semiconductors is quite easy because <i>n</i> tends to be quite low, whereas the corresponding measurement for metals is more difficult. For many metals the carriers are found to be electrons, and the density of carriers is in good agreement with the number of valence electrons that are present in the metal atoms. However, there are numerous examples of metals such as zinc and cadmium where the carriers are positive and conduction arises from the motion of positive holes.</p>
+<a class="page" id="page_67" style="width:70%;">Page 67, Electromagnetism</a>
+</section>
+</section>
+<section epub:type="chapter" id="sec_6.6">
+<h2 class="h2">6.6<span class="space">&#160;</span>Faraday&#x2019;s law</h2>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page67.jpg" alt="images"/>
+</figure>
+<p class="noindent2">A demonstration of electromagnetic induction.</p>
+</aside>
+<p class="noindent">So far we have discussed magnetic fields that are constant in time; now let&#x2019;s look at the effects induced by time-varying magnetic fields. We begin by considering the simple circuit shown where the terminal of a coil is connected to a galvanometer. This circuit has no <i>electromotive force</i> (emf) and the galvanometer shows no deflection. However if a bar magnet is pushed toward the coil, the galvanometer deflects in response to the motion, indicating that a current has been established in the coil. If the bar magnet is stationary no current flows in the coil, while if the bar magnet is moved in the opposite direction the deflection on the galvanometer is also in the reverse direction. The current that flows in the coil is called an <i>induced current</i> and is generated by an <i>induced emf</i>, <i>&#x03B5;</i>. Faraday deduced that the induced emf was equal to the rate of change of the flux through the circuit, and Lenz showed that its direction was such as to oppose the change that produced it; this can be written mathematically</p>
+<figure class="fig1a" id="eq6.13">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>&#x03B5;</mi><mo>=</mo><mfrac>
+<mrow>
+<mo>&#x2212;</mo><mi>d</mi><mi>&#934;</mi></mrow>
+<mrow>
+<mi>d</mi><mi>t</mi></mrow>
+</mfrac>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.13</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">and is known as <i>Faraday&#x2019;s law of induction</i>. If the coil consists of <i>N</i> turns, an emf is induced in every turn and the resultant emf is just <i>N</i> times that for a single loop. When the bar magnet is moved towards the coil the induced current in the coil opposes the change by establishing a field that opposes the increase in magnetic flux caused by moving the magnet. Thus, the magnetic field due to the induced current points from left to right through the plane of the coil. We conclude this discussion by presenting two examples of using Faraday&#x2019;s law.</p>
+<section epub:type="chapter" id="sec_6.6.1">
+<h3 class="h2">6.6.1<span class="space">&#160;</span>Examples</h3>
+<aside class="abc" style="margin-top:-1.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page67-2.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">(i) Consider a metal disc of radius 10 cm that revolves with a constant angular velocity of 10&#x03C0;rad s<sup>&#x2212;1</sup> about a central axle of radius 1cm. A uniform magnetic field that is perpendicular to the plane of the disc has flux density 0.04 T. Electromagnetic induction produces a potential difference between two brushes, one that is in contact with the circumference of the disc, and the other with its axle. Calculate the value of the induced potential difference. <span class="underline">Solution</span>: During one revolution of the disc, every radius of the disc cuts the flux through the plane of the disc and an emf is induced at every discrete radius. The flux threading the area of the disc outside the axle is</p>
+<p class="fig1">&#934; = <i>BA</i> = <i>B&#x03C0;</i>(<i>r</i><sub>2</sub><sup>2</sup> &#x2212; <i>r</i><sub>1</sub><sup>2</sup>)</p>
+<p class="noindent">where <i>r</i><sub>1</sub> is the radius of the axle and <i>r</i><sub>2</sub> is the radius of the disc. The frequency of revolution is 5 Hz so the flux through the disc is cut 5 times every second and the potential difference, <i>V</i>, is given by</p>
+<p class="fig1"><i>V</i> = <i>f</i> &#934; = 5 &#x00D7; 0.04 &#x00D7; <i>&#x03C0;</i>(0.1<sup>2</sup> &#x2212;0.01<sup>2</sup>) = 6.21 mV</p>
+<p class="noindent">(ii) A circular coil with 500 turns, enclosing an area of 50 cm<sup>2</sup>, is rotated at a rate of 200 revolutions per second about an axis that is perpendicular to a uniform magnetic field of 10<sup>&#x2212;2</sup>T. Obtain an expression for the emf in the coil at any instant in time.</p>
+<p class="noindent"><span class="underline">Solution</span>: The flux through the coil at any instant in time is given by</p>
+<a class="page" id="page_68" style="width:70%;">Page 68, Electromagnetism</a>
+<p class="fig1">&#934; = <i>BA</i> cos <i>&#x03B8;</i></p>
+<p class="noindent">where <i>&#x03B8;</i> is the angle between the field direction and the vector normal to the plane of the coil, and changes with time. The angular frequency of the coil&#x2019;s rotation, &#x03C9;, is constant, so that <i>&#x03B8;</i> = <i>&#x03C9;t</i>. The induced emf is</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>&#x03B5;</mi><mo>=</mo><mo>&#x2212;</mo><mi>N</mi><mfrac>
+<mrow>
+<mi>d</mi><mi>&#934;</mi></mrow>
+<mrow>
+<mi>d</mi><mi>t</mi></mrow>
+</mfrac>
+<mo>=</mo><mo>&#x2212;</mo><mi>N</mi><mi>B</mi><mi>A</mi><mi>sin</mi><mi>&#x03B8;</mi><mfrac>
+<mrow>
+<mi>d</mi><mi>&#952;</mi></mrow>
+<mrow>
+<mi>d</mi><mi>t</mi></mrow>
+</mfrac>
+<mo>=</mo><mi>N</mi><mi>B</mi><mi>A</mi><mi>&#x03C9;</mi><mi>sin</mi><mi>&#x03C9;</mi><mi>t</mi></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">and alternates with an angular frequency of <i>&#x03C9;</i> and a maximum value of 31.4 V.</p>
+<p class="indent">In general, when a conducting coil is placed in a time-varying magnetic field, the flux through the loop will change and an induced emf will appear in the loop. This emf will set the charge carriers in motion and induce a current. The changing flux of <b>B</b> generates an induced electric field <b>E</b> at all points around the loop. Thus Faraday&#x2019;s law tells us that <i>a changing magnetic field will produce an electric field</i>.</p>
+</section>
+</section>
+<section epub:type="chapter" id="sec_6.7">
+<h3 class="h2">6.7<span class="space">&#160;</span>Magnetic properties of materials</h3>
+<p class="noindent">The magnetic properties of molecules closely resemble their electric properties. A molecule can have a permanent magnetic moment and also a moment induced by a magnetic field. When a molecule is placed in a magnetic field, the magnetic flux density, <b><i>B</i></b>, within and around the sample is modified. For most molecules the flux density will change by only a very small amount, typically about 1 part in 10<sup>3</sup> - 10<sup>5</sup>. Such materials are known as either <i>paramagnetic</i> or <i>diamagnetic</i>. In some special cases the field density can be increased by over a factor of 100 compared to the flux density in vacuum and the majority of such materials are <i>ferromagnetic</i>. Ferromagnetic, paramagnetic and diamagnetic materials can be distinguished by their behaviour in a non-uniform magnetic field.</p>
+<aside class="abc" style="margin-top:-25.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page68-1.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">A ferromagnetic material is very strongly attracted by a magnetic field, while a paramagnetic material is attracted much more weakly. By contrast, the field weakly repels a diamagnetic sample. The explanation for the behaviour of these materials lies in the interaction of microscopic dipole moments with the magnetic field in which the material is situated. When a material is placed in the magnetic field it becomes <i>magnetised</i> and its magnetisation, <b>M</b>, is defined as the magnetic dipole per unit volume. The magnetisation is proportional to the initial magnetic field strength, <b>H</b>,</p>
+<aside class="abc" style="margin-top:-25.7em;" epub:type="sidebar">
+<p class="noindent2"><b>Table 6.1</b> Magnetic susceptibilities at 298K.</p>
+<table class="tablec1">
+<tr>
+<td class="tablec">
+<p class="noindentc"><b>Material</b></p>
+</td>
+<td class="tablec">
+<p class="noindentc">&#x03C7;/10<sup>&#x2212;6</sup></p>
+</td>
+</tr>
+<tr>
+<td class="tablec">
+<p class="noindentc">O<sub>2</sub></p>
+<p class="noindentc">NO</p>
+<p class="noindentc">N<sub>2</sub></p>
+<p class="noindentc">H<sub>2</sub>O</p>
+<p class="noindentc">Al</p>
+<p class="noindentc">Cr</p>
+<p class="noindentc">Eu</p>
+<p class="noindentc">FeCl<sub>2</sub>.4H<sub>2</sub>O</p>
+</td>
+<td class="tablec">
+<p class="noindentc">+ 1.8</p>
+<p class="noindentc">+0.7</p>
+<p class="noindentc">-6.2</p>
+<p class="noindentc">-9.1</p>
+<p class="noindentc">+20.7</p>
+<p class="noindentc">+313</p>
+<p class="noindentc">+14800</p>
+<p class="noindentc">+1550</p>
+</td>
+</tr>
+</table>
+</aside>
+<p class="fig1"><b>M</b> = <i><b>&#x03C7;</b> <b>H</b></i></p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<p class="noindent2">For a vacuum, in which there are no magnetic dipoles present, the magnetisation <i><b>M</b></i> must be zero. In this case <i><b>B</b></i>=<i>&#x03BC;</i><sub>0</sub><i><b>H</b></i>. &#x03BC;<sub>r</sub> = (1+<i>&#x03C7;</i>) is known as the relative permeability of the material. Since <i>&#x03C7;</i> is usually very small, for most cases <i>&#x03BC;</i><sub>r</sub> &#x2248; 1.</p>
+</aside>
+<p class="noindent">where the constant of proportionality, <i><b>&#x03C7;</b></i>, is the <i>magnetic susceptibility</i>. The magnetic flux density in the material, <b>B</b>, is related to the applied field strength and the magnetisation as follows</p>
+<p class="fig1a" id="eq6.14"><b>B</b> = &#x03BC;<sub>0</sub>(<b>H</b> + <b>M</b>) = &#x03BC;<sub>0</sub>(1 + &#x03C7;)<b>H</b> = &#x03BC;<sub>0</sub><i>&#x03BC;<sub>r</sub></i><b>H</b>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(6.14)</p>
+<p class="noindent">For a paramagnetic material where the magnetic field density is greater than that in vacuum, <b>M</b> augments <b>H</b> and &#x03C7;&#x003E;0. For a diamagnetic material &#x03C7;&#x003C;0.</p>
+<a class="page" id="page_69" style="width:70%;">Page 69, Electromagnetism</a>
+<section epub:type="chapter" id="sec_6.7.1">
+<h3 class="h2">6.7.1<span class="space">&#160;</span>Paramagnetism</h3>
+<p class="noindent">An atom can have a permanent magnetic dipole moment due to both electronic orbital and spin angular momentum. The orbital motion of an electron can be treated classically as a current loop of radius <i>r</i>. The current around the loop is the charge of the electron, <i>e</i>, divided by the time for one revolution, &#x03C4; = 2<i>&#x03C0;r/v</i>. The magnitude of the resultant magnetic moment is</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>m</mi><mo>=</mo><mi>I</mi><mi>A</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>e</mi><mi>v</mi><mi>r</mi></mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</semantics>
+</math>
+</figure>
+<p class="indent">In the absence of a magnetic field, the magnetic dipole moments in a gaseous or liquid sample are randomly oriented. When a magnetic field is applied there is a tendency for the moments to line up along the field direction, just as in the analogous case of an electric dipole, and this produces the observed paramagnetic effect. The orbital angular momentum of an electron <i>L</i> = <i>m<sub>e</sub>vr</i>, and so the magnetic moment can be rewritten as</p>
+<aside class="abc" style="margin-top:-8.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page69-1.jpg" alt="images"/>
+</figure>
+<p class="noindent2">The variation of paramagnetic susceptibility with temperature. <i>X</i>&#x221D;1/<i>T</i>; this is known as <i>Curie&#x2019;s law</i>.</p>
+</aside>
+<figure class="fig1a" id="eq6.15">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>m</mi><mo>=</mo><mfrac>
+<mi>e</mi>
+<mrow>
+<mn>2</mn><msub><mi>m</mi><mi>e</mi></msub></mrow>
+</mfrac>
+<mi>L</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.15</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">Quantum mechanics restricts the orbital angular momentum to values of &#x210f; and so the <i>orbital magnetic moment</i> is</p>
+<figure class="fig1a" id="eq6.16">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>m</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>e</mi><mi>&#x210F;</mi></mrow>
+<mrow>
+<mn>2</mn><msub><mi>m</mi><mi>e</mi></msub></mrow>
+</mfrac>
+<msqrt>
+<mrow>
+<mi>l</mi><mo stretchy='false'>(</mo><mi>l</mi><mo>+</mo><mn>1</mn><mo stretchy='false'>)</mo></mrow>
+</msqrt>
+<mo>=</mo><mi>&#x03BC;</mi><mi>B</mi><msqrt>
+<mrow>
+<mi>l</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mi>l</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>+</mo><mn>1</mn><mo stretchy='false'>)</mo></mrow>
+</msqrt>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.16</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">where <i> &#x00B5;<sub>B</sub></i> is known as the <i>Bohr magneton</i></p>
+<figure class="fig1a" id="eq6.17">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msub>
+<mrow></mrow>
+<mrow>
+<mi>&#x03BC;</mi><mi>B</mi></mrow>
+</msub>
+<mo>=</mo><mfrac>
+<mrow>
+<mi>e</mi><mi>&#x210F;</mi></mrow>
+<mrow>
+<mn>2</mn><msub><mi>m</mi><mi>e</mi></msub></mrow>
+</mfrac>
+<mo>=</mo><mn>9.274</mn><mo>&#x00D7;</mo><msup>
+<mrow>
+<mn>10</mn></mrow>
+<mrow>
+<mo>&#x2212;</mo><mn>24</mn></mrow>
+</msup>
+<mtext>J</mtext><mtext>&#x2009;</mtext><mtext>T-1</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.17</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<aside class="abc" style="margin-top:-8.7em;" epub:type="sidebar">
+<p class="noindent2">For molecules only the spin magnetic moment is important due to the strong internal electric fields within the molecule which keep the orbital angular momentum of the electrons in a fixed orientation. The result of this is that the orbital magnetic moments are unable to align themselves in an external magnetic field and so make no contribution to the susceptibility. Measurement of the permanent magnetic moment of a molecule tells how many unpaired spins are present in the molecule.</p>
+</aside>
+<p class="indent">Thus, a magnetic dipole moment of &#x21C3;2<i>&#x00B5;</i><i><sub>B</sub></i> (corresponding to <i>l</i> = 1) which is aligned with a magnetic field of 10 T, has a potential energy <i>U</i> = &#x2212;<i>mB</i> of 1.31&#x00D7;10<sup>&#x2212;22</sup>J. At 300 K, the thermal energy k<i>T</i> is 4.1&#x00D7;l0<sup>&#x2212;21</sup> J and (just as the electric case) the potential energy of a magnetic dipole in a magnetic field is much less than k<i>T</i> except at only very low temperatures. Increased thermal motion tends to randomise the orientation of the magnetic dipoles and so the paramagnetic susceptibility of a material decreases with increasing temperature.</p>
+<p class="indent">An electron also has spin angular momentum that gives rise to a <i>spin magnetic moment</i>. Spin angular momentum is quantised in units of &#x210F;, and a similar expression to <a href="#eq6.16">eqn (6.16)</a> can be written for the spin magnetic moment. Experiments show that the spin magnetic moment is actually twice that of our calculation, however, and so the spin magnetic moment, <i>&#x00B5;<sub>s</sub></i> is</p>
+<figure class="fig1a" id="eq6.18">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>&#x03BC;</mi><mi>s</mi><mo>=</mo><mn>2</mn><mi>&#x03BC;</mi><mi>B</mi><mtext>&#x2009;</mtext><msqrt>
+<mrow>
+<mi>s</mi><mo stretchy='false'>(</mo><mi>s</mi><mo>+</mo><mn>1</mn><mo stretchy='false'>)</mo></mrow>
+</msqrt>
+<mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo stretchy='false'>(</mo><mn>6.18</mn><mo stretchy='false'>)</mo></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">When more than one unpaired electron is present, the spin magnetic moment is calculated using <i>S</i> instead of <i>s</i> in <a href="#eq6.18">eqn (6.18)</a>, where <i>S</i> is the total spin angular momentum quantum number for the atom or molecule.</p>
+<aside class="abc" style="margin-top:-9.7em;" epub:type="sidebar">
+<p class="noindent2">For further discussion on the magnetic properties of molecules see Orchard: <i>Magnetochemistry</i> OCP 75.</p>
+</aside>
+<a class="page" id="page_70" style="width:70%;">Page 70, Electromagnetism</a>
+</section>
+<section epub:type="chapter" id="sec_6.7.2">
+<h3 class="h2">6.7.2<span class="space">&#160;</span>Diamagnetism</h3>
+<p class="noindent">When all atoms and molecules are placed in a magnetic field they acquire an induced magnetic dipole moment that is in a direction opposite to the applied field, in accordance with Lenz&#x2019;s law. If the atom or molecule has no permanent magnetic moment (because the resultant orbital and spin angular momentum is zero) and the sample is placed in a non-uniform magnetic field it will experience a force in the direction of decreasing field strength, i.e. it will be repelled from the field. Consider the effect of applying an external field to a diamagnetic atom such as helium, whose two electrons orbit the nucleus in such a way that the net magnetic dipole moment is zero. Each electron circulates with angular frequency <i>&#x03C9;</i><sub>0</sub> and moves under the influence of a central force, <i><b>F</b></i><sub><i>E</i></sub>, which is electrostatic in origin. Application of an external magnetic field leads to an additional force, <i><b>F</b></i><sub><i>B</i></sub>, given by &#x2212;<i>e</i>(<i><b>v</b></i>&#x00D7;<i><b>B</b></i>), that acts on the electron. <i><b>F</b></i><sub><i>B</i></sub> is perpendicular to the electron velocity and is either parallel or antiparallel to <i><b>F</b></i><sub><i>E</i></sub>. When the magnetic field is applied the centripetal force changes and the angular velocity changes:</p>
+<aside class="abc" style="margin-top:-15.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page70.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="fig1"><i><b>F</b></i><sub><i>E</i></sub> &#x00B1; <i><b>F</b></i><sub>B</sub> = <i>m&#x03C9;</i><sub>0</sub> <sup>2</sup><i>r</i>&#x00B1; = <i>e&#x03C9;</i> <i>rB</i> = <i>m&#x03C9;</i><sup>2</sup><i>r</i></p>
+<p class="noindent">so that</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<msup>
+<mrow></mrow>
+<mrow>
+<mi>&#x03C9;</mi><mn>2</mn></mrow>
+</msup>
+<mo>&#x2213;</mo><mrow><mo>(</mo>
+<mrow>
+<mfrac>
+<mrow>
+<mi>e</mi><mi>B</mi></mrow>
+<mi>m</mi>
+</mfrac>
+</mrow>
+<mo>)</mo></mrow><mi>&#x03C9;</mi><mo>&#x2212;</mo><msup><msub><mi>&#x03C9;</mi><mn>0</mn></msub><mn>2</mn></msup><mo>=</mo><mn>0</mn></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">The new angular velocity, <i>&#x03C9;</i>, can be found by solving the above equation subject to the condition that <i>&#x03C9;</i><sub>0</sub>&#x226B;<i>eB</i>/2<i>m</i><sub><i>e</i></sub> (this condition is met for most normal magnetic fields) and is given by</p>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+  <mrow>
+   <mi>&#x03C9;</mi><mo>=</mo><msup>
+    <mi>&#x03C9;</mi>
+    <mn>0</mn>
+   </msup>
+   <mo>&#x00B1;</mo><mfrac>
+    <mrow>
+     <mi>e</mi><mi>B</mi>
+    </mrow>
+    <mrow>
+     <mn>2</mn><msub>
+      <mi>m</mi>
+      <mi>e</mi>
+     </msub>
+     
+    </mrow>
+   </mfrac>
+   
+  </mrow>
+ </semantics>
+</math>
+
+</figure>
+<p class="indent">The effect of applying a magnetic field is to increase or decrease the angular velocity of the electron which leads to a corresponding change of the orbital magnetic moment for each electron. This results in the two magnetic moments for the electrons orbiting in opposite directions no longer cancelling and giving rise to an induced moment. This induced moment is in the opposite direction to the applied <i><b>B</b></i> field and leads to a repulsive interaction. The change in the angular frequency of the electron (<i>eB</i>/2<i>m</i><sub><i>e</i></sub>) is known as the <i>Larmor frequency, &#x03C9;</i><sub><i>L</i></sub>, and the corresponding change in the angular momentum of the electron is <i>m</i><sub><i>e</i></sub><i>&#x03C9;</i><sub><i>L</i></sub><i>r</i><sup>2</sup>. Diamagnetism is a temperature independent effect shown by all atoms and molecules, but is generally dominated by any paramagnetic effects.</p>
+<aside class="abc" style="margin-top:-22.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page70-3.jpg" alt="images"/>
+</figure>
+<p class="noindent2">The induced dipole moment is antiparallel to the applied field as expected from Lenz&#x2019;s law.</p>
+</aside>
+</section>
+<aside class="abc" style="margin-top:2em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page70-4.jpg" alt="images"/>
+</figure>
+<p class="noindent2">Magnetic dipole arrangements within (a) ferromagnetic (b) antiferroraagnetic aid (c) ferrimagnetic materials.</p>
+</aside>
+<section epub:type="chapter" id="sec_6.7.3">
+<h3 class="h2">6.7.3<span class="space">&#160;</span>Ferromagnetism</h3>
+<p class="noindent">Ferromagnetic materials such as iron, cobalt and nickel show very large magnetic effects, and their magnetisation is not linearly proportional to the applied magnetic field. In these materials the individual dipole moments are aligned parallel to one another in macroscopic sized regions known as <i>domains</i>. What is the cause of this extreme alignment of magnetic moments? The most obvious interaction between magnetic dipoles is that of the magnetic field of one dipole on its nearest neighbour. However, as shown in <a class="page" id="page_71">Page 71, Electromagnetism</a><a href="#sec_6.6.1">section 6.6.1</a>, this is a very weak interaction that can be disregarded except at very low temperatures. The interaction between dipoles that is responsible for ferromagnetism is quantum mechanical in nature, and is called an <i>exchange interaction</i>. The exchange interaction leads to the energy of two neighbouring dipoles being very much less when they are parallel than for any other configuration, and so the dipoles are highly constrained to be parallel to one another. This alignment can only be degraded by heating the ferromagnet, and at high temperatures the ferromagnet exhibits paramagnetic behaviour. The temperature for this transition is known as the <i>Curie temperature</i>.</p>
+<aside class="abc" style="margin-top:-10.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page71.jpg" alt="images"/>
+</figure>
+<p class="noindent2"><i>X</i>(<i>T</i>) for a ferromagnet</p>
+</aside>
+<p class="indent">A ferromagnet can exist in a non-magnetised state because there is a strong tendency for the material to break up into magnetic <i>domains</i>, each with a different direction of magnetisation, leading to a zero macroscopic magnetisation. Domains form despite the fact that at their boundaries there are dipoles that are not parallel because as the number of domains increases, the magnetic field outside the material is reduced and the energy stored in the field is reduced. This decrease is offset by the energy stored in making the domain walls, and the equilibrium state is that for which the total energy stored is a minimum. Typical domain dimensions are of the order of 100nm.</p>
+<aside class="abc" style="margin-top:-9.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page71-1.jpg" alt="images"/>
+</figure>
+<p class="noindent2">The formation of magnetic domains showing a reduction in the energy stored in the magnetic field.</p>
+</aside>
+<p class="indent">When a magnetic field is applied to a ferromagnetic sample, the domain walls move so that the growth of regions which have their direction of magnetisation parallel to the external field are favoured. As the strength of the external field is increased, the domains as a whole rotate so that their magnetisation is parallel to the applied field. When all the magnetisation vectors are perfectly aligned the magnetisation reaches its limiting value and the system is <i>saturated</i>. When the external field is removed the material tends to return to its unmagnetised state. However, the magnetisation does not return to zero because the domain boundaries cannot move completely back to their original positions. The system does not have enough energy to move the domain boundaries over any energy barriers that may be present due to crystal defects, impurities and dislocations. Thus the demagnetisation curve does not follow the same route as that for the magnetisation. The lack of identical magnetisation and demagnetisation curves is known as <i>hysteresis</i>, and can be quite large in some materials, and is responsible for the existence of highly magnetised permanent magnets.</p>
+<aside class="abc" style="margin-top:-9.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page71-2.jpg" alt="images"/>
+</figure>
+<p class="noindent2">A hysteresis loop.</p>
+</aside>
+<p class="indent">In some materials the exchange interaction leads to a situation whereby the neighbouring magnetic moments are aligned in an antiparallel arrangement. Such materials are known as <i>antiferromagnets</i>. These materials exhibit very little magnetic behaviour until they are heated above a characteristic temperature, known as the <i>N&#x00E9;el temperature,</i> <i>T</i><i><sub>N</sub></i>, where the exchange interaction becomes dominated by thermal motion. At temperatures greater than <i>T</i><sub><i>N</i></sub> antiferromagnets exhibit paramagnetic behaviour. Species in which the adjacent dipoles are aligned in an antiparallel manner but are not equal in magnitude are known as <i>ferrimagnets</i>, and these materials show similar properties to ferromagnets but on a reduced scale. Structural information about magnetic materials is obtained from neutron diffraction experiments. A neutron has a magnetic moment even though it does not have a charge, and is therefore sensitive to the distribution of magnetic dipole moments within a material.</p>
+<aside class="abc" style="margin-top:-12.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page71-3.jpg" alt="images"/>
+</figure>
+<p class="noindent2"><i>X</i>(<i>T</i>) for an antiferromagnet</p>
+</aside>
+<a class="page" id="page_72" style="width:70%;">Page 72, Electromagnetism</a>
+</section>
+</section>
+<section epub:type="chapter" id="sec_6.8">
+<h2 class="h2">6.8<span class="space">&#160;</span>Uses of magnetic fields in spectroscopy</h2>
+<p class="noindent">We close this chapter by briefly discussing the application of magnetic fields to spectroscopic studies.</p>
+<section epub:type="chapter" id="sec_6.8.1">
+<h3 class="h2">6.8.1<span class="space">&#160;</span>Nuclear magnetic resonance (NMR)</h3>
+<p class="noindent">In the previous section we saw that an electron possesses a spin angular momentum and an associated magnetic moment. Other elementary particles such as protons and neutrons also have an intrinsic spin, and thus many nuclei have a non-zero spin angular momentum, <i>I</i>. Therefore there is a nuclear magnetic moment, <i>&#x00B5;</i>, which is proportional to the nuclear spin angular momentum</p>
+<aside class="abc" style="margin-top:-12.7em;" epub:type="sidebar">
+<p class="noindent2">The spin quantum number <i>I</i> of a nucleus has either an integer or half-integer value.</p>
+</aside>
+<p class="fig1a" id="eq6.19"><i>&#x00B5;</i> = <i>&#x03B3; I</i>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(6.19)</p>
+<aside class="abc" style="margin-top:-8.7em;" epub:type="sidebar">
+<p class="noindent2"><b>Table 6.2</b> Nuclear spin quantum numbers and gyromagnetic ratios of some commonly occurring nuclides.</p>
+<table class="tablec1">
+<tr>
+<td class="tablec">
+<p class="noindentc"><b>Nuclide</b></p>
+</td>
+<td class="tablec">
+<p class="noindentc"><i>I</i></p>
+</td>
+<td class="tablec">
+<p class="noindentc">&#x03B3;/ <b>10</b><sup><b>7</b></sup><b>T</b><sup>&#x2212;1</sup><b>s</b><sup>&#x2212;1</sup></p>
+</td>
+</tr>
+<tr>
+<td class="tablec">
+<p class="noindent"><sup>1</sup>H</p>
+<p class="noindent"><sup>13</sup>C</p>
+<p class="noindent"><sup>19</sup>F</p>
+<p class="noindent"><sup>31</sup>P</p>
+<p class="noindent"><sup>2</sup>H</p>
+<p class="noindent"><sup>14</sup>N</p>
+</td>
+<td class="tablec">
+<p class="noindent">&#x00BD;</p>
+<p class="noindent">&#x00BD;</p>
+<p class="noindent">&#x00BD;</p>
+<p class="noindent">&#x00BD;</p>
+<p class="noindent">1</p>
+<p class="noindent">1</p>
+</td>
+<td class="tablec">
+<p class="noindent">26.75</p>
+<p class="noindent">6.73</p>
+<p class="noindent">25.18</p>
+<p class="noindent">10.84</p>
+<p class="noindent">4.11</p>
+<p class="noindent">1.93</p>
+</td>
+</tr>
+</table>
+</aside>
+<p class="noindent">where the proportionality constant <i>&#x03B3;</i> is known as the <i>gyromagnetic ratio</i>. The magnitude and direction of the nuclear angular momentum is quantised, and so the angular momentum of a nucleus having spin <i>I</i> has 2<i>I</i>+1 projections onto an arbitrarily chosen axis, say the z-axis: i.e. the <i>z</i> component of <i>I</i>, denoted <i>I</i><sub><i>z</i></sub>, is quantised and given by</p>
+<p class="fig1a" id="eq6.20"><i>I</i><sub><i>z</i></sub> = <i>m</i><sub><i>I</i></sub>&#x210f;&#x00A0;&#x00A0;&#x00A0;&#x00A0;(6.20)</p>
+<p class="noindent">where <i>m</i><sub><i>I</i></sub>, the magnetic quantum number, has 2<i>I</i>+1 values in integral steps between +<i>I</i> and &#x2212;<i>I</i>:</p>
+<p class="fig1a" id="eq6.21"><i>m</i><sub>I</sub> = <i>I</i>, <i>I</i> &#x2212; 1, <i>I</i> &#x2212; 2, &#x2026;, &#x2212;<i>I</i> + 1,&#x2212;<i>I</i>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(6.21)</p>
+<p class="indent">For example, the nuclear angular momentum of a proton, which has <i>I</i> = 1/2, has two permitted directions, <i>I</i><sub><i>z</i></sub> = &#x00B1;1\2&#x210f;. In the absence of a magnetic field, all orientations of a spin-<i>I</i> nucleus are degenerate; application of a magnetic field removes this degeneracy. The energy, <i>U</i>, of a magnetic moment, &#x00B5;, in a magnetic field, <i><b>B</b></i>, is</p>
+<p class="fig1a" id="eq6.22"><i>U</i> = &#x2212;<i>&#x00B5;</i> &#x00B7; <b><i>B</i></b>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(6.22)</p>
+<aside class="abc" style="margin-top:-8.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page72.jpg" alt="images"/>
+</figure>
+<p class="noindent2">Space quantisation of nuclear angular momentum.</p>
+</aside>
+<p class="noindent">In the presence of a strong field, the quantisation axis <i>z</i> coincides with the field direction and the dot product reduces to</p>
+<p class="fig1"><i>U</i> = &#x2212;<i>&#x00B5;</i><sub><i>z</i></sub><i>B</i></p>
+<p class="noindent">where <i>&#x00B5;</i><sub><i>z</i></sub> is the projection of <i>&#x00B5;</i> onto <i>B</i>. Thus the energy is given by</p>
+<p class="fig1"><i>U</i> = &#x2212;<i>m</i><sub><i>I</i></sub>&#x210f;<i>&#x03B3;</i><i>B</i></p>
+<p class="noindent">and so the energy of the nucleus is shifted by an amount that is proportional to the magnetic field strength, the gyromagnetic ratio and the <i>z</i> component of the angular momentum. The 2<i>I</i>+1 states for a spin-<i>I</i> nucleus that were previously degenerate in the absence of a field are now equally spaced, with energy gap &#x210f;<i>&#x03B3;</i><i>B</i>. For the case of a proton, the <i>m</i><sub><i>I</i></sub> = +1/2 state lies lower in energy than the <i>m</i><sub><i>I</i></sub> = &#x2212;1/2 state (<i>&#x03B3;</i> is positive) and there is a population difference with slightly more <i>m</i><sub><i>I</i></sub> = +1/2 spins than <i>m</i><sub><i>I</i></sub> = &#x2212;1/2 (in accordance with the Boltzmann distribution). If the sample is subjected to radiation of frequency <i>f</i> such that the following resonance condition is satisfied</p>
+<aside class="abc" style="margin-top:-10.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page72-1.jpg" alt="images"/>
+</figure>
+<p class="noindent2">The nuclear spin energy levels of a proton (<i>I</i> = 1/2) in a magnetic field.</p>
+</aside>
+<p class="fig1a" id="eq6.23"><i>hf</i> = &#x210f;<i>&#x03B3;</i> <i>B</i>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(6.23)</p>
+<a class="page" id="page_73" style="width:70%;">Page 73, Electromagnetism</a>
+<p class="noindent">then absorption occurs and the <i>m</i><sub><i>I</i></sub> = +1/2 spins can make the transition to the <i>m</i><sub><i>I</i></sub> = &#x2212;1/2 state. Typical resonance frequencies for a proton are of the order of 400 MHz, so that radiofrequency waves are required to induce nuclear &#x201C;spin flips&#x201D;. The magnetic field experienced by a nucleus in a molecule differs slightly from the applied field, and the exact resonance frequency is characteristic of the chemical environment of the nucleus. NMR studies involve applying a magnetic field to a sample and observing the resonance frequency of individual groups of nuclei within a molecule. NMR is very widely used for structural and dynamics studies, as almost all molecules contain some atoms with non-zero nuclear spin. Related to NMR is <i>Electron Spin Resonance Spectroscopy</i> (ESR), where the radiation field induces spin transitions in molecules containing unpaired electrons. The analysis for these transitions is exactly the same as in the preceding discussion. The splitting of the electron spin levels in a magnetic field is much larger than for nuclei (due to the difference in magnitudes of the Bohr and nuclear magnetons) and so this technique requires microwaves to induce transitions. ESR is less widely applicable than NMR, as the former technique requires the presence of an unpaired electron.</p>
+<aside class="abc" style="margin-top:-8.7em;" epub:type="sidebar">
+<p class="noindent2">Further information on NMR can be found in Hore: <i>Nuclear Magnetic</i> OCP 32.</p>
+<p class="noindent2" style="margin-top:2em;"><sup>12</sup>C and <sup>16</sup>O cannot be detected using NMR because they have <i>I</i> = 0.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_6.8.2">
+<h3 class="h2">6.8.2<span class="space">&#160;</span>Tie Zeeman effect</h3>
+<p class="noindent">The Zeeman effect is the splitting of an atomic transition by application of a magnetic field. Consider the ground electronic configuration of helium, which has two paired electrons that reside in an <i>s</i> orbital. The <i>s</i> orbital has an orbital angular momentum quantum number of zero and the resultant spin angular momentum of the paired electrons is zero. Thus the atom in its ground energy state does not possess an atomic magnetic moment and has no interaction with a magnetic field, except for a weak diamagnetic effect that we shall neglect. If the helium is in an excited electronic state where both electrons have antiparallel spins but one electron is in the lowest <i>s</i> orbital while the other is in the lowest energy <i>p</i> orbital, the atom has an atomic magnetic moment due to the orbital angular momentum that is associated with the <i>p</i> electron (<i>l</i> = 1). The interaction energy of the excited state atom with the magnetic field is</p>
+<aside class="abc" style="margin-top:-8.7em;" epub:type="sidebar">
+<figure class="fig1">
+<img src="../images/page73.jpg" alt="images"/>
+</figure>
+<p class="noindent2">Zeeman splitting of an atomic emission line in helium.</p>
+</aside>
+<figure class="fig1">
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics>
+<mrow>
+<mi>U</mi><mo>=</mo><mo>&#x2212;</mo><mi>m</mi><mo>.</mo><mi>B</mi><mo>=</mo><mfrac>
+<mrow>
+<mi>&#x03BC;</mi><mi>B</mi></mrow>
+<mi>&#x210F;</mi>
+</mfrac>
+<mi>L</mi><mi>z</mi><mi>B</mi></mrow>
+</semantics>
+</math>
+</figure>
+<p class="noindent">The <i>z</i>-component of <i>L</i> is defined by the quantum number <i>m</i><sub><i>L</i></sub>, and so</p>
+<p class="fig1"><i>U</i> = <i>m</i><sub><i>L</i></sub>&#x00B5;<sub><i>B</i></sub><i>B</i></p>
+<p class="noindent">If <i>L</i> = 0 then <i>m</i><sub><i>L</i></sub> = 0 only, and there is no energy change when the magnetic field is applied. Even if <i>L</i> &#x2260; 1, the <i>m</i><sub><i>L</i></sub> = 0 component of such a state is unchanged by the field, but the energies of the other <i>m</i><sub><i>L</i></sub> components are shifted. Now consider the atomic fluorescence from the excited state of helium to its ground state. In zero magnetic field, the transition from the 1<i>s</i><sup>1</sup>2<i>p</i><sup>1</sup> configuration to the 1<i>s</i><sup>2</sup> configuration consists of a single line in the vacuum ultraviolet at 171 129.148 cm<sup>&#x2212;1</sup>. In a magnetic field, the excited state energy level is split into three levels with <i>m</i><sub><i>L</i></sub> = &#x2212;1, 0,+1. The <i>selection rule</i> that governs allowed transitions is &#x0394; <i>m</i><sub><i>L</i></sub> = 0, &#x00B1;1 and so the emission splits into three closely spaced transitions at 171 129.615, 171 129.148 and 171 128.681 cm<sup>&#x2212;1</sup> for a 1.0T field. The Zeeman effect is useful for determining atomic term symbols.</p>
+<aside class="abc" style="margin-top:-7.7em;" epub:type="sidebar">
+<p class="noindent2">Further discussion on the Zeeman effect can be found in Softley: <i>Atomic Spectra</i> OCP 19.</p>
+</aside>
+</section>
+</section>
+</section>
+</div>
+</body>
+</html>

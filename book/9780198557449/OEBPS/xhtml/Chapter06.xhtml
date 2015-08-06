@@ -1,0 +1,1279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Modern Liquid Phase Kinetics</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+
+<a id="page_80" class="page" style="width:70%;">Page 80, Two-phase liquid-liquid reactions</a>
+
+<section epub:type="chapter" id="ch06">
+<h1 class="main">6<span class="space">&#160;</span>Two-phase liquid&#x2013;liquid reactions</h1>
+<section epub:type="chapter" id="sec_6.1">
+<h2 class="h2">6.1<span class="space">&#160;</span>Introduction</h2>
+<p class="noindent">Reactions occurring across phase boundaries or involving transport of reactants between phases are of widespread importance in laboratory chemical reactions, in industrial processes, and in biochemistry and physiology. In the latter fields, for example, we may mention particularly transport processes in cells which are required to maintain and regulate the ionic balance across cell membranes; indeed, in resting cells, they consume a major portion of the energy the cell utilizes (Racker 1979). In industrial processes, two-phase conditions often result from the requirement of high productivity (concentration) in systems which would normally be studied under homogeneous conditions. In other cases, heterogeneous conditions are dictated by the low mutual solubility of the reactants. Often the chemical reaction in question occurs entirely within one phase, but the reagent concentrations and hence the reaction rates are influenced by the presence of the second phase.</p>
+<p class="indent" style="margin-bottom:0.7em;">In this chapter we provide an introduction to three important aspects of two-phase liquid-liquid reactions:</p>
+<p class="bullet-b">&#8226;<span class="space">&#160;</span>Chemical reactions in two-phase aqueous&#x2013;organic systems. The observed reaction rates depend both upon the rate of the chemical reaction and the rate of transport of reagents from one phase to the other, i.e., <i>mass transfer.</i></p>
+<p class="bullet-b">&#8226;<span class="space">&#160;</span>Phase-transfer catalysis. Very slow chemical reactions which arise primarily from the mutual insolubility of the reagents, can often be catalysed by phase-transfer agents.</p>
+<p class="bullet-b">&#8226;<span class="space">&#160;</span>Diffusion and transport in (biological) membranes. Transport of species through membranes can occur by simple diffusion or by facilitated diffusion, often involving &#x2018;carrier&#x2019; molecules.</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig_6.1">
+ <img src="../images/page80-1.jpg" alt="images" style="margin-bottom:0.5em;margin-left:0.7em;"/>
+<figcaption style="text-align:left;margin-left:1em;">
+<p class="noindent2"><b>Fig. 6.1</b> Diffusion in free solution.</p>
+</figcaption>
+</figure>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_6.2">
+<h2 class="h2">6.2<span class="space">&#160;</span>Diffusion</h2>
+<p class="noindent">The classical description of diffusion across a plane boundary, area <i>A</i> (<a href="#fig_6.1">Fig. 6.1</a>), is in terms of Fick&#x2019;s first law</p>
+<p class="center-bh" id="eqn_6.1" style="margin-left:0em;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>J</mi><mo>=</mo><mo stretchy='false'>(</mo><mn>1</mn><mo>/</mo><mi>A</mi><mo stretchy='false'>)</mo><mo stretchy='false'>(</mo><mi>d</mi><msub>
+  <mi>n</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>/</mo><mi>d</mi><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo><mo>&#x2212;</mo><mi>D</mi><mo stretchy='false'>(</mo><mi>d</mi><msub>
+  <mi>c</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>/</mo><mi>d</mi><mi>x</mi><mo stretchy='false'>)</mo>
+</math></p>
+<p style="text-align:right;margin-top:-2.3em;width:70%;">(6.1)</p>
+<p class="noindent">The flow rate is measured as <i>a flux</i>, <i>J</i>, which is the number of moles of species <i>i</i>, <i>n<sub>i</sub></i>, passing through unit area per unit time. This is found to be proportional to <a id="page_81" class="page">Page 81, Two-phase liquid-liquid reactions</a>the concentration gradient, <i>dc<sub>i</sub> /dx,</i> and the proportionality constant is written as &#x2013;<i>D</i>, where <i>D</i> is the <i>diffusion coefficient.</i></p>
+<p class="indent">The simplest case is that of steady diffusion across a thin film, illustrated in <a href="#fig_6.2">Fig. 6.2</a>. The solute diffuses from the left-hand side, concentration <i>c<sub>i</sub></i>(1), to a less concentrated solution, c<sub><i>i</i></sub>(2), on the right through a film of thickness <i>l</i>. The flux <i>J</i> is constant at steady state and integrating <a href="#eqn_6.1">eqn 6.1</a> from <i>x</i> &#x003D; 0 to <i>x &#x003D; l</i> gives</p>
+<p class="center-bh" id="eqn_6.2"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>J</mi><mo>=</mo><mfrac>
+  <mi>D</mi>
+  <mi>l</mi>
+ </mfrac>
+ <mo>&#x007B;</mo><msub>
+  <mi>c</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>(</mo><mn>1</mn><mo stretchy='false'>)</mo><mo>&#8211;</mo><msub>
+  <mi>c</mi>
+  <mi>i</mi>
+ </msub>
+ <mo stretchy='false'>(</mo><mn>2</mn><mo stretchy='false'>)</mo><mo>&#x007D;</mo>
+</math>
+</p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.2)</p>
+<p class="noindent"><a href="#eqn_6.2">Equation 6.2</a> is basic to most of what follows.</p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig_6.2">
+ <img src="../images/page81-1.jpg" alt="images" style="margin-bottom:0.5em;margin-left:0.7em;"/>
+<figcaption style="text-align:left;margin-left:1em;">
+<p class="noindent2"><b>Fig. 6.2</b> Diffusion across a thin film.</p>
+</figcaption>
+</figure>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_6.3">
+<h2 class="h2">6.3<span class="space">&#160;</span>Aqueous-organic reactions</h2>
+<p class="noindent">Consider a reaction involving a neat organic liquid B (e.g. a long-chain ester) in contact with an aqueous solution with which it reacts, subject to constant stirring such that there are droplets of B in the aqueous phase. This system is most simply treated using <i>film theory</i>, the basis of which is illustrated in <a href="#fig_6.3">Fig. 6.3</a> for a reaction occurring in the bulk aqueous phase. In the absence of reaction, B would maintain its saturation level in the aqueous phase, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>c</mi><mn>B</mn><mn>0</mn></msubsup></mrow></math>. However, as the reaction rate increases, the bulk concentration is depressed to an extent dependent upon the reaction rate. Dissolution of B tends to replenish its concentration, but this dissolution is not instantaneous. Adjacent to the liquid&#x2013;liquid interface is a thin layer, called the <i>diffusion film</i>, which is little affected by stirring, and diffusion across this layer limits the rate at which B is delivered to the bulk aqueous phase. It will be seen that the diffusion time across this layer is typically 5&#x2013;10 s, so that no reaction will occur within this film in cases where reaction half-lives are substantially in excess of this.</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<p class="noindent2">It is in general necessary to check in which phase the reaction occurs, but it will most commonly be the aqueous phase for ionic reagents in the absence of phase-transfer catalysts. The derivations are equally valid for either phase as the reaction site.</p>
+</aside>
+<figure class="figure-bh" id="fig_6.3">
+ <img src="../images/page81-2.jpg" alt="images" style="margin-bottom:0.8em;margin-left:3em;"/>
+<figcaption style="text-align:left;margin-left:1em;">
+<p class="noindent2" style="margin-left:-0.8em;"><b>Fig. 6.3</b>&#160;&#160;Concentration profile for a reaction occurring in the bulk aqueous phase.</p>
+</figcaption>
+</figure>
+<p class="indent">We define the observed reaction rate <i>r</i> as the total number of moles of B reacting per second in the aqueous phase, volume <i>V</i>, and for convenience consider only first-order reactions of B (genuine first-order reactions or reactions for which other reagents are present in large excess, i.e., pseudo-first-order reactions, <a href="Chapter02.xhtml">Ch. 2</a>, <a href="Chapter02.xhtml#sec_2.3">Sect. 2.3</a>)</p>
+<p class="center-bh" id="eqn_6.3"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mo>&#x2212;</mo><mi>d</mi><msub>
+  <mi>c</mi>
+  <mtext>B</mtext>
+ </msub>
+ <mo>/</mo><mi>d</mi><mi>t</mi><mo>=</mo><msub>
+  <mi>k</mi>
+  <mn>1</mn>
+ </msub>
+ <msub>
+  <mi>c</mi>
+  <mtext>B</mtext>
+ </msub>
+ 
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.1em;width:70%;">(6.3)</p>
+
+
+<a id="page_82" class="page" style="width:70%;">Page 82, Two-phase liquid-liquid reactions</a>
+
+<p class="noindent" style="margin-bottom:0.8em;">It is useful to distinguish three main cases, according to the homogeneous reaction rate in the aqueous phase:</p>
+<p class="noindent"><b>(i) Slow reaction.</b> For a sufficiently slow reaction, B will remain at its saturation level, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>c</mi><mn>B</mn><mn>0</mn></msubsup></mrow></math>, and the observed rate is give by <a href="#eqn_6.4">eqn 6.4</a>,</p>
+<p class="center-bh" id="eqn_6.4"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>r</mi><mo>=</mo><msub>
+  <mi>k</mi>
+  <mn>1</mn>
+ </msub>
+ <mtext>V</mtext><msubsup>
+  <mi>c</mi>
+  <mtext>B</mtext>
+  <mn>0</mn>
+ </msubsup>
+ 
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.4)</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="noindent2">Note that the volume <i>V</i> occurs in <a href="#eqn_6.4">eqn 6.4</a> (and <a href="#eqn_6.6">6.6</a> below) to convert the concentration of B to an absolute number of moles in accordance with the definition of <i>r</i>.</p>
+</aside>
+<p class="noindent" style="margin-bottom:0.8em;">A typical example is the manufacture of benzyl alcohol by the base hydrolysis of benzyl chloride</p>
+<figure class="figure-bh" id="eqn_6.5">
+<img src="../images/page82-1.jpg" alt="images" style="margin-bottom:0.5em;margin-left:13em;"/>
+</figure>
+<p class="noindent"><b>(ii) Moderate reaction.</b> As the homogeneous reaction rate constant increases, the overall rate will be partially controlled by the diffusion of B across the diffusion film, length <i>&#x03B4;</i>; the consequence is a lower concentration of B in the aqueous phase, <i>c</i><sub>B</sub>, and hence the creation of a concentration gradient, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy='false'>(</mo><msubsup>
+   <mi>c</mi>
+   <mtext>B</mtext>
+   <mn>0</mn>
+  </msubsup>
+  <mtext>&#x2009;</mtext><mo>&#x2212;</mo><mtext>&#x2009;</mtext><msub>
+   <mi>c</mi>
+   <mtext>B</mtext>
+  </msub>
+  <mo stretchy='false'>)</mo><mo>/</mo><mi>&#x03B4;</mi>
+ </mrow>
+</math>
+ across the film (<a href="#fig_6.3">Fig. 6.3</a>). This system can be treated very simply, as in the steady state the rate of delivery of B to the bulk aqueous phase by diffusion will equal its rate of consumption through chemical reaction. The diffusion rate follows directly from <a href="#eqn_6.2">eqn 6.2</a>:</p>
+<p class="center-bh" id="eqn_6.6"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>r</mi><mo>=</mo><mo stretchy='false'>(</mo><mtext>D</mtext><mo>/</mo><mi>&#x03B4;</mi><mo stretchy='false'>)</mo><mtext>&#x2009;</mtext><mi>a</mi><mtext>V</mtext><mo stretchy='false'>(</mo><msubsup>
+  <mi>c</mi>
+  <mtext>B</mtext>
+  <mn>0</mn>
+ </msubsup>
+ <mo>&#8211;</mo><msub>
+  <mi>c</mi>
+  <mtext>B</mtext>
+ </msub>
+ <mo stretchy='false'>)</mo>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.6)</p>
+<p class="noindent">where <i>D</i> is the diffusion coefficient of B and <i>a</i> is the interfacial area per unit volume of aqueous solution. In practice, the diffusion film thickness cannot usually be measured directly and the term <i>D/&#x03B4;</i> is normally lumped as <i>k</i><sub>L</sub>, the liquid&#x2013;liquid <i>mass transfer coefficient</i></p>
+<p class="center-bh" id="eqn_6.7"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>r</mi><mo>=</mo><msub>
+  <mi>k</mi>
+  <mtext>L</mtext>
+ </msub>
+ <mi>a</mi><mi>V</mi><mo stretchy='false'>(</mo><msubsup>
+  <mi>c</mi>
+  <mtext>B</mtext>
+  <mn>0</mn>
+ </msubsup>
+ <mo>&#x2212;</mo><msub>
+  <mi>c</mi>
+  <mtext>B</mtext>
+ </msub>
+ <mo stretchy='false'>)</mo>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.7)</p>
+<p class="noindent">Equating this in the steady state to the rate of the homogeneous reaction, <i>k</i><sub>1</sub> <i>V</i><sub><i>c</i><sub>B</sub></sub>, and rearranging to eliminate <i>c</i><sub>B</sub> gives</p>
+<p class="center-bh" id="eqn_6.8"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mi>r</mi><mo>=</mo><msub>
+  <mi>k</mi>
+  <mn>1</mn>
+ </msub>
+ <mi>V</mi><msubsup>
+  <mi>c</mi>
+  <mtext>B</mtext>
+  <mn>0</mn>
+ </msubsup>
+ <mfrac>
+  <mrow>
+   <msub>
+    <mi>k</mi>
+    <mtext>L</mtext>
+   </msub>
+   <mi>a</mi>
+  </mrow>
+  <mrow>
+   <msub>
+    <mi>k</mi>
+    <mn>1</mn>
+   </msub>
+   <mo>+</mo><msub>
+    <mi>k</mi>
+    <mtext>L</mtext>
+   </msub>
+   <mi>a</mi>
+  </mrow>
+ </mfrac>
+ 
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.8)</p>
+<p class="indent">This important equation shows that the rate does not increase indefinitely with increased interfacial area, <i>a</i> (eg. from smaller droplet size arising from increased stirring), but approaches a limiting value of <i>r</i><sub>lim</sub> &#x003D; <i>k</i><sub>1</sub> V<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>c</mi><mn>B</mn><mn>0</mn></msubsup></mrow></math> (compare <a href="#eqn_6.4">eqn 6.4</a>). The dependence of rate upon the interfacial area is illustrated in <a href="#fig_6.4">Fig. 6.4</a>. Chemical reactions exhibiting this behaviour are the base hydrolysis of partially soluble ethanoate esters, and the sulfonation of benzene or toluene in concentrated sulphuric acid (Doraiswamy and Sharma, 1984, p. 62).</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig_6.4">
+ <img src="../images/page82-2.jpg" alt="images" style="margin-bottom:0.8em;margin-left:0.4em;"/>
+<figcaption style="text-align:left;margin-left:1em;">
+<p class="noindent2" style="margin-left:-0.8em;"><b>Fig. 6.4</b>&#160;&#160;Dependence of reaction rate upon interfacial area (<a href="#eqn_6.8">eqn 6.8</a>).</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent">It may be noted that the slow reaction case (i) above is simply a particular instance of <a href="#eqn_6.8">eqn 6.8</a>, corresponding to <i>k</i><sub>1</sub> &#x226A; <i>k</i><sub>L</sub><i>a</i>. This may occur either through a slow chemical reaction (low <i>k</i><sub>1</sub>) or through rapid stirring to generate a large interfacial area.</p>
+
+<a id="page_83" class="page" style="width:70%;">Page 83, Two-phase liquid-liquid reactions</a>
+
+<p class="noindent"><b>(iii) Fast reaction.</b> In general, it is found that for aqueous systems,</p>
+<p class="indent" style="text-align:center;"><i>k</i><sub>L</sub> &#x2243; 10<sup>&#8211;3</sup> cm s<sup>&#8211;1</sup>;&#160;&#160;&#160;&#160;<i>D</i> &#x2243; 10<sup>&#8211;5</sup> cm<sup>2</sup> s<sup>&#8211;1</sup></p>
+<p class="noindent">and hence the film thickness <i>&#x03B4;</i> &#x2243; 10<sup>&#8211;2</sup> cm. The time taken to cross the film, <i>t</i> &#x003D; <i>&#x03B4;</i>/<i>k</i><sub>L</sub>, is therefore about 10 s. Although this value is only approximate, it is apparent that reactions with half-lives substantially shorter than a few seconds (<i>k</i><sub>1</sub> &#x003E;&#x007E; 1 s<sup>&#8211;1</sup>) will occur entirely within the diffusion film and the bulk concentration of <b>B</b> in the aqueous phase will be zero. The concentration gradient within the film is then determined both by diffusion and chemical reaction, and decreases as the concentration of <b>B</b> (and hence the reaction rate) decreases towards zero. <a href="#fig_6.5">Figure 6.5</a> shows a schematic representation of the concentration profile within the film.</p>
+<p class="indent">A full derivation of the rate expression for a first-order reaction shows that</p>
+<p class="center-bh" id="eqn_6.9"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>r</mi><mo>=</mo><msubsup>
+   <mi>c</mi>
+   <mtext>B</mtext>
+   <mn>0</mn>
+  </msubsup>
+  <mi>a</mi><msqrt>
+   <mrow>
+    <mi>D</mi><msub>
+     <mi>k</mi>
+     <mn>1</mn>
+    </msub>
+    
+   </mrow>
+  </msqrt>
+  
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.9)</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig_6.5">
+ <img src="../images/page83-1.jpg" alt="images" style="margin-bottom:0.8em;margin-left:1em;"/>
+<figcaption style="text-align:left;margin-left:1em;">
+<p class="noindent2" style="margin-left:-0.8em;"><b>Fig. 6.5</b>&#160;&#160;Concentration profile within the diffusion film for a rapid reaction.</p>
+</figcaption>
+</figure>
+
+</aside>
+<p class="noindent">where <i>k</i><sub>1</sub> is the first-order constant. The important practical feature of <a href="#eqn_6.9">eqn 6.9</a> is that it shows that the rate is proportional to the surface area per unit volume of the aqueous phase, but is independent of the total volume. Thus the rate will effectively increase indefinitely with stirring rate, limited only by the eventual cavitation of the liquid phase. An example is the oximation of cyclohexanone, which is only slightly soluble in water, with excess aqueous hydroxylamine (Sharma and Nanda 1968),</p>
+<figure class="figure-bh" id="eqn_6.10">
+<img src="../images/page83-2.jpg" alt="images" style="margin-bottom:0.8em;margin-left:9em;"/>
+</figure>
+<p class="indent">At the extreme of very fast second-order reactions (reactions sufficiently fast such that the two reagents effectively cannot coexist in solution) the observed rate is simply determined by the rate at which the two reagents can diffuse together within the diffusion film.</p>
+<p class="indent" style="margin-bottom:0.8em;">The main features of reactions in two-phase aqueous-organic systems can be summarized as follows:</p>
+<p class="bullet-b">&#8226;<span class="space">&#160;</span>Slow to moderate reactions (half-lives greater than a few seconds): reaction occurs in the bulk aqueous phase; reaction rate is proportional to volume, homogeneous rate constant, and to the saturated concentration of the organic reactant <b>B</b> in the aqueous phase, but shows an asymptotic dependence upon the interfacial area.</p>
+<p class="bullet-b">&#8226;<span class="space">&#160;</span>Fast reactions: reaction occurs in the diffusion film; reaction rate is independent of volume, proportional to the square root of the homogeneous rate constant, to the saturated concentration of <b>B</b> in the aqueous phase, and to the interfacial area.</p>
+<p class="noindent">The differences are sufficient for practical purposes to identify the regime under which a given two-phase reaction system is occurring, i.e., slow-to-moderate or fast reaction, and hence to select appropriate reaction conditions. </p>
+</section>
+
+<a id="page_84" class="page" style="width:70%;">Page 84, Two-phase liquid-liquid reactions</a>
+
+<section epub:type="chapter" id="sec_6.4">
+<h2 class="h2">6.4<span class="space">&#160;</span>Phase-transfer catalysis</h2>
+<p class="noindent">Reactions between ionic reagents and organic substrates are often unacceptably slow due to the mutual insolubility of the reactants. Such reactions can frequently be accelerated by the use of phase-transfer catalysts, whose role is to transfer the anions of the reacting salt into the organic medium in the form of ion pairs. A typical example is the nucleophilic reaction of cyanide ion with alkyl chlorides or bromides (Starks and Owens 1973):</p>
+<figure class="figure-bh" id="eqn_6.11">
+ <img src="../images/page84-1.jpg" alt="images" style="margin-bottom:0.8em;margin-left:11em;"/>
+</figure>
+<p class="noindent">Heating and stirring a two-phase mixture of the reagents even for several days gives essentially zero yield of 1-cyanooctane, but the addition of a small amount of an appropriate quaternary ammonium salt leads to quantitative product formation in only a few hours.</p>
+<p class="indent">A simple mechanism to account for this acceleration is shown in <a href="#scheme_6.1">Scheme 6.1</a> for the general reaction of NaY with RX. An ion pair, formed between the quaternary ammonium ion Q<sup>+</sup> and Y<sup>&#8211;</sup>, undergoes a ready substitution reaction with RX to give the desired product RY. The co-produced ion pair [Q<sup>+</sup>X<sup>&#8211;</sup>] returns to the aqueous phase, where Q<sup>+</sup> picks up a new Y<sup>&#8211;</sup> for the next cycle.</p>
+<figure class="figure-bh" id="scheme_6.1">
+ <img src="../images/page84-2.jpg" alt="images" style="margin-bottom:0.8em;margin-left:5em;"/>
+<figcaption>
+<p class="noindent" style="text-align:center;margin-left:4em;"><b>Scheme 6.1</b></p>
+</figcaption>
+</figure>
+<p class="noindent">The system is catalytic provided that [Q<sup>&#x002B;</sup>X<sup>&#8211;</sup>]<sub>(org)</sub> is rapidly converted back to [Q<sup>&#x002B;</sup>Y<sup>&#8211;</sup>]<sub>(org)</sub> and does not accumulate in the organic phase. This model can account for the majority of phase-transfer reactions involving displacement, oxidation, and reduction under neutral or acidic conditions, if we generalize it slightly to take into account two different modes of ion transfer between the phases. These are shown in <a href="#fig_6.6">Fig. 6.6</a> and correspond to either transport of the anion plus cation (<a href="#fig_6.6">Fig. 6.6a</a>) or direct exchange of the two anions across the interface (<a href="#fig_6.6">Fig. 6.6b</a>). The latter is of particular relevance when very lipophilic catalysts are used, as the catalyst cation tends to remain confined to the organic layer.</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig_6.6">
+ <img src="../images/page84-3.jpg" alt="images" style="margin-bottom:0.8em;margin-left:0.5em;"/>
+<figcaption style="text-align:left;margin-left:1em;">
+<p class="noindent2" style="margin-left:-0.8em;"><b>Fig. 6.6</b>&#160;&#160;Anion transport between phases.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent">The driving force for the catalysis is the much greater solubility of &#x2018;organic&#x2019; electrolytes compared with simple inorganic salts in nonpolar media&#x2014;the principles behind this have been discussed in <a href="Chapter04.xhtml">Chapter 4</a> (<a href="Chapter04.xhtml#sec_4.3">Sect. 4.3</a>). Phase-transfer catalysts are commonly quaternary ammonium or phosphonium salts, such as tetraalkylammonium salts with alkyl &#x003D; butyl or larger. The main requirements are that the cation has sufficient organic structure to ensure effective partitioning of the anion into the organic solvent, and that the cation-anion binding in the ion pair should be sufficiently &#x2018;loose&#x2019; to allow high anion reactivity.</p>
+
+<h3 class="h3">Kinetics of phase-transfer reactions</h3>
+<p class="noindent">The kinetics of phase-transfer reactions are, in principle, fairly simple as the transport processes are normally rapid compared with the chemical reaction; <a id="page_85" class="page">Page 85, Two-phase liquid-liquid reactions</a>they can, therefore, be treated as rapid pre-equilibria (<a href="Chapter03.xhtml">Ch. 3</a>, <a href="Chapter03.xhtml#sec_3.4">Sect. 3.4</a>). The rate-determining step,</p>
+<p class="center-bh" id="eqn_6.12"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mrow>
+    <mo stretchy='false'>[</mo><msup>
+     <mtext>Q</mtext>
+     <mo>+</mo>
+    </msup>
+    <msup>
+     <mtext>Y</mtext>
+     <mo>&#x2212;</mo>
+    </msup>
+    <mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>org</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </msub>
+  <mo>+</mo><msub>
+   <mrow>
+    <mtext>RX</mtext>
+   </mrow>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>org</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </msub>
+  <mover>
+   <mo>&#x2192;</mo>
+   <mrow>
+    <msub>
+     <mi>k</mi>
+     <mn>2</mn>
+    </msub>
+    
+   </mrow>
+  </mover>
+  <msub>
+   <mrow>
+    <mtext>RY</mtext>
+   </mrow>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>org</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </msub>
+  <msup>
+   <mrow>
+    <mtext>+[Q</mtext>
+   </mrow>
+   <mtext>+</mtext>
+  </msup>
+  <msup>
+   <mtext>X</mtext>
+   <mo>&#x2212;</mo>
+  </msup>
+  <msub>
+   <mtext>]</mtext>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>org</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </msub>
+  
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.2em;width:70%;">(6.12)</p>
+<p class="noindent">is coupled to one of two transport processes (Gordon and Kutina 1977),</p>
+<p class="center-bh" id="eqn_6.13"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mrow>
+    <mo stretchy='false'>[</mo><msup>
+     <mtext>Q</mtext>
+     <mo>+</mo>
+    </msup>
+    <msup>
+     <mtext>X</mtext>
+     <mo>&#x2212;</mo>
+    </msup>
+    <mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>org</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </msub>
+  <mo>&#x21CC;</mo><msubsup>
+   <mtext>Q</mtext>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>aq</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mtext>+</mtext>
+  </msubsup>
+  <mo>+</mo><msubsup>
+   <mtext>X</mtext>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>aq</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mrow>
+    <msup>
+     <mrow></mrow>
+     <mo>&#x2212;</mo>
+    </msup>
+    
+   </mrow>
+  </msubsup>
+  
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.13)</p>
+<p class="center-bh" id="eqn_6.14"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msubsup>
+   <mtext>Y</mtext>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>aq</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mrow>
+    <msup>
+     <mrow></mrow>
+     <mo>&#x2212;</mo>
+    </msup>
+    
+   </mrow>
+  </msubsup>
+  <msubsup>
+   <mrow>
+    <mtext>+Q</mtext>
+   </mrow>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>aq</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mtext>+</mtext>
+  </msubsup>
+  <mo>&#x21CC;</mo><msub>
+   <mrow>
+    <mo stretchy='false'>[</mo><msup>
+     <mtext>Q</mtext>
+     <mo>+</mo>
+    </msup>
+    <msup>
+     <mtext>Y</mtext>
+     <mo>&#x2212;</mo>
+    </msup>
+    <mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>org</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </msub>
+  
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.14)</p>
+<p class="noindent">or</p>
+<p class="center-bh" id="eqn_6.15"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mrow>
+    <mo stretchy='false'>[</mo><msup>
+     <mtext>Q</mtext>
+     <mo>+</mo>
+    </msup>
+    <msup>
+     <mtext>X</mtext>
+     <mo>&#x2212;</mo>
+    </msup>
+    <mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>org</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </msub>
+  <mo>+</mo><msubsup>
+   <mtext>Y</mtext>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>aq</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mo>&#x2212;</mo>
+  </msubsup>
+  <mo>&#x21CC;</mo><msub>
+   <mrow>
+    <mo stretchy='false'>[</mo><msup>
+     <mtext>Q</mtext>
+     <mo>+</mo>
+    </msup>
+    <msup>
+     <mtext>Y</mtext>
+     <mo>&#x2212;</mo>
+    </msup>
+    <mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>org</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </msub>
+  <mo>+</mo><msubsup>
+   <mtext>X</mtext>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>aq</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+   <mo>&#x2212;</mo>
+  </msubsup>
+  
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.15)</p>
+<p class="noindent">The time required to establish these equilibria is essentially that of transport across the diffusion film, about 10 s or less (<a href="#sec_6.3">Sect. 6.3</a>).</p>
+<p class="indent">The rate law corresponding to <a href="#eqn_6.12">eqn 6.12</a> is given by</p>
+<p class="center-bh" id="eqn_6.16"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mo>&#x2212;</mo><mi>d</mi><msub>
+   <mrow>
+    <mo stretchy='false'>[</mo><mtext>RX</mtext><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>org</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </msub>
+  <mo>/</mo><mi>d</mi><mi>t</mi><mo>=</mo><msub>
+   <mi>k</mi>
+   <mn>2</mn>
+  </msub>
+  <msub>
+   <mrow>
+    <mo stretchy='false'>[</mo><msup>
+     <mtext>Q</mtext>
+     <mo>+</mo>
+    </msup>
+    <msup>
+     <mtext>Y</mtext>
+     <mo>&#x2212;</mo>
+    </msup>
+    <mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>org</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </msub>
+  <mo>+</mo><msub>
+   <mrow>
+    <mtext>RX</mtext>
+   </mrow>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>org</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </msub>
+  
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.16)</p>
+<p class="noindent">Provided [Q<sup>&#x002B;</sup>Y<sup>&#8211;</sup>]<sub>(org)</sub> remains constant during the reaction (see below), this reduces to a pseudo-first-order reaction</p>
+<p class="center-bh" id="eqn_6.17"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mo>&#x2212;</mo><mi>d</mi><msub>
+   <mrow>
+    <mo stretchy='false'>[</mo><mtext>RX</mtext><mo stretchy='false'>]</mo>
+   </mrow>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>org</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </msub>
+  <mo>/</mo><mi>d</mi><mi>t</mi><mo>=</mo><msub>
+   <mi>k</mi>
+   <mn>1</mn>
+  </msub>
+  <mo stretchy='false'>[</mo><msub>
+   <mrow>
+    <mtext>RX</mtext>
+   </mrow>
+   <mrow>
+    <mrow><mo>(</mo>
+     <mrow>
+      <mtext>org</mtext>
+     </mrow>
+    <mo>)</mo></mrow>
+   </mrow>
+  </msub>
+  <mo stretchy='false'>]</mo>
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.17)</p>
+<p class="noindent" style="margin-bottom:0.9em;">where <i>k</i><sub>1</sub> &#x003D; <i>k</i><sub>2</sub>[Q<sup>&#x002B;</sup>Y<sup>&#8211;</sup>]<sub>(org)</sub>. An essential prerequisite for first-order conditions is an excess of the incoming reagent Y<sup>&#8211;</sup>. This is, however, not sufficient as during the reaction the displaced anion X<sup>&#8211;</sup> may increasingly compete for the catalyst Q<sup>+</sup>, thus reducing [Q<sup>+</sup> Y<sup>&#8211;</sup>]<sub>(org)</sub>. Two sets of conditions will lead to observed first-order kinetics over the major part of a phase-transfer catalysed reaction:</p>
+<p class="bullet-b">&#8226;<span class="space">&#160;</span>Saturation of the aqueous phase with respect to the concentrations of the two anions; e.g., for the cyanide displacement reaction, <a href="#eqn_6.11">eqn 6.11</a>, adding sufficient NaCN and NaCl such that excess solid of each is present throughout the reaction will ensure that the relative thermodynamic activities of CN<sup>&#8211;</sup> and Cl<sup>&#8211;</sup> remain constant, as will [Q<sup>+</sup> CN<sup>&#8211;</sup>]<sub>(org)</sub>.</p>
+<p class="bullet-b">&#8226;<span class="space">&#160;</span>An excess of Y<sup>&#8211;</sup> combined with a favourable partition constant for the distribution of Q<sup>+</sup> Y<sup>&#8211;</sup> into the organic phase relative to Q<sup>+</sup> X<sup>&#8211;</sup> . This is primarily a function of the chemical system involved, but has been achieved, for example, in substitution reactions of 1-octyl methanesul-fonate with a variety of nucleophiles (Landini <i>et al</i> 1978).</p>
+<p class="noindent">The evaluation of [Q<sup>&#x002B;</sup>Y<sup>&#8211;</sup>]<sub>(org)</sub> in terms of the total (known) catalyst concentration <i>Q</i><sub>0</sub> is specific to the conditions adopted, but always involves a combination of mass-balance relationships and the phase extraction equilibria (Starks and Liotta 1978, <a href="Chapter02.xhtml">Ch. 2</a>, Gordon and Kutina 1977). </p>
+</section>
+
+<a id="page_86" class="page" style="width:70%;">Page 86, Two-phase liquid-liquid reactions</a>
+
+
+<section epub:type="chapter" id="sec_6.5">
+<h2 class="h2">6.5<span class="space">&#160;</span>Membrane permeability</h2>
+<p class="noindent" style="margin-bottom:0.8em;">Diffusion in a membrane cannot be treated in quite the same way as for that across a plane boundary (<a href="#sec_6.2">Sect. 6.2</a>), because the concentration profile within the membrane is not generally accessible. Rather, there is a known <i>concentration difference</i> between (stirred) inner (<i>c</i><sub>in</sub>) and outer compartments (<i>c</i><sub>out</sub>). This is illustrated in <a href="#fig_6.7">Fig. 6.7</a>. The flux <i>J</i> &#x221E; (<i>c</i><sub>in</sub> &#8211; <i>c</i><sub>out</sub>) and Fick&#x2019;s law becomes</p>
+<p class="indent" id="eqn_6.18" style="margin-left:11em;"><i>J</i> = <i>P</i> (<i>c</i><sub>in</sub> &#8211; <i>c</i><sub>out</sub>)<span class="no" style="text-align:center;">(6.18)</span></p>
+<p class="noindent">where <i>P</i> is known as the <i>permeability coefficient</i> and has dimensions of distance per time.</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig_6.7">
+ <img src="../images/page86-1.jpg" alt="images" style="margin-bottom:0.8em;margin-left:0.5em;"/>
+<figcaption style="text-align:left;margin-left:1em;">
+<p class="noindent2" style="margin-left:-0.8em;"><b>Fig. 6.7</b>&#160;&#160;Diffusion through a membrane&#x2013;two arbitrary concentration profiles within the membrane are included.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent">The diffusion of nonelectrolytes across thin (organic) membranes involves partitioning of the solute into the membrane and diffusion within the membrane. A typical concentration profile is shown in <a href="#fig_6.8">Fig. 6.8</a> for a solute which is more soluble in the membrane than in aqueous solution. If we define the partition or distribution coefficient for the solute, <i>K</i><sub>d</sub>, by <i>K</i><sub>d</sub> &#x003D; <i>c</i><sub>1</sub>/<i>c</i><sub>in</sub> &#x003D; <i>c</i><sub>2</sub>/<i>c</i><sub>out</sub> then <i>c</i><sub>1</sub> &#x003D; <i>K</i><sub>d</sub><i>c</i><sub>in</sub>; <i>c</i><sub>2</sub> &#x003D; <i>K</i><sub>d</sub><i>c</i><sub>out</sub>. Proceeding exactly as in <a href="#sec_6.2">Section 6.2</a> for diffusion in a thin film, we obtain</p>
+<p class="center-bh" id="eqn_6.19"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>J</mi><mo>=</mo><mrow><mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>D</mi>
+     <mtext>m</mtext>
+    </msub>
+    <msub>
+     <mi>K</mi>
+     <mtext>d</mtext>
+    </msub>
+    <mo>/</mo><msub>
+     <mi>l</mi>
+     <mtext>m</mtext>
+    </msub>
+    
+   </mrow>
+  <mo>)</mo></mrow><mrow><mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>c</mi>
+     <mrow>
+      <mtext>in</mtext>
+     </mrow>
+    </msub>
+    <mo>&#x2212;</mo><msub>
+     <mi>c</mi>
+     <mrow>
+      <mtext>out</mtext>
+     </mrow>
+    </msub>
+    
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.19)</p>
+<p class="center-bh" id="eqn_6.20" style="margin-left:-4em;">i.e.,&#160;&#160;&#160;&#160;&#160;&#160;<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>P</mi><mo>=</mo><msub>
+   <mi>D</mi>
+   <mtext>m</mtext>
+  </msub>
+  <msub>
+   <mi>K</mi>
+   <mtext>d</mtext>
+  </msub>
+  <mo>/</mo><msub>
+   <mi>l</mi>
+   <mtext>m</mtext>
+  </msub>
+  
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.20)</p>
+
+<p class="noindent">where <i>D</i><sub>m</sub> is the diffusion coefficient of the solute within the membrane and <i>l</i><sub>m</sub> is the membrane thickness. The partition coefficient, <i>K</i><sub>d</sub> is more sensitive to the nature of the solute than the diffusion coefficient, <i>D</i><sub>m</sub>.</p>
+<aside class="abc" style="margin-top:0em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig_6.8">
+ <img src="../images/page86-2.jpg" alt="images" style="margin-bottom:0.8em;margin-left:0.5em;"/>
+<figcaption style="text-align:left;margin-left:1em;">
+<p class="noindent2" style="margin-left:-0.8em;"><b>Fig. 6.8</b>&#160;&#160;Concentration profile across a membrane.</p>
+</figcaption>
+</figure>
+</aside>
+<p class="indent" style="margin-bottom:0.8em;"><a href="#eqn_6.20">Equation 6.20</a> has had considerable success when tested for simple nonelectrolytes, such as alkyl ureas, alcohols, propionamide, in biological membranes. However, wider studies have pointed to a fundamental omission in this simple model, namely <i>interfacial resistance</i> (Dix <i>et al</i> 1978). In the derivation of <a href="#eqn_6.20">eqn 6.20</a> it has been assumed that diffusion to the interface and equilibration across the interface are rapid. A complete model for the passage of a solute through a uniform membrane is given in <a href="#scheme_6.2">Scheme 6.2</a>. It includes diffusion through an inner aqueous diffusion film, thickness <i>&#x03B4;</i>, diffusion coefficient, <i>D</i><sub>aq</sub>; partitioning at the aqueous-organic interface, <i>K</i><sub>d</sub> = <i>c</i><sub>2</sub>/<i>c</i><sub>1</sub>; diffusion through the membrane, thickness <i>l</i><sub>m</sub>, diffusion coefficient <i>D</i><sub>m</sub>; partitioning at the second interface, <i>K</i><sub>d</sub> = <i>c</i><sub>3</sub>/<i>c</i><sub>4</sub> = <i>c</i><sub>2</sub>/<i>c</i><sub>1</sub>; and diffusion through an outer boundary layer. </p>
+<figure class="figure-bh" id="scheme_6.2">
+ <img src="../images/page86-3.jpg" alt="images" style="margin-bottom:1.2em;margin-left:0.5em;"/>
+<figcaption >
+<p class="noindent2" style="text-align:center;"><b>Scheme 6.2</b></p>
+</figcaption>
+</figure>
+
+<a id="page_87" class="page" style="width:70%;">Page 87, Two-phase liquid-liquid reactions</a>
+
+
+<p class="indent">When the system has achieved steady-state conditions, the flux is the same through each section, and is given by <a href="#eqn_6.21">eqn 6.21</a>.</p>
+<p class="center-bh" id="eqn_6.21"> <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mtable columnalign='left'>
+   <mtr columnalign='left'>
+    <mtd columnalign='left'>
+     <mrow>
+      <mi>J</mi><mo>=</mo><mrow><mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>D</mi>
+         <mrow>
+          <mtext>aq</mtext>
+         </mrow>
+        </msub>
+        <mo>/</mo><mi>&#x03B4;</mi>
+       </mrow>
+      <mo>)</mo></mrow><mrow><mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>c</mi>
+         <mrow>
+          <mtext>in</mtext>
+         </mrow>
+        </msub>
+        <mo>&#x2212;</mo><msub>
+         <mi>c</mi>
+         <mn>1</mn>
+        </msub>
+        
+       </mrow>
+      <mo>)</mo></mrow>
+     </mrow>
+    </mtd>
+    <mtd columnalign='left'>
+     <mrow>
+      <mi>a</mi><mi>q</mi><mi>u</mi><mi>e</mi><mi>o</mi><mi>u</mi><mi>s</mi><mtext>&#x2009;</mtext><mi>d</mi><mi>i</mi><mi>f</mi><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr columnalign='left'>
+    <mtd columnalign='left'>
+     <mrow>
+      <mi>J</mi><mo>=</mo><msub>
+       <mi>k</mi>
+       <mn>1</mn>
+      </msub>
+      <msub>
+       <mi>c</mi>
+       <mn>1</mn>
+      </msub>
+      <mo>&#x2212;</mo><msub>
+       <mi>k</mi>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </msub>
+      <msub>
+       <mi>c</mi>
+       <mn>2</mn>
+      </msub>
+      
+     </mrow>
+    </mtd>
+    <mtd columnalign='left'>
+     <mrow>
+      <mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>f</mi><mi>a</mi><mi>c</mi><mi>i</mi><mi>a</mi><mi>l</mi><mtext>&#x2009;</mtext><mi>p</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>i</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr columnalign='left'>
+    <mtd columnalign='left'>
+     <mrow>
+      <mi>J</mi><mo>=</mo><mrow><mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>D</mi>
+         <mtext>m</mtext>
+        </msub>
+        <mo>/</mo><msub>
+         <mi>l</mi>
+         <mtext>m</mtext>
+        </msub>
+        
+       </mrow>
+      <mo>)</mo></mrow><mrow><mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>c</mi>
+         <mn>2</mn>
+        </msub>
+        <mo>&#8211;</mo><msub>
+         <mi>c</mi>
+         <mn>3</mn>
+        </msub>
+        
+       </mrow>
+      <mo>)</mo></mrow>
+     </mrow>
+    </mtd>
+    <mtd columnalign='left'>
+     <mrow>
+      <mi>m</mi><mi>e</mi><mi>m</mi><mi>b</mi><mi>r</mi><mi>a</mi><mi>n</mi><mi>e</mi><mtext>&#x2009;</mtext><mi>d</mi><mi>i</mi><mi>f</mi><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr columnalign='left'>
+    <mtd columnalign='left'>
+     <mrow>
+      <mi>J</mi><mo>=</mo><msub>
+       <mi>k</mi>
+       <mrow>
+        <mo>&#x2212;</mo><mn>1</mn>
+       </mrow>
+      </msub>
+      <msub>
+       <mi>c</mi>
+       <mn>3</mn>
+      </msub>
+      <mo>&#x2212;</mo><msub>
+       <mi>k</mi>
+       <mn>1</mn>
+      </msub>
+      <msub>
+       <mi>c</mi>
+       <mn>4</mn>
+      </msub>
+      
+     </mrow>
+    </mtd>
+    <mtd columnalign='left'>
+     <mrow>
+      <mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>f</mi><mi>a</mi><mi>c</mi><mi>i</mi><mi>a</mi><mi>l</mi><mtext>&#x2009;</mtext><mi>p</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>i</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr columnalign='left'>
+    <mtd columnalign='left'>
+     <mrow>
+      <mi>J</mi><mo>=</mo><mrow><mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>D</mi>
+         <mrow>
+          <mtext>aq</mtext>
+         </mrow>
+        </msub>
+        <mo>/</mo><mi>&#x03B4;</mi>
+       </mrow>
+      <mo>)</mo></mrow><mrow><mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>c</mi>
+         <mn>4</mn>
+        </msub>
+        <mo>&#x2212;</mo><msub>
+         <mi>c</mi>
+         <mrow>
+          <mtext>out</mtext>
+         </mrow>
+        </msub>
+        
+       </mrow>
+      <mo>)</mo></mrow>
+     </mrow>
+    </mtd>
+    <mtd columnalign='left'>
+     <mrow>
+      <mi>a</mi><mi>q</mi><mi>u</mi><mi>e</mi><mi>o</mi><mi>u</mi><mi>s</mi><mtext>&#x2009;</mtext><mi>d</mi><mi>i</mi><mi>f</mi><mi>f</mi><mi>u</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   
+  </mtable>
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-6em;width:70%;">(6.21)</p>
+<p class="noindent" style="margin-top:5em;margin-bottom:0.9em;">These equations can be solved very simply by eliminating successively the interfacial concentrations <i>c</i><sub>1</sub> &#8211;<i>c</i><sub>4</sub> and noting that <i>K</i><sub>d</sub> = <i>k</i><sub>1</sub> / <i>k</i><sub>&#8211;1</sub>. The result assumes a particularly clear form when expressed as a reciprocal of the permeability, as in eqn <a href="#eqn_6.22">6.22</a>,</p>
+<p class="center-bh" id="eqn_6.22"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mtable columnalign='left'>
+   <mtr columnalign='left'>
+    <mtd columnalign='left'>
+     <mrow>
+      <mi>1</mi><mo>/</mo><mi>P</mi>
+     </mrow>
+    </mtd>
+    <mtd columnalign='left'>
+     <mrow>
+      <mo>=</mo><mrow><mo>(</mo>
+       <mrow>
+        <msub>
+         <mi>c</mi>
+         <mrow>
+          <mtext>in</mtext>
+         </mrow>
+        </msub>
+        <mo>&#x2212;</mo><msub>
+         <mi>c</mi>
+         <mrow>
+          <mtext>out</mtext>
+         </mrow>
+        </msub>
+        
+       </mrow>
+      <mo>)</mo></mrow><mo>/</mo><mi>J</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr columnalign='left'>
+    <mtd columnalign='left'>
+     <mrow></mrow>
+    </mtd>
+    <mtd columnalign='left'>
+     <mrow>
+      <mo>=</mo><mn>2</mn><mi>&#x03B4;</mi><mo>/</mo><msub>
+       <mi>D</mi>
+       <mrow>
+        <mtext>aq</mtext>
+       </mrow>
+      </msub>
+      <mo>+</mo><mn>2</mn><mo>/</mo><msub>
+       <mi>k</mi>
+       <mn>1</mn>
+      </msub>
+      <mo>+</mo><msub>
+       <mi>l</mi>
+       <mtext>m</mtext>
+      </msub>
+      <mo>/</mo><msub>
+       <mi>K</mi>
+       <mtext>d</mtext>
+      </msub>
+      <msub>
+       <mi>D</mi>
+       <mtext>m</mtext>
+      </msub>
+      
+     </mrow>
+    </mtd>
+   </mtr>
+   
+  </mtable>
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.22)</p>
+<p class="noindent">in which the terms on the right represent, respectively, the aqueous diffusional resistance, the interfacial resistance, and the membrane resistance to solute flow. Note that <a href="#eqn_6.22">eqn 6.22</a> reduces to the simpler <a href="#eqn_6.20">eqn 6.20</a> when aqueous diffusion (<i>D</i><sub>aq</sub>/&#x03B4;) and interfacial partitioning (<i>k</i><sub>1</sub>) are rapid.</p>
+<p class="indent">The importance of <a href="#eqn_6.22">eqn 6.22</a> is that it shows clearly the origin of the barrier to nonelectrolyte membrane permeability&#x2014;viz., aqueous diffusion, interfacial transfer, and internal diffusion. It shows also that when expressed as resistances the terms contribute additively to the overall resistance to solute transfer and hence to the time required. This is a fundamental property of diffusional motion in systems involving phase transfer.</p>
+<p class="indent">The diffusion of electrolytes across membranes is normally very slow because of their low solubility, but the principles are the same as those discussed above. It is constrained by the requirements of electrical neutrality so that the movement of a given ion may be limited by counter-ion diffusion. Where diffusion occurs through ion pairs, the rate depends upon the square of the concentration. This is because the concentration of ion pairs near the membrane surface is proportional to the product of the concentrations of anion and cation, i.e., the square of the electrolyte concentration.</p>
+<p class="indent">An extremely important aspect of biological membranes is that of <i>facilitated diffusion</i>, particularly that involving mobile carriers (Saier and Stiles 1975, Burgermeister and Winkler-Oswatitsch 1977). Similar processes are also involved in the extraction and transport of metals in industrial processes (Albery and Choudhery 1988). Characteristics of such processes are much enhanced transport rates, high solute specificity, and a rate maximum with increasing solute concentration. The mechanism consists of four steps (<a href="#fig_6.9">Fig. 6.9</a>): complex formation between the solute and carrier at the <i>in</i> interface; diffusion of the complex through the membrane; release of the solute at the <i>out</i> interface; diffusion back of the carrier.</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<p class="noindent2">An alternative mode of transport is via channel formation in the membrane (Burgermeister and Winkler-Oswatitsch 1977).</p>
+</aside>
+<p class="indent">We consider here an important illustrative example: the steady-state transport rate for a system whereby the equilibration rate at the membrane&#x2013;aqueous <a id="page_88" class="page">Page 88, Two-phase liquid-liquid reactions</a>interface is rapid (Cussler, 1984, Ch. 15). We can represent the equilibrium at the <i>in</i> interface by <a href="#eqn_6.23">eqn 6.23</a>,</p>
+<p class="center-bh" id="eqn_6.23"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mtext>S</mtext>
+   <mrow>
+    <mtext>in</mtext>
+   </mrow>
+  </msub>
+  <msub>
+   <mrow>
+    <mtext>+L</mtext>
+   </mrow>
+   <mrow>
+    <mtext>in</mtext>
+   </mrow>
+  </msub>
+  <mover>
+   <mo>&#x21CC;</mo>
+   <mrow>
+    <msub>
+     <mi>K</mi>
+     <mtext>S</mtext>
+    </msub>
+    
+   </mrow>
+  </mover>
+  <msub>
+   <mrow>
+    <mtext>SL</mtext>
+   </mrow>
+   <mrow>
+    <mtext>in</mtext>
+   </mrow>
+  </msub>
+  
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.23)</p>
+<p class="noindent" style="margin-bottom:0.8em;">where S is the solute being transported and L is the membrane-bound ligand, and similarly for the <i>out</i> interface. If the diffusion coefficients, <i>D</i><sub>m</sub>, of L and SL are the same, the total concentration of the ligand,</p>
+<p class="center-bh" id="eqn_6.24"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <msub>
+   <mrow>
+    <mo stretchy='false'>[</mo><mtext>L]</mtext>
+   </mrow>
+   <mtext>T</mtext>
+  </msub>
+  <mtext>=[L]+[SL]</mtext>
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.24)</p>
+<p class="noindent">is constant throughout the membrane, and at steady-state</p>
+<p class="center-bh" id="eqn_6.25"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>J</mi><mo>=</mo><mrow><mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>D</mi>
+     <mtext>m</mtext>
+    </msub>
+    <mo>/</mo><msub>
+     <mi>l</mi>
+     <mtext>m</mtext>
+    </msub>
+    
+   </mrow>
+  <mo>)</mo></mrow><mrow><mo>(</mo>
+   <mrow>
+    <msub>
+     <mrow>
+      <mo stretchy='false'>[</mo><mtext>SL</mtext><mo stretchy='false'>]</mo>
+     </mrow>
+     <mrow>
+      <mtext>in</mtext>
+     </mrow>
+    </msub>
+    <mo>&#x2212;</mo><msub>
+     <mrow>
+      <mo stretchy='false'>[</mo><mtext>SL</mtext><mo stretchy='false'>]</mo>
+     </mrow>
+     <mrow>
+      <mtext>out</mtext>
+     </mrow>
+    </msub>
+    
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.25)</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure class="figure-bh" id="fig_6.9">
+ <img src="../images/page88-1.jpg" alt="images" style="margin-bottom:0.8em;margin-left:0.5em;"/>
+<figcaption style="text-align:left;margin-left:1em;">
+<p class="noindent2" style="margin-left:-0.8em;"><b>Fig. 6.9</b>&#160;&#160;Simple carrier mechanism for facilitated membrane diffusion.</p>
+</figcaption>
+</figure>
+
+</aside>
+<p class="noindent" style="margin-bottom:0.8em;">Solving for [SL]<sub>in</sub> and [SL]<sub>out</sub> in terms of the total ligand concentration and the respective solute concentrations via <a href="#eqn_6.23">eqns 6.23</a> and <a href="#eqn_6.24">6.24</a>, and substituting into <a href="#eqn_6.25">eqn 6.25</a> gives</p>
+<p class="center-bh" id="eqn_6.26"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>J</mi><mo>=</mo><mfrac>
+   <mrow>
+    <msub>
+     <mi>D</mi>
+     <mtext>m</mtext>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <msub>
+     <mi>l</mi>
+     <mtext>m</mtext>
+    </msub>
+    
+   </mrow>
+  </mfrac>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <msub>
+       <mi>K</mi>
+       <mtext>S</mtext>
+      </msub>
+      <msub>
+       <mrow>
+        <mtext>[L]</mtext>
+       </mrow>
+       <mtext>T</mtext>
+      </msub>
+      
+     </mrow>
+     <mrow>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mn>1</mn><mo>+</mo><msub>
+         <mi>K</mi>
+         <mtext>S</mtext>
+        </msub>
+        <msub>
+         <mrow>
+          <mtext>[S]</mtext>
+         </mrow>
+         <mrow>
+          <mtext>in</mtext>
+         </mrow>
+        </msub>
+        
+       </mrow>
+      <mo>)</mo></mrow><mrow><mo>(</mo>
+       <mrow>
+        <mn>1</mn><mo>+</mo><msub>
+         <mi>K</mi>
+         <mtext>S</mtext>
+        </msub>
+        <msub>
+         <mrow>
+          <mtext>[S]</mtext>
+         </mrow>
+         <mrow>
+          <mtext>out</mtext>
+         </mrow>
+        </msub>
+        
+       </mrow>
+      <mo>)</mo></mrow>
+     </mrow>
+    </mfrac>
+    
+   </mrow>
+  <mo>)</mo></mrow><mrow><mo>(</mo>
+   <mrow>
+    <msub>
+     <mrow>
+      <mtext>[S]</mtext>
+     </mrow>
+     <mrow>
+      <mtext>in</mtext>
+     </mrow>
+    </msub>
+    <mo>&#x2212;</mo><msub>
+     <mrow>
+      <mtext>[S]</mtext>
+     </mrow>
+     <mrow>
+      <mtext>out</mtext>
+     </mrow>
+    </msub>
+    
+   </mrow>
+  <mo>)</mo></mrow>
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.26)</p>
+<p class="noindent" style="margin-bottom:0.8em;">For the initial transport rate ([S]<sub>out</sub> &#x003D; 0) this reduces to an equation identical in form to that of the Michaelis-Menten equation (<a href="Chapter03.xhtml#eqn_3.52">eqn 3.52</a>),</p>
+<p class="center-bh" id="eqn_6.27"><math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+  <mi>J</mi><mo>=</mo><mfrac>
+   <mrow>
+    <msub>
+     <mi>V</mi>
+     <mtext>S</mtext>
+    </msub>
+    <msub>
+     <mrow>
+      <mtext>[S]</mtext>
+     </mrow>
+     <mrow>
+      <mtext>in</mtext>
+     </mrow>
+    </msub>
+    
+   </mrow>
+   <mrow>
+    <msub>
+     <mi>K</mi>
+     <mtext>m</mtext>
+    </msub>
+    <mo>+</mo><msub>
+     <mrow>
+      <mtext>[S]</mtext>
+     </mrow>
+     <mrow>
+      <mtext>in</mtext>
+     </mrow>
+    </msub>
+    
+   </mrow>
+  </mfrac>
+  
+ </mrow>
+</math></p>
+<p style="text-align:right;margin-left:-0.3em;margin-top:-2.3em;width:70%;">(6.27)</p>
+<p class="noindent">where <i>V</i><sub>S</sub> &#x003D; (<i>D</i><sub>m</sub>/<i>l</i><sub>m</sub>)[L]T and <i>K</i><sub>m</sub> &#x003D; 1/<i>K</i><sub>S</sub>. Thus the flux <i>J</i> reaches a maximum value of <i>V</i><sub>S</sub> at high solute concentration and <math xmlns="http://www.w3.org/1998/Math/MathML">
+ <msub>
+  <mi>K</mi>
+  <mtext>m</mtext>
+ </msub>
+ <mo>=</mo><msubsup>
+  <mi>K</mi>
+  <mi>S</mi>
+  <mrow>
+   <mo>&#x2212;</mo><mn>1</mn>
+  </mrow>
+ </msubsup>
+ 
+</math>
+ is the solute concentration corresponding to half of the maximum flux. Such behaviour is typical of that observed empirically for facilitated diffusion in biological membranes (Saier and Stiles 1975).</p>
+</section>
+<section epub:type="chapter" id="ch6_ref">
+<h3 class="h3">References</h3>
+<p class="noindent">Albery, W. J. and Choudhery, R. A. (1988). <i>J. Phys. Chem</i>., <b>92</b>, 1151.</p> 
+<p class="noindent">Burgermeister, W. and Winkler-Oswatitsch, R. (1977). <i>Top. Curr. Chem.,</i> <b>69</b>, 91.</p>
+<p class="noindent">Cussler, E. L. (1984). <i>Diffusion, mass transfer in fluid systems.</i> Cambridge University Press.</p>
+<p class="noindent">Diamond, J. M. and Wright, E. M. (1969). <i>Annu. Rev. Physiol.,</i> <b>31</b>, 581.</p> 
+<p class="noindent">Doraiswamy, L. K. and Sharma, M. M. (1984). <i>Heterogeneous reactions. Vol. 2: Fluid-fluid reactions.</i> Wiley, New York.</p>
+<p class="noindent">Gordon, J. E. and Kutina, R. E. (1977). <i>J. Am. Chem. Soc.,</i> <b>99</b>, 3903.</p>
+<p class="noindent">Landini, D., Angelamaria, M., and Montanari, F. (1978). <i>J. Am. Chem. Soc.,</i> <b>100</b>, 2796.</p>
+
+<a id="page_89" class="page" style="width:70%;">Page 89, Two-phase liquid-liquid reactions</a>
+
+<p class="noindent">Racker, E. (1979). <i>Acc. Chem. Res.,</i> <b>12</b>, 338.</p>
+<p class="noindent">Saier, M. H. and Stiles, C. D. (1975). <i>Molecular dynamics in biological membranes.</i> Springer&#x2013;Verlag, New York.</p>
+<p class="noindent">Sharma, M. M. and Nada, A. K. (1969). <i>Trans. Inst. Chem. Eng.,</i> <b>46</b>, T44.</p> 
+<p class="noindent">Starks, C. M. and Liotta, C. (1978). <i>Phase transfer catalysis.</i> Academic Press, New York.</p>
+<p class="noindent">Starks, C. M. and Owens, R. M. (1973). <i>J. Am. Chem. Soc.,</i> <b>95</b>, 3613.</p>
+</section>
+<section epub:type="chapter" id="ch6_back">
+<h3 class="h3">Background reading</h3>
+<p class="noindent">Cussler, E. L. (1984). <i>Diffusion</i>, <i>mass transfer in fluid systems.</i> Cambridge University Press.</p>
+<p class="noindent">Dehmlow, E. V. and Dehmlow, S. S. (1983). <i>Phase transfer catalysis,</i> (2nd edn). Verlag Chemie, Weinheim.</p>
+<p class="noindent">Doraiswamy, L. K. and Sharma, M. M. (1984). <i>Heterogeneous reactions. Vol. 2: Fluid-fluid reactions.</i> Wiley, New York.</p>
+<p class="noindent">Hanna, G. J. and Noble, R. D. (1985). <i>Chem. Rev.,</i> <b>85</b>, 583.</p>
+<p class="noindent">Starks, C. M. and Liotta, C. (1978). <i>Phase transfer catalysis.</i> Academic Press, New York.</p>
+</section>
+</section>
+</body>
+</html>

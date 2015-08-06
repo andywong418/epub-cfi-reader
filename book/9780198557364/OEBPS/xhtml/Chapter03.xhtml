@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Applications of Artificial Intelligence in Chemistry</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+</head>
+<body>
+<section epub:type="chapter" id="Ch03">
+<a id="page_39" class="page" style="width:70%;">Page 39, Expert systems</a>
+<h1 class="main"><b>3&#160;&#160;&#160;Expert systems</b></h1>
+<section epub:type="chapter" id="sec_3.1">
+<h2 class="h2"><b>3.1&#160;&#160;Introduction</b></h2>
+<p class="noindent">An expert is a valuable commodity, especially in a field such as science which requires a high level of technical understanding. However, experts are not always available in the laboratory, and their expertise sometimes lies in areas beyond what is needed. Because of this, scientists are being advised &#x2013; and sometimes replaced &#x2013; by inanimate helpers, known as expert systems.</p>
+<p class="indent3-ka1t"><i>An expert system is a computerized clone of a human expert</i>.</p>
+<p class="indent3-ka1t">Expert systems contain a fund of knowledge relating to some specific, well-defined area. By using rules to combine this knowledge with information gathered from the user, they draw conclusions, provide advice, and help the user to choose between alternatives. Through the medium of an expert system, a computer can reproduce many of the logical deductions of a human expert and offer scientific advice of a quality rivalling that which a human might provide. If autonomous, expert systems may control a spectrometer, a missile guidance system, or a nuclear power plant, without outside assistance.</p>
+<p class="indent3-ka1">When you work with an effective expert system, it is much like having someone beside you with whom you can discuss the problem that you are trying to solve, and how you propose to solve it. Through a two-way conversation, the expert system guides you in the development of an organic synthesis, control of an industrial plant, or other complex task. In most respects the expert system behaves like a human and asks the kinds of questions a human might ask. However, this expert is confined to the inside of a computer.</p>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_3.2">
+<h2 class="h2"><b>3.2&#160;&#160;The need for expert systems</b></h2>
+<p class="noindentt">In this chapter we shall outline how expert systems operate, and how they can be applied to science. We shall discuss how computers can reason and draw conclusions, mimicking what is commonly called &#x2018;thinking&#x2019;.</p>
+<p class="indent3-ka1">The potential for expert systems is particularly marked in science. Scientific experts are not a rare breed of course, but the amount of scientific knowledge is growing so rapidly that it is becoming difficult to know everything of importance in even a tiny area of specialization. Most scientists who want expert advice on an occasional basis do not have the time to maintain expertise in all the relevant areas; a computerized expert may then be the only feasible way to get help when it is needed.</p>
+<a id="page_40" class="page" style="width:70%;">Page 40, Expert systems</a>
+<p class="indent3-ka1">As a result, expert systems, which are already the most widespread application of AI in science, are certain to become much more common. Since the appearance of DENDRAL in the mid-1960s, expert systems have multiplied to encompass a broad range of applications, and they have potential in virtually every field in which expert advice is now provided by humans. They are already used in such areas as genetic engineering, analytical chemistry, chemical safety and experiment design, and the range of applications continues to grow rapidly.</p>
+<aside class="abc" style="margin-top:-9.5em;" epub:type="sidebar">
+<p class="noindent2">Science has been at the centre of the development of expert systems for years; one of the earliest and most influential of such systems was written specifically to help chemists. This was the program DENDRAL (developed from 1965 onwards at Stanford University), whose role was to propose possible structures for organic molecules through interpretation of their mass spectra.</p>
+</aside>
+</section>
+<p class="noindent">&#160;</p>
+<section epub:type="chapter" id="sec_3.3">
+<h2 class="h2"><b>3.3&#160;&#160;The components of an expert system</b></h2>
+<p class="noindentt">We consider first the components and characteristics of an expert system. What makes a computer program so good it deserves to be called &#x2018;expert&#x2019;?</p>
+<p class="indent3-ka1">Early expert systems contained in condensed form both the questions that a user might want to ask about a particular topic, and appropriate answers; there was also a rudimentary means of interpreting the users&#x2019; requests. These programs were small electronic repositories of facts, and had only a glimmer of intelligence within. No consideration went into the computer&#x2019;s response, there was no &#x2018;mulling over&#x2019; by it of what the user wanted or how it might meet the user&#x2019;s need. The computer had a fixed response (or no response) and that delimited what advice it could offer.</p>
+<p class="indent3-ka1">A human expert is very different: he or she can respond <i>intelligently</i> to queries. Any computer program with pretensions to being called &#x2018;expert&#x2019; must be able to do the same. It must be knowledgeable and lucid about its own field, but flexible enough to respond constructively to questions at the fringes of its expertise, or questions that the designer of the system had not anticipated. This clearly requires more than just the ability to sift through a prepared list of responses.</p>
+<p class="indent3-ka1">Put simply, an expert system must be <i>thoughtful.</i></p>
+<aside class="abc" style="margin-top:4.5em;" epub:type="sidebar">
+<p class="noindent2">The knowledge base might, for example, contain details of the thermodynamic properties of small molecules, or a description of the identity and positions of the components of a spectrometer, but it is unlikely to contain information about several completely unrelated areas.</p>
+</aside>
+<p class="indent3-ka1">The key to an expert system therefore is its ability to reason and to make judgements; this is the essence of being able to act thoughtfully. Many human tasks involve judgement: in applications such as real-time process control or experiment design this is crucial. These are typical of areas in which an expert system is valuable, and decisions about them must be made based on the interpretation of a pool of specialized knowledge; effective decision-making requires access to all the relevant information.</p>
+<p class="indent3-ka1">However, as we have suggested, to be an expert one needs more than just a list of facts, and a modern expert system is composed of three essential components (<a href="#fig_3.1">Fig. 3.1</a>).</p>
+<p class="indent3-ka1">The <b>knowledge base</b> contains information about which the system reasons. This permanent memory contains as much information as possible relevant to the field in which the system is &#x2018;expert&#x2019;; during operation it is supplemented with transient data supplied by the user and perhaps gathered from the environment.</p>
+<figure style="margin-left:-7em;" id="fig_3.1"><a id="page_41" class="page" style="width:80%;">Page 41, Expert systems</a>
+ <img src="../images/page41-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;margin-left:1em;"><b>Fig. 3.1</b> Components of an expert system.</figcaption>
+</figure>
+<p class="indent3-ka1">Most humans have broad general knowledge, but are experts only in a narrow, well-defined field. In a similar way, expert systems restrict their attention to a specific domain, such as insurance risks or chemical pollution analysis, rather than the broader domain of life, the universe, and everything.</p>
+<aside class="abc" style="margin-top:0.8em;" epub:type="sidebar">
+<p class="noindent2">The terms &#x2018;expert system&#x2019; and &#x2018;knowledge-based system&#x2019; are now used almost interchangeably. Early programs were entirely dependent on input from a human expert, (and most still are), so they became known as &#x2018;expert systems&#x2019;. Some modern systems gather much of their information autonomously, without the need for a human expert, and the term &#x2018;knowledge-based system&#x2019; is then more appropriate.</p>
+</aside>
+<p class="indent3-ka1">Because of its reliance on stored facts, an expert system is an example of a <b>knowledge-based system.</b> These systems use &#x2018;rules of thumb&#x2019; in their operation, rather than numerical algorithms, and work with information which has been encoded so that it can be stored conveniently in the computer. A knowledge-based system is at its most valuable when dealing with large and complex databases, or controlling equipment with many components whose operation is governed by numerous inter-related rules. Simple problems do not require complex solutions: an expert system would be wasted running a coffee machine or an electric stapler.</p>
+<p class="indent3-ka1">However, in complex problems, there is naturally a great deal to know, and though expert systems are often at their most productive when working on these problems, they cannot know everything. Accordingly, the knowledge base will reflect a focused approach and contain essential information only.</p>
+<p class="indent3-ka1">The <b>inference engine</b> is the part of the system that reasons or infers. Its responsibility is to draw conclusions, using data, rules, and relationships from its knowledge base, and whatever it has learned through conversation with the user, and to justify those conclusions.</p>
+<aside class="abc" style="margin-top:1em;" epub:type="sidebar">
+<p class="noindent2">It is not essential that the inference engine use the same method of reasoning as a human expert, just that the final conclusions be the same.</p>
+</aside>
+<p class="indent3-ka1">Decision-making by the inference engine is a fundamental part of the operation of an expert system; indeed it is <i>the</i> fundamental part, since unless it can make decisions, the expert system will be valueless. An expert system replaces or advises a human expert by <i>reproducing the results of his or her reasoning</i>, so if the artificial expert is given the same information as the<a id="page_42" class="page">Page 42, Expert systems</a>human, it should reach the same conclusions (or, if it does not, it should be able to show in what respect the human is wrong).</p>
+<p class="indent3-ka1">The <b>user interface</b> links the system to the outside world. Through this, the user asks questions and provides information, receiving in return advice, comments, and conclusions. Some expert systems control part of their world, such as a chemical synthesis line in an industrial plant. The expert system then has interfaces (message-passing links) to motors, detectors, bar-code readers or other equipment, whose purpose is to transfer information about the environment into the system, and provide a mechanism to implement any actions that the system thinks are necessary.</p>
+<p class="indent3-ka1">These three parts of the expert system, the knowledge base, the inference engine, and the user interface, are both conceptually quite distinct and logically separate. They function simultaneously but independently, swapping bundles of information as required. Because of this independence, an expert system can be built incrementally; one part can be modified or augmented without affecting the others. Working expert systems are large and complex; division into discrete units simplifies testing when the system is being built, and permits periodic updating.</p>
+<p class="indent3-ka1">We now consider in more detail each of the three components in an expert system.</p>
+</section>
+<section epub:type="chapter" id="sec_3.4">
+<h2 class="h2"><b>3.4&#160;&#160;Information and rules: the knowledge base</b></h2>
+<p class="noindent">Expert systems interact with the user or the environment to find out what must be done. Some data that the system needs are gathered through this conversation, but most are held in the knowledge base, which is the prime source of information that the expert system needs to reason. It contains <b>facts, rules, relationships,</b> and <b>statements of probability.</b></p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="tabcap" id="tab3.1" style="margin-bottom:2em;width:100%;"><b>Table 3.1</b> Part of an unstructured knowledge base.</p>
+<table class="width100tb">
+<tr>
+<td style="vertical-align:top;"><p class="indenthang2" style="margin-top:1.8em;">1. Pooh is a bear.</p></td></tr>
+<tr>
+<td style="vertical-align:top;"><p class="indenthang2">2. Wol cannot spell.</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="indenthang2">3. Eeyore&#x2019;s tail is nailed on.</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="indenthang2">4. A burst balloon will fit inside a honey pot.</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="indenthang2">5. Pooh has very little brain.</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;" class="border50"><p class="indenthang2" style="margin-bottom:1.5em;">6. .....</p></td>
+</tr>
+</table>
+</aside>
+<p class="indent3-ka1">In the simplest of knowledge bases, information is stored as an unordered list (<a href="#tab3.1">Table 3.1</a>), through which the expert system searches each time a query is presented. This is a crude method for holding information, since the knowledge base may be large, and contain possibly thousands of entries inter-related in arbitrary ways. If the list is organized without a clear structure, it will be hard to locate relevant data, so it is desirable that the information is arranged logically according to some suitable prescription.</p>
+<p class="indent3-ka1">Often, the data bear a relationship to each other that allows them to be arranged on a tree diagram, like that in <a href="#fig_3.2">Fig. 3.2</a>. The top of the tree is known as the <b>root</b>; the connections are <b>branches</b>, and all extremities other than the root are <b>leaves.</b> Each leaf represents one or more items of information (or possibly instructions on how to obtain information).</p>
+<p class="indent3-ka1">This information will not be stored literally as words and phrases, but in a coded form to increase storage efficiency and to simplify the interpretation of rules by the inference engine. Symbols are used to represent concepts and the relationships between them, and it is the task of a <b>representation language</b> to organize this mix of rules and data in a coherent fashion.</p>
+<figure style="margin-left:-5em;" id="fig_3.2"><a id="page_43" class="page" style="width:80%;">Page 43, Expert systems</a>
+ <img src="../images/page43-1.jpg" alt="images"/>
+<figcaption><b>Fig. 3.2</b> A data tree.</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-14em;" epub:type="sidebar">
+<p class="noindent2">A typical entry at the &#x2018;carbohydrates&#x2019; leaf in <a href="#fig_3.2">Fig. 3.2</a> might be FORMULA=CARBOHYDRATE[C<sub>x</sub>(H<sub>2</sub>O)<sub>y</sub>]. This would be held in coded form for efficiency of storage and use by the inference engine.</p>
+</aside>
+<aside class="abc" style="margin-top:4em;" epub:type="sidebar">
+<p class="noindent2">&#x2018;Compound&#x2019; and &#x2018;derived&#x2019; are both types of lipid, and lipids in turn are organic molecules; this inherited relationship is clear from the structure of the tree in <a href="#fig_3.2">Fig. 3.2</a>.</p>
+</aside>
+<p class="noindent">&#160;</p>
+<p class="indent3-ka1">The hierarchical structure of the tree shown in <a href="#fig_3.2">Fig. 3.2</a> reminds one of a family tree, and an important feature of this type of structure is that it implies <b>inheritance;</b> in other words, entries in the tree inherit the attributes of entries above them to which they are linked by branches. This simplifies the reasoning process which the inference engine employs, since, by working down from the root, it can quickly narrow its search for the data that it needs by following appropriate branches.</p>
+<p class="indent3-ka1">A tree is a simple and effective rubric for organizing information, but not all types of data can be classified in this fashion. If the data are inter-related in a complex manner, a hierarchical format is inappropriate, since items connected by logical links may share different relationships. Data may then be arranged in a more disorganized-looking network (<a href="#fig_3.3">Fig. 3.3</a>), in which branches link entries wherever a logical connection exists.</p>
+<figure style="margin-left:-5em;" id="fig_3.3">
+ <img src="../images/page43-2.jpg" alt="images"/>
+<figcaption><b>Fig. 3.3</b> A disorganized network.</figcaption>
+</figure>
+<a id="page_44" class="page" style="width:70%;">Page 44, Expert systems</a>
+<p class="indent3-ka1">Pieces of information within the knowledge base are known as <b>assertions.</b>A probability may be associated with the assertion if it is known, and, when present, will be taken into account by the inference engine when the assertion is used. Many assertions are &#x2018;true&#x2019;; for example,</p>
+<p class="centerd">POINT_GROUP=AuCl<sub>4</sub> [ D<sub>4h</sub>, 1.0 ]</p>
+<p class="noindentt">states that the point group of gold(IV) chloride is D<sub>4h</sub> (definitely, since the probability that the assertion holds is 1.0). Other assertions hold with some smaller degree of probability:</p>
+<p class="centerd">MCDONALDS=IN[LARGE_TOWN,0.85]</p>
+<p class="noindentt">tells us that there is an 85 per cent chance that a large town has a McDonald&#x2019;s restaurant.</p>
+<aside class="abc" style="margin-top:-2em;" epub:type="sidebar">
+<p class="noindent2">Although the McDonald&#x2019;s assertion is complete, it relies on other information, since the inference engine must know what is meant by a &#x2018;large town&#x2019;. The knowledge base might contain a suitable definition. If it did not, when the expert system was responding to a request (&#x2018;Where&#x2019;s the finest food in Paris?&#x2019;), and it noticed this assertion, the inference engine would ask the user to define a large town, or to give examples, so that the expert system could learn what one was like.</p>
+</aside>
+<p class="indent3-ka1">The knowledge base can contain assertions about numerical data, formulae, text, lists or tables, and physical descriptions; any information, in fact, that might be relevant to its area of expertise. In turn, this information may be fixed, for example a list of atom electronegativities, or dynamic, such as the current refractive index of material in a reaction vessel.</p>
+<p class="indent3-ka1">Assertions are the raw material about which the expert system reasons. They form the heart of the knowledge base, but if this were composed of assertions alone, the expert system would be merely pages within a computerized encyclopaedia, and this hardly qualifies as an intelligent system. Therefore, in addition, the knowledge base contains prescriptions or rules which instruct the inference engine on how to combine assertions. A solid mathematical base underpins these prescriptions, but we shall restrict our discussion to non-mathematical aspects of their use.</p>
+</section>
+<section epub:type="chapter" id="sec_3.5">
+<h2 class="h2"><b>3.5&#160;&#160;Reasoning: the inference engine</b></h2>
+<p class="noindentt">The inference engine does the &#x2018;thinking&#x2019; for an expert system. It scans the knowledge base for assertions and rules relevant to the user&#x2019;s question; any pertinent rules are used in an attempt to draw useful conclusions. The assertions that it discovers may be &#x2018;facts&#x2019;, which can be combined to discover what is &#x2018;true&#x2019;. If the assertions have probabilities of less than 1, conclusions can only be drawn with some degree of confidence.</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<p class="noindent2">A &#x2018;fact&#x2019; has a probability of 1.</p>
+</aside>
+<p class="indent3-ka1">The recipes for combining assertions take a number of forms, including <b>predicate logic, structured objects,</b> and <b>production rules.</b> Production rules are the most widely used recipe in chemistry and are the most readily understood; they take the form</p>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<p class="noindent2">A typical production rule might be:</p>
+<p class="noindent2i"><b>If</b> the matrix is mine tailings, <b>and if</b> a test for gold is positive, <b>then</b> cyanide will be present <b>and</b> further tests should be carried out in a fume cupboard.</p>
+</aside>
+<p class="indent3-ka1t"><b>If</b> assertion<sub>1</sub> holds <b>and</b> assertion<sub>2</sub> holds <b>and.....</b></p>
+<p class="indent3-ka1a"><b>......then</b> draw conclusion<sub>1</sub> <b>and</b> draw conclusion<sub>2</sub> <b>and ....</b></p>
+<p class="indent3-ka1">Production rules can generally be written as a statement in English, which makes them straightforward to understand (<a href="#tab3.1">Table 3.1</a>)</p>
+<a id="page_45" class="page" style="width:70%;">Page 45, Expert systems</a>
+<p class="noindent" id="tab3.1a"><b>Table 3.1</b> A production rule from an expert system in &#x2018;pseudo-code&#x2019;.</p>
+<table class="width70tb">
+<tr>
+<td style="vertical-align:top;"><p class="tablei" style="margin-top:1em;"><b>begin</b></p>
+<p class="tablei1"><b>rule</b></p>
+<p class="tablei2">&#x2018;If the levels of both ethane and propane are high,</p>
+<p class="tablei2">then take action to reduce ingress of pump oil.&#x2019;</p>
+<p class="tablei1"><b>endrule</b></p>
+<p class="tablei2"><b>if</b>&#160;&#160;&#160;&#160;(ethane &gt; acceptable_ethane_level)</p>
+<p class="tablei2"><b>and</b> (propane &gt; acceptable_propane_level)</p>
+<p class="tablei2"><b>then</b></p>
+<p class="tablei2"><b>advise</b></p>
+<p class="tablei3">Nature of problem: pump oil ingress.</p>
+<p class="tablei3">Danger to system: possible sample contamination.</p>
+<p class="tablei3">Required action: renew pump seals.</p>
+<p class="tablei2"><b>endadvise</b></p>
+<p class="tablei2"><b>put</b> (&#x2018;yes&#x2019; into located_problem)</p>
+<p class="tablei2"><b>reset</b> (more)</p>
+<p class="tablei2"><b>endif</b></p>
+<p class="tablei" style="margin-bottom:1em;"><b>endprocedure</b></p></td>
+</tr>
+</table>
+<aside class="abc" style="margin-top:4.8em;" epub:type="sidebar">
+<p class="noindent2">Most knowledge bases contain at least several dozen rules; sometimes many hundreds will be present.</p>
+</aside>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<p class="indent3-ka1t">The knowledge base will contain many production rules. Some of these will be very specific, (&#x2018;<b>If</b> the indicator must change colour in the pH range 1.2 &#x2013; 2.8 <b>then</b> use methyl blue&#x2019;), while others will be more general (&#x2018;<b>If</b> the molecules are associated in neither the liquid nor the gas phase, <b>then</b> Trouton&#x2019;s rule should apply&#x2019;).</p>
+<aside class="abc" style="margin-top:3em;" epub:type="sidebar">
+<p class="noindent2">When the rules expressing the relationships that exist among the data are poorly understood, a neural network may provide an alternative to an induction system.</p>
+</aside>
+<p class="indent3-ka1">The rules are generally entered by a human expert as the system is being built, but this is not always possible. Sometimes it may be hard to mould the relevant knowledge into concrete rules, or there may be large amounts of data available, but the rules that express in general terms the relationship between different items of data may be unknown. In these circumstances, the expert system may itself derive production rules and the probabilities within them by examining examples that illustrate application of the rule, provided by the human expert. This method of teaching the expert system is known as an <b>induction system</b> or <b>automated knowledge elicitation.</b></p>
+<h3 class="h3"><b>Searching strategies</b></h3>
+<p class="noindentt">An expert system can only be really effective when the knowledge base contains all the information relevant to a problem. And yet, when a particular problem is tackled, most information in the knowledge base is irrelevant. The efficiency of the inference engine is therefore strongly influenced by how quickly it can locate data which might bear upon a problem. It needs <a id="page_46" class="page" style="width:80%;">Page 46, Expert systems</a>some kind of strategy for doing this, otherwise it may stumble through the knowledge base without direction, and be unworkably slow.</p>
+<figure style="margin-left:-5em;" id="fig_3.4">
+<img src="../images/page46-1.jpg" alt="images"/>
+<figcaption><b>Fig. 3.4</b> An AND/OR tree.</figcaption>
+</figure>
+
+<p class="indent3-ka1">A widely-used method for drawing the attention of the inference engine to relevant information is to use a tree of goals to guide its reasoning, like that shown in <a href="#fig_3.4">Fig. 3.4</a>.</p>
+<p class="indent3-ka1">This is an <b>AND/OR tree</b> or <b>decision tree.</b> The root defines a goal which will be met if a certain combination of sub-goals is met. Sub-goals lie below the root, and are joined to it and to other sub-goals, by branches.</p>
+<p class="indent3-ka1">Some leaves of the tree are not sub-goals, but are data that cannot be deduced and may or may not currently be known. The inference engine may interrogate the knowledge base to find out whether the data at these leaves are available or can be calculated, or the data might be supplied through a dialogue with the user. Alternatively, the leaves might represent instructions whose execution could yield data. For example, examination of a leaf might trigger a request for an experimental operation to be performed, such as the measurement of the pH of a solution, and the reporting back of that pH to the inference engine.</p>
+<p class="indent3-ka1">Branches from a goal to sub-goals below it may be dependent or independent. Some goals are met only if multiple sub-goals are satisfied<a id="page_47" class="page">Page 47, Expert systems</a>simultaneously (AND conditions); branches to these sub-goals are connected by an arc. Thus, <a href="#fig_3.4">Fig. 3.4</a> reveals that to negotiate an overdraft, it is necessary to arrange a meeting with the bank manager <i>and</i> to wear one&#x2019;s best clothes.</p>
+<p class="indent3-ka1">On the other hand, a goal might be met if just one of its sub-goals holds. The evening can be spent drinking <i>or</i> eating <i>or</i> working. The drinking, eating, and working sub-goals are independent of each other and represent OR conditions. (This of course does not prevent more than one sub-goal being satisfied &#x2013; we might both eat and work.)</p>
+<p class="indent3-ka1">The purpose of the decision tree is to represent production rules in a logical way. There is a simple relationship between a decision tree and a set of production rules. Suppose the rules shown in <a href="#tab3.2">Table 3.2</a> apply. This set of rules can be represented by the decision tree shown in <a href="#fig_3.5">Fig. 3.5</a>.</p>
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<figure style="margin-left:-5em;" id="fig_3.5">
+ <img src="../images/page47-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;margin-left:1em;"><b>Fig. 3.5</b> A decision tree for the set of production rules shown in <a href="#tab3.2">Table 3.2</a>.</figcaption>
+</figure>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<p class="tabcap" id="tab3.2" style="width:100%;"><b>Table 3.2</b> Production rules.</p>
+<table class="width100tb">
+<tr>
+<td style="vertical-align:top;"><p class="nlbullet" style="margin-top:1em;"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;If B and C hold, or D holds, then conclude A.</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="nlbullet"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;If E or F hold, then conclude B.</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="nlbullet"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;If G holds, then conclude C.</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="nlbullet"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;If H and I and J all hold, then conclude D.</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="nlbullet"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;If K and L hold, then conclude G.</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="nlbullet" style="margin-bottom:1em;"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;If M or N hold, then conclude K.</p></td>
+</tr>
+</table>
+</aside>
+<p class="noindent">&#160;</p>
+<p class="indent3-ka1">Using a representation of this tree within the knowledge base, the inference engine tries to prove its goal. The tree shows that, if A is to be proven, either B and C must simultaneously hold, or D must hold. As B, C and D are all sub-goals, not leaves which can be inspected immediately, the tree must be searched more deeply to establish whether A is true.</p>
+<a id="page_48" class="page" style="width:70%;">Page 48, Expert systems</a>
+<p class="indent3-ka1">Although we have hardly started on the task of proving the goal, already a question of strategy arises: should all branches at one level be inspected before moving deeper, or instead should a single branch of the tree, such as that running through node C, be followed down to its leaves before any other branch is considered? These two alternative methods of analysis are known as <b>breadth-first searching</b> and <b>depth-first searching.</b></p>
+<figure style="margin-left:-5em;" id="fig_3.6">
+ <img src="../images/page48-1.jpg" alt="images"/>
+<figcaption><b>Fig. 3.6</b> A breadth-first search.</figcaption>
+</figure>
+<h3 class="h3"><b>Breadth-first searching</b></h3>
+<p class="noindentt">In a breadth-first search (<a href="#fig_3.6">Fig. 3.6</a>) all branches to sub-goals or leaves at a given level are assessed together. There may be leaves at this level which can be inspected to see if the goal of the tree is proven. If there are no leaves, or the goal cannot be proven, the inference engine turns its attention to the group of branches at the next level down, and the process is repeated, level by level, until either the goal is proven, or all branches have been investigated.</p>
+<p class="indent3-ka1">The advantage of this type of search is that the user can keep track of the line of reasoning that the expert system is following, as it narrows down the range of possibilities, and the user can intervene if necessary to guide the search along the most productive path. For example, in the chemical analysis of a sample of a completely unknown material, a continuing conversation between the user and an expert system will permit the chemist to combine her own and the expert system&#x2019;s knowledge to greatest effect.</p>
+<a id="page_49" class="page" style="width:70%;">Page 49, Expert systems</a>
+<p class="indent3-ka1">Breadth-first searching invariably finds the shortest path from the root to a solution, but it does not always find a solution more rapidly than other searching methods, since the shortest path can only be found by exhaustive checking of each layer in turn, and if the decision tree is large this can be time-consuming.</p>
+<h3 class="h3a"><b>Depth-first searching</b></h3>
+<p class="noindentt">In a depth-first search (<a href="#fig_3.7">Fig. 3.7</a>), a single branch from the root is pursued to its leaves. If the goal is not proved when the data that these leaves supply are assessed, the inference engine moves down through the neighbouring branch to its leaves, and the process is repeated until either the goal is proved, or the branching structure is exhausted and the inference engine concludes that the goal cannot be met. Buried within the knowledge base may be hints that certain branches will be more promising than others, and if the inference engine can decide intelligently which branch to pick next, this is normally a faster method of searching than breadth-first.</p>
+<figure style="margin-left:-7em;" id="fig_3.7">
+ <img src="../images/page49-1.jpg" alt="images"/>
+<figcaption style="margin-top:1em;margin-left:1em;"><b>Fig. 3.7</b> A depth-first search.</figcaption>
+</figure>
+<p class="indent3-ka1">Both depth-first and breadth-first searches report back to the user as soon as a successful conclusion is reached. If the user wishes to see other solutions, the system must be told to continue the search further. From <a href="#fig_3.6">Figs 3.6</a> and <a href="#fig_3.7">3.7</a> you can appreciate that, when several solutions exist, they will usually be discovered in a different order using breadth-first and depth-first search. For example, a search through a library of infrared absorption spectra for a match to an experimental spectrum never uncovers a perfect fit; slight differences in<a id="page_50" class="page">Page 50, Expert systems</a>band position or absorption intensity always exist. Consequently, spectral matching programs offer several candidate formulae as possible matches and, if an expert system plays a role in the selection of these, matches may be discovered in different orders, depending on whether depth-first or breadth-first searching is chosen.</p>
+<h3 class="h3a"><b>Backward- and forward-chaining</b></h3>
+<p class="noindentt">Breadth-first and depth-first searching are types of <b>top-down inference</b> or <b>backward-chaining</b>. The inference engine starts from a hypothesis or goal, and reasons down through successive layers of sub-goals until it reaches leaves which it can examine to see whether they hold. The goal itself can then be shown to hold or to be contradicted.</p>
+<p class="indent3-ka1">This is an efficient way to reason since, as soon as a particular sub-goal has been contradicted, any further sub-goals branching off it can be ignored, so wasteful searching is avoided. However, backward-chaining suffers from a limitation which restricts the types of application in which it can be used: if we do not know what question to ask of the expert system, we can not even start.</p>
+<p class="indent3-ka1">You might think that this should not worry us. After all, we do not usually begin to search for something until we know what it is that we are looking for. Nevertheless, there are scientific searching problems in which the goal can be stated in only the most general terms.</p>
+<p class="indent3-ka1">Suppose a knowledge base contained all available knowledge about the chemical and physical properties of alloys; there might be details of composition, density, melting point, entropy of fusion, and so on. The role of the expert system which contains this knowledge is to scan the information, looking for relationships that are not contained as assertions or rules in the knowledge base. Since the knowledge base contains all that we know, these new relationships are therefore empirical rules of whose existence we are unaware. Perhaps the melting point of a certain type of alloy correlates with ductility, or the phase diagram of an alloy depends in some as yet unrecognized way on the van der Waals radii of the component atoms. Waiting in the data there are scientific rules to be discovered, if the expert system can only find them for us.</p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<p class="noindent2">The sort of analysis described here is taking place in several universities. Huge stores of information are searched by expert systems looking for previously unknown relationships among the data. Currently such research is centred on statistical and sociological databases, and is yielding some interesting, though often obscure, relationships. There is, however, every prospect that, when applied to scientific data, such projects will discover valuable new relationships.</p>
+</aside>
+<p class="indent3-ka1">Because we do not know what relationships may emerge, beyond those that are already encoded as assertions, the goal of the inference engine cannot be stated much more precisely than &#x2018;look for new relationships&#x2019;. It is hard to see how this could be broken down into sub-goals to form a decision-tree, unless there were a separate sub-goal for every possible relationship, and in a large database this would lead to a massive decision tree. Backward-chaining cannot be used.</p>
+<p class="indent3-ka1">The solution is to use <b>forward-chaining</b>. In forward-chaining the inference engine extracts successively more information from the user and knowledge base and combines this using its rules to generate new conclusions or assertions; these are then examined for value by the expert system or the user. Once again some mechanism (perhaps involving the user directly) may<a id="page_51" class="page">Page 51, Expert systems</a> be needed to focus the attention of the inference engine on the group of assertions and rules of greatest relevance.</p>
+<aside class="abc" style="margin-top:-2.3em;" epub:type="sidebar">
+<p class="noindent2">Commercial organizations are using <b>data mining</b> techniques, in which genetic algorithms or neural networks search through the massive amounts of data generated by, for example, computerized supermarket tellers, and look for hidden trends or correlations. Similar methods are applied to stock market analysis, assessing share price movements. The performance of stock selection software using these techniques is claimed to already exceed that of a human trader by a factor of two.</p>
+</aside>
+<p class="indent3-ka1">Both forward-chaining and backward-chaining are deterministic in the way that they operate. A third method of working exists, which leads the inference engine through the knowledge base on a path that may be somewhat more convoluted than these methods. This procedure is smarter, but more difficult to implement. At each stage in <b>rule-valued searching,</b> the inference engine tries to gather data that will most effectively reduce the number of options available at that point. The system attempts to efficiently &#x2018;home in on&#x2019; the correct answer by always looking for the information that will be most effective in reducing the uncertainty in the problem.</p>
+<p class="tabcap" id="tab3.3"><b>Table 3.3</b> A comparison of forward- and backward-chaining.</p>
+<table class="width70tb">
+<tr>
+<td style="vertical-align:top;" class="borbw50"><p class="tableda1">Backward-chaining</p></td>
+<td style="vertical-align:top;" class="borbw50"><p class="tableda1">Forward-chaining</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tableb" style="margin-top:1em;"><i>Hypothesis:</i> <b>Use</b> a zirconium releasing agent,</p></td>
+<td style="vertical-align:top;"><p class="tableb" style="margin-top:1em;"><i>Rule:</i> <b>If</b> a sample for AA analysis contains both calcium and phosphate,</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tableb" style="margin-bottom:1em;"><i>Rule:</i> <b>If</b> the sample is to be analysed using AA, <b>and</b> contains both calcium and phosphate.</p></td>
+<td style="vertical-align:top;"><p class="tableb" style="margin-bottom:1em;"><i>Conclusion</i>: <b>then</b> use a zirconium releasing agent to eliminate phosphate interference.</p></td>
+</tr>
+</table>
+<p class="indent3-ka1t">This can be a potent way of working. Consider the selection of parameters for an HPLC separation. There might be a choice between reversed-phase or normal-phase column packings, gradient or isocratic elution, detection by UV, conductivity or fluorescence, any one of twenty pure solvents or various mixtures of them, and so on (<a href="#fig_3.8">Fig. 3.8</a>). This gives rise to a vast number of possible combinations of operating conditions.</p>
+<figure style="margin-left:-7em;margin-top:4em;" id="fig_3.8">
+ <img src="../images/page51-1.jpg" alt="images"/>
+<figcaption><b>Fig. 3.8</b> A map of possible operating conditions for an HPLC analysis.</figcaption>
+</figure>
+<a id="page_52" class="page" style="width:70%;">Page 52, Expert systems</a>
+<p class="indent3-ka1">If the expert system first chooses a method of detection, it reduces the number of combinations by a factor of 3 (since one-third of all combinations rely upon UV detection). If, instead, it starts by selecting an appropriate pure or mixed solvent out of perhaps 90 that might be available, the number of combinations is cut by that factor of 90. The size of the problem is thus rapidly reduced if, at each stage in the analysis, the system can make an intelligent choice about what information it should look for next.</p>
+<aside class="abc" style="margin-top:0.7em;" epub:type="sidebar">
+<p class="noindent2">Rule-valued searching is closer to the strategy that a human expert would use to tackle a problem than forward- or backward-chaining.</p>
+</aside>
+<p class="indent3-ka1">Rule-valued searching has clear attractions, since the solutions are being pursued in a thoughtful and direct fashion. However, there are significant overheads. This sort of inference is relatively complicated to implement, and requires constant reassessment of the production rules to determine what should be done next. Gains established by following very direct routes to a solution may be wiped out by the additional time spent inspecting the knowledge base to identify just what those routes are.</p>
+<p class="indent3-ka1">As a rule-valued searcher attempts to be efficient, it may introduce considerable variation into the path that the inference engine follows through the knowledge base for only slight differences in input data. The expert system may also pursue a line of thought for a while, only to apparently lose interest in it, before returning unexpectedly to the same line of questioning later. It may feel that it can solve the problem more directly by doing this, though, as we have suggested, it may not always succeed because of the overheads inherent in the method.</p>
+</section>
+<section epub:type="chapter" id="sec_3.6">
+<p class="noindent">&#160;</p>
+<p class="noindent">&#160;</p>
+<h2 class="h2"><b>3.6&#160;&#160;Communication: the human interface</b></h2>
+<p class="noindentt">The interface with the user is a significant part of every expert system. You might imagine that the user simply poses a question and then sits back to wait for the answer, but this under-estimates the importance of the interface.</p>
+<aside class="abc" style="margin-top:-2.5em;" epub:type="sidebar">
+<p class="noindent2">It is evident that the interface must be at an appropriate level: a human expert, who has asked a computerized expert to confirm his own opinion, will expect a higher level of technical detail than a novice user will need. Equally, while a regurgitation of rules from the knowledge base might be sufficient explanation for a human expert, this would not be a suitable response to queries from a non-expert.</p>
+</aside>
+<p class="indent3-ka1">An expert system&#x2019;s task is not necessarily complete when it answers a user&#x2019;s question; it must also be able to explain its thinking, that is, show how it reached its conclusions, and justify its arguments.</p>
+<p class="indent3-ka1">This may seem of less fundamental importance than the requirement that the system deliver reliable advice, but its significance may become clearer if we recall the role that an expert system plays. It generally advises a user whose own expertise is inferior to that of the system. The expert system may have, and be able to manipulate, knowledge which lies well beyond the competence of the user. As an immediate consequence, <i>the user cannot usually assess without further investigation whether advice provided by the expert system is reliable; the advice simply has to be taken on trust.</i></p>
+<p class="indent3-ka1">This can be a bit awkward. No matter how competent the system, sometimes the user will feel sure that the expert system has got things wrong. Suppose an organic synthesis expert system proposed to synthesize phenol starting from carbon monoxide and water; we would surely view this suggestion with a good deal of (justifiable) scepticism. If some convincing<a id="page_53" class="page">Page 53, Expert systems</a>explanation of how the conclusion had been reached, and why it was sensible, was forthcoming, we might at least consider the recommendation, but in the absence of adequate justification, we would seriously doubt whether the expert system understood any organic chemistry. If the interface is sophisticated, the user may be able to engage in a dialogue of investigation; this dialogue can explain how decisions are reached, and will enhance the user&#x2019;s confidence in the system. If the interface is unable to support such a dialogue, even well-founded recommendations of the system may be dismissed by the user.</p>
+<p class="indent3-ka1">Working expert systems do not often make such eccentric suggestions, but their conclusions may not always be what the user expected. It is important therefore that the workings of an expert system should be &#x2018;transparent&#x2019;: that is, it should be straightforward for the user to determine what the expert system is doing and why it is doing it. Although transparency is especially important when conclusions are unexpected, even when the expert system is getting the right answer, the user needs to be reassured that it is getting the right answer for the right reasons.</p>
+<p class="indent3-ka1">A well thought-out interface also reduces the chance that the user will introduce faulty or irrelevant data, whose presence might prevent the system reaching the correct conclusion. Here a question is posed by an expert system helping (?) a user to perform an analysis of metals in an aqueous sample:</p>
+<table class="width70d">
+<tr>
+<td style="vertical-align:top;" class="width50"><p class="tabled" style="margin-left:0em;"><i>Expert&#160;System:</i></p></td>
+<td style="vertical-align:top;" class="width50"><p class="table2">&#x2018;I think precipitating solids from this solution will be a problem; do you agree? (Yes/No)&#x2019;</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><p class="tabled" style="margin-left:0em;"><i>User:</i></p></td>
+<td style="vertical-align:top;"><p class="table2">&#x2018; ??? &#x2019;</p></td>
+</tr>
+</table>
+<p class="indent3-ka1t">What does the expert system mean by this? If the user responds &#x2018;yes&#x2019;, will the system interpret this as &#x2018;it will be hard to get this sample to precipitate&#x2019; or as &#x2018;this sample may form unwanted precipitates&#x2019;? Presumably the expert system knows what it is doing, but it is unlikely that the user does. This question is drawn from a poorly-designed interface, and the consequence of such ambiguous requests may be that the expert system fails to answer the question, or (more seriously) offers faulty advice which a novice user might accept without question.</p>
+<aside class="abc" style="margin-top:4em;" epub:type="sidebar">
+<p class="noindent2">Uncertainty is widespread in chemical data. For example, a mass spectrum fragmentation pattern might be complicated by the presence of impurities, or peak intensities might be compromised by instrumental errors. An IR spectrum of an unknown might cover only part of the range of wavelengths that an expert system would like to analyse.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_3.7">
+<p class="noindent">&#160;</p>
+<h2 class="h2"><b>3.7&#160;&#160;Imprecise data: heuristics</b></h2>
+<p class="noindentt">Scientific data are rarely perfect. An expert system may cope effectively with error-free data, but if it is unreliable when the data are incomplete, incorrect or misleading, it will be worthless in an experimental science such as chemistry. Most scientific expert systems will encounter, and must be able to handle, data containing experimental, human, and other error.</p>
+<p class="indent3-ka1">This presents a serious difficulty to the inference engine. Not only need it deal with assertions which are often statements of probability, rather than fact, but also with input data that contain errors. Indeed, the situation is even<a id="page_54" class="page">Page 54, Expert systems</a>worse than this, since the probability in an assertion may itself be only a matter of guesswork. How should the inference engine handle such uncertainty?</p>
+<p class="indent3-ka1">Humans use short&#x2013;cuts, hunches, and rules of thumb in tackling a problem and it is this sort of specialized (and often intangible) knowledge that makes an expert so valuable. Knowledge derived from experience (&#x2018;This seismic pattern suggests the presence of oil-bearing rocks below&#x2019;) is of little use in conventional programs, but is potentially crucial to an expert system.</p>
+<p class="indent3-ka1">If this woolly information can be incorporated into the knowledge base, it will greatly expand the capability of the system, but turning vague ideas and hunches into concrete rules is rarely straightforward. Such knowledge is not numerical (what is a &#x2018;fluffy precipitate&#x2019; in quantitative terms?) and human experts often have an inflated idea of the reliability of their hunches. No matter how valuable such information might be, the expert system cannot use it unless it can be coded in a form suited to inclusion in the knowledge base. The normal way that this is done is through <b>heuristics.</b></p>
+<p class="indent3-ka1t"><i>A heuristic is a rule of thumb which gives guidance about how to solve a particular problem.</i></p>
+<p class="indent3-ka1t">The key word in this definition is &#x2018;guidance&#x2019;. &#x2018;Most drugs are molecules of low molecular weight&#x2019; is a heuristic. It does not define how to synthesize a useful drug, or what structure it must have, but it narrows the field. A heuristic enables a choice to be made among alternatives when there may be no unambiguous theoretical justification for any particular choice. From this heuristic, we can conclude, given a choice between a polymer of molecular weight 50 000 Da and an organic molecule of molecular weight 300 Da, that the latter is more likely to be a useful drug. The heuristic does not give us enough information to be <i>sure</i> that such a conclusion is right, though.</p>
+<p class="indent3-ka1">Heuristics are held in the knowledge base as assertions or as production rules. These hold with some probability, and can be expressed using notation of the kind introduced earlier:</p>
+<p class="centerd">DRUG=[MW&lt; 500,0.8]</p>
+<p class="centerd1">BALD_MAN=[SEXY,0.01]</p>
+<p class="blockquote1"><b>If</b> the product is black <b>and</b> the product is gooey <b>and</b> the product was synthesized by a student <b>then</b> the student will not make a good organic chemist (with a probability of 0.95).</p>
+<p class="indent3-ka1t">Generally the knowledge base does not distinguish between assertions whose probabilities are known precisely (because they can be found statistically), those whose probabilities are a matter of guesswork, and those whose probabilities have been derived through the deductions of the inference engine. For example, for a single molecule, pulled at random out of a racemic mixture, we could write</p>
+<p class="indent3-ka1t">MOLECULE=[d-isomer,0.5]</p>
+<p class="noindent"><a id="page_55" class="page">Page 55, Expert systems</a>with confidence, since a racemic mixture contains exactly 50 per cent of each of the <i>d</i> and <i>l</i> isomers. This assertion has the same structure as one in which the probability is a matter of guesswork:</p>
+<p class="indent3-ka1t">ME=[1 st_class_degree,0.4]</p>
+<p class="indent3-ka1t">This is an informed guess, and will remain so until we know the exam results, when it will become an assertion of known probability equal to zero or one.</p>
+<p class="noindent">&#160;</p>
+<h3 class="h3"><b>How production rules combine heuristics</b></h3>
+<p class="noindentt">It is a simple matter to use production rules to combine assertions for which all probabilities are unity. For example:</p>
+<p class="blockquotet"><b>If</b> the compound contains only hydrogen and carbon <b>and if</b>there are no rings or multiple bonds, <b>then</b> the compound is an alkane.</p>
+<p class="indent3-ka1t">The inference engine needs merely to determine from the knowledge base or the user whether the conditions hold, and can reach an unambiguous conclusion. Matters are more complicated, though, if the conditions to be combined are heuristics. When production rules incorporate probabilities, they are written in the form:</p>
+<p class="blockquotet"><b>If</b> condition<sub>1</sub> holds <i>(with probability<sub>1</sub>)</i> <b>and</b> condition<sub>2</sub> holds <i>(with probability<sub>2</sub>)</i> <b>and ........then</b> draw conclusion<sub>1</sub> <i>(with certainty<sub>1</sub>)</i> <b>and</b> draw conclusion<sub>2</sub> <i>(with certainty<sub>2</sub>)</i> <b>and .....</b></p>
+<p class="indent3-ka1t">The confidence with which we can draw each conclusion depends on</p>
+<p class="indentbulletlbt"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;&#160;&#160;&#160;&#160;the probability with which each condition holds, and</p>
+<p class="indentbulletlb"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;&#160;&#160;&#160;&#160;the certainty with which the conclusion itself follows, if every condition holds.</p>
+<aside class="abc" style="margin-top:2.5em;" epub:type="sidebar">
+<p class="noindent2">This is the &#x2018;strength of a chain is that of its weakest link&#x2019; argument.</p>
+</aside>
+<p class="indent3-ka1t">Clearly the likelihood that all conditions are simultaneously true cannot be greater than the probability that the most improbable one is true. It is common (but not universal) practice, if there is more than one condition, to set the overall probability that <i>all</i> conditions hold equal to the probability that the <i>least likely</i> condition in the rule holds.</p>
+<p class="indent3-ka1">To see how this works in practice, suppose the knowledge base contains the following information:</p>
+<p class="centerd">DIET=[POOR,0.6]</p>
+<p class="centerd1">SYMPTOM=[POOR_NIGHT_VISION,0.8]</p>
+<p class="noindentt">with the meaning:</p>
+<a id="page_56" class="page" style="width:70%;">Page 56, Expert systems</a>
+<p class="indentbulletlb"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;&#160;&#160;&#160;&#160;there is evidence that suggests, with a 60 per cent probability, that the patient has a poor diet;</p>
+<p class="indentbulletlb"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;&#160;&#160;&#160;&#160;there is strong evidence (80 per cent) that the patient has poor low-light vision.</p>
+<p class="indent3-ka1t">We now apply the production rule:</p>
+<p class="left-ka" style="margin-top:1em;"><b>If</b> the diet is poor <b>and</b> the patient has poor low-light vision <b>then</b> the patient is suffering from night-blindness (with certainty 0.9) <b>and</b> vitamin A should be administered (with certainty 1.0)</p>
+<p class="indent3-ka1t">The conjunction of the two conditions (the probability that they both hold) is taken to be the smaller of the two probabilities, that is 0.6. The probability that the patient has night-blindness is then the product of the probability that both conditions in the production rule hold (0.6) and the probability that, if those conditions hold, night blindness is indicated (0.9), i.e. 0.9&#x00D7;0.6=0.54.</p>
+<p class="indent3-ka1">Even a rudimentary knowledge of statistics will tell you that this is not a statistically valid way to proceed. It cannot be correct to ignore the probability of every condition in a production rule other than that with the lowest probability. If two <i>independent</i> events have probabilities of 0.8 and 0.6, the probability that they will both occur is 0.8 &#x00D7; 0.6 = 0.48, not 0.6.</p>
+<p class="indent3-ka1">Nevertheless, many working expert systems use this weakest link rule. The justification for this apparent disregard of good statistical practice is twofold. First there may be insufficient information available to the expert system to know whether two conditions are statistically related (there is a significant chance that the poor low-light vision is a direct result of the poor diet, so the probabilities of the two conditions are not necessarily independent). Since the way we combine probabilities depends upon whether two events are dependent or independent, there is a potentially unresolvable uncertainty here.</p>
+<p class="indent3-ka1">Secondly, the use of statistically more rigorous methods often has little effect on the conclusions of the expert system, but slows its decision-making. If nothing is to be gained by trying to apply statistical methods faithfully, they may (with caution) be put to one side.</p>
+<p class="indent3-ka1">It is important to understand that <i>the power and utility of an expert system is determined primarily by the knowledge that it contains, rather than by the sophistication of the statistical methods that it uses to combine heuristics.</i> An ability to reason in a statistically pure way can never make up for inadequate information in the knowledge base. The reason for this is that the role of expert systems is often to rank hypotheses. Many questions do not have a single right answer, particularly in science; there may be several answers, or even hundreds. The system must not be defeated by this variability, and will generally tackle the problem by determining which among several alternative conclusions is best, not by attempting to determine the exact probability that its favoured conclusion is &#x2018;right&#x2019;. The certainty with which each conclusion can be drawn is usually of secondary importance, provided that the conclusions are correctly ordered.</p>
+<a id="page_57" class="page" style="width:70%;">Page 57, Expert systems</a>
+<p class="indent3-ka1">This is just the way a human expert works. For example, if only IR and NMR spectra of the product of a new synthesis could be obtained, an organic chemist might be reluctant to suggest an identification for the product from the data available. There might be several structures consistent with the spectra; neither computerized nor human expert could then guarantee positive identification. Various possible structures could be put forward in an order of preference, after the degree to which each explained the spectra had been assessed; further tests might be proposed to help distinguish between the candidate structures. The value of this approach is not determined by whether the exact probability that a particular structure is right can be calculated, but by the probability that, on the basis of the data available, the most promising structure is ranked first.</p>
+</section>
+<section epub:type="chapter" id="sec_3.8">
+<p class="noindent">&#160;</p>
+<h2 class="h2"><b>3.8&#160;&#160;Working in real time: using an expert system to direct actions</b></h2>
+<aside class="abc" style="margin-top:1.5em;" epub:type="sidebar">
+<p class="noindent2">A serious accident in Seveso (Italy), in which 2 kg of the severe poison dioxin was released into the atmosphere, was believed to be due to a runaway chemical reaction. Exothermic reactions gradually increased the temperature of material in a reactor which had been incorrectly shut down. The increased temperature promoted further exothermic reaction, which led eventually to explosive rupture of a safety disc and loss of much of the reactor&#x2019;s contents. In the moments immediately before such an explosive outbreak, the temperature may be rising at the rate of tens of degrees per second. In such circumstances, making the right decision, and making it quickly, is obviously crucial.</p>
+</aside>
+<p class="noindentt">Expert systems are increasingly used to control instruments or direct industrial processes. When they have this kind of responsibility, their duties go beyond that of just providing advice: they must also implement their own recommendations in the world that they control. Furthermore, as they operate in real time, they must make decisions within fixed and demanding time-scales, and this imposes restrictions on the way that they function.</p>
+<p class="indent3-ka1">In a complex industrial installation, it is vital that computers can make intelligent decisions within moments of data, such as temperature and pressure, arriving at an expert system computer. There is no time for decisions to be filtered through a human for approval. If an expert system running a chemical synthesis line makes the wrong decisions, or cannot make the right decisions quickly enough, the result may not be just lost production, but a possible disaster.</p>
+<p class="indent3-ka1">Intelligent control of instruments in major industrial plants is growing, because the speed at which information is generated outstrips by a large factor the rate at which humans can understand and process it. All operations of an expert system controlling an industrial plant must therefore be fast, and to guarantee this, it is common for large expert systems to be selective in the data that they gather. The more important data emerging from a chemical plant may be polled continuously at high speed, while other data are monitored in a &#x2018;background&#x2019; mode, the expert system collecting them infrequently, and assessing them when time is available. This mirrors closely what a human operator would choose to do, paying close attention to a few key readings; it illustrates the degree to which the operation of human and computer experts are converging.</p>
+<a id="page_58" class="page" style="width:70%;">Page 58, Expert systems</a>
+<h3 class="h3"><b>Adapting the knowledge base in real time</b></h3>
+<p class="noindentt">Knowledge bases in advisory expert systems are largely static. The knowledge base of a system working in tenancy law might consist of information on relevant legislation and recent legal cases, and, once built, will change only slowly, possibly remaining unaltered for months at a time.</p>
+<p class="indent3-ka1">By contrast, the knowledge base of systems controlling equipment or industrial plant is fluid, and contains both fixed and variable knowledge. Data may change substantially within minutes or seconds, and there may be hundreds or thousands of readings that the expert system must monitor.</p>
+<p class="indent3-ka1">Expert systems which retain dynamic data within the knowledge base must have some means to represent facts like &#x2018;the green filter is in the light beam&#x2019;. Furthermore, the inference engine must be able to bring about physical changes and adapt the knowledge base to reflect these changes.</p>
+<p class="indent3-ka1">A real-time expert system has a complete record of the present state of items over which it has control in the form of entries in its world list:</p>
+<p class="indent3-ka1t">W = {IN(RED_FILTER,SAMPLE_BEAM),<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;AT(MAIN_GRATING,540), ....}</p>
+<p class="indent3-ka1t">This indicates that the red filter is in the sample beam, that the grating is positioned to pass light with a wavelength of 540 nm and so on.</p>
+<p class="indent3-ka1">When the expert system decides that a change must be made, actions are requested by the inference engine executing an instruction such as:</p>
+<p class="indent3-ka1t">MOVE[RED_FILTER, SAMPLE_BEAM, REFERENCE_BEAM]</p>
+<p class="indent3-ka1t">This has a twofold effect. First, a message is sent to the spectrometer to bring about a physical change (in this instance, the movement of the filter from one position to another). Secondly, changes are made to the knowledge base by making deletions from and additions to the world list. If the filter is moved from sample to reference beam, this change can be recorded by deleting</p>
+<p class="indent3-ka1t">IN(RED_FILTER,SAMPLE_BEAM)</p>
+<p class="noindentt">from the world list, and substituting</p>
+<p class="indent3-ka1t">IN(RED_FILTER,REFERENCE_BEAM).</p>
+<p class="indent3-ka1t">However, while it may be simple for the inference engine to ask for a change, it may not be so straightforward to actually bring that change about. There are situations in which a task can be completed only by first taking a step in the wrong direction; the specialized reasoning of the expert system can then be invaluable.</p>
+<p class="indent3-ka1">Suppose an expert system controls the issue of items from a scientific hardware store. The store contains boxed equipment to be retrieved by a robot storekeeper, which searches through the store under the direction of the expert system and collects the requested items for delivery.</p>
+<a id="page_59" class="page" style="width:70%;">Page 59, Expert systems</a>
+<p class="indent3-ka1">In the interest of efficient storage, boxes may be piled several high on each shelf and an item which the robot must retrieve may be at the bottom of a stack. The expert system must be aware that to achieve its goal (retrieve a certain box), it may need to tell the robot to do something which initially is counter&#x2013;productive: boxes may have to be moved from the shelves where they belong to adjoining shelves, where they do not, to get at the box required. The first step that the expert system must decide upon is thus to put things in the wrong place (<a href="#fig_3.9">Fig. 3.9</a>).</p>
+<p class="noindent">&#160;</p>
+<figure style="margin-left:0em;width:70%;" id="fig_3.9">
+ <img src="../images/page59-1.jpg" alt="images"/>
+<figcaption style="text-align:center;width:100%;"><b>Fig. 3.9</b> An example of a task in which the first step moves the system away from its goal.</figcaption>
+</figure>
+<p class="indent3-ka1">This is a trivial example, but in an industrial plant related problems on a larger scale may require an expert system to display a high degree of intelligence, so that every operation is carried out in a safe, logical, and yet direct way.</p>
+<p class="indent3-ka1">Similar considerations apply to scientific instruments. Some instruments contain few movable components, and relationships written into the knowledge base can then define every conceivable safe move. If there are dozens of components, however, there may be thousands of possible moves, and the knowledge base might not be able to accommodate instructions for every one. (Indeed, instructions for some moves might be unknown.) The expert system then comes into its own, determining a safe path for every move before starting.</p>
+</section>
+<section epub:type="chapter" id="sec_3.9">
+<a id="page_60" class="page" style="width:70%;">Page 60, Expert systems</a>
+<h2 class="h2"><b>3.9&#160;&#160;Limitations of expert systems</b></h2>
+<p class="noindentt">It is not difficult to identify situations in which an expert system might be useful. If a task requires the advice of a human expert, a computerized expert can, in principle, help. However, in practice things may not be so straightforward.</p>
+<p class="indent3-ka1">It is essential that suitable experts be available and willing to provide input into the system; if none exist the system clearly cannot be built, no matter what its potential.</p>
+<p class="indent3-ka1">A more fundamental difficulty is that it may not be possible to re-cast expert knowledge into a form that can be fed into the knowledge base (recall the &#x2018;fluffy precipitate&#x2019;). Both the data and the task confronting the expert system must be capable of being suitably coded.</p>
+<aside class="abc" style="margin-top:1.5em;" epub:type="sidebar">
+<p class="noindent2">IUPAC: International Union for Pure and Applied Chemistry.</p>
+</aside>
+<p class="indent3-ka1">There are tasks that a human expert could complete, but that a computerized expert would find almost impossible. Suppose IUPAC chose to devise a new method for the systematic naming of inorganic compounds; it would be essential to enlist the help of experts in inorganic chemistry. However, an expert system could contribute little, even if it knew the present names of all inorganic chemicals, since such a systematic re-naming requires not just the application of rules to a problem, but the creative effort of making new rules, and the very personal judgement of whether those rules are &#x2018;clear&#x2019;, &#x2018;logical&#x2019;, &#x2018;understandable&#x2019; and so on. In this kind of application expert systems are impotent.</p>
+<p class="indent3-ka1">Tasks also exist which are inherently uncertain because they are based on intangible data. The selection of a candidate by interview is one example. &#x2018;I know she&#x2019;s just the person &#x2013; she made such a good impression, don&#x2019;t you think?&#x2019; Could such a judgement be made by a computer? And if it were, would we allow the computer to make the final choice if we preferred a different candidate? Selection of candidates by interview is something of an art (the unsuccessful candidates might call it a lottery); the rules defining it are almost certainly so vague as to prevent the building of an expert system that could take over from humans.</p>
+<aside class="abc" style="margin-top:-3.5em;" epub:type="sidebar">
+<p class="noindent2">Progress is being made in the development of expert systems which can make subjective assessments. By associating human evaluations of texture, fluidity, sun-screening power, and aroma with the constituents of sun blockers, a major pharmaceutical company in Britain is using an expert system to formulate sun-blocking products. Personal judgement of the smell and texture of the product plays a significant part, but the expert system is successfully devising new products of high quality by combining human knowledge with its own logical abilities.</p>
+</aside>
+</section>
+<section epub:type="chapter" id="sec_3.10">
+<h2 class="h2"><b>3.10&#160;&#160;The application of expert systems to chemistry</b></h2>
+<p class="noindentt">In view of the limitations discussed above, you might be wondering if, after all, there is any place for expert systems in science. There are many applications in which expert systems are potentially valuable, but it is important to be aware of these limitations. The key question to be answered when considering the construction of a new system is whether the task and knowledge can be coded in a suitable form.</p>
+<p class="indent3-ka1">This may be tricky; experienced designers can look at a prototype car on a computer screen and know its shape is &#x2018;not quite right&#x2019;, but be unable to explain what is wrong. Chemists formulating new perfumes meet similar difficulties. To know what the public will think is a desirable perfume, or an attractive shape for a car requires an expert, but transforming an expert&#x2019;s opinion on such matters into rules that can be placed into a knowledge base is <a id="page_61" class="page">Page 61, Expert systems</a>difficult. It is not easy for an expert system to make such subjective assessments reliably.</p>
+<p class="indent3-ka1">In science the scope for expert systems is substantial, but the task that they face is significant. A scientific expert system should be able to cope with error-loaded or incomplete data, do everything a human expert can do in a limited domain, and be able to explain its reasoning. This is quite a shopping list, and suggests that a considerable amount of work might be needed to develop a good expert system.</p>
+<p class="indent3-ka1">To reduce this task to manageable proportions, expert systems are usually constructed from a commercially-available &#x2018;shell&#x2019;. This provides the basic components of the system &#x2013; an empty knowledge base, an inference engine, and a user interface &#x2013; as a package, so that the user can concentrate on building a stock of assertions and rules in the knowledge base, the core of a productive working system. Use of a shell also reduces the effort required for maintenance, as the knowledge base expands.</p>
+<p class="indent3-ka1">Expert systems built in this way are now helping scientists in molecular modelling, chemical kinetics, analytical methods development, organic synthesis, imaging, diagnostic systems, and many other areas. Their most widespread use in chemistry is presently in the control of equipment and robot samplers, and acting as advisers in analytical procedures.</p>
+<p class="indent3-ka1">In the analytical laboratory a good system might:</p>
+<p class="indentbulletlbt"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;&#160;&#160;&#160;&#160;advise the user on methods of analysis for different samples;</p>
+<p class="indentbulletlb"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;&#160;&#160;&#160;&#160;interpret spectra, chromatograms, electrochemical measurements, and other data;</p>
+<p class="indentbulletlb"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;&#160;&#160;&#160;&#160;instruct novice users of the system;</p>
+<p class="indentbulletlb"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;&#160;&#160;&#160;&#160;monitor equipment performance;</p>
+<p class="indentbulletlb"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;&#160;&#160;&#160;&#160;report defects, and offer help when errors are detected;</p>
+<p class="indentbulletlb"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;&#160;&#160;&#160;&#160;schedule work and instruments if samples must be processed with different priorities;</p>
+<p class="indentbulletlb"><img src="../images/page47-2.jpg" alt="images"/>&#160;&#160;&#160;&#160;&#160;&#160;control instruments, robotic samplers or process lines.</p>
+<p class="indent3-ka1t">It will be clear that any system which can meet all these objectives will have a significant part to play in the operation of a large laboratory.</p>
+<p class="indent3-ka1">The value of an expert system depends markedly on the quality of information within it and the sophistication of the shell with which it was built. As growing computer power encourages the development of wider knowledge bases, the growth and diversification of these systems in the laboratory is certain to continue.</p>
+<h1 class="main1"><b>Further reading</b></h1>
+<p class="noindente">Jackson, P. (1990). <i>Introduction to expert systems</i>. Addison-Wesley, Wokingham.</p>
+<p class="noindente">Lucas, P. and van der Gaag, L. (1991) <i>Principles of expert systems</i>. Addison-Wesley, Wokingham.</p> 
+</section>
+</section>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>1 Introduction</title>
+<link rel="stylesheet" href="../styles/stylesheet.css" type="text/css"/>
+</head>
+<body>
+<section epub:type="chapter" id="ch15">
+<a id="page_83" class="page" style="width:70%;">Page 83, 15 Fourier series and transforms</a>
+<h1 class="main">15<span class="space">&#160;</span>Fourier series and transforms</h1>
+<section epub:type="chapter" id="ch15.1">
+<h2 class="h2">15.1<span class="space">&#160;</span>Approximating periodic functions</h2>
+<p class="noindent">In <a href="Chapter6.xhtml">chapter 6</a>, we saw how a Taylor series could be used to mimic an arbitrary function by a simple low-order polynomial in the neighbourhood of a particular point. An alternative approximation is provided by a Fourier series, which is appropriate when the curve of interest is periodic</p>
+<p class="equ">
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="eqn15.1"><mtable><mtr><mtd><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mtext>&#x2009;</mtext><mo>&#x2248;</mo><msub><mi>a</mi><mn>0</mn></msub><mo>/</mo><mn>2</mn><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><mi>cos</mi><mrow><mo>(</mo><mrow><mi>&#x03C9;</mi><mi>x</mi></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub><mi>cos</mi><mrow><mo>(</mo><mrow><mn>2</mn><mi>&#x03C9;</mi><mi>x</mi></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub><mi>cos</mi><mrow><mo>(</mo><mrow><mn>3</mn><mi>&#x03C9;</mi><mi>x</mi></mrow><mo>)</mo></mrow><mo>+</mo><mn>...</mn></mrow></mtd></mtr><mtr><mtd><mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mo>+</mo><msub><mi>b</mi><mn>1</mn></msub><mi>sin</mi><mrow><mo>(</mo><mrow><mi>&#x03C9;</mi><mi>x</mi></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>b</mi><mn>2</mn></msub><mi>sin</mi><mrow><mo>(</mo><mrow><mn>2</mn><mi>&#x03C9;</mi><mi>x</mi></mrow><mo>)</mo></mrow><mo>+</mo><msub><mi>b</mi><mn>3</mn></msub><mi>sin</mi><mrow><mo>(</mo><mrow><mn>3</mn><mi>&#x03C9;</mi><mi>x</mi></mrow><mo>)</mo></mrow><mo>+</mo><mn>...</mn></mrow></mtd></mtr></mtable></math><span class="no">(15.1)</span></p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<figure id="he_9780198504283_0060">
+<img src="../images/he_9780198504283_0060.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">where the <i>a</i>&#8217;s, <i>b</i>&#8217;s and &#969; are constants; in fact, <a href="#eqn15.1">eqn (15.1)</a> is the counterpart of <a href="Chapter6.xhtml#eqn6.1">eqn (6.1)</a>. That is to say, any repeating function can be represented as a sum of sines and cosines. We could, of course, replace <i>a</i><sub>1</sub> cos(&#969;<i>x</i>) + <i>b</i><sub>1</sub> sin(&#969;<i>x</i>) with <i>C</i><sub>1</sub> cos(&#969;<i>x</i> + &#966;) or <i>C</i><sub>1</sub> sin(&#969;<i>x</i> + &#966;<sub>1</sub>), but the former choice is usually preferable due to its linearity. The <i>x</i>-period of <a href="#eqn15.1">eqn (15.1)</a> is given by the lowest <i>harmonic,</i> &#969;, as 2&#960;/&#969;.</p>
+<p class="indent">By multiplying <a href="#eqn15.1">eqn (15.1)</a> separately by cos(<i>n&#969;x</i>) and sin(<i>n&#969;x</i>), and integrating both sides over one repeat interval, it can be shown that the Fourier coefficients are given by</p>
+<p class="equ">
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="eqn15.2"><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mfrac><mi>&#x03C9;</mi><mi>&#x03C0;</mi></mfrac><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mtext>o</mtext><mrow><mn>2</mn><mi>&#x03C0;</mi><mo>/</mo><mi>&#x03C9;</mi></mrow></munderover><mrow><mtext>f</mtext><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></mrow></mstyle><mi>cos</mi><mrow><mo>(</mo><mrow><mi>n</mi><mi>&#x03C9;</mi><mi>x</mi></mrow><mo>)</mo></mrow><mtext>d</mtext><mi>x</mi><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>and</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><msub><mi>b</mi><mi>n</mi></msub><mo>=</mo><mfrac><mi>&#x03C9;</mi><mi>&#x03C0;</mi></mfrac><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mtext>o</mtext><mrow><mn>2</mn><mi>&#x03C0;</mi><mo>/</mo><mi>&#x03C9;</mi></mrow></munderover><mrow><mtext>f</mtext><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></mrow></mstyle><mi>sin</mi><mrow><mo>(</mo><mrow><mi>n</mi><mi>&#x03C9;</mi><mi>x</mi></mrow><mo>)</mo></mrow><mtext>d</mtext><mi>x</mi></mrow></math><span class="no">(15.2)</span></p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure id="he_9780198504283_0061">
+<img src="../images/he_9780198504283_0061.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">where <i>n</i> = 1, 2, 3,..., and relies on the fact that sines and cosines are orthogonal. In other words, the integral of sin (<i>m&#969;x</i>) sin (<i>n&#969;x</i>) and cos(<i>m&#969;x</i>) cos(<i>n&#969;x</i>) from <i>x</i> = 0 to <i>x</i> = 2&#960;/&#969; is zero <i>m &#8800; n</i> and is always nought over this range for any mixed combination of sines and cosines. The reason for the odd-looking factor of a half with the <i>a</i><sub>0</sub> in <a href="#eqn15.1">eqn (15.1)</a> is that the formulae of <a href="#eqn15.2">eqn (15.2)</a> then work even for <i>n</i> = 0; the corresponding term for <i>b</i><sub>0</sub> has been omitted because its value turns out to be zero.</p>
+<p class="indent">In practice, a Fourier series can be used to approximate a function even though it isn&#8217;t actually periodic. The proviso is that we should only be interested in f(<i>x</i>) over a limited range, 0&#8804;<i>x</i>&#8804;<i>L</i>) say. Then we can make it pseudo-repeating by arbitrarily defining f(<i>x</i>) = f(<i>x</i> + <i>jL</i>), where <i>j</i> is an integer, or by letting f(<i>x</i>) = f(&#8211;<i>x</i>) and f(<i>x</i>) = f(<i>x</i> + 2<i>jL</i>), or by setting f(<i>x</i>) = &#8211;f(&#8211;<i>x</i>) and f(<i>x</i>) = f(<i>x</i> + 2<i>jL</i>), and so on; if the period is <i>L</i> then &#969; = 2&#960;/<i>L</i>, and if it&#8217;s 2<i>L</i> then &#969; = <i>&#960;/L.</i> While each possibility will lead to a different Fourier expansion, so that there are no sine terms if f(<i>x</i>) = f(&#8211;<i>x</i>) and no cosine factors if f(<i>x</i>) = &#8211;f(&#8211;<i>x</i>), they will all give a reasonable approximation in the important region 0&#8804;<i>x</i>&#8804;<i>L</i>.</p>
+</section>
+<a id="page_84" class="page" style="width:70%;">Page 84, 15 Fourier series and transforms</a>
+<section epub:type="chapter" id="ch15.2">
+<h2 class="h2">15.2<span class="space">&#160;</span>Taylor versus Fourier series</h2>
+<p class="noindent">While a Taylor series provides a very good representation of <i>y</i> = f(<i>x</i>) near the expansion point <i>x</i> = <i>x</i><sub>0</sub>, it soon yields a poor one as |<i>x</i> &#8211; <i>x</i><sub>0</sub>| becomes large. By comparison, a Fourier series does not do an accurate job anywhere but mimics the overall shape of the curve quite well. The general characteristics of the latter, with its high-frequency oscillatory behaviour, means that a term-by-term differentiation is an extremely ill-advised operation; a corresponding integration is a much safer procedure, as the wiggles tend to cancel out. At a more technical level, a Taylor series requires that f(<i>x</i>) be differentiate many times over where as the function, and its gradient f&#8242;(<i>x</i>), need only be continuous for a Fourier series.</p>
+</section>
+<section epub:type="chapter" id="ch15.3">
+<h2 class="h2">15.3<span class="space">&#160;</span>The Fourier integral</h2>
+<aside class="abc" style="margin-top:-1em;" epub:type="sidebar">
+<figure id="he_9780198504283_0062">
+<img src="../images/he_9780198504283_0062.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">A more compact version of <a href="#eqn15.1">eqn (15.1)</a> can be obtained by using the complex number relationship of <a href="Chapter7.xhtml#eqn7.11">eqn (7.11)</a>, which ties together sines and cosines through the imaginary exponential</p>
+<p class="equ">
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="eqn15.3"><mtext>f</mtext><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mstyle displaystyle='true'><munderover><mo>&#x2211;</mo><mrow><mi>n</mi><mo>=</mo><mo>&#x2212;</mo><mi>&#x221E;</mi></mrow><mi>&#x221E;</mi></munderover><mrow><msub><mi>c</mi><mi>n</mi></msub><msup><mi>e</mi><mrow><mi>i</mi><mi>n</mi><mi>&#x03C9;</mi><mi>x</mi></mrow></msup></mrow></mstyle></math><span class="no">(15.3)</span></p>
+<p class="noindent">where the coefficients, <i>c<sub>n</sub></i>, are complex. If necessary, the c&#8217;s can be related to the <i>a</i>&#8217;s and <i>b</i>&#8217;s in <a href="#eqn15.1">eqn (15.1)</a> with <i>a<sub>n</sub></i> = (<i>c<sub>n</sub></i> + <i>c<sub>&#8722;n</sub></i>) and <i>b<sub>n</sub></i> = i(<i>c<sub>n</sub></i> &#8722; <i>c<sub>&#8722;n</sub></i>).</p>
+<p class="indent">The advantage of working in the complex notation is that it is much simpler to generalise when considering the continuum limit. That is to say, if the repeat interval of the Fourier series becomes infinitely long, so that f(<i>x</i>) is no longer required to be periodic, then the summation of <a href="#eqn15.3">eqn (15.3)</a> can be replaced with an integral</p>
+<aside class="abc" style="margin-top:-4em;" epub:type="sidebar">
+<figure id="he_9780198504283_0063">
+<img src="../images/he_9780198504283_0063.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="equ">
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="eqn15.4"><mrow><mtext>f</mtext><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi>&#x221E;</mi></mrow><mi>&#x221E;</mi></munderover><mrow><mtext>F</mtext><mrow><mo>(</mo><mi>&#x03C9;</mi><mo>)</mo></mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>&#x03C9;</mi><mi>x</mi></mrow></msup><mtext>d</mtext><mi>&#x03C9;</mi></mrow></mrow></mstyle></mrow></math><span class="no">(15.4)</span></p>
+<p class="noindent">where the &#8216;coefficient function&#8217;, F(&#969;), is given by</p>
+<p class="equ">
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="eqn15.5"><mrow><mtext>F</mtext><mrow><mo>(</mo><mi>&#x03C9;</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>&#x03C0;</mi></mrow></mfrac><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi>&#x221E;</mi></mrow><mi>&#x221E;</mi></munderover><mrow><mtext>f</mtext><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>i</mi><mi>&#x03C9;</mi><mi>x</mi></mrow></msup><mtext>d</mtext><mi>x</mi></mrow></mrow></mstyle></mrow></math><span class="no">(15.5)</span></p>
+<p class="noindent">and can be regarded as the complex, and limiting, version of <a href="#eqn15.2">eqn (15.2)</a>. In <a href="#eqn15.4">eqns (15.4)</a> and <a href="#eqn15.5">(15.5)</a>, F(&#969;) is known as the <i>Fourier transform</i> of f(<i>x</i>); and f(<i>x</i>) is the <i>inverse</i> Fourier transform of F(&#969;). Actually, which one we call the transform, and which one the inverse, is just a matter of convention; the important thing is that they come as a related pair, with opposite signs in the exponential. Even the detailed definition, in terms of the location of &#960;, can vary: sometimes both <a href="#eqn15.4">eqns (15.4)</a> and <a href="#eqn15.5">(15.5)</a> are written with integral pre-factors of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>/</mo><msqrt><mrow><mn>2</mn><mi>&#x03C0;</mi></mrow></msqrt></mrow></math>, making them look more symmetrical, while it&#8217;s also possible to have an i2<i>&#960;&#969;x</i> in the exponent and nothing else.</p>
+<aside class="abc" style="margin-top:-8em;" epub:type="sidebar">
+<figure id="he_9780198504283_0064">
+<img src="../images/he_9780198504283_0064.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">The Fourier transform of f(<i>x</i>), F(&#969;), is a &#8216;spectrum&#8217; which can be plotted graphically as a function of &#969;. Its amplitude essentially tells us how much a sinusoidal curve of frequency co contributes towards the synthesis of f(<i>x</i>). By<a id="page_85" class="page">Page 85, 15 Fourier series and transforms</a> substituting f(<i>x</i>) = &#948;(<i>x</i> &#8211; <i>d</i>/2) + &#948;(<i>x</i> + <i>d/2</i>) in <a href="#eqn15.5">eqn (15.5)</a>, for example, where &#948;(<i>x</i> &#8211; <i>x</i><sub>0</sub>) is a <i>delta-function</i> representing a very narrow spike of unit area at <i>x</i> = <i>x</i><sub>0</sub>, so that <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle='false'><mrow><mo>&#x222B;</mo><mrow><mtext>&#x03B4;</mtext><mo stretchy='false'>(</mo><mi>x</mi><mo>&#x2212;</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy='false'>)</mo><mi>exp</mi><mo stretchy='false'>(</mo><mo>&#x2212;</mo><mtext>i</mtext><mi>&#x03C9;</mi><mi>x</mi><mo stretchy='false'>)</mo><mtext>d</mtext><mi>x</mi><mo>=</mo><mi>exp</mi><mo stretchy='false'>(</mo><mo>&#x2212;</mo><mtext>i</mtext><mi>&#x03C9;</mi><msub><mi>x</mi><mtext>0</mtext></msub></mrow></mrow></mstyle><mo stretchy='false'>)</mo></mrow></math>, it is readily shown that the Fourier transform of two sharp peaks separated by a distance <i>d</i> is proportional to cos(&#969;<i>d</i>/2). Similarly, putting f(<i>x</i>) = 1 for <i>&#8211;d</i>/2&#8804;<i>x</i>&#8804;<i>d</i>/2 and zero otherwise leads to the result that the Fourier transform of a &#8216;top-hat&#8217;, or &#8216;box&#8217;, function is related to the <i>sine function,</i> sin(&#952;)/&#952;, where &#952; = &#969;<i>d</i>/2. What both these cases indicate is that the width of the features in F(&#969;) is inversely proportional to the characteristic spread of the structure in f(<i>x</i>): the narrower the function the broader its Fourier transform, and vice versa.</p>
+<aside class="abc" style="margin-top:-12.5em;" epub:type="sidebar">
+<figure id="he_9780198504283_0065">
+<img src="../images/he_9780198504283_0065.jpg" alt="images"/>
+</figure>
+</aside>
+</section>
+<section epub:type="chapter" id="ch15.4">
+<h2 class="h2">15.4<span class="space">&#160;</span>Some formal properties</h2>
+<p class="noindent">Hitherto we have implicitly assumed that f(<i>x</i>) is a real function, in that f(<i>x</i>) = f(<i>x</i>)<sup>*</sup>, and can be plotted as a curve on a piece of paper, but there is nothing to stop it from being complex as far as <a href="#eqn15.4">eqns (15.4)</a> and <a href="#eqn15.5">(15.5)</a> are concerned. Indeed, F(&#969;) is generally complex. If f(<i>x</i>) is real, as it usually is, then its Fourier transform can be shown to be <i>conjugate symmetric</i>; that is, F(&#969;) = F(&#8211;&#969;)<sup>*</sup>. Other properties of F(&#969;) can also be derived when f(<i>x</i>) exhibits symmetrical behaviour: F(&#969;) = F(&#8211;&#969;) if f(<i>x</i>) is an even function, so that f(<i>x</i>) = f(<i>&#8212;x</i>); and F(&#969;) = &#8211;F(&#8211;&#969;) when f(<i>x</i>) is odd, or f(<i>x</i>) = &#8211;f(<i>&#8211;x</i>). These features can be combined in that F(&#969;) is both real and symmetric if f(<i>x</i>) is too, and is real and odd when f(<i>x</i>) is as well.</p>
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure id="he_9780198504283_0066">
+<img src="../images/he_9780198504283_0066.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">One of the most important results in Fourier analysis is known as the <i>convolution theorem.</i> It states that</p>
+<p class="equ">
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="eqn15.6"><mtable columnalign='left'><mtr columnalign='left'><mtd columnalign='left'><mrow><mtext>f</mtext><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>g</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>&#x2297;</mo><mtext>h</mtext><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></mtd><mtd columnalign='left'><mo>&#x21D4;</mo></mtd><mtd columnalign='left'><mrow><mtext>F</mtext><mrow><mo>(</mo><mtext>&#x03C9;</mtext><mo>)</mo></mrow><mo>=</mo><mn>2</mn><mtext>&#x03C0;G</mtext><mrow><mo>(</mo><mtext>&#x03C9;</mtext><mo>)</mo></mrow><mo>&#x00D7;</mo><mtext>H</mtext><mrow><mo>(</mo><mtext>&#x03C9;</mtext><mo>)</mo></mrow></mrow></mtd></mtr></mtable></math><span class="no">(15.6)</span></p>
+<p class="noindent">where the &#8855; denotes a convolution, and F(&#969;), G(&#969;) and H(&#969;) are the Fourier transforms of f(<i>x</i>), g(<i>x</i>) and h(<i>x</i>) respectively. A convolution between two functions is defined by the integral</p>
+<p class="equ">
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="eqn15.7"><mrow><mtext>g</mtext><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>&#x2297;</mo><mtext>h</mtext><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi>&#x221E;</mi></mrow><mi>&#x221E;</mi></munderover><mrow><mtext>g</mtext><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow><mtext>h</mtext><mo stretchy='false'>(</mo><mi>x</mi><mo>&#x2212;</mo><mi>y</mi><mo stretchy='false'>)</mo><mtext>d</mtext><mi>y</mi><mo>=</mo></mrow></mrow></mstyle><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi>&#x221E;</mi></mrow><mi>&#x221E;</mi></munderover><mrow><mtext>g</mtext><mrow><mo>(</mo><mrow><mi>x</mi><mo>&#x2212;</mo><mi>y</mi></mrow><mo>)</mo></mrow><mtext>h</mtext><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow><mtext>d</mtext><mi>y</mi></mrow></mrow></mstyle></mrow></math><span class="no">(15.7)</span></p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure id="he_9780198504283_0067">
+<img src="../images/he_9780198504283_0067.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">and represents a blurring of g(<i>x</i>) by h(<i>x</i>), or vice versa. If g(<i>x</i>) contains sharp, spiky, structure and h(<i>x</i>) is a broad bell-shaped Gaussian function, for example, then g(<i>x</i>) &#8855; h(<i>x</i>) will be a smeared-out version of g(<i>x</i>). The usefulness of <a href="#eqn15.6">eqn (15.6)</a> lies in its ability to transform a potentially difficult integral in <i>x</i>-space into a straightforward product in &#969;, or Fourier, space.</p>
+<p class="indent">The final property of Fourier transforms that we will consider concerns the <i>auto-correlation function,</i> or ACF, which provides information on the distance distribution of the various structures in f(<i>x</i>). In other words, if there are two spikes separated by a distance <i>L</i> in f(<i>x</i>), and with amplitudes <i>A</i><sub>1</sub> and <i>A</i><sub>2</sub>, then they will contribute a symmetric pair of very sharp components at <i>x</i> = &#177; <i>L</i>, and magnitude <i>A</i><sub>1</sub> <i>A</i><sub>2</sub>, towards the ACF of f(<i>x</i>). It can also be shown that the ACF of f(<i>x</i>) is related to the Fourier transform of |F(&#969;)|<sup>2</sup> = F(&#969;)F(&#969;)<sup>*</sup></p>
+<aside class="abc" style="margin-top:-13em;" epub:type="sidebar">
+<figure id="he_9780198504283_0068">
+<img src="../images/he_9780198504283_0068.jpg" alt="images"/>
+</figure>
+</aside>
+<a id="page_86" class="page" style="width:70%;">Page 86, 15 Fourier series and transforms</a>
+<p class="equ">
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="eqn15.8"><mrow><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi>&#x221E;</mi></mrow><mi>&#x221E;</mi></munderover><mrow><msup><mrow><mrow><mo>|</mo><mrow><mtext>F</mtext><mrow><mo>(</mo><mtext>&#x03C9;</mtext><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup><msup><mtext>e</mtext><mrow><mtext>i&#x03C9;x</mtext></mrow></msup><mtext>d&#x03C9;</mtext><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>&#x03C0;</mi></mrow></mfrac></mrow></mrow></mstyle><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi>&#x221E;</mi></mrow><mi>&#x221E;</mi></munderover><mrow><mtext>f</mtext><msup><mrow><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>*</mo></msup><mtext>f(</mtext><mi>x</mi><mo>+</mo><mi>y</mi><mtext>)d</mtext><mi>y</mi></mrow></mrow></mstyle></mrow></math><span class="no">(15.8)</span></p>
+<p class="noindent">where the integral on the right gives a formal definition of an ACF. There is always a peak at the origin of the ACF (<i>x</i> = 0), because everything correlates with itself (separation = 0). Incidentally, putting <i>x</i> = 0 in <a href="#eqn15.8">eqn (15.8)</a> yields a special case of <i>Parseval&#8217;s theorem</i></p>
+<aside class="abc" style="margin-top:-7em;" epub:type="sidebar">
+<figure id="he_9780198504283_0069">
+<img src="../images/he_9780198504283_0069.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="equ">
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="eqn15.9"><mrow><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi>&#x221E;</mi></mrow><mi>&#x221E;</mi></munderover><mrow><msup><mrow><mrow><mo>|</mo><mrow><mtext>F</mtext><mrow><mo>(</mo><mtext>&#x03C9;</mtext><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup><mtext>d&#x03C9;</mtext><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>&#x03C0;</mi></mrow></mfrac></mrow></mrow></mstyle><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi>&#x221E;</mi></mrow><mi>&#x221E;</mi></munderover><mrow><msup><mrow><mrow><mo>|</mo><mrow><mtext>f</mtext><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup><mtext>d</mtext><mi>x</mi></mrow></mrow></mstyle></mrow></math><span class="no">(15.9)</span></p>
+<p class="noindent">which is sometimes helpful for evaluating integrals if one side is easier to work out than the other.</p>
+</section>
+<section epub:type="chapter" id="ch15.5">
+<h2 class="h2">15.5<span class="space">&#160;</span>Physical examples and insight</h2>
+<p class="noindent">Although we began this chapter by thinking about Fourier series as an analogue of the Taylor series for approximating periodic functions, Fourier transforms arise naturally in many branches of science. They occur in both a theoretical context, such as in quantum mechanics, and a physical one, in any experimental situation which entails <i>diffraction</i> or <i>interferometery.</i> While our discussion has focused on the one-dimensional case, the analysis often need to be generalised to cater for several parameters. This can easily be done by using vector notation, so that <a href="#eqn15.4">eqn (15.4)</a> becomes</p>
+<p class="equ"><math xmlns="http://www.w3.org/1998/Math/MathML" id="eqn15.10"><mtable><mtr><mtd><mrow><mtext>f</mtext><mrow><mo>(</mo><mrow><munder><mi>x</mi><mo>&#x007E;</mo></munder></mrow><mo>)</mo></mrow><mo>=</mo><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi>&#x221E;</mi></mrow><mi>&#x221E;</mi></munderover><mrow><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi>&#x221E;</mi></mrow><mi>&#x221E;</mi></munderover><mrow><mn>...</mn></mrow></mrow></mstyle></mrow></mrow></mstyle></mrow></mtd><mtd><mrow><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi>&#x221E;</mi></mrow><mi>&#x221E;</mi></munderover><mrow><mtext>F</mtext><mrow><mo>(</mo><mrow><munder><mi>&#x03C9;</mi><mo>&#x007E;</mo></munder></mrow><mo>)</mo></mrow><mi>exp</mi><mo>&#x2061;</mo><mrow><mo>(</mo><mrow><mtext>i</mtext><munder><mi>&#x03C9;</mi><mo>&#x007E;</mo></munder><mo>&#x00B7;</mo><munder><mi>x</mi><mo>&#x007E;</mo></munder></mrow><mo>)</mo></mrow><mtext>d</mtext><munder><mi>&#x03C9;</mi><mo>&#x007E;</mo></munder></mrow></mrow></mstyle></mrow></mtd><mtd><mrow></mrow></mtd></mtr></mtable></math><span class="no">(15.10)</span></p>
+<p class="noindent">and so on, where <a href="#eqn15.10">eqn ( 15.10)</a> is a surface integral if <math xmlns="http://www.w3.org/1998/Math/MathML"><munder accentunder='true'><mi>x</mi><mo>&#x02DC;</mo></munder></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><munder accentunder='true'><mtext>&#x03C9;</mtext><mo>&#x02DC;</mo></munder></math> are two-dimensional, and, a volume one if they are three-dimensional.</p>
+<aside class="abc" style="margin-top:-2.5em;" epub:type="sidebar">
+<figure id="he_9780198504283_0070">
+<img src="../images/he_9780198504283_0070.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">To get a better intuitive feel for Fourier transforms, let&#8217;s consider a few examples from <i>optics</i> that should be familiar from school physics. We&#8217;ll begin by describing the formal set-up of what is technically known as <i>Fraunhofer</i> diffraction: a plane wave of light, of wavelength &#955;, strikes a screen which allows some of it through (usually at well marked slit points) and a pattern of <i>fringes</i> is seen to be projected onto a distant wall. If <i>x</i> is the distance along the screen, and <i>q</i> is measured across the wall, then it&#8217;s not too difficult to appreciate that the net amplitude of all the waves diffracted in a certain direction, &#968;(<i>q</i>), is given by</p>
+<p class="equ">
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="eqn15.11"><mrow><mtext>&#x03C8;</mtext><mrow><mo>(</mo><mi>q</mi><mo>)</mo></mrow><mo>=</mo><msub><mtext>&#x03C8;</mtext><mn>0</mn></msub><mstyle displaystyle='true'><mrow><munderover><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi>&#x221E;</mi></mrow><mi>&#x221E;</mi></munderover><mrow><mtext>A</mtext><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><msup><mtext>e</mtext><mrow><mtext>i</mtext><mi>q</mi><mi>x</mi></mrow></msup><mtext>d</mtext><mi>x</mi></mrow></mrow></mstyle></mrow></math><span class="no">(15.11)</span></p>
+<aside class="abc" style="margin-top:-6em;" epub:type="sidebar">
+<figure id="he_9780198504283_0071">
+<img src="../images/he_9780198504283_0071.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">where &#968;<sub>0</sub> is a constant, A(<i>x</i>) is the <i>aperture function</i> which specifies how much light is let through by the screen (it&#8217;s zero for the opaque regions, and unity at the locations of the clear slits), and <i>q</i> is related to &#955; and the diffraction angle &#952; by <i>q</i> = 2&#960; sin&#952;/&#955;; exp(i<i>qx</i>) is the part of the plane-wave solution that represents the difference in the path-lengths travelled on going from various points on the screen to a location on the wall. The measured signal, or the<a id="page_87" class="page">Page 87, 15 Fourier series and transforms</a> number of photons detected, is equal to the intensity I(<i>q</i>)</p>
+<p class="equ">
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="eqn15.12"><mrow><mtext>I</mtext><mrow><mo>(</mo><mi>q</mi><mo>)</mo></mrow><mo>=</mo><msup><mrow><mrow><mo>|</mo><mrow><mtext>&#x03C8;</mtext><mrow><mo>(</mo><mi>q</mi><mo>)</mo></mrow></mrow><mo>|</mo></mrow></mrow><mn>2</mn></msup><mo>=</mo><mtext>&#x03C8;</mtext><msup><mrow><mrow><mo>(</mo><mi>q</mi><mo>)</mo></mrow></mrow><mo>&#x2217;</mo></msup><mtext>&#x03C8;</mtext><mrow><mo>(</mo><mi>q</mi><mo>)</mo></mrow></mrow></math><span class="no">(15.12)</span></p>
+<aside class="abc" style="margin-top:-5em;" epub:type="sidebar">
+<figure id="he_9780198504283_0072">
+<img src="../images/he_9780198504283_0072.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="noindent">so that the bands of light and dark on the wall are proportional to the modulus-squared of the Fourier transform of the aperture function. Thus, in conjunction with our discussion at the end of <a href="#ch15.3">section 15.3</a>, the uniform fringes obtained from a <i>Young&#8217;s double slit</i> experiment are mathematically equivalent to I(<i>q</i>) &#8733; cos(<i>qd</i>) + 1. Similarly, the diffraction pattern given by a single wide slit is related to I(<i>q</i>) &#8733; [sin(<i>qd</i>/2)/(<i>qd</i>)]<sup>2</sup> or I(<i>q</i>) &#8733; [1 &#8211; cos(<i>qd</i>)]/(<i>qd</i>)<sup>2</sup>.</p>
+<p class="indent">The diffraction patterns of slightly more complicated cases can often be worked out by analysing the situation as a composite of simpler ones which are linked through the convolution theorem of <a href="#eqn15.6">eqn (15.6)</a>. Since a pair of wide slits can be regarded as arising from the convolution of a Young&#8217;s double slit with a single wide one, for example, the resulting bands of light and dark will consist of the product of a set of uniform (cosine) fringes and a sine function (squared). Similarly, as a short array of evenly-spaced (narrow) slits can be constructed by multiplying an infinitely long &#8216;comb&#8217; function and a single wide slit, its diffraction pattern will be made of the convolution of a uniform set of spikes and a sine function (squared).</p>
+<aside class="abc" style="margin-top:-9em;" epub:type="sidebar">
+<figure id="he_9780198504283_0073">
+<img src="../images/he_9780198504283_0073.jpg" alt="images"/>
+</figure>
+</aside>
+<p class="indent">Finally, we should note that the measurement of the intensity, I(<i>q</i>) in <a href="#eqn15.12">eqn (15.12)</a>, means that information about the phase of the complex Fourier component, &#968;(<i>q</i>) in <a href="#eqn15.11">eqn (15.11)</a>, is lost. While the importance of the latter can be difficult to appreciate, it is essential if we are to draw any conclusions reliably about the aperture function: I(<i>q</i>) only tells us about the ACF of A(<i>x</i>) in a straightforward manner, as indicated by <a href="#eqn15.8">eqn (15.8)</a>, rather than A(<i>x</i>) itself. This translates into such problems as crystallographers have in trying to infer the structure of a protein, say, given the intensities of the <i>Bragg</i> spots.</p>
+</section>
+<section epub:type="chapter">
+<h2 class="h2">Exercises</h2>
+<ol class="nonea">
+<li style="width:70%;">&#160;&#160;15.1&#160;&#160;By first showing that sines and cosines are orthogonal, derive the formulae of <a href="#eqn15.2">eqn (15.2)</a> from <a href="#eqn15.1">eqn (15.1)</a>.</li>
+<li style="width:70%;">&#160;&#160;15.2&#160;&#160;For the Fourier expansion of <a href="#eqn15.1">eqn (15.1)</a>, derive Parseval&#8217;s identity<br/><math xmlns="http://www.w3.org/1998/Math/MathML" display='block'><mfrac><mn>1</mn><mi>&#x03C0;</mi></mfrac><mstyle displaystyle='true'><mrow><msubsup><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi>&#x03C0;</mi></mrow><mi>&#x03C0;</mi></msubsup><mrow><msup><mrow><mrow><mo>[</mo><mrow><mtext>f</mtext><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>]</mo></mrow></mrow><mn>2</mn></msup><mtext>d</mtext><mi>x</mi><mtext> = </mtext><mfrac><mrow><msubsup><mi>a</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mtext>+ </mtext><mstyle displaystyle='true'><munderover><mo>&#x2211;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>&#x221E;</mi></munderover><mrow><mrow><mo>(</mo><mrow><msubsup><mi>a</mi><mi>n</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>b</mi><mi>n</mi><mn>2</mn></msubsup></mrow><mo>)</mo></mrow></mrow></mstyle></mrow></mrow></mstyle></math>
+<aside class="abc" style="margin-top:-10em;" epub:type="sidebar">
+<figure id="he_9780198504283_0074">
+<img src="../images/he_9780198504283_0074.jpg" alt="images"/>
+</figure>
+</aside></li>
+<li style="width:70%;">&#160;&#160;15.3&#160;&#160;A triangular wave is represented by f(<i>x</i>) = <i>x</i> for 0&#60;<i>x</i>&#60;&#960;, f(<i>x</i>) = &#8211;<i>x</i> for &#8211;&#960;&#60;<i>x</i>&#60;0 and f(<i>x</i>) = f(<i>x</i> + 2<i>m</i>&#960;) for any integer <i>m.</i> Show that its Fourier series representation is given by<br/><math xmlns="http://www.w3.org/1998/Math/MathML" display='block'><mtext>f</mtext><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mi>&#x03C0;</mi><mn>2</mn></mfrac><mo>&#x2212;</mo><mfrac><mn>4</mn><mi>&#x03C0;</mi></mfrac><mstyle displaystyle='true'><munderover><mo>&#x2211;</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi>&#x221E;</mi></munderover><mrow><mfrac><mrow><mi>cos</mi><mrow><mo>[</mo><mrow><mo stretchy='false'>(</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy='false'>)</mo><mi>x</mi></mrow><mo>]</mo></mrow></mrow><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></mfrac></mrow></mstyle></math></li>
+<li style="width:70%;"><a href="Appendix.xhtml#exe15.4">&#160;&#160;15.4</a>&#160;&#160;Derive the formulae for the intensities of the diffraction patterns from a Young&#8217;s double slit, with separation <i>d</i>, and single wide slit, of width <i>w</i>.</li>
+<li style="width:70%;"><a href="Appendix.xhtml#exe15.5">&#160;&#160;15.5</a>&#160;&#160;Find separately the Fourier transforms of narrow spikes of unit area, or &#948;-functions, located at: (i) the origin, <i>x</i> = 0; and (ii) <i>x</i> = <i>d.</i> How do they differ, and what are implications of (only) measuring the intensities?
+<aside class="abc" style="margin-top:-11em;" epub:type="sidebar">
+<figure id="he_9780198504283_0075">
+<img src="../images/he_9780198504283_0075.jpg" alt="images"/>
+</figure>
+</aside></li>
+</ol>
+</section>
+</section>
+</body>
+</html>
